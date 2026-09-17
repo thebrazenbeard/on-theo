@@ -122,6 +122,14 @@ extensions:
     status: PROPOSED_RESEARCH_DELTA_REVIEW_REQUIRED
     adds_entity_types: [scholarly_context, concept, claim]
 
+  - extension_id: EXT-SIMULATION-DISCRIMINABILITY-V2
+    path: registry/extensions/simulation-discriminability-v2.yaml
+    declared_base: a6a1f16c3c35df86565a2cc502671e3893ae3131
+    introduced_at: a6e91bbd124db4361c81aa8bce6f4a7a6cacf525
+    depends_on: [EXT-SIMULATION-THEORY-V1]
+    status: PROPOSED_RESEARCH_DELTA_REVIEW_REQUIRED
+    adds_entity_types: [scholarly_context, concept, claim]
+
 materialization_state:
   canonical_materialized: false
   reason: "The extensions remain stacked draft research cuts. This manifest defines deterministic application semantics but does not itself promote or merge them."
