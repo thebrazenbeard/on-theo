@@ -74,6 +74,14 @@ extensions:
     status: PROPOSED_RESEARCH_DELTA_REVIEW_REQUIRED
     adds_entity_types: [witness, claim]
 
+  - extension_id: EXT-SECOND-TEMPLE-GRECO-ROMAN-V1
+    path: registry/extensions/second-temple-greco-roman-v1.yaml
+    declared_base: 9cc582ecbd19857df41bea818625a4750ad33ae9
+    introduced_at: 6d7fab5e735b2d65a276cb441b0386c674e17127
+    depends_on: [EXT-BROAD-MYTHOS-FOUNDATION-V1, EXT-DEUT32-WITNESS-CONTROL-V1]
+    status: PROPOSED_RESEARCH_DELTA_REVIEW_REQUIRED
+    adds_entity_types: [source, scholarly_context, claim, transmission]
+
 materialization_state:
   canonical_materialized: false
   reason: "The extensions remain stacked draft research cuts. This manifest defines deterministic application semantics but does not itself promote or merge them."
