@@ -1,4 +1,9 @@
 schema_version: on-theo.concept-registry.v1
+status: PROPOSED_CANONICAL_CONTRACT
+coverage:
+  state: INITIAL_EMPTY_CONTRACT
+  complete: false
+  meaning: "The registry contract exists, but V1 concept/form population is intentionally incomplete. An empty concepts list must not be interpreted as evidence that no relevant concepts or linguistic forms exist."
 relation_types:
   - VARIANT_FORM
   - TRANSLATION
@@ -24,3 +29,4 @@ concepts: []
 notes:
   - "Similarity may discover a candidate relationship but does not establish semantic identity or derivation."
   - "Linguistic forms and theological concepts must retain source, language, period, and tradition context when populated."
+  - "Coverage state must be checked before interpreting absence of a concept record as negative evidence."
