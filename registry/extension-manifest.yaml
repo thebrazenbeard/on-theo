@@ -74,6 +74,14 @@ extensions:
     status: PROPOSED_RESEARCH_DELTA_REVIEW_REQUIRED
     adds_entity_types: [witness, claim]
 
+  - extension_id: EXT-EGYPTIAN-VEDIC-FOUNDATION-V1
+    path: registry/extensions/egyptian-vedic-foundation-v1.yaml
+    declared_base: 9cc582ecbd19857df41bea818625a4750ad33ae9
+    introduced_at: fb2a9d56659f4f0329e9b02308e2b1d669247688
+    depends_on: [EXT-BROAD-MYTHOS-FOUNDATION-V1]
+    status: PROPOSED_RESEARCH_DELTA_REVIEW_REQUIRED
+    adds_entity_types: [source, scholarly_context, concept, claim]
+
 materialization_state:
   canonical_materialized: false
   reason: "The extensions remain stacked draft research cuts. This manifest defines deterministic application semantics but does not itself promote or merge them."
