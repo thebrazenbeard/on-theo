@@ -114,6 +114,14 @@ extensions:
     status: PROPOSED_RESEARCH_DELTA_REVIEW_REQUIRED
     adds_entity_types: [source, scholarly_context, concept, claim]
 
+  - extension_id: EXT-SIMULATION-THEORY-V1
+    path: registry/extensions/simulation-theory-v1.yaml
+    declared_base: d2a319321de9b77cefaba999fa6dd2cebc4899c5
+    introduced_at: 64378e32d9df0190f73fcc6eb7fc985f91fc05d1
+    depends_on: [EXT-QURANIC-SYSTEM-V1]
+    status: PROPOSED_RESEARCH_DELTA_REVIEW_REQUIRED
+    adds_entity_types: [scholarly_context, concept, claim]
+
 materialization_state:
   canonical_materialized: false
   reason: "The extensions remain stacked draft research cuts. This manifest defines deterministic application semantics but does not itself promote or merge them."
