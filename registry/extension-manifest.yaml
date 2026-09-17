@@ -66,6 +66,14 @@ extensions:
     status: PROPOSED_RESEARCH_DELTA_REVIEW_REQUIRED
     adds_entity_types: [source, scholarly_context, claim, transmission]
 
+  - extension_id: EXT-DEUT32-WITNESS-CONTROL-V1
+    path: registry/extensions/deut32-witness-control-v1.yaml
+    declared_base: d364a124523b8d06542f8631a05227268b14de10
+    introduced_at: 1b38d3dea42aeafbdd0cf328c9b389ea31a25107
+    depends_on: [EXT-BROAD-MYTHOS-FOUNDATION-V1]
+    status: PROPOSED_RESEARCH_DELTA_REVIEW_REQUIRED
+    adds_entity_types: [witness, claim]
+
 materialization_state:
   canonical_materialized: false
   reason: "The extensions remain stacked draft research cuts. This manifest defines deterministic application semantics but does not itself promote or merge them."
