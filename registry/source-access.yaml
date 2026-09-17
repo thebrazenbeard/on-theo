@@ -243,3 +243,43 @@ records:
     direct_access: false
     state: SCHOLARLY_SUMMARY
     guard: "Current use is publisher abstract-level description of Stoic engagement with myth and traditional cult."
+
+  - source_id: SRC-1ENOCH-WATCHERS
+    direct_access: false
+    state: SCHOLARLY_SUMMARY
+    guard: "Current V1 uses modern scholarly reconstruction of the Book of the Watchers; exact Aramaic/Greek/Ethiopic witness-level readback remains a next-step requirement."
+
+  - source_id: SRC-DANIEL-7-12
+    direct_access: true
+    state: DIGITAL_EDITION
+    guard: "Sefaria provides Hebrew/Aramaic and translation access; MT-level readback does not erase Old Greek/Proto-Theodotion textual plurality."
+
+  - source_id: SRC-PHILO-DE-OPIFICIO
+    direct_access: true
+    state: DIGITAL_EDITION
+    guard: "CCEL provides the older Yonge English translation; Greek lexical claims require an exact Greek edition."
+
+  - source_id: SCH-STOKES-2019-SATANOLOGY-WATCHERS
+    direct_access: true
+    state: DIGITAL_EDITION
+    guard: "Publisher-accessible article supports the literary-development synthesis; reconstructed strata remain scholarly interpretation."
+
+  - source_id: SCH-OCD-2022-DANIEL
+    direct_access: false
+    state: SCHOLARLY_SUMMARY
+    guard: "Current use is Oxford reference-summary level for composition, textual traditions, imperial visions, and reception."
+
+  - source_id: SCH-NIEHOFF-2018-PHILO-LOGOS
+    direct_access: false
+    state: SCHOLARLY_SUMMARY
+    guard: "Current use is publisher abstract-level reconstruction of Philonic transcendence and Logos development."
+
+  - source_id: SCH-DECHARNEUX-2017-PHILO-POWERS
+    direct_access: false
+    state: SCHOLARLY_SUMMARY
+    guard: "Current use is publisher abstract-level argument about biblical/Platonic divine-powers synthesis."
+
+  - source_id: SCH-SCHAFER-2020-PHILO-LOGOS
+    direct_access: false
+    state: SCHOLARLY_SUMMARY
+    guard: "Current use is publisher abstract-level description of Philonic Logos and Middle-Platonic setting."
