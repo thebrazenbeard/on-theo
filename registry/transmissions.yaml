@@ -1,0 +1,36 @@
+schema_version: on-theo.transmission-registry.v1
+relation_types:
+  - PRESERVED_BY
+  - DIRECT_DEPENDENCE_POSSIBLE
+  - SHARED_TRADITION
+  - REINTERPRETATION
+  - POLEMICAL_RESPONSE_POSSIBLE
+  - STRUCTURAL_PARALLEL
+  - PROJECT_ANALOGY
+  - NONE_ESTABLISHED
+edges:
+  - id: TR-CELSUS-PRESERVED-BY-ORIGEN
+    from_source: SRC-CELSUS-TRUE-DOCTRINE
+    to_source: SRC-ORIGEN-CONTRA-CELSUM
+    relation: PRESERVED_BY
+    confidence: high
+    evidence:
+      - source_id: SRC-ORIGEN-CONTRA-CELSUM
+        locator: "Book I, chapters 28, 32, 69"
+    limitation: "Preservation through a hostile rebuttal does not guarantee access to the exact structure or wording of Celsus's lost complete work."
+
+  - id: TR-ABDES-PANTERA-TO-CELSUS
+    from_source: MAT-ABDES-PANTERA-INSCRIPTION
+    to_source: SRC-CELSUS-TRUE-DOCTRINE
+    relation: NONE_ESTABLISHED
+    confidence: high
+    evidence: []
+    limitation: "The inscription establishes that Pantera was a real name; no transmission or identity link to Celsus's accusation is established."
+
+  - id: TR-CELSUS-PANTHERA-TO-BAVLI-PANDEIRA
+    from_source: SRC-CELSUS-TRUE-DOCTRINE
+    to_source: SRC-BAVLI-SHABBAT-104B
+    relation: NONE_ESTABLISHED
+    confidence: unresolved
+    evidence: []
+    limitation: "Name/motif similarity and chronological order are insufficient to establish direct dependence; intermediate traditions and textual variants must be researched."
