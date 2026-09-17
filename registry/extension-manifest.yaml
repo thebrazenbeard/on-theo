@@ -58,6 +58,14 @@ extensions:
     status: PROPOSED_RESEARCH_DELTA_REVIEW_REQUIRED
     adds_entity_types: [scholarly_context, concept, claim]
 
+  - extension_id: EXT-BROAD-MYTHOS-FOUNDATION-V1
+    path: registry/extensions/broad-mythos-foundation-v1.yaml
+    declared_base: 71ba8382c073e72332f3cb7199fb5824fe74a2b2
+    introduced_at: 4040da628c253ab96308ef7573897f0d2407c70c
+    depends_on: []
+    status: PROPOSED_RESEARCH_DELTA_REVIEW_REQUIRED
+    adds_entity_types: [source, scholarly_context, claim, transmission]
+
 materialization_state:
   canonical_materialized: false
   reason: "The extensions remain stacked draft research cuts. This manifest defines deterministic application semantics but does not itself promote or merge them."
