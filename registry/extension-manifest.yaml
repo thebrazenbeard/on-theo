@@ -90,6 +90,14 @@ extensions:
     status: PROPOSED_RESEARCH_DELTA_REVIEW_REQUIRED
     adds_entity_types: [source, scholarly_context, concept, claim, transmission]
 
+  - extension_id: EXT-EARLY-CHRISTIAN-RABBINIC-V1
+    path: registry/extensions/early-christian-rabbinic-v1.yaml
+    declared_base: f4c4b4e940a8e6c76e9603d298bab819fbcc448d
+    introduced_at: 54aecf95382f40497c1d9def532e0eed1037581f
+    depends_on: [EXT-ENOCH-DANIEL-PHILO-V1]
+    status: PROPOSED_RESEARCH_DELTA_REVIEW_REQUIRED
+    adds_entity_types: [source, scholarly_context, claim, transmission]
+
 materialization_state:
   canonical_materialized: false
   reason: "The extensions remain stacked draft research cuts. This manifest defines deterministic application semantics but does not itself promote or merge them."
