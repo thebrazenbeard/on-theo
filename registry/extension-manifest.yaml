@@ -50,6 +50,14 @@ extensions:
     status: PROPOSED_RESEARCH_DELTA_REVIEW_REQUIRED
     adds_entity_types: [scholarly_context, claim]
 
+  - extension_id: EXT-PANTHERA-PARTHENOS-WORDPLAY-V1
+    path: registry/extensions/panthera-parthenos-wordplay-v1.yaml
+    declared_base: e01788d4acafadd9c349b80ee530dda5e6868c2e
+    introduced_at: 319b428cc711fd4436bb282d3cd69c20c7ac500e
+    depends_on: [EXT-PANTHERA-RABBINIC-PARALLELS-V1, EXT-MARK6-MATRONYMIC-V1, EXT-JOHN8-41-PORNEIA-V1, EXT-PORNEIA-SEMANTIC-CONTROL-V1, EXT-CELSUS-JEW-SOURCE-PROVENANCE-V1]
+    status: PROPOSED_RESEARCH_DELTA_REVIEW_REQUIRED
+    adds_entity_types: [scholarly_context, concept, claim]
+
 materialization_state:
   canonical_materialized: false
   reason: "The extensions remain stacked draft research cuts. This manifest defines deterministic application semantics but does not itself promote or merge them."
