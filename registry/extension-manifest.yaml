@@ -1,0 +1,39 @@
+schema_version: on-theo.extension-manifest.v1
+status: PROPOSED_CANONICAL_CONTRACT
+base_registry_head: c1f6df5ea1fee0c5ac8d84a7b5c2b81fb905fd3e
+application_rules:
+  ordering: "Topological by depends_on, then manifest order for independent extensions."
+  base_head_rule: "An extension may apply only when its declared base_registry_head is in the accepted ancestry or an explicit rebasing receipt proves semantic equivalence."
+  duplicate_id_rule: "Duplicate source/claim/concept/witness/transmission/review IDs stop materialization unless the records are explicitly identical or a reviewed supersession record names both versions."
+  unknown_reference_rule: "Any unresolved source_id, witness_id, claim_id, concept_id, or dependency is a materialization failure."
+  mutation_rule: "Extensions are additive by default. Patches/replacements require an explicit operation, target ID, expected prior digest/value, and review receipt."
+  review_rule: "Materialization does not inherit review status from a different exact head."
+  receipt_rule: "A successful materialization must emit the input extension IDs, exact source SHAs, resulting registry digests, collision count, and unresolved-reference count."
+extensions:
+  - extension_id: EXT-PANTHERA-RABBINIC-PARALLELS-V1
+    path: registry/extensions/panthera-rabbinic-parallels-v1.yaml
+    declared_base: c1f6df5ea1fee0c5ac8d84a7b5c2b81fb905fd3e
+    introduced_at: 389c1e6e2c8affafae165fd34ca091618043b11e
+    depends_on: []
+    status: PROPOSED_RESEARCH_DELTA_REVIEW_REQUIRED
+    adds_entity_types: [source, witness, scholarly_context, claim, transmission]
+
+  - extension_id: EXT-MARK6-MATRONYMIC-V1
+    path: registry/extensions/mark6-matronymic-v1.yaml
+    declared_base: 389c1e6e2c8affafae165fd34ca091618043b11e
+    introduced_at: d772dc41ca19f2b1c1bb12839ced88e100ee9e09
+    depends_on: [EXT-PANTHERA-RABBINIC-PARALLELS-V1]
+    status: PROPOSED_RESEARCH_DELTA_REVIEW_REQUIRED
+    adds_entity_types: [source, witness, scholarly_context, claim, transmission]
+
+  - extension_id: EXT-JOHN8-41-PORNEIA-V1
+    path: registry/extensions/john8-41-porneia-v1.yaml
+    declared_base: d772dc41ca19f2b1c1bb12839ced88e100ee9e09
+    introduced_at: 625272e016fce6fede9531e4ca1bbab315345d69
+    depends_on: [EXT-PANTHERA-RABBINIC-PARALLELS-V1, EXT-MARK6-MATRONYMIC-V1]
+    status: PROPOSED_RESEARCH_DELTA_REVIEW_REQUIRED
+    adds_entity_types: [source, scholarly_context, claim, transmission]
+
+materialization_state:
+  canonical_materialized: false
+  reason: "The extensions remain stacked draft research cuts. This manifest defines deterministic application semantics but does not itself promote or merge them."
