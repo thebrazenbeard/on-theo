@@ -106,6 +106,14 @@ extensions:
     status: PROPOSED_RESEARCH_DELTA_REVIEW_REQUIRED
     adds_entity_types: [source, scholarly_context, concept, claim]
 
+  - extension_id: EXT-QURANIC-SYSTEM-V1
+    path: registry/extensions/quranic-system-v1.yaml
+    declared_base: 22d4a193ada3b63591dcdc41c975739ceba20b54
+    introduced_at: 77bc54859a6aa67cee9648dfe3f602cbaf52ea87
+    depends_on: [EXT-LATE-ANTIQUE-CONTACT-ZONE-V1]
+    status: PROPOSED_RESEARCH_DELTA_REVIEW_REQUIRED
+    adds_entity_types: [source, scholarly_context, concept, claim]
+
 materialization_state:
   canonical_materialized: false
   reason: "The extensions remain stacked draft research cuts. This manifest defines deterministic application semantics but does not itself promote or merge them."
