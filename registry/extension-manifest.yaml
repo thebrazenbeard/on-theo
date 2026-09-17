@@ -28,7 +28,7 @@ extensions:
 
   - extension_id: EXT-JOHN8-41-PORNEIA-V1
     path: registry/extensions/john8-41-porneia-v1.yaml
-    declared_base: d772dc41ca19f2b1c1bb12839ced88e100ee9e09
+    declared_base: d772dc41ca19f2b81fbcc448d
     introduced_at: 625272e016fce6fede9531e4ca1bbab315345d69
     depends_on: [EXT-PANTHERA-RABBINIC-PARALLELS-V1, EXT-MARK6-MATRONYMIC-V1]
     status: PROPOSED_RESEARCH_DELTA_REVIEW_REQUIRED
@@ -113,6 +113,14 @@ extensions:
     depends_on: [EXT-LATE-ANTIQUE-CONTACT-ZONE-V1]
     status: PROPOSED_RESEARCH_DELTA_REVIEW_REQUIRED
     adds_entity_types: [source, scholarly_context, concept, claim]
+
+  - extension_id: EXT-QURAN-LATE-ANTIQUE-FEATURE-TESTS-V1
+    path: registry/extensions/quran-late-antique-feature-tests-v1.yaml
+    declared_base: d2a319321de9b77cefaba999fa6dd2cebc4899c5
+    introduced_at: 2be871bdb54436ebeabbeca32d764fdb7ef70255
+    depends_on: [EXT-QURANIC-SYSTEM-V1, EXT-LATE-ANTIQUE-CONTACT-ZONE-V1]
+    status: PROPOSED_COMPARATIVE_DELTA_REVIEW_REQUIRED
+    adds_entity_types: [scholarly_context, concept, claim, transmission]
 
 materialization_state:
   canonical_materialized: false
