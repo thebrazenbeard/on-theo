@@ -178,3 +178,68 @@ records:
     direct_access: true
     state: DIGITAL_EDITION
     guard: "Full reference article is accessible; broad influence claims do not prove feature-level direct transmission."
+
+  - source_id: SRC-JOSEPHUS-WAR-2
+    direct_access: true
+    state: DIGITAL_EDITION
+    guard: "Digital public-domain translation permits direct readback of Josephus's representation; Greek-text and manuscript issues remain separate."
+
+  - source_id: SRC-JOSEPHUS-ANTIQUITIES-18
+    direct_access: true
+    state: DIGITAL_EDITION
+    guard: "Digital public-domain translation permits direct readback of Josephus's representation; it remains a later, rhetorically situated account."
+
+  - source_id: SRC-DSS-COMMUNITY-RULE
+    direct_access: true
+    state: DIGITAL_EDITION
+    guard: "Library of Congress provides institutional translation and manuscript context; witness-specific claims should name a manuscript where required."
+
+  - source_id: SRC-HOMERIC-HYMN-DEMETER
+    direct_access: true
+    state: DIGITAL_EDITION
+    guard: "Perseus provides text/translation access; the hymn is literary evidence connected to Eleusis, not a complete transcript of secret rites."
+
+  - source_id: SRC-PLATO-REPUBLIC-10
+    direct_access: true
+    state: DIGITAL_EDITION
+    guard: "Perseus provides direct text/translation access; philosophical myth is not a census of popular Greek belief."
+
+  - source_id: SRC-AUGUSTUS-RES-GESTAE
+    direct_access: true
+    state: DIGITAL_EDITION
+    guard: "Public text/translation supports Augustus's own self-presentation; it is not neutral description of every local imperial cult."
+
+  - source_id: SCH-KNIBB-2011-DSS-APOCALYPTICISM
+    direct_access: false
+    state: SCHOLARLY_SUMMARY
+    guard: "Current use is publisher abstract-level synthesis of Qumran apocalypticism and messianism."
+
+  - source_id: SCH-LIM-2011-DSS-SCRIPTURE
+    direct_access: false
+    state: SCHOLARLY_SUMMARY
+    guard: "Current use is publisher abstract-level argument about authoritative literature at Qumran."
+
+  - source_id: SCH-TAYLOR-2026-JOSEPHUS-GROUPS
+    direct_access: false
+    state: SCHOLARLY_SUMMARY
+    guard: "Current use is publisher abstract-level reassessment of Josephus's Pharisee/Sadducee/Essene categories."
+
+  - source_id: SCH-GASPARRO-2016-DAIMONIC-POWER
+    direct_access: false
+    state: SCHOLARLY_SUMMARY
+    guard: "Current use is publisher abstract-level semantic/historical synthesis of Greek daimonology."
+
+  - source_id: SCH-GRADEL-2002-EMPEROR-WORSHIP
+    direct_access: false
+    state: SCHOLARLY_SUMMARY
+    guard: "Current use is publisher abstract and table-of-contents level; detailed local claims require chapter-level readback."
+
+  - source_id: SCH-KAROGLOU-2013-MYSTERY-CULTS
+    direct_access: true
+    state: DIGITAL_EDITION
+    guard: "Metropolitan Museum essay is accessible in full and explicitly warns against a single cohesive mystery-religion model."
+
+  - source_id: SCH-ALGRA-2009-STOIC-THEOLOGY
+    direct_access: false
+    state: SCHOLARLY_SUMMARY
+    guard: "Current use is publisher abstract-level description of Stoic engagement with myth and traditional cult."
