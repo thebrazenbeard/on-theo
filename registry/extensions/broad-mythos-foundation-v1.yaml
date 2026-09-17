@@ -179,8 +179,14 @@ claim_additions:
     evidence_class: [PRIMARY_TEXT, SCHOLARLY_INTERPRETATION]
     traditions: [canaanite-ugaritic]
     supporting_sources:
-      - {source_id: SRC-UGARIT-BAAL-CYCLE, locator: "KTU 1.1-1.6", relation: PRIMARY_TEXT_CORPUS, access_mode: SCHOLARLY_EDITION}
-      - {source_id: SCH-SMITH-2001-BIBLICAL-MONOTHEISM, locator: "Divine Council / Divine Family chapters", relation: SCHOLARLY_SYNTHESIS, access_mode: PUBLISHER_ABSTRACTS}
+      - source_id: SRC-UGARIT-BAAL-CYCLE
+        locator: "KTU 1.1-1.6"
+        relation: PRIMARY_TEXT_CORPUS
+        access_mode: SCHOLARLY_EDITION
+      - source_id: SCH-SMITH-2001-BIBLICAL-MONOTHEISM
+        locator: "Divine Council / Divine Family chapters"
+        relation: SCHOLARLY_SYNTHESIS
+        access_mode: PUBLISHER_ABSTRACTS
     opposing_sources: []
     confidence: high-for-structured-divine-plurality
     contested: false
@@ -191,7 +197,10 @@ claim_additions:
     evidence_class: [PRIMARY_TEXT]
     traditions: [canaanite-ugaritic]
     supporting_sources:
-      - {source_id: SRC-UGARIT-BAAL-CYCLE, locator: "KTU 1.1-1.6", relation: DIRECT_CORPUS_SUPPORT, access_mode: SCHOLARLY_EDITION}
+      - source_id: SRC-UGARIT-BAAL-CYCLE
+        locator: "KTU 1.1-1.6"
+        relation: DIRECT_CORPUS_SUPPORT
+        access_mode: SCHOLARLY_EDITION
     opposing_sources: []
     confidence: high
     contested: false
@@ -202,8 +211,14 @@ claim_additions:
     evidence_class: [PRIMARY_TEXT, SCHOLARLY_INTERPRETATION]
     traditions: [mesopotamian, babylonian]
     supporting_sources:
-      - {source_id: SRC-ENUMA-ELISH, locator: "Tablet IV onward", relation: DIRECT_TEXTUAL_SUPPORT, access_mode: SCHOLARLY_TRANSLATION}
-      - {source_id: SCH-MET-2009-MESOPOTAMIAN-CREATION, locator: "essay", relation: HISTORICAL_CONTEXT, access_mode: INSTITUTIONAL_FULL_TEXT}
+      - source_id: SRC-ENUMA-ELISH
+        locator: "Tablet IV onward"
+        relation: DIRECT_TEXTUAL_SUPPORT
+        access_mode: SCHOLARLY_TRANSLATION
+      - source_id: SCH-MET-2009-MESOPOTAMIAN-CREATION
+        locator: "essay"
+        relation: HISTORICAL_CONTEXT
+        access_mode: INSTITUTIONAL_FULL_TEXT
     opposing_sources: []
     confidence: high
     contested: false
@@ -214,8 +229,14 @@ claim_additions:
     evidence_class: [PRIMARY_TEXT, SCHOLARLY_INTERPRETATION]
     traditions: [ancient-israelite, biblical]
     supporting_sources:
-      - {source_id: SRC-DEUTERONOMY-32, locator: "Deuteronomy 32:8-9", relation: TEXTUAL_WITNESS_SET, access_mode: WITNESS_COMPARISON}
-      - {source_id: SCH-TOV-2023-DEUT32, locator: "variant table and analysis", relation: SCHOLARLY_TEXTUAL_CRITICISM, access_mode: SCHOLARLY_FULL_TEXT}
+      - source_id: SRC-DEUTERONOMY-32
+        locator: "Deuteronomy 32:8-9"
+        relation: TEXTUAL_WITNESS_SET
+        access_mode: WITNESS_COMPARISON
+      - source_id: SCH-TOV-2023-DEUT32
+        locator: "variant table and analysis"
+        relation: SCHOLARLY_TEXTUAL_CRITICISM
+        access_mode: SCHOLARLY_FULL_TEXT
     opposing_sources: []
     confidence: high-for-existence-of-variant
     contested: false
@@ -226,7 +247,10 @@ claim_additions:
     evidence_class: [MATERIAL_EVIDENCE, SCHOLARLY_INTERPRETATION]
     traditions: [ancient-israelite, yahwism]
     supporting_sources:
-      - {source_id: MAT-KUNTILLET-AJRUD-YHWH-ASHERAH, locator: "inscriptional blessing formulae", relation: MATERIAL_ATTESTATION, access_mode: SCHOLARLY_TRANSCRIPTION}
+      - source_id: MAT-KUNTILLET-AJRUD-YHWH-ASHERAH
+        locator: "inscriptional blessing formulae"
+        relation: MATERIAL_ATTESTATION
+        access_mode: SCHOLARLY_TRANSCRIPTION
     opposing_sources: []
     confidence: high-for-association-unresolved-for-referent
     contested: true
@@ -240,19 +264,28 @@ claim_additions:
     evidence_class: [PRIMARY_TEXT]
     traditions: [zoroastrian, old-avestan]
     supporting_sources:
-      - {source_id: SRC-AVESTA-YASNA-30, locator: "Yasna 30.2-5", relation: DIRECT_TEXTUAL_SUPPORT, access_mode: SCHOLARLY_DIGITAL_TEXT}
+      - source_id: SRC-AVESTA-YASNA-30
+        locator: "Yasna 30.2-5"
+        relation: DIRECT_TEXTUAL_SUPPORT
+        access_mode: SCHOLARLY_DIGITAL_TEXT
     opposing_sources: []
     confidence: high-at-translation-level
     contested: false
 
   - id: CLM-LATER-ZORO-COSMOLOGY-SYSTEMATIZES-CONFLICT
     proposition: "Later Pahlavi Zoroastrian texts systematize cosmic history as creation, mixture/conflict, and eventual separation/defeat of evil more explicitly than the extant Gathas."
-    claim_type: DIAchronic_THEOLOGICAL_DEVELOPMENT
+    claim_type: DIACHRONIC_THEOLOGICAL_DEVELOPMENT
     evidence_class: [PRIMARY_TEXT, LATER_TRADITION, SCHOLARLY_INTERPRETATION]
     traditions: [zoroastrian]
     supporting_sources:
-      - {source_id: SRC-BUNDAHISHN, locator: "cosmogonic framework", relation: LATER_TEXTUAL_SYSTEMATIZATION, access_mode: SCHOLARLY_EDITION_TRADITION}
-      - {source_id: SCH-KREYENBROEK-1993-ZORO-COSMOGONY, locator: "article", relation: SCHOLARLY_SYNTHESIS, access_mode: INSTITUTIONAL_FULL_TEXT}
+      - source_id: SRC-BUNDAHISHN
+        locator: "cosmogonic framework"
+        relation: LATER_TEXTUAL_SYSTEMATIZATION
+        access_mode: SCHOLARLY_EDITION_TRADITION
+      - source_id: SCH-KREYENBROEK-1993-ZORO-COSMOGONY
+        locator: "article"
+        relation: SCHOLARLY_SYNTHESIS
+        access_mode: INSTITUTIONAL_FULL_TEXT
     opposing_sources: []
     confidence: high
     contested: false
@@ -263,7 +296,10 @@ claim_additions:
     evidence_class: [SCHOLARLY_INTERPRETATION, UNKNOWN]
     traditions: [zoroastrian, judaism]
     supporting_sources:
-      - {source_id: SCH-SHAKED-1998-ZORO-ESCHATOLOGY, locator: "influence discussion", relation: SCHOLARLY_SUPPORT_FOR_INFLUENCE_FAMILY, access_mode: INSTITUTIONAL_FULL_TEXT}
+      - source_id: SCH-SHAKED-1998-ZORO-ESCHATOLOGY
+        locator: "influence discussion"
+        relation: SCHOLARLY_SUPPORT_FOR_INFLUENCE_FAMILY
+        access_mode: INSTITUTIONAL_FULL_TEXT
     opposing_sources: []
     confidence: unresolved-feature-specific
     contested: true
@@ -277,8 +313,10 @@ transmission_additions:
     relation: STRUCTURAL_PARALLEL
     confidence: high-for-parallel-unresolved-for-direct-dependence
     evidence:
-      - {source_id: SCH-SMITH-2001-BIBLICAL-MONOTHEISM, locator: "divine council comparison"}
-      - {source_id: SCH-TOV-2023-DEUT32, locator: "divine beings / Ugaritic comparison"}
+      - source_id: SCH-SMITH-2001-BIBLICAL-MONOTHEISM
+        locator: "divine council comparison"
+      - source_id: SCH-TOV-2023-DEUT32
+        locator: "divine beings / Ugaritic comparison"
     limitation: "Shared West Semitic cultural grammar is historically plausible; no claim is made that Deuteronomy directly copied a surviving Ugaritic tablet."
 
   - id: TR-UGARIT-ENUMA-SEA-COMBAT
