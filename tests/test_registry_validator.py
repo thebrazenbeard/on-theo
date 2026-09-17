@@ -206,3 +206,11 @@ def test_manifest_dependency_must_precede_dependent(tmp_path: Path) -> None:
     report = validate_repository(tmp_path)
 
     assert "MANIFEST_DEPENDENCY_ORDER" in _error_codes(report)
+
+
+def test_current_repository_stack_validates() -> None:
+    root = Path(__file__).resolve().parents[1]
+    report = validate_repository(root)
+    assert report.errors == (), "\n".join(
+        f"{item.code} {item.path}: {item.message}" for item in report.errors
+    )
