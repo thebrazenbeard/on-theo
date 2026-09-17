@@ -53,3 +53,33 @@ records:
     direct_access: false
     state: SCHOLARLY_SUMMARY
     guard: "Current V1 exact locator comes through Harlow quoting Heine; Greek collation remains pending."
+
+  - source_id: SRC-LXX-HOSEA
+    direct_access: true
+    state: DIGITAL_EDITION
+    guard: "BiblIndex supplies a modern Greek text surface; manuscript-specific claims require separate witness records."
+
+  - source_id: SRC-LXX-EZEKIEL
+    direct_access: true
+    state: DIGITAL_EDITION
+    guard: "Deutsche Bibelgesellschaft supplies a modern LXX text surface; manuscript-specific claims require separate witness records."
+
+  - source_id: SCH-MALINA-1972-PORNEIA
+    direct_access: false
+    state: SCHOLARLY_SUMMARY
+    guard: "Current V1 use is limited to publisher metadata/preview-level argument direction."
+
+  - source_id: SCH-JENSEN-1978-PORNEIA
+    direct_access: false
+    state: SCHOLARLY_SUMMARY
+    guard: "Current V1 use relies on publisher preview/bibliographic access; detailed whole-article argument readback remains bounded."
+
+  - source_id: SCH-HARPER-2012-PORNEIA
+    direct_access: false
+    state: SCHOLARLY_SUMMARY
+    guard: "Current V1 use is abstract/bibliographic-level and must not be promoted to full-paper verification."
+
+  - source_id: SCH-GLANCY-2015-PORNEIA
+    direct_access: false
+    state: SCHOLARLY_SUMMARY
+    guard: "Current V1 use is abstract/bibliographic-level and must not be promoted to full-paper verification."
