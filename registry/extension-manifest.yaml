@@ -98,6 +98,14 @@ extensions:
     status: PROPOSED_RESEARCH_DELTA_REVIEW_REQUIRED
     adds_entity_types: [source, scholarly_context, claim, transmission]
 
+  - extension_id: EXT-YESHUA-HYPOTHESIS-MAP-V1
+    path: registry/extensions/yeshua-hypothesis-map-v1.yaml
+    declared_base: 5a45ef5cdadc1f1f3a21e769e2d613c4ed945d8d
+    introduced_at: a73255ac39fac00d2e862d10dafe3d04dc6130b9
+    depends_on: [EXT-PANTHERA-PARTHENOS-WORDPLAY-V1, EXT-EARLY-CHRISTIAN-RABBINIC-V1]
+    status: PROPOSED_RESEARCH_DELTA_REVIEW_REQUIRED
+    adds_entity_types: [source, scholarly_context, claim]
+
 materialization_state:
   canonical_materialized: false
   reason: "The extensions remain stacked draft research cuts. This manifest defines deterministic application semantics but does not itself promote or merge them."
