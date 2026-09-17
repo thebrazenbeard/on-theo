@@ -32,12 +32,13 @@ source_additions:
     physical_witness_date: {start: null, end: null, precision: unresolved-in-v1}
     extant_status: partially-extant-through-manuscript-tradition
     original_language: Greek
-    access_mode: indirect-through-modern-scholarly-discussion-in-v1
+    access_mode: exact-locator-through-modern-scholarly-quotation-in-v1
     locators:
-      - passage: "discussion of John 8:37-41 in surviving commentary, exact section locator to be independently verified"
+      - passage: "Commentary on John 20.128-130; exposition of John 8:41bc"
         secondary_url: "https://studylib.net/doc/14405707/born-of-fornication--the-jewish-charge-of-jesus%E2%80%99-illegiti..."
+      - edition: "Ronald E. Heine, Origen: Commentary on the Gospel according to John, Books 13-32, Fathers of the Church 89 (1993), p. 233"
     limitations:
-      - "V1 has not yet independently read and registered the exact surviving Greek passage; Harlow 2012 is the current locator bridge."
+      - "Harlow 2012 supplies the exact locator and quotes Heine's English translation; V1 has not yet independently collated Heine against the surviving Greek text."
       - "Origen's interpretation is third-century reception evidence and must not be backdated into the first century."
 
 scholarly_context_additions:
@@ -108,24 +109,25 @@ claim_additions:
     contested: true
 
   - id: CLM-ORIGEN-COMMENTARY-JOHN-READS-8-41-AS-BIRTH-SLUR
-    proposition: "Origen's Commentary on John interprets John 8:41 as a slur concerning Jesus's virgin birth; Harlow identifies it as the earliest surviving commentary to do so."
+    proposition: "Origen's Commentary on John 20.128-130 interprets John 8:41 as a veiled slur concerning Jesus's virgin birth; Harlow identifies it as the earliest surviving commentary to do so."
     claim_type: RECEPTION_HISTORY
     evidence_class: [LATER_TRADITION, SCHOLARLY_INTERPRETATION]
     traditions: [christianity, jewish-christian-relations]
     supporting_sources:
       - source_id: SRC-ORIGEN-COMMENTARY-JOHN
-        locator: "exact primary locator pending independent readback"
-        relation: PRIMARY_RECEPTION_TEXT_REPORTED_BY_SCHOLARSHIP
-        access_mode: INDIRECT_IN_V1
+        locator: "Commentary on John 20.128-130"
+        relation: PRIMARY_RECEPTION_TEXT_EXACT_LOCATOR_REPORTED_BY_SCHOLARSHIP
+        access_mode: EXACT_LOCATOR_THROUGH_HARLOW_QUOTING_HEINE
       - source_id: SCH-HARLOW-2012-BORN-FORNICATION
-        locator: "Origen's Commentary on John section"
+        locator: "discussion of Commentary on John 20.128-130"
         relation: SCHOLARLY_SOURCE_IDENTIFICATION_AND_ANALYSIS
         access_mode: ACCESSIBLE_CHAPTER_COPY
     opposing_sources: []
-    confidence: high-for-harlows-report-primary-readback-pending
+    confidence: high-for-locator-and-harlows-report-greek-collation-pending
     contested: false
     notes:
       - "This is reception-history evidence. It is not evidence that the same reading was present in the first-century Johannine setting."
+      - "Harlow notes that Origen himself says a literal reading of the phrase fits neither the preceding nor following context cleanly before proposing the veiled insult."
 
   - id: CLM-JOHN-8-41-PROVES-FIRST-CENTURY-ILLEGITIMACY-RUMOR
     proposition: "John 8:41 independently establishes that first-century Jews knew and circulated a literal sexual-illegitimacy claim about Jesus's birth."
@@ -168,8 +170,10 @@ transmission_additions:
     relation: RECEPTION_INTERPRETATION
     confidence: high
     evidence:
+      - source_id: SRC-ORIGEN-COMMENTARY-JOHN
+        locator: "Commentary on John 20.128-130"
       - source_id: SCH-HARLOW-2012-BORN-FORNICATION
-        locator: "Origen's Commentary on John section"
+        locator: "discussion of Commentary on John 20.128-130"
     limitation: "The edge establishes later interpretation of John, not continuity of a first-century historical rumor."
 
   - id: TR-JOHN8-CELSUS-PANTHERA
