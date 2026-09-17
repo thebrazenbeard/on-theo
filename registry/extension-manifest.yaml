@@ -28,7 +28,7 @@ extensions:
 
   - extension_id: EXT-JOHN8-41-PORNEIA-V1
     path: registry/extensions/john8-41-porneia-v1.yaml
-    declared_base: d772dc41ca19f2b81fbcc448d
+    declared_base: d772dc41ca19f2b1c1bb12839ced88e100ee9e09
     introduced_at: 625272e016fce6fede9531e4ca1bbab315345d69
     depends_on: [EXT-PANTHERA-RABBINIC-PARALLELS-V1, EXT-MARK6-MATRONYMIC-V1]
     status: PROPOSED_RESEARCH_DELTA_REVIEW_REQUIRED
