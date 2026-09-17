@@ -47,3 +47,24 @@ The initial corpus grows out of several linked questions:
 ## Tone
 
 Curious, irreverent when useful, but evidence-disciplined. No tradition receives automatic deference or automatic contempt. Claims earn confidence from evidence, not from familiarity, offensiveness, popularity, or how entertaining they are.
+
+
+## Registry validation
+
+The provenance registries and draft extension stack have an executable consistency check.
+
+Run the test suite:
+
+```bash
+python -m pip install -r requirements-dev.txt
+pytest -q
+```
+
+Run the validator directly:
+
+```bash
+python scripts/validate_registry.py --root .
+python scripts/validate_registry.py --root . --json
+```
+
+Validation checks stable-ID collisions, unresolved source/witness/concept references, manifest identity/base/dependency consistency, and review result/provenance vocabularies. A successful validation means the registry graph is internally consistent; it does **not** merge, materialize, promote, or establish the historical truth of draft claims.
