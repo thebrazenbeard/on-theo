@@ -83,3 +83,18 @@ records:
     direct_access: false
     state: SCHOLARLY_SUMMARY
     guard: "Current V1 use is abstract/bibliographic-level and must not be promoted to full-paper verification."
+
+  - source_id: SCH-HARGIS-1999-ANTI-CHRISTIAN-POLEMIC
+    direct_access: false
+    state: SCHOLARLY_SUMMARY
+    guard: "Current V1 use is publisher metadata plus Blumell's explicit secondary report of Hargis pp. 36-39 as skeptical of authenticity; exact pages have not been independently read."
+
+  - source_id: SCH-TRIGG-1998-ORIGEN
+    direct_access: false
+    state: SCHOLARLY_SUMMARY
+    guard: "Current V1 use is publisher metadata plus Blumell's explicit secondary report of Trigg p. 58 as skeptical of authenticity; exact page has not been independently read."
+
+  - source_id: SCH-PAGET-2017-CELSUS-JEW
+    direct_access: false
+    state: SCHOLARLY_SUMMARY
+    guard: "Current V1 use is publisher abstract/institutional metadata; full-article readback remains pending."
