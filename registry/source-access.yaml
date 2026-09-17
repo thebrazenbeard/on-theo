@@ -15,80 +15,100 @@ records:
   - source_id: SRC-CELSUS-TRUE-DOCTRINE
     direct_access: false
     state: INDIRECT_PRESERVATION
-    preserved_by: [SRC-ORIGEN-CONTRA-CELSUM]
+    preserved_by:
+      - SRC-ORIGEN-CONTRA-CELSUM
     guard: "No proposition may cite Celsus as directly read wording unless it explicitly binds the Origen preservation layer or another independently established witness."
+
   - source_id: SRC-ORIGEN-CONTRA-CELSUM
     direct_access: true
     state: DIGITAL_EDITION
     guard: "Modern translation/readback supports what the extant Origen tradition says; it does not erase manuscript/editorial history."
+
   - source_id: MAT-ABDES-PANTERA-INSCRIPTION
     direct_access: false
     state: MATERIAL_TRANSCRIPTION
     guard: "Current V1 access is through institutional/scholarly transcription and metadata, not an autoptic artifact examination."
+
   - source_id: SRC-BAVLI-SHABBAT-104B
     direct_access: true
     state: DIGITAL_EDITION
     guard: "The digital edition is an access surface; manuscript/edition-specific differences require witness-level records."
+
   - source_id: SRC-TOSEFTA-CHULLIN-2-6
     direct_access: true
     state: DIGITAL_EDITION
     guard: "Witness-specific readings must bind a witness_id; the work record does not inherit the date or reading of the Vienna manuscript."
+
   - source_id: SRC-GOSPEL-MARK
     direct_access: true
     state: DIGITAL_EDITION
     guard: "Critical-text wording is editorial reconstruction; P45-specific readings require witness_id WIT-P45-MARK-6-3."
+
   - source_id: SRC-GOSPEL-JOHN
     direct_access: true
     state: DIGITAL_EDITION
     guard: "Critical-text/translation access does not by itself resolve semantic interpretation or composition chronology."
+
   - source_id: SRC-ORIGEN-COMMENTARY-JOHN
     direct_access: false
     state: SCHOLARLY_SUMMARY
     guard: "Current V1 exact locator comes through Harlow quoting Heine; Greek collation remains pending."
+
   - source_id: SRC-LXX-HOSEA
     direct_access: true
     state: DIGITAL_EDITION
     guard: "BiblIndex supplies a modern Greek text surface; manuscript-specific claims require separate witness records."
+
   - source_id: SRC-LXX-EZEKIEL
     direct_access: true
     state: DIGITAL_EDITION
     guard: "Deutsche Bibelgesellschaft supplies a modern LXX text surface; manuscript-specific claims require separate witness records."
+
   - source_id: SCH-MALINA-1972-PORNEIA
     direct_access: false
     state: SCHOLARLY_SUMMARY
     guard: "Current V1 use is limited to publisher metadata/preview-level argument direction."
+
   - source_id: SCH-JENSEN-1978-PORNEIA
     direct_access: false
     state: SCHOLARLY_SUMMARY
     guard: "Current V1 use relies on publisher preview/bibliographic access; detailed whole-article argument readback remains bounded."
+
   - source_id: SCH-HARPER-2012-PORNEIA
     direct_access: false
     state: SCHOLARLY_SUMMARY
     guard: "Current V1 use is abstract/bibliographic-level and must not be promoted to full-paper verification."
+
   - source_id: SCH-GLANCY-2015-PORNEIA
     direct_access: false
     state: SCHOLARLY_SUMMARY
     guard: "Current V1 use is abstract/bibliographic-level and must not be promoted to full-paper verification."
+
   - source_id: SCH-HARGIS-1999-ANTI-CHRISTIAN-POLEMIC
     direct_access: false
     state: SCHOLARLY_SUMMARY
     guard: "Current V1 use is publisher metadata plus Blumell's explicit secondary report of Hargis pp. 36-39 as skeptical of authenticity; exact pages have not been independently read."
+
   - source_id: SCH-TRIGG-1998-ORIGEN
     direct_access: false
     state: SCHOLARLY_SUMMARY
     guard: "Current V1 use is publisher metadata plus Blumell's explicit secondary report of Trigg p. 58 as skeptical of authenticity; exact page has not been independently read."
+
   - source_id: SCH-PAGET-2017-CELSUS-JEW
     direct_access: false
     state: SCHOLARLY_SUMMARY
     guard: "Current V1 use is publisher abstract/institutional metadata; full-article readback remains pending."
+
   - source_id: SCH-BOYARIN-1998-PANTHERA-WORDPLAY
     direct_access: true
     state: DIGITAL_EDITION
     guard: "An author-uploaded full-text copy supports Boyarin's actual argument; his Panthera explanation remains scholarly interpretation rather than an ancient derivation witness."
+
   - source_id: SCH-JAFFE-2008-BEN-PANTERA
     direct_access: false
     state: SCHOLARLY_SUMMARY
     guard: "The current workflow has a repository/SciSpace record and abstract-level description; direct full-text retrieval failed, so detailed derivation claims remain pending."
+
   - source_id: SCH-MURCIA-2014-PANTHERA-ORIGIN
     direct_access: false
     state: SCHOLARLY_SUMMARY
