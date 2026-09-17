@@ -42,6 +42,14 @@ extensions:
     status: PROPOSED_RESEARCH_DELTA_REVIEW_REQUIRED
     adds_entity_types: [source, scholarly_context, claim]
 
+  - extension_id: EXT-CELSUS-JEW-SOURCE-PROVENANCE-V1
+    path: registry/extensions/celsus-jew-source-provenance-v1.yaml
+    declared_base: 1ecfc6ca9e76b4c8ed165828316b50d882b6e4ff
+    introduced_at: 43f16e7a3656bffed35dbaa0479b72d51bb83357
+    depends_on: [EXT-PANTHERA-RABBINIC-PARALLELS-V1, EXT-MARK6-MATRONYMIC-V1, EXT-JOHN8-41-PORNEIA-V1, EXT-PORNEIA-SEMANTIC-CONTROL-V1]
+    status: PROPOSED_RESEARCH_DELTA_REVIEW_REQUIRED
+    adds_entity_types: [scholarly_context, claim]
+
 materialization_state:
   canonical_materialized: false
   reason: "The extensions remain stacked draft research cuts. This manifest defines deterministic application semantics but does not itself promote or merge them."
