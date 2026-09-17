@@ -92,14 +92,16 @@ V1 therefore records:
 
 ## 6. Origen is important evidence for reception history, not automatic first-century evidence
 
-Harlow identifies Origen's *Commentary on John* as the earliest surviving commentary on John and the first surviving commentary to interpret John 8:41 as a slur on Jesus's virgin birth.
+Harlow identifies the exact surviving locus as Origen, *Commentary on John* 20.128-130. In that passage Origen reads John 8:41 as a veiled allegation that Jesus was born from fornication and connects the insult to rejection of the virgin-birth claim. Harlow cites Ronald E. Heine's English translation, *Commentary on the Gospel According to John, Books 13-32* (Fathers of the Church 89, 1993), p. 233.
 
-That interpretation is historically important. It shows that by Origen's third-century intellectual context, John 8:41 could be read through live Jewish-Christian disputes about Jesus's birth.
+The locator is now resolved at the scholarly-reference level. This workflow has **not** yet independently collated Heine's translation against the Greek text, so the access distinction remains explicit.
 
-But Harlow argues that Origen was reading contemporary polemics back into the Johannine scene. Whether every part of that reconstruction is accepted or not, the provenance distinction is mandatory:
+That interpretation is historically important. It shows that by Origen's third-century intellectual context, John 8:41 could be read through live Jewish-Christian disputes about Jesus's birth. Harlow also points out that Origen himself observes that a literal reading of `we have not been born of fornication` fits neither the preceding nor following context cleanly before supplying the veiled-insult interpretation.
+
+Harlow argues that Origen was reading contemporary polemics back into the Johannine scene. Whether every part of that reconstruction is accepted or not, the provenance distinction is mandatory:
 
 - John 8:41 = Gospel text;
-- Origen's reading of John 8:41 = later reception/interpretation;
+- Origen, *Commentary on John* 20.128-130 = later reception/interpretation;
 - Celsus's explicit Panthera accusation, preserved by Origen = separate second-century polemical tradition;
 - a first-century historical rumor = a further reconstruction requiring evidence.
 
@@ -146,13 +148,13 @@ Current evidence classification:
 - wording of John 8:41: `PRIMARY_TEXT`, high confidence;
 - implied personal taunt against Jesus: `SCHOLARLY_INTERPRETATION`, contested;
 - spiritual/covenantal interpretation: `SCHOLARLY_INTERPRETATION`, strongly context-supported but still interpretation;
-- Origen's slur reading: `LATER_TRADITION` / reception history;
+- Origen's slur reading at *Commentary on John* 20.128-130: `LATER_TRADITION` / reception history;
 - first-century Jewish knowledge of a specific illegitimacy rumor inferred from John 8:41: `UNKNOWN`;
 - John 8:41 as independent evidence that Panthera was Jesus's biological father: `UNKNOWN` / unsupported.
 
 ## 10. Next checks
 
-1. Read the exact surviving Origen *Commentary on John* passage used by Harlow and register its locator independently rather than relying only on Harlow's discussion.
+1. Read Heine's translation of Origen *Commentary on John* 20.128-130 directly and, if technically possible, collate it against the surviving Greek rather than relying on Harlow's quotation and locator.
 2. Check the semantic range of `πορνεία` in the Septuagint and relevant Second Temple Greek corpora, separating literal sexual conduct from covenant-idolatry metaphor.
 3. Examine John 8:48 (`Samaritan` / `demon`) as the passage's first explicit counter-attack on Jesus and test Harlow's rhetorical sequencing claim.
 4. Compare the date/provenance of John 8:41 with the explicit Celsus accusation without assuming literary dependence in either direction.
