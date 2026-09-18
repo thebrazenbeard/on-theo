@@ -162,6 +162,15 @@ extensions:
     status: PROPOSED_RESEARCH_DELTA_REVIEW_REQUIRED
     adds_entity_types: [scholarly_context, claim]
 
+
+  - extension_id: EXT-SUMERIAN-URNAMMA-LINE-REVALIDATION-V1
+    path: registry/extensions/sumerian-urnamma-line-revalidation-v1.yaml
+    declared_base: 9ca2b40378a7ae22e3f10f392cb26cd62be1b9c8
+    introduced_at: fa60c97f0fc4d2563fe6a45b9720cfd5f6ef7c9e
+    depends_on: [EXT-SUMERIAN-DEATH-GILGAMESH-LINE-REVALIDATION-V1]
+    status: PROPOSED_RESEARCH_DELTA_REVIEW_REQUIRED
+    adds_entity_types: [scholarly_context, claim]
+
 materialization_state:
   canonical_materialized: false
   reason: "The extensions remain stacked draft research cuts. This manifest defines deterministic application semantics but does not itself promote or merge them."
