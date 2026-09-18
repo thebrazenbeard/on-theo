@@ -304,3 +304,21 @@ def test_pending_witness_must_resolve_to_manifest_extension_and_witness(tmp_path
     assert "UNKNOWN_PENDING_WITNESS" in codes
     assert "UNKNOWN_PENDING_WITNESS_EXTENSION" in codes
 
+def test_concept_relation_requires_target_id(tmp_path: Path) -> None:
+    _repo(tmp_path)
+    _write_yaml(
+        tmp_path,
+        "registry/concepts.yaml",
+        {
+            "relation_types": ["RELATED_BUT_NOT_EQUIVALENT"],
+            "concepts": [
+                {
+                    "id": "CON-A",
+                    "relations": [{"relation": "RELATED_BUT_NOT_EQUIVALENT"}],
+                }
+            ],
+        },
+    )
+
+    assert "MISSING_CONCEPT_TARGET" in _codes(tmp_path)
+
