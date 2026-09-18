@@ -1,0 +1,59 @@
+schema_version: on-theo.extension-dependency-closure-audit.v1
+status: PASS_SAME_RUNTIME_ENGINEERING_AUDIT
+recorded_at: "2026-09-18T11:02:00-04:00"
+source_subject:
+  rehearsal_head: 8e651851cdc1d1d4994784a69b961d87914a32e0
+  rehearsal_tree: 0679ca2c88b237840d647d1406bb34d4214f3d8d
+audit_subject:
+  branch: audit/extension-dependency-closure-v1-20260918
+  head: 644b4b60e4ee8af3d6c68393cbfe5585b191e680
+  tree: 07de4638f5fff46570da5e9b9b0288776b0b78a9
+  added_test: tests/test_registry_extension_dependency_closure.py
+purpose: "Detect cross-extension ID references that resolve only in the final union without the owning extension being present in the referencing extension's declared dependency closure."
+coverage:
+  addition_owner_types:
+    - source_additions
+    - scholarly_context_additions
+    - claim_additions
+    - concept_additions
+    - witness_additions
+    - transmission_additions
+  reference_types:
+    - source preserved_by
+    - witness witness_of
+    - claim supporting/opposing source_id and witness_id
+    - transmission from_source/to_source/evidence source_id
+    - concept linked_claims
+    - concept source_refs
+    - concept relation target_concept_id
+    - concept relation source_refs
+result:
+  hidden_cross_extension_dependencies: 0
+  undeclared_dependency_violations: 0
+  test_suite:
+    passed: 38
+    failed: 0
+  github_actions:
+    run_id: 35359794291
+    result: SUCCESS
+  registry_validator:
+    ok: true
+    errors: 0
+    findings: 0
+    warnings: 0
+  materialization_rehearsal:
+    ok: true
+    applied_extensions: 20
+    collisions: 0
+interpretation:
+  - "The manifest dependency graph is sufficient for all cross-extension references covered by the registry validator's current reference semantics."
+  - "This narrows the outstanding rebase question: no affected extension is relying on an undeclared sibling extension merely because the final union makes its references resolve."
+  - "This does not decide whether the manifest's non-ancestor-base exception requires stronger semantic-equivalence evidence."
+review_boundary:
+  independent_review: false
+  satisfies_independent_gate: false
+  note: "Same-runtime mechanical audit; route as supplemental evidence only."
+effect_boundary:
+  frozen_subject_modified: false
+  promotion_candidate_created: false
+  canonical_effect: false
