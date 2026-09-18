@@ -171,6 +171,15 @@ extensions:
     status: PROPOSED_RESEARCH_DELTA_REVIEW_REQUIRED
     adds_entity_types: [scholarly_context, claim]
 
+
+  - extension_id: EXT-SUMERIAN-DEATH-OCCURRENCE-PROVENANCE-V1
+    path: registry/extensions/sumerian-death-occurrence-provenance-v1.yaml
+    declared_base: 1c1019d6f2eda3bd442349ec1c896e6270a2e100
+    introduced_at: bf9c3ef8a6f94f19067d4b4317f27edd763f41f6
+    depends_on: [EXT-SUMERIAN-URNAMMA-LINE-REVALIDATION-V1]
+    status: PROPOSED_RESEARCH_DELTA_REVIEW_REQUIRED
+    adds_entity_types: [claim]
+
 materialization_state:
   canonical_materialized: false
   reason: "The extensions remain stacked draft research cuts. This manifest defines deterministic application semantics but does not itself promote or merge them."
