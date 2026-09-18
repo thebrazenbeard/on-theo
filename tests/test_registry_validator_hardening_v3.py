@@ -146,3 +146,169 @@ def test_extension_additions_reject_non_mapping_records(tmp_path: Path) -> None:
     )
 
     assert "INVALID_RECORD_TYPE" in _codes(tmp_path)
+
+def test_claim_evidence_edges_reject_non_mapping_records(tmp_path: Path) -> None:
+    _repo(tmp_path)
+    _write_yaml(
+        tmp_path,
+        "registry/claims.yaml",
+        {
+            "allowed_evidence_classes": ["PRIMARY_TEXT"],
+            "claims": [
+                {
+                    "id": "CLM-A",
+                    "evidence_class": ["PRIMARY_TEXT"],
+                    "supporting_sources": ["MALFORMED_EDGE"],
+                }
+            ],
+        },
+    )
+
+    assert "INVALID_RECORD_TYPE" in _codes(tmp_path)
+
+
+def test_claim_evidence_edge_requires_a_reference(tmp_path: Path) -> None:
+    _repo(tmp_path)
+    _write_yaml(
+        tmp_path,
+        "registry/claims.yaml",
+        {
+            "allowed_evidence_classes": ["PRIMARY_TEXT"],
+            "claims": [
+                {
+                    "id": "CLM-A",
+                    "evidence_class": ["PRIMARY_TEXT"],
+                    "supporting_sources": [{}],
+                }
+            ],
+        },
+    )
+
+    assert "MISSING_CLAIM_EVIDENCE_REFERENCE" in _codes(tmp_path)
+
+
+def test_transmission_requires_from_and_to_sources(tmp_path: Path) -> None:
+    _repo(tmp_path)
+    _write_yaml(
+        tmp_path,
+        "registry/transmissions.yaml",
+        {
+            "relation_types": ["PRESERVED_BY"],
+            "edges": [
+                {
+                    "id": "TR-A",
+                    "relation": "PRESERVED_BY",
+                    "evidence": [{"source_id": "SRC-A"}],
+                }
+            ],
+        },
+    )
+
+    codes = _codes(tmp_path)
+    assert "MISSING_SOURCE_REFERENCE" in codes
+
+
+def test_transmission_evidence_requires_source_id(tmp_path: Path) -> None:
+    _repo(tmp_path)
+    _write_yaml(
+        tmp_path,
+        "registry/transmissions.yaml",
+        {
+            "relation_types": ["PRESERVED_BY"],
+            "edges": [
+                {
+                    "id": "TR-A",
+                    "from_source": "SRC-A",
+                    "to_source": "SRC-A",
+                    "relation": "PRESERVED_BY",
+                    "evidence": [{}],
+                }
+            ],
+        },
+    )
+
+    assert "MISSING_SOURCE_REFERENCE" in _codes(tmp_path)
+
+
+def test_source_access_requires_source_id(tmp_path: Path) -> None:
+    _repo(tmp_path)
+    _write_yaml(
+        tmp_path,
+        "registry/source-access.yaml",
+        {
+            "access_states": {"DIGITAL_EDITION": "digital"},
+            "records": [{"state": "DIGITAL_EDITION"}],
+        },
+    )
+
+    assert "MISSING_SOURCE_REFERENCE" in _codes(tmp_path)
+
+
+def test_concept_source_ref_mapping_requires_source_id(tmp_path: Path) -> None:
+    _repo(tmp_path)
+    _write_yaml(
+        tmp_path,
+        "registry/concepts.yaml",
+        {
+            "relation_types": [],
+            "concepts": [{"id": "CON-A", "source_refs": [{}], "relations": []}],
+        },
+    )
+
+    assert "MISSING_SOURCE_REFERENCE" in _codes(tmp_path)
+
+
+def test_manifest_dependencies_must_be_a_list(tmp_path: Path) -> None:
+    _repo(tmp_path)
+    _write_yaml(
+        tmp_path,
+        "registry/extensions/example.yaml",
+        {
+            "schema_version": "on-theo.registry-extension.v1",
+            "extension_id": "EXT-A",
+            "base_registry_head": "abc",
+            "status": "PROPOSED",
+        },
+    )
+    _write_yaml(
+        tmp_path,
+        "registry/extension-manifest.yaml",
+        {
+            "extension_schema_version": "on-theo.registry-extension.v1",
+            "extensions": [
+                {
+                    "extension_id": "EXT-A",
+                    "path": "registry/extensions/example.yaml",
+                    "declared_base": "abc",
+                    "depends_on": "EXT-OTHER",
+                    "status": "PROPOSED",
+                    "adds_entity_types": [],
+                }
+            ],
+        },
+    )
+
+    assert "INVALID_EXTENSION_DEPENDENCY_LIST" in _codes(tmp_path)
+
+
+def test_manifest_extension_path_cannot_escape_repository(tmp_path: Path) -> None:
+    _repo(tmp_path)
+    _write_yaml(
+        tmp_path,
+        "registry/extension-manifest.yaml",
+        {
+            "extensions": [
+                {
+                    "extension_id": "EXT-A",
+                    "path": "../outside.yaml",
+                    "declared_base": "abc",
+                    "depends_on": [],
+                    "status": "PROPOSED",
+                    "adds_entity_types": [],
+                }
+            ],
+        },
+    )
+
+    assert "INVALID_EXTENSION_PATH" in _codes(tmp_path)
+
