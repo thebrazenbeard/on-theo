@@ -225,6 +225,15 @@ extensions:
     status: PROPOSED_RESEARCH_DELTA_REVIEW_REQUIRED
     adds_entity_types: [scholarly_context, claim]
 
+
+  - extension_id: EXT-MARI-DUMUZI-WINTER-ENTRY-V1
+    path: registry/extensions/mari-dumuzi-winter-entry-v1.yaml
+    declared_base: b97d9db58485315e1ba6f31c89cd00f210b93e4d
+    introduced_at: 53a236575f329075f40e9d47a96629003ecb7893
+    depends_on: [EXT-MARI-DUMUZI-SOURCE-VERIFICATION-V1]
+    status: PROPOSED_RESEARCH_DELTA_REVIEW_REQUIRED
+    adds_entity_types: [source, scholarly_context, claim]
+
 materialization_state:
   canonical_materialized: false
   reason: "The extensions remain stacked draft research cuts. This manifest defines deterministic application semantics but does not itself promote or merge them."
