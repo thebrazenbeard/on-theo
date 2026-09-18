@@ -13,6 +13,13 @@ relation_types:
   - POSSIBLE_WORDPLAY
   - DERIVATION_HYPOTHESIS
   - NONE_ESTABLISHED
+  - STRUCTURAL_PARALLEL_NO_LINEAGE_ESTABLISHED
+  - POSSIBLE_DIACHRONIC_LEXICAL_RELATION
+  - MEMBER_OF_EXPLICIT_TEXTUAL
+relation_type_guards:
+  STRUCTURAL_PARALLEL_NO_LINEAGE_ESTABLISHED: "Records a structural parallel while explicitly denying that lineage has been established."
+  POSSIBLE_DIACHRONIC_LEXICAL_RELATION: "Marks a possible lexical relationship across time; it does not establish derivation or direct transmission."
+  MEMBER_OF_EXPLICIT_TEXTUAL: "Marks explicit membership/grouping asserted by the text or research record; it does not imply historical descent."
 concept_record_contract:
   required_fields:
     - id
