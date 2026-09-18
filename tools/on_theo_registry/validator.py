@@ -177,6 +177,28 @@ class _Validator:
                     relative,
                     f"manifest base {declared_base!r} does not match file base {actual_base!r}",
                 )
+            entity_key_by_type = {
+                "source": "source_additions",
+                "scholarly_context": "scholarly_context_additions",
+                "claim": "claim_additions",
+                "concept": "concept_additions",
+                "witness": "witness_additions",
+                "transmission": "transmission_additions",
+            }
+            declared_types = {
+                item for item in (entry.get("adds_entity_types", []) or []) if isinstance(item, str)
+            }
+            actual_types = {
+                entity_type
+                for entity_type, key in entity_key_by_type.items()
+                if self.records(extension, key)
+            }
+            if declared_types != actual_types:
+                self.finding(
+                    "MANIFEST_ENTITY_TYPES_MISMATCH",
+                    relative,
+                    f"manifest declares {sorted(declared_types)!r} but extension adds {sorted(actual_types)!r}",
+                )
             self.extensions.append((entry, extension, relative))
 
         extension_dir = self.root / "registry/extensions"
@@ -270,6 +292,14 @@ class _Validator:
             for claim_id in concept.get("linked_claims", []) or []:
                 if isinstance(claim_id, str) and claim_id not in self.claim_ids:
                     self.finding("UNKNOWN_CONCEPT_CLAIM", path, f"linked claim {claim_id!r} does not resolve")
+            for index, source_ref in enumerate(concept.get("source_refs", []) or []):
+                if isinstance(source_ref, str):
+                    self.validate_source_reference(source_ref, f"{path}:source_refs[{index}]")
+                elif isinstance(source_ref, dict):
+                    self.validate_source_reference(
+                        source_ref.get("source_id"),
+                        f"{path}:source_refs[{index}]",
+                    )
             for index, relation in enumerate(self.records(concept, "relations")):
                 relation_path = f"{path}:relations[{index}]"
                 relation_type = relation.get("relation")
@@ -279,6 +309,17 @@ class _Validator:
                         f"{relation_path}:relation",
                         f"relation {relation_type!r} is not declared by registry/concepts.yaml",
                     )
+                for source_index, source_ref in enumerate(relation.get("source_refs", []) or []):
+                    if isinstance(source_ref, str):
+                        self.validate_source_reference(
+                            source_ref,
+                            f"{relation_path}:source_refs[{source_index}]",
+                        )
+                    elif isinstance(source_ref, dict):
+                        self.validate_source_reference(
+                            source_ref.get("source_id"),
+                            f"{relation_path}:source_refs[{source_index}]",
+                        )
                 target = relation.get("target_concept_id")
                 if not isinstance(target, str) or not target:
                     self.finding(
