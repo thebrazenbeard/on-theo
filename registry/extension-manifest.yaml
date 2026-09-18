@@ -153,6 +153,15 @@ extensions:
     status: PROPOSED_RESEARCH_DELTA_REVIEW_REQUIRED
     adds_entity_types: [scholarly_context, claim]
 
+
+  - extension_id: EXT-SUMERIAN-DEATH-GILGAMESH-LINE-REVALIDATION-V1
+    path: registry/extensions/sumerian-death-gilgamesh-line-revalidation-v1.yaml
+    declared_base: a60d4ba8af209ddef7e6f42ecf01cade64e8a87a
+    introduced_at: bfc2ca8c57bf5ddaff9c2bd2b703a199e5bd6fd9
+    depends_on: [EXT-SUMERIAN-INANA-LINE-REVALIDATION-V1]
+    status: PROPOSED_RESEARCH_DELTA_REVIEW_REQUIRED
+    adds_entity_types: [scholarly_context, claim]
+
 materialization_state:
   canonical_materialized: false
   reason: "The extensions remain stacked draft research cuts. This manifest defines deterministic application semantics but does not itself promote or merge them."
