@@ -1,0 +1,88 @@
+schema: on-theo.registry-validator-hardening-receipt.v2
+status: VALIDATED_DRAFT_NOT_CANONICAL
+recorded_at: "2026-09-18T09:44:00-04:00"
+subject:
+  repository: thebrazenbeard/on-theo
+  pull_request: 29
+  branch: work/registry-validator-hardening-v2-20260918
+  base_head: 99be7dd0e222480e0c82ed41c3d43383a759ab90
+  head: 8234d3fcc2d5a0eda26e5c7d4c2211de067c600a
+  tree: dd1d60bc93af70d5c2af8ce202bafb5884512b73
+  draft: true
+  merged: false
+  mergeable_state: clean
+validation:
+  github_actions:
+    push_run: 35351921721
+    push_result: SUCCESS
+    pull_request_run: 35351928365
+    pull_request_result: SUCCESS
+  pytest:
+    result: PASS
+    passed: 29
+    failed: 0
+  registry_validator:
+    result: PASS
+    ok: true
+    errors: 0
+    findings: 0
+    warnings: 0
+hardening_added:
+  - orphan extension files must be manifest-listed
+  - duplicate extension paths are rejected
+  - manifest entity-type declarations must match actual extension additions
+  - claim evidence classes must use the declared vocabulary
+  - transmission relations must use the declared vocabulary
+  - concept relations must use the declared vocabulary
+  - concept relation target_concept_id is required and must resolve
+  - concept-level and relation-level source_refs must resolve
+  - source-access state vocabulary is enforced
+  - direct_access must be boolean when present
+  - source-access preserved_by references must resolve
+  - review receipt required fields are enforced
+  - witness required fields are enforced
+  - concept required fields are enforced
+  - pending witness records must resolve to registered witnesses and manifest extensions
+  - pending witness extension ownership is enforced
+  - EXTENSIONS_PENDING requires complete witness pending-index coverage
+  - extension schema version is bound to the manifest contract
+  - extension status must match the manifest entry
+defects_exposed_and_repaired:
+  undeclared_relation_vocabulary:
+    finding_count: 10
+    unique_new_relation_labels: 9
+    resolution: "Declared exact extension-used relation labels with semantic guards; no silent coercion into broader older relations."
+  concept_schema_drift:
+    records: 8
+    missing_required_fields: 32
+    affected_extensions:
+      - EXT-LATE-ANTIQUE-CONTACT-ZONE-V1
+      - EXT-QURAN-LATE-ANTIQUE-FEATURE-TESTS-V1
+      - EXT-QURANIC-SYSTEM-V1
+    resolution: "Additively normalized canonical_label, kind, forms, and semantic_guard while preserving prior label/definition/traditions."
+  concept_relation_target_drift:
+    records: 2
+    affected_extension: EXT-EGYPTIAN-VEDIC-FOUNDATION-V1
+    resolution: "Normalized target -> target_concept_id and made target IDs mandatory."
+  stale_pending_witness_index:
+    missing_records: 2
+    added:
+      - WIT-4Q37-DEUT32-8
+      - WIT-PFOUAD266B-RAHLFS848-DEUT32-8
+    owner: EXT-DEUT32-WITNESS-CONTROL-V1
+provenance_audit:
+  unique_manifest_base_or_introduction_shas: 34
+  all_shas_resolved_in_repository: true
+  extension_count: 20
+  introduced_at_path_checks: 20
+  all_introduced_at_commits_contain_claimed_extension_path: true
+  all_introduced_extension_ids_match_manifest: true
+review_boundary:
+  independent_review_complete: false
+  merge_authority: false
+  canonical_promotion: false
+  note: "Green validation proves repository/registry contract consistency, not historical truth or independent scholarly review."
+external_dependency:
+  testament:
+    relationship: EXTERNAL_CONSUMER_ONLY
+    guidance: "Pin immutable On-Theo repo+commit+path references until canonical consolidation is authorized."
