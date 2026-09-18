@@ -42,6 +42,11 @@ class _Validator:
         self.concept_ids: set[str] = set()
         self.witness_ids: set[str] = set()
         self.extensions: list[tuple[dict[str, Any], dict[str, Any], str]] = []
+        self.allowed_evidence_classes: set[str] = set()
+        self.transmission_relation_types: set[str] = set()
+        self.concept_relation_types: set[str] = set()
+        self.source_access_states: set[str] = set()
+        self.review_required_fields: tuple[str, ...] = ()
 
     def finding(self, code: str, path: str, message: str, level: str = "error") -> None:
         self.findings.append(Finding(code=code, level=level, path=path, message=message))
@@ -114,6 +119,7 @@ class _Validator:
     def load_manifest_extensions(self, manifest: dict[str, Any]) -> None:
         entries = self.records(manifest, "extensions")
         positions: dict[str, int] = {}
+        manifest_paths: dict[str, str] = {}
         for index, entry in enumerate(entries):
             extension_id = entry.get("extension_id")
             path = f"registry/extension-manifest.yaml:extensions[{index}]"
@@ -140,6 +146,15 @@ class _Validator:
             if not isinstance(relative, str) or not relative:
                 self.finding("MISSING_EXTENSION_PATH", path, "manifest extension entry requires path")
                 continue
+            previous_path_owner = manifest_paths.get(relative)
+            if previous_path_owner is not None:
+                self.finding(
+                    "DUPLICATE_EXTENSION_PATH",
+                    path,
+                    f"extension path {relative!r} is already owned by {previous_path_owner!r}",
+                )
+            else:
+                manifest_paths[relative] = extension_id
             extension = self.load(relative)
             if not extension:
                 continue
@@ -159,6 +174,17 @@ class _Validator:
                     f"manifest base {declared_base!r} does not match file base {actual_base!r}",
                 )
             self.extensions.append((entry, extension, relative))
+
+        extension_dir = self.root / "registry/extensions"
+        if extension_dir.exists():
+            for extension_path in sorted(extension_dir.glob("*.yaml")):
+                relative = extension_path.relative_to(self.root).as_posix()
+                if relative not in manifest_paths:
+                    self.finding(
+                        "ORPHAN_EXTENSION_FILE",
+                        relative,
+                        "extension file exists but is not listed in registry/extension-manifest.yaml",
+                    )
 
     def register_extension_ids(self) -> None:
         key_kinds = (
@@ -184,6 +210,17 @@ class _Validator:
 
     def validate_claims(self, claims: Iterable[tuple[dict[str, Any], str]]) -> None:
         for claim, path in claims:
+            evidence_classes = claim.get("evidence_class", []) or []
+            if isinstance(evidence_classes, str):
+                evidence_classes = [evidence_classes]
+            if self.allowed_evidence_classes:
+                for index, evidence_class in enumerate(evidence_classes):
+                    if evidence_class not in self.allowed_evidence_classes:
+                        self.finding(
+                            "INVALID_EVIDENCE_CLASS",
+                            f"{path}:evidence_class[{index}]",
+                            f"evidence class {evidence_class!r} is not declared by registry/claims.yaml",
+                        )
             for edge_key in ("supporting_sources", "opposing_sources"):
                 for index, edge in enumerate(self.records(claim, edge_key)):
                     edge_path = f"{path}:{edge_key}[{index}]"
@@ -198,6 +235,13 @@ class _Validator:
 
     def validate_transmissions(self, edges: Iterable[tuple[dict[str, Any], str]]) -> None:
         for edge, path in edges:
+            relation = edge.get("relation")
+            if self.transmission_relation_types and relation not in self.transmission_relation_types:
+                self.finding(
+                    "INVALID_TRANSMISSION_RELATION",
+                    f"{path}:relation",
+                    f"relation {relation!r} is not declared by registry/transmissions.yaml",
+                )
             self.validate_source_reference(edge.get("from_source"), f"{path}:from_source")
             self.validate_source_reference(edge.get("to_source"), f"{path}:to_source")
             for index, evidence in enumerate(self.records(edge, "evidence")):
@@ -209,15 +253,30 @@ class _Validator:
                 if isinstance(claim_id, str) and claim_id not in self.claim_ids:
                     self.finding("UNKNOWN_CONCEPT_CLAIM", path, f"linked claim {claim_id!r} does not resolve")
             for index, relation in enumerate(self.records(concept, "relations")):
+                relation_path = f"{path}:relations[{index}]"
+                relation_type = relation.get("relation")
+                if self.concept_relation_types and relation_type not in self.concept_relation_types:
+                    self.finding(
+                        "INVALID_CONCEPT_RELATION",
+                        f"{relation_path}:relation",
+                        f"relation {relation_type!r} is not declared by registry/concepts.yaml",
+                    )
                 target = relation.get("target_concept_id")
                 if isinstance(target, str) and target not in self.concept_ids:
-                    self.finding("UNKNOWN_CONCEPT_TARGET", f"{path}:relations[{index}]", f"target concept {target!r} does not resolve")
+                    self.finding("UNKNOWN_CONCEPT_TARGET", relation_path, f"target concept {target!r} does not resolve")
 
     def validate_reviews(self, reviews: dict[str, Any]) -> None:
         allowed = set(reviews.get("allowed_results", []) or [])
         provenance = set(reviews.get("execution_provenance_types", []) or [])
         for index, receipt in enumerate(self.records(reviews, "receipts")):
             path = f"registry/reviews.yaml:receipts[{index}]"
+            for field in self.review_required_fields:
+                if field not in receipt:
+                    self.finding(
+                        "MISSING_REVIEW_REQUIRED_FIELD",
+                        path,
+                        f"review receipt is missing required field {field!r}",
+                    )
             if receipt.get("result") not in allowed:
                 self.finding("INVALID_REVIEW_RESULT", path, f"result {receipt.get('result')!r} is not declared")
             if receipt.get("execution_provenance") not in provenance:
@@ -229,7 +288,24 @@ class _Validator:
 
     def validate_source_access(self, source_access: dict[str, Any]) -> None:
         for index, record in enumerate(self.records(source_access, "records")):
-            self.validate_source_reference(record.get("source_id"), f"registry/source-access.yaml:records[{index}]")
+            path = f"registry/source-access.yaml:records[{index}]"
+            self.validate_source_reference(record.get("source_id"), path)
+            state = record.get("state")
+            if self.source_access_states and state not in self.source_access_states:
+                self.finding(
+                    "INVALID_SOURCE_ACCESS_STATE",
+                    f"{path}:state",
+                    f"state {state!r} is not declared by registry/source-access.yaml",
+                )
+            direct_access = record.get("direct_access")
+            if direct_access is not None and not isinstance(direct_access, bool):
+                self.finding(
+                    "INVALID_DIRECT_ACCESS_FLAG",
+                    f"{path}:direct_access",
+                    "direct_access must be a boolean when present",
+                )
+            for preserved_source in record.get("preserved_by", []) or []:
+                self.validate_source_reference(preserved_source, f"{path}:preserved_by")
 
     def run(self) -> ValidationReport:
         sources = self.load("registry/sources.yaml")
@@ -240,6 +316,16 @@ class _Validator:
         reviews = self.load("registry/reviews.yaml")
         source_access = self.load("registry/source-access.yaml")
         manifest = self.load("registry/extension-manifest.yaml")
+
+        self.allowed_evidence_classes = set(claims.get("allowed_evidence_classes", []) or [])
+        self.transmission_relation_types = set(transmissions.get("relation_types", []) or [])
+        self.concept_relation_types = set(concepts.get("relation_types", []) or [])
+        access_states = source_access.get("access_states", {}) or {}
+        self.source_access_states = set(access_states) if isinstance(access_states, dict) else set()
+        required_review_fields = reviews.get("required_fields", []) or []
+        self.review_required_fields = tuple(
+            field for field in required_review_fields if isinstance(field, str) and field
+        )
 
         self.register_base_ids(sources, claims, concepts, transmissions, witnesses, reviews)
         self.load_manifest_extensions(manifest)
