@@ -255,3 +255,52 @@ def test_review_contract_required_fields_are_enforced(tmp_path: Path) -> None:
     )
 
     assert "MISSING_REVIEW_REQUIRED_FIELD" in _codes(tmp_path)
+
+def test_witness_required_fields_are_enforced(tmp_path: Path) -> None:
+    _repo(tmp_path)
+    _write_yaml(
+        tmp_path,
+        "registry/witnesses.yaml",
+        {
+            "required_fields": ["id", "witness_of", "witness_kind"],
+            "witnesses": [{"id": "WIT-A", "witness_of": "SRC-A"}],
+        },
+    )
+
+    assert "MISSING_WITNESS_REQUIRED_FIELD" in _codes(tmp_path)
+
+
+def test_concept_required_fields_are_enforced(tmp_path: Path) -> None:
+    _repo(tmp_path)
+    _write_yaml(
+        tmp_path,
+        "registry/concepts.yaml",
+        {
+            "relation_types": ["RELATED_BUT_NOT_EQUIVALENT"],
+            "concept_record_contract": {
+                "required_fields": ["id", "canonical_label", "kind", "forms", "semantic_guard"]
+            },
+            "concepts": [{"id": "CON-A", "relations": []}],
+        },
+    )
+
+    assert "MISSING_CONCEPT_REQUIRED_FIELD" in _codes(tmp_path)
+
+
+def test_pending_witness_must_resolve_to_manifest_extension_and_witness(tmp_path: Path) -> None:
+    _repo(tmp_path)
+    _write_yaml(
+        tmp_path,
+        "registry/witnesses.yaml",
+        {
+            "witnesses": [],
+            "pending_extension_records": [
+                {"id": "WIT-MISSING", "declared_in": "EXT-MISSING"}
+            ],
+        },
+    )
+
+    codes = _codes(tmp_path)
+    assert "UNKNOWN_PENDING_WITNESS" in codes
+    assert "UNKNOWN_PENDING_WITNESS_EXTENSION" in codes
+
