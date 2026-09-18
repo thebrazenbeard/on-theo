@@ -98,6 +98,25 @@ class _Validator:
             return []
         return [item for item in value if isinstance(item, dict)]
 
+    def validate_record_list_shape(self, data: dict[str, Any], key: str, path: str) -> None:
+        if key not in data:
+            return
+        value = data.get(key)
+        if not isinstance(value, list):
+            self.finding(
+                "INVALID_RECORD_LIST",
+                f"{path}:{key}",
+                f"{key!r} must be a list of mappings",
+            )
+            return
+        for index, item in enumerate(value):
+            if not isinstance(item, dict):
+                self.finding(
+                    "INVALID_RECORD_TYPE",
+                    f"{path}:{key}[{index}]",
+                    f"{key!r} entries must be mappings, got {type(item).__name__}",
+                )
+
     def register_base_ids(
         self,
         sources: dict[str, Any],
@@ -141,15 +160,38 @@ class _Validator:
             path = f"registry/extension-manifest.yaml:extensions[{index}]"
             if not isinstance(extension_id, str) or not extension_id:
                 continue
-            for dependency in entry.get("depends_on", []) or []:
-                if dependency not in positions:
-                    self.finding("UNKNOWN_EXTENSION_DEPENDENCY", path, f"dependency {dependency!r} is not in the manifest")
+            dependencies = entry.get("depends_on", []) or []
+            if not isinstance(dependencies, list):
+                self.finding(
+                    "INVALID_EXTENSION_DEPENDENCY_LIST",
+                    f"{path}:depends_on",
+                    "depends_on must be a list of extension IDs",
+                )
+                dependencies = []
+            for dependency_index, dependency in enumerate(dependencies):
+                dependency_path = f"{path}:depends_on[{dependency_index}]"
+                if not isinstance(dependency, str) or not dependency:
+                    self.finding(
+                        "INVALID_EXTENSION_DEPENDENCY",
+                        dependency_path,
+                        f"dependency must be a non-empty string, got {dependency!r}",
+                    )
+                elif dependency not in positions:
+                    self.finding("UNKNOWN_EXTENSION_DEPENDENCY", dependency_path, f"dependency {dependency!r} is not in the manifest")
                 elif positions[dependency] >= index:
-                    self.finding("MANIFEST_DEPENDENCY_ORDER", path, f"dependency {dependency!r} must precede {extension_id!r}")
+                    self.finding("MANIFEST_DEPENDENCY_ORDER", dependency_path, f"dependency {dependency!r} must precede {extension_id!r}")
 
             relative = entry.get("path")
             if not isinstance(relative, str) or not relative:
                 self.finding("MISSING_EXTENSION_PATH", path, "manifest extension entry requires path")
+                continue
+            relative_path = Path(relative)
+            if relative_path.is_absolute() or ".." in relative_path.parts:
+                self.finding(
+                    "INVALID_EXTENSION_PATH",
+                    f"{path}:path",
+                    f"extension path must stay inside the repository, got {relative!r}",
+                )
                 continue
             previous_path_owner = manifest_paths.get(relative)
             if previous_path_owner is not None:
@@ -163,6 +205,15 @@ class _Validator:
             extension = self.load(relative)
             if not extension:
                 continue
+            for record_key in (
+                "source_additions",
+                "scholarly_context_additions",
+                "claim_additions",
+                "concept_additions",
+                "witness_additions",
+                "transmission_additions",
+            ):
+                self.validate_record_list_shape(extension, record_key, relative)
             expected_schema = manifest.get("extension_schema_version")
             actual_schema = extension.get("schema_version")
             if isinstance(expected_schema, str) and expected_schema and actual_schema != expected_schema:
@@ -202,9 +253,24 @@ class _Validator:
                 "witness": "witness_additions",
                 "transmission": "transmission_additions",
             }
-            declared_types = {
-                item for item in (entry.get("adds_entity_types", []) or []) if isinstance(item, str)
-            }
+            declared_type_values = entry.get("adds_entity_types", []) or []
+            if not isinstance(declared_type_values, list):
+                self.finding(
+                    "INVALID_EXTENSION_ENTITY_TYPE_LIST",
+                    f"{path}:adds_entity_types",
+                    "adds_entity_types must be a list",
+                )
+                declared_type_values = []
+            declared_types: set[str] = set()
+            for type_index, item in enumerate(declared_type_values):
+                if not isinstance(item, str) or not item:
+                    self.finding(
+                        "INVALID_EXTENSION_ENTITY_TYPE",
+                        f"{path}:adds_entity_types[{type_index}]",
+                        f"entity type must be a non-empty string, got {item!r}",
+                    )
+                else:
+                    declared_types.add(item)
             actual_types = {
                 entity_type
                 for entity_type, key in entity_key_by_type.items()
@@ -253,12 +319,26 @@ class _Validator:
                     ):
                         self.witness_extension_owner[entity_id] = extension_id
 
-    def validate_source_reference(self, source_id: Any, path: str) -> None:
-        if isinstance(source_id, str) and source_id and source_id not in self.source_ids:
+    def validate_source_reference(self, source_id: Any, path: str, *, required: bool = False) -> None:
+        if source_id is None:
+            if required:
+                self.finding("MISSING_SOURCE_REFERENCE", path, "required source_id is missing")
+            return
+        if not isinstance(source_id, str) or not source_id:
+            self.finding("INVALID_SOURCE_REFERENCE", path, f"source_id must be a non-empty string, got {source_id!r}")
+            return
+        if source_id not in self.source_ids:
             self.finding("UNKNOWN_SOURCE_REFERENCE", path, f"source_id {source_id!r} does not resolve")
 
-    def validate_witness_reference(self, witness_id: Any, path: str) -> None:
-        if isinstance(witness_id, str) and witness_id and witness_id not in self.witness_ids:
+    def validate_witness_reference(self, witness_id: Any, path: str, *, required: bool = False) -> None:
+        if witness_id is None:
+            if required:
+                self.finding("MISSING_WITNESS_REFERENCE", path, "required witness_id is missing")
+            return
+        if not isinstance(witness_id, str) or not witness_id:
+            self.finding("INVALID_WITNESS_REFERENCE", path, f"witness_id must be a non-empty string, got {witness_id!r}")
+            return
+        if witness_id not in self.witness_ids:
             self.finding("UNKNOWN_WITNESS_REFERENCE", path, f"witness_id {witness_id!r} does not resolve")
 
     def validate_claims(self, claims: Iterable[tuple[dict[str, Any], str]]) -> None:
@@ -266,19 +346,41 @@ class _Validator:
             evidence_classes = claim.get("evidence_class", []) or []
             if isinstance(evidence_classes, str):
                 evidence_classes = [evidence_classes]
+            elif not isinstance(evidence_classes, list):
+                self.finding(
+                    "INVALID_EVIDENCE_CLASS_LIST",
+                    f"{path}:evidence_class",
+                    "evidence_class must be a string or list of strings",
+                )
+                evidence_classes = []
             if self.allowed_evidence_classes:
                 for index, evidence_class in enumerate(evidence_classes):
-                    if evidence_class not in self.allowed_evidence_classes:
+                    if not isinstance(evidence_class, str) or not evidence_class:
+                        self.finding(
+                            "INVALID_EVIDENCE_CLASS",
+                            f"{path}:evidence_class[{index}]",
+                            f"evidence class must be a non-empty string, got {evidence_class!r}",
+                        )
+                    elif evidence_class not in self.allowed_evidence_classes:
                         self.finding(
                             "INVALID_EVIDENCE_CLASS",
                             f"{path}:evidence_class[{index}]",
                             f"evidence class {evidence_class!r} is not declared by registry/claims.yaml",
                         )
             for edge_key in ("supporting_sources", "opposing_sources"):
+                self.validate_record_list_shape(claim, edge_key, path)
                 for index, edge in enumerate(self.records(claim, edge_key)):
                     edge_path = f"{path}:{edge_key}[{index}]"
-                    self.validate_source_reference(edge.get("source_id"), edge_path)
-                    self.validate_witness_reference(edge.get("witness_id"), edge_path)
+                    source_id = edge.get("source_id")
+                    witness_id = edge.get("witness_id")
+                    if source_id is None and witness_id is None:
+                        self.finding(
+                            "MISSING_CLAIM_EVIDENCE_REFERENCE",
+                            edge_path,
+                            "claim evidence edge requires source_id or witness_id",
+                        )
+                    self.validate_source_reference(source_id, f"{edge_path}:source_id")
+                    self.validate_witness_reference(witness_id, f"{edge_path}:witness_id")
 
     def validate_witnesses(self, witnesses: Iterable[tuple[dict[str, Any], str]]) -> None:
         for witness, path in witnesses:
@@ -302,10 +404,15 @@ class _Validator:
                     f"{path}:relation",
                     f"relation {relation!r} is not declared by registry/transmissions.yaml",
                 )
-            self.validate_source_reference(edge.get("from_source"), f"{path}:from_source")
-            self.validate_source_reference(edge.get("to_source"), f"{path}:to_source")
+            self.validate_source_reference(edge.get("from_source"), f"{path}:from_source", required=True)
+            self.validate_source_reference(edge.get("to_source"), f"{path}:to_source", required=True)
+            self.validate_record_list_shape(edge, "evidence", path)
             for index, evidence in enumerate(self.records(edge, "evidence")):
-                self.validate_source_reference(evidence.get("source_id"), f"{path}:evidence[{index}]")
+                self.validate_source_reference(
+                    evidence.get("source_id"),
+                    f"{path}:evidence[{index}]:source_id",
+                    required=True,
+                )
 
     def validate_concepts(self, concepts: Iterable[tuple[dict[str, Any], str]]) -> None:
         for concept, path in concepts:
@@ -316,17 +423,39 @@ class _Validator:
                         path,
                         f"concept record is missing required field {field!r}",
                     )
-            for claim_id in concept.get("linked_claims", []) or []:
-                if isinstance(claim_id, str) and claim_id not in self.claim_ids:
-                    self.finding("UNKNOWN_CONCEPT_CLAIM", path, f"linked claim {claim_id!r} does not resolve")
-            for index, source_ref in enumerate(concept.get("source_refs", []) or []):
+            linked_claims = concept.get("linked_claims", []) or []
+            if not isinstance(linked_claims, list):
+                self.finding(
+                    "INVALID_LINKED_CLAIMS_LIST",
+                    f"{path}:linked_claims",
+                    "linked_claims must be a list of claim IDs",
+                )
+                linked_claims = []
+            for claim_index, claim_id in enumerate(linked_claims):
+                claim_path = f"{path}:linked_claims[{claim_index}]"
+                if not isinstance(claim_id, str) or not claim_id:
+                    self.finding("INVALID_CONCEPT_CLAIM_REFERENCE", claim_path, f"claim ID must be a non-empty string, got {claim_id!r}")
+                elif claim_id not in self.claim_ids:
+                    self.finding("UNKNOWN_CONCEPT_CLAIM", claim_path, f"linked claim {claim_id!r} does not resolve")
+
+            source_refs = concept.get("source_refs", []) or []
+            if not isinstance(source_refs, list):
+                self.finding(
+                    "INVALID_SOURCE_REFS_LIST",
+                    f"{path}:source_refs",
+                    "source_refs must be a list",
+                )
+                source_refs = []
+            for index, source_ref in enumerate(source_refs):
+                source_path = f"{path}:source_refs[{index}]"
                 if isinstance(source_ref, str):
-                    self.validate_source_reference(source_ref, f"{path}:source_refs[{index}]")
+                    self.validate_source_reference(source_ref, source_path, required=True)
                 elif isinstance(source_ref, dict):
-                    self.validate_source_reference(
-                        source_ref.get("source_id"),
-                        f"{path}:source_refs[{index}]",
-                    )
+                    self.validate_source_reference(source_ref.get("source_id"), source_path, required=True)
+                else:
+                    self.finding("INVALID_SOURCE_REFERENCE_RECORD", source_path, f"source reference must be a string or mapping, got {type(source_ref).__name__}")
+
+            self.validate_record_list_shape(concept, "relations", path)
             for index, relation in enumerate(self.records(concept, "relations")):
                 relation_path = f"{path}:relations[{index}]"
                 relation_type = relation.get("relation")
@@ -336,17 +465,22 @@ class _Validator:
                         f"{relation_path}:relation",
                         f"relation {relation_type!r} is not declared by registry/concepts.yaml",
                     )
-                for source_index, source_ref in enumerate(relation.get("source_refs", []) or []):
+                relation_source_refs = relation.get("source_refs", []) or []
+                if not isinstance(relation_source_refs, list):
+                    self.finding(
+                        "INVALID_SOURCE_REFS_LIST",
+                        f"{relation_path}:source_refs",
+                        "source_refs must be a list",
+                    )
+                    relation_source_refs = []
+                for source_index, source_ref in enumerate(relation_source_refs):
+                    source_path = f"{relation_path}:source_refs[{source_index}]"
                     if isinstance(source_ref, str):
-                        self.validate_source_reference(
-                            source_ref,
-                            f"{relation_path}:source_refs[{source_index}]",
-                        )
+                        self.validate_source_reference(source_ref, source_path, required=True)
                     elif isinstance(source_ref, dict):
-                        self.validate_source_reference(
-                            source_ref.get("source_id"),
-                            f"{relation_path}:source_refs[{source_index}]",
-                        )
+                        self.validate_source_reference(source_ref.get("source_id"), source_path, required=True)
+                    else:
+                        self.finding("INVALID_SOURCE_REFERENCE_RECORD", source_path, f"source reference must be a string or mapping, got {type(source_ref).__name__}")
                 target = relation.get("target_concept_id")
                 if not isinstance(target, str) or not target:
                     self.finding(
@@ -369,6 +503,68 @@ class _Validator:
                         path,
                         f"review receipt is missing required field {field!r}",
                     )
+
+            repository = receipt.get("repository")
+            if not isinstance(repository, str) or "/" not in repository or repository.startswith("/") or repository.endswith("/"):
+                self.finding(
+                    "INVALID_REVIEW_REPOSITORY",
+                    f"{path}:repository",
+                    f"repository must be a non-empty owner/name string, got {repository!r}",
+                )
+
+            subject_sha = receipt.get("subject_sha")
+            if (
+                not isinstance(subject_sha, str)
+                or len(subject_sha) != 40
+                or any(char not in "0123456789abcdef" for char in subject_sha)
+            ):
+                self.finding(
+                    "INVALID_REVIEW_SUBJECT_SHA",
+                    f"{path}:subject_sha",
+                    f"subject_sha must be a 40-character lowercase hexadecimal commit SHA, got {subject_sha!r}",
+                )
+
+            for field in ("review_type", "reviewer_role"):
+                value = receipt.get(field)
+                if not isinstance(value, str) or not value:
+                    self.finding(
+                        "INVALID_REVIEW_TEXT_FIELD",
+                        f"{path}:{field}",
+                        f"{field} must be a non-empty string",
+                    )
+
+            reviewed_artifacts = receipt.get("reviewed_artifacts")
+            if not isinstance(reviewed_artifacts, list) or not reviewed_artifacts:
+                self.finding(
+                    "INVALID_REVIEWED_ARTIFACTS",
+                    f"{path}:reviewed_artifacts",
+                    "reviewed_artifacts must be a non-empty list of exact paths or stable IDs",
+                )
+            else:
+                for artifact_index, artifact in enumerate(reviewed_artifacts):
+                    if not isinstance(artifact, str) or not artifact:
+                        self.finding(
+                            "INVALID_REVIEWED_ARTIFACT",
+                            f"{path}:reviewed_artifacts[{artifact_index}]",
+                            f"reviewed artifact must be a non-empty string, got {artifact!r}",
+                        )
+
+            findings = receipt.get("findings")
+            if not isinstance(findings, list):
+                self.finding(
+                    "INVALID_REVIEW_FINDINGS",
+                    f"{path}:findings",
+                    "findings must be a list of mappings",
+                )
+            else:
+                for finding_index, finding in enumerate(findings):
+                    if not isinstance(finding, dict):
+                        self.finding(
+                            "INVALID_REVIEW_FINDING",
+                            f"{path}:findings[{finding_index}]",
+                            f"review finding must be a mapping, got {type(finding).__name__}",
+                        )
+
             if receipt.get("result") not in allowed:
                 self.finding("INVALID_REVIEW_RESULT", path, f"result {receipt.get('result')!r} is not declared")
             if receipt.get("execution_provenance") not in provenance:
@@ -424,7 +620,7 @@ class _Validator:
     def validate_source_access(self, source_access: dict[str, Any]) -> None:
         for index, record in enumerate(self.records(source_access, "records")):
             path = f"registry/source-access.yaml:records[{index}]"
-            self.validate_source_reference(record.get("source_id"), path)
+            self.validate_source_reference(record.get("source_id"), f"{path}:source_id", required=True)
             state = record.get("state")
             if self.source_access_states and state not in self.source_access_states:
                 self.finding(
@@ -439,8 +635,20 @@ class _Validator:
                     f"{path}:direct_access",
                     "direct_access must be a boolean when present",
                 )
-            for preserved_source in record.get("preserved_by", []) or []:
-                self.validate_source_reference(preserved_source, f"{path}:preserved_by")
+            preserved_by = record.get("preserved_by", []) or []
+            if not isinstance(preserved_by, list):
+                self.finding(
+                    "INVALID_PRESERVED_BY_LIST",
+                    f"{path}:preserved_by",
+                    "preserved_by must be a list of source IDs",
+                )
+                preserved_by = []
+            for preserved_index, preserved_source in enumerate(preserved_by):
+                self.validate_source_reference(
+                    preserved_source,
+                    f"{path}:preserved_by[{preserved_index}]",
+                    required=True,
+                )
 
     def run(self) -> ValidationReport:
         sources = self.load("registry/sources.yaml")
@@ -451,6 +659,19 @@ class _Validator:
         reviews = self.load("registry/reviews.yaml")
         source_access = self.load("registry/source-access.yaml")
         manifest = self.load("registry/extension-manifest.yaml")
+
+        for document, key, path in (
+            (sources, "sources", "registry/sources.yaml"),
+            (claims, "claims", "registry/claims.yaml"),
+            (concepts, "concepts", "registry/concepts.yaml"),
+            (transmissions, "edges", "registry/transmissions.yaml"),
+            (witnesses, "witnesses", "registry/witnesses.yaml"),
+            (witnesses, "pending_extension_records", "registry/witnesses.yaml"),
+            (reviews, "receipts", "registry/reviews.yaml"),
+            (source_access, "records", "registry/source-access.yaml"),
+            (manifest, "extensions", "registry/extension-manifest.yaml"),
+        ):
+            self.validate_record_list_shape(document, key, path)
 
         self.allowed_evidence_classes = set(claims.get("allowed_evidence_classes", []) or [])
         self.transmission_relation_types = set(transmissions.get("relation_types", []) or [])
