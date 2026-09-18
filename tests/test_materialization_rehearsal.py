@@ -3,7 +3,7 @@ from pathlib import Path
 import pytest
 import yaml
 
-from tools.on_theo_registry.materializer import MaterializationError, materialize_rehearsal
+from tools.on_theo_registry.materializer import TARGETS, MaterializationError, materialize_rehearsal
 from tools.on_theo_registry.validator import validate_repository
 
 
@@ -81,3 +81,58 @@ def test_rehearsal_refuses_nonempty_output_directory(tmp_path: Path) -> None:
 
     with pytest.raises(MaterializationError, match="must be empty"):
         materialize_rehearsal(root, output)
+
+def test_rehearsal_proves_source_registry_bytes_unchanged() -> None:
+    root = Path(__file__).resolve().parents[1]
+
+    result = materialize_rehearsal(root)
+
+    assert result.receipt["source_tree_readback_unchanged"] is True
+    assert (
+        result.receipt["source_registry_sha256_before"]
+        == result.receipt["source_registry_sha256_after"]
+    )
+
+
+def test_every_extension_record_materializes_exactly_once() -> None:
+    root = Path(__file__).resolve().parents[1]
+    result = materialize_rehearsal(root)
+
+    manifest = yaml.safe_load(
+        (root / "registry/extension-manifest.yaml").read_text(encoding="utf-8")
+    )
+
+    for entry in manifest["extensions"]:
+        extension = yaml.safe_load((root / entry["path"]).read_text(encoding="utf-8"))
+        for addition_key, (target_path, target_key) in TARGETS.items():
+            for source_record in extension.get(addition_key, []) or []:
+                matches = [
+                    candidate
+                    for candidate in result.output_documents[target_path][target_key]
+                    if candidate.get("id") == source_record.get("id")
+                ]
+                assert matches == [source_record], (
+                    entry["extension_id"],
+                    addition_key,
+                    source_record.get("id"),
+                )
+
+
+def test_materialized_counts_equal_base_plus_extension_additions() -> None:
+    root = Path(__file__).resolve().parents[1]
+    result = materialize_rehearsal(root)
+
+    expected_additions_by_target: dict[str, int] = {}
+    for addition_key, count in result.receipt["addition_counts"].items():
+        target_path, target_key = TARGETS[addition_key]
+        target = f"{target_path}:{target_key}"
+        expected_additions_by_target[target] = (
+            expected_additions_by_target.get(target, 0) + count
+        )
+
+    for target, after in result.receipt["after_counts"].items():
+        assert after == (
+            result.receipt["before_counts"][target]
+            + expected_additions_by_target.get(target, 0)
+        )
+
