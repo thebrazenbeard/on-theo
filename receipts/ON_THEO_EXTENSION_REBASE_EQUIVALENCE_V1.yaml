@@ -1,0 +1,134 @@
+schema_version: on-theo.extension-rebase-equivalence.v1
+status: PROVISIONAL_REVIEW_REQUIRED
+recorded_at: "2026-09-18T10:55:00-04:00"
+subject:
+  repository: thebrazenbeard/on-theo
+  consolidation_head: 99be7dd0e222480e0c82ed41c3d43383a759ab90
+  validator_head: 8234d3fcc2d5a0eda26e5c7d4c2211de067c600a
+  rehearsal_head: 8e651851cdc1d1d4994784a69b961d87914a32e0
+  rehearsal_tree: 0679ca2c88b237840d647d1406bb34d4214f3d8d
+manifest_rule:
+  text: "An extension may apply only when its declared base_registry_head is in the accepted ancestry or an explicit rebasing receipt proves semantic equivalence."
+ancestry_audit:
+  extension_count: 20
+  ancestor_based_extensions: 11
+  rebase_exception_required_extensions: 9
+  divergent_unique_bases: 6
+  shared_merge_base: 9cc582ecbd19857df41bea818625a4750ad33ae9
+mechanical_support:
+  consolidation:
+    receipt: receipts/ON_THEO_CONSOLIDATION_CANDIDATE_V1.yaml
+    losslessness_path_check: PASS
+    source_heads_audited: 14
+    missing_paths: 0
+    unexpected_differences: 0
+    note: "The consolidation receipt proves preservation/source attribution of the sibling research lines; it does not by itself decide semantic rebase equivalence."
+  validator:
+    exact_head: 8234d3fcc2d5a0eda26e5c7d4c2211de067c600a
+    tests_passed: 29
+    errors: 0
+    findings: 0
+    warnings: 0
+    manifest_dependency_order_enforced: true
+  rehearsal:
+    exact_head: 8e651851cdc1d1d4994784a69b961d87914a32e0
+    tests_passed: 37
+    applied_extensions: 20
+    collisions: 0
+    output_validation_errors: 0
+    every_extension_record_materialized_exactly_once: true
+    output_counts_equal_base_plus_additions: true
+    deterministic_repeat: true
+    source_registry_readback_unchanged: true
+review_question:
+  blocking_question: "Do the combined losslessness, dependency-order, zero-collision, exact-record, and final-validation proofs establish semantic rebase equivalence for these additive extensions, or must a stronger per-extension precondition proof be added before promotion-candidate construction?"
+extensions:
+  - extension_id: EXT-SIMULATION-THEORY-V1
+    declared_base: d2a319321de9b77cefaba999fa6dd2cebc4899c5
+    base_relation_to_rehearsal: DIVERGED
+    merge_base: 9cc582ecbd19857df41bea818625a4750ad33ae9
+    base_behind_by: 30
+    rehearsal_ahead_by: 45
+    consolidated_source_line: research/simulation-discriminability-v2-20260917@ff5012834a3763f4fa068cfed70365a43a13e5e4
+    current_extension_sha256: f0e3a788a190e1ef71d80334531b79696c49ddfbe6cf29d143c0e7a3f40d98ef
+    declared_dependencies: []
+  - extension_id: EXT-SIMULATION-DISCRIMINABILITY-V2
+    declared_base: a6a1f16c3c35df86565a2cc502671e3893ae3131
+    base_relation_to_rehearsal: DIVERGED
+    merge_base: 9cc582ecbd19857df41bea818625a4750ad33ae9
+    base_behind_by: 46
+    rehearsal_ahead_by: 45
+    consolidated_source_line: research/simulation-discriminability-v2-20260917@ff5012834a3763f4fa068cfed70365a43a13e5e4
+    current_extension_sha256: cc6847acc666eb312f2c9452d40ffe9708a00d5c680206c2cb1a2fc6dd49c4e9
+    declared_dependencies: [EXT-SIMULATION-THEORY-V1]
+  - extension_id: EXT-ENOCH-DANIEL-PHILO-V1
+    declared_base: 7493cdd8f9fb56f388641f3006fb6c62ac81ad00
+    base_relation_to_rehearsal: DIVERGED
+    merge_base: 9cc582ecbd19857df41bea818625a4750ad33ae9
+    base_behind_by: 6
+    rehearsal_ahead_by: 45
+    consolidated_source_line: comparative/quran-late-antique-feature-tests-v1-20260917@1b412719cb3acf68e5547bae9f859d8a54a3341c
+    current_extension_sha256: b7b1f460acc75f8c9a73b16694012f6a353f5c3e7a8b21864b0b09f22cee02fc
+    declared_dependencies: [EXT-SECOND-TEMPLE-GRECO-ROMAN-V1]
+  - extension_id: EXT-EARLY-CHRISTIAN-RABBINIC-V1
+    declared_base: f4c4b4e940a8e6c76e9603d298bab819fbcc448d
+    base_relation_to_rehearsal: DIVERGED
+    merge_base: 9cc582ecbd19857df41bea818625a4750ad33ae9
+    base_behind_by: 13
+    rehearsal_ahead_by: 45
+    consolidated_source_line: comparative/quran-late-antique-feature-tests-v1-20260917@1b412719cb3acf68e5547bae9f859d8a54a3341c
+    current_extension_sha256: f22db0b16014c6675c84ce235c53bf979472e39c5c4664ebd086f6df0a106087
+    declared_dependencies: [EXT-ENOCH-DANIEL-PHILO-V1]
+  - extension_id: EXT-LATE-ANTIQUE-CONTACT-ZONE-V1
+    declared_base: 5a45ef5cdadc1f1f3a21e769e2d613c4ed945d8d
+    base_relation_to_rehearsal: DIVERGED
+    merge_base: 9cc582ecbd19857df41bea818625a4750ad33ae9
+    base_behind_by: 18
+    rehearsal_ahead_by: 45
+    consolidated_source_line: comparative/quran-late-antique-feature-tests-v1-20260917@1b412719cb3acf68e5547bae9f859d8a54a3341c
+    current_extension_sha256: e7bd993553ee803cb5329f696a99bf1a35e14541e805d73526cdbd31bad327b7
+    declared_dependencies: [EXT-EARLY-CHRISTIAN-RABBINIC-V1]
+  - extension_id: EXT-YESHUA-HYPOTHESIS-MAP-V1
+    declared_base: 5a45ef5cdadc1f1f3a21e769e2d613c4ed945d8d
+    base_relation_to_rehearsal: DIVERGED
+    merge_base: 9cc582ecbd19857df41bea818625a4750ad33ae9
+    base_behind_by: 18
+    rehearsal_ahead_by: 45
+    consolidated_source_line: review/yeshua-hypothesis-map-v1-20260917@0e2d6a64eb4e6ad15fbfa460db924e57cf7e1868
+    current_extension_sha256: 49d775a93b8c28f20ccf5a9d8430259a8b1fbfd2bb2ae2c0d79734f3c400c014
+    declared_dependencies: [EXT-PANTHERA-PARTHENOS-WORDPLAY-V1, EXT-EARLY-CHRISTIAN-RABBINIC-V1]
+  - extension_id: EXT-QURANIC-SYSTEM-V1
+    declared_base: 22d4a193ada3b63591dcdc41c975739ceba20b54
+    base_relation_to_rehearsal: DIVERGED
+    merge_base: 9cc582ecbd19857df41bea818625a4750ad33ae9
+    base_behind_by: 24
+    rehearsal_ahead_by: 45
+    consolidated_source_line: comparative/quran-late-antique-feature-tests-v1-20260917@1b412719cb3acf68e5547bae9f859d8a54a3341c
+    current_extension_sha256: 04ce77bcca3b244bc0282b3de11aa515b38f3a2c315d8fe169e8b07b6cc99ee8
+    declared_dependencies: [EXT-LATE-ANTIQUE-CONTACT-ZONE-V1]
+  - extension_id: EXT-QURAN-LATE-ANTIQUE-FEATURE-TESTS-V1
+    declared_base: d2a319321de9b77cefaba999fa6dd2cebc4899c5
+    base_relation_to_rehearsal: DIVERGED
+    merge_base: 9cc582ecbd19857df41bea818625a4750ad33ae9
+    base_behind_by: 30
+    rehearsal_ahead_by: 45
+    consolidated_source_line: comparative/quran-late-antique-feature-tests-v1-20260917@1b412719cb3acf68e5547bae9f859d8a54a3341c
+    current_extension_sha256: e890d1fe3e9027349f34058d73674f00813e7d0088340daade12e8bb95625ba6
+    declared_dependencies: [EXT-QURANIC-SYSTEM-V1, EXT-LATE-ANTIQUE-CONTACT-ZONE-V1]
+  - extension_id: EXT-EARLY-ISLAMIC-DEVELOPMENT-V1
+    declared_base: d2a319321de9b77cefaba999fa6dd2cebc4899c5
+    base_relation_to_rehearsal: DIVERGED
+    merge_base: 9cc582ecbd19857df41bea818625a4750ad33ae9
+    base_behind_by: 30
+    rehearsal_ahead_by: 45
+    consolidated_source_line: corpus/early-islamic-development-v1-20260917@9f8e67054b306364f2cf057c19e34c5c0be57ca4
+    current_extension_sha256: 5a473f2e2cd6749045208cefda9bd44a07b439cbb36f133733d387fa3ac6953a
+    declared_dependencies: [EXT-QURANIC-SYSTEM-V1]
+effect_boundary:
+  changes_frozen_subjects: false
+  creates_promotion_candidate: false
+  merge_authority: false
+  canonical_promotion_authority: false
+acceptance:
+  state: PENDING_INDEPENDENT_REVIEW
+  note: "This packet is evidence for the rebase exception, not a self-validating approval."
