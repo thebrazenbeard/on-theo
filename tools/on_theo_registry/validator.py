@@ -47,6 +47,9 @@ class _Validator:
         self.concept_relation_types: set[str] = set()
         self.source_access_states: set[str] = set()
         self.review_required_fields: tuple[str, ...] = ()
+        self.witness_required_fields: tuple[str, ...] = ()
+        self.concept_required_fields: tuple[str, ...] = ()
+        self.extension_ids: set[str] = set()
 
     def finding(self, code: str, path: str, message: str, level: str = "error") -> None:
         self.findings.append(Finding(code=code, level=level, path=path, message=message))
@@ -130,6 +133,7 @@ class _Validator:
                 self.finding("DUPLICATE_EXTENSION_ID", path, f"extension {extension_id!r} is listed more than once")
             else:
                 positions[extension_id] = index
+                self.extension_ids.add(extension_id)
 
         for index, entry in enumerate(entries):
             extension_id = entry.get("extension_id")
@@ -229,6 +233,13 @@ class _Validator:
 
     def validate_witnesses(self, witnesses: Iterable[tuple[dict[str, Any], str]]) -> None:
         for witness, path in witnesses:
+            for field in self.witness_required_fields:
+                if field not in witness:
+                    self.finding(
+                        "MISSING_WITNESS_REQUIRED_FIELD",
+                        path,
+                        f"witness record is missing required field {field!r}",
+                    )
             source_id = witness.get("witness_of")
             if not isinstance(source_id, str) or source_id not in self.source_ids:
                 self.finding("UNKNOWN_WITNESS_SOURCE", path, f"witness_of {source_id!r} does not resolve to a source")
@@ -249,6 +260,13 @@ class _Validator:
 
     def validate_concepts(self, concepts: Iterable[tuple[dict[str, Any], str]]) -> None:
         for concept, path in concepts:
+            for field in self.concept_required_fields:
+                if field not in concept:
+                    self.finding(
+                        "MISSING_CONCEPT_REQUIRED_FIELD",
+                        path,
+                        f"concept record is missing required field {field!r}",
+                    )
             for claim_id in concept.get("linked_claims", []) or []:
                 if isinstance(claim_id, str) and claim_id not in self.claim_ids:
                     self.finding("UNKNOWN_CONCEPT_CLAIM", path, f"linked claim {claim_id!r} does not resolve")
@@ -284,6 +302,24 @@ class _Validator:
                     "INVALID_EXECUTION_PROVENANCE",
                     path,
                     f"execution_provenance {receipt.get('execution_provenance')!r} is not declared",
+                )
+
+    def validate_pending_witness_extensions(self, witnesses: dict[str, Any]) -> None:
+        for index, record in enumerate(self.records(witnesses, "pending_extension_records")):
+            path = f"registry/witnesses.yaml:pending_extension_records[{index}]"
+            witness_id = record.get("id")
+            declared_in = record.get("declared_in")
+            if not isinstance(witness_id, str) or witness_id not in self.witness_ids:
+                self.finding(
+                    "UNKNOWN_PENDING_WITNESS",
+                    path,
+                    f"pending witness {witness_id!r} does not resolve to a registered witness",
+                )
+            if not isinstance(declared_in, str) or declared_in not in self.extension_ids:
+                self.finding(
+                    "UNKNOWN_PENDING_WITNESS_EXTENSION",
+                    path,
+                    f"declared_in {declared_in!r} does not resolve to a manifest extension",
                 )
 
     def validate_source_access(self, source_access: dict[str, Any]) -> None:
@@ -325,6 +361,19 @@ class _Validator:
         required_review_fields = reviews.get("required_fields", []) or []
         self.review_required_fields = tuple(
             field for field in required_review_fields if isinstance(field, str) and field
+        )
+        required_witness_fields = witnesses.get("required_fields", []) or []
+        self.witness_required_fields = tuple(
+            field for field in required_witness_fields if isinstance(field, str) and field
+        )
+        concept_contract = concepts.get("concept_record_contract", {}) or {}
+        required_concept_fields = (
+            concept_contract.get("required_fields", [])
+            if isinstance(concept_contract, dict)
+            else []
+        ) or []
+        self.concept_required_fields = tuple(
+            field for field in required_concept_fields if isinstance(field, str) and field
         )
 
         self.register_base_ids(sources, claims, concepts, transmissions, witnesses, reviews)
@@ -371,6 +420,7 @@ class _Validator:
         self.validate_transmissions(transmission_records)
         self.validate_concepts(concept_records)
         self.validate_reviews(reviews)
+        self.validate_pending_witness_extensions(witnesses)
         self.validate_source_access(source_access)
 
         ordered = tuple(sorted(self.findings, key=lambda item: (item.level, item.code, item.path, item.message)))
