@@ -234,6 +234,15 @@ extensions:
     status: PROPOSED_RESEARCH_DELTA_REVIEW_REQUIRED
     adds_entity_types: [source, scholarly_context, claim]
 
+
+  - extension_id: EXT-DUMUZID-BAAL-LEXICAL-CONTROL-V1
+    path: registry/extensions/dumuzid-baal-lexical-control-v1.yaml
+    declared_base: 8aabf5571246ca772ef6954c2470ee9d6f33e208
+    introduced_at: dd658ec9ffba7337c953310ae1c627f6282b84ba
+    depends_on: [EXT-MARI-DUMUZI-WINTER-ENTRY-V1]
+    status: PROPOSED_RESEARCH_DELTA_REVIEW_REQUIRED
+    adds_entity_types: [scholarly_context, claim]
+
 materialization_state:
   canonical_materialized: false
   reason: "The extensions remain stacked draft research cuts. This manifest defines deterministic application semantics but does not itself promote or merge them."
