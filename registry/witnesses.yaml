@@ -1,43 +1,109 @@
 schema_version: on-theo.witness-registry.v1
 status: PROPOSED_CANONICAL_CONTRACT
-materialization_state: EXTENSIONS_PENDING
+materialization_state: REHEARSAL_MATERIALIZED_NOT_CANONICAL
 notes:
-  - "A work/source and a physical witness are distinct identities."
-  - "Witness date must never be promoted to work composition date or claimed-event date."
-  - "A witness-specific reading must never be promoted to all witnesses or to the reconstructed work without an explicit textual-critical inference."
-  - "Digital edition, apparatus, image, transcription, and autoptic readback are distinct access modes."
+- A work/source and a physical witness are distinct identities.
+- Witness date must never be promoted to work composition date or claimed-event date.
+- A witness-specific reading must never be promoted to all witnesses or to the reconstructed work without an explicit textual-critical
+  inference.
+- Digital edition, apparatus, image, transcription, and autoptic readback are distinct access modes.
 required_fields:
-  - id
-  - witness_of
-  - witness_kind
-  - witness_date
-  - access_mode
-  - locators
+- id
+- witness_of
+- witness_kind
+- witness_date
+- access_mode
+- locators
 optional_fields:
-  - common_name
-  - shelfmark
-  - provenance_note
-  - custody
-  - language
-  - limitations
-  - source_extension
+- common_name
+- shelfmark
+- provenance_note
+- custody
+- language
+- limitations
+- source_extension
 claim_edge_contract:
   required:
-    - source_id
+  - source_id
   optional:
-    - witness_id
-  invariant: "When a proposition depends on a witness-specific reading, witness_id is required."
+  - witness_id
+  invariant: When a proposition depends on a witness-specific reading, witness_id is required.
 materialization_rules:
-  - "Witness additions originate in reviewed registry extensions and become canonical only through a reviewed materialization cut."
-  - "Duplicate witness IDs are a collision and must stop materialization unless the records are byte/semantic-equivalent under an explicit supersession rule."
-  - "A later witness may preserve older wording, but age of wording is a separate inference and is not derived from witness date alone."
-witnesses: []
-pending_extension_records:
-  - id: WIT-TOSEFTA-VIENNA-COD-HEBR-20
-    declared_in: EXT-PANTHERA-RABBINIC-PARALLELS-V1
-  - id: WIT-P45-MARK-6-3
-    declared_in: EXT-MARK6-MATRONYMIC-V1
-  - id: WIT-4Q37-DEUT32-8
-    declared_in: EXT-DEUT32-WITNESS-CONTROL-V1
-  - id: WIT-PFOUAD266B-RAHLFS848-DEUT32-8
-    declared_in: EXT-DEUT32-WITNESS-CONTROL-V1
+- Witness additions originate in reviewed registry extensions and become canonical only through a reviewed materialization
+  cut.
+- Duplicate witness IDs are a collision and must stop materialization unless the records are byte/semantic-equivalent under
+  an explicit supersession rule.
+- A later witness may preserve older wording, but age of wording is a separate inference and is not derived from witness date
+  alone.
+witnesses:
+- id: WIT-TOSEFTA-VIENNA-COD-HEBR-20
+  witness_of: SRC-TOSEFTA-CHULLIN-2-6
+  witness_kind: manuscript
+  common_name: Vienna manuscript of the Tosefta
+  shelfmark: Österreichische Nationalbibliothek Cod. hebr. 20
+  witness_date:
+    start: '1300'
+    end: '1399'
+    precision: early-fourteenth-century
+  provenance_note: Cambridge History of Judaism describes the Vienna manuscript as an early-fourteenth-century Spanish witness
+    and the only nearly complete manuscript of the Tosefta.
+  access_mode: digital-edition-manuscript-layer
+  locators:
+  - passage: Tosefta Chullin 2:6; Vienna manuscript locations 226v-227r shown by Sefaria
+    url: https://www.sefaria.org/Tosefta_Chullin.2.6?lang=bi&with=manuscripts
+  limitations:
+  - V1 reads Sefaria's manuscript-aware annotation and images/metadata layer; it does not claim an independent palaeographic
+    re-dating.
+  - A medieval witness can preserve older wording, but witness date and composition/origin date remain separate clocks.
+- id: WIT-P45-MARK-6-3
+  witness_of: SRC-GOSPEL-MARK
+  witness_kind: papyrus_manuscript
+  common_name: Chester Beatty Papyrus I / P45
+  shelfmark: P45
+  witness_date:
+    start: '0200'
+    end: 0299
+    precision: broad-third-century-range
+  provenance_note: V1 relies on published textual-apparatus discussion for the fragmentary Mark 6:3 reading, not an independent
+    autoptic reconstruction.
+  access_mode: scholarly-apparatus-summary
+  locators:
+  - passage: Mark 6:3 variation unit
+    url: https://www.cambridge.org/core/journals/new-testament-studies/article/marks-mothers-and-the-matronymic-linking-the-son-of-mary-mk-63-to-the-daughter-of-herodias-mk-622/C789C196C3EE0F16BCDB5A2C726302ED
+  - passage: NET textual note on Mark 6:3
+    url: https://classic.net.bible.org/passage.php?passage=Mar+6%3A3
+  limitations:
+  - P45 is fragmentary at this locus. V1 records the published apparatus-level reconstruction only.
+  - A witness reading is not automatically the original wording of the work.
+- id: WIT-4Q37-DEUT32-8
+  witness_of: SRC-DEUTERONOMY-32
+  witness_kind: manuscript_fragment
+  common_name: 4QDeutj / 4Q37
+  shelfmark: 4Q37
+  witness_date:
+    start: null
+    end: null
+    precision: second-temple-palaeographic-range-not-fixed-in-v1
+  access_mode: scholarly-witness-report
+  locators:
+  - passage: Deuteronomy 32:8
+    url: https://www.thetorah.com/article/the-sons-of-israel-or-god-deuteronomy-32-8
+  limitations:
+  - V1 relies on Emanuel Tov's published witness comparison rather than autoptic reading of the fragment.
+- id: WIT-PFOUAD266B-RAHLFS848-DEUT32-8
+  witness_of: SRC-DEUTERONOMY-32
+  witness_kind: papyrus_manuscript
+  common_name: P. Fouad Inv. 266B / Rahlfs 848
+  shelfmark: P. Fouad Inv. 266B / Rahlfs 848
+  witness_date:
+    start: null
+    end: null
+    precision: mid-first-century-bce-scholarly-dating
+  access_mode: scholarly-witness-report
+  locators:
+  - passage: Deuteronomy 32:8
+    url: https://www.thetorah.com/article/the-sons-of-israel-or-god-deuteronomy-32-8
+  limitations:
+  - Tov identifies MS 848 as an early papyrus with the Greek 'sons of God' reading; V1 has not independently collated the
+    papyrus image.
+pending_extension_records: []

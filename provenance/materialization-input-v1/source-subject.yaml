@@ -1,0 +1,10 @@
+schema_version: on-theo.promotion-input-source.v1
+status: ARCHIVED_INPUT_NOT_CANONICAL
+repository: thebrazenbeard/on-theo
+source_subject: 093e8067bc9654fcef70f2ac13a68bc3f800fd22
+source_tree: 0c4280f1739d5eda57b421957edf38f85da89a50
+control_predecessor: d81ab5ab58f326b0827dbc0f9903befb5580947e
+extension_count: 20
+effect_boundary:
+  canonical_materialized: false
+  merged: false

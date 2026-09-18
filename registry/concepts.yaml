@@ -3,37 +3,359 @@ status: PROPOSED_CANONICAL_CONTRACT
 coverage:
   state: INITIAL_EMPTY_CONTRACT
   complete: false
-  meaning: "The registry contract exists, but V1 concept/form population is intentionally incomplete. An empty concepts list must not be interpreted as evidence that no relevant concepts or linguistic forms exist."
+  meaning: The registry contract exists, but V1 concept/form population is intentionally incomplete. An empty concepts list
+    must not be interpreted as evidence that no relevant concepts or linguistic forms exist.
 relation_types:
-  - VARIANT_FORM
-  - TRANSLATION
-  - BROADER_THAN
-  - NARROWER_THAN
-  - RELATED_BUT_NOT_EQUIVALENT
-  - POSSIBLE_WORDPLAY
-  - DERIVATION_HYPOTHESIS
-  - NONE_ESTABLISHED
-  - STRUCTURAL_PARALLEL_NO_LINEAGE_ESTABLISHED
-  - POSSIBLE_DIACHRONIC_LEXICAL_RELATION
-  - MEMBER_OF_EXPLICIT_TEXTUAL
+- VARIANT_FORM
+- TRANSLATION
+- BROADER_THAN
+- NARROWER_THAN
+- RELATED_BUT_NOT_EQUIVALENT
+- POSSIBLE_WORDPLAY
+- DERIVATION_HYPOTHESIS
+- NONE_ESTABLISHED
+- STRUCTURAL_PARALLEL_NO_LINEAGE_ESTABLISHED
+- POSSIBLE_DIACHRONIC_LEXICAL_RELATION
+- MEMBER_OF_EXPLICIT_TEXTUAL
 relation_type_guards:
-  STRUCTURAL_PARALLEL_NO_LINEAGE_ESTABLISHED: "Records a structural parallel while explicitly denying that lineage has been established."
-  POSSIBLE_DIACHRONIC_LEXICAL_RELATION: "Marks a possible lexical relationship across time; it does not establish derivation or direct transmission."
-  MEMBER_OF_EXPLICIT_TEXTUAL: "Marks explicit membership/grouping asserted by the text or research record; it does not imply historical descent."
+  STRUCTURAL_PARALLEL_NO_LINEAGE_ESTABLISHED: Records a structural parallel while explicitly denying that lineage has been
+    established.
+  POSSIBLE_DIACHRONIC_LEXICAL_RELATION: Marks a possible lexical relationship across time; it does not establish derivation
+    or direct transmission.
+  MEMBER_OF_EXPLICIT_TEXTUAL: Marks explicit membership/grouping asserted by the text or research record; it does not imply
+    historical descent.
 concept_record_contract:
   required_fields:
-    - id
-    - canonical_label
-    - kind
-    - forms
-    - semantic_guard
+  - id
+  - canonical_label
+  - kind
+  - forms
+  - semantic_guard
   optional_fields:
-    - linked_claims
-    - relations
-    - source_refs
-    - notes
-concepts: []
+  - linked_claims
+  - relations
+  - source_refs
+  - notes
+concepts:
+- id: CON-ANCESTOR-SIMULATION
+  canonical_label: ancestor simulation
+  kind: simulation-model
+  forms:
+  - ancestor-simulation
+  - historical-conscious-simulation
+  semantic_guard: Bostrom-style ancestor simulations are a subset of simulation hypotheses, not a synonym for all simulated
+    universes.
+  relations: []
+- id: CON-EXTERNAL-SIMULATION
+  canonical_label: external simulation
+  kind: metaphysical-provenance-model
+  forms:
+  - simulated-universe
+  - externally-implemented-world
+  semantic_guard: Keep external implementation distinct from ontic pancomputationalism and computational description.
+  relations: []
+- id: CON-ONTIC-PANCOMPUTATIONALISM
+  canonical_label: ontic pancomputationalism
+  kind: metaphysical-model
+  forms:
+  - digital-ontology
+  - computational-ontology
+  semantic_guard: Does not entail an external programmer, parent universe, or intentional simulator.
+  relations: []
+- id: CON-SUBSTRATE-INDEPENDENCE
+  canonical_label: substrate independence of consciousness
+  kind: philosophy-of-mind-assumption
+  forms:
+  - substrate-independence
+  semantic_guard: Treat as a contested assumption; do not infer conscious simulation from behavioral replication alone.
+  relations: []
+- id: CON-SIMULATION-REALISM
+  canonical_label: simulation realism
+  kind: metaphysical-position
+  forms:
+  - virtual-realism
+  - simulation-realism
+  semantic_guard: The claim that simulated objects can be real is distinct from the claim that our world is simulated.
+  relations: []
+- id: CON-IMPLEMENTATION-ARTIFACT
+  canonical_label: simulation implementation artifact
+  kind: empirical-signature-concept
+  forms:
+  - lattice-artifact
+  - finite-resolution-artifact
+  - rendering-artifact
+  semantic_guard: An implementation-like artifact does not establish external provenance unless alternatives are excluded.
+  relations: []
+- id: CON-NESTED-SIMULATION
+  canonical_label: nested simulation
+  kind: simulation-relation
+  forms:
+  - simulation-stack
+  - nested-world
+  semantic_guard: Nested computational possibility does not imply free/unbounded observer multiplication or an infinite physical
+    hierarchy.
+  relations: []
+- id: CON-EGYPT-MAAT
+  canonical_label: maat
+  kind: cosmic-social-ritual-order-concept
+  forms:
+  - maat
+  - ma'at
+  semantic_guard: Do not collapse into generic morality, natural law, logos, or Vedic rta.
+  relations:
+  - target_concept_id: CON-VEDIC-RTA
+    relation: STRUCTURAL_PARALLEL_NO_LINEAGE_ESTABLISHED
+- id: CON-VEDIC-RTA
+  canonical_label: rta
+  kind: cosmic-ritual-order-concept
+  forms:
+  - rta
+  - ṛta
+  semantic_guard: Do not collapse into later dharma or Egyptian maat.
+  relations:
+  - target_concept_id: CON-EGYPT-MAAT
+    relation: STRUCTURAL_PARALLEL_NO_LINEAGE_ESTABLISHED
+- id: CON-SIM-PROVENANCE-DISCRIMINABILITY
+  canonical_label: simulation provenance discriminability
+  kind: epistemic-test-concept
+  forms:
+  - provenance-discriminability
+  - simulation-detectability
+  semantic_guard: Distinguish detecting regularity or implementation artifacts from establishing external provenance.
+  relations: []
+- id: CON-EXTERNAL-INTERVENTION
+  canonical_label: external intervention in an embedded world
+  kind: causal-model
+  forms:
+  - simulator-intervention
+  - extra-system-intervention
+  semantic_guard: Compatibility with an event is not evidence that intervention occurred.
+  relations: []
+- id: CON-BUDDHIST-ANATTA
+  canonical_label: anatta / anatman
+  kind: early-buddhist-self-analysis-concept
+  forms:
+  - anatta
+  - anatman
+  - nonself
+  - not-self
+  semantic_guard: Do not equate automatically with nihilism, materialism, or an unspoken permanent self.
+  relations: []
+- id: CON-BUDDHIST-DEPENDENT-ORIGINATION
+  canonical_label: dependent origination
+  kind: conditional-causality-concept
+  forms:
+  - paticca-samuppada
+  - pratityasamutpada
+  - dependent-origination
+  semantic_guard: Do not collapse into a creator-cosmogony or one later three-lifetimes commentarial interpretation.
+  relations: []
+- id: CON-ENOCH-WATCHERS
+  canonical_label: Enochic Watchers
+  kind: supernatural-agent-class
+  forms:
+  - Watchers
+  - rebellious-watchers
+  semantic_guard: Do not equate Watchers with every later angel, demon, Satan figure, or Greek daimon.
+  linked_claims:
+  - CLM-ENOCH-WATCHERS-EVIL-ETIOLOGY
+  relations: []
+- id: CON-DANIEL-HUMANLIKE-FIGURE
+  canonical_label: Daniel 7 humanlike figure
+  kind: apocalyptic-symbolic-figure
+  forms:
+  - one-like-a-human-being
+  - son-of-man-translation-tradition
+  semantic_guard: Later messianic or christological uses do not by themselves fix the earliest referent in Daniel 7.
+  linked_claims:
+  - CLM-DANIEL-APOCALYPTIC-EMPIRE-JUDGMENT
+  relations: []
+- id: CON-PHILO-LOGOS
+  canonical_label: Philonic Logos
+  kind: philosophical-exegetical-divine-mediation-concept
+  forms:
+  - logos
+  - divine-reason
+  - intelligible-model
+  semantic_guard: Do not identify Philonic Logos with Johannine Christ-Logos, Stoic logos, Wisdom, or a separate deity without
+    proposition-level evidence.
+  linked_claims:
+  - CLM-PHILO-JEWISH-GREEK-SYNTHESIS
+  relations: []
+- id: CON-GRK-PARTHENOS
+  canonical_label: parthenos
+  kind: lexical_form
+  forms:
+  - language: Greek
+    script: Greek
+    form: παρθένος
+    transliteration: parthenos
+  - language: Greek
+    script: Greek
+    form: παρθένου
+    transliteration: parthenou
+    grammatical_note: genitive singular form relevant to expressions such as ek parthenou
+  semantic_guard: The form denotes a Greek lexical item traditionally rendered maiden/virgin depending context. This concept
+    node does not encode a claim about Mary's historical sexual status or about Jesus's conception.
+  linked_claims:
+  - CLM-PANTHERA-PARTHENOS-POLEMICAL-WORDPLAY
+- id: CON-NAME-PANTHERA-PANDERA
+  canonical_label: Panthera/Pandera name-family
+  kind: name_form_family
+  forms:
+  - language: Greek-Latin-tradition
+    form: Panthera
+  - language: Latin
+    form: Pantera
+  - language: Hebrew-Aramaic-transliteration
+    form: Pandera
+  - language: Hebrew-Aramaic-transliteration
+    form: Panteira
+  - language: Hebrew-Aramaic-transliteration
+    form: Pantiri
+  semantic_guard: Normalized transliterations are grouped only as a research name-form family. This node does not assert that
+    every form has one origin, that the forms name one historical person, or that the family derives from parthenos.
+  linked_claims:
+  - CLM-PANTHERA-PARTHENOS-POLEMICAL-WORDPLAY
+  - CLM-PANTHERA-PARTHENOS-REGULAR-ETYMOLOGY
+  relations:
+  - target_concept_id: CON-GRK-PARTHENOS
+    relation: POSSIBLE_WORDPLAY
+    confidence: unresolved
+    source_refs:
+    - SCH-BOYARIN-1998-PANTHERA-WORDPLAY
+    - SCH-BLUMELL-2007-CELSUS-JEW
+    semantic_guard: Possible deliberate polemical echo/distortion; not lexical equivalence, regular phonological derivation,
+      or proven historical transmission.
+- id: CON-CHALCEDON-TWO-NATURES
+  label: Chalcedonian two-natures formula
+  canonical_label: Chalcedonian two-natures formula
+  kind: christological-formula
+  forms:
+  - Chalcedonian two-natures formula
+  semantic_guard: Records the conciliar Christological formula; it does not by itself establish earlier Christian consensus
+    or the metaphysical truth of the formula.
+  traditions:
+  - late-antique-christianity
+  - chalcedonian
+  definition: Conciliar Christological formula confessing one Christ in two natures without confusion, change, division, or
+    separation.
+  linked_claims:
+  - CLM-CHALCEDON-TWO-NATURES-DEFINITION
+  relations: []
+- id: CON-SOUTH-ARABIAN-RAHMANAN
+  label: Rahmanan divine epithet in Late Antique South Arabia
+  canonical_label: Rahmanan divine epithet in Late Antique South Arabia
+  kind: divine-epithet-concept
+  forms:
+  - Rahmanan
+  semantic_guard: Do not equate every Rahmanan attestation with Qur'anic al-Rahman or assume one unchanged theology across
+    Jewish, monotheist, and Christian South Arabian contexts.
+  traditions:
+  - late-antique-arabia
+  definition: Divine title/name attested in South Arabian monotheist contexts whose community-specific theological referent
+    changes across Jewish/monotheist and Christian political phases.
+  linked_claims:
+  - CLM-RAHMANAN-CROSSES-MONOTHEIST-CONTEXTS
+  relations: []
+- id: CON-QURAN-DIVINE-UNIQUENESS
+  label: Qur'anic divine uniqueness and incomparability
+  canonical_label: Qur'anic divine uniqueness and incomparability
+  kind: theological-proposition-cluster
+  forms:
+  - Qur'anic divine uniqueness and incomparability
+  semantic_guard: Records a Qur'anic proposition cluster; do not collapse it into every other monotheist formulation of divine
+    unity or incomparability.
+  traditions:
+  - quranic
+  definition: Qur'anic proposition cluster presenting Allah as uniquely worthy of worship, unbegotten/unbegetting and without
+    comparable equal.
+  linked_claims:
+  - CLM-QURAN-DIVINE-UNIQUENESS
+  relations: []
+- id: CON-QURAN-JINN
+  label: Qur'anic jinn
+  canonical_label: Qur'anic jinn
+  kind: nonhuman-being-class
+  forms:
+  - jinn
+  semantic_guard: Do not collapse the Qur'anic jinn class into angels, demons, or a morally uniform category.
+  traditions:
+  - quranic
+  definition: Qur'anic class of nonhuman beings including morally/religiously diverse members capable of hearing and responding
+    to revelation.
+  linked_claims:
+  - CLM-QURAN-JINN-MORAL-DIVERSITY
+  - CLM-QURAN-IBLIS-OF-JINN
+  relations: []
+- id: CON-QURAN-IBLIS
+  label: Qur'anic Iblis
+  canonical_label: Qur'anic Iblis
+  kind: named-religious-figure
+  forms:
+  - Iblis
+  semantic_guard: Do not equate the entire jinn class with Iblis or import later demonological categories into the Qur'anic
+    concept without separate evidence.
+  traditions:
+  - quranic
+  definition: Named rebel in Qur'anic Adam-prostration narratives, explicitly identified as being of the jinn in Q 18:50.
+  linked_claims:
+  - CLM-QURAN-IBLIS-OF-JINN
+  relations:
+  - relation: MEMBER_OF_EXPLICIT_TEXTUAL
+    target_concept_id: CON-QURAN-JINN
+    confidence: high
+    guard: Do not equate the entire jinn class with Iblis or later demon categories.
+- id: CON-QURAN-PROPHETIC-REVELATION-CONTINUUM
+  label: Qur'anic prophetic revelation continuum
+  canonical_label: Qur'anic prophetic revelation continuum
+  kind: revelation-history-concept
+  forms:
+  - Qur'anic prophetic revelation continuum
+  semantic_guard: The Qur'an's placement of itself within a wider prophetic history does not by itself establish direct textual
+    dependence or uninterrupted institutional continuity.
+  traditions:
+  - quranic
+  definition: Qur'anic presentation of its revelation within a wider history of messages/scriptures associated with Abrahamic
+    and other prophetic figures.
+  linked_claims:
+  - CLM-QURAN-PROPHETIC-CONTINUUM
+  - CLM-QURAN-CONFIRMS-CRITERION-PRIOR-SCRIPTURE
+  relations: []
+- id: CON-QURAN-RESURRECTION-JUDGMENT
+  label: Qur'anic resurrection and judgment
+  canonical_label: Qur'anic resurrection and judgment
+  kind: eschatological-concept
+  forms:
+  - Qur'anic resurrection and judgment
+  semantic_guard: Do not treat this Qur'anic eschatological cluster as identical to Jewish or Christian resurrection/judgment
+    models without feature-level comparison.
+  traditions:
+  - quranic
+  definition: Qur'anic eschatological cluster involving bodily restoration/resurrection, divine judgment and reward/punishment.
+  linked_claims:
+  - CLM-QURAN-BODILY-RESURRECTION
+  relations: []
+- id: CON-QURAN-AL-RAHMAN
+  label: Qur'anic al-Rahman
+  canonical_label: Qur'anic al-Rahman
+  kind: divine-epithet-concept
+  forms:
+  - al-Rahman
+  semantic_guard: Pre-Islamic lexical availability or similarity does not establish direct lineage, a single borrowing path,
+    or identical theology.
+  traditions:
+  - quranic
+  definition: Qur'anic divine epithet/name al-Rahman, to be studied independently before lineage to pre-Islamic Rahman(an)
+    usage is assigned.
+  linked_claims:
+  - CLM-RAHMAN-PREISLAMIC-SOUTH-ARABIAN-ATTESTATION
+  relations:
+  - relation: POSSIBLE_DIACHRONIC_LEXICAL_RELATION
+    target_concept_id: CON-SOUTH-ARABIAN-RAHMANAN
+    confidence: unresolved
+    guard: Pre-Islamic South Arabian attestation establishes availability, not a single direct lineage or identical theology.
 notes:
-  - "Similarity may discover a candidate relationship but does not establish semantic identity or derivation."
-  - "Linguistic forms and theological concepts must retain source, language, period, and tradition context when populated."
-  - "Coverage state must be checked before interpreting absence of a concept record as negative evidence."
+- Similarity may discover a candidate relationship but does not establish semantic identity or derivation.
+- Linguistic forms and theological concepts must retain source, language, period, and tradition context when populated.
+- Coverage state must be checked before interpreting absence of a concept record as negative evidence.

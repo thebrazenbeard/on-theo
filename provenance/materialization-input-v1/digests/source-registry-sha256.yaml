@@ -1,0 +1,11 @@
+schema_version: on-theo.source-registry-sha256.v1
+source_subject: 093e8067bc9654fcef70f2ac13a68bc3f800fd22
+files:
+  registry/claims.yaml: 858030d4860a18eb662e351bd8eb77c1ae7bf5958039019f1b2a0badfb11fc2a
+  registry/concepts.yaml: f3f0a16b8207cae21b185c3cc6060e2864be230e7035ec1bbfbf374f3f5541b5
+  registry/extension-manifest.yaml: bf99460c7a6b37eac0cbc266f9a330988a5a4af1083ed1dbb5ac3ea1e98b82e2
+  registry/reviews.yaml: 5597f9f034beea490dfc153dfcf15c0832f8a1988619b1675df0dd1f5cf203c0
+  registry/source-access.yaml: 6c1cd24597e0af37c8fe95a27e5874fd94f61d042b8a2dac306005495eaf20d9
+  registry/sources.yaml: 9afe6263b7c46f339f8883d0c31bd1445051a8d329311b58266bb8876ddd2712
+  registry/transmissions.yaml: 5e6d97dfdaf1f5dbf411de95ff42be864e030bff35d10ca9abab55a6d4c55809
+  registry/witnesses.yaml: 135afc43238a0032a5d4cafa3e2ff96ac48d6e99b234a52e35d78db244a39f7f

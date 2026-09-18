@@ -1,0 +1,23 @@
+schema_version: on-theo.extension-sha256.v1
+count: 20
+files:
+  broad-mythos-foundation-v1.yaml: c768c19f85b095645e898a9cf14c4c4edae7330fb342166a62541c81607828f0
+  celsus-jew-source-provenance-v1.yaml: bfe7ee313f67c1074bc5b93da3cadd5345370397794a9ccef79171b42bb0d08d
+  deut32-witness-control-v1.yaml: 42965bceb04a83024bc6e08d0bf149bf985be17f6ef006193581525be689521b
+  early-buddhist-v1.yaml: c1e02b11acec566884f573bd026af717e1bf051a2701d52a17d389f7d0d7a1a9
+  early-christian-rabbinic-v1.yaml: f22db0b16014c6675c84ce235c53bf979472e39c5c4664ebd086f6df0a106087
+  early-islamic-development-v1.yaml: 5a473f2e2cd6749045208cefda9bd44a07b439cbb36f133733d387fa3ac6953a
+  egyptian-vedic-foundation-v1.yaml: 160bef127cab55dc94f39eea9966f85bd25ce78539504daafbd4229f145c3457
+  enoch-daniel-philo-v1.yaml: b7b1f460acc75f8c9a73b16694012f6a353f5c3e7a8b21864b0b09f22cee02fc
+  john8-41-porneia-v1.yaml: a6b6cc85d55ce47189ee8a6f430dfc43ead6d0228ec7ff8c42e1410ba00447e7
+  late-antique-contact-zone-v1.yaml: e7bd993553ee803cb5329f696a99bf1a35e14541e805d73526cdbd31bad327b7
+  mark6-matronymic-v1.yaml: e10b97347be7182729e01098c323dac97dd9dc9caa1599dfaf7bc651ec069412
+  panthera-parthenos-wordplay-v1.yaml: 8d2848596bbfa339d5dbe8c4934c997bc02d8a973aae3ab87c905f8d132300ae
+  panthera-rabbinic-parallels-v1.yaml: bb502efa445b45b6fad52c7659e8374ed4f4d3e6e15a8c401ad2001d579bc9f5
+  porneia-semantic-control-v1.yaml: 6176b1ba976dd3e481bf2d730ca2346bbf589842d987b7298e51f5897ab85952
+  quran-late-antique-feature-tests-v1.yaml: e890d1fe3e9027349f34058d73674f00813e7d0088340daade12e8bb95625ba6
+  quranic-system-v1.yaml: 04ce77bcca3b244bc0282b3de11aa515b38f3a2c315d8fe169e8b07b6cc99ee8
+  second-temple-greco-roman-v1.yaml: a53f61b7150bf040c1b083cc149bc46d5141a58a6c054cf97779c4f2a4b8348d
+  simulation-discriminability-v2.yaml: cc6847acc666eb312f2c9452d40ffe9708a00d5c680206c2cb1a2fc6dd49c4e9
+  simulation-theory-v1.yaml: f0e3a788a190e1ef71d80334531b79696c49ddfbe6cf29d143c0e7a3f40d98ef
+  yeshua-hypothesis-map-v1.yaml: 49d775a93b8c28f20ccf5a9d8430259a8b1fbfd2bb2ae2c0d79734f3c400c014
