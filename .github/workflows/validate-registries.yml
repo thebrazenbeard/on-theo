@@ -7,6 +7,7 @@ on:
       - 'tools/on_theo_registry/**'
       - 'scripts/validate_registry.py'
       - 'scripts/rehearse_materialization.py'
+      - 'scripts/audit_rebase_preconditions.py'
       - 'tests/test_registry_*.py'
       - 'tests/test_materialization_rehearsal.py'
       - 'docs/REGISTRY_MATERIALIZATION_REHEARSAL_V1.md'
@@ -19,6 +20,7 @@ on:
       - 'tools/on_theo_registry/**'
       - 'scripts/validate_registry.py'
       - 'scripts/rehearse_materialization.py'
+      - 'scripts/audit_rebase_preconditions.py'
       - 'tests/test_registry_*.py'
       - 'tests/test_materialization_rehearsal.py'
       - 'docs/REGISTRY_MATERIALIZATION_REHEARSAL_V1.md'
@@ -34,6 +36,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
@@ -45,3 +49,5 @@ jobs:
         run: python scripts/validate_registry.py --root . --json
       - name: Rehearse registry materialization
         run: python scripts/rehearse_materialization.py --root .
+      - name: Audit PR31 divergent extension rebase preconditions
+        run: python scripts/audit_rebase_preconditions.py --root . --subject d81ab5ab58f326b0827dbc0f9903befb5580947e
