@@ -207,6 +207,15 @@ extensions:
     status: PROPOSED_RESEARCH_DELTA_REVIEW_REQUIRED
     adds_entity_types: [scholarly_context, claim]
 
+
+  - extension_id: EXT-DUMUZID-BAAL-TRANSMISSION-V1
+    path: registry/extensions/dumuzid-baal-transmission-v1.yaml
+    declared_base: d4b1bb63a706911609fec6db9dd12711bb21a3d0
+    introduced_at: b83aea1602ce966fba8be1dc39102cfa26f82bdd
+    depends_on: [EXT-SUMERIAN-DUMUZID-SEASONAL-HYPOTHESIS-V1]
+    status: PROPOSED_RESEARCH_DELTA_REVIEW_REQUIRED
+    adds_entity_types: [source, scholarly_context, claim, transmission]
+
 materialization_state:
   canonical_materialized: false
   reason: "The extensions remain stacked draft research cuts. This manifest defines deterministic application semantics but does not itself promote or merge them."
