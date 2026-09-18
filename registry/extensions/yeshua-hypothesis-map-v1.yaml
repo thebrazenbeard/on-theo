@@ -37,7 +37,7 @@ scholarly_context_additions:
     source_roles: [SCHOLARLY_INTERPRETATION]
     source_kind: academic_monograph
     author_or_tradition: Tucker S. Ferda
-    title: Jesus and His Promised Second Coming: Jewish Eschatology and Christian Origins
+    title: "Jesus and His Promised Second Coming: Jewish Eschatology and Christian Origins"
     composition_date: {start: "2024", end: "2024", precision: publication-year}
     access_mode: publisher-table-of-contents-and-scholarly-review
     locators:
@@ -49,7 +49,7 @@ scholarly_context_additions:
     source_roles: [SCHOLARLY_INTERPRETATION]
     source_kind: academic_monograph
     author_or_tradition: Nathanael J. Andrade
-    title: Killing the Messiah: The Trial and Crucifixion of Jesus of Nazareth
+    title: "Killing the Messiah: The Trial and Crucifixion of Jesus of Nazareth"
     composition_date: {start: "2025", end: "2025", precision: publication-year}
     access_mode: publisher-chapter-abstracts
     locators:
@@ -61,7 +61,7 @@ scholarly_context_additions:
     source_roles: [SCHOLARLY_INTERPRETATION]
     source_kind: academic_monograph
     author_or_tradition: Simon J. Joseph
-    title: A Social History of Christian Origins: The Rejected Jesus
+    title: "A Social History of Christian Origins: The Rejected Jesus"
     composition_date: {start: "2023", end: "2023", precision: publication-year}
     access_mode: scholarly-review-summary
     locators:
@@ -74,7 +74,7 @@ scholarly_context_additions:
     source_kind: academic_monograph_appendix
     author_or_tradition: T. C. Schmidt
     title: "James the Brother of Jesus: Antiquities 20.200"
-    container: Josephus and Jesus: New Evidence for the One Called Christ
+    container: "Josephus and Jesus: New Evidence for the One Called Christ"
     composition_date: {start: "2025", end: "2025", precision: publication-year}
     access_mode: publisher-extract
     locators:

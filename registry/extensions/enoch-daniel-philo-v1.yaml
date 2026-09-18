@@ -80,7 +80,7 @@ scholarly_context_additions:
     source_kind: academic_monograph_chapter
     author_or_tradition: Maren R. Niehoff
     title: An Utterly Transcendent God and His Logos
-    container: Philo of Alexandria: An Intellectual Biography
+    container: "Philo of Alexandria: An Intellectual Biography"
     composition_date: {start: "2018", end: "2018", precision: publication-year}
     access_mode: publisher-abstract
     locators:

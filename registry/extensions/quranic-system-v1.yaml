@@ -40,7 +40,7 @@ scholarly_context_additions:
     source_roles: [SCHOLARLY_INTERPRETATION]
     source_kind: academic_monograph
     author_or_tradition: Angelika Neuwirth
-    title: The Qur'an and Late Antiquity: A Shared Heritage
+    title: "The Qur'an and Late Antiquity: A Shared Heritage"
     composition_date: {start: "2019", end: "2019", precision: publication-year}
     access_mode: publisher-abstracts
     locators:

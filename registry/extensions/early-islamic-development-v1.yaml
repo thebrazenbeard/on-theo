@@ -101,7 +101,7 @@ scholarly_context_additions:
     source_roles: [SCHOLARLY_INTERPRETATION]
     source_kind: academic_monograph
     author_or_tradition: Toby Matthiesen
-    title: The Caliph and the Imam: The Making of Sunnism and Shiism
+    title: "The Caliph and the Imam: The Making of Sunnism and Shiism"
     composition_date: {start: "2023", end: "2023", precision: publication-year}
     access_mode: publisher-book-and-chapter-abstracts
     locators:

@@ -75,7 +75,7 @@ scholarly_context_additions:
     source_roles: [SCHOLARLY_INTERPRETATION]
     source_kind: academic_monograph
     author_or_tradition: Martin S. Jaffee
-    title: Torah in the Mouth: Writing and Oral Tradition in Palestinian Judaism, 200 BCE-400 CE
+    title: "Torah in the Mouth: Writing and Oral Tradition in Palestinian Judaism, 200 BCE-400 CE"
     composition_date: {start: "2001", end: "2001", precision: publication-year}
     access_mode: publisher-abstracts
     locators:
@@ -85,7 +85,7 @@ scholarly_context_additions:
     source_roles: [SCHOLARLY_INTERPRETATION]
     source_kind: academic_monograph
     author_or_tradition: Hayim Lapin
-    title: Rabbis as Romans: The Rabbinic Movement in Palestine, 100-400 CE
+    title: "Rabbis as Romans: The Rabbinic Movement in Palestine, 100-400 CE"
     composition_date: {start: "2012", end: "2012", precision: publication-year}
     access_mode: publisher-abstracts
     locators:

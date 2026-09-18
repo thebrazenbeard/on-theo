@@ -8,7 +8,7 @@ scholarly_context_additions:
     source_roles: [SCHOLARLY_INTERPRETATION]
     source_kind: academic_monograph
     author_or_tradition: Holger M. Zellentin
-    title: Law Beyond Israel: From the Bible to the Qur'an
+    title: "Law Beyond Israel: From the Bible to the Qur'an"
     composition_date: {start: "2022", end: "2022", precision: publication-year}
     access_mode: publisher-book-abstract-and-chapter-abstracts
     locators:

@@ -73,7 +73,7 @@ scholarly_context_additions:
     source_roles: [SCHOLARLY_INTERPRETATION]
     source_kind: handbook_chapter
     author_or_tradition: Joel Walker
-    title: From Nisibis to Xi'an: The Church of the East in Late Antique Eurasia
+    title: "From Nisibis to Xi'an: The Church of the East in Late Antique Eurasia"
     composition_date: {start: "2012", end: "2012", precision: publication-year}
     access_mode: publisher-abstract
     locators:
@@ -93,7 +93,7 @@ scholarly_context_additions:
     source_roles: [SCHOLARLY_INTERPRETATION]
     source_kind: academic_chapter
     author_or_tradition: Christian Julien Robin
-    title: Himyar, Aksum, and Arabia Deserta in Late Antiquity: The Epigraphic Evidence
+    title: "Himyar, Aksum, and Arabia Deserta in Late Antiquity: The Epigraphic Evidence"
     composition_date: {start: "2015", end: "2015", precision: publication-year}
     access_mode: publisher-abstract
     locators:
@@ -113,7 +113,7 @@ scholarly_context_additions:
     source_roles: [SCHOLARLY_INTERPRETATION]
     source_kind: journal_article
     author_or_tradition: Sigrid K. Kjaer
-    title: Rahman before Muhammad: A pre-history of the First Peace in Islam
+    title: "Rahman before Muhammad: A pre-history of the First Peace in Islam"
     composition_date: {start: "2022", end: "2022", precision: publication-year}
     access_mode: publisher-full-text
     locators:

@@ -35,7 +35,7 @@ scholarly_context_additions:
     source_roles: [SCHOLARLY_INTERPRETATION]
     source_kind: academic_monograph
     author_or_tradition: Stephanie W. Jamison; Joel P. Brereton
-    title: The Rigveda: A Guide
+    title: "The Rigveda: A Guide"
     container: Oxford University Press
     composition_date: {start: "2020", end: "2020", precision: publication-year}
     access_mode: publisher-chapter-abstracts
@@ -49,7 +49,7 @@ scholarly_context_additions:
     source_roles: [SCHOLARLY_INTERPRETATION]
     source_kind: critical-translation-and-introduction
     author_or_tradition: Patrick Olivelle
-    title: The Early Upanisads: Annotated Text and Translation
+    title: "The Early Upanisads: Annotated Text and Translation"
     composition_date: {start: "1998", end: "1998", precision: publication-year}
     access_mode: publisher-abstract
     locators:
@@ -62,7 +62,7 @@ scholarly_context_additions:
     source_roles: [SCHOLARLY_INTERPRETATION]
     source_kind: academic-guide
     author_or_tradition: Signe Cohen
-    title: The Classical Upanisads: A Guide
+    title: "The Classical Upanisads: A Guide"
     composition_date: {start: "2024", end: "2024", precision: publication-year}
     access_mode: publisher-abstracts
     locators:
