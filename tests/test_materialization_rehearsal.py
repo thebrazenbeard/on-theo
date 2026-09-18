@@ -15,6 +15,7 @@ def test_current_repository_materialization_rehearsal_validates() -> None:
     assert result.receipt["status"] == "REHEARSAL_ONLY_NOT_CANONICAL"
     assert result.receipt["applied_extension_count"] == 20
     assert result.receipt["collision_count"] == 0
+    assert result.receipt["unresolved_reference_count"] == 0
     assert result.receipt["source_validation"]["ok"] is True
     assert result.receipt["output_validation"]["ok"] is True
     assert result.receipt["effect_boundary"]["source_tree_modified"] is False
