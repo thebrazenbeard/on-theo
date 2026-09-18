@@ -312,3 +312,116 @@ def test_manifest_extension_path_cannot_escape_repository(tmp_path: Path) -> Non
 
     assert "INVALID_EXTENSION_PATH" in _codes(tmp_path)
 
+def test_review_receipt_requires_exact_subject_sha(tmp_path: Path) -> None:
+    _repo(tmp_path)
+    _write_yaml(
+        tmp_path,
+        "registry/reviews.yaml",
+        {
+            "allowed_results": ["PASS_EXACT"],
+            "execution_provenance_types": ["INDEPENDENT_RUNTIME"],
+            "required_fields": [
+                "id",
+                "repository",
+                "subject_sha",
+                "review_type",
+                "reviewer_role",
+                "execution_provenance",
+                "result",
+                "reviewed_artifacts",
+                "findings",
+            ],
+            "receipts": [
+                {
+                    "id": "REV-A",
+                    "repository": "example/repo",
+                    "subject_sha": None,
+                    "review_type": "HOSTILE",
+                    "reviewer_role": "Masa",
+                    "execution_provenance": "INDEPENDENT_RUNTIME",
+                    "result": "PASS_EXACT",
+                    "reviewed_artifacts": ["registry/claims.yaml"],
+                    "findings": [],
+                }
+            ],
+        },
+    )
+
+    assert "INVALID_REVIEW_SUBJECT_SHA" in _codes(tmp_path)
+
+
+def test_review_receipt_requires_nonempty_reviewed_artifacts(tmp_path: Path) -> None:
+    _repo(tmp_path)
+    _write_yaml(
+        tmp_path,
+        "registry/reviews.yaml",
+        {
+            "allowed_results": ["PASS_EXACT"],
+            "execution_provenance_types": ["INDEPENDENT_RUNTIME"],
+            "required_fields": [
+                "id",
+                "repository",
+                "subject_sha",
+                "review_type",
+                "reviewer_role",
+                "execution_provenance",
+                "result",
+                "reviewed_artifacts",
+                "findings",
+            ],
+            "receipts": [
+                {
+                    "id": "REV-A",
+                    "repository": "example/repo",
+                    "subject_sha": "0" * 40,
+                    "review_type": "HOSTILE",
+                    "reviewer_role": "Masa",
+                    "execution_provenance": "INDEPENDENT_RUNTIME",
+                    "result": "PASS_EXACT",
+                    "reviewed_artifacts": [],
+                    "findings": [],
+                }
+            ],
+        },
+    )
+
+    assert "INVALID_REVIEWED_ARTIFACTS" in _codes(tmp_path)
+
+
+def test_review_findings_reject_non_mapping_entries(tmp_path: Path) -> None:
+    _repo(tmp_path)
+    _write_yaml(
+        tmp_path,
+        "registry/reviews.yaml",
+        {
+            "allowed_results": ["PASS_EXACT"],
+            "execution_provenance_types": ["INDEPENDENT_RUNTIME"],
+            "required_fields": [
+                "id",
+                "repository",
+                "subject_sha",
+                "review_type",
+                "reviewer_role",
+                "execution_provenance",
+                "result",
+                "reviewed_artifacts",
+                "findings",
+            ],
+            "receipts": [
+                {
+                    "id": "REV-A",
+                    "repository": "example/repo",
+                    "subject_sha": "0" * 40,
+                    "review_type": "HOSTILE",
+                    "reviewer_role": "Masa",
+                    "execution_provenance": "INDEPENDENT_RUNTIME",
+                    "result": "PASS_EXACT",
+                    "reviewed_artifacts": ["registry/claims.yaml"],
+                    "findings": ["MALFORMED_FINDING"],
+                }
+            ],
+        },
+    )
+
+    assert "INVALID_REVIEW_FINDING" in _codes(tmp_path)
+
