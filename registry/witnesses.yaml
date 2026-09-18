@@ -37,3 +37,7 @@ pending_extension_records:
     declared_in: EXT-PANTHERA-RABBINIC-PARALLELS-V1
   - id: WIT-P45-MARK-6-3
     declared_in: EXT-MARK6-MATRONYMIC-V1
+  - id: WIT-4Q37-DEUT32-8
+    declared_in: EXT-DEUT32-WITNESS-CONTROL-V1
+  - id: WIT-PFOUAD266B-RAHLFS848-DEUT32-8
+    declared_in: EXT-DEUT32-WITNESS-CONTROL-V1

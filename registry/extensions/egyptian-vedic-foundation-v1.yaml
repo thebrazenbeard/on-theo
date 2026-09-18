@@ -77,7 +77,7 @@ concept_additions:
     forms: [maat, ma'at]
     semantic_guard: "Do not collapse into generic morality, natural law, logos, or Vedic rta."
     relations:
-      - target: CON-VEDIC-RTA
+      - target_concept_id: CON-VEDIC-RTA
         relation: STRUCTURAL_PARALLEL_NO_LINEAGE_ESTABLISHED
 
   - id: CON-VEDIC-RTA
@@ -86,7 +86,7 @@ concept_additions:
     forms: [rta, ṛta]
     semantic_guard: "Do not collapse into later dharma or Egyptian maat."
     relations:
-      - target: CON-EGYPT-MAAT
+      - target_concept_id: CON-EGYPT-MAAT
         relation: STRUCTURAL_PARALLEL_NO_LINEAGE_ESTABLISHED
 
 claim_additions:
