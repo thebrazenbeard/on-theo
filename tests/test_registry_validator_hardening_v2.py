@@ -322,3 +322,78 @@ def test_concept_relation_requires_target_id(tmp_path: Path) -> None:
 
     assert "MISSING_CONCEPT_TARGET" in _codes(tmp_path)
 
+def test_manifest_entity_types_must_match_extension_contents(tmp_path: Path) -> None:
+    _repo(tmp_path)
+    _write_yaml(
+        tmp_path,
+        "registry/extensions/example.yaml",
+        {
+            "extension_id": "EXT-A",
+            "base_registry_head": "abc",
+            "source_additions": [{"id": "SRC-C"}],
+        },
+    )
+    _write_yaml(
+        tmp_path,
+        "registry/extension-manifest.yaml",
+        {
+            "extensions": [
+                {
+                    "extension_id": "EXT-A",
+                    "path": "registry/extensions/example.yaml",
+                    "declared_base": "abc",
+                    "depends_on": [],
+                    "adds_entity_types": ["claim"],
+                }
+            ]
+        },
+    )
+
+    assert "MANIFEST_ENTITY_TYPES_MISMATCH" in _codes(tmp_path)
+
+
+def test_concept_source_refs_must_resolve(tmp_path: Path) -> None:
+    _repo(tmp_path)
+    _write_yaml(
+        tmp_path,
+        "registry/concepts.yaml",
+        {
+            "relation_types": ["RELATED_BUT_NOT_EQUIVALENT"],
+            "concepts": [
+                {
+                    "id": "CON-A",
+                    "source_refs": ["SRC-MISSING"],
+                    "relations": [],
+                }
+            ],
+        },
+    )
+
+    assert "UNKNOWN_SOURCE_REFERENCE" in _codes(tmp_path)
+
+
+def test_concept_relation_source_refs_must_resolve(tmp_path: Path) -> None:
+    _repo(tmp_path)
+    _write_yaml(
+        tmp_path,
+        "registry/concepts.yaml",
+        {
+            "relation_types": ["RELATED_BUT_NOT_EQUIVALENT"],
+            "concepts": [
+                {
+                    "id": "CON-A",
+                    "relations": [
+                        {
+                            "relation": "RELATED_BUT_NOT_EQUIVALENT",
+                            "target_concept_id": "CON-B",
+                            "source_refs": ["SRC-MISSING"],
+                        }
+                    ],
+                },
+                {"id": "CON-B", "relations": []},
+            ],
+        },
+    )
+
+    assert "UNKNOWN_SOURCE_REFERENCE" in _codes(tmp_path)
+
