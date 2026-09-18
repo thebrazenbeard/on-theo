@@ -1,0 +1,103 @@
+schema_version: on-theo.repo-grounded-review.v1
+status: COMPLETE_SAME_RUNTIME_ROLE_REVIEWS
+recorded_at: "2026-09-18T14:45:00-04:00"
+execution_provenance:
+  type: SAME_RUNTIME_ROLE_PASS
+  independent_runtime_claim: false
+  user_route_correction: "Patrick directed that Masa, Mune, and Hephaestus be run from this chat using their durable repository-defined roles rather than waiting on their separate chats."
+roles:
+  Masa:
+    review_type: HOSTILE_ALTERNATIVES
+    pr28:
+      subject_sha: 99be7dd0e222480e0c82ed41c3d43383a759ab90
+      result: PASS_WITH_LIMITATIONS
+    pr29:
+      subject_sha: 8234d3fcc2d5a0eda26e5c7d4c2211de067c600a
+      result: CHANGES_REQUIRED
+    pr30:
+      subject_sha: 8e651851cdc1d1d4994784a69b961d87914a32e0
+      result: CHANGES_REQUIRED
+    pr31:
+      subject_sha: d81ab5ab58f326b0827dbc0f9903befb5580947e
+      result: PASS_WITH_LIMITATIONS
+  Mune:
+    review_type: CITATION_READBACK_AND_FIX_VERIFICATION
+    pr28:
+      subject_sha: 99be7dd0e222480e0c82ed41c3d43383a759ab90
+      result: PASS_WITH_LIMITATIONS
+    pr29:
+      subject_sha: 8234d3fcc2d5a0eda26e5c7d4c2211de067c600a
+      result: CHANGES_REQUIRED
+    pr30:
+      subject_sha: 8e651851cdc1d4994784a69b961d87914a32e0
+      result: CHANGES_REQUIRED
+    pr31:
+      subject_sha: d81ab5ab58f326b0827dbc0f9903befb5580947e
+      result: PASS_WITH_LIMITATIONS
+  Hephaestus:
+    review_type: ARCHITECTURE_INTEROPERABILITY
+    pr28:
+      subject_sha: 99be7dd0e222480e0c82ed41c3d43383a759ab90
+      result: PASS_WITH_LIMITATIONS
+    pr29:
+      subject_sha: 8234d3fcc2d5a0eda26e5c7d4c2211de067c600a
+      result: CHANGES_REQUIRED
+    pr30:
+      subject_sha: 8e651851cdc1d1d4994784a69b961d87914a32e0
+      result: CHANGES_REQUIRED
+    pr31:
+      subject_sha: d81ab5ab58f326b0827dbc0f9903befb5580947e
+      result: PASS_WITH_LIMITATIONS
+blocking_findings_reconciled:
+  - id: RG-1
+    finding: "Malformed non-mapping registry records could be silently filtered by V2."
+    frozen_subjects: [PR29, PR30]
+    successor: PR31
+    repair: "Generic list-shape validation plus regression tests."
+  - id: RG-2
+    finding: "Nested evidence/reference fields and required source references were not uniformly fail-closed."
+    frozen_subjects: [PR29, PR30]
+    successor: PR31
+    repair: "Nested list/reference validation and required-reference checks."
+  - id: RG-3
+    finding: "Review receipts checked field presence but not structural exact-head binding."
+    frozen_subjects: [PR29, PR30]
+    successor: PR31
+    repair: "40-hex subject SHA, repository, reviewed-artifact and findings structure validation."
+  - id: RG-4
+    finding: "PR30 successful rehearsal receipt omitted manifest-required unresolved_reference_count."
+    frozen_subjects: [PR30]
+    successor: PR31
+    repair: "Successful rehearsal receipt emits unresolved_reference_count: 0 and tests require it."
+successor_validation:
+  pull_request: 31
+  head: d81ab5ab58f326b0827dbc0f9903befb5580947e
+  tree: e6e94b7ed35551ca675fed64ce2a0999ea441628
+  push_run: 35381285810
+  pull_request_run: 35381382184
+  tests_passed: 53
+  tests_failed: 0
+  registry_validator:
+    ok: true
+    errors: 0
+    findings: 0
+    warnings: 0
+  materialization:
+    ok: true
+    output_registry_bytes_changed_from_pr30: false
+    unresolved_reference_count: 0
+successor_bound_rebase_reread:
+  audit_head: ef93955a9a902bf2d8ce4256fed9b30126c8343f
+  actions_run: 35381678450
+  tests_passed: 55
+  referential_precondition_mismatches: 0
+  cross_extension_dependency_violations: 0
+limitations:
+  - "These are repository-grounded role reviews in one controlling runtime, not independent model samples."
+  - "A syntactically valid review subject SHA still requires external repository readback before consequential admission."
+  - "Structural/provenance integrity does not establish historical truth."
+effect_boundary:
+  main_modified: false
+  merged: false
+  canonical_materialized: false
+  downstream_cutover: false
