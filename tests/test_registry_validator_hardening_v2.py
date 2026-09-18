@@ -397,3 +397,95 @@ def test_concept_relation_source_refs_must_resolve(tmp_path: Path) -> None:
 
     assert "UNKNOWN_SOURCE_REFERENCE" in _codes(tmp_path)
 
+def test_pending_witness_owner_must_match_extension(tmp_path: Path) -> None:
+    _repo(tmp_path)
+    _write_yaml(
+        tmp_path,
+        "registry/extensions/witness.yaml",
+        {
+            "extension_id": "EXT-WIT",
+            "base_registry_head": "abc",
+            "witness_additions": [
+                {
+                    "id": "WIT-A",
+                    "witness_of": "SRC-A",
+                    "witness_kind": "manuscript",
+                }
+            ],
+        },
+    )
+    _write_yaml(
+        tmp_path,
+        "registry/extension-manifest.yaml",
+        {
+            "extensions": [
+                {
+                    "extension_id": "EXT-WIT",
+                    "path": "registry/extensions/witness.yaml",
+                    "declared_base": "abc",
+                    "depends_on": [],
+                    "adds_entity_types": ["witness"],
+                }
+            ]
+        },
+    )
+    _write_yaml(
+        tmp_path,
+        "registry/witnesses.yaml",
+        {
+            "witnesses": [],
+            "pending_extension_records": [
+                {"id": "WIT-A", "declared_in": "EXT-WRONG"}
+            ],
+        },
+    )
+
+    codes = _codes(tmp_path)
+    assert "PENDING_WITNESS_OWNER_MISMATCH" in codes
+    assert "UNKNOWN_PENDING_WITNESS_EXTENSION" in codes
+
+
+def test_extensions_pending_requires_complete_witness_index(tmp_path: Path) -> None:
+    _repo(tmp_path)
+    _write_yaml(
+        tmp_path,
+        "registry/extensions/witness.yaml",
+        {
+            "extension_id": "EXT-WIT",
+            "base_registry_head": "abc",
+            "witness_additions": [
+                {
+                    "id": "WIT-A",
+                    "witness_of": "SRC-A",
+                    "witness_kind": "manuscript",
+                }
+            ],
+        },
+    )
+    _write_yaml(
+        tmp_path,
+        "registry/extension-manifest.yaml",
+        {
+            "extensions": [
+                {
+                    "extension_id": "EXT-WIT",
+                    "path": "registry/extensions/witness.yaml",
+                    "declared_base": "abc",
+                    "depends_on": [],
+                    "adds_entity_types": ["witness"],
+                }
+            ]
+        },
+    )
+    _write_yaml(
+        tmp_path,
+        "registry/witnesses.yaml",
+        {
+            "materialization_state": "EXTENSIONS_PENDING",
+            "witnesses": [],
+            "pending_extension_records": [],
+        },
+    )
+
+    assert "MISSING_PENDING_WITNESS_INDEX" in _codes(tmp_path)
+
