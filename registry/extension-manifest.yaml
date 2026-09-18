@@ -99,6 +99,15 @@ extensions:
     status: PROPOSED_RESEARCH_DELTA_REVIEW_REQUIRED
     adds_entity_types: [source, claim]
 
+
+  - extension_id: EXT-SUMERIAN-AFTERLIFE-FUNERARY-V1
+    path: registry/extensions/sumerian-afterlife-funerary-v1.yaml
+    declared_base: 7dbc47484e453f2561df1ba04b730d49181e6a39
+    introduced_at: ef473a4930b8a6d7a3cf25da522458c62a56e73c
+    depends_on: [EXT-SUMERIAN-MATERIAL-EVIDENCE-V1]
+    status: PROPOSED_RESEARCH_DELTA_REVIEW_REQUIRED
+    adds_entity_types: [source, claim]
+
 materialization_state:
   canonical_materialized: false
   reason: "The extensions remain stacked draft research cuts. This manifest defines deterministic application semantics but does not itself promote or merge them."
