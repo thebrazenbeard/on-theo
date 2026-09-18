@@ -243,6 +243,15 @@ extensions:
     status: PROPOSED_RESEARCH_DELTA_REVIEW_REQUIRED
     adds_entity_types: [scholarly_context, claim]
 
+
+  - extension_id: EXT-BAAL-DEATH-LIFE-WITNESS-CONTROL-V1
+    path: registry/extensions/baal-death-life-witness-control-v1.yaml
+    declared_base: 48ca89402a6f685614a1cfd068a278d40c1de0fb
+    introduced_at: 789e5c85c6e58cff2df3f42d65a2ecab296650cd
+    depends_on: [EXT-DUMUZID-BAAL-LEXICAL-CONTROL-V1]
+    status: PROPOSED_RESEARCH_DELTA_REVIEW_REQUIRED
+    adds_entity_types: [witness, scholarly_context, claim]
+
 materialization_state:
   canonical_materialized: false
   reason: "The extensions remain stacked draft research cuts. This manifest defines deterministic application semantics but does not itself promote or merge them."
