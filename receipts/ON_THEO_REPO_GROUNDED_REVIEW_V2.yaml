@@ -1,0 +1,84 @@
+schema_version: on-theo.repo-grounded-review.v2
+status: COMPLETE_SAME_RUNTIME_ROLE_REVIEWS
+recorded_at: "2026-09-18T14:52:00-04:00"
+execution_provenance:
+  type: SAME_RUNTIME_ROLE_PASS
+  independent_runtime_claim: false
+  route_basis: "Patrick directed that Masa, Mune, and Hephaestus be run from this chat using their durable repository-defined disciplines rather than waiting on separate reviewer chats."
+subjects:
+  consolidation:
+    pr: 28
+    head: 99be7dd0e222480e0c82ed41c3d43383a759ab90
+    dispositions:
+      Masa: PASS_WITH_LIMITATIONS
+      Mune: PASS_WITH_LIMITATIONS
+      Hephaestus: PASS_WITH_LIMITATIONS
+  validator_v2:
+    pr: 29
+    head: 8234d3fcc2d5a0eda26e5c7d4c2211de067c600a
+    dispositions:
+      Masa: CHANGES_REQUIRED
+      Mune: CHANGES_REQUIRED
+      Hephaestus: CHANGES_REQUIRED
+  rehearsal_v1:
+    pr: 30
+    head: 8e651851cdc1d1d4994784a69b961d87914a32e0
+    dispositions:
+      Masa: CHANGES_REQUIRED
+      Mune: CHANGES_REQUIRED
+      Hephaestus: CHANGES_REQUIRED
+  validator_v3_successor:
+    pr: 31
+    head: d81ab5ab58f326b0827dbc0f9903befb5580947e
+    tree: e6e94b7ed35551ca675fed64ce2a0999ea441628
+    dispositions:
+      Masa: PASS_WITH_LIMITATIONS
+      Mune: PASS_WITH_LIMITATIONS
+      Hephaestus: PASS_WITH_LIMITATIONS
+    validation:
+      push_run: 35381285810
+      pr_run: 35381382184
+      tests_passed: 53
+      validator_ok: true
+      materialization_ok: true
+      unresolved_reference_count: 0
+  transition_test_successor:
+    pr: 32
+    head: 093e8067bc9654fcef70f2ac13a68bc3f800fd22
+    tree: 0c4280f1739d5eda57b421957edf38f85da89a50
+    dispositions:
+      Masa: PASS_EXACT
+      Mune: PASS_EXACT
+      Hephaestus: PASS_EXACT
+    validation:
+      push_run: 35382166205
+      pr_run: 35382241824
+      tests_passed: 54
+      validator_ok: true
+      materialization_ok: true
+      materialized_state_replay_test: PASS
+blocking_findings_reconciled:
+  - "Frozen V2 silently filtered malformed record-list members; fixed in PR31."
+  - "Nested/required reference structures were not uniformly fail-closed; fixed in PR31."
+  - "Review receipts lacked structural exact-head validation; fixed in PR31."
+  - "Frozen PR30 receipt omitted unresolved_reference_count; fixed in PR31."
+  - "Pre-materialization tests hard-coded 20 active extensions and would fail after correct materialization; fixed in PR32."
+rebase_and_dependency_evidence:
+  pr31_bound_audit_head: ef93955a9a902bf2d8ce4256fed9b30126c8343f
+  actions_run: 35381678450
+  tests_passed: 55
+  referential_precondition_mismatches: 0
+  cross_extension_dependency_violations: 0
+candidate_gate:
+  state: SATISFIED_FOR_DRAFT_CANDIDATE_CONSTRUCTION
+  final_control_subject: 093e8067bc9654fcef70f2ac13a68bc3f800fd22
+  canonical_effect_authorized: false
+limitations:
+  - "Same-runtime role reviews are not independent model samples."
+  - "Remote commit existence remains an external readback fact even when SHA syntax is valid."
+  - "Structural/provenance integrity does not establish historical truth."
+effect_boundary:
+  main_modified: false
+  merged: false
+  canonical_materialized: false
+  downstream_cutover: false
