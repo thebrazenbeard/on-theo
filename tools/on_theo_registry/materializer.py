@@ -228,11 +228,15 @@ def _materialize_documents(root: Path) -> tuple[dict[str, dict[str, Any]], dict[
             documents[target_path].get(target_key, []) or []
         )
 
-    source_manifest_digest = _file_digest(root / "registry/extension-manifest.yaml")
+    source_registry_digests = {
+        relative: _file_digest(root / relative) for relative in BASE_REGISTRY_PATHS
+    }
+    source_manifest_digest = source_registry_digests["registry/extension-manifest.yaml"]
     receipt = {
         "schema_version": "on-theo.materialization-rehearsal-receipt.v1",
         "status": "REHEARSAL_ONLY_NOT_CANONICAL",
         "source_manifest_sha256": source_manifest_digest,
+        "source_registry_sha256_before": source_registry_digests,
         "source_base_registry_head": source_manifest.get("base_registry_head"),
         "applied_extension_count": len(applied_extensions),
         "applied_extensions": applied_extensions,
@@ -265,7 +269,18 @@ def _run_in_output(root: Path, output_dir: Path) -> MaterializationResult:
         )
         raise MaterializationError(f"rehearsal output does not validate: {rendered}")
 
+    source_registry_after = {
+        relative: _file_digest(root / relative) for relative in BASE_REGISTRY_PATHS
+    }
+    source_registry_before = receipt["source_registry_sha256_before"]
+    if source_registry_after != source_registry_before:
+        raise MaterializationError(
+            "source registry bytes changed during rehearsal; refusing to certify source-tree isolation"
+        )
+
     receipt = deepcopy(receipt)
+    receipt["source_registry_sha256_after"] = source_registry_after
+    receipt["source_tree_readback_unchanged"] = True
     receipt["output_registry_sha256"] = registry_digests
     receipt["output_validation"] = {
         "ok": True,
