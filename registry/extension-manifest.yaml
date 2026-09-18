@@ -216,6 +216,15 @@ extensions:
     status: PROPOSED_RESEARCH_DELTA_REVIEW_REQUIRED
     adds_entity_types: [source, scholarly_context, claim, transmission]
 
+
+  - extension_id: EXT-MARI-DUMUZI-SOURCE-VERIFICATION-V1
+    path: registry/extensions/mari-dumuzi-source-verification-v1.yaml
+    declared_base: 0c217af3dc4ddad5f9c0738f8306080defb0e1c4
+    introduced_at: 577fadff6d72936e39f4fb218b4d30d6390f38f9
+    depends_on: [EXT-DUMUZID-BAAL-TRANSMISSION-V1]
+    status: PROPOSED_RESEARCH_DELTA_REVIEW_REQUIRED
+    adds_entity_types: [scholarly_context, claim]
+
 materialization_state:
   canonical_materialized: false
   reason: "The extensions remain stacked draft research cuts. This manifest defines deterministic application semantics but does not itself promote or merge them."
