@@ -1,0 +1,76 @@
+schema_version: on-theo.byte-bound-promotion-candidate.v1
+status: DRAFT_CANDIDATE_NOT_CANONICAL
+recorded_at: "2026-09-18T14:53:00-04:00"
+repository: thebrazenbeard/on-theo
+candidate:
+  branch: candidate/byte-bound-promotion-v1-20260918
+  source_control_pr: 32
+  source_control_head: 093e8067bc9654fcef70f2ac13a68bc3f800fd22
+  source_control_tree: 0c4280f1739d5eda57b421957edf38f85da89a50
+  validator_predecessor_pr: 31
+  validator_predecessor_head: d81ab5ab58f326b0827dbc0f9903befb5580947e
+  payload_commit: eff433644816baadeccfac6111439596c994830b
+  payload_tree: 5181441da72ef7a82256e90e9062e9e133eb539f
+  receipt_scope: PAYLOAD_COMMIT
+  note: "This receipt is added after the payload commit; final receipt-bearing head is sealed by external audit readback to avoid self-referential commit identity."
+review_gate:
+  audit_commit: f202d98c20c2b5c31807252b516cec25e652665b
+  execution_provenance: SAME_RUNTIME_ROLE_PASS
+  independent_runtime_claim: false
+  pr32_dispositions:
+    Masa: PASS_EXACT
+    Mune: PASS_EXACT
+    Hephaestus: PASS_EXACT
+build:
+  invocation_commit: 00ffb1643f3f54992ebe1272dc7de5e9f6b0558e
+  workflow_run: 35382488713
+  result: SUCCESS
+  cas_frontier_verified: true
+  source_parent_verified: true
+  exact_output_digest_gate: PASS
+  archive_byte_equality: PASS
+  post_materialization_validator:
+    ok: true
+    errors: 0
+    findings: 0
+    warnings: 0
+  post_materialization_tests:
+    passed: 54
+    failed: 0
+archive:
+  root: provenance/materialization-input-v1/
+  plan: provenance/materialization-input-v1/input-archive-plan-v2.yaml
+  source_manifest_git_blob: df200dcfc7e30c3cc7fca6742dd4c1c867823f41
+  source_manifest_sha256: bf99460c7a6b37eac0cbc266f9a330988a5a4af1083ed1dbb5ac3ea1e98b82e2
+  extension_count: 20
+  active_extension_files_remaining: 0
+  all_extension_source_blobs_preserved: true
+  all_extension_sha256_values_preserved: true
+materialized_output:
+  applied_extensions: 20
+  collision_count: 0
+  unresolved_reference_count: 0
+  counts:
+    sources: 131
+    claims: 129
+    concepts: 26
+    transmission_edges: 23
+    witnesses: 4
+  sha256:
+    registry/claims.yaml: 89c4422a2e7d03ecc2997fc6a0be5c24f80cbe4fa338a62afbf24ec815bb99b6
+    registry/concepts.yaml: a8a7354ccd1bbf0aae0ee0f6fdda8545098027297bbde004c57ee8a895f44b97
+    registry/extension-manifest.yaml: 6f5c21bdd3c32446194ae7ca9b2d7e7b25dc130967006cba11bd6f2d6c9f3bd9
+    registry/reviews.yaml: 0f7ed711f8d089a778526bf5a042e708f10cd05de39edbebfc3bb096f3cc1a72
+    registry/source-access.yaml: 6c97263769c615ac5863ed879da857f58ebfda2031c799d50ef683623efc0d5a
+    registry/sources.yaml: b5e54df4eb984c0f30865be08d33dd7bc711bacba3f6596cef2e370e30cf1d56
+    registry/transmissions.yaml: 423f746b65e93fb5efa54ad17490fdbbe8f3f84bec094d9dead55954a8ad770d
+    registry/witnesses.yaml: 7e22b5b0c46065eeb12108ee14e3c34a818f4d45062f9a99ad4e3b7f6b42e49a
+effect_boundary:
+  main_modified: false
+  merged: false
+  canonical_materialized: false
+  manifest_canonical_materialized: false
+  downstream_cutover: false
+  predecessor_history_deleted: false
+  merge_authority: false
+  canonical_promotion_authority: false
