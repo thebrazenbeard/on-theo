@@ -189,6 +189,15 @@ extensions:
     status: PROPOSED_RESEARCH_DELTA_REVIEW_REQUIRED
     adds_entity_types: [source, scholarly_context, claim]
 
+
+  - extension_id: EXT-SUMERIAN-DUMUZID-SUBSTITUTION-V1
+    path: registry/extensions/sumerian-dumuzid-substitution-v1.yaml
+    declared_base: 1e8597bce25f5ce883833dfbd17a7ea71fca9a8a
+    introduced_at: f059788f3e498ae6dca9427c7ee2e90484304bbc
+    depends_on: [EXT-SUMERIAN-DUMUZID-DEATH-LAMENT-V1]
+    status: PROPOSED_RESEARCH_DELTA_REVIEW_REQUIRED
+    adds_entity_types: [source, scholarly_context, claim]
+
 materialization_state:
   canonical_materialized: false
   reason: "The extensions remain stacked draft research cuts. This manifest defines deterministic application semantics but does not itself promote or merge them."
