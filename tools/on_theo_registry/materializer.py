@@ -244,6 +244,7 @@ def _materialize_documents(root: Path) -> tuple[dict[str, dict[str, Any]], dict[
         "before_counts": before_counts,
         "after_counts": after_counts,
         "collision_count": 0,
+        "unresolved_reference_count": 0,
         "source_validation": {
             "ok": True,
             "errors": 0,
