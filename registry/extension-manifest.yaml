@@ -126,6 +126,15 @@ extensions:
     status: PROPOSED_RESEARCH_DELTA_REVIEW_REQUIRED
     adds_entity_types: [source, claim]
 
+
+  - extension_id: EXT-SUMERIAN-DEATH-CORPUS-EDITION-CURRENTNESS-V1
+    path: registry/extensions/sumerian-death-corpus-edition-currentness-v1.yaml
+    declared_base: 6a049eb026a8959c860c17430e666f496adea369
+    introduced_at: 229860cc9ab2a92b4c9eb532cecb8ba1a7cebe5f
+    depends_on: [EXT-SUMERIAN-DEATH-CORPUS-COMPOSITION-LEXICON-V1]
+    status: PROPOSED_RESEARCH_DELTA_REVIEW_REQUIRED
+    adds_entity_types: [scholarly_context, claim]
+
 materialization_state:
   canonical_materialized: false
   reason: "The extensions remain stacked draft research cuts. This manifest defines deterministic application semantics but does not itself promote or merge them."
