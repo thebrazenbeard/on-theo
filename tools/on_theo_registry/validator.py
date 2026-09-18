@@ -98,6 +98,25 @@ class _Validator:
             return []
         return [item for item in value if isinstance(item, dict)]
 
+    def validate_record_list_shape(self, data: dict[str, Any], key: str, path: str) -> None:
+        if key not in data:
+            return
+        value = data.get(key)
+        if not isinstance(value, list):
+            self.finding(
+                "INVALID_RECORD_LIST",
+                f"{path}:{key}",
+                f"{key!r} must be a list of mappings",
+            )
+            return
+        for index, item in enumerate(value):
+            if not isinstance(item, dict):
+                self.finding(
+                    "INVALID_RECORD_TYPE",
+                    f"{path}:{key}[{index}]",
+                    f"{key!r} entries must be mappings, got {type(item).__name__}",
+                )
+
     def register_base_ids(
         self,
         sources: dict[str, Any],
@@ -163,6 +182,15 @@ class _Validator:
             extension = self.load(relative)
             if not extension:
                 continue
+            for record_key in (
+                "source_additions",
+                "scholarly_context_additions",
+                "claim_additions",
+                "concept_additions",
+                "witness_additions",
+                "transmission_additions",
+            ):
+                self.validate_record_list_shape(extension, record_key, relative)
             expected_schema = manifest.get("extension_schema_version")
             actual_schema = extension.get("schema_version")
             if isinstance(expected_schema, str) and expected_schema and actual_schema != expected_schema:
@@ -451,6 +479,19 @@ class _Validator:
         reviews = self.load("registry/reviews.yaml")
         source_access = self.load("registry/source-access.yaml")
         manifest = self.load("registry/extension-manifest.yaml")
+
+        for document, key, path in (
+            (sources, "sources", "registry/sources.yaml"),
+            (claims, "claims", "registry/claims.yaml"),
+            (concepts, "concepts", "registry/concepts.yaml"),
+            (transmissions, "edges", "registry/transmissions.yaml"),
+            (witnesses, "witnesses", "registry/witnesses.yaml"),
+            (witnesses, "pending_extension_records", "registry/witnesses.yaml"),
+            (reviews, "receipts", "registry/reviews.yaml"),
+            (source_access, "records", "registry/source-access.yaml"),
+            (manifest, "extensions", "registry/extension-manifest.yaml"),
+        ):
+            self.validate_record_list_shape(document, key, path)
 
         self.allowed_evidence_classes = set(claims.get("allowed_evidence_classes", []) or [])
         self.transmission_relation_types = set(transmissions.get("relation_types", []) or [])
