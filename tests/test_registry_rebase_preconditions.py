@@ -3,7 +3,7 @@ from pathlib import Path
 from tools.on_theo_registry.rebase_preconditions import audit_rebase_preconditions
 
 
-SUBJECT = "8e651851cdc1d1d4994784a69b961d87914a32e0"
+SUBJECT = "d81ab5ab58f326b0827dbc0f9903befb5580947e"
 
 
 def test_divergent_extension_referential_preconditions_are_equivalent() -> None:
