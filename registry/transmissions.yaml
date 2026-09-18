@@ -8,6 +8,19 @@ relation_types:
   - STRUCTURAL_PARALLEL
   - PROJECT_ANALOGY
   - NONE_ESTABLISHED
+  - SHARED_INHERITANCE_NOT_DIRECT_TEXTUAL_DEPENDENCE
+  - RECEPTION_AND_INSTITUTIONAL_DEVELOPMENT_CONTEXT
+  - RECEPTION_INTERPRETATION
+  - SHARED_LITERARY_TRADITION
+  - STRUCTURAL_AND_HISTORICAL_PARALLEL
+  - LEXICAL_CONTACT_ENVIRONMENT
+relation_type_guards:
+  SHARED_INHERITANCE_NOT_DIRECT_TEXTUAL_DEPENDENCE: "Shared inherited material or tradition without a claim of direct textual dependence."
+  RECEPTION_AND_INSTITUTIONAL_DEVELOPMENT_CONTEXT: "Later reception and institutional development context; not a direct source-dependence claim."
+  RECEPTION_INTERPRETATION: "A later interpretive reception relation."
+  SHARED_LITERARY_TRADITION: "Participation in a shared literary tradition; not automatically direct dependence."
+  STRUCTURAL_AND_HISTORICAL_PARALLEL: "A structural parallel situated in historical contact/context; lineage still requires independent evidence."
+  LEXICAL_CONTACT_ENVIRONMENT: "A contact environment relevant to lexical comparison; does not itself prove borrowing or derivation."
 edges:
   - id: TR-CELSUS-PRESERVED-BY-ORIGEN
     from_source: SRC-CELSUS-TRUE-DOCTRINE
