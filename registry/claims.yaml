@@ -1,143 +1,2714 @@
 schema_version: on-theo.claim-registry.v1
 allowed_evidence_classes:
+- PRIMARY_TEXT
+- MATERIAL_EVIDENCE
+- HISTORICAL_RECONSTRUCTION
+- LATER_TRADITION
+- SCHOLARLY_INTERPRETATION
+- PROJECT_INFERENCE
+- SPECULATIVE_MODEL
+- UNKNOWN
+claims:
+- id: CLM-CELSUS-VIRGIN-BIRTH-COUNTERCLAIM
+  proposition: In Contra Celsum I.28, Origen represents Celsus's Jewish speaker as accusing Jesus of inventing a virgin-birth
+    account and describes an adulterous/illegitimate-birth counter-story.
+  claim_type: TEXTUAL_OCCURRENCE
+  evidence_class:
   - PRIMARY_TEXT
+  traditions:
+  - greco-roman
+  - christianity
+  - jewish-countertradition
+  supporting_sources:
+  - source_id: SRC-ORIGEN-CONTRA-CELSUM
+    locator: Book I, chapter 28
+    relation: DIRECT_TEXTUAL_SUPPORT
+    access_mode: ORIGEN_REPORTING_CELSUS
+  opposing_sources: []
+  confidence: high
+  contested: false
+  notes:
+  - High confidence applies to what Origen's extant text reports, not to the biological truth of Celsus's accusation.
+- id: CLM-CELSUS-PANTHERA-NAMED
+  proposition: In Contra Celsum I.32, Origen reports that Celsus's Jewish speaker said Mary bore a child to a soldier named
+    Panthera.
+  claim_type: TEXTUAL_OCCURRENCE
+  evidence_class:
+  - PRIMARY_TEXT
+  traditions:
+  - greco-roman
+  - christianity
+  - jewish-countertradition
+  supporting_sources:
+  - source_id: SRC-ORIGEN-CONTRA-CELSUM
+    locator: Book I, chapter 32
+    relation: DIRECT_TEXTUAL_SUPPORT
+    access_mode: ORIGEN_REPORTING_CELSUS
+  - source_id: SRC-ORIGEN-CONTRA-CELSUM
+    locator: Book I, chapter 69
+    relation: CORROBORATING_REPETITION_WITHIN_SAME_WORK
+    access_mode: ORIGEN_REPORTING_CELSUS
+  opposing_sources: []
+  confidence: high
+  contested: false
+  notes:
+  - These are not independent witnesses; both locators are in Origen's same work.
+- id: CLM-ORIGEN-REJECTS-PANTHERA-COUNTERSTORY
+  proposition: Origen rejects the Panthera/adultery counter-story as fabricated while preserving it in his rebuttal.
+  claim_type: TEXTUAL_OCCURRENCE
+  evidence_class:
+  - PRIMARY_TEXT
+  traditions:
+  - christianity
+  supporting_sources:
+  - source_id: SRC-ORIGEN-CONTRA-CELSUM
+    locator: Book I, chapter 32
+    relation: DIRECT_TEXTUAL_SUPPORT
+    access_mode: ORIGEN_OWN_ARGUMENT
+  opposing_sources: []
+  confidence: high
+  contested: false
+- id: CLM-PANTERA-NAME-ATTESTED
+  proposition: A first-century funerary inscription attests a Roman soldier named Tiberius Julius Abdes Pantera.
+  claim_type: MATERIAL_ATTESTATION
+  evidence_class:
   - MATERIAL_EVIDENCE
-  - HISTORICAL_RECONSTRUCTION
+  traditions:
+  - greco-roman
+  supporting_sources:
+  - source_id: MAT-ABDES-PANTERA-INSCRIPTION
+    locator: CIL XIII 7514 / §400
+    relation: DIRECT_MATERIAL_ATTESTATION
+    access_mode: TRANSCRIPTION_OF_ARTIFACT
+  opposing_sources: []
+  confidence: high
+  contested: false
+- id: CLM-ABDES-PANTERA-WAS-YESHUA-FATHER
+  proposition: Tiberius Julius Abdes Pantera was the biological father of Yeshua/Jesus.
+  claim_type: HISTORICAL_IDENTITY
+  evidence_class:
+  - UNKNOWN
+  traditions:
+  - comparative
+  supporting_sources: []
+  opposing_sources:
+  - source_id: MAT-ABDES-PANTERA-INSCRIPTION
+    locator: CIL XIII 7514 / §400
+    relation: DOES_NOT_ESTABLISH_IDENTITY_LINK
+    access_mode: MATERIAL_CONTEXT_ONLY
+  confidence: unresolved
+  contested: true
+  alternatives:
+  - The inscription and Celsus's Panthera name are unrelated except for name attestation.
+  - The polemical Panthera name derives from a different person, wordplay, or tradition.
+  notes:
+  - Name existence is not paternity evidence.
+- id: CLM-BAVLI-BEN-STADA-PANDEIRA-MIRIAM
+  proposition: Shabbat 104b contains a ben Stada/ben Pandeira discussion and identifies the mother in that discussion as Miriam,
+    while the displayed passage itself does not name Jesus.
+  claim_type: TEXTUAL_OCCURRENCE
+  evidence_class:
+  - PRIMARY_TEXT
+  - LATER_TRADITION
+  traditions:
+  - rabbinic-judaism
+  supporting_sources:
+  - source_id: SRC-BAVLI-SHABBAT-104B
+    locator: Shabbat 104b:5
+    relation: DIRECT_TEXTUAL_SUPPORT
+    access_mode: DIGITAL_TEXT_EDITION
+  opposing_sources: []
+  confidence: high
+  contested: false
+- id: CLM-BAVLI-STADA-PANDEIRA-IS-YESHUA
+  proposition: The ben Stada/ben Pandeira figure in Shabbat 104b should be identified with Yeshua/Jesus.
+  claim_type: HISTORICAL_IDENTITY
+  evidence_class:
+  - SCHOLARLY_INTERPRETATION
+  - UNKNOWN
+  traditions:
+  - rabbinic-judaism
+  - christianity
+  supporting_sources: []
+  opposing_sources: []
+  confidence: unresolved
+  contested: true
+  notes:
+  - V1 intentionally does not promote the identification from the similarity of names and motifs alone.
+  - Add variant manuscripts, Tosefta/Sanhedrin parallels, and competing scholarship before changing this status.
+- id: CLM-CELSUS-JEW-PRESERVES-AUTHENTIC-JEWISH-SOURCE
+  proposition: The material assigned by Origen to Celsus's Jewish speaker substantially derives from an authentic second-century
+    Jewish source rather than being principally a literary construction by Celsus.
+  claim_type: SOURCE_PROVENANCE
+  evidence_class:
+  - SCHOLARLY_INTERPRETATION
+  traditions:
+  - greco-roman
+  - judaism
+  - christianity
+  supporting_sources:
+  - source_id: SCH-BLUMELL-2007-CELSUS-JEW
+    locator: article argument
+    relation: SCHOLARLY_SUPPORT
+    access_mode: PUBLISHER_ABSTRACT_AND_BIBLIOGRAPHIC_RECORD
+  - source_id: SCH-NIEHOFF-2013-CELSUS-JEW
+    locator: article argument
+    relation: SCHOLARLY_SUPPORT
+    access_mode: INSTITUTIONAL_ABSTRACT_AND_BIBLIOGRAPHIC_RECORD
+  opposing_sources: []
+  confidence: unresolved
+  contested: true
+  alternatives:
+  - Celsus composed or substantially reshaped the Jewish speaker for literary/polemical purposes.
+  - Celsus used Jewish material but not a single recoverable written Jewish source.
+  notes:
+  - Niehoff's specific Alexandrian written-source thesis is attributed scholarship, not repository fact.
+- id: CLM-SANHEDRIN-STADA-PANDEIRA-MIRIAM
+  proposition: Sanhedrin 67a:14-15 relates a ben Setada execution tradition in Lod on Passover eve and follows it with a ben
+    Pandeira/Miriam name discussion; the checked passage itself does not explicitly name Jesus/Yeshua.
+  claim_type: TEXTUAL_OCCURRENCE
+  evidence_class:
+  - PRIMARY_TEXT
+  - LATER_TRADITION
+  traditions:
+  - rabbinic-judaism
+  supporting_sources:
+  - source_id: SRC-BAVLI-SANHEDRIN-67A
+    locator: Sanhedrin 67a:14-15
+    relation: DIRECT_TEXTUAL_SUPPORT
+    access_mode: DIGITAL_TEXT_EDITION
+  opposing_sources: []
+  confidence: high
+  contested: false
+- id: CLM-TOSEFTA-VIENNA-YESHUA-PANTEIRA-VARIANT
+  proposition: The checked Sefaria manuscript-aware display for Tosefta Chullin 2:6 reports that the Vienna manuscript adds
+    the name-form 'Yeshua ben Panteira' in both the ben Dama healing episode and the Rabbi Eliezer heresy episode.
+  claim_type: TEXTUAL_VARIANT_REPORT
+  evidence_class:
+  - PRIMARY_TEXT
+  - LATER_TRADITION
+  traditions:
+  - rabbinic-judaism
+  - jewish-christian-relations
+  supporting_sources:
+  - source_id: SRC-TOSEFTA-CHULLIN-2-6
+    witness_id: WIT-TOSEFTA-VIENNA-COD-HEBR-20
+    locator: Tosefta Chullin 2:6; Vienna manuscript annotation in Sefaria
+    relation: DIGITAL_EDITION_VARIANT_REPORT
+    access_mode: DIGITAL_EDITION_WITH_MANUSCRIPT_LAYER
+  opposing_sources: []
+  confidence: high-for-digital-edition-report
+  contested: false
+  notes:
+  - This confidence applies to Sefaria's report of the Vienna reading, not to the proposition that V1 independently transcribed
+    the codex.
+- id: CLM-YERUSHALMI-HEALING-YESHUA-PANDERA
+  proposition: The checked Jerusalem Talmud passages preserve healing traditions that explicitly invoke Jesus/Yeshua with
+    Pandera/Pantera name-forms.
+  claim_type: TEXTUAL_OCCURRENCE
+  evidence_class:
+  - PRIMARY_TEXT
+  - LATER_TRADITION
+  traditions:
+  - rabbinic-judaism
+  - jewish-christian-relations
+  supporting_sources:
+  - source_id: SRC-YERUSHALMI-AVODAH-ZARAH-2-2
+    locator: Avodah Zarah 2:2:7 and 2:2:11
+    relation: DIRECT_TEXTUAL_SUPPORT
+    access_mode: DIGITAL_TEXT_EDITION
+  - source_id: SRC-YERUSHALMI-SHABBAT-14-4
+    locator: Shabbat 14:4:8 and 14:4:12
+    relation: DIRECT_TEXTUAL_SUPPORT
+    access_mode: DIGITAL_TEXT_EDITION
+  opposing_sources: []
+  confidence: high-at-digital-text-level
+  contested: false
+  notes:
+  - Parallel passages may share textual/traditional dependence and are not automatically independent historical witnesses.
+- id: CLM-RABBINIC-PANDERA-MATERIAL-PROVES-BIOLOGICAL-PATERNITY
+  proposition: The Tosefta, Jerusalem Talmud, and Babylonian Talmud Pandera/Pantera name traditions establish the biological
+    paternity of the historical Yeshua/Jesus.
+  claim_type: HISTORICAL_BIOGRAPHY
+  evidence_class:
+  - UNKNOWN
+  traditions:
+  - comparative
+  supporting_sources: []
+  opposing_sources:
+  - source_id: SRC-TOSEFTA-CHULLIN-2-6
+    witness_id: WIT-TOSEFTA-VIENNA-COD-HEBR-20
+    locator: Tosefta Chullin 2:6; Vienna variant annotation
+    relation: TEXTUAL_NAMING_DOES_NOT_ESTABLISH_BIOLOGICAL_FACT
+    access_mode: DIGITAL_EDITION_WITH_MANUSCRIPT_LAYER
+  - source_id: SRC-BAVLI-SANHEDRIN-67A
+    locator: Sanhedrin 67a:14-15
+    relation: LATE_TEXTUAL_TRADITION_NOT_DIRECT_BIOLOGICAL_EVIDENCE
+    access_mode: DIGITAL_TEXT_EDITION
+  confidence: unresolved
+  contested: true
+  notes:
+  - These materials are evidence for rabbinic textual/reception history and possibly earlier traditions; provenance to first-century
+    biography remains unestablished.
+- id: CLM-UGARIT-DIVINE-COUNCIL
+  proposition: The Ugaritic religious corpus represents a differentiated divine family/council including El, Athirat, Baal,
+    and other deities.
+  claim_type: MYTHIC_SYSTEM_RECONSTRUCTION
+  evidence_class:
+  - PRIMARY_TEXT
+  - SCHOLARLY_INTERPRETATION
+  traditions:
+  - canaanite-ugaritic
+  supporting_sources:
+  - source_id: SRC-UGARIT-BAAL-CYCLE
+    locator: KTU 1.1-1.6
+    relation: PRIMARY_TEXT_CORPUS
+    access_mode: SCHOLARLY_EDITION
+  - source_id: SCH-SMITH-2001-BIBLICAL-MONOTHEISM
+    locator: Divine Council / Divine Family chapters
+    relation: SCHOLARLY_SYNTHESIS
+    access_mode: PUBLISHER_ABSTRACTS
+  opposing_sources: []
+  confidence: high-for-structured-divine-plurality
+  contested: false
+- id: CLM-BAAL-YAMM-MOT-CYCLE
+  proposition: The Baal Cycle centers major conflicts over kingship involving Baal, Yamm/Sea, and Mot/Death.
+  claim_type: TEXTUAL_SYSTEM_SUMMARY
+  evidence_class:
+  - PRIMARY_TEXT
+  traditions:
+  - canaanite-ugaritic
+  supporting_sources:
+  - source_id: SRC-UGARIT-BAAL-CYCLE
+    locator: KTU 1.1-1.6
+    relation: DIRECT_CORPUS_SUPPORT
+    access_mode: SCHOLARLY_EDITION
+  opposing_sources: []
+  confidence: high
+  contested: false
+- id: CLM-ENUMA-MARDUK-TIAMAT-ORDER
+  proposition: In Enuma Elish, Marduk receives supreme authority, defeats Tiamat, and establishes cosmic order in a narrative
+    also tied to Babylonian divine-political supremacy.
+  claim_type: TEXTUAL_AND_HISTORICAL_CONTEXT
+  evidence_class:
+  - PRIMARY_TEXT
+  - SCHOLARLY_INTERPRETATION
+  traditions:
+  - mesopotamian
+  - babylonian
+  supporting_sources:
+  - source_id: SRC-ENUMA-ELISH
+    locator: Tablet IV onward
+    relation: DIRECT_TEXTUAL_SUPPORT
+    access_mode: SCHOLARLY_TRANSLATION
+  - source_id: SCH-MET-2009-MESOPOTAMIAN-CREATION
+    locator: essay
+    relation: HISTORICAL_CONTEXT
+    access_mode: INSTITUTIONAL_FULL_TEXT
+  opposing_sources: []
+  confidence: high
+  contested: false
+- id: CLM-DEUT32-DIVINE-BEINGS-VARIANT
+  proposition: 'Deuteronomy 32:8 has materially different textual witnesses: the Masoretic tradition reads ''sons of Israel''
+    while 4QDeutj and Septuagint evidence preserve a divine-being reading.'
+  claim_type: TEXTUAL_VARIANT_REPORT
+  evidence_class:
+  - PRIMARY_TEXT
+  - SCHOLARLY_INTERPRETATION
+  traditions:
+  - ancient-israelite
+  - biblical
+  supporting_sources:
+  - source_id: SRC-DEUTERONOMY-32
+    locator: Deuteronomy 32:8-9
+    relation: TEXTUAL_WITNESS_SET
+    access_mode: WITNESS_COMPARISON
+  - source_id: SCH-TOV-2023-DEUT32
+    locator: variant table and analysis
+    relation: SCHOLARLY_TEXTUAL_CRITICISM
+    access_mode: SCHOLARLY_FULL_TEXT
+  opposing_sources: []
+  confidence: high-for-existence-of-variant
+  contested: false
+- id: CLM-KUNTILLET-YHWH-ASHERAH-ASSOCIATION
+  proposition: Kuntillet Ajrud inscriptions attest blessing formulae associating Yahweh with 'his asherah', while the exact
+    referent of asherah remains debated.
+  claim_type: MATERIAL_TEXTUAL_ATTESTATION
+  evidence_class:
+  - MATERIAL_EVIDENCE
+  - SCHOLARLY_INTERPRETATION
+  traditions:
+  - ancient-israelite
+  - yahwism
+  supporting_sources:
+  - source_id: MAT-KUNTILLET-AJRUD-YHWH-ASHERAH
+    locator: inscriptional blessing formulae
+    relation: MATERIAL_ATTESTATION
+    access_mode: SCHOLARLY_TRANSCRIPTION
+  opposing_sources: []
+  confidence: high-for-association-unresolved-for-referent
+  contested: true
+  alternatives:
+  - Asherah refers to the goddess.
+  - asherah refers to a cult object or sacred symbol associated with Yahweh.
+- id: CLM-YASNA30-TWO-SPIRITS-CHOICE
+  proposition: Yasna 30 presents two opposed primal spirits/beliefs and frames human moral choice between better and worse
+    orientations.
+  claim_type: TEXTUAL_OCCURRENCE
+  evidence_class:
+  - PRIMARY_TEXT
+  traditions:
+  - zoroastrian
+  - old-avestan
+  supporting_sources:
+  - source_id: SRC-AVESTA-YASNA-30
+    locator: Yasna 30.2-5
+    relation: DIRECT_TEXTUAL_SUPPORT
+    access_mode: SCHOLARLY_DIGITAL_TEXT
+  opposing_sources: []
+  confidence: high-at-translation-level
+  contested: false
+- id: CLM-LATER-ZORO-COSMOLOGY-SYSTEMATIZES-CONFLICT
+  proposition: Later Pahlavi Zoroastrian texts systematize cosmic history as creation, mixture/conflict, and eventual separation/defeat
+    of evil more explicitly than the extant Gathas.
+  claim_type: DIACHRONIC_THEOLOGICAL_DEVELOPMENT
+  evidence_class:
+  - PRIMARY_TEXT
   - LATER_TRADITION
   - SCHOLARLY_INTERPRETATION
+  traditions:
+  - zoroastrian
+  supporting_sources:
+  - source_id: SRC-BUNDAHISHN
+    locator: cosmogonic framework
+    relation: LATER_TEXTUAL_SYSTEMATIZATION
+    access_mode: SCHOLARLY_EDITION_TRADITION
+  - source_id: SCH-KREYENBROEK-1993-ZORO-COSMOGONY
+    locator: article
+    relation: SCHOLARLY_SYNTHESIS
+    access_mode: INSTITUTIONAL_FULL_TEXT
+  opposing_sources: []
+  confidence: high
+  contested: false
+- id: CLM-ZORO-INFLUENCE-ON-JEWISH-ESCHATOLOGY
+  proposition: Specific Jewish eschatological doctrines derive directly from Zoroastrian teaching.
+  claim_type: TRANSMISSION_HYPOTHESIS
+  evidence_class:
+  - SCHOLARLY_INTERPRETATION
+  - UNKNOWN
+  traditions:
+  - zoroastrian
+  - judaism
+  supporting_sources:
+  - source_id: SCH-SHAKED-1998-ZORO-ESCHATOLOGY
+    locator: influence discussion
+    relation: SCHOLARLY_SUPPORT_FOR_INFLUENCE_FAMILY
+    access_mode: INSTITUTIONAL_FULL_TEXT
+  opposing_sources: []
+  confidence: unresolved-feature-specific
+  contested: true
+  notes:
+  - Broad historical influence proposals do not establish direct derivation of each doctrine; each feature requires chronology
+    and transmission testing.
+- id: CLM-BOSTROM-SIMULATION-DISJUNCTION
+  proposition: 'Bostrom''s 2003 simulation argument concludes that at least one of three broad conditions obtains: civilizations
+    rarely reach posthumanity, posthuman civilizations rarely run many ancestor simulations, or simulated human-like observers
+    dominate the relevant observer population.'
+  claim_type: PHILOSOPHICAL_ARGUMENT
+  evidence_class:
+  - SCHOLARLY_INTERPRETATION
+  traditions:
+  - simulation-theory
+  supporting_sources:
+  - source_id: SCH-BOSTROM-2003-SIMULATION
+    locator: abstract and argument
+    relation: DIRECT_AUTHOR_ARGUMENT
+    access_mode: AUTHOR_FULL_TEXT
+  opposing_sources: []
+  confidence: high-for-argument-content
+  contested: true
+- id: CLM-BOSTROM-ASSUMES-SUBSTRATE-INDEPENDENCE
+  proposition: Bostrom explicitly assumes that sufficiently detailed non-biological computational replication can in principle
+    instantiate subjective experience, making substrate independence load-bearing for conscious-observer counting.
+  claim_type: CONSCIOUSNESS_ASSUMPTION
+  evidence_class:
+  - SCHOLARLY_INTERPRETATION
+  traditions:
+  - simulation-theory
+  - philosophy-of-mind
+  supporting_sources:
+  - source_id: SCH-BOSTROM-2003-SIMULATION
+    locator: Section II, assumption of substrate-independence
+    relation: DIRECT_AUTHOR_ASSUMPTION
+    access_mode: AUTHOR_FULL_TEXT
+  opposing_sources: []
+  confidence: high-for-assumption-content
+  contested: true
+- id: CLM-KIPPING-SIM-PROBABILITY-BELOW-HALF
+  proposition: Under Kipping's Bayesian model averaging with uncertainty over simulation possibility, the modeled probability
+    of being simulated remains below 50 percent and approaches 50 percent in the infinite-simulation limit before evidence
+    that such simulations are actually produced.
+  claim_type: BAYESIAN_MODEL
+  evidence_class:
+  - SCHOLARLY_INTERPRETATION
+  traditions:
+  - simulation-theory
+  supporting_sources:
+  - source_id: SCH-KIPPING-2020-BAYESIAN-SIMULATION
+    locator: abstract and Bayesian model
+    relation: DIRECT_MODEL_RESULT
+    access_mode: OPEN_PREPRINT
+  opposing_sources: []
+  confidence: high-for-reported-model-result
+  contested: true
+  notes:
+  - This is not a measured empirical probability of our universe being simulated.
+- id: CLM-LATTICE-TEST-IS-NARROW
+  proposition: The Beane-Davoudi-Savage proposed cosmic-ray/lattice signatures test a cubic lattice numerical-simulation family
+    and cannot by themselves confirm or falsify every simulation architecture.
+  claim_type: EMPIRICAL_TEST_PROPOSAL
+  evidence_class:
+  - SCHOLARLY_INTERPRETATION
   - PROJECT_INFERENCE
+  traditions:
+  - simulation-theory
+  - physics
+  supporting_sources:
+  - source_id: SCH-BEANE-DAVOUDI-SAVAGE-2012-LATTICE
+    locator: simulation assumptions and observable consequences
+    relation: MODEL_SCOPE
+    access_mode: OPEN_PREPRINT
+  opposing_sources: []
+  confidence: high
+  contested: false
+- id: CLM-VAZZA-SAME-PHYSICS-SIM-CONSTRAINED
+  proposition: Vazza's astrophysical analysis strongly constrains high-fidelity simulation of our world by a parent universe
+    sharing sufficiently similar information/energy physics, while not excluding parent universes with radically different
+    physical properties.
+  claim_type: PHYSICAL_CONSTRAINT
+  evidence_class:
+  - SCHOLARLY_INTERPRETATION
+  traditions:
+  - simulation-theory
+  - astrophysics
+  supporting_sources:
+  - source_id: SCH-VAZZA-2025-SIMULATION-CONSTRAINTS
+    locator: abstract and modeled cases
+    relation: DIRECT_CONSTRAINT_RESULT
+    access_mode: OPEN_PREPRINT
+  opposing_sources: []
+  confidence: high-for-paper-result
+  contested: true
+- id: CLM-DIGITAL-ONTOLOGY-DOES-NOT-ENTAIL-EXTERNAL-SIMULATION
+  proposition: The claim that physical reality is computational or informational does not logically entail that it is implemented
+    by an external computer or intentional simulator.
+  claim_type: METAPHYSICAL_DISTINCTION
+  evidence_class:
+  - SCHOLARLY_INTERPRETATION
+  - PROJECT_INFERENCE
+  traditions:
+  - simulation-theory
+  - philosophy-of-computation
+  supporting_sources:
+  - source_id: SCH-SEP-PHYSICAL-COMPUTATION
+    locator: pancomputationalism and ontic pancomputationalism sections
+    relation: TAXONOMIC_SUPPORT
+    access_mode: INSTITUTIONAL_FULL_TEXT
+  opposing_sources: []
+  confidence: high
+  contested: false
+- id: CLM-CHALMERS-SIMULATION-REALISM
+  proposition: Chalmers defends the view that if we inhabit a full simulation, virtual/simulated objects can still be real,
+    that we cannot know with certainty that we are not simulated, and that simulated life can retain value.
+  claim_type: METAPHYSICAL_MODEL
+  evidence_class:
+  - SCHOLARLY_INTERPRETATION
+  traditions:
+  - simulation-theory
+  - metaphysics
+  supporting_sources:
+  - source_id: SCH-CHALMERS-2024-SIMULATION
+    locator: published abstract
+    relation: AUTHOR_POSITION
+    access_mode: PUBLISHER_ABSTRACT
+  opposing_sources:
+  - source_id: SCH-HORGAN-2024-VIRTUAL-UNREAL
+    locator: published abstract
+    relation: METAPHYSICAL_OBJECTION
+    access_mode: PUBLISHER_ABSTRACT
+  - source_id: SCH-PEACOCKE-2024-SIMULATION
+    locator: published abstract
+    relation: METAPHYSICAL_AND_EPISTEMOLOGICAL_OBJECTION
+    access_mode: PUBLISHER_ABSTRACT
+  confidence: high-for-position-summary
+  contested: true
+- id: CLM-GENERIC-SIMULATION-UNDERCONSTRAINED
+  proposition: A simulation hypothesis that leaves parent physics, implementation architecture, simulator motives, intervention
+    policy, and observable artifacts unrestricted has weak discriminatory empirical content because it can accommodate nearly
+    any observation.
+  claim_type: EPISTEMOLOGICAL_LIMIT
+  evidence_class:
+  - PROJECT_INFERENCE
+  traditions:
+  - simulation-theory
+  supporting_sources:
+  - source_id: SCH-MCCABE-2005-UNIVERSE-COMPUTER
+    locator: empirical/metaphysical distinction
+    relation: CONTEXT
+    access_mode: OPEN_ARCHIVE
+  - source_id: SCH-BEANE-DAVOUDI-SAVAGE-2012-LATTICE
+    locator: architecture-specific prediction
+    relation: CONTRAST_WITH_TESTABLE_SUBMODEL
+    access_mode: OPEN_PREPRINT
+  opposing_sources: []
+  confidence: moderate-high
+  contested: true
+- id: CLM-SIMULATOR-NOT-IDENTICAL-CLASSICAL-GOD
+  proposition: A finite technological simulator need not possess the ultimacy, necessary existence, omniscience, omnipotence,
+    or perfect goodness attributed to God in major forms of classical theism; structural creator similarity therefore does
+    not establish conceptual identity.
+  claim_type: THEOLOGICAL_COMPARISON
+  evidence_class:
+  - PROJECT_INFERENCE
+  - SCHOLARLY_INTERPRETATION
+  traditions:
+  - simulation-theory
+  - theology
+  supporting_sources:
+  - source_id: SCH-MIZRAHI-2017-FINETUNING-SIMULATION
+    locator: simulation as alternative to supernatural designer inference
+    relation: PHILOSOPHICAL_COMPARISON
+    access_mode: PUBLISHER_ABSTRACT
+  - source_id: SCH-DONAHUE-2026-FINETUNING-ALTERNATIVES
+    locator: simulation versus theism comparison
+    relation: PHILOSOPHICAL_COMPARISON
+    access_mode: PUBLISHER_OPEN_ACCESS
+  opposing_sources: []
+  confidence: high-for-non-identity
+  contested: false
+- id: CLM-OUR-UNIVERSE-IS-SIMULATED
+  proposition: Our observable universe is implemented as a simulation on an external substrate.
+  claim_type: METAPHYSICAL_MODEL
+  evidence_class:
   - SPECULATIVE_MODEL
   - UNKNOWN
-claims:
-  - id: CLM-CELSUS-VIRGIN-BIRTH-COUNTERCLAIM
-    proposition: "In Contra Celsum I.28, Origen represents Celsus's Jewish speaker as accusing Jesus of inventing a virgin-birth account and describes an adulterous/illegitimate-birth counter-story."
-    claim_type: TEXTUAL_OCCURRENCE
-    evidence_class: [PRIMARY_TEXT]
-    traditions: [greco-roman, christianity, jewish-countertradition]
-    supporting_sources:
-      - source_id: SRC-ORIGEN-CONTRA-CELSUM
-        locator: "Book I, chapter 28"
-        relation: DIRECT_TEXTUAL_SUPPORT
-        access_mode: ORIGEN_REPORTING_CELSUS
-    opposing_sources: []
-    confidence: high
-    contested: false
-    notes:
-      - "High confidence applies to what Origen's extant text reports, not to the biological truth of Celsus's accusation."
-
-  - id: CLM-CELSUS-PANTHERA-NAMED
-    proposition: "In Contra Celsum I.32, Origen reports that Celsus's Jewish speaker said Mary bore a child to a soldier named Panthera."
-    claim_type: TEXTUAL_OCCURRENCE
-    evidence_class: [PRIMARY_TEXT]
-    traditions: [greco-roman, christianity, jewish-countertradition]
-    supporting_sources:
-      - source_id: SRC-ORIGEN-CONTRA-CELSUM
-        locator: "Book I, chapter 32"
-        relation: DIRECT_TEXTUAL_SUPPORT
-        access_mode: ORIGEN_REPORTING_CELSUS
-      - source_id: SRC-ORIGEN-CONTRA-CELSUM
-        locator: "Book I, chapter 69"
-        relation: CORROBORATING_REPETITION_WITHIN_SAME_WORK
-        access_mode: ORIGEN_REPORTING_CELSUS
-    opposing_sources: []
-    confidence: high
-    contested: false
-    notes:
-      - "These are not independent witnesses; both locators are in Origen's same work."
-
-  - id: CLM-ORIGEN-REJECTS-PANTHERA-COUNTERSTORY
-    proposition: "Origen rejects the Panthera/adultery counter-story as fabricated while preserving it in his rebuttal."
-    claim_type: TEXTUAL_OCCURRENCE
-    evidence_class: [PRIMARY_TEXT]
-    traditions: [christianity]
-    supporting_sources:
-      - source_id: SRC-ORIGEN-CONTRA-CELSUM
-        locator: "Book I, chapter 32"
-        relation: DIRECT_TEXTUAL_SUPPORT
-        access_mode: ORIGEN_OWN_ARGUMENT
-    opposing_sources: []
-    confidence: high
-    contested: false
-
-  - id: CLM-PANTERA-NAME-ATTESTED
-    proposition: "A first-century funerary inscription attests a Roman soldier named Tiberius Julius Abdes Pantera."
-    claim_type: MATERIAL_ATTESTATION
-    evidence_class: [MATERIAL_EVIDENCE]
-    traditions: [greco-roman]
-    supporting_sources:
-      - source_id: MAT-ABDES-PANTERA-INSCRIPTION
-        locator: "CIL XIII 7514 / §400"
-        relation: DIRECT_MATERIAL_ATTESTATION
-        access_mode: TRANSCRIPTION_OF_ARTIFACT
-    opposing_sources: []
-    confidence: high
-    contested: false
-
-  - id: CLM-ABDES-PANTERA-WAS-YESHUA-FATHER
-    proposition: "Tiberius Julius Abdes Pantera was the biological father of Yeshua/Jesus."
-    claim_type: HISTORICAL_IDENTITY
-    evidence_class: [UNKNOWN]
-    traditions: [comparative]
-    supporting_sources: []
-    opposing_sources:
-      - source_id: MAT-ABDES-PANTERA-INSCRIPTION
-        locator: "CIL XIII 7514 / §400"
-        relation: DOES_NOT_ESTABLISH_IDENTITY_LINK
-        access_mode: MATERIAL_CONTEXT_ONLY
-    confidence: unresolved
-    contested: true
-    alternatives:
-      - "The inscription and Celsus's Panthera name are unrelated except for name attestation."
-      - "The polemical Panthera name derives from a different person, wordplay, or tradition."
-    notes:
-      - "Name existence is not paternity evidence."
-
-  - id: CLM-BAVLI-BEN-STADA-PANDEIRA-MIRIAM
-    proposition: "Shabbat 104b contains a ben Stada/ben Pandeira discussion and identifies the mother in that discussion as Miriam, while the displayed passage itself does not name Jesus."
-    claim_type: TEXTUAL_OCCURRENCE
-    evidence_class: [PRIMARY_TEXT, LATER_TRADITION]
-    traditions: [rabbinic-judaism]
-    supporting_sources:
-      - source_id: SRC-BAVLI-SHABBAT-104B
-        locator: "Shabbat 104b:5"
-        relation: DIRECT_TEXTUAL_SUPPORT
-        access_mode: DIGITAL_TEXT_EDITION
-    opposing_sources: []
-    confidence: high
-    contested: false
-
-  - id: CLM-BAVLI-STADA-PANDEIRA-IS-YESHUA
-    proposition: "The ben Stada/ben Pandeira figure in Shabbat 104b should be identified with Yeshua/Jesus."
-    claim_type: HISTORICAL_IDENTITY
-    evidence_class: [SCHOLARLY_INTERPRETATION, UNKNOWN]
-    traditions: [rabbinic-judaism, christianity]
-    supporting_sources: []
-    opposing_sources: []
-    confidence: unresolved
-    contested: true
-    notes:
-      - "V1 intentionally does not promote the identification from the similarity of names and motifs alone."
-      - "Add variant manuscripts, Tosefta/Sanhedrin parallels, and competing scholarship before changing this status."
-
-  - id: CLM-CELSUS-JEW-PRESERVES-AUTHENTIC-JEWISH-SOURCE
-    proposition: "The material assigned by Origen to Celsus's Jewish speaker substantially derives from an authentic second-century Jewish source rather than being principally a literary construction by Celsus."
-    claim_type: SOURCE_PROVENANCE
-    evidence_class: [SCHOLARLY_INTERPRETATION]
-    traditions: [greco-roman, judaism, christianity]
-    supporting_sources:
-      - source_id: SCH-BLUMELL-2007-CELSUS-JEW
-        locator: "article argument"
-        relation: SCHOLARLY_SUPPORT
-        access_mode: PUBLISHER_ABSTRACT_AND_BIBLIOGRAPHIC_RECORD
-      - source_id: SCH-NIEHOFF-2013-CELSUS-JEW
-        locator: "article argument"
-        relation: SCHOLARLY_SUPPORT
-        access_mode: INSTITUTIONAL_ABSTRACT_AND_BIBLIOGRAPHIC_RECORD
-    opposing_sources: []
-    confidence: unresolved
-    contested: true
-    alternatives:
-      - "Celsus composed or substantially reshaped the Jewish speaker for literary/polemical purposes."
-      - "Celsus used Jewish material but not a single recoverable written Jewish source."
-    notes:
-      - "Niehoff's specific Alexandrian written-source thesis is attributed scholarship, not repository fact."
+  traditions:
+  - simulation-theory
+  supporting_sources: []
+  opposing_sources:
+  - source_id: SCH-VAZZA-2025-SIMULATION-CONSTRAINTS
+    locator: same-physics resource constraints
+    relation: CONSTRAINS_SUBCLASS_NOT_GENERIC_HYPOTHESIS
+    access_mode: OPEN_PREPRINT
+  confidence: unresolved
+  contested: true
+  notes:
+  - No V1 evidence establishes external implementation provenance for our universe.
+- id: CLM-MARK-6-3-MATRONYMIC-CRITICAL-TEXT
+  proposition: The mainstream critical text of Mark 6:3 identifies Jesus as 'the carpenter, the son of Mary' without a corresponding
+    patronymic in the clause.
+  claim_type: TEXTUAL_OCCURRENCE
+  evidence_class:
+  - PRIMARY_TEXT
+  traditions:
+  - christianity
+  supporting_sources:
+  - source_id: SRC-GOSPEL-MARK
+    locator: Mark 6:3
+    relation: DIRECT_TEXTUAL_SUPPORT
+    access_mode: MODERN_CRITICAL_TEXT
+  - source_id: SCH-NORMAN-2025-MARK-MATRONYMIC
+    locator: 'Part I: Jesus ''the Son of Mary'' in Mk 6.3'
+    relation: CRITICAL_TEXT_AND_VARIANT_DISCUSSION
+    access_mode: OPEN_ACCESS_PUBLISHER_FULL_TEXT
+  opposing_sources: []
+  confidence: high-at-critical-text-level
+  contested: false
+  notes:
+  - The confidence applies to the mainstream critical-text reading, not to the claim that no early alternative existed.
+- id: CLM-MARK-6-3-EARLY-CARPENTERS-SON-VARIANT
+  proposition: An early textual variant of Mark 6:3 reads toward 'the son of the carpenter and of Mary'; P45 is commonly reconstructed
+    as belonging to this variant family.
+  claim_type: TEXTUAL_VARIANT_REPORT
+  evidence_class:
+  - PRIMARY_TEXT
+  - SCHOLARLY_INTERPRETATION
+  traditions:
+  - christianity
+  supporting_sources:
+  - source_id: SRC-GOSPEL-MARK
+    witness_id: WIT-P45-MARK-6-3
+    locator: Mark 6:3 variation unit
+    relation: PUBLISHED_APPARATUS_RECONSTRUCTION
+    access_mode: SCHOLARLY_APPARATUS_SUMMARY
+  - source_id: SCH-NORMAN-2025-MARK-MATRONYMIC
+    locator: textual discussion of Mark 6:3
+    relation: SCHOLARLY_TEXTUAL_CRITICISM
+    access_mode: OPEN_ACCESS_PUBLISHER_FULL_TEXT
+  opposing_sources: []
+  confidence: high-for-existence-of-variant-moderate-for-fragmentary-p45-reconstruction
+  contested: false
+  notes:
+  - The variant's existence and P45's fragmentary state are distinct from deciding the original reading.
+- id: CLM-SYNOPTIC-HOMETOWN-PATERNITY-LABELS-DIFFER
+  proposition: In the compared hometown passages, Mark 6:3 uses 'son of Mary', Matthew 13:55 uses 'the carpenter's son' and
+    names Mary separately, and Luke 4:22 uses 'Joseph's son'.
+  claim_type: TEXTUAL_COMPARISON
+  evidence_class:
+  - PRIMARY_TEXT
+  traditions:
+  - christianity
+  supporting_sources:
+  - source_id: SRC-GOSPEL-MARK
+    locator: Mark 6:3
+    relation: DIRECT_TEXTUAL_SUPPORT
+    access_mode: MODERN_CRITICAL_TEXT
+  - source_id: SRC-GOSPEL-MATTHEW
+    locator: Matthew 13:55
+    relation: DIRECT_TEXTUAL_SUPPORT
+    access_mode: MODERN_GREEK_TEXT
+  - source_id: SRC-GOSPEL-LUKE
+    locator: Luke 4:22
+    relation: DIRECT_TEXTUAL_SUPPORT
+    access_mode: MODERN_GREEK_TEXT
+  opposing_sources: []
+  confidence: high
+  contested: false
+  notes:
+  - The wording difference is direct textual evidence; the motive for the difference is a separate interpretive question.
+- id: CLM-MARK-6-3-MATRONYMIC-IS-ILLEGITIMACY-SLUR
+  proposition: The phrase 'son of Mary' in Mark 6:3 specifically functions as a paternity/illegitimacy slur in the Nazareth
+    scene.
+  claim_type: SEMANTIC_SOCIAL_INFERENCE
+  evidence_class:
+  - SCHOLARLY_INTERPRETATION
+  traditions:
+  - christianity
+  - historical-jesus
+  supporting_sources:
+  - source_id: SCH-CROY-2022-ESCAPING-SHAME
+    locator: pp. 99-107 as identified in Norman 2025
+    relation: ARGUES_FOR_CONTEXTUAL_SLUR_READING
+    access_mode: SCHOLARLY_SUMMARY_AND_BOOK_METADATA
+  opposing_sources:
+  - source_id: SCH-MCARTHUR-1973-SON-OF-MARY
+    locator: conclusion summarized by Norman 2025
+    relation: ARGUES_INFORMAL_IDENTIFICATION_NEED_NOT_CARRY_SPECIAL_STIGMA
+    access_mode: SCHOLARLY_SUMMARY
+  - source_id: SCH-ILAN-1992-METRONYMES
+    locator: position summarized by Norman 2025
+    relation: MATRONYMICS_DO_NOT_ENCODE_SINGLE_ILLEGITIMACY_RULE
+    access_mode: SCHOLARLY_SUMMARY
+  - source_id: SCH-NORMAN-2025-MARK-MATRONYMIC
+    locator: Part I and new solution
+    relation: OFFERS_ALTERNATIVE_GREEK_LITERARY_WOMENS_SPEECH_MODEL
+    access_mode: OPEN_ACCESS_PUBLISHER_FULL_TEXT
+  confidence: unresolved
+  contested: true
+  notes:
+  - Narrative hostility increases plausibility of a disparaging reading but does not independently identify the semantic target
+    of the insult.
+- id: CLM-MARK-6-3-PROVES-FIRST-CENTURY-PATERNITY-RUMOR
+  proposition: Mark 6:3 by itself establishes that a first-century Nazareth rumor questioned Jesus's biological paternity.
+  claim_type: HISTORICAL_RECONSTRUCTION
+  evidence_class:
+  - UNKNOWN
+  traditions:
+  - comparative
+  supporting_sources: []
+  opposing_sources:
+  - source_id: SCH-NORMAN-2025-MARK-MATRONYMIC
+    locator: survey of multiple explanations
+    relation: MULTIPLE_LIVE_INTERPRETATIONS_PREVENT_UNIQUE_HISTORICAL_INFERENCE
+    access_mode: OPEN_ACCESS_PUBLISHER_FULL_TEXT
+  confidence: unresolved
+  contested: true
+  notes:
+  - A possible slur reading is not equivalent to evidence that the crowd's exact historical wording or a specific paternity
+    rumor has been recovered.
+- id: CLM-MARK-6-3-SUPPORTS-PANTHERA-BIOLOGICAL-PATERNITY
+  proposition: Mark 6:3 independently supports Panthera/Pandera as the biological father of the historical Jesus/Yeshua.
+  claim_type: HISTORICAL_BIOGRAPHY
+  evidence_class:
+  - UNKNOWN
+  traditions:
+  - comparative
+  supporting_sources: []
+  opposing_sources:
+  - source_id: SRC-GOSPEL-MARK
+    locator: Mark 6:3
+    relation: TEXT_DOES_NOT_NAME_PANTHERA_OR_AN_ALTERNATIVE_FATHER
+    access_mode: MODERN_CRITICAL_TEXT
+  confidence: unresolved
+  contested: true
+  notes:
+  - Using later Panthera traditions to fix the meaning of Mark 6:3 and then counting Mark as independent confirmation would
+    be circular.
+- id: CLM-DEUT32-DIVINE-BEINGS-WITNESS-SPECIFIC
+  proposition: At Deuteronomy 32:8, 4QDeutj/4Q37 reads a Hebrew 'sons of God' form, while P. Fouad 266B/Rahlfs 848 preserves
+    a Greek 'sons of God' form; these are witness-specific readings and do not inherit the date of the underlying work.
+  claim_type: TEXTUAL_VARIANT_REPORT
+  evidence_class:
+  - PRIMARY_TEXT
+  - SCHOLARLY_INTERPRETATION
+  traditions:
+  - ancient-israelite
+  - biblical
+  - second-temple
+  supporting_sources:
+  - source_id: SRC-DEUTERONOMY-32
+    witness_id: WIT-4Q37-DEUT32-8
+    locator: Deuteronomy 32:8
+    relation: SCHOLARLY_WITNESS_REPORT
+    access_mode: WITNESS_SPECIFIC_REPORT
+  - source_id: SRC-DEUTERONOMY-32
+    witness_id: WIT-PFOUAD266B-RAHLFS848-DEUT32-8
+    locator: Deuteronomy 32:8
+    relation: SCHOLARLY_WITNESS_REPORT
+    access_mode: WITNESS_SPECIFIC_REPORT
+  - source_id: SCH-TOV-2023-DEUT32
+    locator: variant table and notes
+    relation: SCHOLARLY_TEXTUAL_CRITICISM
+    access_mode: SCHOLARLY_FULL_TEXT
+  opposing_sources: []
+  confidence: high-for-reported-witness-readings
+  contested: false
+  notes:
+  - The historical reconstruction of the oldest recoverable reading remains a separate textual-critical inference.
+- id: CLM-EGYPT-RELIGION-DIACHRONIC-PLURAL
+  proposition: Ancient Egyptian religion is a long-duration family of changing local, royal, funerary and temple systems and
+    should not be represented as one timeless systematic theology.
+  claim_type: HISTORICAL_RECONSTRUCTION
+  evidence_class:
+  - MATERIAL_EVIDENCE
+  - SCHOLARLY_INTERPRETATION
+  - PROJECT_INFERENCE
+  traditions:
+  - ancient-egyptian
+  supporting_sources:
+  - source_id: SCH-MET-DIVINE-EGYPT
+    locator: curatorial synthesis
+    relation: PERIOD_AND_FUNCTION_CONTEXT
+    access_mode: INSTITUTIONAL_PUBLIC_PAGE
+  opposing_sources: []
+  confidence: high-at-broad-level
+  contested: false
+- id: CLM-EGYPT-MAAT-ORDER-JUDGMENT
+  proposition: Maat connects proper cosmic order with Egyptian religious and postmortem judgment traditions, including the
+    weighing of the heart in New Kingdom and later funerary evidence.
+  claim_type: RELIGIOUS_CONCEPT_HISTORY
+  evidence_class:
+  - MATERIAL_EVIDENCE
+  - PRIMARY_TEXT
+  - SCHOLARLY_INTERPRETATION
+  traditions:
+  - ancient-egyptian
+  supporting_sources:
+  - source_id: MAT-EGYPT-BOD-TIYE
+    locator: funerary papyrus context
+    relation: MATERIAL_FUNERARY_WITNESS
+    access_mode: MUSEUM_OBJECT_RECORD
+  - source_id: SCH-MET-DIVINE-EGYPT
+    locator: Maat / cosmic order
+    relation: CURATORIAL_SYNTHESIS
+    access_mode: INSTITUTIONAL_PUBLIC_PAGE
+  opposing_sources: []
+  confidence: high-for-broad-concept
+  contested: false
+- id: CLM-RIGVEDA-RITUAL-CENTRAL
+  proposition: Rigvedic hymn composition is deeply embedded in ritual performance, especially fire, Soma, offering, priestly
+    recitation and sacrificial patronage.
+  claim_type: RELIGIOUS_SYSTEM_RECONSTRUCTION
+  evidence_class:
+  - SCHOLARLY_INTERPRETATION
+  traditions:
+  - vedic
+  supporting_sources:
+  - source_id: SCH-JAMISON-BRERETON-RIGVEDA-2020
+    locator: chapter 6 Ritual
+    relation: SCHOLARLY_SYNTHESIS
+    access_mode: PUBLISHER_ABSTRACT
+  opposing_sources: []
+  confidence: high
+  contested: false
+- id: CLM-RIGVEDA-KARMA-REBIRTH-ABSENT
+  proposition: Mature doctrines of karma and rebirth are absent from the Rigveda; its principal afterlife imagery instead
+    includes Yama and the ancestors.
+  claim_type: NEGATIVE_TEXTUAL_HISTORICAL_RECONSTRUCTION
+  evidence_class:
+  - SCHOLARLY_INTERPRETATION
+  traditions:
+  - vedic
+  supporting_sources:
+  - source_id: SCH-JAMISON-BRERETON-RIGVEDA-2020
+    locator: chapter 8 Eschatology
+    relation: DIRECT_SCHOLARLY_SYNTHESIS
+    access_mode: PUBLISHER_ABSTRACT
+  opposing_sources: []
+  confidence: high-for-scholar-position
+  contested: false
+- id: CLM-UPANISHAD-KARMA-REBIRTH-LIBERATION-DEVELOP
+  proposition: Early Upanishadic traditions are major witnesses to the historical emergence and development of rebirth, karma
+    and liberation-oriented religious ideas in ancient India.
+  claim_type: DIACHRONIC_RELIGIOUS_DEVELOPMENT
+  evidence_class:
+  - SCHOLARLY_INTERPRETATION
+  traditions:
+  - upanishadic
+  - brahmanical
+  supporting_sources:
+  - source_id: SCH-OLIVELLE-UPANISADS-1998
+    locator: Introduction
+    relation: HISTORICAL_SYNTHESIS
+    access_mode: PUBLISHER_ABSTRACT
+  - source_id: SCH-COHEN-UPANISADS-2024
+    locator: Central Ideas
+    relation: CONCEPTUAL_SYNTHESIS
+    access_mode: PUBLISHER_ABSTRACT
+  opposing_sources: []
+  confidence: high-at-broad-level
+  contested: false
+- id: CLM-MAAT-RTA-STRUCTURAL-PARALLEL
+  proposition: Egyptian maat and Vedic rta exhibit a real structural parallel as concepts linking correct human/ritual action
+    with wider cosmic order, but current evidence does not establish equivalence or direct historical lineage.
+  claim_type: COMPARATIVE_STRUCTURE
+  evidence_class:
+  - PROJECT_INFERENCE
+  - SCHOLARLY_INTERPRETATION
+  traditions:
+  - ancient-egyptian
+  - vedic
+  - comparative
+  supporting_sources:
+  - source_id: SCH-MET-DIVINE-EGYPT
+    locator: Maat / cosmic order
+    relation: EGYPTIAN_CONTROL
+    access_mode: INSTITUTIONAL_PUBLIC_PAGE
+  - source_id: SCH-JAMISON-BRERETON-RIGVEDA-2020
+    locator: ritual/gods/poetics chapters
+    relation: VEDIC_CONTROL
+    access_mode: PUBLISHER_ABSTRACTS
+  opposing_sources: []
+  confidence: moderate-for-structural-parallel
+  contested: true
+  notes:
+  - No transmission edge is created in V1.
+- id: CLM-GENERIC-SIMULATION-WEAK-FALSIFIABILITY
+  proposition: An unconstrained simulation hypothesis has weak scientific discriminability because arbitrary simulator choices
+    can accommodate a very wide range of possible observations.
+  claim_type: EPISTEMIC_MODEL_ASSESSMENT
+  evidence_class:
+  - SCHOLARLY_INTERPRETATION
+  - PROJECT_INFERENCE
+  traditions:
+  - simulation-theory
+  supporting_sources:
+  - source_id: SCH-SWAZO-2015-CRITICAL-SIMULATION
+    locator: abstract/conclusion
+    relation: FALSIFIABILITY_CRITIQUE
+    access_mode: OPEN_ARCHIVE
+  opposing_sources: []
+  confidence: high-for-unconstrained-model
+  contested: true
+- id: CLM-SIM-MODEL-SPECIFIC-TESTING-POSSIBLE
+  proposition: Specific simulation architectures can make testable predictions even when the generic simulation hypothesis
+    does not; falsification of one implementation family does not falsify simulation generally.
+  claim_type: EMPIRICAL_TEST_SCOPE
+  evidence_class:
+  - SCHOLARLY_INTERPRETATION
+  - PROJECT_INFERENCE
+  traditions:
+  - simulation-theory
+  - physics
+  supporting_sources:
+  - source_id: SCH-BEANE-DAVOUDI-SAVAGE-2012-LATTICE
+    locator: model assumptions and observable consequences
+    relation: SPECIFIC_IMPLEMENTATION_TEST
+    access_mode: OPEN_PREPRINT
+  opposing_sources: []
+  confidence: high
+  contested: false
+- id: CLM-OBSERVER-COUNTING-NONNEUTRAL
+  proposition: Simulation-argument probabilities depend on contestable choices about observer reference classes, machine consciousness,
+    simulator behavior and self-location; population dominance alone does not settle the probability that a given observer
+    is simulated.
+  claim_type: BAYESIAN_ANTHROPIC_CRITIQUE
+  evidence_class:
+  - SCHOLARLY_INTERPRETATION
+  - PROJECT_INFERENCE
+  traditions:
+  - simulation-theory
+  supporting_sources:
+  - source_id: SCH-PARODI-2022-SIM-LIKELIHOOD
+    locator: abstract
+    relation: BACKGROUND_ASSUMPTION_CRITIQUE
+    access_mode: INDEXED_ABSTRACT
+  - source_id: SCH-HARRIS-2023-SIM-RECONSIDERED
+    locator: abstract
+    relation: SIMULATOR_BEHAVIOR_CRITIQUE
+    access_mode: PUBLISHER_ABSTRACT
+  - source_id: SCH-CRAWFORD-2013-FREAK-OBSERVERS
+    locator: abstract
+    relation: SELF_LOCATION_CRITIQUE
+    access_mode: INDEXED_ABSTRACT
+  - source_id: SCH-KIPPING-2020-BAYESIAN-SIMULATION
+    locator: Bayesian model
+    relation: MODEL_UNCERTAINTY_CONTROL
+    access_mode: OPEN_PREPRINT
+  opposing_sources: []
+  confidence: high-for-dependency-claim
+  contested: true
+- id: CLM-OBSERVATIONAL-EQUIVALENCE-PROVENANCE-UNDERDETERMINED
+  proposition: If a simulated world and a non-simulated world generate exactly the same observer-accessible evidence, internal
+    observation alone underdetermines which provenance obtains.
+  claim_type: EPISTEMIC_PROJECT_INFERENCE
+  evidence_class:
+  - PROJECT_INFERENCE
+  traditions:
+  - simulation-theory
+  - epistemology
+  supporting_sources: []
+  opposing_sources: []
+  confidence: high-as-conditional
+  contested: true
+- id: CLM-SIM-COMPATIBILITY-NOT-EVIDENCE
+  proposition: The fact that an external simulator could reproduce a miracle, revelation, incarnation-like avatar, resurrection
+    or eschatological transformation does not by itself increase the historical probability that the reported event occurred
+    or that simulation caused it.
+  claim_type: COMPARATIVE_EPISTEMIC_GUARD
+  evidence_class:
+  - PROJECT_INFERENCE
+  traditions:
+  - simulation-theory
+  - christianity
+  - historical-jesus
+  supporting_sources: []
+  opposing_sources: []
+  confidence: high-as-inference-rule
+  contested: false
+- id: CLM-YESHUA-SIMULATION-SPECIFIC-EVIDENCE-NONE
+  proposition: The current On-Theo Yeshua corpus contains no established feature that is more specifically predicted by a
+    simulation/intervention model than by historically available Jewish apocalyptic, prophetic, healing, resurrection, literary-memory
+    or ordinary causal alternatives.
+  claim_type: NEGATIVE_COMPARATIVE_FINDING
+  evidence_class:
+  - PROJECT_INFERENCE
+  - UNKNOWN
+  traditions:
+  - historical-jesus
+  - simulation-theory
+  supporting_sources: []
+  opposing_sources: []
+  confidence: provisional
+  contested: true
+  notes:
+  - This claim is intentionally revisable if a genuinely discriminating feature is identified.
+- id: CLM-JOHN-8-41-PORNEIA-ONE-FATHER
+  proposition: John 8:41 has Jesus's interlocutors deny that they were born from porneia and claim one Father, God, within
+    an extended dispute about Abrahamic and divine paternity.
+  claim_type: TEXTUAL_OCCURRENCE
+  evidence_class:
+  - PRIMARY_TEXT
+  traditions:
+  - christianity
+  supporting_sources:
+  - source_id: SRC-GOSPEL-JOHN
+    locator: John 8:31-47; focal verse 8:41
+    relation: DIRECT_TEXTUAL_SUPPORT
+    access_mode: MODERN_CRITICAL_TEXT_AND_TRANSLATION
+  opposing_sources: []
+  confidence: high
+  contested: false
+- id: CLM-JOHN-8-41-IMPLIED-PERSONAL-TAUNT
+  proposition: The emphatic denial 'we were not born from porneia' in John 8:41 carries an implied contrast directed at Jesus,
+    approximately 'we were not, unlike you'.
+  claim_type: RHETORICAL_INFERENCE
+  evidence_class:
+  - SCHOLARLY_INTERPRETATION
+  traditions:
+  - christianity
+  - historical-jesus
+  supporting_sources:
+  - source_id: SCH-HARLOW-2012-BORN-FORNICATION
+    locator: John 8:41 discussion
+    relation: ALLOWS_RHETORICAL_SUBTEXT_WITHOUT_FIXING_TYPE_OF_PORNEIA
+    access_mode: ACCESSIBLE_CHAPTER_COPY
+  opposing_sources: []
+  confidence: plausible-but-underdetermined
+  contested: true
+  notes:
+  - Even on Harlow's analysis, the rhetorical subtext does not establish that literal sexual immorality rather than spiritual/covenantal
+    infidelity is intended.
+- id: CLM-JOHN-8-41-SPIRITUAL-PATERNITY-READING
+  proposition: John 8:41 is best explained in its immediate literary context as a claim of spiritual/covenantal legitimacy
+    rather than a literal accusation about Jesus's biological conception.
+  claim_type: LITERARY_SEMANTIC_INTERPRETATION
+  evidence_class:
+  - SCHOLARLY_INTERPRETATION
+  traditions:
+  - christianity
+  supporting_sources:
+  - source_id: SCH-HARLOW-2012-BORN-FORNICATION
+    locator: John 8:41 analysis and conclusion
+    relation: ARGUES_FOR_SPIRITUAL_LEGITIMACY_READING
+    access_mode: ACCESSIBLE_CHAPTER_COPY
+  - source_id: SRC-GOSPEL-JOHN
+    locator: John 8:39-47
+    relation: IMMEDIATE_CONTEXT_SPIRITUALIZES_PATERNITY_AND_CULMINATES_IN_FATHER_THE_DEVIL
+    access_mode: MODERN_CRITICAL_TEXT_AND_TRANSLATION
+  opposing_sources: []
+  confidence: strong-scholarly-case-not-project-fact
+  contested: true
+- id: CLM-ORIGEN-COMMENTARY-JOHN-READS-8-41-AS-BIRTH-SLUR
+  proposition: Origen's Commentary on John 20.128-130 interprets John 8:41 as a veiled slur concerning Jesus's virgin birth;
+    Harlow identifies it as the earliest surviving commentary to do so.
+  claim_type: RECEPTION_HISTORY
+  evidence_class:
+  - LATER_TRADITION
+  - SCHOLARLY_INTERPRETATION
+  traditions:
+  - christianity
+  - jewish-christian-relations
+  supporting_sources:
+  - source_id: SRC-ORIGEN-COMMENTARY-JOHN
+    locator: Commentary on John 20.128-130
+    relation: PRIMARY_RECEPTION_TEXT_EXACT_LOCATOR_REPORTED_BY_SCHOLARSHIP
+    access_mode: EXACT_LOCATOR_THROUGH_HARLOW_QUOTING_HEINE
+  - source_id: SCH-HARLOW-2012-BORN-FORNICATION
+    locator: discussion of Commentary on John 20.128-130
+    relation: SCHOLARLY_SOURCE_IDENTIFICATION_AND_ANALYSIS
+    access_mode: ACCESSIBLE_CHAPTER_COPY
+  opposing_sources: []
+  confidence: high-for-locator-and-harlows-report-greek-collation-pending
+  contested: false
+  notes:
+  - This is reception-history evidence. It is not evidence that the same reading was present in the first-century Johannine
+    setting.
+  - Harlow notes that Origen himself says a literal reading of the phrase fits neither the preceding nor following context
+    cleanly before proposing the veiled insult.
+- id: CLM-JOHN-8-41-PROVES-FIRST-CENTURY-ILLEGITIMACY-RUMOR
+  proposition: John 8:41 independently establishes that first-century Jews knew and circulated a literal sexual-illegitimacy
+    claim about Jesus's birth.
+  claim_type: HISTORICAL_RECONSTRUCTION
+  evidence_class:
+  - UNKNOWN
+  traditions:
+  - comparative
+  supporting_sources: []
+  opposing_sources:
+  - source_id: SCH-HARLOW-2012-BORN-FORNICATION
+    locator: John 8:41 conclusion
+    relation: ARGUES_VERSE_IS_NOT_SOLID_EVIDENCE_FOR_FIRST_CENTURY_REJECTION_OF_VIRGIN_BIRTH
+    access_mode: ACCESSIBLE_CHAPTER_COPY
+  - source_id: SRC-GOSPEL-JOHN
+    locator: John 8:31-47
+    relation: IMMEDIATE_CONTEXT_SUPPORTS_NONBIOLOGICAL_PATERNITY_ARGUMENT
+    access_mode: MODERN_CRITICAL_TEXT_AND_TRANSLATION
+  confidence: unresolved
+  contested: true
+- id: CLM-JOHN-8-41-SUPPORTS-PANTHERA-BIOLOGICAL-PATERNITY
+  proposition: John 8:41 independently supports Panthera/Pandera as the biological father of the historical Jesus/Yeshua.
+  claim_type: HISTORICAL_BIOGRAPHY
+  evidence_class:
+  - UNKNOWN
+  traditions:
+  - comparative
+  supporting_sources: []
+  opposing_sources:
+  - source_id: SRC-GOSPEL-JOHN
+    locator: John 8:41
+    relation: TEXT_DOES_NOT_NAME_MARY_PANTHERA_OR_ALTERNATIVE_FATHER
+    access_mode: MODERN_CRITICAL_TEXT_AND_TRANSLATION
+  confidence: unresolved
+  contested: true
+  notes:
+  - The later explicit Panthera accusation cannot be imported into John's ambiguous wording and then counted as independent
+    corroboration.
+- id: CLM-SN56-11-FOURFOLD-SUFFERING-PATH
+  proposition: SN 56.11 presents suffering, its origin in craving, cessation, and the path to cessation, including the Noble
+    Eightfold Path.
+  claim_type: TEXTUAL_OCCURRENCE
+  evidence_class:
+  - PRIMARY_TEXT
+  traditions:
+  - early-buddhist
+  supporting_sources:
+  - source_id: SRC-BUDDHIST-SN-56-11
+    locator: SN 56.11
+    relation: DIRECT_TEXTUAL_SUPPORT
+    access_mode: DIGITAL_EDITION_TRANSLATION
+  opposing_sources: []
+  confidence: high-at-received-text-level
+  contested: false
+- id: CLM-SN22-59-AGGREGATES-NOT-SELF
+  proposition: SN 22.59 applies not-self analysis to form, feeling, perception, formations and consciousness and links that
+    analysis to dispassion and liberation.
+  claim_type: TEXTUAL_OCCURRENCE
+  evidence_class:
+  - PRIMARY_TEXT
+  traditions:
+  - early-buddhist
+  supporting_sources:
+  - source_id: SRC-BUDDHIST-SN-22-59
+    locator: SN 22.59
+    relation: DIRECT_TEXTUAL_SUPPORT
+    access_mode: DIGITAL_EDITION_TRANSLATION
+  opposing_sources: []
+  confidence: high-at-received-text-level
+  contested: false
+- id: CLM-SN12-20-DEPENDENT-ORIGINATION-CONDITIONALITY
+  proposition: SN 12.20 presents dependent origination as a stable conditional pattern involving birth, becoming, clinging,
+    craving and preceding conditions rather than as creation by a first cause.
+  claim_type: TEXTUAL_OCCURRENCE
+  evidence_class:
+  - PRIMARY_TEXT
+  traditions:
+  - early-buddhist
+  supporting_sources:
+  - source_id: SRC-BUDDHIST-SN-12-20
+    locator: SN 12.20
+    relation: DIRECT_TEXTUAL_SUPPORT
+    access_mode: DIGITAL_EDITION_TRANSLATION
+  opposing_sources: []
+  confidence: high-at-received-text-level
+  contested: false
+- id: CLM-EARLY-BUDDHIST-TEXTS-SCHOOL-TRANSMISSION
+  proposition: The earliest recoverable Buddhist teachings are preserved through multiple school-specific textual traditions
+    whose discrepancies and parallels are themselves evidence for reconstruction rather than direct access to one pristine
+    transcript.
+  claim_type: SOURCE_HISTORY
+  evidence_class:
+  - SCHOLARLY_INTERPRETATION
+  traditions:
+  - early-buddhist
+  supporting_sources:
+  - source_id: SCH-BUCKNELL-2022-RECONSTRUCTING-EARLY-BUDDHISM
+    locator: Chapter 1 and book description
+    relation: COMPARATIVE_TEXTUAL_RECONSTRUCTION
+    access_mode: PUBLISHER_SUMMARY
+  opposing_sources: []
+  confidence: high-for-multiple-traditions
+  contested: false
+- id: CLM-BUDDHISM-BRAHMANICAL-AVANT-GARDE-MODEL
+  proposition: Early Buddhism may be best located within fluid fifth-century BCE Brahmanical and renunciant intellectual currents
+    rather than as an external reaction to one monolithic finished Brahmanism.
+  claim_type: HISTORICAL_ORIGIN_MODEL
+  evidence_class:
+  - SCHOLARLY_INTERPRETATION
+  traditions:
+  - early-buddhist
+  - brahmanical
+  supporting_sources:
+  - source_id: SCH-MCGOVERN-2022-BRAHMANICAL-AVANT-GARDE
+    locator: abstract
+    relation: DIRECT_AUTHOR_MODEL
+    access_mode: PUBLISHER_ABSTRACT
+  opposing_sources: []
+  confidence: plausible-unresolved
+  contested: true
+- id: CLM-BUDDHIST-BRAHMANICAL-SHARED-VOCAB-DIVERGENT-SEMANTICS
+  proposition: Early Buddhist and Brahmanical traditions share an evolving Indian karma/rebirth and liberation problem-space
+    while developing materially different models of self, causality, ritual authority and liberation.
+  claim_type: COMPARATIVE_HISTORICAL_RECONSTRUCTION
+  evidence_class:
+  - PROJECT_INFERENCE
+  - SCHOLARLY_INTERPRETATION
+  traditions:
+  - early-buddhist
+  - brahmanical
+  - comparative
+  supporting_sources:
+  - source_id: SCH-MCGOVERN-2022-BRAHMANICAL-AVANT-GARDE
+    locator: abstract
+    relation: CONTACT_FIELD_MODEL
+    access_mode: PUBLISHER_ABSTRACT
+  - source_id: SCH-BUCKNELL-2022-RECONSTRUCTING-EARLY-BUDDHISM
+    locator: book structure
+    relation: EARLY_BUDDHIST_CONTROL
+    access_mode: PUBLISHER_SUMMARY
+  - source_id: SCH-OLIVELLE-UPANISADS-1998
+    locator: Introduction
+    relation: BRAHMANICAL_UPANISHADIC_CONTROL
+    access_mode: PUBLISHER_ABSTRACT
+  opposing_sources: []
+  confidence: high-for-shared-field-moderate-for-specific-historical-relations
+  contested: true
+- id: CLM-JOSEPHUS-JEWISH-GROUPS-DIFFER
+  proposition: Josephus distinguishes Pharisees, Sadducees, and Essenes as Jewish schools/groups with materially different
+    teachings and practices.
+  claim_type: TEXTUAL_OCCURRENCE
+  evidence_class:
+  - PRIMARY_TEXT
+  traditions:
+  - second-temple-judaism
+  supporting_sources:
+  - source_id: SRC-JOSEPHUS-WAR-2
+    locator: War II.8
+    relation: DIRECT_TEXTUAL_SUPPORT
+    access_mode: DIGITAL_EDITION
+  - source_id: SRC-JOSEPHUS-ANTIQUITIES-18
+    locator: Antiquities XVIII
+    relation: SAME_AUTHOR_ADDITIONAL_ACCOUNT
+    access_mode: DIGITAL_EDITION
+  opposing_sources: []
+  confidence: high-for-josephus-representation
+  contested: false
+  notes:
+  - This does not establish that Josephus's taxonomy exhausts Second Temple Jewish diversity.
+- id: CLM-QUMRAN-RULE-TORAH-JUDGMENT-COMMUNITY
+  proposition: The Community Rule represents a disciplined Jewish community organized around Torah study, graded admission,
+    communal norms, separation, and preparation for divine judgment.
+  claim_type: TEXTUAL_SYSTEM_SUMMARY
+  evidence_class:
+  - PRIMARY_TEXT
+  traditions:
+  - second-temple-judaism
+  - dead-sea-scrolls
+  supporting_sources:
+  - source_id: SRC-DSS-COMMUNITY-RULE
+    locator: Community Rule
+    relation: DIRECT_TEXTUAL_SUPPORT
+    access_mode: INSTITUTIONAL_TRANSLATION
+  opposing_sources: []
+  confidence: high
+  contested: false
+- id: CLM-DSS-APOCALYPTICISM-NOT-WHOLE-JUDAISM
+  proposition: Apocalypticism and messianism are significant within Dead Sea Scroll and wider Second Temple Jewish traditions
+    but should not be treated as exhaustive of Second Temple Judaism.
+  claim_type: HISTORICAL_SYNTHESIS
+  evidence_class:
+  - SCHOLARLY_INTERPRETATION
+  traditions:
+  - second-temple-judaism
+  supporting_sources:
+  - source_id: SCH-KNIBB-2011-DSS-APOCALYPTICISM
+    locator: chapter abstract and argument
+    relation: SCHOLARLY_SYNTHESIS
+    access_mode: PUBLISHER_ABSTRACT
+  opposing_sources: []
+  confidence: high-for-non-exhaustiveness
+  contested: false
+- id: CLM-ELEUSIS-INITIATION-AFTERLIFE
+  proposition: The Homeric Hymn to Demeter links Eleusinian initiation with a privileged postmortem fate while not disclosing
+    a complete ritual script.
+  claim_type: TEXTUAL_OCCURRENCE
+  evidence_class:
+  - PRIMARY_TEXT
+  traditions:
+  - greek-religion
+  - eleusinian
+  supporting_sources:
+  - source_id: SRC-HOMERIC-HYMN-DEMETER
+    locator: closing initiation/afterlife section
+    relation: DIRECT_TEXTUAL_SUPPORT
+    access_mode: DIGITAL_EDITION
+  opposing_sources: []
+  confidence: high
+  contested: false
+- id: CLM-PLATO-ER-MORAL-AFTERLIFE
+  proposition: Plato's Myth of Er presents postmortem judgment, differentiated reward/punishment, future-life choice, and
+    reincarnation within a philosophical myth.
+  claim_type: TEXTUAL_OCCURRENCE
+  evidence_class:
+  - PRIMARY_TEXT
+  traditions:
+  - greek-philosophy
+  - platonism
+  supporting_sources:
+  - source_id: SRC-PLATO-REPUBLIC-10
+    locator: Republic 614b-621d
+    relation: DIRECT_TEXTUAL_SUPPORT
+    access_mode: DIGITAL_EDITION
+  opposing_sources: []
+  confidence: high
+  contested: false
+- id: CLM-ROMAN-IMPERIAL-CULT-RELIGIOUSLY-EMBEDDED
+  proposition: Roman emperor worship and imperial honours functioned within existing Roman and provincial religious institutions
+    rather than constituting one wholly foreign, centrally imposed pseudo-religion.
+  claim_type: HISTORICAL_RECONSTRUCTION
+  evidence_class:
+  - PRIMARY_TEXT
+  - SCHOLARLY_INTERPRETATION
+  traditions:
+  - roman-religion
+  - imperial-cult
+  supporting_sources:
+  - source_id: SRC-AUGUSTUS-RES-GESTAE
+    locator: sections 19-21
+    relation: PRIMARY_IMPERIAL_RELIGIOUS_CONTEXT
+    access_mode: DIGITAL_EDITION
+  - source_id: SCH-GRADEL-2002-EMPEROR-WORSHIP
+    locator: book argument
+    relation: SCHOLARLY_SYNTHESIS
+    access_mode: PUBLISHER_ABSTRACT_AND_CONTENTS
+  opposing_sources: []
+  confidence: high-for-embeddedness
+  contested: false
+- id: CLM-GREEK-DAIMON-NOT-EQUAL-CHRISTIAN-DEMON
+  proposition: Greek daimon terminology covers historically diverse intermediary/superhuman meanings and is not semantically
+    identical by default to later Christian 'demon'.
+  claim_type: SEMANTIC_HISTORICAL_INFERENCE
+  evidence_class:
+  - SCHOLARLY_INTERPRETATION
+  traditions:
+  - greek-religion
+  - christianity
+  supporting_sources:
+  - source_id: SCH-GASPARRO-2016-DAIMONIC-POWER
+    locator: chapter abstract and synthesis
+    relation: SCHOLARLY_SEMANTIC_HISTORY
+    access_mode: PUBLISHER_ABSTRACT
+  opposing_sources: []
+  confidence: high
+  contested: false
+- id: CLM-MYSTERY-CULTS-ONE-UNIFORM-RELIGION
+  proposition: Greek and Roman mystery cults formed one cohesive religion with a single theology, ritual grammar, and salvation
+    doctrine.
+  claim_type: HISTORICAL_GENERALIZATION
+  evidence_class:
+  - UNKNOWN
+  traditions:
+  - greco-roman
+  supporting_sources: []
+  opposing_sources:
+  - source_id: SCH-KAROGLOU-2013-MYSTERY-CULTS
+    locator: essay
+    relation: WARNS_AGAINST_COHESIVE_CATEGORY
+    access_mode: INSTITUTIONAL_FULL_TEXT
+  confidence: low
+  contested: true
+- id: CLM-LXX-HOSEA-PORNEIA-COVENANT-INFIDELITY
+  proposition: The Septuagint of Hosea 1:2 uses the porneia word-family in a sign-act whose stated referent is the land's
+    departure from the Lord, demonstrating covenant-infidelity metaphorical usage.
+  claim_type: TEXTUAL_SEMANTIC_OCCURRENCE
+  evidence_class:
+  - PRIMARY_TEXT
+  traditions:
+  - septuagint
+  - judaism
+  supporting_sources:
+  - source_id: SRC-LXX-HOSEA
+    locator: Hosea 1:2
+    relation: DIRECT_TEXTUAL_SUPPORT
+    access_mode: MODERN_DIGITAL_GREEK_TEXT
+  opposing_sources: []
+  confidence: high
+  contested: false
+  notes:
+  - This demonstrates a nonexclusive metaphorical semantic use; it does not prove that every later porneia occurrence is metaphorical.
+- id: CLM-LXX-EZEKIEL16-PORNEIA-RELIGIOUS-INFIDELITY
+  proposition: Septuagint Ezekiel 16 repeatedly uses the porneia word-family in a personification of Jerusalem that intertwines
+    sexualized infidelity imagery with religious/political betrayal and child sacrifice.
+  claim_type: TEXTUAL_SEMANTIC_OCCURRENCE
+  evidence_class:
+  - PRIMARY_TEXT
+  traditions:
+  - septuagint
+  - judaism
+  supporting_sources:
+  - source_id: SRC-LXX-EZEKIEL
+    locator: Ezekiel 16:20-26 and surrounding chapter
+    relation: DIRECT_TEXTUAL_SUPPORT
+    access_mode: MODERN_DIGITAL_GREEK_TEXT
+  opposing_sources: []
+  confidence: high
+  contested: false
+- id: CLM-PORNEIA-HAS-SINGLE-FIXED-ILLEGITIMACY-SENSE
+  proposition: In Jewish/early Christian Greek, porneia has a single fixed lexical meaning of literal biological illegitimacy
+    or conception through illicit sex.
+  claim_type: SEMANTIC_GENERALIZATION
+  evidence_class:
+  - PROJECT_INFERENCE
+  traditions:
+  - comparative
+  supporting_sources: []
+  opposing_sources:
+  - source_id: SRC-LXX-HOSEA
+    locator: Hosea 1:2
+    relation: COVENANT_INFIDELITY_METAPHOR_DEFEATS_EXCLUSIVE_RULE
+    access_mode: MODERN_DIGITAL_GREEK_TEXT
+  - source_id: SRC-LXX-EZEKIEL
+    locator: Ezekiel 16
+    relation: RELIGIOUS_CORPORATE_METAPHOR_DEFEATS_EXCLUSIVE_RULE
+    access_mode: MODERN_DIGITAL_GREEK_TEXT
+  - source_id: SCH-JENSEN-1978-PORNEIA
+    locator: article argument
+    relation: SCHOLARLY_EVIDENCE_OF_BROADER_CONTESTED_SEMANTIC_RANGE
+    access_mode: PUBLISHER_PREVIEW
+  - source_id: SCH-HARPER-2012-PORNEIA
+    locator: article argument
+    relation: SCHOLARLY_RECONSTRUCTION_OF_BROAD_SEXUAL_CATEGORY
+    access_mode: ABSTRACT_AND_BIBLIOGRAPHIC_RECORD
+  - source_id: SCH-GLANCY-2015-PORNEIA
+    locator: article argument
+    relation: SCHOLARLY_CHALLENGE_TO_CATEGORY_BOUNDARY
+    access_mode: ABSTRACT_AND_BIBLIOGRAPHIC_RECORD
+  confidence: contradicted-as-exclusive-rule
+  contested: false
+  notes:
+  - The claim rejected here is exclusivity. This does not deny literal sexual senses of porneia.
+- id: CLM-PORNEIA-FIRST-CENTURY-SEXUAL-CATEGORY-BOUNDARIES-CONTESTED
+  proposition: Modern scholarship materially disagrees about the boundaries of porneia as a Jewish/early Christian sexual-morality
+    category, so a single historically obvious extension should not be assumed.
+  claim_type: SCHOLARLY_STATE_OF_QUESTION
+  evidence_class:
+  - SCHOLARLY_INTERPRETATION
+  traditions:
+  - comparative
+  supporting_sources:
+  - source_id: SCH-MALINA-1972-PORNEIA
+    locator: article thesis
+    relation: PROPOSES_TORAH_PROHIBITION_MODEL
+    access_mode: PUBLISHER_METADATA_AND_PREVIEW
+  - source_id: SCH-JENSEN-1978-PORNEIA
+    locator: critique of Malina
+    relation: CHALLENGES_AND_REFRAMES_SCOPE
+    access_mode: PUBLISHER_PREVIEW
+  - source_id: SCH-HARPER-2012-PORNEIA
+    locator: article thesis
+    relation: PROPOSES_BROAD_CONJUGAL_SEXUAL_NORM_MODEL
+    access_mode: ABSTRACT_AND_BIBLIOGRAPHIC_RECORD
+  - source_id: SCH-GLANCY-2015-PORNEIA
+    locator: response to Harper
+    relation: LIMITS_HARPERS_SCOPE_USING_SLAVERY_EVIDENCE
+    access_mode: ABSTRACT_AND_BIBLIOGRAPHIC_RECORD
+  opposing_sources: []
+  confidence: high-for-existence-of-scholarly-disagreement
+  contested: false
+- id: CLM-JOHN8-PORNEIA-FORCES-LITERAL-BIRTH-SLUR
+  proposition: The lexical meaning of porneia in John 8:41 forces the verse to be read as a literal accusation about Jesus's
+    biological conception.
+  claim_type: LITERARY_SEMANTIC_INTERPRETATION
+  evidence_class:
+  - UNKNOWN
+  traditions:
+  - christianity
+  - historical-jesus
+  supporting_sources: []
+  opposing_sources:
+  - source_id: SRC-LXX-HOSEA
+    locator: Hosea 1:2
+    relation: NONLITERAL_JEWISH_GREEK_SEMANTIC_AVAILABILITY
+    access_mode: MODERN_DIGITAL_GREEK_TEXT
+  - source_id: SRC-LXX-EZEKIEL
+    locator: Ezekiel 16
+    relation: NONLITERAL_JEWISH_GREEK_SEMANTIC_AVAILABILITY
+    access_mode: MODERN_DIGITAL_GREEK_TEXT
+  - source_id: SCH-HARLOW-2012-BORN-FORNICATION
+    locator: John 8:41 analysis
+    relation: ARGUES_CONTEXT_SUPPORTS_SPIRITUAL_COVENANTAL_READING
+    access_mode: ACCESSIBLE_CHAPTER_COPY
+  confidence: unresolved-but-not-lexically-forced
+  contested: true
+  notes:
+  - The literal-taunt reading remains possible; this claim rejects only lexical necessity.
+- id: CLM-JOHN8-COVENANT-READING-LEXICALLY-POSSIBLE
+  proposition: A spiritual/covenantal reading of porneia in John 8:41 is lexically and culturally possible within Jewish Greek
+    usage.
+  claim_type: SEMANTIC_POSSIBILITY
+  evidence_class:
+  - PRIMARY_TEXT
+  - SCHOLARLY_INTERPRETATION
+  traditions:
+  - christianity
+  - septuagint
+  supporting_sources:
+  - source_id: SRC-LXX-HOSEA
+    locator: Hosea 1:2
+    relation: JEWISH_GREEK_COVENANT_INFIDELITY_PARALLEL
+    access_mode: MODERN_DIGITAL_GREEK_TEXT
+  - source_id: SRC-LXX-EZEKIEL
+    locator: Ezekiel 16
+    relation: JEWISH_GREEK_RELIGIOUS_INFIDELITY_PARALLEL
+    access_mode: MODERN_DIGITAL_GREEK_TEXT
+  - source_id: SCH-HARLOW-2012-BORN-FORNICATION
+    locator: John 8:41 analysis and conclusion
+    relation: SCHOLARLY_CONTEXTUAL_SUPPORT
+    access_mode: ACCESSIBLE_CHAPTER_COPY
+  opposing_sources: []
+  confidence: high-for-possibility-not-meaning
+  contested: false
+  notes:
+  - Semantic possibility does not establish that this is the author's intended or historically heard meaning.
+- id: CLM-JOHN8-PORNEIA-SUPPORTS-PANTHERA-PATERNITY
+  proposition: The word porneia in John 8:41 independently supports Panthera/Pandera as the biological father of the historical
+    Jesus/Yeshua.
+  claim_type: HISTORICAL_BIOGRAPHY
+  evidence_class:
+  - UNKNOWN
+  traditions:
+  - comparative
+  supporting_sources: []
+  opposing_sources:
+  - source_id: SRC-GOSPEL-JOHN
+    locator: John 8:41
+    relation: TEXT_DOES_NOT_NAME_PANTHERA_OR_ALTERNATIVE_FATHER
+    access_mode: MODERN_CRITICAL_TEXT_AND_TRANSLATION
+  - source_id: SRC-LXX-HOSEA
+    locator: Hosea 1:2
+    relation: SEMANTIC_NONUNIQUENESS_PREVENTS_WORD_ALONE_FROM_FIXING_PATERNITY_STORY
+    access_mode: MODERN_DIGITAL_GREEK_TEXT
+  confidence: unresolved
+  contested: true
+  notes:
+  - Importing the later Panthera tradition to fix John's ambiguous wording and then counting John as independent corroboration
+    is circular.
+- id: CLM-ENOCH-WATCHERS-EVIL-ETIOLOGY
+  proposition: The Book of the Watchers develops Genesis 6:1-4 into an account connecting rebellious heavenly beings, illicit
+    human unions, forbidden knowledge, giant violence, divine judgment, and later giant-spirit demon etiology.
+  claim_type: TEXTUAL_AND_LITERARY_DEVELOPMENT
+  evidence_class:
+  - PRIMARY_TEXT
+  - SCHOLARLY_INTERPRETATION
+  traditions:
+  - second-temple-judaism
+  - enochic
+  supporting_sources:
+  - source_id: SRC-1ENOCH-WATCHERS
+    locator: 1 Enoch 6-16 tradition complex
+    relation: PRIMARY_TEXT_TRADITION
+    access_mode: SCHOLARLY_RECONSTRUCTION_IN_V1
+  - source_id: SCH-STOKES-2019-SATANOLOGY-WATCHERS
+    locator: Book of Watchers analysis
+    relation: SCHOLARLY_LAYERING_AND_DEMON_ETIOLOGY
+    access_mode: PUBLISHER_ACCESS
+  opposing_sources: []
+  confidence: high-for-developed-tradition-moderate-for-layer-sequence
+  contested: true
+- id: CLM-DANIEL-APOCALYPTIC-EMPIRE-JUDGMENT
+  proposition: Daniel 7-12 transforms imperial crisis into apocalyptic history involving symbolic empires, heavenly judgment,
+    angelic princes, divine deliverance, and final vindication.
+  claim_type: TEXTUAL_SYSTEM_SUMMARY
+  evidence_class:
+  - PRIMARY_TEXT
+  - SCHOLARLY_INTERPRETATION
+  traditions:
+  - second-temple-judaism
+  - danielic
+  supporting_sources:
+  - source_id: SRC-DANIEL-7-12
+    locator: Daniel 7-12
+    relation: DIRECT_TEXTUAL_SUPPORT
+    access_mode: DIGITAL_EDITION
+  - source_id: SCH-OCD-2022-DANIEL
+    locator: reference article
+    relation: HISTORICAL_SYNTHESIS
+    access_mode: PUBLISHER_SUMMARY
+  opposing_sources: []
+  confidence: high
+  contested: false
+- id: CLM-DANIEL12-RESURRECTION
+  proposition: Daniel 12:2-3 explicitly describes many sleepers in the dust awakening to differentiated enduring destinies
+    and the wise/righteous receiving star-like radiance.
+  claim_type: TEXTUAL_OCCURRENCE
+  evidence_class:
+  - PRIMARY_TEXT
+  traditions:
+  - second-temple-judaism
+  - resurrection
+  supporting_sources:
+  - source_id: SRC-DANIEL-7-12
+    locator: Daniel 12:2-3
+    relation: DIRECT_TEXTUAL_SUPPORT
+    access_mode: DIGITAL_EDITION
+  opposing_sources: []
+  confidence: high
+  contested: false
+  notes:
+  - This claim does not assert a fully universal resurrection doctrine beyond the wording of the passage.
+- id: CLM-PHILO-JEWISH-GREEK-SYNTHESIS
+  proposition: Philo explicitly interprets Jewish scripture through Greek philosophical and exegetical categories while presenting
+    Moses and the God of Israel as authoritative.
+  claim_type: INTELLECTUAL_HISTORY
+  evidence_class:
+  - PRIMARY_TEXT
+  - SCHOLARLY_INTERPRETATION
+  traditions:
+  - hellenistic-judaism
+  - greek-philosophy
+  supporting_sources:
+  - source_id: SRC-PHILO-DE-OPIFICIO
+    locator: On the Creation, opening and intelligible-world sections
+    relation: DIRECT_TEXTUAL_SUPPORT
+    access_mode: DIGITAL_TRANSLATION
+  - source_id: SCH-NIEHOFF-2018-PHILO-LOGOS
+    locator: chapter argument
+    relation: SCHOLARLY_SYNTHESIS
+    access_mode: PUBLISHER_ABSTRACT
+  - source_id: SCH-DECHARNEUX-2017-PHILO-POWERS
+    locator: chapter argument
+    relation: SCHOLARLY_SYNTHESIS
+    access_mode: PUBLISHER_ABSTRACT
+  opposing_sources: []
+  confidence: high
+  contested: false
+- id: CLM-PHILO-LOGOS-EQUALS-JOHN-CHRIST
+  proposition: Philo's Logos and the Gospel of John's Christ-Logos are the same concept with established direct literary dependence.
+  claim_type: CONCEPT_IDENTITY_AND_TRANSMISSION
+  evidence_class:
+  - UNKNOWN
+  traditions:
+  - hellenistic-judaism
+  - christianity
+  supporting_sources: []
+  opposing_sources:
+  - source_id: SCH-NIEHOFF-2018-PHILO-LOGOS
+    locator: Philonic Logos in its own philosophical-exegetical setting
+    relation: SOURCE_SPECIFIC_CONTEXT_PREVENTS_UNARGUED_IDENTITY
+    access_mode: PUBLISHER_ABSTRACT
+  confidence: unresolved
+  contested: true
+- id: CLM-ORIGEN-CELSUS-JEW-LITERARY-INAPPROPRIATENESS
+  proposition: Origen explicitly criticizes at least some arguments or staging assigned by Celsus to his Jewish speaker as
+    inappropriate or unnatural for a Jew.
+  claim_type: SOURCE_CRITICISM_OCCURRENCE
+  evidence_class:
+  - PRIMARY_TEXT
+  traditions:
+  - christianity
+  - greco-roman
+  - jewish-christian-relations
+  supporting_sources:
+  - source_id: SRC-ORIGEN-CONTRA-CELSUM
+    locator: Book II, chapter 1
+    relation: DIRECT_TEXTUAL_SUPPORT
+    access_mode: MODERN_TRANSLATION_OF_EXTANT_ORIGEN
+  - source_id: SRC-ORIGEN-CONTRA-CELSUM
+    locator: Book II, chapter 28
+    relation: DIRECT_TEXTUAL_SUPPORT
+    access_mode: MODERN_TRANSLATION_OF_EXTANT_ORIGEN
+  opposing_sources: []
+  confidence: high-at-textual-occurrence-level
+  contested: false
+  notes:
+  - Origen's criticism does not prove that Celsus fabricated the entire persona or that no authentic Jewish material lies
+    behind it.
+- id: CLM-CELSUS-JEW-CONTAINS-AUTHENTIC-JEWISH-ARGUMENTS
+  proposition: At least some material assigned by Celsus to his Jewish speaker reflects authentic second-century Jewish anti-Christian
+    arguments rather than being wholly invented by Celsus.
+  claim_type: SOURCE_PROVENANCE
+  evidence_class:
+  - SCHOLARLY_INTERPRETATION
+  traditions:
+  - greco-roman
+  - judaism
+  - christianity
+  supporting_sources:
+  - source_id: SCH-BLUMELL-2007-CELSUS-JEW
+    locator: article argument
+    relation: ARGUES_FOR_AUTHENTIC_JEWISH_INPUT
+    access_mode: PUBLISHER_ABSTRACT_AND_BIBLIOGRAPHIC_RECORD
+  - source_id: SCH-NIEHOFF-2013-CELSUS-JEW
+    locator: article argument
+    relation: ARGUES_FOR_WRITTEN_ALEXANDRIAN_JEWISH_SOURCE
+    access_mode: INSTITUTIONAL_ABSTRACT_AND_BIBLIOGRAPHIC_RECORD
+  - source_id: SCH-PAGET-2017-CELSUS-JEW
+    locator: article argument / abstract-level readback
+    relation: ARGUES_AUTHENTICITY_IS_SUPPORTED_BY_MULTIPLE_FEATURES
+    access_mode: PUBLISHER_ABSTRACT_PLUS_INSTITUTIONAL_RECORD
+  opposing_sources:
+  - source_id: SCH-HARGIS-1999-ANTI-CHRISTIAN-POLEMIC
+    locator: pp. 36-39 as identified by Blumell 2007
+    relation: REPORTED_SCHOLARLY_CHALLENGE_TO_AUTHENTICITY
+    access_mode: SECONDARY_REPORT_PLUS_PUBLISHER_METADATA
+  - source_id: SCH-TRIGG-1998-ORIGEN
+    locator: p. 58 as identified by Blumell 2007
+    relation: REPORTED_SCHOLARLY_CHALLENGE_TO_AUTHENTICITY
+    access_mode: SECONDARY_REPORT_PLUS_PUBLISHER_METADATA
+  - source_id: SRC-ORIGEN-CONTRA-CELSUM
+    locator: Book II, chapters 1 and 28
+    relation: EXTANT_AUTHOR_NOTES_PERSONA_ARGUMENT_TENSION
+    access_mode: MODERN_TRANSLATION_OF_EXTANT_ORIGEN
+  confidence: unresolved
+  contested: true
+  notes:
+  - Authentic Jewish input is a weaker proposition than a single recoverable written Jewish source.
+- id: CLM-CELSUS-JEW-SINGLE-INDEPENDENT-WRITTEN-SOURCE
+  proposition: The material assigned to Celsus's Jewish speaker derives substantially from one independent written Jewish
+    source that can be reconstructed behind Celsus.
+  claim_type: SOURCE_PROVENANCE
+  evidence_class:
+  - SCHOLARLY_INTERPRETATION
+  traditions:
+  - greco-roman
+  - judaism
+  - christianity
+  supporting_sources:
+  - source_id: SCH-NIEHOFF-2013-CELSUS-JEW
+    locator: article argument
+    relation: ARGUES_FOR_SINGLE_WRITTEN_ALEXANDRIAN_SOURCE
+    access_mode: INSTITUTIONAL_ABSTRACT_AND_BIBLIOGRAPHIC_RECORD
+  opposing_sources:
+  - source_id: SCH-HARGIS-1999-ANTI-CHRISTIAN-POLEMIC
+    locator: pp. 36-39 as identified by Blumell 2007
+    relation: REPORTED_CHALLENGE_TO_AUTHENTICITY_MODEL
+    access_mode: SECONDARY_REPORT_PLUS_PUBLISHER_METADATA
+  - source_id: SCH-TRIGG-1998-ORIGEN
+    locator: p. 58 as identified by Blumell 2007
+    relation: REPORTED_CHALLENGE_TO_AUTHENTICITY_MODEL
+    access_mode: SECONDARY_REPORT_PLUS_PUBLISHER_METADATA
+  - source_id: SRC-ORIGEN-CONTRA-CELSUM
+    locator: Book II, chapters 1 and 28
+    relation: PERSONA_CONSTRUCTION_TENSION
+    access_mode: MODERN_TRANSLATION_OF_EXTANT_ORIGEN
+  confidence: unresolved
+  contested: true
+  alternatives:
+  - Celsus constructed a literary Jewish persona while drawing selectively on Jewish arguments or interlocutors.
+  - Celsus drew on multiple Jewish oral/written traditions rather than one recoverable source.
+  - The persona combines Jewish material with Celsus's own Greek philosophical and polemical framing.
+- id: CLM-CELSUS-JEW-ENTIRELY-CELSIAN-LITERARY-INVENTION
+  proposition: Celsus's Jewish speaker and the material assigned to him are wholly Celsian literary invention with no authentic
+    Jewish argumentative substrate.
+  claim_type: SOURCE_PROVENANCE
+  evidence_class:
+  - SCHOLARLY_INTERPRETATION
+  traditions:
+  - greco-roman
+  - judaism
+  - christianity
+  supporting_sources:
+  - source_id: SCH-HARGIS-1999-ANTI-CHRISTIAN-POLEMIC
+    locator: skeptical model, pp. 36-39 as reported by Blumell
+    relation: REPORTED_SCHOLARLY_SUPPORT_FOR_SKEPTICISM
+    access_mode: SECONDARY_REPORT_PLUS_PUBLISHER_METADATA
+  - source_id: SCH-TRIGG-1998-ORIGEN
+    locator: skeptical model, p. 58 as reported by Blumell
+    relation: REPORTED_SCHOLARLY_SUPPORT_FOR_SKEPTICISM
+    access_mode: SECONDARY_REPORT_PLUS_PUBLISHER_METADATA
+  - source_id: SRC-ORIGEN-CONTRA-CELSUM
+    locator: Book II, chapters 1 and 28
+    relation: TEXTUAL_EVIDENCE_OF_PERSONA_TENSION
+    access_mode: MODERN_TRANSLATION_OF_EXTANT_ORIGEN
+  opposing_sources:
+  - source_id: SCH-BLUMELL-2007-CELSUS-JEW
+    locator: article argument
+    relation: ARGUES_AGAINST_WHOLESALE_INVENTION
+    access_mode: PUBLISHER_ABSTRACT_AND_BIBLIOGRAPHIC_RECORD
+  - source_id: SCH-NIEHOFF-2013-CELSUS-JEW
+    locator: article argument
+    relation: ARGUES_FOR_WRITTEN_JEWISH_SOURCE
+    access_mode: INSTITUTIONAL_ABSTRACT_AND_BIBLIOGRAPHIC_RECORD
+  - source_id: SCH-PAGET-2017-CELSUS-JEW
+    locator: article argument / abstract-level readback
+    relation: ARGUES_FOR_AUTHENTIC_JEWISH_FEATURES
+    access_mode: PUBLISHER_ABSTRACT_PLUS_INSTITUTIONAL_RECORD
+  confidence: unresolved
+  contested: true
+  notes:
+  - The project does not force a binary real-Jew/fake-Jew model; mixed-source literary construction remains a live alternative.
+- id: CLM-PANTHERA-ACCUSATION-DERIVES-PREEXISTING-JEWISH-SOURCE
+  proposition: The specific Panthera paternity accusation reported by Origen from Celsus's Jewish speaker derives from a preexisting
+    Jewish oral or written tradition independent of Celsus.
+  claim_type: SOURCE_PROVENANCE
+  evidence_class:
+  - UNKNOWN
+  - SCHOLARLY_INTERPRETATION
+  traditions:
+  - judaism
+  - christianity
+  - greco-roman
+  supporting_sources: []
+  opposing_sources:
+  - source_id: SRC-ORIGEN-CONTRA-CELSUM
+    locator: Book I, chapter 32
+    relation: ESTABLISHES_CELSUS_ORIGEN_PRESERVATION_LAYER_NOT_PRECELSIAN_PROVENANCE
+    access_mode: MODERN_TRANSLATION_OF_EXTANT_ORIGEN
+  confidence: unresolved
+  contested: true
+  notes:
+  - Generic arguments for authentic Jewish material behind Celsus do not by themselves establish the provenance of this specific
+    accusation.
+- id: CLM-CELSUS-JEW-PROVES-FIRST-CENTURY-PATERNITY-RUMOR
+  proposition: The material assigned to Celsus's Jewish speaker establishes that a Panthera/illegitimacy rumor about Jesus
+    circulated in first-century Nazareth or during Jesus's lifetime.
+  claim_type: HISTORICAL_RECONSTRUCTION
+  evidence_class:
+  - UNKNOWN
+  traditions:
+  - comparative
+  supporting_sources: []
+  opposing_sources:
+  - source_id: SRC-CELSUS-TRUE-DOCTRINE
+    locator: composition range registered in V1
+    relation: LATER_SOURCE_DOES_NOT_ESTABLISH_FIRST_CENTURY_EVENT_PROVENANCE
+    access_mode: INDIRECT_THROUGH_ORIGEN
+  - source_id: SCH-NIEHOFF-2013-CELSUS-JEW
+    locator: mid-second-century Alexandrian source thesis
+    relation: EVEN_STRONG_AUTHENTICITY_MODEL_REMAINS_LATER_THAN_FIRST_CENTURY
+    access_mode: INSTITUTIONAL_ABSTRACT_AND_BIBLIOGRAPHIC_RECORD
+  confidence: unresolved
+  contested: true
+- id: CLM-EARLY-CHRISTIANITY-PLURAL-SYSTEMS
+  proposition: First- and second-century Jesus/Christ-centered communities differed materially in authority structures, ritual,
+    Torah practice, textual corpora, Christology, and eschatology; later catholic orthodoxy must not be projected as the single
+    original configuration.
+  claim_type: HISTORICAL_RECONSTRUCTION
+  evidence_class:
+  - PRIMARY_TEXT
+  - SCHOLARLY_INTERPRETATION
+  traditions:
+  - early-christianity
+  supporting_sources:
+  - source_id: SRC-DIDACHE
+    locator: whole work
+    relation: PRIMARY_TEXT_CONFIGURATION
+    access_mode: DIGITAL_TRANSLATION
+  - source_id: SRC-IGNATIUS-MAGNESIANS
+    locator: identity/ecclesiology passages
+    relation: PRIMARY_TEXT_CONFIGURATION
+    access_mode: DIGITAL_TRANSLATION
+  opposing_sources: []
+  confidence: high-for-plurality
+  contested: false
+- id: CLM-RABBINIC-LITERATURE-COLLECTIVE-DIVERGENT
+  proposition: Classical rabbinic literature is collective literature preserving partly divergent and contradictory views
+    rather than one linear systematic theology.
+  claim_type: LITERARY_HISTORICAL_RECONSTRUCTION
+  evidence_class:
+  - SCHOLARLY_INTERPRETATION
+  traditions:
+  - rabbinic-judaism
+  supporting_sources:
+  - source_id: SCH-HEZSER-2009-RABBINIC-LITERATURE
+    locator: abstract
+    relation: SCHOLARLY_SYNTHESIS
+    access_mode: PUBLISHER_ABSTRACT
+  opposing_sources: []
+  confidence: high
+  contested: false
+- id: CLM-MISHNAH-C200-RABBINIC-ANCHOR
+  proposition: The Mishnah reached a major compilational/redactional form around 200 CE and provides a strong anchor for a
+    recognizable rabbinic textual movement.
+  claim_type: HISTORICAL_RECONSTRUCTION
+  evidence_class:
+  - SCHOLARLY_INTERPRETATION
+  traditions:
+  - rabbinic-judaism
+  supporting_sources:
+  - source_id: SCH-GOODMAN-2015-MISHNAH
+    locator: extract
+    relation: DATE_AND_FORMATION_SYNTHESIS
+    access_mode: PUBLISHER_EXTRACT
+  - source_id: SCH-LAPIN-2012-RABBIS-ROMANS
+    locator: chapter abstract
+    relation: MOVEMENT_FORMATION_SYNTHESIS
+    access_mode: PUBLISHER_ABSTRACT
+  opposing_sources: []
+  confidence: high-at-broad-level
+  contested: false
+- id: CLM-RABBINIC-ORAL-TORAH-IDEOLOGY-DEVELOPS
+  proposition: The rabbinic ideology of authoritative Oral Torah has a historical development and should not be projected
+    as a fully articulated timeless system into all Second Temple Judaism.
+  claim_type: DIACHRONIC_AUTHORITY_DEVELOPMENT
+  evidence_class:
+  - SCHOLARLY_INTERPRETATION
+  traditions:
+  - rabbinic-judaism
+  supporting_sources:
+  - source_id: SCH-JAFFEE-2001-TORAH-MOUTH
+    locator: book abstract and chapters 4-6
+    relation: SCHOLARLY_RECONSTRUCTION
+    access_mode: PUBLISHER_ABSTRACTS
+  opposing_sources: []
+  confidence: high-for-development-unresolved-for-each-stage
+  contested: true
+- id: CLM-MISHNAH-RESURRECTION-WORLD-TO-COME
+  proposition: Mishnah Sanhedrin 10:1 treats a share in the World to Come and resurrection from the Torah as important boundary
+    claims.
+  claim_type: TEXTUAL_OCCURRENCE
+  evidence_class:
+  - PRIMARY_TEXT
+  traditions:
+  - rabbinic-judaism
+  supporting_sources:
+  - source_id: SRC-MISHNAH-SANHEDRIN-10-1
+    locator: '10:1'
+    relation: DIRECT_TEXTUAL_SUPPORT
+    access_mode: DIGITAL_EDITION
+  opposing_sources: []
+  confidence: high
+  contested: false
+- id: CLM-SINGLE-DATE-PARTING-WAYS-UNSUPPORTED
+  proposition: A single universal date at which Judaism and Christianity became two cleanly separated religions is not established
+    by the evidence represented in this corpus.
+  claim_type: NEGATIVE_HISTORICAL_RECONSTRUCTION
+  evidence_class:
+  - PRIMARY_TEXT
+  - SCHOLARLY_INTERPRETATION
+  traditions:
+  - early-christianity
+  - rabbinic-judaism
+  supporting_sources:
+  - source_id: SRC-IGNATIUS-MAGNESIANS
+    locator: anti-Judaizing boundary rhetoric
+    relation: BOUNDARY_STILL_CONTESTED
+    access_mode: DIGITAL_TRANSLATION
+  - source_id: SCH-LAPIN-2012-RABBIS-ROMANS
+    locator: movement development
+    relation: RABBINIC_INSTITUTIONALIZATION_PROCESS
+    access_mode: PUBLISHER_ABSTRACT
+  opposing_sources: []
+  confidence: high-against-single-universal-date
+  contested: false
+- id: CLM-PANTHERA-PARTHENOS-POLEMICAL-WORDPLAY
+  proposition: The Panthera/Pandera name attached to Jesus was deliberately selected or distorted as a polemical echo of Greek
+    parthenos, mocking Christian virgin-birth language.
+  claim_type: LINGUISTIC_SOURCE_PROVENANCE
+  evidence_class:
+  - SCHOLARLY_INTERPRETATION
+  traditions:
+  - judaism
+  - christianity
+  - greco-roman
+  supporting_sources:
+  - source_id: SCH-BOYARIN-1998-PANTHERA-WORDPLAY
+    locator: pp. 599-600, note 69
+    relation: STRONGLY_ARGUES_INTENTIONAL_DISTORTION_CACOPHEMISM
+    access_mode: AUTHOR_UPLOADED_FULL_TEXT
+  - source_id: SCH-JAFFE-2008-BEN-PANTERA
+    locator: article-level polemical-function argument
+    relation: SUPPORTS_MOCKING_POLEMICAL_FUNCTION
+    access_mode: REPOSITORY_RECORD_AND_ABSTRACT
+  opposing_sources:
+  - source_id: SCH-BLUMELL-2007-CELSUS-JEW
+    locator: note/discussion of Panthera name origin
+    relation: TREATS_WORDPLAY_VERSUS_ACTUAL_FIGURE_AS_UNCERTAIN
+    access_mode: PUBLISHER_ARTICLE
+  - source_id: SCH-MURCIA-2014-PANTHERA-ORIGIN
+    locator: status quaestionis on name origin
+    relation: MULTIPLE_COMPETING_ORIGIN_MODELS_EXIST
+    access_mode: PUBLISHER_METADATA_AND_TABLE_OF_CONTENTS
+  confidence: plausible-unresolved
+  contested: true
+  alternatives:
+  - Panthera entered the polemic as an independently existing personal name without derivation from parthenos.
+  - An existing Panthera name was selected precisely because it enabled a parthenos joke.
+  - The name-family has another polemical, familial, or transmission origin later reinterpreted through parthenos.
+- id: CLM-PANTHERA-PARTHENOS-REGULAR-ETYMOLOGY
+  proposition: Panthera/Pandera is a regular historical-linguistic derivative of Greek parthenos produced by ordinary sound
+    change.
+  claim_type: ETYMOLOGICAL_DERIVATION
+  evidence_class:
+  - UNKNOWN
+  traditions:
+  - linguistics
+  supporting_sources: []
+  opposing_sources:
+  - source_id: SCH-BOYARIN-1998-PANTHERA-WORDPLAY
+    locator: pp. 599-600, note 69
+    relation: FRAMES_RELATION_AS_INTENTIONAL_DISTORTION_NOT_REGULAR_SOUND_LAW
+    access_mode: AUTHOR_UPLOADED_FULL_TEXT
+  - source_id: MAT-ABDES-PANTERA-INSCRIPTION
+    locator: CIL XIII 7514 / §400
+    relation: INDEPENDENT_REAL_NAME_ATTESTATION_REMOVES_NEED_FOR_REGULAR_DERIVATION
+    access_mode: MATERIAL_CONTEXT_ONLY
+  confidence: unsupported
+  contested: false
+  notes:
+  - Rejecting regular etymology does not reject deliberate wordplay.
+- id: CLM-REAL-PANTERA-NAME-REFUTES-PARTHENOS-WORDPLAY
+  proposition: Because Pantera/Panthera was a genuinely attested personal name, it could not have been used as a deliberate
+    parody of parthenos.
+  claim_type: LINGUISTIC_INFERENCE
+  evidence_class:
+  - PROJECT_INFERENCE
+  traditions:
+  - comparative
+  supporting_sources: []
+  opposing_sources:
+  - source_id: SCH-BOYARIN-1998-PANTHERA-WORDPLAY
+    locator: pp. 599-600, note 69
+    relation: EXPLICITLY_ARGUES_REAL_NAME_ATTESTATION_DOES_NOT_DISPROVE_POLEMICAL_SELECTION
+    access_mode: AUTHOR_UPLOADED_FULL_TEXT
+  confidence: contradicted-as-logical-necessity
+  contested: false
+- id: CLM-PARTHENOS-WORDPLAY-REFUTES-HISTORICAL-PANTHERA-PERSON
+  proposition: If Panthera/Pandera was used as a pun on parthenos, that proves no actual person with that name could stand
+    behind any stage of the tradition.
+  claim_type: HISTORICAL_INFERENCE
+  evidence_class:
+  - UNKNOWN
+  traditions:
+  - comparative
+  supporting_sources: []
+  opposing_sources:
+  - source_id: MAT-ABDES-PANTERA-INSCRIPTION
+    locator: CIL XIII 7514 / §400
+    relation: REAL_NAME_ATTESTATION_SHOWS_PUN_AND_PERSON_EXISTENCE_ARE_NOT_MUTUALLY_EXCLUSIVE_CATEGORIES
+    access_mode: MATERIAL_CONTEXT_ONLY
+  confidence: unsupported
+  contested: false
+- id: CLM-PANTHERA-NAME-SIMILARITY-PROVES-WORDPLAY
+  proposition: The visual/phonetic similarity between parthenos and Panthera/Pandera by itself proves intentional polemical
+    derivation.
+  claim_type: LINGUISTIC_INFERENCE
+  evidence_class:
+  - UNKNOWN
+  traditions:
+  - linguistics
+  supporting_sources: []
+  opposing_sources:
+  - source_id: SCH-BLUMELL-2007-CELSUS-JEW
+    locator: discussion of alternative Panthera explanations
+    relation: MULTIPLE_ORIGIN_MODELS_REMAIN_POSSIBLE
+    access_mode: PUBLISHER_ARTICLE
+  - source_id: MAT-ABDES-PANTERA-INSCRIPTION
+    locator: CIL XIII 7514 / §400
+    relation: INDEPENDENT_NAME_EXISTENCE_CREATES_NONWORDPLAY_ALTERNATIVE
+    access_mode: MATERIAL_CONTEXT_ONLY
+  confidence: unsupported
+  contested: false
+- id: CLM-CHALCEDON-TWO-NATURES-DEFINITION
+  proposition: The 451 Council of Chalcedon normatively defines one and the same Christ to be acknowledged in two natures
+    without confusion, change, division, or separation.
+  claim_type: TEXTUAL_OCCURRENCE
+  evidence_class:
+  - PRIMARY_TEXT
+  traditions:
+  - late-antique-christianity
+  - chalcedonian
+  supporting_sources:
+  - source_id: SRC-CHALCEDON-DEFINITION-451
+    locator: Definition of Faith
+    relation: DIRECT_TEXTUAL_SUPPORT
+    access_mode: PUBLIC_TRANSLATION
+  opposing_sources: []
+  confidence: high
+  contested: false
+- id: CLM-LATE-ANTIQUE-CHRISTIANITY-REMAINS-PLURAL
+  proposition: Imperial councils and enforcement did not produce uniform Christian acceptance; Chalcedonian, miaphysite, Church-of-the-East
+    and other regional Christian configurations remained institutionally significant.
+  claim_type: HISTORICAL_RECONSTRUCTION
+  evidence_class:
+  - SCHOLARLY_INTERPRETATION
+  traditions:
+  - late-antique-christianity
+  supporting_sources:
+  - source_id: SCH-ALLEN-2008-ORTHODOXY-ENFORCEMENT
+    locator: summary
+    relation: IMPERIAL_ENFORCEMENT_EVIDENCE
+    access_mode: PUBLISHER_SUMMARY
+  - source_id: SCH-MENZE-2025-CHRISTIAN-NEAR-EAST
+    locator: abstract
+    relation: REGIONAL_PLURALITY_SYNTHESIS
+    access_mode: PUBLISHER_ABSTRACT
+  opposing_sources: []
+  confidence: high
+  contested: false
+- id: CLM-CHURCH-EAST-SASANIAN-INSTITUTIONAL-PRESENCE
+  proposition: The Church of the East became a recognized, institutionally significant Christian tradition within the Sasanian
+    world rather than remaining only a marginal persecuted sect.
+  claim_type: HISTORICAL_RECONSTRUCTION
+  evidence_class:
+  - SCHOLARLY_INTERPRETATION
+  traditions:
+  - church-of-the-east
+  - sasanian-iran
+  supporting_sources:
+  - source_id: SCH-WALKER-2012-CHURCH-EAST
+    locator: abstract
+    relation: INSTITUTIONAL_HISTORY_SYNTHESIS
+    access_mode: PUBLISHER_ABSTRACT
+  opposing_sources: []
+  confidence: high-at-broad-level
+  contested: false
+- id: CLM-SASANIAN-RELIGIOUS-LANDSCAPE-PLURAL
+  proposition: The Sasanian religious field included organized Zoroastrian institutions together with substantial Christian,
+    Jewish, Manichaean and other communities whose status changed over time.
+  claim_type: HISTORICAL_RECONSTRUCTION
+  evidence_class:
+  - MATERIAL_EVIDENCE
+  - SCHOLARLY_INTERPRETATION
+  traditions:
+  - sasanian-iran
+  supporting_sources:
+  - source_id: MAT-KARTIR-SASANIAN-INSCRIPTIONS
+    locator: third-century priestly inscriptions
+    relation: ZOROASTRIAN_INSTITUTIONAL_EVIDENCE
+    access_mode: SCHOLARLY_TRANSCRIPTION
+  - source_id: SCH-WALKER-2012-CHURCH-EAST
+    locator: abstract
+    relation: CHRISTIAN_INSTITUTIONAL_EVIDENCE
+    access_mode: PUBLISHER_ABSTRACT
+  - source_id: SCH-IRANICA-ZORO-HISTORICAL-REVIEW
+    locator: Sasanian review
+    relation: ZOROASTRIAN_HISTORY_SYNTHESIS
+    access_mode: INSTITUTIONAL_FULL_TEXT
+  opposing_sources: []
+  confidence: high
+  contested: false
+- id: CLM-HIMYAR-MONOTHEISM-LATE-FOURTH-CENTURY
+  proposition: Himyarite royal inscriptions shift toward monotheist language from the later fourth century, with Jewish-associated
+    and later Christian phases requiring separate reconstruction.
+  claim_type: EPIGRAPHIC_HISTORICAL_RECONSTRUCTION
+  evidence_class:
+  - MATERIAL_EVIDENCE
+  - SCHOLARLY_INTERPRETATION
+  traditions:
+  - late-antique-arabia
+  - himyar
+  supporting_sources:
+  - source_id: MAT-HIMYAR-LATE-ANTIQUE-INSCRIPTIONS
+    locator: fourth-sixth-century corpus
+    relation: EPIGRAPHIC_CORPUS
+    access_mode: SCHOLARLY_EPIGRAPHIC_EDITION
+  - source_id: SCH-GAJDA-2017-SOUTH-ARABIA-MONOTHEISM
+    locator: abstract
+    relation: SCHOLARLY_SYNTHESIS
+    access_mode: PUBLISHER_ABSTRACT
+  - source_id: SCH-ROBIN-2015-HIMYAR-EPIGRAPHY
+    locator: abstract
+    relation: EPIGRAPHIC_SYNTHESIS
+    access_mode: PUBLISHER_ABSTRACT
+  opposing_sources: []
+  confidence: high-at-broad-level
+  contested: true
+- id: CLM-RAHMANAN-CROSSES-MONOTHEIST-CONTEXTS
+  proposition: Rahmanan is attested in pre-Islamic South Arabian monotheist contexts and is reused across differently identified
+    Jewish/monotheist and Christian political-religious settings; the title therefore cannot be assigned one timeless theology.
+  claim_type: DIACHRONIC_SEMANTIC_RECONSTRUCTION
+  evidence_class:
+  - MATERIAL_EVIDENCE
+  - SCHOLARLY_INTERPRETATION
+  traditions:
+  - late-antique-arabia
+  supporting_sources:
+  - source_id: MAT-HIMYAR-LATE-ANTIQUE-INSCRIPTIONS
+    locator: Rahmanan inscriptional corpus
+    relation: EPIGRAPHIC_ATTESTATION
+    access_mode: SCHOLARLY_EPIGRAPHIC_EDITION
+  - source_id: SCH-KJAER-2022-RAHMAN
+    locator: article
+    relation: DIACHRONIC_SEMANTIC_SYNTHESIS
+    access_mode: PUBLISHER_FULL_TEXT
+  opposing_sources: []
+  confidence: high-for-cross-context-attestation
+  contested: true
+- id: CLM-PREISLAMIC-ARABIA-NOT-UNIFORM-PAGAN
+  proposition: The religious landscape of Late Antique Arabia cannot be accurately represented as uniformly pagan immediately
+    before Islam.
+  claim_type: NEGATIVE_HISTORICAL_RECONSTRUCTION
+  evidence_class:
+  - MATERIAL_EVIDENCE
+  - SCHOLARLY_INTERPRETATION
+  traditions:
+  - late-antique-arabia
+  supporting_sources:
+  - source_id: MAT-HIMYAR-LATE-ANTIQUE-INSCRIPTIONS
+    locator: monotheist inscriptions
+    relation: COUNTEREXAMPLE_CORPUS
+    access_mode: SCHOLARLY_EPIGRAPHIC_EDITION
+  - source_id: SCH-GAJDA-2017-SOUTH-ARABIA-MONOTHEISM
+    locator: abstract
+    relation: MONOTHEIST_HISTORY_SYNTHESIS
+    access_mode: PUBLISHER_ABSTRACT
+  - source_id: SCH-ROBIN-2015-HIMYAR-EPIGRAPHY
+    locator: abstract
+    relation: JEWISH_CHRISTIAN_EPIGRAPHIC_CONTEXT
+    access_mode: PUBLISHER_ABSTRACT
+  opposing_sources: []
+  confidence: high
+  contested: false
+- id: CLM-QURAN-DIVINE-UNIQUENESS
+  proposition: The Qur'an explicitly presents Allah as one, neither begetting nor begotten, without comparable equal, and
+    as uniquely sovereign over creation.
+  claim_type: TEXTUAL_OCCURRENCE_CLUSTER
+  evidence_class:
+  - PRIMARY_TEXT
+  traditions:
+  - quranic
+  supporting_sources:
+  - source_id: SRC-QURAN-RECEIVED-TEXT
+    locator: Q 112:1-4; Q 2:255; Q 42:11
+    relation: DIRECT_TEXTUAL_SUPPORT
+    access_mode: DIGITAL_ARABIC_AND_TRANSLATION
+  opposing_sources: []
+  confidence: high
+  contested: false
+- id: CLM-QURAN-IBLIS-OF-JINN
+  proposition: Q 18:50 explicitly identifies Iblis as being of the jinn within the angelic-prostration narrative.
+  claim_type: TEXTUAL_OCCURRENCE
+  evidence_class:
+  - PRIMARY_TEXT
+  traditions:
+  - quranic
+  supporting_sources:
+  - source_id: SRC-QURAN-RECEIVED-TEXT
+    locator: Q 18:50
+    relation: DIRECT_TEXTUAL_SUPPORT
+    access_mode: DIGITAL_ARABIC_AND_TRANSLATION
+  opposing_sources: []
+  confidence: high
+  contested: false
+- id: CLM-QURAN-JINN-MORAL-DIVERSITY
+  proposition: The Qur'an depicts jinn as morally/religiously diverse beings, including jinn who hear the Qur'an and respond
+    with belief.
+  claim_type: TEXTUAL_OCCURRENCE_CLUSTER
+  evidence_class:
+  - PRIMARY_TEXT
+  traditions:
+  - quranic
+  supporting_sources:
+  - source_id: SRC-QURAN-RECEIVED-TEXT
+    locator: Q 72:1-15
+    relation: DIRECT_TEXTUAL_SUPPORT
+    access_mode: DIGITAL_ARABIC_AND_TRANSLATION
+  opposing_sources: []
+  confidence: high
+  contested: false
+- id: CLM-QURAN-PROPHETIC-CONTINUUM
+  proposition: The Qur'an places its believing community's revelation within a wider sequence including Abraham, Ishmael,
+    Isaac, Jacob, Moses, Jesus and other prophets, and generalizes messenger-sending across communities.
+  claim_type: TEXTUAL_OCCURRENCE_CLUSTER
+  evidence_class:
+  - PRIMARY_TEXT
+  traditions:
+  - quranic
+  supporting_sources:
+  - source_id: SRC-QURAN-RECEIVED-TEXT
+    locator: Q 2:136; Q 3:84; Q 16:36
+    relation: DIRECT_TEXTUAL_SUPPORT
+    access_mode: DIGITAL_ARABIC_AND_TRANSLATION
+  opposing_sources: []
+  confidence: high
+  contested: false
+- id: CLM-QURAN-CONFIRMS-CRITERION-PRIOR-SCRIPTURE
+  proposition: Q 5:48 presents the Qur'anic Book as revealed in truth, confirming preceding scripture and functioning as a
+    criterion/guardian in relation to it while acknowledging differentiated law/path among communities.
+  claim_type: TEXTUAL_OCCURRENCE
+  evidence_class:
+  - PRIMARY_TEXT
+  traditions:
+  - quranic
+  supporting_sources:
+  - source_id: SRC-QURAN-RECEIVED-TEXT
+    locator: Q 5:48
+    relation: DIRECT_TEXTUAL_SUPPORT
+    access_mode: DIGITAL_ARABIC_AND_TRANSLATION
+  opposing_sources: []
+  confidence: high-at-text-level
+  contested: true
+  notes:
+  - Precise semantics of muhaymin and implications for prior-scripture textual status require lexical and reception-history
+    analysis.
+- id: CLM-QURAN-BODILY-RESURRECTION
+  proposition: The Qur'an explicitly argues that God can reassemble human bones and restore the dead for judgment; resurrection
+    is not reducible to an immortal-soul metaphor in the textual argument.
+  claim_type: TEXTUAL_OCCURRENCE_CLUSTER
+  evidence_class:
+  - PRIMARY_TEXT
+  traditions:
+  - quranic
+  supporting_sources:
+  - source_id: SRC-QURAN-RECEIVED-TEXT
+    locator: Q 75:3-4 and related resurrection passages
+    relation: DIRECT_TEXTUAL_SUPPORT
+    access_mode: DIGITAL_ARABIC_AND_TRANSLATION
+  opposing_sources: []
+  confidence: high
+  contested: false
+- id: CLM-QURAN-FASTING-PRESCRIBED-WITH-PREDECESSOR-FRAME
+  proposition: Q 2:183 prescribes fasting for the believing community and explicitly frames fasting as also prescribed for
+    those before them.
+  claim_type: TEXTUAL_OCCURRENCE
+  evidence_class:
+  - PRIMARY_TEXT
+  traditions:
+  - quranic
+  supporting_sources:
+  - source_id: SRC-QURAN-RECEIVED-TEXT
+    locator: Q 2:183-187
+    relation: DIRECT_TEXTUAL_SUPPORT
+    access_mode: DIGITAL_ARABIC_AND_TRANSLATION
+  opposing_sources: []
+  confidence: high
+  contested: false
+- id: CLM-QURAN-CANONICAL-ORDER-NOT-PROCLAMATION-CHRONOLOGY
+  proposition: The received canonical sura order should not be treated as a simple chronological sequence of proclamation;
+    proposed inner-Qur'anic chronological sequences are scholarly reconstructions.
+  claim_type: TEXTUAL_HISTORY_RECONSTRUCTION
+  evidence_class:
+  - SCHOLARLY_INTERPRETATION
+  traditions:
+  - quranic-studies
+  supporting_sources:
+  - source_id: SCH-NEUWIRTH-2019-QURAN-LATE-ANTIQUITY
+    locator: Sura Structures and Chronology
+    relation: SCHOLARLY_CHRONOLOGY_MODEL
+    access_mode: PUBLISHER_ABSTRACTS
+  - source_id: SCH-SINAI-2020-INNER-QURANIC-CHRONOLOGY
+    locator: chapter abstract
+    relation: HISTORICAL_CRITICAL_METHOD
+    access_mode: PUBLISHER_ABSTRACT
+  opposing_sources: []
+  confidence: high-for-nonidentity-of-canonical-and-proclamation-order
+  contested: true
+- id: CLM-YESHUA-PATERNITY-POLEMIC-CRYSTALLIZATION
+  proposition: The current evidence is better explained by a process in which ambiguous or underdetermined early family/paternity
+    traditions became increasingly specific under later Christian and anti-Christian polemic than by treating the named Panthera
+    accusation as independently verified first-century biography.
+  claim_type: HISTORICAL_TRADITION_FORMATION_HYPOTHESIS
+  evidence_class:
+  - PROJECT_INFERENCE
+  - SPECULATIVE_MODEL
+  traditions:
+  - historical-jesus
+  - early-christianity
+  - jewish-christian-polemic
+  supporting_sources:
+  - source_id: SRC-GOSPEL-MARK
+    locator: Mark 6:3
+    relation: EARLY_UNDERDETERMINED_FAMILY_LABEL
+    access_mode: MODERN_CRITICAL_TEXT
+  - source_id: SCH-NORMAN-2025-MARK-MATRONYMIC
+    locator: Mark 6:3 analysis
+    relation: NON_ILLEGITIMACY_ALTERNATIVE
+    access_mode: OPEN_ACCESS_PUBLISHER_FULL_TEXT
+  - source_id: SRC-CELSUS-TRUE-DOCTRINE
+    locator: Panthera accusation preserved through Contra Celsum I.32
+    relation: LATER_EXPLICIT_NAMED_COUNTER_NARRATIVE
+    access_mode: INDIRECT_THROUGH_ORIGEN
+  opposing_sources:
+  - source_id: SCH-CROY-2022-ESCAPING-SHAME
+    locator: Mark 6:3 contextual slur reading
+    relation: EARLIER_ILLEGITIMACY_READING_POSSIBLE
+    access_mode: SCHOLARLY_SUMMARY_AND_BOOK_METADATA
+  confidence: provisional
+  contested: true
+  notes:
+  - This claim does not establish the virgin conception, deny non-marital paternity, or identify a biological father. It models
+    the development of the surviving polemical tradition.
+- id: CLM-YESHUA-CONTINGENT-VINDICATION-MODEL
+  proposition: A historically plausible model is that Jesus combined imminent kingdom expectation with an increasing expectation
+    of opposition/death, divine vindication, and a continuing personal role in the final consummation.
+  claim_type: HISTORICAL_SELF_CONCEPTION_HYPOTHESIS
+  evidence_class:
+  - SCHOLARLY_INTERPRETATION
+  - PROJECT_INFERENCE
+  traditions:
+  - historical-jesus
+  - second-temple-judaism
+  - early-christianity
+  supporting_sources:
+  - source_id: SCH-ALLISON-2025-INTERPRETING-JESUS
+    locator: Contingent Eschatology
+    relation: SCHOLARLY_MODEL
+    access_mode: PUBLISHER_DESCRIPTION_PLUS_REVIEW
+  - source_id: SCH-FERDA-2024-PROMISED-SECOND-COMING
+    locator: historical origins of parousia expectation
+    relation: SCHOLARLY_MODEL
+    access_mode: PUBLISHER_AND_REVIEW
+  opposing_sources: []
+  confidence: plausible-not-established
+  contested: true
+  notes:
+  - The model does not establish later Nicene divinity, pre-existence, or the authenticity of every Gospel future-role saying.
+- id: CLM-YESHUA-ROMAN-EXECUTION-PIVOT
+  proposition: Jesus' final Jerusalem/Temple activity, kingdom or regal implications, and Passover setting provide a historically
+    plausible Roman political pathway to Pilate's crucifixion order even without an armed-insurrection model.
+  claim_type: HISTORICAL_RECONSTRUCTION
+  evidence_class:
+  - PRIMARY_TEXT
+  - SCHOLARLY_INTERPRETATION
+  traditions:
+  - historical-jesus
+  - roman-judaea
+  supporting_sources:
+  - source_id: SRC-GOSPEL-MARK
+    locator: Mark 11-15
+    relation: GOSPEL_NARRATIVE_EVIDENCE
+    access_mode: MODERN_CRITICAL_TEXT
+  - source_id: SCH-ANDRADE-2025-KILLING-MESSIAH
+    locator: Jesus/Temple/Pilate/sedition chapters
+    relation: ROMAN_LEGAL_POLITICAL_RECONSTRUCTION
+    access_mode: PUBLISHER_CHAPTER_ABSTRACTS
+  opposing_sources: []
+  confidence: high-for-Roman-execution-pivot-moderate-for-exact-legal-path
+  contested: true
+- id: CLM-YESHUA-FAMILY-EARLY-PROMINENCE
+  proposition: Jesus' biological or socially recognized family, especially James, remained institutionally important in the
+    earliest Jesus movement, while later traditions increasingly reinterpreted sibling relations as Marian/perpetual-virginity
+    doctrines developed.
+  claim_type: FAMILY_AND_INSTITUTIONAL_HISTORY
+  evidence_class:
+  - PRIMARY_TEXT
+  - SCHOLARLY_INTERPRETATION
+  - PROJECT_INFERENCE
+  traditions:
+  - historical-jesus
+  - early-christianity
+  supporting_sources:
+  - source_id: SRC-GOSPEL-MARK
+    locator: Mark 3:31-35; 6:3
+    relation: FAMILY_ATTESTATION
+    access_mode: MODERN_CRITICAL_TEXT
+  - source_id: SRC-JOSEPHUS-ANTIQUITIES-20-200
+    locator: Antiquities 20.200
+    relation: JAMES_IDENTIFICATION
+    access_mode: SCHOLARLY_EDITION_AND_TRANSLATION
+  - source_id: SCH-SCHMIDT-2025-JOSEPHUS-JAMES
+    locator: appendix
+    relation: AUTHENTICITY_AND_RECEPTION_ANALYSIS
+    access_mode: PUBLISHER_EXTRACT
+  opposing_sources: []
+  confidence: high-for-early-family-prominence-unresolved-for-exact-kinship-model
+  contested: true
+  notes:
+  - This does not decide whether the Gospel siblings are full siblings, half-siblings, step-siblings, or other kin; that question
+    remains separate.
+- id: CLM-YESHUA-REJECTION-MEMORY-REDISTRIBUTES-BLAME
+  proposition: As Jesus-centered groups differentiated from other Jewish communities, memories of rejection and responsibility
+    for Jesus' death could be reworked in ways that intensified Jewish rejection motifs and deemphasized Roman agency relative
+    to the hard historical fact of crucifixion under Pilate.
+  claim_type: SOCIAL_MEMORY_AND_IDENTITY_HYPOTHESIS
+  evidence_class:
+  - SCHOLARLY_INTERPRETATION
+  - PROJECT_INFERENCE
+  traditions:
+  - early-christianity
+  - jewish-christian-relations
+  supporting_sources:
+  - source_id: SCH-JOSEPH-2023-REJECTED-JESUS
+    locator: social identity/social memory thesis as reviewed
+    relation: SOCIAL_MEMORY_MODEL
+    access_mode: SCHOLARLY_REVIEW_SUMMARY
+  - source_id: SCH-ANDRADE-2025-KILLING-MESSIAH
+    locator: Gospel treatment of Pilate and Roman execution
+    relation: ROMAN_EXECUTION_CONTROL
+    access_mode: PUBLISHER_CHAPTER_ABSTRACTS
+  opposing_sources: []
+  confidence: plausible-high-level
+  contested: true
+- id: CLM-QURAN-RESURRECTION-SINGLE-DIRECT-SOURCE-UNRESOLVED
+  proposition: The Qur'an's resurrection/judgment system has demonstrably earlier analogues in Jewish, Christian, and Iranian
+    traditions, but the current evidence does not establish one single direct source tradition for the Qur'anic system.
+  claim_type: COMPARATIVE_NEGATIVE_TRANSMISSION_CONSTRAINT
+  evidence_class:
+  - PRIMARY_TEXT
+  - SCHOLARLY_INTERPRETATION
+  - UNKNOWN
+  traditions:
+  - quranic
+  - second-temple-judaism
+  - late-antique-christianity
+  - zoroastrian
+  supporting_sources:
+  - source_id: SRC-QURAN-RECEIVED-TEXT
+    locator: Q 75 and broader judgment corpus
+    relation: TARGET_TEXT
+    access_mode: DIGITAL_ARABIC_AND_TRANSLATION
+  - source_id: SRC-DANIEL-7-12
+    locator: Daniel 12:2-3
+    relation: EARLIER_JEWISH_RESURRECTION_ATTESTATION
+    access_mode: DIGITAL_EDITION
+  - source_id: SCH-SHAKED-1998-ZORO-ESCHATOLOGY
+    locator: article
+    relation: IRANIAN_ESCHATOLOGICAL_COMPARANDUM
+    access_mode: INSTITUTIONAL_FULL_TEXT
+  opposing_sources: []
+  confidence: high-for-multiple-earlier-comparanda-unresolved-for-single-source
+  contested: true
+- id: CLM-RAHMAN-PREISLAMIC-SOUTH-ARABIAN-ATTESTATION
+  proposition: Rahman(an) is epigraphically attested as a divine epithet/name in South Arabian monotheist environments before
+    the Qur'an, across changing Jewish/Judaizing and Christian political-religious contexts.
+  claim_type: EPIGRAPHIC_DIACHRONIC_ATTESTATION
+  evidence_class:
+  - MATERIAL_EVIDENCE
+  - SCHOLARLY_INTERPRETATION
+  traditions:
+  - late-antique-arabia
+  - quranic-comparative
+  supporting_sources:
+  - source_id: MAT-HIMYAR-LATE-ANTIQUE-INSCRIPTIONS
+    locator: Rahman(an) inscriptional corpus
+    relation: PRE_QURANIC_EPIGRAPHIC_ATTESTATION
+    access_mode: SCHOLARLY_EPIGRAPHIC_EDITION
+  - source_id: SCH-KJAER-2022-RAHMAN
+    locator: article
+    relation: DIACHRONIC_SCHOLARLY_SYNTHESIS
+    access_mode: PUBLISHER_FULL_TEXT
+  opposing_sources: []
+  confidence: high-for-pre-quranic-attestation
+  contested: false
+  notes:
+  - This does not establish a single direct transmission route into Qur'anic al-Rahman.
+- id: CLM-ZELLENTIN-QURAN-GENTILE-LAW-CONTINUITY
+  proposition: Holger M. Zellentin argues that Qur'anic food, sexual, incest and purity law substantially reformulates a Late
+    Antique legal trajectory rooted in biblical law for non-Israelites and developed through Jewish and especially Christian
+    gentile-law traditions.
+  claim_type: ATTRIBUTED_SCHOLARLY_TRANSMISSION_MODEL
+  evidence_class:
+  - SCHOLARLY_INTERPRETATION
+  traditions:
+  - quranic
+  - biblical
+  - judaism
+  - christianity
+  supporting_sources:
+  - source_id: SCH-ZELLENTIN-2022-LAW-BEYOND-ISRAEL
+    locator: book abstract; chapters 1-4
+    relation: ATTRIBUTED_AUTHOR_ARGUMENT
+    access_mode: PUBLISHER_ABSTRACTS
+  opposing_sources: []
+  confidence: author-claim-secure-project-verdict-not-yet-issued
+  contested: true
+  notes:
+  - On-Theo records the model without yet promoting its individual lineage claims.
+- id: CLM-QURAN-FASTING-PREDECESSOR-SPECIFIC-LINEAGE-UNKNOWN
+  proposition: Q 2:183 explicitly frames fasting as a predecessor practice, but the specific ritual lineage that best explains
+    the Qur'anic Ramadan fasting system is not established in V1.
+  claim_type: COMPARATIVE_HISTORICAL_CONSTRAINT
+  evidence_class:
+  - PRIMARY_TEXT
+  - UNKNOWN
+  traditions:
+  - quranic
+  - jewish
+  - christian
+  - arabian
+  supporting_sources:
+  - source_id: SRC-QURAN-RECEIVED-TEXT
+    locator: Q 2:183-187
+    relation: TEXT_ACKNOWLEDGES_PREDECESSOR_PRACTICE
+    access_mode: DIGITAL_ARABIC_AND_TRANSLATION
+  opposing_sources: []
+  confidence: high-for-predecessor-frame-unresolved-for-specific-lineage
+  contested: true
+- id: CLM-EARLY-ISLAM-MULTILAYER-SOURCE-SYSTEM
+  proposition: Historical reconstruction of early Islam requires distinguishing Quranic, documentary/material, early external,
+    sira-maghazi, hadith, legal, state, and later confessional evidence layers rather than flattening them into one contemporaneous
+    source corpus.
+  claim_type: HISTORIOGRAPHIC_METHOD
+  evidence_class:
+  - PROJECT_INFERENCE
+  - SCHOLARLY_INTERPRETATION
+  traditions:
+  - early-islam
+  supporting_sources:
+  - source_id: SCH-ANTHONY-2020-MUHAMMAD-EMPIRES
+    locator: book structure
+    relation: SOURCE_LAYERING_MODEL
+    access_mode: PUBLISHER_SUMMARY
+  - source_id: SCH-HOYLAND-2006-DOCUMENTARY-STATE
+    locator: abstract
+    relation: DOCUMENTARY_INDEPENDENCE
+    access_mode: PUBLISHER_ABSTRACT
+  - source_id: SCH-OXFORD-BIB-HADITH
+    locator: collection/authenticity 632-900 section
+    relation: HADITH_FORMATION_HISTORY
+    access_mode: PUBLISHER_REFERENCE
+  opposing_sources: []
+  confidence: high
+  contested: false
+- id: CLM-ANTHONY-SIRA-PRE-IBN-ISHAQ-LAYERS
+  proposition: The early Muslim biographical tradition is not reducible to the surviving Ibn Hisham recension of Ibn Ishaq;
+    earlier and parallel sira-maghazi materials and source layers can be historically investigated.
+  claim_type: SOURCE_HISTORY
+  evidence_class:
+  - SCHOLARLY_INTERPRETATION
+  traditions:
+  - early-islam
+  - sira-maghazi
+  supporting_sources:
+  - source_id: SCH-ANTHONY-2020-MUHAMMAD-EMPIRES
+    locator: Parts I-II and author summary
+    relation: SCHOLARLY_RECONSTRUCTION
+    access_mode: PUBLISHER_SUMMARY
+  opposing_sources: []
+  confidence: high-for-author-position
+  contested: true
+- id: CLM-HOYLAND-DOCUMENTS-UNDERUSED-EARLY-STATE
+  proposition: Papyri, coins, rock inscriptions and related documents provide an independent evidentiary lane for the early
+    Islamic state and have historically been underused relative to later literary narratives.
+  claim_type: HISTORIOGRAPHIC_METHOD
+  evidence_class:
+  - SCHOLARLY_INTERPRETATION
+  traditions:
+  - early-islam
+  - state-formation
+  supporting_sources:
+  - source_id: SCH-HOYLAND-2006-DOCUMENTARY-STATE
+    locator: abstract
+    relation: DIRECT_AUTHOR_ARGUMENT
+    access_mode: PUBLISHER_ABSTRACT
+  opposing_sources: []
+  confidence: high-for-author-position
+  contested: false
+- id: CLM-ABD-AL-MALIK-PUBLIC-ISLAMIC-MESSAGING
+  proposition: Surviving material evidence shows substantially clearer recognizably Islamic public messaging under Abd al-Malik,
+    while the historical meaning of that visibility change remains a reconstruction problem rather than proof that Islam originated
+    in his reign.
+  claim_type: HISTORICAL_RECONSTRUCTION
+  evidence_class:
+  - MATERIAL_EVIDENCE
+  - SCHOLARLY_INTERPRETATION
+  - PROJECT_INFERENCE
+  traditions:
+  - early-islam
+  - umayyad
+  supporting_sources:
+  - source_id: MAT-DOME-ROCK-INSCRIPTION-691-692
+    locator: monumental inscription
+    relation: CONTEMPORARY_PUBLIC_ARTICULATION
+    access_mode: SCHOLARLY_EPIGRAPHIC_ACCESS
+  - source_id: SCH-HOYLAND-2006-DOCUMENTARY-STATE
+    locator: abstract
+    relation: DOCUMENTARY_SYNTHESIS
+    access_mode: PUBLISHER_ABSTRACT
+  opposing_sources: []
+  confidence: high-for-visibility-change-moderate-for-causal-explanation
+  contested: true
+- id: CLM-HADITH-HAS-COLLECTION-AUTHENTICITY-HISTORY
+  proposition: The hadith corpus has a historically extended collection, transmission, forgery-detection, isnad-criticism
+    and canonization history, so collection date and claimed event date must be represented separately.
+  claim_type: SOURCE_HISTORY
+  evidence_class:
+  - SCHOLARLY_INTERPRETATION
+  traditions:
+  - early-islam
+  - hadith
+  supporting_sources:
+  - source_id: SCH-OXFORD-BIB-HADITH
+    locator: collection/authenticity 632-900 CE
+    relation: SCHOLARLY_REFERENCE_SYNTHESIS
+    access_mode: PUBLISHER_REFERENCE
+  opposing_sources: []
+  confidence: high
+  contested: false
+- id: CLM-ISLAMIC-LEGAL-SCHOOLS-FORM-HISTORICALLY
+  proposition: Mature Islamic legal schools and formal legal theory emerge through a historical development involving earlier
+    judges, legal specialists, prophetic authority and changing legal reasoning rather than existing in fully developed form
+    at Muhammad's death.
+  claim_type: INSTITUTIONAL_AND_INTELLECTUAL_HISTORY
+  evidence_class:
+  - SCHOLARLY_INTERPRETATION
+  traditions:
+  - early-islam
+  - islamic-law
+  supporting_sources:
+  - source_id: SCH-HALLAQ-ORIGINS-ISLAMIC-LAW
+    locator: chapters 3-7 sequence
+    relation: SCHOLARLY_RECONSTRUCTION
+    access_mode: PUBLISHER_SUMMARY
+  opposing_sources: []
+  confidence: high-for-broad-development
+  contested: true
+- id: CLM-SUNNI-SHII-MATURE-BINARY-NOT-632
+  proposition: The succession disputes beginning after Muhammad's death are early antecedents of later Sunnism and Shiism,
+    but the mature confessional identities and boundaries developed historically and cannot be projected unchanged into 632.
+  claim_type: CONFESSIONAL_FORMATION_HISTORY
+  evidence_class:
+  - SCHOLARLY_INTERPRETATION
+  traditions:
+  - early-islam
+  - sunnism
+  - shiism
+  supporting_sources:
+  - source_id: SCH-MATTHIESEN-2023-CALIPH-IMAM
+    locator: Part I and conclusion framework
+    relation: LONG_TERM_CONFESSIONAL_HISTORY
+    access_mode: PUBLISHER_ABSTRACT_EXTRACT
+  opposing_sources: []
+  confidence: high-for-broad-development
+  contested: true

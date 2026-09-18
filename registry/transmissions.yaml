@@ -1,49 +1,252 @@
 schema_version: on-theo.transmission-registry.v1
 relation_types:
-  - PRESERVED_BY
-  - DIRECT_DEPENDENCE_POSSIBLE
-  - SHARED_TRADITION
-  - REINTERPRETATION
-  - POLEMICAL_RESPONSE_POSSIBLE
-  - STRUCTURAL_PARALLEL
-  - PROJECT_ANALOGY
-  - NONE_ESTABLISHED
-  - SHARED_INHERITANCE_NOT_DIRECT_TEXTUAL_DEPENDENCE
-  - RECEPTION_AND_INSTITUTIONAL_DEVELOPMENT_CONTEXT
-  - RECEPTION_INTERPRETATION
-  - SHARED_LITERARY_TRADITION
-  - STRUCTURAL_AND_HISTORICAL_PARALLEL
-  - LEXICAL_CONTACT_ENVIRONMENT
+- PRESERVED_BY
+- DIRECT_DEPENDENCE_POSSIBLE
+- SHARED_TRADITION
+- REINTERPRETATION
+- POLEMICAL_RESPONSE_POSSIBLE
+- STRUCTURAL_PARALLEL
+- PROJECT_ANALOGY
+- NONE_ESTABLISHED
+- SHARED_INHERITANCE_NOT_DIRECT_TEXTUAL_DEPENDENCE
+- RECEPTION_AND_INSTITUTIONAL_DEVELOPMENT_CONTEXT
+- RECEPTION_INTERPRETATION
+- SHARED_LITERARY_TRADITION
+- STRUCTURAL_AND_HISTORICAL_PARALLEL
+- LEXICAL_CONTACT_ENVIRONMENT
 relation_type_guards:
-  SHARED_INHERITANCE_NOT_DIRECT_TEXTUAL_DEPENDENCE: "Shared inherited material or tradition without a claim of direct textual dependence."
-  RECEPTION_AND_INSTITUTIONAL_DEVELOPMENT_CONTEXT: "Later reception and institutional development context; not a direct source-dependence claim."
-  RECEPTION_INTERPRETATION: "A later interpretive reception relation."
-  SHARED_LITERARY_TRADITION: "Participation in a shared literary tradition; not automatically direct dependence."
-  STRUCTURAL_AND_HISTORICAL_PARALLEL: "A structural parallel situated in historical contact/context; lineage still requires independent evidence."
-  LEXICAL_CONTACT_ENVIRONMENT: "A contact environment relevant to lexical comparison; does not itself prove borrowing or derivation."
+  SHARED_INHERITANCE_NOT_DIRECT_TEXTUAL_DEPENDENCE: Shared inherited material or tradition without a claim of direct textual
+    dependence.
+  RECEPTION_AND_INSTITUTIONAL_DEVELOPMENT_CONTEXT: Later reception and institutional development context; not a direct source-dependence
+    claim.
+  RECEPTION_INTERPRETATION: A later interpretive reception relation.
+  SHARED_LITERARY_TRADITION: Participation in a shared literary tradition; not automatically direct dependence.
+  STRUCTURAL_AND_HISTORICAL_PARALLEL: A structural parallel situated in historical contact/context; lineage still requires
+    independent evidence.
+  LEXICAL_CONTACT_ENVIRONMENT: A contact environment relevant to lexical comparison; does not itself prove borrowing or derivation.
 edges:
-  - id: TR-CELSUS-PRESERVED-BY-ORIGEN
-    from_source: SRC-CELSUS-TRUE-DOCTRINE
-    to_source: SRC-ORIGEN-CONTRA-CELSUM
-    relation: PRESERVED_BY
-    confidence: high
-    evidence:
-      - source_id: SRC-ORIGEN-CONTRA-CELSUM
-        locator: "Book I, chapters 28, 32, 69"
-    limitation: "Preservation through a hostile rebuttal does not guarantee access to the exact structure or wording of Celsus's lost complete work."
-
-  - id: TR-ABDES-PANTERA-TO-CELSUS
-    from_source: MAT-ABDES-PANTERA-INSCRIPTION
-    to_source: SRC-CELSUS-TRUE-DOCTRINE
-    relation: NONE_ESTABLISHED
-    confidence: high
-    evidence: []
-    limitation: "The inscription establishes that Pantera was a real name; no transmission or identity link to Celsus's accusation is established."
-
-  - id: TR-CELSUS-PANTHERA-TO-BAVLI-PANDEIRA
-    from_source: SRC-CELSUS-TRUE-DOCTRINE
-    to_source: SRC-BAVLI-SHABBAT-104B
-    relation: NONE_ESTABLISHED
-    confidence: unresolved
-    evidence: []
-    limitation: "Name/motif similarity and chronological order are insufficient to establish direct dependence; intermediate traditions and textual variants must be researched."
+- id: TR-CELSUS-PRESERVED-BY-ORIGEN
+  from_source: SRC-CELSUS-TRUE-DOCTRINE
+  to_source: SRC-ORIGEN-CONTRA-CELSUM
+  relation: PRESERVED_BY
+  confidence: high
+  evidence:
+  - source_id: SRC-ORIGEN-CONTRA-CELSUM
+    locator: Book I, chapters 28, 32, 69
+  limitation: Preservation through a hostile rebuttal does not guarantee access to the exact structure or wording of Celsus's
+    lost complete work.
+- id: TR-ABDES-PANTERA-TO-CELSUS
+  from_source: MAT-ABDES-PANTERA-INSCRIPTION
+  to_source: SRC-CELSUS-TRUE-DOCTRINE
+  relation: NONE_ESTABLISHED
+  confidence: high
+  evidence: []
+  limitation: The inscription establishes that Pantera was a real name; no transmission or identity link to Celsus's accusation
+    is established.
+- id: TR-CELSUS-PANTHERA-TO-BAVLI-PANDEIRA
+  from_source: SRC-CELSUS-TRUE-DOCTRINE
+  to_source: SRC-BAVLI-SHABBAT-104B
+  relation: NONE_ESTABLISHED
+  confidence: unresolved
+  evidence: []
+  limitation: Name/motif similarity and chronological order are insufficient to establish direct dependence; intermediate
+    traditions and textual variants must be researched.
+- id: TR-SHABBAT-SANHEDRIN-STADA-PARALLEL
+  from_source: SRC-BAVLI-SHABBAT-104B
+  to_source: SRC-BAVLI-SANHEDRIN-67A
+  relation: SHARED_TRADITION
+  confidence: high
+  evidence:
+  - source_id: SRC-BAVLI-SANHEDRIN-67A
+    locator: Sanhedrin 67a:14-15
+  - source_id: SRC-BAVLI-SHABBAT-104B
+    locator: Shabbat 104b:5
+  limitation: Substantial verbal/narrative overlap supports a shared textual tradition, not two independent historical witnesses;
+    direction of dependence is not established here.
+- id: TR-TOSEFTA-YERUSHALMI-BEN-DAMA
+  from_source: SRC-TOSEFTA-CHULLIN-2-6
+  to_source: SRC-YERUSHALMI-AVODAH-ZARAH-2-2
+  relation: SHARED_TRADITION
+  confidence: high
+  evidence:
+  - source_id: SRC-TOSEFTA-CHULLIN-2-6
+    witness_id: WIT-TOSEFTA-VIENNA-COD-HEBR-20
+    locator: Tosefta Chullin 2:6; ben Dama healing episode
+  - source_id: SRC-YERUSHALMI-AVODAH-ZARAH-2-2
+    locator: Avodah Zarah 2:2:11
+  limitation: The shared ben Dama/Jacob/healing narrative establishes a close textual-traditional parallel; V1 does not assign
+    a direction of literary dependence or treat the two texts as independent first-century testimony.
+- id: TR-YERUSHALMI-AZ-SHABBAT-HEALING
+  from_source: SRC-YERUSHALMI-AVODAH-ZARAH-2-2
+  to_source: SRC-YERUSHALMI-SHABBAT-14-4
+  relation: SHARED_TRADITION
+  confidence: high
+  evidence:
+  - source_id: SRC-YERUSHALMI-AVODAH-ZARAH-2-2
+    locator: Avodah Zarah 2:2:7, 2:2:11
+  - source_id: SRC-YERUSHALMI-SHABBAT-14-4
+    locator: Shabbat 14:4:8, 14:4:12
+  limitation: Parallel placement and wording support shared tradition; they do not justify independent-witness multiplication.
+- id: TR-PANTERA-NAME-TO-RABBINIC-PANDERA
+  from_source: SRC-CELSUS-TRUE-DOCTRINE
+  to_source: SRC-TOSEFTA-CHULLIN-2-6
+  relation: NONE_ESTABLISHED
+  confidence: unresolved
+  evidence: []
+  limitation: The Pantera/Panteira/Pandera resemblance is a research lead. V1 does not establish direct dependence, a common
+    named biological person, or a single origin across Celsus and rabbinic traditions.
+- id: TR-UGARIT-DEUT32-DIVINE-COUNCIL
+  from_source: SRC-UGARIT-BAAL-CYCLE
+  to_source: SRC-DEUTERONOMY-32
+  relation: STRUCTURAL_PARALLEL
+  confidence: high-for-parallel-unresolved-for-direct-dependence
+  evidence:
+  - source_id: SCH-SMITH-2001-BIBLICAL-MONOTHEISM
+    locator: divine council comparison
+  - source_id: SCH-TOV-2023-DEUT32
+    locator: divine beings / Ugaritic comparison
+  limitation: Shared West Semitic cultural grammar is historically plausible; no claim is made that Deuteronomy directly copied
+    a surviving Ugaritic tablet.
+- id: TR-UGARIT-ENUMA-SEA-COMBAT
+  from_source: SRC-UGARIT-BAAL-CYCLE
+  to_source: SRC-ENUMA-ELISH
+  relation: STRUCTURAL_PARALLEL
+  confidence: high-for-combat-parallel
+  evidence: []
+  limitation: Baal/Yamm and Marduk/Tiamat are comparable divine-war structures, not demonstrated instances of direct textual
+    dependence in V1.
+- id: TR-MARK-MATTHEW-LUKE-HOMETOWN-FAMILY-LABELS
+  from_source: SRC-GOSPEL-MARK
+  to_source: SRC-GOSPEL-MATTHEW
+  relation: SHARED_LITERARY_TRADITION
+  confidence: high-for-parallel-unresolved-for-direction-in-v1
+  evidence:
+  - source_id: SRC-GOSPEL-MARK
+    locator: Mark 6:1-6
+  - source_id: SRC-GOSPEL-MATTHEW
+    locator: Matthew 13:53-58
+  - source_id: SRC-GOSPEL-LUKE
+    locator: Luke 4:16-30
+  limitation: The passages are literary parallels, but V1 does not use this edge to settle the Synoptic Problem or assign
+    a motive for each wording difference.
+- id: TR-MARK6-CELSUS-PANTHERA
+  from_source: SRC-GOSPEL-MARK
+  to_source: SRC-CELSUS-TRUE-DOCTRINE
+  relation: NONE_ESTABLISHED
+  confidence: unresolved
+  evidence: []
+  limitation: Mark 6:3 does not name Panthera and V1 has not established a transmission chain from the Markan matronymic to
+    Celsus's later paternity counter-story.
+- id: TR-MARK6-RABBINIC-PANDERA
+  from_source: SRC-GOSPEL-MARK
+  to_source: SRC-TOSEFTA-CHULLIN-2-6
+  relation: NONE_ESTABLISHED
+  confidence: unresolved
+  evidence: []
+  limitation: The existence of a Markan matronymic and later rabbinic Pandera/Panteira material is insufficient to establish
+    direct lineage or a common source.
+- id: TR-JOHN8-ORIGEN-COMMENTARY-RECEPTION
+  from_source: SRC-GOSPEL-JOHN
+  to_source: SRC-ORIGEN-COMMENTARY-JOHN
+  relation: RECEPTION_INTERPRETATION
+  confidence: high
+  evidence:
+  - source_id: SRC-ORIGEN-COMMENTARY-JOHN
+    locator: Commentary on John 20.128-130
+  - source_id: SCH-HARLOW-2012-BORN-FORNICATION
+    locator: discussion of Commentary on John 20.128-130
+  limitation: The edge establishes later interpretation of John, not continuity of a first-century historical rumor.
+- id: TR-JOHN8-CELSUS-PANTHERA
+  from_source: SRC-GOSPEL-JOHN
+  to_source: SRC-CELSUS-TRUE-DOCTRINE
+  relation: NONE_ESTABLISHED
+  confidence: unresolved
+  evidence: []
+  limitation: V1 has not established literary dependence, a common source, or a direct transmission path from John 8:41 to
+    Celsus's explicit Panthera counter-story.
+- id: TR-JOHN8-RABBINIC-PANDERA
+  from_source: SRC-GOSPEL-JOHN
+  to_source: SRC-TOSEFTA-CHULLIN-2-6
+  relation: NONE_ESTABLISHED
+  confidence: unresolved
+  evidence: []
+  limitation: Semantic resemblance around contested paternity is not sufficient to establish lineage between John 8:41 and
+    later rabbinic Pandera/Panteira material.
+- id: TR-JEWISH-GREEK-DAIMON-CONTACT
+  from_source: SRC-DSS-COMMUNITY-RULE
+  to_source: SRC-PLATO-REPUBLIC-10
+  relation: STRUCTURAL_PARALLEL
+  confidence: unresolved-for-direct-lineage
+  evidence:
+  - source_id: SCH-GASPARRO-2016-DAIMONIC-POWER
+    locator: daimonology historical range
+  limitation: Jewish angel/spirit traditions and Greek daimonology share a contact field but are not modeled as direct derivation
+    here.
+- id: TR-JEWISH-GRECO-ROMAN-CONTACT-FIELD
+  from_source: SRC-JOSEPHUS-WAR-2
+  to_source: SRC-AUGUSTUS-RES-GESTAE
+  relation: STRUCTURAL_PARALLEL
+  confidence: high-for-shared-imperial-environment-unresolved-for-specific-doctrine
+  evidence: []
+  limitation: The sources document overlapping Roman imperial environments, not one direct textual dependence.
+- id: TR-ENOCH-DANIEL-APOCALYPTIC-FIELD
+  from_source: SRC-1ENOCH-WATCHERS
+  to_source: SRC-DANIEL-7-12
+  relation: STRUCTURAL_PARALLEL
+  confidence: high-for-shared-apocalyptic-field-unresolved-for-direct-dependence
+  evidence:
+  - source_id: SCH-KNIBB-2011-DSS-APOCALYPTICISM
+    locator: Enochic and Danielic influence in Qumran thought
+  limitation: Shared apocalyptic environment does not establish one-direction literary dependence between these specific works.
+- id: TR-GREEK-PHILOSOPHY-PHILO
+  from_source: SRC-PLATO-REPUBLIC-10
+  to_source: SRC-PHILO-DE-OPIFICIO
+  relation: DIRECT_DEPENDENCE_POSSIBLE
+  confidence: high-for-broad-philosophical-contact-unresolved-for-this-exact-source
+  evidence:
+  - source_id: SCH-NIEHOFF-2018-PHILO-LOGOS
+    locator: Platonic/Pythagorean intellectual setting
+  - source_id: SCH-DECHARNEUX-2017-PHILO-POWERS
+    locator: biblical and Platonic conceptual synthesis
+  limitation: The edge represents explicit Greek philosophical contact in Philo; it does not claim that Republic Book X itself
+    is the direct source of De opificio.
+- id: TR-EARLY-CHRISTIAN-RABBINIC-SHARED-JEWISH-INHERITANCE
+  from_source: SRC-DIDACHE
+  to_source: SRC-MISHNAH-SANHEDRIN-10-1
+  relation: SHARED_INHERITANCE_NOT_DIRECT_TEXTUAL_DEPENDENCE
+  confidence: high-for-shared-Jewish-context-unresolved-for-direct-lineage
+  evidence: []
+  limitation: The edge records a comparative shared-inheritance/contact-zone problem, not a claim that the Didache copied
+    the Mishnah or the Mishnah copied the Didache.
+- id: TR-DANIEL-QURAN-RESURRECTION
+  from_source: SRC-DANIEL-7-12
+  to_source: SRC-QURAN-RECEIVED-TEXT
+  relation: STRUCTURAL_AND_HISTORICAL_PARALLEL
+  confidence: high-for-earlier-related-resurrection-field-unresolved-for-direct-textual-dependence
+  evidence:
+  - source_id: SRC-DANIEL-7-12
+    locator: Daniel 12:2-3
+  - source_id: SRC-QURAN-RECEIVED-TEXT
+    locator: Q 75:3-4 and broader resurrection corpus
+  limitation: Danielic resurrection is an earlier Jewish comparandum; this edge does not claim the Qur'an directly copied
+    Daniel.
+- id: TR-HIMYAR-RAHMAN-QURAN
+  from_source: MAT-HIMYAR-LATE-ANTIQUE-INSCRIPTIONS
+  to_source: SRC-QURAN-RECEIVED-TEXT
+  relation: LEXICAL_CONTACT_ENVIRONMENT
+  confidence: high-for-pre-quranic-availability-unresolved-for-direct-lineage
+  evidence:
+  - source_id: SCH-KJAER-2022-RAHMAN
+    locator: diachronic Rahman(an) study
+  limitation: South Arabian Rahman(an) establishes a pre-Qur'anic regional divine epithet and possible lexical history; identical
+    theology/direct transmission is not established.
+- id: TR-QURAN-EARLY-ISLAM-DEVELOPMENT
+  from_source: SRC-QURAN-RECEIVED-TEXT
+  to_source: SCH-HALLAQ-ORIGINS-ISLAMIC-LAW
+  relation: RECEPTION_AND_INSTITUTIONAL_DEVELOPMENT_CONTEXT
+  confidence: high-for-Quranic-foundational-role-unresolved-for-any-single-later-rule
+  evidence:
+  - source_id: SCH-HALLAQ-ORIGINS-ISLAMIC-LAW
+    locator: Quranic law through later legal development
+  limitation: This edge records Quranic norm as an antecedent in later Islamic legal development; it does not assert that
+    every later legal rule is a direct derivation from the Quran.
