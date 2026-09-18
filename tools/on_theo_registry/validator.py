@@ -503,6 +503,68 @@ class _Validator:
                         path,
                         f"review receipt is missing required field {field!r}",
                     )
+
+            repository = receipt.get("repository")
+            if not isinstance(repository, str) or "/" not in repository or repository.startswith("/") or repository.endswith("/"):
+                self.finding(
+                    "INVALID_REVIEW_REPOSITORY",
+                    f"{path}:repository",
+                    f"repository must be a non-empty owner/name string, got {repository!r}",
+                )
+
+            subject_sha = receipt.get("subject_sha")
+            if (
+                not isinstance(subject_sha, str)
+                or len(subject_sha) != 40
+                or any(char not in "0123456789abcdef" for char in subject_sha)
+            ):
+                self.finding(
+                    "INVALID_REVIEW_SUBJECT_SHA",
+                    f"{path}:subject_sha",
+                    f"subject_sha must be a 40-character lowercase hexadecimal commit SHA, got {subject_sha!r}",
+                )
+
+            for field in ("review_type", "reviewer_role"):
+                value = receipt.get(field)
+                if not isinstance(value, str) or not value:
+                    self.finding(
+                        "INVALID_REVIEW_TEXT_FIELD",
+                        f"{path}:{field}",
+                        f"{field} must be a non-empty string",
+                    )
+
+            reviewed_artifacts = receipt.get("reviewed_artifacts")
+            if not isinstance(reviewed_artifacts, list) or not reviewed_artifacts:
+                self.finding(
+                    "INVALID_REVIEWED_ARTIFACTS",
+                    f"{path}:reviewed_artifacts",
+                    "reviewed_artifacts must be a non-empty list of exact paths or stable IDs",
+                )
+            else:
+                for artifact_index, artifact in enumerate(reviewed_artifacts):
+                    if not isinstance(artifact, str) or not artifact:
+                        self.finding(
+                            "INVALID_REVIEWED_ARTIFACT",
+                            f"{path}:reviewed_artifacts[{artifact_index}]",
+                            f"reviewed artifact must be a non-empty string, got {artifact!r}",
+                        )
+
+            findings = receipt.get("findings")
+            if not isinstance(findings, list):
+                self.finding(
+                    "INVALID_REVIEW_FINDINGS",
+                    f"{path}:findings",
+                    "findings must be a list of mappings",
+                )
+            else:
+                for finding_index, finding in enumerate(findings):
+                    if not isinstance(finding, dict):
+                        self.finding(
+                            "INVALID_REVIEW_FINDING",
+                            f"{path}:findings[{finding_index}]",
+                            f"review finding must be a mapping, got {type(finding).__name__}",
+                        )
+
             if receipt.get("result") not in allowed:
                 self.finding("INVALID_REVIEW_RESULT", path, f"result {receipt.get('result')!r} is not declared")
             if receipt.get("execution_provenance") not in provenance:
