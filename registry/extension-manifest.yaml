@@ -135,6 +135,15 @@ extensions:
     status: PROPOSED_RESEARCH_DELTA_REVIEW_REQUIRED
     adds_entity_types: [scholarly_context, claim]
 
+
+  - extension_id: EXT-SUMERIAN-DEATH-LINE-REVALIDATION-V1
+    path: registry/extensions/sumerian-death-line-revalidation-v1.yaml
+    declared_base: 74ce2094ad8e45368bd51f8c559046b8b6f2c763
+    introduced_at: fd3642e157c421ac88d61c5453aa69f020c7c2d5
+    depends_on: [EXT-SUMERIAN-DEATH-CORPUS-EDITION-CURRENTNESS-V1]
+    status: PROPOSED_RESEARCH_DELTA_REVIEW_REQUIRED
+    adds_entity_types: [scholarly_context, claim]
+
 materialization_state:
   canonical_materialized: false
   reason: "The extensions remain stacked draft research cuts. This manifest defines deterministic application semantics but does not itself promote or merge them."
