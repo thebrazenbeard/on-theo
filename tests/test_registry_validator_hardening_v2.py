@@ -489,3 +489,68 @@ def test_extensions_pending_requires_complete_witness_index(tmp_path: Path) -> N
 
     assert "MISSING_PENDING_WITNESS_INDEX" in _codes(tmp_path)
 
+def test_extension_schema_version_must_match_manifest_contract(tmp_path: Path) -> None:
+    _repo(tmp_path)
+    _write_yaml(
+        tmp_path,
+        "registry/extensions/example.yaml",
+        {
+            "schema_version": "wrong.schema",
+            "extension_id": "EXT-A",
+            "base_registry_head": "abc",
+            "status": "PROPOSED",
+        },
+    )
+    _write_yaml(
+        tmp_path,
+        "registry/extension-manifest.yaml",
+        {
+            "extension_schema_version": "on-theo.registry-extension.v1",
+            "extensions": [
+                {
+                    "extension_id": "EXT-A",
+                    "path": "registry/extensions/example.yaml",
+                    "declared_base": "abc",
+                    "depends_on": [],
+                    "status": "PROPOSED",
+                    "adds_entity_types": [],
+                }
+            ],
+        },
+    )
+
+    assert "EXTENSION_SCHEMA_VERSION_MISMATCH" in _codes(tmp_path)
+
+
+def test_extension_status_must_match_manifest_entry(tmp_path: Path) -> None:
+    _repo(tmp_path)
+    _write_yaml(
+        tmp_path,
+        "registry/extensions/example.yaml",
+        {
+            "schema_version": "on-theo.registry-extension.v1",
+            "extension_id": "EXT-A",
+            "base_registry_head": "abc",
+            "status": "FILE_STATUS",
+        },
+    )
+    _write_yaml(
+        tmp_path,
+        "registry/extension-manifest.yaml",
+        {
+            "extension_schema_version": "on-theo.registry-extension.v1",
+            "extensions": [
+                {
+                    "extension_id": "EXT-A",
+                    "path": "registry/extensions/example.yaml",
+                    "declared_base": "abc",
+                    "depends_on": [],
+                    "status": "MANIFEST_STATUS",
+                    "adds_entity_types": [],
+                }
+            ],
+        },
+    )
+
+    assert "MANIFEST_EXTENSION_STATUS_MISMATCH" in _codes(tmp_path)
+
