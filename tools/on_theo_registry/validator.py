@@ -163,12 +163,28 @@ class _Validator:
             extension = self.load(relative)
             if not extension:
                 continue
+            expected_schema = manifest.get("extension_schema_version")
+            actual_schema = extension.get("schema_version")
+            if isinstance(expected_schema, str) and expected_schema and actual_schema != expected_schema:
+                self.finding(
+                    "EXTENSION_SCHEMA_VERSION_MISMATCH",
+                    relative,
+                    f"manifest requires schema {expected_schema!r} but file declares {actual_schema!r}",
+                )
             actual_id = extension.get("extension_id")
             if actual_id != extension_id:
                 self.finding(
                     "MANIFEST_EXTENSION_ID_MISMATCH",
                     relative,
                     f"manifest declares {extension_id!r} but file declares {actual_id!r}",
+                )
+            manifest_status = entry.get("status")
+            actual_status = extension.get("status")
+            if manifest_status != actual_status:
+                self.finding(
+                    "MANIFEST_EXTENSION_STATUS_MISMATCH",
+                    relative,
+                    f"manifest status {manifest_status!r} does not match file status {actual_status!r}",
                 )
             declared_base = entry.get("declared_base")
             actual_base = extension.get("base_registry_head")
