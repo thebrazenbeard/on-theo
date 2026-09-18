@@ -1,0 +1,127 @@
+schema_version: on-theo.materialization-rehearsal-audit.v1
+status: VALIDATED_REHEARSAL_NOT_CANONICAL
+recorded_at: "2026-09-18T09:55:00-04:00"
+subject:
+  repository: thebrazenbeard/on-theo
+  pull_request: 30
+  branch: work/registry-materialization-rehearsal-v1-20260918
+  base_head: 8234d3fcc2d5a0eda26e5c7d4c2211de067c600a
+  head: 8e651851cdc1d1d4994784a69b961d87914a32e0
+  tree: 0679ca2c88b237840d647d1406bb34d4214f3d8d
+  draft: true
+  merged: false
+  mergeable_state: clean
+validation:
+  github_actions:
+    push_run: 35352969764
+    push_result: SUCCESS
+    pull_request_run: 35352975400
+    pull_request_result: SUCCESS
+  pytest:
+    result: PASS
+    passed: 37
+    failed: 0
+  registry_validator:
+    result: PASS
+    ok: true
+    errors: 0
+    findings: 0
+    warnings: 0
+  rehearsal_output_validator:
+    result: PASS
+    ok: true
+    errors: 0
+    warnings: 0
+materialization:
+  source_base_registry_head: c1f6df5ea1fee0c5ac8d84a7b5c2b81fb905fd3e
+  source_manifest_sha256: bf99460c7a6b37eac0cbc266f9a330988a5a4af1083ed1dbb5ac3ea1e98b82e2
+  applied_extension_count: 20
+  collision_count: 0
+  unresolved_reference_count: 0
+  addition_counts:
+    source_additions: 39
+    scholarly_context_additions: 86
+    claim_additions: 121
+    concept_additions: 26
+    transmission_additions: 20
+    witness_additions: 4
+  base_counts:
+    sources: 6
+    claims: 8
+    concepts: 0
+    transmission_edges: 3
+    witnesses: 0
+  output_counts:
+    sources: 131
+    claims: 129
+    concepts: 26
+    transmission_edges: 23
+    witnesses: 4
+  source_tree_readback_unchanged: true
+source_registry_sha256_before:
+  registry/claims.yaml: 858030d4860a18eb662e351bd8eb77c1ae7bf5958039019f1b2a0badfb11fc2a
+  registry/concepts.yaml: f3f0a16b8207cae21b185c3cc6060e2864be230e7035ec1bbfbf374f3f5541b5
+  registry/extension-manifest.yaml: bf99460c7a6b37eac0cbc266f9a330988a5a4af1083ed1dbb5ac3ea1e98b82e2
+  registry/reviews.yaml: 5597f9f034beea490dfc153dfcf15c0832f8a1988619b1675df0dd1f5cf203c0
+  registry/source-access.yaml: 6c1cd24597e0af37c8fe95a27e5874fd94f61d042b8a2dac306005495eaf20d9
+  registry/sources.yaml: 9afe6263b7c46f339f8883d0c31bd1445051a8d329311b58266bb8876ddd2712
+  registry/transmissions.yaml: 5e6d97dfdaf1f5dbf411de95ff42be864e030bff35d10ca9abab55a6d4c55809
+  registry/witnesses.yaml: 135afc43238a0032a5d4cafa3e2ff96ac48d6e99b234a52e35d78db244a39f7f
+source_registry_sha256_after:
+  registry/claims.yaml: 858030d4860a18eb662e351bd8eb77c1ae7bf5958039019f1b2a0badfb11fc2a
+  registry/concepts.yaml: f3f0a16b8207cae21b185c3cc6060e2864be230e7035ec1bbfbf374f3f5541b5
+  registry/extension-manifest.yaml: bf99460c7a6b37eac0cbc266f9a330988a5a4af1083ed1dbb5ac3ea1e98b82e2
+  registry/reviews.yaml: 5597f9f034beea490dfc153dfcf15c0832f8a1988619b1675df0dd1f5cf203c0
+  registry/source-access.yaml: 6c1cd24597e0af37c8fe95a27e5874fd94f61d042b8a2dac306005495eaf20d9
+  registry/sources.yaml: 9afe6263b7c46f339f8883d0c31bd1445051a8d329311b58266bb8876ddd2712
+  registry/transmissions.yaml: 5e6d97dfdaf1f5dbf411de95ff42be864e030bff35d10ca9abab55a6d4c55809
+  registry/witnesses.yaml: 135afc43238a0032a5d4cafa3e2ff96ac48d6e99b234a52e35d78db244a39f7f
+output_registry_sha256:
+  registry/claims.yaml: 89c4422a2e7d03ecc2997fc6a0be5c24f80cbe4fa338a62afbf24ec815bb99b6
+  registry/concepts.yaml: a8a7354ccd1bbf0aae0ee0f6fdda8545098027297bbde004c57ee8a895f44b97
+  registry/extension-manifest.yaml: 6f5c21bdd3c32446194ae7ca9b2d7e7b25dc130967006cba11bd6f2d6c9f3bd9
+  registry/reviews.yaml: 0f7ed711f8d089a778526bf5a042e708f10cd05de39edbebfc3bb096f3cc1a72
+  registry/source-access.yaml: 6c97263769c615ac5863ed879da857f58ebfda2031c799d50ef683623efc0d5a
+  registry/sources.yaml: b5e54df4eb984c0f30865be08d33dd7bc711bacba3f6596cef2e370e30cf1d56
+  registry/transmissions.yaml: 423f746b65e93fb5efa54ad17490fdbbe8f3f84bec094d9dead55954a8ad770d
+  registry/witnesses.yaml: 7e22b5b0c46065eeb12108ee14e3c34a818f4d45062f9a99ad4e3b7f6b42e49a
+extensions:
+  - {id: EXT-PANTHERA-RABBINIC-PARALLELS-V1, sha256: bb502efa445b45b6fad52c7659e8374ed4f4d3e6e15a8c401ad2001d579bc9f5}
+  - {id: EXT-BROAD-MYTHOS-FOUNDATION-V1, sha256: c768c19f85b095645e898a9cf14c4c4edae7330fb342166a62541c81607828f0}
+  - {id: EXT-SIMULATION-THEORY-V1, sha256: f0e3a788a190e1ef71d80334531b79696c49ddfbe6cf29d143c0e7a3f40d98ef}
+  - {id: EXT-MARK6-MATRONYMIC-V1, sha256: e10b97347be7182729e01098c323dac97dd9dc9caa1599dfaf7bc651ec069412}
+  - {id: EXT-DEUT32-WITNESS-CONTROL-V1, sha256: 42965bceb04a83024bc6e08d0bf149bf985be17f6ef006193581525be689521b}
+  - {id: EXT-EGYPTIAN-VEDIC-FOUNDATION-V1, sha256: 160bef127cab55dc94f39eea9966f85bd25ce78539504daafbd4229f145c3457}
+  - {id: EXT-SIMULATION-DISCRIMINABILITY-V2, sha256: cc6847acc666eb312f2c9452d40ffe9708a00d5c680206c2cb1a2fc6dd49c4e9}
+  - {id: EXT-JOHN8-41-PORNEIA-V1, sha256: a6b6cc85d55ce47189ee8a6f430dfc43ead6d0228ec7ff8c42e1410ba00447e7}
+  - {id: EXT-EARLY-BUDDHIST-V1, sha256: c1e02b11acec566884f573bd026af717e1bf051a2701d52a17d389f7d0d7a1a9}
+  - {id: EXT-SECOND-TEMPLE-GRECO-ROMAN-V1, sha256: a53f61b7150bf040c1b083cc149bc46d5141a58a6c054cf97779c4f2a4b8348d}
+  - {id: EXT-PORNEIA-SEMANTIC-CONTROL-V1, sha256: 6176b1ba976dd3e481bf2d730ca2346bbf589842d987b7298e51f5897ab85952}
+  - {id: EXT-ENOCH-DANIEL-PHILO-V1, sha256: b7b1f460acc75f8c9a73b16694012f6a353f5c3e7a8b21864b0b09f22cee02fc}
+  - {id: EXT-CELSUS-JEW-SOURCE-PROVENANCE-V1, sha256: bfe7ee313f67c1074bc5b93da3cadd5345370397794a9ccef79171b42bb0d08d}
+  - {id: EXT-EARLY-CHRISTIAN-RABBINIC-V1, sha256: f22db0b16014c6675c84ce235c53bf979472e39c5c4664ebd086f6df0a106087}
+  - {id: EXT-PANTHERA-PARTHENOS-WORDPLAY-V1, sha256: 8d2848596bbfa339d5dbe8c4934c997bc02d8a973aae3ab87c905f8d132300ae}
+  - {id: EXT-LATE-ANTIQUE-CONTACT-ZONE-V1, sha256: e7bd993553ee803cb5329f696a99bf1a35e14541e805d73526cdbd31bad327b7}
+  - {id: EXT-QURANIC-SYSTEM-V1, sha256: 04ce77bcca3b244bc0282b3de11aa515b38f3a2c315d8fe169e8b07b6cc99ee8}
+  - {id: EXT-YESHUA-HYPOTHESIS-MAP-V1, sha256: 49d775a93b8c28f20ccf5a9d8430259a8b1fbfd2bb2ae2c0d79734f3c400c014}
+  - {id: EXT-QURAN-LATE-ANTIQUE-FEATURE-TESTS-V1, sha256: e890d1fe3e9027349f34058d73674f00813e7d0088340daade12e8bb95625ba6}
+  - {id: EXT-EARLY-ISLAMIC-DEVELOPMENT-V1, sha256: 5a473f2e2cd6749045208cefda9bd44a07b439cbb36f133733d387fa3ac6953a}
+integrity_properties:
+  every_extension_record_materialized_exactly_once: true
+  output_counts_equal_base_plus_additions: true
+  deterministic_repeated_rehearsal: true
+  output_directory_must_be_outside_source_repo: true
+  nonempty_output_directory_rejected: true
+  source_registry_byte_readback_equal: true
+effect_boundary:
+  source_tree_modified: false
+  canonical_materialized: false
+  merge_authority: false
+  canonical_promotion_authority: false
+review_boundary:
+  independent_review_complete: false
+  note: "This receipt proves deterministic rehearsal behavior and structural validity only. It does not establish historical truth or authorize promotion."
+external_dependency:
+  testament:
+    relationship: EXTERNAL_CONSUMER_ONLY
+    guidance: "Continue pinning immutable On-Theo repo+commit+path references; rehearsal output is not a canonical dependency target."
