@@ -144,6 +144,15 @@ extensions:
     status: PROPOSED_RESEARCH_DELTA_REVIEW_REQUIRED
     adds_entity_types: [scholarly_context, claim]
 
+
+  - extension_id: EXT-SUMERIAN-INANA-LINE-REVALIDATION-V1
+    path: registry/extensions/sumerian-inana-line-revalidation-v1.yaml
+    declared_base: e1fbd46e151d65ac786257b268a28237b8e66d77
+    introduced_at: 1ff4e38858a89a2ac9401553efc53d7cbfe77404
+    depends_on: [EXT-SUMERIAN-DEATH-LINE-REVALIDATION-V1]
+    status: PROPOSED_RESEARCH_DELTA_REVIEW_REQUIRED
+    adds_entity_types: [scholarly_context, claim]
+
 materialization_state:
   canonical_materialized: false
   reason: "The extensions remain stacked draft research cuts. This manifest defines deterministic application semantics but does not itself promote or merge them."
