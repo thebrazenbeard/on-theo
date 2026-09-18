@@ -1,0 +1,83 @@
+from pathlib import Path
+
+import pytest
+import yaml
+
+from tools.on_theo_registry.materializer import MaterializationError, materialize_rehearsal
+from tools.on_theo_registry.validator import validate_repository
+
+
+def test_current_repository_materialization_rehearsal_validates() -> None:
+    root = Path(__file__).resolve().parents[1]
+
+    result = materialize_rehearsal(root)
+
+    assert result.receipt["status"] == "REHEARSAL_ONLY_NOT_CANONICAL"
+    assert result.receipt["applied_extension_count"] == 20
+    assert result.receipt["collision_count"] == 0
+    assert result.receipt["source_validation"]["ok"] is True
+    assert result.receipt["output_validation"]["ok"] is True
+    assert result.receipt["effect_boundary"]["source_tree_modified"] is False
+    assert result.receipt["effect_boundary"]["canonical_materialized"] is False
+    assert result.receipt["effect_boundary"]["merge_authority"] is False
+
+    manifest = result.output_documents["registry/extension-manifest.yaml"]
+    assert manifest["extensions"] == []
+    assert manifest["materialization_state"]["canonical_materialized"] is False
+    assert manifest["materialization_state"]["rehearsal_materialized"] is True
+
+    witnesses = result.output_documents["registry/witnesses.yaml"]
+    assert witnesses["materialization_state"] == "REHEARSAL_MATERIALIZED_NOT_CANONICAL"
+    assert witnesses["pending_extension_records"] == []
+    assert len(witnesses["witnesses"]) == 4
+
+
+def test_rehearsal_is_deterministic() -> None:
+    root = Path(__file__).resolve().parents[1]
+
+    first = materialize_rehearsal(root)
+    second = materialize_rehearsal(root)
+
+    assert first.receipt["source_manifest_sha256"] == second.receipt["source_manifest_sha256"]
+    assert first.receipt["applied_extensions"] == second.receipt["applied_extensions"]
+    assert first.receipt["output_registry_sha256"] == second.receipt["output_registry_sha256"]
+    assert first.receipt["before_counts"] == second.receipt["before_counts"]
+    assert first.receipt["after_counts"] == second.receipt["after_counts"]
+
+
+def test_rehearsal_output_directory_must_be_outside_source_tree(tmp_path: Path) -> None:
+    root = tmp_path / "repo"
+    root.mkdir()
+
+    with pytest.raises(MaterializationError, match="outside the source repository"):
+        materialize_rehearsal(root, root / "generated")
+
+
+def test_rehearsal_writes_separate_validatable_output(tmp_path: Path) -> None:
+    root = Path(__file__).resolve().parents[1]
+    output = tmp_path / "materialized"
+
+    result = materialize_rehearsal(root, output)
+
+    assert (output / "registry/sources.yaml").is_file()
+    assert (output / "registry/claims.yaml").is_file()
+    assert (output / "registry/concepts.yaml").is_file()
+    assert (output / "registry/transmissions.yaml").is_file()
+    assert (output / "registry/witnesses.yaml").is_file()
+    assert (output / "receipts/MATERIALIZATION_REHEARSAL_V1.yaml").is_file()
+    assert validate_repository(output).ok
+
+    persisted = yaml.safe_load(
+        (output / "receipts/MATERIALIZATION_REHEARSAL_V1.yaml").read_text(encoding="utf-8")
+    )
+    assert persisted["output_registry_sha256"] == result.receipt["output_registry_sha256"]
+
+
+def test_rehearsal_refuses_nonempty_output_directory(tmp_path: Path) -> None:
+    root = Path(__file__).resolve().parents[1]
+    output = tmp_path / "materialized"
+    output.mkdir()
+    (output / "stale.txt").write_text("stale", encoding="utf-8")
+
+    with pytest.raises(MaterializationError, match="must be empty"):
+        materialize_rehearsal(root, output)
