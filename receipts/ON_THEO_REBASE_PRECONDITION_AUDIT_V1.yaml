@@ -1,0 +1,70 @@
+schema_version: on-theo.rebase-precondition-audit.v1
+status: PASS_SAME_RUNTIME_MECHANICAL_EVIDENCE
+recorded_at: "2026-09-18T13:12:00-04:00"
+frozen_subject:
+  repository: thebrazenbeard/on-theo
+  pull_request: 30
+  head: 8e651851cdc1d1d4994784a69b961d87914a32e0
+  tree: 0679ca2c88b237840d647d1406bb34d4214f3d8d
+audit_subject:
+  branch: audit/rebase-precondition-equivalence-v1-20260918
+  head: a464acb62cad6e5fd2231dde36f3fed8eb309214
+  tree: cfceaf06bc85f8dc09dc2268e615ec5d085f531a
+  github_actions_run: 35372755897
+  result: SUCCESS
+  tests:
+    passed: 38
+    failed: 0
+  registry_validator:
+    ok: true
+    errors: 0
+    findings: 0
+    warnings: 0
+  materialization_rehearsal:
+    ok: true
+method:
+  description: "For each extension whose declared base is not an ancestor of frozen PR #30, enumerate every validator-relevant stable-ID reference. Exclude IDs owned by any extension in the current manifest, because those are governed by the separately verified dependency closure. For each remaining pre-existing reference, load the canonical record from the extension's declared base and from frozen PR #30 and require exact canonical JSON equality."
+  full_history_checkout: true
+  subject_bound: 8e651851cdc1d1d4994784a69b961d87914a32e0
+  semantic_scope_guard: "This proves referential-precondition equivalence for pre-existing stable IDs actually referenced by the divergent extension. It is not a proof of historical or philosophical truth and does not independently approve the rebase exception."
+result:
+  extension_count: 20
+  ancestor_extension_count: 11
+  divergent_extension_count: 9
+  divergent_unique_base_count: 6
+  referential_precondition_mismatch_count: 0
+  referential_preconditions_equivalent: true
+  divergent_extensions_with_zero_external_preexisting_refs: 8
+  divergent_extensions_with_external_preexisting_refs: 1
+  external_preexisting_reference_count: 1
+  mismatches: 0
+external_preexisting_reference:
+  extension_id: EXT-YESHUA-HYPOTHESIS-MAP-V1
+  stable_id: SRC-CELSUS-TRUE-DOCTRINE
+  declared_base: 5a45ef5cdadc1f1f3a21e769e2d613c4ed945d8d
+  frozen_subject_record_match: EXACT_CANONICAL_RECORD_EQUALITY
+divergent_extensions:
+  - EXT-SIMULATION-THEORY-V1
+  - EXT-SIMULATION-DISCRIMINABILITY-V2
+  - EXT-ENOCH-DANIEL-PHILO-V1
+  - EXT-EARLY-CHRISTIAN-RABBINIC-V1
+  - EXT-LATE-ANTIQUE-CONTACT-ZONE-V1
+  - EXT-YESHUA-HYPOTHESIS-MAP-V1
+  - EXT-QURANIC-SYSTEM-V1
+  - EXT-QURAN-LATE-ANTIQUE-FEATURE-TESTS-V1
+  - EXT-EARLY-ISLAMIC-DEVELOPMENT-V1
+combined_rebase_evidence:
+  dependency_closure_receipt: receipts/ON_THEO_EXTENSION_DEPENDENCY_CLOSURE_V1.yaml
+  provisional_rebase_packet: receipts/ON_THEO_EXTENSION_REBASE_EQUIVALENCE_V1.yaml
+  dependency_closure_hidden_cross_extension_violations: 0
+  materialization_collisions: 0
+  every_extension_record_materialized_exactly_once: true
+  final_output_validator_errors: 0
+independent_review:
+  state: PENDING
+  note: "Masa, Mune, and Hephaestus must decide whether this evidence satisfies the manifest's semantic-rebase exception for promotion-candidate construction."
+effect_boundary:
+  frozen_subject_modified: false
+  promotion_candidate_created: false
+  canonical_materialization: false
+  merge_authority: false
