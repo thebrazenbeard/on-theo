@@ -280,7 +280,13 @@ class _Validator:
                         f"relation {relation_type!r} is not declared by registry/concepts.yaml",
                     )
                 target = relation.get("target_concept_id")
-                if isinstance(target, str) and target not in self.concept_ids:
+                if not isinstance(target, str) or not target:
+                    self.finding(
+                        "MISSING_CONCEPT_TARGET",
+                        relation_path,
+                        "concept relation requires non-empty target_concept_id",
+                    )
+                elif target not in self.concept_ids:
                     self.finding("UNKNOWN_CONCEPT_TARGET", relation_path, f"target concept {target!r} does not resolve")
 
     def validate_reviews(self, reviews: dict[str, Any]) -> None:
