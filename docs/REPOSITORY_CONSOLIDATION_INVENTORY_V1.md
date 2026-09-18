@@ -294,10 +294,62 @@ Until On-Theo has an accepted consolidated head:
 
 This prevents the branched-chat workflow from creating a provenance loop.
 
-## 10. Exact next work
+## 10. ID-level collision check result
 
-Build the isolated consolidation candidate only after a final ID-level collision check across the divergent registry files.
+The required ID-level registry comparison is complete across these exact lines:
 
-The immediate technical subtask is therefore:
+- Sumerian: `7e354667770a6c4bed958a01c5ff843345a35b40`
+- Qur'an feature-test line: `1b412719cb3acf68e5547bae9f859d8a54a3341c`
+- early-Islam line: `9f8e67054b306364f2cf057c19e34c5c0be57ca4`
+- simulation V2 line: `ff5012834a3763f4fa068cfed70365a43a13e5e4`
+- Yeshua review line: `0e2d6a64eb4e6ad15fbfa460db924e57cf7e1868`
+- validator line: `b4cddd100007d4b2c90fdce4d519a4e1b5b7d3ed`
 
-**extract and compare all extension IDs and source-access IDs across the Sumerian, Second Temple/Qur'anic, simulation, Yeshua, and validator lines; prove which entries are identical, unique, or conflicting before any candidate write.**
+### Extension manifest
+
+Observed union:
+- **20 total extension IDs**
+- **7 branch-unique extension IDs**
+- all extension IDs appearing on more than one inspected line have semantically identical records.
+
+Branch-unique extensions:
+- `EXT-EARLY-BUDDHIST-V1`
+- `EXT-EARLY-ISLAMIC-DEVELOPMENT-V1`
+- `EXT-EGYPTIAN-VEDIC-FOUNDATION-V1`
+- `EXT-QURAN-LATE-ANTIQUE-FEATURE-TESTS-V1`
+- `EXT-SIMULATION-DISCRIMINABILITY-V2`
+- `EXT-SIMULATION-THEORY-V1`
+- `EXT-YESHUA-HYPOTHESIS-MAP-V1`
+
+A preliminary parser falsely flagged `EXT-PANTHERA-PARTHENOS-WORDPLAY-V1` because the validator manifest's final extension block was followed by the `materialization_state` footer. Direct block readback showed the extension record itself is identical across all six lines. The false conflict is closed.
+
+Disposition:
+`ID_UNION_SAFE / NEW_COMBINED_MANIFEST_STILL_REQUIRES_VALIDATION`
+
+### Source-access registry
+
+Observed union:
+- **54 total source-access IDs**
+- every duplicate source ID inspected has an identical record across branches;
+- no non-identical duplicate source-access ID was found.
+
+Disposition:
+`ID_UNION_SAFE / NEW_COMBINED_REGISTRY_STILL_REQUIRES_VALIDATION`
+
+This substantially reduces consolidation risk: the registries diverged by additive branch-local records, not by incompatible definitions of the same stable IDs.
+
+## 11. Exact next work
+
+The precondition for isolated candidate construction is now satisfied at the ID-collision level.
+
+Next bounded unit:
+
+1. create an isolated consolidation candidate from exact Sumerian head;
+2. add the 97 absent unique paths without deleting or rewriting source branches;
+3. construct the 20-ID extension-manifest union and 54-ID source-access union;
+4. reconcile README validation instructions and successor branch architecture;
+5. emit a provisional consolidation receipt;
+6. run the validator/tests on the exact candidate tree;
+7. stop on any unresolved reference, duplicate ID, path collision, or source-head drift.
+
+No merge or canonical promotion is authorized by this inventory.
