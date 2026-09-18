@@ -50,6 +50,7 @@ class _Validator:
         self.witness_required_fields: tuple[str, ...] = ()
         self.concept_required_fields: tuple[str, ...] = ()
         self.extension_ids: set[str] = set()
+        self.witness_extension_owner: dict[str, str] = {}
 
     def finding(self, code: str, path: str, message: str, level: str = "error") -> None:
         self.findings.append(Finding(code=code, level=level, path=path, message=message))
@@ -221,10 +222,20 @@ class _Validator:
             ("witness_additions", "witness"),
             ("transmission_additions", "transmission"),
         )
-        for _, extension, relative in self.extensions:
+        for entry, extension, relative in self.extensions:
+            extension_id = entry.get("extension_id")
             for key, kind in key_kinds:
                 for index, item in enumerate(self.records(extension, key)):
-                    self.register_id(item.get("id"), f"{relative}:{key}[{index}]", kind)
+                    entity_id = item.get("id")
+                    self.register_id(entity_id, f"{relative}:{key}[{index}]", kind)
+                    if (
+                        kind == "witness"
+                        and isinstance(entity_id, str)
+                        and entity_id
+                        and isinstance(extension_id, str)
+                        and extension_id
+                    ):
+                        self.witness_extension_owner[entity_id] = extension_id
 
     def validate_source_reference(self, source_id: Any, path: str) -> None:
         if isinstance(source_id, str) and source_id and source_id not in self.source_ids:
@@ -352,6 +363,7 @@ class _Validator:
                 )
 
     def validate_pending_witness_extensions(self, witnesses: dict[str, Any]) -> None:
+        pending_ids: set[str] = set()
         for index, record in enumerate(self.records(witnesses, "pending_extension_records")):
             path = f"registry/witnesses.yaml:pending_extension_records[{index}]"
             witness_id = record.get("id")
@@ -362,12 +374,36 @@ class _Validator:
                     path,
                     f"pending witness {witness_id!r} does not resolve to a registered witness",
                 )
+            else:
+                if witness_id in pending_ids:
+                    self.finding(
+                        "DUPLICATE_PENDING_WITNESS",
+                        path,
+                        f"pending witness {witness_id!r} is listed more than once",
+                    )
+                pending_ids.add(witness_id)
+                expected_owner = self.witness_extension_owner.get(witness_id)
+                if expected_owner is not None and declared_in != expected_owner:
+                    self.finding(
+                        "PENDING_WITNESS_OWNER_MISMATCH",
+                        path,
+                        f"declared_in {declared_in!r} does not match owning extension {expected_owner!r}",
+                    )
             if not isinstance(declared_in, str) or declared_in not in self.extension_ids:
                 self.finding(
                     "UNKNOWN_PENDING_WITNESS_EXTENSION",
                     path,
                     f"declared_in {declared_in!r} does not resolve to a manifest extension",
                 )
+
+        if witnesses.get("materialization_state") == "EXTENSIONS_PENDING":
+            for witness_id, owner in sorted(self.witness_extension_owner.items()):
+                if witness_id not in pending_ids:
+                    self.finding(
+                        "MISSING_PENDING_WITNESS_INDEX",
+                        "registry/witnesses.yaml:pending_extension_records",
+                        f"extension witness {witness_id!r} from {owner!r} is not indexed as pending",
+                    )
 
     def validate_source_access(self, source_access: dict[str, Any]) -> None:
         for index, record in enumerate(self.records(source_access, "records")):
