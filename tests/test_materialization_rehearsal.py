@@ -7,13 +7,23 @@ from tools.on_theo_registry.materializer import TARGETS, MaterializationError, m
 from tools.on_theo_registry.validator import validate_repository
 
 
+def _source_extension_count(root: Path) -> int:
+    manifest = yaml.safe_load(
+        (root / "registry/extension-manifest.yaml").read_text(encoding="utf-8")
+    )
+    assert isinstance(manifest, dict)
+    extensions = manifest.get("extensions", [])
+    assert isinstance(extensions, list)
+    return len(extensions)
+
+
 def test_current_repository_materialization_rehearsal_validates() -> None:
     root = Path(__file__).resolve().parents[1]
 
     result = materialize_rehearsal(root)
 
     assert result.receipt["status"] == "REHEARSAL_ONLY_NOT_CANONICAL"
-    assert result.receipt["applied_extension_count"] == 20
+    assert result.receipt["applied_extension_count"] == _source_extension_count(root)
     assert result.receipt["collision_count"] == 0
     assert result.receipt["unresolved_reference_count"] == 0
     assert result.receipt["source_validation"]["ok"] is True
@@ -44,6 +54,21 @@ def test_rehearsal_is_deterministic() -> None:
     assert first.receipt["output_registry_sha256"] == second.receipt["output_registry_sha256"]
     assert first.receipt["before_counts"] == second.receipt["before_counts"]
     assert first.receipt["after_counts"] == second.receipt["after_counts"]
+
+
+def test_rehearsal_accepts_already_materialized_source(tmp_path: Path) -> None:
+    root = Path(__file__).resolve().parents[1]
+    first_output = tmp_path / "materialized"
+
+    materialize_rehearsal(root, first_output)
+    second = materialize_rehearsal(first_output)
+
+    assert second.receipt["applied_extension_count"] == 0
+    assert second.receipt["collision_count"] == 0
+    assert second.receipt["unresolved_reference_count"] == 0
+    assert second.receipt["source_validation"]["ok"] is True
+    assert second.receipt["output_validation"]["ok"] is True
+    assert second.receipt["before_counts"] == second.receipt["after_counts"]
 
 
 def test_rehearsal_output_directory_must_be_outside_source_tree(tmp_path: Path) -> None:
@@ -82,6 +107,7 @@ def test_rehearsal_refuses_nonempty_output_directory(tmp_path: Path) -> None:
 
     with pytest.raises(MaterializationError, match="must be empty"):
         materialize_rehearsal(root, output)
+
 
 def test_rehearsal_proves_source_registry_bytes_unchanged() -> None:
     root = Path(__file__).resolve().parents[1]
@@ -136,4 +162,3 @@ def test_materialized_counts_equal_base_plus_extension_additions() -> None:
             result.receipt["before_counts"][target]
             + expected_additions_by_target.get(target, 0)
         )
-
