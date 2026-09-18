@@ -90,6 +90,15 @@ extensions:
     status: PROPOSED_RESEARCH_DELTA_REVIEW_REQUIRED
     adds_entity_types: [source, scholarly_context, concept, claim]
 
+
+  - extension_id: EXT-SUMERIAN-MATERIAL-EVIDENCE-V1
+    path: registry/extensions/sumerian-material-evidence-v1.yaml
+    declared_base: efe4ab2e39f205ff5bbc6e176be0b4fe1348f480
+    introduced_at: c2f1a4de6e26d157ef50b14112d0f2e46bf6feb6
+    depends_on: []
+    status: PROPOSED_RESEARCH_DELTA_REVIEW_REQUIRED
+    adds_entity_types: [source, claim]
+
 materialization_state:
   canonical_materialized: false
   reason: "The extensions remain stacked draft research cuts. This manifest defines deterministic application semantics but does not itself promote or merge them."
