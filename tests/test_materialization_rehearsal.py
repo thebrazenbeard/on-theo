@@ -86,7 +86,7 @@ def test_rehearsal_accepts_already_materialized_source(tmp_path: Path) -> None:
     root = Path(__file__).resolve().parents[1]
     first_output = tmp_path / "materialized"
 
-    materialize_rehearsal(root, first_output)
+    first = materialize_rehearsal(root, first_output)
     second = materialize_rehearsal(first_output)
 
     assert second.receipt["applied_extension_count"] == 0
@@ -95,6 +95,21 @@ def test_rehearsal_accepts_already_materialized_source(tmp_path: Path) -> None:
     assert second.receipt["source_validation"]["ok"] is True
     assert second.receipt["output_validation"]["ok"] is True
     assert second.receipt["before_counts"] == second.receipt["after_counts"]
+
+    manifest_path = "registry/extension-manifest.yaml"
+    assert (
+        second.receipt["source_registry_sha256_before"][manifest_path]
+        == second.receipt["output_registry_sha256"][manifest_path]
+    )
+    assert (
+        second.output_documents[manifest_path]["materialization_state"]
+        == first.output_documents[manifest_path]["materialization_state"]
+    )
+    assert len(
+        second.output_documents[manifest_path]["materialization_state"][
+            "applied_extension_ids"
+        ]
+    ) == _source_extension_count(root)
 
 
 def test_rehearsal_output_directory_must_be_outside_source_tree(tmp_path: Path) -> None:
