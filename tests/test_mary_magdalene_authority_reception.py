@@ -113,4 +113,3 @@ def test_all_evidence_references_resolve_inside_packet() -> None:
             assert source_id in declared, (edge["id"], source_id)
         if edge.get("to_source"):
             assert edge["to_source"] in declared, (edge["id"], edge["to_source"])
-
