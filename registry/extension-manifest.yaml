@@ -270,6 +270,15 @@ extensions:
     status: PROPOSED_RESEARCH_DELTA_REVIEW_REQUIRED
     adds_entity_types: [scholarly_context, claim]
 
+
+  - extension_id: EXT-UGARIT-MESOPOTAMIAN-SCRIBAL-EXPOSURE-V1
+    path: registry/extensions/ugarit-mesopotamian-scribal-exposure-v1.yaml
+    declared_base: c5879edfedb5108916bd9f97d5c5e45a5a83b703
+    introduced_at: 70886bef47813f513661c565bae5dde8c91962f6
+    depends_on: [EXT-BAAL-ILIMILKU-ATTRIBUTION-CONTROL-V1]
+    status: PROPOSED_RESEARCH_DELTA_REVIEW_REQUIRED
+    adds_entity_types: [source, witness, scholarly_context, claim]
+
 materialization_state:
   canonical_materialized: false
   reason: "The extensions remain stacked draft research cuts. This manifest defines deterministic application semantics but does not itself promote or merge them."
