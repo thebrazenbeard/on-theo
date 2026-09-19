@@ -14,7 +14,7 @@ ON_THEO's dominant bottleneck is now **state fragmentation across incompatible-b
 
 1. canonical `main` remains a minimal charter surface at `eedbcf660c2cfe6cff5636e798806b0cd3d56efc`;
 2. the consolidation/materialization lineage culminates in PR #33 at `7ac78cb61ec216fe98347b33b6ff07c2a3aed81c`, materialized from a frozen 20-extension input;
-3. the active research lineage culminates in PR #75 at `64bba017c763325e737f8fea31353f11f3396848`, with 40 active extensions;
+3. the active research lineage culminates in PR #75 at `a2ca89118de6048fe24cb9a8c5fe0ca49a5a486f`, with 40 active extensions;
 4. user-created master/topic branches contain additional research content that is neither equivalent to #33 nor represented by #75.
 
 Therefore neither PR #33 nor PR #75 is a complete current portfolio subject.
@@ -31,26 +31,28 @@ PR #33:
 - its exact validation and receipt evidence remain valid only for that frozen subject.
 
 PR #75:
-- head: `64bba017c763325e737f8fea31353f11f3396848`
+- head: `a2ca89118de6048fe24cb9a8c5fe0ca49a5a486f`
 - status at audit: OPEN / DRAFT / CLEAN / UNMERGED / NOT CANONICAL
 - active source extensions: 40
 
 Git comparison:
 - relation: DIVERGED
-- #75 has 117 commits not in #33
+- #75 has 118 commits not in #33
 - #33 has 45 commits not in #75
 - merge base: `7e354667770a6c4bed958a01c5ff843345a35b40`
 
 This is not a stale-head problem that can be solved by fast-forwarding one lane.
 
+Fresh audit also caught a dropped known fix in the #75 lineage: `EXT-EGYPTIAN-VEDIC-FOUNDATION-V1` had reverted to its original malformed YAML scalar form. The repair from consolidation commit `99be7dd0e222480e0c82ed41c3d43383a759ab90` was carried forward byte-exactly, producing PR #75 head `a2ca89118de6048fe24cb9a8c5fe0ca49a5a486f`. This is evidence that integration must preserve repair commits, not only research payload commits.
+
 ## Extension-set topology
 
 The frozen PR #33 applied set contains 20 extension IDs.
 
-The PR #75 source manifest contains 40 extension IDs.
+The repaired PR #75 source manifest contains 40 extension IDs.
 
 Intersection:
-- 10 extension IDs.
+- 10 extension IDs; after carrying forward the known Egyptian/Vedic YAML repair, all 10 shared extension files are byte-identical between PR #28 source and repaired PR #75.
 
 Present in PR #33's applied set but absent from PR #75:
 - EXT-SIMULATION-THEORY-V1
