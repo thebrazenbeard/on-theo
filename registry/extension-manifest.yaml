@@ -297,6 +297,15 @@ extensions:
     status: PROPOSED_RESEARCH_DELTA_REVIEW_REQUIRED
     adds_entity_types: [scholarly_context, claim]
 
+
+  - extension_id: EXT-UGARIT-DUMUZI-EQUIVALENCE-CONTROL-V1
+    path: registry/extensions/ugarit-dumuzi-equivalence-control-v1.yaml
+    declared_base: 50d0eaff73054a09444028be83a9452d5f468fc3
+    introduced_at: 5cf586a487ed9dd57f068b714b4f8831238ce804
+    depends_on: [EXT-UGARIT-DUMUZI-ARCHIVE-PROXIMITY-V1]
+    status: PROPOSED_RESEARCH_DELTA_REVIEW_REQUIRED
+    adds_entity_types: [scholarly_context, claim]
+
 materialization_state:
   canonical_materialized: false
   reason: "The extensions remain stacked draft research cuts. This manifest defines deterministic application semantics but does not itself promote or merge them."
