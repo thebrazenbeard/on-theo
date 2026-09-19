@@ -333,6 +333,15 @@ extensions:
     status: PROPOSED_RESEARCH_DELTA_REVIEW_REQUIRED
     adds_entity_types: [claim]
 
+
+  - extension_id: EXT-UGARIT-DUMUZI-SYLLABIC-CORPUS-SEARCH-V1
+    path: registry/extensions/ugarit-dumuzi-syllabic-corpus-search-v1.yaml
+    declared_base: 89920c8e281b97a2806708a21c16e0115f884f64
+    introduced_at: a4b64d297cc278152eadc09054df91643f858117
+    depends_on: [EXT-DUMUZID-BAAL-TRANSMISSION-EVIDENCE-LADDER-V1]
+    status: PROPOSED_RESEARCH_DELTA_REVIEW_REQUIRED
+    adds_entity_types: [scholarly_context, claim]
+
 materialization_state:
   canonical_materialized: false
   reason: "The extensions remain stacked draft research cuts. This manifest defines deterministic application semantics but does not itself promote or merge them."
