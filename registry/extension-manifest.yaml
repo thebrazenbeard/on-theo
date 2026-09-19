@@ -261,6 +261,15 @@ extensions:
     status: PROPOSED_RESEARCH_DELTA_REVIEW_REQUIRED
     adds_entity_types: [scholarly_context, claim]
 
+
+  - extension_id: EXT-BAAL-ILIMILKU-ATTRIBUTION-CONTROL-V1
+    path: registry/extensions/baal-ilimilku-attribution-control-v1.yaml
+    declared_base: 700f2b6c3a9975fe11db45e1441b339dd0b917d8
+    introduced_at: 75e378e28a1bb06e01add2dbbc30231fe55a1752
+    depends_on: [EXT-A1146-MORPHOLOGY-CORRECTION-V1]
+    status: PROPOSED_RESEARCH_DELTA_REVIEW_REQUIRED
+    adds_entity_types: [scholarly_context, claim]
+
 materialization_state:
   canonical_materialized: false
   reason: "The extensions remain stacked draft research cuts. This manifest defines deterministic application semantics but does not itself promote or merge them."
