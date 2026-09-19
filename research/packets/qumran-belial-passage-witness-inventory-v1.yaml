@@ -1,0 +1,167 @@
+schema_version: on-theo.qumran-belial-passage-witness-inventory.v1
+status: PROPOSED_RESEARCH_PACKET_REVIEW_REQUIRED
+recorded_at: "2026-09-19"
+
+base_subject:
+  branch: research/jubilees-mastema-passage-witness-inventory-v1-20260919
+  head: 80c4fc3f359e7838f6c112267c59ca38fbe46289
+
+lexical_control:
+  source: "Qumran-Digital lexicon article בליעל"
+  version: "1.3.0"
+  publication_date: "2026-05-21"
+  url: "https://lexicon.qumran-digital.org/articles/800/2026-05-21/de_DE/index.html?v=2026-05-21"
+
+inventory_rules:
+  raw_lexeme_hit_is_not_personified_belial: true
+  damaged_or_abstract_use_not_promoted_without_context: true
+  cairo_cd_textual_locus_distinct_from_qumran_physical_witness: true
+  parallel_manuscript_requires_lexeme_coverage_to_count_directly: true
+  lexical_mstm_bridge_does_not_prove_mastema_identity: true
+
+personified_loci:
+  - {id: BEL-4Q174-1-2-I-9, witness: 4Q174, ref: "frg. 1-2 i,9", roles: [ENTRAPMENT]}
+  - {id: BEL-CD-4-14-15, witness: CD, ref: "4:14-15", roles: [NETS_ENTRAPMENT]}
+  - {id: BEL-4Q171-1-2-II-9-10, witness: 4Q171, ref: "frg. 1-2 ii,9-10", roles: [SNARES_ENTRAPMENT]}
+  - {id: BEL-1QS-1-18, witness: 1QS, ref: "1:18", roles: [RULE_PERIOD]}
+  - {id: BEL-1QS-1-23-24, witness: 1QS, ref: "1:23-24", roles: [RULE_PERIOD, SIN_CONTEXT]}
+  - {id: BEL-1QM-14-9, witness: 1QM, ref: "14:9", roles: [RULE_PERIOD], uncertainty: CONTEXT_DAMAGED}
+  - {id: BEL-1QS-2-19, witness: 1QS, ref: "2:19", roles: [RULE_PERIOD]}
+  - {id: BEL-4Q390-2-I-3-4, witness: 4Q390, ref: "frg. 2 i,3-4", roles: [RULE_PERIOD], uncertainty: CONTEXT_DAMAGED}
+  - {id: BEL-CD-4-12-13, witness: CD, ref: "4:12-13", roles: [RELEASED_IN_ISRAEL]}
+  - {id: BEL-4Q174-4-3, witness: 4Q174, ref: "frg. 4,3", roles: [RELEASE_PERIOD], uncertainty: CONTEXT_DAMAGED}
+
+  - {id: BEL-1QM-13-10-11, witness: 1QM, ref: "13:10-11", roles: [DIVINE_JUDGMENT_INSTRUMENT, ANGEL_OF_HOSTILITY, LEXICAL_MSTM_BRIDGE]}
+  - {id: BEL-CD-8-2, witness: CD, ref: "8:2", roles: [DESTRUCTION_INSTRUMENT]}
+  - {id: BEL-CD-19-14, witness: CD, ref: "19:14", roles: [DESTRUCTION_INSTRUMENT, PARALLEL_TEXT]}
+  - {id: BEL-4Q266-3-III-25, witness: 4Q266, ref: "frg. 3 iii,25", roles: [DESTRUCTION_INSTRUMENT, QUMRAN_CD_PARALLEL]}
+
+  - {id: BEL-1QS-2-4-5, witness: 1QS, ref: "2:4-5", roles: [LOT, CURSE]}
+  - {id: BEL-1QM-13-4, witness: 1QM, ref: "13:4", roles: [CURSE, HOSTILE_PLANNING]}
+  - {id: BEL-4Q286-7-II-1-2, witness: 4Q286, ref: "frg. 7 ii,1-2", roles: [CURSE, LOT]}
+  - {id: BEL-4Q463-2-3, witness: 4Q463, ref: "frg. 2,3", roles: [REBUKE], uncertainty: CONTEXT_DAMAGED}
+  - {id: BEL-11Q13-3-7, witness: 11Q13, ref: "3:7", roles: [ESCHATOLOGICAL_FIRE_DEFEAT], uncertainty: READING_AND_CONTEXT}
+  - {id: BEL-1QM-1-5, witness: 1QM, ref: "1:5", roles: [LOT, ETERNAL_DESTRUCTION]}
+  - {id: BEL-4Q496-3-5, witness: 4Q496, ref: "frg. 3,5", roles: [LOT, ETERNAL_DESTRUCTION, WAR_SCROLL_PARALLEL]}
+  - {id: BEL-1QM-4-1-2, witness: 1QM, ref: "4:1-2", roles: [DIVINE_WRATH, WAR_BANNER]}
+  - {id: BEL-1QM-11-8, witness: 1QM, ref: "11:8", roles: [BANDS_ARMY, DEFEAT]}
+  - {id: BEL-1QM-18-1, witness: 1QM, ref: "18:1", roles: [DIVINE_COMBAT], uncertainty: CONTEXT_DAMAGED}
+  - {id: BEL-1QM-18-3, witness: 1QM, ref: "18:3", roles: [HOST_ARMY, DIVINE_COMBAT]}
+
+  - {id: BEL-CD-5-17-19, witness: CD, ref: "5:17-19", roles: [RAISES_OPPONENTS, JANNES_TRADITION]}
+  - {id: BEL-4Q175-1-23, witness: 4Q175, ref: "1,23", roles: [PERSON_OF_BELIAL]}
+  - {id: BEL-4Q177-10-11-4, witness: 4Q177, ref: "frg. 10-11,4", roles: [MEN_OF_BELIAL]}
+  - {id: BEL-4Q386-1-II-3, witness: 4Q386, ref: "frg. 1 ii,3", roles: [SON_OF_BELIAL]}
+  - {id: BEL-4Q174-1-2-I-8, witness: 4Q174, ref: "frg. 1-2 i,8", roles: [SONS_OF_BELIAL]}
+  - {id: BEL-11Q13-2-12-13, witness: 11Q13, ref: "2:12-13", roles: [SPIRITS_OF_LOT, MELCHIZEDEK_OPPOSITION]}
+  - {id: BEL-11Q13-2-22, witness: 11Q13, ref: "2:22", roles: [TURNING_FROM_BELIAL]}
+  - {id: BEL-11Q13-2-25, witness: 11Q13, ref: "2:25", roles: [DELIVERANCE_FROM_BELIAL]}
+  - {id: BEL-CD-12-2, witness: CD, ref: "12:2", roles: [SPIRITS_OF_BELIAL]}
+  - {id: BEL-4Q271-5-I-18, witness: 4Q271, ref: "frg. 5 i,18", roles: [SPIRITS_OF_BELIAL, QUMRAN_CD_PARALLEL]}
+  - {id: BEL-1QM-1-1, witness: 1QM, ref: "1:1", roles: [ARMY]}
+  - {id: BEL-1QM-1-13, witness: 1QM, ref: "1:13", roles: [ARMY]}
+  - {id: BEL-1QM-15-2-3, witness: 1QM, ref: "15:2-3", roles: [ARMY]}
+
+physical_and_textual_witnesses:
+  - id: WIT-1QS
+    siglum: 1QS
+    conventional_id: 1Q28
+    work: Community Rule
+    kind: QUMRAN_PHYSICAL_MANUSCRIPT
+    direct_personified_loci:
+      - BEL-1QS-1-18
+      - BEL-1QS-1-23-24
+      - BEL-1QS-2-19
+      - BEL-1QS-2-4-5
+    parallels:
+      - {siglum: 4Q256, relation: "direct parallel with Belial lexeme for 1QS 1:18, 1:23-24, and 2:4-5 contexts"}
+      - {siglum: 4Q257, relation: "direct parallel with Belial lexeme for 1QS 2:4-5 curse context"}
+      - {siglum: 5Q11, relation: "partial curse-context parallel; surfaced lines do not preserve full Belial lexeme"}
+
+  - id: WIT-1QM
+    siglum: 1QM
+    conventional_id: 1Q33
+    work: War Scroll
+    kind: QUMRAN_PHYSICAL_MANUSCRIPT
+    direct_personified_loci:
+      - BEL-1QM-14-9
+      - BEL-1QM-13-10-11
+      - BEL-1QM-13-4
+      - BEL-1QM-1-5
+      - BEL-1QM-4-1-2
+      - BEL-1QM-11-8
+      - BEL-1QM-18-1
+      - BEL-1QM-18-3
+      - BEL-1QM-1-1
+      - BEL-1QM-1-13
+      - BEL-1QM-15-2-3
+    parallels:
+      - {siglum: 4Q495, ref: "frg. 2,3", relation: "direct parallel to 1QM 13:10-11 preserving Belial + מלאך משטמה"}
+      - {siglum: 4Q496, ref: "frg. 3,5", relation: "parallel to 1QM 1:5 preserving Belial"}
+
+  - id: WIT-CD
+    siglum: CD
+    work: Damascus Document
+    kind: MEDIEVAL_CAIRO_TEXTUAL_WITNESS_WITH_QUMRAN_PARALLELS
+    direct_personified_loci:
+      - BEL-CD-4-14-15
+      - BEL-CD-4-12-13
+      - BEL-CD-8-2
+      - BEL-CD-19-14
+      - BEL-CD-5-17-19
+      - BEL-CD-12-2
+    qumran_parallels:
+      - {siglum: 4Q266, ref: "frg. 3 iii,25", locus_id: BEL-4Q266-3-III-25}
+      - {siglum: 4Q271, ref: "frg. 5 i,18", locus_id: BEL-4Q271-5-I-18}
+
+  - {id: WIT-4Q174, siglum: 4Q174, work: Florilegium, kind: QUMRAN_PHYSICAL_MANUSCRIPT, direct_personified_loci: [BEL-4Q174-1-2-I-9, BEL-4Q174-4-3, BEL-4Q174-1-2-I-8]}
+  - {id: WIT-4Q171, siglum: 4Q171, work: Pesher-Psalms, kind: QUMRAN_PHYSICAL_MANUSCRIPT, direct_personified_loci: [BEL-4Q171-1-2-II-9-10]}
+  - {id: WIT-4Q390, siglum: 4Q390, work: Apocryphon-of-Jeremiah-C-related, kind: QUMRAN_PHYSICAL_MANUSCRIPT, direct_personified_loci: [BEL-4Q390-2-I-3-4]}
+  - {id: WIT-4Q266, siglum: 4Q266, work: Damascus-Document-manuscript, kind: QUMRAN_PHYSICAL_MANUSCRIPT, direct_personified_loci: [BEL-4Q266-3-III-25]}
+  - {id: WIT-4Q286, siglum: 4Q286, work: Blessings/Curses-related, kind: QUMRAN_PHYSICAL_MANUSCRIPT, direct_personified_loci: [BEL-4Q286-7-II-1-2]}
+  - {id: WIT-4Q463, siglum: 4Q463, work: fragmentary-Qumran-work, kind: QUMRAN_PHYSICAL_MANUSCRIPT, direct_personified_loci: [BEL-4Q463-2-3]}
+  - {id: WIT-4Q496, siglum: 4Q496, work: War-Scroll-related, kind: QUMRAN_PHYSICAL_MANUSCRIPT, direct_personified_loci: [BEL-4Q496-3-5]}
+  - {id: WIT-4Q175, siglum: 4Q175, work: Testimonia, kind: QUMRAN_PHYSICAL_MANUSCRIPT, direct_personified_loci: [BEL-4Q175-1-23]}
+  - {id: WIT-4Q177, siglum: 4Q177, work: Catena-A-related, kind: QUMRAN_PHYSICAL_MANUSCRIPT, direct_personified_loci: [BEL-4Q177-10-11-4]}
+  - {id: WIT-4Q386, siglum: 4Q386, work: Pseudo-Ezekiel-related, kind: QUMRAN_PHYSICAL_MANUSCRIPT, direct_personified_loci: [BEL-4Q386-1-II-3]}
+  - {id: WIT-4Q271, siglum: 4Q271, work: Damascus-Document-manuscript, kind: QUMRAN_PHYSICAL_MANUSCRIPT, direct_personified_loci: [BEL-4Q271-5-I-18]}
+  - {id: WIT-11Q13, siglum: 11Q13, work: Melchizedek, kind: QUMRAN_PHYSICAL_MANUSCRIPT, direct_personified_loci: [BEL-11Q13-2-12-13, BEL-11Q13-2-22, BEL-11Q13-2-25, BEL-11Q13-3-7]}
+
+excluded_or_ambiguous_examples:
+  - {witness: 1QS, ref: "10:21", classification: ABSTRACT_WICKEDNESS}
+  - {witness: 1QHa, ref: "selected occurrences", classification: ABSTRACT_OR_AMBIGUOUS_DO_NOT_AUTO_PROMOTE}
+  - {witness: 4Q398, ref: "frg. 14-17 ii,5", classification: ABSTRACT_COUNSEL_OF_WICKEDNESS}
+  - {witness: 4Q88, ref: "10,9-10", classification: POSSIBLY_ABSTRACT_UNCERTAIN}
+
+bridge_features:
+  - id: BRIDGE-BELIAL-MSTM-1QM13
+    locus_id: BEL-1QM-13-10-11
+    hebrew_feature: "מלאך משטמה"
+    classification: LEXICAL_HOSTILITY_WORD_FAMILY_BRIDGE
+    identity_inference: NOT_ESTABLISHED
+    direct_parallel_witness: "4Q495 frg. 2,3"
+
+claims:
+  - id: CLM-QUMRAN-BELIAL-PERSONIFIED-MULTICORPUS
+    proposition: "Personified Belial occurs across multiple Qumran textual corpora rather than in one isolated composition."
+    confidence: high
+  - id: CLM-BELIAL-DIVINELY-SUBORDINATED-1QM
+    proposition: "1QM 13:10-11 portrays Belial as made/appointed by God for destruction and labels him an angel of hostility."
+    confidence: high
+  - id: CLM-BELIAL-MASTEMA-LEXICAL-BRIDGE-NOT-IDENTITY
+    proposition: "The מלאך משטמה phrase in 1QM 13:10-11 creates a real lexical hostility-word-family bridge but does not establish Belial = Jubilees' Mastema."
+    confidence: high
+  - id: CLM-RAW-BELIAL-CONCORDANCE-IS-PERSONIFIED-INVENTORY
+    proposition: "Every Qumran occurrence of בליעל denotes the personified hostile power Belial."
+    confidence: unresolved
+    supporting_evidence: []
+    opposing_evidence: [ABSTRACT_AND_AMBIGUOUS_LEXICAL_USES]
+
+effect_boundary:
+  changes_parent_mastema_inventory: false
+  canonical_promotion: false
+  merge_authority: false
+  promotes_abstract_belial_to_person: false
+  equates_belial_with_mastema: false
+  equates_belial_with_satan: false
+  equates_belial_with_watchers: false
