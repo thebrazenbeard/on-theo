@@ -1,0 +1,222 @@
+schema_version: on-theo.jewish-messiah-expectations.v1
+status: PROPOSED_RESEARCH_PACKET_REVIEW_REQUIRED
+recorded_at: "2026-09-19"
+
+base_subject:
+  branch: audit/judaism-provenance-control-v1-20260919
+  head: 75598bab3d62c25e7d7b05384f0a67856cd3a713
+  inherited_exact_anchors:
+    second_temple_corpus: 7493cdd8f9fb56f388641f3006fb6c62ac81ad00
+    enoch_daniel_philo_corpus: f4c4b4e940a8e6c76e9603d298bab819fbcc448d
+
+rules:
+  anointed_lexeme_does_not_imply_one_eschatological_role: true
+  conceptual_availability_does_not_imply_universal_belief: true
+  qumran_text_does_not_represent_all_second_temple_judaism: true
+  source_variant_does_not_get_silently_harmonized: true
+  messiah_title_does_not_entail_divine_ontology: true
+  prophetic_royal_priestly_roles_require_source_specific_analysis: true
+
+sources:
+  - id: SRC-LEVITICUS-4-3
+    evidence_class: [PRIMARY_TEXT]
+    work: Leviticus
+    locator: "Leviticus 4:3"
+    proposition_scope: anointed-priest-language
+    access:
+      url: "https://www.sefaria.org/Leviticus.4.3"
+    limitations:
+      - "Lexical role evidence only; not evidence for later eschatological expectation."
+
+  - id: SRC-1SAMUEL-24-11
+    evidence_class: [PRIMARY_TEXT]
+    work: 1 Samuel
+    locator: "1 Samuel 24:11"
+    proposition_scope: royal-anointed-language-for-Saul
+    access:
+      url: "https://www.sefaria.org/I_Samuel.24.11"
+    limitations:
+      - "Royal anointing language here does not by itself define later messianism."
+
+  - id: SRC-ISAIAH-45-1
+    evidence_class: [PRIMARY_TEXT]
+    work: Isaiah
+    locator: "Isaiah 45:1"
+    proposition_scope: Cyrus-as-YHWH-anointed
+    access:
+      url: "https://www.sefaria.org/Isaiah.45.1"
+    limitations:
+      - "The text's application of anointed language to Cyrus is lexical/source evidence; broader redactional questions remain scholarship."
+
+  - id: SRC-PSALMS-SOLOMON-17
+    evidence_class: [PRIMARY_TEXT, LATER_TRADITION]
+    work: Psalms of Solomon
+    locator: "Psalm of Solomon 17:21-45"
+    proposition_scope: future-Davidic-royal-messianism
+    composition_date: {start: null, end: null, precision: first-century-bce-scholarly-range-not-independently-resolved-here}
+    access:
+      via_scholarship: SCH-BURKETT-JEWISH-MESSIANIC-HOPES
+    limitations:
+      - "One Jewish witness does not define all Second Temple messianism."
+
+  - id: SRC-1QS-9-11
+    evidence_class: [PRIMARY_TEXT, MATERIAL_EVIDENCE]
+    work: Community Rule / Serekh ha-Yahad
+    locator: "1QS 9:10b-11"
+    proposition_scope: prophet-and-messiahs-of-Aaron-and-Israel
+    physical_witness_date: {start: null, end: null, precision: witness-specific-see-community-rule-manuscript-tradition}
+    access:
+      library_of_congress: "https://www.loc.gov/exhibits/scrolls/late.html"
+    limitations:
+      - "The passage is laconic and role interpretation remains scholarly."
+      - "Community Rule manuscript evidence is plural; one textual form must not be universalized."
+
+  - id: SRC-1QSB-WORDS-BLESSING
+    evidence_class: [PRIMARY_TEXT, MATERIAL_EVIDENCE]
+    work: Words of Blessing / 1QSb
+    proposition_scope: high-priest-and-prince-in-messianic-age
+    physical_witness_date: {start: null, end: null, precision: witness-specific-unresolved-in-v1}
+    access:
+      via_scholarship: SCH-KNIBB-QUMRAN-HYMNS
+    limitations:
+      - "Used for differentiated priestly/princely expectation, not universal Jewish belief."
+
+  - id: SRC-4Q521
+    evidence_class: [PRIMARY_TEXT, MATERIAL_EVIDENCE]
+    work: 4Q521 / 4Q Messianic Apocalypse
+    proposition_scope: messianic-restoration-text-with-role-debate
+    physical_witness_date: {start: null, end: null, precision: Hasmonean-hand-scholarly-report}
+    access:
+      iaa_archive: "https://www.deadseascrolls.org.il/explore-the-archive/image/B-283935?locale=en_US"
+    limitations:
+      - "Archive label 'Messianic Apocalypse' is a modern manuscript title/description, not a complete role interpretation."
+      - "The messianic figure's role is contested."
+
+scholarly_context:
+  - id: SCH-FRIED-2003-CYRUS
+    evidence_class: [SCHOLARLY_INTERPRETATION]
+    author: Lisbeth S. Fried
+    title: "Cyrus the Messiah? The Historical Background to Isaiah 45:1"
+    publication_context: Harvard Theological Review
+    publication_date: "2003"
+    url: "https://www.cambridge.org/core/journals/harvard-theological-review/article/cyrus-the-messiah-the-historical-background-to-isaiah-451/22B409B7AB7DE3827A62D1DF48841305"
+    bounded_use: "Confirms the interpretive importance of Isaiah 45:1 applying anointed/messiah language to Cyrus while preserving redactional debate."
+
+  - id: SCH-BURKETT-JEWISH-MESSIANIC-HOPES
+    evidence_class: [SCHOLARLY_INTERPRETATION]
+    author: Delbert Burkett
+    title: "Jewish messianic hopes"
+    publication_context: An Introduction to the New Testament and the Origins of Christianity
+    publication_date: "2018"
+    url: "https://www.cambridge.org/highereducation/books/an-introduction-to-the-new-testament-and-the-origins-of-christianity/32A6751C4FE08D443DC4BDD934A3C343/jewish-messianic-hopes/8235199E884A04A24940F4E03C763B43"
+    bounded_use: "Psalms of Solomon 17 as a royal Davidic messianic expectation in the first century BCE."
+
+  - id: SCH-JURIDICAL-PROPHET-QUMRAN
+    evidence_class: [SCHOLARLY_INTERPRETATION]
+    title: "The Juridical Eschatological Prophet in the Dead Sea Scrolls"
+    publication_context: Brill
+    publication_date: null
+    url: "https://brill.com/previewpdf/book/9789047420613/Bej.9789004158429.i-452_009.xml"
+    bounded_use: "1QS 9:11 names prophet plus messiahs of Aaron and Israel; exact configuration is interpretively difficult."
+
+  - id: SCH-RULE-SCROLL-MESSIAH-VARIATION-2025
+    evidence_class: [SCHOLARLY_INTERPRETATION]
+    title: "Rule Scroll messianic-representation study"
+    publication_context: Dead Sea Discoveries
+    publication_date: "2025"
+    url: "https://brill.com/view/journals/dsd/aop/article-10.1163-15685179-bja10066/article-10.1163-15685179-bja10066.pdf"
+    bounded_use: "1QS, 1QSa and 1QSb use differing messianic formulations; a 4QS manuscript lacks the 1QS 9:11 passage and surrounding material."
+
+  - id: SCH-KNIBB-QUMRAN-HYMNS
+    evidence_class: [SCHOLARLY_INTERPRETATION]
+    author: Michael A. Knibb
+    title: "The Hymns"
+    publication_context: The Qumran Community
+    publication_date: "1987"
+    url: "https://www.cambridge.org/core/books/abs/qumran-community/hymns/FA05CDEF172D0E3728FCEB90EF5E6A0C"
+    bounded_use: "1QSb's high priest and prince blessings are contextualized as messianic-age liturgical material."
+
+  - id: SCH-COLLINS-4Q521-MESSIAH
+    evidence_class: [SCHOLARLY_INTERPRETATION]
+    author: John J. Collins
+    title: "The Works of the Messiah"
+    publication_context: Dead Sea Discoveries
+    publication_date: null
+    url: "https://brill.com/previewpdf/journals/dsd/1/1/article-p98_4.xml"
+    bounded_use: "Argues 4Q521's messianic activity is more appropriate to an eschatological prophet than a king; demonstrates role debate rather than fixing one project conclusion."
+
+claims:
+  - id: CLM-MASHIACH-LEXEME-NOT-ONE-ESCHATOLOGICAL-ROLE
+    proposition: "Biblical anointing/mashiach language is used for different authorized figures including an anointed priest, Saul as YHWH's anointed king, and Cyrus as YHWH's anointed; the lexeme alone therefore does not specify one future eschatological office."
+    claim_type: LEXICAL_TEXTUAL_CONTROL
+    evidence_class: [PRIMARY_TEXT]
+    supporting_sources: [SRC-LEVITICUS-4-3, SRC-1SAMUEL-24-11, SRC-ISAIAH-45-1]
+    confidence: high
+    contested: false
+
+  - id: CLM-PSALMS-SOLOMON-17-DAVIDIC-ROYAL
+    proposition: "Psalms of Solomon 17 presents a future Davidic royal figure who rules and judges Israel, providing a clear source-specific royal messianic expectation."
+    claim_type: TEXTUAL_OCCURRENCE_AND_SEMANTIC_CLASSIFICATION
+    evidence_class: [PRIMARY_TEXT, SCHOLARLY_INTERPRETATION]
+    supporting_sources: [SRC-PSALMS-SOLOMON-17, SCH-BURKETT-JEWISH-MESSIANIC-HOPES]
+    confidence: high
+    contested: false
+    ceiling: "This source does not establish that every Second Temple Jewish group held the same expectation."
+
+  - id: CLM-1QS-PLURAL-ESCHATOLOGICAL-FIGURES
+    proposition: "1QS 9:10b-11 distinguishes a prophet from messiahs of Aaron and Israel, supporting a source-specific plurality of eschatological offices."
+    claim_type: TEXTUAL_OCCURRENCE
+    evidence_class: [PRIMARY_TEXT, SCHOLARLY_INTERPRETATION]
+    supporting_sources: [SRC-1QS-9-11, SCH-JURIDICAL-PROPHET-QUMRAN]
+    confidence: high-for-wording-moderate-for-role-identification
+    contested: true
+    ceiling: "The precise functions and relation of the named figures require interpretation."
+
+  - id: CLM-RULE-SCROLL-MESSIANISM-NOT-UNIFORM
+    proposition: "The Rule Scroll corpus/manuscript tradition does not express messianic expectation in one perfectly uniform formula across 1QS, 1QSa, 1QSb and all 4QS evidence."
+    claim_type: TEXTUAL_HISTORY
+    evidence_class: [MATERIAL_EVIDENCE, SCHOLARLY_INTERPRETATION]
+    supporting_sources: [SRC-1QS-9-11, SRC-1QSB-WORDS-BLESSING, SCH-RULE-SCROLL-MESSIAH-VARIATION-2025]
+    confidence: high
+    contested: false
+    ceiling: "Variation inside this corpus does not by itself quantify prevalence across wider Judaism."
+
+  - id: CLM-4Q521-MESSIAH-ROLE
+    proposition: "4Q521 contains messianic/restoration language, but the specific role of its messianic figure is interpretively contested and cannot be assumed to be a standard Davidic king."
+    claim_type: TEXTUAL_SEMANTIC_INTERPRETATION
+    evidence_class: [PRIMARY_TEXT, MATERIAL_EVIDENCE, SCHOLARLY_INTERPRETATION]
+    supporting_sources: [SRC-4Q521, SCH-COLLINS-4Q521-MESSIAH]
+    confidence: high-for-role-contestation
+    contested: true
+
+  - id: CLM-SECOND-TEMPLE-ONE-UNIVERSAL-MESSIAH-JOB-DESCRIPTION
+    proposition: "Second Temple Judaism had one universally agreed messianic job description shared across communities and sources."
+    claim_type: HISTORICAL_GENERALIZATION
+    evidence_class: [UNKNOWN]
+    supporting_sources: []
+    opposing_sources:
+      - SRC-PSALMS-SOLOMON-17
+      - SRC-1QS-9-11
+      - SRC-1QSB-WORDS-BLESSING
+      - SRC-4Q521
+      - SCH-RULE-SCROLL-MESSIAH-VARIATION-2025
+    confidence: unresolved
+    contested: true
+
+  - id: CLM-MESSIAH-TITLE-ENTAILS-INCARNATE-DIVINITY
+    proposition: "The Jewish title/category messiah or anointed one by itself entails preexistence, incarnation, ontological identity with God, or later Trinitarian doctrine."
+    claim_type: SEMANTIC_OVERPROMOTION
+    evidence_class: [UNKNOWN]
+    supporting_sources: []
+    opposing_sources: [SRC-LEVITICUS-4-3, SRC-1SAMUEL-24-11, SRC-ISAIAH-45-1, SRC-PSALMS-SOLOMON-17, SRC-1QS-9-11]
+    confidence: unresolved
+    contested: false
+
+effect_boundary:
+  changes_parent_judaism_claims: false
+  imports_registry_extension_bytes: false
+  canonical_promotion: false
+  merge_authority: false
+  establishes_universal_second_temple_messiah_profile: false
+  establishes_yeshua_self_identification: false
+  establishes_christian_divine_ontology_from_title_alone: false
