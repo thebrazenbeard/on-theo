@@ -1,0 +1,220 @@
+schema_version: on-theo.jewish-death-afterlife-control.v1
+status: PROPOSED_RESEARCH_PACKET_REVIEW_REQUIRED
+recorded_at: "2026-09-19"
+
+base_subject:
+  branch: research/daniel7-son-of-man-reception-v1-20260919
+  head: aca04ed902091149e9ebb0e8a900bc1709fb8589
+  inherited_exact_anchors:
+    second_temple_corpus: 7493cdd8f9fb56f388641f3006fb6c62ac81ad00
+    enoch_daniel_philo_corpus: f4c4b4e940a8e6c76e9603d298bab819fbcc448d
+
+rules:
+  sheol_is_not_automatically_gehenna: true
+  resurrection_is_not_immortal_soul: true
+  valley_hinnom_is_not_automatically_later_hell: true
+  one_jewish_afterlife_model_is_not_assumed: true
+  late_systematization_is_not_backprojected: true
+  josephus_group_portrayal_is_interested_evidence: true
+
+sources:
+  - id: SRC-JOB-7-9
+    evidence_class: [PRIMARY_TEXT]
+    work: Job
+    locator: "Job 7:9"
+    proposition_scope: sheol-descent-and-nonreturn-imagery
+    access:
+      url: "https://www.sefaria.org/Job.7.9"
+    limitations:
+      - "One poetic occurrence does not define every biblical use of Sheol."
+
+  - id: SRC-ISAIAH-26-19
+    evidence_class: [PRIMARY_TEXT]
+    work: Isaiah
+    locator: "Isaiah 26:19"
+    proposition_scope: dead-revival-dust-awakening-imagery
+    access:
+      url: "https://www.sefaria.org/Isaiah.26.19"
+    limitations:
+      - "Relation to later resurrection doctrine requires literary/historical analysis."
+
+  - id: SRC-DANIEL-12-2-3
+    evidence_class: [PRIMARY_TEXT]
+    work: Daniel
+    locator: "Daniel 12:2-3"
+    proposition_scope: explicit-awakening-to-differentiated-destinies
+    access:
+      url: "https://www.sefaria.org/Daniel.12.2"
+    limitations:
+      - "The text says 'many'; V1 does not silently universalize its scope."
+
+  - id: SRC-2MACCABEES-7
+    evidence_class: [PRIMARY_TEXT, LATER_TRADITION]
+    work: 2 Maccabees
+    locator: "2 Maccabees 7"
+    proposition_scope: martyr-resurrection-and-divine-restoration
+    composition_date: {start: null, end: null, precision: second-temple-period-exact-date-unresolved-in-v1}
+    access:
+      via_scholarship: SCH-CAMBRIDGE-AFTERLIFE-DICTIONARY
+    limitations:
+      - "Used for source-specific martyr/resurrection expectation, not universal Jewish belief."
+
+  - id: SRC-4MACCABEES
+    evidence_class: [PRIMARY_TEXT, LATER_TRADITION]
+    work: 4 Maccabees
+    proposition_scope: martyrdom-and-immortality-of-soul-language
+    composition_date: {start: null, end: null, precision: unresolved-in-v1}
+    access:
+      via_scholarship: SCH-NTS-2026-MARK-RESURRECTION
+    limitations:
+      - "Used comparatively to distinguish soul-immortality language from bodily-resurrection configurations."
+
+  - id: SRC-JOSEPHUS-WAR-2
+    evidence_class: [PRIMARY_TEXT]
+    work: Jewish War Book II
+    locator: "War II.8"
+    proposition_scope: Josephus-representation-of-Jewish-groups-and-postmortem-views
+    inherited_from: 7493cdd8f9fb56f388641f3006fb6c62ac81ad00
+    limitations:
+      - "Josephus writes for a Greco-Roman audience and his categories are not exhaustive self-descriptions."
+
+  - id: SRC-JOSEPHUS-ANTIQUITIES-18
+    evidence_class: [PRIMARY_TEXT]
+    work: Antiquities of the Jews Book XVIII
+    locator: "Antiquities XVIII, Jewish schools discussion"
+    proposition_scope: Josephus-representation-of-Jewish-group-differences
+    inherited_from: 7493cdd8f9fb56f388641f3006fb6c62ac81ad00
+    limitations:
+      - "Later than the periods/groups described and rhetorically mediated."
+
+  - id: SRC-JEREMIAH-7-31-33
+    evidence_class: [PRIMARY_TEXT]
+    work: Jeremiah
+    locator: "Jeremiah 7:31-33"
+    proposition_scope: Topheth-Valley-Ben-Hinnom-and-Valley-of-Slaughter
+    access:
+      url: "https://www.sefaria.org/Jeremiah.7.31"
+    limitations:
+      - "Earthly place/judgment context must not be silently converted into a complete postmortem hell doctrine."
+
+  - id: SRC-1ENOCH-AFTERLIFE-STRATA
+    evidence_class: [PRIMARY_TEXT, LATER_TRADITION]
+    work: 1 Enoch
+    locator: "selected afterlife/judgment strata including 1 Enoch 22, 54, 100, 102-104"
+    proposition_scope: differentiated-postmortem-and-judgment-traditions
+    composition_date: {start: null, end: null, precision: composite-layered-second-temple}
+    physical_witness_date: {start: null, end: null, precision: multiple-Aramaic-Greek-Ethiopic-witness-traditions}
+    limitations:
+      - "Composite text; listed passages must not be assumed to form one original simultaneous system."
+
+scholarly_context:
+  - id: SCH-CAMBRIDGE-AFTERLIFE-DICTIONARY
+    evidence_class: [SCHOLARLY_INTERPRETATION]
+    title: "Afterlife: Hebrew Bible and Second Temple Period"
+    publication_context: Cambridge Dictionary of Judaism and Jewish Culture
+    publication_date: null
+    url: "https://assets.cambridge.org/97805218/25979/excerpt/9780521825979_excerpt.pdf"
+    bounded_use: "Sheol is distinguished from later heaven/hell systems; Daniel 12 is treated as explicit physical resurrection; Second Temple afterlife models diversify."
+
+  - id: SCH-HTR-2026-NEPES-SHEOL
+    evidence_class: [SCHOLARLY_INTERPRETATION]
+    title: "A Nepeš Divided: Trust, Doubt, and Longing in Psalm 42-43"
+    publication_context: Harvard Theological Review
+    publication_date: "2026"
+    url: "https://www.cambridge.org/core/journals/harvard-theological-review/article/nepes-divided-trust-doubt-and-longing-in-psalm-4243/E4616ECE066EFCCB01AC880EE8D9B7DF"
+    bounded_use: "Cites recent work cautioning against reconstructing Sheol as one universal fixed afterlife concept from all occurrences."
+
+  - id: SCH-NTS-2026-MARK-RESURRECTION
+    evidence_class: [SCHOLARLY_INTERPRETATION]
+    title: "Does Mark Care That Jesus Was Raised from the Dead?"
+    publication_context: New Testament Studies
+    publication_date: "2026"
+    url: "https://www.cambridge.org/core/journals/new-testament-studies/article/does-mark-care-that-jesus-was-raised-from-the-dead-on-resurrecting-the-king-and-the-kingdom-mark-1618/38D02EE65DBAAD30E9ACC4D53509A635"
+    bounded_use: "Provides a recent synthesis contrasting bodily-resurrection and immortal-soul configurations across Second Temple Jewish texts."
+
+  - id: SCH-MILIKOWSKY-1988-GEHENNA
+    evidence_class: [SCHOLARLY_INTERPRETATION]
+    author: Chaim Milikowsky
+    title: "Which Gehenna? Retribution and Eschatology in the Synoptic Gospels and in Early Jewish Texts"
+    publication_context: New Testament Studies 34.2
+    publication_date: "1988"
+    url: "https://www.cambridge.org/core/journals/new-testament-studies/article/abs/which-gehenna-retribution-and-eschatology-in-the-synoptic-gospels-and-in-early-jewish-texts/1380763AAE25338B0B65544E19CB598F"
+    bounded_use: "Traces Gehenna terminology and demonstrates fluid Jewish punishment/afterlife configurations rather than one stable system."
+
+claims:
+  - id: CLM-SHEOL-NOT-AUTOMATIC-GEHENNA
+    proposition: "Biblical Sheol language should not be treated by default as identical with later Gehenna or a fully developed Christian hell system."
+    claim_type: SEMANTIC_CONTROL
+    evidence_class: [PRIMARY_TEXT, SCHOLARLY_INTERPRETATION]
+    supporting_sources: [SRC-JOB-7-9, SCH-CAMBRIDGE-AFTERLIFE-DICTIONARY, SCH-HTR-2026-NEPES-SHEOL]
+    confidence: high
+    contested: false
+
+  - id: CLM-DANIEL12-RESURRECTION
+    proposition: "Daniel 12:2-3 explicitly depicts many sleepers in the dust awakening to differentiated enduring destinies."
+    claim_type: TEXTUAL_OCCURRENCE
+    evidence_class: [PRIMARY_TEXT]
+    supporting_sources: [SRC-DANIEL-12-2-3]
+    confidence: high
+    contested: false
+    ceiling: "The text's wording is not silently expanded into a fully universal systematic doctrine."
+
+  - id: CLM-SECOND-TEMPLE-RESURRECTION-AND-SOUL-MODELS-DIVERSE
+    proposition: "Second Temple Jewish literature includes materially different postmortem configurations, including bodily-resurrection/vindication and immortal-soul/heavenly-continuity models."
+    claim_type: HISTORICAL_LITERARY_SYNTHESIS
+    evidence_class: [PRIMARY_TEXT, SCHOLARLY_INTERPRETATION]
+    supporting_sources: [SRC-DANIEL-12-2-3, SRC-2MACCABEES-7, SRC-4MACCABEES, SCH-CAMBRIDGE-AFTERLIFE-DICTIONARY, SCH-NTS-2026-MARK-RESURRECTION]
+    confidence: high
+    contested: false
+
+  - id: CLM-JOSEPHUS-REPRESENTS-AFTERLIFE-DISAGREEMENT
+    proposition: "Josephus represents major Jewish groups as holding materially different positions about soul, reward/punishment, and postmortem fate."
+    claim_type: TEXTUAL_HISTORIOGRAPHIC_REPRESENTATION
+    evidence_class: [PRIMARY_TEXT]
+    supporting_sources: [SRC-JOSEPHUS-WAR-2, SRC-JOSEPHUS-ANTIQUITIES-18]
+    confidence: high-for-Josephus-representation
+    contested: false
+    ceiling: "Josephus's representation does not exhaust Jewish diversity or provide unmediated group self-description."
+
+  - id: CLM-JEREMIAH-HINNOM-NOT-FULL-HELL
+    proposition: "Jeremiah 7 presents the Valley of Ben-Hinnom/Topheth as an earthly place of condemned cultic practice and threatened slaughter, not as a fully articulated postmortem hell system."
+    claim_type: TEXTUAL_SEMANTIC_CONTROL
+    evidence_class: [PRIMARY_TEXT]
+    supporting_sources: [SRC-JEREMIAH-7-31-33]
+    confidence: high
+    contested: false
+
+  - id: CLM-GEHENNA-DEVELOPMENT-FLUID
+    proposition: "Later Jewish Gehenna traditions exhibit multiple temporal and anthropological configurations, so Gehenna should not be treated as one perfectly stable afterlife model."
+    claim_type: RECEPTION_AND_SEMANTIC_DEVELOPMENT
+    evidence_class: [SCHOLARLY_INTERPRETATION]
+    supporting_sources: [SCH-MILIKOWSKY-1988-GEHENNA]
+    confidence: high-for-diversity
+    contested: false
+
+  - id: CLM-SHEOL-GEHENNA-RESURRECTION-ONE-LINEAR-LADDER
+    proposition: "Jewish afterlife development can be represented as one clean replacement sequence from Sheol to resurrection to Gehenna to later Christian hell."
+    claim_type: HISTORICAL_OVERGENERALIZATION
+    evidence_class: [UNKNOWN]
+    supporting_sources: []
+    opposing_sources: [SCH-CAMBRIDGE-AFTERLIFE-DICTIONARY, SCH-NTS-2026-MARK-RESURRECTION, SCH-MILIKOWSKY-1988-GEHENNA, SRC-JOSEPHUS-WAR-2]
+    confidence: unresolved
+    contested: true
+
+  - id: CLM-RESURRECTION-EQUALS-IMMORTAL-SOUL
+    proposition: "Resurrection of the dead and immortality/continued existence of the soul are interchangeable claims in Second Temple Jewish sources."
+    claim_type: SEMANTIC_IDENTITY
+    evidence_class: [UNKNOWN]
+    supporting_sources: []
+    opposing_sources: [SRC-DANIEL-12-2-3, SRC-2MACCABEES-7, SRC-4MACCABEES, SCH-NTS-2026-MARK-RESURRECTION]
+    confidence: unresolved
+    contested: false
+
+effect_boundary:
+  changes_parent_daniel_packet: false
+  changes_existing_judaism_claims: false
+  canonical_promotion: false
+  merge_authority: false
+  establishes_one_jewish_afterlife_model: false
+  establishes_one_fixed_gehenna_model: false
+  equates_resurrection_with_immortal_soul: false
