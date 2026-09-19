@@ -315,6 +315,15 @@ extensions:
     status: PROPOSED_RESEARCH_DELTA_REVIEW_REQUIRED
     adds_entity_types: [scholarly_context, claim]
 
+
+  - extension_id: EXT-UGARIT-BAAL-SCHOLASTIC-EQUIVALENCE-V1
+    path: registry/extensions/ugarit-baal-scholastic-equivalence-v1.yaml
+    declared_base: 40a9db034d90604b60e605a4abafab5f7946c863
+    introduced_at: b90773a71324f04c837fb3a2feaefb4cd93c7884
+    depends_on: [EXT-UGARIT-DUMUZI-ALPHABETIC-SEARCH-V1]
+    status: PROPOSED_RESEARCH_DELTA_REVIEW_REQUIRED
+    adds_entity_types: [scholarly_context, claim]
+
 materialization_state:
   canonical_materialized: false
   reason: "The extensions remain stacked draft research cuts. This manifest defines deterministic application semantics but does not itself promote or merge them."
