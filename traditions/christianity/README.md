@@ -26,3 +26,12 @@ Ask instead:
 ## Historical boundary
 
 The earliest Jesus movement begins as a Jewish movement. This lane starts where claims about Yeshua and his significance are being transmitted by his followers; it does not retroactively make the historical Yeshua a member of a fully developed later Christianity.
+
+## Provenance control
+
+The lane's current evidence/provenance boundary is recorded in:
+
+- `PROVENANCE_AND_SOURCE_LAYER_CONTROL_V1.md`
+- `provenance-lock-v1.yaml`
+
+These controls distinguish branch-local prose from later exact-head structured research. A linked research branch is not automatically integrated into this lane, and `sources.md` remains an orientation/source spine rather than a claim registry.

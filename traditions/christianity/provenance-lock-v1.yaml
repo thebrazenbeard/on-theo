@@ -1,0 +1,182 @@
+schema_version: on-theo.christianity-provenance-control.v1
+status: AUDIT_NON_CANONICAL_EXACT_HEAD_CONTROL
+recorded_at: "2026-09-19"
+
+audited_subject:
+  branch: tradition/christianity
+  head: 38132a768c754e180a9f8a2bb50bf81b6c13719e
+  tree: 869230c7e2b1e1fb6e180e42ddeb310da7a2cb75
+
+method_contract:
+  claim_schema: docs/CLAIM_SCHEMA.md
+  research_method: docs/METHOD.md
+  rules:
+    distinguish_primary_text_from_historical_reconstruction: true
+    distinguish_source_date_from_witness_date: true
+    later_tradition_is_not_contemporary_witness: true
+    project_analogy_is_not_source_meaning: true
+    branch_reference_is_not_integration: true
+    same_runtime_role_review_is_not_independent_review: true
+
+module_inventory:
+  - id: earliest-layers
+    path: traditions/christianity/earliest-layers.md
+    state: BRANCH_LOCAL_SYNTHESIS_WITH_EXTERNAL_RESEARCH_SUPPORT
+    evidence_layers:
+      - PRIMARY_TEXT
+      - SCHOLARLY_INTERPRETATION
+      - HISTORICAL_RECONSTRUCTION
+    exact_research_anchors:
+      - corpus-enoch-daniel-philo
+      - corpus-second-temple-greco-roman
+      - yeshua-hypothesis-map
+    limitation: "The prose module is not itself a structured claim registry and does not import the exact successor records."
+
+  - id: birth-paternity-and-infancy
+    path: traditions/christianity/birth-paternity-and-infancy.md
+    state: DEEP_SUCCESSOR_RESEARCH_AVAILABLE_NOT_IMPORTED
+    evidence_layers:
+      - PRIMARY_TEXT
+      - LATER_TRADITION
+      - SCHOLARLY_INTERPRETATION
+      - HISTORICAL_RECONSTRUCTION
+      - UNKNOWN
+    exact_research_anchors:
+      - mark6-matronymic
+      - john8-41-porneia
+      - celsus-jew-source-provenance
+      - panthera-parthenos-wordplay
+      - panthera-rabbinic-parallels
+      - porneia-semantic-control
+      - early-christian-rabbinic
+    limitation: "Later exact-head research materially narrows several paternity/illegitimacy inferences; the older prose must not be treated as superseding those controls."
+
+  - id: christology-development
+    path: traditions/christianity/christology-development.md
+    state: BRANCH_LOCAL_SYNTHESIS_WITH_EXTERNAL_RESEARCH_SUPPORT
+    evidence_layers:
+      - PRIMARY_TEXT
+      - SCHOLARLY_INTERPRETATION
+      - HISTORICAL_RECONSTRUCTION
+      - PROJECT_INFERENCE
+      - SPECULATIVE_MODEL
+    exact_research_anchors:
+      - corpus-enoch-daniel-philo
+      - corpus-second-temple-greco-roman
+      - yeshua-hypothesis-map
+    limitation: "Plural Jewish conceptual availability does not prove simultaneous use by the earliest community or one linear Christological ladder."
+
+  - id: mary-magdalene-and-authority
+    path: traditions/christianity/mary-magdalene-and-authority.md
+    state: BRANCH_LOCAL_PROSE_AND_SOURCE_SPINE
+    evidence_layers:
+      - PRIMARY_TEXT
+      - LATER_TRADITION
+      - RECEPTION_HISTORY
+      - SCHOLARLY_INTERPRETATION
+      - HISTORICAL_RECONSTRUCTION
+    exact_research_anchors: []
+    limitation: "No dedicated structured successor research packet is exact-head linked here yet; motive claims remain especially vulnerable to overstatement."
+
+  - id: noncanonical-and-gnostic-adjacent
+    path: traditions/christianity/noncanonical-and-gnostic-adjacent.md
+    state: BRANCH_LOCAL_PROSE_AND_SOURCE_SPINE
+    evidence_layers:
+      - PRIMARY_TEXT
+      - LATER_TRADITION
+      - SCHOLARLY_INTERPRETATION
+      - PROJECT_INFERENCE
+    exact_research_anchors: []
+    limitation: "No dedicated structured successor packet currently binds Thomas/Mary/infancy claims to witness-specific chronology in this lane."
+
+  - id: sources
+    path: traditions/christianity/sources.md
+    state: ORIENTATION_READING_LIST_NOT_CLAIM_REGISTRY
+    evidence_layers:
+      - PRIMARY_TEXT
+      - SCHOLARLY_INTERPRETATION
+    exact_research_anchors: []
+    limitation: "A URL in this file is not by itself an evidence binding for a proposition, witness, access state, or exact source version."
+
+research_subjects:
+  - id: yeshua-hypothesis-map
+    branch: research/yeshua-hypothesis-map-v1-20260917
+    head: 112fb80a187aac29a1d5e14c41386dc5889393c7
+    scope: HISTORICAL_HYPOTHESIS_MAP
+    qualification: RESEARCH_SUBJECT
+  - id: yeshua-hypothesis-map-hostile-review
+    branch: review/yeshua-hypothesis-map-v1-20260917
+    head: 0e2d6a64eb4e6ad15fbfa460db924e57cf7e1868
+    scope: HOSTILE_FALSIFICATION_REVIEW
+    qualification: PASS_WITH_LIMITATIONS_SAME_RUNTIME_ROLE_PASS
+  - id: celsus-jew-source-provenance
+    branch: research/celsus-jew-source-provenance-20260917
+    head: e01788d4acafadd9c349b80ee530dda5e6868c2e
+    scope: CELSUS_ORIGEN_SOURCE_PROVENANCE
+    qualification: RESEARCH_SUBJECT
+  - id: mark6-matronymic
+    branch: research/mark6-matronymic-20260917
+    head: d772dc41ca19f2b1c1bb12839ced88e100ee9e09
+    scope: MARK_6_3_TEXT_VARIANTS_AND_MATRONYMIC_INTERPRETATION
+    qualification: PROPOSED_RESEARCH_DELTA_REVIEW_REQUIRED
+  - id: john8-41-porneia
+    branch: research/john8-41-porneia-20260917
+    head: 625272e016fce6fede9531e4ca1bbab315345d69
+    scope: JOHN_8_41_TEXT_SEMANTICS_AND_RECEPTION
+    qualification: PROPOSED_RESEARCH_DELTA_REVIEW_REQUIRED
+  - id: panthera-parthenos-wordplay
+    branch: research/panthera-parthenos-wordplay-20260917
+    head: 71ba8382c073e72332f3cb7199fb5824fe74a2b2
+    scope: PANTHERA_PARTHENOS_WORDPLAY_SOURCE_CONTROL
+    qualification: RESEARCH_SUBJECT
+  - id: panthera-rabbinic-parallels
+    branch: research/panthera-rabbinic-parallels-20260917
+    head: 389c1e6e2c8affafae165fd34ca091618043b11e
+    scope: RABBINIC_PANTHERA_PANDERA_TEXTUAL_AND_WITNESS_CONTROL
+    qualification: REVIEW_REQUIRED
+  - id: porneia-semantic-control
+    branch: research/porneia-semantic-control-20260917
+    head: 1ecfc6ca9e76b4c8ed165828316b50d882b6e4ff
+    scope: PORNEIA_SEMANTIC_SOURCE_CONTROL
+    qualification: RESEARCH_SUBJECT
+  - id: early-christian-rabbinic
+    branch: corpus/early-christian-rabbinic-v1-20260917
+    head: 5a45ef5cdadc1f1f3a21e769e2d613c4ed945d8d
+    scope: EARLY_CHRISTIAN_RABBINIC_CORPUS
+    qualification: CORPUS_SUBJECT
+  - id: corpus-enoch-daniel-philo
+    branch: corpus/enoch-daniel-philo-v1-20260917
+    head: f4c4b4e940a8e6c76e9603d298bab819fbcc448d
+    scope: SECOND_TEMPLE_CONCEPTUAL_CONTEXT
+    qualification: CORPUS_SUBJECT
+  - id: corpus-second-temple-greco-roman
+    branch: corpus/second-temple-greco-roman-v1-20260917
+    head: 7493cdd8f9fb56f388641f3006fb6c62ac81ad00
+    scope: SECOND_TEMPLE_AND_GRECO_ROMAN_CONTEXT
+    qualification: CORPUS_SUBJECT
+
+current_integration_context:
+  source_union_pr: 79
+  source_union_head: 7c1e57f05957d01838845956857376dc603ca433
+  source_union_state: DRAFT_UNMERGED_NONCANONICAL
+  hardening_pr: 81
+  hardening_head: f243db1256a19fb1e3e61f119ed48263e034e6b3
+  hardening_state: MECHANICALLY_QUALIFIED_INDEPENDENT_RUNTIME_PROVENANCE_UNRESOLVED
+  rule: "The integration stack can preserve exact research records without making this older tradition branch canonical or current by implication."
+
+claim_ceiling:
+  - "Textual occurrence does not automatically establish historical occurrence."
+  - "A later reception text may witness later interpretation without proving a first-century rumor."
+  - "Mark 6:3 does not by itself prove biological-paternity stigma or Panthera lineage."
+  - "John 8:41 does not independently prove a first-century illegitimacy rumor or Panthera paternity."
+  - "Rabbinic Panthera/Pandera parallels are related textual/reception evidence, not automatically independent eyewitnesses."
+  - "Early elevated Christological language does not imply the full later Nicene/Chalcedonian system was already explicit."
+  - "Mary Magdalene authority evidence does not establish one coordinated suppression motive."
+  - "Noncanonical or marginalized status does not make a tradition earlier or more historically authentic."
+  - "Systems/simulation analogies remain PROJECT_INFERENCE or SPECULATIVE_MODEL unless separately evidenced."
+
+effect_boundary:
+  imports_research_branch_bytes: false
+  changes_existing_historical_claims: false
+  canonical_promotion: false
+  merge_authority: false
