@@ -20,7 +20,7 @@ scholarly_context_additions:
     source_roles: [SCHOLARLY_INTERPRETATION]
     source_kind: scholarly_monograph
     author_or_tradition: Noga Ayali-Darshan
-    title: Dying and Rising Gods: The History of a Mythologem in West Asia of the Second Millennium BCE
+    title: 'Dying and Rising Gods: The History of a Mythologem in West Asia of the Second Millennium BCE'
     composition_date: {start: "2024", end: "2024", precision: publication-year}
     access_mode: publisher-summary-and-table-of-contents
     locators:
