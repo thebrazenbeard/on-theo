@@ -351,6 +351,16 @@ extensions:
     status: PROPOSED_RESEARCH_DELTA_REVIEW_REQUIRED
     adds_entity_types: [scholarly_context, claim]
 
+
+
+  - extension_id: EXT-DUMUZID-BAAL-BORROWING-SIGNAL-CONTROL-V1
+    path: registry/extensions/dumuzid-baal-borrowing-signal-control-v1.yaml
+    declared_base: 6d9004a17dc04d5dd399407c4a37e48c7766bcaa
+    introduced_at: 907d667c3dc1b0f7f03902191075699a45ed35c2
+    depends_on: [EXT-ILIMILKU-ATTENU-CARRIER-CONTROL-V1]
+    status: PROPOSED_RESEARCH_DELTA_REVIEW_REQUIRED
+    adds_entity_types: [scholarly_context, claim]
+
 materialization_state:
   canonical_materialized: false
   reason: "The extensions remain stacked draft research cuts. This manifest defines deterministic application semantics but does not itself promote or merge them."
