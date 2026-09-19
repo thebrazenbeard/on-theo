@@ -1,0 +1,222 @@
+schema_version: on-theo.portfolio-state.v1
+snapshot_id: ON_THEO_PORTFOLIO_20260919_V1
+status: STARTING_SNAPSHOT_FRESHNESS_REQUIRED_BEFORE_EFFECT
+repository: thebrazenbeard/on-theo
+main_at_snapshot: eedbcf660c2cfe6cff5636e798806b0cd3d56efc
+
+intent:
+  branch_population_required: true
+  note: "Religion/topic branches are intentional ON_THEO work inputs and must not be treated as foreign branch noise."
+
+user_topic_branches:
+  - branch: asatru
+    head: 4af66d0bb3aa3f9bbfcd45fb52b400045b9d5339
+    compare_to_main: {status: ahead, ahead_by: 4, behind_by: 0}
+    files:
+      - asatru
+      - traditions/norse/research-state-v1.yaml
+      - traditions/norse/source-map-v1.md
+    prior_pr: {number: 69, state: closed, merged: false}
+
+  - branch: buddhism
+    head: b9f2e2a635cd98129b0a0122aeb8a2e7a65cfaa5
+    compare_to_main: {status: ahead, ahead_by: 5, behind_by: 0}
+    files:
+      - buddhism
+      - traditions/buddhism/overview-v1.md
+      - traditions/buddhism/research-state-v1.yaml
+      - traditions/buddhism/source-map-v1.md
+    prior_pr: {number: 67, state: closed, merged: false}
+
+  - branch: chrisanity-master
+    head: efafea1d04c4dcd8543200c022a037f36471bc5f
+    compare_to_main: {status: ahead, ahead_by: 2, behind_by: 0}
+    files: [docs/christianity]
+    prior_pr: {number: 59, state: closed, merged: false}
+    note: "Preserve historical branch spelling."
+
+  - branch: hindu
+    head: ccd5b82cf99fa9dfda238366a93447047f74b1fa
+    compare_to_main: {status: ahead, ahead_by: 4, behind_by: 0}
+    files:
+      - hindu
+      - traditions/hindu/research-state-v1.yaml
+      - traditions/hindu/source-map-v1.md
+    prior_pr: {number: 70, state: closed, merged: false}
+
+  - branch: islam
+    head: 827815e8806fa038f9ecb23abf558d608826eee8
+    compare_to_main: {status: ahead, ahead_by: 2, behind_by: 0}
+    files: [islam]
+    prior_pr: {number: 74, state: closed, merged: false}
+
+  - branch: judaism
+    head: cb7825ceba44ea05a2111d94ae50d91fb67ad1f9
+    compare_to_main: {status: ahead, ahead_by: 2, behind_by: 0}
+    files: [judaism]
+    prior_pr: {number: 60, state: closed, merged: false}
+
+  - branch: shinto
+    head: a578729a2e3cec02fe533c3c1d20946347da9aa4
+    compare_to_main: {status: ahead, ahead_by: 4, behind_by: 0}
+    files:
+      - shinto
+      - traditions/shinto/research-state-v1.yaml
+      - traditions/shinto/source-map-v1.md
+    prior_pr: {number: 65, state: closed, merged: false}
+
+  - branch: shinto-1
+    head: 58917fbd88cdba79fc16eca27d33feb2b92a02a1
+    compare_to_main: {status: ahead, ahead_by: 2, behind_by: 0}
+    files: [shinto]
+    prior_pr: {number: 68, state: closed, merged: false}
+    role: hostile_review_lane
+
+  - branch: sim-theory
+    head: 8f8af585b8a73bcf830953b8eef4cd0c6c837603
+    compare_to_main: {status: ahead, ahead_by: 2, behind_by: 0}
+    files: [sim-theory]
+    prior_pr: {number: 63, state: closed, merged: false}
+    claim_ceiling: SPECULATIVE_MODEL_UNLESS_NARROWER_PROPOSITION_SUPPORTED
+
+  - branch: sumerian
+    head: bd6b6572141dc2f48f2f104b8f25301662d4a06f
+    compare_to_main: {status: ahead, ahead_by: 2, behind_by: 0}
+    files: [sumerian]
+    prior_pr: {number: 62, state: closed, merged: false}
+
+  - branch: taoism
+    head: 30de6433ab2bdce86b88fcdad1a3134084ed39ab
+    compare_to_main: {status: ahead, ahead_by: 4, behind_by: 0}
+    files:
+      - taoism
+      - traditions/daoism/research-state-v1.yaml
+      - traditions/daoism/source-map-v1.md
+    prior_pr: {number: 64, state: closed, merged: false}
+
+  - branch: history/chronology
+    head: 71dec0ffb6602dfcdc7e3561e82fae276f720303
+    compare_to_main: {status: diverged, ahead_by: 3, behind_by: 2}
+    files:
+      - chronology/MASTER_TIMELINE.md
+      - chronology/README.md
+      - chronology/entries.yaml
+    active_child_pr:
+      number: 82
+      head: 73dfdb8141d199231a52770951a0f03487c5d8b6
+      branch: audit/chronology-schema-coverage-v1-20260919
+      state: open_draft
+
+  - branch: synthesis/commonality
+    head: a8a792229610de55ce8e69b106d0c1a093b47dd8
+    compare_to_main: {status: diverged, ahead_by: 8, behind_by: 2}
+    files:
+      - synthesis/GOD-model.md
+      - synthesis/PROVENANCE.md
+      - synthesis/README.md
+      - synthesis/commonality-matrix.md
+      - synthesis/epistemic-tests.md
+      - synthesis/experimental-research-program.md
+      - synthesis/transmission-vs-convergence.md
+      - synthesis/yeshua-substrate-skepticism.md
+    active_child_pr:
+      number: 83
+      head: 809edc937be9a42f1fd76e00e5eadb0a8b9ebe9d
+      branch: audit/synthesis-comparison-eligibility-v1-20260919
+      state: open_draft
+
+  - branch: tradition/christianity
+    head: 38132a768c754e180a9f8a2bb50bf81b6c13719e
+    compare_to_main: {status: diverged, ahead_by: 7, behind_by: 2}
+    files:
+      - traditions/christianity/README.md
+      - traditions/christianity/birth-paternity-and-infancy.md
+      - traditions/christianity/christology-development.md
+      - traditions/christianity/earliest-layers.md
+      - traditions/christianity/mary-magdalene-and-authority.md
+      - traditions/christianity/noncanonical-and-gnostic-adjacent.md
+      - traditions/christianity/sources.md
+    current_related_frontier:
+      pr: 86
+      head: eebd4a6fc30a3b8377c44e04e9892e10970b4e96
+      branch: research/noncanonical-witness-control-v1-20260919
+
+  - branch: tradition/islam
+    head: 62d8e45e79faab37e5a6ab7e394c051776bbf03f
+    compare_to_main: {status: diverged, ahead_by: 7, behind_by: 2}
+    files:
+      - traditions/islam/README.md
+      - traditions/islam/creation-humanity-and-test.md
+      - traditions/islam/death-resurrection-and-judgment.md
+      - traditions/islam/late-antique-context.md
+      - traditions/islam/mary-and-jesus.md
+      - traditions/islam/sources.md
+      - traditions/islam/systems-analogy.md
+
+  - branch: tradition/judaism
+    head: 74492647fc76cb56574c8dda0cdaebc142399482
+    compare_to_main: {status: diverged, ahead_by: 6, behind_by: 2}
+    files:
+      - traditions/judaism/README.md
+      - traditions/judaism/concepts-before-christianity.md
+      - traditions/judaism/paternity-panthera-countertraditions.md
+      - traditions/judaism/second-temple-context.md
+      - traditions/judaism/sources.md
+      - traditions/judaism/yeshua-in-the-mess.md
+    current_related_frontier:
+      pr: 94
+      head: 940a9b3bbefd8790ad5ced58c88d249f08fbf16f
+      branch: research/hostile-powers-transmission-map-v1-20260919
+
+independent_open_frontiers:
+  - pr: 94
+    head: 940a9b3bbefd8790ad5ced58c88d249f08fbf16f
+    branch: research/hostile-powers-transmission-map-v1-20260919
+    state: open_draft
+    purpose: bounded hostile-powers development/transmission map
+
+  - pr: 86
+    head: eebd4a6fc30a3b8377c44e04e9892e10970b4e96
+    branch: research/noncanonical-witness-control-v1-20260919
+    state: open_draft
+    purpose: noncanonical Christian work/witness provenance control
+
+  - pr: 82
+    head: 73dfdb8141d199231a52770951a0f03487c5d8b6
+    branch: audit/chronology-schema-coverage-v1-20260919
+    state: open_draft
+    purpose: chronology schema/coverage hardening
+
+  - pr: 83
+    head: 809edc937be9a42f1fd76e00e5eadb0a8b9ebe9d
+    branch: audit/synthesis-comparison-eligibility-v1-20260919
+    state: open_draft
+    purpose: exact-input lock and comparison eligibility
+
+  - pr: 81
+    head: f243db1256a19fb1e3e61f119ed48263e034e6b3
+    branch: work/source-integration-v2-promotion-hardening-20260919
+    state: open_draft
+    purpose: source-integration/materialization hardening and independent-review preparation
+
+protected_hold:
+  pr: 33
+  head: 7ac78cb61ec216fe98347b33b6ff07c2a3aed81c
+  branch: candidate/byte-bound-promotion-v1-20260918
+  state: open_draft_hold_do_not_merge
+
+historical_closed_research_tip:
+  pr: 73
+  branch: research/ugarit-ilimilku-attenu-carrier-control-v1-20260918
+  head: 6d9004a17dc04d5dd399407c4a37e48c7766bcaa
+  state: closed_unmerged
+  note: "Historical evidence only; not current live PR state."
+
+population_priorities:
+  - "Fresh-check and continue existing open child audits/research before duplicating them."
+  - "Deepen thin master hubs chrisanity-master, islam, judaism, sim-theory, sumerian using their richer tradition/corpus lanes as inputs without conflating source states."
+  - "Expand Asatru, Buddhism, Hindu, Shinto, and Daoism beyond source-map/research-state foundations with primary-text/witness/material-evidence layers."
+  - "Keep chronology coverage broad and source/witness dates separate."
+  - "Admit lanes into synthesis only through exact-head comparison eligibility."
+  - "Continue Jewish/hostile-powers and Christian/noncanonical research as independent runnable frontiers."
+  - "Preserve simulation theory as speculative-model lane unless narrower empirical propositions support more."
