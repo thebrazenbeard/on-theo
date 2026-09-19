@@ -1,0 +1,133 @@
+schema_version: on-theo.judaism-provenance-control.v1
+status: AUDIT_NON_CANONICAL_EXACT_HEAD_CONTROL
+recorded_at: "2026-09-19"
+
+audited_subject:
+  branch: tradition/judaism
+  head: 74492647fc76cb56574c8dda0cdaebc142399482
+  tree: c13e0724756fc25dbd82f63b0174cced2c9b5e97
+
+method_contract:
+  claim_schema: docs/CLAIM_SCHEMA.md
+  research_method: docs/METHOD.md
+  rules:
+    preserve_internal_jewish_plurality: true
+    distinguish_primary_text_from_historical_reconstruction: true
+    distinguish_source_date_from_witness_date: true
+    late_rabbinic_source_is_not_transparent_first_century_transcript: true
+    christian_opponent_portrayal_is_interested_source: true
+    conceptual_availability_does_not_imply_universal_belief: true
+    branch_reference_is_not_integration: true
+    same_runtime_role_review_is_not_independent_review: true
+
+module_inventory:
+  - id: second-temple-context
+    path: traditions/judaism/second-temple-context.md
+    state: STRUCTURED_CORPUS_SUPPORT_AVAILABLE_NOT_IMPORTED
+    exact_research_anchors:
+      - corpus-second-temple-greco-roman
+      - corpus-enoch-daniel-philo
+    limitation: "The prose is orientation; later corpus branches carry stronger source/access control."
+
+  - id: concepts-before-christianity
+    path: traditions/judaism/concepts-before-christianity.md
+    state: PARTIAL_STRUCTURED_SUPPORT_SEMANTIC_PACKETS_INCOMPLETE
+    exact_research_anchors:
+      - corpus-enoch-daniel-philo
+      - corpus-second-temple-greco-roman
+    limitation: "Messiah, Son of Man, resurrection, Gehenna, Satan, Torah, Temple, and age-to-come remain broader prose syntheses without one dedicated structured semantic packet each."
+
+  - id: yeshua-in-the-mess
+    path: traditions/judaism/yeshua-in-the-mess.md
+    state: STRUCTURED_HYPOTHESIS_SUPPORT_AVAILABLE_NOT_IMPORTED
+    exact_research_anchors:
+      - yeshua-hypothesis-map
+      - yeshua-hypothesis-map-hostile-review
+      - corpus-second-temple-greco-roman
+      - corpus-enoch-daniel-philo
+    limitation: "The hostile review is explicitly a same-runtime role pass; historical-Jesus reconstruction remains underdetermined."
+
+  - id: paternity-panthera-countertraditions
+    path: traditions/judaism/paternity-panthera-countertraditions.md
+    state: DEEP_SUCCESSOR_RESEARCH_AVAILABLE_NOT_IMPORTED
+    exact_research_anchors:
+      - celsus-jew-source-provenance
+      - panthera-parthenos-wordplay
+      - panthera-rabbinic-parallels
+      - mark6-matronymic
+      - john8-41-porneia
+      - porneia-semantic-control
+      - early-christian-rabbinic
+    limitation: "Later exact-head work materially narrows first-century paternity-rumor and direct-lineage claims."
+
+  - id: sources
+    path: traditions/judaism/sources.md
+    state: ORIENTATION_READING_LIST_NOT_CLAIM_REGISTRY
+    exact_research_anchors: []
+    limitation: "A bibliography entry is not by itself a source-access receipt, witness record, or proposition-level evidence binding."
+
+research_subjects:
+  - id: corpus-second-temple-greco-roman
+    branch: corpus/second-temple-greco-roman-v1-20260917
+    head: 7493cdd8f9fb56f388641f3006fb6c62ac81ad00
+    qualification: CORPUS_SUBJECT
+  - id: corpus-enoch-daniel-philo
+    branch: corpus/enoch-daniel-philo-v1-20260917
+    head: f4c4b4e940a8e6c76e9603d298bab819fbcc448d
+    qualification: CORPUS_SUBJECT
+  - id: early-christian-rabbinic
+    branch: corpus/early-christian-rabbinic-v1-20260917
+    head: 5a45ef5cdadc1f1f3a21e769e2d613c4ed945d8d
+    qualification: CORPUS_SUBJECT
+  - id: yeshua-hypothesis-map
+    branch: research/yeshua-hypothesis-map-v1-20260917
+    head: 112fb80a187aac29a1d5e14c41386dc5889393c7
+    qualification: RESEARCH_SUBJECT
+  - id: yeshua-hypothesis-map-hostile-review
+    branch: review/yeshua-hypothesis-map-v1-20260917
+    head: 0e2d6a64eb4e6ad15fbfa460db924e57cf7e1868
+    qualification: PASS_WITH_LIMITATIONS_SAME_RUNTIME_ROLE_PASS
+  - id: celsus-jew-source-provenance
+    branch: research/celsus-jew-source-provenance-20260917
+    head: e01788d4acafadd9c349b80ee530dda5e6868c2e
+    qualification: RESEARCH_SUBJECT
+  - id: panthera-parthenos-wordplay
+    branch: research/panthera-parthenos-wordplay-20260917
+    head: 71ba8382c073e72332f3cb7199fb5824fe74a2b2
+    qualification: RESEARCH_SUBJECT
+  - id: panthera-rabbinic-parallels
+    branch: research/panthera-rabbinic-parallels-20260917
+    head: 389c1e6e2c8affafae165fd34ca091618043b11e
+    qualification: REVIEW_REQUIRED
+  - id: mark6-matronymic
+    branch: research/mark6-matronymic-20260917
+    head: d772dc41ca19f2b1c1bb12839ced88e100ee9e09
+    qualification: PROPOSED_RESEARCH_DELTA_REVIEW_REQUIRED
+  - id: john8-41-porneia
+    branch: research/john8-41-porneia-20260917
+    head: 625272e016fce6fede9531e4ca1bbab315345d69
+    qualification: PROPOSED_RESEARCH_DELTA_REVIEW_REQUIRED
+  - id: porneia-semantic-control
+    branch: research/porneia-semantic-control-20260917
+    head: 1ecfc6ca9e76b4c8ed165828316b50d882b6e4ff
+    qualification: RESEARCH_SUBJECT
+
+claim_ceiling:
+  - "First-century Judaism is internally diverse; one source or sect cannot stand in for all Jews."
+  - "Yeshua's disputes with other Jews are intra-Jewish by default unless evidence supports a stronger separation claim."
+  - "Conceptual availability does not prove universal belief or simultaneous use by one community."
+  - "Messiah language does not by itself entail later Christian incarnation or Trinitarian ontology."
+  - "Danielic Son-of-Man interpretation must distinguish Daniel 7's source context from later individualizing or messianic uses."
+  - "Resurrection is not equivalent to a generic immortal-soul doctrine."
+  - "Gehenna should not be silently equated with a later medieval Christian hell system."
+  - "Job's ha-satan should not be flattened into every later demonic/cosmic-adversary ontology."
+  - "Late rabbinic texts may preserve older traditions but are not transparent first-century transcripts."
+  - "Celsus's Jewish speaker is a literary/source-provenance problem, not automatically a verbatim Jewish informant."
+  - "Panthera/Pandera textual traditions do not establish the biological paternity of the historical Yeshua."
+  - "Mark 6:3 and John 8:41 do not independently establish a first-century Panthera lineage."
+
+effect_boundary:
+  imports_research_branch_bytes: false
+  changes_existing_historical_claims: false
+  canonical_promotion: false
+  merge_authority: false

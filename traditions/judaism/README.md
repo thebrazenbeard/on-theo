@@ -19,3 +19,12 @@ This lane therefore treats disputes between Yeshua and other Jews as intra-Jewis
 ## Boundary
 
 Rabbinic sources compiled centuries later can preserve earlier material but are not treated as transparent first-century transcripts. Christian sources describing Jewish opponents are likewise interested sources, not neutral ethnography.
+
+## Provenance control
+
+The lane's current evidence/provenance boundary is recorded in:
+
+- `PROVENANCE_AND_SOURCE_LAYER_CONTROL_V1.md`
+- `provenance-lock-v1.yaml`
+
+These controls distinguish branch-local synthesis from later exact-head corpus/research work. A linked research branch is not automatically integrated into this lane, and `sources.md` remains an orientation/source spine rather than a proposition-level claim registry.
