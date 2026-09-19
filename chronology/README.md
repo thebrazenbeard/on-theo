@@ -32,6 +32,17 @@ Those are **not four contemporary witnesses**.
 - `DOCTRINAL_FORMULATION`
 - `RECEPTION_HISTORY`
 
+Additional project evidence classifications already used by `entries.yaml`:
+
+- `HISTORICAL_RECONSTRUCTION`
+- `PRIMARY_TEXT`
+- `LATER_TRADITION`
+- `TEXTUAL_TRANSMISSION`
+- `SPECULATIVE_MODEL`
+- `PROJECT_INFERENCE`
+
+These labels are not interchangeable. A chronology entry may classify the kind of historical/textual datum and, where useful, also preserve the project's evidence class. Do not silently normalize one into another.
+
 ## Tradition tags
 
 Entries can carry multiple tags:
