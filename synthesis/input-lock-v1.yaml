@@ -1,0 +1,62 @@
+schema_version: on-theo.synthesis-input-lock.v1
+status: NON_CANONICAL_EXACT_HEAD_PROVENANCE
+recorded_at: "2026-09-19"
+synthesis_subject:
+  branch: synthesis/commonality
+  head: a8a792229610de55ce8e69b106d0c1a093b47dd8
+  tree: b69bcfa21cc24261808b7fcc014a463085af45ca
+existing_synthesis_inputs:
+  - id: judaism
+    branch: tradition/judaism
+    head: 74492647fc76cb56574c8dda0cdaebc142399482
+    role: EXISTING_INPUT
+  - id: christianity
+    branch: tradition/christianity
+    head: 38132a768c754e180a9f8a2bb50bf81b6c13719e
+    role: EXISTING_INPUT
+  - id: islam
+    branch: tradition/islam
+    head: 62d8e45e79faab37e5a6ab7e394c051776bbf03f
+    role: EXISTING_INPUT
+  - id: chronology
+    branch: history/chronology
+    head: 71dec0ffb6602dfcdc7e3561e82fae276f720303
+    role: CHRONOLOGY_CONTROL
+available_additional_master_lanes:
+  - id: sumerian
+    branch: sumerian
+    head: bd6b6572141dc2f48f2f104b8f25301662d4a06f
+    comparison_eligibility: NOT_YET_ASSERTED
+  - id: buddhism
+    branch: buddhism
+    head: b9f2e2a635cd98129b0a0122aeb8a2e7a65cfaa5
+    comparison_eligibility: NOT_YET_ASSERTED
+  - id: hindu
+    branch: hindu
+    head: ccd5b82cf99fa9dfda238366a93447047f74b1fa
+    comparison_eligibility: NOT_YET_ASSERTED
+  - id: shinto
+    branch: shinto
+    head: a578729a2e3cec02fe533c3c1d20946347da9aa4
+    comparison_eligibility: NOT_YET_ASSERTED
+  - id: daoism
+    branch: taoism
+    head: 30de6433ab2bdce86b88fcdad1a3134084ed39ab
+    comparison_eligibility: NOT_YET_ASSERTED
+  - id: norse_asatru
+    branch: asatru
+    head: 4af66d0bb3aa3f9bbfcd45fb52b400045b9d5339
+    comparison_eligibility: NOT_YET_ASSERTED
+rules:
+  mutable_branch_name_is_not_exact_provenance: true
+  internal_reconstruction_precedes_comparison: true
+  preserve_internal_plurality: true
+  preserve_material_divergence: true
+  structural_similarity_does_not_imply_transmission: true
+  no_hit_does_not_imply_historical_absence: true
+  source_specific_transmission_signal_required_for_strong_lineage_claims: true
+effect_boundary:
+  merges_source_lanes: false
+  changes_source_lane_claims: false
+  canonical_promotion: false
+  merge_authority: false
