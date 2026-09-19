@@ -252,6 +252,15 @@ extensions:
     status: PROPOSED_RESEARCH_DELTA_REVIEW_REQUIRED
     adds_entity_types: [witness, scholarly_context, claim]
 
+
+  - extension_id: EXT-A1146-MORPHOLOGY-CORRECTION-V1
+    path: registry/extensions/a1146-morphology-correction-v1.yaml
+    declared_base: cf5c517faca6faff27e7ba28cd738ae49dd9523f
+    introduced_at: 78548f9d57b422c6234c1b0994a124ac80d51704
+    depends_on: [EXT-BAAL-DEATH-LIFE-WITNESS-CONTROL-V1]
+    status: PROPOSED_RESEARCH_DELTA_REVIEW_REQUIRED
+    adds_entity_types: [scholarly_context, claim]
+
 materialization_state:
   canonical_materialized: false
   reason: "The extensions remain stacked draft research cuts. This manifest defines deterministic application semantics but does not itself promote or merge them."
