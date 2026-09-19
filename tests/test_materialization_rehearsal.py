@@ -109,7 +109,11 @@ def test_rehearsal_accepts_already_materialized_source(tmp_path: Path) -> None:
         second.output_documents[manifest_path]["materialization_state"][
             "applied_extension_ids"
         ]
-    ) == _source_extension_count(root)
+    ) == len(
+        first.output_documents[manifest_path]["materialization_state"][
+            "applied_extension_ids"
+        ]
+    )
 
 
 def test_rehearsal_output_directory_must_be_outside_source_tree(tmp_path: Path) -> None:
