@@ -1,0 +1,265 @@
+schema_version: on-theo.noncanonical-witness-control.v1
+status: PROPOSED_RESEARCH_PACKET_REVIEW_REQUIRED
+recorded_at: "2026-09-19"
+
+base_subject:
+  branch: research/mary-magdalene-authority-reception-v1-20260919
+  head: e3a1f08b1e4ffb081f583501140efaf81c650d29
+  inherited_control:
+    gospel_of_mary_packet: research/packets/mary-magdalene-authority-reception-v1.yaml
+    state: EXACT_PARENT_CONTROL
+
+rules:
+  work_identity_distinct_from_witness_identity: true
+  composition_date_distinct_from_witness_date: true
+  earliest_witness_is_not_autograph: true
+  translation_witness_remains_evidence_with_reconstruction_cost: true
+  recension_identity_must_be_explicit: true
+  conventional_title_does_not_prove_original_authorship: true
+  noncanonical_status_is_not_evidence_score: true
+
+works:
+  - id: SRC-GOSPEL-THOMAS
+    evidence_class: [PRIMARY_TEXT, LATER_TRADITION]
+    conventional_title: Gospel of Thomas
+    composition_date: {start: null, end: null, precision: contested-unresolved-in-v1}
+    original_language: unresolved-in-v1
+    extant_status: complete-coptic-plus-greek-fragments
+    limitations:
+      - "Physical witness dates do not settle original composition."
+      - "Saying-level source/dependence questions are outside this witness-control packet."
+
+  - id: SRC-PROTOEVANGELIUM-JAMES
+    evidence_class: [PRIMARY_TEXT, LATER_TRADITION]
+    conventional_title: Protoevangelium / Protevangelium of James
+    composition_date: {start: null, end: null, precision: unresolved-in-v1}
+    original_language: Greek
+    extant_status: manuscript-tradition
+    limitations:
+      - "The title Protevangelium is a later conventional title."
+      - "The Bodmer witness date is not treated as the work's composition date."
+
+  - id: SRC-INFANCY-GOSPEL-THOMAS
+    evidence_class: [PRIMARY_TEXT, LATER_TRADITION]
+    conventional_title: Infancy Gospel of Thomas
+    composition_date: {start: null, end: null, precision: unresolved-in-v1}
+    original_language: unresolved-in-v1
+    extant_status: multiple-recensions-and-language-versions
+    limitations:
+      - "Greek recension identity cannot substitute for the full versional textual history."
+      - "Older translation witnesses may preserve a form closer to the recoverable archetype."
+
+  - id: SRC-GOSPEL-PETER
+    evidence_class: [PRIMARY_TEXT, LATER_TRADITION]
+    conventional_title: Gospel of Peter / Akhmim gospel fragment
+    composition_date: {start: null, end: null, precision: contested-second-century-reconstruction-not-promoted-in-v1}
+    original_language: Greek
+    extant_status: fragmentary
+    limitations:
+      - "The Akhmim manuscript is much later than the commonly proposed composition of the work."
+      - "Identification of proposed early fragments with this work is contested."
+      - "The exact relation between the Akhmim text and the Gospel of Peter known from patristic references remains a methodological question."
+
+witnesses:
+  - id: WIT-THOMAS-POXY-1
+    witness_of: SRC-GOSPEL-THOMAS
+    language: Greek
+    witness_kind: papyrus_fragment
+    common_name: P.Oxy. 1
+    witness_date: {start: "0200", end: "0299", precision: broad-third-century}
+    provenance: Oxyrhynchus
+    source_basis: SCH-EPP-2004-OXYRHYNCHUS-PAPYRI
+
+  - id: WIT-THOMAS-POXY-654
+    witness_of: SRC-GOSPEL-THOMAS
+    language: Greek
+    witness_kind: papyrus_fragment
+    common_name: P.Oxy. 654
+    witness_date: {start: "0200", end: "0299", precision: broad-third-century}
+    provenance: Oxyrhynchus
+    source_basis: SCH-EPP-2004-OXYRHYNCHUS-PAPYRI
+
+  - id: WIT-THOMAS-POXY-655
+    witness_of: SRC-GOSPEL-THOMAS
+    language: Greek
+    witness_kind: papyrus_fragment
+    common_name: P.Oxy. 655
+    witness_date: {start: "0200", end: "0299", precision: broad-third-century}
+    provenance: Oxyrhynchus
+    source_basis: SCH-EPP-2004-OXYRHYNCHUS-PAPYRI
+
+  - id: WIT-THOMAS-NHC-II
+    witness_of: SRC-GOSPEL-THOMAS
+    language: Coptic
+    witness_kind: codex
+    common_name: Nag Hammadi Codex II
+    witness_date: {start: "0300", end: "0399", precision: fourth-century}
+    provenance: Upper-Egypt-Nag-Hammadi-collection
+    source_basis: SCH-WATSON-2026-NAG-HAMMADI-CONTEXT
+
+  - id: WIT-PROTOJAMES-BODMER-V
+    witness_of: SRC-PROTOEVANGELIUM-JAMES
+    language: Greek
+    witness_kind: papyrus_codex
+    common_name: Papyrus Bodmer V
+    witness_date: {start: "0250", end: "0399", precision: late-third-to-fourth-century-scholarship-range}
+    provenance: Bodmer-composite-codex
+    source_basis: SCH-CAMBRIDGE-PROTOJAMES-BODMER
+
+  - id: WIT-IGT-GS-SABAITICUS-259
+    witness_of: SRC-INFANCY-GOSPEL-THOMAS
+    language: Greek
+    witness_kind: codex
+    common_name: Codex Sabaiticus 259
+    recension: Greek-S-recension
+    witness_date: {start: "1000", end: "1099", precision: eleventh-century}
+    source_basis: SCH-NTS-2023-IGT-TEXTUAL-HISTORY
+
+  - id: WIT-IGT-LV-VINDOBONENSIS-563
+    witness_of: SRC-INFANCY-GOSPEL-THOMAS
+    language: Latin
+    witness_kind: palimpsest_codex_section
+    common_name: Codex Vindobonensis lat. 563
+    recension: First-Latin-Translation-Lv-short-recension
+    witness_date: {start: "0400", end: "0499", precision: fifth-century}
+    source_basis: SCH-NTS-2023-IGT-TEXTUAL-HISTORY
+
+  - id: WIT-IGT-SYRIAC-W
+    witness_of: SRC-INFANCY-GOSPEL-THOMAS
+    language: Syriac
+    witness_kind: manuscript
+    common_name: Syriac manuscript W
+    recension: Syriac-A-short-recension
+    witness_date: {start: "0500", end: "0599", precision: sixth-century}
+    source_basis: SCH-NTS-2023-IGT-TEXTUAL-HISTORY
+
+  - id: WIT-IGT-SYRIAC-G
+    witness_of: SRC-INFANCY-GOSPEL-THOMAS
+    language: Syriac
+    witness_kind: manuscript
+    common_name: Syriac manuscript G
+    recension: Syriac-A-short-recension
+    witness_date: {start: "0500", end: "0599", precision: sixth-century}
+    source_basis: SCH-NTS-2023-IGT-TEXTUAL-HISTORY
+
+  - id: WIT-GOSPEL-PETER-AKHMIM
+    witness_of: SRC-GOSPEL-PETER
+    language: Greek
+    witness_kind: parchment_codex_fragment
+    common_name: Akhmim codex gospel fragment
+    witness_date: {start: "0600", end: "0899", precision: seventh-to-ninth-century-palaeographic-range}
+    provenance: Akhmim-Upper-Egypt
+    source_basis: SCH-FOSTER-2006-GOSPEL-PETER-FRAGMENTS
+    limitations:
+      - "Physical witness date must not be collapsed into proposed second-century composition."
+      - "Traditional identification as Gospel of Peter is strong but methodologically debated."
+
+scholarly_context:
+  - id: SCH-EPP-2004-OXYRHYNCHUS-PAPYRI
+    evidence_class: [SCHOLARLY_INTERPRETATION]
+    author: Eldon Jay Epp
+    title: "The Oxyrhynchus New Testament Papyri"
+    publication_context: Journal of Biblical Literature 123.1
+    publication_date: "2004"
+    url: "https://www.sbl-site.org/assets/pdfs/presidentialaddresses/JBL123_1_1Epp2003.pdf"
+    bounded_use: "Three Greek Gospel of Thomas papyri are listed as third-century witnesses."
+
+  - id: SCH-WATSON-2026-NAG-HAMMADI-CONTEXT
+    evidence_class: [SCHOLARLY_INTERPRETATION]
+    author: Francis Watson
+    title: "The Gospel of Truth"
+    publication_context: Cambridge University Press excerpt
+    publication_date: "2026"
+    url: "https://assets.cambridge.org/97810094/86996/excerpt/9781009486996_excerpt.pdf"
+    bounded_use: "Gospel of Thomas is identified as tractate 2 in fourth-century Nag Hammadi Codex II, corresponding to three Greek Oxyrhynchus fragments."
+
+  - id: SCH-CAMBRIDGE-PROTOJAMES-BODMER
+    evidence_class: [SCHOLARLY_INTERPRETATION]
+    title: "Cambridge scholarship on Papyrus Bodmer V / Protoevangelium of James"
+    publication_date: null
+    url: "https://assets.cambridge.org/97805215/81684/sample/9780521581684web.pdf"
+    bounded_use: "Bodmer V is treated as the earliest manuscript of the work and dated to the fourth century; other checked scholarship gives late-third/early-fourth."
+
+  - id: SCH-NTS-2023-IGT-TEXTUAL-HISTORY
+    evidence_class: [SCHOLARLY_INTERPRETATION]
+    title: "The Second Teacher's Story in the Infancy Gospel of Thomas: A Contribution to the Recent Discussion on the Developmental Interpretation"
+    publication_context: New Testament Studies
+    publication_date: "2023"
+    url: "https://www.cambridge.org/core/journals/new-testament-studies/article/second-teachers-story-in-the-infancy-gospel-of-thomas-a-contribution-to-the-recent-discussion-on-the-developmental-interpretation/495AC0B0EE989779C0695CF9074EACBA"
+    bounded_use: "Greek S-recension is represented by an eleventh-century manuscript; fifth-century Latin and sixth-century Syriac witnesses support the short recension and older versions may preserve a more original form."
+
+  - id: SCH-FOSTER-2006-GOSPEL-PETER-FRAGMENTS
+    evidence_class: [SCHOLARLY_INTERPRETATION]
+    author: Paul Foster
+    title: "Are there any Early Fragments of the So-Called Gospel of Peter?"
+    publication_context: New Testament Studies 52.1
+    publication_date: "2006"
+    url: "https://www.cambridge.org/core/journals/new-testament-studies/article/abs/are-there-any-early-fragments-of-the-socalled-gospel-of-peter/EABB56E06177F05CEFA90ACF397F0B82"
+    bounded_use: "Akhmim witness dated seventh-to-ninth century; early-fragment identifications and assumptions around identification are methodologically challenged."
+
+  - id: SCH-DELC0GLIANO-2022-GOSPEL-PETER
+    evidence_class: [SCHOLARLY_INTERPRETATION]
+    author: Mark DelCogliano
+    title: "The Gospel of Peter"
+    publication_context: The Cambridge Edition of Early Christian Writings
+    publication_date: "2022"
+    url: "https://www.cambridge.org/core/books/abs/cambridge-edition-of-early-christian-writings/gospel-of-peter/243677C8B2F7B2144C7D8E7CD5342829"
+    bounded_use: "Majority scholarly dating summarized as 150-190 CE; relationship to canonical gospels remains debated."
+
+claims:
+  - id: CLM-THOMAS-WITNESSES-SEPARATE-FROM-COMPOSITION
+    proposition: "The Gospel of Thomas is physically witnessed by third-century Greek Oxyrhynchus fragments and a fourth-century Coptic Nag Hammadi codex, but those witness dates do not by themselves settle original composition."
+    claim_type: WITNESS_CONTROL
+    evidence_class: [MATERIAL_EVIDENCE, SCHOLARLY_INTERPRETATION]
+    supporting_sources: [SCH-EPP-2004-OXYRHYNCHUS-PAPYRI, SCH-WATSON-2026-NAG-HAMMADI-CONTEXT]
+    confidence: high
+    contested: false
+
+  - id: CLM-PROTOJAMES-BODMER-WITNESS-NOT-COMPOSITION
+    proposition: "Papyrus Bodmer V is an early physical witness to the Protoevangelium of James; its late-third/fourth-century witness date is not automatically the composition date of the work."
+    claim_type: WITNESS_CONTROL
+    evidence_class: [MATERIAL_EVIDENCE, SCHOLARLY_INTERPRETATION]
+    supporting_sources: [SCH-CAMBRIDGE-PROTOJAMES-BODMER]
+    confidence: high
+    contested: false
+
+  - id: CLM-IGT-OLDER-VERSIONS-PRECEDE-SURVIVING-GREEK-S
+    proposition: "For the Infancy Gospel of Thomas, fifth-century Latin and sixth-century Syriac short-recension witnesses predate the surviving eleventh-century Greek S-recension manuscript and are relevant to reconstruction of the older text-form."
+    claim_type: TEXTUAL_HISTORY
+    evidence_class: [MATERIAL_EVIDENCE, SCHOLARLY_INTERPRETATION]
+    supporting_sources: [SCH-NTS-2023-IGT-TEXTUAL-HISTORY]
+    confidence: high
+    contested: false
+
+  - id: CLM-GOSPEL-PETER-AKHMIM-DATE-NOT-WORK-DATE
+    proposition: "The Akhmim manuscript traditionally identified with the Gospel of Peter is palaeographically much later than the commonly proposed second-century composition of the work."
+    claim_type: WITNESS_CONTROL
+    evidence_class: [MATERIAL_EVIDENCE, SCHOLARLY_INTERPRETATION]
+    supporting_sources: [SCH-FOSTER-2006-GOSPEL-PETER-FRAGMENTS, SCH-DELC0GLIANO-2022-GOSPEL-PETER]
+    confidence: high
+    contested: false
+
+  - id: CLM-GOSPEL-PETER-EARLY-FRAGMENTS-AUTOMATIC
+    proposition: "Proposed early papyrus fragments can be treated automatically as physical witnesses of the same Gospel of Peter text represented by the Akhmim codex."
+    claim_type: WITNESS_IDENTIFICATION
+    evidence_class: [SCHOLARLY_INTERPRETATION]
+    supporting_sources: []
+    opposing_sources: [SCH-FOSTER-2006-GOSPEL-PETER-FRAGMENTS]
+    confidence: unresolved
+    contested: true
+
+  - id: CLM-NONCANONICAL-STATUS-PROVES-AUTHENTICITY
+    proposition: "A text's noncanonical status makes it earlier, historically more authentic, or evidence of suppressed truth."
+    claim_type: PROJECT_INFERENCE
+    evidence_class: [UNKNOWN]
+    supporting_sources: []
+    confidence: unresolved
+    contested: false
+    ceiling: "Canon status and historical/source quality are separate variables."
+
+effect_boundary:
+  changes_parent_mary_packet: false
+  changes_existing_noncanonical_prose_claims: false
+  canonical_promotion: false
+  merge_authority: false
+  establishes_noncanonical_historical_superiority: false
