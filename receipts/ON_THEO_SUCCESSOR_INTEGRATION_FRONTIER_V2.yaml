@@ -1,0 +1,84 @@
+schema_version: on-theo.successor-integration-frontier.v2
+status: SOURCE_INTEGRATION_REQUIRED_NO_CANONICAL_EFFECT
+recorded: "2026-09-19"
+
+canonical_main:
+  head: eedbcf660c2cfe6cff5636e798806b0cd3d56efc
+
+lineages:
+  consolidation:
+    pr: 28
+    head: 99be7dd0e222480e0c82ed41c3d43383a759ab90
+    role: ARCHITECTURE_AND_INTEGRATION_PROVENANCE
+  materialized_candidate:
+    pr: 33
+    head: 7ac78cb61ec216fe98347b33b6ff07c2a3aed81c
+    role: FROZEN_20_EXTENSION_MATERIALIZATION_EVIDENCE
+    current_portfolio_superset: false
+  active_research:
+    pr: 75
+    head: 64bba017c763325e737f8fea31353f11f3396848
+    role: CURRENT_DUMUZID_BAAL_RESEARCH_TIP
+    current_portfolio_superset: false
+
+pr33_vs_pr75:
+  relation: DIVERGED
+  head_75_ahead_by: 117
+  head_75_behind_by: 45
+  merge_base: 7e354667770a6c4bed958a01c5ff843345a35b40
+
+extension_sets:
+  pr33_applied_count: 20
+  pr75_active_count: 40
+  intersection_count: 10
+  union_count: 50
+  pr33_only:
+    - EXT-SIMULATION-THEORY-V1
+    - EXT-SIMULATION-DISCRIMINABILITY-V2
+    - EXT-SECOND-TEMPLE-GRECO-ROMAN-V1
+    - EXT-ENOCH-DANIEL-PHILO-V1
+    - EXT-EARLY-CHRISTIAN-RABBINIC-V1
+    - EXT-LATE-ANTIQUE-CONTACT-ZONE-V1
+    - EXT-QURANIC-SYSTEM-V1
+    - EXT-YESHUA-HYPOTHESIS-MAP-V1
+    - EXT-QURAN-LATE-ANTIQUE-FEATURE-TESTS-V1
+    - EXT-EARLY-ISLAMIC-DEVELOPMENT-V1
+  pr75_only_count: 30
+  union_rule: INVENTORY_ONLY_REQUIRES_COLLISION_DEPENDENCY_SUPERSESSION_VALIDATION
+
+topic_branches:
+  direct_from_main:
+    chrisanity-master: {head: efafea1d04c4dcd8543200c022a037f36471bc5f, ahead: 2}
+    judaism: {head: cb7825ceba44ea05a2111d94ae50d91fb67ad1f9, ahead: 2}
+    sumerian: {head: bd6b6572141dc2f48f2f104b8f25301662d4a06f, ahead: 2}
+    sim-theory: {head: 8f8af585b8a73bcf830953b8eef4cd0c6c837603, ahead: 2}
+    taoism: {head: 30de6433ab2bdce86b88fcdad1a3134084ed39ab, ahead: 4}
+    shinto: {head: a578729a2e3cec02fe533c3c1d20946347da9aa4, ahead: 4}
+    buddhism: {head: b9f2e2a635cd98129b0a0122aeb8a2e7a65cfaa5, ahead: 5}
+    asatru: {head: 4af66d0bb3aa3f9bbfcd45fb52b400045b9d5339, ahead: 4}
+    hindu: {head: ccd5b82cf99fa9dfda238366a93447047f74b1fa, ahead: 4}
+    islam: {head: 827815e8806fa038f9ecb23abf558d608826eee8, ahead: 2}
+    shinto-1: {head: 58917fbd88cdba79fc16eca27d33feb2b92a02a1, ahead: 2}
+  diverged_from_main:
+    history/chronology: {head: 71dec0ffb6602dfcdc7e3561e82fae276f720303, ahead: 3, behind: 2}
+    synthesis/commonality: {head: a8a792229610de55ce8e69b106d0c1a093b47dd8, ahead: 8, behind: 2}
+    tradition/christianity: {head: 38132a768c754e180a9f8a2bb50bf81b6c13719e, ahead: 7, behind: 2}
+    tradition/judaism: {head: 74492647fc76cb56574c8dda0cdaebc142399482, ahead: 6, behind: 2}
+    tradition/islam: {head: 62d8e45e79faab37e5a6ab7e394c051776bbf03f, ahead: 7, behind: 2}
+
+current_complete_source_subject:
+  status: NOT_YET_CONSTRUCTED
+
+next_frontier:
+  id: ON_THEO_SOURCE_INTEGRATION_V2_INPUT_INVENTORY
+  actions:
+    - FREEZE_EXACT_INPUT_HEADS_AND_BLOBS
+    - BUILD_50_EXTENSION_SOURCE_INVENTORY
+    - INVENTORY_16_TOPIC_BRANCH_PAYLOADS
+    - CLASSIFY_PATH_COLLISIONS_AND_SUPERSESSIONS
+    - EMIT_MACHINE_READABLE_COLLISION_REPORT
+  prohibited:
+    - MERGE_MAIN
+    - CANONICAL_MATERIALIZATION
+    - BRANCH_DELETION
+    - STALE_FORCE_OVERWRITE
