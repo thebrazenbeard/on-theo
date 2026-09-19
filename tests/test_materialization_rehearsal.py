@@ -17,6 +17,32 @@ def _source_extension_count(root: Path) -> int:
     return len(extensions)
 
 
+def _expected_materialized_witness_count(root: Path) -> int:
+    base = yaml.safe_load(
+        (root / "registry/witnesses.yaml").read_text(encoding="utf-8")
+    )
+    assert isinstance(base, dict)
+    base_witnesses = base.get("witnesses", [])
+    assert isinstance(base_witnesses, list)
+
+    manifest = yaml.safe_load(
+        (root / "registry/extension-manifest.yaml").read_text(encoding="utf-8")
+    )
+    assert isinstance(manifest, dict)
+    extensions = manifest.get("extensions", [])
+    assert isinstance(extensions, list)
+
+    additions = 0
+    for entry in extensions:
+        extension = yaml.safe_load((root / entry["path"]).read_text(encoding="utf-8"))
+        assert isinstance(extension, dict)
+        witness_additions = extension.get("witness_additions", []) or []
+        assert isinstance(witness_additions, list)
+        additions += len(witness_additions)
+
+    return len(base_witnesses) + additions
+
+
 def test_current_repository_materialization_rehearsal_validates() -> None:
     root = Path(__file__).resolve().parents[1]
 
@@ -40,7 +66,7 @@ def test_current_repository_materialization_rehearsal_validates() -> None:
     witnesses = result.output_documents["registry/witnesses.yaml"]
     assert witnesses["materialization_state"] == "REHEARSAL_MATERIALIZED_NOT_CANONICAL"
     assert witnesses["pending_extension_records"] == []
-    assert len(witnesses["witnesses"]) == 4
+    assert len(witnesses["witnesses"]) == _expected_materialized_witness_count(root)
 
 
 def test_rehearsal_is_deterministic() -> None:
