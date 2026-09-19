@@ -1,0 +1,54 @@
+schema_version: on-theo.continuation-receipt.v1
+checkpoint_id: ON_THEO_CHAT_CONTINUATION_20260919_V1
+status: VERIFIED_READBACK
+repository: thebrazenbeard/on-theo
+branch: state/on-theo-chat-continuation-20260919-v1
+checkpoint_path: state/continuation/ON_THEO_CHAT_CONTINUATION_20260919_V1.md
+checkpoint_commit: 5071086918e76d2435d32ff15df7012409d3196d
+checkpoint_git_blob: a3e32705fdba43075ae0df7cec0a4d0fa269bcaa
+
+active_research:
+  pull_request: 73
+  branch: research/ugarit-ilimilku-attenu-carrier-control-v1-20260918
+  head: 6d9004a17dc04d5dd399407c4a37e48c7766bcaa
+  state_at_checkpoint: OPEN_DRAFT_MERGEABLE_CLEAN_UNMERGED_NOT_CANONICAL
+
+main_at_checkpoint: eedbcf660c2cfe6cff5636e798806b0cd3d56efc
+
+protected_hold:
+  pull_request: 33
+  head: 7ac78cb61ec216fe98347b33b6ff07c2a3aed81c
+  status: HOLD_DO_NOT_MERGE
+  reason: independent_review_and_separate_merge_authority_required
+
+portfolio_scope:
+  branch_population_required: true
+  branches:
+    - asatru
+    - buddhism
+    - chrisanity-master
+    - hindu
+    - islam
+    - judaism
+    - shinto
+    - shinto-1
+    - sim-theory
+    - sumerian
+    - taoism
+    - history/chronology
+    - synthesis/commonality
+    - tradition/christianity
+    - tradition/islam
+    - tradition/judaism
+
+restore_command: ON_THEO::RESTORE_AND_RUN::ON_THEO_CHAT_CONTINUATION_20260919_V1
+
+verification:
+  checkpoint_readback: true
+  checkpoint_blob_matches_readback: true
+  active_pr_exact_head_recorded: true
+  open_portfolio_prs_recorded_in_checkpoint: true
+  no_merge_performed: true
+  no_main_modification_performed: true
+  no_branch_deletion_performed: true
+  no_canonical_promotion_performed: true
