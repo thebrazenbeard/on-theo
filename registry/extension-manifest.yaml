@@ -324,6 +324,15 @@ extensions:
     status: PROPOSED_RESEARCH_DELTA_REVIEW_REQUIRED
     adds_entity_types: [scholarly_context, claim]
 
+
+  - extension_id: EXT-DUMUZID-BAAL-TRANSMISSION-EVIDENCE-LADDER-V1
+    path: registry/extensions/dumuzid-baal-transmission-evidence-ladder-v1.yaml
+    declared_base: 3ba41fe0cec4b4a8ba84d4ef90c4c71471637445
+    introduced_at: b52e872946cbb3a56afc64d9392cf6d5962c557e
+    depends_on: [EXT-UGARIT-BAAL-SCHOLASTIC-EQUIVALENCE-V1]
+    status: PROPOSED_RESEARCH_DELTA_REVIEW_REQUIRED
+    adds_entity_types: [claim]
+
 materialization_state:
   canonical_materialized: false
   reason: "The extensions remain stacked draft research cuts. This manifest defines deterministic application semantics but does not itself promote or merge them."
