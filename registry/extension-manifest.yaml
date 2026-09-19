@@ -279,6 +279,15 @@ extensions:
     status: PROPOSED_RESEARCH_DELTA_REVIEW_REQUIRED
     adds_entity_types: [source, witness, scholarly_context, claim]
 
+
+  - extension_id: EXT-UGARIT-DUMUZI-DIRECT-ATTESTATION-V1
+    path: registry/extensions/ugarit-dumuzi-direct-attestation-v1.yaml
+    declared_base: 118bd970361f0fa47290f979341f3092722b011e
+    introduced_at: 265a7d1c353ebbbe2cf7cb7e425105c0e03c7880
+    depends_on: [EXT-UGARIT-MESOPOTAMIAN-SCRIBAL-EXPOSURE-V1]
+    status: PROPOSED_RESEARCH_DELTA_REVIEW_REQUIRED
+    adds_entity_types: [source, witness, scholarly_context, claim]
+
 materialization_state:
   canonical_materialized: false
   reason: "The extensions remain stacked draft research cuts. This manifest defines deterministic application semantics but does not itself promote or merge them."
