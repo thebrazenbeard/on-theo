@@ -6,6 +6,7 @@ entries:
     traditions: [judaism]
     claimed_event_date: {start: "-0516", end: "-0516", precision: approximate}
     source_date: {start: null, end: null, precision: unknown}
+    physical_witness_date: {start: null, end: null, precision: unknown}
     confidence: high
     contested: false
     notes: "Conventional chronological anchor for Second Temple period."
@@ -16,6 +17,7 @@ entries:
     traditions: [judaism, greco-roman]
     claimed_event_date: {start: "-0063", end: "-0063", precision: exact-year}
     source_date: {start: null, end: null, precision: unknown}
+    physical_witness_date: {start: null, end: null, precision: unknown}
     confidence: high
     contested: false
     notes: "Roman domination becomes decisive background for first-century Judea."
@@ -26,6 +28,7 @@ entries:
     traditions: [judaism, jesus-movement, christianity]
     claimed_event_date: {start: "-0006", end: "0001", precision: range}
     source_date: {start: "0065", end: "0095", precision: range}
+    physical_witness_date: {start: null, end: null, precision: unknown}
     confidence: low
     contested: true
     alternatives:
@@ -39,6 +42,7 @@ entries:
     traditions: [greco-roman, comparative]
     claimed_event_date: {start: "-0022", end: "0040", precision: approximate-life-range}
     source_date: {start: "0001", end: "0100", precision: approximate-inscription-era}
+    physical_witness_date: {start: null, end: null, precision: unknown}
     confidence: high
     contested: false
     notes: "Confirms Pantera was a real name in relevant era. No evidence identifies this soldier as Yeshua's father."
@@ -49,6 +53,7 @@ entries:
     traditions: [greco-roman, judaism, jesus-movement]
     claimed_event_date: {start: "0026", end: "0036", precision: range}
     source_date: {start: null, end: null, precision: unknown}
+    physical_witness_date: {start: null, end: null, precision: unknown}
     confidence: high
     contested: false
 
@@ -58,6 +63,7 @@ entries:
     traditions: [judaism, jesus-movement, christianity, greco-roman]
     claimed_event_date: {start: "0029", end: "0034", precision: range}
     source_date: {start: "0050", end: "0100", precision: range-earliest-surviving-christian}
+    physical_witness_date: {start: null, end: null, precision: unknown}
     confidence: high
     contested: false
     notes: "Exact year debated; execution under Pilate near Passover is historically strong. Qur'an later disputes the crucifixion/death claim at the theological narrative level."
@@ -68,6 +74,7 @@ entries:
     traditions: [jesus-movement, christianity]
     claimed_event_date: {start: "0050", end: "0060", precision: range}
     source_date: {start: "0050", end: "0060", precision: range}
+    physical_witness_date: {start: null, end: null, precision: unknown}
     confidence: high
     contested: false
     notes: "Earliest surviving Christian corpus; lacks Matthew/Luke-style infancy narrative."
@@ -78,6 +85,7 @@ entries:
     traditions: [judaism, jesus-movement, christianity, greco-roman]
     claimed_event_date: {start: "0070", end: "0070", precision: exact-year}
     source_date: {start: null, end: null, precision: unknown}
+    physical_witness_date: {start: null, end: null, precision: unknown}
     confidence: high
     contested: false
 
@@ -87,6 +95,7 @@ entries:
     traditions: [christianity]
     claimed_event_date: {start: "0065", end: "0075", precision: approximate-range}
     source_date: {start: "0065", end: "0075", precision: approximate-range}
+    physical_witness_date: {start: null, end: null, precision: unknown}
     confidence: medium
     contested: true
     notes: "Conventional scholarly range, not manuscript timestamp. No infancy narrative."
@@ -97,6 +106,7 @@ entries:
     traditions: [christianity]
     claimed_event_date: {start: "0080", end: "0095", precision: approximate-range}
     source_date: {start: "0080", end: "0095", precision: approximate-range}
+    physical_witness_date: {start: null, end: null, precision: unknown}
     confidence: medium
     contested: true
     notes: "Both contain miraculous conception/infancy narratives with substantial differences."
@@ -107,6 +117,7 @@ entries:
     traditions: [christianity]
     claimed_event_date: {start: "0090", end: "0105", precision: approximate-range}
     source_date: {start: "0090", end: "0105", precision: approximate-range}
+    physical_witness_date: {start: null, end: null, precision: unknown}
     confidence: medium
     contested: true
     notes: "Logos/pre-existence theology central."
@@ -117,6 +128,7 @@ entries:
     traditions: [greco-roman, judaism, christianity]
     claimed_event_date: {start: "-0006", end: "0001", precision: approximate-event-target}
     source_date: {start: "0170", end: "0185", precision: approximate-range}
+    physical_witness_date: {start: null, end: null, precision: unknown}
     confidence: high
     contested: true
     alternatives:
@@ -130,6 +142,7 @@ entries:
     traditions: [christianity, greco-roman]
     claimed_event_date: {start: "0248", end: "0248", precision: approximate-year}
     source_date: {start: "0248", end: "0248", precision: approximate-year}
+    physical_witness_date: {start: null, end: null, precision: unknown}
     confidence: high
     contested: false
     notes: "Preserves substantial quotations from otherwise lost Celsus."
@@ -140,6 +153,7 @@ entries:
     traditions: [christianity]
     claimed_event_date: {start: "0325", end: "0325", precision: exact-year}
     source_date: {start: "0325", end: "0325", precision: exact-year}
+    physical_witness_date: {start: null, end: null, precision: unknown}
     confidence: high
     contested: false
     notes: "Major Christological/Trinitarian formulation stage; not historical Yeshua vocabulary."
@@ -150,6 +164,7 @@ entries:
     traditions: [christianity]
     claimed_event_date: {start: "0591", end: "0591", precision: exact-year}
     source_date: {start: "0591", end: "0591", precision: exact-year}
+    physical_witness_date: {start: null, end: null, precision: unknown}
     confidence: high
     contested: false
     notes: "Canonical Gospels do not identify Mary Magdalene as a prostitute. Motive for conflation remains a separate question."
@@ -160,6 +175,7 @@ entries:
     traditions: [islam]
     claimed_event_date: {start: "0610", end: "0632", precision: traditional-range}
     source_date: {start: "0610", end: "0650", precision: broad-early-range}
+    physical_witness_date: {start: null, end: null, precision: unknown}
     confidence: medium
     contested: true
     notes: "Historical-critical scholarship distinguishes proclamation, collection/redaction and surviving manuscript evidence."
@@ -170,6 +186,7 @@ entries:
     traditions: [islam, christianity, comparative]
     claimed_event_date: {start: "-0006", end: "0034", precision: first-century-target-range}
     source_date: {start: "0610", end: "0632", precision: proclamation-range}
+    physical_witness_date: {start: null, end: null, precision: unknown}
     confidence: high
     contested: false
     notes: "High confidence that Qur'an contains the claims; not a contemporary first-century witness."
@@ -180,6 +197,7 @@ entries:
     traditions: [comparative]
     claimed_event_date: {start: null, end: null, precision: unknown}
     source_date: {start: "2026-09-17", end: "2026-09-17", precision: exact-date}
+    physical_witness_date: {start: null, end: null, precision: unknown}
     confidence: high
     contested: false
     notes: "Project-originating modern thought experiment; no claim of ancient technical knowledge."

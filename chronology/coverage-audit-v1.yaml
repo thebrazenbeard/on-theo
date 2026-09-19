@@ -1,0 +1,50 @@
+schema_version: on-theo.chronology-coverage-audit.v1
+status: AUDIT_NON_CANONICAL
+audited_subject:
+  branch: history/chronology
+  head: 71dec0ffb6602dfcdc7e3561e82fae276f720303
+  tree: d6444ac8b84ab18dbb1e13e8429a83a7239ef5e4
+counts:
+  master_timeline_rows: 42
+  machine_entries: 18
+  entries_missing_physical_witness_date_before_repair: 18
+  entries_missing_source_date: 0
+  distinct_machine_classifications: 11
+machine_tradition_tag_counts:
+  christianity: 12
+  judaism: 7
+  greco-roman: 7
+  jesus-movement: 5
+  comparative: 3
+  islam: 2
+active_master_lanes_without_current_chronology_tag_coverage:
+  - sumerian
+  - buddhism
+  - hindu
+  - shinto
+  - daoism
+  - norse_asatru
+contract_findings:
+  - id: C01
+    state: REPAIRED_WITH_EXPLICIT_UNKNOWN
+    proposition: "The three-clock README contract was not represented by the machine entries because physical_witness_date was absent from all 18 entries."
+  - id: C02
+    state: DOCUMENTATION_REPAIRED
+    proposition: "The machine index uses classification labels beyond the seven entry types enumerated by the README."
+  - id: C03
+    state: OPEN
+    proposition: "The 42-row prose timeline and 18-entry machine index are not currently lossless equivalents."
+  - id: C04
+    state: OPEN
+    proposition: "The current chronology is concentrated in Abrahamic/Jesus/Greco-Roman lanes and does not yet cover several active master traditions."
+  - id: C05
+    state: OPEN
+    proposition: "Machine chronology entries do not yet bind claims to registry source or witness IDs."
+claim_ceiling:
+  - "Coverage gaps are project-state observations, not historical absence claims."
+  - "Unknown physical-witness dates remain unknown; null fields are not inferred dates."
+  - "No tradition should be added to the comparative timeline before its internal chronology is reconstructed from appropriate sources."
+effect_boundary:
+  new_historical_claims_added: false
+  canonical_promotion: false
+  merge_authority: false
