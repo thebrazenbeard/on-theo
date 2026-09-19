@@ -145,7 +145,7 @@ Metcalf's corpus also reinforces the need to distinguish:
 - scholastic copying;
 - later editorial or ritual reuse.
 
-A recent re-edition of the Old Babylonian lament concerning the temples of Sud further demonstrates that even long-known Sumerian religious texts remain philologically revisable when new sources and improved comparison change interpretation.
+A recent re-edition of the Old Babylonian lament concerning the temples of Sud further demonstrates that even long-known Sumerian religious texts remain philologically revisable and that edition currentness matters.
 
 Project implication:
 

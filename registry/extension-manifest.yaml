@@ -10,6 +10,7 @@ application_rules:
   review_rule: "Materialization does not inherit review status from a different exact head."
   receipt_rule: "A successful materialization must emit the input extension IDs, exact source SHAs, resulting registry digests, collision count, and unresolved-reference count."
 extensions:
+
   - extension_id: EXT-PANTHERA-RABBINIC-PARALLELS-V1
     path: registry/extensions/panthera-rabbinic-parallels-v1.yaml
     declared_base: c1f6df5ea1fee0c5ac8d84a7b5c2b81fb905fd3e
@@ -170,6 +171,253 @@ extensions:
     status: PROPOSED_RESEARCH_DELTA_REVIEW_REQUIRED
     adds_entity_types: [source, scholarly_context, claim, transmission]
 
+  - extension_id: EXT-SUMERIAN-MATERIAL-EVIDENCE-V1
+    path: registry/extensions/sumerian-material-evidence-v1.yaml
+    declared_base: efe4ab2e39f205ff5bbc6e176be0b4fe1348f480
+    introduced_at: c2f1a4de6e26d157ef50b14112d0f2e46bf6feb6
+    depends_on: []
+    status: PROPOSED_RESEARCH_DELTA_REVIEW_REQUIRED
+    adds_entity_types: [source, claim]
+
+  - extension_id: EXT-SUMERIAN-AFTERLIFE-FUNERARY-V1
+    path: registry/extensions/sumerian-afterlife-funerary-v1.yaml
+    declared_base: 7dbc47484e453f2561df1ba04b730d49181e6a39
+    introduced_at: ef473a4930b8a6d7a3cf25da522458c62a56e73c
+    depends_on: [EXT-SUMERIAN-MATERIAL-EVIDENCE-V1]
+    status: PROPOSED_RESEARCH_DELTA_REVIEW_REQUIRED
+    adds_entity_types: [source, claim]
+
+  - extension_id: EXT-SUMERIAN-AFTERLIFE-LEXICON-V1
+    path: registry/extensions/sumerian-afterlife-lexicon-v1.yaml
+    declared_base: de5f1f0c88b49fb4c654eb87e25c021396957b0a
+    introduced_at: 630d1652f0af4a51107a3d510cdf50a3ae181075
+    depends_on: [EXT-SUMERIAN-AFTERLIFE-FUNERARY-V1]
+    status: PROPOSED_RESEARCH_DELTA_REVIEW_REQUIRED
+    adds_entity_types: [source, claim]
+
+  - extension_id: EXT-SUMERIAN-DEATH-CORPUS-COMPOSITION-LEXICON-V1
+    path: registry/extensions/sumerian-death-corpus-composition-lexicon-v1.yaml
+    declared_base: fdbcb961ba1d32f5442db497f6f61199ccae9605
+    introduced_at: 9e6f1d343c7cc743465410140bfb2cd32b4c51a7
+    depends_on: [EXT-SUMERIAN-AFTERLIFE-LEXICON-V1]
+    status: PROPOSED_RESEARCH_DELTA_REVIEW_REQUIRED
+    adds_entity_types: [source, claim]
+
+  - extension_id: EXT-SUMERIAN-DEATH-CORPUS-EDITION-CURRENTNESS-V1
+    path: registry/extensions/sumerian-death-corpus-edition-currentness-v1.yaml
+    declared_base: 6a049eb026a8959c860c17430e666f496adea369
+    introduced_at: 229860cc9ab2a92b4c9eb532cecb8ba1a7cebe5f
+    depends_on: [EXT-SUMERIAN-DEATH-CORPUS-COMPOSITION-LEXICON-V1]
+    status: PROPOSED_RESEARCH_DELTA_REVIEW_REQUIRED
+    adds_entity_types: [scholarly_context, claim]
+
+  - extension_id: EXT-SUMERIAN-DEATH-LINE-REVALIDATION-V1
+    path: registry/extensions/sumerian-death-line-revalidation-v1.yaml
+    declared_base: 74ce2094ad8e45368bd51f8c559046b8b6f2c763
+    introduced_at: fd3642e157c421ac88d61c5453aa69f020c7c2d5
+    depends_on: [EXT-SUMERIAN-DEATH-CORPUS-EDITION-CURRENTNESS-V1]
+    status: PROPOSED_RESEARCH_DELTA_REVIEW_REQUIRED
+    adds_entity_types: [scholarly_context, claim]
+
+  - extension_id: EXT-SUMERIAN-INANA-LINE-REVALIDATION-V1
+    path: registry/extensions/sumerian-inana-line-revalidation-v1.yaml
+    declared_base: e1fbd46e151d65ac786257b268a28237b8e66d77
+    introduced_at: 1ff4e38858a89a2ac9401553efc53d7cbfe77404
+    depends_on: [EXT-SUMERIAN-DEATH-LINE-REVALIDATION-V1]
+    status: PROPOSED_RESEARCH_DELTA_REVIEW_REQUIRED
+    adds_entity_types: [scholarly_context, claim]
+
+  - extension_id: EXT-SUMERIAN-DEATH-GILGAMESH-LINE-REVALIDATION-V1
+    path: registry/extensions/sumerian-death-gilgamesh-line-revalidation-v1.yaml
+    declared_base: a60d4ba8af209ddef7e6f42ecf01cade64e8a87a
+    introduced_at: bfc2ca8c57bf5ddaff9c2bd2b703a199e5bd6fd9
+    depends_on: [EXT-SUMERIAN-INANA-LINE-REVALIDATION-V1]
+    status: PROPOSED_RESEARCH_DELTA_REVIEW_REQUIRED
+    adds_entity_types: [scholarly_context, claim]
+
+  - extension_id: EXT-SUMERIAN-URNAMMA-LINE-REVALIDATION-V1
+    path: registry/extensions/sumerian-urnamma-line-revalidation-v1.yaml
+    declared_base: 9ca2b40378a7ae22e3f10f392cb26cd62be1b9c8
+    introduced_at: fa60c97f0fc4d2563fe6a45b9720cfd5f6ef7c9e
+    depends_on: [EXT-SUMERIAN-DEATH-GILGAMESH-LINE-REVALIDATION-V1]
+    status: PROPOSED_RESEARCH_DELTA_REVIEW_REQUIRED
+    adds_entity_types: [scholarly_context, claim]
+
+  - extension_id: EXT-SUMERIAN-DEATH-OCCURRENCE-PROVENANCE-V1
+    path: registry/extensions/sumerian-death-occurrence-provenance-v1.yaml
+    declared_base: 1c1019d6f2eda3bd442349ec1c896e6270a2e100
+    introduced_at: bf9c3ef8a6f94f19067d4b4317f27edd763f41f6
+    depends_on: [EXT-SUMERIAN-URNAMMA-LINE-REVALIDATION-V1]
+    status: PROPOSED_RESEARCH_DELTA_REVIEW_REQUIRED
+    adds_entity_types: [claim]
+
+  - extension_id: EXT-SUMERIAN-DUMUZID-DEATH-LAMENT-V1
+    path: registry/extensions/sumerian-dumuzid-death-lament-v1.yaml
+    declared_base: 778c19f4cb8c0e8d4dde0b5aebf5689808c2e3a5
+    introduced_at: e619247593c09bfae5cf3d011be389b741de8ab0
+    depends_on: [EXT-SUMERIAN-DEATH-OCCURRENCE-PROVENANCE-V1]
+    status: PROPOSED_RESEARCH_DELTA_REVIEW_REQUIRED
+    adds_entity_types: [source, scholarly_context, claim]
+
+  - extension_id: EXT-SUMERIAN-DUMUZID-SUBSTITUTION-V1
+    path: registry/extensions/sumerian-dumuzid-substitution-v1.yaml
+    declared_base: 1e8597bce25f5ce883833dfbd17a7ea71fca9a8a
+    introduced_at: f059788f3e498ae6dca9427c7ee2e90484304bbc
+    depends_on: [EXT-SUMERIAN-DUMUZID-DEATH-LAMENT-V1]
+    status: PROPOSED_RESEARCH_DELTA_REVIEW_REQUIRED
+    adds_entity_types: [source, scholarly_context, claim]
+
+  - extension_id: EXT-SUMERIAN-DUMUZID-SEASONAL-HYPOTHESIS-V1
+    path: registry/extensions/sumerian-dumuzid-seasonal-hypothesis-v1.yaml
+    declared_base: b0873f7840e1d336bc63570e017a5de45b0e6fe4
+    introduced_at: 8aba42bcf83fe6198cf65e6027db346aff28f80a
+    depends_on: [EXT-SUMERIAN-DUMUZID-SUBSTITUTION-V1]
+    status: PROPOSED_RESEARCH_DELTA_REVIEW_REQUIRED
+    adds_entity_types: [scholarly_context, claim]
+
+  - extension_id: EXT-DUMUZID-BAAL-TRANSMISSION-V1
+    path: registry/extensions/dumuzid-baal-transmission-v1.yaml
+    declared_base: d4b1bb63a706911609fec6db9dd12711bb21a3d0
+    introduced_at: b83aea1602ce966fba8be1dc39102cfa26f82bdd
+    depends_on: [EXT-SUMERIAN-DUMUZID-SEASONAL-HYPOTHESIS-V1]
+    status: PROPOSED_RESEARCH_DELTA_REVIEW_REQUIRED
+    adds_entity_types: [source, scholarly_context, claim, transmission]
+
+  - extension_id: EXT-MARI-DUMUZI-SOURCE-VERIFICATION-V1
+    path: registry/extensions/mari-dumuzi-source-verification-v1.yaml
+    declared_base: 0c217af3dc4ddad5f9c0738f8306080defb0e1c4
+    introduced_at: 577fadff6d72936e39f4fb218b4d30d6390f38f9
+    depends_on: [EXT-DUMUZID-BAAL-TRANSMISSION-V1]
+    status: PROPOSED_RESEARCH_DELTA_REVIEW_REQUIRED
+    adds_entity_types: [scholarly_context, claim]
+
+  - extension_id: EXT-MARI-DUMUZI-WINTER-ENTRY-V1
+    path: registry/extensions/mari-dumuzi-winter-entry-v1.yaml
+    declared_base: b97d9db58485315e1ba6f31c89cd00f210b93e4d
+    introduced_at: 53a236575f329075f40e9d47a96629003ecb7893
+    depends_on: [EXT-MARI-DUMUZI-SOURCE-VERIFICATION-V1]
+    status: PROPOSED_RESEARCH_DELTA_REVIEW_REQUIRED
+    adds_entity_types: [source, scholarly_context, claim]
+
+  - extension_id: EXT-DUMUZID-BAAL-LEXICAL-CONTROL-V1
+    path: registry/extensions/dumuzid-baal-lexical-control-v1.yaml
+    declared_base: 8aabf5571246ca772ef6954c2470ee9d6f33e208
+    introduced_at: dd658ec9ffba7337c953310ae1c627f6282b84ba
+    depends_on: [EXT-MARI-DUMUZI-WINTER-ENTRY-V1]
+    status: PROPOSED_RESEARCH_DELTA_REVIEW_REQUIRED
+    adds_entity_types: [scholarly_context, claim]
+
+  - extension_id: EXT-BAAL-DEATH-LIFE-WITNESS-CONTROL-V1
+    path: registry/extensions/baal-death-life-witness-control-v1.yaml
+    declared_base: 48ca89402a6f685614a1cfd068a278d40c1de0fb
+    introduced_at: 789e5c85c6e58cff2df3f42d65a2ecab296650cd
+    depends_on: [EXT-DUMUZID-BAAL-LEXICAL-CONTROL-V1]
+    status: PROPOSED_RESEARCH_DELTA_REVIEW_REQUIRED
+    adds_entity_types: [witness, scholarly_context, claim]
+
+  - extension_id: EXT-A1146-MORPHOLOGY-CORRECTION-V1
+    path: registry/extensions/a1146-morphology-correction-v1.yaml
+    declared_base: cf5c517faca6faff27e7ba28cd738ae49dd9523f
+    introduced_at: 78548f9d57b422c6234c1b0994a124ac80d51704
+    depends_on: [EXT-BAAL-DEATH-LIFE-WITNESS-CONTROL-V1]
+    status: PROPOSED_RESEARCH_DELTA_REVIEW_REQUIRED
+    adds_entity_types: [scholarly_context, claim]
+
+  - extension_id: EXT-BAAL-ILIMILKU-ATTRIBUTION-CONTROL-V1
+    path: registry/extensions/baal-ilimilku-attribution-control-v1.yaml
+    declared_base: 700f2b6c3a9975fe11db45e1441b339dd0b917d8
+    introduced_at: 75e378e28a1bb06e01add2dbbc30231fe55a1752
+    depends_on: [EXT-A1146-MORPHOLOGY-CORRECTION-V1]
+    status: PROPOSED_RESEARCH_DELTA_REVIEW_REQUIRED
+    adds_entity_types: [scholarly_context, claim]
+
+  - extension_id: EXT-UGARIT-MESOPOTAMIAN-SCRIBAL-EXPOSURE-V1
+    path: registry/extensions/ugarit-mesopotamian-scribal-exposure-v1.yaml
+    declared_base: c5879edfedb5108916bd9f97d5c5e45a5a83b703
+    introduced_at: 70886bef47813f513661c565bae5dde8c91962f6
+    depends_on: [EXT-BAAL-ILIMILKU-ATTRIBUTION-CONTROL-V1]
+    status: PROPOSED_RESEARCH_DELTA_REVIEW_REQUIRED
+    adds_entity_types: [source, witness, scholarly_context, claim]
+
+  - extension_id: EXT-UGARIT-DUMUZI-DIRECT-ATTESTATION-V1
+    path: registry/extensions/ugarit-dumuzi-direct-attestation-v1.yaml
+    declared_base: 118bd970361f0fa47290f979341f3092722b011e
+    introduced_at: 265a7d1c353ebbbe2cf7cb7e425105c0e03c7880
+    depends_on: [EXT-UGARIT-MESOPOTAMIAN-SCRIBAL-EXPOSURE-V1]
+    status: PROPOSED_RESEARCH_DELTA_REVIEW_REQUIRED
+    adds_entity_types: [source, witness, scholarly_context, claim]
+
+  - extension_id: EXT-UGARIT-DUMUZI-ARCHIVE-PROXIMITY-V1
+    path: registry/extensions/ugarit-dumuzi-archive-proximity-v1.yaml
+    declared_base: a6413d69106ef0ee934a6ca3a30516d5a7beb448
+    introduced_at: bccb021b2c1a083b674f660279d182fdd5df59b3
+    depends_on: [EXT-UGARIT-DUMUZI-DIRECT-ATTESTATION-V1]
+    status: PROPOSED_RESEARCH_DELTA_REVIEW_REQUIRED
+    adds_entity_types: [scholarly_context, claim]
+
+  - extension_id: EXT-UGARIT-DUMUZI-EQUIVALENCE-CONTROL-V1
+    path: registry/extensions/ugarit-dumuzi-equivalence-control-v1.yaml
+    declared_base: 50d0eaff73054a09444028be83a9452d5f468fc3
+    introduced_at: 5cf586a487ed9dd57f068b714b4f8831238ce804
+    depends_on: [EXT-UGARIT-DUMUZI-ARCHIVE-PROXIMITY-V1]
+    status: PROPOSED_RESEARCH_DELTA_REVIEW_REQUIRED
+    adds_entity_types: [scholarly_context, claim]
+
+  - extension_id: EXT-UGARIT-DUMUZI-ALPHABETIC-SEARCH-V1
+    path: registry/extensions/ugarit-dumuzi-alphabetic-search-v1.yaml
+    declared_base: c360b0d99323144815c88e8dfbc5cf81c6e45009
+    introduced_at: 61292e5515f5a7edf14e7db9cd4e7eecf0cb277a
+    depends_on: [EXT-UGARIT-DUMUZI-EQUIVALENCE-CONTROL-V1]
+    status: PROPOSED_RESEARCH_DELTA_REVIEW_REQUIRED
+    adds_entity_types: [scholarly_context, claim]
+
+  - extension_id: EXT-UGARIT-BAAL-SCHOLASTIC-EQUIVALENCE-V1
+    path: registry/extensions/ugarit-baal-scholastic-equivalence-v1.yaml
+    declared_base: 40a9db034d90604b60e605a4abafab5f7946c863
+    introduced_at: b90773a71324f04c837fb3a2feaefb4cd93c7884
+    depends_on: [EXT-UGARIT-DUMUZI-ALPHABETIC-SEARCH-V1]
+    status: PROPOSED_RESEARCH_DELTA_REVIEW_REQUIRED
+    adds_entity_types: [scholarly_context, claim]
+
+  - extension_id: EXT-DUMUZID-BAAL-TRANSMISSION-EVIDENCE-LADDER-V1
+    path: registry/extensions/dumuzid-baal-transmission-evidence-ladder-v1.yaml
+    declared_base: 3ba41fe0cec4b4a8ba84d4ef90c4c71471637445
+    introduced_at: b52e872946cbb3a56afc64d9392cf6d5962c557e
+    depends_on: [EXT-UGARIT-BAAL-SCHOLASTIC-EQUIVALENCE-V1]
+    status: PROPOSED_RESEARCH_DELTA_REVIEW_REQUIRED
+    adds_entity_types: [claim]
+
+  - extension_id: EXT-UGARIT-DUMUZI-SYLLABIC-CORPUS-SEARCH-V1
+    path: registry/extensions/ugarit-dumuzi-syllabic-corpus-search-v1.yaml
+    declared_base: 89920c8e281b97a2806708a21c16e0115f884f64
+    introduced_at: a4b64d297cc278152eadc09054df91643f858117
+    depends_on: [EXT-DUMUZID-BAAL-TRANSMISSION-EVIDENCE-LADDER-V1]
+    status: PROPOSED_RESEARCH_DELTA_REVIEW_REQUIRED
+    adds_entity_types: [scholarly_context, claim]
+
+  - extension_id: EXT-ILIMILKU-ATTENU-CARRIER-CONTROL-V1
+    path: registry/extensions/ilimilku-attenu-carrier-control-v1.yaml
+    declared_base: c82601e33df54f7d2d15863df68540fd7a6b25d1
+    introduced_at: f115db051dd32cbe88d9ef1d3a1d1f0cbcc1a604
+    depends_on: [EXT-UGARIT-DUMUZI-SYLLABIC-CORPUS-SEARCH-V1]
+    status: PROPOSED_RESEARCH_DELTA_REVIEW_REQUIRED
+    adds_entity_types: [scholarly_context, claim]
+
+  - extension_id: EXT-DUMUZID-BAAL-BORROWING-SIGNAL-CONTROL-V1
+    path: registry/extensions/dumuzid-baal-borrowing-signal-control-v1.yaml
+    declared_base: 6d9004a17dc04d5dd399407c4a37e48c7766bcaa
+    introduced_at: 907d667c3dc1b0f7f03902191075699a45ed35c2
+    depends_on: [EXT-ILIMILKU-ATTENU-CARRIER-CONTROL-V1]
+    status: PROPOSED_RESEARCH_DELTA_REVIEW_REQUIRED
+    adds_entity_types: [scholarly_context, claim]
+
 materialization_state:
   canonical_materialized: false
-  reason: "The extensions remain stacked draft research cuts. This manifest defines deterministic application semantics but does not itself promote or merge them."
+  reason: "V2 source-level integration candidate: PR28 source/consolidation base plus repaired PR75 research delta. Not materialized, merged, reviewed, or canonical."
+  integration_v2:
+    base_source_head: 99be7dd0e222480e0c82ed41c3d43383a759ab90
+    research_source_head: a2ca89118de6048fe24cb9a8c5fe0ca49a5a486f
+    extension_count: 50
+    pr28_extension_count: 20
+    pr75_unique_extension_count: 30
+    shared_extension_ids: 10
