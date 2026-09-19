@@ -17,13 +17,13 @@ lineages:
     current_portfolio_superset: false
   active_research:
     pr: 75
-    head: 64bba017c763325e737f8fea31353f11f3396848
+    head: a2ca89118de6048fe24cb9a8c5fe0ca49a5a486f
     role: CURRENT_DUMUZID_BAAL_RESEARCH_TIP
     current_portfolio_superset: false
 
 pr33_vs_pr75:
   relation: DIVERGED
-  head_75_ahead_by: 117
+  head_75_ahead_by: 118
   head_75_behind_by: 45
   merge_base: 7e354667770a6c4bed958a01c5ff843345a35b40
 
@@ -31,6 +31,13 @@ extension_sets:
   pr33_applied_count: 20
   pr75_active_count: 40
   intersection_count: 10
+  shared_blob_equality_after_repair: 10_OF_10
+  carried_forward_repair:
+    extension_id: EXT-EGYPTIAN-VEDIC-FOUNDATION-V1
+    original_malformed_blob: df11c18b10c145e0912e722e40ee67a5be038f53
+    repaired_blob: a3bcccf22976573e6596fdc9df92f40f9ecdbd8b
+    repair_source_commit: 99be7dd0e222480e0c82ed41c3d43383a759ab90
+    repaired_pr75_head: a2ca89118de6048fe24cb9a8c5fe0ca49a5a486f
   union_count: 50
   pr33_only:
     - EXT-SIMULATION-THEORY-V1
