@@ -1,0 +1,176 @@
+schema_version: on-theo.daniel7-son-of-man-reception.v1
+status: PROPOSED_RESEARCH_PACKET_REVIEW_REQUIRED
+recorded_at: "2026-09-19"
+
+base_subject:
+  branch: research/jewish-messiah-expectations-v1-20260919
+  head: 2cef8b57c51e0da11653a441e3987cd657614f3e
+  inherited_exact_anchors:
+    enoch_daniel_philo_corpus: f4c4b4e940a8e6c76e9603d298bab819fbcc448d
+
+rules:
+  daniel_humanlike_description_is_not_automatically_fixed_title: true
+  vision_figure_and_interpreted_holy_ones_must_both_remain_visible: true
+  later_individualization_does_not_fix_original_referent: true
+  danielic_humanlike_figure_is_not_lexically_identical_to_messiah: true
+  later_jewish_reception_is_not_universal_first_century_expectation: true
+  gospel_son_of_man_requires_passage_specific_analysis: true
+
+sources:
+  - id: SRC-DANIEL-7
+    evidence_class: [PRIMARY_TEXT]
+    work: Daniel
+    locator: "Daniel 7:13-27"
+    proposition_scope: humanlike-figure-vision-and-holy-ones-interpretation
+    access:
+      url: "https://www.sefaria.org/Daniel.7.13-19"
+    limitations:
+      - "The source contains both the humanlike vision figure and an interpretation assigning the kingdom to the holy ones."
+      - "V1 does not resolve the final referent by lexical assertion."
+
+  - id: SRC-1ENOCH-SIMILITUDES
+    evidence_class: [PRIMARY_TEXT, LATER_TRADITION]
+    work: 1 Enoch 37-71 / Similitudes or Parables of Enoch
+    composition_date: {start: null, end: null, precision: contested-unresolved-in-v1}
+    physical_witness_date: {start: null, end: null, precision: Ethiopic-and-later-witness-history-not-modeled-in-v1}
+    proposition_scope: individualized-humanlike-eschatological-figure
+    limitations:
+      - "The Similitudes are not among the Aramaic Enoch manuscripts found at Qumran."
+      - "Absence at Qumran is not proof of late composition."
+
+  - id: SRC-4EZRA-13
+    evidence_class: [PRIMARY_TEXT, LATER_TRADITION]
+    work: 4 Ezra / 2 Esdras
+    locator: "4 Ezra 13"
+    composition_date: {start: "0070", end: null, precision: post-70-context-broadly-established-exact-range-unresolved-in-v1}
+    physical_witness_date: {start: null, end: null, precision: versional-manuscript-history-not-modeled-in-v1}
+    proposition_scope: individualized-Danielic-human-figure-reception
+    limitations:
+      - "Later Jewish reception evidence; not treated as a pre-70 universal expectation."
+
+scholarly_context:
+  - id: SCH-BOYARIN-2012-DANIEL7
+    evidence_class: [SCHOLARLY_INTERPRETATION]
+    author: Daniel Boyarin
+    title: "Daniel 7, Intertextuality, and the History of Israel's Cult"
+    publication_context: Harvard Theological Review 105.2
+    publication_date: "2012"
+    url: "https://www.cambridge.org/core/journals/harvard-theological-review/article/abs/daniel-7-intertextuality-and-the-history-of-israels-cult/74D5BCC92FA0F923882C282351ADC02C"
+    bounded_use: "Documents major collective versus individual/divine/angelic interpretation families and discusses representative models."
+
+  - id: SCH-SLATER-1995-SON-MAN-FIRST-CENTURY
+    evidence_class: [SCHOLARLY_INTERPRETATION]
+    author: Thomas B. Slater
+    title: "One Like a Son of Man in First-Century CE Judaism"
+    publication_context: New Testament Studies 41.2
+    publication_date: "1995"
+    url: "https://www.cambridge.org/core/journals/new-testament-studies/article/one-like-a-son-of-man-in-firstcentury-ce-judaism/E7F18FADE689D705120846727040AC34"
+    bounded_use: "Summarizes Collins's comparison of individualized/messianic humanlike figures in the Similitudes and 4 Ezra 13 while noting uncertainty about how widespread the assumptions were."
+
+  - id: SCH-BURKETT-SON-MAN-DEBATE
+    evidence_class: [SCHOLARLY_INTERPRETATION]
+    author: Delbert Burkett
+    title: "The Son of Man Debate"
+    publication_context: Cambridge University Press
+    publication_date: "2000"
+    url: "https://www.cambridge.org/core/books/son-of-man-debate/E1491E8CD49369A1BDDB038DA899ABE6/listing"
+    bounded_use: "Controls the history of the debate and the relation of Daniel 7, Similitudes of Enoch, 4 Ezra and Gospel usage."
+
+  - id: SCH-BURKETT-EXIT-APOCALYPTIC
+    evidence_class: [SCHOLARLY_INTERPRETATION]
+    author: Delbert Burkett
+    title: "Exit the apocalyptic Son of Man?"
+    publication_context: The Son of Man Debate
+    publication_date: "2000"
+    url: "https://www.cambridge.org/core/books/abs/son-of-man-debate/exit-the-apocalyptic-son-of-man/CA2061AD2814BD67E1046120DB1DC0E4"
+    bounded_use: "Argues Daniel's expression is descriptive rather than a fixed title and notes similar descriptive usage in later apocalyptic texts."
+
+  - id: SCH-BURKETT-APOCALYPTIC-RABBINIC
+    evidence_class: [SCHOLARLY_INTERPRETATION]
+    author: Delbert Burkett
+    title: "Son of Man in apocalyptic and rabbinic texts"
+    publication_context: The Son of Man Debate
+    publication_date: "2000"
+    url: "https://www.cambridge.org/core/books/abs/son-of-man-debate/son-of-man-in-apocalyptic-and-rabbinic-texts/4ADE222BE8DDEBB07B88B996BE077A0E"
+    bounded_use: "Preserves the scholarly dispute over whether later Jewish Danielic interpretations imply a unified pre-existing Son-of-Man redeemer concept."
+
+claims:
+  - id: CLM-DANIEL7-HUMANLIKE-FIGURE-TEXT
+    proposition: "Daniel 7:13-14 presents one like a human being receiving dominion, glory and kingship from the Ancient of Days."
+    claim_type: TEXTUAL_OCCURRENCE
+    evidence_class: [PRIMARY_TEXT]
+    supporting_sources: [SRC-DANIEL-7]
+    confidence: high
+    contested: false
+
+  - id: CLM-DANIEL7-HOLY-ONES-INTERPRETATION
+    proposition: "Daniel 7's interpreting section assigns receipt and possession of the kingdom to the holy ones / people of the holy ones of the Most High."
+    claim_type: TEXTUAL_OCCURRENCE
+    evidence_class: [PRIMARY_TEXT]
+    supporting_sources: [SRC-DANIEL-7]
+    confidence: high
+    contested: false
+
+  - id: CLM-DANIEL7-FIGURE-ORIGINAL-REFERENT
+    proposition: "The one-like-a-human figure in Daniel 7 has one uncontested original referent that can be specified without interpretive argument."
+    claim_type: HISTORICAL_SEMANTIC_INTERPRETATION
+    evidence_class: [SCHOLARLY_INTERPRETATION, UNKNOWN]
+    supporting_sources: []
+    opposing_sources: [SCH-BOYARIN-2012-DANIEL7]
+    confidence: unresolved
+    contested: true
+
+  - id: CLM-DANIEL7-SON-MAN-FIXED-TITLE
+    proposition: "Daniel 7:13 itself establishes 'Son of Man' as a fixed personal title for a single eschatological redeemer."
+    claim_type: LEXICAL_SEMANTIC_INTERPRETATION
+    evidence_class: [UNKNOWN]
+    supporting_sources: []
+    opposing_sources: [SRC-DANIEL-7, SCH-BURKETT-EXIT-APOCALYPTIC]
+    confidence: unresolved
+    contested: true
+
+  - id: CLM-LATER-JEWISH-DANIELIC-INDIVIDUALIZATION
+    proposition: "Later Jewish apocalyptic texts such as the Similitudes of Enoch and 4 Ezra 13 can individualize and messianically develop Danielic humanlike-figure imagery."
+    claim_type: RECEPTION_AND_LITERARY_DEVELOPMENT
+    evidence_class: [PRIMARY_TEXT, LATER_TRADITION, SCHOLARLY_INTERPRETATION]
+    supporting_sources: [SRC-1ENOCH-SIMILITUDES, SRC-4EZRA-13, SCH-SLATER-1995-SON-MAN-FIRST-CENTURY]
+    confidence: high-for-later-individualization
+    contested: true
+    ceiling: "The development does not determine Daniel 7's earliest referent or prove one universally shared first-century doctrine."
+
+  - id: CLM-UNIVERSAL-FIRST-CENTURY-SON-MAN-DOCTRINE
+    proposition: "First-century Judaism had one universally recognized eschatological redeemer with a fixed title 'the Son of Man' and a stable agreed set of functions."
+    claim_type: HISTORICAL_GENERALIZATION
+    evidence_class: [UNKNOWN]
+    supporting_sources: []
+    opposing_sources: [SCH-BURKETT-APOCALYPTIC-RABBINIC, SCH-SLATER-1995-SON-MAN-FIRST-CENTURY]
+    confidence: unresolved
+    contested: true
+
+  - id: CLM-DANIELIC-FIGURE-LEXICALLY-EQUALS-MESSIAH
+    proposition: "Daniel 7:13 lexically identifies its humanlike figure with the category/title messiah."
+    claim_type: SEMANTIC_IDENTITY
+    evidence_class: [UNKNOWN]
+    supporting_sources: []
+    opposing_sources: [SRC-DANIEL-7]
+    confidence: unresolved
+    contested: false
+    ceiling: "Later messianic identification is reception and must be source-bound."
+
+  - id: CLM-GOSPEL-SON-MAN-AUTOMATIC-DANIEL7
+    proposition: "Every Gospel use of 'Son of Man' automatically has the same Daniel 7-derived eschatological meaning."
+    claim_type: TRANSMISSION_AND_SEMANTIC_OVERGENERALIZATION
+    evidence_class: [UNKNOWN]
+    supporting_sources: []
+    opposing_sources: [SCH-BURKETT-SON-MAN-DEBATE]
+    confidence: unresolved
+    contested: true
+
+effect_boundary:
+  changes_parent_messiah_packet: false
+  changes_existing_judaism_claims: false
+  canonical_promotion: false
+  merge_authority: false
+  establishes_original_daniel7_referent: false
+  establishes_universal_son_man_doctrine: false
+  establishes_yeshua_self_designation: false
