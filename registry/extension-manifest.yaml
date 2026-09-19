@@ -416,7 +416,7 @@ materialization_state:
   reason: "V2 source-level integration candidate: PR28 source/consolidation base plus repaired PR75 research delta. Not materialized, merged, reviewed, or canonical."
   integration_v2:
     base_source_head: 99be7dd0e222480e0c82ed41c3d43383a759ab90
-    research_source_head: a2ca89118de6048fe24cb9a8c5fe0ca49a5a486f
+    research_source_head: 5f232ccc70f27a5830605da5c94896b32bc5797a
     extension_count: 50
     pr28_extension_count: 20
     pr75_unique_extension_count: 30
