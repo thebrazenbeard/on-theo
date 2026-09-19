@@ -45,7 +45,7 @@ scholarly_context_additions:
     source_roles: [SCHOLARLY_INTERPRETATION]
     source_kind: peer_reviewed_journal_article
     author_or_tradition: Mark S. Smith
-    title: The death of "dying and rising gods" in the biblical world: An update, with special reference to Baal in the Baal cycle
+    title: 'The death of "dying and rising gods" in the biblical world: An update, with special reference to Baal in the Baal cycle'
     composition_date: {start: "1998", end: "1998", precision: publication-year}
     access_mode: publisher-abstract-and-article-text
     locators:
