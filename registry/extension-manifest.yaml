@@ -306,6 +306,15 @@ extensions:
     status: PROPOSED_RESEARCH_DELTA_REVIEW_REQUIRED
     adds_entity_types: [scholarly_context, claim]
 
+
+  - extension_id: EXT-UGARIT-DUMUZI-ALPHABETIC-SEARCH-V1
+    path: registry/extensions/ugarit-dumuzi-alphabetic-search-v1.yaml
+    declared_base: c360b0d99323144815c88e8dfbc5cf81c6e45009
+    introduced_at: 61292e5515f5a7edf14e7db9cd4e7eecf0cb277a
+    depends_on: [EXT-UGARIT-DUMUZI-EQUIVALENCE-CONTROL-V1]
+    status: PROPOSED_RESEARCH_DELTA_REVIEW_REQUIRED
+    adds_entity_types: [scholarly_context, claim]
+
 materialization_state:
   canonical_materialized: false
   reason: "The extensions remain stacked draft research cuts. This manifest defines deterministic application semantics but does not itself promote or merge them."
