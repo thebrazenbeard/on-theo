@@ -6,7 +6,10 @@ on:
       - 'registry/**'
       - 'tools/on_theo_registry/**'
       - 'scripts/validate_registry.py'
+      - 'scripts/rehearse_materialization.py'
       - 'tests/test_registry_*.py'
+      - 'tests/test_materialization_rehearsal.py'
+      - 'docs/REGISTRY_MATERIALIZATION_REHEARSAL_V1.md'
       - 'requirements-dev.txt'
       - 'pytest.ini'
       - '.github/workflows/validate-registries.yml'
@@ -15,7 +18,10 @@ on:
       - 'registry/**'
       - 'tools/on_theo_registry/**'
       - 'scripts/validate_registry.py'
+      - 'scripts/rehearse_materialization.py'
       - 'tests/test_registry_*.py'
+      - 'tests/test_materialization_rehearsal.py'
+      - 'docs/REGISTRY_MATERIALIZATION_REHEARSAL_V1.md'
       - 'requirements-dev.txt'
       - 'pytest.ini'
       - '.github/workflows/validate-registries.yml'
@@ -37,3 +43,5 @@ jobs:
         run: pytest -q
       - name: Validate repository registries
         run: python scripts/validate_registry.py --root . --json
+      - name: Rehearse registry materialization
+        run: python scripts/rehearse_materialization.py --root .

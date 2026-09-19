@@ -20,6 +20,10 @@ scholarly_context_additions:
 concept_additions:
   - id: CON-QURAN-AL-RAHMAN
     label: Qur'anic al-Rahman
+    canonical_label: Qur'anic al-Rahman
+    kind: divine-epithet-concept
+    forms: [al-Rahman]
+    semantic_guard: "Pre-Islamic lexical availability or similarity does not establish direct lineage, a single borrowing path, or identical theology."
     traditions: [quranic]
     definition: "Qur'anic divine epithet/name al-Rahman, to be studied independently before lineage to pre-Islamic Rahman(an) usage is assigned."
     linked_claims: [CLM-RAHMAN-PREISLAMIC-SOUTH-ARABIAN-ATTESTATION]

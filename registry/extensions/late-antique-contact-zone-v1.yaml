@@ -122,6 +122,10 @@ scholarly_context_additions:
 concept_additions:
   - id: CON-CHALCEDON-TWO-NATURES
     label: Chalcedonian two-natures formula
+    canonical_label: Chalcedonian two-natures formula
+    kind: christological-formula
+    forms: [Chalcedonian two-natures formula]
+    semantic_guard: "Records the conciliar Christological formula; it does not by itself establish earlier Christian consensus or the metaphysical truth of the formula."
     traditions: [late-antique-christianity, chalcedonian]
     definition: "Conciliar Christological formula confessing one Christ in two natures without confusion, change, division, or separation."
     linked_claims: [CLM-CHALCEDON-TWO-NATURES-DEFINITION]
@@ -129,6 +133,10 @@ concept_additions:
 
   - id: CON-SOUTH-ARABIAN-RAHMANAN
     label: Rahmanan divine epithet in Late Antique South Arabia
+    canonical_label: Rahmanan divine epithet in Late Antique South Arabia
+    kind: divine-epithet-concept
+    forms: [Rahmanan]
+    semantic_guard: "Do not equate every Rahmanan attestation with Qur'anic al-Rahman or assume one unchanged theology across Jewish, monotheist, and Christian South Arabian contexts."
     traditions: [late-antique-arabia]
     definition: "Divine title/name attested in South Arabian monotheist contexts whose community-specific theological referent changes across Jewish/monotheist and Christian political phases."
     linked_claims: [CLM-RAHMANAN-CROSSES-MONOTHEIST-CONTEXTS]

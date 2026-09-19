@@ -77,6 +77,10 @@ scholarly_context_additions:
 concept_additions:
   - id: CON-QURAN-DIVINE-UNIQUENESS
     label: Qur'anic divine uniqueness and incomparability
+    canonical_label: Qur'anic divine uniqueness and incomparability
+    kind: theological-proposition-cluster
+    forms: [Qur'anic divine uniqueness and incomparability]
+    semantic_guard: "Records a Qur'anic proposition cluster; do not collapse it into every other monotheist formulation of divine unity or incomparability."
     traditions: [quranic]
     definition: "Qur'anic proposition cluster presenting Allah as uniquely worthy of worship, unbegotten/unbegetting and without comparable equal."
     linked_claims: [CLM-QURAN-DIVINE-UNIQUENESS]
@@ -84,6 +88,10 @@ concept_additions:
 
   - id: CON-QURAN-JINN
     label: Qur'anic jinn
+    canonical_label: Qur'anic jinn
+    kind: nonhuman-being-class
+    forms: [jinn]
+    semantic_guard: "Do not collapse the Qur'anic jinn class into angels, demons, or a morally uniform category."
     traditions: [quranic]
     definition: "Qur'anic class of nonhuman beings including morally/religiously diverse members capable of hearing and responding to revelation."
     linked_claims: [CLM-QURAN-JINN-MORAL-DIVERSITY, CLM-QURAN-IBLIS-OF-JINN]
@@ -91,6 +99,10 @@ concept_additions:
 
   - id: CON-QURAN-IBLIS
     label: Qur'anic Iblis
+    canonical_label: Qur'anic Iblis
+    kind: named-religious-figure
+    forms: [Iblis]
+    semantic_guard: "Do not equate the entire jinn class with Iblis or import later demonological categories into the Qur'anic concept without separate evidence."
     traditions: [quranic]
     definition: "Named rebel in Qur'anic Adam-prostration narratives, explicitly identified as being of the jinn in Q 18:50."
     linked_claims: [CLM-QURAN-IBLIS-OF-JINN]
@@ -99,6 +111,10 @@ concept_additions:
 
   - id: CON-QURAN-PROPHETIC-REVELATION-CONTINUUM
     label: Qur'anic prophetic revelation continuum
+    canonical_label: Qur'anic prophetic revelation continuum
+    kind: revelation-history-concept
+    forms: [Qur'anic prophetic revelation continuum]
+    semantic_guard: "The Qur'an's placement of itself within a wider prophetic history does not by itself establish direct textual dependence or uninterrupted institutional continuity."
     traditions: [quranic]
     definition: "Qur'anic presentation of its revelation within a wider history of messages/scriptures associated with Abrahamic and other prophetic figures."
     linked_claims: [CLM-QURAN-PROPHETIC-CONTINUUM, CLM-QURAN-CONFIRMS-CRITERION-PRIOR-SCRIPTURE]
@@ -106,6 +122,10 @@ concept_additions:
 
   - id: CON-QURAN-RESURRECTION-JUDGMENT
     label: Qur'anic resurrection and judgment
+    canonical_label: Qur'anic resurrection and judgment
+    kind: eschatological-concept
+    forms: [Qur'anic resurrection and judgment]
+    semantic_guard: "Do not treat this Qur'anic eschatological cluster as identical to Jewish or Christian resurrection/judgment models without feature-level comparison."
     traditions: [quranic]
     definition: "Qur'anic eschatological cluster involving bodily restoration/resurrection, divine judgment and reward/punishment."
     linked_claims: [CLM-QURAN-BODILY-RESURRECTION]
