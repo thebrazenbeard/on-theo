@@ -1,0 +1,87 @@
+schema_version: on-theo.byte-bound-promotion-candidate.v2
+status: DRAFT_CANDIDATE_NOT_CANONICAL
+recorded_at: "2026-09-19"
+repository: thebrazenbeard/on-theo
+candidate:
+  branch: candidate/byte-bound-promotion-v2-20260919
+  source_control_pr: 79
+  source_control_head: 7c1e57f05957d01838845956857376dc603ca433
+  source_control_tree: ca49dc45c5ca1880cafc117a5df2afef6d433882
+  payload_commit: 8d85d1f7884318ca16a3195d426031cbf7b68f9a
+  payload_tree: 1eec2c8c498d9acd874547f489be6a11b84ccae5
+  receipt_scope: PAYLOAD_COMMIT
+  note: "Receipt added after payload; final receipt-bearing head is not self-authenticating review evidence."
+review_gate:
+  status: INDEPENDENT_EXACT_HEAD_REVIEW_REQUIRED
+  independent_runtime_claim: false
+  source_head_ci:
+    push_run: 35457456757
+    pull_request_run: 35457459604
+    pytest_passed: 54
+    pytest_failed: 0
+    validator_ok: true
+    validator_errors: 0
+    validator_findings: 0
+    validator_warnings: 0
+    rehearsal_status: REHEARSAL_ONLY_NOT_CANONICAL
+    rehearsal_applied_extensions: 50
+    rehearsal_collisions: 0
+    rehearsal_unresolved_references: 0
+build:
+  execution_surface: LAPPY_LOCAL_EXACT_SHA_REPRODUCTION
+  source_clone:
+    head: 7c1e57f05957d01838845956857376dc603ca433
+    tree: ca49dc45c5ca1880cafc117a5df2afef6d433882
+    core_autocrlf: false
+    source_manifest_sha256: 2c299261a7c64d7768e14e51e3d913a9413170d56534ee5379c25c5b4ad690f2
+  cross_runtime_output_digest_match: PASS
+  archive_byte_equality: PASS
+  payload_validation:
+    pytest_passed: 54
+    pytest_failed: 0
+    validator_ok: true
+    validator_errors: 0
+    validator_findings: 0
+    validator_warnings: 0
+  idempotence_rehearsal:
+    applied_extension_count: 0
+    collision_count: 0
+    unresolved_reference_count: 0
+    counts_unchanged: true
+archive:
+  root: provenance/materialization-input-v2/
+  plan: provenance/materialization-input-v2/input-archive-plan-v2.yaml
+  source_manifest_archive_path: provenance/materialization-input-v2/registry/extension-manifest.yaml
+  source_manifest_sha256: 2c299261a7c64d7768e14e51e3d913a9413170d56534ee5379c25c5b4ad690f2
+  extension_count: 50
+  active_extension_files_remaining: 0
+  all_extension_source_blobs_preserved: true
+  all_extension_sha256_values_preserved: true
+materialized_output:
+  applied_extensions: 50
+  collision_count: 0
+  unresolved_reference_count: 0
+  counts:
+    sources: 216
+    claims: 325
+    concepts: 26
+    transmission_edges: 25
+    witnesses: 10
+  sha256:
+    registry/claims.yaml: 0859014cd301f9387923bdb5eb0d383af272fee603224fa5694259662a764ea9
+    registry/concepts.yaml: a8a7354ccd1bbf0aae0ee0f6fdda8545098027297bbde004c57ee8a895f44b97
+    registry/extension-manifest.yaml: e350da5d9a48ba3227a0557f03824e909f43baf8de3290d047ff32d286137083
+    registry/reviews.yaml: 0f7ed711f8d089a778526bf5a042e708f10cd05de39edbebfc3bb096f3cc1a72
+    registry/source-access.yaml: 6c97263769c615ac5863ed879da857f58ebfda2031c799d50ef683623efc0d5a
+    registry/sources.yaml: b807877f5561c6002afb3ebf369ef3022f75b2201182f9eba7c7c14baef3f8e9
+    registry/transmissions.yaml: c571d1fcf1b6b78414b02d7dc0f077828c0644ccfa7ca56a3353cc479856233c
+    registry/witnesses.yaml: d90db93560e50817541fb61458eeb01bb80ef14502cc1b30137dfe222260f627
+effect_boundary:
+  main_modified: false
+  merged: false
+  canonical_materialized: false
+  manifest_canonical_materialized: false
+  downstream_cutover: false
+  predecessor_history_deleted: false
+  merge_authority: false
+  canonical_promotion_authority: false
