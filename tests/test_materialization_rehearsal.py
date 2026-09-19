@@ -86,15 +86,26 @@ def test_rehearsal_accepts_already_materialized_source(tmp_path: Path) -> None:
     root = Path(__file__).resolve().parents[1]
     first_output = tmp_path / "materialized"
 
-    materialize_rehearsal(root, first_output)
+    first = materialize_rehearsal(root, first_output)
     second = materialize_rehearsal(first_output)
 
+    assert second.receipt["already_materialized_input"] is True
     assert second.receipt["applied_extension_count"] == 0
     assert second.receipt["collision_count"] == 0
     assert second.receipt["unresolved_reference_count"] == 0
     assert second.receipt["source_validation"]["ok"] is True
     assert second.receipt["output_validation"]["ok"] is True
     assert second.receipt["before_counts"] == second.receipt["after_counts"]
+    assert second.output_documents == first.output_documents
+    assert second.receipt["output_registry_sha256"] == first.receipt["output_registry_sha256"]
+    assert (
+        second.output_documents["registry/extension-manifest.yaml"]["materialization_state"][
+            "applied_extension_ids"
+        ]
+        == first.output_documents["registry/extension-manifest.yaml"]["materialization_state"][
+            "applied_extension_ids"
+        ]
+    )
 
 
 def test_rehearsal_output_directory_must_be_outside_source_tree(tmp_path: Path) -> None:

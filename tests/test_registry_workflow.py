@@ -9,3 +9,5 @@ def test_registry_workflow_runs_tests_and_direct_validation() -> None:
     assert "pytest -q" in text
     assert "python scripts/validate_registry.py --root . --json" in text
     assert "requirements-dev.txt" in text
+    assert "fetch-depth: 0" in text
+    assert "python scripts/audit_rebase_preconditions.py --root . --subject HEAD" in text
