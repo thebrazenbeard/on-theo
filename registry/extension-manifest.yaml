@@ -288,6 +288,15 @@ extensions:
     status: PROPOSED_RESEARCH_DELTA_REVIEW_REQUIRED
     adds_entity_types: [source, witness, scholarly_context, claim]
 
+
+  - extension_id: EXT-UGARIT-DUMUZI-ARCHIVE-PROXIMITY-V1
+    path: registry/extensions/ugarit-dumuzi-archive-proximity-v1.yaml
+    declared_base: a6413d69106ef0ee934a6ca3a30516d5a7beb448
+    introduced_at: bccb021b2c1a083b674f660279d182fdd5df59b3
+    depends_on: [EXT-UGARIT-DUMUZI-DIRECT-ATTESTATION-V1]
+    status: PROPOSED_RESEARCH_DELTA_REVIEW_REQUIRED
+    adds_entity_types: [scholarly_context, claim]
+
 materialization_state:
   canonical_materialized: false
   reason: "The extensions remain stacked draft research cuts. This manifest defines deterministic application semantics but does not itself promote or merge them."
