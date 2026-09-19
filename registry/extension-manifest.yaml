@@ -342,6 +342,15 @@ extensions:
     status: PROPOSED_RESEARCH_DELTA_REVIEW_REQUIRED
     adds_entity_types: [scholarly_context, claim]
 
+
+  - extension_id: EXT-ILIMILKU-ATTENU-CARRIER-CONTROL-V1
+    path: registry/extensions/ilimilku-attenu-carrier-control-v1.yaml
+    declared_base: c82601e33df54f7d2d15863df68540fd7a6b25d1
+    introduced_at: f115db051dd32cbe88d9ef1d3a1d1f0cbcc1a604
+    depends_on: [EXT-UGARIT-DUMUZI-SYLLABIC-CORPUS-SEARCH-V1]
+    status: PROPOSED_RESEARCH_DELTA_REVIEW_REQUIRED
+    adds_entity_types: [scholarly_context, claim]
+
 materialization_state:
   canonical_materialized: false
   reason: "The extensions remain stacked draft research cuts. This manifest defines deterministic application semantics but does not itself promote or merge them."
