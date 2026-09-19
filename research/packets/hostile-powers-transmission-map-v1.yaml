@@ -1,0 +1,240 @@
+schema_version: on-theo.hostile-powers-transmission-map.v1
+status: PROPOSED_CROSS_SOURCE_SYNTHESIS_REVIEW_REQUIRED
+recorded_at: "2026-09-19"
+
+base_subject:
+  branch: research/qumran-belial-passage-witness-inventory-v1-20260919
+  head: e7ea73a00fd1fccfba715cee9a8e2a1d33712c12
+
+prerequisite_subjects:
+  hostile_powers_semantic_parent: 8a61302fb7c6565a11a4fe10ea9523e6e9672a59
+  mastema_inventory: 80c4fc3f359e7838f6c112267c59ca38fbe46289
+  belial_inventory: e7ea73a00fd1fccfba715cee9a8e2a1d33712c12
+  enoch_daniel_philo_corpus: f4c4b4e940a8e6c76e9603d298bab819fbcc448d
+
+allowed_relation_types:
+  - INTERNAL_ETIOLOGICAL_RELATION
+  - LITERARY_REWRITING_STRONGLY_SUPPORTED
+  - RELATED_TEXTUAL_DEPENDENCE_STRONGLY_SUPPORTED
+  - CONTEXTUAL_COREFERENCE_STRONG
+  - LEXICAL_FUNCTIONAL_BRIDGE
+  - FUNCTIONAL_PARALLEL_DIRECT_DEPENDENCE_UNRESOLVED
+  - SHARED_TRADITION_FIELD_DIRECTION_UNRESOLVED
+  - IDENTITY_CONTESTED
+
+nodes:
+  - id: HP-JOB-ZECH-HA-SATAN
+    kind: ADVERSARY_FUNCTION_FAMILY
+    sources: ["Job 1-2", "Zechariah 3"]
+    identity_claim: "divine-court accuser/adversary family; not auto-identical to later Devil"
+
+  - id: HP-ENOCH-WATCHERS
+    kind: REBELLIOUS_HEAVENLY_CLASS
+    sources: ["1 Enoch / Book of the Watchers"]
+    identity_claim: "plural Watcher class"
+
+  - id: HP-ENOCH-GIANT-SPIRITS
+    kind: DEMONIC_SPIRIT_CLASS
+    sources: ["1 Enoch / Book of the Watchers"]
+    identity_claim: "destructive spirits etiologically connected to dead giants; not identical to Watchers"
+
+  - id: HP-JUB-BELIAL
+    kind: JUBILEES_HOSTILE_BELIAL_TRADITION
+    sources: ["Jubilees 1:20", "Jubilees 15:33"]
+    identity_claim: "Belial language inside Jubilees remains distinct from named Mastema unless separately argued"
+
+  - id: HP-JUB-MASTEMA
+    kind: NAMED_HOSTILE_LEADER
+    source_inventory: research/packets/jubilees-mastema-passage-witness-inventory-v1.yaml
+    inventory_ids:
+      - JUB-MASTEMA-10-8
+      - JUB-MASTEMA-11-5
+      - JUB-MASTEMA-11-11
+      - JUB-MASTEMA-17-16
+      - JUB-MASTEMA-18-9
+      - JUB-MASTEMA-18-12
+      - JUB-MASTEMA-19-28
+      - JUB-MASTEMA-48-2
+      - JUB-MASTEMA-48-9
+      - JUB-MASTEMA-48-12
+      - JUB-MASTEMA-48-15
+      - JUB-MASTEMA-49-2
+
+  - id: HP-JUB-SATAN-10-11
+    kind: CONTEXTUAL_SATAN_LEXEME
+    source_inventory: research/packets/jubilees-mastema-passage-witness-inventory-v1.yaml
+    inventory_ids: [JUB-SATAN-10-11]
+
+  - id: HP-4Q225-MASTEMA
+    kind: RELATED_HEBREW_MASTEMA_RETELLING
+    source_inventory: research/packets/jubilees-mastema-passage-witness-inventory-v1.yaml
+    witness_id: WIT-4Q225-PSEUDOJUBILEES
+
+  - id: HP-QUMRAN-BELIAL
+    kind: PERSONIFIED_BELIAL_FIELD
+    source_inventory: research/packets/qumran-belial-passage-witness-inventory-v1.yaml
+    inventory_scope: ALL_PERSONIFIED_LOCI
+
+  - id: HP-QUMRAN-MSTM-BRIDGE
+    kind: LEXICAL_FEATURE_NOT_SEPARATE_ENTITY
+    source_inventory: research/packets/qumran-belial-passage-witness-inventory-v1.yaml
+    bridge_id: BRIDGE-BELIAL-MSTM-1QM13
+
+edges:
+  - id: EDGE-WATCHERS-GIANT-SPIRITS
+    from: HP-ENOCH-WATCHERS
+    to: HP-ENOCH-GIANT-SPIRITS
+    relation: INTERNAL_ETIOLOGICAL_RELATION
+    strength: HIGH
+    direction_status: ESTABLISHED_WITHIN_TRADITION
+    scope_limit: "Book-of-Watchers demon-etiology tradition; does not merge entity classes."
+    direct_identity: false
+
+  - id: EDGE-ENOCH-JUB-DEMON-COMPLEX
+    from: HP-ENOCH-GIANT-SPIRITS
+    to: HP-JUB-MASTEMA
+    relation: LITERARY_REWRITING_STRONGLY_SUPPORTED
+    strength: HIGH_AT_TRADITION_LEVEL
+    direction_status: ENOCHIC_TRADITION_TO_JUBILEES_REWRITING
+    scope_limit: "Jubilees reshapes Watcher/giant-spirit demon tradition; does not establish that Mastema himself is copied from an Enoch character."
+    direct_identity: false
+
+  - id: EDGE-HA-SATAN-JUB-MASTEMA
+    from: HP-JOB-ZECH-HA-SATAN
+    to: HP-JUB-MASTEMA
+    relation: FUNCTIONAL_PARALLEL_DIRECT_DEPENDENCE_UNRESOLVED
+    strength: MODERATE_FUNCTIONAL
+    direction_status: DIRECT_DEPENDENCE_UNRESOLVED
+    shared_functions: [ACCUSATION, TESTING_BEFORE_GOD, BOUNDED_HOSTILE_ACTION]
+    scope_limit: "Akedah/tester parallel is real; literary copying or direct character identity is not established."
+    direct_identity: false
+
+  - id: EDGE-JUB-MASTEMA-SATAN-10-11
+    from: HP-JUB-MASTEMA
+    to: HP-JUB-SATAN-10-11
+    relation: CONTEXTUAL_COREFERENCE_STRONG
+    strength: HIGH_LOCAL_CONTEXT
+    direction_status: SAME_NARRATIVE_SEQUENCE
+    evidence_refs:
+      mastema_inventory: [JUB-MASTEMA-10-8, JUB-SATAN-10-11]
+    scope_limit: "Jubilees 10:8-11 only; no global Mastema=Satan rule."
+    direct_identity: false
+
+  - id: EDGE-JUB-BELIAL-MASTEMA
+    from: HP-JUB-BELIAL
+    to: HP-JUB-MASTEMA
+    relation: IDENTITY_CONTESTED
+    strength: CONTESTED
+    direction_status: NOT_APPLICABLE_IDENTITY_QUESTION
+    evidence_refs:
+      local_sources: ["Jubilees 1:20", "Jubilees 15:33"]
+      scholarship: ["Devorah Dimant 2011, Belial and Mastema"]
+    scope_limit: "Same work contains both traditions; scholarly identification is disputed and is not assumed."
+    direct_identity: false
+
+  - id: EDGE-JUB-AKEDAH-4Q225
+    from: HP-JUB-MASTEMA
+    to: HP-4Q225-MASTEMA
+    relation: RELATED_TEXTUAL_DEPENDENCE_STRONGLY_SUPPORTED
+    strength: HIGH_FOR_AKEDAH_RELATION
+    direction_status: JUBILEES_AKEDAH_TO_4Q225_RETELLING_WORKING_DIRECTION
+    evidence_refs:
+      mastema_inventory: [JUB-MASTEMA-17-16, JUB-MASTEMA-18-9, JUB-MASTEMA-18-12]
+      related_witness: WIT-4Q225-PSEUDOJUBILEES
+    scope_limit: "Akedah relationship only; 4Q225 also abbreviates and innovates and is not a Jubilees manuscript."
+    direct_identity: false
+
+  - id: EDGE-JUB-BELIAL-QUMRAN-BELIAL
+    from: HP-JUB-BELIAL
+    to: HP-QUMRAN-BELIAL
+    relation: SHARED_TRADITION_FIELD_DIRECTION_UNRESOLVED
+    strength: HIGH_LEXICAL_OVERLAP_LOW_DIRECTIONALITY
+    direction_status: DIRECT_DEPENDENCE_UNRESOLVED
+    evidence_refs:
+      local_sources: ["Jubilees 1:20", "Jubilees 15:33"]
+      belial_inventory_scope: ALL_PERSONIFIED_LOCI
+    scope_limit: "Shared Belial personification field; no direct Jubilees-to-sectarian or reverse borrowing established."
+    direct_identity: false
+
+  - id: EDGE-JUB-MASTEMA-QUMRAN-BELIAL
+    from: HP-JUB-MASTEMA
+    to: HP-QUMRAN-BELIAL
+    relation: LEXICAL_FUNCTIONAL_BRIDGE
+    strength: HIGH_FOR_LEXICAL_BRIDGE_CONTESTED_FOR_IDENTITY
+    direction_status: DIRECT_DEPENDENCE_UNRESOLVED
+    evidence_refs:
+      belial_locus: BEL-1QM-13-10-11
+      belial_bridge: BRIDGE-BELIAL-MSTM-1QM13
+      parallel_witness: "4Q495 frg. 2,3"
+      scholarship: ["Devorah Dimant 2011, Belial and Mastema"]
+    scope_limit: "מלאך משטמה and functional overlap connect the semantic field; Belial=Mastema is not established."
+    direct_identity: false
+
+  - id: EDGE-ENOCH-QUMRAN-BELIAL
+    from: HP-ENOCH-WATCHERS
+    to: HP-QUMRAN-BELIAL
+    relation: SHARED_TRADITION_FIELD_DIRECTION_UNRESOLVED
+    strength: MODERATE_BROAD_DEMONOLOGICAL
+    direction_status: DIRECT_DEPENDENCE_UNRESOLVED
+    scope_limit: "Organized hostile supernatural traditions overlap in problem-space; no direct Watcher-to-Belial genealogy established."
+    direct_identity: false
+
+  - id: EDGE-HA-SATAN-QUMRAN-BELIAL
+    from: HP-JOB-ZECH-HA-SATAN
+    to: HP-QUMRAN-BELIAL
+    relation: FUNCTIONAL_PARALLEL_DIRECT_DEPENDENCE_UNRESOLVED
+    strength: MODERATE_FUNCTIONAL
+    direction_status: DIRECT_DEPENDENCE_UNRESOLVED
+    shared_functions: [ADVERSARIAL_ACTION, ACCUSATION_OR_OPPOSITION]
+    scope_limit: "Qumran Belial develops army/lot/es­chatological-opponent functions beyond the early court-accuser profile."
+    direct_identity: false
+
+  - id: EDGE-QUMRAN-MSTM-BRIDGE-BELIAL
+    from: HP-QUMRAN-MSTM-BRIDGE
+    to: HP-QUMRAN-BELIAL
+    relation: LEXICAL_FUNCTIONAL_BRIDGE
+    strength: HIGH_TEXTUAL
+    direction_status: SAME_TEXT_DESCRIPTION
+    evidence_refs:
+      belial_locus: BEL-1QM-13-10-11
+      parallel_witness: "4Q495 frg. 2,3"
+    scope_limit: "The mśṭmh word-family describes Belial; the lexical feature is not a separate entity and does not prove identity with Prince Mastema."
+    direct_identity: false
+
+negative_paths:
+  - path: [HP-JOB-ZECH-HA-SATAN, HP-ENOCH-WATCHERS, HP-JUB-MASTEMA, HP-QUMRAN-BELIAL]
+    prohibited_claim: "one clean direct genealogy"
+    status: NOT_ESTABLISHED
+  - path: [HP-ENOCH-WATCHERS, HP-JUB-MASTEMA]
+    prohibited_claim: "Mastema is one of the Watchers"
+    status: NOT_ESTABLISHED
+  - path: [HP-JUB-MASTEMA, HP-QUMRAN-BELIAL]
+    prohibited_claim: "Belial and Mastema are necessarily the same named individual"
+    status: NOT_ESTABLISHED
+  - path: [HP-JOB-ZECH-HA-SATAN, HP-QUMRAN-BELIAL]
+    prohibited_claim: "Qumran Belial is directly identical with Job's ha-satan"
+    status: NOT_ESTABLISHED
+
+distribution_control:
+  proposition: "Belial is dominant in much sectarian Qumran terminology, while Mastema/Angel-of-mśṭmh terminology is more characteristic of non-sectarian/reworked-scripture traditions."
+  evidence: "Devorah Dimant, Between Qumran Sectarian and Non-Sectarian Texts: The Case of Belial and Mastema"
+  inference_ceiling: "Distribution difference supports caution about identity; it does not prove total independence of traditions."
+
+bounded_conclusions:
+  - "There is a continuous Jewish problem-space of accusation, hostile spirits, heavenly rebellion, temptation, hostile rule, and final judgment."
+  - "Jubilees strongly reworks Enochic Watcher/demon tradition."
+  - "4Q225 strongly reflects/rewrites the Jubilees Mastema Akedah tradition."
+  - "Jubilees 10:11 is a strong local Mastema/satan bridge."
+  - "1QM 13:10-11 plus 4Q495 frg. 2,3 is a strong Belial/mśṭmh lexical bridge."
+  - "Functional and lexical overlap do not establish one entity or one direct genealogy."
+  - "The best current model is a network of related and partially convergent hostile-power traditions, not a single linear family tree."
+
+effect_boundary:
+  canonical_promotion: false
+  merge_authority: false
+  one_continuous_satan_biography: false
+  mastema_equals_belial: false
+  watchers_equal_mastema: false
+  watchers_equal_giant_spirits: false
+  job_satan_equals_qumran_belial: false
+  direct_enoch_mastema_belial_chain_established: false
