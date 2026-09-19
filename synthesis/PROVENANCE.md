@@ -1,5 +1,9 @@
 # Synthesis provenance map
 
+Exact-head lock: `synthesis/input-lock-v1.yaml`.
+
+Branch names below are human-readable lane identifiers. They are not sufficient currentness evidence by themselves; use the exact heads in the input lock for any claim that depends on a particular source-lane state.
+
 The synthesis branch is derived from independent research lanes. It does not merge them.
 
 ## Judaism source lane
