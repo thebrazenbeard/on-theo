@@ -53,7 +53,7 @@ The source-access and review registries are copied into the rehearsal cut but ar
 
 ## Current exact rehearsal result
 
-The current V1 rehearsal applies all 20 manifest extensions.
+The current rehearsal applies all 50 manifest extensions.
 
 Base counts:
 
@@ -65,20 +65,20 @@ Base counts:
 
 Additions:
 
-- direct source additions: 39
-- scholarly-context additions materialized as source records: 86
-- claims: 121
+- direct source additions: 70
+- scholarly-context additions materialized as source records: 140
+- claims: 317
 - concepts: 26
-- transmission edges: 20
-- witnesses: 4
+- transmission edges: 22
+- witnesses: 10
 
 Rehearsal output counts:
 
-- sources: 131
-- claims: 129
+- sources: 216
+- claims: 325
 - concepts: 26
-- transmission edges: 23
-- witnesses: 4
+- transmission edges: 25
+- witnesses: 10
 
 Collision count: `0`.
 
@@ -97,7 +97,9 @@ The rehearsal engine:
 7. hashes every source registry file before and after rehearsal;
 8. aborts if any source-registry byte changes;
 9. records `source_tree_readback_unchanged: true` only after exact before/after digest equality;
-10. marks the generated manifest and witness registry as rehearsal-only, never canonical.
+10. audits divergent extension bases for exact referenced-record precondition equivalence against full Git history;
+11. marks the generated manifest and witness registry as rehearsal-only, never canonical;
+12. preserves an already-materialized manifest's applied-extension provenance on repeated rehearsal.
 
 Tests additionally prove every extension record appears exactly once and unchanged in its intended materialized target.
 

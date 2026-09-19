@@ -7,11 +7,13 @@ on:
       - 'tools/on_theo_registry/**'
       - 'scripts/validate_registry.py'
       - 'scripts/rehearse_materialization.py'
+      - 'scripts/audit_rebase_preconditions.py'
       - 'tests/test_registry_*.py'
       - 'tests/test_materialization_rehearsal.py'
       - 'docs/REGISTRY_MATERIALIZATION_REHEARSAL_V1.md'
       - 'requirements-dev.txt'
       - 'pytest.ini'
+      - 'receipts/ON_THEO_REBASE_PRECONDITION_AUDIT_V2.yaml'
       - '.github/workflows/validate-registries.yml'
   push:
     paths:
@@ -19,11 +21,13 @@ on:
       - 'tools/on_theo_registry/**'
       - 'scripts/validate_registry.py'
       - 'scripts/rehearse_materialization.py'
+      - 'scripts/audit_rebase_preconditions.py'
       - 'tests/test_registry_*.py'
       - 'tests/test_materialization_rehearsal.py'
       - 'docs/REGISTRY_MATERIALIZATION_REHEARSAL_V1.md'
       - 'requirements-dev.txt'
       - 'pytest.ini'
+      - 'receipts/ON_THEO_REBASE_PRECONDITION_AUDIT_V2.yaml'
       - '.github/workflows/validate-registries.yml'
 
 permissions:
@@ -34,6 +38,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
@@ -43,5 +49,7 @@ jobs:
         run: pytest -q
       - name: Validate repository registries
         run: python scripts/validate_registry.py --root . --json
+      - name: Audit extension rebase preconditions
+        run: python scripts/audit_rebase_preconditions.py --root . --subject HEAD
       - name: Rehearse registry materialization
         run: python scripts/rehearse_materialization.py --root .

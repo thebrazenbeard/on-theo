@@ -206,21 +206,29 @@ def _materialize_documents(root: Path) -> tuple[dict[str, dict[str, Any]], dict[
             }
         )
 
-    witness_document = documents["registry/witnesses.yaml"]
-    witness_document["materialization_state"] = "REHEARSAL_MATERIALIZED_NOT_CANONICAL"
-    witness_document["pending_extension_records"] = []
+    source_materialization_state = source_manifest.get("materialization_state", {}) or {}
+    already_materialized = (
+        not manifest_entries
+        and isinstance(source_materialization_state, dict)
+        and source_materialization_state.get("rehearsal_materialized") is True
+    )
 
-    output_manifest = deepcopy(source_manifest)
-    output_manifest["status"] = "REHEARSAL_MATERIALIZED_NOT_CANONICAL"
-    output_manifest["extensions"] = []
-    output_manifest["materialization_state"] = {
-        "canonical_materialized": False,
-        "rehearsal_materialized": True,
-        "source_base_registry_head": source_manifest.get("base_registry_head"),
-        "applied_extension_ids": [item["extension_id"] for item in applied_extensions],
-        "guard": "This output is a rehearsal artifact and does not authorize or represent canonical promotion.",
-    }
-    documents["registry/extension-manifest.yaml"] = output_manifest
+    if not already_materialized:
+        witness_document = documents["registry/witnesses.yaml"]
+        witness_document["materialization_state"] = "REHEARSAL_MATERIALIZED_NOT_CANONICAL"
+        witness_document["pending_extension_records"] = []
+
+        output_manifest = deepcopy(source_manifest)
+        output_manifest["status"] = "REHEARSAL_MATERIALIZED_NOT_CANONICAL"
+        output_manifest["extensions"] = []
+        output_manifest["materialization_state"] = {
+            "canonical_materialized": False,
+            "rehearsal_materialized": True,
+            "source_base_registry_head": source_manifest.get("base_registry_head"),
+            "applied_extension_ids": [item["extension_id"] for item in applied_extensions],
+            "guard": "This output is a rehearsal artifact and does not authorize or represent canonical promotion.",
+        }
+        documents["registry/extension-manifest.yaml"] = output_manifest
 
     after_counts: dict[str, int] = {}
     for target_path, target_key in sorted(set(TARGETS.values())):
@@ -238,6 +246,7 @@ def _materialize_documents(root: Path) -> tuple[dict[str, dict[str, Any]], dict[
         "source_manifest_sha256": source_manifest_digest,
         "source_registry_sha256_before": source_registry_digests,
         "source_base_registry_head": source_manifest.get("base_registry_head"),
+        "already_materialized_input": already_materialized,
         "applied_extension_count": len(applied_extensions),
         "applied_extensions": applied_extensions,
         "addition_counts": addition_counts,
