@@ -1,0 +1,220 @@
+schema_version: on-theo.jewish-hostile-powers-control.v1
+status: PROPOSED_RESEARCH_PACKET_REVIEW_REQUIRED
+recorded_at: "2026-09-19"
+
+base_subject:
+  branch: research/jewish-death-afterlife-control-v1-20260919
+  head: 3acfe117989a78eac7ca17e8e70228d4d8a42deb
+  inherited_exact_anchors:
+    enoch_daniel_philo_corpus: f4c4b4e940a8e6c76e9603d298bab819fbcc448d
+
+rules:
+  job_ha_satan_is_not_automatically_later_devil: true
+  watchers_demons_mastema_belial_are_not_auto_identical: true
+  related_development_is_not_one_continuous_character_identity: true
+  hostile_agent_is_not_coequal_anti_god: true
+  genesis_serpent_is_not_auto_identified_as_satan: true
+  translated_demon_terms_require_textual_control: true
+
+sources:
+  - id: SRC-JOB-1-2
+    evidence_class: [PRIMARY_TEXT]
+    work: Job
+    locator: "Job 1-2"
+    proposition_scope: divine-court-ha-satan-accuser-testing-function
+    access:
+      url: "https://www.sefaria.org/Job.1"
+    limitations:
+      - "The text's ha-satan figure should not be silently identified with later Devil/Satan systems."
+
+  - id: SRC-ZECHARIAH-3
+    evidence_class: [PRIMARY_TEXT]
+    work: Zechariah
+    locator: "Zechariah 3:1-2"
+    proposition_scope: divine-court-accuser-rebuked-by-YHWH
+    access:
+      url: "https://www.sefaria.org/Zechariah.3.1"
+    limitations:
+      - "Court accusation scene; no primordial rebellion narrative is supplied by the passage."
+
+  - id: SRC-1ENOCH-WATCHERS
+    evidence_class: [PRIMARY_TEXT, LATER_TRADITION]
+    work: 1 Enoch 1-36 / Book of the Watchers
+    proposition_scope: rebellious-watchers-forbidden-knowledge-giant-spirit-demon-etiology
+    inherited_from: f4c4b4e940a8e6c76e9603d298bab819fbcc448d
+    composition_date: {start: null, end: null, precision: layered-second-temple-composition}
+    physical_witness_date: {start: null, end: null, precision: multiple-Aramaic-Greek-Ethiopic-witness-traditions}
+    limitations:
+      - "Composite/layered tradition."
+      - "Watchers and post-giant destructive spirits remain distinct categories unless a source explicitly merges them."
+
+  - id: SRC-JUBILEES-MASTEMA
+    evidence_class: [PRIMARY_TEXT, LATER_TRADITION]
+    work: Jubilees
+    locator: "selected Mastema/demon passages including Jubilees 10 and related hostile-agent traditions"
+    proposition_scope: Mastema-leading-hostile-spirits-within-divine-governance
+    composition_date: {start: null, end: null, precision: second-temple-composition-unresolved-in-v1}
+    physical_witness_date: {start: null, end: null, precision: Hebrew-Qumran-plus-versional-witness-history-not-modeled-in-v1}
+    access:
+      via_scholarship: SCH-REED-2020-JUBILEES-DEMONS
+    limitations:
+      - "Passage-level witness binding remains a next-step task."
+      - "Translation terminology can obscure reconstructed Hebrew demon/spirit vocabulary."
+
+  - id: SRC-QUMRAN-BELIAL-COMPLEX
+    evidence_class: [PRIMARY_TEXT, LATER_TRADITION]
+    work: Dead Sea Scrolls Belial traditions
+    locator: "Damascus Document and other Qumran Belial passages"
+    proposition_scope: Belial-as-leading-hostile-power-in-selected-Qumran-texts
+    composition_date: {start: null, end: null, precision: source-specific-second-temple}
+    physical_witness_date: {start: null, end: null, precision: manuscript-specific-not-modeled-in-v1}
+    access:
+      via_scholarship: SCH-STOKES-2019-SATANOLOGY
+    limitations:
+      - "Belial is not a proper name in every occurrence across Hebrew/Jewish literature."
+      - "Individual Qumran texts vary in dualistic intensity and terminology."
+
+scholarly_context:
+  - id: SCH-OXFORD-JOB-2021
+    evidence_class: [SCHOLARLY_INTERPRETATION]
+    title: "Book of Job"
+    publication_context: Oxford Research Encyclopedia of Religion
+    publication_date: "2021"
+    url: "https://academic.oup.com/edited-volume/62249/chapter-abstract/551448716"
+    bounded_use: "Identifies Job's figure as 'the accuser' / literally 'the satan' in the heavenly scene."
+
+  - id: SCH-STOKES-2025-SATAN-DEVELOPMENT
+    evidence_class: [SCHOLARLY_INTERPRETATION]
+    author: Ryan E. Stokes
+    title: "Satan, from Divine Court to Monster"
+    publication_context: The Oxford Handbook of Biblical Monsters
+    publication_date: "2025"
+    url: "https://academic.oup.com/edited-volume/60552/chapter-abstract/523948270"
+    bounded_use: "Traces early Satan as divine functionary and later development toward enemy-of-God traditions."
+
+  - id: SCH-STOKES-2019-SATANOLOGY
+    evidence_class: [SCHOLARLY_INTERPRETATION]
+    author: Ryan E. Stokes
+    title: "New Testament Satanology and Leading Suprahuman Opponents in Second Temple Jewish Literature"
+    publication_context: Journal of Theological Studies 70.1
+    publication_date: "2019"
+    url: "https://academic.oup.com/jts/article/70/1/21/5404472"
+    bounded_use: "Controls development and differentiation of Watchers traditions, Mastema/Belial material, and Qumran hostile powers."
+
+  - id: SCH-REED-2020-JUBILEES-DEMONS
+    evidence_class: [SCHOLARLY_INTERPRETATION]
+    author: Annette Yoshiko Reed
+    title: "Rewriting Angels, Demons, and the Ancestral Archive of Jewish Knowledge"
+    publication_context: Demons, Angels, and Writing in Ancient Judaism
+    publication_date: "2020"
+    url: "https://www.cambridge.org/core/books/abs/demons-angels-and-writing-in-ancient-judaism/rewriting-angels-demons-and-the-ancestral-archive-of-jewish-knowledge/3EBE69B01FE2690126C07E4EAC1B5B3B"
+    bounded_use: "Jubilees rewrites earlier Jewish angel/demon traditions and contributes to their wider diffusion."
+
+  - id: SCH-PATMORE-2023-JUBILEES-DEMONOLOGY
+    evidence_class: [SCHOLARLY_INTERPRETATION]
+    author: Hector M. Patmore
+    title: "Demonology and Terminology in Jubilees: Spirits or Demons?"
+    publication_context: Journal for the Study of Judaism 54.2
+    publication_date: "2023"
+    url: "https://brill.com/view/journals/jsj/54/2/article-p173_2.xml"
+    bounded_use: "Shows that reconstructed Hebrew terminology behind Jubilees' demon language requires versional/text-critical care."
+
+  - id: SCH-VANDERKAM-MASTEMA-QUMRAN
+    evidence_class: [SCHOLARLY_INTERPRETATION]
+    author: James C. VanderKam
+    title: "Mastema in the Qumran Literature and the Book of Jubilees"
+    publication_context: collected scholarly volume
+    publication_date: null
+    url: "https://brill.com/previewpdf/book/edcoll/9789004324749/B9789004324749_071.xml"
+    bounded_use: "Contrasts Jubilees' Mastema naming with Qumran preference for Belial and notes overlap without automatic identity."
+
+claims:
+  - id: CLM-JOB-HA-SATAN-DIVINE-COURT
+    proposition: "Job 1-2 presents ha-satan as a heavenly/divine-court accuser or adversarial functionary who acts only within limits granted by YHWH."
+    claim_type: TEXTUAL_OCCURRENCE_AND_SEMANTIC_CONTROL
+    evidence_class: [PRIMARY_TEXT, SCHOLARLY_INTERPRETATION]
+    supporting_sources: [SRC-JOB-1-2, SCH-OXFORD-JOB-2021, SCH-STOKES-2025-SATAN-DEVELOPMENT]
+    confidence: high
+    contested: false
+    ceiling: "This does not identify Job's figure with the fully developed later Devil."
+
+  - id: CLM-ZECHARIAH-SATAN-ACCUSER
+    proposition: "Zechariah 3 depicts the satan as an accuser in a heavenly/juridical scene and YHWH rebukes him."
+    claim_type: TEXTUAL_OCCURRENCE
+    evidence_class: [PRIMARY_TEXT]
+    supporting_sources: [SRC-ZECHARIAH-3]
+    confidence: high
+    contested: false
+
+  - id: CLM-ENOCH-WATCHERS-DEMON-ETIOLOGY
+    proposition: "The Book of the Watchers develops rebellious-heavenly-being traditions and an etiology in which destructive spirits associated with the dead giants continue to afflict humanity."
+    claim_type: TEXTUAL_AND_LITERARY_DEVELOPMENT
+    evidence_class: [PRIMARY_TEXT, SCHOLARLY_INTERPRETATION]
+    supporting_sources: [SRC-1ENOCH-WATCHERS, SCH-STOKES-2019-SATANOLOGY]
+    confidence: high-for-developed-tradition
+    contested: true
+    ceiling: "Watchers and giant spirits are not collapsed into one entity class."
+
+  - id: CLM-JUBILEES-MASTEMA-LEADING-HOSTILE-POWER
+    proposition: "Jubilees presents Mastema as a leading hostile/testing figure associated with harmful spirits while remaining within a world governed by God."
+    claim_type: TEXTUAL_LITERARY_SYNTHESIS
+    evidence_class: [PRIMARY_TEXT, SCHOLARLY_INTERPRETATION]
+    supporting_sources: [SRC-JUBILEES-MASTEMA, SCH-REED-2020-JUBILEES-DEMONS, SCH-STOKES-2019-SATANOLOGY]
+    confidence: high-for-role-family
+    contested: false
+    ceiling: "Mastema is not promoted to a coequal anti-God."
+
+  - id: CLM-JUBILEES-DEMON-TERMINOLOGY-SIMPLE
+    proposition: "Jubilees' surviving versional terminology can be translated into one stable English demon vocabulary without textual-critical qualification."
+    claim_type: TEXTUAL_SEMANTIC_OVERGENERALIZATION
+    evidence_class: [UNKNOWN]
+    supporting_sources: []
+    opposing_sources: [SCH-PATMORE-2023-JUBILEES-DEMONOLOGY]
+    confidence: unresolved
+    contested: true
+
+  - id: CLM-QUMRAN-BELIAL-LEADING-HOSTILE-POWER
+    proposition: "Selected Qumran texts use Belial as the proper name/designation of a leading hostile power associated with deception, hostile spirits, the present wicked age, or eschatological opposition."
+    claim_type: TEXTUAL_LITERARY_SYNTHESIS
+    evidence_class: [PRIMARY_TEXT, SCHOLARLY_INTERPRETATION]
+    supporting_sources: [SRC-QUMRAN-BELIAL-COMPLEX, SCH-STOKES-2019-SATANOLOGY, SCH-VANDERKAM-MASTEMA-QUMRAN]
+    confidence: high
+    contested: false
+    ceiling: "Not every occurrence of belial across Hebrew/Jewish literature is a proper name."
+
+  - id: CLM-MASTEMA-BELIAL-SATAN-ONE-IDENTICAL-FIGURE
+    proposition: "Mastema, Belial, Satan, the Watchers, and all demonic spirits are one identical supernatural character with one continuous biography across Second Temple Jewish texts."
+    claim_type: IDENTITY_AND_TRANSMISSION_OVERGENERALIZATION
+    evidence_class: [UNKNOWN]
+    supporting_sources: []
+    opposing_sources: [SCH-STOKES-2019-SATANOLOGY, SCH-REED-2020-JUBILEES-DEMONS, SCH-VANDERKAM-MASTEMA-QUMRAN]
+    confidence: unresolved
+    contested: false
+
+  - id: CLM-QUMRAN-DUALISM-TWO-COEQUAL-GODS
+    proposition: "Qumran hostile-power dualism requires belief in two coequal gods, one good and one evil."
+    claim_type: THEOLOGICAL_OVERGENERALIZATION
+    evidence_class: [UNKNOWN]
+    supporting_sources: []
+    opposing_sources: [SCH-STOKES-2019-SATANOLOGY]
+    confidence: unresolved
+    contested: false
+
+  - id: CLM-GENESIS-SERPENT-IS-SATAN-SOURCE-TEXT
+    proposition: "Genesis 3 itself identifies the serpent as Satan, Belial, Mastema, or a Watcher."
+    claim_type: TEXTUAL_IDENTITY
+    evidence_class: [UNKNOWN]
+    supporting_sources: []
+    opposing_sources: []
+    confidence: unresolved
+    contested: false
+    ceiling: "This packet records no source-level support for the identification; later reception requires a separate packet."
+
+effect_boundary:
+  changes_parent_afterlife_packet: false
+  changes_existing_judaism_claims: false
+  canonical_promotion: false
+  merge_authority: false
+  establishes_one_continuous_satan_biography: false
+  establishes_coequal_dualism: false
+  establishes_genesis_serpent_as_satan: false
