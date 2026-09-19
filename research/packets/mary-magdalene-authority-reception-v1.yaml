@@ -1,0 +1,242 @@
+schema_version: on-theo.mary-magdalene-authority-reception.v1
+status: PROPOSED_RESEARCH_PACKET_REVIEW_REQUIRED
+recorded_at: "2026-09-19"
+
+base_subject:
+  branch: audit/christianity-provenance-control-v1-20260919
+  head: 04bf5c56927417567b23732b5e5d5e1fbc02cb24
+  role: CHRISTIANITY_PROVENANCE_CONTROL_PARENT
+
+works:
+  - id: SRC-GOSPEL-LUKE
+    evidence_class: [PRIMARY_TEXT]
+    work: Gospel according to Luke
+    composition_date: {start: null, end: null, precision: unresolved-in-this-packet}
+    physical_witness_date: {start: null, end: null, precision: witness-specific-not-modeled-here}
+    locators: ["Luke 7:36-50", "Luke 8:1-3", "Luke 24:1-12"]
+    limitations:
+      - "Luke 7's sinful woman is unnamed in the narrative."
+      - "Luke 8 names Mary Magdalene separately and associates her with seven demons having gone out from her."
+
+  - id: SRC-GOSPEL-MARK
+    evidence_class: [PRIMARY_TEXT]
+    work: Gospel according to Mark
+    composition_date: {start: null, end: null, precision: unresolved-in-this-packet}
+    physical_witness_date: {start: null, end: null, precision: witness-specific-not-modeled-here}
+    locators: ["Mark 15:40-41", "Mark 15:47", "Mark 16:1-8"]
+    limitations:
+      - "This packet does not use the later Markan ending to establish an independent resurrection appearance."
+
+  - id: SRC-GOSPEL-MATTHEW
+    evidence_class: [PRIMARY_TEXT]
+    work: Gospel according to Matthew
+    composition_date: {start: null, end: null, precision: unresolved-in-this-packet}
+    physical_witness_date: {start: null, end: null, precision: witness-specific-not-modeled-here}
+    locators: ["Matthew 27:55-61", "Matthew 28:1-10"]
+
+  - id: SRC-GOSPEL-JOHN
+    evidence_class: [PRIMARY_TEXT]
+    work: Gospel according to John
+    composition_date: {start: null, end: null, precision: unresolved-in-this-packet}
+    physical_witness_date: {start: null, end: null, precision: witness-specific-not-modeled-here}
+    locators: ["John 20:1-18"]
+
+  - id: SRC-GOSPEL-MARY
+    evidence_class: [PRIMARY_TEXT, LATER_TRADITION]
+    work: Gospel of Mary
+    composition_date: {start: null, end: null, precision: unresolved-in-v1}
+    physical_witness_date: {start: null, end: null, precision: see-witness-records}
+    extant_status: fragmentary-multiple-witnesses
+    limitations:
+      - "The surviving witnesses are not the autograph and do not date original composition by themselves."
+      - "Mary's identification as Mary Magdalene is common but contested."
+
+  - id: SRC-GREGORY-HOMILY-33
+    evidence_class: [LATER_TRADITION]
+    work: Gregory the Great, Homiliae in Evangelia, Homily 33
+    composition_date: {start: "0591", end: "0591", precision: year-of-major-reception-event-in-scholarship}
+    physical_witness_date: {start: null, end: null, precision: edition-and-manuscript-history-not-resolved-here}
+    locators: ["Homily 33 on Luke 7:36-50"]
+    limitations:
+      - "Used as late-sixth-century reception evidence, not as evidence for the first-century historical Mary."
+
+witnesses:
+  - id: WIT-GOSPEL-MARY-POXY-3525
+    witness_of: SRC-GOSPEL-MARY
+    witness_kind: papyrus
+    language: Greek
+    common_name: P.Oxy. L 3525
+    witness_date: {start: "0200", end: "0299", precision: third-century}
+    provenance: Oxyrhynchus
+    access:
+      institution: Oxford Papyrology
+      url: "https://portal.sds.ox.ac.uk/articles/online_resource/P_Oxy_L_3525_Gospel_of_Mary/21173962"
+    limitations:
+      - "Physical-witness date does not establish original composition date."
+
+  - id: WIT-GOSPEL-MARY-PRYL-463
+    witness_of: SRC-GOSPEL-MARY
+    witness_kind: papyrus
+    language: Greek
+    common_name: P.Ryl. III 463
+    witness_date: {start: "0200", end: "0299", precision: third-century-in-recent-scholarship}
+    provenance: Oxyrhynchus
+    access:
+      institution: University of Manchester Library
+      url: "https://lunatest.manchester.ac.uk/luna/servlet/detail/ManchesterDev~93~3~55542~223276"
+    limitations:
+      - "Manchester catalog identifies the female disciple as Mary Magdalene only tentatively."
+      - "Third-century dating is recorded from recent scholarly synthesis; Manchester's surfaced catalog record did not expose a narrow object date."
+
+  - id: WIT-GOSPEL-MARY-BG-8502
+    witness_of: SRC-GOSPEL-MARY
+    witness_kind: papyrus_codex
+    language: Coptic
+    common_name: Berlin Codex 8502 / Papyrus Berolinensis 8502
+    witness_date: {start: "0300", end: "0499", precision: institutional-catalog-disagreement-fourth-versus-fifth-century}
+    provenance: Egypt-probably-Akhmim-acquisition-provenance
+    access:
+      berlin_papyrus_database: "https://berlpap.smb.museum/17878/"
+      staatliche_museen_collection: "https://search.smb.museum/en/object/obj-1388769"
+    limitations:
+      - "Berlin Papyrus Database labels the codex fifth century; museum collection metadata labels associated codex material fourth century/late fourth century."
+      - "V1 preserves the catalog discrepancy rather than collapsing it."
+
+scholarly_context:
+  - id: SCH-BROCK-2000-2002-MARY-PETER-AUTHORITY
+    evidence_class: [SCHOLARLY_INTERPRETATION]
+    author: Elizabeth Ann Graham Brock
+    title: "Authority, Politics, and Gender in Early Christianity: Mary, Peter, and the Portrayal of Leadership"
+    publication_context: Harvard Theological Review dissertation summary
+    publication_date: "2002"
+    url: "https://www.cambridge.org/core/journals/harvard-theological-review/article/abs/summaries-of-doctoral-dissertations/86488BCFFD64DF21F5DAA5E1BCA637A3"
+    limitation: "A dissertation summary supports the attributed interpretive thesis, not every detail of the dissertation."
+
+  - id: SCH-BASS-2007-GOSPEL-MARY
+    evidence_class: [SCHOLARLY_INTERPRETATION]
+    author: Ardyth L. Bass
+    title: "Composition and Redaction in the Coptic Gospel of Mary"
+    publication_context: Marquette University dissertation
+    publication_date: "2007"
+    url: "https://epublications.marquette.edu/dissertations_mu/1323/"
+    limitation: "Bass explicitly challenges automatic Magdalene identification and a Mary-versus-Peter-centered reading."
+
+  - id: SCH-CAMBRIDGE-2017-FEMALE-EXEMPLA
+    evidence_class: [SCHOLARLY_INTERPRETATION]
+    title: "The Fetishization of Female Exempla: Mary, Thecla, Perpetua and Felicitas"
+    publication_context: New Testament Studies 63.4
+    publication_date: "2017"
+    url: "https://www.cambridge.org/core/journals/new-testament-studies/article/fetishization-of-female-exempla-mary-thecla-perpetua-and-felicitas/1A0A701B2140F5AD3B4FA9C1CC9F7E12"
+    limitation: "This article assumes Magdalene identification and explicitly treats that as an assumption."
+
+  - id: SCH-PARKHOUSE-2024-GOSPEL-MARY-FRAGMENTS
+    evidence_class: [SCHOLARLY_INTERPRETATION]
+    title: '"Therefore I Say, Mary"'
+    publication_context: Novum Testamentum 66 (2024)
+    publication_date: "2024"
+    url: "https://brill.com/view/journals/nt/66/3/article-p382_8.pdf"
+    limitation: "Used here for the bounded proposition that P.Oxy. 3525 and P.Ryl. 463 attest third-century circulation at Oxyrhynchus and for the fragmentary state of BG."
+
+  - id: SCH-ALMOND-2022-MARY-MAGDALENE
+    evidence_class: [SCHOLARLY_INTERPRETATION]
+    author: Philip C. Almond
+    title: "Mary Magdalene: A Cultural History"
+    publication_context: Cambridge University Press
+    publication_date: "2022"
+    url: "https://www.cambridge.org/core/books/mary-magdalene/1BF4869021D5733D8005199519F176B9"
+    limitation: "Used for Western reception history, especially Gregory's 591 composite identification."
+
+claims:
+  - id: CLM-MARY-MAGDALENE-CANONICAL-PASSION-TOMB-PROMINENCE
+    proposition: "Across the canonical gospel narratives, Mary Magdalene is repeatedly named at the passion, burial/tomb, or resurrection-proclamation boundary."
+    claim_type: TEXTUAL_COMPARISON
+    evidence_class: [PRIMARY_TEXT]
+    supporting_sources: [SRC-GOSPEL-MARK, SRC-GOSPEL-MATTHEW, SRC-GOSPEL-LUKE, SRC-GOSPEL-JOHN]
+    confidence: high
+    contested: false
+    ceiling: "This is a textual-distribution claim, not a claim that all narrative details are independent historical eyewitness reports."
+
+  - id: CLM-JOHN20-MARY-MESSENGER-TO-DISCIPLES
+    proposition: "John 20 narrates Mary Magdalene encountering the risen Jesus and reporting to the disciples that she has seen the Lord."
+    claim_type: TEXTUAL_OCCURRENCE
+    evidence_class: [PRIMARY_TEXT]
+    supporting_sources: [SRC-GOSPEL-JOHN]
+    confidence: high
+    contested: false
+
+  - id: CLM-CANONICAL-MARY-NOT-NAMED-PROSTITUTE
+    proposition: "No canonical Gospel passage identifies Mary Magdalene as a prostitute."
+    claim_type: CANONICAL_CORPUS_TEXTUAL_NEGATIVE
+    evidence_class: [PRIMARY_TEXT]
+    supporting_sources: [SRC-GOSPEL-MARK, SRC-GOSPEL-MATTHEW, SRC-GOSPEL-LUKE, SRC-GOSPEL-JOHN]
+    confidence: high
+    contested: false
+    ceiling: "The claim concerns canonical wording/identity, not every later interpretation of the gospel women."
+
+  - id: CLM-GOSPEL-MARY-PRIVILEGED-REVELATION
+    proposition: "The surviving Gospel of Mary presents Mary reporting privileged teaching/revelation and contains a dispute over accepting her report."
+    claim_type: TEXTUAL_OCCURRENCE
+    evidence_class: [PRIMARY_TEXT, LATER_TRADITION]
+    supporting_sources: [SRC-GOSPEL-MARY]
+    confidence: high-at-extant-text-level
+    contested: false
+
+  - id: CLM-GOSPEL-MARY-MARY-IS-MAGDALENE
+    proposition: "The Mary who appears in the Gospel of Mary is specifically Mary Magdalene."
+    claim_type: CHARACTER_IDENTIFICATION
+    evidence_class: [SCHOLARLY_INTERPRETATION]
+    supporting_sources: [SCH-CAMBRIDGE-2017-FEMALE-EXEMPLA]
+    opposing_sources: [SCH-BASS-2007-GOSPEL-MARY]
+    confidence: common-identification-but-contested
+    contested: true
+
+  - id: CLM-GOSPEL-MARY-PETER-CONFLICT-IS-HISTORICAL-SUCCESSION
+    proposition: "The Gospel of Mary's literary Mary/Peter dispute directly preserves a historical succession struggle between the actual Mary Magdalene and Peter."
+    claim_type: HISTORICAL_RECONSTRUCTION
+    evidence_class: [SCHOLARLY_INTERPRETATION, UNKNOWN]
+    supporting_sources: [SCH-BROCK-2000-2002-MARY-PETER-AUTHORITY]
+    opposing_sources: [SCH-BASS-2007-GOSPEL-MARY]
+    confidence: unresolved
+    contested: true
+    ceiling: "Literary authority conflict is established more strongly than direct historical succession reconstruction."
+
+  - id: CLM-GREGORY-591-COMPOSITE-MARY
+    proposition: "Gregory the Great's 591 Western preaching is a major consolidation point identifying Mary Magdalene with Mary of Bethany and Luke's unnamed sinful woman."
+    claim_type: RECEPTION_HISTORY
+    evidence_class: [LATER_TRADITION, SCHOLARLY_INTERPRETATION]
+    supporting_sources: [SRC-GREGORY-HOMILY-33, SCH-ALMOND-2022-MARY-MAGDALENE]
+    confidence: high
+    contested: false
+    ceiling: "Major consolidation point does not mean Gregory invented every earlier association."
+
+  - id: CLM-COORDINATED-SUPPRESSION-OF-MARY
+    proposition: "The composite sexual-sinner/prostitute reception of Mary Magdalene was deliberately created as one coordinated institutional strategy to suppress her historically documented succession authority."
+    claim_type: MOTIVE_AND_HISTORICAL_CAUSATION
+    evidence_class: [PROJECT_INFERENCE, UNKNOWN]
+    supporting_sources: []
+    opposing_sources: [SCH-BASS-2007-GOSPEL-MARY]
+    confidence: unresolved
+    contested: true
+    ceiling: "Authority-reducing effects can be studied without inferring one coordinated intent."
+
+transmissions:
+  - id: TR-CANONICAL-MARY-TO-GOSPEL-MARY
+    from_sources: [SRC-GOSPEL-MARK, SRC-GOSPEL-MATTHEW, SRC-GOSPEL-LUKE, SRC-GOSPEL-JOHN]
+    to_source: SRC-GOSPEL-MARY
+    relation: SHARED_OR_RECEPTION_TRADITION_POSSIBLE_DIRECTION_NOT_RESOLVED_HERE
+    confidence: unresolved
+    limitation: "Literary parallels and later chronology do not by themselves specify exact textual dependence."
+
+  - id: TR-GREGORY-COMPOSITE-MARY
+    from_sources: [SRC-GOSPEL-LUKE, SRC-GOSPEL-JOHN]
+    to_source: SRC-GREGORY-HOMILY-33
+    relation: RECEPTION_SYNTHESIS
+    confidence: high
+    limitation: "This edge records late reception/conflation, not original gospel character identity."
+
+effect_boundary:
+  changes_christianity_base_claims: false
+  canonical_promotion: false
+  merge_authority: false
+  establishes_historical_mary_peter_succession_conflict: false
+  establishes_coordinated_suppression_motive: false
