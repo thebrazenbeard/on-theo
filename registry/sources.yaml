@@ -1,137 +1,3869 @@
 schema_version: on-theo.source-registry.v1
 notes:
-  - "Source roles describe what a source is evidence for; they do not automatically establish the historical truth of narrated events."
+- Source roles describe what a source is evidence for; they do not automatically establish the historical truth of narrated
+  events.
 sources:
-  - id: SRC-ORIGEN-CONTRA-CELSUM
-    source_roles: [PRIMARY_TEXT]
-    source_kind: ancient_text
-    author_or_tradition: Origen of Alexandria
-    title: Contra Celsum
-    composition_date:
-      start: "0248"
-      end: "0248"
-      precision: approximate-year
-    physical_witness_date:
-      start: null
-      end: null
-      precision: unknown
-    extant_status: extant-through-manuscript-tradition
-    original_language: Greek
-    access_mode: extant-work-modern-translation
-    locators:
-      - passage: "Book I, chapter 28"
-        url: "https://www.newadvent.org/fathers/04161.htm"
-      - passage: "Book I, chapter 32"
-        url: "https://www.newadvent.org/fathers/04161.htm"
-      - passage: "Book I, chapter 69"
-        url: "https://www.newadvent.org/fathers/04161.htm"
-    limitations:
-      - "Origen is a Christian apologist rebutting Celsus; his preservation and framing must be separated from Celsus's lost original."
-
-  - id: SRC-CELSUS-TRUE-DOCTRINE
-    source_roles: [PRIMARY_TEXT]
-    source_kind: lost_ancient_text
-    author_or_tradition: Celsus
-    title: The True Doctrine / True Discourse
-    composition_date:
-      start: "0170"
-      end: "0185"
-      precision: approximate-range
-    physical_witness_date:
-      start: null
-      end: null
-      precision: no-direct-witness-in-current-registry
-    extant_status: lost-indirectly-preserved
-    original_language: Greek
-    access_mode: indirect-through-origen
-    preserved_by: [SRC-ORIGEN-CONTRA-CELSUM]
-    limitations:
-      - "No direct manuscript of Celsus's work is registered here; claims about wording are mediated through Origen."
-      - "The exact dating of Celsus remains a scholarly question; this range is provisional and must not be treated as an exact timestamp."
-
-  - id: MAT-ABDES-PANTERA-INSCRIPTION
-    source_roles: [MATERIAL_EVIDENCE]
-    source_kind: funerary_inscription
-    author_or_tradition: Roman military / funerary context
-    title: Funerary inscription of Tiberius Julius Abdes Pantera
-    composition_date:
-      start: "0001"
-      end: "0100"
-      precision: broad-first-century-range
-    physical_witness_date:
-      start: "0001"
-      end: "0100"
-      precision: broad-first-century-range
-    extant_status: material-artifact
-    original_language: Latin
-    access_mode: institutional-or-scholarly-database-transcription
-    locators:
-      - identifier: "CIL XIII 7514 / database record §400"
-        url: "https://armyofromanpalestine.com/%C2%A7400-tiberius-julius-abdes-pantera"
-    limitations:
-      - "The inscription attests a person and the name Pantera; it does not identify this soldier as Jesus/Yeshua's father."
-
-  - id: SRC-BAVLI-SHABBAT-104B
-    source_roles: [PRIMARY_TEXT, LATER_TRADITION]
-    source_kind: rabbinic_text
-    author_or_tradition: Babylonian Talmud
-    title: Shabbat 104b
-    composition_date:
-      start: null
-      end: null
-      precision: unresolved-in-v1
-    physical_witness_date:
-      start: null
-      end: null
-      precision: unresolved-in-v1
-    extant_status: extant-through-manuscript-and-print-tradition
-    original_language: Hebrew-Aramaic
-    access_mode: digital-text-edition
-    locators:
-      - passage: "Shabbat 104b:5"
-        url: "https://www.sefaria.org/Shabbat.104b"
-    limitations:
-      - "The passage names ben Stada, Pandeira, and a Miriam; it does not itself use the name Jesus in the displayed passage."
-      - "Identification with Jesus/Yeshua is a separate scholarly proposition and must remain contested unless independently established."
-
-  - id: SCH-BLUMELL-2007-CELSUS-JEW
-    source_roles: [SCHOLARLY_INTERPRETATION]
-    source_kind: peer_reviewed_article
-    author_or_tradition: Lincoln Blumell
-    title: "A Jew in Celsus' True Doctrine? An examination of Jewish Anti-Christian polemic in the second century C.E."
-    composition_date:
-      start: "2007"
-      end: "2007"
-      precision: exact-year
-    physical_witness_date:
-      start: "2007"
-      end: "2007"
-      precision: publication-year
-    extant_status: published
-    access_mode: publisher-record
-    locators:
-      - doi: "10.1177/000842980703600206"
-        url: "https://journals.sagepub.com/doi/10.1177/000842980703600206"
-    limitations:
-      - "A scholarly argument about Celsus's Jewish material, not a second-century witness itself."
-
-  - id: SCH-NIEHOFF-2013-CELSUS-JEW
-    source_roles: [SCHOLARLY_INTERPRETATION]
-    source_kind: peer_reviewed_article
-    author_or_tradition: Maren R. Niehoff
-    title: "A Jewish Critique of Christianity from Second-Century Alexandria: Revisiting the Jew Mentioned in Contra Celsum"
-    composition_date:
-      start: "2013"
-      end: "2013"
-      precision: exact-year
-    physical_witness_date:
-      start: "2013"
-      end: "2013"
-      precision: publication-year
-    extant_status: published
-    access_mode: institutional-bibliographic-record
-    locators:
-      - doi: "10.1353/earl.2013.0015"
-        url: "https://cris.huji.ac.il/en/publications/a-jewish-critique-of-christianity-from-second-century-alexandria-/"
-    limitations:
-      - "Argues for a mid-second-century Alexandrian Jewish written source behind the Celsus fragments; this is an attributed scholarly reconstruction, not project fact."
+- id: SRC-ORIGEN-CONTRA-CELSUM
+  source_roles:
+  - PRIMARY_TEXT
+  source_kind: ancient_text
+  author_or_tradition: Origen of Alexandria
+  title: Contra Celsum
+  composition_date:
+    start: 0248
+    end: 0248
+    precision: approximate-year
+  physical_witness_date:
+    start: null
+    end: null
+    precision: unknown
+  extant_status: extant-through-manuscript-tradition
+  original_language: Greek
+  access_mode: extant-work-modern-translation
+  locators:
+  - passage: Book I, chapter 28
+    url: https://www.newadvent.org/fathers/04161.htm
+  - passage: Book I, chapter 32
+    url: https://www.newadvent.org/fathers/04161.htm
+  - passage: Book I, chapter 69
+    url: https://www.newadvent.org/fathers/04161.htm
+  limitations:
+  - Origen is a Christian apologist rebutting Celsus; his preservation and framing must be separated from Celsus's lost original.
+- id: SRC-CELSUS-TRUE-DOCTRINE
+  source_roles:
+  - PRIMARY_TEXT
+  source_kind: lost_ancient_text
+  author_or_tradition: Celsus
+  title: The True Doctrine / True Discourse
+  composition_date:
+    start: '0170'
+    end: 0185
+    precision: approximate-range
+  physical_witness_date:
+    start: null
+    end: null
+    precision: no-direct-witness-in-current-registry
+  extant_status: lost-indirectly-preserved
+  original_language: Greek
+  access_mode: indirect-through-origen
+  preserved_by:
+  - SRC-ORIGEN-CONTRA-CELSUM
+  limitations:
+  - No direct manuscript of Celsus's work is registered here; claims about wording are mediated through Origen.
+  - The exact dating of Celsus remains a scholarly question; this range is provisional and must not be treated as an exact
+    timestamp.
+- id: MAT-ABDES-PANTERA-INSCRIPTION
+  source_roles:
+  - MATERIAL_EVIDENCE
+  source_kind: funerary_inscription
+  author_or_tradition: Roman military / funerary context
+  title: Funerary inscription of Tiberius Julius Abdes Pantera
+  composition_date:
+    start: '0001'
+    end: '0100'
+    precision: broad-first-century-range
+  physical_witness_date:
+    start: '0001'
+    end: '0100'
+    precision: broad-first-century-range
+  extant_status: material-artifact
+  original_language: Latin
+  access_mode: institutional-or-scholarly-database-transcription
+  locators:
+  - identifier: CIL XIII 7514 / database record §400
+    url: https://armyofromanpalestine.com/%C2%A7400-tiberius-julius-abdes-pantera
+  limitations:
+  - The inscription attests a person and the name Pantera; it does not identify this soldier as Jesus/Yeshua's father.
+- id: SRC-BAVLI-SHABBAT-104B
+  source_roles:
+  - PRIMARY_TEXT
+  - LATER_TRADITION
+  source_kind: rabbinic_text
+  author_or_tradition: Babylonian Talmud
+  title: Shabbat 104b
+  composition_date:
+    start: null
+    end: null
+    precision: unresolved-in-v1
+  physical_witness_date:
+    start: null
+    end: null
+    precision: unresolved-in-v1
+  extant_status: extant-through-manuscript-and-print-tradition
+  original_language: Hebrew-Aramaic
+  access_mode: digital-text-edition
+  locators:
+  - passage: Shabbat 104b:5
+    url: https://www.sefaria.org/Shabbat.104b
+  limitations:
+  - The passage names ben Stada, Pandeira, and a Miriam; it does not itself use the name Jesus in the displayed passage.
+  - Identification with Jesus/Yeshua is a separate scholarly proposition and must remain contested unless independently established.
+- id: SCH-BLUMELL-2007-CELSUS-JEW
+  source_roles:
+  - SCHOLARLY_INTERPRETATION
+  source_kind: peer_reviewed_article
+  author_or_tradition: Lincoln Blumell
+  title: A Jew in Celsus' True Doctrine? An examination of Jewish Anti-Christian polemic in the second century C.E.
+  composition_date:
+    start: '2007'
+    end: '2007'
+    precision: exact-year
+  physical_witness_date:
+    start: '2007'
+    end: '2007'
+    precision: publication-year
+  extant_status: published
+  access_mode: publisher-record
+  locators:
+  - doi: 10.1177/000842980703600206
+    url: https://journals.sagepub.com/doi/10.1177/000842980703600206
+  limitations:
+  - A scholarly argument about Celsus's Jewish material, not a second-century witness itself.
+- id: SCH-NIEHOFF-2013-CELSUS-JEW
+  source_roles:
+  - SCHOLARLY_INTERPRETATION
+  source_kind: peer_reviewed_article
+  author_or_tradition: Maren R. Niehoff
+  title: 'A Jewish Critique of Christianity from Second-Century Alexandria: Revisiting the Jew Mentioned in Contra Celsum'
+  composition_date:
+    start: '2013'
+    end: '2013'
+    precision: exact-year
+  physical_witness_date:
+    start: '2013'
+    end: '2013'
+    precision: publication-year
+  extant_status: published
+  access_mode: institutional-bibliographic-record
+  locators:
+  - doi: 10.1353/earl.2013.0015
+    url: https://cris.huji.ac.il/en/publications/a-jewish-critique-of-christianity-from-second-century-alexandria-/
+  limitations:
+  - Argues for a mid-second-century Alexandrian Jewish written source behind the Celsus fragments; this is an attributed scholarly
+    reconstruction, not project fact.
+- id: SRC-BAVLI-SANHEDRIN-67A
+  source_roles:
+  - PRIMARY_TEXT
+  - LATER_TRADITION
+  source_kind: rabbinic_text
+  author_or_tradition: Babylonian Talmud
+  title: Sanhedrin 67a
+  composition_date:
+    start: null
+    end: null
+    precision: unresolved-in-v1
+  physical_witness_date:
+    start: null
+    end: null
+    precision: unresolved-in-v1
+  extant_status: extant-through-manuscript-and-print-tradition
+  original_language: Hebrew-Aramaic
+  access_mode: digital-text-edition
+  locators:
+  - passage: Sanhedrin 67a:14-15
+    url: https://www.sefaria.org/Sanhedrin.67a
+  limitations:
+  - The checked passage names ben Setada/ben Pandeira and Miriam but does not explicitly name Jesus/Yeshua.
+  - Its relationship to Shabbat 104b is a parallel textual tradition, not an independent-witness count by default.
+- id: SRC-TOSEFTA-CHULLIN-2-6
+  source_roles:
+  - PRIMARY_TEXT
+  - LATER_TRADITION
+  source_kind: rabbinic_text
+  author_or_tradition: Tosefta Chullin
+  title: Tosefta Chullin 2:6 / alternate numbering 2:22-24
+  composition_date:
+    start: null
+    end: null
+    precision: unresolved-in-v1
+  physical_witness_date:
+    start: null
+    end: null
+    precision: witness-specific-see-witness-records
+  extant_status: extant-through-medieval-manuscripts-print-and-fragments
+  original_language: Hebrew
+  access_mode: digital-edition
+  locators:
+  - passage: Tosefta Chullin 2:6
+    url: https://www.sefaria.org/Tosefta_Chullin.2.6?lang=bi&with=manuscripts
+  - passage: 'Alternate digital range: Tosefta Chullin 2:22-24'
+    url: https://www.sefaria.org/Tosefta_Chullin.2.22-24
+  limitations:
+  - Numbering differs across editions/references; both locators are retained to prevent false mismatch.
+  - The work record must not be assigned the date of one surviving manuscript witness.
+- id: SRC-YERUSHALMI-AVODAH-ZARAH-2-2
+  source_roles:
+  - PRIMARY_TEXT
+  - LATER_TRADITION
+  source_kind: rabbinic_text
+  author_or_tradition: Jerusalem Talmud
+  title: Jerusalem Talmud Avodah Zarah 2:2
+  composition_date:
+    start: null
+    end: null
+    precision: unresolved-in-v1
+  physical_witness_date:
+    start: null
+    end: null
+    precision: unresolved-in-v1
+  extant_status: extant-through-manuscript-and-print-tradition
+  original_language: Hebrew-Aramaic
+  access_mode: digital-text-edition
+  locators:
+  - passage: Avodah Zarah 2:2:7
+    url: https://www.sefaria.org/Jerusalem_Talmud_Avodah_Zarah.2.2.7
+  - passage: Avodah Zarah 2:2:11
+    url: https://www.sefaria.org/Jerusalem_Talmud_Avodah_Zarah.2.2.11
+  limitations:
+  - The checked digital edition/translation explicitly contains Jesus ben Pandera in healing traditions; V1 does not infer
+    biological paternity from the name-form.
+- id: SRC-YERUSHALMI-SHABBAT-14-4
+  source_roles:
+  - PRIMARY_TEXT
+  - LATER_TRADITION
+  source_kind: rabbinic_text
+  author_or_tradition: Jerusalem Talmud
+  title: Jerusalem Talmud Shabbat 14:4
+  composition_date:
+    start: null
+    end: null
+    precision: unresolved-in-v1
+  physical_witness_date:
+    start: null
+    end: null
+    precision: unresolved-in-v1
+  extant_status: extant-through-manuscript-and-print-tradition
+  original_language: Hebrew-Aramaic
+  access_mode: digital-text-edition
+  locators:
+  - passage: Shabbat 14:4:8
+    url: https://www.sefaria.org/Jerusalem_Talmud_Shabbat.14.4.8
+  - passage: Shabbat 14:4:12
+    url: https://www.sefaria.org/Jerusalem_Talmud_Shabbat.14.4.12
+  limitations:
+  - The checked digital edition/translation contains Jesus Pantera/Pandera name-forms in healing traditions; exact orthography
+    varies by passage/edition.
+- id: SCH-CAMBRIDGE-HISTORY-TOSEFTA
+  source_roles:
+  - SCHOLARLY_INTERPRETATION
+  source_kind: academic_history_chapter
+  author_or_tradition: Paul Mandel
+  title: The Tosefta
+  container: The Cambridge History of Judaism
+  composition_date:
+    start: '2006'
+    end: '2006'
+    precision: publication-year
+  access_mode: publisher-page
+  locators:
+  - url: https://www.cambridge.org/core/books/cambridge-history-of-judaism/3F4F0A32983FC0DCDB414553888DC394
+  limitations:
+  - Used for general manuscript-witness history, especially the Vienna witness date; it does not determine the reading of
+    a particular line.
+- id: SCH-SCHREMER-2009-MINUT
+  source_roles:
+  - SCHOLARLY_INTERPRETATION
+  source_kind: academic_book_chapter
+  author_or_tradition: Adiel Schremer
+  title: 'Producing Minut: Labeling the Early Christians as Minim'
+  container: Brothers Estranged
+  composition_date:
+    start: '2009'
+    end: '2009'
+    precision: publication-year
+  access_mode: publisher-page
+  locators:
+  - doi: 10.1093/acprof:oso/9780195383775.003.0005
+    url: https://academic.oup.com/book/10421/chapter-abstract/158243048
+  limitations:
+  - Interprets Tosefta Chullin 2:22-24 as a text constructing followers of Jesus as minim and discusses its historical use;
+    it is scholarship, not manuscript evidence.
+- id: SRC-UGARIT-BAAL-CYCLE
+  source_roles:
+  - PRIMARY_TEXT
+  source_kind: ancient_text_corpus
+  author_or_tradition: Ugaritic scribal tradition
+  title: Baal Cycle / KTU 1.1-1.6
+  composition_date:
+    start: null
+    end: null
+    precision: late-bronze-age-ugarit
+  physical_witness_date:
+    start: null
+    end: null
+    precision: late-bronze-age-tablets
+  extant_status: clay-tablet-witnesses
+  original_language: Ugaritic
+  access_mode: scholarly-edition-translation-commentary
+  locators:
+  - identifier: KTU 1.1-1.6
+    url: https://brill.com/display/title/1061
+  limitations:
+  - Ugaritic religion is evidence for Ugarit and related Northwest Semitic culture, not a complete synonym for every Canaanite
+    community.
+- id: SRC-ENUMA-ELISH
+  source_roles:
+  - PRIMARY_TEXT
+  source_kind: ancient_text
+  author_or_tradition: Babylonian scribal tradition
+  title: Enuma Elish / Babylonian Epic of Creation
+  composition_date:
+    start: null
+    end: null
+    precision: late-second-millennium-bce-scholarly-range
+  physical_witness_date:
+    start: null
+    end: null
+    precision: multiple-tablet-witnesses
+  extant_status: extant-through-cuneiform-tablet-tradition
+  original_language: Akkadian
+  access_mode: scholarly-translation
+  locators:
+  - passage: Tablet IV and full seven-tablet epic
+    url: https://isac.uchicago.edu/sites/default/files/uploads/shared/docs/misc_genesis.pdf
+  limitations:
+  - The epic is a historically situated Babylonian composition and must not be treated as the sole Mesopotamian cosmogony.
+- id: SRC-DEUTERONOMY-32
+  source_roles:
+  - PRIMARY_TEXT
+  source_kind: biblical_text
+  author_or_tradition: Deuteronomic / Hebrew biblical tradition
+  title: Deuteronomy 32
+  composition_date:
+    start: null
+    end: null
+    precision: unresolved-in-v1
+  physical_witness_date:
+    start: null
+    end: null
+    precision: multiple-witness-tradition
+  extant_status: extant-through-manuscript-traditions
+  original_language: Hebrew
+  access_mode: textual-witness-comparison
+  locators:
+  - passage: Deuteronomy 32:8-9
+    url: https://www.thetorah.com/article/the-sons-of-israel-or-god-deuteronomy-32-8
+  limitations:
+  - The textual variant must preserve MT, 4QDeutj, and LXX evidence rather than harmonizing them.
+- id: MAT-KUNTILLET-AJRUD-YHWH-ASHERAH
+  source_roles:
+  - MATERIAL_EVIDENCE
+  source_kind: inscriptional_material
+  author_or_tradition: Iron Age Israelite/Judahite-associated epigraphy
+  title: Kuntillet Ajrud Yahweh / asherah inscriptions
+  composition_date:
+    start: null
+    end: null
+    precision: eighth-century-bce
+  physical_witness_date:
+    start: null
+    end: null
+    precision: eighth-century-bce-material
+  extant_status: material-artifact
+  original_language: Hebrew / Northwest Semitic epigraphy
+  access_mode: scholarly-transcription-and-interpretation
+  locators:
+  - url: https://academic.oup.com/book/10720/chapter/158788296
+  limitations:
+  - 'The referent of ''his asherah'' is debated: goddess, cult object, or associated sacred symbol/object.'
+- id: SRC-AVESTA-YASNA-30
+  source_roles:
+  - PRIMARY_TEXT
+  source_kind: sacred_text
+  author_or_tradition: Old Avestan / Gathic Zoroastrian tradition
+  title: Yasna 30
+  composition_date:
+    start: null
+    end: null
+    precision: old-avestan-chronology-contested
+  physical_witness_date:
+    start: null
+    end: null
+    precision: later-manuscript-tradition
+  extant_status: extant-through-avestan-manuscript-tradition
+  original_language: Old Avestan
+  access_mode: scholarly-digital-text-and-translation
+  locators:
+  - passage: Yasna 30
+    url: https://lrc.la.utexas.edu/eieol/aveol/40
+  - passage: Yasna 30 digital translation
+    url: https://www.avesta.org/yasna/
+  limitations:
+  - Translation and interpretation of Old Avestan are difficult; later Pahlavi theology must not be back-projected automatically.
+- id: SRC-BUNDAHISHN
+  source_roles:
+  - PRIMARY_TEXT
+  - LATER_TRADITION
+  source_kind: middle_persian_religious_text
+  author_or_tradition: Zoroastrian Pahlavi tradition
+  title: Bundahishn
+  composition_date:
+    start: null
+    end: null
+    precision: late-antique-to-medieval-compilation-tradition
+  physical_witness_date:
+    start: null
+    end: null
+    precision: later-manuscript-tradition
+  extant_status: extant-through-manuscript-tradition
+  original_language: Middle Persian
+  access_mode: scholarly-summary-and-edition-tradition
+  limitations:
+  - Primary evidence for later Zoroastrian systematic cosmology; later tradition relative to the Gathas.
+- id: SCH-SMITH-2001-BIBLICAL-MONOTHEISM
+  source_roles:
+  - SCHOLARLY_INTERPRETATION
+  source_kind: academic_monograph
+  author_or_tradition: Mark S. Smith
+  title: The Origins of Biblical Monotheism
+  composition_date:
+    start: '2001'
+    end: '2001'
+    precision: publication-year
+  access_mode: publisher-chapter-abstracts
+  locators:
+  - url: https://academic.oup.com/book/12858
+  limitations:
+  - Used for divine-council, Ugaritic/Israelite comparison, and development-of-monotheism framing; individual arguments require
+    chapter-level readback when consequential.
+- id: SCH-MET-2009-CANAANITE-GODS
+  source_roles:
+  - SCHOLARLY_INTERPRETATION
+  source_kind: museum_scholarly_essay
+  author_or_tradition: Metropolitan Museum of Art
+  title: The Gods and Goddesses of Canaan
+  composition_date:
+    start: '2009'
+    end: '2009'
+    precision: publication-year
+  access_mode: institutional-full-text
+  locators:
+  - url: https://www.metmuseum.org/essays/the-gods-and-goddesses-of-canaan
+- id: SCH-MET-2009-MESOPOTAMIAN-CREATION
+  source_roles:
+  - SCHOLARLY_INTERPRETATION
+  source_kind: museum_scholarly_essay
+  author_or_tradition: Metropolitan Museum of Art
+  title: Mesopotamian Creation Myths
+  composition_date:
+    start: '2009'
+    end: '2009'
+    precision: publication-year
+  access_mode: institutional-full-text
+  locators:
+  - url: https://www.metmuseum.org/essays/epic-of-creation-mesopotamia
+- id: SCH-TOV-2023-DEUT32
+  source_roles:
+  - SCHOLARLY_INTERPRETATION
+  source_kind: scholarly_essay
+  author_or_tradition: Emanuel Tov
+  title: The Sons of Israel or God? – Deuteronomy 32:8
+  composition_date:
+    start: '2023'
+    end: '2023'
+    precision: publication-year
+  access_mode: scholarly-full-text
+  locators:
+  - url: https://www.thetorah.com/article/the-sons-of-israel-or-god-deuteronomy-32-8
+- id: SCH-LEWIS-2020-ORIGIN-YAHWEH
+  source_roles:
+  - SCHOLARLY_INTERPRETATION
+  source_kind: academic_monograph_chapter
+  author_or_tradition: Theodore J. Lewis
+  title: The Origin of Yahweh
+  container: The Origin and Character of God
+  composition_date:
+    start: '2020'
+    end: '2020'
+    precision: publication-year
+  access_mode: publisher-abstract
+  locators:
+  - url: https://academic.oup.com/book/37440/chapter-abstract/331575152
+- id: SCH-KREYENBROEK-1993-ZORO-COSMOGONY
+  source_roles:
+  - SCHOLARLY_INTERPRETATION
+  source_kind: reference_article
+  author_or_tradition: Philip G. Kreyenbroek
+  title: Cosmogony and Cosmology i. In Zoroastrianism/Mazdaism
+  composition_date:
+    start: '1993'
+    end: '1993'
+    precision: publication-year
+  access_mode: institutional-full-text
+  locators:
+  - url: https://www.iranicaonline.org/articles/cosmogony-i/
+- id: SCH-SHAKED-1998-ZORO-ESCHATOLOGY
+  source_roles:
+  - SCHOLARLY_INTERPRETATION
+  source_kind: reference_article
+  author_or_tradition: Shaul Shaked
+  title: Eschatology i. In Zoroastrianism and Zoroastrian Influence
+  composition_date:
+    start: '1998'
+    end: '1998'
+    precision: publication-year
+  access_mode: institutional-full-text
+  locators:
+  - url: https://www.iranicaonline.org/articles/eschatology-i/
+- id: SCH-BOSTROM-2003-SIMULATION
+  source_roles:
+  - SCHOLARLY_INTERPRETATION
+  source_kind: peer_reviewed_philosophy_article
+  author_or_tradition: Nick Bostrom
+  title: Are You Living in a Computer Simulation?
+  container: The Philosophical Quarterly 53.211
+  composition_date:
+    start: '2003'
+    end: '2003'
+    precision: publication-year
+  access_mode: author-hosted-full-text
+  locators:
+  - url: https://simulation-argument.com/simulation/
+  - url: https://simulation-argument.com/simulation.pdf
+  limitations:
+  - The paper presents a conditional disjunction/population argument; it does not establish which disjunct is true.
+  - The argument explicitly assumes a form of substrate independence.
+- id: SCH-KIPPING-2020-BAYESIAN-SIMULATION
+  source_roles:
+  - SCHOLARLY_INTERPRETATION
+  source_kind: scholarly_preprint
+  author_or_tradition: David Kipping
+  title: A Bayesian Approach to the Simulation Argument
+  composition_date:
+    start: '2020'
+    end: '2020'
+    precision: publication-year
+  access_mode: open-preprint
+  locators:
+  - url: https://arxiv.org/abs/2008.12254
+  limitations:
+  - The posterior result is conditional on Kipping's Bayesian model, priors, and treatment of model uncertainty.
+- id: SCH-BEANE-DAVOUDI-SAVAGE-2012-LATTICE
+  source_roles:
+  - SCHOLARLY_INTERPRETATION
+  source_kind: physics_preprint
+  author_or_tradition: Silas R. Beane; Zohreh Davoudi; Martin J. Savage
+  title: Constraints on the Universe as a Numerical Simulation
+  composition_date:
+    start: '2012'
+    end: '2012'
+    precision: publication-year
+  access_mode: open-preprint
+  locators:
+  - url: https://arxiv.org/abs/1210.1847
+  limitations:
+  - Tests a cubic space-time lattice numerical-simulation scenario; it is not a generic test of all simulation architectures.
+- id: SCH-MCCABE-2005-UNIVERSE-COMPUTER
+  source_roles:
+  - SCHOLARLY_INTERPRETATION
+  source_kind: peer_reviewed_philosophy_of_physics_article
+  author_or_tradition: Gordon McCabe
+  title: Universe creation on a computer
+  container: Studies in History and Philosophy of Modern Physics 36
+  composition_date:
+    start: '2005'
+    end: '2005'
+    precision: publication-year
+  access_mode: open-archive-full-text
+  locators:
+  - url: http://philsci-archive.pitt.edu/1891/
+  - doi: 10.1016/J.SHPSB.2005.04.002
+  limitations:
+  - Topology, digital/analog, and representational claims belong to McCabe's specific metaphysical/physical analysis and must
+    not be generalized automatically.
+- id: SCH-WOLPERT-2024-SIMULATION-CS
+  source_roles:
+  - SCHOLARLY_INTERPRETATION
+  source_kind: computer_science_physics_preprint
+  author_or_tradition: David H. Wolpert
+  title: Implications of computer science theory for the simulation hypothesis
+  composition_date:
+    start: '2024'
+    end: '2024'
+    precision: publication-year
+  access_mode: open-preprint
+  locators:
+  - url: https://arxiv.org/abs/2404.16050
+  limitations:
+  - Formal possibility/undecidability results do not establish physical actuality of self-simulation or nested universes.
+- id: SCH-VAZZA-2025-SIMULATION-CONSTRAINTS
+  source_roles:
+  - SCHOLARLY_INTERPRETATION
+  source_kind: astrophysics_preprint
+  author_or_tradition: F. Vazza
+  title: 'Astrophysical constraints on the simulation hypothesis for this Universe: why it is (nearly) impossible that we
+    live in a simulation'
+  composition_date:
+    start: '2025'
+    end: '2025'
+    precision: publication-year
+  access_mode: open-preprint
+  locators:
+  - url: https://arxiv.org/abs/2504.08461
+  limitations:
+  - Strong resource conclusions bind parent-universe physics assumptions; radically different parent physics remains outside
+    the result.
+- id: SCH-SEP-PHYSICAL-COMPUTATION
+  source_roles:
+  - SCHOLARLY_INTERPRETATION
+  source_kind: scholarly_reference_article
+  author_or_tradition: Stanford Encyclopedia of Philosophy
+  title: Computation in Physical Systems
+  access_mode: institutional-full-text
+  locators:
+  - url: https://plato.stanford.edu/entries/computation-physicalsystems/
+  limitations:
+  - Used as taxonomy/synthesis for physical computation and pancomputationalism, not as primary evidence for a specific cosmology.
+- id: SCH-CHALMERS-2024-SIMULATION
+  source_roles:
+  - SCHOLARLY_INTERPRETATION
+  source_kind: philosophy_book_chapter
+  author_or_tradition: David J. Chalmers
+  title: 'The Simulation Hypothesis: Metaphysics, Epistemology, Value'
+  container: Oxford Studies in Philosophy of Mind, Volume 4
+  composition_date:
+    start: '2024'
+    end: '2024'
+    precision: publication-year
+  access_mode: publisher-abstract
+  locators:
+  - url: https://academic.oup.com/book/58199/chapter-abstract/481536050
+  limitations:
+  - V1 current access is abstract-level for this chapter; detailed argument reconstruction should use Reality+ or full chapter
+    access where consequential.
+- id: SCH-HORGAN-2024-VIRTUAL-UNREAL
+  source_roles:
+  - SCHOLARLY_INTERPRETATION
+  source_kind: philosophy_book_chapter
+  author_or_tradition: Terry Horgan
+  title: 'Why Virtual Worlds Aren''t Real: How Phenomenal Intentionality Constrains Mental Reference'
+  container: Oxford Studies in Philosophy of Mind, Volume 4
+  composition_date:
+    start: '2024'
+    end: '2024'
+    precision: publication-year
+  access_mode: publisher-abstract
+  locators:
+  - url: https://academic.oup.com/book/58199/chapter-abstract/481535867
+  limitations:
+  - V1 uses the published abstract-level argument summary, not unverified chapter details.
+- id: SCH-PEACOCKE-2024-SIMULATION
+  source_roles:
+  - SCHOLARLY_INTERPRETATION
+  source_kind: philosophy_book_chapter
+  author_or_tradition: Christopher Peacocke
+  title: 'Simulation: Its Metaphysics and Epistemology'
+  container: Oxford Studies in Philosophy of Mind, Volume 4
+  composition_date:
+    start: '2024'
+    end: '2024'
+    precision: publication-year
+  access_mode: publisher-abstract
+  locators:
+  - url: https://academic.oup.com/book/58199/chapter-abstract/481535964
+  limitations:
+  - V1 records the published scope of Peacocke's disagreement with Chalmers; detailed chapter reasoning remains access-bounded.
+- id: SCH-MIZRAHI-2017-FINETUNING-SIMULATION
+  source_roles:
+  - SCHOLARLY_INTERPRETATION
+  source_kind: peer_reviewed_philosophy_article
+  author_or_tradition: Moti Mizrahi
+  title: The Fine-Tuning Argument and the Simulation Hypothesis
+  container: Think 16.46
+  composition_date:
+    start: '2017'
+    end: '2017'
+    precision: publication-year
+  access_mode: publisher-abstract
+  locators:
+  - url: https://www.cambridge.org/core/journals/think/article/abs/finetuning-argument-and-the-simulation-hypothesis/BA286B9FD7406DCF1AE5A95FDBC20CDC
+  limitations:
+  - V1 has abstract-level direct publisher access; fine-grained premises require full-text readback.
+- id: SCH-DONAHUE-2026-FINETUNING-ALTERNATIVES
+  source_roles:
+  - SCHOLARLY_INTERPRETATION
+  source_kind: peer_reviewed_philosophy_article
+  author_or_tradition: Miles K. Donahue
+  title: 'Of Simulations and Conscious Universes: Explaining Fine-Tuning Without God'
+  container: Canadian Journal of Philosophy
+  composition_date:
+    start: '2026'
+    end: '2026'
+    precision: publication-year
+  access_mode: publisher-open-access
+  locators:
+  - url: https://www.cambridge.org/core/journals/canadian-journal-of-philosophy/article/of-simulations-and-conscious-universes-explaining-finetuning-without-god/25F08274C9B7FB3859A13405B938D09C
+  limitations:
+  - Records Donahue's comparative Bayesian assessment; the project's own conclusion remains separate.
+- id: SRC-GOSPEL-MARK
+  source_roles:
+  - PRIMARY_TEXT
+  source_kind: canonical_gospel_text
+  author_or_tradition: Gospel according to Mark
+  title: Gospel according to Mark
+  composition_date:
+    start: null
+    end: null
+    precision: unresolved-in-v1
+  physical_witness_date:
+    start: null
+    end: null
+    precision: witness-specific-see-witness-records
+  extant_status: extant-through-manuscript-tradition
+  original_language: Greek
+  access_mode: modern-critical-text-and-translation
+  locators:
+  - passage: Mark 6:3
+    url: https://classic.net.bible.org/passage.php?passage=Mar+6%3A3
+  limitations:
+  - A modern critical text is an editorial reconstruction from manuscript evidence; variant claims must remain distinct from
+    claims about a single physical witness.
+  - This source record does not assign a composition date in V1.
+- id: SRC-GOSPEL-MATTHEW
+  source_roles:
+  - PRIMARY_TEXT
+  source_kind: canonical_gospel_text
+  author_or_tradition: Gospel according to Matthew
+  title: Gospel according to Matthew
+  composition_date:
+    start: null
+    end: null
+    precision: unresolved-in-v1
+  physical_witness_date:
+    start: null
+    end: null
+    precision: witness-specific-unresolved-in-v1
+  extant_status: extant-through-manuscript-tradition
+  original_language: Greek
+  access_mode: modern-greek-text
+  locators:
+  - passage: Matthew 13:55
+    url: https://biblehub.com/text/matthew/13-55.htm
+  limitations:
+  - Used here for literary comparison only; V1 does not infer a redactional motive from wording difference alone.
+- id: SRC-GOSPEL-LUKE
+  source_roles:
+  - PRIMARY_TEXT
+  source_kind: canonical_gospel_text
+  author_or_tradition: Gospel according to Luke
+  title: Gospel according to Luke
+  composition_date:
+    start: null
+    end: null
+    precision: unresolved-in-v1
+  physical_witness_date:
+    start: null
+    end: null
+    precision: witness-specific-unresolved-in-v1
+  extant_status: extant-through-manuscript-tradition
+  original_language: Greek
+  access_mode: modern-greek-text
+  locators:
+  - passage: Luke 4:22
+    url: https://www.greeklab.org/interlinear.php?book=Luke&cap=4&verse=22
+  limitations:
+  - Used here for literary comparison only; V1 does not infer a redactional motive from wording difference alone.
+- id: SCH-NORMAN-2025-MARK-MATRONYMIC
+  source_roles:
+  - SCHOLARLY_INTERPRETATION
+  source_kind: peer_reviewed_article
+  author_or_tradition: Dawn LaValle Norman
+  title: 'Mark''s Mothers and the Matronymic: Linking ''The Son of Mary'' (Mk 6.3) to ''The Daughter of Herodias'' (Mk 6.22)'
+  container: New Testament Studies 71
+  composition_date:
+    start: '2025'
+    end: '2025'
+    precision: publication-year
+  access_mode: open-access-publisher-full-text
+  locators:
+  - doi: 10.1017/S0028688524000262
+    url: https://www.cambridge.org/core/journals/new-testament-studies/article/marks-mothers-and-the-matronymic-linking-the-son-of-mary-mk-63-to-the-daughter-of-herodias-mk-622/C789C196C3EE0F16BCDB5A2C726302ED
+  limitations:
+  - Offers a Greek-literary/women's-speech explanation of the matronymic and surveys earlier interpretations; this is scholarly
+    interpretation, not direct evidence of what the Nazareth crowd historically meant.
+- id: SCH-MCARTHUR-1973-SON-OF-MARY
+  source_roles:
+  - SCHOLARLY_INTERPRETATION
+  source_kind: peer_reviewed_article
+  author_or_tradition: Harvey K. McArthur
+  title: Son of Mary
+  container: Novum Testamentum 15.1
+  composition_date:
+    start: '1973'
+    end: '1973'
+    precision: publication-year
+  access_mode: publisher-metadata-plus-scholarly-summary
+  locators:
+  - doi: 10.1163/156853673X00169
+    url: https://brill.com/view/journals/nt/15/1/article-p38_2.pdf
+  limitations:
+  - V1 did not independently read the complete article through the available workflow. Its position is represented only to
+    the extent supported by accessible publisher metadata and Norman 2025's scholarly survey.
+- id: SCH-ILAN-1992-METRONYMES
+  source_roles:
+  - SCHOLARLY_INTERPRETATION
+  source_kind: peer_reviewed_article
+  author_or_tradition: Tal Ilan
+  title: '''Man Born of Woman...'' (Job 14:1) the Phenomenon of Men Bearing Metronymes at the Time of Jesus'
+  container: Novum Testamentum 34.1
+  composition_date:
+    start: '1992'
+    end: '1992'
+    precision: publication-year
+  access_mode: bibliographic-record-plus-scholarly-summary
+  locators:
+  - doi: 10.2307/1561094
+    url: https://www.jstor.org/stable/1561094
+  limitations:
+  - V1 did not independently read the complete article through the available workflow. Norman 2025 is used for the bounded
+    summary that matronymics need not encode illegitimacy.
+- id: SCH-CROY-2022-ESCAPING-SHAME
+  source_roles:
+  - SCHOLARLY_INTERPRETATION
+  source_kind: academic_monograph
+  author_or_tradition: N. Clayton Croy
+  title: 'Escaping Shame: Mary''s Dilemma and the Birthplace of Jesus'
+  container: Supplements to Novum Testamentum 187
+  composition_date:
+    start: '2022'
+    end: '2022'
+    precision: publication-year
+  access_mode: publisher-book-metadata-plus-scholarly-summary
+  locators:
+  - url: https://books.google.com/books/about/Escaping_Shame_Mary_s_Dilemma_and_the_Bi.html?id=7Sd_EAAAQBAJ
+  - secondary_locator: Norman 2025 discussion of Croy pp. 99-107
+    url: https://www.cambridge.org/core/journals/new-testament-studies/article/marks-mothers-and-the-matronymic-linking-the-son-of-mary-mk-63-to-the-daughter-of-herodias-mk-622/C789C196C3EE0F16BCDB5A2C726302ED
+  limitations:
+  - Croy argues for a slur reading in the hostile Mark 6 context; V1 has not independently rechecked every ancient comparator
+    used in his monograph.
+- id: MAT-EGYPT-BOD-TIYE
+  source_roles:
+  - MATERIAL_EVIDENCE
+  - PRIMARY_TEXT
+  source_kind: funerary_papyrus
+  author_or_tradition: ancient Egyptian Book of the Dead tradition
+  title: Book of the Dead Papyrus of Tiye
+  composition_date:
+    start: 0975 BCE
+    end: 0945 BCE
+    precision: museum-date-range
+  physical_witness_date:
+    start: 0975 BCE
+    end: 0945 BCE
+    precision: museum-date-range
+  extant_status: material-artifact
+  original_language: Egyptian
+  access_mode: museum-object-record
+  locators:
+  - url: https://www.metmuseum.org/art/collection/search/551142
+  limitations:
+  - A single funerary papyrus is a witness to one textual/material configuration, not the entire Book of the Dead tradition.
+- id: SCH-MET-DIVINE-EGYPT
+  source_roles:
+  - SCHOLARLY_INTERPRETATION
+  - MATERIAL_EVIDENCE_CONTEXT
+  source_kind: museum-curatorial-synthesis
+  author_or_tradition: Metropolitan Museum of Art
+  title: Divine Egypt / Ruling the Cosmos
+  access_mode: institutional-public-page
+  locators:
+  - url: https://www.metmuseum.org/exhibitions/divine-egypt/inside-the-exhibition
+  limitations:
+  - Curatorial synthesis; individual historical propositions still require period-specific witnesses.
+- id: SCH-JAMISON-BRERETON-RIGVEDA-2020
+  source_roles:
+  - SCHOLARLY_INTERPRETATION
+  source_kind: academic_monograph
+  author_or_tradition: Stephanie W. Jamison; Joel P. Brereton
+  title: 'The Rigveda: A Guide'
+  container: Oxford University Press
+  composition_date:
+    start: '2020'
+    end: '2020'
+    precision: publication-year
+  access_mode: publisher-chapter-abstracts
+  locators:
+  - doi: 10.1093/oso/9780190633363.001.0001
+  - url: https://academic.oup.com/book/33632
+  limitations:
+  - V1 uses publisher chapter abstracts/summaries for ritual, gods, eschatology, structure and historical context.
+- id: SCH-OLIVELLE-UPANISADS-1998
+  source_roles:
+  - SCHOLARLY_INTERPRETATION
+  source_kind: critical-translation-and-introduction
+  author_or_tradition: Patrick Olivelle
+  title: 'The Early Upanisads: Annotated Text and Translation'
+  composition_date:
+    start: '1998'
+    end: '1998'
+    precision: publication-year
+  access_mode: publisher-abstract
+  locators:
+  - doi: 10.1093/oso/9780195124354.003.0001
+  - url: https://academic.oup.com/book/50014/chapter-abstract/422709234
+  limitations:
+  - V1 uses the introduction-level historical framing; passage-level Upanishadic claims require direct textual locators.
+- id: SCH-COHEN-UPANISADS-2024
+  source_roles:
+  - SCHOLARLY_INTERPRETATION
+  source_kind: academic-guide
+  author_or_tradition: Signe Cohen
+  title: 'The Classical Upanisads: A Guide'
+  composition_date:
+    start: '2024'
+    end: '2024'
+    precision: publication-year
+  access_mode: publisher-abstracts
+  locators:
+  - url: https://academic.oup.com/book/55777
+  limitations:
+  - Used for high-level diachronic concepts; exact doctrinal propositions require primary Upanishadic witnesses.
+- id: SCH-SWAZO-2015-CRITICAL-SIMULATION
+  source_roles:
+  - SCHOLARLY_INTERPRETATION
+  source_kind: philosophy-of-science-paper
+  author_or_tradition: Norman K. Swazo
+  title: A Critical Engagement of Bostrom's Computer Simulation Hypothesis
+  composition_date:
+    start: '2015'
+    end: '2015'
+    precision: publication-year
+  access_mode: open-archive-metadata-and-abstract
+  locators:
+  - url: http://philsci-archive.pitt.edu/11537/
+  limitations:
+  - Registers Swazo's falsifiability critique; it does not establish that every constrained simulation model is untestable.
+- id: SCH-PARODI-2022-SIM-LIKELIHOOD
+  source_roles:
+  - SCHOLARLY_INTERPRETATION
+  source_kind: philosophy-book-chapter
+  author_or_tradition: Pietro Parodi
+  title: Is It Likely that We Are Living in a Computer Simulation?
+  composition_date:
+    start: '2022'
+    end: '2022'
+    precision: publication-year
+  access_mode: indexed-abstract
+  locators:
+  - doi: 10.1007/978-3-031-09153-7_16
+  limitations:
+  - Used for the critique that Bostrom's probability depends on additional background assumptions including machine consciousness
+    and substrate independence.
+- id: SCH-HARRIS-2023-SIM-RECONSIDERED
+  source_roles:
+  - SCHOLARLY_INTERPRETATION
+  source_kind: peer_reviewed-philosophy-article
+  author_or_tradition: Keith Raymond Harris
+  title: The simulation argument reconsidered
+  container: Analysis
+  composition_date:
+    start: '2023'
+    end: '2023'
+    precision: publication-year
+  access_mode: publisher-abstract
+  locators:
+  - doi: 10.1093/analys/anad048
+  limitations:
+  - Harris attacks expected simulator behavior rather than empirically measuring posthuman civilizations.
+- id: SCH-CRAWFORD-2013-FREAK-OBSERVERS
+  source_roles:
+  - SCHOLARLY_INTERPRETATION
+  source_kind: peer_reviewed-philosophy-article
+  author_or_tradition: Lyle Crawford
+  title: Freak Observers and the Simulation Argument
+  container: Ratio
+  composition_date:
+    start: '2013'
+    end: '2013'
+    precision: publication-year
+  access_mode: indexed-abstract
+  locators:
+  - doi: 10.1111/RATI.12009
+  limitations:
+  - Used to register a self-location/reference-class objection, not as a settled refutation of anthropic reasoning.
+- id: SRC-GOSPEL-JOHN
+  source_roles:
+  - PRIMARY_TEXT
+  source_kind: canonical_gospel_text
+  author_or_tradition: Gospel according to John
+  title: Gospel according to John
+  composition_date:
+    start: null
+    end: null
+    precision: unresolved-in-v1
+  physical_witness_date:
+    start: null
+    end: null
+    precision: witness-specific-unresolved-in-v1
+  extant_status: extant-through-manuscript-tradition
+  original_language: Greek
+  access_mode: modern-critical-text-and-translation
+  locators:
+  - passage: John 8:31-48; focal verse 8:41
+    url: https://classic.net.bible.org/verse.php?book=Joh&chapter=8&theme=false&verse=41
+  - passage: John 8:41 translation comparison
+    url: https://www.biblegateway.com/verse/en/John%208%3A41
+  limitations:
+  - The text states that the interlocutors were not born from porneia and claim God as Father; it does not explicitly name
+    Mary, Panthera, or an alternative biological father for Jesus.
+  - V1 leaves composition chronology unresolved rather than using a conventional date as if independently established here.
+- id: SRC-ORIGEN-COMMENTARY-JOHN
+  source_roles:
+  - PRIMARY_TEXT
+  - LATER_TRADITION
+  source_kind: patristic_commentary
+  author_or_tradition: Origen of Alexandria
+  title: Commentary on the Gospel of John
+  composition_date:
+    start: '0231'
+    end: 0249
+    precision: broad-working-range-from-scholarly-context
+  physical_witness_date:
+    start: null
+    end: null
+    precision: unresolved-in-v1
+  extant_status: partially-extant-through-manuscript-tradition
+  original_language: Greek
+  access_mode: exact-locator-through-modern-scholarly-quotation-in-v1
+  locators:
+  - passage: Commentary on John 20.128-130; exposition of John 8:41bc
+    secondary_url: https://studylib.net/doc/14405707/born-of-fornication--the-jewish-charge-of-jesus%E2%80%99-illegiti...
+  - edition: 'Ronald E. Heine, Origen: Commentary on the Gospel according to John, Books 13-32, Fathers of the Church 89 (1993),
+      p. 233'
+  limitations:
+  - Harlow 2012 supplies the exact locator and quotes Heine's English translation; V1 has not yet independently collated Heine
+    against the surviving Greek text.
+  - Origen's interpretation is third-century reception evidence and must not be backdated into the first century.
+- id: SCH-HARLOW-2012-BORN-FORNICATION
+  source_roles:
+  - SCHOLARLY_INTERPRETATION
+  source_kind: academic_book_chapter
+  author_or_tradition: Daniel C. Harlow
+  title: 'Born of Fornication: The Jewish Charge of Jesus'' Illegitimacy in John, Celsus, and Origen'
+  container: 'Portraits of Jesus: Studies in Christology'
+  editor: Susan E. Myers
+  publisher: Mohr Siebeck
+  composition_date:
+    start: '2012'
+    end: '2012'
+    precision: publication-year
+  pages: 335-354
+  access_mode: publisher-metadata-plus-accessible-chapter-copy
+  locators:
+  - url: https://www.mohrsiebeck.com/buch/portraits-of-jesus-9783161517952/
+  - url: https://studylib.net/doc/14405707/born-of-fornication--the-jewish-charge-of-jesus%E2%80%99-illegiti...
+  limitations:
+  - Modern scholarly interpretation. Used here because it directly compares John 8:41, Celsus/Origen, and Origen's Commentary
+    on John while distinguishing explicit from inferred illegitimacy claims.
+- id: SRC-BUDDHIST-SN-56-11
+  source_roles:
+  - PRIMARY_TEXT
+  source_kind: early_buddhist_discourse_tradition
+  author_or_tradition: Samyutta Nikaya / early Buddhist tradition
+  title: Dhammacakkappavattana Sutta / SN 56.11
+  composition_date:
+    start: null
+    end: null
+    precision: oral-and-redaction-history-not-equated-with-narrated-setting
+  physical_witness_date:
+    start: null
+    end: null
+    precision: witness-specific-not-modeled-v1
+  extant_status: extant-through-canonical-manuscript-traditions
+  original_language: Pali textual tradition
+  access_mode: SuttaCentral-digital-edition-translation
+  locators:
+  - url: https://suttacentral.net/sn56.11/en/sujato
+    passage: SN 56.11
+  limitations:
+  - Primary evidence for the received early-Buddhist textual tradition; not a stenographic witness to the historical Buddha's
+    exact words.
+- id: SRC-BUDDHIST-SN-22-59
+  source_roles:
+  - PRIMARY_TEXT
+  source_kind: early_buddhist_discourse_tradition
+  author_or_tradition: Samyutta Nikaya / early Buddhist tradition
+  title: Anattalakkhana Sutta / SN 22.59
+  composition_date:
+    start: null
+    end: null
+    precision: oral-and-redaction-history-not-equated-with-narrated-setting
+  physical_witness_date:
+    start: null
+    end: null
+    precision: witness-specific-not-modeled-v1
+  extant_status: extant-through-canonical-manuscript-traditions
+  original_language: Pali textual tradition
+  access_mode: SuttaCentral-digital-edition-translation
+  locators:
+  - url: https://suttacentral.net/sn22.59/en/bodhi
+    passage: SN 22.59
+  limitations:
+  - Translation/editing is a modern access surface; historical dating of the formulation requires comparative textual work.
+- id: SRC-BUDDHIST-SN-12-20
+  source_roles:
+  - PRIMARY_TEXT
+  source_kind: early_buddhist_discourse_tradition
+  author_or_tradition: Samyutta Nikaya / early Buddhist tradition
+  title: Paccaya Sutta / SN 12.20
+  composition_date:
+    start: null
+    end: null
+    precision: oral-and-redaction-history-not-equated-with-narrated-setting
+  physical_witness_date:
+    start: null
+    end: null
+    precision: witness-specific-not-modeled-v1
+  extant_status: extant-through-canonical-manuscript-traditions
+  original_language: Pali textual tradition
+  access_mode: SuttaCentral-digital-edition-translation
+  locators:
+  - url: https://suttacentral.net/sn12.20/en/bodhi
+    passage: SN 12.20
+  limitations:
+  - One textual witness-family to dependent-origination tradition; later exegetical temporal models remain distinct.
+- id: SCH-BUCKNELL-2022-RECONSTRUCTING-EARLY-BUDDHISM
+  source_roles:
+  - SCHOLARLY_INTERPRETATION
+  source_kind: academic_monograph
+  author_or_tradition: Roderick S. Bucknell
+  title: Reconstructing Early Buddhism
+  publisher: Cambridge University Press
+  composition_date:
+    start: '2022'
+    end: '2022'
+    precision: publication-year
+  access_mode: publisher-book-and-chapter-summaries
+  locators:
+  - doi: 10.1017/9781009236539
+    url: https://www.cambridge.org/core/books/reconstructing-early-buddhism/97CF4E8093E4D3328355EB8885E2D2B1
+  limitations:
+  - Bucknell offers a specific reconstruction of early Buddhist practice using comparative textual analysis; conclusions remain
+    scholarly reconstruction.
+- id: SCH-MCGOVERN-2022-BRAHMANICAL-AVANT-GARDE
+  source_roles:
+  - SCHOLARLY_INTERPRETATION
+  source_kind: academic_book_chapter
+  author_or_tradition: Nathan McGovern
+  title: Buddhism, Samkhya and the Brahmanical Avant-Garde
+  composition_date:
+    start: '2022'
+    end: '2022'
+    precision: publication-year
+  access_mode: publisher-abstract
+  locators:
+  - doi: 10.5871/bacad/9780197266991.003.0002
+    url: https://academic.oup.com/british-academy-scholarship-online/book/44098/chapter-abstract/372225491
+  limitations:
+  - The Brahmanical-avant-garde origin model is attributed scholarship and is not treated as settled lineage fact.
+- id: SRC-JOSEPHUS-WAR-2
+  source_roles:
+  - PRIMARY_TEXT
+  source_kind: ancient_historiography
+  author_or_tradition: Flavius Josephus
+  title: Jewish War Book II
+  composition_date:
+    start: '0070'
+    end: 0080
+    precision: approximate-decade
+  physical_witness_date:
+    start: null
+    end: null
+    precision: later-manuscript-tradition
+  extant_status: extant-through-manuscript-tradition
+  original_language: Greek
+  access_mode: digital-edition-translation
+  locators:
+  - passage: Book II, chapter 8
+    url: https://penelope.uchicago.edu/josephus/war-2.html
+  limitations:
+  - Josephus interprets Jewish groups for a Greco-Roman audience; his philosophical taxonomy is primary evidence for his representation,
+    not exhaustive self-description by each group.
+- id: SRC-JOSEPHUS-ANTIQUITIES-18
+  source_roles:
+  - PRIMARY_TEXT
+  source_kind: ancient_historiography
+  author_or_tradition: Flavius Josephus
+  title: Antiquities of the Jews Book XVIII
+  composition_date:
+    start: 0093
+    end: 0094
+    precision: approximate-year
+  physical_witness_date:
+    start: null
+    end: null
+    precision: later-manuscript-tradition
+  extant_status: extant-through-manuscript-tradition
+  original_language: Greek
+  access_mode: digital-edition-translation
+  locators:
+  - passage: Book XVIII, Jewish schools discussion
+    url: https://penelope.uchicago.edu/josephus/ant-18.html
+  limitations:
+  - Later than the events described and rhetorically adapted; must be compared with other Jewish evidence.
+- id: SRC-DSS-COMMUNITY-RULE
+  source_roles:
+  - PRIMARY_TEXT
+  source_kind: sectarian_rule_text
+  author_or_tradition: Dead Sea Scrolls / yahad-associated tradition
+  title: Community Rule / Serekh ha-Yahad
+  composition_date:
+    start: null
+    end: null
+    precision: second-temple-compositional-history
+  physical_witness_date:
+    start: null
+    end: null
+    precision: witness-specific
+  extant_status: multiple-manuscript-witnesses
+  original_language: Hebrew
+  access_mode: institutional-digital-translation
+  locators:
+  - passage: Community Rule translation
+    url: https://www.loc.gov/exhibits/scrolls/trans3.html
+  limitations:
+  - A rule text for a particular movement/community configuration; not a universal Jewish creed.
+- id: SRC-HOMERIC-HYMN-DEMETER
+  source_roles:
+  - PRIMARY_TEXT
+  source_kind: archaic_greek_hymn
+  author_or_tradition: Homeric Hymnic tradition
+  title: Homeric Hymn to Demeter
+  composition_date:
+    start: null
+    end: null
+    precision: archaic-greek-scholarly-range
+  physical_witness_date:
+    start: null
+    end: null
+    precision: later-manuscript-tradition
+  extant_status: extant-through-manuscript-tradition
+  original_language: Greek
+  access_mode: digital-edition-translation
+  locators:
+  - url: https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0138%3Ahymn%3D2
+  limitations:
+  - Important evidence for Demeter/Persephone and Eleusinian ideology; not a full transcript of secret initiation rites.
+- id: SRC-PLATO-REPUBLIC-10
+  source_roles:
+  - PRIMARY_TEXT
+  source_kind: philosophical_text
+  author_or_tradition: Plato
+  title: Republic Book X / Myth of Er
+  composition_date:
+    start: null
+    end: null
+    precision: fourth-century-bce
+  physical_witness_date:
+    start: null
+    end: null
+    precision: later-manuscript-tradition
+  extant_status: extant-through-manuscript-tradition
+  original_language: Greek
+  access_mode: digital-edition-translation
+  locators:
+  - passage: Republic 614b-621d
+    url: https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0168%3Abook%3D10
+  limitations:
+  - Philosophical myth and argument; not direct evidence that all Greeks shared one afterlife model.
+- id: SRC-AUGUSTUS-RES-GESTAE
+  source_roles:
+  - PRIMARY_TEXT
+  source_kind: imperial_inscriptional_text
+  author_or_tradition: Augustus / Roman imperial self-presentation
+  title: Res Gestae Divi Augusti
+  composition_date:
+    start: '0013'
+    end: '0014'
+    precision: late-life-final-form-ce
+  physical_witness_date:
+    start: null
+    end: null
+    precision: inscriptional-copy-tradition
+  extant_status: epigraphically-preserved
+  original_language: Latin-and-Greek
+  access_mode: digital-edition-translation
+  locators:
+  - passage: sections 19-21
+    url: https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Augustus/Res_Gestae/4%2A.html
+  limitations:
+  - Imperial self-representation, not neutral ethnography of Roman religion.
+- id: SCH-KNIBB-2011-DSS-APOCALYPTICISM
+  source_roles:
+  - SCHOLARLY_INTERPRETATION
+  source_kind: handbook_chapter
+  author_or_tradition: Michael A. Knibb
+  title: Apocalypticism and Messianism
+  container: The Oxford Handbook of the Dead Sea Scrolls
+  composition_date:
+    start: '2011'
+    end: '2011'
+    precision: publication-year
+  access_mode: publisher-abstract
+  locators:
+  - doi: 10.1093/oxfordhb/9780199207237.003.0018
+    url: https://academic.oup.com/edited-volume/34366/chapter-abstract/291496380
+- id: SCH-LIM-2011-DSS-SCRIPTURE
+  source_roles:
+  - SCHOLARLY_INTERPRETATION
+  source_kind: handbook_chapter
+  author_or_tradition: Timothy H. Lim
+  title: Authoritative Scriptures and the Dead Sea Scrolls
+  container: The Oxford Handbook of the Dead Sea Scrolls
+  composition_date:
+    start: '2011'
+    end: '2011'
+    precision: publication-year
+  access_mode: publisher-abstract
+  locators:
+  - url: https://academic.oup.com/edited-volume/34366/chapter-abstract/291495791
+- id: SCH-TAYLOR-2026-JOSEPHUS-GROUPS
+  source_roles:
+  - SCHOLARLY_INTERPRETATION
+  source_kind: handbook_chapter
+  author_or_tradition: Joan E. Taylor
+  title: Pharisees, Sadducees, and Essenes in Josephus' Writings
+  container: The Oxford Handbook of Josephus
+  composition_date:
+    start: '2026'
+    end: '2026'
+    precision: publication-year
+  access_mode: publisher-abstract
+  locators:
+  - url: https://academic.oup.com/edited-volume/62350/chapter-abstract/554396710
+- id: SCH-GASPARRO-2016-DAIMONIC-POWER
+  source_roles:
+  - SCHOLARLY_INTERPRETATION
+  source_kind: handbook_chapter
+  author_or_tradition: Giulia Sfameni Gasparro
+  title: Daimonic Power
+  container: The Oxford Handbook of Ancient Greek Religion
+  composition_date:
+    start: '2016'
+    end: '2016'
+    precision: publication-year
+  access_mode: publisher-abstract
+  locators:
+  - url: https://academic.oup.com/edited-volume/34261/chapter-abstract/290477393
+- id: SCH-GRADEL-2002-EMPEROR-WORSHIP
+  source_roles:
+  - SCHOLARLY_INTERPRETATION
+  source_kind: academic_monograph
+  author_or_tradition: Ittai Gradel
+  title: Emperor Worship and Roman Religion
+  composition_date:
+    start: '2002'
+    end: '2002'
+    precision: publication-year
+  access_mode: publisher-abstract-and-contents
+  locators:
+  - url: https://academic.oup.com/book/46977
+- id: SCH-KAROGLOU-2013-MYSTERY-CULTS
+  source_roles:
+  - SCHOLARLY_INTERPRETATION
+  source_kind: museum_scholarly_essay
+  author_or_tradition: Kiki Karoglou
+  title: Mystery Cults in the Greek and Roman World
+  composition_date:
+    start: '2013'
+    end: '2013'
+    precision: publication-year
+  access_mode: institutional-full-text
+  locators:
+  - url: https://www.metmuseum.org/de/essays/mystery-cults-in-the-greek-and-roman-world
+- id: SCH-ALGRA-2009-STOIC-THEOLOGY
+  source_roles:
+  - SCHOLARLY_INTERPRETATION
+  source_kind: academic_book_chapter
+  author_or_tradition: Keimpe Algra
+  title: Stoic Philosophical Theology and Graeco-Roman Religion
+  composition_date:
+    start: '2009'
+    end: '2009'
+    precision: publication-year
+  access_mode: publisher-abstract
+  locators:
+  - url: https://academic.oup.com/book/12508/chapter-abstract/163107615
+- id: SRC-LXX-HOSEA
+  source_roles:
+  - PRIMARY_TEXT
+  source_kind: septuagint_book_text
+  author_or_tradition: Septuagint Hosea
+  title: Hosea / Osee
+  composition_date:
+    start: null
+    end: null
+    precision: unresolved-in-v1
+  physical_witness_date:
+    start: null
+    end: null
+    precision: witness-specific-unresolved-in-v1
+  extant_status: extant-through-manuscript-tradition
+  original_language: Greek_translation
+  access_mode: modern-digital-critical-text-surface
+  locators:
+  - passage: Hosea 1:2
+    url: https://www.biblindex.org/en/bible/septuaginta/hos-1%3A2
+  limitations:
+  - The digital text is an access surface, not a physical manuscript witness.
+  - This source is used for Greek semantic context, not to settle the historical composition date of Hosea or the Septuagint
+    translation layer.
+- id: SRC-LXX-EZEKIEL
+  source_roles:
+  - PRIMARY_TEXT
+  source_kind: septuagint_book_text
+  author_or_tradition: Septuagint Ezekiel
+  title: Ezekiel / Ezechiel
+  composition_date:
+    start: null
+    end: null
+    precision: unresolved-in-v1
+  physical_witness_date:
+    start: null
+    end: null
+    precision: witness-specific-unresolved-in-v1
+  extant_status: extant-through-manuscript-tradition
+  original_language: Greek_translation
+  access_mode: modern-digital-critical-text-surface
+  locators:
+  - passage: Ezekiel 16, especially 16:20-26
+    url: https://www.die-bibel.de/en/bible/LXX/EZK.16
+  limitations:
+  - The digital text is an access surface, not a physical manuscript witness.
+  - The chapter's sustained sexualized metaphor does not make every porn- word-family occurrence metaphorical in every corpus.
+- id: SCH-MALINA-1972-PORNEIA
+  source_roles:
+  - SCHOLARLY_INTERPRETATION
+  source_kind: peer_reviewed_article
+  author_or_tradition: Bruce J. Malina
+  title: Does Porneia Mean Fornication?
+  container: Novum Testamentum 14.1
+  composition_date:
+    start: '1972'
+    end: '1972'
+    precision: publication-year
+  access_mode: publisher-metadata-and-preview
+  locators:
+  - doi: 10.1163/156853672X00070
+    url: https://brill.com/view/journals/nt/14/1/article-p10_2.xml
+  limitations:
+  - Argues against reducing NT porneia to modern premarital 'fornication' and ties the category to Torah-prohibited conduct;
+    registered as scholarship, not lexical fact.
+- id: SCH-JENSEN-1978-PORNEIA
+  source_roles:
+  - SCHOLARLY_INTERPRETATION
+  source_kind: peer_reviewed_article
+  author_or_tradition: Joseph Jensen
+  title: Does Porneia Mean Fornication? A Critique of Bruce Malina
+  container: Novum Testamentum 20.3
+  composition_date:
+    start: '1978'
+    end: '1978'
+    precision: publication-year
+  access_mode: publisher-preview-plus-bibliographic-record
+  locators:
+  - doi: 10.1163/156853678X00074
+    url: https://brill.com/previewpdf/journals/nt/20/3/article-p161_1.xml
+  limitations:
+  - Critiques Malina and surveys Old Testament/Jewish/Philonic background; V1 uses it to demonstrate scholarly dispute and
+    semantic breadth, not as a universal definition.
+- id: SCH-HARPER-2012-PORNEIA
+  source_roles:
+  - SCHOLARLY_INTERPRETATION
+  source_kind: peer_reviewed_article
+  author_or_tradition: Kyle Harper
+  title: 'Porneia: The Making of a Christian Sexual Norm'
+  container: Journal of Biblical Literature 131.2
+  composition_date:
+    start: '2012'
+    end: '2012'
+    precision: publication-year
+  access_mode: abstract-and-bibliographic-record
+  locators:
+  - doi: 10.1353/jbl.2012.0012
+    url: https://www.researchgate.net/publication/254947093_Porneia_The_Making_of_a_Christian_Sexual_Norm
+  limitations:
+  - Reconstructs development of porneia as a broad sexual-morality category; later scholarship challenges parts of the social-historical
+    scope.
+- id: SCH-GLANCY-2015-PORNEIA
+  source_roles:
+  - SCHOLARLY_INTERPRETATION
+  source_kind: peer_reviewed_article
+  author_or_tradition: Jennifer A. Glancy
+  title: 'The Sexual Use of Slaves: A Response to Kyle Harper on Jewish and Christian Porneia'
+  container: Journal of Biblical Literature 134.1
+  composition_date:
+    start: '2015'
+    end: '2015'
+    precision: publication-year
+  access_mode: abstract-and-bibliographic-record
+  locators:
+  - doi: 10.1353/jbl.2015.0003
+    url: https://www.researchgate.net/publication/276454582_The_Sexual_Use_of_Slaves_A_Response_to_Kyle_Harper_on_Jewish_and_Christian_Porneia
+  limitations:
+  - Challenges Harper's claim that first-century Jewish porneia encompassed a male slaveholder's sexual exploitation of enslaved
+    women; useful as evidence that category boundaries remain disputed.
+- id: SRC-1ENOCH-WATCHERS
+  source_roles:
+  - PRIMARY_TEXT
+  source_kind: composite_ancient_apocalyptic_text
+  author_or_tradition: Enochic / Book of the Watchers tradition
+  title: 1 Enoch 1-36 / Book of the Watchers
+  composition_date:
+    start: null
+    end: null
+    precision: layered-second-temple-composition
+  physical_witness_date:
+    start: null
+    end: null
+    precision: multiple-aramaic-greek-ethiopic-witness-traditions
+  extant_status: composite-multilingual-witness-tradition
+  original_language: Aramaic-probable-for-core-material
+  access_mode: scholarly-secondary-reconstruction-in-v1
+  limitations:
+  - 1 Enoch is composite; Watchers strata and later redactional developments must not be collapsed into one composition date.
+  - V1 has not yet bound every proposition to a specific Aramaic Qumran fragment.
+- id: SRC-DANIEL-7-12
+  source_roles:
+  - PRIMARY_TEXT
+  source_kind: biblical_apocalyptic_text
+  author_or_tradition: Danielic Jewish tradition
+  title: Daniel 7-12
+  composition_date:
+    start: null
+    end: null
+    precision: layered-with-maccabean-apocalyptic-horizon
+  physical_witness_date:
+    start: null
+    end: null
+    precision: multiple-hebrew-aramaic-greek-witness-traditions
+  extant_status: extant-through-multiple-textual-traditions
+  original_language: Aramaic-and-Hebrew
+  access_mode: digital-edition-translation
+  locators:
+  - passage: Daniel 7-12
+    url: https://www.sefaria.org/Daniel.7-12
+  - passage: Daniel 12:2-3
+    url: https://www.sefaria.org/Daniel.12.2
+  limitations:
+  - MT, Old Greek, and Proto-Theodotion traditions differ; V1 source-level claims do not erase textual pluralism.
+- id: SRC-PHILO-DE-OPIFICIO
+  source_roles:
+  - PRIMARY_TEXT
+  source_kind: hellenistic_jewish_philosophical_exegesis
+  author_or_tradition: Philo of Alexandria
+  title: De opificio mundi / On the Creation
+  composition_date:
+    start: null
+    end: null
+    precision: first-century-ce-philonic-corpus
+  physical_witness_date:
+    start: null
+    end: null
+    precision: later-manuscript-tradition
+  extant_status: extant-through-manuscript-tradition
+  original_language: Greek
+  access_mode: digital-public-domain-translation
+  locators:
+  - url: https://www.ccel.org/ccel/philo/works.iii.i.html
+  limitations:
+  - Current direct readback uses the older Yonge English translation; consequential lexical claims require Greek-text verification.
+- id: SCH-STOKES-2019-SATANOLOGY-WATCHERS
+  source_roles:
+  - SCHOLARLY_INTERPRETATION
+  source_kind: peer_reviewed_article
+  author_or_tradition: Ryan E. Stokes
+  title: New Testament Satanology and Leading Suprahuman Opponents in Second Temple Jewish Literature
+  container: The Journal of Theological Studies 70.1
+  composition_date:
+    start: '2019'
+    end: '2019'
+    precision: publication-year
+  access_mode: publisher-full-text-or-guest-access
+  locators:
+  - url: https://academic.oup.com/jts/article/70/1/21/5404472
+  limitations:
+  - Used for literary-development reconstruction of Watchers traditions; reconstruction remains scholarship rather than manuscript
+    fact.
+- id: SCH-OCD-2022-DANIEL
+  source_roles:
+  - SCHOLARLY_INTERPRETATION
+  source_kind: scholarly_reference_article
+  author_or_tradition: Oxford Classical Dictionary
+  title: Book of Daniel
+  composition_date:
+    start: '2022'
+    end: '2022'
+    precision: publication-year-version
+  access_mode: publisher-abstract-full-reference-summary
+  locators:
+  - url: https://academic.oup.com/edited-volume/61673/chapter-abstract/548080178
+- id: SCH-NIEHOFF-2018-PHILO-LOGOS
+  source_roles:
+  - SCHOLARLY_INTERPRETATION
+  source_kind: academic_monograph_chapter
+  author_or_tradition: Maren R. Niehoff
+  title: An Utterly Transcendent God and His Logos
+  container: 'Philo of Alexandria: An Intellectual Biography'
+  composition_date:
+    start: '2018'
+    end: '2018'
+    precision: publication-year
+  access_mode: publisher-abstract
+  locators:
+  - url: https://academic.oup.com/yale-scholarship-online/book/17447/chapter-abstract/174961843
+- id: SCH-DECHARNEUX-2017-PHILO-POWERS
+  source_roles:
+  - SCHOLARLY_INTERPRETATION
+  source_kind: academic_book_chapter
+  author_or_tradition: Baudouin S. Decharneux
+  title: Divine Powers in Philo of Alexandria's De opificio mundi
+  composition_date:
+    start: '2017'
+    end: '2017'
+    precision: publication-year
+  access_mode: publisher-abstract
+  locators:
+  - url: https://academic.oup.com/book/8825/chapter-abstract/155019922
+- id: SCH-SCHAFER-2020-PHILO-LOGOS
+  source_roles:
+  - SCHOLARLY_INTERPRETATION
+  source_kind: academic_monograph_chapter
+  author_or_tradition: Peter Schäfer
+  title: The Logos according to Philo of Alexandria
+  composition_date:
+    start: '2020'
+    end: '2020'
+    precision: publication-year
+  access_mode: publisher-abstract
+  locators:
+  - url: https://academic.oup.com/princeton-scholarship-online/book/31292/chapter-abstract/264519360
+- id: SCH-HARGIS-1999-ANTI-CHRISTIAN-POLEMIC
+  source_roles:
+  - SCHOLARLY_INTERPRETATION
+  source_kind: academic_monograph
+  author_or_tradition: Jeffrey W. Hargis
+  title: 'Against the Christians: The Rise of Early Anti-Christian Polemic'
+  publisher: Peter Lang
+  composition_date:
+    start: '1999'
+    end: '1999'
+    precision: publication-year
+  access_mode: publisher-metadata-plus-secondary-report-through-blumell
+  locators:
+  - url: https://www.peterlang.com/document/1054395
+  - secondary_locator: Blumell 2007 cites Hargis pp. 36-39 among recent challenges to authenticity of Celsus's Jewish arguments
+    url: https://journals.sagepub.com/doi/10.1177/000842980703600206
+  limitations:
+  - V1 has not independently read Hargis pp. 36-39 through a reliable full-text scholarly access path. The skeptical direction
+    is registered because Blumell explicitly identifies those pages as challenging authenticity.
+- id: SCH-TRIGG-1998-ORIGEN
+  source_roles:
+  - SCHOLARLY_INTERPRETATION
+  source_kind: academic_monograph
+  author_or_tradition: Joseph W. Trigg
+  title: Origen
+  publisher: Routledge
+  composition_date:
+    start: '1998'
+    end: '1998'
+    precision: publication-year
+  access_mode: publisher-metadata-plus-secondary-report-through-blumell
+  locators:
+  - url: https://www.routledge.com/Origen/Trigg/p/book/9780415118354
+  - secondary_locator: Blumell 2007 cites Trigg p. 58 among recent challenges to authenticity of Celsus's Jewish arguments
+    url: https://journals.sagepub.com/doi/10.1177/000842980703600206
+  limitations:
+  - V1 has not independently read Trigg p. 58 through a reliable full-text scholarly access path. The skeptical direction
+    is registered through Blumell's explicit literature review.
+- id: SCH-PAGET-2017-CELSUS-JEW
+  source_roles:
+  - SCHOLARLY_INTERPRETATION
+  source_kind: peer_reviewed_article
+  author_or_tradition: James Carleton Paget
+  title: The Jew of Celsus and adversus Judaeos literature
+  container: Zeitschrift für Antikes Christentum / Journal of Ancient Christianity
+  composition_date:
+    start: '2017'
+    end: '2017'
+    precision: publication-year
+  access_mode: publisher-abstract-plus-institutional-record
+  locators:
+  - doi: 10.1515/zac-2017-0015
+    url: https://www.degruyter.com/document/doi/10.1515/zac-2017-0015/html
+  limitations:
+  - Paget discusses the genuineness/authenticity problem and argues that several features can support authentic Jewish input.
+    V1 has not promoted the abstract-level representation into a complete article readback.
+- id: SRC-DIDACHE
+  source_roles:
+  - PRIMARY_TEXT
+  source_kind: early_christian_church_order
+  author_or_tradition: Didache tradition
+  title: Didache / Teaching of the Twelve Apostles
+  composition_date:
+    start: null
+    end: null
+    precision: late-first-to-early-second-century-range-contested
+  physical_witness_date:
+    start: null
+    end: null
+    precision: later-manuscript-tradition
+  extant_status: extant-through-later-manuscript
+  original_language: Greek
+  access_mode: public-digital-translation
+  locators:
+  - url: https://www.newadvent.org/fathers/0714.htm
+  limitations:
+  - Composition/redaction may be layered; one surviving work does not represent all early Christian communities.
+- id: SRC-IGNATIUS-MAGNESIANS
+  source_roles:
+  - PRIMARY_TEXT
+  source_kind: early_christian_letter
+  author_or_tradition: Ignatius of Antioch
+  title: Epistle to the Magnesians
+  composition_date:
+    start: '0100'
+    end: '0135'
+    precision: early-second-century-range
+  physical_witness_date:
+    start: null
+    end: null
+    precision: later-manuscript-tradition
+  extant_status: extant-through-manuscript-tradition
+  original_language: Greek
+  access_mode: public-digital-translation
+  locators:
+  - url: https://www.newadvent.org/fathers/0105.htm
+  limitations:
+  - Ignatius advocates an ecclesial/identity program; his rhetoric is not evidence that every Christian community already
+    followed it.
+- id: SRC-MISHNAH-SANHEDRIN-10-1
+  source_roles:
+  - PRIMARY_TEXT
+  source_kind: rabbinic_legal_text
+  author_or_tradition: Mishnah / tannaitic rabbinic tradition
+  title: Mishnah Sanhedrin 10:1
+  composition_date:
+    start: null
+    end: '0220'
+    precision: mishnaic-redaction-around-200-ce
+  physical_witness_date:
+    start: null
+    end: null
+    precision: later-manuscript-tradition
+  extant_status: extant-through-manuscript-tradition
+  original_language: Mishnaic Hebrew
+  access_mode: digital-edition-translation
+  locators:
+  - passage: Sanhedrin 10:1
+    url: https://www.sefaria.org/Mishnah_Sanhedrin.10.1
+  limitations:
+  - This passage is evidence for a Mishnah layer; it must not be projected unchanged onto all Second Temple Jewish groups.
+- id: SCH-GOODMAN-2015-MISHNAH
+  source_roles:
+  - SCHOLARLY_INTERPRETATION
+  source_kind: reference_article
+  author_or_tradition: Martin Goodman
+  title: Mishnah
+  container: Oxford Classical Dictionary
+  composition_date:
+    start: '2015'
+    end: '2015'
+    precision: publication-year
+  access_mode: publisher-extract
+  locators:
+  - url: https://academic.oup.com/edited-volume/61673/chapter-abstract/549654572
+- id: SCH-HEZSER-2009-RABBINIC-LITERATURE
+  source_roles:
+  - SCHOLARLY_INTERPRETATION
+  source_kind: handbook_chapter
+  author_or_tradition: Catherine Hezser
+  title: Classical Rabbinic Literature
+  composition_date:
+    start: '2009'
+    end: '2009'
+    precision: publication-year
+  access_mode: publisher-abstract
+  locators:
+  - url: https://academic.oup.com/edited-volume/38625/chapter-abstract/335225077
+- id: SCH-JAFFEE-2001-TORAH-MOUTH
+  source_roles:
+  - SCHOLARLY_INTERPRETATION
+  source_kind: academic_monograph
+  author_or_tradition: Martin S. Jaffee
+  title: 'Torah in the Mouth: Writing and Oral Tradition in Palestinian Judaism, 200 BCE-400 CE'
+  composition_date:
+    start: '2001'
+    end: '2001'
+    precision: publication-year
+  access_mode: publisher-abstracts
+  locators:
+  - url: https://academic.oup.com/book/2067
+- id: SCH-LAPIN-2012-RABBIS-ROMANS
+  source_roles:
+  - SCHOLARLY_INTERPRETATION
+  source_kind: academic_monograph
+  author_or_tradition: Hayim Lapin
+  title: 'Rabbis as Romans: The Rabbinic Movement in Palestine, 100-400 CE'
+  composition_date:
+    start: '2012'
+    end: '2012'
+    precision: publication-year
+  access_mode: publisher-abstracts
+  locators:
+  - url: https://academic.oup.com/book/1791/chapter-abstract/141469273
+- id: SCH-BOYARIN-1998-PANTHERA-WORDPLAY
+  source_roles:
+  - SCHOLARLY_INTERPRETATION
+  source_kind: peer_reviewed_article
+  author_or_tradition: Daniel Boyarin
+  title: Martyrdom and the Making of Christianity and Judaism
+  container: Journal of Early Christian Studies 6.4
+  composition_date:
+    start: '1998'
+    end: '1998'
+    precision: publication-year
+  access_mode: author-uploaded-full-text
+  locators:
+  - doi: 10.1353/earl.1998.0053
+    url: https://www.researchgate.net/publication/236797425_Martyrdom_and_the_Making_of_Christianity_and_Judaism
+  - passage: pp. 599-600, note 69
+  limitations:
+  - Boyarin strongly favors intentional distortion of parthenos as a polemical explanation; this is a modern scholarly reconstruction,
+    not an ancient etymological gloss preserved with the name.
+- id: SCH-JAFFE-2008-BEN-PANTERA
+  source_roles:
+  - SCHOLARLY_INTERPRETATION
+  source_kind: peer_reviewed_article
+  author_or_tradition: Dan Jaffé
+  title: 'Une ancienne dénomination talmudique de Jésus : Ben Pantera : essai d''analyse philologique et historique'
+  container: Theologische Zeitschrift 64
+  composition_date:
+    start: '2008'
+    end: '2008'
+    precision: publication-year
+  pages: 258-270
+  access_mode: repository-record-and-abstract
+  locators:
+  - doi: 10.5169/seals-877834
+    url: https://www.e-periodica.ch/cntmng?pid=thz-001%3A2008%3A64%3A%3A434
+  limitations:
+  - Current V1 direct full-text retrieval failed in the web workflow. SciSpace/repository metadata supports the article's
+    focus on Ben Pantera as polemical mockery; exact derivation arguments require full-text readback.
+- id: SCH-MURCIA-2014-PANTHERA-ORIGIN
+  source_roles:
+  - SCHOLARLY_INTERPRETATION
+  source_kind: peer_reviewed_article
+  author_or_tradition: Thierry Murcia
+  title: 'Yeshoua ben Panthera: l''origine du nom. Status quaestionis et nouvelles investigations'
+  container: Judaïsme ancien / Ancient Judaism 2
+  composition_date:
+    start: '2014'
+    end: '2014'
+    precision: publication-year
+  pages: 157-207
+  access_mode: publisher-metadata-and-table-of-contents
+  locators:
+  - url: https://www.brepols.net/products/IS-9782503550763-1
+  limitations:
+  - The publisher record establishes a dedicated status-quaestionis study of the name's origin. V1 has not independently read
+    the full article and therefore does not promote secondary descriptions of Murcia's preferred reconstruction into verified
+    article claims.
+- id: SRC-CHALCEDON-DEFINITION-451
+  source_roles:
+  - PRIMARY_TEXT
+  source_kind: conciliar_definition
+  author_or_tradition: Council of Chalcedon
+  title: Definition of Faith of the Council of Chalcedon
+  composition_date:
+    start: '0451'
+    end: '0451'
+    precision: council-year
+  physical_witness_date:
+    start: null
+    end: null
+    precision: later-manuscript-and-edition-tradition
+  extant_status: extant-through-conciliar-act-tradition
+  original_language: Greek
+  access_mode: public-scholarly-translation
+  locators:
+  - url: https://sourcebooks.web.fordham.edu/basis/chalcedon.asp
+  - url: https://www.newadvent.org/fathers/3811.htm
+  limitations:
+  - Conciliar definition establishes the council's normative proposition, not universal reception by all Christian communities.
+- id: MAT-HIMYAR-LATE-ANTIQUE-INSCRIPTIONS
+  source_roles:
+  - MATERIAL_EVIDENCE
+  source_kind: epigraphic_corpus
+  author_or_tradition: Himyarite / South Arabian inscriptional traditions
+  title: Late Antique Himyarite monotheist and royal inscriptions
+  composition_date:
+    start: '0350'
+    end: '0575'
+    precision: broad-corpus-range
+  physical_witness_date:
+    start: '0350'
+    end: '0575'
+    precision: inscription-specific-dates-required
+  extant_status: material-inscriptions
+  original_language: Ancient South Arabian
+  access_mode: scholarly-epigraphic-editions
+  locators:
+  - url: https://academic.oup.com/book/12636/chapter-abstract/162565588
+  limitations:
+  - This is a corpus node; consequential claims must bind individual inscriptions and dates in later packets.
+- id: MAT-KARTIR-SASANIAN-INSCRIPTIONS
+  source_roles:
+  - MATERIAL_EVIDENCE
+  source_kind: royal_priestly_inscriptional_corpus
+  author_or_tradition: Kirdēr/Kartir and Sasanian royal-priestly context
+  title: Kirdēr inscriptions
+  composition_date:
+    start: '0240'
+    end: 0295
+    precision: third-century-sasanian-range
+  physical_witness_date:
+    start: '0240'
+    end: 0295
+    precision: inscription-specific-dates-required
+  extant_status: rock-inscriptions
+  original_language: Middle Persian
+  access_mode: scholarly-transcription-and-interpretation
+  limitations:
+  - Priestly self-representation is primary evidence for Kirdēr's claims and ideology, not an unbiased census of empire-wide
+    religious life.
+- id: SCH-ALLEN-2008-ORTHODOXY-ENFORCEMENT
+  source_roles:
+  - SCHOLARLY_INTERPRETATION
+  source_kind: handbook_chapter
+  author_or_tradition: Pauline Allen
+  title: The definition and enforcement of orthodoxy
+  composition_date:
+    start: '2008'
+    end: '2008'
+    precision: publication-year
+  access_mode: publisher-summary
+  locators:
+  - url: https://www.cambridge.org/core/books/abs/cambridge-ancient-history/definition-and-enforcement-of-orthodoxy/389466484AB2A3EC4470C7211E9C1A6D
+- id: SCH-MENZE-2025-CHRISTIAN-NEAR-EAST
+  source_roles:
+  - SCHOLARLY_INTERPRETATION
+  source_kind: handbook_chapter
+  author_or_tradition: Volker Menze
+  title: The Christian Near East in Late Antiquity
+  composition_date:
+    start: '2025'
+    end: '2025'
+    precision: publication-year
+  access_mode: publisher-abstract
+  locators:
+  - url: https://academic.oup.com/edited-volume/59904/chapter-abstract/512437056
+- id: SCH-WALKER-2012-CHURCH-EAST
+  source_roles:
+  - SCHOLARLY_INTERPRETATION
+  source_kind: handbook_chapter
+  author_or_tradition: Joel Walker
+  title: 'From Nisibis to Xi''an: The Church of the East in Late Antique Eurasia'
+  composition_date:
+    start: '2012'
+    end: '2012'
+    precision: publication-year
+  access_mode: publisher-abstract
+  locators:
+  - url: https://academic.oup.com/edited-volume/28073/chapter-abstract/212145305
+- id: SCH-IRANICA-ZORO-HISTORICAL-REVIEW
+  source_roles:
+  - SCHOLARLY_INTERPRETATION
+  source_kind: reference_article
+  author_or_tradition: Encyclopaedia Iranica
+  title: Zoroastrianism i. Historical Review up to the Arab Conquest
+  composition_date:
+    start: null
+    end: null
+    precision: modern-reference-article
+  access_mode: institutional-full-text
+  locators:
+  - url: https://www.iranicaonline.org/articles/zoroastrianism-i-historical-review/
+- id: SCH-ROBIN-2015-HIMYAR-EPIGRAPHY
+  source_roles:
+  - SCHOLARLY_INTERPRETATION
+  source_kind: academic_chapter
+  author_or_tradition: Christian Julien Robin
+  title: 'Himyar, Aksum, and Arabia Deserta in Late Antiquity: The Epigraphic Evidence'
+  composition_date:
+    start: '2015'
+    end: '2015'
+    precision: publication-year
+  access_mode: publisher-abstract
+  locators:
+  - url: https://academic.oup.com/book/12636/chapter-abstract/162565588
+- id: SCH-GAJDA-2017-SOUTH-ARABIA-MONOTHEISM
+  source_roles:
+  - SCHOLARLY_INTERPRETATION
+  source_kind: academic_chapter
+  author_or_tradition: Iwona Gajda
+  title: Remarks on Monotheism in Ancient South Arabia
+  composition_date:
+    start: '2017'
+    end: '2017'
+    precision: publication-year
+  access_mode: publisher-abstract
+  locators:
+  - url: https://academic.oup.com/book/5204/chapter-abstract/147869817
+- id: SCH-KJAER-2022-RAHMAN
+  source_roles:
+  - SCHOLARLY_INTERPRETATION
+  source_kind: journal_article
+  author_or_tradition: Sigrid K. Kjaer
+  title: 'Rahman before Muhammad: A pre-history of the First Peace in Islam'
+  composition_date:
+    start: '2022'
+    end: '2022'
+    precision: publication-year
+  access_mode: publisher-full-text
+  locators:
+  - url: https://www.cambridge.org/core/journals/modern-asian-studies/article/rahman-before-muhammad-a-prehistory-of-the-first-peace-sulh-in-islam/280B60BFF68749648057202B29C7C8F0
+- id: SRC-QURAN-RECEIVED-TEXT
+  source_roles:
+  - PRIMARY_TEXT
+  source_kind: sacred_scripture_received_text
+  author_or_tradition: Qur'anic proclamation / received consonantal-text and reading tradition
+  title: Qur'an
+  composition_date:
+    start: null
+    end: null
+    precision: seventh-century-proclamation-corpus-inner-chronology-contested
+  physical_witness_date:
+    start: null
+    end: null
+    precision: manuscript-specific-records-required
+  extant_status: extant-through-manuscript-and-recitation-traditions
+  original_language: Arabic
+  access_mode: digital-arabic-text-multiple-translations
+  locators:
+  - url: https://quran.com
+  - url: https://corpus.quran.com
+  limitations:
+  - The received text is the primary corpus for V1 propositions; manuscript, qira'at and textual-history claims require witness-level
+    records.
+  - Canonical sura order is not treated as proclamation chronology.
+  - Translation-level readback does not settle contested Arabic semantics.
+- id: SCH-NEUWIRTH-2012-QURAN-BIBLE
+  source_roles:
+  - SCHOLARLY_INTERPRETATION
+  source_kind: handbook_chapter
+  author_or_tradition: Angelika Neuwirth
+  title: The Qur'an and the Bible
+  container: The New Cambridge History of the Bible
+  composition_date:
+    start: '2012'
+    end: '2012'
+    precision: publication-year
+  access_mode: publisher-summary
+  locators:
+  - url: https://www.cambridge.org/core/books/abs/new-cambridge-history-of-the-bible/quran-and-the-bible/D2B1231685CB811D751DE03A5D090E13
+  limitations:
+  - Used for structural/literary development framing, not as primary evidence for Qur'anic propositions.
+- id: SCH-NEUWIRTH-2019-QURAN-LATE-ANTIQUITY
+  source_roles:
+  - SCHOLARLY_INTERPRETATION
+  source_kind: academic_monograph
+  author_or_tradition: Angelika Neuwirth
+  title: 'The Qur''an and Late Antiquity: A Shared Heritage'
+  composition_date:
+    start: '2019'
+    end: '2019'
+    precision: publication-year
+  access_mode: publisher-abstracts
+  locators:
+  - url: https://academic.oup.com/book/11627
+  limitations:
+  - Chronological and communal-formation model is scholarly reconstruction and remains reviewable.
+- id: SCH-SINAI-2020-INNER-QURANIC-CHRONOLOGY
+  source_roles:
+  - SCHOLARLY_INTERPRETATION
+  source_kind: handbook_chapter
+  author_or_tradition: Nicolai Sinai
+  title: Inner-Qur'anic Chronology
+  container: The Oxford Handbook of Qur'anic Studies
+  composition_date:
+    start: '2020'
+    end: '2020'
+    precision: publication-year
+  access_mode: publisher-abstract
+  locators:
+  - url: https://academic.oup.com/edited-volume/34388/chapter-abstract/291610806
+  limitations:
+  - Used to establish chronology as a historical-critical problem, not to treat any proposed sequence as primary-text fact.
+- id: SCH-GUNTHER-2020-QURAN-ESCHATOLOGY
+  source_roles:
+  - SCHOLARLY_INTERPRETATION
+  source_kind: handbook_chapter
+  author_or_tradition: Sebastian Gunther
+  title: Eschatology and the Qur'an
+  container: The Oxford Handbook of Qur'anic Studies
+  composition_date:
+    start: '2020'
+    end: '2020'
+    precision: publication-year
+  access_mode: publisher-abstract
+  locators:
+  - url: https://academic.oup.com/edited-volume/34388/chapter-abstract/291614203
+  limitations:
+  - Used for thematic synthesis; exact Qur'anic propositions remain bound to primary verses.
+- id: SRC-JOSEPHUS-ANTIQUITIES-20-200
+  source_roles:
+  - PRIMARY_TEXT
+  source_kind: ancient_historiography
+  author_or_tradition: Flavius Josephus
+  title: Jewish Antiquities 20.200
+  composition_date:
+    start: 0093
+    end: 0094
+    precision: conventional-publication-range
+  physical_witness_date:
+    start: null
+    end: null
+    precision: later-manuscript-tradition
+  extant_status: extant-through-manuscript-tradition
+  original_language: Greek
+  access_mode: scholarly-edition-and-translation
+  locators:
+  - passage: Antiquities 20.200
+    url: https://penelope.uchicago.edu/josephus/ant-20.html
+  limitations:
+  - The passage identifies James in relation to Jesus called Christ; its authenticity remains a scholarly question although
+    current scholarship is strongly favorable.
+- id: SCH-ALLISON-2025-INTERPRETING-JESUS
+  source_roles:
+  - SCHOLARLY_INTERPRETATION
+  source_kind: academic_monograph
+  author_or_tradition: Dale C. Allison Jr.
+  title: Interpreting Jesus
+  composition_date:
+    start: '2025'
+    end: '2025'
+    precision: publication-year
+  access_mode: publisher-description-plus-review-summary
+  locators:
+  - url: https://www.eerdmans.com/9781467460972/interpreting-jesus/
+  limitations:
+  - V1 uses publisher description and published review-level summaries for the contingent-eschatology and Moses/self-conception
+    arguments; chapter-level direct readback remains desirable.
+- id: SCH-FERDA-2024-PROMISED-SECOND-COMING
+  source_roles:
+  - SCHOLARLY_INTERPRETATION
+  source_kind: academic_monograph
+  author_or_tradition: Tucker S. Ferda
+  title: 'Jesus and His Promised Second Coming: Jewish Eschatology and Christian Origins'
+  composition_date:
+    start: '2024'
+    end: '2024'
+    precision: publication-year
+  access_mode: publisher-table-of-contents-and-scholarly-review
+  locators:
+  - url: https://www.eerdmans.com/9781467463614/jesus-and-his-promised-second-coming/
+  limitations:
+  - Ferda's historical reconstruction of Jesus' future role is an attributed scholarly argument, not established project fact.
+- id: SCH-ANDRADE-2025-KILLING-MESSIAH
+  source_roles:
+  - SCHOLARLY_INTERPRETATION
+  source_kind: academic_monograph
+  author_or_tradition: Nathanael J. Andrade
+  title: 'Killing the Messiah: The Trial and Crucifixion of Jesus of Nazareth'
+  composition_date:
+    start: '2025'
+    end: '2025'
+    precision: publication-year
+  access_mode: publisher-chapter-abstracts
+  locators:
+  - url: https://academic.oup.com/book/59249
+  limitations:
+  - V1 uses publisher chapter abstracts for Andrade's Roman-sedition reconstruction; full chapter readback is required before
+    narrower legal-detail claims are promoted.
+- id: SCH-JOSEPH-2023-REJECTED-JESUS
+  source_roles:
+  - SCHOLARLY_INTERPRETATION
+  source_kind: academic_monograph
+  author_or_tradition: Simon J. Joseph
+  title: 'A Social History of Christian Origins: The Rejected Jesus'
+  composition_date:
+    start: '2023'
+    end: '2023'
+    precision: publication-year
+  access_mode: scholarly-review-summary
+  locators:
+  - url: https://academic.oup.com/jts/article-abstract/77/1/402/8350992
+  limitations:
+  - Current V1 access is through a detailed scholarly review; the project's use is limited to Joseph's broad social-memory/rejection
+    thesis as reported there.
+- id: SCH-SCHMIDT-2025-JOSEPHUS-JAMES
+  source_roles:
+  - SCHOLARLY_INTERPRETATION
+  source_kind: academic_monograph_appendix
+  author_or_tradition: T. C. Schmidt
+  title: 'James the Brother of Jesus: Antiquities 20.200'
+  container: 'Josephus and Jesus: New Evidence for the One Called Christ'
+  composition_date:
+    start: '2025'
+    end: '2025'
+    precision: publication-year
+  access_mode: publisher-extract
+  locators:
+  - url: https://academic.oup.com/book/60034/chapter/513641505
+  limitations:
+  - Used for the current scholarly case that Antiquities 20.200 is authentic and for reception-history cautions; the appendix's
+    broader argument remains attributed scholarship.
+- id: SCH-ZELLENTIN-2022-LAW-BEYOND-ISRAEL
+  source_roles:
+  - SCHOLARLY_INTERPRETATION
+  source_kind: academic_monograph
+  author_or_tradition: Holger M. Zellentin
+  title: 'Law Beyond Israel: From the Bible to the Qur''an'
+  composition_date:
+    start: '2022'
+    end: '2022'
+    precision: publication-year
+  access_mode: publisher-book-abstract-and-chapter-abstracts
+  locators:
+  - url: https://academic.oup.com/book/44598
+  - url: https://academic.oup.com/book/44598/chapter/377809151
+  limitations:
+  - V1 has read publisher abstracts/contents, not the complete monograph page-by-page; exact individual legal lineages require
+    chapter-level readback and hostile review.
+- id: MAT-DOME-ROCK-INSCRIPTION-691-692
+  source_roles:
+  - MATERIAL_EVIDENCE
+  - PRIMARY_TEXT
+  source_kind: monumental_inscription
+  author_or_tradition: Umayyad / Abd al-Malik monumental program
+  title: Dome of the Rock mosaic inscription
+  composition_date:
+    start: '691'
+    end: '692'
+    precision: conventional-building-inscription-date
+  physical_witness_date:
+    start: '691'
+    end: '692'
+    precision: monument-with-restoration-history
+  extant_status: extant-monumental-inscription-with-restoration-history
+  original_language: Arabic
+  access_mode: scholarly-transcription-and-photographic-history
+  locators:
+  - url: https://www.cambridge.org/core/journals/journal-of-the-royal-asiatic-society/article/abs/abd-almaliks-inscription-in-the-dome-of-the-rock-a-reconsideration/41E713D7ED1F04690B8DFF0095891B2C
+  limitations:
+  - Current V1 uses Kessler's published epigraphic study and later scholarship rather than direct autopsy of the mosaics.
+  - Restoration history requires care when making letter-form-level claims.
+- id: SCH-ANTHONY-2020-MUHAMMAD-EMPIRES
+  source_roles:
+  - SCHOLARLY_INTERPRETATION
+  source_kind: academic_monograph
+  author_or_tradition: Sean W. Anthony
+  title: Muhammad and the Empires of Faith
+  composition_date:
+    start: '2020'
+    end: '2020'
+    precision: publication-year
+  access_mode: publisher-book-page-and-author-summary
+  locators:
+  - url: https://www.ucpress.edu/books/muhammad-and-the-empires-of-faith/epub-pdf
+  - url: https://www.ucpress.edu/blog-posts/51668-the-empires-of-faith-and-the-making-of-the-prophet-of-islam
+  limitations:
+  - V1 uses publisher contents/summary and author discussion to establish the source program; consequential report-level claims
+    need chapter/full-text readback.
+- id: SCH-HOYLAND-2006-DOCUMENTARY-STATE
+  source_roles:
+  - SCHOLARLY_INTERPRETATION
+  source_kind: peer_reviewed_history_article
+  author_or_tradition: Robert Hoyland
+  title: New documentary texts and the early Islamic state
+  container: Bulletin of the School of Oriental and African Studies 69.3
+  composition_date:
+    start: '2006'
+    end: '2006'
+    precision: publication-year
+  access_mode: publisher-abstract
+  locators:
+  - url: https://www.cambridge.org/core/journals/bulletin-of-the-school-of-oriental-and-african-studies/article/new-documentary-texts-and-the-early-islamic-state/0E4FE3847B0153AD46F31D999ED8D92D
+  - doi: 10.1017/S0041977X06000188
+  limitations:
+  - V1 directly verifies the article's abstract/scope; detailed documentary arguments require full article readback.
+- id: SCH-KESSLER-1970-DOME-ROCK
+  source_roles:
+  - SCHOLARLY_INTERPRETATION
+  source_kind: peer_reviewed_epigraphic_article
+  author_or_tradition: Christel Kessler
+  title: 'Abd al-Malik''s Inscription in the Dome of the Rock: A Reconsideration'
+  container: Journal of the Royal Asiatic Society 102.1
+  composition_date:
+    start: '1970'
+    end: '1970'
+    precision: publication-year
+  access_mode: publisher-extract
+  locators:
+  - url: https://www.cambridge.org/core/journals/journal-of-the-royal-asiatic-society/article/abs/abd-almaliks-inscription-in-the-dome-of-the-rock-a-reconsideration/41E713D7ED1F04690B8DFF0095891B2C
+  limitations:
+  - Current access provides substantial extract and notes but not an independently collated modern epigraphic edition.
+- id: SCH-BLAIR-BLOOM-2007-QURAN-INSCRIPTIONS
+  source_roles:
+  - SCHOLARLY_INTERPRETATION
+  source_kind: academic_handbook_chapter
+  author_or_tradition: Sheila Blair; Jonathan Bloom
+  title: Inscriptions in art and architecture
+  container: The Cambridge Companion to the Quran
+  composition_date:
+    start: '2007'
+    end: '2007'
+    precision: publication-year
+  access_mode: publisher-summary
+  locators:
+  - url: https://www.cambridge.org/core/books/abs/cambridge-companion-to-the-quran/inscriptions-in-art-and-architecture/8B94B2FEC63E14A8447547668BCE0FED
+- id: SCH-HALLAQ-ORIGINS-ISLAMIC-LAW
+  source_roles:
+  - SCHOLARLY_INTERPRETATION
+  source_kind: academic_monograph
+  author_or_tradition: Wael B. Hallaq
+  title: The Origins and Evolution of Islamic Law
+  composition_date:
+    start: '2005'
+    end: '2005'
+    precision: original-publication-year
+  access_mode: publisher-chapter-summaries
+  locators:
+  - url: https://www.cambridge.org/core/books/abs/origins-and-evolution-of-islamic-law/early-judges-legal-specialists-and-the-search-for-religious-authority/883955AC0685F519128700393FA503B1
+  - url: https://www.cambridge.org/core/books/abs/origins-and-evolution-of-islamic-law/formation-of-legal-schools/4557AD1BDFD965F065F3F9AC95A7E2AF
+  limitations:
+  - V1 relies on book/chapter structure and publisher summaries for the broad developmental sequence; narrow chronological
+    claims require chapter-level readback.
+- id: SCH-OXFORD-BIB-HADITH
+  source_roles:
+  - SCHOLARLY_INTERPRETATION
+  source_kind: scholarly_bibliographic_reference
+  author_or_tradition: Oxford Bibliographies in Islamic Studies
+  title: Hadith
+  composition_date:
+    start: '2009'
+    end: null
+    precision: living-reference-entry
+  access_mode: publisher-reference-summary
+  locators:
+  - url: https://academic.oup.com/reference/62361/reference-article-abstract/554579067
+  limitations:
+  - Used to establish the recognized 632-900 collection/authenticity research field and high-level historiographic issues,
+    not as a substitute for primary hadith analysis.
+- id: SCH-MATTHIESEN-2023-CALIPH-IMAM
+  source_roles:
+  - SCHOLARLY_INTERPRETATION
+  source_kind: academic_monograph
+  author_or_tradition: Toby Matthiesen
+  title: 'The Caliph and the Imam: The Making of Sunnism and Shiism'
+  composition_date:
+    start: '2023'
+    end: '2023'
+    precision: publication-year
+  access_mode: publisher-book-and-chapter-abstracts
+  locators:
+  - url: https://academic.oup.com/book/45757
+  - url: https://academic.oup.com/book/45757/chapter-abstract/398684879
+  limitations:
+  - V1 uses publisher abstracts/extracts for the long-development framework; detailed sectarian chronology needs chapter/full-text
+    readback.
+- id: MAT-NIPPUR-I-ENLIL-SCRIBAL-QUARTER
+  source_roles:
+  - MATERIAL_EVIDENCE
+  - SCHOLARLY_INTERPRETATION
+  source_kind: archaeological_excavation_publication
+  author_or_tradition: Donald E. McCown; Richard C. Haines; Donald P. Hansen
+  title: 'Nippur I: Temple of Enlil, Scribal Quarter, and Soundings'
+  composition_date:
+    start: '1967'
+    end: '1967'
+    precision: publication-year
+  physical_witness_date:
+    start: null
+    end: null
+    precision: archaeological-strata-multiple-periods
+  extant_status: published-excavation-record
+  original_language: English
+  access_mode: institutional-full-text-metadata
+  locators:
+  - url: https://isac.uchicago.edu/publications/nippur-i-temple-enlil-scribal-quarter-and-soundings
+  limitations:
+  - Publication synthesizes 1948-1952 campaigns; individual architectural phases require chapter/plate-level readback when
+    consequential.
+  - The reported Enlil temple and private chapels are distinct material contexts and must not be collapsed.
+- id: MAT-UR-PENN-EXCAVATION-CORPUS
+  source_roles:
+  - MATERIAL_EVIDENCE
+  - SCHOLARLY_INTERPRETATION
+  source_kind: archaeological_project_archive
+  author_or_tradition: Penn Museum / Joint Expedition to Ur
+  title: 'Ur excavation record: sacred precinct, Royal Cemetery, domestic and urban contexts'
+  composition_date:
+    start: '1922'
+    end: '1934'
+    precision: excavation-campaign-range
+  physical_witness_date:
+    start: null
+    end: null
+    precision: multi-period-archaeological-site
+  extant_status: excavation-archive-and-material-collections
+  original_language: English
+  access_mode: institutional-project-history-and-reports
+  locators:
+  - url: https://www.penn.museum/sites/expedition/the-thrill-of-discovery/
+  - url: https://www.penn.museum/sites/expedition/ur-and-its-treasures/
+  - url: https://www.penn.museum/sites/expedition/city-of-the-moon/
+  limitations:
+  - Royal Cemetery evidence is mortuary evidence and must not be treated as direct evidence for Nanna temple liturgy.
+  - Woolley's interpretations and chronologies require modern reassessment where consequential.
+- id: MAT-GIRSU-BRITISH-MUSEUM-PROJECT
+  source_roles:
+  - MATERIAL_EVIDENCE
+  - SCHOLARLY_INTERPRETATION
+  source_kind: active_archaeological_project
+  author_or_tradition: British Museum Girsu Project with Iraqi partners
+  title: Girsu Project / Tello sacred district excavations
+  composition_date:
+    start: '2024'
+    end: '2026'
+    precision: current-project-phase
+  physical_witness_date:
+    start: null
+    end: null
+    precision: third-millennium-bce-site-material
+  extant_status: active-excavation-and-documentation
+  original_language: English
+  access_mode: institutional-project-reporting
+  locators:
+  - url: https://www.britishmuseum.org/research/projects/girsu-project
+  - url: https://www.britishmuseum.org/our-work/international/iraq-scheme/tello
+  limitations:
+  - Older Girsu finds often have weak context because of early excavation and looting; modern re-documentation is evidentially
+    important.
+  - Textual Gudea temple descriptions are not identical to excavated building phases.
+- id: MAT-LAGASH-PENN-ARCHAEOLOGICAL-PROJECT
+  source_roles:
+  - MATERIAL_EVIDENCE
+  - SCHOLARLY_INTERPRETATION
+  source_kind: active_archaeological_project
+  author_or_tradition: Penn Museum Lagash Archaeological Project
+  title: Lagash Archaeological Project
+  composition_date:
+    start: '2019'
+    end: null
+    precision: active-project
+  physical_witness_date:
+    start: null
+    end: null
+    precision: fourth-to-third-millennium-bce-site-material
+  extant_status: active-excavation-and-survey
+  original_language: English
+  access_mode: institutional-project-reporting
+  locators:
+  - url: https://www.penn.museum/research/project.php?pid=219
+  - url: https://www.penn.museum/sites/expedition/partners-in-search-of-the-past/
+  limitations:
+  - Lagash/Tell al-Hiba is distinct from Girsu/Tello despite belonging to the historical Lagash city-state.
+  - Modern work deliberately broadens beyond elite monumental architecture, so legacy temple-heavy samples are not representative
+    of all urban life.
+- id: MAT-FARA-PROSPECTION-2022
+  source_roles:
+  - MATERIAL_EVIDENCE
+  - SCHOLARLY_INTERPRETATION
+  source_kind: archaeological_prospection_article
+  author_or_tradition: Jörg W.E. Fassbinder and collaborators / FARSUP
+  title: 'Revisiting Fara: Comparison of merged prospection results of diverse magnetometers with the earliest excavations
+    in ancient Shuruppak'
+  composition_date:
+    start: '2022'
+    end: '2022'
+    precision: publication-year
+  physical_witness_date:
+    start: null
+    end: null
+    precision: third-millennium-bce-urban-site
+  extant_status: published-geophysical-survey
+  original_language: English
+  access_mode: open-access-full-text
+  locators:
+  - url: https://doi.org/10.1002/arp.1878
+  - url: https://www.en.vorderas-archaeologie.uni-muenchen.de/research/fara-fieldwork/index.html
+  limitations:
+  - The central building is interpreted as likely a temple; its cultic identity is not treated as archaeologically closed.
+  - Textual attestation of Sud does not by itself identify the central building as Sud's temple.
+- id: MAT-URUK-DAI-ARCHITECTURE
+  source_roles:
+  - MATERIAL_EVIDENCE
+  - SCHOLARLY_INTERPRETATION
+  source_kind: long_term_archaeological_project
+  author_or_tradition: Deutsches Archäologisches Institut
+  title: Uruk (Warka) excavation project
+  composition_date:
+    start: '1912'
+    end: null
+    precision: long-term-project
+  physical_witness_date:
+    start: null
+    end: null
+    precision: late-ubaid-through-late-antique-multi-period-site
+  extant_status: excavation-archive-and-active-research
+  original_language: German
+  access_mode: institutional-project-reporting
+  locators:
+  - url: https://www.dainst.org/en/research/projects/noslug/2604
+  limitations:
+  - Long architectural duration in Eanna does not prove unchanged ritual or theology.
+  - Uruk research history disproportionately emphasizes monumental architecture.
+- id: MAT-ERIDU-2022-EABZU-REASSESSMENT
+  source_roles:
+  - MATERIAL_EVIDENCE
+  - SCHOLARLY_INTERPRETATION
+  source_kind: archaeological_excavation_article
+  author_or_tradition: Philippe Quenet et al. / Archaeological Mission at Eridu
+  title: 'Archaeological Mission at Eridu: the 2022 campaign — E-abzu monumental complex reconsidered'
+  composition_date:
+    start: '2025'
+    end: '2026'
+    precision: volume-2025-online-2026
+  physical_witness_date:
+    start: null
+    end: null
+    precision: chalcolithic-through-second-millennium-bce-site-material
+  extant_status: open-access-excavation-report
+  original_language: English
+  access_mode: open-access-full-text
+  locators:
+  - url: https://doi.org/10.1017/irq.2025.10035
+  limitations:
+  - Legacy plan locations and phase assignments are under modern reassessment.
+  - Some terrace dates remain indirect pending tighter radiocarbon control.
+  - Royal epithets and inscriptions may be ideological and cannot substitute for concrete archaeological traces.
+- id: SRC-ETCSL-DEATH-UR-NAMMA
+  source_roles:
+  - PRIMARY_TEXT
+  source_kind: sumerian_literary_composition
+  author_or_tradition: Sumerian literary tradition
+  title: The Death of Ur-Namma (Ur-Namma A)
+  composition_date:
+    start: null
+    end: null
+    precision: composition-date-reconstructed
+  physical_witness_date:
+    start: null
+    end: null
+    precision: old-babylonian-manuscript-tradition
+  extant_status: multiple-cuneiform-witnesses
+  original_language: Sumerian
+  access_mode: ETCSL-translation-transliteration-bibliography
+  locators:
+  - url: https://etcsl.orinst.ox.ac.uk/cgi-bin/etcsl.cgi?text=t.2.4.1.1
+  - url: https://etcsl.orinst.ox.ac.uk/section2/b2411.htm
+  limitations:
+  - The surviving literary witnesses are later than Ur-Namma's reign and do not constitute a contemporary burial report.
+- id: SRC-ETCSL-DEATH-GILGAMESH
+  source_roles:
+  - PRIMARY_TEXT
+  source_kind: sumerian_literary_composition
+  author_or_tradition: Sumerian Gilgamesh tradition
+  title: The Death of Gilgamesh
+  composition_date:
+    start: null
+    end: null
+    precision: old-babylonian-literary-tradition
+  physical_witness_date:
+    start: null
+    end: null
+    precision: old-babylonian-manuscript-tradition
+  extant_status: fragmentary-multiple-witness-tradition
+  original_language: Sumerian
+  access_mode: ETCSL-translation-transliteration
+  locators:
+  - url: https://etcsl.orinst.ox.ac.uk/cgi-bin/etcsl.cgi?text=t.1.8.1.3
+  limitations:
+  - Royal/heroic literary afterlife cannot be assumed to represent ordinary dead.
+- id: SRC-ETCSL-GILGAMESH-ENKIDU-NETHERWORLD
+  source_roles:
+  - PRIMARY_TEXT
+  source_kind: sumerian_literary_composition
+  author_or_tradition: Sumerian Gilgamesh tradition
+  title: Gilgamesh, Enkidu and the Netherworld
+  composition_date:
+    start: null
+    end: null
+    precision: old-babylonian-literary-tradition
+  physical_witness_date:
+    start: null
+    end: null
+    precision: multiple-old-babylonian-witnesses
+  extant_status: multiple-cuneiform-witnesses
+  original_language: Sumerian
+  access_mode: ETCSL-translation-transliteration
+  locators:
+  - url: https://etcsl.orinst.ox.ac.uk/cgi-bin/etcsl.cgi?text=t.1.8.1.4
+  limitations:
+  - The catalogue of the dead is literary evidence; it is not a statistical census of belief or practice.
+- id: MAT-UR-ROYAL-CEMETERY-HAFFORD-2018
+  source_roles:
+  - MATERIAL_EVIDENCE
+  - SCHOLARLY_INTERPRETATION
+  source_kind: archaeological_collection_synthesis
+  author_or_tradition: William B. Hafford / Penn Museum
+  title: 'A Spectacular Discovery: Burials Simple and Splendid'
+  composition_date:
+    start: '2018'
+    end: '2018'
+    precision: publication-year
+  physical_witness_date:
+    start: null
+    end: null
+    precision: early-dynastic-ur-burial-corpus
+  extant_status: institutional-synthesis-of-excavated-cemetery
+  original_language: English
+  access_mode: institutional-full-text
+  locators:
+  - url: https://www.penn.museum/sites/expedition/a-spectacular-discovery/
+  limitations:
+  - Modern synthesis of Woolley's excavation record; individual graves require field-record or publication-level readback
+    when consequential.
+- id: SCH-BAADSGAARD-2011-UR-RETAINERS
+  source_roles:
+  - SCHOLARLY_INTERPRETATION
+  - MATERIAL_EVIDENCE
+  source_kind: bioarchaeological_research_article
+  author_or_tradition: Aubrey Baadsgaard; Janet Monge; Samantha Cox; Richard L. Zettler
+  title: Human sacrifice and intentional corpse preservation in the Royal Cemetery of Ur
+  composition_date:
+    start: '2011'
+    end: '2011'
+    precision: publication-year
+  access_mode: journal-abstract-and-institutional-summary
+  locators:
+  - url: https://doi.org/10.1017/S0003598X00067417
+  - url: https://almanac.upenn.edu/archive/volumes/v56/n09/zettler.html
+  limitations:
+  - CT/pathology conclusions are based on two preserved heads and must not be generalized to every attendant.
+- id: SCH-KATZ-2007-SUMERIAN-FUNERARY-RITUALS
+  source_roles:
+  - SCHOLARLY_INTERPRETATION
+  source_kind: academic_book_chapter
+  author_or_tradition: Dina Katz
+  title: Sumerian Funerary Rituals in Context
+  container: Performing Death
+  composition_date:
+    start: '2007'
+    end: '2007'
+    precision: publication-year
+  access_mode: institutional-open-access-book
+  locators:
+  - url: https://isac.uchicago.edu/sites/default/files/uploads/shared/docs/ois3.pdf
+  limitations:
+  - Synthetic evidence spans periods and genres; claims must remain date- and source-bounded.
+- id: SCH-OXFORD-2024-GHOSTS-MESOPOTAMIA
+  source_roles:
+  - SCHOLARLY_INTERPRETATION
+  source_kind: scholarly_reference_article
+  author_or_tradition: Oxford Research Encyclopedia / Oxford Classical Dictionary
+  title: ghosts, Mesopotamia
+  composition_date:
+    start: '2024'
+    end: '2024'
+    precision: publication-year
+  access_mode: publisher-abstract
+  locators:
+  - url: https://academic.oup.com/edited-volume/61673/chapter-abstract/550533662
+  limitations:
+  - The first-millennium Babylonian and Assyrian ghost corpus is especially rich; later evidence must not be automatically
+    projected into Early Dynastic Sumer.
+- id: SCH-EPSD2-GIDIM-GHOST
+  source_roles:
+  - SCHOLARLY_INTERPRETATION
+  source_kind: digital_lexical_database
+  author_or_tradition: ePSD2 / ORACC
+  title: gidim [GHOST] (N)
+  composition_date:
+    start: '2024'
+    end: '2024'
+    precision: database-build
+  access_mode: institutional-digital-lexicon
+  locators:
+  - url: https://oracc.museum.upenn.edu/epsd2/o0028131
+  limitations:
+  - Lexical sense classification does not establish unchanged ritual practice across all attested periods.
+- id: SCH-EPSD2-KUR-MOUNTAIN
+  source_roles:
+  - SCHOLARLY_INTERPRETATION
+  source_kind: digital_lexical_database
+  author_or_tradition: ePSD2 / ORACC
+  title: kur [MOUNTAIN] (N)
+  composition_date:
+    start: '2024'
+    end: '2024'
+    precision: database-build
+  access_mode: institutional-digital-lexicon
+  locators:
+  - url: https://oracc.museum.upenn.edu/epsd2/earlylit/o0032654
+  limitations:
+  - Sense counts are corpus-dependent; contextual interpretation remains required.
+- id: SCH-EPSD2-ARALI-EARTH
+  source_roles:
+  - SCHOLARLY_INTERPRETATION
+  source_kind: digital_lexical_database
+  author_or_tradition: ePSD2 / ORACC
+  title: arali [EARTH] (N)
+  composition_date:
+    start: '2024'
+    end: '2024'
+    precision: database-build
+  access_mode: institutional-digital-lexicon
+  locators:
+  - url: https://oracc.museum.upenn.edu/epsd2/cbd/sux/o0024401.html
+  - url: https://oracc.museum.upenn.edu/epsd2/admin/ur3/cbd/sux/summaries.html
+  limitations:
+  - Full-corpus and administrative-subcorpus sense distributions are not interchangeable.
+- id: SCH-EPSD2-GANZER-EARTH
+  source_roles:
+  - SCHOLARLY_INTERPRETATION
+  source_kind: digital_lexical_database
+  author_or_tradition: ePSD2 / ORACC
+  title: ganzer [EARTH] (N)
+  composition_date:
+    start: '2024'
+    end: '2024'
+    precision: database-build
+  access_mode: institutional-digital-lexicon
+  locators:
+  - url: https://oracc.museum.upenn.edu/epsd2/cbd/sux/o0027881.html
+  limitations:
+  - Surviving attestations in the current entry begin in the Old Babylonian period; this is not proof of first historical
+    use.
+- id: SCH-EPSD2-KURNUGI-NETHERWORLD
+  source_roles:
+  - SCHOLARLY_INTERPRETATION
+  source_kind: digital_lexical_database
+  author_or_tradition: ePSD2 / ORACC
+  title: kurnugi [NETHERWORLD] (N)
+  composition_date:
+    start: '2024'
+    end: '2024'
+    precision: database-build
+  access_mode: institutional-digital-lexicon
+  locators:
+  - url: https://oracc.museum.upenn.edu/epsd2/o0032704
+  limitations:
+  - The fixed expression is semantically more specific than bare kur; component morphology does not license global equivalence.
+- id: SRC-ETCSL-INANA-DESCENT
+  source_roles:
+  - PRIMARY_TEXT
+  source_kind: sumerian_literary_composition
+  author_or_tradition: Sumerian literary tradition
+  title: Inana's Descent to the Netherworld
+  composition_date:
+    start: null
+    end: null
+    precision: composition-date-reconstructed
+  physical_witness_date:
+    start: null
+    end: null
+    precision: predominantly-old-babylonian-manuscript-tradition
+  extant_status: multiple-cuneiform-witnesses
+  original_language: Sumerian
+  access_mode: ETCSL-transliteration-translation-glossing
+  locators:
+  - url: https://etcsl.orinst.ox.ac.uk/cgi-bin/etcsl.cgi?text=c.1.4.1
+  - url: https://etcsl.orinst.ox.ac.uk/cgi-bin/etcsl.cgi?charenc=j&text=t.1.4.1
+  limitations:
+  - ETCSL is a modern corpus/access surface and not the final critical edition of every witness.
+  - English 'underworld' translations can collapse distinct source lexemes such as kur and Ganzer.
+- id: SCH-GADOTTI-2014-GEN-EDITION
+  source_roles:
+  - SCHOLARLY_INTERPRETATION
+  source_kind: critical_text_edition_monograph
+  author_or_tradition: Alhena Gadotti
+  title: Gilgamesh, Enkidu, and the Netherworld and the Sumerian Gilgamesh Cycle
+  composition_date:
+    start: '2014'
+    end: '2014'
+    precision: publication-year
+  access_mode: publisher-description-limited-preview
+  locators:
+  - url: https://doi.org/10.1515/9781614515456
+  limitations:
+  - Full line-level revalidation requires access to the edition's text, textual matrix, and commentary, not publisher metadata
+    alone.
+- id: SCH-ATTINGER-2021-INANA-DESCENT
+  source_roles:
+  - SCHOLARLY_INTERPRETATION
+  source_kind: philological_translation_working_paper
+  author_or_tradition: Pascal Attinger
+  title: La descente d'Innana dans le monde infernal (1.4.1)
+  composition_date:
+    start: '2019'
+    end: '2021'
+    precision: publication-and-update-years
+  access_mode: open-access-working-paper
+  locators:
+  - url: https://doi.org/10.5281/zenodo.4603728
+  limitations:
+  - Used as a later philological translation/control; not classified here as a full new manuscript edition equivalent in apparatus
+    scope to Gadotti 2014.
+- id: SCH-CAVIGNEAUX-ALRAWI-2000-DEATH-GILGAMESH
+  source_roles:
+  - SCHOLARLY_INTERPRETATION
+  source_kind: critical_text_edition_monograph
+  author_or_tradition: Antoine Cavigneaux; Farouk N. H. al-Rawi
+  title: Gilgamesh et la Mort. Textes de Tell Haddad VI
+  composition_date:
+    start: '2000'
+    end: '2000'
+    precision: publication-year
+  access_mode: bibliographic-control-and-book-preview
+  locators:
+  - url: https://books.google.com/books/about/Gilgame%C5%A1_et_la_mort.html?id=_60axEdEQn8C
+  - url: https://etcsl.orinst.ox.ac.uk/section1/b1813.htm
+  limitations:
+  - ETCSL directly incorporates this edition in its bibliography; targeted currentness search does not exclude later line-specific
+    corrections.
+- id: SCH-FLUCKIGER-HAWKER-1999-URNAMMA
+  source_roles:
+  - SCHOLARLY_INTERPRETATION
+  source_kind: score_edition_monograph
+  author_or_tradition: Esther Flückiger-Hawker
+  title: Urnamma of Ur in Sumerian Literary Tradition
+  composition_date:
+    start: '1999'
+    end: '1999'
+    precision: publication-year
+  access_mode: bibliographic-control-and-ETCSL-bibliography
+  locators:
+  - url: https://etcsl.orinst.ox.ac.uk/section2/b2411.htm
+  - url: https://vergil.uni-tuebingen.de/keibi/Record/KEI00013241
+  limitations:
+  - ETCSL lists a score transliteration, translation, photograph, commentary, handcopy, and composite text for Ur-Namma A;
+    targeted search does not exclude later line-specific corrections.
+- id: SCH-CDLI-Q000364-CURRENT-SCORE
+  source_roles:
+  - SCHOLARLY_INTERPRETATION
+  - MATERIAL_EVIDENCE
+  source_kind: digital_composite_and_witness_score
+  author_or_tradition: Cuneiform Digital Library Initiative
+  title: CDLI Literary 000364 / Q000364 Gilgamesh, Enkidu and the Netherworld
+  composition_date:
+    start: '2024'
+    end: '2026'
+    precision: current-digital-access-surface
+  access_mode: institutional-digital-composite-and-score
+  locators:
+  - url: https://cdli.earth/artifacts/469670
+  - url: https://cdli.earth/artifacts/composites-score/Q000364
+  limitations:
+  - The composite is a current digital research surface, not itself a replacement for Gadotti 2014's full critical edition.
+  - Only three witnesses are currently aligned to the composite on the score surface.
+- id: SCH-ATTINGER-2019-GIEN-COLLATION
+  source_roles:
+  - SCHOLARLY_INTERPRETATION
+  source_kind: philological_translation_and_collation
+  author_or_tradition: Pascal Attinger
+  title: Bilgameš, Enkidu et le monde infernal
+  composition_date:
+    start: '2008'
+    end: '2019'
+    precision: original-and-update-range
+  access_mode: open-access-philological-pdf
+  locators:
+  - url: https://anarkia333data.center/sites/default/files/2019-04/gilgamesh_enkidu_et_le_monde_infernal_attinger.pdf
+  limitations:
+  - Used for line-specific collation cautions and comparison with Gadotti; not treated as an independent full replacement
+    edition.
+- id: SCH-CDLI-Q000343-CURRENT-SCORE
+  source_roles:
+  - SCHOLARLY_INTERPRETATION
+  - MATERIAL_EVIDENCE
+  source_kind: digital_composite_and_witness_score
+  author_or_tradition: Cuneiform Digital Library Initiative
+  title: CDLI Literary 000343 / Q000343 Inanna's Descent composite
+  composition_date:
+    start: '2024'
+    end: '2026'
+    precision: current-digital-access-surface
+  access_mode: institutional-digital-composite-and-score
+  locators:
+  - url: https://cdli.earth/artifacts/composites-score/Q000343
+  limitations:
+  - A current digital composite/score is a strong readback surface but not automatically a replacement for a full critical
+    edition.
+  - Witness alignment is uneven by line despite 44 of 58 witnesses being aligned overall.
+- id: SCH-CDLI-Q000363-CURRENT-COMPOSITE
+  source_roles:
+  - SCHOLARLY_INTERPRETATION
+  - MATERIAL_EVIDENCE
+  source_kind: digital_composite_and_witness_inventory
+  author_or_tradition: Cuneiform Digital Library Initiative
+  title: CDLI Literary 000363 / Q000363 Death of Gilgamesh Nippur Version
+  composition_date:
+    start: '2026'
+    end: '2026'
+    precision: current-digital-access-surface
+  access_mode: institutional-digital-composite-and-witness-inventory
+  locators:
+  - url: https://cdli.earth/artifacts/composites-score/Q000363
+  limitations:
+  - The current score reports 12 witnesses and zero witnesses aligned to the composite text.
+  - Composite-line readback cannot be promoted to witness-aligned confirmation.
+- id: SCH-CDLI-Q000386-CURRENT-COMPOSITE
+  source_roles:
+  - SCHOLARLY_INTERPRETATION
+  - MATERIAL_EVIDENCE
+  source_kind: digital_composite_and_witness_inventory
+  author_or_tradition: Cuneiform Digital Library Initiative
+  title: CDLI Literary 000386 / Q000386 Ur-Namma A
+  composition_date:
+    start: '2026'
+    end: '2026'
+    precision: current-digital-access-surface
+  access_mode: institutional-digital-composite-and-witness-inventory
+  locators:
+  - url: https://cdli.earth/artifacts/469688
+  limitations:
+  - Current artifact lists eleven witnesses but score alignment could not be read back in this runtime.
+  - Composite confirmation is not labeled witness-aligned.
+  - A current digital composite does not automatically supersede Flückiger-Hawker 1999 as critical score authority.
+- id: SRC-DUMUZID-DREAM
+  source_roles:
+  - PRIMARY_TEXT
+  source_kind: sumerian_literary_composition
+  author_or_tradition: Sumerian Dumuzid tradition
+  title: Dumuzid's Dream
+  composition_date:
+    start: null
+    end: null
+    precision: composition-date-reconstructed
+  physical_witness_date:
+    start: null
+    end: null
+    precision: predominantly-old-babylonian-with-later-witnesses
+  extant_status: multiple-cuneiform-witnesses
+  original_language: Sumerian
+  access_mode: CDLI-composite-score-and-ETCSL
+  locators:
+  - url: https://cdli.earth/artifacts/469528
+  - url: https://cdli.earth/artifacts/composites-score/Q000347
+  - url: https://etcsl.orinst.ox.ac.uk/cgi-bin/etcsl.cgi?text=c.1.4.3
+  limitations:
+  - Composition identity is separate from the 89-witness inventory and from the current CDLI composite.
+  - Only four witnesses are currently aligned to the CDLI composite.
+- id: SRC-INANA-BILULU
+  source_roles:
+  - PRIMARY_TEXT
+  source_kind: sumerian_literary_lament
+  author_or_tradition: Sumerian Inana-Dumuzid tradition
+  title: Inana and Bilulu
+  composition_date:
+    start: null
+    end: null
+    precision: composition-date-reconstructed
+  physical_witness_date:
+    start: null
+    end: null
+    precision: old-babylonian-witness
+  extant_status: single-listed-cuneiform-witness-in-current-cdli
+  original_language: Sumerian
+  access_mode: CDLI-composite-metadata-and-ETCSL
+  locators:
+  - url: https://cdli.earth/artifacts/469529
+  - url: https://cdli.earth/artifacts/composites-score/Q000348
+  - url: https://etcsl.orinst.ox.ac.uk/cgi-bin/etcsl.cgi?text=c.1.4.4
+  limitations:
+  - Current CDLI metadata lists one Nippur witness; distribution claims must preserve that narrow witness base.
+- id: SCH-CDLI-Q000347-DUMUZID-DREAM
+  source_roles:
+  - SCHOLARLY_INTERPRETATION
+  - MATERIAL_EVIDENCE
+  source_kind: digital_composite_and_witness_score
+  author_or_tradition: Cuneiform Digital Library Initiative
+  title: CDLI Literary 000347 / Q000347 Dumuzid's Dream
+  composition_date:
+    start: '2026'
+    end: '2026'
+    precision: current-digital-access-surface
+  access_mode: institutional-digital-composite-and-score
+  locators:
+  - url: https://cdli.earth/artifacts/composites-score/Q000347
+  limitations:
+  - Current score reports 89 witnesses but only 4 aligned to the composite.
+  - Aligned support is line-specific and must not be generalized to the full composite.
+- id: SCH-CDLI-Q000348-INANA-BILULU
+  source_roles:
+  - SCHOLARLY_INTERPRETATION
+  - MATERIAL_EVIDENCE
+  source_kind: digital_composite_metadata
+  author_or_tradition: Cuneiform Digital Library Initiative
+  title: CDLI Literary 000348 / Q000348 Inana and Bilulu
+  composition_date:
+    start: '2026'
+    end: '2026'
+    precision: current-digital-access-surface
+  access_mode: institutional-digital-composite-metadata
+  locators:
+  - url: https://cdli.earth/artifacts/469529
+  - url: https://cdli.earth/artifacts/composites-score/Q000348
+  limitations:
+  - Current artifact metadata lists one Old Babylonian Nippur witness.
+  - This pass does not claim line-level witness alignment from the Q000348 score.
+- id: SRC-DUMUZID-GESHTINANA
+  source_roles:
+  - PRIMARY_TEXT
+  source_kind: sumerian_literary_composition
+  author_or_tradition: Sumerian Inana-Dumuzid tradition
+  title: Dumuzid and Geshtin-ana
+  composition_date:
+    start: null
+    end: null
+    precision: composition-date-reconstructed
+  physical_witness_date:
+    start: null
+    end: null
+    precision: old-babylonian-witnesses
+  extant_status: two-currently-listed-cuneiform-witnesses
+  original_language: Sumerian
+  access_mode: CDLI-composite-score-and-ETCSL
+  locators:
+  - url: https://cdli.earth/artifacts/composites-score/Q000344
+  - url: https://etcsl.orinst.ox.ac.uk/cgi-bin/etcsl.cgi?text=c.1.4.1.1
+  limitations:
+  - Current CDLI metadata lists two Ur witnesses.
+  - The aligned P346096 sequence supports the mapped lines directly but does not establish that every composite line is witness-aligned.
+- id: SCH-CDLI-Q000344-DUMUZID-GESHTINANA
+  source_roles:
+  - SCHOLARLY_INTERPRETATION
+  - MATERIAL_EVIDENCE
+  source_kind: digital_composite_and_witness_score
+  author_or_tradition: Cuneiform Digital Library Initiative
+  title: CDLI Q000344 Dumuzid and Geshtin-ana
+  composition_date:
+    start: '2026'
+    end: '2026'
+    precision: current-digital-access-surface
+  access_mode: institutional-digital-composite-and-score
+  locators:
+  - url: https://cdli.earth/artifacts/composites-score/Q000344
+  limitations:
+  - Current score exposes a long aligned sequence for Ur witness P346096.
+  - Witness-specific support must remain line-bounded.
+- id: SCH-MANDER-2005-DUMUZI
+  source_roles:
+  - SCHOLARLY_INTERPRETATION
+  source_kind: reference_work_entry
+  author_or_tradition: Pietro Mander
+  title: Dumuzi
+  composition_date:
+    start: '2005'
+    end: '2005'
+    precision: publication-year
+  access_mode: encyclopedia-of-religion-web-reprint
+  locators:
+  - url: https://www.encyclopedia.com/environment/encyclopedias-almanacs-transcripts-and-maps/dumuzi
+  limitations:
+  - Synthesizes earlier scholarship; individual underlying works remain independently citable for stronger claim-level review.
+- id: SCH-AYALI-DARSHAN-2024-DYING-RISING
+  source_roles:
+  - SCHOLARLY_INTERPRETATION
+  source_kind: scholarly_monograph
+  author_or_tradition: Noga Ayali-Darshan
+  title: 'Dying and Rising Gods: The History of a Mythologem in West Asia of the Second Millennium BCE'
+  composition_date:
+    start: '2024'
+    end: '2024'
+    precision: publication-year
+  access_mode: publisher-summary-and-table-of-contents
+  locators:
+  - url: https://www.zaphon.de/dying-and-rising-gods/en
+  limitations:
+  - Current pass uses publisher-level summary for the monograph's stated thesis; full argument requires direct book access.
+- id: SCH-ALSTER-2006-DUMUZI-DREAM
+  source_roles:
+  - SCHOLARLY_INTERPRETATION
+  source_kind: critical_text_article
+  author_or_tradition: Bendt Alster
+  title: New Sources for Dumuzi's Dream
+  composition_date:
+    start: '2006'
+    end: '2006'
+    precision: publication-year
+  access_mode: publisher-abstract-and-bibliographic-record
+  locators:
+  - url: https://doi.org/10.1515/ZA.2006.001
+  limitations:
+  - Abstract establishes added manuscripts and improved reconstruction; full article is required for line-by-line philological
+    claims.
+- id: SRC-MARI-A1146-DUMUZI
+  source_roles:
+  - PRIMARY_TEXT
+  source_kind: mari_letter
+  author_or_tradition: Mari / Zimri-Lim-period scribal context
+  title: A.1146 — letter mentioning Dumuzi's death and return
+  composition_date:
+    start: null
+    end: null
+    precision: zimri-lim-year-12-first-half-18th-century-bce
+  physical_witness_date:
+    start: null
+    end: null
+    precision: old-babylonian-mari
+  extant_status: cuneiform-tablet
+  original_language: Akkadian
+  access_mode: indirect-through-current-scholarly-synthesis
+  limitations:
+  - V1 has not independently collated the tablet text; identity/date/function derive from Ayali-Darshan 2024's current synthesis.
+- id: SRC-MARI-A4540-DUMUZI
+  source_roles:
+  - PRIMARY_TEXT
+  source_kind: mari_economic_ritual_record
+  author_or_tradition: Mari / Zimri-Lim-period scribal context
+  title: A.4540 — record associated with Dumuzi's burial
+  composition_date:
+    start: null
+    end: null
+    precision: zimri-lim-year-4-18th-century-bce
+  physical_witness_date:
+    start: null
+    end: null
+    precision: old-babylonian-mari
+  extant_status: cuneiform-tablet
+  original_language: Akkadian
+  access_mode: indirect-through-current-scholarly-synthesis
+  limitations:
+  - V1 has not independently collated the tablet text.
+- id: SRC-MARI-1987-14-DUMUZI
+  source_roles:
+  - PRIMARY_TEXT
+  source_kind: mari_economic_ritual_record
+  author_or_tradition: Mari scribal context
+  title: MARI 5 (1987) 14 — record associated with Dumuzi's return
+  composition_date:
+    start: null
+    end: null
+    precision: old-babylonian-mari
+  physical_witness_date:
+    start: null
+    end: null
+    precision: old-babylonian-mari
+  extant_status: cuneiform-tablet
+  original_language: Akkadian
+  access_mode: indirect-through-current-scholarly-synthesis
+  limitations:
+  - V1 has not independently collated the tablet text.
+- id: SCH-SMITH-1994-UGARITIC-BAAL-CYCLE
+  source_roles:
+  - SCHOLARLY_INTERPRETATION
+  source_kind: critical_text_monograph
+  author_or_tradition: Mark S. Smith
+  title: The Ugaritic Baal Cycle, Volume I
+  composition_date:
+    start: '1994'
+    end: '1994'
+    precision: publication-year
+  access_mode: publisher-description-and-bibliographic-control
+  locators:
+  - url: https://brill.com/display/title/1061
+  limitations:
+  - Volume I treats KTU 1.1-1.2; later Baal death/return material requires the subsequent volume and other critical-edition
+    control.
+- id: SCH-MARELLO-1992-A1146
+  source_roles:
+  - SCHOLARLY_INTERPRETATION
+  source_kind: primary_text_edition
+  author_or_tradition: Pierre Marello
+  title: Vie nomade
+  container: Florilegium marianum I / Mélanges M. Fleury
+  composition_date:
+    start: '1992'
+    end: '1992'
+    precision: publication-year
+  access_mode: original-publication-and-current-bibliographic-control
+  locators:
+  - pages: 115-126
+    url: https://sepoa.fr/wp/wp-content/uploads/2021/06/fm-1-entier.pdf
+  - identifier: ARCHIBAB T1011
+    url: https://www.archibab.fr/T1011
+  limitations:
+  - The original publication identity is secure; the crucial Dumuzi passage remains damaged and philologically reconstruction-dependent.
+- id: SCH-JACQUET-2011-FM12
+  source_roles:
+  - SCHOLARLY_INTERPRETATION
+  source_kind: primary_text_edition_monograph
+  author_or_tradition: Antoine Jacquet
+  title: Florilegium Marianum XII. Documents relatifs aux dépenses pour le culte
+  composition_date:
+    start: '2011'
+    end: '2011'
+    precision: publication-year
+  access_mode: institutional-bibliographic-control
+  locators:
+  - url: https://www.college-de-france.fr/en/person/antoine-jacquet
+  - url: https://sepoa.fr/memoires-de-nabu/
+  limitations:
+  - Current V1 independently controls A.4540 line 4 through the electronic Akkadian dictionary supplement rather than a full
+    direct collation of the monograph.
+- id: SCH-ESAD-2024-TIMRU-BURIAL
+  source_roles:
+  - SCHOLARLY_INTERPRETATION
+  source_kind: akkadian_lexical_database_supplement
+  author_or_tradition: Electronic Supplement to the Akkadian Dictionaries
+  title: timru II / temru — burial
+  composition_date:
+    start: '2024'
+    end: '2024'
+    precision: last-updated-year
+  access_mode: institutional-open-lexical-reference
+  locators:
+  - url: https://www.gkr.uni-leipzig.de/fileadmin/Fakult%C3%A4t_GKR/Altorientalisches_Institut/Dokumente/Forschung/Supplement_Dateien/T_01.pdf
+  limitations:
+  - Lexical control confirms the burial reading at A.4540:4; it does not establish a return/resurrection event.
+- id: SCH-BOU-2023-A1146-CONTEXT
+  source_roles:
+  - SCHOLARLY_INTERPRETATION
+  source_kind: scholarly_article
+  author_or_tradition: scholarly study of Mari masculinity and warfare
+  title: ORIENT 58 study citing A.1146 / LAPO 16 38 / ARCHIBAB T1011
+  composition_date:
+    start: '2023'
+    end: '2023'
+    precision: publication-year
+  access_mode: open-access-scholarly-article
+  locators:
+  - url: https://www.jstage.jst.go.jp/article/orient/58/0/58_137/_pdf/-char/en
+  limitations:
+  - Used here for epistolary/social context and independent bibliographic control, not for reconstructing the damaged Dumuzi
+    lines.
+- id: SRC-MARI-A512-DUMUZI
+  source_roles:
+  - PRIMARY_TEXT
+  source_kind: mari_letter
+  author_or_tradition: Mari / Itur-Asdu correspondence
+  title: A.512 — Dumuzi enters the temple of Annunitum of Mari
+  composition_date:
+    start: null
+    end: null
+    precision: old-babylonian-mari
+  physical_witness_date:
+    start: null
+    end: null
+    precision: old-babylonian-mari
+  extant_status: cuneiform-tablet
+  original_language: Akkadian
+  access_mode: published-transliteration-through-scholarly-study
+  limitations:
+  - V1 uses a published transliteration and translation quoted by Yamada; no independent autoptic tablet collation is claimed.
+- id: SRC-MARI-M13167-DUMUZI
+  source_roles:
+  - PRIMARY_TEXT
+  source_kind: mari_oil_ration_record
+  author_or_tradition: Mari palace/temple administration
+  title: M.13167 — oil ration for Dumuzi upon entering Belet-ekallim temple
+  composition_date:
+    start: null
+    end: null
+    precision: 10-month-X-ZL2
+  physical_witness_date:
+    start: null
+    end: null
+    precision: old-babylonian-mari
+  extant_status: cuneiform-tablet
+  original_language: Akkadian
+  access_mode: published-transcription-reported-in-scholarly-monograph
+  limitations:
+  - A transcription is reported as Duponchel, Gs Barrelet 1997 p. 222; direct collation of that publication remains pending.
+- id: SRC-MARI-M15090-DUMUZI
+  source_roles:
+  - PRIMARY_TEXT
+  source_kind: mari_oil_ration_parallel
+  author_or_tradition: Mari palace/temple administration
+  title: M.15090 — parallel Dumuzi entry formula
+  composition_date:
+    start: null
+    end: null
+    precision: 6-month-X-ZL5
+  physical_witness_date:
+    start: null
+    end: null
+    precision: old-babylonian-mari
+  extant_status: unpublished-parallel-reported
+  original_language: Akkadian
+  access_mode: scholarly-reference-to-unpublished-text
+  limitations:
+  - Charpin 1987 p. 599 reports this as an unpublished parallel; no direct line text is controlled in V1.
+- id: SCH-CDLI-P497204-MARI5-599-14
+  source_roles:
+  - SCHOLARLY_INTERPRETATION
+  - MATERIAL_EVIDENCE
+  source_kind: digital_catalog_record
+  author_or_tradition: Cuneiform Digital Library Initiative
+  title: MARI 05, 599 no. 14 / P497204
+  composition_date:
+    start: '2026'
+    end: '2026'
+    precision: current-digital-catalog-surface
+  access_mode: institutional-digital-catalog
+  locators:
+  - url: https://cdli.earth/search?limit=500&publication_bibtexkey=Charpin1985archives
+  limitations:
+  - Current CDLI record identifies publication, provenience, period, material, and collection but provides no image or transliteration.
+- id: SCH-YAMADA-2011-PUDUM-A512
+  source_roles:
+  - SCHOLARLY_INTERPRETATION
+  source_kind: scholarly_article
+  author_or_tradition: Shigeo Yamada
+  title: A pudum rotation list from Tell Taban and the cultural milieu of Tabatum in the post-Hammurabi period
+  composition_date:
+    start: '2011'
+    end: '2011'
+    precision: publication-year
+  access_mode: published-transliteration-and-translation
+  limitations:
+  - Used for the quoted A.512 transliteration and translation; original tablet collation remains outside V1.
+- id: SCH-DE-CLERCQ-2004-BELET-EKALLIM
+  source_roles:
+  - SCHOLARLY_INTERPRETATION
+  source_kind: doctoral_dissertation
+  author_or_tradition: Geeta De Clercq
+  title: Die Göttin Ninegal/Belet-ekallim nach den altorientalischen Quellen des 3. und 2. Jt. v. Chr.
+  composition_date:
+    start: '2004'
+    end: '2004'
+    precision: dissertation-acceptance-year
+  access_mode: scholarly-dissertation
+  limitations:
+  - Used for M.13167, its date, Duponchel transcription reference, and Charpin's M.15090 parallel; V1 does not claim direct
+    collation of Duponchel 1997.
+- id: SCH-CDLI-CHARPIN-1987-MARI5-OIL
+  source_roles:
+  - SCHOLARLY_INTERPRETATION
+  source_kind: journal_bibliographic_and_artifact_catalog
+  author_or_tradition: Cuneiform Digital Library Initiative / MARI bibliography
+  title: Charpin 1987 — Nouveaux documents du bureau de l'huile (suite)
+  composition_date:
+    start: '1987'
+    end: '1987'
+    precision: publication-year
+  access_mode: institutional-bibliographic-control
+  locators:
+  - url: https://cdli.earth/journals/75
+  limitations:
+  - Used to resolve article title and p. 597-599 publication context.
+- id: SCH-ORACC-AKK-DAKU
+  source_roles:
+  - SCHOLARLY_INTERPRETATION
+  source_kind: digital_akkadian_lexicon
+  author_or_tradition: ORACC
+  title: daku [KILL] Akkadian lexical entries
+  composition_date:
+    start: '2024'
+    end: '2026'
+    precision: current-digital-lexicon
+  access_mode: institutional-digital-lexicon
+  locators:
+  - url: https://oracc.museum.upenn.edu/asbp/ninmed/cbd/akk/x0001121.html
+  - url: https://oracc.museum.upenn.edu/ccpo/cbd/akk-x-stdbab/x00000600.html
+  limitations:
+  - Corpus-specific lexical entries establish semantic range, not the exact damaged A.1146 reading.
+- id: SCH-ORACC-AKK-TARU
+  source_roles:
+  - SCHOLARLY_INTERPRETATION
+  source_kind: digital_akkadian_lexicon
+  author_or_tradition: ORACC
+  title: taru [TURN/RETURN] Akkadian lexical entries
+  composition_date:
+    start: '2024'
+    end: '2026'
+    precision: current-digital-lexicon
+  access_mode: institutional-digital-lexicon
+  locators:
+  - url: https://oracc.museum.upenn.edu/armep/cbd/akk-x-stdbab/x000011720.html
+  limitations:
+  - Attested iterative forms and return senses control lexical semantics; A.1146's exact form remains reconstruction-dependent.
+- id: SCH-ORACC-UGARIT-DEATH-LEXEMES
+  source_roles:
+  - SCHOLARLY_INTERPRETATION
+  source_kind: digital_ugaritic_lexicon
+  author_or_tradition: ORACC Ancient Egyptian and Mesopotamian World / Ugarit
+  title: Ugaritic mt / hlq lexical entries
+  composition_date:
+    start: '2024'
+    end: '2024'
+    precision: current-digital-lexicon-build
+  access_mode: institutional-digital-lexicon
+  locators:
+  - url: https://oracc.museum.upenn.edu/aemw/ugarit/cbd/uga/onebigfile.html
+  limitations:
+  - The searchable glossary independently controls mt 'die/death' and hlq 'perish'; line-level Baal morphology remains edition-controlled.
+- id: SCH-SMITH-1998-BAAL-DYING-RISING
+  source_roles:
+  - SCHOLARLY_INTERPRETATION
+  source_kind: peer_reviewed_journal_article
+  author_or_tradition: Mark S. Smith
+  title: 'The death of "dying and rising gods" in the biblical world: An update, with special reference to Baal in the Baal
+    cycle'
+  composition_date:
+    start: '1998'
+    end: '1998'
+    precision: publication-year
+  access_mode: publisher-abstract-and-article-text
+  locators:
+  - doi: 10.1080/09018329808585140
+    url: https://www.tandfonline.com/doi/abs/10.1080/09018329808585140
+  limitations:
+  - Used for Baal Cycle death/alive wording and category critique; modern interpretation remains distinct from primary Ugaritic
+    text.
+- id: SCH-LOUVRE-KTU15-AO16641-42
+  source_roles:
+  - MATERIAL_EVIDENCE
+  - SCHOLARLY_INTERPRETATION
+  source_kind: museum_object_catalog
+  author_or_tradition: Musee du Louvre
+  title: AO 16641 / AO 16642 — Baal Cycle tablet fragments
+  composition_date:
+    start: '2026'
+    end: '2026'
+    precision: current-catalog-surface
+  access_mode: institutional-museum-catalog
+  locators:
+  - url: https://collections.louvre.fr/en/ark:/53355/cl010141444
+  limitations:
+  - Catalog establishes physical identity, inventory, broad date, material, script, genre and findspot; textual interpretation
+    remains edition-dependent.
+- id: SCH-LOUVRE-KTU16-AO16636
+  source_roles:
+  - MATERIAL_EVIDENCE
+  - SCHOLARLY_INTERPRETATION
+  source_kind: museum_object_catalog
+  author_or_tradition: Musee du Louvre
+  title: AO 16636 — Baal Cycle tablet fragment
+  composition_date:
+    start: '2026'
+    end: '2026'
+    precision: current-catalog-surface
+  access_mode: institutional-museum-catalog
+  locators:
+  - url: https://collections.louvre.fr/en/ark:/53355/cl010141546
+  limitations:
+  - Catalog establishes physical identity, inventory, broad date, material, language/genre and findspot; textual interpretation
+    remains edition-dependent.
+- id: SCH-EUPT-UGARIT-POETIC-CORPUS
+  source_roles:
+  - SCHOLARLY_INTERPRETATION
+  source_kind: current_critical_edition_project_corpus_index
+  author_or_tradition: Georg-August-Universitat Gottingen / Edition des ugaritischen poetischen Textkorpus
+  title: Ugaritic Poetic Text Corpus
+  composition_date:
+    start: '2026'
+    end: '2026'
+    precision: current-project-surface
+  access_mode: institutional-critical-edition-project
+  locators:
+  - url: https://eupt.uni-goettingen.de/Korpus.html
+  limitations:
+  - Corpus index controls RS/museum/KTU/CTA identity mapping; V1 does not imply that the project's future complete critical
+    edition is already available.
+- id: SCH-METTINGER-2001-A1146
+  source_roles:
+  - SCHOLARLY_INTERPRETATION
+  source_kind: scholarly_monograph
+  author_or_tradition: Tryggve N. D. Mettinger
+  title: The Riddle of Resurrection
+  composition_date:
+    start: '2001'
+    end: '2001'
+    precision: publication-year
+  access_mode: scholarly-monograph-text
+  limitations:
+  - Used for the explicit note that the A.1146 form is morphologically problematic if derived from daku and for the reported
+    Sasson alternative.
+  - Sasson's alternative is second-hand through Mettinger and not independently controlled here.
+- id: SCH-WYATT-ILIMILKU-SCRIBAL-PRACTICE
+  source_roles:
+  - SCHOLARLY_INTERPRETATION
+  source_kind: scholarly_book_chapter
+  author_or_tradition: Nick Wyatt
+  title: Ilimilku of Ugarit and scribal practice
+  composition_date:
+    start: '2013'
+    end: '2021'
+    precision: publication-family
+  access_mode: scholarly-book-index-and-chapter-summary
+  limitations:
+  - Used for the distinction between direct Ilimilku colophons and tablets attributed by ductus where colophons do not survive.
+- id: SCH-EUPT-ILIMILKU-COLOPHON
+  source_roles:
+  - SCHOLARLY_INTERPRETATION
+  source_kind: current_critical_edition_project_article
+  author_or_tradition: Edition des ugaritischen poetischen Textkorpus
+  title: Ilimilku colophon and professional background
+  composition_date:
+    start: '2024'
+    end: '2026'
+    precision: current-project-surface
+  access_mode: institutional-critical-edition-project
+  locators:
+  - url: https://eupt.uni-goettingen.de/GMU/2_Notarius_Ugaritic-prln-and-Hurrian-furullinni.html
+  limitations:
+  - Used for KTU 1.6 VI 54-58 colophon wording and the fact that Ilimilku colophons also occur in KTU 1.4, 1.16 and 1.17.
+- id: SCH-PARDEE-2012-UGARITIC-LITERARY-COMPOSITION
+  source_roles:
+  - SCHOLARLY_INTERPRETATION
+  source_kind: academic_monograph_chapter
+  author_or_tradition: Dennis Pardee
+  title: Ugaritic Literary Composition
+  composition_date:
+    start: '2012'
+    end: '2012'
+    precision: publication-year
+  access_mode: publisher-chapter-abstract
+  locators:
+  - url: https://academic.oup.com/british-academy-scholarship-online/book/14187/chapter-abstract/168042623
+  limitations:
+  - Used for the six-tablet Baal Cycle as literary-compositional unit; detailed authorship argument requires full chapter
+    access.
+- id: SRC-GILGAMESH-AKKADIAN-EPIC
+  source_roles:
+  - PRIMARY_TEXT
+  source_kind: akkadian_literary_composition_tradition
+  author_or_tradition: Mesopotamian Gilgamesh tradition
+  title: Akkadian Gilgamesh Epic tradition
+  composition_date:
+    start: null
+    end: null
+    precision: multi-stage-second-millennium-and-later-tradition
+  physical_witness_date:
+    start: null
+    end: null
+    precision: multiple-cuneiform-witnesses
+  extant_status: multiple-cuneiform-witnesses
+  original_language: Akkadian
+  access_mode: critical-editions-and-digital-witness-catalogs
+  limitations:
+  - This node represents the Akkadian literary tradition, not one recension or one physical tablet.
+- id: SCH-CDLI-UGARIT-GILGAMESH-CORPUS
+  source_roles:
+  - MATERIAL_EVIDENCE
+  - SCHOLARLY_INTERPRETATION
+  source_kind: digital_cuneiform_catalog
+  author_or_tradition: Cuneiform Digital Library Initiative
+  title: Middle Babylonian Gilgamesh witnesses from Ugarit
+  composition_date:
+    start: '2026'
+    end: '2026'
+    precision: current-digital-catalog
+  access_mode: institutional-digital-catalog
+  locators:
+  - url: https://cdli.earth/artifacts/500683
+  - url: https://cdli.earth/P500685
+  - url: https://cdli.earth/P500686
+  limitations:
+  - Catalog evidence establishes physical presence of Akkadian literary tablets at Ugarit, not their readership by any named
+    scribe.
+- id: SCH-ORACC-UGARIT-LEXICAL-SCHOOL
+  source_roles:
+  - MATERIAL_EVIDENCE
+  - SCHOLARLY_INTERPRETATION
+  source_kind: digital_cuneiform_lexical_corpus
+  author_or_tradition: ORACC / DCCLT
+  title: Middle Babylonian lexical and school texts from Ugarit
+  composition_date:
+    start: '2026'
+    end: '2026'
+    precision: current-digital-corpus
+  access_mode: institutional-digital-corpus
+  locators:
+  - url: https://oracc.museum.upenn.edu/dcclt/P347890
+  - url: https://oracc.museum.upenn.edu/dcclt/P347900
+  limitations:
+  - Examples establish cuneiform scholastic activity at Ugarit but do not map one specific curriculum to Ilimilku.
+- id: SCH-SCHNIEDEWIND-HUNT-UGARIT-SCRIBAL-CENTER
+  source_roles:
+  - SCHOLARLY_INTERPRETATION
+  source_kind: academic_textbook
+  author_or_tradition: William M. Schniedewind and Joel H. Hunt
+  title: A Primer on Ugaritic
+  composition_date:
+    start: '2007'
+    end: '2007'
+    precision: publication-year
+  access_mode: publisher-excerpt
+  limitations:
+  - Used for synthesis of Ugarit as multilingual scribal-training center and the coexistence of lexicographic and Gilgamesh
+    materials.
+- id: SRC-WEIDNER-GOD-LIST
+  source_roles:
+  - PRIMARY_TEXT
+  source_kind: mesopotamian_lexical_god_list_tradition
+  author_or_tradition: Mesopotamian scribal-school tradition
+  title: Weidner God List
+  composition_date:
+    start: null
+    end: null
+    precision: multi-period-scribal-tradition
+  physical_witness_date:
+    start: null
+    end: null
+    precision: multiple-witnesses
+  extant_status: multiple-cuneiform-witnesses
+  original_language: Sumerian_Akkadian_with_multilingual_adaptations
+  access_mode: digital-lexical-composites-and-physical-witnesses
+  limitations:
+  - This node represents the scribal composition tradition, not one local recension or one tablet.
+- id: SCH-CDLI-P332950-UGARITICA5-137
+  source_roles:
+  - MATERIAL_EVIDENCE
+  - SCHOLARLY_INTERPRETATION
+  source_kind: digital_artifact_catalog_and_transliteration
+  author_or_tradition: Cuneiform Digital Library Initiative
+  title: Ugaritica 5, 137 / P332950
+  composition_date:
+    start: '2024'
+    end: '2026'
+    precision: current-digital-surface
+  access_mode: institutional-digital-catalog-and-text
+  locators:
+  - url: https://cdli.earth/P332950
+  limitations:
+  - No image is currently exposed on the CDLI record.
+  - Textual identification is based on current transliteration and linked lexical tradition.
+- id: SCH-ORACC-DUMUZID-P332950
+  source_roles:
+  - SCHOLARLY_INTERPRETATION
+  source_kind: digital_sumerian_lexicon_and_occurrence_index
+  author_or_tradition: ORACC ePSD2
+  title: Dumuzid lexical entry with Ugaritica 5, 137 occurrence
+  composition_date:
+    start: '2024'
+    end: '2026'
+    precision: current-digital-lexicon
+  access_mode: institutional-digital-lexicon
+  locators:
+  - url: https://oracc2.museum.upenn.edu/epsd2/cbd/sux/o0043861.html
+  limitations:
+  - Used to independently index the Dumuzi occurrence at Ugaritica 5, 137 r ii 7.
+- id: SCH-DCCLT-WEIDNER-UGARIT-P332950
+  source_roles:
+  - SCHOLARLY_INTERPRETATION
+  - MATERIAL_EVIDENCE
+  source_kind: digital_lexical_text_edition
+  author_or_tradition: ORACC Digital Corpus of Cuneiform Lexical Texts
+  title: Ugaritica 5, 137 / Weidner God List witness
+  composition_date:
+    start: '2026'
+    end: '2026'
+    precision: current-digital-corpus
+  access_mode: institutional-digital-lexical-edition
+  locators:
+  - url: https://oracc.museum.upenn.edu/dcclt/P332950.140
+  limitations:
+  - The Ugaritic-equivalent column is fragmentary and specifically lost at the Dumuzi row.
+- id: SCH-DEL-OLMO-2018-PRIVATE-ARCHIVES-UGARIT
+  source_roles:
+  - SCHOLARLY_INTERPRETATION
+  - MATERIAL_EVIDENCE
+  source_kind: archaeological_archive_study
+  author_or_tradition: Gregorio del Olmo Lete
+  title: The Private Archives of Ugarit
+  composition_date:
+    start: '2018'
+    end: '2018'
+    precision: publication-year
+  access_mode: academic-monograph
+  limitations:
+  - Used for archive inventories, topographic points, and functional context of private Ugarit archives.
+- id: SCH-PARDEE-UGARIT-RITUAL-SOURCE-INDEX
+  source_roles:
+  - SCHOLARLY_INTERPRETATION
+  source_kind: scholarly_source_index
+  author_or_tradition: Dennis Pardee
+  title: Sources for Ugaritic Ritual and Sacrifice — source index
+  composition_date:
+    start: '2002'
+    end: '2002'
+    precision: publication-year
+  access_mode: scholarly-book-index
+  limitations:
+  - Used for the index assignment of RS 20.123+ to Quartier Residentiel / Rapanu room 5.
+- id: SCH-YON-2006-UGARIT-CITY-RAPANU
+  source_roles:
+  - SCHOLARLY_INTERPRETATION
+  - MATERIAL_EVIDENCE
+  source_kind: archaeological_site_synthesis
+  author_or_tradition: Marguerite Yon
+  title: The City of Ugarit at Tell Ras Shamra
+  composition_date:
+    start: '2006'
+    end: '2006'
+    precision: publication-year
+  access_mode: archaeological-monograph
+  limitations:
+  - Used for House of Rapanu architecture, archive scale, and Rapanu's high-ranking scribal/advisory context.
+- id: SCH-DCCLT-WEIDNER-COMPOSITE-Q000263
+  source_roles:
+  - SCHOLARLY_INTERPRETATION
+  source_kind: digital_lexical_composite
+  author_or_tradition: ORACC Digital Corpus of Cuneiform Lexical Texts
+  title: Weidner God List / Q000263
+  composition_date:
+    start: '2026'
+    end: '2026'
+    precision: current-digital-composite
+  access_mode: institutional-digital-lexical-composite
+  locators:
+  - url: https://oracc.museum.upenn.edu/dcclt/Q000263.7
+  - url: https://oracc.museum.upenn.edu/dcclt/Q000263/sources
+  limitations:
+  - The composite controls the Mesopotamian list tradition and source inventory; non-Ugarit parallels do not reconstruct the
+    lost Ugaritic column of P332950.
+- id: SCH-EPSD2-UGARIT-TRILINGUAL-CONTROLS
+  source_roles:
+  - SCHOLARLY_INTERPRETATION
+  source_kind: digital_lexical_occurrence_index
+  author_or_tradition: ORACC ePSD2
+  title: Ugaritica 5, 137 multilingual deity occurrence controls
+  composition_date:
+    start: '2024'
+    end: '2026'
+    precision: current-digital-lexicon
+  access_mode: institutional-digital-lexicon
+  locators:
+  - url: https://oracc.museum.upenn.edu/epsd2/cbd/sux/o0043861.html
+  - url: https://oracc.museum.upenn.edu/epsd2/sux/o0048408
+  - url: https://oracc.museum.upenn.edu/epsd2/sux/o0045253
+  limitations:
+  - Used to control Dumuzi, Utu/Shimigi/Shapshu, and Inana/Shaushka rows; lexical indexing does not establish cultic identity.
+- id: SCH-AEMW-UGARIT-DIVINE-NAME-INDEX
+  source_roles:
+  - SCHOLARLY_INTERPRETATION
+  source_kind: digital_ugarit_divine_name_index
+  author_or_tradition: ORACC Ancient Egyptian and Mesopotamian World / Ugarit
+  title: Ugarit divine-name glossary and summaries
+  composition_date:
+    start: '2024'
+    end: '2026'
+    precision: current-digital-corpus
+  access_mode: institutional-digital-corpus
+  locators:
+  - url: https://oracc.museum.upenn.edu/aemw/ugarit/cbd/qpn-x-divine/summaries.html
+  - url: https://oracc.museum.upenn.edu/aemw/ugarit/cbd/qpn-x-divine/onebigfile.html
+  limitations:
+  - A current digital index can miss damaged, uncertain, unindexed, unpublished, or newly joined material.
+  - A normalized-name non-hit is not historical proof of absence.
+- id: SCH-TUGENDHAFT-2016-GODS-ON-CLAY
+  source_roles:
+  - SCHOLARLY_INTERPRETATION
+  source_kind: scholarly_book_chapter
+  author_or_tradition: Aaron Tugendhaft
+  title: 'Gods on clay: Ancient Near Eastern scholarly practices and the history of religions'
+  composition_date:
+    start: '2016'
+    end: '2016'
+    precision: publication-year
+  access_mode: scholarly-book-chapter
+  locators:
+  - doi: 10.1017/CBO9781316226728.009
+    url: https://www.cambridge.org/core/books/canonical-texts-and-scholarly-practices/gods-on-clay/FB2416FA3AB003354A666F58F502C972
+  limitations:
+  - Used for methodological interpretation of multilingual god-list equations; direct P332950 rows remain primary textual
+    control.
+- id: SCH-ORACC-UGARIT-SYLLABIC-CORPUS-SEARCH-V1
+  source_roles:
+  - SCHOLARLY_INTERPRETATION
+  source_kind: bounded_digital_corpus_search
+  author_or_tradition: ORACC AEMW Ugarit / DCCLT
+  title: Targeted Ugarit syllabic Dumuzi corpus search V1
+  composition_date:
+    start: '2026'
+    end: '2026'
+    precision: current-search-state
+  access_mode: institutional-digital-corpus-search
+  locators:
+  - url: https://oracc.museum.upenn.edu/aemw/ugarit/hub.html
+  - url: https://oracc.museum.upenn.edu/dcclt/hub.html
+  - url: https://oracc.museum.upenn.edu/dcclt/P332950.140
+  limitations:
+  - Search nonrecovery is bounded to currently accessible/indexed surfaces and does not prove historical absence.
+  - Broad search results can collapse neighboring glossary entries and must be checked against exact tablet rows.
+- id: SCH-EUPT-KTU1179-CURRENT-CONTROL
+  source_roles:
+  - SCHOLARLY_INTERPRETATION
+  - MATERIAL_EVIDENCE
+  source_kind: current_critical_project_and_corpus_control
+  author_or_tradition: Edition des ugaritischen poetischen Textkorpus
+  title: KTU 1.179 / RS 92.2016 current corpus and colophon control
+  composition_date:
+    start: '2025'
+    end: '2026'
+    precision: current-project-surface
+  access_mode: institutional-critical-edition-project
+  locators:
+  - url: https://eupt.uni-goettingen.de/Korpus.html
+  - url: https://eupt.uni-goettingen.de/assets/images-content/Smith_Ancient-Syria-and-the-Bible_Handout.pdf
+  limitations:
+  - KTU 1.179 remains fragmentary; readable lines do not securely preserve the older proposed 'scribe of Babylon' restoration.
+- id: SCH-DEMOOR-KTU1179-BABYLON-RESTORATION
+  source_roles:
+  - SCHOLARLY_INTERPRETATION
+  source_kind: scholarly_interpretation_of_fragmentary_colophon
+  author_or_tradition: Johannes C. de Moor
+  title: Discussion of KTU 1.179 / RS 92.2016 in Theodicy in the Texts of Ugarit
+  composition_date:
+    start: '2003'
+    end: '2003'
+    precision: publication-year
+  access_mode: scholarly-book-chapter
+  limitations:
+  - The proposed restoration including 'scribe of Babel/Babylon' is explicitly labeled uncertain.
+  - Any Babylonian-training inference is conditional on that uncertain restoration.
+- id: SCH-UGARIT-NAMED-CARRIER-SEARCH-V1
+  source_roles:
+  - SCHOLARLY_INTERPRETATION
+  source_kind: bounded_prosopographic_search
+  author_or_tradition: On-Theo research control
+  title: Ugarit named-carrier / archive-network search V1
+  composition_date:
+    start: '2026'
+    end: '2026'
+    precision: current-search-state
+  access_mode: current_scholarly_and_corpus_search
+  limitations:
+  - No direct Rapanu-to-Urtenu-to-Ilimilku transfer document was recovered.
+  - Administrative occurrences of the name Ilimilku may refer to namesakes and require source-specific identity control.
+- id: SCH-DEWRELL-RS942406-ILIMILKU-URTENU
+  source_roles:
+  - PRIMARY_TEXT
+  - SCHOLARLY_INTERPRETATION
+  source_kind: current_scholarly_edition
+  author_or_tradition: Heath D. Dewrell
+  title: 'The Anger of the Queen Has Gone Forth: Ilimilku''s Warning to Urtenu in a Ugaritic Piggyback Letter (RS 94.2406
+    [KTU3 2.88])'
+  composition_date:
+    start: '2025'
+    end: '2025'
+    precision: publication-year
+  access_mode: scholarly-journal
+  locators:
+  - doi: 10.1086/737943
+  limitations:
+  - The letter establishes Ilimilku-to-Urtenu communication but does not identify access to P332950 or a Dumuzi narrative.
+  - Personal-name identity must remain tied to the edition's Ilimilku identification.
+- id: SCH-AYALI-DARSHAN-DYING-RISING-GODS-2024
+  source_roles:
+  - SCHOLARLY_INTERPRETATION
+  source_kind: scholarly_monograph
+  author_or_tradition: Noga Ayali-Darshan
+  title: 'Dying and Rising Gods: The History of a Mythologem in West Asia of the Second Millennium BCE'
+  composition_date:
+    start: '2024'
+    end: '2024'
+    precision: publication-year
+  access_mode: scholarly-monograph
+  locators:
+  - isbn: 978-3-96327-196-0
+  - doi: 10.2307/jj.21154991
+  limitations:
+  - The monograph's directionality reconstruction is a scholarly model, not primary-text fact.
+  - Its challenge to a Dumuzi-prototype model does not by itself prove a Baal-to-Dumuzi transmission route.

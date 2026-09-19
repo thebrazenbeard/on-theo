@@ -1,55 +1,212 @@
 schema_version: on-theo.witness-registry.v1
 status: PROPOSED_CANONICAL_CONTRACT
-materialization_state: EXTENSIONS_PENDING
+materialization_state: REHEARSAL_MATERIALIZED_NOT_CANONICAL
 notes:
-  - "A work/source and a physical witness are distinct identities."
-  - "Witness date must never be promoted to work composition date or claimed-event date."
-  - "A witness-specific reading must never be promoted to all witnesses or to the reconstructed work without an explicit textual-critical inference."
-  - "Digital edition, apparatus, image, transcription, and autoptic readback are distinct access modes."
+- A work/source and a physical witness are distinct identities.
+- Witness date must never be promoted to work composition date or claimed-event date.
+- A witness-specific reading must never be promoted to all witnesses or to the reconstructed work without an explicit textual-critical
+  inference.
+- Digital edition, apparatus, image, transcription, and autoptic readback are distinct access modes.
 required_fields:
-  - id
-  - witness_of
-  - witness_kind
-  - witness_date
-  - access_mode
-  - locators
+- id
+- witness_of
+- witness_kind
+- witness_date
+- access_mode
+- locators
 optional_fields:
-  - common_name
-  - shelfmark
-  - provenance_note
-  - custody
-  - language
-  - limitations
-  - source_extension
+- common_name
+- shelfmark
+- provenance_note
+- custody
+- language
+- limitations
+- source_extension
 claim_edge_contract:
   required:
-    - source_id
+  - source_id
   optional:
-    - witness_id
-  invariant: "When a proposition depends on a witness-specific reading, witness_id is required."
+  - witness_id
+  invariant: When a proposition depends on a witness-specific reading, witness_id is required.
 materialization_rules:
-  - "Witness additions originate in reviewed registry extensions and become canonical only through a reviewed materialization cut."
-  - "Duplicate witness IDs are a collision and must stop materialization unless the records are byte/semantic-equivalent under an explicit supersession rule."
-  - "A later witness may preserve older wording, but age of wording is a separate inference and is not derived from witness date alone."
-witnesses: []
-pending_extension_records:
-  - id: WIT-TOSEFTA-VIENNA-COD-HEBR-20
-    declared_in: EXT-PANTHERA-RABBINIC-PARALLELS-V1
-  - id: WIT-P45-MARK-6-3
-    declared_in: EXT-MARK6-MATRONYMIC-V1
-  - id: WIT-4Q37-DEUT32-8
-    declared_in: EXT-DEUT32-WITNESS-CONTROL-V1
-  - id: WIT-PFOUAD266B-RAHLFS848-DEUT32-8
-    declared_in: EXT-DEUT32-WITNESS-CONTROL-V1
-  - id: WIT-UGARIT-GILGAMESH-P500683
-    declared_in: EXT-UGARIT-MESOPOTAMIAN-SCRIBAL-EXPOSURE-V1
-  - id: WIT-UGARIT-GILGAMESH-P500685
-    declared_in: EXT-UGARIT-MESOPOTAMIAN-SCRIBAL-EXPOSURE-V1
-  - id: WIT-UGARIT-GILGAMESH-P500686
-    declared_in: EXT-UGARIT-MESOPOTAMIAN-SCRIBAL-EXPOSURE-V1
-  - id: WIT-UGARIT-KTU15-AO16641-16642
-    declared_in: EXT-BAAL-DEATH-LIFE-WITNESS-CONTROL-V1
-  - id: WIT-UGARIT-KTU16-AO16636
-    declared_in: EXT-BAAL-DEATH-LIFE-WITNESS-CONTROL-V1
-  - id: WIT-UGARIT-WEIDNER-P332950
-    declared_in: EXT-UGARIT-DUMUZI-DIRECT-ATTESTATION-V1
+- Witness additions originate in reviewed registry extensions and become canonical only through a reviewed materialization
+  cut.
+- Duplicate witness IDs are a collision and must stop materialization unless the records are byte/semantic-equivalent under
+  an explicit supersession rule.
+- A later witness may preserve older wording, but age of wording is a separate inference and is not derived from witness date
+  alone.
+witnesses:
+- id: WIT-TOSEFTA-VIENNA-COD-HEBR-20
+  witness_of: SRC-TOSEFTA-CHULLIN-2-6
+  witness_kind: manuscript
+  common_name: Vienna manuscript of the Tosefta
+  shelfmark: Österreichische Nationalbibliothek Cod. hebr. 20
+  witness_date:
+    start: '1300'
+    end: '1399'
+    precision: early-fourteenth-century
+  provenance_note: Cambridge History of Judaism describes the Vienna manuscript as an early-fourteenth-century Spanish witness
+    and the only nearly complete manuscript of the Tosefta.
+  access_mode: digital-edition-manuscript-layer
+  locators:
+  - passage: Tosefta Chullin 2:6; Vienna manuscript locations 226v-227r shown by Sefaria
+    url: https://www.sefaria.org/Tosefta_Chullin.2.6?lang=bi&with=manuscripts
+  limitations:
+  - V1 reads Sefaria's manuscript-aware annotation and images/metadata layer; it does not claim an independent palaeographic
+    re-dating.
+  - A medieval witness can preserve older wording, but witness date and composition/origin date remain separate clocks.
+- id: WIT-P45-MARK-6-3
+  witness_of: SRC-GOSPEL-MARK
+  witness_kind: papyrus_manuscript
+  common_name: Chester Beatty Papyrus I / P45
+  shelfmark: P45
+  witness_date:
+    start: '0200'
+    end: 0299
+    precision: broad-third-century-range
+  provenance_note: V1 relies on published textual-apparatus discussion for the fragmentary Mark 6:3 reading, not an independent
+    autoptic reconstruction.
+  access_mode: scholarly-apparatus-summary
+  locators:
+  - passage: Mark 6:3 variation unit
+    url: https://www.cambridge.org/core/journals/new-testament-studies/article/marks-mothers-and-the-matronymic-linking-the-son-of-mary-mk-63-to-the-daughter-of-herodias-mk-622/C789C196C3EE0F16BCDB5A2C726302ED
+  - passage: NET textual note on Mark 6:3
+    url: https://classic.net.bible.org/passage.php?passage=Mar+6%3A3
+  limitations:
+  - P45 is fragmentary at this locus. V1 records the published apparatus-level reconstruction only.
+  - A witness reading is not automatically the original wording of the work.
+- id: WIT-4Q37-DEUT32-8
+  witness_of: SRC-DEUTERONOMY-32
+  witness_kind: manuscript_fragment
+  common_name: 4QDeutj / 4Q37
+  shelfmark: 4Q37
+  witness_date:
+    start: null
+    end: null
+    precision: second-temple-palaeographic-range-not-fixed-in-v1
+  access_mode: scholarly-witness-report
+  locators:
+  - passage: Deuteronomy 32:8
+    url: https://www.thetorah.com/article/the-sons-of-israel-or-god-deuteronomy-32-8
+  limitations:
+  - V1 relies on Emanuel Tov's published witness comparison rather than autoptic reading of the fragment.
+- id: WIT-PFOUAD266B-RAHLFS848-DEUT32-8
+  witness_of: SRC-DEUTERONOMY-32
+  witness_kind: papyrus_manuscript
+  common_name: P. Fouad Inv. 266B / Rahlfs 848
+  shelfmark: P. Fouad Inv. 266B / Rahlfs 848
+  witness_date:
+    start: null
+    end: null
+    precision: mid-first-century-bce-scholarly-dating
+  access_mode: scholarly-witness-report
+  locators:
+  - passage: Deuteronomy 32:8
+    url: https://www.thetorah.com/article/the-sons-of-israel-or-god-deuteronomy-32-8
+  limitations:
+  - Tov identifies MS 848 as an early papyrus with the Greek 'sons of God' reading; V1 has not independently collated the
+    papyrus image.
+- id: WIT-UGARIT-KTU15-AO16641-16642
+  witness_of: SRC-UGARIT-BAAL-CYCLE
+  witness_kind: clay_tablet_fragments
+  common_name: KTU 1.5 / Baal Cycle Tablet V
+  shelfmark: AO 16641 + AO 16642
+  witness_date:
+    start: '-1400'
+    end: '-1200'
+    precision: louvre-late-bronze-ii-broad-range
+  provenance_note: RS 2.[022] + RS 3.[565], Ras Shamra acropolis; current Louvre catalog.
+  access_mode: institutional-museum-catalog-and-critical-edition
+  locators:
+  - inventory: AO 16641; AO 16642
+    url: https://collections.louvre.fr/en/ark:/53355/cl010141444
+  - corpus_id: KTU 1.5
+    url: https://eupt.uni-goettingen.de/Korpus.html
+  limitations:
+  - Museum/corpus identity is directly controlled; V1 does not claim autoptic sign-by-sign collation from photographs.
+- id: WIT-UGARIT-KTU16-AO16636
+  witness_of: SRC-UGARIT-BAAL-CYCLE
+  witness_kind: clay_tablet_fragment
+  common_name: KTU 1.6 / Baal Cycle Tablet VI
+  shelfmark: AO 16636
+  witness_date:
+    start: '-1400'
+    end: '-1200'
+    precision: louvre-late-bronze-ii-broad-range
+  provenance_note: RS 2.[009] + RS 5.155, Ras Shamra acropolis / House of the High Priest; current Louvre catalog.
+  access_mode: institutional-museum-catalog-and-critical-edition
+  locators:
+  - inventory: AO 16636
+    url: https://collections.louvre.fr/en/ark:/53355/cl010141546
+  - corpus_id: KTU 1.6
+    url: https://eupt.uni-goettingen.de/Korpus.html
+  limitations:
+  - Museum/corpus identity is directly controlled; V1 does not claim autoptic sign-by-sign collation from photographs.
+- id: WIT-UGARIT-GILGAMESH-P500683
+  witness_of: SRC-GILGAMESH-AKKADIAN-EPIC
+  witness_kind: clay_literary_tablet
+  common_name: Gilgamesh MB Ugarit 1
+  shelfmark: RS 94.2066
+  witness_date:
+    start: '-1400'
+    end: '-1100'
+    precision: cdli-middle-babylonian-broad-range
+  provenance_note: Excavated at Ugarit / Ras Shamra; National Museum of Syria.
+  access_mode: CDLI-digital-catalog
+  locators:
+  - cdli: P500683
+    url: https://cdli.earth/artifacts/500683
+  limitations:
+  - Current CDLI catalog controls material, language, genre, period and provenience; no image-based collation is claimed.
+- id: WIT-UGARIT-GILGAMESH-P500685
+  witness_of: SRC-GILGAMESH-AKKADIAN-EPIC
+  witness_kind: clay_literary_tablet
+  common_name: Gilgamesh MB Ugarit 3
+  shelfmark: RS 94.2082
+  witness_date:
+    start: '-1400'
+    end: '-1100'
+    precision: cdli-middle-babylonian-broad-range
+  provenance_note: Excavated at Ugarit / Ras Shamra; National Museum of Syria.
+  access_mode: CDLI-digital-catalog
+  locators:
+  - cdli: P500685
+    url: https://cdli.earth/P500685
+  limitations:
+  - Current CDLI catalog controls material, language, genre, period and provenience.
+- id: WIT-UGARIT-GILGAMESH-P500686
+  witness_of: SRC-GILGAMESH-AKKADIAN-EPIC
+  witness_kind: clay_literary_tablet
+  common_name: Gilgamesh MB Ugarit 4
+  shelfmark: RS 94.2083
+  witness_date:
+    start: '-1400'
+    end: '-1100'
+    precision: cdli-middle-babylonian-broad-range
+  provenance_note: Excavated at Ugarit / Ras Shamra; National Museum of Syria.
+  access_mode: CDLI-digital-catalog
+  locators:
+  - cdli: P500686
+    url: https://cdli.earth/P500686
+  limitations:
+  - Current CDLI catalog controls material, language, genre, period and provenience.
+- id: WIT-UGARIT-WEIDNER-P332950
+  witness_of: SRC-WEIDNER-GOD-LIST
+  witness_kind: clay_lexical_tablet
+  common_name: Ugaritica 5, 137 / RS 20.123+
+  shelfmark: NMSD_05294
+  witness_date:
+    start: '-1400'
+    end: '-1100'
+    precision: cdli-middle-babylonian-broad-range
+  provenance_note: Excavated at Ugarit / Ras Shamra; current CDLI P332950.
+  access_mode: CDLI-and-ORACC-DCCLT
+  locators:
+  - cdli: P332950
+    url: https://cdli.earth/P332950
+  - oracc: P332950
+    url: https://oracc.museum.upenn.edu/dcclt/P332950
+  limitations:
+  - Dumuzi row is directly preserved, but the Ugaritic-equivalent column at that row is lost/broken.
+  - Lexical-school attestation does not establish local cult or narrative transmission.
+pending_extension_records: []

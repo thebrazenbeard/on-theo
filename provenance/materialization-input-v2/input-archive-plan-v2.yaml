@@ -1,0 +1,485 @@
+schema_version: on-theo.promotion-input-archive-plan.v2
+status: APPLIED_IN_DRAFT_CANDIDATE_PAYLOAD
+recorded_at: '2026-09-19'
+source_subject:
+  repository: thebrazenbeard/on-theo
+  head: 7c1e57f05957d01838845956857376dc603ca433
+  tree: ca49dc45c5ca1880cafc117a5df2afef6d433882
+  source_control_pr: 79
+archive_namespace:
+  root: provenance/materialization-input-v2/
+  namespace_preexists_in_source: false
+  collisions: 0
+  source_manifest_archive_path: provenance/materialization-input-v2/registry/extension-manifest.yaml
+  source_manifest_git_blob: ea39f58c8d42a3edb9f08c65ad63897d32e80ddf
+  source_manifest_sha256: 2c299261a7c64d7768e14e51e3d913a9413170d56534ee5379c25c5b4ad690f2
+extension_count: 50
+extensions:
+- extension_id: EXT-PANTHERA-RABBINIC-PARALLELS-V1
+  source_path: registry/extensions/panthera-rabbinic-parallels-v1.yaml
+  archive_path: provenance/materialization-input-v2/registry/extensions/panthera-rabbinic-parallels-v1.yaml
+  source_git_blob: 0e3323e145fceb668d4a8bdb4008ad5b442e89f8
+  sha256: bb502efa445b45b6fad52c7659e8374ed4f4d3e6e15a8c401ad2001d579bc9f5
+  declared_base: c1f6df5ea1fee0c5ac8d84a7b5c2b81fb905fd3e
+  introduced_at: 389c1e6e2c8affafae165fd34ca091618043b11e
+  depends_on: []
+- extension_id: EXT-BROAD-MYTHOS-FOUNDATION-V1
+  source_path: registry/extensions/broad-mythos-foundation-v1.yaml
+  archive_path: provenance/materialization-input-v2/registry/extensions/broad-mythos-foundation-v1.yaml
+  source_git_blob: b6ef8618f423f19229803f973558c67de1e641ad
+  sha256: c768c19f85b095645e898a9cf14c4c4edae7330fb342166a62541c81607828f0
+  declared_base: 71ba8382c073e72332f3cb7199fb5824fe74a2b2
+  introduced_at: 4040da628c253ab96308ef7573897f0d2407c70c
+  depends_on: []
+- extension_id: EXT-SIMULATION-THEORY-V1
+  source_path: registry/extensions/simulation-theory-v1.yaml
+  archive_path: provenance/materialization-input-v2/registry/extensions/simulation-theory-v1.yaml
+  source_git_blob: 69c2b9cfafd7badd7b3b75b32127cc1d6be37b29
+  sha256: f0e3a788a190e1ef71d80334531b79696c49ddfbe6cf29d143c0e7a3f40d98ef
+  declared_base: d2a319321de9b77cefaba999fa6dd2cebc4899c5
+  introduced_at: 64378e32d9df0190f73fcc6eb7fc985f91fc05d1
+  depends_on: []
+- extension_id: EXT-MARK6-MATRONYMIC-V1
+  source_path: registry/extensions/mark6-matronymic-v1.yaml
+  archive_path: provenance/materialization-input-v2/registry/extensions/mark6-matronymic-v1.yaml
+  source_git_blob: 65b79dca236864b26598e386161ff036871b43c2
+  sha256: e10b97347be7182729e01098c323dac97dd9dc9caa1599dfaf7bc651ec069412
+  declared_base: 389c1e6e2c8affafae165fd34ca091618043b11e
+  introduced_at: d772dc41ca19f2b1c1bb12839ced88e100ee9e09
+  depends_on:
+  - EXT-PANTHERA-RABBINIC-PARALLELS-V1
+- extension_id: EXT-DEUT32-WITNESS-CONTROL-V1
+  source_path: registry/extensions/deut32-witness-control-v1.yaml
+  archive_path: provenance/materialization-input-v2/registry/extensions/deut32-witness-control-v1.yaml
+  source_git_blob: bbedf6c3bb21e5e4624350f5a82220c549e1b8b1
+  sha256: 42965bceb04a83024bc6e08d0bf149bf985be17f6ef006193581525be689521b
+  declared_base: d364a124523b8d06542f8631a05227268b14de10
+  introduced_at: 1b38d3dea42aeafbdd0cf328c9b389ea31a25107
+  depends_on:
+  - EXT-BROAD-MYTHOS-FOUNDATION-V1
+- extension_id: EXT-EGYPTIAN-VEDIC-FOUNDATION-V1
+  source_path: registry/extensions/egyptian-vedic-foundation-v1.yaml
+  archive_path: provenance/materialization-input-v2/registry/extensions/egyptian-vedic-foundation-v1.yaml
+  source_git_blob: 49d2fe92b2c795d4c44a668203eb5da76d7cf688
+  sha256: 160bef127cab55dc94f39eea9966f85bd25ce78539504daafbd4229f145c3457
+  declared_base: 9cc582ecbd19857df41bea818625a4750ad33ae9
+  introduced_at: fb2a9d56659f4f0329e9b02308e2b1d669247688
+  depends_on:
+  - EXT-BROAD-MYTHOS-FOUNDATION-V1
+- extension_id: EXT-SIMULATION-DISCRIMINABILITY-V2
+  source_path: registry/extensions/simulation-discriminability-v2.yaml
+  archive_path: provenance/materialization-input-v2/registry/extensions/simulation-discriminability-v2.yaml
+  source_git_blob: a79479a39d6444a3ffb2e81e9ef5d74cb6d87e4c
+  sha256: cc6847acc666eb312f2c9452d40ffe9708a00d5c680206c2cb1a2fc6dd49c4e9
+  declared_base: a6a1f16c3c35df86565a2cc502671e3893ae3131
+  introduced_at: a6e91bbd124db4361c81aa8bce6f4a7a6cacf525
+  depends_on:
+  - EXT-SIMULATION-THEORY-V1
+- extension_id: EXT-JOHN8-41-PORNEIA-V1
+  source_path: registry/extensions/john8-41-porneia-v1.yaml
+  archive_path: provenance/materialization-input-v2/registry/extensions/john8-41-porneia-v1.yaml
+  source_git_blob: 335f57e279efa4d8eac552e1f8c4c69218c48216
+  sha256: a6b6cc85d55ce47189ee8a6f430dfc43ead6d0228ec7ff8c42e1410ba00447e7
+  declared_base: d772dc41ca19f2b1c1bb12839ced88e100ee9e09
+  introduced_at: 625272e016fce6fede9531e4ca1bbab315345d69
+  depends_on:
+  - EXT-PANTHERA-RABBINIC-PARALLELS-V1
+  - EXT-MARK6-MATRONYMIC-V1
+- extension_id: EXT-EARLY-BUDDHIST-V1
+  source_path: registry/extensions/early-buddhist-v1.yaml
+  archive_path: provenance/materialization-input-v2/registry/extensions/early-buddhist-v1.yaml
+  source_git_blob: 355d1dc997779073c513e7145daef4479e71dcc4
+  sha256: c1e02b11acec566884f573bd026af717e1bf051a2701d52a17d389f7d0d7a1a9
+  declared_base: d9cd25ddc1c0cf6d2cbeda0c4d13674a64ae657d
+  introduced_at: 4a8c62d5e21ecc40fa5084abe391a0babce96532
+  depends_on:
+  - EXT-EGYPTIAN-VEDIC-FOUNDATION-V1
+- extension_id: EXT-SECOND-TEMPLE-GRECO-ROMAN-V1
+  source_path: registry/extensions/second-temple-greco-roman-v1.yaml
+  archive_path: provenance/materialization-input-v2/registry/extensions/second-temple-greco-roman-v1.yaml
+  source_git_blob: 37e44d923f2ed671453b50706825f0f70aa6b384
+  sha256: a53f61b7150bf040c1b083cc149bc46d5141a58a6c054cf97779c4f2a4b8348d
+  declared_base: 9cc582ecbd19857df41bea818625a4750ad33ae9
+  introduced_at: 6d7fab5e735b2d65a276cb441b0386c674e17127
+  depends_on:
+  - EXT-BROAD-MYTHOS-FOUNDATION-V1
+  - EXT-DEUT32-WITNESS-CONTROL-V1
+- extension_id: EXT-PORNEIA-SEMANTIC-CONTROL-V1
+  source_path: registry/extensions/porneia-semantic-control-v1.yaml
+  archive_path: provenance/materialization-input-v2/registry/extensions/porneia-semantic-control-v1.yaml
+  source_git_blob: e92cbe4e9065cb1f043c134a352c8a8b821feab3
+  sha256: 6176b1ba976dd3e481bf2d730ca2346bbf589842d987b7298e51f5897ab85952
+  declared_base: 2f11520f2a8809c5e705a42fe707bc1ad05c0e91
+  introduced_at: e1f04ffead5d9474829e9543a75c08fa6a61207e
+  depends_on:
+  - EXT-PANTHERA-RABBINIC-PARALLELS-V1
+  - EXT-MARK6-MATRONYMIC-V1
+  - EXT-JOHN8-41-PORNEIA-V1
+- extension_id: EXT-ENOCH-DANIEL-PHILO-V1
+  source_path: registry/extensions/enoch-daniel-philo-v1.yaml
+  archive_path: provenance/materialization-input-v2/registry/extensions/enoch-daniel-philo-v1.yaml
+  source_git_blob: 335ed82d9839c31bdaf5021308833f39dd6e307a
+  sha256: b7b1f460acc75f8c9a73b16694012f6a353f5c3e7a8b21864b0b09f22cee02fc
+  declared_base: 7493cdd8f9fb56f388641f3006fb6c62ac81ad00
+  introduced_at: 055ae4fa271bc09857eb337c5fdb6987a0106ecf
+  depends_on:
+  - EXT-SECOND-TEMPLE-GRECO-ROMAN-V1
+- extension_id: EXT-CELSUS-JEW-SOURCE-PROVENANCE-V1
+  source_path: registry/extensions/celsus-jew-source-provenance-v1.yaml
+  archive_path: provenance/materialization-input-v2/registry/extensions/celsus-jew-source-provenance-v1.yaml
+  source_git_blob: 3af23206b1cca4b4f59e6c71e0c777d7505eaf28
+  sha256: bfe7ee313f67c1074bc5b93da3cadd5345370397794a9ccef79171b42bb0d08d
+  declared_base: 1ecfc6ca9e76b4c8ed165828316b50d882b6e4ff
+  introduced_at: 43f16e7a3656bffed35dbaa0479b72d51bb83357
+  depends_on:
+  - EXT-PANTHERA-RABBINIC-PARALLELS-V1
+  - EXT-MARK6-MATRONYMIC-V1
+  - EXT-JOHN8-41-PORNEIA-V1
+  - EXT-PORNEIA-SEMANTIC-CONTROL-V1
+- extension_id: EXT-EARLY-CHRISTIAN-RABBINIC-V1
+  source_path: registry/extensions/early-christian-rabbinic-v1.yaml
+  archive_path: provenance/materialization-input-v2/registry/extensions/early-christian-rabbinic-v1.yaml
+  source_git_blob: d52d585d009682c54776665dde158810f6c19af3
+  sha256: f22db0b16014c6675c84ce235c53bf979472e39c5c4664ebd086f6df0a106087
+  declared_base: f4c4b4e940a8e6c76e9603d298bab819fbcc448d
+  introduced_at: 54aecf95382f40497c1d9def532e0eed1037581f
+  depends_on:
+  - EXT-ENOCH-DANIEL-PHILO-V1
+- extension_id: EXT-PANTHERA-PARTHENOS-WORDPLAY-V1
+  source_path: registry/extensions/panthera-parthenos-wordplay-v1.yaml
+  archive_path: provenance/materialization-input-v2/registry/extensions/panthera-parthenos-wordplay-v1.yaml
+  source_git_blob: 2c2d8a62e471e901ca0d60e794d18020e46f06d3
+  sha256: 8d2848596bbfa339d5dbe8c4934c997bc02d8a973aae3ab87c905f8d132300ae
+  declared_base: e01788d4acafadd9c349b80ee530dda5e6868c2e
+  introduced_at: 319b428cc711fd4436bb282d3cd69c20c7ac500e
+  depends_on:
+  - EXT-PANTHERA-RABBINIC-PARALLELS-V1
+  - EXT-MARK6-MATRONYMIC-V1
+  - EXT-JOHN8-41-PORNEIA-V1
+  - EXT-PORNEIA-SEMANTIC-CONTROL-V1
+  - EXT-CELSUS-JEW-SOURCE-PROVENANCE-V1
+- extension_id: EXT-LATE-ANTIQUE-CONTACT-ZONE-V1
+  source_path: registry/extensions/late-antique-contact-zone-v1.yaml
+  archive_path: provenance/materialization-input-v2/registry/extensions/late-antique-contact-zone-v1.yaml
+  source_git_blob: a96a186786c6131feca70ddeca613466e2670150
+  sha256: e7bd993553ee803cb5329f696a99bf1a35e14541e805d73526cdbd31bad327b7
+  declared_base: 5a45ef5cdadc1f1f3a21e769e2d613c4ed945d8d
+  introduced_at: 8cc2819de1a41f07a63d3e66967307a2372bf97f
+  depends_on:
+  - EXT-EARLY-CHRISTIAN-RABBINIC-V1
+- extension_id: EXT-QURANIC-SYSTEM-V1
+  source_path: registry/extensions/quranic-system-v1.yaml
+  archive_path: provenance/materialization-input-v2/registry/extensions/quranic-system-v1.yaml
+  source_git_blob: c30d8e46486261b72bde4d75c9908df41ca0fb89
+  sha256: 04ce77bcca3b244bc0282b3de11aa515b38f3a2c315d8fe169e8b07b6cc99ee8
+  declared_base: 22d4a193ada3b63591dcdc41c975739ceba20b54
+  introduced_at: 77bc54859a6aa67cee9648dfe3f602cbaf52ea87
+  depends_on:
+  - EXT-LATE-ANTIQUE-CONTACT-ZONE-V1
+- extension_id: EXT-YESHUA-HYPOTHESIS-MAP-V1
+  source_path: registry/extensions/yeshua-hypothesis-map-v1.yaml
+  archive_path: provenance/materialization-input-v2/registry/extensions/yeshua-hypothesis-map-v1.yaml
+  source_git_blob: d91905d575c0d6d88ecdc322c4456a27f3460dda
+  sha256: 49d775a93b8c28f20ccf5a9d8430259a8b1fbfd2bb2ae2c0d79734f3c400c014
+  declared_base: 5a45ef5cdadc1f1f3a21e769e2d613c4ed945d8d
+  introduced_at: a73255ac39fac00d2e862d10dafe3d04dc6130b9
+  depends_on:
+  - EXT-PANTHERA-PARTHENOS-WORDPLAY-V1
+  - EXT-EARLY-CHRISTIAN-RABBINIC-V1
+- extension_id: EXT-QURAN-LATE-ANTIQUE-FEATURE-TESTS-V1
+  source_path: registry/extensions/quran-late-antique-feature-tests-v1.yaml
+  archive_path: provenance/materialization-input-v2/registry/extensions/quran-late-antique-feature-tests-v1.yaml
+  source_git_blob: 020ffa2bcdcb46ce0e32fda5e01a12db86b3448a
+  sha256: e890d1fe3e9027349f34058d73674f00813e7d0088340daade12e8bb95625ba6
+  declared_base: d2a319321de9b77cefaba999fa6dd2cebc4899c5
+  introduced_at: 2be871bdb54436ebeabbeca32d764fdb7ef70255
+  depends_on:
+  - EXT-QURANIC-SYSTEM-V1
+  - EXT-LATE-ANTIQUE-CONTACT-ZONE-V1
+- extension_id: EXT-EARLY-ISLAMIC-DEVELOPMENT-V1
+  source_path: registry/extensions/early-islamic-development-v1.yaml
+  archive_path: provenance/materialization-input-v2/registry/extensions/early-islamic-development-v1.yaml
+  source_git_blob: 8b76994d3d02958477d438eb78537d9863cd5455
+  sha256: 5a473f2e2cd6749045208cefda9bd44a07b439cbb36f133733d387fa3ac6953a
+  declared_base: d2a319321de9b77cefaba999fa6dd2cebc4899c5
+  introduced_at: 77dc07d4cd793e421969878c4680ba03f3d7d14e
+  depends_on:
+  - EXT-QURANIC-SYSTEM-V1
+- extension_id: EXT-SUMERIAN-MATERIAL-EVIDENCE-V1
+  source_path: registry/extensions/sumerian-material-evidence-v1.yaml
+  archive_path: provenance/materialization-input-v2/registry/extensions/sumerian-material-evidence-v1.yaml
+  source_git_blob: bf7af6ea0c76a1568b300ebf0439f3cae59e1c9e
+  sha256: df7f4be60bb62ff639ca81cd3588cb6a3c683277f763bd36cb0b390734107478
+  declared_base: efe4ab2e39f205ff5bbc6e176be0b4fe1348f480
+  introduced_at: c2f1a4de6e26d157ef50b14112d0f2e46bf6feb6
+  depends_on: []
+- extension_id: EXT-SUMERIAN-AFTERLIFE-FUNERARY-V1
+  source_path: registry/extensions/sumerian-afterlife-funerary-v1.yaml
+  archive_path: provenance/materialization-input-v2/registry/extensions/sumerian-afterlife-funerary-v1.yaml
+  source_git_blob: 4da2e37a854c20a4122c8a516d17f55489aa0c9e
+  sha256: b415749255b2e75f44a6521d427829a0ddafa7c3b414e89fa764659c3b81b0bd
+  declared_base: 7dbc47484e453f2561df1ba04b730d49181e6a39
+  introduced_at: ef473a4930b8a6d7a3cf25da522458c62a56e73c
+  depends_on:
+  - EXT-SUMERIAN-MATERIAL-EVIDENCE-V1
+- extension_id: EXT-SUMERIAN-AFTERLIFE-LEXICON-V1
+  source_path: registry/extensions/sumerian-afterlife-lexicon-v1.yaml
+  archive_path: provenance/materialization-input-v2/registry/extensions/sumerian-afterlife-lexicon-v1.yaml
+  source_git_blob: 3f263d9f30820e58dde8ac34d6707f8e19b9d930
+  sha256: 974bb2507c01492fc5695bf4f86812db0cfcc296fa35fc920f6b1a5f60f0ee4e
+  declared_base: de5f1f0c88b49fb4c654eb87e25c021396957b0a
+  introduced_at: 630d1652f0af4a51107a3d510cdf50a3ae181075
+  depends_on:
+  - EXT-SUMERIAN-AFTERLIFE-FUNERARY-V1
+- extension_id: EXT-SUMERIAN-DEATH-CORPUS-COMPOSITION-LEXICON-V1
+  source_path: registry/extensions/sumerian-death-corpus-composition-lexicon-v1.yaml
+  archive_path: provenance/materialization-input-v2/registry/extensions/sumerian-death-corpus-composition-lexicon-v1.yaml
+  source_git_blob: 25277a8e9581f7876088ee4131d00c2e97380d9c
+  sha256: 8bbcec7aaf52cf43eb19cb5a4258312aed1aac458d3961aaa783106761223210
+  declared_base: fdbcb961ba1d32f5442db497f6f61199ccae9605
+  introduced_at: 9e6f1d343c7cc743465410140bfb2cd32b4c51a7
+  depends_on:
+  - EXT-SUMERIAN-AFTERLIFE-LEXICON-V1
+- extension_id: EXT-SUMERIAN-DEATH-CORPUS-EDITION-CURRENTNESS-V1
+  source_path: registry/extensions/sumerian-death-corpus-edition-currentness-v1.yaml
+  archive_path: provenance/materialization-input-v2/registry/extensions/sumerian-death-corpus-edition-currentness-v1.yaml
+  source_git_blob: 4f38da901948e925f742268b3339372bf88993c7
+  sha256: 729fdccd91d2945ef29c6f547e7d6dc9fdb542ce69ac168d9c63d5bdbbfd8336
+  declared_base: 6a049eb026a8959c860c17430e666f496adea369
+  introduced_at: 229860cc9ab2a92b4c9eb532cecb8ba1a7cebe5f
+  depends_on:
+  - EXT-SUMERIAN-DEATH-CORPUS-COMPOSITION-LEXICON-V1
+- extension_id: EXT-SUMERIAN-DEATH-LINE-REVALIDATION-V1
+  source_path: registry/extensions/sumerian-death-line-revalidation-v1.yaml
+  archive_path: provenance/materialization-input-v2/registry/extensions/sumerian-death-line-revalidation-v1.yaml
+  source_git_blob: 489936e8d030b54a5071bf386aba17d98f1313e0
+  sha256: 8be61a6a5623cdce5a3a6856bfaab72162fd47e92480b1385289e34a16b2893f
+  declared_base: 74ce2094ad8e45368bd51f8c559046b8b6f2c763
+  introduced_at: fd3642e157c421ac88d61c5453aa69f020c7c2d5
+  depends_on:
+  - EXT-SUMERIAN-DEATH-CORPUS-EDITION-CURRENTNESS-V1
+- extension_id: EXT-SUMERIAN-INANA-LINE-REVALIDATION-V1
+  source_path: registry/extensions/sumerian-inana-line-revalidation-v1.yaml
+  archive_path: provenance/materialization-input-v2/registry/extensions/sumerian-inana-line-revalidation-v1.yaml
+  source_git_blob: 7c76ca3f0323435b576bdece90aba3f8a7b7478d
+  sha256: 0f21353f8b72844bace882e84ef60323c855261f024677aebc94c9a2404f6a59
+  declared_base: e1fbd46e151d65ac786257b268a28237b8e66d77
+  introduced_at: 1ff4e38858a89a2ac9401553efc53d7cbfe77404
+  depends_on:
+  - EXT-SUMERIAN-DEATH-LINE-REVALIDATION-V1
+- extension_id: EXT-SUMERIAN-DEATH-GILGAMESH-LINE-REVALIDATION-V1
+  source_path: registry/extensions/sumerian-death-gilgamesh-line-revalidation-v1.yaml
+  archive_path: provenance/materialization-input-v2/registry/extensions/sumerian-death-gilgamesh-line-revalidation-v1.yaml
+  source_git_blob: d0547c5a25a9aeb8904c8d6f88e38842ed438535
+  sha256: 36e94c0aff1d60909f072ba0f0403dcb3a2e526d6ce8a23a00b6b52ddbc5a723
+  declared_base: a60d4ba8af209ddef7e6f42ecf01cade64e8a87a
+  introduced_at: bfc2ca8c57bf5ddaff9c2bd2b703a199e5bd6fd9
+  depends_on:
+  - EXT-SUMERIAN-INANA-LINE-REVALIDATION-V1
+- extension_id: EXT-SUMERIAN-URNAMMA-LINE-REVALIDATION-V1
+  source_path: registry/extensions/sumerian-urnamma-line-revalidation-v1.yaml
+  archive_path: provenance/materialization-input-v2/registry/extensions/sumerian-urnamma-line-revalidation-v1.yaml
+  source_git_blob: 87fc1ac4e7872139b87c81dd09ae92e1b3ada17b
+  sha256: 96157f26e7af5ac9cf973e30d1f3952bdc0a0b879427f9cd7616bf67d472eedd
+  declared_base: 9ca2b40378a7ae22e3f10f392cb26cd62be1b9c8
+  introduced_at: fa60c97f0fc4d2563fe6a45b9720cfd5f6ef7c9e
+  depends_on:
+  - EXT-SUMERIAN-DEATH-GILGAMESH-LINE-REVALIDATION-V1
+- extension_id: EXT-SUMERIAN-DEATH-OCCURRENCE-PROVENANCE-V1
+  source_path: registry/extensions/sumerian-death-occurrence-provenance-v1.yaml
+  archive_path: provenance/materialization-input-v2/registry/extensions/sumerian-death-occurrence-provenance-v1.yaml
+  source_git_blob: 8bf2224f0352216fdaedde5b7587dc13bec3849f
+  sha256: 6165890ab5fb936b426b44854ea5d6f344608e7f87b15fd415f2427a9a9c040f
+  declared_base: 1c1019d6f2eda3bd442349ec1c896e6270a2e100
+  introduced_at: bf9c3ef8a6f94f19067d4b4317f27edd763f41f6
+  depends_on:
+  - EXT-SUMERIAN-URNAMMA-LINE-REVALIDATION-V1
+- extension_id: EXT-SUMERIAN-DUMUZID-DEATH-LAMENT-V1
+  source_path: registry/extensions/sumerian-dumuzid-death-lament-v1.yaml
+  archive_path: provenance/materialization-input-v2/registry/extensions/sumerian-dumuzid-death-lament-v1.yaml
+  source_git_blob: f475b74bd769ecb62d5aff0f1fb1e8b382c663a8
+  sha256: 92d7d904cb9ec84f7f56173f5413097865476c26cff18ecd7405fd54e8819cc8
+  declared_base: 778c19f4cb8c0e8d4dde0b5aebf5689808c2e3a5
+  introduced_at: e619247593c09bfae5cf3d011be389b741de8ab0
+  depends_on:
+  - EXT-SUMERIAN-DEATH-OCCURRENCE-PROVENANCE-V1
+- extension_id: EXT-SUMERIAN-DUMUZID-SUBSTITUTION-V1
+  source_path: registry/extensions/sumerian-dumuzid-substitution-v1.yaml
+  archive_path: provenance/materialization-input-v2/registry/extensions/sumerian-dumuzid-substitution-v1.yaml
+  source_git_blob: 4dbdf01412c99c8d719a95184dc3c7c291507418
+  sha256: c940917086840107b8d5cec1aa50ca042fd7fcccc0aad6d74995c18e479da362
+  declared_base: 1e8597bce25f5ce883833dfbd17a7ea71fca9a8a
+  introduced_at: f059788f3e498ae6dca9427c7ee2e90484304bbc
+  depends_on:
+  - EXT-SUMERIAN-DUMUZID-DEATH-LAMENT-V1
+- extension_id: EXT-SUMERIAN-DUMUZID-SEASONAL-HYPOTHESIS-V1
+  source_path: registry/extensions/sumerian-dumuzid-seasonal-hypothesis-v1.yaml
+  archive_path: provenance/materialization-input-v2/registry/extensions/sumerian-dumuzid-seasonal-hypothesis-v1.yaml
+  source_git_blob: cfa5a589f329780db51c8e9e50c537fd472d3bc9
+  sha256: 0bddd038ae34c0377454b52dc4ed759719dff134448da07e193e9b7ad90c330c
+  declared_base: b0873f7840e1d336bc63570e017a5de45b0e6fe4
+  introduced_at: 8aba42bcf83fe6198cf65e6027db346aff28f80a
+  depends_on:
+  - EXT-SUMERIAN-DUMUZID-SUBSTITUTION-V1
+- extension_id: EXT-DUMUZID-BAAL-TRANSMISSION-V1
+  source_path: registry/extensions/dumuzid-baal-transmission-v1.yaml
+  archive_path: provenance/materialization-input-v2/registry/extensions/dumuzid-baal-transmission-v1.yaml
+  source_git_blob: 983e20eb815b2666354f1304722ae35dfdbb36fd
+  sha256: 84bc57a02f75b00508e5bdbc8d11cc2420cad9ea522fe61815c1c8710eef8960
+  declared_base: d4b1bb63a706911609fec6db9dd12711bb21a3d0
+  introduced_at: b83aea1602ce966fba8be1dc39102cfa26f82bdd
+  depends_on:
+  - EXT-SUMERIAN-DUMUZID-SEASONAL-HYPOTHESIS-V1
+- extension_id: EXT-MARI-DUMUZI-SOURCE-VERIFICATION-V1
+  source_path: registry/extensions/mari-dumuzi-source-verification-v1.yaml
+  archive_path: provenance/materialization-input-v2/registry/extensions/mari-dumuzi-source-verification-v1.yaml
+  source_git_blob: 375febf83947b82c0bc10cbbfdedabb22197ea3d
+  sha256: 0b5e974393d2b3be6291c8fc0766fb6a9c02d39ea5c6f4384b0e95c53ba032c3
+  declared_base: 0c217af3dc4ddad5f9c0738f8306080defb0e1c4
+  introduced_at: 577fadff6d72936e39f4fb218b4d30d6390f38f9
+  depends_on:
+  - EXT-DUMUZID-BAAL-TRANSMISSION-V1
+- extension_id: EXT-MARI-DUMUZI-WINTER-ENTRY-V1
+  source_path: registry/extensions/mari-dumuzi-winter-entry-v1.yaml
+  archive_path: provenance/materialization-input-v2/registry/extensions/mari-dumuzi-winter-entry-v1.yaml
+  source_git_blob: 17f4c359e2fef9909528153acc04c6b707cfd814
+  sha256: ee8e83330b22663c770be8ab145d46527464b8d80dd8c51be54235c89be34631
+  declared_base: b97d9db58485315e1ba6f31c89cd00f210b93e4d
+  introduced_at: 53a236575f329075f40e9d47a96629003ecb7893
+  depends_on:
+  - EXT-MARI-DUMUZI-SOURCE-VERIFICATION-V1
+- extension_id: EXT-DUMUZID-BAAL-LEXICAL-CONTROL-V1
+  source_path: registry/extensions/dumuzid-baal-lexical-control-v1.yaml
+  archive_path: provenance/materialization-input-v2/registry/extensions/dumuzid-baal-lexical-control-v1.yaml
+  source_git_blob: 8b7a88d9e21797af8363bb1dbd7639ed41a2a6f9
+  sha256: 202992ecfcdcc33f58331e0ca3db62911fa0f53d62c7ea63ddf1090acf8ca9ed
+  declared_base: 8aabf5571246ca772ef6954c2470ee9d6f33e208
+  introduced_at: dd658ec9ffba7337c953310ae1c627f6282b84ba
+  depends_on:
+  - EXT-MARI-DUMUZI-WINTER-ENTRY-V1
+- extension_id: EXT-BAAL-DEATH-LIFE-WITNESS-CONTROL-V1
+  source_path: registry/extensions/baal-death-life-witness-control-v1.yaml
+  archive_path: provenance/materialization-input-v2/registry/extensions/baal-death-life-witness-control-v1.yaml
+  source_git_blob: 167d00e191cf771a8ee1e8be97d0b636a95fdad0
+  sha256: cfd5fadecb72a09e60da3bfe1a96ce688e88bc60c25aaa6eea2bcb30357ad2ea
+  declared_base: 48ca89402a6f685614a1cfd068a278d40c1de0fb
+  introduced_at: 789e5c85c6e58cff2df3f42d65a2ecab296650cd
+  depends_on:
+  - EXT-DUMUZID-BAAL-LEXICAL-CONTROL-V1
+- extension_id: EXT-A1146-MORPHOLOGY-CORRECTION-V1
+  source_path: registry/extensions/a1146-morphology-correction-v1.yaml
+  archive_path: provenance/materialization-input-v2/registry/extensions/a1146-morphology-correction-v1.yaml
+  source_git_blob: e486526995f6183a7bfed4d64182a4754bad0314
+  sha256: 5a67a953e0d6c55f13a2c47d1b21dc65c7d71318daab3295effe49702aeba855
+  declared_base: cf5c517faca6faff27e7ba28cd738ae49dd9523f
+  introduced_at: 78548f9d57b422c6234c1b0994a124ac80d51704
+  depends_on:
+  - EXT-BAAL-DEATH-LIFE-WITNESS-CONTROL-V1
+- extension_id: EXT-BAAL-ILIMILKU-ATTRIBUTION-CONTROL-V1
+  source_path: registry/extensions/baal-ilimilku-attribution-control-v1.yaml
+  archive_path: provenance/materialization-input-v2/registry/extensions/baal-ilimilku-attribution-control-v1.yaml
+  source_git_blob: f29756dddd3892d825598cf35db5fde912477dd4
+  sha256: 39631581336a1ab8105550a872db572ae1fce924367a446f6a6793eb8717fc5e
+  declared_base: 700f2b6c3a9975fe11db45e1441b339dd0b917d8
+  introduced_at: 75e378e28a1bb06e01add2dbbc30231fe55a1752
+  depends_on:
+  - EXT-A1146-MORPHOLOGY-CORRECTION-V1
+- extension_id: EXT-UGARIT-MESOPOTAMIAN-SCRIBAL-EXPOSURE-V1
+  source_path: registry/extensions/ugarit-mesopotamian-scribal-exposure-v1.yaml
+  archive_path: provenance/materialization-input-v2/registry/extensions/ugarit-mesopotamian-scribal-exposure-v1.yaml
+  source_git_blob: 363874b02651fe79f70ba911369955c398366e85
+  sha256: 26250682004e79d94c8e9d733802a1451c0f60bab25c6044bd01bf8e47e6c8f8
+  declared_base: c5879edfedb5108916bd9f97d5c5e45a5a83b703
+  introduced_at: 70886bef47813f513661c565bae5dde8c91962f6
+  depends_on:
+  - EXT-BAAL-ILIMILKU-ATTRIBUTION-CONTROL-V1
+- extension_id: EXT-UGARIT-DUMUZI-DIRECT-ATTESTATION-V1
+  source_path: registry/extensions/ugarit-dumuzi-direct-attestation-v1.yaml
+  archive_path: provenance/materialization-input-v2/registry/extensions/ugarit-dumuzi-direct-attestation-v1.yaml
+  source_git_blob: c4cfac4def75543fbc462b90f4e93f4627b61f6f
+  sha256: ab203273a0a485d0611d87cc68cfef8ab429135f52e94413eb231c413bf5093e
+  declared_base: 118bd970361f0fa47290f979341f3092722b011e
+  introduced_at: 265a7d1c353ebbbe2cf7cb7e425105c0e03c7880
+  depends_on:
+  - EXT-UGARIT-MESOPOTAMIAN-SCRIBAL-EXPOSURE-V1
+- extension_id: EXT-UGARIT-DUMUZI-ARCHIVE-PROXIMITY-V1
+  source_path: registry/extensions/ugarit-dumuzi-archive-proximity-v1.yaml
+  archive_path: provenance/materialization-input-v2/registry/extensions/ugarit-dumuzi-archive-proximity-v1.yaml
+  source_git_blob: 0e12df38b0e8aa7cfa53a6a141359c940ef1393d
+  sha256: 549eec8532d95b3a54331caff0343ca5bb381b6531cd18bd41254c5cf63b4c85
+  declared_base: a6413d69106ef0ee934a6ca3a30516d5a7beb448
+  introduced_at: bccb021b2c1a083b674f660279d182fdd5df59b3
+  depends_on:
+  - EXT-UGARIT-DUMUZI-DIRECT-ATTESTATION-V1
+- extension_id: EXT-UGARIT-DUMUZI-EQUIVALENCE-CONTROL-V1
+  source_path: registry/extensions/ugarit-dumuzi-equivalence-control-v1.yaml
+  archive_path: provenance/materialization-input-v2/registry/extensions/ugarit-dumuzi-equivalence-control-v1.yaml
+  source_git_blob: edf0a1b31dd541af34d6561bbad4f81be5516d20
+  sha256: 18ba98a15d654f58c3bd0175b59010b78b523ef83e1034767f80fb3c150633ac
+  declared_base: 50d0eaff73054a09444028be83a9452d5f468fc3
+  introduced_at: 5cf586a487ed9dd57f068b714b4f8831238ce804
+  depends_on:
+  - EXT-UGARIT-DUMUZI-ARCHIVE-PROXIMITY-V1
+- extension_id: EXT-UGARIT-DUMUZI-ALPHABETIC-SEARCH-V1
+  source_path: registry/extensions/ugarit-dumuzi-alphabetic-search-v1.yaml
+  archive_path: provenance/materialization-input-v2/registry/extensions/ugarit-dumuzi-alphabetic-search-v1.yaml
+  source_git_blob: f51961186c679aee4f9b7b291f6440690024fad7
+  sha256: f4873ebf41107cc0029e6497ef1aaa0e0cfc3e0c3664f0c8ad75a6df458f93b3
+  declared_base: c360b0d99323144815c88e8dfbc5cf81c6e45009
+  introduced_at: 61292e5515f5a7edf14e7db9cd4e7eecf0cb277a
+  depends_on:
+  - EXT-UGARIT-DUMUZI-EQUIVALENCE-CONTROL-V1
+- extension_id: EXT-UGARIT-BAAL-SCHOLASTIC-EQUIVALENCE-V1
+  source_path: registry/extensions/ugarit-baal-scholastic-equivalence-v1.yaml
+  archive_path: provenance/materialization-input-v2/registry/extensions/ugarit-baal-scholastic-equivalence-v1.yaml
+  source_git_blob: c2092391a54ec1c4c5ebaa33440e72fe8f130f59
+  sha256: e310a25fddab51e480fa6c148568f624236af00effe0b38195b2477a3ca1938d
+  declared_base: 40a9db034d90604b60e605a4abafab5f7946c863
+  introduced_at: b90773a71324f04c837fb3a2feaefb4cd93c7884
+  depends_on:
+  - EXT-UGARIT-DUMUZI-ALPHABETIC-SEARCH-V1
+- extension_id: EXT-DUMUZID-BAAL-TRANSMISSION-EVIDENCE-LADDER-V1
+  source_path: registry/extensions/dumuzid-baal-transmission-evidence-ladder-v1.yaml
+  archive_path: provenance/materialization-input-v2/registry/extensions/dumuzid-baal-transmission-evidence-ladder-v1.yaml
+  source_git_blob: db7c1eaaaae367f2f760817b0011a9077562be40
+  sha256: 03d67d60b70609aa2fa10749a0515e5039d3a8ed2f26fb2993c07d692884a8f3
+  declared_base: 3ba41fe0cec4b4a8ba84d4ef90c4c71471637445
+  introduced_at: b52e872946cbb3a56afc64d9392cf6d5962c557e
+  depends_on:
+  - EXT-UGARIT-BAAL-SCHOLASTIC-EQUIVALENCE-V1
+- extension_id: EXT-UGARIT-DUMUZI-SYLLABIC-CORPUS-SEARCH-V1
+  source_path: registry/extensions/ugarit-dumuzi-syllabic-corpus-search-v1.yaml
+  archive_path: provenance/materialization-input-v2/registry/extensions/ugarit-dumuzi-syllabic-corpus-search-v1.yaml
+  source_git_blob: b987c4784751f73e5893565f370c2cea6c3cc243
+  sha256: caa3e6324b444fbc84e8cb78fc62df11a71bc0368ee9b36eed99561620ebd01e
+  declared_base: 89920c8e281b97a2806708a21c16e0115f884f64
+  introduced_at: a4b64d297cc278152eadc09054df91643f858117
+  depends_on:
+  - EXT-DUMUZID-BAAL-TRANSMISSION-EVIDENCE-LADDER-V1
+- extension_id: EXT-ILIMILKU-ATTENU-CARRIER-CONTROL-V1
+  source_path: registry/extensions/ilimilku-attenu-carrier-control-v1.yaml
+  archive_path: provenance/materialization-input-v2/registry/extensions/ilimilku-attenu-carrier-control-v1.yaml
+  source_git_blob: 60cb817e92ea04f0448529754e40427f2f6d2344
+  sha256: 1cc0ff5aa8103180fc4e93175ffeae7ffbde90c23233c7eb0a924beacc617166
+  declared_base: c82601e33df54f7d2d15863df68540fd7a6b25d1
+  introduced_at: f115db051dd32cbe88d9ef1d3a1d1f0cbcc1a604
+  depends_on:
+  - EXT-UGARIT-DUMUZI-SYLLABIC-CORPUS-SEARCH-V1
+- extension_id: EXT-DUMUZID-BAAL-BORROWING-SIGNAL-CONTROL-V1
+  source_path: registry/extensions/dumuzid-baal-borrowing-signal-control-v1.yaml
+  archive_path: provenance/materialization-input-v2/registry/extensions/dumuzid-baal-borrowing-signal-control-v1.yaml
+  source_git_blob: d57614cf5af8b0bffd040c924e8dc64cb4972789
+  sha256: 1961147c91fac19b303fb1ce28098b349416d92b9d4bb1a1410b058aaedc3959
+  declared_base: 6d9004a17dc04d5dd399407c4a37e48c7766bcaa
+  introduced_at: 907d667c3dc1b0f7f03902191075699a45ed35c2
+  depends_on:
+  - EXT-ILIMILKU-ATTENU-CARRIER-CONTROL-V1
+application_boundary:
+  source_files_removed_from_active_namespace: true
+  archived_byte_identical: true
+  canonical_materialization: false
+verification:
+  archive_path_collisions: 0
+  all_source_paths_present: true
+  all_source_git_blobs_bound: true
+  all_extension_sha256_values_bound: true

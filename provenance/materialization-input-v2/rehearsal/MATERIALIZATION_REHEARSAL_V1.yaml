@@ -1,0 +1,409 @@
+schema_version: on-theo.materialization-rehearsal-receipt.v1
+status: REHEARSAL_ONLY_NOT_CANONICAL
+source_manifest_sha256: 2c299261a7c64d7768e14e51e3d913a9413170d56534ee5379c25c5b4ad690f2
+source_registry_sha256_before:
+  registry/sources.yaml: 9afe6263b7c46f339f8883d0c31bd1445051a8d329311b58266bb8876ddd2712
+  registry/claims.yaml: 858030d4860a18eb662e351bd8eb77c1ae7bf5958039019f1b2a0badfb11fc2a
+  registry/concepts.yaml: f3f0a16b8207cae21b185c3cc6060e2864be230e7035ec1bbfbf374f3f5541b5
+  registry/transmissions.yaml: 5e6d97dfdaf1f5dbf411de95ff42be864e030bff35d10ca9abab55a6d4c55809
+  registry/witnesses.yaml: 5e317f9b1c37eb63633a5fd1ccd80ccba325db8d343f7ee925e3642683f5bce9
+  registry/reviews.yaml: 5597f9f034beea490dfc153dfcf15c0832f8a1988619b1675df0dd1f5cf203c0
+  registry/source-access.yaml: 6c1cd24597e0af37c8fe95a27e5874fd94f61d042b8a2dac306005495eaf20d9
+  registry/extension-manifest.yaml: 2c299261a7c64d7768e14e51e3d913a9413170d56534ee5379c25c5b4ad690f2
+source_base_registry_head: c1f6df5ea1fee0c5ac8d84a7b5c2b81fb905fd3e
+applied_extension_count: 50
+applied_extensions:
+- extension_id: EXT-PANTHERA-RABBINIC-PARALLELS-V1
+  path: registry/extensions/panthera-rabbinic-parallels-v1.yaml
+  source_sha256: bb502efa445b45b6fad52c7659e8374ed4f4d3e6e15a8c401ad2001d579bc9f5
+  addition_counts:
+    source_additions: 4
+    scholarly_context_additions: 2
+    claim_additions: 4
+    witness_additions: 1
+    transmission_additions: 4
+- extension_id: EXT-BROAD-MYTHOS-FOUNDATION-V1
+  path: registry/extensions/broad-mythos-foundation-v1.yaml
+  source_sha256: c768c19f85b095645e898a9cf14c4c4edae7330fb342166a62541c81607828f0
+  addition_counts:
+    source_additions: 6
+    scholarly_context_additions: 7
+    claim_additions: 8
+    transmission_additions: 2
+- extension_id: EXT-SIMULATION-THEORY-V1
+  path: registry/extensions/simulation-theory-v1.yaml
+  source_sha256: f0e3a788a190e1ef71d80334531b79696c49ddfbe6cf29d143c0e7a3f40d98ef
+  addition_counts:
+    scholarly_context_additions: 12
+    claim_additions: 10
+    concept_additions: 7
+- extension_id: EXT-MARK6-MATRONYMIC-V1
+  path: registry/extensions/mark6-matronymic-v1.yaml
+  source_sha256: e10b97347be7182729e01098c323dac97dd9dc9caa1599dfaf7bc651ec069412
+  addition_counts:
+    source_additions: 3
+    scholarly_context_additions: 4
+    claim_additions: 6
+    witness_additions: 1
+    transmission_additions: 3
+- extension_id: EXT-DEUT32-WITNESS-CONTROL-V1
+  path: registry/extensions/deut32-witness-control-v1.yaml
+  source_sha256: 42965bceb04a83024bc6e08d0bf149bf985be17f6ef006193581525be689521b
+  addition_counts:
+    claim_additions: 1
+    witness_additions: 2
+- extension_id: EXT-EGYPTIAN-VEDIC-FOUNDATION-V1
+  path: registry/extensions/egyptian-vedic-foundation-v1.yaml
+  source_sha256: 160bef127cab55dc94f39eea9966f85bd25ce78539504daafbd4229f145c3457
+  addition_counts:
+    source_additions: 1
+    scholarly_context_additions: 4
+    claim_additions: 6
+    concept_additions: 2
+- extension_id: EXT-SIMULATION-DISCRIMINABILITY-V2
+  path: registry/extensions/simulation-discriminability-v2.yaml
+  source_sha256: cc6847acc666eb312f2c9452d40ffe9708a00d5c680206c2cb1a2fc6dd49c4e9
+  addition_counts:
+    scholarly_context_additions: 4
+    claim_additions: 6
+    concept_additions: 2
+- extension_id: EXT-JOHN8-41-PORNEIA-V1
+  path: registry/extensions/john8-41-porneia-v1.yaml
+  source_sha256: a6b6cc85d55ce47189ee8a6f430dfc43ead6d0228ec7ff8c42e1410ba00447e7
+  addition_counts:
+    source_additions: 2
+    scholarly_context_additions: 1
+    claim_additions: 6
+    transmission_additions: 3
+- extension_id: EXT-EARLY-BUDDHIST-V1
+  path: registry/extensions/early-buddhist-v1.yaml
+  source_sha256: c1e02b11acec566884f573bd026af717e1bf051a2701d52a17d389f7d0d7a1a9
+  addition_counts:
+    source_additions: 3
+    scholarly_context_additions: 2
+    claim_additions: 6
+    concept_additions: 2
+- extension_id: EXT-SECOND-TEMPLE-GRECO-ROMAN-V1
+  path: registry/extensions/second-temple-greco-roman-v1.yaml
+  source_sha256: a53f61b7150bf040c1b083cc149bc46d5141a58a6c054cf97779c4f2a4b8348d
+  addition_counts:
+    source_additions: 6
+    scholarly_context_additions: 7
+    claim_additions: 8
+    transmission_additions: 2
+- extension_id: EXT-PORNEIA-SEMANTIC-CONTROL-V1
+  path: registry/extensions/porneia-semantic-control-v1.yaml
+  source_sha256: 6176b1ba976dd3e481bf2d730ca2346bbf589842d987b7298e51f5897ab85952
+  addition_counts:
+    source_additions: 2
+    scholarly_context_additions: 4
+    claim_additions: 7
+- extension_id: EXT-ENOCH-DANIEL-PHILO-V1
+  path: registry/extensions/enoch-daniel-philo-v1.yaml
+  source_sha256: b7b1f460acc75f8c9a73b16694012f6a353f5c3e7a8b21864b0b09f22cee02fc
+  addition_counts:
+    source_additions: 3
+    scholarly_context_additions: 5
+    claim_additions: 5
+    concept_additions: 3
+    transmission_additions: 2
+- extension_id: EXT-CELSUS-JEW-SOURCE-PROVENANCE-V1
+  path: registry/extensions/celsus-jew-source-provenance-v1.yaml
+  source_sha256: bfe7ee313f67c1074bc5b93da3cadd5345370397794a9ccef79171b42bb0d08d
+  addition_counts:
+    scholarly_context_additions: 3
+    claim_additions: 6
+- extension_id: EXT-EARLY-CHRISTIAN-RABBINIC-V1
+  path: registry/extensions/early-christian-rabbinic-v1.yaml
+  source_sha256: f22db0b16014c6675c84ce235c53bf979472e39c5c4664ebd086f6df0a106087
+  addition_counts:
+    source_additions: 3
+    scholarly_context_additions: 4
+    claim_additions: 6
+    transmission_additions: 1
+- extension_id: EXT-PANTHERA-PARTHENOS-WORDPLAY-V1
+  path: registry/extensions/panthera-parthenos-wordplay-v1.yaml
+  source_sha256: 8d2848596bbfa339d5dbe8c4934c997bc02d8a973aae3ab87c905f8d132300ae
+  addition_counts:
+    scholarly_context_additions: 3
+    claim_additions: 5
+    concept_additions: 2
+- extension_id: EXT-LATE-ANTIQUE-CONTACT-ZONE-V1
+  path: registry/extensions/late-antique-contact-zone-v1.yaml
+  source_sha256: e7bd993553ee803cb5329f696a99bf1a35e14541e805d73526cdbd31bad327b7
+  addition_counts:
+    source_additions: 3
+    scholarly_context_additions: 7
+    claim_additions: 7
+    concept_additions: 2
+- extension_id: EXT-QURANIC-SYSTEM-V1
+  path: registry/extensions/quranic-system-v1.yaml
+  source_sha256: 04ce77bcca3b244bc0282b3de11aa515b38f3a2c315d8fe169e8b07b6cc99ee8
+  addition_counts:
+    source_additions: 1
+    scholarly_context_additions: 4
+    claim_additions: 8
+    concept_additions: 5
+- extension_id: EXT-YESHUA-HYPOTHESIS-MAP-V1
+  path: registry/extensions/yeshua-hypothesis-map-v1.yaml
+  source_sha256: 49d775a93b8c28f20ccf5a9d8430259a8b1fbfd2bb2ae2c0d79734f3c400c014
+  addition_counts:
+    source_additions: 1
+    scholarly_context_additions: 5
+    claim_additions: 5
+- extension_id: EXT-QURAN-LATE-ANTIQUE-FEATURE-TESTS-V1
+  path: registry/extensions/quran-late-antique-feature-tests-v1.yaml
+  source_sha256: e890d1fe3e9027349f34058d73674f00813e7d0088340daade12e8bb95625ba6
+  addition_counts:
+    scholarly_context_additions: 1
+    claim_additions: 4
+    concept_additions: 1
+    transmission_additions: 2
+- extension_id: EXT-EARLY-ISLAMIC-DEVELOPMENT-V1
+  path: registry/extensions/early-islamic-development-v1.yaml
+  source_sha256: 5a473f2e2cd6749045208cefda9bd44a07b439cbb36f133733d387fa3ac6953a
+  addition_counts:
+    source_additions: 1
+    scholarly_context_additions: 7
+    claim_additions: 7
+    transmission_additions: 1
+- extension_id: EXT-SUMERIAN-MATERIAL-EVIDENCE-V1
+  path: registry/extensions/sumerian-material-evidence-v1.yaml
+  source_sha256: df7f4be60bb62ff639ca81cd3588cb6a3c683277f763bd36cb0b390734107478
+  addition_counts:
+    source_additions: 7
+    claim_additions: 9
+- extension_id: EXT-SUMERIAN-AFTERLIFE-FUNERARY-V1
+  path: registry/extensions/sumerian-afterlife-funerary-v1.yaml
+  source_sha256: b415749255b2e75f44a6521d427829a0ddafa7c3b414e89fa764659c3b81b0bd
+  addition_counts:
+    source_additions: 7
+    claim_additions: 10
+- extension_id: EXT-SUMERIAN-AFTERLIFE-LEXICON-V1
+  path: registry/extensions/sumerian-afterlife-lexicon-v1.yaml
+  source_sha256: 974bb2507c01492fc5695bf4f86812db0cfcc296fa35fc920f6b1a5f60f0ee4e
+  addition_counts:
+    source_additions: 5
+    claim_additions: 9
+- extension_id: EXT-SUMERIAN-DEATH-CORPUS-COMPOSITION-LEXICON-V1
+  path: registry/extensions/sumerian-death-corpus-composition-lexicon-v1.yaml
+  source_sha256: 8bbcec7aaf52cf43eb19cb5a4258312aed1aac458d3961aaa783106761223210
+  addition_counts:
+    source_additions: 1
+    claim_additions: 9
+- extension_id: EXT-SUMERIAN-DEATH-CORPUS-EDITION-CURRENTNESS-V1
+  path: registry/extensions/sumerian-death-corpus-edition-currentness-v1.yaml
+  source_sha256: 729fdccd91d2945ef29c6f547e7d6dc9fdb542ce69ac168d9c63d5bdbbfd8336
+  addition_counts:
+    scholarly_context_additions: 4
+    claim_additions: 5
+- extension_id: EXT-SUMERIAN-DEATH-LINE-REVALIDATION-V1
+  path: registry/extensions/sumerian-death-line-revalidation-v1.yaml
+  source_sha256: 8be61a6a5623cdce5a3a6856bfaab72162fd47e92480b1385289e34a16b2893f
+  addition_counts:
+    scholarly_context_additions: 2
+    claim_additions: 7
+- extension_id: EXT-SUMERIAN-INANA-LINE-REVALIDATION-V1
+  path: registry/extensions/sumerian-inana-line-revalidation-v1.yaml
+  source_sha256: 0f21353f8b72844bace882e84ef60323c855261f024677aebc94c9a2404f6a59
+  addition_counts:
+    scholarly_context_additions: 1
+    claim_additions: 8
+- extension_id: EXT-SUMERIAN-DEATH-GILGAMESH-LINE-REVALIDATION-V1
+  path: registry/extensions/sumerian-death-gilgamesh-line-revalidation-v1.yaml
+  source_sha256: 36e94c0aff1d60909f072ba0f0403dcb3a2e526d6ce8a23a00b6b52ddbc5a723
+  addition_counts:
+    scholarly_context_additions: 1
+    claim_additions: 7
+- extension_id: EXT-SUMERIAN-URNAMMA-LINE-REVALIDATION-V1
+  path: registry/extensions/sumerian-urnamma-line-revalidation-v1.yaml
+  source_sha256: 96157f26e7af5ac9cf973e30d1f3952bdc0a0b879427f9cd7616bf67d472eedd
+  addition_counts:
+    scholarly_context_additions: 1
+    claim_additions: 6
+- extension_id: EXT-SUMERIAN-DEATH-OCCURRENCE-PROVENANCE-V1
+  path: registry/extensions/sumerian-death-occurrence-provenance-v1.yaml
+  source_sha256: 6165890ab5fb936b426b44854ea5d6f344608e7f87b15fd415f2427a9a9c040f
+  addition_counts:
+    claim_additions: 4
+- extension_id: EXT-SUMERIAN-DUMUZID-DEATH-LAMENT-V1
+  path: registry/extensions/sumerian-dumuzid-death-lament-v1.yaml
+  source_sha256: 92d7d904cb9ec84f7f56173f5413097865476c26cff18ecd7405fd54e8819cc8
+  addition_counts:
+    source_additions: 2
+    scholarly_context_additions: 2
+    claim_additions: 7
+- extension_id: EXT-SUMERIAN-DUMUZID-SUBSTITUTION-V1
+  path: registry/extensions/sumerian-dumuzid-substitution-v1.yaml
+  source_sha256: c940917086840107b8d5cec1aa50ca042fd7fcccc0aad6d74995c18e479da362
+  addition_counts:
+    source_additions: 1
+    scholarly_context_additions: 1
+    claim_additions: 7
+- extension_id: EXT-SUMERIAN-DUMUZID-SEASONAL-HYPOTHESIS-V1
+  path: registry/extensions/sumerian-dumuzid-seasonal-hypothesis-v1.yaml
+  source_sha256: 0bddd038ae34c0377454b52dc4ed759719dff134448da07e193e9b7ad90c330c
+  addition_counts:
+    scholarly_context_additions: 3
+    claim_additions: 8
+- extension_id: EXT-DUMUZID-BAAL-TRANSMISSION-V1
+  path: registry/extensions/dumuzid-baal-transmission-v1.yaml
+  source_sha256: 84bc57a02f75b00508e5bdbc8d11cc2420cad9ea522fe61815c1c8710eef8960
+  addition_counts:
+    source_additions: 3
+    scholarly_context_additions: 1
+    claim_additions: 6
+    transmission_additions: 2
+- extension_id: EXT-MARI-DUMUZI-SOURCE-VERIFICATION-V1
+  path: registry/extensions/mari-dumuzi-source-verification-v1.yaml
+  source_sha256: 0b5e974393d2b3be6291c8fc0766fb6a9c02d39ea5c6f4384b0e95c53ba032c3
+  addition_counts:
+    scholarly_context_additions: 4
+    claim_additions: 8
+- extension_id: EXT-MARI-DUMUZI-WINTER-ENTRY-V1
+  path: registry/extensions/mari-dumuzi-winter-entry-v1.yaml
+  source_sha256: ee8e83330b22663c770be8ab145d46527464b8d80dd8c51be54235c89be34631
+  addition_counts:
+    source_additions: 3
+    scholarly_context_additions: 4
+    claim_additions: 9
+- extension_id: EXT-DUMUZID-BAAL-LEXICAL-CONTROL-V1
+  path: registry/extensions/dumuzid-baal-lexical-control-v1.yaml
+  source_sha256: 202992ecfcdcc33f58331e0ca3db62911fa0f53d62c7ea63ddf1090acf8ca9ed
+  addition_counts:
+    scholarly_context_additions: 4
+    claim_additions: 6
+- extension_id: EXT-BAAL-DEATH-LIFE-WITNESS-CONTROL-V1
+  path: registry/extensions/baal-death-life-witness-control-v1.yaml
+  source_sha256: cfd5fadecb72a09e60da3bfe1a96ce688e88bc60c25aaa6eea2bcb30357ad2ea
+  addition_counts:
+    scholarly_context_additions: 3
+    claim_additions: 6
+    witness_additions: 2
+- extension_id: EXT-A1146-MORPHOLOGY-CORRECTION-V1
+  path: registry/extensions/a1146-morphology-correction-v1.yaml
+  source_sha256: 5a67a953e0d6c55f13a2c47d1b21dc65c7d71318daab3295effe49702aeba855
+  addition_counts:
+    scholarly_context_additions: 1
+    claim_additions: 4
+- extension_id: EXT-BAAL-ILIMILKU-ATTRIBUTION-CONTROL-V1
+  path: registry/extensions/baal-ilimilku-attribution-control-v1.yaml
+  source_sha256: 39631581336a1ab8105550a872db572ae1fce924367a446f6a6793eb8717fc5e
+  addition_counts:
+    scholarly_context_additions: 3
+    claim_additions: 6
+- extension_id: EXT-UGARIT-MESOPOTAMIAN-SCRIBAL-EXPOSURE-V1
+  path: registry/extensions/ugarit-mesopotamian-scribal-exposure-v1.yaml
+  source_sha256: 26250682004e79d94c8e9d733802a1451c0f60bab25c6044bd01bf8e47e6c8f8
+  addition_counts:
+    source_additions: 1
+    scholarly_context_additions: 3
+    claim_additions: 6
+    witness_additions: 3
+- extension_id: EXT-UGARIT-DUMUZI-DIRECT-ATTESTATION-V1
+  path: registry/extensions/ugarit-dumuzi-direct-attestation-v1.yaml
+  source_sha256: ab203273a0a485d0611d87cc68cfef8ab429135f52e94413eb231c413bf5093e
+  addition_counts:
+    source_additions: 1
+    scholarly_context_additions: 3
+    claim_additions: 6
+    witness_additions: 1
+- extension_id: EXT-UGARIT-DUMUZI-ARCHIVE-PROXIMITY-V1
+  path: registry/extensions/ugarit-dumuzi-archive-proximity-v1.yaml
+  source_sha256: 549eec8532d95b3a54331caff0343ca5bb381b6531cd18bd41254c5cf63b4c85
+  addition_counts:
+    scholarly_context_additions: 3
+    claim_additions: 5
+- extension_id: EXT-UGARIT-DUMUZI-EQUIVALENCE-CONTROL-V1
+  path: registry/extensions/ugarit-dumuzi-equivalence-control-v1.yaml
+  source_sha256: 18ba98a15d654f58c3bd0175b59010b78b523ef83e1034767f80fb3c150633ac
+  addition_counts:
+    scholarly_context_additions: 2
+    claim_additions: 7
+- extension_id: EXT-UGARIT-DUMUZI-ALPHABETIC-SEARCH-V1
+  path: registry/extensions/ugarit-dumuzi-alphabetic-search-v1.yaml
+  source_sha256: f4873ebf41107cc0029e6497ef1aaa0e0cfc3e0c3664f0c8ad75a6df458f93b3
+  addition_counts:
+    scholarly_context_additions: 1
+    claim_additions: 6
+- extension_id: EXT-UGARIT-BAAL-SCHOLASTIC-EQUIVALENCE-V1
+  path: registry/extensions/ugarit-baal-scholastic-equivalence-v1.yaml
+  source_sha256: e310a25fddab51e480fa6c148568f624236af00effe0b38195b2477a3ca1938d
+  addition_counts:
+    scholarly_context_additions: 1
+    claim_additions: 6
+- extension_id: EXT-DUMUZID-BAAL-TRANSMISSION-EVIDENCE-LADDER-V1
+  path: registry/extensions/dumuzid-baal-transmission-evidence-ladder-v1.yaml
+  source_sha256: 03d67d60b70609aa2fa10749a0515e5039d3a8ed2f26fb2993c07d692884a8f3
+  addition_counts:
+    claim_additions: 5
+- extension_id: EXT-UGARIT-DUMUZI-SYLLABIC-CORPUS-SEARCH-V1
+  path: registry/extensions/ugarit-dumuzi-syllabic-corpus-search-v1.yaml
+  source_sha256: caa3e6324b444fbc84e8cb78fc62df11a71bc0368ee9b36eed99561620ebd01e
+  addition_counts:
+    scholarly_context_additions: 1
+    claim_additions: 4
+- extension_id: EXT-ILIMILKU-ATTENU-CARRIER-CONTROL-V1
+  path: registry/extensions/ilimilku-attenu-carrier-control-v1.yaml
+  source_sha256: 1cc0ff5aa8103180fc4e93175ffeae7ffbde90c23233c7eb0a924beacc617166
+  addition_counts:
+    scholarly_context_additions: 3
+    claim_additions: 6
+- extension_id: EXT-DUMUZID-BAAL-BORROWING-SIGNAL-CONTROL-V1
+  path: registry/extensions/dumuzid-baal-borrowing-signal-control-v1.yaml
+  source_sha256: 1961147c91fac19b303fb1ce28098b349416d92b9d4bb1a1410b058aaedc3959
+  addition_counts:
+    scholarly_context_additions: 2
+    claim_additions: 4
+addition_counts:
+  source_additions: 70
+  scholarly_context_additions: 140
+  claim_additions: 317
+  concept_additions: 26
+  witness_additions: 10
+  transmission_additions: 22
+before_counts:
+  registry/sources.yaml:sources: 6
+  registry/claims.yaml:claims: 8
+  registry/concepts.yaml:concepts: 0
+  registry/witnesses.yaml:witnesses: 0
+  registry/transmissions.yaml:edges: 3
+after_counts:
+  registry/claims.yaml:claims: 325
+  registry/concepts.yaml:concepts: 26
+  registry/sources.yaml:sources: 216
+  registry/transmissions.yaml:edges: 25
+  registry/witnesses.yaml:witnesses: 10
+collision_count: 0
+unresolved_reference_count: 0
+source_validation:
+  ok: true
+  errors: 0
+  warnings: 0
+effect_boundary:
+  source_tree_modified: false
+  canonical_materialized: false
+  merge_authority: false
+source_registry_sha256_after:
+  registry/sources.yaml: 9afe6263b7c46f339f8883d0c31bd1445051a8d329311b58266bb8876ddd2712
+  registry/claims.yaml: 858030d4860a18eb662e351bd8eb77c1ae7bf5958039019f1b2a0badfb11fc2a
+  registry/concepts.yaml: f3f0a16b8207cae21b185c3cc6060e2864be230e7035ec1bbfbf374f3f5541b5
+  registry/transmissions.yaml: 5e6d97dfdaf1f5dbf411de95ff42be864e030bff35d10ca9abab55a6d4c55809
+  registry/witnesses.yaml: 5e317f9b1c37eb63633a5fd1ccd80ccba325db8d343f7ee925e3642683f5bce9
+  registry/reviews.yaml: 5597f9f034beea490dfc153dfcf15c0832f8a1988619b1675df0dd1f5cf203c0
+  registry/source-access.yaml: 6c1cd24597e0af37c8fe95a27e5874fd94f61d042b8a2dac306005495eaf20d9
+  registry/extension-manifest.yaml: 2c299261a7c64d7768e14e51e3d913a9413170d56534ee5379c25c5b4ad690f2
+source_tree_readback_unchanged: true
+output_registry_sha256:
+  registry/claims.yaml: 0859014cd301f9387923bdb5eb0d383af272fee603224fa5694259662a764ea9
+  registry/concepts.yaml: a8a7354ccd1bbf0aae0ee0f6fdda8545098027297bbde004c57ee8a895f44b97
+  registry/extension-manifest.yaml: e350da5d9a48ba3227a0557f03824e909f43baf8de3290d047ff32d286137083
+  registry/reviews.yaml: 0f7ed711f8d089a778526bf5a042e708f10cd05de39edbebfc3bb096f3cc1a72
+  registry/source-access.yaml: 6c97263769c615ac5863ed879da857f58ebfda2031c799d50ef683623efc0d5a
+  registry/sources.yaml: b807877f5561c6002afb3ebf369ef3022f75b2201182f9eba7c7c14baef3f8e9
+  registry/transmissions.yaml: c571d1fcf1b6b78414b02d7dc0f077828c0644ccfa7ca56a3353cc479856233c
+  registry/witnesses.yaml: d90db93560e50817541fb61458eeb01bb80ef14502cc1b30137dfe222260f627
+output_validation:
+  ok: true
+  errors: 0
+  warnings: 0
