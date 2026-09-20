@@ -1,0 +1,140 @@
+schema_version: on-theo.sumerian-neutral-axis-evidence.v1
+status: BOUNDED_DEEP_CHAIN_EVIDENCE
+
+bindings:
+  source_verification: efe4ab2e39f205ff5bbc6e176be0b4fe1348f480
+  material_evidence: 7dbc47484e453f2561df1ba04b730d49181e6a39
+  afterlife_funerary: de5f1f0c88b49fb4c654eb87e25c021396957b0a
+  afterlife_lexicon: fdbcb961ba1d32f5442db497f6f61199ccae9605
+  death_composition_lexicon: 6a049eb026a8959c860c17430e666f496adea369
+  dumuzid_death_lament: 1e8597bce25f5ce883833dfbd17a7ea71fca9a8a
+  dumuzid_substitution: b0873f7840e1d336bc63570e017a5de45b0e6fe4
+  dumuzid_seasonal_hostile: d4b1bb63a706911609fec6db9dd12711bb21a3d0
+  dumuzid_baal_borrowing: 5f232ccc70f27a5830605da5c94896b32bc5797a
+
+records:
+  - id: SUM-INST-001
+    evidence:
+      - SOURCE_VERIFICATION
+      - MATERIAL_EVIDENCE
+    propositions:
+      - city_deity_patronage_is_major_organizing_feature
+      - temples_can_be_divine_residences_and_administrative_centers
+      - monumental_and_domestic_cult_contexts_both_exist
+      - deity_attribution_requires_evidentiary_route
+    supports:
+      - INSTITUTIONALIZATION_MODEL
+      - SACRAL_PRESENCE_MODEL
+      - RITUAL_ORDER_MODEL
+
+  - id: SUM-POL-001
+    evidence:
+      - SUMERIAN_KING_LIST_SOURCE_VERIFICATION
+      - ENLIL_AUTHORITY_SOURCE_VERIFICATION
+    propositions:
+      - kingship_descends_from_heaven_in_King_List
+      - flood_marks_structural_break
+      - kingship_descends_again_after_flood
+      - divine_authority_can_legitimate_kingship
+    supports:
+      - POLITICAL_SACRALIZATION_MODEL
+      - AGENCY_AND_AUTHORITY_MODEL
+
+  - id: SUM-DEAD-001
+    evidence: HUMAN_AFTERLIFE_FUNERARY_DEEP_PACKET
+    propositions:
+      - dead_can_remain_socially_situated_in_literary_models
+      - descendants_can_affect_represented_postmortem_welfare
+      - funerary_offerings_can_affect_represented_postmortem_welfare
+      - royal_afterlife_is_differentiated_from_ordinary_dead
+      - elite_burial_is_not_default_burial
+    supports:
+      - POSTMORTEM_PATH_MODEL
+      - CONTINUITY_MODEL
+      - MORTUARY_RELATIONSHIP_MODEL
+      - OFFERING_EXCHANGE_MODEL
+
+  - id: SUM-LEX-001
+    evidence:
+      - AFTERLIFE_LEXICAL_CONTROL
+      - DEATH_COMPOSITION_LEXICAL_MAP
+    propositions:
+      - gidim_is_deceased_person_ghost_category
+      - kur_is_context_sensitive_and_polysemous
+      - Arali_can_be_named_or_marked_death_realm_place
+      - Ganzer_is_distinct_where_it_cooccurs_with_kur
+      - kurnugi_absent_from_four_searched_core_ETCSL_transliterations
+    guards:
+      - ENGLISH_UNDERWORLD_NE_ONE_SOURCE_LEXEME
+      - PERSON_CATEGORY_NE_PLACE_CATEGORY
+
+  - id: SUM-DUM-001
+    evidence:
+      - DUMUZID_DEATH_LAMENT
+      - DUMUZID_SUBSTITUTION
+    propositions:
+      - Dumuzid_death_foreboding
+      - galla_capture
+      - Arali_capture_and_lament_topography
+      - lament_and_libation_provisioning
+      - substitution_with_Geshtinana_role
+    supports:
+      - TRANSFORMATION_MODEL
+      - OFFERING_EXCHANGE_MODEL
+      - MORTUARY_RELATIONSHIP_MODEL
+    guards:
+      - DIVINE_MYTH_NE_ORDINARY_HUMAN_FUNERAL
+      - GALLA_NE_GIDIM
+
+  - id: SUM-DUM-SEASON-001
+    evidence: DUMUZID_SEASONAL_HOSTILE_TEST
+    propositions:
+      - half_year_alternation_is_direct_textual
+      - vegetation_etiology_is_not_explicit
+      - annual_resurrection_model_is_not_primary_text_fact
+    supports:
+      - TRANSFORMATION_MODEL
+      - FATE_CONSTRAINT_MODEL_PARTIAL
+    guards:
+      - HALF_YEAR_ALTERNATION_NE_EXPLICIT_VEGETATION_ETIOLOGY
+      - RELEASE_OR_ALTERNATION_NE_RESURRECTION_BY_DEFAULT
+
+  - id: SUM-TRANSMISSION-001
+    evidence: DUMUZID_BAAL_BORROWING_SIGNAL_CONTROL
+    propositions:
+      - chronology_allows_east_to_west_influence
+      - contact_capacity_is_materially_grounded
+      - Ugaritic_Dumuzi_scholastic_exposure_is_established
+      - source_specific_Dumuzid_narrative_exposure_not_established
+      - distinctive_borrowing_sequence_not_established
+      - direct_Dumuzid_to_Baal_borrowing_none_established
+    supports:
+      - CONTACT_AND_REINTERPRETATION_MODEL
+    guards:
+      - CONTACT_CAPACITY_NE_DIRECT_TRANSMISSION
+      - BROAD_MOTIF_PARALLEL_NE_BORROWING_SIGNAL
+      - NONE_ESTABLISHED_NE_IMPOSSIBLE
+
+candidate_axes:
+  MORTUARY_RELATIONSHIP_MODEL:
+    question: >
+      How are the dead related to the living through kinship, memory, offerings,
+      ritual maintenance, social identity, protection, danger, or obligation?
+  POLITICAL_SACRALIZATION_MODEL:
+    question: >
+      How is political authority legitimized, granted, inherited, ritually
+      maintained, cosmically ordered, divinely authorized, or contested?
+
+readiness:
+  bounded_Sumerian_comparison: DEEP_CHAIN_READY
+  broad_timeless_Sumerian_synthesis: false
+  master_hub_alone_is_sufficient_evidence: false
+
+guards:
+  - ONE_TIMELESS_SUMERIAN_RELIGION_NE_DEEP_SOURCE_RECORD
+  - DIVINE_NETHERWORLD_NARRATIVE_NE_HUMAN_FUNERARY_PRACTICE
+  - ROYAL_AFTERLIFE_NE_ORDINARY_DEAD_DEFAULT
+  - TEXTUAL_DIVINE_ASSOCIATION_NE_EXCAVATED_CULT_INSTALLATION
+  - COMPOSITION_NE_WITNESS_NE_EDITION
+  - DUMUZID_NE_SIMPLE_VEGETATION_GOD
+  - DIRECT_DUMUZID_TO_BAAL_BORROWING_NONE_ESTABLISHED

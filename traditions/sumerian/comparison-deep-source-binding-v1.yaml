@@ -1,0 +1,88 @@
+schema_version: on-theo.sumerian-comparison-deep-source-binding.v1
+status: EXACT_DEEP_CHAIN_BINDING_NON_CANONICAL
+master_branch: sumerian
+master_head: bd6b6572141dc2f48f2f104b8f25301662d4a06f
+
+purpose: >
+  Bind comparison-eligible Sumerian propositions to the exact heads and
+  artifacts of the existing deep successor chain rather than treating the
+  sumerian master hub as the evidence surface.
+
+deep_sources:
+  source_verification:
+    branch: research/sumerian-source-verification-v1-20260918
+    head: efe4ab2e39f205ff5bbc6e176be0b4fe1348f480
+    artifact: traditions/sumerian/source-verification-v1.md
+    disposition: PASS_WITH_ONE_TEXTUAL_QUALIFICATION_AND_OPEN_MATERIAL_EVIDENCE_FRONTIERS
+
+  material_evidence:
+    branch: research/sumerian-material-evidence-v1-20260918
+    head: 7dbc47484e453f2561df1ba04b730d49181e6a39
+    artifact: traditions/sumerian/material-evidence-city-period-matrix-v1.md
+    core_control: TEXTUAL_DIVINE_ASSOCIATION_NE_EXCAVATED_CULT_INSTALLATION_NE_BUILDING_FUNCTION_PROVED
+
+  afterlife_funerary:
+    branch: research/sumerian-afterlife-funerary-v1-20260918
+    head: de5f1f0c88b49fb4c654eb87e25c021396957b0a
+    artifact: traditions/sumerian/afterlife-funerary-evidence-v1.md
+    disposition: PASS_WITH_DIACHRONIC_AND_SOCIAL_STRATIFICATION_CONTROLS
+
+  afterlife_lexicon:
+    branch: research/sumerian-afterlife-lexicon-v1-20260918
+    head: fdbcb961ba1d32f5442db497f6f61199ccae9605
+    artifact: traditions/sumerian/afterlife-lexical-control-v1.md
+    core_control: ONE_ENGLISH_GLOSS_NE_ONE_SUMERIAN_LEXEME_NE_ONE_STABLE_CONCEPT
+
+  death_composition_lexicon:
+    branch: research/sumerian-afterlife-composition-map-v1-20260918
+    head: 6a049eb026a8959c860c17430e666f496adea369
+    artifact: traditions/sumerian/death-corpus-composition-lexical-map-v1.md
+    disposition: PASS_WITH_TRANSLATION_LOSS_AND_CONTEXT_DEPENDENCE_CONTROLS
+
+  dumuzid_death_lament:
+    branch: research/sumerian-dumuzid-death-lament-v1-20260918
+    head: 1e8597bce25f5ce883833dfbd17a7ea71fca9a8a
+    artifact: traditions/sumerian/dumuzid-death-lament-v1.md
+    disposition: PASS_WITH_GENRE_AND_WITNESS_ASYMMETRY_CONTROLS
+
+  dumuzid_substitution:
+    branch: research/sumerian-dumuzid-substitution-v1-20260918
+    head: b0873f7840e1d336bc63570e017a5de45b0e6fe4
+    artifact: traditions/sumerian/dumuzid-geshtinana-substitution-v1.md
+    disposition: PASS_WITH_DIRECT_WITNESS_SUPPORT_AND_MYTHIC_SCOPE_CONTROL
+
+  dumuzid_seasonal_hostile_test:
+    branch: research/sumerian-dumuzid-seasonal-hypothesis-v1-20260918
+    head: d4b1bb63a706911609fec6db9dd12711bb21a3d0
+    artifact: traditions/sumerian/dumuzid-seasonal-hypothesis-hostile-test-v1.md
+    disposition: PARTIAL_PASS_FOR_HALF_YEAR_ALTERNATION_CHANGES_REQUIRED_FOR_SIMPLE_VEGETATION_AND_RESURRECTION_MODEL
+
+  dumuzid_baal_borrowing_signal:
+    branch: research/dumuzid-baal-borrowing-signal-v1-20260919
+    head: 5f232ccc70f27a5830605da5c94896b32bc5797a
+    artifact: comparative/dumuzid-baal-borrowing-signal-control-v1.md
+    disposition: DIRECT_DUMUZID_TO_BAAL_BORROWING_NONE_ESTABLISHED
+
+additional_exact_heads:
+  death_edition_currentness: 74ce2094ad8e45368bd51f8c559046b8b6f2c763
+  death_occurrence_provenance: 778c19f4cb8c0e8d4dde0b5aebf5689808c2e3a5
+  inana_line_revalidation: a60d4ba8af209ddef7e6f42ecf01cade64e8a87a
+  urnamma_line_revalidation: 1c1019d6f2eda3bd442349ec1c896e6270a2e100
+  gilgamesh_line_revalidation: 9ca2b40378a7ae22e3f10f392cb26cd62be1b9c8
+  mari_source_verification: b97d9db58485315e1ba6f31c89cd00f210b93e4d
+  mari_winter_entry: 8aabf5571246ca772ef6954c2470ee9d6f33e208
+  ugarit_scribal_exposure: 118bd970361f0fa47290f979341f3092722b011e
+  ugarit_dumuzi_direct_attestation: a6413d69106ef0ee934a6ca3a30516d5a7beb448
+  ugarit_dumuzi_equivalence_control: c360b0d99323144815c88e8dfbc5cf81c6e45009
+  ugarit_dumuzi_syllabic_search: c82601e33df54f7d2d15863df68540fd7a6b25d1
+  ilimilku_attenu_carrier: 6d9004a17dc04d5dd399407c4a37e48c7766bcaa
+
+binding_rules:
+  - MASTER_HUB_NE_ATOMIC_EVIDENCE
+  - DEEP_HEAD_MUST_BE_EXACT
+  - COMPOSITION_IDENTITY_NE_PHYSICAL_WITNESS_IDENTITY
+  - PHYSICAL_WITNESS_IDENTITY_NE_MODERN_EDITION_IDENTITY
+  - LITERARY_AFTERLIFE_NE_FUNERARY_ARCHAEOLOGY
+  - DIVINE_NETHERWORLD_NARRATIVE_NE_HUMAN_AFTERLIFE_DEFAULT
+  - MATERIAL_CONTEXT_NE_LITERARY_ATTRIBUTION
+  - BROAD_MOTIF_PARALLEL_NE_DIRECT_TRANSMISSION
