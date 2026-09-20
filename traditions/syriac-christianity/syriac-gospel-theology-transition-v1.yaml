@@ -1,0 +1,65 @@
+schema_version: on_theo.syriac_gospel_theology_transition.v1
+status: BOUNDED_NONHARMONIZING_SYNTHESIS_REVIEW_REQUIRED
+canonical: false
+
+parent:
+  exact_head: d5f29db2f481798b75d35084dbb4113bf9f37c84
+
+inputs:
+  ephrem:
+    exact_subject: 96516078a82f27bd843cae348aec4ab5c95881ff
+  aphrahat:
+    exact_subject: 199fa8b73bea18c71340da810429d868905b1cac
+  old_syriac_peshitta:
+    exact_subject: d5f29db2f481798b75d35084dbb4113bf9f37c84
+
+layers:
+  - GOSPEL_TEXT_FORMS
+  - PHYSICAL_MANUSCRIPT_WITNESSES
+  - EXEGETICAL_THEOLOGICAL_RECEPTION
+  - POLEMICAL_BOUNDARY_MAKING
+
+claims:
+  - id: SYR-SYN-V1-001
+    proposition: Fourth-century Syriac Christianity cannot be reconstructed from one Gospel version alone.
+    status: BOUNDED
+    confidence: strong
+  - id: SYR-SYN-V1-002
+    proposition: Overlapping textual forms and changing standardization fit Syriac Gospel transmission better than instantaneous linear replacement.
+    status: BOUNDED
+    confidence: moderate_to_strong
+  - id: SYR-SYN-V1-003
+    proposition: Syriac Christian reception involved substantive local theological and exegetical production, not merely translation.
+    status: BOUNDED
+    confidence: strong
+  - id: SYR-SYN-V1-004
+    proposition: Aphrahat and Ephrem constitute one unified Syriac theological school.
+    status: NOT_ADMITTED
+  - id: SYR-SYN-V1-005
+    proposition: Physical witness date, version origin, composition date, and narrated event date are interchangeable.
+    status: NOT_ADMITTED
+  - id: SYR-SYN-V1-006
+    proposition: Syriac versional differences require local mechanism analysis rather than automatic corruption or theology labels.
+    status: BOUNDED
+    confidence: strong_as_method_control
+  - id: SYR-SYN-V1-007
+    proposition: Syriac Christian development was regionally situated while participating in transregional late-antique networks.
+    status: BOUNDED
+    confidence: strong
+  - id: SYR-SYN-V1-008
+    proposition: Anti-Jewish Syriac Christian material enters Testament primarily as reception and polemic evidence.
+    status: BOUNDED
+    confidence: strong_as_method_control
+
+guards:
+  - GOSPEL_TEXT_FORM_NE_ECCLESIAL_IDENTITY
+  - MANUSCRIPT_OBJECT_NE_VERSION_ORIGIN_EVENT
+  - SHARED_LANGUAGE_NE_IDENTICAL_THEOLOGY
+  - CHRISTIAN_POLEMIC_ABOUT_JEWS_NE_JEWISH_SELF_DESCRIPTION
+  - TRANSLATION_DIFFERENCE_NE_CORRUPTION
+  - TRANSLATION_DIFFERENCE_NE_THEOLOGICAL_INTENT_BY_DEFAULT
+  - REGIONALLY_DISTINCT_NE_INTELLECTUALLY_ISOLATED
+
+next_scope:
+  - TESTAMENT_BOOK_VI_SYRIAC_HOSTILE_REREVIEW
+  - EARLY_ISLAMIC_JESUS_RECEPTION_FRONTIER
