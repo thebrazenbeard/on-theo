@@ -1,0 +1,86 @@
+schema_version: on_theo.gospel_philip_ritual_control.v1
+status: BOUNDED_PRIMARY_TEXT_RITUAL_INFERENCE_REVIEW_REQUIRED
+canonical: false
+
+parent:
+  branch: research/ptolemy-flora-proposition-map-v1-20260920
+  exact_head: ce81baa9e252dbf81ddd8c6fbe7113a75a81279c
+
+witness:
+  id: VAL-SRC-GOSPEL-PHILIP-NHC-II-3
+  codex: NHC_II
+  tractate: 3
+  locus: 51.29-86.19
+  language: Coptic
+  evidence_class:
+    - MANUSCRIPT_WITNESS
+    - PRIMARY_TEXT
+  likely_composition:
+    scholarly_range: late_second_to_early_third_century
+    confidence: approximate
+  valentinian_association: strong
+  universal_valentinian_representativeness: false
+
+claims:
+  - id: PHIL-V1-001
+    proposition: The text explicitly links baptism, chrism, eucharist, redemption, and bridal chamber within its mystery complex.
+    status: BOUNDED
+    confidence: strong_for_text
+
+  - id: PHIL-V1-002
+    proposition: Chrism receives distinct and elevated theological importance relative to baptism.
+    status: BOUNDED
+    confidence: strong_for_text
+    practice_inference: PARTIAL
+
+  - id: PHIL-V1-003
+    proposition: The text maps baptism, redemption, and bridal chamber hierarchically onto temple-space imagery.
+    status: BOUNDED
+    confidence: strong_for_text
+
+  - id: PHIL-V1-004
+    proposition: Bread, cup, and oil form part of the text's ritual vocabulary.
+    status: BOUNDED_FOR_TEXT
+    practice_inference: PARTIAL
+
+  - id: PHIL-V1-005
+    proposition: Bridal-chamber imagery functions as a high-order symbol of salvific union and initiation.
+    status: BOUNDED
+    confidence: strong_for_text
+
+  - id: PHIL-V1-006
+    proposition: The bridal chamber certainly denotes literal ritual sexual intercourse.
+    status: NOT_ADMITTED
+
+  - id: PHIL-V1-007
+    proposition: The text names a five-term mystery/sacramental complex.
+    status: BOUNDED
+    confidence: strong_for_text
+
+  - id: PHIL-V1-008
+    proposition: The five terms prove five universally standardized separate Valentinian ceremonies.
+    status: NOT_ADMITTED
+
+  - id: PHIL-V1-009
+    proposition: Valentinian-associated ritual discourse connected material rites with theological knowledge.
+    class: HISTORICAL_RECONSTRUCTION
+    status: BOUNDED
+    confidence: moderate_to_strong
+
+  - id: PHIL-V1-010
+    proposition: Valentinian Christians can be modeled generally as rejecting embodied ritual for disembodied gnosis.
+    status: NOT_ADMITTED
+
+guards:
+  - COPTIC_MANUSCRIPT_WITNESS_NE_ORIGINAL_COMPOSITION_DATE
+  - TEXT_NE_DIRECT_OBSERVATION_OF_PRACTICE
+  - FIVE_TERMS_NE_FIVE_STANDARDIZED_SEPARATE_RITES
+  - BRIDAL_CHAMBER_NE_PROVEN_LITERAL_SEXUAL_RITE
+  - GOSPEL_OF_PHILIP_NE_ALL_VALENTINIANS
+  - SHARED_RITUAL_NE_SHARED_INSTITUTION_OR_THEOLOGY
+  - GNOSIS_NE_RITUAL_REJECTION
+
+next_scope:
+  - EXCERPTA_EX_THEODOTO_INITIATION_PACKET
+  - VALENTINIAN_RITUAL_NONHARMONIZING_COMPARISON
+  - BOOK_V_SCRIPTURE_RITUAL_PLURALITY_SYNTHESIS
