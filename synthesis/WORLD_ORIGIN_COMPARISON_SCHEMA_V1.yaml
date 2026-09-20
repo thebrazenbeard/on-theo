@@ -1,0 +1,69 @@
+schema_version: on-theo.world-origin-comparison-schema.v1
+status: NON_CANONICAL_METHOD_SCHEMA
+
+purpose: >
+  Decompose WORLD_ORIGIN_MODEL so an epistemic challenge to origin knowledge is
+  not forced into the same cell type as a narrative or generative mechanism.
+
+dimensions:
+  ORIGIN_ASSERTION_MODE:
+    question: >
+      Does the source assert an origin sequence, describe generative priority,
+      preserve multiple variant sequences, interrogate whether origin can be
+      known, or decline to supply an origin account?
+    allowed_examples:
+      - INTERROGATIVE_EPISTEMIC_SUSPENSION
+      - GENERATIVE_PRIORITY_DESCRIPTION
+      - VARIANT_COSMOGONIC_NARRATIVE
+      - WORLD_FORMATION_NARRATIVE
+      - NOT_ADMITTED
+
+  PREEXISTING_OR_PRIOR_CONDITION:
+    question: >
+      What, if anything, is represented as prior to the familiar world-order?
+    rule: DO_NOT_NORMALIZE_DIFFERENT_SOURCE_TERMS_INTO_ONE_PRIMORDIAL_SUBSTANCE
+
+  ORIGIN_PROCESS_MODEL:
+    question: >
+      What process is actually represented: emergence, generation, genealogy,
+      shaping, separation, transformation, or something else?
+    rule: PROCESS_LABEL_MUST_FOLLOW_SOURCE_PROPOSITION
+
+  ORIGIN_AGENT_MODEL:
+    question: >
+      Is origin attributed to one agent, multiple agents, an impersonal or
+      non-sovereign generative source, uncertain agency, or no admitted agent?
+    rule: GENERATIVE_SOURCE_NE_SOVEREIGN_CREATOR_BY_DEFAULT
+
+  MATERIAL_OR_ONTOLOGICAL_PRECONDITION:
+    question: >
+      Does the source represent prior material, beings, conditions, or
+      ontological language from which later order emerges or is shaped?
+    rule: PREEXISTENCE_NE_ONE_SHARED_SUBSTRATE
+
+  ORIGIN_KNOWLEDGE_STATUS:
+    question: >
+      How certain does the source present its own origin account or inquiry?
+    allowed_examples:
+      - ASSERTIVE_WITH_LAYER_CONTROLS
+      - VARIANT_WITHIN_CORPUS
+      - EXPLICITLY_UNCERTAIN
+      - PARTIAL_OR_UNRESOLVED
+      - NOT_ADMITTED
+
+  WITNESS_AND_LAYER_STATUS:
+    question: >
+      What textual/manuscript/historical layer carries the proposition?
+    rule: COMPOSITION_NE_WITNESS_NE_MODERN_EDITION
+
+comparison_guards:
+  - SHARED_ORIGIN_QUESTION_NE_SHARED_ORIGIN_ACCOUNT
+  - EPISTEMIC_UNCERTAINTY_NE_ATHEISM
+  - PRIORITY_NE_PERSONAL_CREATION
+  - GENERATION_NE_OWNERSHIP_OR_COMMAND
+  - VARIANT_NARRATIVE_NE_ERROR_TO_HARMONIZE
+  - WORLD_SHAPING_NE_CREATION_EX_NIHILO
+  - PREEXISTING_CONDITION_NE_ONE_SHARED_SUBSTRATE
+  - ABSENCE_OF_CREATOR_IN_SELECTED_LOCUS_NE_TRADITION_WIDE_DENIAL
+  - SIMILARITY_NE_TRANSMISSION
+  - SYSTEMS_ANALOGY_IS_DOWNSTREAM
