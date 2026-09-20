@@ -1,0 +1,46 @@
+schema_version: on-theo.olmec-research-state.v1
+status: MATERIAL_ICONOGRAPHIC_FOUNDATION_ACTIVE
+
+branch:
+  name: research/olmec-material-iconographic-v1-20260920
+  base_branch: corpus/global-expansion-queue-v1-20260917
+  base_head: cd588c7cabc210f8ae8eb43c148170872aa4b9ac
+
+artifacts:
+  boundary: traditions/olmec/material-iconographic-evidence-boundary-v1.md
+  source_map: traditions/olmec/source-map-v1.md
+  foundation: traditions/olmec/material-iconographic-foundation-packet-v1.md
+  neutral_axis: traditions/olmec/neutral-axis-evidence-v1.yaml
+
+current_secure_results:
+  - Olmec_religious_reconstruction_is_material_first
+  - San_Lorenzo_and_La_Venta_must_remain_diachronic_site_specific_lanes
+  - La_Venta_securely_attests_ceremonial_architecture_and_structured_offerings
+  - monumental_sculpture_supports_elite_authority_and_structured_visual_communication
+  - Cascajal_does_not_supply_readable_theology
+  - composite_iconography_is_secure_but_named_deity_taxonomies_are_interpretive
+  - mother_culture_transmission_model_is_not_default
+
+current_holds:
+  - CROSS_TRADITION_COMPARISON
+  - SYSTEMATIC_OLMEC_THEOLOGY
+  - WORLD_ORIGIN_MODEL
+  - PERSON_OR_SELF_MODEL
+  - POSTMORTEM_PATH_MODEL
+  - NAMED_PANTHEON
+  - DIRECT_OLMEC_TO_LATER_TRADITION_TRANSMISSION
+
+next_frontier:
+  primary: LA_VENTA_COMPLEX_A_OFFERING_PACKET_V1
+  subsequent:
+    - CASCAJAL_WRITING_CONTROL_V1
+    - MONUMENTAL_AUTHORITY_PACKET_V1
+    - ICONOGRAPHIC_TAXONOMY_HOSTILE_TEST_V1
+    - OLMEC_INTERACTION_TRANSMISSION_HOSTILE_TEST_V1
+    - OLMEC_COMPARISON_READINESS_AUDIT_V1
+
+guards:
+  - MATERIAL_EVIDENCE_NE_TEXTUAL_THEOLOGY
+  - ICONOGRAPHY_NE_NAMED_DEITY_BY_DEFAULT
+  - SITE_AND_PERIOD_REQUIRED
+  - SIMILARITY_NE_TRANSMISSION
