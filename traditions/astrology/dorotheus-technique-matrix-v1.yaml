@@ -1,0 +1,130 @@
+schema: ON_THEO_DOROTHEUS_TECHNIQUE_MATRIX_V1
+status: SOURCE_BOUND_PARTIAL_EXTRACTION
+
+work:
+  author: Dorotheus_of_Sidon
+  title: Carmen_Astrologicum
+  original_language: Greek
+  original_form: verse_Pentateuch
+  period: first_century_CE
+  transmission:
+    - Greek_original_largely_lost
+    - Middle_Persian_translation_stage
+    - Arabic_recension
+    - Greek_prose_excerpts
+  source_controls:
+    - https://books.google.com/books?id=XiZhP1MiUbEC
+    - https://bendykes.com/product/dorotheuss-carmen-astrologicum/
+    - https://unifiedastrology.wordpress.com/sources/hellenistic-sources/carmen-astrologicum-of-dorotheus-book-one/
+
+books:
+  - book: I
+    main_scope: natal_condition_and_upbringing
+    verified_techniques:
+      - technique: triplicity_rulers
+        chapter: "I.1"
+        details:
+          - four_elemental_triplicities
+          - day_and_night_ruler_order_changes
+          - third_or_participating_ruler
+        confidence: high
+      - technique: sect_sensitive_delineation
+        evidence: triplicity_ruler_order
+        confidence: high
+      - technique: Lot_of_Fortune
+        chapter: "I.26 according to later source cross-reference"
+        confidence: medium_high
+      - technique: topical_lots
+        examples:
+          - father
+          - mother
+          - brothers
+        chapter_examples:
+          father: "I.13"
+          mother: "I.14"
+          brothers: "I.19"
+        confidence: high
+      - technique: ascensional_times
+        confidence: high
+      - technique: terms_bounds
+        confidence: high
+      - technique: dodecatemoria
+        confidence: high
+
+  - book: II
+    main_scope: marriage_children_and_planetary_conditions
+    verified_techniques:
+      - technique: triplicity_rulers_of_Venus_for_marriage
+        chapter: "II.1"
+        confidence: high
+      - technique: marriage_and_children_topic_judgment
+        confidence: high
+      - technique: planetary_aspect_delineation
+        confidence: high
+      - technique: planets_in_places
+        confidence: high
+
+  - book: III
+    main_scope: length_of_life
+    verified_techniques:
+      - technique: longevity_hyleg_apheta_material
+        confidence: high
+        guard: terminology_varies_by_translation_and_later_school
+
+  - book: IV
+    main_scope: transfer_of_years_and_forecasting
+    verified_techniques:
+      - technique: annual_transfer_or_profection
+        confidence: high
+      - technique: transits_as_triggers_against_natal_or_profected_places
+        confidence: medium_high
+        source: https://fr.scribd.com/document/778341034/Dorotheus-Carmen-Astrologicum-Dykes
+      - technique: annual_predictive_system
+        confidence: high
+
+  - book: V
+    main_scope: interrogations_inceptions_and_elections
+    verified_topics:
+      - Moon_condition
+      - crooked_and_straight_signs
+      - building
+      - hiring
+      - land_purchase
+      - animal_purchase
+      - asking_favors
+      - marriage_disputes
+      - pregnancy
+      - debt
+      - journeys
+      - ships
+      - messages
+      - imprisonment
+      - illness
+      - property_change
+      - runaways
+    source: https://books.google.com/books?id=XiZhP1MiUbEC
+    guard: >
+      Modern categories “horary” and “electional” overlap imperfectly with the
+      transmitted Book V material. Preserve the actual question/inception topic.
+
+core_observations:
+  - proposition: >
+      Triplicity rulership is a central organizing device in Dorotheus and changes
+      by day/night sect.
+    confidence: high
+  - proposition: >
+      Dorotheus uses numerous calculated lots beyond Fortune, showing that later
+      simplified “planets/signs/houses only” summaries omit important Hellenistic practice.
+    confidence: high
+  - proposition: >
+      The transmitted Carmen is itself a cross-language historical artifact, so a
+      doctrine in the Arabic recension is not automatically guaranteed to be untouched
+      first-century Greek wording.
+    confidence: high
+
+next_frontier:
+  - chapter_by_chapter_technique_rows
+  - Greek_excerpt_vs_Arabic_recension_differences
+  - worked_chart_registry
+  - all_lot_formulae
+  - annual_timing_algorithm_exact_steps

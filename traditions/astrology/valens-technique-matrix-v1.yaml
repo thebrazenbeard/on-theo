@@ -1,0 +1,131 @@
+schema: ON_THEO_VALENS_TECHNIQUE_MATRIX_V1
+status: SOURCE_BOUND_PARTIAL_EXTRACTION
+
+work:
+  author: Vettius_Valens
+  title: Anthologies
+  period: second_century_CE
+  source:
+    translation: Mark_T_Riley
+    accessible_reference: https://www.astrologicon.org/vettius-valens/vettius-valens-anthology-4.html
+
+techniques:
+  - id: fortune_and_daimon_chronocratorship
+    book: IV
+    section: 4
+    source_label: distribution_from_Lot_of_Fortune_and_Daimon
+    rules:
+      Fortune:
+        domain: bodily_constitution_health_material_experience
+      Daimon:
+        domain: activity_employment_rank
+    method_class: time_lord_distribution
+    confidence: high
+
+  - id: fortune_daimon_transit_distribution
+    book: IV
+    section: 7
+    components:
+      - transmitter
+      - receiver
+      - angularity
+      - sect
+      - benefic_malefic_aspects
+      - transits
+      - new_and_full_moon
+      - mutual_transmission
+    confidence: high
+
+  - id: nested_time_periods
+    book: IV
+    section: 10
+    levels:
+      - years
+      - months
+      - days
+      - hours
+    method: repeated_fractional_subdivision
+    confidence: high
+
+  - id: planetary_periods
+    book: IV
+    sections:
+      - 1
+      - 2
+      - 3
+    concept: planet_specific_period_lengths_and_subdistributions
+    confidence: high
+
+  - id: one_fourth_method
+    book: IV
+    section: 26
+    attributed_authority: Critodemus
+    components:
+      - seven_planet_sequence
+      - monomoiria_degree_assignment
+      - twenty_eight_year_cycle
+    confidence: high
+
+  - id: four_possible_year_starts
+    book: IV
+    section: 27
+    attributed_school: Hermeios_Seuthos
+    candidate_starts:
+      - Sun
+      - Moon
+      - Ascendant
+      - Lot_of_Fortune
+    selection_depends_on:
+      - day_night
+      - angularity
+      - condition
+    confidence: high
+
+  - id: travel_timing
+    book: II
+    section: "travel chapter / source pagination around 29K-30P"
+    components:
+      - Lot_of_Foreign_Lands
+      - Fortune
+      - Daimon
+      - chronocrator
+      - aspects
+      - angularity
+    confidence: high
+
+  - id: birth_time_rectification
+    book: VIII
+    topic: establish_hour_of_birth_for_twins
+    confidence: medium_high
+    source: https://it.scribd.com/document/858544239/Valens-Anthologies-Annotated
+
+source_theory:
+  - proposition: >
+      Valens explicitly distinguishes Fortune for bodily matters from Daimon for
+      action/employment in Book IV.4.
+    confidence: high
+  - proposition: >
+      Valens presents multiple competing timing systems and attributes some to
+      named predecessors or schools.
+    confidence: high
+  - proposition: >
+      Valens cannot be reduced to a single “zodiacal releasing” technique; the
+      Anthologies are a plural collection of timing algorithms, lots, place
+      judgments, aspects, planetary periods, and worked examples.
+    confidence: high
+
+comparison_with_ptolemy:
+  Ptolemy:
+    emphasis: causal_rationalization_and_systematization
+  Valens:
+    emphasis: practitioner_algorithms_examples_and_multiple_inherited_methods
+  classification: PROJECT_SYNTHESIS
+  confidence: high
+
+next_frontier:
+  - all_books_chapter_index
+  - all_named_predecessors
+  - all_worked_chart_dates
+  - Fortune_Daimon_formula_variants
+  - exact_period_tables
+  - compare_Valens_chart_data_with_Greek_Horoscopes_documentary_corpus

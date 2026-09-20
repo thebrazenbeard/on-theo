@@ -1,0 +1,102 @@
+schema: ON_THEO_GREEK_HOROSCOPE_REGISTRY_V1
+status: SEEDED_WITH_EARLIEST_VERIFIED_ANCHORS
+
+primary_corpus:
+  authors:
+    - Otto Neugebauer
+    - H. B. Van Hoesen
+  title: Greek Horoscopes
+  year: 1959
+  publisher: American Philosophical Society
+  digital: https://sites.dlib.nyu.edu/viewer/books/isaw_aphs000001/1
+
+records:
+  - id: antiochus-commagene-lion-relief
+    represented_date:
+      year_bce: 62
+      conventional_solution: "July 7"
+      status: contested_exact_interpretation
+    witness_class: monumental_iconographic_horoscope
+    corpus_reference:
+      Greek_Horoscopes_text: 1
+    object:
+      site: Nemrut_Dag
+      ruler: Antiochus_I_of_Commagene
+      form: lion_relief_with_named_planets_and_lunar_symbolism
+    significance:
+      - earliest_extant_Greek_horoscope_under_conventional_Neugebauer_interpretation
+      - not_a_textual_papyrus_horoscope
+    evidence:
+      - https://bmcr.brynmawr.edu/2005/2005.06.29
+      - https://theses.ncl.ac.uk/jspui/bitstream/10443/3277/1/Haysom%20M%202016.pdf
+    guard: >
+      The exact date and function of the relief have been re-examined by later
+      scholars. Treat 62 BCE / July 7 as the classic Neugebauer solution, not
+      an uncontested fixed point.
+
+  - id: balbillus-literary-72-bce
+    represented_date:
+      year_bce: 72
+    witness_class: literary_horoscope_preserved_in_later_textual_tradition
+    corpus_pages: "76-78"
+    later_author_context: Tiberius_Claudius_Balbillus
+    likely_archive_relation: Thrasyllus_possible
+    significance:
+      - one_of_earliest_surviving_Greco_Roman_horoscopes
+      - chart_date_predates_surviving_literary_record
+    evidence:
+      - https://scispace.com/pdf/vettius-valens-longitudes-1-18-balbillus-and-the-illusion-of-1q2b9cmj4p.pdf
+    guard: CHART_DATE_NE_TEXT_COMPOSITION_DATE
+
+  - id: balbillus-literary-43-bce
+    represented_date:
+      year_bce: 43
+    witness_class: literary_horoscope_preserved_in_later_textual_tradition
+    corpus_pages: "76-78"
+    later_author_context: Tiberius_Claudius_Balbillus
+    evidence:
+      - https://scispace.com/pdf/vettius-valens-longitudes-1-18-balbillus-and-the-illusion-of-1q2b9cmj4p.pdf
+    guard: CHART_DATE_NE_TEXT_COMPOSITION_DATE
+
+  - id: earliest-documentary-papyrus-10-bce
+    represented_date:
+      year_bce: 10
+    witness_class: original_documentary_Greek_horoscope_on_papyrus
+    corpus_page_cross_reference: 161
+    significance:
+      - earliest_preserved_Greek_horoscope_in_an_original_document_under_current_foundation_sources
+    evidence:
+      - https://es.scribd.com/document/423690850/Rochberg-The-Heavenly-Writing-pdf
+      - https://www.researchgate.net/publication/26428157_Ancient_Astrology_as_a_Common_Root_for_Science_and_Pseudo-Science
+    unresolved:
+      - papyrus_identifier
+      - exact_birth_date
+      - full_astral_fields
+    next_action: extract_directly_from_Greek_Horoscopes_page_161
+
+corpus_level_controls:
+  - proposition: >
+      The 62 BCE Nemrut Dag object, the 72/43 BCE Balbillus examples, and the
+      10 BCE papyrus belong to different witness classes.
+    confidence: high
+  - proposition: >
+      Greek documentary horoscopes frequently preserve chronological and
+      astronomical chart data with little explicit interpretive prose.
+    confidence: high
+  - proposition: >
+      Handbook astrology and documentary horoscope practice must remain separate
+      evidence streams.
+    confidence: high
+  - proposition: >
+      Around 350 Greek horoscopes have been identified in the broader surviving
+      Greco-Roman corpus, far more than the 28 cuneiform Babylonian horoscope tablets.
+    confidence: medium_high
+    source: https://dokumen.pub/between-greece-and-babylonia-hellenistic-intellectual-history-in-cross-cultural-perspective-9781108419550-9781108303552-1108419550.html
+
+next_frontier:
+  - Neugebauer_Van_Hoesen_entry_number_for_10_BCE_papyrus
+  - documentary_material_type_for_each_entry
+  - date_of_chart_vs_date_of_document
+  - astronomical_fields
+  - interpretive_text_presence
+  - provenance_location

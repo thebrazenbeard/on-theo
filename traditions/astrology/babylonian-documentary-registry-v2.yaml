@@ -1,0 +1,177 @@
+schema: ON_THEO_BABYLONIAN_HOROSCOPE_REGISTRY_V2
+status: SEEDED_WITH_VERIFIED_CORPUS_ANCHORS
+scope: extant_cuneiform_birth_horoscopes_and_related_birth_notes
+
+corpus:
+  primary_edition:
+    author: Francesca Rochberg
+    title: Babylonian Horoscopes
+    year: 1998
+    publisher: American Philosophical Society
+    url: https://books.google.com/books?id=N8YNAAAAYAAJ
+  extant_horoscope_tablets: 28
+  date_range_bce:
+    earliest: 410
+    latest: 69
+  related_birth_notes_without_astral_data:
+    count: 4
+    rochberg_text_numbers: [29, 30, 31, 32]
+  location_summary:
+    babylon: majority_or_presumed_majority
+    nippur:
+      count: 1
+      year_bce: 410
+    uruk:
+      count: 5
+      earliest_year_bce: 263
+      latest_year_bce: 199
+  supporting_source:
+    author: Alexander Jones
+    work: The Astronomical Resources for Ancient Astral Prognostications
+    url: https://brill.com/downloadpdf/book/edcoll/9789004308473/B9789004308473_009.pdf
+
+records:
+  - id: rochberg-410-bce-apr29
+    chart_date:
+      year_bce: 410
+      month_day_modern: "April 29"
+      certainty: secondary_conversion_high
+    witness_class: cuneiform_birth_horoscope
+    rochberg_page: 56
+    person:
+      name_fragment: "Šumu-iddina, descendant of Šumu-uṣur/related genealogy"
+      certainty: damaged_text
+    preserved_astral_data:
+      moon: below_the_Pincer_of_Scorpion
+      jupiter: Pisces
+      venus: Taurus
+      saturn: Cancer
+      mars: Gemini
+      mercury: set_and_not_visible
+    preserved_interpretation:
+      present: true
+      characterization: minimal_positive_apodosis
+    evidence:
+      - https://www.folklore.ee/folklore/vol15/pdf/ancient.pdf
+      - https://books.google.com/books?id=N8YNAAAAYAAJ
+    guard: >
+      Modern calendar conversion and damaged personal-name wording are secondary
+      editorial reconstructions, not verbatim data guaranteed by the tablet.
+
+  - id: rochberg-410-bce-second
+    chart_date:
+      year_bce: 410
+      exact_date: unresolved_in_this_registry
+    witness_class: cuneiform_birth_horoscope
+    significance:
+      - one_of_two_earliest_surviving_examples
+    evidence:
+      - https://erenow.org/ancient/ancient-astronomy/10.php
+      - https://brill.com/downloadpdf/book/edcoll/9789004308473/B9789004308473_009.pdf
+    next_action: bind_tablet_identifier_and_full_translation_from_Rochberg
+
+  - id: rochberg-298-bce
+    chart_date:
+      year_bce: 298
+    witness_class: cuneiform_birth_horoscope
+    significance:
+      - third_surviving_example_after_the_two_410_BCE_documents
+    evidence:
+      - https://erenow.org/ancient/ancient-astronomy/10.php
+    next_action: bind_Rochberg_text_number_tablet_id_and_astral_fields
+
+  - id: rochberg-text5-263-bce
+    rochberg_text_number: 5
+    chart_date:
+      year_bce: 263
+      babylonian_date: "Year 48, Addaru, night of [23rd?]"
+    provenance:
+      city: Uruk
+      confidence: high
+    preserved_astral_data:
+      sun: "13;30 degrees Aries"
+      moon: "10 degrees Aquarius"
+      jupiter: "beginning of Leo"
+      other_planets: present_but_not_fully_extracted_here
+    preserved_interpretation:
+      examples:
+        - lacks_property_then_acquires_property_in_year_36
+        - long_life
+        - wife_related_prediction_fragment
+    significance:
+      - explicitly_calculated_degree_positions
+      - predictive_statements_attached_to_birth_record
+    evidence:
+      - https://fileserver-az.core.ac.uk/download/pdf/18454654.pdf
+    guard: >
+      This registry paraphrases the interpretation; the exact damaged text and
+      restorations remain controlled by Rochberg's edition.
+
+  - id: rochberg-235-bce
+    chart_date:
+      year_bce: 235
+    witness_class: cuneiform_birth_horoscope
+    preserved_astral_data:
+      planetary_longitudes: all_planets_recorded_to_approximately_one_degree
+    evidence:
+      rochberg_pages: "84-85"
+      secondary_access: https://www.folklore.ee/folklore/vol15/pdf/ancient.pdf
+    significance:
+      - increased_precision_of_zodiacal_longitudes
+    next_action: bind_text_number_and_full_astral_vector
+
+  - id: rochberg-140-bce-sep7
+    chart_date:
+      year_bce: 140
+      month_day_modern: "September 7"
+      certainty: secondary_conversion
+    witness_class: cuneiform_birth_horoscope
+    preserved_astral_data:
+      moon: Pisces
+      sun: Virgo
+      jupiter: Sagittarius
+      venus: Libra
+      mars: Gemini
+      mercury: invisible_with_sun
+      saturn: invisible_with_sun
+    additional_data:
+      - month_length
+      - lunar_visibility
+      - autumnal_equinox_date
+    evidence:
+      - https://encyclopedia-loadbalancer-1-1782916326.us-west-2.elb.amazonaws.com/philosophy-and-religion/other-religious-beliefs-and-general-terms/religion-general/divination
+    next_action: bind_Rochberg_text_number_and_original_tablet_id
+
+  - id: rochberg-latest-69-bce
+    chart_date:
+      year_bce: 69
+    witness_class: cuneiform_birth_horoscope
+    significance:
+      - latest_dated_member_of_extant_Rochberg_corpus
+    evidence:
+      - https://www.researchgate.net/publication/26428157_Ancient_Astrology_as_a_Common_Root_for_Science_and_Pseudo-Science
+    next_action: bind_text_number_tablet_id_astral_fields
+
+corpus_inferences:
+  - proposition: >
+      Babylonian birth horoscopes are primarily compact astronomical birth-state
+      records, with explicit individual prognostication present only in some members.
+    classification: HISTORICAL_RECONSTRUCTION
+    confidence: high
+  - proposition: >
+      The genre presupposes methods for obtaining celestial positions even when
+      bodies were not observable at the birth moment.
+    classification: HISTORICAL_RECONSTRUCTION
+    confidence: high
+  - proposition: >
+      The known corpus does not contain the full Hellenistic apparatus of ascendant-
+      based houses and later handbook delineation.
+    classification: HISTORICAL_RECONSTRUCTION
+    confidence: high
+
+next_frontier:
+  - exact_tablet_ids
+  - exact_Rochberg_text_numbers_for_every_record
+  - all_28_horoscope_rows
+  - field_level_astral_data
+  - data_vs_interpretation_flag_for_each_line
