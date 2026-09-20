@@ -1,0 +1,44 @@
+schema_version: on-theo.andean-inca-research-state.v1
+status: DIACHRONIC_FOUNDATION_ACTIVE
+
+branch:
+  name: research/andean-inca-diachronic-v1-20260920
+  base_branch: corpus/global-expansion-queue-v1-20260917
+  base_head: cd588c7cabc210f8ae8eb43c148170872aa4b9ac
+
+artifacts:
+  boundary: traditions/andean-inca/diachronic-source-boundary-v1.md
+  source_map: traditions/andean-inca/source-map-v1.md
+  foundation: traditions/andean-inca/diachronic-foundation-packet-v1.md
+  neutral_axis: traditions/andean-inca/neutral-axis-evidence-v1.yaml
+
+current_secure_results:
+  - Inca_imperial_ne_all_Andean
+  - Quechua_ne_Inca
+  - colonial_chroniclers_are_distinct_mediated_witnesses
+  - Cusco_ceque_huaca_system_is_strong_sacred_land_institutional_evidence
+  - capacocha_has_strong_material_textual_convergence
+  - khipu_are_documentary_technologies_but_not_fully_deciphered_texts
+  - Guaman_Poma_is_colonial_Indigenous_autograph_witness_not_precontact_transcript
+  - living_Andean_reciprocity_and_land_relations_are_current_not_unchanged_imperial_form
+
+current_holds:
+  - CROSS_TRADITION_COMPARISON
+  - WORLD_ORIGIN_MODEL
+  - PERSON_OR_SELF_MODEL
+  - POSTMORTEM_PATH_MODEL
+  - UNQUALIFIED_INCA_THEOLOGY
+  - UNQUALIFIED_ANDEAN_RELIGION
+
+next_frontier:
+  primary: INCA_HUACA_CEQUE_SACRED_LAND_PACKET_V1
+  subsequent:
+    - INCA_KHIPU_DOCUMENTARY_MEMORY_PACKET_V1
+    - INCA_CAPACOCHA_CONVERGENCE_PACKET_V1
+    - ANDEAN_LIVING_RECIPROCITY_PACKET_V1
+    - ANDEAN_INCA_COMPARISON_READINESS_AUDIT_V1
+
+guards:
+  - SOURCE_LAYER_REQUIRED
+  - ARCHAEOLOGY_NE_CHRONICLE
+  - LIVING_COMMUNITY_NE_IMPERIAL_RELIC
