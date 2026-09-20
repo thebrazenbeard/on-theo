@@ -1,0 +1,67 @@
+schema_version: on-theo.olmec-monumental-authority-evidence.v1
+status: BOUNDED_ELITE_AUTHORITY_PARTIAL_SACRALIZATION
+
+records:
+  - id: OLM-AUTH-SL-001
+    site: SAN_LORENZO
+    evidence_class:
+      - MATERIAL_EVIDENCE
+      - SETTLEMENT_ARCHAEOLOGY
+      - SCHOLARLY_SYNTHESIS
+    propositions:
+      - San_Lorenzo_is_early_major_regional_center
+      - landscape_modification_and_monumental_stone_transport_require_large_scale_labor
+      - ten_colossal_heads_and_four_thrones_are_reported_in_current_synthesis
+    supports:
+      - INSTITUTIONALIZATION_MODEL
+      - AGENCY_AND_AUTHORITY_MODEL
+      - POLITICAL_SACRALIZATION_MODEL_PARTIAL
+    confidence: HIGH_FOR_MATERIAL_PATTERN
+
+  - id: OLM-AUTH-HEADS-001
+    evidence_class:
+      - MATERIAL_EVIDENCE
+      - SCHOLARLY_INTERPRETATION
+    propositions:
+      - colossal_heads_are_individualized_human_monuments
+      - current_scholarship_commonly_interprets_heads_as_elite_or_ruler_portraits
+    supports:
+      - AGENCY_AND_AUTHORITY_MODEL
+      - POLITICAL_SACRALIZATION_MODEL_PARTIAL
+    confidence: HIGH_FOR_ELITE_AUTHORITY_PARTIAL_FOR_EXACT_IDENTITY
+    guards:
+      - ELITE_PORTRAIT_NE_DIVINE_RULER
+      - INDIVIDUAL_IDENTITY_NOT_RECOVERED
+
+  - id: OLM-AUTH-THRONE-001
+    evidence_class:
+      - MATERIAL_EVIDENCE
+      - SCHOLARLY_INTERPRETATION
+    propositions:
+      - large_monuments_historically_called_altars_are_often_reinterpreted_as_thrones_or_authority_monuments
+    supports:
+      - AGENCY_AND_AUTHORITY_MODEL
+    confidence: PARTIAL_OBJECT_SPECIFIC
+    guards:
+      - ALTAR_NAME_NE_SACRIFICIAL_FUNCTION
+
+  - id: OLM-AUTH-HETEROGENEITY-001
+    source: OXFORD_HANDBOOK_MONUMENTAL_SCULPTURE_2025
+    evidence_class: SCHOLARLY_INTERPRETATION
+    propositions:
+      - monumental_sculpture_has_diverse_subjects_materials_functions_and_audiences
+      - simple_homogeneous_monument_models_are_methodologically_inadequate
+    supports:
+      - SOURCE_CRITICISM_CONTROL
+    confidence: HIGH_CURRENT_SYNTHESIS
+
+axis_status:
+  INSTITUTIONALIZATION_MODEL: BOUNDED_ELITE_LABOR_MATERIAL_MONUMENTAL
+  AGENCY_AND_AUTHORITY_MODEL: PARTIAL_ELITE_POLITICAL_AUTHORITY
+  POLITICAL_SACRALIZATION_MODEL: PARTIAL_MONUMENTAL_AUTHORITY
+  CROSS_TRADITION_COMPARISON: HOLD
+
+guards:
+  - MONUMENTAL_AUTHORITY_NE_DIVINE_KINGSHIP
+  - ELITE_PORTRAIT_NE_THEOLOGICAL_STATUS
+  - SITE_AND_MONUMENT_SPECIFICITY_REQUIRED
