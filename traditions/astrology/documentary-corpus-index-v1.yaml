@@ -1,0 +1,103 @@
+schema: ON_THEO_ASTROLOGY_DOCUMENTARY_CORPUS_INDEX_V1
+status: SEEDED_NOT_EXHAUSTIVE
+
+purpose: >
+  Separate documentary horoscope witnesses from later literary examples and
+  from handbook doctrine. Dates are the date represented by the chart or
+  document unless otherwise stated.
+
+source_controls:
+  babylonian_corpus:
+    edition: "Francesca Rochberg, Babylonian Horoscopes (1998)"
+    digital: "https://sites.dlib.nyu.edu/viewer/books/isaw_aphs000011/3"
+    publisher_description: "https://www.pennpress.org/9780871698810/babylonian-horoscopes/"
+    note: >
+      Rochberg's edition is the complete published corpus of extant cuneiform
+      horoscopes as of publication, with transcription and philological/
+      astronomical commentary.
+  greek_corpus:
+    edition: "Otto Neugebauer and H. B. Van Hoesen, Greek Horoscopes (1959)"
+    digital: "https://sites.dlib.nyu.edu/viewer/books/isaw_aphs000001/1"
+    publisher_description: "https://www.pennpress.org/9780871690487/greek-horoscopes/"
+    note: >
+      The collection combines original documentary witnesses such as papyri,
+      ostraca, inscriptions and graffiti with literary horoscopes preserved in
+      astrological texts.
+
+entries:
+  - id: babylonian-410-bce
+    tradition: late_babylonian
+    date_representation: "410 BCE"
+    witness_class: cuneiform_birth_horoscope
+    confidence: high
+    evidence_state: secondary_summary_of_primary_corpus_pending_page_level_index
+    source:
+      work: "Rochberg, Babylonian Horoscopes"
+      supporting_description: "Penn Press description says horoscopes emerge in the fifth century BCE"
+      url: "https://www.pennpress.org/9780871698810/babylonian-horoscopes/"
+    significance:
+      - among_earliest_surviving_personal_horoscopes
+      - individualized_birth_configuration
+    caution: >
+      The chart date is not automatically the date of composition of the tablet
+      and does not prove that personal horoscopy was invented at that moment.
+
+  - id: greek-literary-72-bce
+    tradition: greco_roman
+    date_representation: "72 BCE"
+    witness_class: literary_horoscope_preserved_in_later_author
+    attributed_context: "Balbillus tradition"
+    confidence: medium_high
+    evidence_state: secondary_history_cross_reference_pending_primary_corpus_page_verification
+    source:
+      work: "Neugebauer and Van Hoesen, Greek Horoscopes"
+      digital: "https://sites.dlib.nyu.edu/viewer/books/isaw_aphs000001/1"
+    caution: >
+      The horoscope represents an earlier nativity but survives through a later
+      literary context; it cannot be treated as an original document written in 72 BCE.
+
+  - id: greek-literary-43-bce
+    tradition: greco_roman
+    date_representation: "43 BCE"
+    witness_class: literary_horoscope_preserved_in_later_author
+    confidence: medium_high
+    evidence_state: secondary_history_cross_reference_pending_primary_corpus_page_verification
+    source:
+      work: "Neugebauer and Van Hoesen, Greek Horoscopes"
+      digital: "https://sites.dlib.nyu.edu/viewer/books/isaw_aphs000001/1"
+
+  - id: greek-documentary-10-bce
+    tradition: greco_roman
+    date_representation: "10 BCE"
+    witness_class: nonliterary_documentary_horoscope
+    confidence: medium_high
+    evidence_state: scholarly_history_cross_reference_pending_primary_corpus_page_verification
+    source:
+      work: "Neugebauer and Van Hoesen, Greek Horoscopes"
+      digital: "https://sites.dlib.nyu.edu/viewer/books/isaw_aphs000001/1"
+    significance:
+      - early_documentary_Greek_horoscopic_practice
+
+corpus_level_claims:
+  - claim: >
+      Babylonian horoscopes differ structurally from single-phenomenon omen texts
+      by combining the positions of multiple celestial bodies at a birth.
+    confidence: high
+    source: "Rochberg / Penn Press"
+  - claim: >
+      Greek documentary horoscopes often devote most of their text to chronological
+      and astronomical data, with comparatively little explicit prediction.
+    confidence: high
+    source: "Neugebauer and Van Hoesen; contemporary reviews of Greek Horoscopes"
+  - claim: >
+      Documentary chart computation and interpretive handbook doctrine must be indexed
+      separately.
+    classification: PROJECT_INFERENCE
+    confidence: high
+
+next_ingestion:
+  - verify_Rochberg_text_ids_dates_and_tablet_provenance_page_by_page
+  - verify_Neugebauer_Van_Hoesen_entry_numbers_and_exact_dates_page_by_page
+  - index_each_document_as_DATA_ONLY_or_DATA_PLUS_INTERPRETATION
+  - record_chart_objects_planets_luminaries_ascendant_houses_aspects
+  - record_document_material_papyrus_ostracon_tablet_inscription_graffiti

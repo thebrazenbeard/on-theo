@@ -2,7 +2,8 @@ schema: ON_THEO_ASTROLOGY_RESEARCH_STATE_V1
 branch: astrology
 base_main_commit: eedbcf660c2cfe6cff5636e798806b0cd3d56efc
 foundation_commit: abc1ad524424d2ff20aa86c67c13ee1b2dc068fd
-status: FOUNDATION_DEEPENED_V2
+deepening_commit_v2: aa402ac5c584491695b641d8e844d222fa5342e2
+status: CORPUS_AND_FALSIFICATION_DEEPENED_V3
 merge_status: UNMERGED
 
 scope:
@@ -16,56 +17,83 @@ scope:
     - project_inference
     - speculative_model
 
-foundation_coverage:
-  mesopotamian_celestial_divination: primary_corpus_mapped
-  late_babylonian_horoscopy: primary_corpus_mapped
-  hellenistic_greco_roman: technical_source_differentiation_started
-  iranian_sasanian: partial_foundation
-  indian_jyotisa: transmission_and_source_strata_deepened
-  early_chinese_astral_cosmology: indigenous_import_separation_deepened
-  medieval_islamic: practice_and_causation_debate_deepened
-  medieval_jewish: ibn_ezra_maimonides_contrast_added
-  medieval_christian: free_will_causation_boundary_added
-  medieval_early_modern_europe: researched_foundation
-  modern_astrology_genealogy: researched_foundation
-  empirical_testing: structured_registry_started
-  simulation_interface: speculative_model_initialized
+coverage:
+  mesopotamian:
+    historical_context: researched_foundation
+    primary_corpus: mapped
+    documentary_index: seeded
+    remaining: page_level_horoscope_index
+  greco_roman:
+    historical_context: researched_foundation
+    documentary_corpus: seeded
+    handbook_differentiation: started
+    ptolemy_causal_model: primary_text_extracted
+    remaining:
+      - Dorotheus_full_technique_matrix
+      - Valens_full_technique_matrix
+      - Greek_Horoscopes_page_level_registry
+  indian_jyotisa:
+    status: transmission_and_source_strata_deepened
+    remaining:
+      - Yavanajataka_manuscript_table
+      - Varahamihira_primary_extraction
+  chinese:
+    status: indigenous_import_separation_deepened
+    remaining:
+      - Shiji_primary_omen_table
+      - Tang_Buddhist_import_registry
+  iranian_sasanian:
+    status: partial_foundation
+  islamic:
+    status: practice_causation_and_free_will_deepened
+    remaining:
+      - Abu_Mashar_primary_proposition_map
+      - Ibn_Sina_refutation_primary_map
+  jewish:
+    status: ibn_ezra_maimonides_contrast_added
+    remaining:
+      - Maimonides_letter_primary_proposition_map
+  christian:
+    status: aquinas_primary_causal_boundary_added
+  modern:
+    genealogy: researched_foundation
+    empirical_registry: expanded_v2
+    empirical_quality_rubric: active
+    gauquelin: disputed_ledger_initialized
+  simulation:
+    interface: initialized
+    falsification_protocol: v1_created
 
-new_v2_artifacts:
-  - traditions/astrology/mesopotamian-primary-corpus-v1.md
-  - traditions/astrology/hellenistic-technical-provenance-v1.md
-  - traditions/astrology/indian-jyotisa-transmission-v1.md
-  - traditions/astrology/chinese-astral-traditions-v1.md
-  - traditions/astrology/religious-free-will-debates-v1.md
-  - traditions/astrology/modern-western-genealogy-v1.md
-  - traditions/astrology/empirical-study-registry-v1.yaml
+new_v3_artifacts:
+  - traditions/astrology/documentary-corpus-index-v1.yaml
+  - traditions/astrology/ptolemy-causal-model-v1.md
+  - traditions/astrology/empirical-quality-rubric-v1.md
+  - traditions/astrology/empirical-study-registry-v2.yaml
+  - traditions/astrology/gauquelin-mars-effect-v1.md
+  - traditions/astrology/celestial-conditioning-falsification-v1.md
 
 guards:
-  - ASTROLOGY_IS_NOT_ONE_TIMELESS_SYSTEM
-  - ASTRAL_DIVINATION_NE_HOROSCOPIC_ASTROLOGY
-  - HISTORICAL_IMPORTANCE_NE_EMPIRICAL_VALIDITY
-  - SIGN_NE_CONSTELLATION
-  - CULTURAL_CONTINUITY_NE_TECHNICAL_IDENTITY
-  - CORRELATION_NE_MECHANISM
-  - SIMULATION_ANALOGY_NE_ANCIENT_TECHNICAL_KNOWLEDGE
-  - ASTRONOMICAL_EPOCH_NE_TEXT_COMPOSITION_DATE
-  - MANUAL_PRESCRIPTION_NE_DOCUMENTARY_PRACTICE
-  - CELESTIAL_INFLUENCE_ACCEPTED_NE_EXACT_PREDICTION_ACCEPTED
-  - RELIGIOUS_CRITIQUE_NE_REJECTION_OF_ASTRONOMY
+  - DOCUMENTARY_CHART_NE_INTERPRETIVE_HANDBOOK
+  - CHART_DATE_NE_DOCUMENT_COMPOSITION_DATE
+  - LITERARY_HOROSCOPE_NE_CONTEMPORARY_DOCUMENTARY_WITNESS
+  - PTOLEMAIC_CAUSATION_NE_NEWTONIAN_GRAVITY
+  - INTERNAL_TECHNICAL_PLURALITY_MUST_REMAIN_VISIBLE
+  - ONE_NULL_NE_ALL_ASTROLOGY_FALSE
+  - ONE_POSITIVE_NE_ASTROLOGY_VALIDATED
+  - UNEXPLAINED_CORRELATION_NE_SIMULATION_CONTROLLER
+  - MODEL_FLEXIBILITY_NE_EVIDENCE
 
 next_frontiers:
-  - extract_and_index_Rochberg_Babylonian_Horoscopes
-  - extract_Neugebauer_Van_Hoesen_Greek_Horoscopes
-  - Dorotheus_book_chapter_technique_matrix
-  - Valens_book_chapter_worked_chart_matrix
-  - Ptolemy_proposition_and_causal_model_map
-  - Yavanajataka_manuscript_and_dating_dispute_table
-  - Varahamihira_Brihat_Jataka_and_Samhita_extraction
+  - page_level_Rochberg_horoscope_registry
+  - page_level_Neugebauer_Van_Hoesen_registry
+  - Dorotheus_full_source_to_technique_matrix
+  - Valens_worked_chart_and_timing_matrix
+  - Yavanajataka_manuscript_dispute_table
+  - Varahamihira_primary_text_extraction
   - Shiji_Tianguan_shu_primary_omen_table
-  - Tang_Buddhist_foreign_astrology_transmission_map
   - Abu_Mashar_primary_text_and_transmission_graph
-  - Ibn_Sina_astrology_refutation_map
-  - Maimonides_letter_primary_text_map
-  - Alan_Leo_to_Rudhyar_to_Greene_primary_genealogy
-  - empirical_registry_expansion_and_quality_grading
-  - celestial_conditioning_preregistered_model_specification
+  - Ibn_Sina_refutation_primary_text_map
+  - Maimonides_1194_letter_primary_map
+  - empirical_registry_primary_source_expansion
+  - Gauquelin_dataset_by_dataset_replication_ledger
+  - celestial_conditioning_simulation_implementation_spec

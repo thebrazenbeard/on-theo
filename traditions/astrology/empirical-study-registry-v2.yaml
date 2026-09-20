@@ -1,0 +1,182 @@
+schema: ON_THEO_ASTROLOGY_EMPIRICAL_STUDY_REGISTRY_V2
+status: EXPANDED
+supersedes_for_new_entries: ON_THEO_ASTROLOGY_EMPIRICAL_STUDY_REGISTRY_V1
+
+studies:
+  - id: carlson-1985
+    citation: "Shawn Carlson, A double-blind test of astrology, Nature 318 (1985) 419-425"
+    doi: "10.1038/318419a0"
+    url: "https://www.nature.com/articles/318419a0"
+    proposition: professional_astrologers_can_match_natal_charts_to_personality_profiles_above_chance
+    design:
+      blinded: double_blind
+      personality_instrument: California_Psychological_Inventory
+    published_result: null_relative_to_preregistered_chance_expectation
+    disputes:
+      - later_statistical_and_protocol_reanalyses_challenge_parts_of_original_interpretation
+    provisional_quality: B_DISPUTED
+    ceiling: >
+      Strong historically important test of a defined natal-chart matching task,
+      not a universal test of every astrological school or claim.
+
+  - id: mcgrew-mcfall-1990
+    citation: "John H. McGrew and Richard M. McFall, A Scientific Inquiry Into the Validity of Astrology"
+    journal: "Journal of Scientific Exploration"
+    volume: 4
+    issue: 1
+    pages: "75-83"
+    year: 1990
+    url: "https://www.scientificexploration.org/journal/jse_04_1_mcgrew.pdf"
+    proposition: expert_astrologers_can_match_birth_charts_to_detailed_case_files_above_chance
+    sample:
+      astrologers: 6
+      subjects: 23
+    case_file_content:
+      - life_history
+      - photographs
+      - vocational_interest_profile
+      - Cattell_16PF
+    published_result:
+      - astrologers_did_not_outperform_chance
+      - astrologers_did_not_outperform_nonastrologer_control
+      - confidence_did_not_predict_accuracy
+      - astrologers_showed_low_interrater_agreement
+    limitations:
+      - small_astrologer_sample
+      - practitioner_selection_disputed_by_astrology_critics
+    provisional_quality: C_PLUS
+    ceiling: >
+      Negative evidence for this matching protocol and participant group.
+
+  - id: nanninga-astrotest-1996
+    citation: "Rob Nanninga, The Astrotest, Correlation 15(2), 1996/97"
+    url: "https://skepsis.nl/astrology-test/"
+    proposition: participating_astrologers_can_match_seven_natal_charts_to_seven_case_questionnaires
+    design:
+      practitioner_input_into_test_conditions: true
+      astrologers: 44
+      subjects: 7
+    reported_result: no_astrologer_matched_more_than_three_and_group_performance_not_above_chance
+    source_status: practitioner_test_report_available_online
+    provisional_quality: C
+    caution: >
+      Preserve exact protocol and later critiques before assigning stronger weight.
+
+  - id: hartmann-reuter-nyborg-2006
+    citation: "Hartmann, Reuter, Nyborg, Personality and Individual Differences 40 (2006) 1349-1362"
+    doi: "10.1016/j.paid.2005.11.017"
+    url: "https://www.sciencedirect.com/science/article/pii/S0191886905004046"
+    proposition:
+      - date_of_birth_predicts_personality
+      - sun_sign_or_element_categories_predict_personality
+      - date_of_birth_predicts_general_intelligence
+    n_total_approx: 15000
+    published_result: no_support_for_tested_associations
+    provisional_quality: B
+    ceiling: >
+      Strong evidence against tested broad date-of-birth and Sun-sign propositions,
+      not a test of full natal-chart interpretation.
+
+  - id: wyman-vyse-2008
+    citation: "Alyssa Jayne Wyman and Stuart Vyse, Science versus the stars"
+    journal: "Journal of General Psychology"
+    volume: 135
+    issue: 3
+    pages: "287-300"
+    doi: "10.3200/GENP.135.3.287-300"
+    pubmed: "https://pubmed.ncbi.nlm.nih.gov/18649494/"
+    sample:
+      subjects: 52
+      population: college_students
+    proposition: participants_can_identify_their_true_computer_generated_natal_profile_over_a_bogus_profile
+    comparator: NEO_Five_Factor_Inventory_profile_identification
+    published_result_summary: >
+      Participants were tested on identifying true versus bogus astrological
+      and NEO-derived personality descriptions under double-blind conditions.
+    provisional_quality: B_MINUS
+    next_action: extract_exact_hit_rates_and_statistical_results_from_full_article_before_stronger_claim
+
+  - id: kelly-1979-review
+    citation: "Ivan W. Kelly, Astrology and Science: A Critical Examination"
+    journal: "Psychological Reports"
+    volume: 44
+    year: 1979
+    doi: "10.2466/pr0.1979.44.3c.1231"
+    url: "https://journals.sagepub.com/doi/10.2466/pr0.1979.44.3c.1231"
+    evidence_class: review
+    scope:
+      - sun_sign
+      - moon_sign
+      - ascendant
+      - planetary_aspects
+      - psychological_variables
+    review_conclusion: majority_of_reviewed_studies_did_not_confirm_astrological_claims
+    caveat: positive_studies_required_further_clarification
+    provisional_quality: C_REVIEW
+    note: >
+      Historical review useful for locating older studies; individual experiments
+      should be entered separately before relying on its aggregate conclusion.
+
+  - id: van-rooij-1994-self-attribution
+    citation: "Introversion-extraversion: astrology versus psychology"
+    journal: "Personality and Individual Differences"
+    volume: 16
+    issue: 6
+    pages: "985-988"
+    doi: "10.1016/0191-8869(94)90243-7"
+    url: "https://www.sciencedirect.com/science/article/pii/0191886994902437"
+    proposition: positive_negative_sun_sign_categories_correlate_with_extraversion
+    result:
+      - association_replicated_only_among_subjects_with_astrological_knowledge
+      - cueing_strengthened_effect
+      - authors_interpreted_result_as_self_attribution_not_astrological_validity
+    importance: >
+      Demonstrates that astrological belief can itself generate personality-report
+      differences that mimic an astrological effect.
+    provisional_quality: B_MINUS
+
+  - id: fuzeau-braesch-1992-twins
+    citation: "Fuzeau-Braesch, Personality and Individual Differences 13 (1992) 1135-1144"
+    proposition: parents_can_match_astrological_personality_descriptions_between_twins
+    reported_result: positive
+    replication_status: challenged
+
+  - id: kelly-et-al-1996-twin-reanalysis
+    citation: "Are personality differences between twins predicted by astrology?"
+    journal: "Personality and Individual Differences"
+    volume: 21
+    issue: 3
+    pages: "449-454"
+    doi: "10.1016/0191-8869(96)00112-2"
+    proposition: replicate_and_reanalyse_twin_astrology_claim
+    reported_result:
+      - original_effect_not_replicated
+      - expected_birth_interval_relationship_not_found
+      - response_set_and_stereotype_artifacts_identified
+      - original_data_reanalysis_not_significantly_above_chance
+    provisional_quality: B_MINUS
+
+  - id: gauquelin-mars-effect
+    citation: "Michel and Françoise Gauquelin professional-eminence planetary-sector studies"
+    proposition: eminent_athletes_show_excess_Mars_positions_in_defined_diurnal_sectors
+    evidence_class: observational_statistical_claim
+    status: DISPUTED
+    reasons:
+      - multiple_samples_and_reanalyses
+      - disagreement_over_subject_eminence_selection
+      - disagreement_over_expected_rates
+      - historical_birth_time_quality_and_selection_concerns
+      - independent_replication_record_contested
+    branch_ceiling: >
+      Do not call the Mars effect either established validation of astrology or
+      conclusively nonexistent without binding the exact sample and analysis.
+    next_action: build_sample_by_sample replication ledger from primary reports
+
+governance:
+  quality_rubric: traditions/astrology/empirical-quality-rubric-v1.md
+  hard_rules:
+    - exact_claim_only
+    - null_does_not_generalize_to_all_astrology
+    - positive_does_not_generalize_to_all_astrology
+    - correlation_does_not_identify_mechanism
+    - belief_mediated_self_attribution_is_a_real_competing_model
