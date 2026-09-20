@@ -1,0 +1,53 @@
+schema_version: on-theo.nonabrahamic-comparison-readiness.v33
+status: NON_CANONICAL_RESEARCH_AUDIT
+supersedes_for_current_research:
+  - synthesis/NON_ABRAHAMIC_COMPARISON_READINESS_V32.yaml
+
+latest_breadth_unit:
+  yoruba_ifa: 2000081c974c25ce8f40a06e079033ac600d5ce8
+
+mature_expanded_axes:
+  DOCUMENTARY_MEMORY_MODEL:
+    status: EXPANDED_MATURE
+    test: synthesis/DOCUMENTARY_MEMORY_CROSS_TRADITION_TEST_V2.md
+    strongest_result: >
+      Authoritative memory can be stabilized by distributed systems of material
+      form, oral repertoire, specialist office and performative retrieval, and
+      medium survival does not determine semantic recoverability.
+
+  KNOWLEDGE_GOVERNANCE_DIMENSION:
+    status: EXPANDED_MATURE
+    test: synthesis/KNOWLEDGE_GOVERNANCE_CROSS_TRADITION_TEST_V1.md
+    strongest_result: >
+      Comparative readiness does not require maximum disclosure; governance of
+      access, transmission, recording and specialist competence is itself
+      evidence.
+
+yoruba_ifa_method_results:
+  - ORAL_NE_TEXTUAL_DEFICIT
+  - FIXED_INDEX_CAN_COEXIST_WITH_OPEN_CORPUS
+  - SPECIALIST_AUTHORITY_NE_CENTRALIZED_PRIESTHOOD
+  - FORM_TRANSMISSION_NE_CORPUS_TRANSMISSION
+  - DIASPORA_CONTINUITY_NE_UNCHANGED_HOMELAND
+  - PANTHEON_CHANGE_IS_POSITIVE_DATA
+
+held_yoruba_axes:
+  - WORLD_ORIGIN_MODEL
+  - POSTMORTEM_PATH_MODEL
+  - PERSON_OR_SELF_MODEL
+  - FATE_CONSTRAINT_MODEL
+  - OFFERING_EXCHANGE_MODEL
+  - POLITICAL_SACRALIZATION_MODEL
+  - SACRAL_PRESENCE_MODEL
+
+next_frontier:
+  primary: JAIN_DIACHRONIC_PACKET_V1
+  reason: >
+    Post-Yorùbá global gap audit selects Jainism as the next independent
+    tradition: it adds a major ancient South Asian tradition with sectarian
+    canon divergence, non-creator cosmology, jīva/karma/liberation models,
+    ascetic-lay institutional differentiation and strong living sources.
+
+guards:
+  - JAIN_GLOBAL_COMPARISON_HOLD_UNTIL_INTERNAL_RECONSTRUCTION
+  - SVETAMBARA_DIGAMBARA_SOURCE_BOUNDARY_REQUIRED
