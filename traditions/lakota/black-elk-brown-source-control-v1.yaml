@@ -1,0 +1,77 @@
+schema_version: on-theo.lakota-black-elk-brown-source-control.v1
+status: MEDIATED_OGLALA_TESTIMONY_CONTROLLED
+
+source:
+  title: The Sacred Pipe
+  source_speaker: BLACK_ELK
+  recorder_editor: JOSEPH_EPES_BROWN
+  community_scope: OGLALA_LAKOTA_PINE_RIDGE
+  recording_context: 1947_1949_PERIOD
+  first_publication: 1953
+  classification:
+    - MEDIATED_ORAL_TESTIMONY
+    - LATER_TRADITION
+    - COMMENTARY
+
+controls:
+  - id: BE-BROWN-EDITORIAL-001
+    evidence:
+      - UNIVERSITY_OF_OKLAHOMA_PRESS_METADATA
+      - FITZGERALD_2017_BROWN_LETTERS
+    propositions:
+      - Brown_recorded_and_edited_the_account
+      - Browns_editorial_role_is_historically_relevant
+      - Browns_personal_philosophy_is_part_of_source_context
+    status: ADMITTED
+    guard: EDITORIAL_MEDIATION_NE_FABRICATION_PROVED
+
+  - id: BE-BROWN-CATHOLIC-001
+    evidence:
+      - FITZGERALD_2017
+      - BLACK_ELK_BIOGRAPHICAL_RECORD
+    propositions:
+      - Black_Elk_had_substantial_Catholic_participation
+      - traditional_pipe_activity_and_Catholic_identity_are_not_an_exclusive_binary
+    status: ADMITTED_HISTORICAL_PROBLEM
+    supports:
+      - CONTACT_AND_REINTERPRETATION_MODEL_FUTURE
+
+  - id: BE-BROWN-SEVEN-001
+    evidence:
+      - THE_SACRED_PIPE_PUBLIC_ACCOUNT
+      - STANDING_ROCK_TITLE_VI_CURRENT_CODE
+    propositions:
+      - seven_named_ceremonial_categories_have_independent_public_attestation
+    status: PARTIAL_CORROBORATION
+    guards:
+      - CATEGORY_COUNT_NE_IDENTICAL_RITE_FORM
+      - OGLALA_ACCOUNT_NE_STANDING_ROCK_CONTEXT_IDENTITY
+
+  - id: BE-BROWN-PIPE-001
+    evidence:
+      - THE_SACRED_PIPE
+      - OGLALA_LAKOTA_COLLEGE_PUBLIC_SYMBOLISM
+      - NPS_PUBLIC_PIPE_TRADITION
+    propositions:
+      - pipe_centrality_has_independent_public_continuity
+    status: PARTIAL_CORROBORATION
+
+  - id: BE-BROWN-UNIVERSAL-001
+    proposition: The_Sacred_Pipe_is_a_universal_Lakota_catechism
+    status: NOT_ADMITTED
+
+  - id: BE-BROWN-RAW-LANGUAGE-001
+    proposition: published_English_terms_are_unmediated_Lakota_ontology
+    status: NOT_ADMITTED
+
+comparison_status:
+  RITUAL_ORDER_MODEL: PARTIAL_STRENGTHENED
+  CONTACT_AND_REINTERPRETATION_MODEL: CANDIDATE_NOT_YET_ADMITTED
+  CROSS_TRADITION_COMPARISON: HOLD
+
+guards:
+  - BLACK_ELK_TESTIMONY_NE_BROWN_EDITING_INVISIBLE
+  - THE_SACRED_PIPE_NE_COMPLETE_BLACK_ELK_BIOGRAPHY
+  - BLACK_ELK_SPEAKS_NE_THE_SACRED_PIPE
+  - PUBLICATION_NE_PERMISSION_FOR_RESTRICTED_DETAIL
+  - OGLALA_WITNESS_NE_ALL_LAKOTA
