@@ -1,0 +1,91 @@
+schema_version: on-theo.islamic-recitation-dhikr-parameter-evidence.v1
+status: NON_CANONICAL_QURANIC_RECITATION_AND_LATER_DHIKR_CONTROL
+parent_exact_head: d2a319321de9b77cefaba999fa6dd2cebc4899c5
+packet: traditions/quranic/islamic-recitation-dhikr-parameter-packet-v1.md
+
+records:
+  - id: ISL-REC-ORAL-001
+    evidence_class:
+      - DOCUMENTARY_PRACTICE
+      - SCHOLARLY_INTERPRETATION
+    evidence:
+      - DENNY_QURAN_RECITATION
+      - NELSON_ART_OF_RECITING_QURAN
+    propositions:
+      - Quranic_recitation_is_formally_taught_oral_performance
+      - articulation_pacing_stopping_and_phonological_rules_are_governed
+    supports:
+      - ACOUSTIC_PARAMETER_SENSITIVITY
+      - OPERATOR_QUALIFICATION
+    confidence: BOUNDED_STRONG
+
+  - id: ISL-REC-QIRAAT-001
+    evidence_class:
+      - DOCUMENTARY_PRACTICE
+      - HISTORICAL_RECONSTRUCTION
+      - SCHOLARLY_INTERPRETATION
+    evidence:
+      - NASSER_VARIANT_READINGS
+      - NASSER_SECOND_CANONIZATION
+    propositions:
+      - multiple_authorized_qiraat_coexist
+      - accepted_readings_can_differ_phonetically_morphologically_lexically_or_syntactically
+      - one_unique_global_acoustic_realization_is_not_the_historical_model
+    supports:
+      - AUTHORIZED_VARIANT_FAMILY_MODEL
+      - SEMANTIC_ACOUSTIC_COUPLING
+    confidence: BOUNDED_STRONG
+    negative_result:
+      - ONE_UNIVERSAL_QURANIC_ACOUSTIC_PROTOCOL_REJECTED
+
+  - id: ISL-REC-TAJWID-001
+    evidence_class:
+      - DOCUMENTARY_PRACTICE
+      - PHONETIC_ANALYSIS
+    propositions:
+      - tajwid_rules_encode_measurable_articulatory_and_acoustic_parameters
+      - correctness_is_locally_rule_governed
+    supports:
+      - ACOUSTIC_PARAMETER_SENSITIVITY
+      - OPERATOR_QUALIFICATION
+    confidence: BOUNDED_STRONG
+    empirical_external_effect: NONE_ESTABLISHED
+
+  - id: ISL-DHIKR-VARIATION-001
+    evidence_class:
+      - ETHNOGRAPHIC_PRACTICE
+      - LATER_TRADITION
+      - SCHOLARLY_INTERPRETATION
+    propositions:
+      - dhikr_can_be_silent_or_vocal
+      - dhikr_can_be_individual_or_collective
+      - selected_orders_use_repetition_posture_breath_movement_or_music
+      - dhikr_form_varies_materially_by_order_and_context
+    supports:
+      - REPETITION_COUNT_PARAMETER
+      - SOMATIC_PARAMETER
+      - ACOUSTIC_PARAMETER_SENSITIVITY
+      - SOCIAL_SYNCHRONIZATION_MODEL
+    confidence: PARTIAL_ORDER_SPECIFIC
+    negative_result:
+      - ONE_UNIVERSAL_DHIKR_PROTOCOL_REJECTED
+      - SOUND_ONLY_DHIKR_MODEL_WEAKENED
+
+axes:
+  ACOUSTIC_PARAMETER_SENSITIVITY: BOUNDED_STRONG
+  AUTHORIZED_VARIANT_FAMILY_MODEL: BOUNDED_STRONG
+  SEMANTIC_ACOUSTIC_COUPLING: BOUNDED
+  OPERATOR_QUALIFICATION: BOUNDED
+  REPETITION_COUNT_PARAMETER: PARTIAL_ORDER_SPECIFIC
+  SOMATIC_PARAMETER: PARTIAL_ORDER_SPECIFIC
+  ONE_UNIVERSAL_QURANIC_ACOUSTIC_PROTOCOL: REJECTED
+  ONE_UNIVERSAL_DHIKR_PROTOCOL: REJECTED
+  EMPIRICAL_EXTERNAL_EFFECT: NONE_ESTABLISHED
+
+guards:
+  - QURAN_NE_LATER_RECITATION_SCIENCE
+  - QIRAAT_NE_UNCONSTRAINED_VARIATION
+  - ONE_READING_NE_ALL_QIRAAT
+  - ONE_ORDER_NE_ALL_DHIKR
+  - PHONETIC_RULE_NE_METAPHYSICAL_EFFECT
+  - SILENT_AND_VOCAL_VARIATION_REMAINS_VISIBLE
