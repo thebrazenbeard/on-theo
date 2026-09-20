@@ -1,0 +1,173 @@
+schema_version: on-theo.modern-satanism-comparison-readiness-audit.v1
+status: MODERN_RELIGIOUS_FIELD_MATURE_FOR_BOUNDED_FUTURE_COMPARISON
+source_branch: research/modern-satanism-diachronic-v1-20260920
+source_head_before_audit: e98a7246d1a5b008cf779b78421fe5892e927143
+pr: 114
+
+method:
+  principle: >
+    Modern Satanism comparison cells must identify the organization/current,
+    the Satan referent, and whether the proposition is organizational
+    self-description or scholarly field classification. Historical accusations
+    of devil worship remain outside this lane.
+  required_fields:
+    - self_identified_current_or_organization
+    - Satan_referent
+    - source_mode
+    - claim_ceiling
+
+comparison_eligible_existing_axes:
+  CONTACT_AND_REINTERPRETATION_MODEL:
+    status: BOUNDED_COMPARISON_ELIGIBLE
+    source_layers:
+      - CHURCH_OF_SATAN_SYMBOLIC_ADVERSARIAL_RECODING
+      - TST_LITERARY_ADVERSARIAL_REVALUATION
+      - THEISTIC_ESOTERIC_SUPERNATURAL_REAPPROPRIATION
+    strongest_result: >
+      Modern Satanisms transform a negatively inherited Christian/Western Satan
+      figure through symbolic, literary, materialist, theistic and esoteric
+      revaluation rather than inheriting one unchanged Satan theology.
+    new_subtype: ADVERSARIAL_SYMBOL_REVALUATION
+    guards:
+      - REVALUATION_NE_SIMPLE_CONTINUITY
+      - SATAN_REFERENT_MUST_REMAIN_EXPLICIT
+
+  CONTINUITY_MODEL:
+    status: BOUNDED_COMPARISON_ELIGIBLE
+    strongest_result: >
+      Modern self-identified Satanism is historically discontinuous from the
+      imagined medieval hidden cult and instead develops through accusation,
+      literary/esoteric precursors, revaluation and modern appropriation.
+    subtype: DISCONTINUOUS_MODERN_APPROPRIATION_WITH_PRECURSORS
+    guards:
+      - PRECURSOR_NE_CONTINUOUS_INSTITUTION
+      - ATTRIBUTED_SATANISM_NE_ORGANIZATIONAL_ANCESTOR
+
+  PERSON_OR_SELF_MODEL:
+    status: BOUNDED_ORGANIZATION_SPECIFIC_COMPARISON_ELIGIBLE
+    source_layers:
+      - COS_MATERIAL_CARNAL_SELF_CENTRALITY
+      - TST_BODILY_AUTONOMY_INDIVIDUAL_SOVEREIGNTY
+    theistic_esoteric_layer: PARTIAL
+    strongest_result: >
+      Modern Satanist person/self models range from materialist self-deification
+      language to bodily autonomy/sovereignty and selected esoteric identity
+      models; they must not be merged into one individualism doctrine.
+    guards:
+      - SELF_DEIFICATION_NE_LITERAL_SUPERNATURAL_DEITY
+      - INDIVIDUAL_SOVEREIGNTY_NE_ONE_ETHIC_ACROSS_ALL_SATANISMS
+
+  RITUAL_ORDER_MODEL:
+    status: BOUNDED_ORGANIZATION_SPECIFIC_COMPARISON_ELIGIBLE
+    source_layers:
+      - COS_OPTIONAL_SELF_TRANSFORMATIONAL_PSYCHODRAMA
+      - TST_OPTIONAL_MEMBER_COMPOSED_CONSENSUAL_RITUAL
+    theistic_esoteric_layer: PARTIAL_DIVERSE
+    strongest_result: >
+      Ritual is present in multiple Satanist currents but can function as
+      psychodrama, symbolic identity work, member-created expression or
+      devotional/esoteric practice rather than one "Satanic ritual" mechanism.
+    guards:
+      - RITUAL_NE_DEVIL_WORSHIP_BY_DEFAULT
+      - SHARED_LABEL_NE_SHARED_EFFICACY_MODEL
+
+  INSTITUTIONALIZATION_MODEL:
+    status: BOUNDED_COMPARISON_ELIGIBLE_WITH_INTERNAL_VARIATION
+    source_layers:
+      - COS_FORMAL_DEGREE_ADMINISTRATIVE_HIERARCHY
+      - TST_CONGREGATIONAL_CAMPAIGN_NETWORK
+      - THEISTIC_ESOTERIC_DECENTRALIZED_FIELD_PARTIAL
+    strongest_result: >
+      The modern Satanic field includes sharply different institutional
+      architectures, from formal hierarchical recognition to congregation/
+      campaign networks and decentralized individual practice.
+    guards:
+      - INSTITUTIONALIZATION_NE_ONE_CHURCH_MODEL
+
+  AGENCY_AND_AUTHORITY_MODEL:
+    status: BOUNDED_ORGANIZATION_SPECIFIC_COMPARISON_ELIGIBLE
+    source_layers:
+      - COS_FOUNDER_TEXT_ADMINISTRATION_AND_MEMBER_INDIVIDUALISM
+      - TST_TENET_ORGANIZATION_AND_LOCAL_MEMBER_AGENCY
+    strongest_result: >
+      Organizational authority and individual sovereignty are configured
+      differently across current Satanist institutions rather than one
+      anti-authoritarian template.
+    guards:
+      - SATANIC_IDENTITY_NE_NO_AUTHORITY_STRUCTURE
+
+  SACRAL_PRESENCE_MODEL:
+    status: PARTIAL_COMPARISON_ELIGIBLE
+    source_layer: THEISTIC_ESOTERIC_ONLY
+    strongest_result: >
+      Selected self-identified theistic/esoteric Satanists treat Satan as a real
+      spiritual/supernatural referent, while major non-theistic organizations
+      explicitly do not.
+    guards:
+      - THEISTIC_LAYER_NE_ALL_SATANISM
+      - SYMBOLIC_SATAN_NE_SACRAL_PRESENCE_CLAIM
+
+held_existing_axes:
+  WORLD_ORIGIN_MODEL:
+    status: NOT_ADMITTED
+  WORLD_TERMINUS_RENEWAL_MODEL:
+    status: NOT_ADMITTED
+  POSTMORTEM_PATH_MODEL:
+    status: NOT_ADMITTED_FOR_CURRENT_FOUNDATION
+  MORTUARY_RELATIONSHIP_MODEL:
+    status: NOT_ADMITTED
+  OFFERING_EXCHANGE_MODEL:
+    status: NOT_ADMITTED
+  POLITICAL_SACRALIZATION_MODEL:
+    status: NOT_ADMITTED
+    reason: >
+      TST political/legal activism is an institutional mission layer, not a
+      theory that political authority is sacralized.
+  KNOWLEDGE_OR_DISCLOSURE_MODEL:
+    status: HOLD
+  SACRIFICE_AND_BODILY_OFFERING_MODEL:
+    status: NEGATIVE_CONTROL_FOR_COS_TST
+    reason: >
+      Current CoS and TST sources explicitly reject literal sacrificial harm;
+      the lane does not infer practices of other currents from hostile claims.
+
+internal_schema:
+  SATAN_REFERENT_MODEL:
+    status: REQUIRED_INTERNAL_DIMENSION_NOT_GLOBAL_AXIS
+    values:
+      - SYMBOLIC_INDIVIDUALIST
+      - LITERARY_METAPHORICAL_REBEL
+      - THEISTIC_SUPERNATURAL
+      - ESOTERIC_ADVERSARIAL
+      - OTHER_SOURCE_BOUND
+    reason: >
+      "Satan" itself varies too much across the field to be assumed as a single
+      ontological referent.
+
+readiness_result:
+  internal_foundation_complete: true
+  bounded_future_comparison_allowed: true
+  exact_head_binding_required: true
+  one_Satanism_theology_allowed: false
+  accusation_history_may_be_used_as_self_identified_evidence: false
+
+strongest_method_result: >
+  Modern Satanism is comparison-ready only as a family of source-specific
+  reappropriations of the Satan figure: Church of Satan, The Satanic Temple and
+  theistic/esoteric currents differ in ontology, ritual, selfhood, authority and
+  institution, while historical devil-worship accusations remain a different
+  evidence problem.
+
+next_portfolio_frontier:
+  primary: DEVIL_WORSHIP_ACCUSATION_HISTORY_V1
+  reason: >
+    The active repository queue explicitly separates modern self-identified
+    Satanism from the longer history of attributing devil worship to others. The
+    accusation category can now be researched without contaminating the modern
+    Satanism lane.
+
+guards:
+  - COMPARISON_READY_NE_ONE_SATANISM
+  - SELF_DESCRIPTION_NE_NEUTRAL_TAXONOMY
+  - ACCUSATION_NE_IDENTIFICATION
+  - EXTREMIST_FRINGE_NE_CATEGORY_WHOLE
