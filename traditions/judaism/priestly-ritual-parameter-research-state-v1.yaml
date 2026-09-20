@@ -1,0 +1,49 @@
+schema_version: on-theo.judaism-priestly-ritual-parameter-state.v1
+status: PRIESTLY_RITUAL_PARAMETER_PACKET_COMPLETE_NON_CANONICAL
+
+base:
+  audit_branch: audit/judaism-provenance-control-v1-20260919
+  exact_head: 75598bab3d62c25e7d7b05384f0a67856cd3a713
+
+new_artifacts:
+  - traditions/judaism/ancient-israel-priestly-ritual-parameter-packet-v1.md
+  - traditions/judaism/priestly-ritual-parameter-evidence-v1.yaml
+
+strongest_results:
+  - >
+    Leviticus preserves highly parameterized priestly ritual involving
+    authorization, sequence, material, space, timing, garments, washing and
+    error handling.
+  - >
+    Leviticus 10 presents both catastrophic unauthorized action and a separate
+    context-sensitive procedural deviation that is ultimately accepted.
+  - >
+    Therefore a deterministic one-error-one-failure model is rejected by the
+    source itself.
+  - >
+    Leviticus 16 is a strong source-level authorization/boundary/sequence case.
+  - >
+    Literary prescription is not direct evidence of exact historical practice.
+  - >
+    No empirical external effect of priestly parameter exactness is established.
+
+comparison_contribution:
+  ritual_interface_parameter_sensitivity:
+    status: HIGH_INFORMATION_AUTHORIZATION_BOUNDARY_CASE
+    claim_ceiling: >
+      Strong textual ritual parameterization and error logic only; no hidden
+      permission architecture or empirical divine-response mechanism established.
+
+next_frontiers:
+  - priestly_source_composition_and_date_matrix
+  - cross_ancient_near_eastern_ritual_error_comparison
+  - Leviticus_16_clause_level_sequence_matrix
+  - Lev_10_16_20_error_interpretation_comparison
+  - sanctuary_archaeology_kept_separate_from_textual_prescription
+
+guards:
+  - TEXT_NE_PERFORMANCE
+  - UNAUTHORIZED_NE_ONE_TECHNICAL_ERROR
+  - ERROR_LOGIC_NE_DETERMINISTIC_MACHINE
+  - SOURCE_CLAIMED_DIVINE_EFFECT_NE_EMPIRICAL_EFFECT
+  - HARMFUL_HISTORICAL_RITUAL_NE_MODERN_REPLICATION
