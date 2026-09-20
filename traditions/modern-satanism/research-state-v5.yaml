@@ -1,0 +1,43 @@
+schema_version: on-theo.modern-satanism-research-state.v5
+status: BOUNDED_COMPARISON_READINESS_AUDITED
+supersedes_for_current_research:
+  - traditions/modern-satanism/research-state-v4.yaml
+
+branch:
+  name: research/modern-satanism-diachronic-v1-20260920
+  pr: 114
+
+readiness_audit: traditions/modern-satanism/comparison-readiness-audit-v1.yaml
+
+comparison_eligible_bounded:
+  - CONTACT_AND_REINTERPRETATION_MODEL
+  - CONTINUITY_MODEL
+  - PERSON_OR_SELF_MODEL_ORGANIZATION_SPECIFIC
+  - RITUAL_ORDER_MODEL_ORGANIZATION_SPECIFIC
+  - INSTITUTIONALIZATION_MODEL
+  - AGENCY_AND_AUTHORITY_MODEL_ORGANIZATION_SPECIFIC
+
+comparison_eligible_partial:
+  - SACRAL_PRESENCE_MODEL_THEISTIC_ESOTERIC
+
+not_admitted_or_held:
+  - WORLD_ORIGIN_MODEL
+  - WORLD_TERMINUS_RENEWAL_MODEL
+  - POSTMORTEM_PATH_MODEL
+  - MORTUARY_RELATIONSHIP_MODEL
+  - OFFERING_EXCHANGE_MODEL
+  - POLITICAL_SACRALIZATION_MODEL
+  - KNOWLEDGE_OR_DISCLOSURE_MODEL
+
+negative_control:
+  SACRIFICE_AND_BODILY_OFFERING_MODEL: COS_TST_REJECT_LITERAL_SACRIFICE
+
+internal_dimension:
+  - SATAN_REFERENT_MODEL
+
+next_portfolio_frontier: DEVIL_WORSHIP_ACCUSATION_HISTORY_V1
+
+guards:
+  - EXACT_HEAD_BINDING_REQUIRED
+  - ORGANIZATION_CURRENT_SCOPE_REQUIRED
+  - ACCUSATION_HISTORY_SEPARATE

@@ -1,0 +1,46 @@
+schema_version: on-theo.modern-satanism-tst-evidence.v1
+status: BOUNDED_CURRENT_TST
+
+records:
+  - id: SAT-TST-REFERENT-001
+    propositions:
+      - TST_denies_literal_Satan_and_supernaturalism
+      - Satan_is_literary_rebel_symbol
+    supports:
+      - SATAN_REFERENT_MODEL
+      - CONTACT_AND_REINTERPRETATION_MODEL
+    confidence: HIGH_CURRENT_SELF_DESCRIPTION
+
+  - id: SAT-TST-TENETS-001
+    propositions:
+      - Seven_Tenets_are_current_public_ethical_structure
+      - bodily_autonomy_and_individual_sovereignty_are_explicit
+    supports:
+      - PERSON_OR_SELF_MODEL
+    confidence: HIGH_CURRENT_SELF_DESCRIPTION
+
+  - id: SAT-TST-RITUAL-001
+    propositions:
+      - ritual_is_not_universally_required
+      - ritual_can_be_member_or_local_composed
+      - official_policy_requires_consensual_non_harmful_practice
+    supports:
+      - RITUAL_ORDER_MODEL
+    confidence: HIGH_CURRENT_SELF_DESCRIPTION
+
+  - id: SAT-TST-INST-001
+    propositions:
+      - congregations_and_recognition_processes_exist
+      - public_campaigns_are_integrated_into_religious_mission
+    supports:
+      - INSTITUTIONALIZATION_MODEL
+      - AGENCY_AND_AUTHORITY_MODEL
+    confidence: HIGH_CURRENT_SELF_DESCRIPTION
+
+axis_status:
+  PERSON_OR_SELF_MODEL: BOUNDED_TST
+  RITUAL_ORDER_MODEL: BOUNDED_TST
+  INSTITUTIONALIZATION_MODEL: BOUNDED_TST
+  AGENCY_AND_AUTHORITY_MODEL: BOUNDED_TST
+  CONTACT_AND_REINTERPRETATION_MODEL: BOUNDED_TST
+  CROSS_TRADITION_COMPARISON: HOLD

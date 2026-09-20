@@ -1,0 +1,45 @@
+schema_version: on-theo.modern-satanism-theistic-esoteric-evidence.v1
+status: BOUNDED_DIVERSITY_LOWER_ORGANIZATIONAL_CEILING
+
+records:
+  - id: SAT-THEISTIC-SURVEY-001
+    evidence:
+      - INVENTION_OF_SATANISM_SURVEYS
+      - MODERN_RELIGIOUS_SATANISM_SCHOLARSHIP
+    evidence_class: SCHOLARLY_INTERPRETATION
+    propositions:
+      - self_identified_theistic_and_esoteric_Satanists_are_scholarly_attested
+      - survey_samples_show_diverse_and_hybrid_identifications
+      - field_boundaries_are_fluid
+    confidence: BOUNDED_HIGH
+
+  - id: SAT-THEISTIC-REFERENT-001
+    evidence_class: SCHOLARLY_INTERPRETATION
+    propositions:
+      - Satan_referent_can_be_literal_spiritual_esoteric_or_adversarial_in_selected_self_identified_currents
+    supports:
+      - SATAN_REFERENT_MODEL
+      - SACRAL_PRESENCE_MODEL_PARTIAL
+    confidence: PARTIAL_FIELD_LEVEL
+
+  - id: SAT-THEISTIC-INST-001
+    evidence_class: SCHOLARLY_INTERPRETATION
+    propositions:
+      - significant_parts_of_field_are_decentralized_or_individual
+      - no_single_theistic_Satanist_authority_structure_is_supported
+    supports:
+      - INSTITUTIONALIZATION_MODEL_PARTIAL
+    confidence: BOUNDED
+
+axis_status:
+  SATAN_REFERENT_MODEL: BOUNDED_HETEROGENEOUS_FIELD
+  PERSON_OR_SELF_MODEL: PARTIAL_THEISTIC_ESOTERIC_IDENTITY
+  RITUAL_ORDER_MODEL: PARTIAL_DIVERSE
+  INSTITUTIONALIZATION_MODEL: PARTIAL_DECENTRALIZED
+  CONTACT_AND_REINTERPRETATION_MODEL: BOUNDED_ADVERSARIAL_REAPPROPRIATION
+  SACRAL_PRESENCE_MODEL: PARTIAL_THEISTIC
+  CROSS_TRADITION_COMPARISON: HOLD
+
+guards:
+  - FIELD_DIVERSITY_REMAINS_VISIBLE
+  - NO_SINGLE_THEISTIC_CREED
