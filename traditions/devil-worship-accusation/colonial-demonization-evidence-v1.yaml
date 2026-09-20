@@ -1,0 +1,35 @@
+schema_version: on-theo.devil-worship-colonial-demonization-evidence.v1
+status: BOUNDED_COLONIAL_DEMONOLOGICAL_RECODING
+
+cases:
+  NEW_SPAIN:
+    evidence:
+      - SOLODKOW_EVANGELIZATION_DEMON_CONCEPT
+      - LOPEZ_MERAZ_MENDIETA_DEMONOLOGY
+    evidence_class: SCHOLARLY_INTERPRETATION
+    propositions:
+      - Christian_demonological_categories_were_used_to_explain_Indigenous_religious_difference
+      - idolatry_and_sacrifice_could_be_reframed_through_Devil_language
+    confidence: BOUNDED_HIGH
+
+  COLONIAL_ANDES:
+    evidence:
+      - MACCORMACK_MISSIONARY_CHRISTIANITY
+      - REDDEN_DIABOLISM_IN_COLONIAL_PERU
+    evidence_class: SCHOLARLY_INTERPRETATION
+    propositions:
+      - huacas_and_Andean_religious_communication_were_demonized_by_missionaries
+      - missionary_demonization_supported_coercive_religious_policy
+    confidence: HIGH
+
+method_result:
+  observation_interpretation_split_required: true
+  target_religion_devillanguage_inference_allowed: false
+
+axis_status:
+  CONTACT_AND_REINTERPRETATION_MODEL: BOUNDED_HOSTILE_SEMANTIC_RECODING
+  ATTRIBUTION_STATUS: COLONIAL_TRANSLATION
+  CROSS_TRADITION_COMPARISON: BOUNDED_METHOD_COMPARISON_ONLY
+
+guards:
+  - COLONIAL_SEMANTIC_MAPPING_NE_NATIVE_IDENTITY
