@@ -1,0 +1,89 @@
+schema_version: on_theo.ephrem_syriac_gospel_transmission.v1
+status: BOUNDED_SOURCE_WITNESS_PACKET_REVIEW_REQUIRED
+canonical: false
+
+base:
+  branch: corpus/late-antique-contact-zone-v1-20260917
+  exact_head: 22d4a193ada3b63591dcdc41c975739ceba20b54
+
+sources:
+  - id: SYR-SRC-EPHREM-COMMENTARY
+    evidence_class: PRIMARY_TEXT
+    author: Ephrem_the_Syrian
+    period: fourth_century
+    role: commentary_on_tatianic_gospel_tradition
+
+  - id: SYR-WIT-CBL-709
+    evidence_class: MANUSCRIPT_WITNESS
+    repository: Chester_Beatty_Library
+    shelfmark: Syriac_MS_709
+    approximate_witness_date: late_fifth_to_early_sixth_century
+    witnesses: Ephrem_commentary
+    witnesses_tatian_directly: false
+
+  - id: SYR-WIT-ARMENIAN-EPHREM-COMMENTARY
+    evidence_class: MANUSCRIPT_WITNESS
+    mode: Armenian_translation_tradition
+    completeness: complete_commentary
+    original_language: not_Armenian
+
+  - id: SYR-SCH-CRAWFORD-FOURFOLD
+    evidence_class: SCHOLARLY_INTERPRETATION
+    role: ephrem_multiple_gospel_forms
+    url: https://hugoye.bethmardutho.org/article/hv18n1crawford.html
+
+claims:
+  - id: SYR-EPH-V1-001
+    proposition: A substantial Syriac manuscript witness to Ephrem's commentary survives.
+    status: BOUNDED
+    confidence: strong
+
+  - id: SYR-EPH-V1-002
+    proposition: The Chester Beatty witness date is the composition date of Ephrem or Tatian.
+    status: NOT_ADMITTED
+
+  - id: SYR-EPH-V1-003
+    proposition: The complete commentary requires Armenian transmission in addition to surviving Syriac material.
+    status: BOUNDED
+    confidence: strong
+
+  - id: SYR-EPH-V1-004
+    proposition: Ephrem's Gospel environment included Tatianic predominance alongside knowledge/use of separated Gospel forms.
+    class: HISTORICAL_RECONSTRUCTION
+    status: BOUNDED
+    confidence: moderate_to_strong
+
+  - id: SYR-EPH-V1-005
+    proposition: Ephrem's use of Tatian proves ignorance of distinct Matthew-Mark-Luke-John traditions.
+    status: NOT_ADMITTED
+
+  - id: SYR-EPH-V1-006
+    proposition: A complete direct Syriac manuscript of Tatian's original Gospel harmony survives.
+    status: NOT_ADMITTED
+
+  - id: SYR-EPH-V1-007
+    proposition: Ephrem's commentary is a major indirect witness for reconstructing Tatianic Gospel readings.
+    class: HISTORICAL_RECONSTRUCTION
+    status: BOUNDED
+    confidence: strong
+
+  - id: SYR-EPH-V1-008
+    proposition: Syriac Gospel transmission is better modeled as layered coexistence and transition than a single clean replacement.
+    class: HISTORICAL_RECONSTRUCTION
+    status: BOUNDED
+    confidence: moderate_to_strong
+
+guards:
+  - TATIAN_DIATESSARON_NE_EPHREM_COMMENTARY
+  - EPHREM_COMPOSITION_DATE_NE_CBL709_WITNESS_DATE
+  - COMMENTARY_QUOTATION_NE_EXTANT_TATIAN_MANUSCRIPT
+  - ARMENIAN_COMPLETE_COMMENTARY_NE_ARMENIAN_ORIGINAL
+  - TATIANIC_USE_NE_IGNORANCE_OF_SEPARATED_GOSPELS
+  - RECONSTRUCTED_DIATESSARON_NE_EXTANT_TATIAN_TEXT
+  - SYRIAC_GOSPEL_HISTORY_NE_ONE_LINEAR_REPLACEMENT_EVENT
+
+next_scope:
+  - APHRAHAT_PRIMARY_RECEPTION_PACKET
+  - OLD_SYRIAC_PESHITTA_WITNESS_BOUNDARY
+  - SYRIAC_GOSPEL_TRANSITION_MATRIX
+  - TESTAMENT_BOOK_VI_SYRIAC_CARRYDOWN
