@@ -1,0 +1,80 @@
+schema_version: on_theo.excerpta_theodoto_initiation_control.v1
+status: BOUNDED_COMPOSITE_WITNESS_REVIEW_REQUIRED
+canonical: false
+
+parent:
+  branch: research/gospel-philip-ritual-control-v1-20260920
+  exact_head: fe0be9d324cd8e537f0bfb43c13310bf69304fbb
+
+source:
+  id: VAL-SRC-EXCERPTA-THEODOTO
+  compiler: Clement_of_Alexandria
+  traditional_title: Excerpta_ex_Theodoto
+  evidence_class: PRIMARY_TEXT
+  direct_theodotus_authorship_of_whole: false
+  content_modes:
+    - extract
+    - summary
+    - reported_valentinian_teaching
+    - clementine_comment
+  attribution_requires_local_review: true
+
+initiation_cluster:
+  locus: 76-85
+
+claims:
+  - id: EXC-V1-001
+    proposition: The initiation cluster represents baptism as death/rebirth and soul-level transformation.
+    status: BOUNDED
+    confidence: strong_for_composite_text
+    attribution: VALENTINIAN_REPORTED_TEACHING
+
+  - id: EXC-V1-002
+    proposition: Washing is represented as insufficient without liberating knowledge.
+    status: BOUNDED
+    confidence: strong_for_composite_text
+
+  - id: EXC-V1-003
+    proposition: Baptism is represented as liberation from Fate and hostile powers.
+    status: BOUNDED
+    confidence: strong_for_reported_theology
+
+  - id: EXC-V1-004
+    proposition: Triadic Father-Son-Spirit sealing language appears in the initiation cluster.
+    status: BOUNDED_FOR_TEXT
+    practice_inference: PARTIAL
+
+  - id: EXC-V1-005
+    proposition: Baptism is interpreted through both material water and spiritual Spirit dimensions.
+    status: BOUNDED
+    confidence: strong_for_text
+
+  - id: EXC-V1-006
+    proposition: Bread, oil, and water are described as ritually sanctified/efficacious.
+    status: BOUNDED_FOR_TEXT
+    practice_inference: PARTIAL_MODERATE
+
+  - id: EXC-V1-007
+    proposition: Fasting, supplication, prayer, raised hands, and kneeling are associated with baptismal preparation.
+    status: BOUNDED_FOR_TEXT
+    practice_inference: PARTIAL
+
+  - id: EXC-V1-008
+    proposition: Irenaeus describes materially diverse redemption/initiation practices among related opponents.
+    class: HISTORICAL_RECONSTRUCTION
+    status: BOUNDED
+    confidence: moderate_to_strong
+
+guards:
+  - EXCERPTA_NE_ONE_DIRECT_THEODOTUS_DOCUMENT
+  - LOCAL_ATTRIBUTION_REQUIRED
+  - WASHING_PLUS_KNOWLEDGE_NE_BAPTISM_REJECTION
+  - TEXTUAL_RITUAL_OBJECT_DESCRIPTION_NE_COMPLETE_LITURGY
+  - IRENAEUS_CATEGORY_NE_ONE_SELF_IDENTIFIED_INSTITUTION
+  - NUPTIAL_COUCH_REPORT_NE_GOSPEL_PHILIP_LITERAL_SEXUAL_RITE
+  - RITUAL_DIVERSITY_NE_ONE_VALENTINIAN_SYSTEM
+
+next_scope:
+  - VALENTINIAN_RITUAL_NONHARMONIZING_COMPARISON
+  - BOOK_V_SCRIPTURE_RITUAL_PLURALITY_SYNTHESIS
+  - BOOK_V_HOSTILE_REREVIEW
