@@ -1,0 +1,98 @@
+schema_version: on-theo.buddhism-early-parallel-witness-map.v1
+status: CROSS_TRANSMISSION_CONTROL
+source_parent_head: 424141833be13e3db085d821c4ec6f30455a84c9
+
+families:
+  - id: NOT_SELF_FAMILY
+    pali: SN_22_59
+    chinese:
+      - SA_34_T99_34
+      - T_102
+      - SA_33_RELATED
+    vinaya:
+      - MAHISASAKA_PARALLEL
+      - DHARMAGUPTAKA_PARALLEL
+    gandhari:
+      id: RS22_02_ANATVALAKSANA
+      collection: ROBERT_SENIOR
+      material: BIRCH_BARK
+      language: GANDHARI
+      script: KHAROSTHI
+      approximate_date_ce: 140
+      findspot: UNCERTAIN_PROBABLY_HADDA_AFGHANISTAN
+      current_location: UNIVERSITY_OF_WASHINGTON_SEATTLE
+    shared_proposition_ceiling:
+      - five_aggregates_not_self
+      - control_affliction_argument
+      - impermanence_change
+      - non_identification_with_aggregates
+    comparison_strength: HIGH_CROSS_LINE_PLUS_PHYSICAL_WITNESS
+
+  - id: KACCANAGOTTA_FAMILY
+    pali: SN_12_15
+    chinese:
+      - SA_301_T99_301
+      - SA_262_PARTIAL
+    sanskrit:
+      - SF_168_KATYAYANAH
+    shared_proposition_ceiling:
+      - existence_nonexistence_binary_rejected
+      - conditioned_arising_and_cessation_as_middle_explanation
+    comparison_strength: HIGH_CROSS_LINE
+
+  - id: VOLITION_CONTINUITY_FAMILY
+    pali: SN_12_38
+    chinese:
+      - SA_359_T99_359
+    shared_proposition_ceiling:
+      - volition_or_tendency_supports_consciousness
+      - established_consciousness_links_to_future_renewed_existence
+      - future_birth_aging_death_suffering
+      - cessation_when_basis_absent
+    comparison_strength: HIGH_CROSS_LINE
+    term_level_alignment: PENDING
+
+  - id: KAMMA_INTENTION_FAMILY
+    pali: AN_6_63
+    chinese:
+      - MA_111_T26_111
+      - T_57
+    shared_proposition_ceiling:
+      - intention_is_central_to_karmic_action
+    explicit_divergence:
+      - MA_111_distinguishes_intention_and_action_after_intending
+      - result_classification_not_identical
+    comparison_strength: MODERATE_TO_HIGH_WITH_DIVERGENCE
+
+  - id: DEPENDENT_ORIGINATION_FORMULA_FAMILY
+    pali:
+      - SN_12_1_2
+      - SN_12_2
+    chinese:
+      - SA_298
+      - T_124
+      - EA_49_5
+    sanskrit:
+      - MULTIPLE_FRAGMENT_WITNESSES_LISTED_BY_SUTTACENTRAL
+    comparison_strength: FAMILY_ATTESTATION_STRONG_EXACT_CLAUSE_ALIGNMENT_PENDING
+
+witness_rules:
+  - PARALLEL_NE_VERBATIM_IDENTITY
+  - PARALLEL_NE_SAME_SCHOOL
+  - PARALLEL_NE_SAME_DATE
+  - MANUSCRIPT_DATE_NE_COMPOSITION_DATE
+  - SHARED_PROPOSITION_NE_COMPLETE_DOCTRINAL_IDENTITY
+  - DIVERGENCE_IS_POSITIVE_DATA
+
+comparison_axis_effect:
+  PERSON_OR_SELF_MODEL: CROSS_LINE_STRENGTHENED
+  CAUSAL_ORDER_TYPE: CROSS_LINE_STRENGTHENED
+  CONTINUITY_MODEL: CROSS_LINE_STRENGTHENED
+  MORAL_CAUSALITY_MODEL: CROSS_LINE_STRENGTHENED_WITH_VARIANT_CONTROL
+  LIBERATION_OR_FINAL_TRANSFORMATION_MODEL: PALI_PACKET_ONLY_PENDING_PARALLEL_WORK
+
+source_surfaces:
+  - SUTTACENTRAL_PARALLEL_INDEX
+  - GANDHARAN_BUDDHIST_TEXTS_JOURNAL
+  - ANALAYO_SAMYUKTAGAMA_TRANSLATION
+  - COMPARATIVE_EARLY_BUDDHIST_SCHOLARSHIP
