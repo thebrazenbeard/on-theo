@@ -1,0 +1,49 @@
+schema_version: on-theo.andean-living-reciprocity-evidence.v1
+status: BOUNDED_CURRENT_SELECTED_COMMUNITIES
+
+records:
+  - id: AND-LIVE-AYNI-001
+    source: NMAI_INKA_EMPIRE
+    evidence_class:
+      - MODERN_TRADITION
+      - COMMUNITY_COLLABORATIVE_MUSEUM_SYNTHESIS
+    propositions:
+      - ayni_reciprocity_remains_publicly_attested
+      - community_labor_for_common_good_is_publicly_attested
+    supports:
+      - RELATIONAL_ORDER_MODEL
+    confidence: BOUNDED_CURRENT
+
+  - id: AND-LIVE-ROAD-001
+    evidence:
+      - NMAI_INKA_EMPIRE
+      - UNESCO_QHAPAQ_NAN
+    propositions:
+      - selected_communities_continue_to_maintain_Qhapaq_Nan_segments
+      - traditional_knowledge_and_identity_are_related_to_road_custodianship
+    supports:
+      - CONTINUITY_MODEL
+      - RELATIONAL_ORDER_MODEL
+    confidence: BOUNDED_CURRENT
+
+  - id: AND-LIVE-OFFER-001
+    source: NMAI_INKA_EMPIRE
+    propositions:
+      - selected_current_contexts_include_offerings_to_Pachamama_and_apus
+    supports:
+      - OFFERING_EXCHANGE_MODEL_PARTIAL
+      - SACRED_LAND_PLACE_MODEL
+      - RELATIONAL_ORDER_MODEL
+    confidence: BOUNDED_SELECTED_CONTEXTS
+
+axis_status:
+  RELATIONAL_ORDER_MODEL: BOUNDED_LIVING_ANDEAN_RECIPROCITY
+  SACRED_LAND_PLACE_MODEL: BOUNDED_LIVING_LAND_MOUNTAIN
+  CONTINUITY_MODEL: BOUNDED_PRACTICE_INFRASTRUCTURE_WITH_CHANGE
+  OFFERING_EXCHANGE_MODEL: PARTIAL_LIVING
+  CONTACT_AND_REINTERPRETATION_MODEL: PARTIAL_PENDING
+  CROSS_TRADITION_COMPARISON: HOLD
+
+guards:
+  - COMMUNITY_LANGUAGE_REGION_REQUIRED
+  - CURRENT_NE_IMPERIAL_IDENTITY
