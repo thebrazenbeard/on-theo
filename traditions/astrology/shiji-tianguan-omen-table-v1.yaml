@@ -1,0 +1,206 @@
+schema: ON_THEO_SHIJI_TIANGUAN_OMEN_TABLE_V1
+status: PRIMARY_TEXT_PROPOSITION_MAP
+work:
+  title_chinese: 天官書
+  title_english: Treatise_on_the_Celestial_Offices
+  parent_work: Shiji
+  chapter: 27
+  compiler: Sima_Qian
+  approximate_compilation: late_second_to_early_first_century_BCE
+primary_text:
+  - https://ctext.org/shiji/tian-guan-shu/zhs
+  - https://ctext.org/wiki.pl?chapter=574568&if=en&remap=gb
+scholarly_control:
+  - David_W_Pankenier_Astrology_and_Cosmology_in_Early_China_2013
+  - https://www.cambridge.org/core/books/abs/astrology-and-cosmology-in-early-china/astrology-for-an-empire-the-treatise-on-the-celestial-offices-inthe-grand-scribes-recordsc100-bce/DA44B073CC2AFD196F6EA8893057FC08
+
+propositions:
+  - id: TJ-001
+    phenomenon: twenty_eight_mansions
+    celestial_structure: 二十八舍
+    terrestrial_mapping: twelve_states_or_regions
+    proposition: >
+      The twenty-eight mansions are mapped to terrestrial political regions,
+      creating a field-allocation framework for interpreting celestial events.
+    class: PRIMARY_TEXT
+    confidence: high
+    guard: FIELD_ALLOCATION_NE_NATAL_HOUSES
+
+  - id: TJ-002
+    phenomenon: Venus
+    name_chinese: 太白
+    correspondence:
+      direction: west
+      season: autumn
+      phase: metal
+    terrestrial_domains:
+      - warfare
+      - punishment
+      - rulers_and_states
+    proposition: >
+      Deviations in Venus's expected course are treated as omens affecting the
+      polity associated with the mansion in which the event occurs.
+    class: PRIMARY_TEXT
+    confidence: high
+    guard: CORRESPONDENCE_NE_MODERN_PHYSICAL_CAUSE
+
+  - id: TJ-003
+    phenomenon: Mercury
+    name_chinese: 辰星
+    correspondence:
+      direction: north
+      phase: water
+      polarity: greater_yin
+    terrestrial_domains:
+      - punishment
+      - frontier_or_foreign_affairs
+      - mapped_state
+    proposition: >
+      Mercury's celestial state is read through a directional/phase/political
+      correspondence system rather than a personal natal-trait system.
+    class: PRIMARY_TEXT
+    confidence: high
+
+  - id: TJ-004
+    phenomenon: five_planet_conflict
+    terrestrial_outcome:
+      - external_warfare
+      - internal_disorder
+    proposition: >
+      When the five planets are described as contending or their light reaches
+      one another, the text associates the configuration with warfare or
+      internal disorder.
+    class: PRIMARY_TEXT
+    confidence: high
+
+  - id: TJ-005
+    phenomenon: three_planet_convergence
+    terrestrial_outcome:
+      - warfare
+      - mourning
+      - famine
+      - ruler_replacement
+    proposition: >
+      A three-planet convergence within a mapped mansion is associated with
+      conflict and political succession or replacement.
+    class: PRIMARY_TEXT
+    confidence: high
+
+  - id: TJ-006
+    phenomenon: four_planet_convergence
+    terrestrial_outcome:
+      - warfare
+      - mourning
+      - social_displacement
+    proposition: >
+      Four-planet convergence is treated as a larger political and social omen.
+    class: PRIMARY_TEXT
+    confidence: high
+
+  - id: TJ-007
+    phenomenon: five_planet_convergence
+    terrestrial_outcome:
+      - dynastic_legitimacy
+      - new_ruler
+      - broad_political_order
+      - calamity_if_unvirtuous
+    proposition: >
+      A massing of all five planets is linked to political legitimacy and
+      rulership, with the outcome conditioned by the ruler's virtue.
+    class: PRIMARY_TEXT
+    confidence: high
+    significance: >
+      The same celestial configuration is not represented as an unconditional
+      deterministic output; moral-political state changes the expected outcome.
+
+  - id: TJ-008
+    phenomenon: stellar_color_or_shape_change
+    example: Lang_or_related_asterism
+    terrestrial_outcome:
+      - banditry
+      - disorder
+    proposition: >
+      Changes in stellar appearance can be interpreted as political or social
+      omens.
+    class: PRIMARY_TEXT
+    confidence: medium_high
+
+  - id: TJ-009
+    phenomenon: Southern_Pole_Old_Man_visibility
+    terrestrial_outcome:
+      visible: peace_and_order
+      absent: warfare
+    proposition: >
+      Visibility or non-visibility of particular asterisms is assigned a
+      terrestrial political meaning.
+    class: PRIMARY_TEXT
+    confidence: medium_high
+
+  - id: TJ-010
+    phenomenon: abnormality_threshold
+    proposition: >
+      Celestial change is not automatically an omen; the text says deviations
+      become prognostically relevant when they exceed the normal measure.
+    class: PRIMARY_TEXT
+    confidence: high
+    significance: >
+      This is a built-in normal-versus-anomalous discriminator and should not be
+      represented as interpreting every ordinary celestial state equally.
+
+  - id: TJ-011
+    phenomenon: omen_response
+    mappings:
+      solar_change: cultivate_virtue
+      lunar_change: review_punishments
+      stellar_change: restore_harmony
+    proposition: >
+      The text prescribes governmental or moral response to celestial warning.
+    class: PRIMARY_TEXT
+    confidence: high
+
+  - id: TJ-012
+    phenomenon: response_hierarchy
+    response_order:
+      - cultivate_virtue
+      - improve_governance
+      - remedial_action
+      - ritual_warding
+    proposition: >
+      Celestial prognostication is embedded in a hierarchy of political action,
+      not merely passive prediction.
+    class: PRIMARY_TEXT
+    confidence: high
+
+  - id: TJ-013
+    phenomenon: heaven_human_correspondence
+    proposition: >
+      The treatise explicitly presents celestial and political affairs as
+      symbolically/correlatively connected.
+    class: PRIMARY_TEXT
+    confidence: high
+    guard: >
+      HEAVEN_HUMAN_CORRESPONDENCE_NE_NEWTONIAN_CAUSATION_NE_SIMULATION_CONTROLLER
+
+model_characterization:
+  dominant_mode: political_mundane_omenology
+  natal_personality_model: false
+  field_allocation: true
+  anomaly_sensitive: true
+  ruler_response_loop: true
+  moral_conditioning: true
+  fixed_fatalism: false_as_simple_summary
+
+research_guards:
+  - CELESTIAL_OFFICE_NE_WESTERN_ZODIAC_SIGN
+  - FIELD_ALLOCATION_NE_HOUSE_SYSTEM
+  - OMEN_NE_PHYSICAL_CAUSE
+  - CORRELATIVE_COSMOLOGY_NE_HIDDEN_CONTROLLER_EVIDENCE
+  - POLITICAL_RESPONSE_NE_PASSIVE_DETERMINISM
+  - LATER_COMMENTARY_NE_SIMA_QIAN_WORDING
+
+next:
+  - line_level_chinese_phrase_crosswalk
+  - five_planet_individual_tables
+  - comet_guest_star_eclipse_table
+  - field_allocation_region_map
+  - compare_Shiji_with_Han_Shu_Yiwen_Zhi

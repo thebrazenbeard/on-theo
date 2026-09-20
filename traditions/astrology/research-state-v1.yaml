@@ -8,98 +8,106 @@ primary_text_transmission_commit_v4: 6b1b26c9abffddf0af33759e421eeadbd00bd837
 documentary_technique_commit_v5: cfbe88c909e3d70729a6c7435c7f0ae67eba5b07
 catalog_reference_sim_commit_v6: 44a1bce72e777c43e5a090dae71b4e6c448da628
 blind_benchmark_commit_v7: e608ed75fe0fe669f20a1c1d49b9c6d1a6f2c4b0
-status: VOSS_BLIND_ANALYST_RESULT_V8
+voss_result_commit_v8: 1f239b1d9d371ec3782ae9f1113a74bdb927d4bb
+status: CHINESE_PRIMARY_AND_EMPIRICAL_LEDGER_V9
 merge_status: UNMERGED
 
 simulation:
-  development_generator:
-    path: experiments/astrology/reference_simulation.py
-    status: IMPLEMENTED_SYNTHETIC_V1
-    blind_safe: false
-
-  blind_benchmark:
-    generator: experiments/astrology/blind_benchmark.py
-    scorer: experiments/astrology/score_benchmark.py
-    protocol: experiments/astrology/BLIND_BENCHMARK.md
-    status: IMPLEMENTED_V1
-    world_classes: 8
-
   voss_baseline:
     result_artifact: experiments/astrology/VOSS_BASELINE_RESULT_V1.md
-    analyst_repo: thebrazenbeard/voss
-    analyst_branch: revival/voss-forensic-analyst-v2-20260920
-    analyst_frozen_commit: d8660dc63e4813f37ed1722a2e867ee2c10b1a49
-    result_commit: fe2f309539246d52ec24b83949f603d855657a1d
-    protocol:
-      calibration_per_class: 20
-      heldout_per_class: 25
-      heldout_runs: 200
-      agents: 200
-      steps: 360
-    forced:
-      exact_correct: 156
-      total: 200
-      accuracy: 0.78
-    cautious:
-      resolved: 121
-      unresolved: 79
-      coverage: 0.605
-      exact_correct: 119
-      accuracy_resolved: 0.9834710743801653
-      overall_exact: 0.595
-    current_identifiability:
-      S1_PHYSICAL: STRONGLY_SEPARABLE
-      S3_RUNTIME: STRONGLY_SEPARABLE
-      S5_COMMON_CAUSE: STRONGLY_SEPARABLE_IN_THIS_SIMULATOR
-      S6_CULTURAL_ONLY: MOSTLY_SEPARABLE
-      S7_WEAK_SIGNAL_CULTURAL: MOSTLY_SEPARABLE
-      S0_NULL: NOT_RELIABLY_SEPARABLE_FROM_S2_S4
-      S2_NATAL_SEED: PARTIALLY_DETECTABLE_NOT_RELIABLE
-      S4_PLASTICITY: NOT_RELIABLY_SEPARABLE_FROM_S0_S2
-    hard_family_forced_accuracy:
-      family: [S0_NULL, S2_NATAL_SEED, S4_PLASTICITY]
-      exact: 34
-      total: 75
-      accuracy: 0.4533333333333333
+    external_voss_work: DELEGATED_TO_OTHER_CHAT
+    current_branch_action: NO_VOSS_MUTATION_THIS_PASS
+    current_identifiability_guard: >
+      Preserve the V8 held-out result unchanged while historical and empirical
+      source work continues independently.
 
 historical_corpus:
   babylonian:
     top_level_catalog_complete: true
     horoscope_texts: 28
     birth_notes: 4
-  greek:
-    earliest_papyrus_anchor: BKT_X_29_P11831_29_BCE
-    stale_10_BCE_earliest_claim: superseded
-  Dorotheus:
-    technique_matrix: v2_partial
-  Valens:
-    technique_matrix: v1
-    worked_chart_registry: v1_seeded
-  Yavanajataka:
-    dating_dispute: active
-    manuscript_witness_map: v1
+
+  greco_roman:
+    Greek_documentary_registry: v2_partial
+    Dorotheus_technique_matrix: v2_partial
+    Valens_worked_chart_registry: v1_partial
+
+  chinese:
+    indigenous_import_separation: v1
+    Shiji_Tianguan_shu:
+      primary_omen_table: v1_created
+      causal_architecture: v1_created
+      key_findings:
+        - field_allocation
+        - normal_vs_anomalous_state
+        - political_and_military_omenology
+        - ruler_response_loop
+        - moral_conditioning
+      not_natal_personality_astrology: true
+    remaining:
+      - line_level_full_Tianguan_shu_crosswalk
+      - five_planet_individual_tables
+      - comet_guest_star_eclipse_table
+      - excavated_daybook_hemerology
+      - Xiuyao_jing_technical_table
+
+  indian_jyotisa:
+    Yavanajataka:
+      dating_dispute: active
+      manuscript_witness_map: v1
+    Varahamihira:
+      primary_map: started
+
+empirical:
+  registry: v3_source_bound_delta
+  Carlson_1985:
+    status: DISPUTED_INTERPRETATION_OF_DEFINED_PROTOCOL
+    original_first_choice: 40_of_116
+    chance_approx: 38_5_of_116
+    later_reanalysis: recorded_without_promotion_to_replication
+  Wyman_Vyse_2008:
+    sample: 52
+    natal_profile_identification: not_above_chance
+    NEO_profile_identification: above_chance
+    Barnum_effect: observed_for_both
+  Gauquelin:
+    replication_ledger: v1_created
+    current_status: DISPUTED
+    key_method_variables:
+      - athlete_eminence
+      - sample_selection
+      - expected_rate
+      - birth_time_quality
+      - subgroup_predeclaration
+      - reanalysis_vs_independent_replication
+
+new_v9_artifacts:
+  - traditions/astrology/shiji-tianguan-omen-table-v1.yaml
+  - traditions/astrology/chinese-astral-causal-architecture-v1.md
+  - traditions/astrology/gauquelin-replication-ledger-v1.yaml
+  - traditions/astrology/empirical-study-registry-v3.yaml
 
 guards:
-  - DEVELOPMENT_OUTPUT_NE_BLIND_OUTPUT
-  - PUBLIC_PROJECTION_MUST_EXCLUDE_LATENT_STATE
-  - FORCED_CHOICE_NE_EVIDENCE_GATED_VERDICT
-  - UNRESOLVED_IS_VALID_CLASSIFICATION
-  - HELDOUT_FAILURE_NE_ANALYST_FAILURE
-  - POSTHOC_THRESHOLD_TUNING_NE_VALID_RESCUE
-  - CURRENT_OBSERVATION_SURFACE_INSUFFICIENT_FOR_RELIABLE_S0_S2_S4_SEPARATION
-  - IDENTIFIABLE_SYNTHETIC_CAUSE_NE_REAL_CAUSE
-  - S5_RECOVERY_IN_THIS_SIMULATOR_NE_GENERAL_HIDDEN_CAUSE_RECOVERY
-  - SIMULATION_RESULT_NE_ASTROLOGY_EVIDENCE
+  - VOSS_RESULT_V8_REMAINS_FROZEN
+  - OMEN_NE_PHYSICAL_CAUSE
+  - FIELD_ALLOCATION_NE_NATAL_HOUSE
+  - ANOMALY_DETECTION_ANALOGY_NE_ANCIENT_COMPUTATION_CLAIM
+  - POLITICAL_RESPONSE_LOOP_NE_FIXED_FATALISM
+  - SAME_DATA_REANALYSIS_NE_INDEPENDENT_REPLICATION
+  - POSITIVE_SUBGROUP_NE_POSITIVE_FULL_SAMPLE
+  - NEGATIVE_FULL_SAMPLE_NE_PROOF_ALL_SUBGROUP_EFFECTS_IMPOSSIBLE
+  - EMINENCE_GRADIENT_NE_CAUSAL_MECHANISM
+  - UNEXPLAINED_CORRELATION_NE_CONTROLLER_SIGNAL
 
 next_frontiers:
-  - redesign_observation_surface_for_S0_S2_S4_before_new_confirmatory_run
-  - predeclare_longer_horizon_population_and_continuous_outcome_variants
-  - add_intervention_or_perturbation_worlds
-  - run_second_fresh_heldout_only_after_redesign_freeze
-  - add_train_holdout_temporal_and_agent_splits
-  - build_real_ephemeris_adapter_only_after_synthetic_identifiability
+  - full_Shiji_line_level_crosswalk
+  - excavated_Chinese_daybook_hemerology_map
+  - Xiuyao_jing_imported_astrology_table
+  - bind_Comite_Para_primary_report
+  - bind_CFEPP_1996_primary_tables
+  - audit_Gauquelin_expected_rate_and_birth_time_quality
+  - empirical_registry_v4_with_effect_sizes_and_predeclaration
   - continue_full_Greek_documentary_registry
-  - continue_Dorotheus_and_Valens_primary_extraction
-  - Shiji_Tianguan_shu_primary_omen_table
-  - Gauquelin_dataset_replication_ledger
-  - empirical_registry_v3_primary_source_binding
+  - complete_Dorotheus_and_Valens_primary_extraction
+  - Maimonides_and_Ibn_Ezra_primary_contrast
+  - Varahamihira_full_technique_index

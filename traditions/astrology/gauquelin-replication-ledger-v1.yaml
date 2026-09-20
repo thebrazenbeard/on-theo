@@ -1,0 +1,198 @@
+schema: ON_THEO_GAUQUELIN_MARS_REPLICATION_LEDGER_V1
+status: DISPUTE_LEDGER_V1
+claim:
+  proposition: >
+    Eminent athletes are born with Mars in Gauquelin-defined key diurnal
+    sectors more often than the appropriate expected/base rate.
+  guard: >
+    This is not the proposition that Mars signs, ordinary horoscope houses, or
+    Mars gravity predict athleticism.
+
+records:
+  - id: gauquelin-first-french-570
+    year_reported: 1955
+    population: French_sports_champions
+    n: 570
+    collector: Michel_Gauquelin
+    reported_result: positive
+    source_status: retrospective_summary_bound
+    source:
+      - https://cyclesresearchinstitute.org/subjects/cycles-astrology/gauguelin/
+    note: >
+      Gauquelin's later retrospective reproduces the first 570-athlete
+      distribution. Original 1955 selection and calculation rules still require
+      direct edition-level audit.
+
+  - id: gauquelin-european-2088
+    population: European_sports_champions
+    n: 2088
+    collector: Gauquelin
+    key_sector_observed_rate: 0.2165
+    comparison_rate_reported: 0.1717
+    reported_result: positive
+    source_status: contemporary_controversy_source
+    source:
+      - https://skepticalinquirer.org/wp-content/uploads/sites/29/2019/03/Issue-02-2.pdf
+    note: >
+      Dennis Rawlins reported the 21.65% versus 17.17% figures while disputing
+      whether the later U.S. replication supported the effect.
+
+  - id: comite-para-belgium
+    approximate_year: 1976
+    population: European_sports_champions
+    n: 535
+    collector: Comite_Para
+    independence: independent_collection
+    result_by_ertel_1992: positive_replication
+    primary_committee_result_binding: incomplete
+    sources:
+      - https://www.researchgate.net/publication/242150722_Update_on_the_Mars_Effect
+    classification: DISPUTED_PENDING_PRIMARY_REPORT
+    guard: >
+      Ertel's positive characterization is not a substitute for the committee's
+      own complete report and protocol.
+
+  - id: zelen-base-rate-control
+    period: 1970s
+    athlete_subsample: 303
+    matched_nonchampion_births: 16756
+    purpose: estimate_demographic_astronomical_base_rate
+    independent_replication: false
+    reported_interpretation:
+      gauquelin: supports_lower_control_rate_than_champion_rate
+      csicop: demographic_control_does_not_validate_original_selection
+    sources:
+      - https://cyclesresearchinstitute.org/subjects/cycles-astrology/gauguelin/
+    classification: BASE_RATE_TEST_NOT_STANDALONE_REPLICATION
+
+  - id: csicop-us-408
+    publication: 1979_1980
+    population: US_sports_champions
+    n: 408
+    collectors: [Kurtz, Zelen, Abell]
+    calculator: Dennis_Rawlins
+    official_result: negative
+    official_source:
+      - https://skepticalinquirer.org/1980/01/results-of-the-us-test-of-the-mars-effect-are-negative/
+    competing_interpretations:
+      - author: Gauquelin_and_Gauquelin
+        claim: highly_eminent_star_subgroup_displays_effect
+        subgroup_n: 108
+        source: https://skepticalinquirer.org/1980/01/star-us-sportsmen-display-the-mars-effect/
+      - author: Rawlins
+        claim: full_experiment_does_not_support_Gauquelin
+        source: https://skepticalinquirer.org/wp-content/uploads/sites/29/2019/03/Issue-02-2.pdf
+    central_dispute:
+      - athlete_eminence
+      - sampling_batches
+      - subgroup_definition
+      - whether_subgroup_analysis_was_predeclared
+    classification: SAME_DATA_CONFLICTING_ANALYSIS
+
+  - id: gauquelin-new-us-432
+    period: late_1970s
+    population: US_sports_champions
+    n_reported: 432
+    collector: Gauquelin
+    result_by_ertel_1992: positive
+    post_1950_exclusion_in_ertel_comparison: true
+    resulting_n_in_ertel_comparison: 349
+    source:
+      - https://www.researchgate.net/publication/242150722_Update_on_the_Mars_Effect
+    classification: POSITIVE_REPORTED_PRIMARY_BINDING_INCOMPLETE
+
+  - id: ertel-eminence-4391
+    year: 1988
+    population: combined_sports_champion_database
+    n: 4391
+    analyst: Suitbert_Ertel
+    paper: Raising_the_Hurdle_for_the_Athletes_Mars_Effect
+    journal: Journal_of_Scientific_Exploration
+    volume: 2
+    issue: 1
+    pages: 53_82
+    method:
+      eminence_proxy: citation_frequency_in_reference_works
+      hypothesis: Mars_key_sector_rate_increases_with_eminence
+    reported_result: positive_monotonic_association
+    sources:
+      - https://citeseerx.ist.psu.edu/document?doi=735547265a61f535fde2fd1c9fb75c173015cb82&repid=rep1&type=pdf
+      - https://tig12.github.io/g5/ertel-4391-sport.html
+    disputes:
+      - independence_from_original_Gauquelin_database
+      - missing_birth_times_in_reconstructed_file
+      - post_hoc_or_confirmatory_status_of_eminence_measure
+      - whether_eminence_selection_explains_original_effect
+    classification: POSITIVE_REANALYSIS_DISPUTED
+
+  - id: cfepp-french
+    project_period: 1980s_1990s
+    publication_year: 1996
+    official_population: French_sports_champions
+    official_n: 1066
+    reconstructed_raw_file_n: 1120
+    collector: CFEPP
+    independence: independent_collection
+    official_publication: The_Mars_Effect_A_French_Test_of_Over_1000_Sports_Champions
+    official_result: negative
+    official_interpretation: no_Mars_effect
+    sources:
+      - https://ci.nii.ac.jp/ncid/BB15542653
+      - https://tig12.github.io/g5/cfepp.html
+    competing_interpretation:
+      analysts: [Suitbert_Ertel, Kenneth_Irving]
+      claim: eminence_stratification_and_expected_rate_choices_change_result
+    classification: INDEPENDENT_NEGATIVE_WITH_METHOD_DISPUTE
+
+  - id: kurtz-nienhuys-sandhu-1997
+    evidence_class: review_and_reanalysis
+    publication: Journal_of_Scientific_Exploration_11_1_19_39
+    conclusion: insufficient_evidence_for_Mars_effect
+    proposed_explanation: selective_data_bias
+    source:
+      - https://citeseerx.ist.psu.edu/document?doi=9d5e2378fc4b8d2bb29a0114a3ce49d131618543&repid=rep1&type=pdf
+    classification: CRITICAL_SYNTHESIS_NOT_NEW_REPLICATION
+
+ledger_conclusions:
+  - id: GL-1
+    proposition: >
+      The controversy cannot be represented by a single replication count
+      because datasets, selection rules, expected rates, and eminence definitions
+      differ.
+    confidence: high
+  - id: GL-2
+    proposition: >
+      At least one major U.S. dataset produced sharply different conclusions
+      under full-sample versus selected-eminence analysis.
+    confidence: high
+  - id: GL-3
+    proposition: >
+      The CFEPP study is an important independent negative test, but later critics
+      disputed its eminence composition and chance expectation.
+    confidence: high
+  - id: GL-4
+    proposition: >
+      Ertel's 4,391-person citation-based analysis is evidence about an
+      eminence-gradient hypothesis, not a clean independent replication of
+      Gauquelin's original data collection.
+    confidence: high
+  - id: GL-5
+    proposition: >
+      The current corpus supports DISPUTED rather than PROVEN or DEFINITIVELY_NULL.
+    confidence: high
+
+mechanism_guards:
+  - STATISTICAL_SECTOR_ASSOCIATION_NE_ASTROLOGY_GENERALLY
+  - STATISTICAL_SECTOR_ASSOCIATION_NE_MARS_CAUSATION
+  - EMINENCE_GRADIENT_NE_BIOLOGICAL_MECHANISM
+  - REANALYSIS_NE_INDEPENDENT_REPLICATION
+  - SAME_DATA_DIFFERENT_SELECTION_NE_TWO_INDEPENDENT_TESTS
+  - UNEXPLAINED_EFFECT_NE_SIMULATION_CONTROLLER
+
+next:
+  - bind_Comite_Para_primary_report
+  - bind_full_CFEPP_1996_tables
+  - reconstruct_exact_key_sector_definition_by_study
+  - audit_expected_rate_calculation
+  - audit_birth_time_record_quality_by_country_and_period
+  - classify_each_analysis_as_predeclared_or_post_hoc

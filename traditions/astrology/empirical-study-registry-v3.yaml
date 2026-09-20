@@ -1,0 +1,110 @@
+schema: ON_THEO_ASTROLOGY_EMPIRICAL_STUDY_REGISTRY_V3
+status: SOURCE_BOUND_DELTA_V3
+extends: ON_THEO_ASTROLOGY_EMPIRICAL_STUDY_REGISTRY_V2
+quality_rubric: traditions/astrology/empirical-quality-rubric-v1.md
+gauquelin_ledger: traditions/astrology/gauquelin-replication-ledger-v1.yaml
+
+updates:
+  - id: carlson-1985
+    primary_source:
+      citation: Shawn_Carlson_A_double_blind_test_of_astrology_Nature_318_419_425_1985
+      doi: 10.1038/318419a0
+      url: https://www.nature.com/articles/318419a0
+    tested_propositions:
+      - subjects_can_rank_true_astrological_interpretation_above_decoys
+      - astrologers_can_match_natal_charts_to_CPI_profiles_above_chance
+    astrologer_matching:
+      returned_first_choice_n: 116
+      correct_first_choices: 40
+      chance_expectation_approx: 38.5
+      original_interpretation: consistent_with_chance
+    later_reanalysis:
+      author: Suitbert_Ertel
+      publication: Journal_of_Scientific_Exploration_23_2
+      url: https://journalofscientificexploration.org/index.php/jse/article/view/99
+      claims:
+        - combined_three_way_forced_choice_p_approx_0_054
+        - ten_point_rating_reanalysis_p_approx_0_04
+        - original_global_negative_verdict_overstated
+      reanalysis_own_ceiling: insufficient_to_empirically_verify_astrology
+    branch_status: DISPUTED_INTERPRETATION_OF_DEFINED_PROTOCOL
+    guard: >
+      ORIGINAL_NULL_AND_LATER_REANALYSIS_USE_THE_SAME_EXPERIMENTAL_DATA_AND_ARE
+      NOT_INDEPENDENT_REPLICATIONS.
+
+  - id: wyman-vyse-2008
+    citation: >
+      Alyssa_Jayne_Wyman_and_Stuart_Vyse_Science_versus_the_stars_Journal_of_General_Psychology_135_3_287_300
+    doi: 10.3200/GENP.135.3.287-300
+    source:
+      - https://pubmed.ncbi.nlm.nih.gov/18649494/
+    sample:
+      n: 52
+      women: 38
+      men: 14
+      mean_age: 19.3
+      sd_age: 1.3
+      population: college_students
+    design:
+      astrology_task:
+        - one_true_computer_generated_natal_summary
+        - one_bogus_astrological_summary
+      psychology_comparator:
+        - one_true_NEO_FFI_profile
+        - one_bogus_NEO_FFI_profile
+      double_blind: true
+    published_result:
+      astrology_true_profile_identification: not_above_chance
+      NEO_true_profile_identification: above_chance
+      Barnum_effect:
+        astrology: observed
+        NEO: observed
+      favorable_vs_unfavorable_sign_difference: not_found
+    branch_status: NEGATIVE_FOR_COMPUTER_GENERATED_NATAL_PROFILE_IDENTIFICATION
+    ceiling: >
+      Negative evidence for this profile-identification task, not a test of all
+      human astrologers or all predictive techniques.
+
+  - id: gauquelin-mars-effect
+    status: DISPUTED_DATASET_FAMILY
+    detail: traditions/astrology/gauquelin-replication-ledger-v1.yaml
+    current_ceiling: >
+      Reported sector/eminence association with positive and negative datasets,
+      major selection/expectation disputes, and no established mechanism.
+    prohibited_shortcuts:
+      - count_every_reanalysis_as_independent_replication
+      - call_the_entire_record_one_positive_study
+      - call_the_entire_record_one_failed_replication
+      - infer_Mars_causation_from_sector_correlation
+      - infer_simulation_controller_from_unexplained_residual
+
+evidence_architecture:
+  proposition_classes:
+    - subjective_profile_identification
+    - astrologer_chart_matching
+    - sun_sign_or_date_of_birth_association
+    - belief_mediated_self_attribution
+    - twin_matching
+    - profession_or_eminence_sector_association
+  required_fields:
+    - exact_predictor
+    - exact_outcome
+    - population
+    - blinding
+    - selection_rule
+    - null_model
+    - preregistration_or_predeclaration
+    - analysis_independence
+    - effect_size
+    - replication_status
+    - source_level
+
+hard_rules:
+  - SAME_DATA_REANALYSIS_NE_REPLICATION
+  - POSITIVE_SUBGROUP_NE_POSITIVE_FULL_SAMPLE
+  - NULL_PROFILE_MATCHING_NE_NULL_PROFESSION_SECTOR_ASSOCIATION
+  - SUBJECTIVE_ACCURACY_NE_OBJECTIVE_PREDICTION
+  - BELIEF_EFFECT_NE_CELESTIAL_EFFECT
+  - CORRELATION_NE_MECHANISM
+  - NO_KNOWN_MECHANISM_NE_NO_POSSIBLE_SIGNAL
+  - UNKNOWN_SIGNAL_NE_SIMULATION
