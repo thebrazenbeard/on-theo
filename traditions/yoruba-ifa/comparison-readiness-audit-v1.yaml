@@ -1,0 +1,217 @@
+schema_version: on-theo.yoruba-ifa-comparison-readiness-audit.v1
+status: DIACHRONIC_FOUNDATION_MATURE_FOR_BOUNDED_FUTURE_COMPARISON
+source_branch: research/yoruba-ifa-diachronic-v1-20260920
+source_head_before_audit: d5a27dbe1d37932e699c5bef8a2b8eb103c29445
+pr: 120
+
+method:
+  principle: >
+    Yorùbá/Ifá comparison cells must distinguish Ifá from wider Òrìṣà religion,
+    preserve locality and historical period, treat oral/performed evidence as a
+    full evidence mode, and keep homeland, colonial/contact, revival and
+    diaspora layers separate.
+  required_fields:
+    - Yoruba_or_Ifa_scope
+    - locality_or_region
+    - historical_or_current_layer
+    - evidence_mode
+    - exact_source_binding
+    - claim_ceiling
+
+comparison_eligible_existing_axes:
+  DOCUMENTARY_MEMORY_MODEL:
+    status: BOUNDED_COMPARISON_ELIGIBLE
+    source_layer: IFA_INDEXED_OPEN_ORAL_CORPUS
+    strongest_result: >
+      Ifá combines a stable 256-figure formal index with an open adaptive oral
+      corpus retrieved and interpreted through specialist performance and
+      material sign-generation technologies.
+    new_subtype: INDEXED_OPEN_ORAL_CORPUS
+    guards:
+      - ORAL_NE_UNSTRUCTURED
+      - STRUCTURE_NE_CLOSED_CANON
+
+  KNOWLEDGE_OR_DISCLOSURE_MODEL:
+    status: BOUNDED_COMPARISON_ELIGIBLE
+    source_layer: IFA_SPECIALIST_INTERPRETIVE
+    strongest_result: >
+      Religious knowledge can be held in distributed specialist repertoires and
+      applied through trained interpretation without one complete canon holder.
+    guards:
+      - SPECIALIST_REPERTOIRE_NE_TOTAL_CORPUS
+
+  AGENCY_AND_AUTHORITY_MODEL:
+    status: BOUNDED_COMPARISON_ELIGIBLE
+    source_layer: IFA_BABALAWO_SPECIALIST
+    strongest_result: >
+      Ifá authority is bounded specialist interpretive competence in a formal
+      sign/oral corpus system rather than generalized authority over all Yorùbá
+      religion.
+    guards:
+      - BABALAWO_NE_ALL_YORUBA_AUTHORITY
+      - SPECIALIST_NE_CENTRALIZED_PRIESTHOOD
+
+  INSTITUTIONALIZATION_MODEL:
+    status: BOUNDED_COMPARISON_ELIGIBLE
+    source_layers:
+      - IFA_SPECIALIST_TRAINING_AND_TRANSMISSION
+      - MODERN_SAFEGUARDING
+    wider_Yoruba_layer: PARTIAL_CIVIC_LOCAL_CULT
+    strongest_result: >
+      Ifá is institutionally stabilized through specialist training,
+      recognizable role identity, repeated consultation structure, material
+      technologies and intergenerational transmission.
+    guards:
+      - INSTITUTIONALIZATION_NE_CENTRALIZATION
+
+  RELATIONAL_ORDER_MODEL:
+    status: BOUNDED_COMPARISON_ELIGIBLE
+    source_layers:
+      - DIACHRONIC_ORISA_ANCESTOR_COMMUNITY
+      - SELECTED_DEVOTEE_ORISA_RELATION
+      - LOCAL_CULT_SOCIOPOLITICAL_RELATION
+    strongest_result: >
+      Yorùbá religious order is historically constituted through changing
+      relations among devotees, òrìṣà, ancestors, cult groups, towns and civic
+      institutions rather than a fixed pantheon schema.
+    guards:
+      - LOCAL_RELATION_NE_PAN_YORUBA_UNIVERSAL
+      - DEVOTEE_RELATION_NE_REDUCTIVE_HUMAN_INVENTION
+
+  CONTINUITY_MODEL:
+    status: BOUNDED_COMPARISON_ELIGIBLE
+    source_layers:
+      - IFA_STRUCTURE_WITH_ADAPTIVE_CONTENT
+      - PANTHEON_AND_LOCAL_CULT_RECONFIGURATION
+      - ISLAM_CHRISTIAN_CONTACT
+      - ATLANTIC_DIASPORA_TRANSFORMATION
+      - MODERN_SAFEGUARDING_AND_REVIVAL
+    strongest_result: >
+      Continuity is source-attested through persistent structures and relations
+      that adapt, reconfigure and travel rather than through unchanged forms.
+    guards:
+      - CONTINUITY_NE_UNCHANGED_FORM
+      - DIASPORA_NE_HOMELAND_REPLICA
+
+  CONTACT_AND_REINTERPRETATION_MODEL:
+    status: BOUNDED_MULTI_MECHANISM_COMPARISON_ELIGIBLE
+    mechanisms:
+      - ISLAMIC_RELIGIOUS_CONTACT
+      - CHRISTIAN_MISSIONARY_CONTACT
+      - COLONIAL_TEXTUALIZATION
+      - MODERN_INDIGENOUS_REVIVAL
+      - FORCED_MIGRATION_TRANSMISSION
+      - DIASPORA_RECONSTRUCTION
+      - TRANSATLANTIC_RECONNECTION
+    geomantic_form_hypothesis:
+      status: PARTIAL_NOT_DIRECT_TRANSMISSION_PROVED
+    strongest_result: >
+      Yorùbá religious contact includes multiple independent mechanisms and
+      proven Atlantic human-carrier pathways, while the specific Arabic/Islamic
+      origin of Ifá's sixteen-sign form remains unresolved.
+    guards:
+      - CONTACT_NE_ONE_SYNCRETISM
+      - TRANSMISSION_PATHWAY_NE_EVERY_FEATURE_TRANSMITTED
+      - SIGN_ARCHITECTURE_NE_VERSE_CORPUS
+
+comparison_eligible_partial:
+  MORTUARY_RELATIONSHIP_MODEL:
+    status: PARTIAL
+    source_layer: ANCESTOR_VENERATION_RELATIONAL
+    strongest_result: >
+      Ancestors remain important social/religious referents in current
+      historical reconstruction, but no single postmortem path or soul model is
+      admitted.
+    guards:
+      - ANCESTOR_RELATION_NE_POSTMORTEM_PATH
+
+  RITUAL_ORDER_MODEL:
+    status: PARTIAL
+    source_layer: IFA_DIVINATION_STRUCTURE
+    strongest_result: >
+      Formal sign generation, recitation and interpretation establish a bounded
+      ritual architecture without reconstructing restricted procedure.
+
+  REVIVAL_RECONSTRUCTION_MODEL:
+    status: PARTIAL
+    source_layers:
+      - MODERN_ISESE_YORUBA_RELIGION_REVIVAL
+      - SELECTED_DIASPORA_TRANSNATIONAL_RECONNECTION
+    guards:
+      - REVIVAL_NE_PRECOLONIAL_INSTITUTIONAL_CONTINUITY
+
+held_existing_axes:
+  WORLD_ORIGIN_MODEL:
+    status: HOLD
+  POSTMORTEM_PATH_MODEL:
+    status: HOLD
+  PERSON_OR_SELF_MODEL:
+    status: HOLD_STRONG_CANDIDATE
+    reason: >
+      Orí/destiny evidence is strong but has not yet received a dedicated
+      lexical and proposition packet.
+  FATE_CONSTRAINT_MODEL:
+    status: HOLD_STRONG_CANDIDATE
+    reason: >
+      Ifá literature contains major destiny/agency material, but the project has
+      not yet separated orí, choice, divination and prescribed action deeply
+      enough for a bounded cell.
+  OFFERING_EXCHANGE_MODEL:
+    status: HOLD
+    reason: >
+      Prescribed offering/sacrifice is important in Ifá and wider Òrìṣà
+      religion but requires a dedicated recipient/effect/mechanism packet.
+  POLITICAL_SACRALIZATION_MODEL:
+    status: HOLD_STRONG_CANDIDATE
+    reason: >
+      Sacred kingship is historically important but one pan-Yorùbá kingship
+      theology is not yet bound.
+  SACRAL_PRESENCE_MODEL:
+    status: HOLD
+    reason: >
+      Òrìṣà/ancestor/divinity presence is under-decomposed.
+
+new_schema_contributions:
+  DOCUMENTARY_MEMORY_MODEL:
+    subtype: INDEXED_OPEN_ORAL_CORPUS
+    comparison_pressure:
+      - HAUDENOSAUNEE_WAMPUM
+      - INCA_KHIPU
+      - IFA_INDEXED_OPEN_ORAL_CORPUS
+
+  KNOWLEDGE_GOVERNANCE_DIMENSION:
+    subtype: SPECIALIST_INTERPRETIVE_ORAL_CORPUS_AUTHORITY
+    strongest_result: >
+      Distributed specialist mastery can govern an authoritative religious
+      corpus without one centralized complete text-holder.
+
+  TRANSMISSION_MODEL:
+    method_result: >
+      Formal divination architecture and attached oral corpus must be tested as
+      separate transmissible features.
+
+readiness_result:
+  internal_foundation_complete: true
+  bounded_future_comparison_allowed: true
+  exact_head_binding_required: true
+  Ifa_may_stand_for_all_Yoruba_religion: false
+  diaspora_may_stand_for_homeland: false
+  oral_evidence_downgraded_by_medium: false
+  geomantic_direct_borrowing_established: false
+
+strongest_method_result: >
+  Yorùbá/Ifá becomes comparison-ready only when a highly structured specialist
+  oral-divinatory system is kept distinct from the wider changing Òrìṣà,
+  ancestor and civic religious field and when Islam, Christianity, revival and
+  Atlantic diaspora are modeled as separate contact mechanisms.
+
+next_portfolio_frontier:
+  primary: DOCUMENTARY_MEMORY_EXPANDED_TEST_V2
+  subsequent:
+    - KNOWLEDGE_GOVERNANCE_CROSS_TRADITION_TEST_V1
+    - POST_YORUBA_GLOBAL_GAP_AUDIT_V1
+
+guards:
+  - COMPARISON_READY_NE_TRADITION_COMPLETE
+  - ORAL_NE_TEXTUAL_DEFICIT
+  - FEATURE_LEVEL_TRANSMISSION_REQUIRED

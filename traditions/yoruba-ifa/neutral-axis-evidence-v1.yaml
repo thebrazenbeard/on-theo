@@ -1,0 +1,80 @@
+schema_version: on-theo.yoruba-ifa-neutral-axis-evidence.v1
+status: DIACHRONIC_FOUNDATION_NOT_COMPARISON_READY
+
+records:
+  - id: YOR-HIST-001
+    source: OGUNDIRAN_YORUBA_INDIGENOUS_RELIGION_2024
+    evidence_class:
+      - HISTORICAL_RECONSTRUCTION
+      - SCHOLARLY_INTERPRETATION
+    propositions:
+      - Yoruba_indigenous_religion_has_deep_diachronic_development
+      - pantheon_structure_is_historically_emergent
+      - ancestor_divinity_community_and_kingship_relations_are_major_historical_dimensions
+    supports:
+      - RELATIONAL_ORDER_MODEL
+      - CONTINUITY_MODEL
+      - POLITICAL_SACRALIZATION_MODEL_CANDIDATE
+      - MORTUARY_RELATIONSHIP_MODEL_CANDIDATE
+    confidence: HIGH_CURRENT_SCHOLARLY
+
+  - id: IFA-STRUCTURE-001
+    evidence:
+      - UNESCO_IFA_DIVINATION
+      - BARBER_IFA_CORPUS
+    evidence_class:
+      - LIVING_HERITAGE_DOCUMENTATION
+      - SCHOLARLY_INTERPRETATION
+    propositions:
+      - Ifa_uses_formal_sign_system_with_256_figures
+      - large_oral_verse_corpus_is_interpreted_by_specialists
+      - corpus_guides_personal_and_collective_decisions
+      - corpus_preserves_multiple_knowledge_domains
+    supports:
+      - DOCUMENTARY_MEMORY_MODEL
+      - KNOWLEDGE_OR_DISCLOSURE_MODEL
+      - AGENCY_AND_AUTHORITY_MODEL
+    confidence: HIGH
+
+  - id: IFA-MATERIAL-001
+    evidence:
+      - SMITHSONIAN_IFA_OBJECTS
+      - MET_IFA_OBJECTS
+    evidence_class: MATERIAL_EVIDENCE
+    propositions:
+      - divination_trays_palm_nut_vessels_tappers_and_related_tools_materially_attest_specialist_practice
+    supports:
+      - RITUAL_ORDER_MODEL_CANDIDATE
+      - INSTITUTIONALIZATION_MODEL_CANDIDATE
+      - DOCUMENTARY_MEMORY_MODEL
+    confidence: HIGH
+
+  - id: IFA-CORPUS-OPEN-001
+    source: BARBER_IFA_CORPUS
+    evidence_class: SCHOLARLY_INTERPRETATION
+    propositions:
+      - corpus_is_structured_but_total_extent_is_not_fixed
+      - verses_can_incorporate_new_material
+      - time_destiny_causation_and_agency_are_recurring_topics
+    supports:
+      - DOCUMENTARY_MEMORY_MODEL
+      - FATE_CONSTRAINT_MODEL_CANDIDATE
+      - PERSON_OR_SELF_MODEL_CANDIDATE
+    confidence: HIGH
+
+axis_status:
+  RELATIONAL_ORDER_MODEL: STRONG_CANDIDATE
+  DOCUMENTARY_MEMORY_MODEL: STRONG_CANDIDATE
+  KNOWLEDGE_OR_DISCLOSURE_MODEL: STRONG_CANDIDATE
+  AGENCY_AND_AUTHORITY_MODEL: STRONG_CANDIDATE
+  INSTITUTIONALIZATION_MODEL: CANDIDATE
+  CONTINUITY_MODEL: STRONG_CANDIDATE
+  CONTACT_AND_REINTERPRETATION_MODEL: STRONG_CANDIDATE
+  FATE_CONSTRAINT_MODEL: HOLD_STRONG_CANDIDATE
+  PERSON_OR_SELF_MODEL: HOLD_STRONG_CANDIDATE
+  MORTUARY_RELATIONSHIP_MODEL: HOLD_CANDIDATE
+  OFFERING_EXCHANGE_MODEL: HOLD_CANDIDATE
+  CROSS_TRADITION_COMPARISON: HOLD
+
+guards:
+  - IFA_AND_WIDER_YORUBA_RELIGION_REMAIN_DISTINCT

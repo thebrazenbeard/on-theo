@@ -1,0 +1,86 @@
+schema_version: on-theo.yoruba-relational-orisa-ancestor-evidence.v1
+status: BOUNDED_RELATIONAL_DIACHRONIC_LAYER
+
+records:
+  - id: YOR-REL-HIST-001
+    source: OGUNDIRAN_YORUBA_INDIGENOUS_RELIGION_2024
+    evidence_class:
+      - HISTORICAL_RECONSTRUCTION
+      - SCHOLARLY_INTERPRETATION
+    propositions:
+      - individual_and_community_relation_to_divinity_is_a_major_historical_dimension
+      - ancestor_veneration_is_a_major_historical_dimension
+      - pantheon_structure_is_emergent_and_historically_reconfigured
+      - civic_spiritual_practice_and_kingship_are_relevant_historical_dimensions
+    supports:
+      - RELATIONAL_ORDER_MODEL
+      - MORTUARY_RELATIONSHIP_MODEL_PARTIAL
+      - CONTINUITY_MODEL
+      - POLITICAL_SACRALIZATION_MODEL_CANDIDATE
+    confidence: HIGH_CURRENT_SCHOLARLY
+
+  - id: YOR-REL-BARBER-001
+    source: BARBER_HOW_MAN_MAKES_GOD_1981
+    evidence_class: SCHOLARLY_ETHNOGRAPHIC_INTERPRETATION
+    scope: OKUKU_SELECTED_YORUBA_CONTEXT
+    propositions:
+      - devotee_attention_is_described_as_sustaining_orisa_power_and_presence
+      - devotee_orisa_relation_is_reciprocal_and_social
+      - personal_attachment_to_orisa_can_be_selective_and_changeable
+    supports:
+      - RELATIONAL_ORDER_MODEL
+      - SACRAL_PRESENCE_MODEL_CANDIDATE
+    confidence: BOUNDED_ETHNOGRAPHIC
+
+  - id: YOR-REL-ORIKI-001
+    source: BARBER_ORIKI_ORISA
+    evidence_class: SCHOLARLY_INTERPRETATION
+    propositions:
+      - oral_genres_participate_in_proliferation_merging_and_maintenance_of_orisa_identity
+    supports:
+      - DOCUMENTARY_MEMORY_MODEL_PARTIAL
+      - RELATIONAL_ORDER_MODEL
+    confidence: BOUNDED
+
+  - id: YOR-REL-APTER-001
+    source: APTER_EKITI_ORISA_CULTS_1995
+    evidence_class:
+      - SCHOLARLY_ETHNOGRAPHY
+      - HISTORICAL_RECONSTRUCTION
+    scope: EKITI_SELECTED_COMMUNITIES
+    propositions:
+      - local_ritual_pantheons_vary
+      - orisa_manifestations_and_cult_forms_are_locally_reconfigured
+      - local_pantheon_patterns_reflect_sociopolitical_and_historical_relations
+    supports:
+      - CONTINUITY_MODEL
+      - RELATIONAL_ORDER_MODEL
+      - INSTITUTIONALIZATION_MODEL_PARTIAL
+    confidence: HIGH_FOR_SELECTED_REGION
+
+  - id: YOR-KINGSHIP-001
+    source: OGUNNAIKE_PRECOLONIAL_YORUBA_STATES_2022
+    evidence_class: HISTORICAL_RECONSTRUCTION
+    propositions:
+      - Ile_Ife_tradition_links_Oduduwa_to_sacred_kingship_and_later_mythic_ancestry
+      - precolonial_political_religious_structures_varied_and_developed_historically
+      - broad_pan_Yoruba_label_is_partly_late_relative_to_earlier_polities
+    supports:
+      - POLITICAL_SACRALIZATION_MODEL_CANDIDATE
+      - CONTINUITY_MODEL
+      - ATTRIBUTION_STATUS_SCOPE_CONTROL
+    confidence: BOUNDED_HIGH
+
+axis_status:
+  RELATIONAL_ORDER_MODEL: BOUNDED_YORUBA_ORISA_ANCESTOR_COMMUNITY
+  CONTINUITY_MODEL: BOUNDED_PANTHEON_CULT_RECONFIGURATION
+  MORTUARY_RELATIONSHIP_MODEL: PARTIAL_ANCESTOR_RELATIONAL
+  DOCUMENTARY_MEMORY_MODEL: PARTIAL_ORAL_GENRE_IDENTITY
+  INSTITUTIONALIZATION_MODEL: PARTIAL_CIVIC_LOCAL_CULT
+  POLITICAL_SACRALIZATION_MODEL: HOLD_STRONG_CANDIDATE
+  SACRAL_PRESENCE_MODEL: HOLD_CANDIDATE
+  CROSS_TRADITION_COMPARISON: HOLD
+
+guards:
+  - LOCAL_SCOPE_REQUIRED
+  - PANTHEON_NOT_FIXED

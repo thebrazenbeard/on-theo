@@ -1,0 +1,70 @@
+schema_version: on-theo.ifa-knowledge-authority-evidence.v1
+status: BOUNDED_SPECIALIST_INTERPRETIVE_AUTHORITY
+
+records:
+  - id: IFA-AUTH-001
+    source:
+      - UNESCO_IFA_DIVINATION_SYSTEM
+      - UNESCO_IFA_SAFEGUARDING
+    evidence_class:
+      - LIVING_HERITAGE_DOCUMENTATION
+      - DOCUMENTARY_PRACTICE
+    propositions:
+      - trained_diviner_interprets_formal_signs
+      - consultation_guides_important_personal_and_collective_decisions
+      - intergenerational_and_peer_transmission_are_explicit
+    supports:
+      - AGENCY_AND_AUTHORITY_MODEL
+      - KNOWLEDGE_OR_DISCLOSURE_MODEL
+      - KNOWLEDGE_GOVERNANCE_DIMENSION
+    confidence: HIGH_PUBLIC
+
+  - id: IFA-AUTH-TRAIN-001
+    evidence:
+      - ABIMBOLA_IFA_EXPOSITION
+      - UNESCO_IFA_SAFEGUARDING
+    evidence_class:
+      - SCHOLARLY_INTERPRETATION
+      - PRACTITIONER_SCHOLAR_MEDIATION
+      - LIVING_HERITAGE_DOCUMENTATION
+    propositions:
+      - specialist_training_is_a_distinct_institutional_process
+      - corpus_competence_requires_more_than_sign_recognition
+    supports:
+      - INSTITUTIONALIZATION_MODEL
+      - AGENCY_AND_AUTHORITY_MODEL
+    confidence: BOUNDED_HIGH
+
+  - id: IFA-AUTH-DIST-001
+    source: BARBER_IFA_CORPUS
+    evidence_class: SCHOLARLY_INTERPRETATION
+    propositions:
+      - oral_corpus_is_large_open_and_distributed_across_specialists
+      - specialist_interpretation_connects_precedent_to_current_case
+    supports:
+      - KNOWLEDGE_GOVERNANCE_DIMENSION
+      - DOCUMENTARY_MEMORY_MODEL
+      - AGENCY_AND_AUTHORITY_MODEL
+    confidence: HIGH
+
+  - id: IFA-AUTH-SAFE-001
+    source: UNESCO_IFA_SAFEGUARDING
+    evidence_class: DOCUMENTARY_PRACTICE
+    propositions:
+      - modern_safeguarding_formalizes_training_and_documentation
+      - safeguarding_changes_transmission_form_while_seeking_continuity
+    supports:
+      - CONTINUITY_MODEL
+      - INSTITUTIONALIZATION_MODEL
+    confidence: HIGH_FOR_PROGRAM
+
+axis_status:
+  AGENCY_AND_AUTHORITY_MODEL: BOUNDED_IFA_SPECIALIST_INTERPRETIVE
+  KNOWLEDGE_OR_DISCLOSURE_MODEL: BOUNDED_CORPUS_SIGN_INTERPRETIVE
+  KNOWLEDGE_GOVERNANCE_DIMENSION: BOUNDED_TRAINING_DISTRIBUTED_SPECIALIST
+  INSTITUTIONALIZATION_MODEL: BOUNDED_SPECIALIST_KNOWLEDGE_INSTITUTION
+  CONTINUITY_MODEL: BOUNDED_SAFEGUARDING_TRANSMISSION_CHANGE
+  CROSS_TRADITION_COMPARISON: HOLD
+
+guards:
+  - SPECIALIST_AUTHORITY_SCOPE_REQUIRED
