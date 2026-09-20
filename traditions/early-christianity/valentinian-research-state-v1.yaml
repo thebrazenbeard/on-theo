@@ -16,12 +16,16 @@ completed:
   - TESTAMENT_BOOK_V_CLAIM_CEILING
   - HERACLEON_JOHANNINE_EXEGESIS_BOUNDARY
   - HERACLEON_AFFILIATION_CONTEST_CONTROL
+  - PTOLEMY_FLORA_PROPOSITION_MAP
+  - PTOLEMY_FLORA_PRACTICE_CLAIM_BOUNDARY
 
 key_artifacts:
   - traditions/early-christianity/valentinian-primary-text-control-v1.md
   - traditions/early-christianity/valentinian-primary-text-matrix-v1.yaml
   - traditions/early-christianity/heracleon-johannine-exegesis-v1.md
   - traditions/early-christianity/heracleon-johannine-exegesis-v1.yaml
+  - traditions/early-christianity/ptolemy-flora-proposition-map-v1.md
+  - traditions/early-christianity/ptolemy-flora-proposition-map-v1.yaml
 
 current_results:
   internal_valentinian_diversity: BOUNDED_STRONG
@@ -33,11 +37,16 @@ current_results:
   unitary_gnosticism_model: NOT_ADMITTED
   heracleon_johannine_commentary: BOUNDED_STRONG
   heracleon_precise_valentinian_affiliation: PARTIAL_CONTESTED
+  ptolemy_flora_law_map: BOUNDED_STRONG_FOR_PTOLEMY
+  ptolemy_external_fasting_claim: PARTIAL_MODERATE
+  ptolemy_claimed_apostolic_succession: BOUNDED_STRONG_AS_SELF_CLAIM_ONLY
 
 next_frontier:
   - PTOLEMY_FLORA_PROPOSITION_MAP
   - EXCERPTA_EX_THEODOTO_PACKET
-  - HERACLEON_FRAGMENT_PROPOSITION_MATRIX
+  - GOSPEL_OF_PHILIP_RITUAL_SACRAMENT_PACKET
+  - EXCERPTA_EX_THEODOTO_PACKET
+  - PTOLEMY_HERACLEON_NONHARMONIZING_COMPARISON
   - VALENTINIAN_RITUAL_SACRAMENT_PACKET
 
 invariants:
