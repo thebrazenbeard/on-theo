@@ -1,0 +1,28 @@
+schema_version: on-theo.yoruba-ifa-research-state.v2
+status: IFA_DOCUMENTARY_MEMORY_LAYER_ADDED
+supersedes_for_current_research:
+  - traditions/yoruba-ifa/research-state-v1.yaml
+
+branch:
+  name: research/yoruba-ifa-diachronic-v1-20260920
+  pr: 120
+
+new_artifacts:
+  ifa_documentary_packet: traditions/yoruba-ifa/ifa-oral-corpus-documentary-memory-packet-v1.md
+  ifa_documentary_evidence: traditions/yoruba-ifa/ifa-documentary-memory-evidence-v1.yaml
+
+current_internal_status:
+  DOCUMENTARY_MEMORY_MODEL: BOUNDED_INDEXED_OPEN_ORAL_CORPUS
+  KNOWLEDGE_OR_DISCLOSURE_MODEL: BOUNDED_SPECIALIST_INTERPRETIVE
+  KNOWLEDGE_GOVERNANCE_DIMENSION: BOUNDED_INTERGENERATIONAL_SPECIALIST
+  CONTINUITY_MODEL: BOUNDED_STRUCTURE_WITH_ADAPTIVE_CONTENT
+  INSTITUTIONALIZATION_MODEL: PARTIAL_SPECIALIST_TRAINING
+  RITUAL_ORDER_MODEL: PARTIAL_DIVINATION_STRUCTURE
+  RELATIONAL_ORDER_MODEL: STRONG_CANDIDATE
+  AGENCY_AND_AUTHORITY_MODEL: STRONG_CANDIDATE
+  FATE_CONSTRAINT_MODEL: HOLD_STRONG_CANDIDATE
+  PERSON_OR_SELF_MODEL: HOLD_STRONG_CANDIDATE
+  CROSS_TRADITION_COMPARISON: HOLD
+
+next_frontier:
+  primary: YORUBA_RELATIONAL_ORISA_ANCESTOR_PACKET_V1
