@@ -1,0 +1,67 @@
+schema_version: on-theo.nonabrahamic-comparison-readiness.v28
+status: NON_CANONICAL_RESEARCH_AUDIT
+supersedes_for_current_research:
+  - synthesis/NON_ABRAHAMIC_COMPARISON_READINESS_V27.yaml
+
+breadth_units:
+  lakota: 8a9cee8335cadc742c9de25c90f4306702a80e8a
+  maya: 2b5907438334537842710a81886083b9cbd0241a
+  mexica_nahua: 00e37e475f3669ef2ee040908b126617ffcd17da
+  olmec: cac89f2e0024c00f71d2d2a835253328c451e7ce
+  dine: ac988c4a31f354e7c4d902d286c0c950293ffb8a
+  haudenosaunee: 506d95eb449bc4d11fc61dbe9c18ffca7ab94f5a
+
+haudenosaunee_method_result: >
+  Public Haudenosaunee evidence is comparison-ready only with Confederacy/nation
+  scope retained. Great Law political-sacred order, distributed authority,
+  wampum documentary memory, seasonal ceremonial time, treaty sovereignty and
+  later revitalization are distinct source layers.
+
+expanded_axis_state:
+  RELATIONAL_ORDER_MODEL:
+    status: PROMOTED_FOR_EXPANDED_TESTS
+  SACRED_LAND_PLACE_MODEL:
+    status: PROMOTED_FOR_EXPANDED_TESTS
+  SACRED_TIME_CALENDAR_MODEL:
+    status: PROMOTED_FOR_EXPANDED_TESTS
+  KNOWLEDGE_GOVERNANCE_DIMENSION:
+    status: ADDED_TO_KNOWLEDGE_DISCLOSURE_SCHEMA
+  DOCUMENTARY_MEMORY_MODEL:
+    status: CANDIDATE
+  HUMAN_ORIGIN_OR_EMERGENCE_MODEL:
+    status: STRONG_CANDIDATE
+  SACRIFICE_AND_BODILY_OFFERING_MODEL:
+    status: STRONG_DECOMPOSITION_CANDIDATE
+
+expanded_test_result:
+  recurring_problem_spaces: SUPPORTED
+  shared_mechanisms: GENERALLY_NOT_SUPPORTED
+  one_indigenous_american_theology: NOT_SUPPORTED
+  common_origin_from_similarity: NOT_SUPPORTED
+  transmission_from_axis_similarity: NOT_SUPPORTED
+
+matrix_policy:
+  original_completed_cross_tradition_tests_remain_exact_head_bound: true
+  expanded_breadth_matrix_is_separate_noncanonical_surface: true
+  retroactive_global_cell_filling: false
+  new_global_tests_require_fresh_all_lane_binding: true
+
+next_frontier:
+  primary: ANDEAN_INCA_DIACHRONIC_PACKET_V1
+  reason: >
+    The first six Indigenous-Americas breadth lanes are now not only ingested but
+    comparison-populated. The Andes provide a new evidence architecture:
+    imperial archaeology, colonial Quechua/Spanish chronicles, khipu,
+    sacred-place/ceque systems, extirpation documents and living Andean
+    communities.
+
+holds:
+  one_global_religion_model: PROHIBITED
+  perennialist_all_religions_matrix: PROHIBITED
+  systems_analogy_as_evidence: PROHIBITED
+
+guards:
+  - EXACT_HEAD_BINDING_REQUIRED
+  - EVIDENCE_CLASS_MUST_SURVIVE_COMPARISON
+  - NOT_ADMITTED_NE_FALSE
+  - SHARED_AXIS_NE_SHARED_CAUSAL_SOURCE
