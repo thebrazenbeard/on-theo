@@ -1,0 +1,42 @@
+schema_version: on-theo.jain-research-state.v1
+status: DIACHRONIC_FOUNDATION_ACTIVE
+
+branch:
+  name: research/jain-diachronic-v1-20260920
+  base_branch: corpus/global-expansion-queue-v1-20260917
+  base_head: cd588c7cabc210f8ae8eb43c148170872aa4b9ac
+
+artifacts:
+  boundary: traditions/jain/diachronic-sectarian-source-boundary-v1.md
+  source_map: traditions/jain/source-map-v1.md
+  foundation: traditions/jain/diachronic-foundation-packet-v1.md
+  neutral_axis: traditions/jain/neutral-axis-evidence-v1.yaml
+
+current_secure_results:
+  - Svetambara_and_Digambara_textual_authority_histories_must_remain_distinct
+  - extant_text_witness_is_not_verbatim_Mahavira_transcript_by_default
+  - canonical_redaction_event_and_manuscript_dates_require_separate_clocks
+  - monastic_and_lay_vows_require_separate_cells
+  - Jain_jiva_karma_liberation_terms_require_Jain_specific_semantics
+  - noncreator_cosmology_is_strong_candidate_not_yet_admitted
+
+current_holds:
+  - CROSS_TRADITION_COMPARISON
+  - WORLD_ORIGIN_MODEL
+  - PERSON_OR_SELF_MODEL
+  - CAUSAL_ORDER_TYPE
+  - POSTMORTEM_PATH_MODEL
+  - TRANSFORMATION_MODEL
+  - ONE_PAN_JAIN_CANON
+  - ONE_UNDIFFERENTIATED_JAIN_PRACTICE
+
+next_frontier:
+  primary: JAIN_CANON_WITNESS_CONTROL_V1
+  subsequent:
+    - JAIN_JIVA_KARMA_LIBERATION_PACKET_V1
+    - JAIN_NONCREATOR_COSMOLOGY_PACKET_V1
+    - JAIN_ASCETIC_LAY_VOW_PACKET_V1
+    - JAIN_COMPARISON_READINESS_AUDIT_V1
+
+guards:
+  - INTERNAL_RECONSTRUCTION_BEFORE_COMPARISON
