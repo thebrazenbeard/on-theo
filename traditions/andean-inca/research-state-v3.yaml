@@ -1,0 +1,26 @@
+schema_version: on-theo.andean-inca-research-state.v3
+status: KHIPU_DOCUMENTARY_LAYER_ADDED
+supersedes_for_current_research:
+  - traditions/andean-inca/research-state-v2.yaml
+
+branch:
+  name: research/andean-inca-diachronic-v1-20260920
+  pr: 113
+
+new_artifacts:
+  khipu_packet: traditions/andean-inca/khipu-documentary-memory-packet-v1.md
+  khipu_evidence: traditions/andean-inca/khipu-evidence-v1.yaml
+
+current_internal_status:
+  SACRED_LAND_PLACE_MODEL: BOUNDED_CUSCO_IMPERIAL
+  INSTITUTIONALIZATION_MODEL: BOUNDED_CEQUE_AND_KHIPU
+  POLITICAL_SACRALIZATION_MODEL: BOUNDED_CUSCO_RITUAL_LANDSCAPE
+  RITUAL_ORDER_MODEL: BOUNDED_CEQUE
+  DOCUMENTARY_MEMORY_MODEL: BOUNDED_KHIPU
+  KNOWLEDGE_OR_DISCLOSURE_MODEL: BOUNDED_KHIPU_DOCUMENTARY_SPECIALIST
+  CONTINUITY_MODEL: PARTIAL_DOCUMENTARY_TRANSFORMATION
+  SACRIFICE_AND_BODILY_OFFERING_MODEL: STRONG_CANDIDATE
+  CROSS_TRADITION_COMPARISON: HOLD
+
+next_frontier:
+  primary: INCA_CAPACOCHA_CONVERGENCE_PACKET_V1
