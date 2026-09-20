@@ -1,0 +1,58 @@
+schema_version: on-theo.haudenosaunee-seasonality-evidence.v1
+status: BOUNDED_ONEIDA_PUBLIC_SEASONAL_TIME
+
+source:
+  primary: ONEIDA_NATION_CEREMONIES
+  evidence_class:
+    - MODERN_TRADITION
+    - CURRENT_NATION_SELF_DESCRIPTION
+    - PUBLIC_CEREMONIAL_CATEGORY
+
+records:
+  - id: HAU-SEASON-TIME-001
+    propositions:
+      - ceremonies_follow_seasons_agriculture_and_lunar_cycles
+      - Faithkeepers_determine_timing_through_observation
+    supports:
+      - SACRED_TIME_CALENDAR_MODEL
+      - AGENCY_AND_AUTHORITY_MODEL
+      - INSTITUTIONALIZATION_MODEL
+    confidence: HIGH_CURRENT_ONEIDA_PUBLIC
+
+  - id: HAU-SEASON-FOOD-001
+    propositions:
+      - maple_planting_berry_bean_corn_and_harvest_cycles_structure_public_ceremonial_categories
+    supports:
+      - SACRED_TIME_CALENDAR_MODEL
+      - RELATIONAL_ORDER_MODEL
+      - RITUAL_ORDER_MODEL_PARTIAL
+    confidence: HIGH_CURRENT_ONEIDA_PUBLIC
+
+  - id: HAU-SEASON-CELESTIAL-001
+    propositions:
+      - Sun_and_Moon_have_distinct_public_thanksgiving_ceremonial_categories
+    supports:
+      - SACRED_TIME_CALENDAR_MODEL
+      - RELATIONAL_ORDER_MODEL
+    confidence: BOUNDED_CURRENT_ONEIDA
+
+  - id: HAU-SEASON-MORT-001
+    propositions:
+      - public_Community_Death_Feast_is_held_in_spring_and_fall
+      - ceremony_honors_ancestors_who_have_passed
+    supports:
+      - MORTUARY_RELATIONSHIP_MODEL_PARTIAL
+      - SACRED_TIME_CALENDAR_MODEL
+    confidence: HIGH_CURRENT_ONEIDA_PUBLIC
+
+axis_status:
+  SACRED_TIME_CALENDAR_MODEL: BOUNDED_ONEIDA_SEASONAL_ECOLOGICAL
+  RITUAL_ORDER_MODEL: PARTIAL_PUBLIC_SEASONAL
+  AGENCY_AND_AUTHORITY_MODEL: BOUNDED_FAITHKEEPER_TIMING
+  RELATIONAL_ORDER_MODEL: BOUNDED_SEASONAL_AGRICULTURAL_CELESTIAL
+  MORTUARY_RELATIONSHIP_MODEL: PARTIAL_SEASONAL_ANCESTOR
+  CROSS_TRADITION_COMPARISON: HOLD
+
+guards:
+  - ONEIDA_LAYER_REQUIRES_NATION_LABEL
+  - SEASONAL_TIME_NE_NUMERICAL_CALENDAR_IDENTITY
