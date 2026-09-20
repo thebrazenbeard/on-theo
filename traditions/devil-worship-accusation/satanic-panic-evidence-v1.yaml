@@ -1,0 +1,49 @@
+schema_version: on-theo.satanic-panic-evidence-ladder.v1
+status: BOUNDED_INVESTIGATIVE_AND_SCHOLARLY_CONTROL
+
+primary_document:
+  id: DWA-SRA-LANNING-1992
+  source: FBI_NCJRS_INVESTIGATORS_GUIDE_RITUAL_CHILD_ABUSE
+  date: 1992
+  evidence_class: DOCUMENTARY_PRACTICE
+  propositions:
+    - investigators_should_focus_on_specific_verifiable_facts
+    - widespread_claimed_satanic_ritual_abuse_problem_had_not_been_documented
+    - alternative_explanations_for_allegations_require_consideration
+  confidence: HIGH_FOR_DOCUMENT_POSITION
+
+scholarly_controls:
+  - id: DWA-SRA-LEWIS
+    propositions:
+      - Satanic_Ritual_Abuse_scare_did_not_correspond_to_an_empirically_existing_new_religion_matching_the_conspiracy_model
+    evidence_class: SCHOLARLY_INTERPRETATION
+    confidence: HIGH
+
+  - id: DWA-SRA-VICTOR
+    propositions:
+      - ritual_abuse_scare_can_be_analyzed_as_moral_panic_and_social_construction_of_deviance
+    evidence_class: SCHOLARLY_INTERPRETATION
+    confidence: HIGH
+
+  - id: DWA-SRA-DEYOUNG
+    propositions:
+      - daycare_ritual_abuse_cases_are_analyzed_as_moral_panic_with_major_legal_social_consequences
+    evidence_class: SCHOLARLY_INTERPRETATION
+    confidence: HIGH
+
+evidence_levels:
+  0: ALLEGATION_ONLY
+  1: SYMBOLIC_OR_RITUAL_CONTEXT
+  2: INDEPENDENT_CRIME_OR_ABUSE
+  3: SOURCE_SPECIFIC_SATANIC_MOTIVE_OR_SELF_IDENTIFICATION
+  4: SPECIFIC_ORGANIZED_GROUP
+  5: WIDESPREAD_COORDINATED_NETWORK
+
+axis_status:
+  ATTRIBUTION_STATUS: FOLKLORE_OR_CONSPIRACY_PLUS_LEGAL_ALLEGATION
+  KNOWLEDGE_OR_DISCLOSURE_MODEL: PARTIAL_TESTIMONY_PROVENANCE
+  CONTINUITY_MODEL: PANIC_STEREOTYPE_RECURRENCE_NOT_GROUP_CONTINUITY
+  CROSS_TRADITION_COMPARISON: HOLD_PENDING_AUDIT
+
+guards:
+  - UNDERLYING_CRIME_AND_SATANIC_EXPLANATION_INDEPENDENT
