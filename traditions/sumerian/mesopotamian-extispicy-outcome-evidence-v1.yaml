@@ -1,0 +1,54 @@
+schema_version: on-theo.mesopotamian-extispicy-outcome-evidence.v1
+status: NON_CANONICAL_LATER_MESOPOTAMIAN_DIVINATION_CONTROL
+parent_exact_head: 3fd5db6f05c008aeba4febe310de99e4ff484770
+packet: traditions/sumerian/mesopotamian-extispicy-outcome-discriminator-packet-v1.md
+
+source_controls:
+  - id: SAA4_82
+    evidence_class:
+      - PRIMARY_TEXT
+      - MANUSCRIPT_WITNESS
+      - MODERN_EDITION
+    propositions:
+      - pre_formulated_oracle_question
+      - concrete_action_target
+      - ritual_fault_and_pollution_controls
+      - favorable_or_unfavorable_answer_structure
+
+  - id: SAA4_P238975
+    evidence_class:
+      - PRIMARY_TEXT
+      - MANUSCRIPT_WITNESS
+      - MODERN_EDITION
+    propositions:
+      - named_city_capture_question
+      - future_event_is_external_and_decidable
+
+  - id: SAA4_FIRM_POSITIVE
+    evidence_class:
+      - PRIMARY_TEXT
+      - MODERN_EDITION
+    propositions:
+      - source_requests_firm_positive_answer
+      - oracle_system_distinguishes_favorable_from_unfavorable_cases
+
+axes:
+  SOURCE_DEFINED_OUTCOME_PRECISION: HIGH
+  PRE_FORMULATED_QUERY: HIGH
+  PROSPECTIVE_SCOREABILITY: HIGH_IN_HISTORICAL_PRINCIPLE
+  SAFE_LITERAL_MODERN_REPRODUCTION: NOT_ADMITTED
+  STRUCTURAL_MODERN_ABSTRACTION: POSSIBLE
+  EMPIRICAL_ANOMALOUS_INFORMATION: NONE_ESTABLISHED
+
+cross_tradition_control:
+  proposition: >
+    Finite or directional divinatory outputs recur in more than one tradition,
+    so binary outcome structure is methodologically useful but not a unique
+    exotic signature.
+  confidence: BOUNDED_HIGH
+
+guards:
+  - SUMERIAN_NE_NEO_ASSYRIAN_EXTISPICY
+  - BINARY_QUERY_NE_SIMPLE_BINARY_MECHANISM
+  - ORACLE_OUTCOME_NE_VERIFIED_PREDICTION
+  - HISTORICAL_ANIMAL_RITE_NE_MODERN_TEST
