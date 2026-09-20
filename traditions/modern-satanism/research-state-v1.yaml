@@ -1,0 +1,40 @@
+schema_version: on-theo.modern-satanism-research-state.v1
+status: DIACHRONIC_FOUNDATION_ACTIVE
+
+branch:
+  name: research/modern-satanism-diachronic-v1-20260920
+  base_branch: corpus/global-expansion-queue-v1-20260917
+  base_head: cd588c7cabc210f8ae8eb43c148170872aa4b9ac
+
+artifacts:
+  boundary: traditions/modern-satanism/diachronic-attribution-boundary-v1.md
+  source_map: traditions/modern-satanism/source-map-v1.md
+  foundation: traditions/modern-satanism/diachronic-foundation-packet-v1.md
+  neutral_axis: traditions/modern-satanism/neutral-axis-evidence-v1.yaml
+
+current_secure_results:
+  - accusation_and_self_identification_are_distinct_objects
+  - modern_Satanism_is_not_one_religion
+  - Church_of_Satan_and_TST_are_both_currently_non_theistic_but_not_interchangeable
+  - scholarly_field_includes_theistic_esoteric_self_identification_despite_CoS_exclusivist_boundary
+  - Temple_of_Set_requires_related_distinct_classification
+  - Satan_referent_must_be_source_specific
+  - modern_self_identified_Satanism_does_not_demonstrate_medieval_hidden_continuity
+
+current_holds:
+  - CROSS_TRADITION_COMPARISON
+  - ONE_SATANISM_THEOLOGY
+  - DEVIL_WORSHIP_ACCUSATION_HISTORY
+  - EXTREMIST_FRINGE_GENERALIZATION
+  - THEISTIC_SATANISM_SINGLE_CREED
+
+next_frontier:
+  primary: CHURCH_OF_SATAN_PROPOSITION_PACKET_V1
+  subsequent:
+    - SATANIC_TEMPLE_PROPOSITION_PACKET_V1
+    - THEISTIC_ESOTERIC_SATANISM_DIVERSITY_PACKET_V1
+    - MODERN_SATANISM_COMPARISON_READINESS_AUDIT_V1
+
+guards:
+  - CURRENT_ORGANIZATION_SELF_DESCRIPTION_NE_NEUTRAL_FIELD_DEFINITION
+  - ACCUSATION_HISTORY_REMAINS_SEPARATE
