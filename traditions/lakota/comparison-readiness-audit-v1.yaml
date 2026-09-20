@@ -1,0 +1,220 @@
+schema_version: on-theo.lakota-comparison-readiness-audit.v1
+status: INTERNAL_RECONSTRUCTION_MATURE_FOR_BOUNDED_FUTURE_COMPARISON
+source_branch: research/lakota-public-source-v1-20260920
+source_head_before_audit: 609ad378cc03e6e2a0352d5e0db197ff8a14035a
+pr: 104
+
+method:
+  principle: >
+    Comparison eligibility means that an exact Lakota source packet can answer a
+    neutral axis at a stated ceiling. It does not mean the axis should be added
+    to every existing cross-tradition test immediately.
+  controls:
+    - community_and_period_scope_must_remain_visible
+    - contemporary_public_source_ne_unchanged_precontact_form
+    - mediated_historical_testimony_ne_unmediated_transcript
+    - restricted_knowledge_is_not_required_for_comparison
+    - not_admitted_ne_false
+
+eligible_existing_axes:
+  CONTACT_AND_REINTERPRETATION_MODEL:
+    status: BOUNDED_COMPARISON_ELIGIBLE
+    evidence:
+      - traditions/lakota/contact-suppression-evidence-v1.yaml
+      - traditions/lakota/black-elk-brown-source-control-v1.yaml
+    strongest_result: >
+      Lakota religious history under colonization is best modeled through
+      distinct mechanisms including coercive suppression, mission contact, dual
+      participation, semantic translation, legal-policy change, and modern
+      tribal reinstitutionalization rather than simple replacement or unchanged
+      survival.
+    required_ceiling: HISTORICAL_AND_MODERN_LAYER_ONLY
+
+  INSTITUTIONALIZATION_MODEL:
+    status: BOUNDED_COMPARISON_ELIGIBLE
+    evidence:
+      - traditions/lakota/contact-suppression-evidence-v1.yaml
+      - traditions/lakota/public-vision-disclosure-evidence-v1.yaml
+      - traditions/lakota/neutral-axis-evidence-v1.yaml
+    strongest_result: >
+      Lakota religious and cultural categories are currently stabilized through
+      tribal law, tribal colleges, community programs, public knowledge
+      governance, and living ceremonial structures.
+    required_ceiling: MODERN_TRIBAL_INSTITUTIONS_PLUS_CONTROLLED_HISTORICAL_CONTEXT
+
+  KNOWLEDGE_OR_DISCLOSURE_MODEL:
+    status: BOUNDED_COMPARISON_ELIGIBLE
+    evidence:
+      - traditions/lakota/public-vision-disclosure-evidence-v1.yaml
+      - traditions/lakota/wakan-semantic-evidence-v1.yaml
+    modes:
+      - vision_seeking
+      - prayer_for_guidance_and_wisdom
+      - oral_intergenerational_transmission
+      - community_governed_disclosure
+    strongest_result: >
+      Public sources support multiple recognized modes of religious knowledge
+      relation while explicitly preserving community authority over what may be
+      disclosed.
+    required_ceiling: HIGH_LEVEL_PUBLIC_ONLY
+
+  MORTUARY_RELATIONSHIP_MODEL:
+    status: BOUNDED_COMPARISON_ELIGIBLE
+    evidence:
+      - traditions/lakota/death-spirit-mourning-evidence-v1.yaml
+      - traditions/lakota/black-elk-brown-source-control-v1.yaml
+    strongest_result: >
+      A deceased person's spirit can remain a recognized ritual referent during
+      a publicly named mortuary relationship without establishing one universal
+      soul ontology or postmortem route.
+    required_ceiling: PUBLIC_CATEGORY_AND_MEDIATED_HISTORICAL_CONTINUITY_ONLY
+
+  RITUAL_ORDER_MODEL:
+    status: PARTIAL_COMPARISON_ELIGIBLE
+    evidence:
+      - traditions/lakota/neutral-axis-evidence-v1.yaml
+      - traditions/lakota/public-vision-disclosure-evidence-v1.yaml
+      - traditions/lakota/sacred-land-evidence-v1.yaml
+    supported:
+      - named_public_ceremonial_categories
+      - sacred_place_relation
+      - pipe_centrality_in_selected_public_sources
+      - vision_seeking_as_public_category
+    missing:
+      - one_full_validity_schema
+      - cross_community_procedural_uniformity
+      - specialist_office_map
+    required_ceiling: CATEGORY_AND_RELATIONAL_STRUCTURE_NOT_PROCEDURE
+
+  SACRAL_PRESENCE_MODEL:
+    status: PARTIAL_COMPARISON_ELIGIBLE
+    evidence:
+      - traditions/lakota/wakan-semantic-evidence-v1.yaml
+      - traditions/lakota/sacred-land-evidence-v1.yaml
+    supported:
+      - sacred_mystery_power_semantic_field
+      - prayer_address_to_Wakan_Tanka_in_current_sources
+      - named_sacred_place_relations
+      - pipe_as_selected_public_mediator
+    missing:
+      - one_fixed_presence_ontology
+      - one_uniform_localization_model
+    required_ceiling: PUBLIC_SEMANTIC_AND_PLACE_RELATION_ONLY
+
+  CONTINUITY_MODEL:
+    status: PARTIAL_COMPARISON_ELIGIBLE
+    evidence:
+      - traditions/lakota/death-spirit-mourning-evidence-v1.yaml
+    supported:
+      - deceased_spirit_remains_ritual_referent_after_death_in_selected_public_sources
+    missing:
+      - one_complete_theory_of_what_persists
+      - one_postmortem_destination_model
+    required_ceiling: MORTUARY_RELATIONAL_CONTINUITY_ONLY
+
+held_existing_axes:
+  WORLD_ORIGIN_MODEL:
+    status: HOLD
+    reason: >
+      Current Wind Cave evidence is a bounded human/bison emergence narrative,
+      not a complete world-origin model.
+
+  POSTMORTEM_PATH_MODEL:
+    status: HOLD
+    reason: >
+      Current public/community evidence does not justify one Lakota-wide route,
+      destination, judgment, or return model.
+
+  PERSON_OR_SELF_MODEL:
+    status: HOLD_PARTIAL_INTERNAL
+    reason: >
+      Nagi and relational-personhood evidence is important but does not yet
+      define what constitutes a person/self across communities and periods.
+
+  AGENCY_AND_AUTHORITY_MODEL:
+    status: HOLD_PARTIAL_INTERNAL
+    reason: >
+      Current Wakan Tanka prayer/guidance language supports agency-like public
+      usage, but a comparison cell would risk over-systematizing ontology and
+      authority from modern English glosses.
+
+  WORLD_TERMINUS_RENEWAL_MODEL:
+    status: NOT_ADMITTED
+
+  POLITICAL_SACRALIZATION_MODEL:
+    status: NOT_ADMITTED
+    reason: current tribal law_and_spiritual_language_do_not_by_themselves_establish_a_sacralized_political_authority_model
+
+  OFFERING_EXCHANGE_MODEL:
+    status: NOT_YET_ADMITTED
+    reason: >
+      Public offerings are attested at selected sacred sites, but recipient,
+      effect, reciprocity, and ritual mechanism are not yet bound strongly
+      enough for this axis.
+
+  TRANSFORMATION_MODEL:
+    status: NOT_YET_ADMITTED
+
+new_axis_candidates:
+  RELATIONAL_ORDER_MODEL:
+    status: STRONG_NEW_AXIS_CANDIDATE
+    neutral_question: >
+      How are persons, kin, other-than-human beings, place, community, and sacred
+      power constituted through relations and obligations?
+    evidence:
+      - traditions/lakota/neutral-axis-evidence-v1.yaml
+      - traditions/lakota/wakan-semantic-evidence-v1.yaml
+    reason: >
+      Existing person/self and social-cosmology axes do not adequately capture
+      relational ontology and kinship-order propositions without forcing them
+      into individualist categories.
+
+  SACRED_LAND_PLACE_MODEL:
+    status: STRONG_NEW_AXIS_CANDIDATE
+    neutral_question: >
+      How do named places participate in origin, ceremony, identity, obligation,
+      sacred presence, memory, and religious authority?
+    evidence:
+      - traditions/lakota/sacred-land-evidence-v1.yaml
+    reason: >
+      Sacred geography is not reducible to ritual order or sacral presence; the
+      current Lakota evidence demonstrates distinct place-specific functions.
+
+  HUMAN_ORIGIN_OR_EMERGENCE_MODEL:
+    status: NEW_AXIS_CANDIDATE
+    neutral_question: >
+      What does a source claim about the emergence, arrival, formation, or
+      differentiation of humans, independently of cosmic world origin?
+    evidence:
+      - traditions/lakota/sacred-land-evidence-v1.yaml
+    reason: >
+      The Wind Cave Oglala narrative demonstrates that human emergence and world
+      origin are analytically distinct.
+
+readiness_result:
+  internal_reconstruction_foundation_complete: true
+  bounded_future_comparison_allowed: true
+  immediate_global_matrix_insertion_required: false
+  comparison_must_bind_exact_lakota_head: true
+  restricted_knowledge_required_for_readiness: false
+
+strongest_method_result: >
+  Lakota evidence can now participate in bounded comparison without either
+  universalizing one Lakota theology or demanding disclosure of restricted
+  ceremonial knowledge; comparison should proceed only on axes whose public
+  evidence is already sufficient.
+
+next_portfolio_frontier:
+  primary: MAYA_DIACHRONIC_RESEARCH_PACKET_V1
+  reason: >
+    The Lakota public-source foundation has reached a defensible comparison
+    readiness gate. Portfolio breadth should now continue rather than repeatedly
+    deepening one newly added tradition before other known geographic gaps are
+    opened.
+
+guards:
+  - COMPARISON_READY_NE_TRADITION_COMPLETE
+  - ELIGIBLE_AXIS_NE_REQUIRED_MATRIX_CELL
+  - PUBLIC_SOURCE_SUFFICIENCY_NE_RESTRICTED_DISCLOSURE_NEEDED
+  - LAKOTA_NE_GENERIC_INDIGENOUS_RELIGION
+  - COMMUNITY_AND_PERIOD_MUST_REMAIN_VISIBLE

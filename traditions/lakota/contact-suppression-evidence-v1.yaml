@@ -1,0 +1,95 @@
+schema_version: on-theo.lakota-contact-suppression-evidence.v1
+status: BOUNDED_INTERNAL_HISTORICAL
+
+records:
+  - id: LAK-CONTACT-FEDERAL-1883-001
+    evidence_class:
+      - DOCUMENTARY_PRACTICE
+      - HISTORICAL_RECONSTRUCTION
+    propositions:
+      - federal_policy_targeted_Indigenous_ceremonial_practice
+      - Sun_Dance_was_specifically_targeted_in_Code_of_Indian_Offenses_regime
+    supports:
+      - CONTACT_AND_REINTERPRETATION_MODEL
+      - RITUAL_ORDER_MODEL
+    confidence: BOUNDED_HIGH
+    guards:
+      - FEDERAL_RULE_NE_IDENTICAL_LOCAL_ENFORCEMENT_EVERYWHERE
+
+  - id: LAK-CONTACT-CONTINUITY-001
+    source: LIBRARY_OF_CONGRESS_SIOUX_SONG
+    evidence_class: HISTORICAL_RECONSTRUCTION
+    propositions:
+      - suppression_contributed_to_secret_or_restricted_performance
+      - selected_Pine_Ridge_and_Rosebud_Sun_Dances_continued_or_reappeared_in_twentieth_century
+    supports:
+      - CONTINUITY_MODEL
+      - CONTACT_AND_REINTERPRETATION_MODEL
+    confidence: BOUNDED
+    guards:
+      - CONTINUITY_NE_UNCHANGED_FORM
+
+  - id: LAK-CONTACT-BLACK-ELK-CATHOLIC-001
+    evidence:
+      - MARQUETTE_NICHOLAS_BLACK_ELK_ARCHIVE
+      - FITZGERALD_2017
+    evidence_class:
+      - DOCUMENTARY_PRACTICE
+      - HISTORICAL_RECONSTRUCTION
+      - SCHOLARLY_INTERPRETATION
+    propositions:
+      - Black_Elk_baptized_Catholic_1904
+      - Black_Elk_served_as_Catholic_catechist
+      - Black_Elk_also_remained_relevant_to_pipe_tradition
+      - dual_participation_is_historically_documented_problem
+    supports:
+      - CONTACT_AND_REINTERPRETATION_MODEL
+    confidence: BOUNDED_HIGH
+    guards:
+      - ONE_PERSON_NE_ALL_LAKOTA_CONTACT_PATTERN
+
+  - id: LAK-CONTACT-AIRFA-001
+    source: PUBLIC_LAW_95_341
+    evidence_class:
+      - DOCUMENTARY_PRACTICE
+      - FEDERAL_STATUTE
+    propositions:
+      - Congress_acknowledged_prior_abridgment_of_traditional_religious_freedom
+      - federal_policy_from_1978_protects_belief_ceremony_sacred_objects_and_site_access
+    supports:
+      - CONTACT_AND_REINTERPRETATION_MODEL
+      - SACRED_LAND_PLACE_MODEL
+    confidence: HIGH
+    guards:
+      - PROTECTIVE_POLICY_NE_ALL_ACCESS_DISPUTES_RESOLVED
+
+  - id: LAK-CONTACT-MODERN-INSTITUTIONS-001
+    evidence:
+      - STANDING_ROCK_TRADITIONAL_LAW
+      - OGLALA_LAKOTA_COLLEGE
+      - SITTING_BULL_COLLEGE
+      - ROSEBUD_TRIBAL_PROGRAMS
+    evidence_class:
+      - DOCUMENTARY_PRACTICE
+      - MODERN_TRADITION
+    propositions:
+      - Lakota_religious_cultural_categories_are_present_in_modern_tribal_institutions
+      - continuity_operates_through_modern_legal_educational_and_social_structures
+    supports:
+      - INSTITUTIONALIZATION_MODEL
+      - CONTACT_AND_REINTERPRETATION_MODEL
+    confidence: BOUNDED_CONTEMPORARY
+
+axis_status:
+  CONTACT_AND_REINTERPRETATION_MODEL: BOUNDED_INTERNAL_HISTORICAL
+  INSTITUTIONALIZATION_MODEL: BOUNDED_INTERNAL
+  CONTINUITY_MODEL: PARTIAL_INTERNAL_READY
+  CROSS_TRADITION_COMPARISON: HOLD
+
+guards:
+  - SUPPRESSION_NE_EXTINCTION
+  - CONTINUITY_NE_UNCHANGED_FORM
+  - CONVERSION_NE_TOTAL_REPLACEMENT
+  - CURRENT_CREATOR_LANGUAGE_NE_PRECONTACT_IDENTITY_BY_DEFAULT
+  - CURRENT_CREATOR_LANGUAGE_NE_INAUTHENTIC_BY_DEFAULT
+  - SYNcretISM_NE_ONE_SUFFICIENT_MECHANISM_LABEL
