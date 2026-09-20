@@ -1,0 +1,100 @@
+schema_version: on_theo.valentinian_primary_text_control.v1
+status: BOUNDED_RESEARCH_PACKET_REVIEW_REQUIRED
+canonical: false
+
+base:
+  branch: corpus/early-christian-rabbinic-v1-20260917
+  exact_head: 5a45ef5cdadc1f1f3a21e769e2d613c4ed945d8d
+
+sources:
+  - id: VAL-SRC-PTOLEMY-FLORA
+    evidence_class: PRIMARY_TEXT
+    witness_mode: embedded_in_epiphanius
+    attribution: Ptolemy
+    direct_valentinian_voice: true
+    ceiling: STRONG_FOR_PTOLEMY_NOT_ALL_VALENTINIANS
+
+  - id: VAL-SRC-TRIPARTITE-NHC-I-5
+    evidence_class:
+      - MANUSCRIPT_WITNESS
+      - PRIMARY_TEXT
+    witness_language: Coptic
+    original_language_reconstruction: Greek_likely
+    attribution: anonymous
+    valentinian_classification: strong
+    composition_layer: likely_later_third_century
+    ceiling: STRONG_FOR_THIS_TEXT_TEMPORAL_GENERALIZATION_RESTRICTED
+
+  - id: VAL-SRC-GOSPEL-TRUTH-NHC-I-3-XII-2
+    evidence_class:
+      - MANUSCRIPT_WITNESS
+      - PRIMARY_TEXT
+    attribution: unknown
+    valentinian_reception: strong
+    valentinus_authorship: unknown
+    ceiling: STRONG_FOR_TEXT_BOUNDED_FOR_RECEPTION
+
+  - id: VAL-SRC-IRENAEUS-AH-I
+    evidence_class: PRIMARY_TEXT
+    role: hostile_heresiological_witness
+    claimed_direct_access:
+      - writings_of_valentinian_disciples
+      - personal_contact_with_adherents
+    ceiling: STRONG_FOR_IRENAEAN_REPORT_HOSTILE_MEDIATION_VISIBLE
+
+claims:
+  - id: VAL-V1-001
+    proposition: Valentinian Christianity was internally diverse rather than one fixed system.
+    class: HISTORICAL_RECONSTRUCTION
+    status: BOUNDED
+    confidence: strong
+
+  - id: VAL-V1-002
+    proposition: Some Valentinian teachers interpreted Mosaic law through differentiated layers rather than rejecting it wholesale.
+    class: HISTORICAL_RECONSTRUCTION
+    status: BOUNDED
+    confidence: strong_for_ptolemy
+    support:
+      - VAL-SRC-PTOLEMY-FLORA
+
+  - id: VAL-V1-003
+    proposition: The Tripartite Tractate directly witnesses a developed Valentinian theological system.
+    class: HISTORICAL_RECONSTRUCTION
+    status: BOUNDED
+    confidence: strong
+    support:
+      - VAL-SRC-TRIPARTITE-NHC-I-5
+
+  - id: VAL-V1-004
+    proposition: Valentinus authored the Gospel of Truth.
+    class: HISTORICAL_RECONSTRUCTION
+    status: UNKNOWN
+    confidence: unresolved
+    support:
+      - VAL-SRC-GOSPEL-TRUTH-NHC-I-3-XII-2
+
+  - id: VAL-V1-005
+    proposition: All Valentinians regarded matter and creation as simply evil.
+    class: HISTORICAL_RECONSTRUCTION
+    status: NOT_ADMITTED
+    confidence: overgeneralized
+
+  - id: VAL-V1-006
+    proposition: Valentinianism can be treated as identical with one unitary ancient religion called Gnosticism.
+    class: HISTORICAL_RECONSTRUCTION
+    status: NOT_ADMITTED
+    confidence: overgeneralized
+
+guards:
+  - VALENTINIAN_NE_ONE_SYSTEM
+  - VALENTINIAN_NE_ALL_GNOSTIC
+  - VALENTINIAN_RECEPTION_NE_VALENTINUS_AUTHORSHIP
+  - PHYSICAL_WITNESS_DATE_NE_COMPOSITION_DATE
+  - HERESIOLOGICAL_DESCRIPTION_NE_SELF_DESCRIPTION
+  - INTERNAL_TEXT_NE_ALL_VALENTINIANS
+
+next_scope:
+  - PTOLEMY_FLORA_PROPOSITION_MAP
+  - EXCERPTA_EX_THEODOTO_PACKET
+  - HERACLEON_JOHANNINE_EXEGESIS_PACKET
+  - VALENTINIAN_RITUAL_SACRAMENT_PACKET
