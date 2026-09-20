@@ -1,0 +1,63 @@
+schema_version: on-theo.shinto-research-state.v2
+status: CLASSICAL_VARIANT_RITUAL_MATERIAL_RECONSTRUCTION_ACTIVE
+parent_head: a578729a2e3cec02fe533c3c1d20946347da9aa4
+parent_state: traditions/shinto/research-state-v1.yaml
+
+new_artifacts:
+  - traditions/shinto/kiki-variant-proposition-matrix-v1.md
+  - traditions/shinto/ritual-purity-packet-v1.md
+  - traditions/shinto/shrine-material-institutional-packet-v1.md
+  - traditions/shinto/buddhist-shinto-interaction-boundary-v1.md
+  - traditions/shinto/neutral-axis-evidence-v1.yaml
+
+evidence_layers_active:
+  - KOJIKI_712
+  - NIHON_SHOKI_720
+  - NIHON_SHOKI_ALTERNATIVE_WRITINGS
+  - ENGISHIKI_NORITO
+  - SHRINE_INSTITUTIONAL_HISTORY
+  - MATERIAL_AND_ARCHITECTURAL_EVIDENCE
+  - MEDIEVAL_COMBINATORY_HISTORY
+  - MEIJI_SEPARATION_HISTORY
+
+comparison_axes:
+  WORLD_ORIGIN_MODEL: BOUNDED_VARIANT_SUPPORT
+  AGENCY_AND_AUTHORITY_MODEL: BOUNDED_VARIANT_SUPPORT
+  POSTMORTEM_PATH_MODEL: PARTIAL
+  TRANSFORMATION_MODEL: PARTIAL
+  INSTITUTIONALIZATION_MODEL: BOUNDED
+  PURITY_POLLUTION_MODEL: CANDIDATE_AXIS_STRONG_SUPPORT
+  SACRAL_PRESENCE_MODEL: CANDIDATE_AXIS_BOUNDED_SUPPORT
+  RITUAL_ORDER_MODEL: CANDIDATE_AXIS_STRONG_SUPPORT
+  CONTACT_AND_REINTERPRETATION_MODEL: CANDIDATE_AXIS_BOUNDED_SUPPORT
+
+readiness:
+  bounded_Shinto_comparison: true
+  broad_Shinto_comparison: false
+  local_Fudoki_variants: pending
+  shrine_archaeology: partial
+  medieval_school_specificity: pending
+  Kokugaku: pending
+  State_Shinto: pending
+  contemporary_practice: pending
+
+guards:
+  - CLASSICAL_COMPILATION_NE_PREHISTORIC_TRANSCRIPT
+  - KOJIKI_NE_NIHON_SHOKI_DUPLICATE
+  - NIHON_SHOKI_VARIANT_NE_ERROR
+  - KAMI_NE_GENERIC_GOD
+  - KEGARE_NE_MORAL_SIN
+  - NORITO_NE_DOCTRINAL_TREATISE
+  - RITUAL_CORPUS_NE_MYTHIC_CORPUS
+  - SHRINE_BUILDING_NE_RELIGION_REQUIRED
+  - SHINBUTSU_SHUGO_NE_PRIMORDIAL_IDENTITY
+  - SHINBUTSU_BUNRI_NE_SIMPLE_RETURN_TO_PRIMORDIAL_STATE
+
+next_frontiers:
+  - Izanagi_Izanami_clause_matrix
+  - Amaterasu_Susanoo_variant_matrix
+  - Okuninushi_land_transfer_variant_matrix
+  - Great_Purification_norito_clause_table
+  - Fudoki_regional_kami_packet
+  - Ise_Izumo_Kasuga_material_chronology
+  - Nara_to_medieval_shinbutsu_interaction_chronology

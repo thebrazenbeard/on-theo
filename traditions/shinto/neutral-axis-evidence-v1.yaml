@@ -1,0 +1,107 @@
+schema_version: on-theo.shinto-neutral-axis-evidence.v1
+status: BOUNDED_CLASSICAL_RITUAL_MATERIAL_EVIDENCE
+parent_branch: shinto
+parent_head: a578729a2e3cec02fe533c3c1d20946347da9aa4
+
+records:
+  - id: SHI-KIKI-VARIANT-001
+    evidence: KOJIKI_PLUS_NIHON_SHOKI_VARIANTS
+    propositions:
+      - multiple_classical_origin_accounts_preserved
+      - Amaterasu_Tsukuyomi_Susanoo_birth_sequences_vary
+      - land_generation_sequences_vary
+      - Nihon_shoki_alternative_writings_are_positive_source_data
+    supports:
+      - WORLD_ORIGIN_MODEL
+      - AGENCY_AND_AUTHORITY_MODEL
+      - MYTHIC_VARIATION_CONTROL
+
+  - id: SHI-YOMI-PURITY-001
+    evidence:
+      - KOJIKI_YOMI_CYCLE
+      - NIHON_SHOKI_VARIANTS
+      - MISOGI_RITUAL_TRADITION
+    propositions:
+      - death_pollution_link
+      - purification_after_Yomi
+    supports:
+      - PURITY_POLLUTION_MODEL
+      - POSTMORTEM_PATH_MODEL
+      - TRANSFORMATION_MODEL
+
+  - id: SHI-NORITO-001
+    evidence: ENGISHIKI_BOOK_8_NORITO
+    propositions:
+      - ritual_speech_is_distinct_evidence_layer
+      - Great_Purification_is_formal_ritual_system
+      - ritual_deity_set_not_identical_to_Kiki_deity_set
+    supports:
+      - PURITY_POLLUTION_MODEL
+      - RITUAL_ORDER_MODEL
+      - INTERVENTION_MODEL
+      - KNOWLEDGE_OR_PRACTICE_DIFFERENTIATION_MODEL
+
+  - id: SHI-SHRINE-001
+    evidence:
+      - SHRINE_HISTORY
+      - RITSURYO_ENGISHIKI_ADMINISTRATION
+      - MATERIAL_OBJECTS
+    propositions:
+      - worship_can_precede_permanent_buildings
+      - sacred_presence_can_be_localized_in_places_natural_objects_and_objects
+      - court_shrine_system_becomes_formally_administered
+    supports:
+      - INSTITUTIONALIZATION_MODEL
+      - SACRAL_PRESENCE_MODEL
+      - RITUAL_ORDER_MODEL
+
+  - id: SHI-BUDDHIST-CONTACT-001
+    evidence:
+      - SHINBUTSU_SHUGO
+      - HONJI_SUIJAKU
+      - SHINBUTSU_BUNRI
+    propositions:
+      - kami_Buddhist_relation_changes_historically
+      - medieval_combinatory_models_are_not_early_Kiki_primary_meaning
+      - modern_separation_is_historical_reclassification
+    supports:
+      - CONTACT_AND_REINTERPRETATION_MODEL
+      - INSTITUTIONALIZATION_MODEL
+      - AGENCY_AND_AUTHORITY_MODEL
+
+candidate_axes:
+  PURITY_POLLUTION_MODEL:
+    question: >
+      What states make persons, places, objects, communities, or rites fit or
+      unfit for sacred activity, and how are those states changed?
+  SACRAL_PRESENCE_MODEL:
+    question: >
+      Where or how is sacred presence localized, represented, hosted, invoked,
+      transmitted, or approached?
+  RITUAL_ORDER_MODEL:
+    question: >
+      What combinations of office, calendar, purity, offering, place, speech,
+      and action constitute valid ritual order?
+  CONTACT_AND_REINTERPRETATION_MODEL:
+    question: >
+      How does contact with another tradition transform categories,
+      institutions, ritual, iconography, or metaphysical explanation?
+
+readiness:
+  bounded_Shinto_comparison: true
+  broad_Shinto_synthesis: false
+  Kojiki_Nihon_shoki_harmonization_allowed: false
+  medieval_combination_projected_backward: false
+  State_Shinto_projected_backward: false
+
+guards:
+  - KAMI_NE_MONOTHEISTIC_GOD
+  - KAMI_NE_ONE_FIXED_ONTOLOGICAL_SPECIES
+  - KEGARE_NE_MORAL_SIN
+  - TSUMI_NE_ORIGINAL_SIN
+  - HARAe_NE_DIVINE_FORGIVENESS
+  - MYTHIC_ATTESTATION_NE_SHRINE_CULT_ATTESTATION
+  - CURRENT_SHRINE_BUILDING_NE_ORIGINAL_MATERIAL_WITNESS
+  - HONJI_SUIJAKU_NE_EARLY_KIKI_PRIMARY_MEANING
+  - STATE_SHINTO_NE_TIMELESS_SHINTO
+  - VARIANT_ACCOUNT_NE_ERROR_TO_HARMONIZE
