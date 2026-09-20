@@ -1,0 +1,33 @@
+schema_version: on-theo.haudenosaunee-research-state.v3
+status: PUBLIC_SEASONAL_TIME_LAYER_ADDED
+supersedes_for_current_research:
+  - traditions/haudenosaunee/research-state-v2.yaml
+
+branch:
+  name: research/haudenosaunee-public-source-v1-20260920
+  pr: 112
+
+new_artifacts:
+  seasonality_packet: traditions/haudenosaunee/public-seasonality-ceremonial-time-packet-v1.md
+  seasonality_evidence: traditions/haudenosaunee/seasonality-evidence-v1.yaml
+
+current_internal_status:
+  POLITICAL_SACRALIZATION_MODEL: BOUNDED_CURRENT_GREAT_LAW
+  INSTITUTIONALIZATION_MODEL: BOUNDED_MULTI_LEVEL
+  AGENCY_AND_AUTHORITY_MODEL: BOUNDED_DISTRIBUTED_PLUS_ONEIDA_TIMING
+  RELATIONAL_ORDER_MODEL: BOUNDED_INTERGENERATIONAL_AND_SEASONAL
+  SACRED_TIME_CALENDAR_MODEL: BOUNDED_ONEIDA_SEASONAL_ECOLOGICAL
+  RITUAL_ORDER_MODEL: PARTIAL_PUBLIC
+  KNOWLEDGE_OR_DISCLOSURE_MODEL: PARTIAL_ORAL_WAMPUM
+  MORTUARY_RELATIONSHIP_MODEL: PARTIAL_ONEIDA_SEASONAL_ANCESTOR
+  CROSS_TRADITION_COMPARISON: HOLD
+
+next_frontier:
+  primary: HAUDENOSAUNEE_WAMPUM_CONTACT_PACKET_V1
+  subsequent:
+    - HAUDENOSAUNEE_COMPARISON_READINESS_AUDIT_V1
+
+guards:
+  - NATION_SCOPE_REQUIRED
+  - PUBLIC_CEREMONY_NE_PROCEDURE
+  - CURRENT_FORM_CAN_INCLUDE_LATER_HISTORICAL_LAYERS
