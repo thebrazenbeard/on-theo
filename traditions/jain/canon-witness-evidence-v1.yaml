@@ -1,0 +1,102 @@
+schema_version: on-theo.jain-canon-witness-evidence.v1
+status: BOUNDED_SECTARIAN_CANON_MEMORY_DIVERGENCE
+
+records:
+  - id: JAIN-CANON-SV-001
+    source: BALCEROWICZ_2021
+    evidence_class: SCHOLARLY_INTERPRETATION
+    propositions:
+      - received_Svetambara_canon_has_multiple_historical_layers
+      - major_late_antique_redaction_standardization_is_historically_reconstructed
+      - some_received_passages_may_preserve_earlier_material
+    supports:
+      - DOCUMENTARY_MEMORY_MODEL
+      - CONTINUITY_MODEL
+    confidence: HIGH_CURRENT_SCHOLARLY
+
+  - id: JAIN-CANON-COUNCIL-001
+    source: WILES_DATING_JAINA_COUNCILS
+    evidence_class: SCHOLARLY_INTERPRETATION
+    propositions:
+      - exact_dating_and_historical_reconstruction_of_Jain_councils_requires_source_criticism
+      - traditional_council_accounts_must_not_be_treated_as_unmediated_archival_records
+    supports:
+      - SOURCE_CRITICISM_CONTROL
+    confidence: HIGH
+
+  - id: JAIN-CANON-DIG-001
+    evidence:
+      - BALCEROWICZ_2021
+      - FUJINAGA_DIGAMBARA_ATTITUDES
+    evidence_class: SCHOLARLY_INTERPRETATION
+    propositions:
+      - Digambara_authoritative_textual_history_differs_from_Svetambara_agama_history
+      - Digambara_attitudes_to_Svetambara_agamas_are_historically_nuanced
+      - canon_loss_is_a_sectarian_memory_claim_not_neutral_project_fact
+    supports:
+      - DOCUMENTARY_MEMORY_MODEL
+      - CONTINUITY_MODEL
+    confidence: HIGH
+
+  - id: JAIN-CANON-TS-001
+    evidence:
+      - SEP_JAINA_PHILOSOPHY
+      - LD_INSTITUTE_TATTVARTHASUTRA_STUDY
+    evidence_class:
+      - SCHOLARLY_INTERPRETATION
+      - TEXTUAL_RECEPTION
+    propositions:
+      - Tattvarthasutra_is_early_systematic_Sanskrit_Jain_text
+      - text_has_authority_in_both_major_traditions
+      - sectarian_recensions_and_commentarial_interpretations_remain_distinct
+    supports:
+      - DOCUMENTARY_MEMORY_MODEL
+      - KNOWLEDGE_OR_DISCLOSURE_MODEL_PARTIAL
+    confidence: HIGH
+
+  - id: JAIN-MS-5149
+    source: BRITISH_LIBRARY_OR_5149
+    evidence_class: MANUSCRIPT_WITNESS
+    propositions:
+      - fifteenth_century_illustrated_Prakrit_Svetambara_Kalpasutra_witness_exists
+    confidence: HIGH
+
+  - id: JAIN-MS-11921
+    source: BRITISH_LIBRARY_OR_11921
+    evidence_class: MANUSCRIPT_WITNESS
+    propositions:
+      - fifteenth_century_illustrated_Prakrit_Svetambara_Kalpasutra_witness_exists
+    confidence: HIGH
+
+  - id: JAIN-MS-12744
+    source: BRITISH_LIBRARY_OR_12744
+    evidence_class: MANUSCRIPT_WITNESS
+    propositions:
+      - sixteenth_century_illustrated_Prakrit_Svetambara_Kalpasutra_witness_exists
+    confidence: HIGH
+
+  - id: JAIN-MS-13550
+    source: BRITISH_LIBRARY_OR_13550
+    evidence_class: MANUSCRIPT_WITNESS
+    propositions:
+      - fifteenth_century_Prakrit_Avasyakaniryukti_Theravali_witness_exists
+    confidence: HIGH
+
+axis_status:
+  DOCUMENTARY_MEMORY_MODEL: BOUNDED_SECTARIAN_CANON_MEMORY_DIVERGENCE
+  KNOWLEDGE_OR_DISCLOSURE_MODEL: PARTIAL_TEXTUAL_SCHOLASTIC
+  CONTINUITY_MODEL: BOUNDED_TEXTUAL_REDACTION_SECTARIAN_MEMORY
+  INSTITUTIONALIZATION_MODEL: PARTIAL_CANON_SCHOLASTIC
+  CROSS_TRADITION_COMPARISON: HOLD
+
+documentary_subdimensions:
+  - CANON_PRESERVATION_CLAIM
+  - CANON_LOSS_CLAIM
+  - RECEIVED_TEXTUAL_CORPUS
+  - CROSS_SECT_TEXTUAL_AUTHORITY
+  - LOST_TEXT_AUTHORITY_MEMORY
+  - PHYSICAL_WITNESS_HISTORY
+  - COMMENTARIAL_RECEPTION
+
+guards:
+  - FOUR_CLOCK_MODEL_REQUIRED
