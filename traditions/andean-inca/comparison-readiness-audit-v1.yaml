@@ -1,0 +1,237 @@
+schema_version: on-theo.andean-inca-comparison-readiness-audit.v1
+status: DIACHRONIC_FOUNDATION_MATURE_FOR_BOUNDED_FUTURE_COMPARISON
+source_branch: research/andean-inca-diachronic-v1-20260920
+source_head_before_audit: 0afeaaa7a82e4a332738398afc6f6da80c689b7e
+pr: 113
+
+method:
+  principle: >
+    Andean/Inca comparison cells must name whether the evidence is imperial
+    Cusco/Inca, provincial archaeological, colonial Indigenous/mestizo/Spanish
+    witness, khipu documentary practice, or a named living Andean layer.
+    "Inca religion" and "Andean religion" are not interchangeable units.
+  required_fields:
+    - imperial_or_regional_scope
+    - period
+    - evidence_mode
+    - exact_source_binding
+    - claim_ceiling
+
+comparison_eligible_existing_axes:
+  RITUAL_ORDER_MODEL:
+    status: BOUNDED_COMPARISON_ELIGIBLE
+    source_layers:
+      - CUSCO_CEQUE_SHRINE_NETWORK
+      - CAPACOCHA_SELECTED_IMPERIAL_RITE
+    strongest_result: >
+      Selected imperial Inca ritual order is materially and historically
+      attested through networked huaca maintenance and capacocha
+      procession/sacrifice, while no claim is made that these exhaust Andean
+      ritual.
+    guards:
+      - SELECTED_IMPERIAL_RITES_NE_ALL_ANDEAN_RITUAL
+      - PROCESSIONAL_RECONSTRUCTION_NE_ONE_FIXED_RITE
+
+  POLITICAL_SACRALIZATION_MODEL:
+    status: BOUNDED_COMPARISON_ELIGIBLE
+    source_layers:
+      - CUSCO_CAPITAL_CENTERED_CEQUE_SYSTEM
+      - CAPACOCHA_IMPERIAL_INTEGRATION
+    strongest_result: >
+      Inca imperial authority is source-attested as structurally entangled with
+      Cusco-centered sacred geography, distributed huaca obligations and
+      selected state sacrifice.
+    guards:
+      - IMPERIAL_SACRAL_ORDER_NE_ALL_ANDEAN_POLITICS
+      - STATE_SUPPORT_NE_LOCAL_HUACA_MEANING_ERASURE
+
+  INSTITUTIONALIZATION_MODEL:
+    status: BOUNDED_COMPARISON_ELIGIBLE
+    source_layers:
+      - CEQUE_SOCIAL_SHRINE_MAINTENANCE
+      - KHIPUKAMAYUQ_DOCUMENTARY_SPECIALIZATION
+      - QHAPAQ_NAN_IMPERIAL_INFRASTRUCTURE
+    strongest_result: >
+      Ritual landscapes, specialist record keeping and imperial infrastructure
+      demonstrate multiple durable institutions joining social groups, place,
+      information and state organization.
+    guards:
+      - INSTITUTIONALIZATION_NE_CENTRALIZATION_ONLY
+      - KHIPUKAMAYUQ_NE_PRIEST_BY_DEFAULT
+
+  KNOWLEDGE_OR_DISCLOSURE_MODEL:
+    status: BOUNDED_COMPARISON_ELIGIBLE
+    source_layers:
+      - KHIPU_SPECIALIST_RECORD_PRACTICE
+      - COLONIAL_MULTI_WITNESS_MEDIATION
+    strongest_result: >
+      Knowledge is stabilized through specialist material records and later
+      multilingual/oral-to-alphabetic colonial mediation, but surviving khipu do
+      not license general narrative or theological decipherment.
+    guards:
+      - NUMERIC_DECODING_NE_GENERAL_SEMANTIC_DECODING
+      - COLONIAL_TEXT_NE_DIRECT_KHIPU_TRANSCRIPTION
+
+  OFFERING_EXCHANGE_MODEL:
+    status: BOUNDED_COMPARISON_ELIGIBLE
+    source_layers:
+      - CAPACOCHA_MULTI_MATERIAL_OFFERINGS
+      - LIVING_SELECTED_PACHAMAMA_APU_OFFERINGS_PARTIAL
+    strongest_result: >
+      Offering is securely attested in imperial capacocha and selected living
+      Andean contexts, but recipient, reciprocity and mechanism must remain
+      layer-specific.
+    guards:
+      - CAPACOCHA_NE_LIVING_COMMUNITY_OFFERING_IDENTITY
+      - OFFERING_NE_ONE_RECIPROCITY_FORMULA
+
+  CONTACT_AND_REINTERPRETATION_MODEL:
+    status: BOUNDED_COMPARISON_ELIGIBLE
+    source_layer: COLONIAL_MULTI_WITNESS_ARCHIVE
+    strongest_result: >
+      Colonial Andean knowledge is mediated through Indigenous critique,
+      mestizo philology, Spanish travel/history, clerical ritual documentation,
+      missionary suppression and later synthesis rather than one generic
+      chronicle tradition.
+    guards:
+      - CHRONICLES_NE_ONE_SOURCE
+      - COLONIAL_MEDIATION_NE_INDIGENOUS_CONTENT_ABSENT
+
+  CONTINUITY_MODEL:
+    status: BOUNDED_COMPARISON_ELIGIBLE
+    source_layers:
+      - LIVING_QHAPAQ_NAN_CUSTODIANSHIP
+      - LIVING_AYNI_COMMUNITY_LABOR
+      - POSTCONQUEST_KHIPU_TRANSFORMATION
+    strongest_result: >
+      Selected infrastructure, reciprocal practice and documentary technologies
+      show continuity with transformation, not unchanged imperial survival.
+    guards:
+      - CONTINUITY_NE_UNCHANGED_FORM
+      - LIVING_ANDES_NE_INCA_EMPIRE_TODAY
+
+  MORTUARY_RELATIONSHIP_MODEL:
+    status: PARTIAL_COMPARISON_ELIGIBLE
+    source_layer: CAPACOCHA_SACRIFICIAL_BURIAL
+    strongest_result: >
+      Selected sacrificed children were interred in structured high-status
+      shrine contexts, establishing a bounded sacrificial mortuary relation
+      without one ordinary-human afterlife model.
+    guards:
+      - SACRIFICIAL_BURIAL_NE_GENERAL_MORTUARY_SYSTEM
+      - BURIAL_CONTEXT_NE_POSTMORTEM_PATH
+
+  AGENCY_AND_AUTHORITY_MODEL:
+    status: PARTIAL_COMPARISON_ELIGIBLE
+    source_layers:
+      - KHIPUKAMAYUQ_SPECIALIST_AUTHORITY
+      - IMPERIAL_RITUAL_ORGANIZATION
+    strongest_result: >
+      Specialist documentary authority and state ritual authority are
+      source-attested, but divine, priestly, local-huaca and ruler authority
+      remain under-decomposed.
+    guards:
+      - SPECIALIST_RECORD_KEEPER_NE_RELIGIOUS_PRIEST
+      - IMPERIAL_AUTHORITY_NE_ALL_ANDEAN_AUTHORITY
+
+held_existing_axes:
+  WORLD_ORIGIN_MODEL:
+    status: HOLD
+    reason: >
+      Colonial creation narratives exist but no dedicated multi-witness,
+      source-critical packet has yet separated variants and Christian framing.
+
+  PERSON_OR_SELF_MODEL:
+    status: HOLD
+    reason: >
+      Soul/personhood, ancestor, body and relational categories require a
+      dedicated lexical and diachronic packet.
+
+  POSTMORTEM_PATH_MODEL:
+    status: HOLD
+    reason: >
+      Capacocha burial and colonial death traditions do not yet establish a
+      controlled ordinary-human path/destination model.
+
+  TRANSFORMATION_MODEL:
+    status: HOLD
+
+  SACRAL_PRESENCE_MODEL:
+    status: HOLD_PARTIAL
+    reason: >
+      Huaca categories strongly imply sacred presence/materialization, but huaca
+      is semantically heterogeneous and needs dedicated source control before
+      one presence model is admitted.
+
+  WORLD_TERMINUS_RENEWAL_MODEL:
+    status: HOLD
+
+new_axis_candidates:
+  SACRED_LAND_PLACE_MODEL:
+    status: STRONG_EXPANDED_AXIS_CELL
+    evidence:
+      - traditions/andean-inca/huaca-ceque-evidence-v1.yaml
+      - traditions/andean-inca/capacocha-evidence-v1.yaml
+      - traditions/andean-inca/living-reciprocity-evidence-v1.yaml
+    subtypes:
+      - NETWORKED_CUSCO_HUACA_LANDSCAPE
+      - MOUNTAIN_SHRINE
+      - LIVING_LAND_MOUNTAIN_RELATION
+    strongest_result: >
+      Sacred place is institutionally networked in imperial Cusco, materially
+      concentrated in selected mountain shrines and relationally current in
+      selected living Andean communities.
+
+  RELATIONAL_ORDER_MODEL:
+    status: STRONG_EXPANDED_AXIS_CELL
+    source_layer: LIVING_SELECTED_ANDEAN_COMMUNITIES
+    strongest_result: >
+      Ayni, communal labor, land/mountain relation and shared custodianship form
+      a public living reciprocity layer distinct from imperial redistribution.
+
+  DOCUMENTARY_MEMORY_MODEL:
+    status: STRONG_NEW_AXIS_CANDIDATE
+    evidence:
+      - traditions/andean-inca/khipu-evidence-v1.yaml
+      - traditions/andean-inca/colonial-witness-control-v1.yaml
+    strongest_result: >
+      Khipu and colonial mediation demonstrate that authoritative memory can
+      move through material coding, specialist interpretation, oral explanation
+      and alphabetic transcription without reducing to one writing technology.
+
+  SACRIFICE_AND_BODILY_OFFERING_MODEL:
+    status: STRONG_EXPANDED_AXIS_CELL
+    evidence:
+      - traditions/andean-inca/capacocha-evidence-v1.yaml
+    strongest_result: >
+      Capacocha independently demonstrates that bodily sacrifice must be
+      analytically separated from non-bodily material offering.
+
+readiness_result:
+  internal_foundation_complete: true
+  bounded_future_comparison_allowed: true
+  exact_head_binding_required: true
+  immediate_global_matrix_insertion_required: false
+  Inca_Andean_equivalence_allowed: false
+  colonial_chronicles_as_single_source_allowed: false
+
+strongest_method_result: >
+  Andean/Inca evidence becomes comparison-ready only when imperial ritual
+  landscapes, bodily sacrifice, material documentary practice, colonial witness
+  mediation and living reciprocity remain distinct source layers; archaeology
+  and colonial texts can converge without collapsing into one evidence class.
+
+next_portfolio_frontier:
+  primary: GLOBAL_BREADTH_GAP_AUDIT_V1
+  reason: >
+    The initial Indigenous-Americas expansion sequence now has a seventh lane.
+    Before selecting another tradition, inspect the existing global expansion
+    queue and tradition directories so the next rare/deep-research lane fills an
+    actual corpus gap rather than duplicating prior work.
+
+guards:
+  - COMPARISON_READY_NE_TRADITION_COMPLETE
+  - INCA_NE_ALL_ANDEAN
+  - QUECHUA_NE_INCA
+  - ARCHAEOLOGY_NE_CHRONICLE
+  - LIVING_ANDES_NE_IMPERIAL_SURVIVAL

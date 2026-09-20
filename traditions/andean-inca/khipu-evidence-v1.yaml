@@ -1,0 +1,48 @@
+schema_version: on-theo.andean-inca-khipu-evidence.v1
+status: BOUNDED_DOCUMENTARY_MEMORY
+
+records:
+  - id: INC-KHIPU-NUM-001
+    propositions:
+      - decimal_numeric_recording_is_secure
+      - administrative_census_tribute_inventory_functions_are_secure
+    supports:
+      - DOCUMENTARY_MEMORY_MODEL
+      - INSTITUTIONALIZATION_MODEL
+    confidence: HIGH
+
+  - id: INC-KHIPU-SPEC-001
+    propositions:
+      - khipukamayuq_specialists_are_historically_attested
+      - material_structure_required_specialized_competence
+    supports:
+      - KNOWLEDGE_OR_DISCLOSURE_MODEL
+      - INSTITUTIONALIZATION_MODEL
+      - AGENCY_AND_AUTHORITY_MODEL_PARTIAL
+    confidence: HIGH
+
+  - id: INC-KHIPU-NARR-001
+    propositions:
+      - colonial_sources_claim_khipu_supported_historical_narrative_memory
+      - surviving_khipu_are_not_generally_decipherable_as_narrative_text
+    supports:
+      - DOCUMENTARY_MEMORY_MODEL
+      - SOURCE_TRANSMISSION_CONTROL
+    confidence: HIGH_FOR_CLAIM_PARTIAL_FOR_SEMANTIC_RECOVERY
+
+  - id: INC-KHIPU-CONT-001
+    propositions:
+      - selected_khipu_and_khipu_board_practices_continue_in_colonial_and_later_Andean_contexts
+    supports:
+      - CONTINUITY_MODEL_PARTIAL
+    confidence: BOUNDED
+    guards:
+      - CONTINUITY_NE_UNCHANGED_FUNCTION
+
+axis_status:
+  DOCUMENTARY_MEMORY_MODEL: BOUNDED_KHIPU_ADMINISTRATIVE_HISTORICAL
+  INSTITUTIONALIZATION_MODEL: BOUNDED_KHIPUKAMAYUQ_RECORD_SYSTEM
+  KNOWLEDGE_OR_DISCLOSURE_MODEL: BOUNDED_DOCUMENTARY_SPECIALIST
+  CONTINUITY_MODEL: PARTIAL_DOCUMENTARY_TRANSFORMATION
+  PRIMARY_KHIPU_THEOLOGICAL_PROPOSITION: NOT_ADMITTED
+  CROSS_TRADITION_COMPARISON: HOLD

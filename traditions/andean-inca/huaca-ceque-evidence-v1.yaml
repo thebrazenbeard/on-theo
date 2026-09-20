@@ -1,0 +1,49 @@
+schema_version: on-theo.andean-inca-huaca-ceque-evidence.v1
+status: BOUNDED_CUSCO_RITUAL_LANDSCAPE
+
+records:
+  - id: INC-CEQUE-SCALE-001
+    propositions:
+      - colonial_descriptions_report_over_328_huacas
+      - colonial_descriptions_report_about_42_ceques
+      - ceques_radiate_from_Cusco_ritual_center
+    supports:
+      - SACRED_LAND_PLACE_MODEL
+      - RITUAL_ORDER_MODEL
+      - POLITICAL_SACRALIZATION_MODEL
+    confidence: BOUNDED_HIGH
+
+  - id: INC-CEQUE-DIVERSITY-001
+    propositions:
+      - huacas_include_natural_and_constructed_features
+    supports:
+      - SACRED_LAND_PLACE_MODEL
+    confidence: HIGH_AS_SOURCE_CATEGORY
+    guards:
+      - HUACA_NE_ONE_OBJECT_TYPE
+
+  - id: INC-CEQUE-SOCIAL-001
+    propositions:
+      - kin_social_groups_had_maintenance_responsibilities_for_selected_shrines
+      - ceque_system_is_linked_in_scholarship_to_social_political_spatial_temporal_divisions
+    supports:
+      - INSTITUTIONALIZATION_MODEL
+      - RELATIONAL_ORDER_MODEL_PARTIAL
+    confidence: BOUNDED
+
+  - id: INC-CEQUE-ARCH-001
+    propositions:
+      - archaeology_supports_locations_of_selected_shrines_and_probable_ceque_courses
+    supports:
+      - SOURCE_CONVERGENCE_CONTROL
+    confidence: BOUNDED_HIGH
+    guards:
+      - LOCATION_MATCH_NE_FULL_SEMANTIC_RECONSTRUCTION
+
+axis_status:
+  SACRED_LAND_PLACE_MODEL: BOUNDED_CUSCO_IMPERIAL_NETWORKED_LANDSCAPE
+  INSTITUTIONALIZATION_MODEL: BOUNDED_SOCIAL_SHRINE_MAINTENANCE
+  POLITICAL_SACRALIZATION_MODEL: BOUNDED_CAPITAL_CENTERED_RITUAL_LANDSCAPE
+  RELATIONAL_ORDER_MODEL: PARTIAL_KIN_PLACE_RITUAL_RESPONSIBILITY
+  RITUAL_ORDER_MODEL: BOUNDED_SHRINE_NETWORK
+  CROSS_TRADITION_COMPARISON: HOLD
