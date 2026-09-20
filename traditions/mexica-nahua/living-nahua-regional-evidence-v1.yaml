@@ -1,0 +1,88 @@
+schema_version: on-theo.mexica-nahua-living-regional-evidence.v1
+status: BOUNDED_MULTI_REGIONAL_MODERN_NAHUA
+
+national_control:
+  source: INPI_NAHUA_CATALOGUE
+  propositions:
+    - Nahua_people_are_widely_distributed_across_Mexico
+    - regional_and_linguistic_diversity_reflects_multiple_historical_processes
+  confidence: HIGH_CURRENT_PUBLIC_INSTITUTIONAL
+
+records:
+  - id: MN-LIVING-MILPA-001
+    region: MILPA_ALTA_CDMX
+    propositions:
+      - land_relation_is_publicly_described_as_mystical_and_indivisible
+      - caves_and_mountains_are_sacred_places
+      - elders_make_petitions_at_selected_sacred_places
+      - Catholic_mayordomias_are_major_current_religious_institution
+    supports:
+      - SACRED_LAND_PLACE_MODEL
+      - CONTACT_AND_REINTERPRETATION_MODEL
+      - INSTITUTIONALIZATION_MODEL_PARTIAL
+    confidence: BOUNDED_REGIONAL
+
+  - id: MN-LIVING-PUEBLA-001
+    region: NAHUA_PUEBLA
+    propositions:
+      - domestic_rituals_address_life_events_maize_rain_and_healing
+      - Catholic_images_and_local_ritual_materials_can_coexist
+      - ritual_specialists_can_operate_outside_ordinary_Catholic_priesthood
+    supports:
+      - CONTACT_AND_REINTERPRETATION_MODEL
+      - RITUAL_ORDER_MODEL
+      - RELATIONAL_ORDER_MODEL_PARTIAL
+    confidence: BOUNDED_REGIONAL
+    guards:
+      - SYNCRETISM_TERM_REQUIRES_MECHANISM_DECOMPOSITION
+
+  - id: MN-LIVING-SLP-001
+    region: NAHUA_SAN_LUIS_POTOSI_HUASTECA
+    propositions:
+      - ritual_activity_is_strongly_related_to_maize_growth_and_maturation_cycle
+      - sacred_hills_and_caves_remain_religiously_relevant
+    supports:
+      - SACRED_TIME_CALENDAR_MODEL_PARTIAL
+      - SACRED_LAND_PLACE_MODEL
+      - RELATIONAL_ORDER_MODEL
+    confidence: BOUNDED_REGIONAL
+
+  - id: MN-LIVING-MORELOS-001
+    region: NAHUA_MORELOS
+    propositions:
+      - agricultural_rites_and_rain_petitions_are_current
+      - mayordomia_and_cofradia_preserve_ritual_social_responsibilities
+      - lunar_observation_can_inform_agricultural_timing
+    supports:
+      - CONTACT_AND_REINTERPRETATION_MODEL
+      - SACRED_TIME_CALENDAR_MODEL_PARTIAL
+      - INSTITUTIONALIZATION_MODEL_PARTIAL
+    confidence: BOUNDED_REGIONAL
+
+  - id: MN-LIVING-JALISCO-001
+    region: NAHUA_JALISCO
+    propositions:
+      - ancestors_are_publicly_described_as_living_presence
+      - caves_hills_springs_and_waterways_can_be_places_of_ancestor_contact
+      - ancestors_are_related_to_more_than_human_environment
+    supports:
+      - MORTUARY_RELATIONSHIP_MODEL_PARTIAL
+      - SACRED_LAND_PLACE_MODEL
+      - RELATIONAL_ORDER_MODEL
+    confidence: BOUNDED_REGIONAL
+
+axis_status:
+  CONTACT_AND_REINTERPRETATION_MODEL: BOUNDED_MULTI_REGIONAL_LIVING_NAHUA
+  SACRED_LAND_PLACE_MODEL: BOUNDED_MULTI_REGIONAL_LIVING_NAHUA
+  RELATIONAL_ORDER_MODEL: PARTIAL_MULTI_REGIONAL
+  RITUAL_ORDER_MODEL: PARTIAL_MULTI_REGIONAL
+  SACRED_TIME_CALENDAR_MODEL: PARTIAL_MULTI_REGIONAL
+  MORTUARY_RELATIONSHIP_MODEL: PARTIAL_JALISCO_ANCESTOR_PLACE_LAYER
+  CONTINUITY_MODEL: BOUNDED_REGIONAL_CONTINUITY_WITH_CHANGE
+  INSTITUTIONALIZATION_MODEL: PARTIAL_COMMUNITY_OFFICE_LAYER
+  CROSS_TRADITION_COMPARISON: HOLD
+
+guards:
+  - LIVING_NAHUA_NE_MEXICA_IMPERIAL_SURVIVAL
+  - REGION_REQUIRED
+  - CURRENT_ETHNOGRAPHIC_SYNTHESIS_NE_PRECONTACT_EVIDENCE
