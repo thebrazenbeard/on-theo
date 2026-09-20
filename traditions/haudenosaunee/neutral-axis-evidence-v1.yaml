@@ -1,0 +1,111 @@
+schema_version: on-theo.haudenosaunee-neutral-axis-evidence.v1
+status: PUBLIC_FOUNDATION_NOT_CROSS_COMPARISON_READY
+
+records:
+  - id: HAU-GREAT-LAW-001
+    evidence:
+      - HCCC_WHO_WE_ARE
+      - HCCC_GOVERNMENT
+      - ONONDAGA_SOVEREIGNTY
+    evidence_class:
+      - MODERN_TRADITION
+      - CURRENT_INDIGENOUS_POLITICAL_LEGAL_SELF_DESCRIPTION
+    propositions:
+      - Great_Law_is_publicly_described_as_spiritual_moral_social_and_political_order
+      - nation_sovereignty_and_Confederacy_governance_coexist
+      - Grand_Council_consensus_is_current_public_governance_structure
+    supports:
+      - POLITICAL_SACRALIZATION_MODEL
+      - INSTITUTIONALIZATION_MODEL
+      - AGENCY_AND_AUTHORITY_MODEL
+    confidence: HIGH_FOR_CURRENT_PUBLIC_SELF_DESCRIPTION
+
+  - id: HAU-OFFICES-001
+    evidence:
+      - HCCC_GOVERNMENT
+      - ONEIDA_CLAN_SYSTEM
+    evidence_class:
+      - DOCUMENTARY_PRACTICE
+      - MODERN_TRADITION
+    propositions:
+      - Clan_Mothers_select_and_can_remove_Chiefs_in_current_public_structure
+      - Chiefs_represent_clans_nations_in_governance
+      - Faithkeepers_have_public_spiritual_ceremonial_advisory_roles
+    supports:
+      - AGENCY_AND_AUTHORITY_MODEL
+      - INSTITUTIONALIZATION_MODEL
+    confidence: HIGH_CURRENT_PUBLIC
+
+  - id: HAU-THANKS-001
+    evidence:
+      - ONONDAGA_THANKSGIVING_ADDRESS
+      - ONEIDA_THANKSGIVING_ADDRESS
+    evidence_class:
+      - MODERN_TRADITION
+      - PUBLIC_CEREMONIAL_RELATIONAL_TEXT
+    propositions:
+      - Thanksgiving_Address_precedes_public_gatherings_meetings_or_ceremonies
+      - each_Haudenosaunee_nation_has_its_own_version_in_Onondaga_public_statement
+      - address_publicly_relates_people_Earth_more_than_human_world_and_Creator
+      - shared_mind_relational_function_is_publicly_attested
+    supports:
+      - RELATIONAL_ORDER_MODEL
+      - RITUAL_ORDER_MODEL_PARTIAL
+    confidence: BOUNDED_HIGH
+
+  - id: HAU-SEASON-001
+    source: ONEIDA_CEREMONIES
+    evidence_class:
+      - MODERN_TRADITION
+      - PUBLIC_CEREMONIAL_CATEGORY
+    propositions:
+      - public_ceremonial_cycle_follows_agriculture_moon_and_seasons
+      - Faithkeepers_have_timing_role
+    supports:
+      - SACRED_TIME_CALENDAR_MODEL_PARTIAL
+      - RITUAL_ORDER_MODEL_PARTIAL
+    confidence: HIGH_FOR_ONEIDA_CURRENT_PUBLIC
+    guards:
+      - ONEIDA_NE_ALL_HAUDENOSAUNEE_IDENTICAL
+
+  - id: HAU-MORT-001
+    source: ONEIDA_COMMUNITY_DEATH_FEAST
+    evidence_class:
+      - MODERN_TRADITION
+      - PUBLIC_CEREMONIAL_CATEGORY
+    propositions:
+      - public_current_Oneida_ceremony_honors_ancestors_who_have_passed
+    supports:
+      - MORTUARY_RELATIONSHIP_MODEL_PARTIAL
+    confidence: HIGH_FOR_ONEIDA_PUBLIC_CATEGORY
+
+  - id: HAU-WAMPUM-001
+    source: ONONDAGA_ABOUT
+    evidence_class:
+      - DOCUMENTARY_PRACTICE
+      - MATERIAL_DOCUMENTARY_TRADITION
+    propositions:
+      - wampum_is_publicly_described_as_used_for_ceremony_messages_history_and_treaties
+    supports:
+      - KNOWLEDGE_OR_DISCLOSURE_MODEL_PARTIAL
+      - INSTITUTIONALIZATION_MODEL
+    confidence: BOUNDED_CURRENT_PUBLIC
+    guards:
+      - WAMPUM_NE_ALPHABETIC_TEXT
+
+axis_status:
+  POLITICAL_SACRALIZATION_MODEL: BOUNDED_CURRENT_CONFEDERACY
+  INSTITUTIONALIZATION_MODEL: BOUNDED_CURRENT_MULTI_LEVEL
+  AGENCY_AND_AUTHORITY_MODEL: BOUNDED_CURRENT_MULTI_OFFICE
+  RELATIONAL_ORDER_MODEL: BOUNDED_PUBLIC_THANKSGIVING_GREAT_LAW
+  SACRED_TIME_CALENDAR_MODEL: PARTIAL_ONEIDA_SEASONAL
+  RITUAL_ORDER_MODEL: PARTIAL_PUBLIC_CATEGORY
+  KNOWLEDGE_OR_DISCLOSURE_MODEL: PARTIAL_ORAL_WAMPUM
+  MORTUARY_RELATIONSHIP_MODEL: PARTIAL_ONEIDA_CATEGORY
+  CROSS_TRADITION_COMPARISON: HOLD
+
+global_guards:
+  - CONFEDERACY_NE_NATION_SOURCE
+  - NATION_VARIATION_REQUIRED
+  - PUBLIC_CEREMONY_CATEGORY_NE_PROCEDURAL_PERMISSION
+  - HANDSOME_LAKE_LAYER_SEPARATE
