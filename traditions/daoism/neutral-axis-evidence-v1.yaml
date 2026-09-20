@@ -1,0 +1,135 @@
+schema_version: on-theo.daoism-neutral-axis-evidence.v1
+status: BOUNDED_LAOZI_ZHUANGZI_SOURCE_EVIDENCE
+parent_branch: taoism
+parent_head: 30de6433ab2bdce86b88fcdad1a3134084ed39ab
+
+records:
+  - id: DAO-LZ-25
+    source: LAOZI_25
+    witness_control:
+      - GUODIAN
+      - MAWANGDUI
+      - RECEIVED
+    propositions:
+      - Dao_language_prior_to_heaven_and_earth
+      - Dao_named_provisionally
+      - human_earth_heaven_Dao_ziran_sequence
+    supports:
+      - WORLD_ORIGIN_MODEL
+      - CAUSAL_ORDER_TYPE
+      - AGENCY_AND_AUTHORITY_MODEL
+    does_not_entail:
+      - personal_creator
+      - simulation_controller
+      - modern_naturalism
+
+  - id: DAO-LZ-37
+    source: LAOZI_37
+    witness_control:
+      - GUODIAN
+      - MAWANGDUI
+      - RECEIVED
+    propositions:
+      - wuwei
+      - self_transformation_of_myriad_things
+      - political_order_with_reduced_coercive_intervention
+    supports:
+      - CAUSAL_ORDER_TYPE
+      - INTERVENTION_MODEL
+      - AGENCY_AND_AUTHORITY_MODEL
+
+  - id: DAO-LZ-40
+    source: LAOZI_40
+    witness_control:
+      - GUODIAN
+      - MAWANGDUI
+      - RECEIVED
+    propositions:
+      - return_or_reversal_as_Dao_movement
+      - weakness_as_Dao_function
+      - myriad_things_from_you
+      - you_from_wu
+    supports:
+      - CAUSAL_ORDER_TYPE
+      - WORLD_ORIGIN_MODEL
+      - WORLD_STATUS_MODEL
+
+  - id: DAO-LZ-51
+    source: LAOZI_51
+    witness_control:
+      - MAWANGDUI
+      - RECEIVED
+    propositions:
+      - Dao_generates
+      - de_nurtures
+      - ziran
+      - generation_without_possession
+      - growth_without_domination
+    supports:
+      - CAUSAL_ORDER_TYPE
+      - AGENCY_AND_AUTHORITY_MODEL
+      - INTERVENTION_MODEL
+
+  - id: DAO-ZZ-2-DREAM
+    source: ZHUANGZI_INNER_2
+    propositions:
+      - dream_waking_identity_question
+      - distinction_between_Zhou_and_butterfly_retained
+      - wuhua_transformation_of_things
+    supports:
+      - PERSON_OR_SELF_MODEL
+      - KNOWLEDGE_OR_DISCLOSURE_MODEL
+      - WORLD_STATUS_MODEL
+      - TRANSFORMATION_MODEL
+    does_not_entail:
+      - simulation
+      - no_difference_at_all_between_subject_states
+
+  - id: DAO-ZZ-6-LIFE-DEATH
+    source: ZHUANGZI_INNER_6
+    propositions:
+      - life_and_death_within_regular_transformation
+      - form_life_old_age_death_sequence
+      - human_form_within_ten_thousand_transformations
+    supports:
+      - CONTINUITY_MODEL
+      - PERSON_OR_SELF_MODEL
+      - LIBERATION_OR_FINAL_TRANSFORMATION_MODEL
+      - TRANSFORMATION_MODEL
+
+  - id: DAO-ZZ-6-DAO
+    source: ZHUANGZI_INNER_6
+    propositions:
+      - Dao_without_action_or_form
+      - Dao_its_own_root_or_source
+      - Dao_before_heaven_and_earth
+    supports:
+      - WORLD_ORIGIN_MODEL
+      - CAUSAL_ORDER_TYPE
+      - AGENCY_AND_AUTHORITY_MODEL
+      - KNOWLEDGE_OR_DISCLOSURE_MODEL
+
+readiness:
+  bounded_axis_comparison: true
+  broad_Daoism_synthesis: false
+  religious_Daoism_admitted: false
+  Laozi_Zhuangzi_full_synthesis: false
+
+guards:
+  - RECEIVED_LAOZI_NE_ORIGINAL_ARCHETYPE
+  - GUODIAN_NE_COMPLETE_LAOZI
+  - INNER_CHAPTER_NE_PROVEN_AUTOGRAPH
+  - LAOZI_NE_ZHUANGZI
+  - CLASSICAL_DAOISM_NE_LATER_RELIGIOUS_DAOISM
+  - WUWEI_NE_TOTAL_INACTIVITY
+  - ZIRAN_NE_MODERN_NATURE_BY_DEFAULT
+  - WU_NE_ABSOLUTE_NOTHINGNESS_BY_DEFAULT
+  - QI_NE_MODERN_PHYSICAL_ENERGY
+  - BUTTERFLY_DREAM_NE_SIMULATION_EVIDENCE
+  - DAO_NE_SIMULATION_CONTROLLER
+
+candidate_axis:
+  TRANSFORMATION_MODEL:
+    question: >
+      How does a source conceptualize changes of form, identity, state, life/death,
+      or perspective, and what if anything remains invariant?

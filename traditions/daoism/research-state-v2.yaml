@@ -1,0 +1,66 @@
+schema_version: on-theo.daoism-research-state.v2
+status: CLASSICAL_MANUSCRIPT_AND_LAYER_RECONSTRUCTION_ACTIVE
+parent_head: 30de6433ab2bdce86b88fcdad1a3134084ed39ab
+parent_state: traditions/daoism/research-state-v1.yaml
+
+new_artifacts:
+  - traditions/daoism/laozi-manuscript-proposition-packet-v1.md
+  - traditions/daoism/laozi-witness-matrix-v1.yaml
+  - traditions/daoism/zhuangzi-inner-proposition-packet-v1.md
+  - traditions/daoism/neutral-axis-evidence-v1.yaml
+
+laozi:
+  witnesses_active:
+    - GUODIAN
+    - MAWANGDUI_A
+    - MAWANGDUI_B
+    - RECEIVED
+  controlled_loci:
+    - DDJ_25
+    - DDJ_37
+    - DDJ_40
+    - DDJ_42_RECEIVED_ONLY_IN_CURRENT_PACKET
+    - DDJ_51
+  manuscript_variation_explicit: true
+
+zhuangzi:
+  current_layer: INNER_CHAPTERS_ONLY
+  controlled_loci:
+    - INNER_2_BUTTERFLY_DREAM
+    - INNER_6_LIFE_DEATH_TRANSFORMATION
+    - INNER_6_DAO
+  authorship: HYPOTHESIS_NOT_CERTAINTY
+
+comparison_axes:
+  WORLD_ORIGIN_MODEL: BOUNDED_SOURCE_SUPPORT
+  CAUSAL_ORDER_TYPE: BOUNDED_SOURCE_SUPPORT
+  AGENCY_AND_AUTHORITY_MODEL: BOUNDED_SOURCE_SUPPORT
+  INTERVENTION_MODEL: BOUNDED_SOURCE_SUPPORT
+  PERSON_OR_SELF_MODEL: PARTIAL_SOURCE_SUPPORT
+  CONTINUITY_MODEL: PARTIAL_TRANSFORMATION_FOCUSED
+  KNOWLEDGE_OR_DISCLOSURE_MODEL: PARTIAL
+  WORLD_STATUS_MODEL: PARTIAL
+  LIBERATION_OR_FINAL_TRANSFORMATION_MODEL: PARTIAL
+  TRANSFORMATION_MODEL: CANDIDATE_AXIS_BOUNDED_SUPPORT
+
+readiness:
+  broad_Daoism_comparison: false
+  bounded_classical_axis_comparison: true
+  later_religious_Daoism: pending
+  material_institutional_lane: pending
+
+next_frontiers:
+  - exact_Guodian_Mawangdui_received_alignment_DDJ25_37_40
+  - dao_de_wu_you_wuwei_ziran_qi_lexical_control
+  - Zhuangzi_Inner_2_6_term_alignment
+  - Zhuangzi_Outer_Misc_layer_map
+  - Celestial_Masters_primary_epigraphy_and_revelation_packet
+  - Shangqing_revelation_packet
+  - Lingbao_Buddhist_contact_packet
+
+guards:
+  - CLASSICAL_TEXT_NE_LATER_RELIGIOUS_DAOISM
+  - TEXTUAL_LAYER_REQUIRED_BEFORE_COMPARISON
+  - MANUSCRIPT_VARIATION_MUST_REMAIN_VISIBLE
+  - COMMENTARY_NE_PRIMARY_TEXT
+  - SYSTEMS_ANALOGY_REMAINS_DOWNSTREAM
