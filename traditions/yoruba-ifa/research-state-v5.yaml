@@ -1,0 +1,36 @@
+schema_version: on-theo.yoruba-ifa-research-state.v5
+status: GEOMANTIC_CONTACT_HYPOTHESIS_CONTROL_ADDED
+supersedes_for_current_research:
+  - traditions/yoruba-ifa/research-state-v4.yaml
+
+branch:
+  name: research/yoruba-ifa-diachronic-v1-20260920
+  pr: 120
+
+new_artifacts:
+  geomantic_contact_packet: traditions/yoruba-ifa/ifa-geomantic-contact-hypothesis-packet-v1.md
+  geomantic_contact_evidence: traditions/yoruba-ifa/ifa-geomantic-contact-evidence-v1.yaml
+
+current_internal_status:
+  DOCUMENTARY_MEMORY_MODEL: BOUNDED_INDEXED_OPEN_ORAL_CORPUS
+  KNOWLEDGE_OR_DISCLOSURE_MODEL: BOUNDED_IFA
+  KNOWLEDGE_GOVERNANCE_DIMENSION: BOUNDED_IFA
+  AGENCY_AND_AUTHORITY_MODEL: BOUNDED_IFA_SPECIALIST
+  INSTITUTIONALIZATION_MODEL: BOUNDED_IFA_PLUS_PARTIAL_CIVIC_CULT
+  RELATIONAL_ORDER_MODEL: BOUNDED_YORUBA
+  CONTINUITY_MODEL: BOUNDED_ADAPTIVE_DIACHRONIC
+  MORTUARY_RELATIONSHIP_MODEL: PARTIAL_ANCESTOR
+  CONTACT_AND_REINTERPRETATION_MODEL: PARTIAL_GEOMANTIC_FORM_HYPOTHESIS
+  POLITICAL_SACRALIZATION_MODEL: HOLD_STRONG_CANDIDATE
+  FATE_CONSTRAINT_MODEL: HOLD_STRONG_CANDIDATE
+  PERSON_OR_SELF_MODEL: HOLD_STRONG_CANDIDATE
+  CROSS_TRADITION_COMPARISON: HOLD
+
+transmission_holds:
+  direct_Arabic_origin_of_Ifa: NOT_ESTABLISHED
+  Arabic_origin_of_Ifa_poetic_corpus: NOT_ESTABLISHED
+
+next_frontier:
+  primary: YORUBA_CONTACT_DIASPORA_BOUNDARY_V1
+  subsequent:
+    - YORUBA_IFA_COMPARISON_READINESS_AUDIT_V1
