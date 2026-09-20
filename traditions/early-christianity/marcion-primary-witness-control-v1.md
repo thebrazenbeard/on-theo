@@ -11,6 +11,24 @@ Purpose:
 deepen the early-Christian plurality lane for Marcion without converting later
 anti-Marcionite polemic into a transparent transcript of Marcion's own books.
 
+## Access / edition limitation
+
+This V1 directly read public English translations of Irenaeus and Tertullian
+and modern scholarly metadata/abstract-level methodological discussion.
+
+It did **not** collate:
+- a modern critical Greek/Latin edition of Irenaeus;
+- a modern critical Latin edition of Tertullian;
+- the complete Greek text of Epiphanius *Panarion* 42;
+- the complete critical text of the Adamantius Dialogue.
+
+Therefore:
+
+`DIRECT_PUBLIC_TRANSLATION_READBACK != CRITICAL_EDITION_COLLATION`
+
+The primary-text classification below identifies the ancient literary witness,
+not the edition quality of this V1 access path.
+
 ## Governing distinctions
 
 `MARCION'S LOST TEXT != PATRISTIC REPORT ABOUT MARCION'S TEXT`
@@ -138,8 +156,7 @@ Roth's work therefore blocks a false conversion:
 
 Sources:
 - https://era.ed.ac.uk/items/e135efd3-267d-4610-9f96-fc7e9015d169
-- https://www.degruyter.com/document/doi/10.1515/zac-2017-0003/html
-  (bibliographic access may vary)
+- https://journals.sagepub.com/doi/10.1177/0014524609357511
 - Roth, *The Text of Marcion's Gospel* (Brill, 2015).
 
 ## Direction-of-dependence dispute
@@ -271,6 +288,52 @@ Book V should not state as narrator-level historical fact that:
 
 If dramatizing those claims, attribution must remain visible:
 "Irenaeus/Tertullian accused...", "one reconstruction argues...", or equivalent.
+
+## Hostile self-check
+
+Potential overclaim tested:
+"Tertullian says Marcion mutilated Luke, therefore the editorial direction is
+settled."
+
+Result:
+`REJECTED`.
+
+Reason:
+the statement is admissible as Tertullian's ancient explanation of the
+relationship. It is not independent of his anti-Marcionite argument and cannot
+replace textual reconstruction.
+
+Potential overclaim tested:
+"No Marcionite manuscript survives, therefore nothing strong can be said."
+
+Result:
+`REJECTED`.
+
+Reason:
+the convergence and density of hostile witness evidence can still strongly
+support bounded propositions such as use of a Luke-related Gospel and Pauline
+collection. The absence of a direct manuscript lowers exact-text certainty; it
+does not erase all historical inference.
+
+Potential overclaim tested:
+"Marcion had no scripture because he rejected Jewish scripture."
+
+Result:
+`REJECTED`.
+
+Reason:
+the evidence instead supports a positive alternative Christian scriptural
+corpus centered on Gospel and Paul.
+
+Potential overclaim tested:
+"Marcion created the New Testament."
+
+Result:
+`HELD / NOT_ADMITTED_AT_THIS_STRENGTH`.
+
+Reason:
+influence on later canon formation is historically plausible and important,
+but the present packet does not establish one-person monocausal creation.
 
 ## Next research frontier
 
