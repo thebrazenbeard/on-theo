@@ -1,0 +1,50 @@
+schema_version: on-theo.islamic-recitation-dhikr-research-state.v1
+status: QURANIC_RECITATION_AND_LATER_DHIKR_PARAMETER_PACKET_COMPLETE_NON_CANONICAL
+
+base:
+  branch: corpus/quranic-system-v1-20260917
+  exact_head: d2a319321de9b77cefaba999fa6dd2cebc4899c5
+
+new_artifacts:
+  - traditions/quranic/islamic-recitation-dhikr-parameter-packet-v1.md
+  - traditions/quranic/islamic-recitation-dhikr-parameter-evidence-v1.yaml
+
+strongest_results:
+  - >
+    Quranic recitation is objectively parameterized by articulation,
+    pronunciation, elongation, stopping and learned oral rules.
+  - >
+    Multiple accepted qiraat preserve bounded phonetic, morphological, lexical
+    and syntactic variation, rejecting a one-global-acoustic-string model.
+  - >
+    Selected Sufi dhikr traditions vary between silent/vocal,
+    individual/collective and different embodied forms, weakening a sound-only
+    universal mechanism.
+  - >
+    The historically stronger abstraction is constrained local rule systems plus
+    authorized variant families.
+  - >
+    No empirical external effect of recitational exactness or dhikr form is
+    established.
+
+comparison_contribution:
+  ritual_interface_parameter_sensitivity:
+    status: HIGH_INFORMATION_AUTHORIZED_VARIATION_CASE
+    claim_ceiling: >
+      Strong historical acoustic/formal parameterization with bounded accepted
+      variation; no hidden-interface inference.
+
+next_frontiers:
+  - qiraat_variant_parameter_matrix
+  - tajwid_rule_family_matrix
+  - recitation_melody_vs_tajwid_control
+  - named_Sufi_order_dhikr_packets
+  - silent_vs_vocal_dhikr_historical_control
+  - later_operational_amulet_or_name_traditions_kept_separate
+
+guards:
+  - QIRAAT_VARIATION_NE_ERROR
+  - LOCAL_RULE_PRECISION_NE_ONE_GLOBAL_WAVEFORM
+  - DHIKR_DIVERSITY_NE_ONE_SUFI_PROTOCOL
+  - ACOUSTIC_FORM_NE_EMPIRICAL_EXTERNAL_EFFECT
+  - QURANIC_LAYER_AND_LATER_PRACTICE_REMAIN_SEPARATE
