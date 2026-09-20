@@ -1,0 +1,56 @@
+schema_version: on-theo.sumerian-research-state.v2
+status: MASTER_HUB_BOUND_TO_DEEP_CHAIN_FOR_COMPARISON
+master_head: bd6b6572141dc2f48f2f104b8f25301662d4a06f
+
+new_bridge_artifacts:
+  - traditions/sumerian/comparison-deep-source-binding-v1.yaml
+  - traditions/sumerian/afterlife-comparison-packet-v1.md
+  - traditions/sumerian/neutral-axis-evidence-v1.yaml
+
+deep_evidence_status:
+  source_verification: BOUND
+  material_archaeology: BOUND
+  human_afterlife_funerary: BOUND
+  death_lexicon: BOUND
+  Dumuzid_death_lament: BOUND
+  Dumuzid_substitution: BOUND
+  Dumuzid_seasonal_hostile_test: BOUND
+  Dumuzid_Baal_transmission_hostile_control: BOUND
+
+comparison_axes:
+  INSTITUTIONALIZATION_MODEL: DEEP_SOURCE_SUPPORT
+  SACRAL_PRESENCE_MODEL: MATERIAL_AND_TEXTUAL_SUPPORT
+  RITUAL_ORDER_MODEL: MATERIAL_AND_TEXTUAL_SUPPORT
+  AGENCY_AND_AUTHORITY_MODEL: BOUNDED
+  POLITICAL_SACRALIZATION_MODEL: CANDIDATE_AXIS_STRONG_SOURCE_SUPPORT
+  POSTMORTEM_PATH_MODEL: BOUNDED_DIFFERENTIATED
+  CONTINUITY_MODEL: BOUNDED_GHOST_SOCIAL_CONTINUITY
+  MORTUARY_RELATIONSHIP_MODEL: CANDIDATE_AXIS_STRONG_SUPPORT
+  OFFERING_EXCHANGE_MODEL: BOUNDED
+  TRANSFORMATION_MODEL: DIVINE_MYTH_BOUNDED
+  CONTACT_AND_REINTERPRETATION_MODEL: TRANSMISSION_GATE_SUPPORT
+
+readiness:
+  bounded_comparison: DEEP_CHAIN_READY
+  broad_synthesis: false
+  city_period_variation: required
+  pantheon_variation: required
+  human_divine_death_separation: required
+  later_Mesopotamian_reception_separation: required
+
+next_frontiers:
+  - machine_readable_death_occurrence_registry
+  - city_deity_period_matrix_expansion
+  - me_kur_nam_lugal_semantic_control
+  - ordinary_burial_archaeology_beyond_Ur
+  - Sumerian_to_Akkadian_reception
+  - flood_tradition_source_specific_comparison
+  - exact_cross_axis_matrix_after_comparison_gate
+
+guards:
+  - MASTER_HUB_NE_ATOMIC_EVIDENCE
+  - DEEP_CHAIN_NE_ONE_LINEAR_TEXTUAL_TRADITION
+  - COMPOSITION_NE_PHYSICAL_WITNESS_NE_MODERN_EDITION
+  - LITERARY_THEOLOGY_NE_MATERIAL_PRACTICE
+  - CONTACT_NE_TRANSMISSION
+  - SYSTEMS_ANALOGY_REMAINS_DOWNSTREAM
