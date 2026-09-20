@@ -20,6 +20,8 @@ completed:
   - OLD_SYRIAC_WITNESS_FIELD_CONTROL
   - PESHITTA_STANDARDIZATION_BOUNDARY
   - SYRIAC_VERSIONAL_DATE_CLOCK_SEPARATION
+  - SYRIAC_GOSPEL_THEOLOGY_TRANSITION_SYNTHESIS
+  - SYRIAC_ANTI_JUDAISM_DOWNSTREAM_GUARD
 
 key_artifacts:
   - traditions/syriac-christianity/ephrem-syriac-gospel-transmission-v1.md
@@ -28,6 +30,8 @@ key_artifacts:
   - traditions/syriac-christianity/aphrahat-syriac-reception-v1.yaml
   - traditions/syriac-christianity/old-syriac-peshitta-witness-boundary-v1.md
   - traditions/syriac-christianity/old-syriac-peshitta-witness-boundary-v1.yaml
+  - traditions/syriac-christianity/syriac-gospel-theology-transition-v1.md
+  - traditions/syriac-christianity/syriac-gospel-theology-transition-v1.yaml
 
 current_results:
   ephrem_commentary_as_tatianic_witness: BOUNDED_STRONG
@@ -42,11 +46,13 @@ current_results:
   old_syriac_as_one_fixed_text: NOT_ADMITTED
   peshitta_single_editorial_event: NOT_ADMITTED
   overlapping_syriac_transmission_lanes: BOUNDED_MODERATE_TO_STRONG
+  one_timeless_syriac_christianity: NOT_ADMITTED
+  syriac_local_theological_production: BOUNDED_STRONG
+  anti_jewish_polemic_as_neutral_history: NOT_ADMITTED
 
 next_frontier:
-  - SYRIAC_GOSPEL_THEOLOGY_TRANSITION_SYNTHESIS
-  - TESTAMENT_BOOK_VI_SYRIAC_CARRYDOWN
-  - BOOK_VI_SYRIAC_HOSTILE_REREVIEW
+  - TESTAMENT_BOOK_VI_SYRIAC_HOSTILE_REREVIEW
+  - EARLY_ISLAMIC_JESUS_RECEPTION_FRONTIER
   - OLD_SYRIAC_PESHITTA_WITNESS_BOUNDARY
   - SYRIAC_GOSPEL_TRANSITION_MATRIX
   - TESTAMENT_BOOK_VI_SYRIAC_CARRYDOWN
