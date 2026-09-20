@@ -1,0 +1,65 @@
+schema_version: on-theo.global-corpus-breadth-expansion-state.v9
+status: ACTIVE_PORTFOLIO_EXPANSION
+supersedes_for_current_research:
+  - synthesis/GLOBAL_CORPUS_BREADTH_EXPANSION_STATE_V8.yaml
+
+completed_breadth_units:
+  lakota: {exact_head: 8a9cee8335cadc742c9de25c90f4306702a80e8a, pr: 104}
+  maya: {exact_head: 2b5907438334537842710a81886083b9cbd0241a, pr: 105}
+  mexica_nahua: {exact_head: 00e37e475f3669ef2ee040908b126617ffcd17da, pr: 106}
+  olmec: {exact_head: cac89f2e0024c00f71d2d2a835253328c451e7ce, pr: 107}
+  dine: {exact_head: ac988c4a31f354e7c4d902d286c0c950293ffb8a, pr: 108}
+  haudenosaunee: {exact_head: 506d95eb449bc4d11fc61dbe9c18ffca7ab94f5a, pr: 112}
+  andean_inca: {exact_head: 355d808e5d55185d50f1dcabb53003635b88a23f, pr: 113}
+  modern_satanism:
+    exact_head: bb2bdf915b9ac08f63b881f22b1d0023ae73debc
+    pr: 114
+    status: BOUNDED_COMPARISON_READINESS_AUDITED
+
+modern_satanism_comparison_eligible:
+  bounded:
+    - CONTACT_AND_REINTERPRETATION_MODEL
+    - CONTINUITY_MODEL
+    - PERSON_OR_SELF_MODEL_ORGANIZATION_SPECIFIC
+    - RITUAL_ORDER_MODEL_ORGANIZATION_SPECIFIC
+    - INSTITUTIONALIZATION_MODEL
+    - AGENCY_AND_AUTHORITY_MODEL_ORGANIZATION_SPECIFIC
+  partial:
+    - SACRAL_PRESENCE_MODEL_THEISTIC_ESOTERIC
+  negative_controls:
+    - SACRIFICE_AND_BODILY_OFFERING_MODEL_COS_TST_REJECT_LITERAL_SACRIFICE
+
+modern_satanism_internal_dimension:
+  SATAN_REFERENT_MODEL:
+    values:
+      - SYMBOLIC_INDIVIDUALIST
+      - LITERARY_METAPHORICAL_REBEL
+      - THEISTIC_SUPERNATURAL
+      - ESOTERIC_ADVERSARIAL
+      - OTHER_SOURCE_BOUND
+
+comparison_schema_updates:
+  CONTACT_AND_REINTERPRETATION_MODEL:
+    new_subtype: ADVERSARIAL_SYMBOL_REVALUATION
+    examples:
+      - CHURCH_OF_SATAN_SYMBOLIC_MATERIALIST_RECODING
+      - TST_LITERARY_REBEL_REVALUATION
+      - THEISTIC_ESOTERIC_SUPERNATURAL_REAPPROPRIATION
+    guard: REVALUATION_NE_SIMPLE_CONTINUITY
+
+active_portfolio_frontier:
+  primary: DEVIL_WORSHIP_ACCUSATION_HISTORY_V1
+  requirements:
+    - accusation_ne_self_identification
+    - demonological_theory_ne_observed_practice
+    - heresy_witchcraft_Jewish_Indigenous_and_minority_accusations_source_specific
+    - Black_Mass_legend_ne_documented_ritual_by_default
+    - Satanic_Panic_claim_ne_evidence
+    - recovered_memory_and_ritual_abuse_claims_source_critical
+    - actual_self_identified_devotional_practice_independent_control
+    - modern_conspiracy_genealogy_kept_separate_from_historical_fact
+
+guards:
+  - MODERN_SATANISM_NE_DEVIL_WORSHIP_ACCUSATION_HISTORY
+  - ACCUSATION_CATEGORY_DEFAULT_UNLESS_SELF_IDENTIFICATION_PROVED
+  - EXTREMIST_OR_CRIMINAL_ALLEGATION_NE_RELIGIOUS_CATEGORY
