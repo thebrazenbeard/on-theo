@@ -1,0 +1,115 @@
+schema_version: on-theo.hindu-neutral-axis-evidence.v1
+status: TEXT_SPECIFIC_BOUNDED_EVIDENCE
+parent_branch: hindu
+parent_head: ccd5b82cf99fa9dfda238366a93447047f74b1fa
+
+records:
+  - id: HIN-RV-ORIGIN-001
+    locus: RV_10_129
+    textual_layer: VEDIC_SAMHITA
+    evidence_class: PRIMARY_TEXT
+    propositions:
+      - beginning_described_without_simple_sat_asat_binary
+      - death_immortality_day_night_not_yet_present_in_hymn_frame
+      - kama_appears_as_early_seed_associated_with_mind
+      - poets_seek_relation_between_sat_and_asat
+      - gods_are_later_than_relevant_cosmogonic_emergence
+      - final_origin_knowledge_is_explicitly_questioned
+    supports_axes:
+      - KNOWLEDGE_OR_DISCLOSURE_MODEL
+      - WORLD_ORIGIN_MODEL
+      - CAUSAL_ORDER_TYPE
+    confidence: high_for_textual_proposition
+    interpretation_controls:
+      - Brereton_1999_edifying_puzzlement
+    does_not_entail:
+      - atheism
+      - personal_creator_God
+      - simulation_theory
+      - one_Hindu_creation_doctrine
+      - later_Vedanta_ontology
+
+  - id: HIN-BU-KARMA-001
+    locus: BU_4_4_5
+    textual_layer: EARLY_UPANISHAD
+    evidence_class: PRIMARY_TEXT_PLUS_TRANSLATION_CONTROL
+    propositions:
+      - action_and_conduct_condition_becoming
+      - good_action_associated_with_good_becoming
+      - bad_action_associated_with_bad_becoming
+      - kama_conditions_kratu
+      - kratu_conditions_karma
+      - karma_conditions_attainment_or_outcome
+    supports_axes:
+      - MORAL_CAUSALITY_MODEL
+      - CONTINUITY_MODEL
+      - PERSON_OR_SELF_MODEL
+    confidence: high_for_chain_bounded_for_metaphysical_interpretation
+    guards:
+      - recension_control_required
+      - kratu_translation_requires_lexical_control
+      - one_passage_ne_complete_karma_theory
+
+  - id: HIN-CHU-REBIRTH-001
+    locus: CHU_5_10_7
+    textual_layer: EARLY_UPANISHAD
+    evidence_class: PRIMARY_TEXT_PLUS_TRANSLATION_CONTROL
+    propositions:
+      - conduct_is_associated_with_differentiated_subsequent_birth
+      - favorable_birth_examples_include_brahmana_kshatriya_vaishya
+      - unfavorable_birth_examples_include_dog_pig_chandala
+    supports_axes:
+      - MORAL_CAUSALITY_MODEL
+      - CONTINUITY_MODEL
+      - SOCIAL_COSMOLOGY_MODEL
+    confidence: high_for_passage
+    guards:
+      - description_ne_endorsement
+      - one_passage_ne_all_Hindu_rebirth
+      - social_hierarchy_must_remain_visible
+
+  - id: HIN-CHU-SELF-001
+    locus: CHU_6_8_7
+    textual_layer: EARLY_UPANISHAD
+    evidence_class: PRIMARY_TEXT_WITH_TRANSLATION_DISPUTE
+    propositions:
+      - subtle_or_finest_essence_is_linked_to_self
+      - truth_or_reality_language_is_used
+      - tat_tvam_asi_refrain_addresses_Svetaketu
+    supports_axes:
+      - PERSON_OR_SELF_MODEL
+      - WORLD_STATUS_MODEL
+      - CAUSAL_ORDER_TYPE
+    confidence: high_for_formula_disputed_for_exact_translation
+    interpretation_variants:
+      - traditional_identity_rendering_that_thou_art
+      - Brereton_Olivelle_adverbial_rendering_thats_how_you_are
+    does_not_entail:
+      - mature_Advaita
+      - one_universal_Upanishadic_metaphysics
+      - Western_soul_equivalence
+      - computational_substrate
+
+comparison_status:
+  KNOWLEDGE_OR_DISCLOSURE_MODEL: BOUNDED_READY
+  WORLD_ORIGIN_MODEL: BOUNDED_READY_CANDIDATE_AXIS
+  MORAL_CAUSALITY_MODEL: BOUNDED_READY
+  CONTINUITY_MODEL: BOUNDED_READY
+  PERSON_OR_SELF_MODEL: PARTIAL_INTERPRETATION_CONTROLLED
+  CAUSAL_ORDER_TYPE: PARTIAL
+  WORLD_STATUS_MODEL: PARTIAL
+
+not_admitted:
+  - universal_creator_model
+  - universal_atman_equals_brahman
+  - maya_equals_simulation
+  - one_fixed_moksha_model
+  - avatar_equals_incarnation
+  - broad_Hindu_comparison_ready
+
+guards:
+  - VEDIC_SAMHITA_NE_EARLY_UPANISHAD
+  - EARLY_UPANISHAD_NE_LATER_VEDANTA
+  - ONE_PASSAGE_NE_ONE_TRADITION
+  - TRANSLATION_NE_UNDISPUTED_SEMANTICS
+  - SIMILARITY_NE_TRANSMISSION
