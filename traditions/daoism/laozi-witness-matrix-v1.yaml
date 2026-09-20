@@ -1,0 +1,80 @@
+schema_version: on-theo.daoism-laozi-witness-matrix.v1
+status: MANUSCRIPT_CONTROL_V1
+
+witnesses:
+  GUODIAN:
+    material: bamboo_slips
+    tomb: M1_Guodian_Hubei
+    approximate_date: c_300_BCE
+    laozi_matching_characters_approx: 2000
+    complete_received_text: false
+    received_81_chapter_structure: false
+  MAWANGDUI_A:
+    material: silk
+    tomb_sealed: 168_BCE
+    likely_copy_date: before_195_BCE
+    order: DE_BEFORE_DAO
+  MAWANGDUI_B:
+    material: silk
+    tomb_sealed: 168_BCE
+    order: DE_BEFORE_DAO
+  RECEIVED:
+    major_lines:
+      - WANG_BI
+      - HESHANG_GONG
+    fixed_81_chapter_form_is_early_original: false
+
+loci:
+  DDJ_25:
+    Guodian: PRESENT_CORRESPONDING_MATERIAL
+    Mawangdui_A: PRESENT
+    Mawangdui_B: PRESENT
+    received: PRESENT
+    source_ceiling:
+      - pre_heaven_and_earth_Dao_language
+      - provisional_naming
+      - human_earth_heaven_Dao_ziran_sequence
+  DDJ_37:
+    Guodian: PRESENT_CORRESPONDING_MATERIAL
+    Mawangdui: PRESENT_CORRESPONDING_MATERIAL
+    received: PRESENT
+    source_ceiling:
+      - wuwei
+      - things_self_transform
+      - reduced_coercive_governance
+  DDJ_40:
+    Guodian: PRESENT_CORRESPONDING_MATERIAL
+    Mawangdui: PRESENT
+    received: PRESENT
+    source_ceiling:
+      - reversal_as_Dao_movement
+      - weakness_as_Dao_function
+      - myriad_things_from_you
+      - you_from_wu
+  DDJ_42:
+    Guodian: NOT_ESTABLISHED_IN_THIS_PACKET
+    Mawangdui: TO_BIND_EXACTLY
+    received: PRESENT
+    source_ceiling:
+      - Dao_one_two_three_myriad_things_received_text_only_for_now
+  DDJ_51:
+    Guodian: NOT_ESTABLISHED_IN_THIS_PACKET
+    Mawangdui: PRESENT_PARALLEL
+    received: PRESENT
+    source_ceiling:
+      - Dao_generates
+      - de_nurtures
+      - ziran
+      - generate_without_possessing
+      - grow_without_dominating
+
+guards:
+  - RECEIVED_LAOZI_NE_SINGLE_ORIGINAL_ARCHETYPE
+  - ABSENT_FROM_GUODIAN_NE_LATE_COMPOSITION_PROVEN
+  - WITNESS_VARIANT_NE_COPY_ERROR_BY_DEFAULT
+  - WU_NE_ABSOLUTE_NOTHINGNESS_BY_DEFAULT
+  - ZIRAN_NE_MODERN_NATURE_BY_DEFAULT
+  - WUWEI_NE_TOTAL_INACTIVITY
+  - QI_NE_MODERN_PHYSICAL_ENERGY
+  - DAO_NE_PERSONAL_CREATOR_BY_DEFAULT
+  - DAO_NE_SIMULATION_CONTROLLER

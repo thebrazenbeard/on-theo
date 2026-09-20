@@ -1,0 +1,36 @@
+schema_version: on-theo.daoism-research-state.v5
+status: CONTACT_WITNESS_BINDING_ACTIVE
+parent_head: 248aa76ee4b6a9d53cc5548e0f2b73b79baffb7b
+parent_state: traditions/daoism/research-state-v4.yaml
+
+new_artifacts:
+  - traditions/daoism/yang-xi-forty-two-sections-control-v1.md
+  - traditions/daoism/yao-boduo-stele-contact-control-v1.md
+  - traditions/daoism/buddhist-contact-witness-locators-v1.yaml
+
+contact_evidence_upgrades:
+  YANG_XI_FORTY_TWO_SECTIONS:
+    previous: SCHOLARLY_CONTACT_SUMMARY
+    current: SOURCE_SPECIFIC_TEXTUAL_DEPENDENCE_LOCATOR
+    relation: SOURCE_SPECIFIC_TRANSMISSION_WITH_RECODING
+    ceiling: STRONG_SCHOLARLY_TEXTUAL_DEPENDENCE
+  YAO_BODUO_STELE:
+    previous: MATERIAL_CONTACT_SUMMARY
+    current: DATED_OBJECT_CONTACT_CONTROL
+    relation: MATERIAL_HYBRIDIZATION_WITH_RETAINED_DAOIST_IDENTITY
+    ceiling: OBJECT_HIGH_INTERPRETATION_BOUNDED
+
+remaining_exact_binding:
+  - Yang_Xi_line_by_line_Chinese_alignment
+  - Zhen_gao_witness_redaction_history
+  - Duren_jing_Buddhist_loan_vocabulary
+  - Huahu_primary_fragment_map
+  - Hongming_ji_response_primary_packet
+  - Yao_Boduo_full_inscription
+  - Lu_Xiujing_catalogue_primary_binding
+
+guards:
+  - STRONG_TEXTUAL_DEPENDENCE_NE_AUTOGRAPH_TO_AUTOGRAPH_TRANSMISSION
+  - RECEIVED_T784_NE_PRISTINE_FIRST_TRANSLATION
+  - MATERIAL_OBJECT_NE_SINGLE_SOURCE_DERIVATION
+  - CONTACT_NE_SEMANTIC_IDENTITY

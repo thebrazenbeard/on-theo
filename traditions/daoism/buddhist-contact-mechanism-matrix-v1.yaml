@@ -1,0 +1,120 @@
+schema_version: on-theo.daoism-buddhist-contact-mechanism.v1
+status: NON_CANONICAL_CONTACT_CONTROL
+
+contact_records:
+  - id: DAO-BUD-SHANGQING-TEXT-001
+    period: fourth_century
+    source_context: YANG_XI_SHANGQING_ENVIRONMENT
+    evidence_class: SCHOLARLY_INTERPRETATION
+    scholarship:
+      - Stephan_Peter_Bumbacher_2006
+    mechanism: DIRECT_TEXTUAL_ADAPTATION
+    proposition: >
+      Daoist material associated with Yang Xi adapts material from the Buddhist
+      Sutra_in_Forty_two_Sections before the main Lingbao corpus.
+    confidence: scholarly_bounded
+    guards:
+      - ONE_TEXTUAL_ADAPTATION_NE_ALL_SHANGQING_BUDDHIST_DERIVATIVE
+
+  - id: DAO-BUD-LINGBAO-001
+    period: circa_397_402_CE
+    source_context: EARLY_LINGBAO
+    evidence_class:
+      - HISTORICAL_RECONSTRUCTION
+      - SCHOLARLY_INTERPRETATION
+    mechanism:
+      - DOCTRINAL_RECODING
+      - RITUAL_INSTITUTIONAL_ADAPTATION
+    propositions:
+      - Buddhist_elements_are_substantially_integrated
+      - universal_salvation_is_strengthened
+      - bodhisattva_vow_form_is_reworked
+      - cosmological_structures_are_reorganized
+    confidence: bounded
+    guards:
+      - BUDDHIST_DERIVATION_NE_SEMANTIC_IDENTITY
+
+  - id: DAO-BUD-DUREN-001
+    period: late_fourth_to_early_fifth_century
+    source_context: DUREN_JING_EARLY_FORM
+    evidence_class: SCHOLARLY_INTERPRETATION
+    mechanism:
+      - DOCTRINAL_RECODING
+      - TEXTUAL_FORM_ADAPTATION
+    propositions:
+      - salvation_language_shows_Buddhist_influence
+      - sutra_style_is_contact_relevant
+      - Buddhist_associated_language_is_reworked_in_Daoist_scripture
+    guards:
+      - SHARED_FORM_NE_SHARED_DOCTRINE
+
+  - id: DAO-BUD-CANON-001
+    period: fifth_century
+    source_context:
+      - LU_XIUJING
+      - THREE_CAVERNS
+    evidence_class: SCHOLARLY_INTERPRETATION
+    mechanism: RITUAL_INSTITUTIONAL_ADAPTATION
+    proposition: Buddhist_influence_on_Daoist_canonical_organization_is_scholarly_supported
+    confidence: partial
+    guards:
+      - INSTITUTIONAL_PARALLEL_NE_DIRECT_TEMPLATE_PROVEN
+
+  - id: DAO-BUD-HUAHU-001
+    period: early_medieval_with_fifth_century_intensification
+    source_context: HUAHU_DISCOURSE
+    evidence_class:
+      - LATER_TRADITION
+      - POLEMICAL_TEXT
+    mechanism: POLEMICAL_COUNTER_GENEALOGY
+    propositions:
+      - Laozi_is_claimed_as_prior_or_source_for_Buddhism_in_some_Daoist_accounts
+      - polemic_responds_to_Buddhist_presence_and_competition
+    confidence: bounded_as_polemic
+    guards:
+      - POLEMICAL_ORIGIN_CLAIM_NE_HISTORICAL_TRANSMISSION
+
+  - id: DAO-BUD-BUDDHIST-RESPONSE-001
+    period: late_fifth_to_sixth_century
+    source_context:
+      - HONGMING_JI
+      - BUDDHIST_ORIGIN_DEBATES
+    evidence_class:
+      - POLEMICAL_TEXT
+      - HISTORICAL_RECONSTRUCTION
+    mechanism: MUTUAL_POLEMICAL_RECLASSIFICATION
+    proposition: Buddhist_authors_explicitly_defend_distinctiveness_against_Daoist_origin_claims
+    confidence: bounded
+
+  - id: DAO-BUD-YAO-BODUO-001
+    date: 496_CE
+    source_context: YAO_BODUO_STELE
+    evidence_class:
+      - EPIGRAPHIC_EVIDENCE
+      - MATERIAL_EVIDENCE
+      - SCHOLARLY_INTERPRETATION
+    mechanism: MATERIAL_HYBRIDIZATION
+    proposition: Lingbao_religious_identity_can_use_contact_transformed_visual_and_epigraphic_forms
+    confidence: bounded_with_interpretive_controls
+    guards:
+      - HYBRID_FORM_NE_RELIGIOUS_UNDIFFERENTIATION
+
+axis_status:
+  CONTACT_AND_REINTERPRETATION_MODEL: BOUNDED_STRENGTHENED
+
+contact_taxonomy:
+  - DIRECT_TEXTUAL_ADAPTATION
+  - TEXTUAL_FORM_ADAPTATION
+  - DOCTRINAL_RECODING
+  - RITUAL_INSTITUTIONAL_ADAPTATION
+  - POLEMICAL_COUNTER_GENEALOGY
+  - MUTUAL_POLEMICAL_RECLASSIFICATION
+  - MATERIAL_HYBRIDIZATION
+  - MUTUAL_TRANSFORMATION
+
+global_guards:
+  - CONTACT_NE_BORROWING_BY_DEFAULT
+  - BORROWED_TERM_NE_SAME_MEANING
+  - ONE_WAY_INFLUENCE_NE_COMPLETE_INTERACTION_MODEL
+  - POLEMICAL_TRANSMISSION_CLAIM_NE_TRANSMISSION_HISTORY
+  - CLASSICAL_DAOISM_NE_MEDIEVAL_CONTACT_LAYER

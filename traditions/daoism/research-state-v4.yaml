@@ -1,0 +1,56 @@
+schema_version: on-theo.daoism-research-state.v4
+status: CLASSICAL_EARLY_RELIGIOUS_AND_BUDDHIST_CONTACT_ACTIVE
+parent_head: 483d1bcaebb57a00cda5eb30c15bc3908fdac438
+parent_state: traditions/daoism/research-state-v3.yaml
+
+new_artifacts:
+  - traditions/daoism/buddhist-contact-reinterpretation-v1.md
+  - traditions/daoism/buddhist-contact-mechanism-matrix-v1.yaml
+  - traditions/daoism/neutral-axis-evidence-v2.yaml
+
+new_evidence_layers:
+  - SHANGQING_ERA_BUDDHIST_TEXTUAL_ADAPTATION
+  - LINGBAO_397_402_BUDDHIST_INTEGRATION
+  - DUREN_JING_CONTACT_SENSITIVE_FORM
+  - LU_XIUJING_CANON_FORMATION_SCHOLARLY_INTERPRETATION
+  - HUAHU_POLEMIC
+  - BUDDHIST_RESPONSES
+  - YAO_BODUO_STELE_496
+
+contact_modes_bound:
+  - DIRECT_TEXTUAL_ADAPTATION
+  - DOCTRINAL_RECODING
+  - RITUAL_INSTITUTIONAL_ADAPTATION
+  - POLEMICAL_COUNTER_GENEALOGY
+  - MUTUAL_POLEMICAL_RECLASSIFICATION
+  - MATERIAL_HYBRIDIZATION
+  - MUTUAL_TRANSFORMATION
+
+axes_strengthened:
+  CONTACT_AND_REINTERPRETATION_MODEL: BOUNDED_STRENGTHENED
+  RITUAL_ORDER_MODEL: STRENGTHENED
+  INSTITUTIONALIZATION_MODEL: STRENGTHENED
+  LIBERATION_OR_FINAL_TRANSFORMATION_MODEL: PARTIAL_STRENGTHENED
+
+readiness:
+  bounded_Daoist_comparison: strengthened
+  contact_comparison: true
+  broad_Daoism_comparison: false
+  exact_primary_contact_witness_map: partial
+
+next_frontiers:
+  - Yang_Xi_Forty_two_Sections_exact_passage_binding
+  - Duren_jing_Buddhist_loan_vocabulary_table
+  - Lu_Xiujing_catalogue_primary_binding
+  - Huahu_fragment_witness_map
+  - Hongming_ji_response_packet
+  - Yao_Boduo_stele_epigraphic_packet
+  - Shangqing_revelation_primary_packet
+
+guards:
+  - CONTACT_NE_SIMPLE_BORROWING
+  - ONE_WAY_INFLUENCE_NE_COMPLETE_INTERACTION_MODEL
+  - LEXICAL_BORROWING_NE_SEMANTIC_IDENTITY
+  - POLEMICAL_ORIGIN_CLAIM_NE_HISTORICAL_TRANSMISSION
+  - CLASSICAL_DAOISM_NE_MEDIEVAL_CONTACT_LAYER
+  - SYSTEMS_ANALOGY_REMAINS_DOWNSTREAM

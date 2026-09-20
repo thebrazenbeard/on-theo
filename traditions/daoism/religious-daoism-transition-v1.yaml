@@ -1,0 +1,80 @@
+schema_version: on-theo.daoism-religious-transition.v1
+status: EARLY_RELIGIOUS_DAOISM_BOUNDED
+
+layers:
+  - id: CLASSICAL_LAOZI
+    evidence:
+      - GUODIAN
+      - MAWANGDUI
+      - RECEIVED_TEXT
+    primary_features:
+      - Dao_generation
+      - ziran
+      - wuwei
+      - self_transformation
+      - generation_without_possession_or_domination
+
+  - id: ZHUANGZI_INNER_SELECTED
+    evidence:
+      - EXTANT_GUO_XIANG_RECENSION_WITH_LAYER_CONTROL
+    primary_features:
+      - transformation
+      - perspectival_limits
+      - life_death_within_change
+      - Dao_before_heaven_and_earth
+
+  - id: CELESTIAL_MASTERS_EARLY
+    traditional_foundation: 142_CE_REVELATION_TO_ZHANG_DAOLING
+    direct_evidence:
+      - ZHANG_PU_STELE_173_CE
+    institutional_features:
+      - revealed_scriptures
+      - libationers
+      - zhi_administrations
+      - household_registers
+      - individual_registers
+      - healing_rituals
+      - confession
+      - repentance
+      - petitions
+      - divine_officers
+
+  - id: XIANGER
+    manuscript: DUNHUANG_S6825
+    copy_date: APPROX_500_CE
+    underlying_text_date: APPROX_200_CE_DISPUTED
+    affiliation: CLOSELY_LINKED_TO_CELESTIAL_MASTERS
+    surviving_scope: RECEIVED_DDJ_MID_CH3_THROUGH_CH37_APPROX
+    function: RELIGIOUS_COMMENTARY_AND_RECENSION
+    features:
+      - moral_precepts
+      - self_cultivation
+      - divine_Laozi
+      - religious_blessing
+      - communal_religious_reading
+
+  - id: LORD_LAO_TRANSFORMATION
+    period: LATE_SECOND_CENTURY_CE
+    example: LAOZI_BIANHUA_JING
+    features:
+      - Dao_personification
+      - divine_descent
+      - revelation
+      - multiple_manifestations
+      - teaching_humanity_and_rulers
+
+comparison_effect:
+  INSTITUTIONALIZATION_MODEL: BOUNDED_EARLY_RELIGIOUS_SUPPORT
+  KNOWLEDGE_OR_DISCLOSURE_MODEL: REVELATION_LAYER_ADDED
+  AGENCY_AND_AUTHORITY_MODEL: DIVINE_AND_OFFICE_LAYER_ADDED
+  MORAL_CAUSALITY_MODEL: MORAL_FAULT_CONFESSION_PETITION_LAYER
+  INTERVENTION_MODEL: RITUAL_DIVINE_MEDIATION_LAYER
+
+guards:
+  - TRADITIONAL_142_FOUNDING_NE_173_DIRECT_EVIDENCE
+  - ZHI_NE_CHRISTIAN_PARISH_BY_IDENTITY
+  - XIANGER_COMMENTARY_NE_EARLY_LAOZI_PRIMARY_MEANING
+  - DIVINIZED_LAOZI_NE_ORIGINAL_LAOZI_AUTHORIAL_SELF_CONCEPT
+  - MORAL_ILLNESS_MODEL_NE_MODERN_MEDICAL_CAUSATION
+  - CLASSICAL_DAO_NE_LORD_LAO_WITHOUT_DIAchronic_CONTROL
+  - LATER_RELIGION_NE_CLASSICAL_TEXT

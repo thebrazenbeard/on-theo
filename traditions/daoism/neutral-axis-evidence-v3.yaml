@@ -1,0 +1,74 @@
+schema_version: on-theo.daoism-neutral-axis-evidence.v3
+status: CLASSICAL_EARLY_RELIGIOUS_BUDDHIST_CONTACT_PLUS_POLITICAL_CONTROL
+supersedes_for_current_research:
+  - traditions/daoism/neutral-axis-evidence-v2.yaml
+
+preserved_from_v2:
+  - classical_Laozi_and_selected_Zhuangzi_records
+  - early_Celestial_Masters_and_Xianger_layers
+  - Daoist_Buddhist_contact_records
+
+new_records:
+  - id: DAO-POL-HANZHONG-001
+    evidence_class:
+      - PRIMARY_TEXT
+      - HISTORICAL_RECONSTRUCTION
+      - SCHOLARLY_INTERPRETATION
+    evidence:
+      - SANGUOZHI_WEISHU_8_ZHANG_LU
+      - KLEEMAN_EARLY_CELESTIAL_MASTERS_HISTORICAL_RECONSTRUCTION
+    propositions:
+      - Zhang_Lu_held_territorial_power_in_Hanzhong
+      - religious_libationers_functioned_as_governing_officials
+      - ordinary_local_officials_are_reported_as_not_appointed_in_the_regime
+      - late_Han_state_recognized_Zhang_Lu_with_official_titles_when_direct_subjugation_failed
+      - subordinates_considered_elevating_Zhang_Lu_to_King_of_Hanning
+    supports:
+      - POLITICAL_SACRALIZATION_MODEL
+      - INSTITUTIONALIZATION_MODEL
+      - AGENCY_AND_AUTHORITY_MODEL
+    mechanism:
+      - RELIGIOUS_OFFICE_AS_TERRITORIAL_GOVERNANCE
+      - RELIGIOUS_POLITICAL_INSTITUTIONAL_ENTANGLEMENT
+    confidence: PARTIAL_INSTITUTIONAL_GOVERNANCE
+    not_admitted:
+      - divine_mandate_for_Zhang_Lu
+      - sacral_monarchy
+      - jade_seal_as_explicit_heavenly_omen
+      - universal_Daoist_theory_of_kingship
+    guards:
+      - RELIGIOUS_GOVERNANCE_NE_DIVINE_MANDATE
+      - DE_FACTO_RULE_NE_THEOLOGICAL_LEGITIMATION
+      - HAN_RECOGNITION_NE_RELIGIOUS_ENDORSEMENT
+      - JADE_SEAL_NE_DIVINE_OMEN_WITHOUT_EXPLICIT_SOURCE_SUPPORT
+      - HANZHONG_CASE_NE_ALL_DAOIST_POLITICS
+
+comparison_status:
+  WORLD_ORIGIN_MODEL: BOUNDED
+  CAUSAL_ORDER_TYPE: BOUNDED
+  GENERATION_AND_CONTROL_MODEL: BOUNDED
+  AGENCY_AND_AUTHORITY_MODEL: BOUNDED_DIAchRONIC
+  POLITICAL_SACRALIZATION_MODEL: PARTIAL_INSTITUTIONAL_GOVERNANCE
+  PERSON_OR_SELF_MODEL: PARTIAL
+  CONTINUITY_MODEL: PARTIAL
+  TRANSFORMATION_MODEL: BOUNDED
+  INTERVENTION_MODEL: BOUNDED_DIAchRONIC
+  KNOWLEDGE_OR_DISCLOSURE_MODEL: BOUNDED_DIAchRONIC
+  MORAL_CAUSALITY_MODEL: PARTIAL_EARLY_RELIGIOUS
+  RITUAL_ORDER_MODEL: BOUNDED_EARLY_RELIGIOUS_AND_LINGBAO
+  INSTITUTIONALIZATION_MODEL: BOUNDED_DIAchRONIC
+  CONTACT_AND_REINTERPRETATION_MODEL: BOUNDED_STRENGTHENED
+
+readiness:
+  bounded_Daoist_comparison: strengthened
+  political_sacralization_comparison: PARTIAL_READY_WITH_MECHANISM_GUARD
+  broad_Daoism_synthesis: false
+
+guards:
+  - CLASSICAL_DAOISM_NE_LATER_RELIGIOUS_DAOISM
+  - RELIGIOUS_GOVERNANCE_NE_DIVINE_MANDATE
+  - BUDDHIST_CONTACT_NE_DAOIST_SEMANTIC_IDENTITY
+  - BORROWED_FORM_NE_BORROWED_MEANING
+  - HUAHU_CLAIM_NE_TRANSMISSION_FACT
+  - MATERIAL_HYBRIDIZATION_NE_UNDIFFERENTIATED_SYNCRETISM
+  - SYSTEMS_ANALOGY_REMAINS_DOWNSTREAM

@@ -1,0 +1,41 @@
+schema_version: on-theo.daoism-research-state.v6
+status: POLITICAL_SACRALIZATION_REBOUND_PARTIAL
+parent_head: 767fa5210c6048324799ca2b67fe4e78be066511
+parent_state: traditions/daoism/research-state-v5.yaml
+
+new_artifacts:
+  - traditions/daoism/zhang-lu-hanzhong-political-control-v1.md
+  - traditions/daoism/neutral-axis-evidence-v3.yaml
+
+political_sacralization_update:
+  source: SANGUOZHI_WEISHU_8_ZHANG_LU
+  mechanism:
+    - RELIGIOUS_OFFICE_AS_TERRITORIAL_GOVERNANCE
+    - RELIGIOUS_POLITICAL_INSTITUTIONAL_ENTANGLEMENT
+  status: PARTIAL_INSTITUTIONAL_GOVERNANCE
+  supported:
+    - religious_libationers_govern_in_place_of_ordinary_officials
+    - Zhang_Lu_holds_territorial_power
+    - late_Han_pragmatic_recognition_of_regime
+    - contemplated_King_of_Hanning_title
+  not_admitted:
+    - divine_mandate
+    - sacral_monarchy
+    - explicit_heavenly_jade_seal_omen
+    - universal_Daoist_political_theology
+
+remaining_exact_binding:
+  - Yang_Xi_line_by_line_Chinese_alignment
+  - Zhen_gao_witness_redaction_history
+  - Duren_jing_Buddhist_loan_vocabulary
+  - Huahu_primary_fragment_map
+  - Hongming_ji_response_primary_packet
+  - Yao_Boduo_full_inscription
+  - Lu_Xiujing_catalogue_primary_binding
+  - Huayang_guozhi_Hanzhong_parallel_primary_packet
+
+guards:
+  - RELIGIOUS_GOVERNANCE_NE_DIVINE_MANDATE
+  - DE_FACTO_RULE_NE_THEOLOGICAL_LEGITIMATION
+  - HAN_RECOGNITION_NE_RELIGIOUS_ENDORSEMENT
+  - JADE_SEAL_NE_DIVINE_OMEN_WITHOUT_EXPLICIT_SOURCE_SUPPORT
