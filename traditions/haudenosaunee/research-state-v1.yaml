@@ -1,0 +1,43 @@
+schema_version: on-theo.haudenosaunee-research-state.v1
+status: PUBLIC_CONFEDERACY_NATION_FOUNDATION_ACTIVE
+
+branch:
+  name: research/haudenosaunee-public-source-v1-20260920
+  base_branch: corpus/global-expansion-queue-v1-20260917
+  base_head: cd588c7cabc210f8ae8eb43c148170872aa4b9ac
+
+artifacts:
+  boundary: traditions/haudenosaunee/public-source-confederacy-nation-boundary-v1.md
+  source_map: traditions/haudenosaunee/source-map-v1.md
+  foundation: traditions/haudenosaunee/great-law-thanksgiving-relational-order-packet-v1.md
+  neutral_axis: traditions/haudenosaunee/neutral-axis-evidence-v1.yaml
+
+current_secure_results:
+  - Confederacy_and_nation_levels_must_remain_distinct
+  - Great_Law_is_publicly_described_as_spiritual_moral_social_and_political_order
+  - Clan_Mothers_Chiefs_and_Faithkeepers_have_distinct_current_public_authority_roles
+  - Thanksgiving_Address_is_public_relational_practice_with_nation_speaker_variation
+  - Oneida_public_evidence_supports_seasonal_ecological_ceremonial_time
+  - Oneida_public_evidence_supports_ancestor_death_feast_category
+  - wampum_is_documentary_material_practice_not_alphabetic_text
+  - Handsome_Lake_Longhouse_reform_history_requires_separate_later_layer
+
+current_holds:
+  - CROSS_TRADITION_COMPARISON
+  - WORLD_ORIGIN_MODEL
+  - PERSON_OR_SELF_MODEL
+  - CONTACT_AND_REINTERPRETATION_MODEL
+  - HANDSOME_LAKE_HISTORY
+  - CEREMONIAL_PROCEDURE
+
+next_frontier:
+  primary: HAUDENOSAUNEE_AUTHORITY_FUTURE_GENERATIONS_PACKET_V1
+  subsequent:
+    - HAUDENOSAUNEE_PUBLIC_SEASONALITY_PACKET_V1
+    - HAUDENOSAUNEE_WAMPUM_CONTACT_PACKET_V1
+    - HAUDENOSAUNEE_COMPARISON_READINESS_AUDIT_V1
+
+guards:
+  - CONFEDERACY_NE_ONE_NATION
+  - CURRENT_SELF_DESCRIPTION_NE_UNCHANGED_PRECONTACT_FORM
+  - PUBLIC_CEREMONY_NE_PROCEDURE
