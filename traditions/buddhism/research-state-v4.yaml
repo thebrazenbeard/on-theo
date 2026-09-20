@@ -1,0 +1,51 @@
+schema_version: on-theo.buddhism-research-state.v4
+status: TEXTUAL_CROSS_TRANSMISSION_PLUS_ASOKAN_MATERIAL_CONTROL
+parent_head: 2286c8c4d9e5a511123afdac50de88c338ee470c
+parent_state: traditions/buddhism/research-state-v3.yaml
+
+new_artifacts:
+  - traditions/buddhism/asokan-inscription-material-packet-v1.md
+  - traditions/buddhism/asokan-inscription-register-v1.yaml
+
+evidence_layers_now_active:
+  - PALI_DISCOURSE
+  - CHINESE_AGAMA_PARALLEL
+  - SANSKRIT_PARALLEL
+  - GANDHARI_PHYSICAL_MANUSCRIPT
+  - ASOKAN_INSCRIPTION
+  - ARCHAEOLOGICAL_SITE_CONTEXT
+
+historical_anchors:
+  ASOKA_BHABRA:
+    function: explicit_Buddha_Dhamma_Sangha_and_text_recommendation
+  ASOKA_LUMBINI:
+    function: third_century_BCE_birthplace_identification_and_pilgrimage_anchor
+  ASOKA_NIGALI_SAGAR:
+    function: stupa_and_previous_Buddha_cultic_memory_anchor
+  ASOKA_SCHISM_FAMILY:
+    function: sangha_institutional_governance_anchor
+
+new_comparison_axis_candidate:
+  INSTITUTIONALIZATION_MODEL:
+    status: METHOD_CANDIDATE
+    reason: >
+      textual doctrine and institutional/material practice must not be treated as
+      the same evidence type
+
+guards:
+  - ASOKAN_INSCRIPTION_NE_LATER_ASOKA_LEGEND
+  - ASOKA_DHAMMA_NE_ALWAYS_TECHNICAL_BUDDHIST_DOCTRINE
+  - ROYAL_PATRONAGE_NE_GENERAL_POPULATION_BELIEF
+  - LUMBINI_IDENTIFICATION_NE_CONTEMPORARY_BIRTH_WITNESS
+  - STUPA_ATTESTATION_NE_HISTORICAL_BUDDHA_BIOGRAPHY
+  - LOCAL_SANGHA_NE_CENTRALIZED_CHURCH
+  - TRANSLATION_DISPUTE_MUST_REMAIN_VISIBLE
+
+next_frontiers:
+  - exact_Asokan_inscription_witness_table
+  - Bhabra_title_by_title_identification
+  - schism_edict_witness_comparison
+  - early_stupa_vihara_archaeology_chronology
+  - SN22_59_SA34_Gandhari_term_alignment
+  - SN12_38_SA359_clause_alignment
+  - AN6_63_MA111_variant_matrix

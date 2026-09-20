@@ -1,0 +1,74 @@
+schema_version: on-theo.buddhism-asokan-inscription-register.v1
+status: MATERIAL_EPIGRAPHIC_CONTROL
+
+records:
+  - id: ASOKA_BHABRA_BAIRAT
+    evidence_class: MATERIAL_EVIDENCE_PLUS_PRIMARY_INSCRIPTION
+    category: EXPLICIT_BUDDHIST_EPIGRAPHY
+    propositions:
+      - royal_reverence_for_Buddha_Dhamma_Sangha
+      - monks_nuns_laymen_laywomen_as_distinct_audiences
+      - named_teaching_recommendations
+      - concern_for_Dhamma_duration
+    guards:
+      - recommended_title_identification_requires_item_level_control
+      - inscription_ne_complete_fixed_canon
+
+  - id: ASOKA_LUMBINI_RUMMINDEI
+    evidence_class: MATERIAL_EVIDENCE_PLUS_PRIMARY_INSCRIPTION
+    category: EXPLICIT_BUDDHIST_EPIGRAPHY
+    approximate_period: THIRD_CENTURY_BCE
+    propositions:
+      - royal_visit_and_reverence
+      - site_identified_as_Buddha_Sakyamuni_birthplace
+      - fiscal_privilege_recorded
+    guards:
+      - asokan_identification_ne_contemporary_birth_record
+      - pilgrimage_memory_ne_event_witness
+
+  - id: ASOKA_NIGALI_SAGAR
+    evidence_class: MATERIAL_EVIDENCE_PLUS_PRIMARY_INSCRIPTION
+    category: EXPLICIT_BUDDHIST_EPIGRAPHY
+    propositions:
+      - stupa_of_Buddha_Konakamana
+      - royal_stupa_enlargement
+      - later_personal_visit_and_reverence
+      - stone_pillar_erected
+    guards:
+      - cultic_attestation_ne_historical_biography_of_Konakamana
+
+  - id: ASOKA_MINOR_ROCK_I
+    evidence_class: PRIMARY_INSCRIPTION
+    category: BUDDHIST_SELF_ASSOCIATION_WITH_TRANSLATION_DISPUTE
+    propositions:
+      - royal_Buddhist_association
+      - increased_religious_exertion
+    disputed:
+      - exact_force_of_sangha_approach_or_joining_wording
+      - formal_monk_status
+    guard: translation_choice_ne_secure_biographical_fact
+
+  - id: ASOKA_SCHISM_EDICT_FAMILY
+    evidence_class: MATERIAL_EVIDENCE_PLUS_PRIMARY_INSCRIPTION
+    category: SANGHA_INSTITUTIONAL_CONTROL
+    witness_sites:
+      - SARNATH
+      - SANCHI
+      - KAUSAMBI_ALLAHABAD
+    propositions:
+      - concern_with_sangha_division
+      - royal_or_administrative_intervention
+    guards:
+      - local_plural_sangha_ne_one_centralized_church
+      - philological_details_remain_disputed
+
+evidence_model:
+  explicit_Buddhist_epigraphy_ne_general_dhamma_governance: true
+  inscription_ne_later_legend: true
+  institutional_history_ne_doctrinal_truth: true
+  royal_patronage_ne_population_belief_rate: true
+
+comparison_effect:
+  new_axis_candidate: INSTITUTIONALIZATION_MODEL
+  metaphysical_axis_change: none
+  source_independence_gain: TEXTUAL_PLUS_EPIGRAPHIC_PLUS_ARCHAEOLOGICAL
