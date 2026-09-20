@@ -1,0 +1,93 @@
+schema_version: on-theo.mexica-nahua-florentine-source-control.v1
+status: COLLABORATIVE_COLONIAL_MANUSCRIPT_BOUND
+
+witness:
+  title: FLORENTINE_CODEX
+  formal_title: HISTORIA_GENERAL_DE_LAS_COSAS_DE_NUEVA_ESPANA
+  completion: 1577
+  place: COLEGIO_SANTA_CRUZ_TLATELOLCO
+  current_repository: BIBLIOTECA_MEDICEA_LAURENZIANA
+  structure:
+    books: 12
+    folios: 1223
+    pages: 2446
+    volumes: 3
+    image_and_decorative_count_getty: 2472
+  evidence_class:
+    - MANUSCRIPT_WITNESS
+    - COLONIAL_DOCUMENTARY_PRACTICE
+
+collaborative_authorship:
+  franciscan_editor_researcher:
+    - BERNARDINO_DE_SAHAGUN
+  named_Nahua_scholars:
+    - ANTONIO_VALERIANO
+    - ALONSO_VEGERANO
+    - MARTIN_JACOBITA
+    - PEDRO_DE_SAN_BUENAVENTURA
+  named_Nahua_scribes:
+    - DIEGO_DE_GRADO
+    - BONIFACIO_MAXIMILIANO
+    - MATEO_SEVERINO
+  additional_Nahua_elders_artists:
+    status: PRESENT_BUT_NOT_ALL_NAMED
+
+narrative_layers:
+  NAHUATL_TEXT:
+    evidence_class: COLONIAL_NAHUATL_TEXT
+    status: PRIMARY_INDIGENOUS_LANGUAGE_MANUSCRIPT_LAYER
+  SPANISH_TEXT:
+    evidence_class:
+      - COLONIAL_SPANISH_TEXT
+      - COMMENTARY
+    status: SAHAGUN_INTERPRETIVE_LAYER
+  IMAGE_PROGRAM:
+    evidence_class:
+      - INDIGENOUS_IMAGE_PROGRAM
+      - COLONIAL_ART_PRACTICE
+    status: THIRD_INTERACTING_NARRATIVE
+
+source_history:
+  TEPEPULCO_ELDER_CONSULTATIONS: 1559_1561
+  TLATELOLCO_LEADER_CONSULTATIONS: 1561_1562
+  CODICES_MATRITENSES: EARLIER_DRAFT_STAGE
+  MANUSCRITO_1569: LOST_EARLIER_STAGE
+  FLORENTINE_CODEX: FINAL_CLEAN_COPY_1577
+
+records:
+  - id: MN-FC-COLLAB-001
+    propositions:
+      - manuscript_is_collaborative_Nahua_Franciscan_workshop_product
+      - named_Nahua_authors_scribes_and_artists_are_part_of_documentary_chain
+      - elders_and_specialists_were_consulted_during_long_source_gathering_process
+    confidence: HIGH
+
+  - id: MN-FC-LAYERS-001
+    propositions:
+      - Nahuatl_Spanish_and_image_layers_are_distinct_interacting_narratives
+      - Spanish_column_is_interpretive_not_semantically_identical_by_default
+      - image_program_has_independent_evidentiary_value
+    confidence: HIGH
+
+  - id: MN-FC-SCOPE-001
+    propositions:
+      - manuscript_is_Mexica_heavy_and_Tlatelolco_centered_with_wider_central_Mexican_Nahua_inputs
+      - Book_12_is_a_Tlatelolcan_Mexica_conquest_perspective
+    confidence: BOUNDED_HIGH
+    guards:
+      - TLATELOLCAN_PERSPECTIVE_NE_ALL_INDIGENOUS_PERSPECTIVES
+
+axis_status:
+  CONTACT_AND_REINTERPRETATION_MODEL: PARTIAL_INTERNAL_READY
+  RITUAL_ORDER_MODEL: CANDIDATE_STRONG
+  SACRED_TIME_CALENDAR_MODEL: CANDIDATE_STRONG
+  KNOWLEDGE_OR_DISCLOSURE_MODEL: CANDIDATE
+  POLITICAL_SACRALIZATION_MODEL: CANDIDATE
+  CROSS_TRADITION_COMPARISON: HOLD
+
+guards:
+  - FLORENTINE_CODEX_NE_UNMEDIATED_PRECONTACT_TRANSCRIPT
+  - SAHAGUN_NE_SOLE_AUTHOR
+  - NAHUATL_NE_SPANISH_NE_IMAGE
+  - FINAL_MANUSCRIPT_NE_WHOLE_SOURCE_HISTORY
+  - DIGITAL_EDITION_NE_MANUSCRIPT
