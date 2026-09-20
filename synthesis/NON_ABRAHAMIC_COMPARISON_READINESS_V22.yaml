@@ -1,0 +1,82 @@
+schema_version: on-theo.nonabrahamic-comparison-readiness.v22
+status: NON_CANONICAL_RESEARCH_AUDIT
+supersedes_for_current_research:
+  - synthesis/NON_ABRAHAMIC_COMPARISON_READINESS_V21.yaml
+
+existing_six_lane_source_heads:
+  buddhism: eb0f948788f5171d13c067daea2df54845d22f70
+  hindu: 614fa715fcacee0d7ec1ba573061d3e776e708d3
+  daoism: 708ba10413d9511648c2540ad84be74b6b5f6b5c
+  shinto: 4939c22c6b13afc1226d8860fa8dbf394e34b5c4
+  norse: 22e9fe10d1647a66458c54478c86e7ba6abd83ce
+  sumerian: 3fd5db6f05c008aeba4febe310de99e4ff484770
+
+global_breadth_expansion:
+  state: synthesis/GLOBAL_CORPUS_BREADTH_EXPANSION_STATE_V1.yaml
+  active_tradition: LAKOTA
+  branch: research/lakota-public-source-v1-20260920
+  exact_head: c6818e28bb49644dc0a174dcffa625e8a12de732
+  pr: 104
+  comparison_status: HOLD
+  internal_reconstruction_status: PUBLIC_SOURCE_FOUNDATION_ACTIVE
+
+lakota_current_result:
+  strongest_internal_result: >
+    Public tribal, tribal-college, historical, and scholarly sources support a
+    living relational Lakota tradition in which kinship, sacred power, prayer,
+    ceremony, and land are interdependent, while no one static theology or
+    universal ceremonial form is yet admitted.
+  bounded_internal_axes:
+    - RELATIONAL_ORDER_MODEL
+    - SACRED_LAND_PLACE_MODEL
+  partial_internal_axes:
+    - RITUAL_ORDER_MODEL
+    - KNOWLEDGE_OR_DISCLOSURE_MODEL
+  prohibited_promotions:
+    - GENERIC_NATIVE_AMERICAN_RELIGION
+    - ONE_TIMELESS_LAKOTA_THEOLOGY
+    - ONE_FIXED_CREATOR_MODEL
+    - RESTRICTED_CEREMONIAL_DETAIL
+    - CROSS_TRADITION_COMPARISON_BEFORE_INTERNAL_DEEPENING
+
+comparison_ready_and_tested_axes_current_six_lane:
+  - CAUSAL_ORDER_TYPE
+  - CONTINUITY_MODEL
+  - RITUAL_ORDER_MODEL
+  - PERSON_OR_SELF_MODEL
+  - INSTITUTIONALIZATION_MODEL
+  - CONTACT_AND_REINTERPRETATION_MODEL
+  - POLITICAL_SACRALIZATION_MODEL
+  - WORLD_ORIGIN_MODEL
+  - MORTUARY_RELATIONSHIP_MODEL
+  - OFFERING_EXCHANGE_MODEL
+  - TRANSFORMATION_MODEL
+
+next_frontier:
+  primary: WAKAN_WAKAN_TANKA_SEMANTIC_AND_COMMUNITY_SOURCE_PACKET_V1
+  scope: LAKOTA_INTERNAL_ONLY
+  reason: >
+    The first Lakota foundation is durable, but Wakan/Wakan Tanka currently
+    spans multiple public English renderings and historical layers. Semantic
+    control is required before any Lakota agency, sacral-presence, creator, or
+    comparative theology claim can be admitted.
+
+portfolio_after_lakota_deepening:
+  - MAYA_DIACHRONIC_RESEARCH_PACKET_V1
+  - MEXICA_NAHUA_RESEARCH_PACKET_V1
+  - OLMEC_MATERIAL_ICONOGRAPHIC_PACKET_V1
+  - DINE_PUBLIC_SOURCE_RESEARCH_PACKET_V1
+  - HAUDENOSAUNEE_PUBLIC_SOURCE_RESEARCH_PACKET_V1
+  - ANDEAN_INCA_DIACHRONIC_PACKET_V1
+
+holds:
+  global_generalization_from_current_six_lanes: PROHIBITED
+  Lakota_cross_tradition_comparison: HOLD
+  restricted_sacred_knowledge_reproduction: PROHIBITED
+
+guards:
+  - LAKOTA_NE_GENERIC_NATIVE_AMERICAN_RELIGION
+  - PUBLIC_SOURCE_NE_PERMISSION_TO_REPRODUCE_RESTRICTED_CEREMONY
+  - COMMUNITY_SELF_DESCRIPTION_NE_PRECONTACT_AUTOMATIC_CONTINUITY
+  - CONTACT_NE_TRANSMISSION
+  - SYSTEMS_ANALOGY_IS_DOWNSTREAM
