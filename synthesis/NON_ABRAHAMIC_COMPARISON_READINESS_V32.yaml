@@ -1,0 +1,34 @@
+schema_version: on-theo.nonabrahamic-comparison-readiness.v32
+status: NON_CANONICAL_RESEARCH_AUDIT
+supersedes_for_current_research:
+  - synthesis/NON_ABRAHAMIC_COMPARISON_READINESS_V31.yaml
+
+new_method_state:
+  ATTRIBUTION_STATUS:
+    status: PROMOTED_GENERAL_SOURCE_CRITICISM_DIMENSION
+    schema: synthesis/ATTRIBUTION_IDENTIFICATION_METHOD_SCHEMA_V1.yaml
+  REVIVAL_RECONSTRUCTION_MODEL:
+    status: STRENGTHENED_BY_MODERN_HEATHEN_MULTI_ORGANIZATION_CONTROL
+
+modern_heathen_head: f46c1349fa89c0dff9ca9400ed563b3061fec186
+devil_worship_accusation_head: e4c91fe027719c3bc0c8099d52237233d77e8ced
+
+original_queue:
+  status: REPRESENTATION_COMPLETE
+  audit: synthesis/ORIGINAL_WORLD_EXPANSION_QUEUE_COMPLETION_AUDIT_V1.yaml
+
+next_frontier:
+  primary: YORUBA_IFA_DIACHRONIC_PACKET_V1
+  reason: >
+    Fresh global gap audit identifies sub-Saharan Africa as the largest current
+    geographic/evidence-architecture gap. Yoruba/Ifá has unusually strong
+    controls for oral corpus, specialist divination, living tradition and later
+    diaspora transformation.
+
+comparison_hold:
+  Yoruba_global_cells: HOLD_UNTIL_INTERNAL_RECONSTRUCTION
+
+guards:
+  - INTERNAL_RECONSTRUCTION_BEFORE_COMPARISON
+  - IFA_NE_ALL_YORUBA_RELIGION
+  - YORUBA_NE_ALL_AFRICAN_RELIGION
