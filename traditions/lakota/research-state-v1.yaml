@@ -1,0 +1,70 @@
+schema_version: on-theo.lakota-research-state.v1
+status: PUBLIC_SOURCE_FOUNDATION_ACTIVE
+
+branch:
+  name: research/lakota-public-source-v1-20260920
+  base_branch: corpus/global-expansion-queue-v1-20260917
+  base_head: cd588c7cabc210f8ae8eb43c148170872aa4b9ac
+
+mission:
+  - reconstruct_Lakota_traditions_internally_before_comparison
+  - privilege_tribal_and_tribal_college_public_sources
+  - preserve_band_community_and_period_differences
+  - protect_restricted_sacred_knowledge
+  - separate_living_self_description_from_historical_ethnography
+
+artifacts:
+  public_source_boundary: traditions/lakota/public-source-boundary-v1.md
+  source_map: traditions/lakota/source-map-v1.md
+  internal_packet: traditions/lakota/worldview-kinship-sacred-land-packet-v1.md
+  neutral_axis: traditions/lakota/neutral-axis-evidence-v1.yaml
+
+current_secure_results:
+  - living_Lakota_spirituality_and_worldview_are_publicly_institutionalized_in_tribal_college_and_tribal_government_sources
+  - kinship_relational_ethics_and_Wolakota_are_central_in_current_public_community_sources
+  - sacred_land_relationship_is_living_and_institutionally_protected
+  - Wakan_Wakan_Tanka_requires_multiple_gloss_and_source_controls
+  - selected_public_sources_attest_named_ceremonial_categories_and_pipe_centrality
+  - colonial_suppression_and_religious_freedom_history_are_required_context
+
+current_claim_ceiling:
+  relational_order: BOUNDED_CONTEMPORARY
+  sacred_land_place: BOUNDED
+  wakan_semantics: PARTIAL
+  ritual_order: PARTIAL_PUBLIC_CATEGORY_SUPPORT
+  vision_disclosure: PARTIAL_HIGH_LEVEL
+  cross_tradition_comparison: HOLD
+
+not_admitted:
+  - one_timeless_Lakota_theology
+  - generic_Sioux_mythology_as_source_class
+  - one_fixed_creator_model
+  - one_universal_spirit_taxonomy
+  - one_complete_creation_cosmology
+  - one_universal_afterlife_map
+  - unrestricted_ceremonial_procedure
+  - New_Age_reception_as_Lakota_evidence
+
+next_frontier:
+  primary: WAKAN_WAKAN_TANKA_SEMANTIC_AND_COMMUNITY_SOURCE_PACKET_V1
+  subsequent:
+    - SACRED_LAND_COMMUNITY_PROVENANCE_PACKET_V1
+    - BLACK_ELK_BROWN_SOURCE_CRITICAL_TABLE_V1
+    - PUBLIC_VISION_DISCLOSURE_PACKET_V1
+    - COLONIAL_SUPPRESSION_AND_CHRISTIAN_CONTACT_CHRONOLOGY_V1
+    - PUBLIC_DEATH_SPIRIT_MOURNING_PACKET_V1
+
+comparison_gate:
+  status: HOLD
+  unlock_requires:
+    - more_Lakota_authored_or_community_grounded_sources
+    - explicit_axis_specific_source_binding
+    - diachronic_and_community_separation
+    - restricted_knowledge_review
+
+guards:
+  - PUBLIC_SOURCE_NE_RESTRICTED_KNOWLEDGE_PERMISSION
+  - COMMUNITY_SELF_DESCRIPTION_NE_PRECONTACT_AUTOMATIC_CONTINUITY
+  - HISTORICAL_ETHNOGRAPHY_NE_UNMEDIATED_PRIMARY_SELF_DESCRIPTION
+  - LAKOTA_NE_ALL_OCETI_SAKOWIN
+  - LAKOTA_NE_ALL_INDIGENOUS_NORTH_AMERICAN_TRADITIONS
