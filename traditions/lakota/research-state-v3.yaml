@@ -1,0 +1,53 @@
+schema_version: on-theo.lakota-research-state.v3
+status: PUBLIC_SOURCE_PLACE_AND_SEMANTIC_CONTROL_STRENGTHENED
+supersedes_for_current_research:
+  - traditions/lakota/research-state-v2.yaml
+
+branch:
+  name: research/lakota-public-source-v1-20260920
+  pr: 104
+
+new_artifacts:
+  wakan_packet: traditions/lakota/wakan-wakan-tanka-semantic-community-packet-v1.md
+  wakan_evidence: traditions/lakota/wakan-semantic-evidence-v1.yaml
+  sacred_land_packet: traditions/lakota/sacred-land-community-provenance-packet-v1.md
+  sacred_land_evidence: traditions/lakota/sacred-land-evidence-v1.yaml
+
+current_internal_admissions:
+  RELATIONAL_ORDER_MODEL: BOUNDED_INTERNAL
+  SACRED_LAND_PLACE_MODEL: BOUNDED_STRENGTHENED
+  HUMAN_ORIGIN_OR_EMERGENCE_MODEL: BOUNDED_ONE_OGLALA_VERSION
+  RITUAL_ORDER_MODEL: PARTIAL_STRENGTHENED
+  KNOWLEDGE_OR_DISCLOSURE_MODEL: PARTIAL_STRENGTHENED
+  SACRAL_PRESENCE_MODEL: PARTIAL_INTERNAL_READY
+  AGENCY_AND_AUTHORITY_MODEL: PARTIAL_INTERNAL_READY
+
+current_holds:
+  WORLD_ORIGIN_MODEL: HOLD
+  POSTMORTEM_PATH_MODEL: HOLD
+  MORTUARY_RELATIONSHIP_MODEL: HOLD
+  CROSS_TRADITION_COMPARISON: HOLD
+  RESTRICTED_CEREMONIAL_RECONSTRUCTION: PROHIBITED
+
+secure_results:
+  - Wakan_and_Wakan_Tanka_are_not_simple_lexical_equivalents
+  - current_public_Lakota_Dakota_usage_supports_multiple_English_glosses
+  - current_public_usage_supports_bounded_relational_agentive_language
+  - sacred_land_must_be_modeled_place_by_place
+  - Wind_Cave_has_a_provenanced_Cheyenne_Creek_Oglala_emergence_version
+  - human_emergence_does_not_yet_supply_a_complete_world_origin_model
+  - sacred_land_relations_include_living_ceremony_and_offering_at_selected_sites
+
+next_frontier:
+  primary: BLACK_ELK_BROWN_SOURCE_CRITICAL_TABLE_V1
+  subsequent:
+    - PUBLIC_VISION_DISCLOSURE_PACKET_V1
+    - COLONIAL_SUPPRESSION_AND_CHRISTIAN_CONTACT_CHRONOLOGY_V1
+    - PUBLIC_DEATH_SPIRIT_MOURNING_PACKET_V1
+
+guards:
+  - COMMUNITY_AND_PERIOD_MUST_REMAIN_VISIBLE
+  - ONE_SITE_NE_ALL_SACRED_GEOGRAPHY
+  - PUBLIC_SOURCE_NE_RESTRICTED_KNOWLEDGE_PERMISSION
+  - COMMUNITY_TRANSMITTED_NARRATIVE_NE_ALL_COMMUNITY_VERSIONS
+  - LAKOTA_NE_GENERIC_NATIVE_AMERICAN_RELIGION
