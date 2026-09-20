@@ -1,0 +1,42 @@
+schema_version: on_theo.early_christianity_valentinian_research_state.v1
+status: ACTIVE
+canonical: false
+
+branch: research/valentinian-primary-text-control-v1-20260920
+parent:
+  branch: corpus/early-christian-rabbinic-v1-20260917
+  exact_head: 5a45ef5cdadc1f1f3a21e769e2d613c4ed945d8d
+
+completed:
+  - PTOLEMY_FLORA_SOURCE_BOUNDARY
+  - TRIPARTITE_TRACTATE_WITNESS_COMPOSITION_BOUNDARY
+  - GOSPEL_OF_TRUTH_AUTHORSHIP_RECEPTION_BOUNDARY
+  - IRENAEUS_PTOLEMAEAN_HOSTILE_WITNESS_BOUNDARY
+  - UNITARY_GNOSTICISM_GUARD
+  - TESTAMENT_BOOK_V_CLAIM_CEILING
+
+key_artifacts:
+  - traditions/early-christianity/valentinian-primary-text-control-v1.md
+  - traditions/early-christianity/valentinian-primary-text-matrix-v1.yaml
+
+current_results:
+  internal_valentinian_diversity: BOUNDED_STRONG
+  ptolemy_layered_law_interpretation: BOUNDED_STRONG_FOR_PTOLEMY
+  tripartite_internal_valentinian_theology: BOUNDED_STRONG
+  gospel_of_truth_valentinian_reception: BOUNDED_STRONG
+  gospel_of_truth_valentinus_authorship: UNKNOWN
+  universal_matter_evil_claim: NOT_ADMITTED
+  unitary_gnosticism_model: NOT_ADMITTED
+
+next_frontier:
+  - PTOLEMY_FLORA_PROPOSITION_MAP
+  - EXCERPTA_EX_THEODOTO_PACKET
+  - HERACLEON_JOHANNINE_EXEGESIS_PACKET
+  - VALENTINIAN_RITUAL_SACRAMENT_PACKET
+
+invariants:
+  - "Valentinian != one system."
+  - "Valentinian reception != Valentinus authorship."
+  - "Physical Coptic witness date != Greek composition date."
+  - "Hostile witness != worthless witness."
+  - "Internal Valentinian text != universal Valentinian doctrine."
