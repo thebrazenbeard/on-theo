@@ -1,0 +1,57 @@
+schema_version: on-theo.ifa-documentary-memory-evidence.v1
+status: BOUNDED_INDEXED_OPEN_ORAL_CORPUS
+
+records:
+  - id: IFA-INDEX-001
+    evidence:
+      - UNESCO_IFA_DIVINATION_SYSTEM
+      - BARBER_IFA_CORPUS
+    propositions:
+      - formal_sign_system_generates_256_odù_figures
+      - generated_figure_maps_consultation_to_structured_corpus_domain
+    supports:
+      - DOCUMENTARY_MEMORY_MODEL
+      - RITUAL_ORDER_MODEL_PARTIAL
+    confidence: HIGH
+
+  - id: IFA-ORAL-001
+    source: BARBER_IFA_CORPUS
+    propositions:
+      - corpus_runs_to_thousands_of_verses
+      - total_extent_is_not_fixed
+      - verse_structure_is_strongly_patterned
+      - corpus_can_absorb_new_material
+    supports:
+      - DOCUMENTARY_MEMORY_MODEL
+      - CONTINUITY_MODEL
+    confidence: HIGH
+
+  - id: IFA-MATERIAL-002
+    evidence:
+      - SMITHSONIAN_IFA_MATERIAL
+      - MET_IFA_MATERIAL
+    propositions:
+      - trays_palm_nuts_chains_vessels_and_tappers_materially_support_specialist_divination_practice
+    supports:
+      - DOCUMENTARY_MEMORY_MODEL
+      - INSTITUTIONALIZATION_MODEL_PARTIAL
+    confidence: HIGH
+
+  - id: IFA-TRANSMISSION-001
+    source: UNESCO_IFA_SAFEGUARDING
+    propositions:
+      - intergenerational_specialist_transmission_is_explicit
+      - formalized_training_and_documentation_have_been_used_for_safeguarding
+    supports:
+      - KNOWLEDGE_GOVERNANCE_DIMENSION
+      - KNOWLEDGE_OR_DISCLOSURE_MODEL
+    confidence: HIGH_PUBLIC
+
+axis_status:
+  DOCUMENTARY_MEMORY_MODEL: BOUNDED_INDEXED_OPEN_ORAL_CORPUS
+  KNOWLEDGE_OR_DISCLOSURE_MODEL: BOUNDED_SPECIALIST_INTERPRETIVE
+  KNOWLEDGE_GOVERNANCE_DIMENSION: BOUNDED_SPECIALIST_INTERGENERATIONAL
+  CONTINUITY_MODEL: BOUNDED_STRUCTURE_WITH_ADAPTIVE_CONTENT
+  INSTITUTIONALIZATION_MODEL: PARTIAL_SPECIALIST_TRAINING
+  RITUAL_ORDER_MODEL: PARTIAL_DIVINATION_STRUCTURE
+  CROSS_TRADITION_COMPARISON: HOLD
