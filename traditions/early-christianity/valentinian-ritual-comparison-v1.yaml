@@ -1,0 +1,74 @@
+schema_version: on_theo.valentinian_ritual_comparison.v1
+status: BOUNDED_NONHARMONIZING_SYNTHESIS_REVIEW_REQUIRED
+canonical: false
+
+parent:
+  exact_head: d76e0b590c5f46df01248443271e588be45d86c6
+
+inputs:
+  ptolemy_flora:
+    exact_subject: ce81baa9e252dbf81ddd8c6fbe7113a75a81279c
+  gospel_philip:
+    exact_subject: fe0be9d324cd8e537f0bfb43c13310bf69304fbb
+  excerpta:
+    exact_subject: d76e0b590c5f46df01248443271e588be45d86c6
+  heracleon:
+    exact_subject: 73321fe702a91af87b0ca293923bbfccdbeb41ca
+    ritual_claims_admitted_here: false
+  irenaeus_ah_1_21:
+    evidence_mode: hostile_external_report
+
+axes:
+  water:
+    result: PRESENT_MULTIPLE_LANES_NOT_UNIVERSAL
+  anointing:
+    result: IMPORTANT_MULTIPLE_LANES_FORM_SEQUENCE_VARIABLE
+  knowledge:
+    result: INITIATORY_SOTERIOLOGICAL_RELATION_TO_VISIBLE_RITE_VARIES
+  fasting:
+    result: MULTIPLE_INTERNAL_ATTESTATIONS_STANDARDIZATION_UNKNOWN
+  bridal_marriage:
+    result: RECURRING_IMAGERY_RITUAL_IDENTITY_UNRESOLVED
+  material_elements:
+    result: MATERIAL_ELEMENT_THEOLOGY_ATTESTED_COMPLETE_LITURGY_UNKNOWN
+  standardization:
+    result: ONE_STANDARD_SYSTEM_NOT_ADMITTED
+
+claims:
+  - id: VAL-RIT-V1-001
+    proposition: Valentinian-associated Christianity included embodied ritual and initiation theology.
+    status: BOUNDED
+    confidence: moderate_to_strong
+
+  - id: VAL-RIT-V1-002
+    proposition: One standard Valentinian sacramental system can be reconstructed across current sources.
+    status: NOT_ADMITTED
+
+  - id: VAL-RIT-V1-003
+    proposition: Knowledge and ritual were mutually exclusive alternatives in Valentinian Christianity.
+    status: NOT_ADMITTED
+
+  - id: VAL-RIT-V1-004
+    proposition: Multiple internal sources coordinate material rites with liberating knowledge or spiritual transformation.
+    status: BOUNDED
+    confidence: strong_for_source_set
+
+  - id: VAL-RIT-V1-005
+    proposition: Irenaeus reports some related groups rejecting visible rites in favor of knowledge.
+    status: BOUNDED_FOR_IRENAEAN_REPORT
+    historical_confidence: mediated
+
+  - id: VAL-RIT-V1-006
+    proposition: Ritual diversity is a better current model than either ritual absence or one standardized secret ritual system.
+    status: BOUNDED
+    confidence: moderate_to_strong
+
+guards:
+  - SIMILAR_RITUAL_VOCABULARY_NE_ONE_INSTITUTION
+  - REPEATED_TERM_NE_IDENTICAL_RITE
+  - GOSPEL_PHILIP_BRIDAL_CHAMBER_NE_IRENAEUS_NUPTIAL_COUCH_BY_DEFAULT
+  - TEXT_NE_OBSERVED_PRACTICE
+  - SOURCE_SYNTHESIS_NE_COMPOSITE_HISTORICAL_CEREMONY
+
+next_scope:
+  - BOOK_V_HOSTILE_REREVIEW_V2
