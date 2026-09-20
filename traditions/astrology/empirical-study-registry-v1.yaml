@@ -1,0 +1,134 @@
+schema: ON_THEO_ASTROLOGY_EMPIRICAL_STUDY_REGISTRY_V1
+status: INITIAL_POPULATION
+purpose: >
+  Record exactly what each empirical study tests so that a null or positive
+  result is not silently generalized to astrology as a whole.
+
+studies:
+  - id: carlson-1985
+    citation: "Shawn Carlson, A double-blind test of astrology, Nature 318 (1985) 419-425"
+    doi: "10.1038/318419a0"
+    url: "https://www.nature.com/articles/318419a0"
+    test_class:
+      - natal_chart_matching
+      - personality_profile_matching
+    design:
+      blinded: double_blind
+      astrologers: professional_or_recommended_practitioners
+      personality_instrument: California_Psychological_Inventory
+    original_reported_result: null_performance_relative_to_chance
+    original_author_conclusion: evidence_against_tested_natal_astrology
+    dispute_status: contested_reanalysis_exists
+    dispute_sources:
+      - "Suitbert Ertel reanalysis, discussed in later astrology-research literature"
+      - "Robert Currey, Correlation 27(2), 2011"
+    branch_interpretation: >
+      Important controlled study. Preserve original result and later statistical/
+      methodological criticism separately. Do not treat one experiment as a test
+      of every astrological tradition or mechanism.
+
+  - id: hartmann-reuter-nyborg-2006
+    citation: >
+      Peter Hartmann, Martin Reuter, Helmuth Nyborg, The relationship between
+      date of birth and individual differences in personality and general
+      intelligence: A large-scale study, Personality and Individual Differences
+      40 (2006) 1349-1362
+    doi: "10.1016/j.paid.2005.11.017"
+    url: "https://www.sciencedirect.com/science/article/pii/S0191886905004046"
+    samples:
+      - description: middle_aged_males_vietnam_experience_study
+        n_approx: 4000
+      - description: young_adults_national_longitudinal_study_of_youth_1979
+        n_approx: 11000
+    test_class:
+      - date_of_birth_personality
+      - date_of_birth_general_intelligence
+      - popular_sun_sign
+      - astrological_elements
+      - astrological_gender
+    result: no_supported_relationship_in_tested_variables
+    branch_interpretation: >
+      Strong evidence against the broad Sun-sign/date-of-birth personality and
+      intelligence associations tested. Not a full-chart horoscopic test.
+
+  - id: fuzeau-braesch-1992-twins
+    citation: "Fuzeau-Braesch, Personality and Individual Differences 13 (1992) 1135-1144"
+    test_class:
+      - twin_personality_astrology
+    reported_result: positive_parent_matching
+    reported_hit_rate_percent: 68.5
+    status: positive_claim_later_challenged
+    branch_interpretation: >
+      Retain because later replication/reanalysis specifically tests the claimed
+      effect rather than ignoring positive literature.
+
+  - id: kelly-et-al-1996-twin-reanalysis
+    citation: "Are personality differences between twins predicted by astrology?"
+    journal: "Personality and Individual Differences"
+    volume: 21
+    issue: 3
+    pages: "449-454"
+    doi: "10.1016/0191-8869(96)00112-2"
+    url: "https://www.sciencedirect.com/science/article/pii/0191886996001122"
+    target: fuzeau_braesch_1992
+    findings:
+      - original_effect_did_not_replicate
+      - interval_between_twin_births_did_not_scale_with_personality_difference_as_hypothesis_required
+      - response_set_and_stereotype_artifacts_identified
+      - reanalysis_of_original_data_no_significant_deviation_from_chance
+    branch_interpretation: >
+      Example of why raw-data audit, mechanism-derived predictions, and direct
+      replication matter.
+
+  - id: dickson-kelly-1985-barnum-review
+    citation: "Dickson and Kelly, The Barnum Effect in Personality Assessment: A Review of the Literature"
+    journal: "Psychological Reports"
+    volume: 57
+    pages: "367-382"
+    doi: "10.2466/pr0.1985.57.2.367"
+    test_class:
+      - psychological_acceptance_effect
+    relevance:
+      - generic_personality_feedback
+      - subjective_validation
+      - horoscope_accuracy_perception
+    branch_interpretation: >
+      Documents a cognitive mechanism capable of increasing perceived personal
+      accuracy. Does not by itself explain every specific discriminative
+      astrological claim.
+
+study_governance:
+  required_fields_for_future_entries:
+    - exact_astrological_proposition
+    - tradition_or_school
+    - sample
+    - blinding
+    - preregistration
+    - predictor_definition
+    - outcome_definition
+    - scoring_rule
+    - null_model
+    - effect_size
+    - uncertainty
+    - exclusions
+    - replication_status
+    - raw_data_availability
+    - analyst_conflicts_or_affiliations
+
+  prohibited_inferences:
+    - "ONE_NULL_STUDY => ALL_ASTROLOGY_FALSE"
+    - "ONE_POSITIVE_STUDY => ASTROLOGY_VALIDATED"
+    - "SUBJECTIVE_ACCURACY => OBJECTIVE_PREDICTION"
+    - "CORRELATION => CELESTIAL_CAUSATION"
+    - "NO_KNOWN_PHYSICAL_MECHANISM => NO_POSSIBLE_CORRELATION"
+    - "UNKNOWN_MECHANISM => SIMULATION_CONTROLLER"
+
+next_search_targets:
+  - Vernon_Clark_matching_tests
+  - McGrew_McFall_1990
+  - Nanninga_Astrotest_1996
+  - Wyman_Vyse_2008
+  - Ertel_Carlson_reanalysis
+  - Dean_Kelly_review_meta_evidence
+  - Gauquelin_effect_claims_and_replications
+  - modern_large_scale_birth_data_tests

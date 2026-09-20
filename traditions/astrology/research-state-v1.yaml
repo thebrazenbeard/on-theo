@@ -1,7 +1,8 @@
 schema: ON_THEO_ASTROLOGY_RESEARCH_STATE_V1
 branch: astrology
 base_main_commit: eedbcf660c2cfe6cff5636e798806b0cd3d56efc
-status: FOUNDATION_POPULATED
+foundation_commit: abc1ad524424d2ff20aa86c67c13ee1b2dc068fd
+status: FOUNDATION_DEEPENED_V2
 merge_status: UNMERGED
 
 scope:
@@ -16,17 +17,28 @@ scope:
     - speculative_model
 
 foundation_coverage:
-  mesopotamian_celestial_divination: researched_foundation
-  late_babylonian_horoscopy: researched_foundation
-  hellenistic_greco_roman: researched_foundation
+  mesopotamian_celestial_divination: primary_corpus_mapped
+  late_babylonian_horoscopy: primary_corpus_mapped
+  hellenistic_greco_roman: technical_source_differentiation_started
   iranian_sasanian: partial_foundation
-  indian_jyotisa: researched_foundation
-  early_chinese_astral_cosmology: researched_foundation
-  medieval_islamic: researched_foundation
+  indian_jyotisa: transmission_and_source_strata_deepened
+  early_chinese_astral_cosmology: indigenous_import_separation_deepened
+  medieval_islamic: practice_and_causation_debate_deepened
+  medieval_jewish: ibn_ezra_maimonides_contrast_added
+  medieval_christian: free_will_causation_boundary_added
   medieval_early_modern_europe: researched_foundation
-  modern_astrology_genealogy: partial_foundation
-  empirical_testing: researched_foundation
+  modern_astrology_genealogy: researched_foundation
+  empirical_testing: structured_registry_started
   simulation_interface: speculative_model_initialized
+
+new_v2_artifacts:
+  - traditions/astrology/mesopotamian-primary-corpus-v1.md
+  - traditions/astrology/hellenistic-technical-provenance-v1.md
+  - traditions/astrology/indian-jyotisa-transmission-v1.md
+  - traditions/astrology/chinese-astral-traditions-v1.md
+  - traditions/astrology/religious-free-will-debates-v1.md
+  - traditions/astrology/modern-western-genealogy-v1.md
+  - traditions/astrology/empirical-study-registry-v1.yaml
 
 guards:
   - ASTROLOGY_IS_NOT_ONE_TIMELESS_SYSTEM
@@ -36,15 +48,24 @@ guards:
   - CULTURAL_CONTINUITY_NE_TECHNICAL_IDENTITY
   - CORRELATION_NE_MECHANISM
   - SIMULATION_ANALOGY_NE_ANCIENT_TECHNICAL_KNOWLEDGE
+  - ASTRONOMICAL_EPOCH_NE_TEXT_COMPOSITION_DATE
+  - MANUAL_PRESCRIPTION_NE_DOCUMENTARY_PRACTICE
+  - CELESTIAL_INFLUENCE_ACCEPTED_NE_EXACT_PREDICTION_ACCEPTED
+  - RELIGIOUS_CRITIQUE_NE_REJECTION_OF_ASTRONOMY
 
 next_frontiers:
-  - Babylonian primary-text and horoscope corpus
-  - Hellenistic technique provenance matrix
-  - Yavanajataka dating and transmission dispute table
-  - Jyotisa source strata and Hindu cross-links
-  - Chinese indigenous versus imported astral systems
-  - Abu Mashar transmission graph
-  - medieval theological free-will dispute matrix
-  - modern astrology genealogy
-  - empirical study registry
-  - celestial-conditioning preregistered model specification
+  - extract_and_index_Rochberg_Babylonian_Horoscopes
+  - extract_Neugebauer_Van_Hoesen_Greek_Horoscopes
+  - Dorotheus_book_chapter_technique_matrix
+  - Valens_book_chapter_worked_chart_matrix
+  - Ptolemy_proposition_and_causal_model_map
+  - Yavanajataka_manuscript_and_dating_dispute_table
+  - Varahamihira_Brihat_Jataka_and_Samhita_extraction
+  - Shiji_Tianguan_shu_primary_omen_table
+  - Tang_Buddhist_foreign_astrology_transmission_map
+  - Abu_Mashar_primary_text_and_transmission_graph
+  - Ibn_Sina_astrology_refutation_map
+  - Maimonides_letter_primary_text_map
+  - Alan_Leo_to_Rudhyar_to_Greene_primary_genealogy
+  - empirical_registry_expansion_and_quality_grading
+  - celestial_conditioning_preregistered_model_specification
