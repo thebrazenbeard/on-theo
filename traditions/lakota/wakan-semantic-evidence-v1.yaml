@@ -1,0 +1,108 @@
+schema_version: on-theo.lakota-wakan-semantic-evidence.v1
+status: BOUNDED_PUBLIC_COMMUNITY_SEMANTIC_CONTROL
+
+records:
+  - id: LAK-WAKAN-SRST-LAW-001
+    source: STANDING_ROCK_TITLE_VI_CHILDRENS_CODE
+    evidence_class:
+      - DOCUMENTARY_PRACTICE
+      - MODERN_TRADITION
+    community_scope: STANDING_ROCK_LAKOTA_DAKOTA
+    propositions:
+      - English_translations_are_approximate_and_Lakota_term_governs
+      - Wakan_Tanka_is_publicly_glossed_as_Great_Spirit
+      - Wakan_Tanka_is_described_as_supreme_being_and_power
+      - Wakan_Tanka_is_described_as_creator_of_all_that_is
+      - Wakan_Tanka_is_linked_in_current_code_to_seven_sacred_ceremonies
+    confidence: HIGH_FOR_CURRENT_TRIBAL_LEGAL_USAGE
+    guards:
+      - APPROXIMATE_ENGLISH_NE_EXHAUSTIVE_LEXICAL_IDENTITY
+      - CURRENT_CODE_NE_PRECONTACT_TRANSCRIPT
+
+  - id: LAK-WAKAN-SRST-ADDRESS-001
+    source: STANDING_ROCK_2025_STATE_TRIBAL_ADDRESS
+    evidence_class:
+      - MODERN_TRADITION
+      - COMMUNITY_SELF_DESCRIPTION
+    community_scope: STANDING_ROCK_LAKOTA_DAKOTA
+    propositions:
+      - Wakan_Tanka_Tunkasila_is_addressed_as_Grandfather_the_Creator
+      - Wakan_Tanka_is_asked_to_guide_and_watch_over_the_people
+      - Creator_is_thanked_for_life_and_asked_for_blessings
+    confidence: HIGH_FOR_CURRENT_PUBLIC_USAGE
+
+  - id: LAK-WAKAN-SRST-DAPL-001
+    source: STANDING_ROCK_2025_ENERGY_TRANSFER_STATEMENT
+    evidence_class:
+      - MODERN_TRADITION
+      - COMMUNITY_SELF_DESCRIPTION
+    propositions:
+      - leaders_are_described_as_asking_Wakan_Tanka_for_wisdom_and_guidance
+      - prayer_is_linked_to_protecting_future_generations
+    confidence: HIGH_FOR_CURRENT_PUBLIC_USAGE
+
+  - id: LAK-WAKAN-TRADITIONAL-SCIENCES-001
+    source: LAKOTA_TRADITIONAL_SCIENCES_TECHNICAL_SERIES_42_2023
+    evidence_class:
+      - COMMUNITY_AUTHORED_PUBLIC_SOURCE
+      - MODERN_TRADITION
+    community_scope:
+      - OGLALA_LAKOTA
+      - SICANGU_LAKOTA_INCLUDED_IN_AUTHOR_GROUP
+    propositions:
+      - Lakota_author_translates_Wakan_Tanka_as_Great_Mystery_in_prefatory_address
+      - knowledge_is_explicitly_described_as_caretaken_on_behalf_of_Oyate
+      - publication_uses_Lakota_defined_knowledge_governance
+    confidence: HIGH_FOR_THIS_AUTHORED_PUBLIC_SOURCE
+    guards:
+      - GREAT_MYSTERY_NE_ONE_UNIVERSAL_ENGLISH_GLOSS
+      - PUBLICATION_NE_ALL_LAKOTA_COMMUNITY_CONSENSUS
+
+  - id: LAK-WAKAN-POSTHUMUS-001
+    source: POSTHUMUS_2015_OGlala_SACRED_KNOWLEDGE
+    evidence_class:
+      - SCHOLARLY_INTERPRETATION
+      - HISTORICAL_ETHNOGRAPHIC_RECORD
+    propositions:
+      - wakan_has_broad_semantic_range
+      - scholarship_distinguishes_impersonal_potency_and_personalized_being_senses
+      - historical_interlocutor_model_warns_those_analytic_categories_are_not_sharply_separate
+    confidence: BOUNDED_SCHOLARLY
+    guards:
+      - SCHOLARLY_ANALYTIC_BINARY_NE_NATIVE_FIXED_CATEGORY
+      - WAKAN_SEMANTICS_NE_WAKAN_TANKA_COMPLETE_ONTOLOGY
+
+semantic_model:
+  WAKAN:
+    status: PARTIAL_SEMANTIC_FIELD
+    admissible_glosses:
+      - sacred
+      - mysterious_or_incomprehensible
+      - potent_or_extraordinary
+    note: context_controls_meaning
+
+  WAKAN_TANKA:
+    status: BOUNDED_CONTEMPORARY_PUBLIC_THEOLOGICAL_USAGE
+    public_glosses_or_functions:
+      - Great_Mystery
+      - Great_Spirit
+      - Creator
+      - supreme_being_and_power
+      - prayer_addressee
+      - guidance_and_blessing_relation
+    one_exhaustive_English_gloss: false
+
+axis_status:
+  SACRAL_PRESENCE_MODEL: PARTIAL_INTERNAL_READY
+  AGENCY_AND_AUTHORITY_MODEL: PARTIAL_INTERNAL_READY
+  KNOWLEDGE_OR_DISCLOSURE_MODEL: PARTIAL_STRENGTHENED
+  WORLD_ORIGIN_MODEL: NOT_ADMITTED
+  CROSS_TRADITION_COMPARISON: HOLD
+
+guards:
+  - WAKAN_POLYSEMY_NE_WAKAN_TANKA_ONTOLOGY_BY_ITSELF
+  - GREAT_SPIRIT_NE_EXCLUSIVE_MONOTHEISM_PROVED
+  - CREATOR_LANGUAGE_NE_CREATION_EX_NIHILO
+  - GREAT_MYSTERY_NE_IMPERSONAL_FORCE_ONLY
+  - CURRENT_PUBLIC_USAGE_NE_UNCHANGED_PRECONTACT_DOCTRINE
+  - COMMUNITY_SCOPE_MUST_REMAIN_VISIBLE
