@@ -1,0 +1,66 @@
+schema_version: on-theo.dine-sacred-land-evidence.v1
+status: BOUNDED_CURRENT_PUBLIC_SACRED_GEOGRAPHY
+
+records:
+  - id: DINE-LAND-FOUR-001
+    evidence:
+      - NAVAJO_NATION_AGRICULTURE
+      - NAVAJO_NATION_FLAG_HISTORY
+      - NAVAJO_NATION_PUBLIC_HISTORY
+    evidence_class:
+      - DOCUMENTARY_PRACTICE
+      - MODERN_TRADITION
+    propositions:
+      - four_principal_sacred_mountains_form_public_cardinal_boundary_frame
+      - Diné_Bikéyah_identity_is_publicly_related_to_that_geography
+    confidence: HIGH_CURRENT_PUBLIC
+
+  - id: DINE-LAND-SIX-001
+    source: DINE_FUNDAMENTAL_NATURAL_LAW
+    evidence_class:
+      - CURRENT_INDIGENOUS_LAW
+      - MODERN_TRADITION
+    propositions:
+      - Natural_Law_names_six_sacred_mountains
+      - mountains_are_to_be_respected_protected_and_treated_as_leaders_foundation_of_Nation
+    confidence: HIGH
+    guards:
+      - SIX_NE_CONTRADICTION_WITH_FOUR_BOUNDARY_MODEL
+
+  - id: DINE-LAND-TCP-001
+    source: NAVAJO_HHPD_TRADITIONAL_CULTURAL_PROPERTIES_POLICY
+    evidence_class:
+      - INDIGENOUS_RESEARCH_GOVERNANCE_POLICY
+      - DOCUMENTARY_PRACTICE
+    propositions:
+      - sacred_and_traditional_places_can_be_significant_without_visible_archaeological_trace
+      - offering_origin_gathering_grave_and_ceremonial_place_categories_are_protected
+      - sensitive_location_information_requires protection
+    supports:
+      - SACRED_LAND_PLACE_MODEL
+      - KNOWLEDGE_OR_DISCLOSURE_MODEL_PARTIAL
+    confidence: HIGH
+
+  - id: DINE-LAND-NATURAL-LAW-001
+    source: DINE_FUNDAMENTAL_NATURAL_LAW
+    propositions:
+      - sacred_elements_land_resources_sites_and_living_beings_require_respect_protocol_and_offering
+      - future_generations_are_explicit_protection_obligation
+    supports:
+      - RELATIONAL_ORDER_MODEL
+      - OFFERING_EXCHANGE_MODEL_PARTIAL
+      - SACRED_LAND_PLACE_MODEL
+    confidence: HIGH
+
+axis_status:
+  SACRED_LAND_PLACE_MODEL: BOUNDED_CURRENT_PUBLIC
+  RELATIONAL_ORDER_MODEL: BOUNDED_STRENGTHENED
+  OFFERING_EXCHANGE_MODEL: PARTIAL_RELATIONAL_PROTOCOL
+  POLITICAL_SACRALIZATION_MODEL: PARTIAL_CURRENT_SOVEREIGN_GEOGRAPHY
+  HUMAN_ORIGIN_OR_EMERGENCE_MODEL: HOLD
+  WORLD_ORIGIN_MODEL: HOLD
+  CROSS_TRADITION_COMPARISON: HOLD
+
+guards:
+  - SENSITIVE_SITE_LOCATION_NE_PUBLICATION_TARGET
+  - PUBLIC_SACRED_GEOGRAPHY_NE_COMPLETE_CEREMONIAL_GEOGRAPHY

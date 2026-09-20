@@ -1,0 +1,33 @@
+schema_version: on-theo.dine-research-state.v2
+status: SACRED_LAND_PUBLIC_LAYER_STRENGTHENED
+supersedes_for_current_research:
+  - traditions/dine/research-state-v1.yaml
+
+branch:
+  name: research/dine-public-source-v1-20260920
+  pr: 108
+
+new_artifacts:
+  sacred_land_packet: traditions/dine/sacred-land-mountain-public-packet-v1.md
+  sacred_land_evidence: traditions/dine/sacred-land-evidence-v1.yaml
+
+current_internal_status:
+  RELATIONAL_ORDER_MODEL: BOUNDED_STRENGTHENED
+  SACRED_LAND_PLACE_MODEL: BOUNDED_CURRENT_PUBLIC
+  INSTITUTIONALIZATION_MODEL: BOUNDED_CURRENT_PUBLIC
+  KNOWLEDGE_OR_DISCLOSURE_MODEL: PARTIAL_COMMUNITY_GOVERNANCE
+  OFFERING_EXCHANGE_MODEL: PARTIAL_RELATIONAL_PROTOCOL
+  POLITICAL_SACRALIZATION_MODEL: PARTIAL_CURRENT_SOVEREIGN_LAW_AND_GEOGRAPHY
+  HUMAN_ORIGIN_OR_EMERGENCE_MODEL: HOLD
+  WORLD_ORIGIN_MODEL: HOLD
+  CROSS_TRADITION_COMPARISON: HOLD
+
+next_frontier:
+  primary: DINE_PUBLIC_KNOWLEDGE_INSTITUTIONALIZATION_PACKET_V1
+  subsequent:
+    - DINE_COMPARISON_READINESS_AUDIT_V1
+
+guards:
+  - SENSITIVE_GEOGRAPHY_NOT_COLLECTED
+  - RESTRICTED_KNOWLEDGE_NE_MISSING_DATA
+  - PUBLIC_LAW_LAYER_NE_TIMELESS_FORM

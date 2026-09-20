@@ -1,0 +1,203 @@
+schema_version: on-theo.dine-comparison-readiness-audit.v1
+status: PUBLIC_SOURCE_FOUNDATION_MATURE_FOR_BOUNDED_FUTURE_COMPARISON
+source_branch: research/dine-public-source-v1-20260920
+source_head_before_audit: 61c24bc72d85acfb15ed90a54a5f61c4e6822999
+pr: 108
+
+method:
+  principle: >
+    Diné comparison readiness is determined entirely from public Navajo Nation
+    and Diné-controlled sources. Restricted ceremonial knowledge is not required
+    to make a comparison cell valid and is not treated as missing evidence.
+  controls:
+    - public_restricted_status_must_be_explicit
+    - current_law_and_institutional_form_must_not_be_reverse_projected_unchanged
+    - sensitive_site_location_data_is_out_of_scope
+    - no_old_ethnographic_detail_is_used_to_bypass_current_Dine_knowledge_governance
+
+comparison_eligible_existing_axes:
+  INSTITUTIONALIZATION_MODEL:
+    status: BOUNDED_COMPARISON_ELIGIBLE
+    source_layers:
+      - NAVAJO_NATION_FUNDAMENTAL_LAW
+      - HHPD_CULTURAL_RESOURCE_GOVERNANCE
+      - DINE_COLLEGE_EDUCATIONAL_PHILOSOPHY
+      - TRADITIONAL_APPRENTICESHIP_PROGRAM
+    strongest_result: >
+      Current Diné religious/cultural principles and knowledge are stabilized
+      through multiple Indigenous institutions including law/courts, cultural
+      resource regulation, education, and authorized practitioner apprenticeship.
+    guards:
+      - INSTITUTION_NE_ALL_RELIGIOUS_AUTHORITY
+      - MODERN_INSTITUTION_NE_UNCHANGED_ANCESTRAL_FORM
+
+  KNOWLEDGE_OR_DISCLOSURE_MODEL:
+    status: BOUNDED_COMPARISON_ELIGIBLE
+    source_layers:
+      - HHPD_RESEARCH_GOVERNANCE
+      - TRADITIONAL_APPRENTICESHIP_PROGRAM
+      - DINE_COLLEGE
+    strongest_result: >
+      Public Diné policy distinguishes knowledge that can be shared, knowledge
+      whose existence may be public while content remains restricted, knowledge
+      with conditional access, and information that should not be collected or
+      disseminated.
+    required_ceiling: GOVERNANCE_AND_TRANSMISSION_NOT_RESTRICTED_CONTENT
+    guards:
+      - RESTRICTED_KNOWLEDGE_NE_MISSING_DATA
+      - COMPARISON_DOES_NOT_REQUIRE_DISCLOSURE
+
+  POLITICAL_SACRALIZATION_MODEL:
+    status: PARTIAL_COMPARISON_ELIGIBLE
+    source_layer: CURRENT_NAVAJO_NATION_FUNDAMENTAL_LAW
+    strongest_result: >
+      Current Fundamental Law explicitly grounds leadership, sovereignty and
+      government in Diné traditional, customary, natural and common law.
+    limitation: >
+      This is a current sovereign legal layer and must not be treated as a
+      transparent model of precolonial political organization.
+    guards:
+      - CURRENT_SOVEREIGN_LAW_NE_PRECONTACT_GOVERNMENT
+
+  OFFERING_EXCHANGE_MODEL:
+    status: PARTIAL_COMPARISON_ELIGIBLE
+    source_layer: DINE_NATURAL_LAW_PUBLIC_PROTOCOL
+    strongest_result: >
+      Public Natural Law describes offering and respectful protocol in relation
+      to sacred sites, resources, elements and living beings.
+    limitation: >
+      Recipient, offering type, requested effect and reciprocity are deliberately
+      not reconstructed.
+    guards:
+      - OFFERING_NE_QUID_PRO_QUO
+      - PUBLIC_PROTOCOL_NE_CEREMONIAL_PROCEDURE
+
+  CONTINUITY_MODEL:
+    status: PARTIAL_COMPARISON_ELIGIBLE
+    source_layers:
+      - DINE_COLLEGE
+      - TRADITIONAL_APPRENTICESHIP_PROGRAM
+      - NAVAJO_NATION_CULTURAL_RESOURCE_GOVERNANCE
+    strongest_result: >
+      Current institutions actively preserve and transmit language, law,
+      cultural knowledge and practitioner continuity while using historically
+      modern institutional forms.
+    required_ceiling: INSTITUTIONAL_CONTINUITY_WITH_CHANGE
+    guards:
+      - CONTINUITY_NE_UNCHANGED_FORM
+
+  AGENCY_AND_AUTHORITY_MODEL:
+    status: PARTIAL_COMPARISON_ELIGIBLE
+    source_layer: CURRENT_PUBLIC_MULTI_INSTITUTIONAL_DINE
+    strongest_result: >
+      Public sources identify distinct authority domains in law, community
+      knowledge stewardship, cultural-resource regulation, education and
+      traditional-practitioner succession.
+    limitation: >
+      Restricted ceremonial authority and a complete specialist hierarchy are
+      not reconstructed.
+
+held_existing_axes:
+  RITUAL_ORDER_MODEL:
+    status: HOLD
+    reason: >
+      Public sources establish ceremonial existence and protocol but the project
+      intentionally does not reconstruct combinations of rite, speech, object,
+      office and action where doing so would require restricted detail.
+
+  WORLD_ORIGIN_MODEL:
+    status: HOLD
+    reason: >
+      Public origin references exist, but detailed creation/emergence narrative
+      reconstruction is unnecessary for current comparison and may cross
+      cultural-access boundaries.
+
+  PERSON_OR_SELF_MODEL:
+    status: HOLD
+    reason: >
+      K'é, clan, name, language, shadow, life and related public categories are
+      important, but no dedicated personhood packet has yet separated legal,
+      philosophical and ceremonial meanings.
+
+  POSTMORTEM_PATH_MODEL:
+    status: HOLD
+
+  MORTUARY_RELATIONSHIP_MODEL:
+    status: HOLD
+
+  TRANSFORMATION_MODEL:
+    status: HOLD
+
+  SACRAL_PRESENCE_MODEL:
+    status: HOLD_PARTIAL
+    reason: >
+      Public law names sacred elements, mountains and Holy People, but a
+      comparison cell would risk over-systematizing presence/localization
+      without a dedicated public-source packet.
+
+  CONTACT_AND_REINTERPRETATION_MODEL:
+    status: HOLD
+    reason: >
+      Spanish, U.S., Christian, Native American Church and other contact histories
+      have not yet been reconstructed in a dedicated source-controlled packet.
+
+new_axis_candidates:
+  RELATIONAL_ORDER_MODEL:
+    status: STRONG_NEW_AXIS_CANDIDATE
+    evidence:
+      - traditions/dine/neutral-axis-evidence-v1.yaml
+      - traditions/dine/sacred-land-evidence-v1.yaml
+    strongest_result: >
+      K'é, natural elements, living beings, land, future generations, law and
+      human duties are publicly represented as interdependent relations rather
+      than separable doctrinal objects.
+
+  SACRED_LAND_PLACE_MODEL:
+    status: STRONG_NEW_AXIS_CANDIDATE
+    evidence:
+      - traditions/dine/sacred-land-evidence-v1.yaml
+    strongest_result: >
+      Four cardinal boundary mountains, six sacred mountains, protected
+      traditional cultural properties and living duties toward place form a
+      current public sacred-geography system without requiring sensitive site
+      disclosure.
+
+  KNOWLEDGE_GOVERNANCE_DIMENSION:
+    status: STRONG_SCHEMA_DIMENSION_CANDIDATE
+    parent_axis: KNOWLEDGE_OR_DISCLOSURE_MODEL
+    neutral_question: >
+      Who may hold, transmit, record, access or disclose religious knowledge,
+      under what conditions, and what information is intentionally excluded from
+      public circulation?
+    reason: >
+      Diné public policy shows that disclosure governance is analytically
+      distinct from how knowledge is spiritually or epistemically obtained.
+
+readiness_result:
+  internal_public_foundation_complete: true
+  bounded_future_comparison_allowed: true
+  restricted_knowledge_required_for_readiness: false
+  exact_head_binding_required: true
+  immediate_matrix_insertion_required: false
+  current_law_may_be_compared_only_as_current_law: true
+
+strongest_method_result: >
+  Diné evidence demonstrates that rigorous comparative religion does not require
+  extraction of restricted ceremonial content: public Indigenous law can support
+  bounded comparison of relational order, sacred geography, institutionalization,
+  knowledge governance, sovereignty and offering protocol while the protected
+  knowledge itself remains outside the research corpus.
+
+next_portfolio_frontier:
+  primary: HAUDENOSAUNEE_PUBLIC_SOURCE_RESEARCH_PACKET_V1
+  reason: >
+    The Diné public-source foundation reaches a defensible readiness gate without
+    crossing the Navajo Nation's own knowledge restrictions. Portfolio breadth
+    should proceed to another living Indigenous political-religious tradition
+    with its own confederacy, nation, ceremonial and public-source boundaries.
+
+guards:
+  - COMPARISON_READY_NE_TRADITION_COMPLETE
+  - RESTRICTED_KNOWLEDGE_NE_MISSING_DATA
+  - PUBLIC_LAW_NE_TIMELESS_UNCHANGED_FORM
+  - DINE_NE_GENERIC_NATIVE_AMERICAN_RELIGION

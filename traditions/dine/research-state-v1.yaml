@@ -1,0 +1,40 @@
+schema_version: on-theo.dine-research-state.v1
+status: PUBLIC_SOURCE_FOUNDATION_ACTIVE
+
+branch:
+  name: research/dine-public-source-v1-20260920
+  base_branch: corpus/global-expansion-queue-v1-20260917
+  base_head: cd588c7cabc210f8ae8eb43c148170872aa4b9ac
+
+artifacts:
+  boundary: traditions/dine/public-source-restricted-knowledge-boundary-v1.md
+  source_map: traditions/dine/source-map-v1.md
+  foundation: traditions/dine/fundamental-law-hozho-relational-order-packet-v1.md
+  neutral_axis: traditions/dine/neutral-axis-evidence-v1.yaml
+
+current_secure_results:
+  - Navajo_Nation_public_policy_explicitly_governs_restricted_ceremonial_information
+  - restricted_knowledge_is_not_a_research_gap
+  - Fundamental_Law_publicly_integrates_relational_natural_legal_and_governance_order
+  - Dine_College_publicly_institutionalizes_SNBH
+  - sacred_land_elements_mountains_and_future_generation_obligations_are_current_public_law
+  - public_offering_language_is_relational_protocol_not_one_exchange_theory
+
+current_holds:
+  - CROSS_TRADITION_COMPARISON
+  - WORLD_ORIGIN_MODEL
+  - PERSON_OR_SELF_MODEL
+  - POSTMORTEM_PATH_MODEL
+  - RESTRICTED_CEREMONIAL_RECONSTRUCTION
+
+next_frontier:
+  primary: DINE_SACRED_LAND_AND_MOUNTAIN_PUBLIC_PACKET_V1
+  subsequent:
+    - DINE_PUBLIC_KNOWLEDGE_INSTITUTIONALIZATION_PACKET_V1
+    - DINE_CONTACT_HISTORY_PUBLIC_PACKET_V1
+    - DINE_COMPARISON_READINESS_AUDIT_V1
+
+guards:
+  - RESTRICTED_KNOWLEDGE_NE_MISSING_DATA
+  - PUBLIC_CEREMONY_CATEGORY_NE_PROCEDURE
+  - CURRENT_PUBLIC_LAW_NE_TIMELESS_UNCHANGED_FORM
