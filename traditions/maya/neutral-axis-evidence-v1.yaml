@@ -1,0 +1,149 @@
+schema_version: on-theo.maya-neutral-axis-evidence.v1
+status: DIACHRONIC_FOUNDATION_NOT_CROSS_COMPARISON_READY
+
+source_policy:
+  boundary: traditions/maya/diachronic-source-boundary-v1.md
+  source_map: traditions/maya/source-map-v1.md
+  foundation: traditions/maya/diachronic-foundation-packet-v1.md
+
+records:
+  - id: MAYA-EPIGRAPHY-001
+    evidence:
+      - CORPUS_MAYA_HIEROGLYPHIC_INSCRIPTIONS
+    evidence_class:
+      - EPIGRAPHIC_EVIDENCE
+      - MATERIAL_EVIDENCE
+      - SCHOLARLY_DOCUMENTATION
+    propositions:
+      - Classic_Maya_preserve_large_monumental_hieroglyphic_corpus
+      - inscriptions_are_site_and_monument_specific
+      - monumental_texts_are_socially_selective
+    supports:
+      - TEXTUAL_TRANSMISSION_CONTROL
+      - POLITICAL_SACRALIZATION_MODEL_FUTURE
+      - RITUAL_ORDER_MODEL_FUTURE
+    guards:
+      - CLASSIC_ELITE_EPIGRAPHY_NE_ALL_MAYA_RELIGION
+
+  - id: MAYA-CODEX-DRESDEN-001
+    evidence:
+      - DRESDEN_CODEX
+    evidence_class:
+      - MANUSCRIPT_WITNESS
+      - RITUAL_TEXT
+    textual_layer: LATE_POSTCLASSIC_YUCATAN
+    propositions:
+      - manuscript_contains_divination_almanacs
+      - manuscript_contains_260_day_ritual_calendar
+      - manuscript_contains_astronomical_tables
+      - manuscript_contains_ritual_and_deity_material
+    supports:
+      - RITUAL_ORDER_MODEL_CANDIDATE
+      - KNOWLEDGE_OR_DISCLOSURE_MODEL_CANDIDATE
+      - SACRED_TIME_CALENDAR_MODEL_CANDIDATE
+    guards:
+      - DRESDEN_CODEX_NE_PAN_MAYA_CANON
+
+  - id: MAYA-CODEX-MEXICO-001
+    evidence:
+      - MAYA_CODEX_OF_MEXICO_INAH
+    evidence_class:
+      - MANUSCRIPT_WITNESS
+      - MATERIAL_EVIDENCE
+    textual_layer: EARLY_POSTCLASSIC
+    propositions:
+      - manuscript_is_authenticated_prehispanic_Maya_codex
+      - radiocarbon_and_interdisciplinary_work_place_manufacture_approximately_1021_1152
+      - manuscript_contains_Venus_divinatory_calendar
+    supports:
+      - KNOWLEDGE_OR_DISCLOSURE_MODEL_CANDIDATE
+      - SACRED_TIME_CALENDAR_MODEL_CANDIDATE
+    guards:
+      - ONE_VENUS_CODEX_NE_ALL_MAYA_ASTRAL_RELIGION
+
+  - id: MAYA-POPOL-WUJ-001
+    evidence:
+      - XIMENEZ_KICHE_SPANISH_MANUSCRIPT
+      - LOC_WDL_DIGITAL_RECORD
+      - OSU_NEWBERRY_FACSIMILE
+    evidence_class:
+      - MANUSCRIPT_WITNESS
+      - COLONIAL_INDIGENOUS_TEXT
+      - COMMENTARY
+    community_scope: KICHE
+    propositions:
+      - surviving_witness_is_colonial_Ximenez_manuscript
+      - Kiche_and_Spanish_columns_must_be_distinguished
+      - earlier_sixteenth_century_Indigenous_source_is_reconstructed_not_extant
+      - text_contains_origin_creation_Hero_Twin_underworld_and_genealogical_material
+    supports:
+      - WORLD_ORIGIN_MODEL_CANDIDATE_KICHE
+      - HUMAN_ORIGIN_OR_EMERGENCE_MODEL_CANDIDATE_KICHE
+      - CONTINUITY_MODEL_FUTURE
+      - POSTMORTEM_PATH_MODEL_FUTURE
+    guards:
+      - POPOL_WUJ_NE_UNIVERSAL_MAYA_SCRIPTURE
+      - COLONIAL_WITNESS_NE_PRECONTACT_AUTOGRAPH
+
+  - id: MAYA-LIVING-TIME-001
+    evidence:
+      - NMAI_LIVING_MAYA_TIME
+      - NMAI_MAYA_COLLABORATOR_CREDITS
+    evidence_class:
+      - LIVING_TRADITION
+      - COMMUNITY_COLLABORATIVE_PUBLIC_SOURCE
+    community_scope:
+      - MULTIPLE_NAMED_MAYA_COMMUNITIES
+    propositions:
+      - Maya_are_living_contemporary_peoples
+      - calendar_land_corn_and_ceremony_remain_publicly_relevant
+      - project_was_developed_with_named_Maya_curators_and_collaborators
+    supports:
+      - RELATIONAL_ORDER_MODEL_CANDIDATE
+      - SACRED_LAND_PLACE_MODEL_CANDIDATE
+      - SACRED_TIME_CALENDAR_MODEL_CANDIDATE
+      - RITUAL_ORDER_MODEL_CANDIDATE
+    guards:
+      - ONE_MAYA_SPEAKER_NE_ALL_MAYA
+      - LIVING_TRADITION_NE_UNCHANGED_CLASSIC_FORM
+
+  - id: MAYA-CONTACT-CHICHI-001
+    evidence:
+      - NMAI_CHICHICASTENANGO
+    evidence_class:
+      - LIVING_TRADITION
+      - HISTORICAL_RECONSTRUCTION
+    community_scope: KICHE_CHICHICASTENANGO
+    propositions:
+      - cofradia_and_Catholic_saint_structure_coexists_with_distinctly_Maya_practice
+      - ajqijab_continue_public_calendar_counsel_roles
+    supports:
+      - CONTACT_AND_REINTERPRETATION_MODEL_CANDIDATE
+      - INSTITUTIONALIZATION_MODEL_CANDIDATE
+    guards:
+      - COFRADIA_NE_PURE_PRECONTACT_SURVIVAL
+      - COFRADIA_NE_PURE_CATHOLIC_REPLACEMENT
+
+candidate_new_axes:
+  SACRED_TIME_CALENDAR_MODEL:
+    question: >
+      How are astronomical, agricultural, divinatory, ritual, social, and
+      historical cycles organized through sacred calendars and timekeeping?
+
+comparison_status:
+  CROSS_TRADITION_COMPARISON: HOLD
+  RITUAL_ORDER_MODEL: INTERNAL_CANDIDATE
+  KNOWLEDGE_OR_DISCLOSURE_MODEL: INTERNAL_CANDIDATE
+  CONTACT_AND_REINTERPRETATION_MODEL: INTERNAL_CANDIDATE
+  WORLD_ORIGIN_MODEL: KICHE_PACKET_REQUIRED
+  HUMAN_ORIGIN_OR_EMERGENCE_MODEL: KICHE_PACKET_REQUIRED
+  SACRED_TIME_CALENDAR_MODEL: STRONG_NEW_AXIS_CANDIDATE
+
+global_guards:
+  - MAYA_NE_ONE_TIMELESS_RELIGION
+  - COMMUNITY_LANGUAGE_REGION_AND_PERIOD_MUST_REMAIN_VISIBLE
+  - CLASSIC_INSCRIPTION_NE_POSTCLASSIC_CODEX
+  - POSTCLASSIC_CODEX_NE_COLONIAL_KICHE_TEXT
+  - POPOL_WUJ_NE_PAN_MAYA_SCRIPTURE
+  - LIVING_MAYA_NE_UNCHANGED_ANCIENT_MAYA
+  - PUBLIC_SOURCE_NE_RESTRICTED_KNOWLEDGE_PERMISSION
