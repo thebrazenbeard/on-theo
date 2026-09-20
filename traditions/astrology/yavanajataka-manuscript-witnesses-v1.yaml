@@ -1,0 +1,72 @@
+schema: ON_THEO_YAVANAJATAKA_MANUSCRIPT_WITNESSES_V1
+status: SCHOLARLY_WITNESS_MAP
+primary_scholarly_source:
+  author: Bill_M_Mak
+  year: 2013
+  doi: 10.18732/H2RP4T
+  url: https://journals.library.ualberta.ca/hssa/index.php/hssa/article/view/7
+
+witnesses:
+  - siglum: N
+    identity: "Nepalese palm-leaf manuscript; National Archives Nepal"
+    associated_film: "NGMPP A31/16"
+    folios_used_by_Pingree: "2-103"
+    missing_in_old_microfilm:
+      - folio_1
+      - folio_102
+    approximate_date: twelfth_century
+    date_basis: orthographic
+    importance: principal_manuscript_for_Pingree_1978
+    later_images:
+      - "Giuseppe Tucci photographs, 1954, include folio 102"
+      - "NGMPP black-and-white microfilm, 1970"
+      - "high-quality color digital photographs, 2011"
+    note: later_images_improve_or_restore_readings_unavailable_to_Pingree
+
+  - siglum: K
+    identity: "P. V. Kane transcript/copy of portions of N"
+    extent: "folios 2-10 and 98-103"
+    transmission: "copy made available to Pingree in 1958"
+    importance: supplied_readings_including_missing_folio_102
+
+  - siglum: P
+    identity: "Paris manuscript from Sylvain Lévi collection"
+    importance: used_by_Pingree_with_K_to_supply_readings_from_missing_folio_102
+    detailed_codicology: pending_direct_catalog_binding
+
+  - siglum: Q
+    identity: "previously unreported Nepalese paper copy used by Mak"
+    collection: "NGMPP / National Archives Nepal"
+    approximate_period: later_manuscript
+    importance:
+      - independent_new_textual_evidence_for_2013_reassessment
+      - highly_legible_relative_to_damaged_N
+    detailed_catalog_fields: pending_direct_catalog_binding
+
+  - siglum: testimonia
+    identity: "quotations/parallels in other Sanskrit authors"
+    important_examples:
+      - Minaraja
+      - Utpala
+      - Bhaskara
+    importance: readings_can_diverge_from_manuscripts_and_constrain_reconstruction
+
+editorial_controls:
+  - MANUSCRIPT_READING_NE_EDITORIAL_EMENDATION
+  - SIGLUM_NE_SINGLE_UNCHANGING_PHYSICAL_SOURCE
+  - PHOTOGRAPH_OR_MICROFILM_NE_MANUSCRIPT
+  - TESTIMONIUM_NE_DIRECT_COPY
+  - PINGREE_1978_RECONSTRUCTION_NE_MANUSCRIPT_FACT
+  - MAK_2013_REASSESSMENT_NE_FINAL_CRITICAL_EDITION
+
+key_implication: >
+  Pingree's decisive chronological readings were built under materially poorer
+  manuscript conditions than the 2011-2012 reassessment. Therefore fixed dates
+  dependent on those readings cannot be treated as primary-text facts.
+
+next:
+  - exact_Q_catalog_number_and_folio_count
+  - exact_P_catalog_identity
+  - witness_by_witness_verse_55_62_alignment
+  - chapter_79_heading_manuscript_evidence
+  - later_testimonia_chronology

@@ -1,0 +1,85 @@
+schema: ON_THEO_VALENS_WORKED_CHART_REGISTRY_V1
+status: SEEDED
+
+work:
+  author: Vettius_Valens
+  title: Anthologies
+  period: second_century_CE
+  note: >
+    Valens repeatedly uses concrete nativities as worked examples. Dates below
+    are modern reconstructions/cross-identifications, commonly through Greek
+    Horoscopes, and therefore are not equivalent to explicit Julian dates written
+    by Valens.
+
+records:
+  - id: valens_book2_chart9
+    source_location: "II.21.9"
+    greek_horoscopes_crossref: "L95,V"
+    approximate_date: "95 CE May 14"
+    example_label: "From Debt to Inheritance and Business Prosperity"
+    technical_features:
+      - night_birth
+      - triplicity_rulers
+      - Lot_of_Fortune
+      - exaltation
+      - ruler_at_midheaven
+    outcome_narrative:
+      - early_debt_and_instability
+      - inheritance
+      - commercial_prosperity
+      - political_social_prominence
+    source: https://it.scribd.com/document/858544239/Valens-Anthologies-Annotated
+
+  - id: valens_wealth_example_105
+    approximate_date: "105 CE January 1 midnight"
+    source_class: worked_nativity
+    technical_features:
+      - whole_sign_place_structure
+      - sign_based_aspects
+      - wealth_judgment
+    source: https://www.skyscript.co.uk/wealthvalens.html
+    source_note: page identifies Greek_Horoscopes_p103_as_date_basis
+
+  - id: valens_book2_chart17
+    source_location: "II.26.3"
+    greek_horoscopes_crossref: "L78"
+    approximate_date: "78 CE April 1"
+    example_label: "Exile and Violent Death"
+    technical_features:
+      - triplicity_rulers
+      - angularity
+      - Fortune
+      - Daimon
+      - Basis
+      - Exaltation
+      - lunar_phase_ruler
+    source: https://it.scribd.com/document/858544239/Valens-Anthologies-Annotated
+
+  - id: valens_book2_chart34
+    source_location: "II.41.4"
+    greek_horoscopes_crossref: "L86"
+    approximate_date: "86 CE December 27"
+    example_label: "Beheaded"
+    preserved_configuration_summary:
+      - "Sun, Mercury, Mars, Jupiter, Venus in Capricorn"
+      - "Moon in Aquarius"
+      - "Saturn in Taurus"
+      - "Ascendant in Aries"
+    source: https://raw.githubusercontent.com/janegca/latex-valens/main/Valens-Anthologies-Annotated.pdf
+    guard: >
+      Modern annotations around destroyer pairings are not automatically Valens'
+      own explanation and must be separated from the translated ancient text.
+
+controls:
+  - VALENS_TEXT_NE_MODERN_EDITOR_ANNOTATION
+  - MODERN_RECONSTRUCTED_DATE_NE_EXPLICIT_ANCIENT_DATE
+  - WORKED_EXAMPLE_NE_DOCUMENTARY_PAPYRUS
+  - OUTCOME_NARRATIVE_NE_INDEPENDENT_HISTORICAL_VERIFICATION
+  - ONE_CHART_NE_TECHNIQUE_VALIDATION
+
+next:
+  - all_worked_charts_by_book
+  - exact_GH_crossrefs
+  - raw_configuration_separate_from_editor_chart_wheel
+  - ancient_interpretation_separate_from_modern_annotation
+  - date_reconstruction_confidence

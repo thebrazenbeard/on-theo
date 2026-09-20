@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "on-theo://astrology/analysis-submission-v1",
+  "title": "Celestial Conditioning Analysis Submission V1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema",
+    "run_id",
+    "predicted_world",
+    "model_description",
+    "holdout_metrics",
+    "causal_claim",
+    "frozen_before_unblinding"
+  ],
+  "properties": {
+    "schema": {"const": "ON_THEO_ASTROLOGY_ANALYSIS_SUBMISSION_V1"},
+    "run_id": {"type": "string", "minLength": 1},
+    "predicted_world": {
+      "enum": [
+        "S0_NULL",
+        "S1_PHYSICAL",
+        "S2_NATAL_SEED",
+        "S3_RUNTIME",
+        "S4_PLASTICITY",
+        "S5_COMMON_CAUSE",
+        "S6_CULTURAL_ONLY",
+        "S7_WEAK_SIGNAL_CULTURAL",
+        "UNRESOLVED"
+      ]
+    },
+    "model_description": {"type": "string", "minLength": 1},
+    "holdout_metrics": {
+      "type": "object",
+      "additionalProperties": {"type": ["number", "string", "null"]}
+    },
+    "causal_claim": {"type": "string", "minLength": 1},
+    "frozen_before_unblinding": {"const": true}
+  }
+}

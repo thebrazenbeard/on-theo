@@ -5,52 +5,52 @@ foundation_commit: abc1ad524424d2ff20aa86c67c13ee1b2dc068fd
 deepening_commit_v2: aa402ac5c584491695b641d8e844d222fa5342e2
 corpus_falsification_commit_v3: b4a28fe8cb0e48194451e61a22e3b41decc14824
 primary_text_transmission_commit_v4: 6b1b26c9abffddf0af33759e421eeadbd00bd837
-status: DOCUMENTARY_TECHNIQUE_AND_SIMULATION_SPEC_V5
+documentary_technique_commit_v5: cfbe88c909e3d70729a6c7435c7f0ae67eba5b07
+status: FULL_BABYLONIAN_CATALOG_AND_REFERENCE_SIMULATION_V6
 merge_status: UNMERGED
+
+corrections:
+  - id: greek_earliest_documentary_horoscope
+    obsolete: 10_BCE_as_earliest_original_Greek_document
+    current: BKT_X_29_P11831_29_BCE_June_4_5
+    authority: https://berlpap.smb.museum/06616/?lang=en
+    disposition: v1_registry_superseded_by_v2
 
 coverage:
   mesopotamian:
-    corpus_count_bound: 28_horoscope_tablets_plus_4_birth_notes
-    documentary_registry: v2_seeded
-    exact_entries_added:
-      - 410_BCE_Apr29
-      - second_410_BCE_witness
-      - 298_BCE
-      - Rochberg_Text_5_263_BCE
-      - 235_BCE
-      - 140_BCE
-      - latest_69_BCE
+    full_top_level_catalog:
+      horoscope_texts: 28
+      birth_notes: 4
+      artifact: traditions/astrology/babylonian-corpus-catalog-v3.yaml
+    date_range:
+      earliest: 410_BCE
+      latest_dated: 69_BCE
+    field_level_examples: expanded
     remaining:
-      - all_28_rows
-      - exact_tablet_ids
-      - all_Rochberg_text_numbers
-      - field_level_transcription
+      - complete_line_level_transcription
+      - museum_accession_crosslinks
+      - provenance_city_for_each_text
+      - computation_source_by_field
 
   greco_roman:
-    earliest_registry: v1_seeded
-    anchors:
-      - Nemrut_Dag_62_BCE_monument
-      - Balbillus_72_BCE_literary
-      - Balbillus_43_BCE_literary
-      - 10_BCE_earliest_original_document
+    documentary_registry: v2_corrected
+    earliest_papyrus_anchor: BKT_X_29_29_BCE
     Dorotheus:
-      technique_matrix: v1_started
+      technique_matrix: v2_partial_chapter_matrix
     Valens:
-      technique_matrix: v1_started
-    Ptolemy:
-      causal_model: extracted
+      technique_matrix: v1
+      worked_chart_registry: v1_seeded
     remaining:
-      - full_Neugebauer_Van_Hoesen_registry
-      - Dorotheus_all_chapters
-      - Valens_all_books_and_worked_charts
+      - full_documentary_registry
+      - Dorotheus_every_chapter
+      - Valens_all_worked_charts
+      - new_papyrology_crosswalk
 
   indian_jyotisa:
     Yavanajataka:
-      dating_dispute: primary_scholarly_map_v1
-      current_date_status: unresolved_after_22_CE_and_by_early_7th_century_external_attestation
-      discarded_fixed_dates:
-        - 149_150_CE_as_secure_prose_date
-        - 269_270_CE_as_secure_versification_date
+      dating_dispute: active
+      manuscript_witness_map: v1_created
+      fixed_149_150_and_269_270_dates: not_secure
     Varahamihira:
       primary_map: started
 
@@ -58,35 +58,53 @@ coverage:
     conceptual_interface: v1
     falsification_protocol: v1
     implementation_spec: v1
-    implementation_status: NOT_IMPLEMENTED
+    reference_implementation:
+      path: experiments/astrology/reference_simulation.py
+      status: IMPLEMENTED_SYNTHETIC_V1
+      worlds: 8
+      real_astronomy: false
+    schemas:
+      - experiments/astrology/world-manifest.schema.json
+      - experiments/astrology/analysis-submission.schema.json
+    tests:
+      path: experiments/astrology/test_reference_simulation.py
+      local_precommit_result: 5_of_5_PASS
+      note: local_test_is_not_CI_or_runtime_deployment
 
-new_v5_artifacts:
-  - traditions/astrology/babylonian-documentary-registry-v2.yaml
-  - traditions/astrology/greek-horoscope-registry-v1.yaml
-  - traditions/astrology/dorotheus-technique-matrix-v1.yaml
-  - traditions/astrology/valens-technique-matrix-v1.yaml
-  - traditions/astrology/yavanajataka-dating-dispute-v1.md
-  - traditions/astrology/celestial-conditioning-simulation-spec-v1.md
+new_v6_artifacts:
+  - traditions/astrology/babylonian-corpus-catalog-v3.yaml
+  - traditions/astrology/greek-horoscope-registry-v2.yaml
+  - traditions/astrology/documentary-corpus-index-v2.yaml
+  - traditions/astrology/yavanajataka-manuscript-witnesses-v1.yaml
+  - traditions/astrology/dorotheus-technique-matrix-v2.yaml
+  - traditions/astrology/valens-worked-chart-registry-v1.yaml
+  - experiments/astrology/README.md
+  - experiments/astrology/reference_simulation.py
+  - experiments/astrology/test_reference_simulation.py
+  - experiments/astrology/world-manifest.schema.json
+  - experiments/astrology/analysis-submission.schema.json
 
 guards:
-  - REPRESENTED_CHART_DATE_NE_DOCUMENT_DATE
-  - MONUMENT_NE_PAPYRUS_NE_LITERARY_HOROSCOPE
-  - DOCUMENTARY_DATA_NE_HANDBOOK_INTERPRETATION
-  - TRANSMITTED_ARABIC_DOROTHEUS_NE_UNALTERED_GREEK_ORIGINAL
-  - VALENS_NE_PTOLEMY
-  - EDITORIAL_EMENDATION_NE_MANUSCRIPT_READING
-  - YAVANAJATAKA_149_150_AND_269_270_NE_SECURE_DATES
-  - GREEK_INFLUENCE_NE_SPECIFIC_LOST_GREEK_ARCHETYPE
-  - SIMULATION_COHERENCE_NE_REAL_WORLD_EVIDENCE
+  - SOURCE_CORRECTION_SUPERSEDES_STALE_REGISTRY
+  - ASTRONOMICAL_YEAR_NE_CIVIL_BCE
+  - BIRTH_DATE_NE_TABLET_WRITING_DATE
+  - BABYLONIAN_HOROSCOPE_NE_HELLENISTIC_ASCENDANT_CHART
+  - DOCUMENTARY_FORM_NE_INTERPRETIVE_VALIDITY
+  - MANUSCRIPT_READING_NE_EDITORIAL_EMENDATION
+  - SIMULATION_IMPLEMENTATION_NE_REAL_WORLD_EVIDENCE
+  - SYNTHETIC_ASTRONOMY_NE_EPHEMERIS
+  - LOCAL_TEST_PASS_NE_DEPLOYMENT_OR_SCIENTIFIC_VALIDATION
   - TRUE_SIGNAL_NE_CORRECT_HISTORICAL_MECHANISM
 
 next_frontiers:
-  - complete_all_28_Babylonian_horoscope_rows
-  - complete_Greek_Horoscopes_documentary_registry
-  - Dorotheus_chapter_level_matrix
-  - Valens_worked_chart_registry
-  - Yavanajataka_manuscript_witness_table
+  - full_Babylonian_line_level_registry
+  - full_Greek_documentary_horoscope_registry
+  - Dorotheus_complete_chapter_matrix
+  - Valens_complete_worked_chart_registry
   - Shiji_Tianguan_shu_primary_omen_table
   - Gauquelin_dataset_replication_ledger
   - empirical_registry_v3_primary_source_binding
-  - simulation_data_schema_and_reference_implementation
+  - reference_simulation_scoring_harness
+  - blinded_generator_analyst_split
+  - synthetic_holdout_benchmark_suite
+  - optional_real_ephemeris_adapter_after_synthetic_identifiability

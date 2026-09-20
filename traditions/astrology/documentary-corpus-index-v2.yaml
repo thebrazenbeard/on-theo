@@ -1,0 +1,30 @@
+schema: ON_THEO_ASTROLOGY_DOCUMENTARY_CORPUS_INDEX_V2
+status: ACTIVE
+supersedes: traditions/astrology/documentary-corpus-index-v1.yaml
+correction:
+  obsolete_claim: earliest_original_Greek_documentary_horoscope_is_10_BCE
+  current_claim: >
+    BKT X 29 / P.11831 is cataloged by the Berlin Papyrus Database as the
+    earliest preserved Greek horoscope on papyrus and dates to 4-5 June 29 BCE.
+  authority: https://berlpap.smb.museum/06616/?lang=en
+
+corpora:
+  babylonian:
+    catalog: traditions/astrology/babylonian-corpus-catalog-v3.yaml
+    extant_horoscope_tablets: 28
+    related_birth_notes: 4
+    earliest_dated_horoscopes: 410_BCE
+    latest_dated_horoscope: 69_BCE
+  greek:
+    catalog: traditions/astrology/greek-horoscope-registry-v2.yaml
+    earliest_papyrus_anchor: BKT_X_29_29_BCE
+    evidence_classes:
+      - documentary_papyrus
+      - monumental_iconographic
+      - literary_horoscope
+
+cross_corpus_guards:
+  - CUNEIFORM_HOROSCOPE_NE_GREEK_HOROSKOPOS_ARCHITECTURE
+  - COMPUTED_CELESTIAL_STATE_NE_INTERPRETIVE_DOCTRINE
+  - DATE_REPRESENTED_NE_OBJECT_PRODUCTION_DATE
+  - EARLIEST_SURVIVING_NE_FIRST_HISTORICAL_USE

@@ -1,0 +1,126 @@
+schema: ON_THEO_BABYLONIAN_HOROSCOPE_CATALOG_V3
+status: COMPLETE_TOP_LEVEL_CATALOG
+scope: Rochberg_1998_extant_cuneiform_horoscope_corpus
+supersedes: traditions/astrology/babylonian-documentary-registry-v2.yaml
+
+source:
+  author: Francesca_Rochberg
+  title: Babylonian_Horoscopes
+  year: 1998
+  corpus_structure:
+    horoscope_texts: 28
+    birth_notes: 4
+  guard: >
+    The astronomical-year column follows the edition's negative-year convention:
+    astronomical year -409 = 410 BCE and -68 = 69 BCE. Chart/birth date is not
+    automatically the date on which the surviving tablet was written.
+
+horoscopes:
+  - {text: 1, object: "AO 17649", astronomical_year: -409, civil_year_bce: 410}
+  - {text: 2, object: "AB 251", astronomical_year: -409, civil_year_bce: 410}
+  - {text: 3, object: "BM 32376", astronomical_year: -297, civil_year_bce: 298}
+  - {text: 4, object: "BM 33382", astronomical_year: -287, civil_year_bce: 288}
+  - {text: 5, object: "MLC 1870", astronomical_year: -262, civil_year_bce: 263}
+  - {text: "6a", object: "BM 47721", astronomical_year: -258, civil_year_bce: 259}
+  - {text: "6b", object: "BM 47721", astronomical_year: -250, civil_year_bce: 251}
+  - {text: 7, object: "BM 33667", astronomical_year: -257, civil_year_bce: 258}
+  - {text: 8, object: "BM 36943", astronomical_year: -250, civil_year_bce: 251}
+  - {text: 9, object: "NCBT 1231", astronomical_year: -248, civil_year_bce: 249}
+  - {text: 10, object: "MLC 2190", astronomical_year: -234, civil_year_bce: 235}
+  - {text: 11, object: "W 20030/143", astronomical_year: -234, civil_year_bce: 235}
+  - {text: 12, object: "BM 33741", astronomical_year: -229, civil_year_bce: 230}
+  - {text: 13, object: "BM 47642", astronomical_year: -223, civil_year_bce: 224}
+  - {text: 14, object: "BM 36620", astronomical_year: -219, civil_year_bce: 220}
+  - {text: 15, object: "BM 36796", astronomical_year: -201, civil_year_bce: 202}
+  - {text: "16a", object: "W 20030/10", astronomical_year: -199, civil_year_bce: 200}
+  - {text: "16b", object: "W 20030/10", astronomical_year: -198, civil_year_bce: 199}
+  - {text: 17, object: "BM 41054", astronomical_year: -175, civil_year_bce: 176}
+  - {text: 18, object: "BM 35516", astronomical_year: -141, civil_year_bce: 142}
+  - {text: 19, object: "BM 81561", astronomical_year: -139, civil_year_bce: 140}
+  - {text: 20, object: "BM 78089", astronomical_year: -125, civil_year_bce: 126}
+  - {text: 21, object: "BM 33018", astronomical_year: -124, civil_year_bce: 125}
+  - {text: "22a", object: "BM 41301", astronomical_year: -116, civil_year_bce: 117}
+  - {text: "22b", object: "BM 41301", astronomical_year: -114, civil_year_bce: 115}
+  - {text: 23, object: "BM 34003", astronomical_year: -87, civil_year_bce: 88}
+  - {text: 24, object: "BM 77265", astronomical_year: -82, civil_year_bce: 83}
+  - {text: 25, object: "BM 42025", astronomical_year: -80, civil_year_bce: 81}
+  - {text: 26, object: "BM 35515", astronomical_year: -75, civil_year_bce: 76}
+  - {text: 27, object: "BM 38104", astronomical_year: -68, civil_year_bce: 69}
+  - {text: 28, object: "BM 37374", astronomical_year: null, civil_year_bce: null}
+
+birth_notes:
+  - {text: 29, object: "BM 64148", astronomical_year: -368, civil_year_bce: 369}
+  - {text: 30, object: "BM 33563", astronomical_year: -292, civil_year_bce: 293}
+  - {text: 31, object: "BM 34693", astronomical_year: -213, civil_year_bce: 214}
+  - {text: 32, object: "BM 34567", astronomical_years: [-114, -116, -153], civil_years_bce: [115, 117, 154]}
+
+selected_field_level_records:
+  - text: 2
+    date: "410 BCE April 29"
+    object: "AB 251"
+    data:
+      moon: "below the Pincer of Scorpion"
+      jupiter: Pisces
+      venus: Taurus
+      saturn: Cancer
+      mars: Gemini
+      mercury: not_visible
+    interpretation: minimal_positive_apodosis
+  - text: 5
+    date: "263 BCE April 4"
+    object: "MLC 1870"
+    data:
+      sun: "13;30 Aries"
+      moon: "10 Aquarius"
+      jupiter: "beginning Leo"
+    interpretation:
+      - property_prediction
+      - longevity_prediction
+      - family_prediction_fragment
+  - text: 9
+    date: "249 BCE December 29"
+    object: "NCBT 1231"
+    data:
+      sun: "9;30 Capricorn"
+      moon: "12 Aquarius"
+      mercury: Capricorn
+      saturn: Capricorn
+      mars: Cancer
+    interpretation:
+      - longevity
+      - patronage_or_prince_help
+      - sons
+  - text: 19
+    date: "140 BCE September 7"
+    object: "BM 81561"
+    data:
+      moon: Pisces_probable
+      sun: Virgo
+      jupiter: Sagittarius
+      venus: Libra
+      mars: Gemini
+      mercury: invisible_with_sun
+      saturn: invisible_with_sun
+    additional_astronomical_context:
+      - lunar_visibility
+      - month_length
+      - equinox_date
+
+corpus_guards:
+  - BIRTH_DATE_NE_TABLET_WRITING_DATE
+  - BIRTH_NOTE_NE_HOROSCOPE
+  - CUNEIFORM_HOROSCOPE_NE_HELLENISTIC_ASCENDANT_HOUSE_CHART
+  - ASTRONOMICAL_YEAR_NE_CIVIL_BCE_LABEL
+  - DATA_FIELD_NE_PREDICTION
+  - DAMAGED_RESTORATION_NE_SECURE_READING
+
+sources:
+  - "Rochberg 1998, Babylonian Horoscopes"
+  - "https://books.google.com/books?id=N8YNAAAAYAAJ"
+  - "https://epdf.mx/babylonian-horoscopes-transactions-of-the-american-philosophical-society-new-ser.html"
+
+next:
+  - line_level_transcription_for_all_28
+  - museum_accession_crosslinks
+  - provenance_city_for_each_object
+  - astronomical_computation_source_for_each_field

@@ -1,0 +1,81 @@
+schema: ON_THEO_GREEK_HOROSCOPE_REGISTRY_V2
+status: ACTIVE_SEEDED
+supersedes: traditions/astrology/greek-horoscope-registry-v1.yaml
+
+core_sources:
+  - title: Greek_Horoscopes
+    authors: [Otto_Neugebauer, H_B_Van_Hoesen]
+    year: 1959
+    digital: https://sites.dlib.nyu.edu/viewer/books/isaw_aphs000001/1
+  - title: Berlin_Papyrus_Database_BKT_X_29
+    url: https://berlpap.smb.museum/06616/?lang=en
+
+records:
+  - id: BKT_X_29
+    museum_id: "P. 11831"
+    date: "29 BCE June 4-5 (?)"
+    material: papyrus
+    language: Greek
+    format: 5_lines_abbreviated
+    witness_class: original_documentary_horoscope
+    status: earliest_preserved_Greek_horoscope_on_papyrus_per_Berlin_database
+    contents:
+      - planetary_positions_in_zodiac
+      - ascendant
+      - midheaven
+    absent_or_unusual:
+      - no_normal_person_name_introduction
+      - no_explicit_birth_date_in_text
+      - planets_ordered_by_zodiac_sign_except_cardinal_points
+    interpretation_recorded: false
+    physical_note: recycled_papyrus_with_earlier_line_below
+    source: https://berlpap.smb.museum/06616/?lang=en
+
+  - id: antiochus_commagene_lion
+    conventional_date: "62 BCE"
+    witness_class: monumental_iconographic_astral_configuration
+    site: Nemrut_Dag
+    status: contested_exact_date_and_function
+    guard: MONUMENT_NE_DOCUMENTARY_PAPYRUS_HOROSCOPE
+
+  - id: balbillus_72_bce
+    represented_date: "72 BCE"
+    witness_class: literary_horoscope_preserved_later
+    guard: CHART_DATE_NE_SURVIVING_TEXT_DATE
+
+  - id: balbillus_43_bce
+    represented_date: "43 BCE"
+    witness_class: literary_horoscope_preserved_later
+    guard: CHART_DATE_NE_SURVIVING_TEXT_DATE
+
+  - id: BGU_III_957
+    represented_date: "10 BCE"
+    witness_class: original_documentary_horoscope
+    status: early_but_not_earliest_after_BKT_X_29_identification
+    next: bind_exact_papyrus_metadata_and_fields
+
+corpus_observations:
+  - proposition: >
+      Greek documentary horoscopes commonly present astronomical chart data
+      without writing out the astrological interpretation.
+    confidence: high
+    source: https://berlpap.smb.museum/horoskop/?lang=en
+  - proposition: >
+      The Greek tradition adds an ascendant/horoskopos-centered architecture not
+      present in the same form in Babylonian cuneiform birth horoscopes.
+    confidence: high
+    classification: HISTORICAL_RECONSTRUCTION
+
+guards:
+  - ORIGINAL_DOCUMENT_NE_LITERARY_RETROJECTION
+  - HOROSCOPE_DATE_NE_DOCUMENT_COPY_DATE
+  - ASTRONOMICAL_FORM_NE_RECORDED_INTERPRETATION
+  - EARLIEST_PRESERVED_NE_ORIGIN_DATE
+  - V1_EARLIEST_10_BCE_CLAIM_IS_SUPERSEDED
+
+next:
+  - full_Neugebauer_Van_Hoesen_documentary_rows
+  - exact_material_and_provenance
+  - ascendant_and_midheaven_presence
+  - interpretive_comment_presence
+  - edition_crosswalk_to_newer_papyrological_publications

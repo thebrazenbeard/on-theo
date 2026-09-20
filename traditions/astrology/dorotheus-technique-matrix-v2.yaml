@@ -1,0 +1,67 @@
+schema: ON_THEO_DOROTHEUS_TECHNIQUE_MATRIX_V2
+status: ACTIVE_PARTIAL_CHAPTER_MATRIX
+supersedes_for_new_work: traditions/astrology/dorotheus-technique-matrix-v1.yaml
+
+work:
+  author: Dorotheus_of_Sidon
+  title: Carmen_Astrologicum
+  period: first_century_CE
+  original: Greek_verse
+  surviving_path:
+    - Greek_original_fragmentary
+    - Middle_Persian_translation_stage
+    - Arabic_recension
+    - Greek_prose_excerpts
+  guard: SURVIVING_ARABIC_RECENSION_NE_UNALTERED_FIRST_CENTURY_GREEK
+
+matrix:
+  - {book: 1, chapter: 1, topic: triplicities, techniques: [triplicity_rulers, day_night_sect_order, participating_ruler]}
+  - {book: 1, chapter: 13, topic: father, techniques: [topical_lot, planetary_testimony]}
+  - {book: 1, chapter: 14, topic: mother, techniques: [topical_lot, planetary_testimony]}
+  - {book: 1, chapter: 19, topic: brothers, techniques: [topical_lot]}
+  - {book: 1, chapter: 22, topic: fortune_and_property, techniques: [Lot_of_Fortune, ruler_condition]}
+  - {book: 1, chapter: 26, topic: fortune, techniques: [Lot_of_Fortune], chapter_number_confidence: medium_high}
+  - {book: 2, chapter: 1, topic: marriage, techniques: [Venus_triplicity_rulers, sect]}
+  - {book: 2, chapter: null, topic: children, techniques: [child_topic_judgment, topical_lots]}
+  - {book: 2, chapter: null, topic: aspects, techniques: [trine, square, opposition, sextile]}
+  - {book: 2, chapter: null, topic: planets_in_places, techniques: [place_delineation]}
+  - {book: 3, chapter: null, topic: length_of_life, techniques: [life_giver_or_apheta_material, ruler_or_kadkhudah_material]}
+  - {book: 4, chapter: null, topic: transfer_of_years, techniques: [annual_transfer, annual_forecasting, transits]}
+  - {book: 5, chapter: null, topic: Moon_condition, techniques: [inception_interrogation]}
+  - {book: 5, chapter: null, topic: building, techniques: [inception_election]}
+  - {book: 5, chapter: null, topic: hiring, techniques: [inception_election]}
+  - {book: 5, chapter: null, topic: land_purchase, techniques: [interrogation_inception]}
+  - {book: 5, chapter: null, topic: journeys, techniques: [interrogation_inception]}
+  - {book: 5, chapter: null, topic: ships, techniques: [interrogation_inception]}
+  - {book: 5, chapter: null, topic: illness, techniques: [interrogation_inception]}
+  - {book: 5, chapter: null, topic: runaway_persons, techniques: [interrogation_inception]}
+
+techniques_present_across_work:
+  - triplicity_rulers
+  - sect
+  - terms_bounds
+  - dodecatemoria
+  - lots
+  - ascensional_times
+  - places
+  - aspects
+  - natal_topics
+  - longevity
+  - annual_timing
+  - interrogations
+  - elections_or_inceptions
+
+methodological_note: >
+  Modern labels “horary” and “electional” are useful crosswalks but should not
+  replace Dorotheus' own transmitted question/inception topics.
+
+sources:
+  - https://books.google.com/books?id=XiZhP1MiUbEC
+  - https://unifiedastrology.wordpress.com/sources/hellenistic-sources/carmen-astrologicum-of-dorotheus-book-one/
+
+next:
+  - bind_every_chapter_number
+  - Arabic_vs_Greek_excerpt_alignment
+  - all_lot_formulae
+  - exact_annual_transfer_algorithm
+  - worked_examples

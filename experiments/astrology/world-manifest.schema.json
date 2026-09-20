@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "on-theo://astrology/world-manifest-v1",
+  "title": "Celestial Conditioning World Manifest V1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema", "world", "agents", "steps", "seed", "generator", "ground_truth_file"],
+  "properties": {
+    "schema": {"const": "ON_THEO_CELESTIAL_CONDITIONING_WORLD_V1"},
+    "world": {
+      "enum": [
+        "S0_NULL",
+        "S1_PHYSICAL",
+        "S2_NATAL_SEED",
+        "S3_RUNTIME",
+        "S4_PLASTICITY",
+        "S5_COMMON_CAUSE",
+        "S6_CULTURAL_ONLY",
+        "S7_WEAK_SIGNAL_CULTURAL"
+      ]
+    },
+    "agents": {"type": "integer", "minimum": 1},
+    "steps": {"type": "integer", "minimum": 1},
+    "seed": {"type": "integer"},
+    "generator": {"type": "string", "minLength": 1},
+    "ground_truth_file": {"type": "string", "minLength": 1}
+  }
+}
