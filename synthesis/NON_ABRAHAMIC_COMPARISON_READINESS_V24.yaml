@@ -1,0 +1,66 @@
+schema_version: on-theo.nonabrahamic-comparison-readiness.v24
+status: NON_CANONICAL_RESEARCH_AUDIT
+supersedes_for_current_research:
+  - synthesis/NON_ABRAHAMIC_COMPARISON_READINESS_V23.yaml
+
+existing_six_lane_source_heads:
+  buddhism: eb0f948788f5171d13c067daea2df54845d22f70
+  hindu: 614fa715fcacee0d7ec1ba573061d3e776e708d3
+  daoism: 708ba10413d9511648c2540ad84be74b6b5f6b5c
+  shinto: 4939c22c6b13afc1226d8860fa8dbf394e34b5c4
+  norse: 22e9fe10d1647a66458c54478c86e7ba6abd83ce
+  sumerian: 3fd5db6f05c008aeba4febe310de99e4ff484770
+
+breadth_units:
+  lakota:
+    exact_head: 8a9cee8335cadc742c9de25c90f4306702a80e8a
+    pr: 104
+    status: BOUNDED_COMPARISON_READINESS_AUDITED
+  maya:
+    exact_head: 2b5907438334537842710a81886083b9cbd0241a
+    pr: 105
+    status: BOUNDED_COMPARISON_READINESS_AUDITED
+
+maya_method_result: >
+  Maya evidence is comparison-ready only through explicit period, region or
+  community, evidence-mode, and claim-ceiling labels. Classic inscriptions,
+  Postclassic codices, the K'iche' Popol Wuj, household archaeology, colonial
+  contact institutions, and living Maya practice remain distinct lanes.
+
+axis_development:
+  SACRED_TIME_CALENDAR_MODEL:
+    status: STRONG_NEW_AXIS_CANDIDATE
+    source_support:
+      - MAYA_DRESDEN_CODEX
+      - LIVING_MAYA_CALENDAR_KEEPERS
+  HUMAN_ORIGIN_OR_EMERGENCE_MODEL:
+    status: STRENGTHENED_BY_LAKOTA_AND_MAYA
+  RELATIONAL_ORDER_MODEL:
+    status: STRENGTHENED_BY_LAKOTA_AND_MAYA
+  SACRED_LAND_PLACE_MODEL:
+    status: STRENGTHENED_BY_LAKOTA_AND_MAYA
+
+matrix_policy:
+  current_completed_cross_tradition_tests_remain_exact_head_bound_to_their_original_lanes: true
+  retroactive_Lakota_or_Maya_cell_filling: false
+  future_expanded_tests_require_fresh_all_lane_binding: true
+
+next_frontier:
+  primary: MEXICA_NAHUA_RESEARCH_PACKET_V1
+  reason: >
+    Lakota and Maya now have defensible independent foundations. The next
+    portfolio gain comes from another Mesoamerican lane with different source
+    problems: Mexica imperial archaeology and pictorial systems, colonial
+    Nahuatl textual corpora, and living Nahua communities must be kept distinct.
+
+holds:
+  global_generalization_from_current_sample: PROHIBITED
+  restricted_sacred_knowledge_reproduction: PROHIBITED
+  perennialist_all_religions_matrix: PROHIBITED_AT_CURRENT_EVIDENCE
+
+guards:
+  - COMPARISON_READY_NE_TRADITION_COMPLETE
+  - EXACT_HEAD_BINDING_REQUIRED
+  - COMMUNITY_LANGUAGE_REGION_AND_PERIOD_REQUIRED
+  - CONTACT_NE_TRANSMISSION
+  - SYSTEMS_ANALOGY_IS_DOWNSTREAM
