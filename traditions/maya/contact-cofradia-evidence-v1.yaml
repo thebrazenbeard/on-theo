@@ -1,0 +1,59 @@
+schema_version: on-theo.maya-contact-cofradia-evidence.v1
+status: BOUNDED_KICHE_CHICHICASTENANGO_CONTACT_LAYER
+
+records:
+  - id: MAYA-CONTACT-CHICHI-001
+    source: NMAI_LIVING_MAYA_TIME_CHICHICASTENANGO
+    evidence_class:
+      - LIVING_TRADITION
+      - COMMUNITY_COLLABORATIVE_PUBLIC_SOURCE
+      - HISTORICAL_RECONSTRUCTION
+    community_scope: KICHE_CHICHICASTENANGO
+    propositions:
+      - community_religious_social_structure_includes_fourteen_cofradias
+      - each_cofradia_has_Catholic_patron_saint
+      - public_source_describes_many_practices_as_Maya_in_origin
+      - ajqijab_continue_calendar_counsel_in_community
+    supports:
+      - CONTACT_AND_REINTERPRETATION_MODEL
+      - INSTITUTIONALIZATION_MODEL
+      - KNOWLEDGE_OR_DISCLOSURE_MODEL
+      - SACRED_TIME_CALENDAR_MODEL
+    confidence: BOUNDED_CURRENT_PUBLIC
+    guards:
+      - CHICHICASTENANGO_NE_ALL_MAYA
+      - COFRADIA_NE_ONE_CONTACT_MECHANISM
+
+  - id: MAYA-CONTACT-PW-001
+    source: XIMENEZ_POPOL_WUJ_WITNESS_CHAIN
+    evidence_class:
+      - COLONIAL_INDIGENOUS_TEXT
+      - MANUSCRIPT_WITNESS
+      - COMMENTARY
+    propositions:
+      - Indigenous_Kiche_textual_tradition_is_preserved_through_Dominican_transcription_translation_chain
+    supports:
+      - CONTACT_AND_REINTERPRETATION_MODEL
+    confidence: BOUNDED
+    guards:
+      - TEXTUAL_MEDIATION_NE_COFRA DIA_INSTITUTIONAL_MECHANISM
+
+mechanisms:
+  - CATHOLIC_INSTITUTIONAL_ADOPTION
+  - MAYA_RITUAL_CONTINUITY
+  - LOCAL_REINTERPRETATION
+  - PARALLEL_AUTHORITY_STRUCTURES
+  - MULTIPLE_CALENDAR_REGIMES
+  - COLONIAL_TEXTUAL_MEDIATION
+
+axis_status:
+  CONTACT_AND_REINTERPRETATION_MODEL: BOUNDED_KICHE_CHICHICASTENANGO_LAYER
+  INSTITUTIONALIZATION_MODEL: BOUNDED_LIVING_KICHE_LOCAL_LAYER
+  KNOWLEDGE_OR_DISCLOSURE_MODEL: BOUNDED_AJQIJ_COUNSEL_LAYER
+  SACRED_TIME_CALENDAR_MODEL: BOUNDED_MULTI_CALENDAR_CONTACT_LAYER
+  CROSS_TRADITION_COMPARISON: HOLD
+
+guards:
+  - CONTACT_NE_REPLACEMENT
+  - CONTACT_NE_UNCHANGED_SURVIVAL
+  - CONTACT_NE_ONE_GENERIC_SYNCRETISM_LABEL
