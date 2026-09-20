@@ -3,97 +3,105 @@ branch: astrology
 base_main_commit: eedbcf660c2cfe6cff5636e798806b0cd3d56efc
 foundation_commit: abc1ad524424d2ff20aa86c67c13ee1b2dc068fd
 deepening_commit_v2: aa402ac5c584491695b641d8e844d222fa5342e2
-status: CORPUS_AND_FALSIFICATION_DEEPENED_V3
+corpus_falsification_commit_v3: b4a28fe8cb0e48194451e61a22e3b41decc14824
+status: PRIMARY_TEXT_AND_TRANSMISSION_DEEPENED_V4
 merge_status: UNMERGED
-
-scope:
-  type: cross-cultural-astral-traditions
-  evidence_lanes:
-    - primary_text
-    - material_evidence
-    - historical_reconstruction
-    - scholarly_interpretation
-    - empirical_test
-    - project_inference
-    - speculative_model
 
 coverage:
   mesopotamian:
-    historical_context: researched_foundation
     primary_corpus: mapped
     documentary_index: seeded
     remaining: page_level_horoscope_index
+
   greco_roman:
-    historical_context: researched_foundation
     documentary_corpus: seeded
     handbook_differentiation: started
-    ptolemy_causal_model: primary_text_extracted
+    ptolemy_causal_model: extracted
     remaining:
       - Dorotheus_full_technique_matrix
       - Valens_full_technique_matrix
       - Greek_Horoscopes_page_level_registry
+
   indian_jyotisa:
-    status: transmission_and_source_strata_deepened
+    source_strata: deepened
+    varahamihira_primary_map: started
+    yavana_direct_text_anchor: added
     remaining:
       - Yavanajataka_manuscript_table
-      - Varahamihira_primary_extraction
+      - full_Brihat_Jataka_technique_index
+      - full_Brihat_Samhita_proposition_index
+
   chinese:
-    status: indigenous_import_separation_deepened
+    indigenous_import_separation: deepened
     remaining:
-      - Shiji_primary_omen_table
+      - Shiji_Tianguan_shu_primary_omen_table
       - Tang_Buddhist_import_registry
+
   iranian_sasanian:
     status: partial_foundation
+
   islamic:
-    status: practice_causation_and_free_will_deepened
+    abu_mashar_great_introduction: causal_and_transmission_map_started
+    ibn_sina_refutation: work_identity_and_epistemic_map_started
     remaining:
-      - Abu_Mashar_primary_proposition_map
-      - Ibn_Sina_refutation_primary_map
+      - Abu_Mashar_part_by_part_primary_extraction
+      - Ibn_Sina_primary_translation_binding
+
   jewish:
-    status: ibn_ezra_maimonides_contrast_added
+    maimonides_1194_letter: proposition_map_started
+    ibn_ezra_contrast: foundation
     remaining:
-      - Maimonides_letter_primary_proposition_map
+      - paragraph_level_Hebrew_translation_alignment
+      - Ibn_Ezra_primary_astrology_map
+
   christian:
-    status: aquinas_primary_causal_boundary_added
+    aquinas_boundary: foundation
+    remaining:
+      - Augustine_primary_map
+      - Aquinas_exact_question_article_map
+
   modern:
     genealogy: researched_foundation
     empirical_registry: expanded_v2
-    empirical_quality_rubric: active
+    quality_rubric: active
     gauquelin: disputed_ledger_initialized
+
   simulation:
     interface: initialized
-    falsification_protocol: v1_created
+    falsification_protocol: active
 
-new_v3_artifacts:
-  - traditions/astrology/documentary-corpus-index-v1.yaml
-  - traditions/astrology/ptolemy-causal-model-v1.md
-  - traditions/astrology/empirical-quality-rubric-v1.md
-  - traditions/astrology/empirical-study-registry-v2.yaml
-  - traditions/astrology/gauquelin-mars-effect-v1.md
-  - traditions/astrology/celestial-conditioning-falsification-v1.md
+  transmission:
+    cross_cultural_graph: v1_created
+
+new_v4_artifacts:
+  - traditions/astrology/maimonides-letter-proposition-map-v1.md
+  - traditions/astrology/ibn-sina-refutation-map-v1.md
+  - traditions/astrology/abu-mashar-great-introduction-map-v1.md
+  - traditions/astrology/varahamihira-primary-map-v1.md
+  - traditions/astrology/cross-cultural-transmission-graph-v1.yaml
 
 guards:
-  - DOCUMENTARY_CHART_NE_INTERPRETIVE_HANDBOOK
-  - CHART_DATE_NE_DOCUMENT_COMPOSITION_DATE
-  - LITERARY_HOROSCOPE_NE_CONTEMPORARY_DOCUMENTARY_WITNESS
-  - PTOLEMAIC_CAUSATION_NE_NEWTONIAN_GRAVITY
-  - INTERNAL_TECHNICAL_PLURALITY_MUST_REMAIN_VISIBLE
-  - ONE_NULL_NE_ALL_ASTROLOGY_FALSE
-  - ONE_POSITIVE_NE_ASTROLOGY_VALIDATED
-  - UNEXPLAINED_CORRELATION_NE_SIMULATION_CONTROLLER
-  - MODEL_FLEXIBILITY_NE_EVIDENCE
+  - PRIMARY_TEXT_NE_TRANSLATOR_SUMMARY
+  - MANUSCRIPT_ATTRIBUTION_VARIATION_MUST_REMAIN_VISIBLE
+  - GENERAL_CELESTIAL_CAUSATION_NE_PRECISE_ASTROLOGICAL_JUDGMENT
+  - MEDIEVAL_JEWISH_POSITION_NE_SINGLE_POSITION
+  - MEDIEVAL_ISLAMIC_POSITION_NE_SINGLE_POSITION
+  - YAVANA_REFERENCE_NE_TOTAL_GREEK_DERIVATION
+  - TRANSMISSION_NE_PASSIVE_COPY
+  - LEGITIMATE_ASTRONOMY_NE_JUDICIAL_ASTROLOGY
+  - TRUE_HIDDEN_COUPLING_NE_HUMAN_DECODABILITY
 
 next_frontiers:
-  - page_level_Rochberg_horoscope_registry
-  - page_level_Neugebauer_Van_Hoesen_registry
+  - Rochberg_page_level_horoscope_registry
+  - Greek_Horoscopes_page_level_registry
   - Dorotheus_full_source_to_technique_matrix
   - Valens_worked_chart_and_timing_matrix
   - Yavanajataka_manuscript_dispute_table
-  - Varahamihira_primary_text_extraction
+  - full_Varahamihira_technique_index
   - Shiji_Tianguan_shu_primary_omen_table
-  - Abu_Mashar_primary_text_and_transmission_graph
-  - Ibn_Sina_refutation_primary_text_map
-  - Maimonides_1194_letter_primary_map
-  - empirical_registry_primary_source_expansion
-  - Gauquelin_dataset_by_dataset_replication_ledger
+  - Abu_Mashar_part_I_primary_proposition_extraction
+  - Ibn_Sina_primary_translation_binding
+  - Maimonides_Hebrew_paragraph_alignment
+  - Ibn_Ezra_primary_map
+  - Gauquelin_replication_ledger
   - celestial_conditioning_simulation_implementation_spec

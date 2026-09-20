@@ -1,0 +1,103 @@
+schema: ON_THEO_ASTROLOGY_CROSS_CULTURAL_TRANSMISSION_GRAPH_V1
+status: FOUNDATION_GRAPH
+
+nodes:
+  - id: mesopotamian_omen_scholarship
+    period: second_to_first_millennium_BCE
+  - id: late_babylonian_horoscopy
+    period: late_fifth_century_BCE_onward
+  - id: hellenistic_greco_roman_horoscopy
+    period: late_Hellenistic_to_Roman
+  - id: indian_pre_horoscopic_astral_traditions
+    period: pre_classical
+  - id: indian_classical_hora
+    period: early_centuries_CE_onward
+  - id: sasanian_iranian_astrology
+    period: late_antique
+  - id: arabic_islamicate_astrology
+    period: eighth_century_CE_onward
+  - id: medieval_latin_astrology
+    period: twelfth_century_CE_onward
+  - id: early_chinese_indigenous_astral_traditions
+    period: ancient
+  - id: medieval_chinese_imported_astral_systems
+    period: especially_Tang_and_after
+
+edges:
+  - from: mesopotamian_omen_scholarship
+    to: late_babylonian_horoscopy
+    relation: INTERNAL_DEVELOPMENT
+    confidence: high
+    note: transition includes individualized birth configurations and computational astronomy
+
+  - from: late_babylonian_horoscopy
+    to: hellenistic_greco_roman_horoscopy
+    relation: DIRECT_DEPENDENCE_POSSIBLE_AND_BROADLY_ACCEPTED
+    confidence: high
+    note: exact provenance of each Hellenistic technique remains separate
+
+  - from: hellenistic_greco_roman_horoscopy
+    to: indian_classical_hora
+    relation: DIRECT_DEPENDENCE_STRONGLY_SUPPORTED_FOR_MAJOR_COMPONENTS
+    confidence: high
+    evidence:
+      - Yavana_textual_memory
+      - Yavanajataka_transmission_problem
+      - structural_technical_correspondences
+    guard: does_not_replace_indigenous_Indian_astral_substrate
+
+  - from: indian_pre_horoscopic_astral_traditions
+    to: indian_classical_hora
+    relation: INTERNAL_SUBSTRATE_AND_SYNTHESIS
+    confidence: high
+
+  - from: hellenistic_greco_roman_horoscopy
+    to: sasanian_iranian_astrology
+    relation: TRANSMISSION_AND_RECOMBINATION
+    confidence: medium_high
+
+  - from: indian_classical_hora
+    to: sasanian_iranian_astrology
+    relation: TRANSMISSION_AND_RECOMBINATION
+    confidence: medium_high
+
+  - from: sasanian_iranian_astrology
+    to: arabic_islamicate_astrology
+    relation: TRANSMISSION_AND_RECOMBINATION
+    confidence: high
+
+  - from: hellenistic_greco_roman_horoscopy
+    to: arabic_islamicate_astrology
+    relation: TRANSLATION_AND_RECEPTION
+    confidence: high
+
+  - from: indian_classical_hora
+    to: arabic_islamicate_astrology
+    relation: TRANSLATION_AND_RECEPTION
+    confidence: high
+
+  - from: arabic_islamicate_astrology
+    to: medieval_latin_astrology
+    relation: TWELFTH_CENTURY_TRANSLATION_MOVEMENT
+    confidence: high
+    examples:
+      - Abu_Mashar_John_of_Seville
+      - Abu_Mashar_Hermann_of_Carinthia
+
+  - from: early_chinese_indigenous_astral_traditions
+    to: medieval_chinese_imported_astral_systems
+    relation: INTERNAL_SUBSTRATE
+    confidence: high
+
+  - from: indian_classical_hora
+    to: medieval_chinese_imported_astral_systems
+    relation: BUDDHIST_AND_SCIENTIFIC_TRANSMISSION
+    confidence: high
+    note: imported systems coexisted with indigenous Chinese frameworks
+
+guards:
+  - EDGE_EXISTENCE_NE_TOTAL_SYSTEM_DERIVATION
+  - TECHNIQUE_PROVENANCE_MUST_BE_TRACKED_INDIVIDUALLY
+  - SIMILARITY_NE_DIRECT_DEPENDENCE
+  - TRANSLATION_NE_SEMANTIC_IDENTITY
+  - RECEIVER_CULTURE_IS_ACTIVE_RECOMBINATION_NOT_PASSIVE_COPYING
