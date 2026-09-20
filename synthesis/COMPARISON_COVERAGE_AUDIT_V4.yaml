@@ -1,0 +1,52 @@
+schema_version: on-theo.comparison-coverage-audit.v4
+status: NON_CANONICAL_METHOD_AUDIT
+supersedes_for_current_research:
+  - synthesis/COMPARISON_COVERAGE_AUDIT_V3.yaml
+matrix: synthesis/BOUNDED_NEUTRAL_COMPARISON_MATRIX_V4.yaml
+lane_count: 6
+
+coverage:
+  CAUSAL_ORDER_TYPE:
+    admitted_total: 6
+  CONTINUITY_MODEL:
+    admitted_total: 6
+  RITUAL_ORDER_MODEL:
+    admitted_total: 6
+  PERSON_OR_SELF_MODEL:
+    admitted_total: 6
+    bounded: 1
+    partial_or_partial_bounded: 5
+  CONTACT_AND_REINTERPRETATION_MODEL:
+    admitted_total: 4
+  POLITICAL_SACRALIZATION_MODEL:
+    admitted_total: 4
+  WORLD_ORIGIN_MODEL:
+    admitted_total: 4
+  MORTUARY_RELATIONSHIP_MODEL:
+    admitted_total: 3
+    note: Shinto now contributes a later-layer partial cell
+
+cross_lane_ready_now:
+  - CAUSAL_ORDER_TYPE
+  - CONTINUITY_MODEL
+  - RITUAL_ORDER_MODEL
+  - PERSON_OR_SELF_MODEL
+
+cross_lane_near_ready:
+  - CONTACT_AND_REINTERPRETATION_MODEL
+  - POLITICAL_SACRALIZATION_MODEL
+  - WORLD_ORIGIN_MODEL
+
+next_discriminating_frontiers:
+  - DAOIST_BUDDHIST_CONTACT_REINTERPRETATION
+  - BUDDHIST_STUPA_RELIC_AND_LAY_RITUAL
+  - HINDU_GRIHYA_DOMESTIC_RITUAL
+  - NORSE_SKALDIC_AFTERLIFE
+  - SHINTO_PRIMARY_LINE_BINDING_FOR_HUMAN_SPIRIT_LOCATORS
+
+method_conclusions:
+  - person_self_axis_is_now_six_lane_comparable
+  - soul_vs_no_soul_is_not_a_sufficient_neutral_schema
+  - personhood_and_continuity_must_remain_distinct_axes
+  - postmortem_identity_does_not_imply_unchanged_substantial_self
+  - next_work_should_target_contact_and_reinterpretation

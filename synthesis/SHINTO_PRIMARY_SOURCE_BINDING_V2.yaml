@@ -1,0 +1,60 @@
+schema_version: on-theo.shinto-synthesis-source-binding.v2
+status: NON_CANONICAL_EXACT_SOURCE_EXTENSION
+supersedes_for_current_research:
+  - synthesis/SHINTO_PRIMARY_SOURCE_BINDING_V1.yaml
+
+source_extension:
+  branch: research/shinto-variant-ritual-material-v1-20260920
+  head: 144ee868e4976428dbfe9c5ddc0022d03a2c194a
+  base_branch: shinto
+  base_head: a578729a2e3cec02fe533c3c1d20946347da9aa4
+  draft_pr: 100
+
+source_artifacts:
+  classical_variant:
+    - traditions/shinto/kiki-variant-proposition-matrix-v1.md
+  ritual:
+    - traditions/shinto/ritual-purity-packet-v1.md
+  material_institutional:
+    - traditions/shinto/shrine-material-institutional-packet-v1.md
+  contact_history:
+    - traditions/shinto/buddhist-shinto-interaction-boundary-v1.md
+  personhood_continuity:
+    - traditions/shinto/personhood-human-continuity-packet-v1.md
+    - traditions/shinto/human-spirit-diachrony-v1.yaml
+  evidence:
+    - traditions/shinto/neutral-axis-evidence-v2.yaml
+  state:
+    - traditions/shinto/research-state-v3.yaml
+
+strengthened_axes:
+  - WORLD_ORIGIN_MODEL
+  - AGENCY_AND_AUTHORITY_MODEL
+  - PERSON_OR_SELF_MODEL
+  - CONTINUITY_MODEL
+  - POSTMORTEM_PATH_MODEL
+  - MORTUARY_RELATIONSHIP_MODEL
+  - TRANSFORMATION_MODEL
+  - INSTITUTIONALIZATION_MODEL
+  - PURITY_POLLUTION_MODEL
+  - SACRAL_PRESENCE_MODEL
+  - RITUAL_ORDER_MODEL
+  - CONTACT_AND_REINTERPRETATION_MODEL
+
+new_controls:
+  - TAMA_NE_WESTERN_IMMORTAL_SOUL
+  - COURT_CHINKON_NE_UNIVERSAL_ANTHROPOLOGY
+  - GORYO_NE_PRIMORDIAL_SHINTO
+  - HUMAN_KAMI_CASE_NE_ALL_HUMANS_BECOME_KAMI
+  - LATER_ANCESTOR_DOCTRINE_NE_ANCIENT_PRIMARY_TEXT
+  - MODERN_SHINTO_FUNERAL_NE_ANCIENT_FUNERAL
+
+readiness:
+  bounded_Shinto_comparison: STRENGTHENED
+  person_self_comparison: PARTIAL_BOUNDED
+  continuity_comparison: PARTIAL_STRENGTHENED
+  broad_Shinto_synthesis: false
+
+effect_boundary:
+  canonical_effect: false
+  merge_authority: false
