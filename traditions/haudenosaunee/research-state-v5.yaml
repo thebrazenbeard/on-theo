@@ -1,0 +1,43 @@
+schema_version: on-theo.haudenosaunee-research-state.v5
+status: BOUNDED_COMPARISON_READINESS_AUDITED_PUBLIC_SOURCE
+supersedes_for_current_research:
+  - traditions/haudenosaunee/research-state-v4.yaml
+
+branch:
+  name: research/haudenosaunee-public-source-v1-20260920
+  pr: 112
+
+readiness_audit: traditions/haudenosaunee/comparison-readiness-audit-v1.yaml
+
+comparison_eligible_bounded:
+  - POLITICAL_SACRALIZATION_MODEL
+  - INSTITUTIONALIZATION_MODEL
+  - AGENCY_AND_AUTHORITY_MODEL
+  - KNOWLEDGE_OR_DISCLOSURE_MODEL
+  - CONTACT_AND_REINTERPRETATION_MODEL
+
+comparison_eligible_partial:
+  - CONTINUITY_MODEL
+  - RITUAL_ORDER_MODEL
+  - MORTUARY_RELATIONSHIP_MODEL
+
+held:
+  - WORLD_ORIGIN_MODEL
+  - PERSON_OR_SELF_MODEL
+  - POSTMORTEM_PATH_MODEL
+  - TRANSFORMATION_MODEL
+  - SACRAL_PRESENCE_MODEL
+
+new_axis_candidates:
+  - RELATIONAL_ORDER_MODEL
+  - SACRED_TIME_CALENDAR_MODEL
+
+schema_candidates:
+  - DOCUMENTARY_MEMORY_MODEL
+
+next_portfolio_frontier: ANDEAN_INCA_DIACHRONIC_PACKET_V1
+
+guards:
+  - EXACT_HEAD_BINDING_REQUIRED
+  - NATION_CONFEDERACY_SCOPE_REQUIRED
+  - COMPARISON_READY_NE_TRADITION_COMPLETE
