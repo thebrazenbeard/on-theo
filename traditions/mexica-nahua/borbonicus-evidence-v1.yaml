@@ -1,0 +1,68 @@
+schema_version: on-theo.mexica-nahua-borbonicus-evidence.v1
+status: CONQUEST_BOUNDARY_PICTORIAL_CALENDAR_BOUND
+
+witness:
+  title: CODEX_BORBONICUS
+  repository: BIBLIOTHEQUE_ASSEMBLEE_NATIONALE_PARIS
+  format: SCREENFOLD_PICTORIAL_MANUSCRIPT
+  approximate_length: OVER_14_METERS
+  leaves_catalogued: 36
+  later_Spanish_annotations: true
+  evidence_class:
+    - MANUSCRIPT_WITNESS
+    - PICTORIAL_RITUAL_CALENDAR_SOURCE
+
+dating:
+  assemblee_nationale_catalogue: LATE_15TH_CENTURY
+  bnf_authority_record: POSSIBLY_1522_1540
+  project_status: CONQUEST_BOUNDARY_UNRESOLVED
+
+records:
+  - id: MN-BORB-TONAL-001
+    propositions:
+      - manuscript_contains_religious_divinatory_calendar
+      - 260_day_tonalpohualli_structure_is_major_component
+      - pictorial_deity_and_day_associations_support_divinatory_interpretation
+    supports:
+      - SACRED_TIME_CALENDAR_MODEL
+      - KNOWLEDGE_OR_DISCLOSURE_MODEL_PARTIAL
+    confidence: BOUNDED_HIGH
+
+  - id: MN-BORB-VEINTENA-001
+    propositions:
+      - manuscript_preserves_pictorial_record_of_eighteen_solar_year_festival_periods
+    supports:
+      - RITUAL_ORDER_MODEL
+      - SACRED_TIME_CALENDAR_MODEL
+    confidence: BOUNDED_SCHOLARLY
+    guards:
+      - FESTIVAL_IMAGE_NE_COMPLETE_RITE_DESCRIPTION
+
+  - id: MN-BORB-ANNOT-001
+    propositions:
+      - Spanish_annotations_are_later_than_pictorial_layer
+    supports:
+      - CONTACT_AND_REINTERPRETATION_MODEL_PARTIAL
+    confidence: HIGH
+    guards:
+      - SPANISH_GLOSS_NE_ORIGINAL_PICTORIAL_SEMANTICS
+
+  - id: MN-BORB-DATE-001
+    propositions:
+      - major_institutional_catalogues_disagree_on_pre_or_postconquest_date
+    supports:
+      - SOURCE_CRITICISM_CONTROL
+    confidence: HIGH
+    guards:
+      - DO_NOT_FORCE_ONE_DATE_WITHOUT_CODICOLOGICAL_REVIEW
+
+axis_status:
+  SACRED_TIME_CALENDAR_MODEL: BOUNDED_BORBONICUS_PICTORIAL_LAYER
+  RITUAL_ORDER_MODEL: PARTIAL_PICTORIAL_FESTIVAL_LAYER
+  KNOWLEDGE_OR_DISCLOSURE_MODEL: PARTIAL_CALENDAR_DIVINATION_LAYER
+  CONTACT_AND_REINTERPRETATION_MODEL: PARTIAL_MANUSCRIPT_ANNOTATION_LAYER
+  CROSS_TRADITION_COMPARISON: HOLD
+
+guards:
+  - CONQUEST_BOUNDARY_DATE_REMAINS_VISIBLE
+  - PICTORIAL_AND_SPANISH_LAYERS_DISTINCT

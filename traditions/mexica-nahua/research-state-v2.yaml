@@ -1,0 +1,36 @@
+schema_version: on-theo.mexica-nahua-research-state.v2
+status: FLORENTINE_COLLABORATIVE_SOURCE_CONTROL_ADDED
+supersedes_for_current_research:
+  - traditions/mexica-nahua/research-state-v1.yaml
+
+branch:
+  name: research/mexica-nahua-diachronic-v1-20260920
+  pr: 106
+
+new_artifacts:
+  florentine_packet: traditions/mexica-nahua/florentine-codex-collaborative-source-control-v1.md
+  florentine_evidence: traditions/mexica-nahua/florentine-codex-source-control-v1.yaml
+
+current_internal_status:
+  RITUAL_ORDER_MODEL: CANDIDATE_STRONG
+  POLITICAL_SACRALIZATION_MODEL: CANDIDATE_STRONG_MEXICA_IMPERIAL
+  INSTITUTIONALIZATION_MODEL: CANDIDATE_STRONG
+  OFFERING_EXCHANGE_MODEL: CANDIDATE
+  SACRED_TIME_CALENDAR_MODEL: CANDIDATE_STRONG
+  KNOWLEDGE_OR_DISCLOSURE_MODEL: CANDIDATE
+  CONTACT_AND_REINTERPRETATION_MODEL: PARTIAL_INTERNAL_READY
+  SACRED_LAND_PLACE_MODEL: CANDIDATE
+  CROSS_TRADITION_COMPARISON: HOLD
+
+next_frontier:
+  primary: TEMPLO_MAYOR_MATERIAL_RITUAL_PACKET_V1
+  subsequent:
+    - BORBONICUS_RITUAL_CALENDAR_PACKET_V1
+    - LIVING_NAHUA_REGIONAL_PACKET_V1
+    - MEXICA_NAHUA_COMPARISON_READINESS_AUDIT_V1
+
+guards:
+  - FLORENTINE_CODEX_NE_SAHAGUN_ALONE
+  - NAHUATL_NE_SPANISH_NE_IMAGE
+  - COLONIAL_SOURCE_NE_PRECONTACT_TRANSCRIPT
+  - MEXICA_NE_ALL_NAHUA

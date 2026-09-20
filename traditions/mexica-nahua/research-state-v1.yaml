@@ -1,0 +1,40 @@
+schema_version: on-theo.mexica-nahua-research-state.v1
+status: DIACHRONIC_FOUNDATION_ACTIVE
+
+branch:
+  name: research/mexica-nahua-diachronic-v1-20260920
+  base_branch: corpus/global-expansion-queue-v1-20260917
+  base_head: cd588c7cabc210f8ae8eb43c148170872aa4b9ac
+
+artifacts:
+  boundary: traditions/mexica-nahua/diachronic-source-boundary-v1.md
+  source_map: traditions/mexica-nahua/source-map-v1.md
+  foundation: traditions/mexica-nahua/diachronic-foundation-packet-v1.md
+  neutral_axis: traditions/mexica-nahua/neutral-axis-evidence-v1.yaml
+
+current_secure_results:
+  - Mexica_Nahua_and_Aztec_labels_require_scope_control
+  - Templo_Mayor_materially_anchors_late_Postclassic_Mexica_religious_political_institution
+  - Florentine_Codex_is_collaborative_colonial_Nahua_Franciscan_source_not_unmediated_precontact_transcript
+  - pictorial_codices_have_independent_provenance_and_contact_problems
+  - living_Nahua_religion_is_regionally_diverse_and_not_imperial_Mexica_survival
+
+current_holds:
+  - CROSS_TRADITION_COMPARISON
+  - ONE_TIMELESS_AZTEC_RELIGION
+  - ONE_PAN_NAHUA_THEOLOGY
+  - ONE_FIXED_PANTHEON
+  - ONE_SACRIFICE_MODEL
+
+next_frontier:
+  primary: FLORENTINE_CODEX_COLLABORATIVE_SOURCE_CONTROL_V1
+  subsequent:
+    - TEMPLO_MAYOR_MATERIAL_RITUAL_PACKET_V1
+    - BORBONICUS_RITUAL_CALENDAR_PACKET_V1
+    - LIVING_NAHUA_REGIONAL_PACKET_V1
+    - MEXICA_NAHUA_COMPARISON_READINESS_AUDIT_V1
+
+guards:
+  - MEXICA_NE_ALL_NAHUA
+  - AZTEC_LABEL_REQUIRES_SCOPE
+  - COMMUNITY_REGION_PERIOD_AND_EVIDENCE_MODE_REQUIRED

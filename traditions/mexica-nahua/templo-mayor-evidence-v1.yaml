@@ -1,0 +1,97 @@
+schema_version: on-theo.mexica-nahua-templo-mayor-evidence.v1
+status: BOUNDED_LATE_POSTCLASSIC_MEXICA_MATERIAL
+
+site:
+  name: TEMPLO_MAYOR_HUEY_TEOCALLI
+  polity: MEXICA_TENOCHTITLAN
+  period: LATE_POSTCLASSIC
+  main_chronological_scope: 1325_1521_CE
+  evidence_class:
+    - MATERIAL_EVIDENCE
+    - ARCHAEOLOGICAL_CONTEXT
+    - HISTORICAL_RECONSTRUCTION
+
+records:
+  - id: MN-TM-CENTER-001
+    propositions:
+      - precinct_is_center_of_Mexica_Tenochtitlan_religious_and_political_life
+      - precinct_contains_multiple_ritual_political_educational_structures
+    supports:
+      - POLITICAL_SACRALIZATION_MODEL
+      - INSTITUTIONALIZATION_MODEL
+      - RITUAL_ORDER_MODEL
+    confidence: HIGH
+
+  - id: MN-TM-DUAL-001
+    propositions:
+      - principal_double_temple_contains_distinct_Tlaloc_and_Huitzilopochtli_sanctuaries
+    supports:
+      - SACRAL_PRESENCE_MODEL
+      - RITUAL_ORDER_MODEL
+    confidence: HIGH
+    guards:
+      - DUAL_SANCTUARY_NE_COMPLETE_DUALISTIC_THEOLOGY
+
+  - id: MN-TM-PLACE-001
+    propositions:
+      - site_is_interpreted_as_symbolic_urban_center_and_cosmographic_convergence
+    supports:
+      - SACRED_LAND_PLACE_MODEL
+    confidence: BOUNDED_INTERPRETIVE
+    guards:
+      - ARCHAEOLOGICAL_INTERPRETATION_NE_PRIMARY_TEXT
+
+  - id: MN-TM-OFFERING-001
+    evidence:
+      - MULTIPLE_TEMPLO_MAYOR_OFFERINGS
+      - OFFERINGS_186_187_189_2026_ANALYSIS
+    propositions:
+      - large_structured_multi_material_offering_deposits_are_archaeologically_attested
+      - selected_deposits_include_nonlocal_objects_and_war_linked_provenance_interpretation
+    supports:
+      - OFFERING_EXCHANGE_MODEL_PARTIAL
+      - RITUAL_ORDER_MODEL
+      - POLITICAL_SACRALIZATION_MODEL
+    confidence: HIGH_FOR_DEPOSITION_PARTIAL_FOR_INTERPRETIVE_MEANING
+    guards:
+      - DEPOSIT_NE_RECIPROCITY_PROVED
+      - NONLOCAL_OBJECT_NE_ONE_MEANING
+
+  - id: MN-TM-CONVERGENCE-001
+    evidence:
+      - OFFERING_102
+      - FLORENTINE_CODEX_TLALOC_RITUAL_MATERIAL_PARALLEL
+    propositions:
+      - material_and_colonial_textual_sources_independently_converge_on_selected_Tlaloc_ritual_materials
+    supports:
+      - SOURCE_CONVERGENCE_CONTROL
+    confidence: BOUNDED
+    guards:
+      - CONVERGENCE_NE_COMPLETE_RITE_RECONSTRUCTION
+
+  - id: MN-TM-SACRIFICE-001
+    evidence:
+      - TZOMPANTLI_MATERIAL_AND_SITE_CONTEXT
+      - SACRIFICIAL_STONE_SITE_CONTEXT
+    propositions:
+      - bodily_sacrifice_is_real_Mexica_ritual_domain
+    supports:
+      - SACRIFICE_AND_BODILY_OFFERING_MODEL_CANDIDATE
+    confidence: BOUNDED_HIGH
+    guards:
+      - BODILY_SACRIFICE_NE_ALL_OFFERING
+
+axis_status:
+  RITUAL_ORDER_MODEL: BOUNDED_MEXICA_SACRED_PRECINCT_LAYER
+  POLITICAL_SACRALIZATION_MODEL: BOUNDED_MEXICA_IMPERIAL_SACRED_CENTER
+  INSTITUTIONALIZATION_MODEL: BOUNDED_MONUMENTAL_RITUAL_PRECINCT_LAYER
+  SACRAL_PRESENCE_MODEL: BOUNDED_ARCHITECTURAL_DEITY_LOCALIZATION
+  SACRED_LAND_PLACE_MODEL: BOUNDED_URBAN_SACRED_CENTER
+  OFFERING_EXCHANGE_MODEL: PARTIAL_MATERIAL_MEXICA_LAYER
+  SACRIFICE_AND_BODILY_OFFERING_MODEL: STRONG_DECOMPOSITION_CANDIDATE
+  CROSS_TRADITION_COMPARISON: HOLD
+
+guards:
+  - TEMPLO_MAYOR_NE_ALL_NAHUA
+  - MATERIAL_CONTEXT_NE_COMPLETE_THEOLOGY
+  - EXACT_RECIPIENT_EFFECT_REQUIRES_INDEPENDENT_BINDING
