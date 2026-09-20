@@ -7,7 +7,8 @@ corpus_falsification_commit_v3: b4a28fe8cb0e48194451e61a22e3b41decc14824
 primary_text_transmission_commit_v4: 6b1b26c9abffddf0af33759e421eeadbd00bd837
 documentary_technique_commit_v5: cfbe88c909e3d70729a6c7435c7f0ae67eba5b07
 catalog_reference_sim_commit_v6: 44a1bce72e777c43e5a090dae71b4e6c448da628
-status: BLIND_BENCHMARK_HARDENED_V7
+blind_benchmark_commit_v7: e608ed75fe0fe669f20a1c1d49b9c6d1a6f2c4b0
+status: VOSS_BLIND_ANALYST_RESULT_V8
 merge_status: UNMERGED
 
 simulation:
@@ -15,10 +16,6 @@ simulation:
     path: experiments/astrology/reference_simulation.py
     status: IMPLEMENTED_SYNTHETIC_V1
     blind_safe: false
-    reason:
-      - world_label_in_development_manifest
-      - latent_birth_fields_in_development_output
-      - model_probability_and_trait_state_in_development_output
 
   blind_benchmark:
     generator: experiments/astrology/blind_benchmark.py
@@ -26,55 +23,44 @@ simulation:
     protocol: experiments/astrology/BLIND_BENCHMARK.md
     status: IMPLEMENTED_V1
     world_classes: 8
-    public_projection:
-      births:
-        - agent_id
-        - birth_t
-      celestial_state:
-        - orbital_longitudes
-        - distance_proxies
-        - illumination
-        - physical_proxy
-        - tidal_proxy
-        - angular_code
-        - sign_code
-      outcomes:
-        - t
-        - agent_id
-        - binary_outcome
-        - known_environment
-      culture:
-        - observable_cultural_claims
-    withheld:
-      - world_label
-      - run_seed
-      - coupling_class
-      - hidden_controller
-      - base_trait
-      - initialized_trait
-      - birth_signal
-      - current_trait
-      - exact_model_probability
-      - private_cultural_belief_state
-    integrity:
-      seed_commitment: SHA256
-      answer_key_commitment: SHA256
-      frozen_submission_required: true
-      answer_key_commitment_verification_supported: true
 
-  scoring:
-    outputs:
-      - coverage
-      - exact_accuracy
-      - unresolved_count
-      - per_world_recall
-      - confusion_matrix
-    unresolved_class_allowed: true
-
-  tests:
-    reference_simulation_previous: 5_of_5_PASS
-    blind_benchmark_local_precommit: 7_of_7_PASS
-    note: LOCAL_TEST_PASS_NE_CI_NE_DEPLOYMENT_NE_SCIENTIFIC_VALIDATION
+  voss_baseline:
+    result_artifact: experiments/astrology/VOSS_BASELINE_RESULT_V1.md
+    analyst_repo: thebrazenbeard/voss
+    analyst_branch: revival/voss-forensic-analyst-v2-20260920
+    analyst_frozen_commit: d8660dc63e4813f37ed1722a2e867ee2c10b1a49
+    result_commit: fe2f309539246d52ec24b83949f603d855657a1d
+    protocol:
+      calibration_per_class: 20
+      heldout_per_class: 25
+      heldout_runs: 200
+      agents: 200
+      steps: 360
+    forced:
+      exact_correct: 156
+      total: 200
+      accuracy: 0.78
+    cautious:
+      resolved: 121
+      unresolved: 79
+      coverage: 0.605
+      exact_correct: 119
+      accuracy_resolved: 0.9834710743801653
+      overall_exact: 0.595
+    current_identifiability:
+      S1_PHYSICAL: STRONGLY_SEPARABLE
+      S3_RUNTIME: STRONGLY_SEPARABLE
+      S5_COMMON_CAUSE: STRONGLY_SEPARABLE_IN_THIS_SIMULATOR
+      S6_CULTURAL_ONLY: MOSTLY_SEPARABLE
+      S7_WEAK_SIGNAL_CULTURAL: MOSTLY_SEPARABLE
+      S0_NULL: NOT_RELIABLY_SEPARABLE_FROM_S2_S4
+      S2_NATAL_SEED: PARTIALLY_DETECTABLE_NOT_RELIABLE
+      S4_PLASTICITY: NOT_RELIABLY_SEPARABLE_FROM_S0_S2
+    hard_family_forced_accuracy:
+      family: [S0_NULL, S2_NATAL_SEED, S4_PLASTICITY]
+      exact: 34
+      total: 75
+      accuracy: 0.4533333333333333
 
 historical_corpus:
   babylonian:
@@ -93,31 +79,24 @@ historical_corpus:
     dating_dispute: active
     manuscript_witness_map: v1
 
-new_v7_artifacts:
-  - experiments/astrology/blind_benchmark.py
-  - experiments/astrology/score_benchmark.py
-  - experiments/astrology/test_blind_benchmark.py
-  - experiments/astrology/blind-run.schema.json
-  - experiments/astrology/benchmark-submissions.schema.json
-  - experiments/astrology/BLIND_BENCHMARK.md
-
 guards:
   - DEVELOPMENT_OUTPUT_NE_BLIND_OUTPUT
-  - HIDE_GROUND_TRUTH_FILE_ALONE_NE_VALID_BLINDING
   - PUBLIC_PROJECTION_MUST_EXCLUDE_LATENT_STATE
-  - ANSWER_KEY_COMMITMENT_NE_PROOF_OF_PRE_REVEAL_SUBMISSION_TIME
-  - CONFUSION_MATRIX_NE_REAL_WORLD_VALIDATION
-  - IDENTIFIABLE_SYNTHETIC_CAUSE_NE_REAL_CAUSE
-  - SIMULATION_IMPLEMENTATION_NE_ASTROLOGY_EVIDENCE
+  - FORCED_CHOICE_NE_EVIDENCE_GATED_VERDICT
   - UNRESOLVED_IS_VALID_CLASSIFICATION
-  - REDESIGN_IF_WORLD_CLASSES_ARE_NOT_OBSERVATIONALLY_SEPARABLE
+  - HELDOUT_FAILURE_NE_ANALYST_FAILURE
+  - POSTHOC_THRESHOLD_TUNING_NE_VALID_RESCUE
+  - CURRENT_OBSERVATION_SURFACE_INSUFFICIENT_FOR_RELIABLE_S0_S2_S4_SEPARATION
+  - IDENTIFIABLE_SYNTHETIC_CAUSE_NE_REAL_CAUSE
+  - S5_RECOVERY_IN_THIS_SIMULATOR_NE_GENERAL_HIDDEN_CAUSE_RECOVERY
+  - SIMULATION_RESULT_NE_ASTROLOGY_EVIDENCE
 
 next_frontiers:
-  - implement_baseline_blind_analyst
-  - run_multi_seed_synthetic_identifiability_benchmark
-  - quantify_confusion_pairs_and_failure_modes
+  - redesign_observation_surface_for_S0_S2_S4_before_new_confirmatory_run
+  - predeclare_longer_horizon_population_and_continuous_outcome_variants
+  - add_intervention_or_perturbation_worlds
+  - run_second_fresh_heldout_only_after_redesign_freeze
   - add_train_holdout_temporal_and_agent_splits
-  - add_submission_commitment_workflow_on_durable_surface
   - build_real_ephemeris_adapter_only_after_synthetic_identifiability
   - continue_full_Greek_documentary_registry
   - continue_Dorotheus_and_Valens_primary_extraction
