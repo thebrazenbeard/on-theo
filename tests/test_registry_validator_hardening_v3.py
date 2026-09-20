@@ -424,4 +424,3 @@ def test_review_findings_reject_non_mapping_entries(tmp_path: Path) -> None:
     )
 
     assert "INVALID_REVIEW_FINDING" in _codes(tmp_path)
-
