@@ -1,0 +1,51 @@
+schema_version: on-theo.judaism-ritual-parameter-state.v1
+status: LATE_ANTIQUE_REVELATORY_ADJURATION_PACKET_COMPLETE_NON_CANONICAL
+base:
+  audit_branch: audit/judaism-provenance-control-v1-20260919
+  exact_head: 75598bab3d62c25e7d7b05384f0a67856cd3a713
+
+new_artifacts:
+  - traditions/judaism/jewish-revelatory-adjuration-parameter-packet-v1.md
+  - traditions/judaism/ritual-parameter-evidence-v1.yaml
+
+strongest_results:
+  - >
+    Selected Jewish late-antique/early-medieval ritual texts preserve genuinely
+    parameterized adjurations directed toward named heavenly agents.
+  - >
+    Revelatory information and answers are explicit claimed outcome domains in
+    selected adjuration traditions.
+  - >
+    Names/invocations, purity/preparation, sequence, repetition, bounded space,
+    material and timing can function as source-claimed parameters.
+  - >
+    Jewish and Greco-Egyptian adjuration similarities cannot be counted as
+    independent convergence without transmission/contact controls.
+  - >
+    No anomalous information transfer or external agent contact is empirically
+    established.
+
+comparison_contribution:
+  ritual_interface_parameter_sensitivity:
+    status: HIGH_INFORMATION_HISTORICAL_CANDIDATE
+    reason: >
+      Unlike constitutive institutional validity, selected adjurations explicitly
+      target information or action from named nonhuman agents.
+    claim_ceiling: >
+      Textually represented ritual information channel only; empirical channel
+      not established.
+
+next_frontiers:
+  - Hekhalot_synoptic_exact_passage_binding
+  - Sefer_ha_Razim_recipe_typology_by_claimed_output
+  - orthographic_name_variant_matrix
+  - Greco_Egyptian_contact_and_carrier_control
+  - medieval_Kabbalah_kept_separate
+  - safe_prospective_revelatory_information_translation_only_after_source_binding
+
+guards:
+  - HEKHALOT_NE_ONE_TEXT
+  - SEFER_HA_RAZIM_NE_KABBALAH
+  - TEXTUAL_RITUAL_NE_OBSERVED_EFFECT
+  - CONTACT_NE_INDEPENDENT_DISCOVERY
+  - ANOMALY_NE_NAMED_AGENT_AUTHENTICATION
