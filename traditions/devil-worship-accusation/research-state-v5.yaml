@@ -1,0 +1,36 @@
+schema_version: on-theo.devil-worship-accusation-research-state.v5
+status: BOUNDED_METHOD_READINESS_AUDITED
+supersedes_for_current_research:
+  - traditions/devil-worship-accusation/research-state-v4.yaml
+
+branch:
+  name: research/devil-worship-accusation-history-v1-20260920
+  pr: 116
+
+readiness_audit: traditions/devil-worship-accusation/comparison-readiness-audit-v1.yaml
+
+bounded_models:
+  - WITCH_DEMONOLOGY_ACCUSATION_MODEL
+  - COLONIAL_DEMONIZATION_MODEL
+  - SATANIC_PANIC_MODEL
+
+comparison_eligible:
+  bounded:
+    - CONTACT_AND_REINTERPRETATION_MODEL_HOSTILE_DEMONOLOGICAL_RECODING
+    - CONTINUITY_MODEL_ACCUSATION_STEREOTYPE_RECURRENCE
+  partial:
+    - KNOWLEDGE_OR_DISCLOSURE_MODEL_TESTIMONY_MEDIATION
+
+general_method_promotion:
+  - ATTRIBUTION_STATUS
+  - TARGET_VOICE_STATUS
+  - SELF_IDENTIFICATION_STATUS
+  - INSTITUTIONAL_CONTEXT
+  - BEHAVIORAL_CORROBORATION_STATUS
+  - LABEL_SEMANTIC_DISTANCE
+
+next_portfolio_frontier: ORIGINAL_WORLD_EXPANSION_QUEUE_COMPLETION_AUDIT_V1
+
+guards:
+  - EXACT_HEAD_BINDING_REQUIRED
+  - TARGET_THEOLOGY_REQUIRES_TARGET_EVIDENCE

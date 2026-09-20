@@ -1,0 +1,93 @@
+schema_version: on-theo.devil-worship-accusation-evidence.v1
+status: ATTRIBUTION_HISTORY_FOUNDATION
+
+records:
+  - id: DWA-METHOD-001
+    source:
+      - VAN_LUIJK_CHILDREN_OF_LUCIFER_2016
+    evidence_class: SCHOLARLY_INTERPRETATION
+    propositions:
+      - attribution_and_self_identification_are_distinct_historical_processes
+      - modern_religious_Satanism_requires_positive_identification_not_hostile_attribution
+    supports:
+      - ATTRIBUTION_STATUS_DIMENSION
+      - SOURCE_CRITICISM_CONTROL
+    confidence: HIGH
+
+  - id: DWA-WITCH-001
+    source:
+      - BROEDEL_MALLEUS_CONSTRUCTION
+      - OXFORD_WITCHCRAFT_HISTORY
+    evidence_class: SCHOLARLY_INTERPRETATION
+    propositions:
+      - late_medieval_diabolical_witch_category_was_historically_constructed
+      - heresy_demonology_magic_and_sabbath_models_can_be_combined_into_conspiracy_category
+    supports:
+      - ACCUSATION_GENEALOGY
+      - JUDICIAL_SOURCE_CONTROL
+    confidence: HIGH
+
+  - id: DWA-COL-MEX-001
+    source:
+      - SOLODKOW_NUEVA_ESPANA
+      - LOPEZ_MERAZ_MENDIETA
+    evidence_class: SCHOLARLY_INTERPRETATION
+    propositions:
+      - colonial_evangelizers_used_the_Devil_as_a_conceptual_explanation_for_Indigenous_religious_difference
+    supports:
+      - COLONIAL_DEMONIZATION_MODEL
+      - CONTACT_AND_REINTERPRETATION_MODEL
+    confidence: BOUNDED_HIGH
+
+  - id: DWA-COL-ANDES-001
+    source:
+      - MACCORMACK_COLONIAL_PERU
+      - REDDEN_DIABOLISM_COLONIAL_PERU
+    evidence_class: SCHOLARLY_INTERPRETATION
+    propositions:
+      - missionaries_demonized_huacas_and_Andean_religious_practice
+      - missionary_demonological_interpretation_must_be_separated_from_Andean_source_meaning
+    supports:
+      - COLONIAL_DEMONIZATION_MODEL
+      - CONTACT_AND_REINTERPRETATION_MODEL
+    confidence: HIGH
+
+  - id: DWA-SRA-001
+    source:
+      - LANNING_FBI_NCJRS_1992
+      - LEWIS_SATANIC_RITUAL_ABUSE
+      - VICTOR_MORAL_PANIC
+      - DEYOUNG_DAYCARE_PANIC
+    evidence_class:
+      - DOCUMENTARY_PRACTICE
+      - SCHOLARLY_INTERPRETATION
+    propositions:
+      - widespread_satanic_ritual_abuse_network_was_not_documented_in_admitted_investigative_evidence
+      - satanic_cult_explanation_requires_independent_evidence
+      - broader_scare_is_widely_analyzed_as_moral_panic
+    supports:
+      - FOLKLORE_CONSPIRACY_MODEL
+      - SOURCE_CRITICISM_CONTROL
+    confidence: HIGH_FOR_NON_DOCUMENTATION_OF_WIDESPREAD_NETWORK
+
+dimensions:
+  ATTRIBUTION_STATUS:
+    values:
+      - SELF_IDENTIFIED
+      - OUTSIDER_ATTRIBUTION
+      - LEGAL_ALLEGATION
+      - DEMONOLOGICAL_THEORY
+      - COLONIAL_TRANSLATION
+      - FOLKLORE_OR_CONSPIRACY
+      - MIXED_OR_DISPUTED
+
+axis_status:
+  CONTACT_AND_REINTERPRETATION_MODEL: BOUNDED_DEMONOLOGICAL_RECODING
+  CONTINUITY_MODEL: BOUNDED_RECURRING_ACCUSATION_FORM_WITHOUT_CONTINUOUS_GROUP
+  KNOWLEDGE_OR_DISCLOSURE_MODEL: PARTIAL_TESTIMONY_INTERROGATION_MEDIATION
+  INSTITUTIONALIZATION_MODEL: PARTIAL_ACCUSER_INSTITUTIONS_NOT_TARGET_RELIGION
+  CROSS_TRADITION_COMPARISON: HOLD
+
+guards:
+  - ACCUSATION_REQUIRES_PROVENANCE
+  - TARGET_BELIEF_REQUIRES_INDEPENDENT_SOURCE

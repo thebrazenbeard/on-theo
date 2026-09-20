@@ -1,0 +1,23 @@
+schema_version: on-theo.devil-worship-accusation-research-state.v3
+status: COLONIAL_DEMONIZATION_LAYER_ADDED
+supersedes_for_current_research:
+  - traditions/devil-worship-accusation/research-state-v2.yaml
+
+branch:
+  name: research/devil-worship-accusation-history-v1-20260920
+  pr: 116
+
+new_artifacts:
+  colonial_packet: traditions/devil-worship-accusation/colonial-demonization-comparison-packet-v1.md
+  colonial_evidence: traditions/devil-worship-accusation/colonial-demonization-evidence-v1.yaml
+
+current_internal_status:
+  ATTRIBUTION_STATUS_DIMENSION: ACTIVE
+  WITCH_DEMONOLOGY_MODEL: BOUNDED
+  COLONIAL_DEMONIZATION_MODEL: BOUNDED_HOSTILE_SEMANTIC_RECODING
+  SATANIC_PANIC_MODEL: CANDIDATE
+  CONTACT_AND_REINTERPRETATION_MODEL: BOUNDED_COLONIAL_HOSTILE_RECODING
+  CROSS_TRADITION_COMPARISON: HOLD_PENDING_PANIC_AND_AUDIT
+
+next_frontier:
+  primary: SATANIC_PANIC_EVIDENCE_LADDER_V1
