@@ -1,0 +1,82 @@
+schema_version: on-theo.buddhism-neutral-axis-evidence.v2
+status: PRIMARY_TEXT_PLUS_VINAYA_RITUAL_EVIDENCE
+supersedes_for_current_research:
+  - traditions/buddhism/neutral-axis-evidence-v1.yaml
+
+existing_records_preserved:
+  - BUD-SELF-001
+  - BUD-SELF-002
+  - BUD-CAUSE-001
+  - BUD-CAUSE-002
+  - BUD-CONT-001
+  - BUD-KAMMA-001
+  - BUD-LIB-001
+  - BUD-LIB-002
+
+new_records:
+  - id: BUD-RITUAL-UPOSATHA-001
+    evidence:
+      - VINAYA_KD2
+      - AN_8_20
+    propositions:
+      - uposatha_is_calendar_bound_communal_observance
+      - Patimokkha_recitation_requires_procedural_conditions
+      - disclosure_of_offence_and_communal_purity_are_part_of_procedure
+      - communal_constitution_affects_validity
+    supports_axes:
+      - RITUAL_ORDER_MODEL
+      - INSTITUTIONALIZATION_MODEL
+    confidence: bounded_high_for_textual_procedure
+    guards:
+      - CANONICAL_FORM_NE_VERBATIM_BUDDHA_LIFETIME_EVENT
+      - DISCIPLINARY_PURITY_NE_SHINTO_KEGARE
+
+  - id: BUD-RITUAL-ORDINATION-001
+    evidence:
+      - VINAYA_KD1
+    propositions:
+      - full_ordination_is_communal_formal_act
+      - candidate_request_is_required_in_selected_procedure
+      - preceptor_and_qualified_assembly_are_structural
+      - motion_and_three_announcements_define_selected_legal_form
+      - silence_can_function_as_approval
+      - objection_can_block_communal_act
+    supports_axes:
+      - RITUAL_ORDER_MODEL
+      - INSTITUTIONALIZATION_MODEL
+    confidence: bounded_with_textual_layer_control
+    guards:
+      - ONE_VINAYA_RECENSION_NE_ALL_BUDDHIST_ORDINATION
+      - LATER_PROCEDURAL_ELABORATION_MUST_REMAIN_VISIBLE
+
+  - id: BUD-ASOKA-SANGHA-RITUAL-001
+    evidence:
+      - ASOKAN_SCHISM_EDICT_FAMILY
+      - SCHOLARLY_INTERPRETATION_OF_UPOSATHA_WORDING
+    propositions:
+      - organized_local_sangha_governance_is_epigraphically_anchored
+      - exact_relation_between_edict_wording_and_uposatha_procedure_is_disputed
+    supports_axes:
+      - INSTITUTIONALIZATION_MODEL
+      - RITUAL_ORDER_MODEL_PARTIAL_MATERIAL_CONTEXT
+    confidence: bounded
+
+comparison_status:
+  PERSON_OR_SELF_MODEL: BOUNDED
+  CAUSAL_ORDER_TYPE: BOUNDED
+  CONTINUITY_MODEL: BOUNDED
+  MORAL_CAUSALITY_MODEL: BOUNDED
+  LIBERATION_OR_FINAL_TRANSFORMATION_MODEL: BOUNDED
+  WORLD_STATUS_MODEL: PARTIAL
+  INSTITUTIONALIZATION_MODEL: BOUNDED_STRENGTHENED
+  RITUAL_ORDER_MODEL: BOUNDED_MONASTIC_LAYER
+  PURITY_POLLUTION_MODEL: NOT_ADMITTED
+  OFFERING_EXCHANGE_MODEL: NOT_ADMITTED
+
+guards:
+  - PALI_VINAYA_NE_COMPLETE_EARLY_BUDDHIST_RITUAL
+  - VINAYA_LAYERING_MUST_REMAIN_VISIBLE
+  - COMMUNAL_LEGAL_RITUAL_NE_MERE_SECULAR_ADMINISTRATION
+  - DISCIPLINARY_PURITY_NE_GENERIC_RITUAL_POLLUTION
+  - ASOKAN_INSTITUTION_NE_LATER_MONASTIC_PROCEDURE_IDENTITY
+  - SYSTEMS_ANALOGY_REMAINS_DOWNSTREAM
