@@ -1,0 +1,125 @@
+schema_version: on-theo.bounded-neutral-comparison-matrix.v2
+status: NON_CANONICAL_PILOT_MATRIX
+supersedes_for_current_research:
+  - synthesis/BOUNDED_NEUTRAL_COMPARISON_MATRIX_V1.yaml
+axis_schema: synthesis/NEUTRAL_COMPARISON_AXES_V9.yaml
+
+source_heads:
+  buddhism: 1c6c7a9a35901a529d377e1bd6fb86a88c1cdbe9
+  hindu: 614fa715fcacee0d7ec1ba573061d3e776e708d3
+  daoism: 483d1bcaebb57a00cda5eb30c15bc3908fdac438
+  shinto: 31b67b5a0aec7015878e5fcf9de2936db80cf83b
+  norse: 22e9fe10d1647a66458c54478c86e7ba6abd83ce
+  sumerian: 3fd5db6f05c008aeba4febe310de99e4ff484770
+
+updates_from_v1:
+  hindu:
+    RITUAL_ORDER_MODEL:
+      status: BOUNDED
+      evidence: VEDIC_RITUAL_ORDER_PACKET
+      summary: >
+        selected Vedic ritual sources require ordered fires, timing, offerings,
+        roles, sequence, and in some contexts expiatory correction
+    OFFERING_EXCHANGE_MODEL:
+      status: PARTIAL
+      evidence: VEDIC_RITUAL_ORDER_PACKET
+      summary: offerings are central but one universal reciprocity mechanism is not admitted
+    POLITICAL_SACRALIZATION_MODEL:
+      status: PARTIAL
+      evidence: SRAUTA_ROYAL_RITES
+      summary: sovereignty rites connect ritual performance and political authority in bounded Vedic contexts
+
+  norse:
+    CONTINUITY_MODEL:
+      status: BOUNDED
+      evidence: HELGAKVIDA_HUNDINGSBANA_II_PLUS_PREVIOUS_VOLUSPA
+      summary: >
+        selected human literary figures retain identity and agency after death,
+        while world/divine renewal remains a separate continuity layer
+    POSTMORTEM_PATH_MODEL:
+      status: BOUNDED
+      evidence: GRIMNISMAL_8_14_PLUS_SNORRI_LAYERED_CONTROL
+      summary: >
+        selected texts preserve Valholl, Folkvangr, and later Hel systematization;
+        plurality is stronger than one universal sorting rule
+    PERSON_OR_SELF_MODEL:
+      status: PARTIAL
+      evidence: ASK_EMBLA_PLUS_HUMAN_AFTERLIFE_LITERARY_CONTINUITY
+      summary: narrative identity persists after death but no complete philosophical self ontology is admitted
+    MORTUARY_RELATIONSHIP_MODEL:
+      status: PARTIAL
+      evidence: BURIAL_REOPENING_AND_MORTUARY_ARCHAEOLOGY
+      summary: graves, bodies, memory, and possessions can remain socially and ritually active
+    RITUAL_ORDER_MODEL:
+      status: BOUNDED
+      evidence: TISSO_PLUS_MORTUARY_ARCHAEOLOGY
+      summary: >
+        material evidence supports structured deposition, feasting, burial
+        construction, and ritual sequences without one universal liturgy
+
+preserved_axes_from_v1:
+  WORLD_ORIGIN_MODEL: true
+  CAUSAL_ORDER_TYPE: true
+  MORAL_CAUSALITY_MODEL: true
+  PURITY_POLLUTION_MODEL: true
+  FATE_CONSTRAINT_MODEL: true
+  WORLD_TERMINUS_RENEWAL_MODEL: true
+  CONTACT_AND_REINTERPRETATION_MODEL: true
+
+ritual_order_snapshot:
+  buddhism:
+    status: NOT_ADMITTED
+    note: current exact Buddhist source lane has institutional evidence but not a bounded comparative ritual-order packet
+  hindu:
+    status: BOUNDED
+    mechanism_class:
+      - fire_configuration
+      - calendrical_and_daily_timing
+      - offerings
+      - specialist_roles
+      - sequence
+      - expiation_or_error_correction
+  daoism:
+    status: BOUNDED
+    mechanism_class:
+      - registers
+      - petitions
+      - confession
+      - divine_offices
+      - authorized_religious_roles
+  shinto:
+    status: BOUNDED
+    mechanism_class:
+      - norito
+      - purity_state
+      - calendrical_rite
+      - offerings
+      - shrine_and_court_office
+  norse:
+    status: BOUNDED
+    mechanism_class:
+      - material_deposition
+      - feasting
+      - burial_construction
+      - animal_or_object_placement
+      - cult_space
+    guard: no_universal_liturgy_admitted
+  sumerian:
+    status: BOUNDED
+    mechanism_class:
+      - temple_administration
+      - offerings
+      - funerary_provisioning
+      - monumental_and_domestic_cult_context
+      - city_period_specificity
+
+matrix_guards:
+  - THIS_IS_NOT_A_COMMONALITY_SCORE
+  - SHARED_AXIS_NE_SHARED_MECHANISM
+  - SHARED_MECHANISM_NE_SHARED_ORIGIN
+  - RITUAL_ACTION_NE_METAPHYSICAL_PROOF
+  - MATERIAL_RITUAL_NE_TEXTUAL_DOCTRINE
+  - UNKNOWN_NE_ABSENCE
+  - NOT_ADMITTED_NE_FALSE
+  - CROSS_TRADITION_TRANSMISSION_REMAINS_ON_HOLD
+  - GOD_MODEL_MAPPING_NOT_INCLUDED

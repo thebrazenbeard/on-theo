@@ -1,0 +1,60 @@
+schema_version: on-theo.norse-synthesis-source-binding.v2
+status: NON_CANONICAL_EXACT_SOURCE_EXTENSION
+supersedes_for_current_research:
+  - synthesis/NORSE_PRIMARY_SOURCE_BINDING_V1.yaml
+
+source_extension:
+  branch: research/norse-witness-material-v1-20260920
+  head: 22e9fe10d1647a66458c54478c86e7ba6abd83ce
+  base_branch: asatru
+  draft_pr: 101
+
+source_artifacts:
+  textual:
+    - traditions/norse/voluspa-witness-proposition-packet-v1.md
+    - traditions/norse/human-afterlife-source-matrix-v1.md
+  material:
+    - traditions/norse/material-ritual-evidence-v1.md
+    - traditions/norse/mortuary-archaeology-boundary-v1.md
+  contact:
+    - traditions/norse/christianization-source-boundary-v1.md
+  modern:
+    - traditions/norse/modern-asatru-separation-v1.md
+  evidence:
+    - traditions/norse/neutral-axis-evidence-v2.yaml
+  state:
+    - traditions/norse/research-state-v3.yaml
+
+strengthened_axes:
+  - WORLD_ORIGIN_MODEL
+  - PERSON_OR_SELF_MODEL
+  - AGENCY_AND_AUTHORITY_MODEL
+  - FATE_CONSTRAINT_MODEL
+  - WORLD_TERMINUS_RENEWAL_MODEL
+  - CONTINUITY_MODEL
+  - POSTMORTEM_PATH_MODEL
+  - MORTUARY_RELATIONSHIP_MODEL
+  - RITUAL_ORDER_MODEL
+  - SACRAL_PRESENCE_MODEL
+  - OFFERING_EXCHANGE_MODEL
+  - CONTACT_AND_REINTERPRETATION_MODEL
+  - REVIVAL_RECONSTRUCTION_MODEL
+  - INSTITUTIONALIZATION_MODEL
+
+new_controls:
+  - ALL_BATTLE_DEAD_NE_VALHOLL
+  - SNORRI_SYSTEM_NE_PAN_SCANDINAVIAN_PAGAN_RULE
+  - HEROIC_POEM_NE_UNIVERSAL_AFTERLIFE_DOCTRINE
+  - GRAVE_GOOD_NE_AFTERLIFE_EQUIPMENT
+  - SHIP_BURIAL_NE_LITERAL_AFTERLIFE_VOYAGE
+  - MATERIAL_MORTUARY_PRACTICE_NE_LITERARY_DESTINATION
+
+readiness:
+  bounded_Norse_comparison: STRENGTHENED
+  human_afterlife_comparison: true_with_layer_controls
+  broad_preChristian_Norse_synthesis: false
+  modern_Asatru: SEPARATE_LIVING_TRADITION_LAYER
+
+effect_boundary:
+  canonical_effect: false
+  merge_authority: false
