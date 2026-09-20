@@ -1,0 +1,214 @@
+schema_version: on-theo.olmec-comparison-readiness-audit.v1
+status: LOW_TEXTUAL_CEILING_FOUNDATION_MATURE_FOR_BOUNDED_FUTURE_COMPARISON
+source_branch: research/olmec-material-iconographic-v1-20260920
+source_head_before_audit: d58daedf67649e292d8dec7d486bbacab8f3a0b1
+pr: 107
+
+method:
+  principle: >
+    Olmec comparison cells may be admitted only when the archaeological action,
+    spatial relation, object class, or repeated iconographic pattern is secure
+    enough to answer the neutral axis without requiring invented text or native
+    deity names.
+  controls:
+    - material_observation_separate_from_iconographic_interpretation
+    - site_and_period_required
+    - later_Mesoamerican_parallel_separate_from_Olmec_evidence
+    - undeciphered_writing_supplies_no_source_internal_semantic_proposition
+    - low_textual_ceiling_is_not_a_defect_to_be_filled_by_analogy
+
+comparison_eligible_existing_axes:
+  RITUAL_ORDER_MODEL:
+    status: BOUNDED_COMPARISON_ELIGIBLE
+    source_layer: LA_VENTA_COMPLEX_A_MATERIAL
+    strongest_result: >
+      La Venta Complex A securely attests planned ceremonial space and repeated,
+      differentiated ritual deposition including caches, massive subterranean
+      offerings, staged figurine assemblages, and elite funerary deposits.
+    required_ceiling: MATERIAL_ACTION_AND_SPATIAL_ORDER
+    guards:
+      - RITUAL_ACTION_NE_DOCTRINAL_EXPLANATION
+      - LA_VENTA_NE_ALL_OLMEC_SITES
+
+  INSTITUTIONALIZATION_MODEL:
+    status: BOUNDED_COMPARISON_ELIGIBLE
+    source_layers:
+      - LA_VENTA_CEREMONIAL_LABOR
+      - SAN_LORENZO_MONUMENTAL_LABOR
+      - CASCAJAL_PARTIAL_WRITING_PRACTICE
+    strongest_result: >
+      Major Olmec centers mobilized labor, long-distance materials, monumental
+      production and repeated ceremonial deposition at scales requiring durable
+      social organization; Cascajal additionally supplies partial evidence for
+      formal symbolic recording without identifying a scribal institution.
+    guards:
+      - INSTITUTIONALIZATION_NE_BUREAUCRACY_PROVED
+      - WRITING_OBJECT_NE_ARCHIVE_OR_PRIESTHOOD
+
+  OFFERING_EXCHANGE_MODEL:
+    status: PARTIAL_COMPARISON_ELIGIBLE
+    source_layer: LA_VENTA_COMPLEX_A
+    strongest_result: >
+      Structured deposits are secure and internally differentiated, but named
+      recipients, requested outcomes, reciprocity, prayers and efficacy remain
+      largely unavailable.
+    guards:
+      - OFFERING_NE_QUID_PRO_QUO
+      - DEPOSITION_NE_RECIPIENT_PROVED
+
+  POLITICAL_SACRALIZATION_MODEL:
+    status: PARTIAL_COMPARISON_ELIGIBLE
+    source_layers:
+      - SAN_LORENZO_MONUMENTAL_AUTHORITY
+      - LA_VENTA_ELITE_RITUAL_CONTEXT
+    strongest_result: >
+      Monumental portraiture, elite authority, ceremonial centers, high-status
+      burials and ritual labor are materially entangled, but current evidence
+      does not establish a readable divine-kingship doctrine.
+    guards:
+      - ELITE_AUTHORITY_NE_DIVINE_KINGSHIP
+      - POLITICAL_RITUAL_ENTANGLEMENT_NE_EXPLICIT_THEOLOGICAL_LEGITIMATION
+
+  MORTUARY_RELATIONSHIP_MODEL:
+    status: PARTIAL_COMPARISON_ELIGIBLE
+    source_layer: LA_VENTA_ELITE_FUNERARY
+    strongest_result: >
+      High-status dead were interred with rich greenstone deposits in selected
+      La Venta contexts, establishing elite mortuary provisioning but not
+      ancestor cult, destination, or soul ontology.
+    guards:
+      - FUNERARY_GOODS_NE_ANCESTOR_CULT
+      - FUNERARY_GOODS_NE_AFTERLIFE_EQUIPMENT_BY_DEFAULT
+      - ELITE_BURIAL_NE_GENERAL_POPULATION_MODEL
+
+  AGENCY_AND_AUTHORITY_MODEL:
+    status: PARTIAL_COMPARISON_ELIGIBLE
+    source_layer: MONUMENTAL_ELITE_AUTHORITY
+    strongest_result: >
+      Monumental portraiture and labor organization securely support privileged
+      human elite authority, while supernatural authority structures remain
+      largely iconographic and unnamed.
+    guards:
+      - POLITICAL_AUTHORITY_NE_SUPERNATURAL_AUTHORITY
+      - PORTRAIT_NE_DIVINITY
+
+  SACRAL_PRESENCE_MODEL:
+    status: PARTIAL_COMPARISON_ELIGIBLE
+    source_layers:
+      - RECURRENT_SUPERNATURAL_ICONOGRAPHY
+      - CEREMONIAL_DEPOSITION
+      - SACRED_LANDSCAPE_INTERPRETATION
+    strongest_result: >
+      Selected sites and objects materialize recurrent otherworldly,
+      agricultural, earth/water and human-spirit visual complexes, but no single
+      localization ontology or named divine system is recoverable.
+    guards:
+      - ICONOGRAPHIC_COMPLEX_NE_NATIVE_DEITY_NAME
+      - MATERIALIZATION_NE_ONE_PRESENCE_THEORY
+
+held_existing_axes:
+  WORLD_ORIGIN_MODEL:
+    status: HOLD
+    reason: >
+      No readable Olmec cosmogonic text or sufficiently controlled material
+      sequence yields a source-internal world-origin proposition.
+
+  WORLD_TERMINUS_RENEWAL_MODEL:
+    status: HOLD
+    reason: no bounded Olmec source packet answers this question.
+
+  PERSON_OR_SELF_MODEL:
+    status: HOLD
+    reason: >
+      Human, infant, mask and composite imagery is rich but does not yet define
+      what constitutes a person/self without heavy iconographic reconstruction.
+
+  TRANSFORMATION_MODEL:
+    status: HOLD
+    reason: >
+      Hybrid morphology and composite beings do not establish transformation
+      events, mechanisms, or identity continuity.
+
+  CONTINUITY_MODEL:
+    status: HOLD
+    reason: >
+      Diachronic San Lorenzo-La Venta variation and later Mesoamerican parallels
+      do not yield one controlled religious continuity proposition.
+
+  POSTMORTEM_PATH_MODEL:
+    status: HOLD
+    reason: elite funerary deposits do not establish a route or destination.
+
+  KNOWLEDGE_OR_DISCLOSURE_MODEL:
+    status: HOLD
+    reason: Cascajal is undeciphered and iconographic material does not identify a controlled disclosure mechanism.
+
+  CONTACT_AND_REINTERPRETATION_MODEL:
+    status: NOT_ADMITTED_AS_INTERNAL_TRADITION_CELL
+    reason: >
+      Olmec interaction with other Formative regions is an interregional
+      transmission problem rather than a later contact/reinterpretation layer
+      within one continuously sourceable Olmec tradition.
+
+new_axis_candidates:
+  SACRED_LAND_PLACE_MODEL:
+    status: PARTIAL_CANDIDATE
+    evidence:
+      - LA_VENTA_PLANNED_CEREMONIAL_LANDSCAPE
+      - OXTOTITLAN_CAVE_LAYER
+      - CURRENT_SACRED_LANDSCAPE_SCHOLARSHIP
+    limitation: >
+      Much cosmographic meaning remains scholarly reconstruction, and
+      outside-heartland examples must not become heartland doctrine.
+
+  RELATIONAL_ORDER_MODEL:
+    status: PARTIAL_CANDIDATE
+    evidence:
+      - GREENSTONE_AGRICULTURAL_INTERPRETATION
+      - HUMAN_SPIRIT_PORTABLE_ART_SCHOLARSHIP
+      - SACRED_LANDSCAPE_INTERPRETATION
+    limitation: high_interpretive_dependency
+
+  SACRIFICE_AND_BODILY_OFFERING_MODEL:
+    status: NOT_YET_OLMEC_ADMITTED
+    reason: >
+      Some Formative sacrifice evidence exists in the broader Olmec/Preclassic
+      literature, but the current Olmec lane has not source-bound it deeply
+      enough to add a comparison cell.
+
+readiness_result:
+  internal_foundation_complete: true
+  bounded_future_comparison_allowed: true
+  comparison_scope: LOW_TEXTUAL_CEILING_MATERIAL_FIRST
+  immediate_matrix_insertion_required: false
+  exact_head_binding_required: true
+  systematic_theology_claim_allowed: false
+  named_pantheon_claim_allowed: false
+  one_way_mother_culture_model_allowed: false
+
+transmission_result:
+  interregional_exchange: STRONG
+  style_dispersion: STRONG
+  one_way_mother_culture_default: NOT_SUPPORTED
+  specific_religious_transmission: CASE_BY_CASE_HOLD
+
+strongest_method_result: >
+  Olmec evidence is comparison-ready only for questions answerable by material,
+  spatial and tightly controlled iconographic evidence; the absence of a
+  deciphered theological corpus must remain visible rather than being repaired
+  through later Maya, Nahua or generic Mesoamerican analogy.
+
+next_portfolio_frontier:
+  primary: DINE_PUBLIC_SOURCE_RESEARCH_PACKET_V1
+  reason: >
+    Olmec now has a defensible low-textual-certainty foundation. The portfolio
+    should return to living Indigenous North American traditions, using the
+    public-source and restricted-knowledge controls learned from Lakota rather
+    than deepening Mesoamerica indefinitely.
+
+guards:
+  - COMPARISON_READY_NE_SYSTEMATIC_THEOLOGY_RECOVERED
+  - MATERIAL_EVIDENCE_NE_TEXTUAL_THEOLOGY
+  - ICONOGRAPHIC_LABEL_NE_NATIVE_NAME
+  - UNDECIPHERED_WRITING_NE_READABLE_SOURCE_PROPOSITION
+  - MOTHER_CULTURE_NE_DEFAULT_CAUSAL_MODEL
