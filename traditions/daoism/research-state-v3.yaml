@@ -1,0 +1,53 @@
+schema_version: on-theo.daoism-research-state.v3
+status: CLASSICAL_PLUS_EARLY_RELIGIOUS_TRANSITION_ACTIVE
+parent_head: 9abbfb31db70b8102af41bd483e1c38075e23fb9
+parent_state: traditions/daoism/research-state-v2.yaml
+
+new_artifacts:
+  - traditions/daoism/celestial-masters-xianger-packet-v1.md
+  - traditions/daoism/religious-daoism-transition-v1.yaml
+
+early_religious_lanes:
+  CELESTIAL_MASTERS:
+    traditional_foundation: 142_CE
+    earliest_direct_controlled_evidence: ZHANG_PU_STELE_173_CE
+    status: BOUNDED
+  XIANGER:
+    manuscript: S6825
+    copy_date: APPROX_500_CE
+    underlying_commentary: APPROX_200_CE_DISPUTED
+    status: BOUNDED
+  LORD_LAO:
+    late_second_century_transformation_texts: STARTED
+
+comparison_axes_strengthened:
+  INSTITUTIONALIZATION_MODEL: true
+  KNOWLEDGE_OR_DISCLOSURE_MODEL: true
+  AGENCY_AND_AUTHORITY_MODEL: true
+  MORAL_CAUSALITY_MODEL: true
+  INTERVENTION_MODEL: true
+
+diachronic_result:
+  proposition: >
+    Daoist source history contains a documented transition from selected
+    classical descriptions of generative/non-dominating Dao toward religious
+    systems featuring Lord Lao revelation, divine offices, registers, confession,
+    petitions, and organized communities.
+  classification: HISTORICAL_RECONSTRUCTION
+  guard: NOT_ONE_LINEAR_OR_TOTAL_TRANSFORMATION
+
+readiness:
+  bounded_Daoist_comparison: strengthened
+  broad_Daoism_comparison: false
+  Shangqing: pending
+  Lingbao: pending
+  Buddhist_contact: pending
+  medieval_and_modern_lanes: pending
+
+next_frontiers:
+  - Zhang_Pu_stele_direct_text_binding
+  - Xianger_line_by_line_commentary_map
+  - Hanzhong_institutional_chronology
+  - Shangqing_364_370_revelation_packet
+  - Lingbao_Buddhist_contact_packet
+  - Daoist_material_epigraphy_register
