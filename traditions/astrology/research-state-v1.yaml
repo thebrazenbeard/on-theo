@@ -6,105 +6,121 @@ deepening_commit_v2: aa402ac5c584491695b641d8e844d222fa5342e2
 corpus_falsification_commit_v3: b4a28fe8cb0e48194451e61a22e3b41decc14824
 primary_text_transmission_commit_v4: 6b1b26c9abffddf0af33759e421eeadbd00bd837
 documentary_technique_commit_v5: cfbe88c909e3d70729a6c7435c7f0ae67eba5b07
-status: FULL_BABYLONIAN_CATALOG_AND_REFERENCE_SIMULATION_V6
+catalog_reference_sim_commit_v6: 44a1bce72e777c43e5a090dae71b4e6c448da628
+status: BLIND_BENCHMARK_HARDENED_V7
 merge_status: UNMERGED
 
-corrections:
-  - id: greek_earliest_documentary_horoscope
-    obsolete: 10_BCE_as_earliest_original_Greek_document
-    current: BKT_X_29_P11831_29_BCE_June_4_5
-    authority: https://berlpap.smb.museum/06616/?lang=en
-    disposition: v1_registry_superseded_by_v2
+simulation:
+  development_generator:
+    path: experiments/astrology/reference_simulation.py
+    status: IMPLEMENTED_SYNTHETIC_V1
+    blind_safe: false
+    reason:
+      - world_label_in_development_manifest
+      - latent_birth_fields_in_development_output
+      - model_probability_and_trait_state_in_development_output
 
-coverage:
-  mesopotamian:
-    full_top_level_catalog:
-      horoscope_texts: 28
-      birth_notes: 4
-      artifact: traditions/astrology/babylonian-corpus-catalog-v3.yaml
-    date_range:
-      earliest: 410_BCE
-      latest_dated: 69_BCE
-    field_level_examples: expanded
-    remaining:
-      - complete_line_level_transcription
-      - museum_accession_crosslinks
-      - provenance_city_for_each_text
-      - computation_source_by_field
+  blind_benchmark:
+    generator: experiments/astrology/blind_benchmark.py
+    scorer: experiments/astrology/score_benchmark.py
+    protocol: experiments/astrology/BLIND_BENCHMARK.md
+    status: IMPLEMENTED_V1
+    world_classes: 8
+    public_projection:
+      births:
+        - agent_id
+        - birth_t
+      celestial_state:
+        - orbital_longitudes
+        - distance_proxies
+        - illumination
+        - physical_proxy
+        - tidal_proxy
+        - angular_code
+        - sign_code
+      outcomes:
+        - t
+        - agent_id
+        - binary_outcome
+        - known_environment
+      culture:
+        - observable_cultural_claims
+    withheld:
+      - world_label
+      - run_seed
+      - coupling_class
+      - hidden_controller
+      - base_trait
+      - initialized_trait
+      - birth_signal
+      - current_trait
+      - exact_model_probability
+      - private_cultural_belief_state
+    integrity:
+      seed_commitment: SHA256
+      answer_key_commitment: SHA256
+      frozen_submission_required: true
+      answer_key_commitment_verification_supported: true
 
-  greco_roman:
-    documentary_registry: v2_corrected
-    earliest_papyrus_anchor: BKT_X_29_29_BCE
-    Dorotheus:
-      technique_matrix: v2_partial_chapter_matrix
-    Valens:
-      technique_matrix: v1
-      worked_chart_registry: v1_seeded
-    remaining:
-      - full_documentary_registry
-      - Dorotheus_every_chapter
-      - Valens_all_worked_charts
-      - new_papyrology_crosswalk
+  scoring:
+    outputs:
+      - coverage
+      - exact_accuracy
+      - unresolved_count
+      - per_world_recall
+      - confusion_matrix
+    unresolved_class_allowed: true
 
-  indian_jyotisa:
-    Yavanajataka:
-      dating_dispute: active
-      manuscript_witness_map: v1_created
-      fixed_149_150_and_269_270_dates: not_secure
-    Varahamihira:
-      primary_map: started
+  tests:
+    reference_simulation_previous: 5_of_5_PASS
+    blind_benchmark_local_precommit: 7_of_7_PASS
+    note: LOCAL_TEST_PASS_NE_CI_NE_DEPLOYMENT_NE_SCIENTIFIC_VALIDATION
 
-  simulation:
-    conceptual_interface: v1
-    falsification_protocol: v1
-    implementation_spec: v1
-    reference_implementation:
-      path: experiments/astrology/reference_simulation.py
-      status: IMPLEMENTED_SYNTHETIC_V1
-      worlds: 8
-      real_astronomy: false
-    schemas:
-      - experiments/astrology/world-manifest.schema.json
-      - experiments/astrology/analysis-submission.schema.json
-    tests:
-      path: experiments/astrology/test_reference_simulation.py
-      local_precommit_result: 5_of_5_PASS
-      note: local_test_is_not_CI_or_runtime_deployment
+historical_corpus:
+  babylonian:
+    top_level_catalog_complete: true
+    horoscope_texts: 28
+    birth_notes: 4
+  greek:
+    earliest_papyrus_anchor: BKT_X_29_P11831_29_BCE
+    stale_10_BCE_earliest_claim: superseded
+  Dorotheus:
+    technique_matrix: v2_partial
+  Valens:
+    technique_matrix: v1
+    worked_chart_registry: v1_seeded
+  Yavanajataka:
+    dating_dispute: active
+    manuscript_witness_map: v1
 
-new_v6_artifacts:
-  - traditions/astrology/babylonian-corpus-catalog-v3.yaml
-  - traditions/astrology/greek-horoscope-registry-v2.yaml
-  - traditions/astrology/documentary-corpus-index-v2.yaml
-  - traditions/astrology/yavanajataka-manuscript-witnesses-v1.yaml
-  - traditions/astrology/dorotheus-technique-matrix-v2.yaml
-  - traditions/astrology/valens-worked-chart-registry-v1.yaml
-  - experiments/astrology/README.md
-  - experiments/astrology/reference_simulation.py
-  - experiments/astrology/test_reference_simulation.py
-  - experiments/astrology/world-manifest.schema.json
-  - experiments/astrology/analysis-submission.schema.json
+new_v7_artifacts:
+  - experiments/astrology/blind_benchmark.py
+  - experiments/astrology/score_benchmark.py
+  - experiments/astrology/test_blind_benchmark.py
+  - experiments/astrology/blind-run.schema.json
+  - experiments/astrology/benchmark-submissions.schema.json
+  - experiments/astrology/BLIND_BENCHMARK.md
 
 guards:
-  - SOURCE_CORRECTION_SUPERSEDES_STALE_REGISTRY
-  - ASTRONOMICAL_YEAR_NE_CIVIL_BCE
-  - BIRTH_DATE_NE_TABLET_WRITING_DATE
-  - BABYLONIAN_HOROSCOPE_NE_HELLENISTIC_ASCENDANT_CHART
-  - DOCUMENTARY_FORM_NE_INTERPRETIVE_VALIDITY
-  - MANUSCRIPT_READING_NE_EDITORIAL_EMENDATION
-  - SIMULATION_IMPLEMENTATION_NE_REAL_WORLD_EVIDENCE
-  - SYNTHETIC_ASTRONOMY_NE_EPHEMERIS
-  - LOCAL_TEST_PASS_NE_DEPLOYMENT_OR_SCIENTIFIC_VALIDATION
-  - TRUE_SIGNAL_NE_CORRECT_HISTORICAL_MECHANISM
+  - DEVELOPMENT_OUTPUT_NE_BLIND_OUTPUT
+  - HIDE_GROUND_TRUTH_FILE_ALONE_NE_VALID_BLINDING
+  - PUBLIC_PROJECTION_MUST_EXCLUDE_LATENT_STATE
+  - ANSWER_KEY_COMMITMENT_NE_PROOF_OF_PRE_REVEAL_SUBMISSION_TIME
+  - CONFUSION_MATRIX_NE_REAL_WORLD_VALIDATION
+  - IDENTIFIABLE_SYNTHETIC_CAUSE_NE_REAL_CAUSE
+  - SIMULATION_IMPLEMENTATION_NE_ASTROLOGY_EVIDENCE
+  - UNRESOLVED_IS_VALID_CLASSIFICATION
+  - REDESIGN_IF_WORLD_CLASSES_ARE_NOT_OBSERVATIONALLY_SEPARABLE
 
 next_frontiers:
-  - full_Babylonian_line_level_registry
-  - full_Greek_documentary_horoscope_registry
-  - Dorotheus_complete_chapter_matrix
-  - Valens_complete_worked_chart_registry
+  - implement_baseline_blind_analyst
+  - run_multi_seed_synthetic_identifiability_benchmark
+  - quantify_confusion_pairs_and_failure_modes
+  - add_train_holdout_temporal_and_agent_splits
+  - add_submission_commitment_workflow_on_durable_surface
+  - build_real_ephemeris_adapter_only_after_synthetic_identifiability
+  - continue_full_Greek_documentary_registry
+  - continue_Dorotheus_and_Valens_primary_extraction
   - Shiji_Tianguan_shu_primary_omen_table
   - Gauquelin_dataset_replication_ledger
   - empirical_registry_v3_primary_source_binding
-  - reference_simulation_scoring_harness
-  - blinded_generator_analyst_split
-  - synthetic_holdout_benchmark_suite
-  - optional_real_ephemeris_adapter_after_synthetic_identifiability

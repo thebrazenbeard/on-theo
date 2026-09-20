@@ -33,7 +33,7 @@ state is:
 - `S6_CULTURAL_ONLY`
 - `S7_WEAK_SIGNAL_CULTURAL`
 
-## Run
+## Development run
 
 ```bash
 python experiments/astrology/reference_simulation.py \
@@ -44,7 +44,7 @@ python experiments/astrology/reference_simulation.py \
   --out simulation-output
 ```
 
-Outputs:
+Development outputs include:
 
 - `world_manifest.json`
 - `agent_births.csv`
@@ -53,8 +53,54 @@ Outputs:
 - `cultural_claims.csv`
 - `ground_truth_private.json`
 
-The analyst should not receive `ground_truth_private.json` until after an
-analysis submission is frozen.
+### Important correction
+
+The development output is **not a blind analyst surface**.
+
+It intentionally exposes useful debugging fields, including the selected world
+in its manifest and latent/internal variables in some tables.
+
+Do not use development output for a causal-identification benchmark.
+
+Use `blind_benchmark.py` instead.
+
+## Blind benchmark
+
+Protocol:
+`experiments/astrology/BLIND_BENCHMARK.md`
+
+Generate shuffled unlabeled runs:
+
+```bash
+python experiments/astrology/blind_benchmark.py \
+  --out blind-benchmark \
+  --repeats 10 \
+  --agents 500 \
+  --steps 720 \
+  --benchmark-seed 23
+```
+
+Only `blind-benchmark/public/` is analyst-visible.
+
+The private answer key is committed by SHA-256 in the public benchmark index so
+it can be verified after predictions are frozen.
+
+Score frozen submissions:
+
+```bash
+python experiments/astrology/score_benchmark.py \
+  --public-index blind-benchmark/public/benchmark.json \
+  --answer-key blind-benchmark/private/answer_key.json \
+  --submissions submissions.json \
+  --out score_report.json
+```
+
+The score report contains:
+- coverage;
+- exact classification accuracy;
+- unresolved count;
+- per-world recall;
+- a full confusion matrix.
 
 ## Important implementation choice
 
@@ -70,24 +116,17 @@ pipeline can correctly recover known synthetic ground truth.
 
 ## Reproducibility
 
-The same world, agent count, step count and seed must produce byte-equivalent
-logical records.
-
-Run tests:
+Run development tests:
 
 ```bash
 python experiments/astrology/test_reference_simulation.py
 ```
 
-## Blinding rule
+Run blind-boundary/scoring tests:
 
-Generator role:
-knows world type and ground truth.
-
-Analyst role:
-receives observable tables but not `ground_truth_private.json`.
-
-Changing a controller rule after holdout evaluation invalidates the run.
+```bash
+python experiments/astrology/test_blind_benchmark.py
+```
 
 ## Research ceiling
 
