@@ -1,0 +1,227 @@
+schema_version: on-theo.haudenosaunee-comparison-readiness-audit.v1
+status: PUBLIC_CONFEDERACY_NATION_FOUNDATION_MATURE_FOR_BOUNDED_FUTURE_COMPARISON
+source_branch: research/haudenosaunee-public-source-v1-20260920
+source_head_before_audit: 8723af7d7340e4a01427439a78f2c2fa500b28e7
+pr: 112
+
+method:
+  principle: >
+    Haudenosaunee comparison cells must distinguish Confederacy-level public
+    self-description from nation-specific evidence. Current institutional
+    statements, living ceremonial categories, treaty memory, and later
+    revitalization history are not collapsed into one timeless "Iroquois
+    religion."
+  required_fields:
+    - confederacy_or_nation_scope
+    - current_or_historical_layer
+    - evidence_mode
+    - exact_source_binding
+    - claim_ceiling
+
+comparison_eligible_existing_axes:
+  POLITICAL_SACRALIZATION_MODEL:
+    status: BOUNDED_COMPARISON_ELIGIBLE
+    source_layers:
+      - CURRENT_HAUDENOSAUNEE_CONFEDERACY_GREAT_LAW
+      - ONONDAGA_SOVEREIGNTY_PUBLIC_LAYER
+      - PUBLIC_TREATY_SOVEREIGNTY_MEMORY
+    strongest_result: >
+      Current Haudenosaunee public sources explicitly join spiritual, moral and
+      social law with Confederacy governance, nation sovereignty, title
+      responsibilities and treaty relations.
+    guards:
+      - CURRENT_SELF_DESCRIPTION_NE_EXACT_PRECONTACT_WORDING
+      - SACRED_POLITICAL_ORDER_NE_DIVINE_MONARCHY
+
+  INSTITUTIONALIZATION_MODEL:
+    status: BOUNDED_COMPARISON_ELIGIBLE
+    source_layers:
+      - GRAND_COUNCIL
+      - NATION_COUNCILS
+      - CLAN_MOTHERS
+      - CHIEFS
+      - FAITHKEEPERS
+      - LONGHOUSE_PUBLIC_INSTITUTION
+      - WAMPUM_DOCUMENTARY_PRACTICE
+    strongest_result: >
+      Public Haudenosaunee order is institutionally distributed across nation,
+      clan, Confederacy, ceremonial and documentary-memory structures.
+    guards:
+      - INSTITUTIONALIZATION_NE_CENTRALIZATION
+      - CONFEDERACY_NE_ONE_NATION
+
+  AGENCY_AND_AUTHORITY_MODEL:
+    status: BOUNDED_COMPARISON_ELIGIBLE
+    source_layers:
+      - CLAN_MOTHER_TITLE_AUTHORITY
+      - CHIEF_REPRESENTATIVE_AUTHORITY
+      - FAITHKEEPER_SPIRITUAL_CEREMONIAL_AUTHORITY
+      - GRAND_COUNCIL_SHARED_AUTHORITY
+    strongest_result: >
+      Authority is publicly distributed among distinct office types with
+      different selection, accountability, ceremonial and governance roles.
+    guards:
+      - CLAN_MOTHER_NE_GENERIC_MATRIARCH
+      - CHIEF_NE_MONARCH
+      - FAITHKEEPER_NE_GENERIC_PRIEST
+
+  KNOWLEDGE_OR_DISCLOSURE_MODEL:
+    status: BOUNDED_COMPARISON_ELIGIBLE
+    source_layers:
+      - WAMPUM_DOCUMENTARY_MEMORY
+      - THANKSGIVING_ADDRESS_PUBLIC_ORAL_RELATIONAL_PRACTICE
+      - GREAT_LAW_PUBLIC_TRADITION
+    strongest_result: >
+      Law, treaty memory and relational knowledge can be stabilized through
+      oral performance, office, wampum and recurrent public address without
+      requiring alphabetic textualization.
+    guards:
+      - WAMPUM_NE_ALPHABETIC_TEXT
+      - PUBLIC_TRADITION_NE_ONE_FIXED_CANONICAL_WORDING
+
+  CONTACT_AND_REINTERPRETATION_MODEL:
+    status: BOUNDED_COMPARISON_ELIGIBLE
+    source_layers:
+      - TWO_ROW_LIVING_TREATY_PRINCIPLE
+      - COVENANT_CHAIN_RENEWAL
+      - CANANDAIGUA_TREATY_1794
+      - HANDSOME_LAKE_LATER_REVITALIZATION
+    strongest_result: >
+      Contact includes parallel-sovereignty treaty relations, covenant renewal,
+      documented written treaties and later religious revitalization rather than
+      one generic assimilation or syncretism process.
+    guards:
+      - TAWAGONSHI_DOCUMENT_NE_TWO_ROW_TRADITION
+      - CONTACT_NE_ASSIMILATION
+      - HANDSOME_LAKE_NE_CONFEDERACY_FOUNDING_LAYER
+
+  CONTINUITY_MODEL:
+    status: PARTIAL_COMPARISON_ELIGIBLE
+    source_layers:
+      - LIVING_CONFEDERACY_OFFICES
+      - TREATY_MEMORY_AND_RENEWAL
+      - WAMPUM_DOCUMENTARY_PRACTICE
+      - LONGHOUSE_AND_HANDSOME_LAKE_CURRENT_LAYER
+    strongest_result: >
+      Public institutions actively reproduce Great Law governance, treaty
+      memory, title offices, ceremonial categories and later revitalization
+      traditions while historical form and wording change.
+    guards:
+      - CONTINUITY_NE_UNCHANGED_FORM
+
+  RITUAL_ORDER_MODEL:
+    status: PARTIAL_COMPARISON_ELIGIBLE
+    source_layers:
+      - THANKSGIVING_ADDRESS_PUBLIC_CATEGORY
+      - ONEIDA_SEASONAL_CEREMONIAL_PUBLIC_CATEGORIES
+    strongest_result: >
+      Public ritual order includes thanksgiving framing and seasonally/ecologically
+      timed ceremonial categories, but detailed procedure is unnecessary and
+      nation-specific.
+    guards:
+      - PUBLIC_CATEGORY_NE_PROCEDURAL_RECONSTRUCTION
+      - ONEIDA_NE_ALL_NATIONS_IDENTICAL
+
+  MORTUARY_RELATIONSHIP_MODEL:
+    status: PARTIAL_COMPARISON_ELIGIBLE
+    source_layer: ONEIDA_COMMUNITY_DEATH_FEAST
+    strongest_result: >
+      Current Oneida public evidence explicitly honors ancestors who have passed
+      through a seasonally repeated community feast.
+    guards:
+      - ONEIDA_LAYER_NE_HAUDENOSAUNEE_WIDE_AFTERLIFE_MODEL
+      - ANCESTOR_RELATION_NE_POSTMORTEM_PATH
+
+held_existing_axes:
+  WORLD_ORIGIN_MODEL:
+    status: HOLD
+    reason: >
+      Creation traditions are publicly available in some nation sources, but no
+      source-controlled multi-nation packet has yet separated shared structure,
+      nation variation and later redaction.
+
+  PERSON_OR_SELF_MODEL:
+    status: HOLD
+    reason: >
+      Clan identity, name, mind, relational personhood and ceremonial identity
+      are important but under-decomposed.
+
+  POSTMORTEM_PATH_MODEL:
+    status: HOLD
+    reason: >
+      Oneida ancestor-feast evidence does not establish a path/destination model.
+
+  TRANSFORMATION_MODEL:
+    status: HOLD
+
+  SACRAL_PRESENCE_MODEL:
+    status: HOLD_PARTIAL
+    reason: >
+      Creator, celestial powers, Earth and other more-than-human relations are
+      publicly present, but no controlled presence/localization schema has yet
+      been built.
+
+new_axis_candidates:
+  RELATIONAL_ORDER_MODEL:
+    status: STRONG_NEW_AXIS_CANDIDATE
+    evidence:
+      - traditions/haudenosaunee/neutral-axis-evidence-v1.yaml
+      - traditions/haudenosaunee/authority-evidence-v1.yaml
+      - traditions/haudenosaunee/seasonality-evidence-v1.yaml
+    strongest_result: >
+      Thanksgiving, Good Mind, distributed authority, ecological cycles,
+      intergenerational responsibility and treaty relations are publicly
+      structured as relational obligations.
+
+  SACRED_TIME_CALENDAR_MODEL:
+    status: STRONG_NEW_AXIS_CANDIDATE
+    evidence:
+      - traditions/haudenosaunee/seasonality-evidence-v1.yaml
+    subtype: SEASONAL_ECOLOGICAL_OFFICE_GOVERNED_TIME
+    strongest_result: >
+      Current Oneida ceremonial timing is organized through seasons,
+      agriculture, moon and Faithkeeper observation rather than a fixed
+      numerical divinatory calendar.
+
+  DOCUMENTARY_MEMORY_MODEL:
+    status: STRONG_SCHEMA_CANDIDATE
+    neutral_question: >
+      How are law, treaty, title and collective memory stabilized through oral,
+      material, performative and written documentary forms?
+    evidence:
+      - WAMPUM
+      - ORAL_TRADITION
+      - WRITTEN_TREATIES
+    reason: >
+      Wampum shows that documentary practice cannot be reduced to alphabetic
+      writing or manuscript transmission.
+
+readiness_result:
+  internal_public_foundation_complete: true
+  bounded_future_comparison_allowed: true
+  exact_head_binding_required: true
+  immediate_matrix_insertion_required: false
+  nation_scope_required: true
+  current_self_description_must_remain_current: true
+
+strongest_method_result: >
+  Haudenosaunee public evidence is comparison-ready when Confederacy and nation
+  layers remain distinct: Great Law governance, distributed title authority,
+  thanksgiving relations, seasonal ceremonial time, wampum documentary memory,
+  treaty sovereignty and later revitalization can be compared without inventing
+  one timeless Iroquois religion.
+
+next_portfolio_frontier:
+  primary: ANDEAN_INCA_DIACHRONIC_PACKET_V1
+  reason: >
+    Six Indigenous-Americas breadth lanes now have bounded foundations. The next
+    portfolio expansion should move into the Andes, where imperial Inca sources,
+    archaeology, khipu/documentary practice, colonial Quechua chronicles and
+    living Andean communities create a distinct evidence architecture.
+
+guards:
+  - COMPARISON_READY_NE_TRADITION_COMPLETE
+  - CONFEDERACY_NE_ONE_NATION
+  - NATION_SOURCE_NE_CONFEDERACY_UNIVERSAL
+  - PUBLIC_CEREMONY_NE_PROCEDURE
+  - DOCUMENT_CRITICISM_NE_TRADITION_ERASURE

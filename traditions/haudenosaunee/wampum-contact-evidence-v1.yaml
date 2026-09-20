@@ -1,0 +1,96 @@
+schema_version: on-theo.haudenosaunee-wampum-contact-evidence.v1
+status: BOUNDED_MULTI_MECHANISM_CONTACT_LAYER
+
+records:
+  - id: HAU-WAMPUM-DOC-001
+    evidence:
+      - ONONDAGA_WAMPUM_PUBLIC_SOURCES
+    evidence_class:
+      - MATERIAL_DOCUMENTARY_PRACTICE
+      - MODERN_TRADITION
+    propositions:
+      - wampum_is_used_for_messages_treaties_history_ceremony_and_office
+      - meaning_is_sustained_through_material_form_oral_interpretation_and_institutional_memory
+    supports:
+      - KNOWLEDGE_OR_DISCLOSURE_MODEL
+      - INSTITUTIONALIZATION_MODEL
+    confidence: HIGH_CURRENT_PUBLIC
+
+  - id: HAU-TWOROW-LIVING-001
+    evidence:
+      - ONONDAGA_TWO_ROW_PUBLIC_TRADITION
+      - CURRENT_SCHOLARLY_INDIGENOUS_SOVEREIGNTY_ANALYSIS
+    propositions:
+      - Two_Row_is_currently_interpreted_as_parallel_equal_paths_and_non_interference
+      - tradition_remains_living_sovereignty_relation
+    supports:
+      - CONTACT_AND_REINTERPRETATION_MODEL
+      - POLITICAL_SACRALIZATION_MODEL
+      - RELATIONAL_ORDER_MODEL
+    confidence: BOUNDED_HIGH_FOR_LIVING_INTERPRETATION
+
+  - id: HAU-TAWAGONSHI-DOC-001
+    evidence:
+      - GEHRING_STARNA_FENTON_1987
+      - HERMKENS_NOORDEGRAAF_VAN_DER_SIJS_2013
+      - ONONDAGA_VENABLES_DEFENSE_2012
+    evidence_class:
+      - SCHOLARLY_INTERPRETATION
+      - SOURCE_CRITICISM
+    propositions:
+      - purported_1613_written_Tawagonshi_document_is_strongly_challenged_as_20th_century_forgery
+      - Onondaga_public_history_preserves_counterargument_and_independent_oral_tradition
+    supports:
+      - SOURCE_CRITICISM_CONTROL
+    confidence: STRONG_FOR_DOCUMENT_DISPUTE
+    guards:
+      - DOCUMENT_AUTHENTICITY_NE_ORAL_TRADITION_AUTHENTICITY
+
+  - id: HAU-COVENANT-001
+    evidence:
+      - ONONDAGA_COVENANT_CHAIN
+      - ONONDAGA_TREATIES
+    propositions:
+      - Covenant_Chain_is_publicly_described_as_peace_friendship_and_continuing_renewal
+      - treaty_relation_has_political_and_spiritual_commitment_dimensions
+    supports:
+      - CONTACT_AND_REINTERPRETATION_MODEL
+      - CONTINUITY_MODEL_PARTIAL
+    confidence: BOUNDED_CURRENT_PUBLIC
+
+  - id: HAU-CANANDAIGUA-001
+    source: TREATY_OF_CANANDAIGUA_1794
+    evidence_class:
+      - DOCUMENTARY_PRACTICE
+      - TREATY_TEXT
+      - LIVING_TREATY_MEMORY
+    propositions:
+      - documented_1794_treaty_remains_currently_invoked_in_Haudenosaunee_US_relation
+    supports:
+      - CONTACT_AND_REINTERPRETATION_MODEL
+      - CONTINUITY_MODEL_PARTIAL
+    confidence: HIGH
+
+  - id: HAU-HANDSOME-001
+    source: ONEIDA_HANDSOME_LAKE_KALIWIHYO
+    evidence_class:
+      - MODERN_TRADITION
+      - HISTORICAL_RECONSTRUCTION
+    propositions:
+      - Handsome_Lake_Good_Message_is_later_contact_crisis_reform_revitalization_layer
+      - Good_Message_reaffirms_traditional_culture_and_Great_Law_in_current_Oneida_history
+    supports:
+      - CONTACT_AND_REINTERPRETATION_MODEL
+      - CONTINUITY_MODEL_PARTIAL
+    confidence: BOUNDED_CURRENT_PUBLIC_HISTORY
+
+axis_status:
+  CONTACT_AND_REINTERPRETATION_MODEL: BOUNDED_MULTI_MECHANISM
+  KNOWLEDGE_OR_DISCLOSURE_MODEL: BOUNDED_WAMPUM_ORAL_DOCUMENTARY_MEMORY
+  CONTINUITY_MODEL: PARTIAL_TREATY_MEMORY_AND_REVITALIZATION_WITH_CHANGE
+  POLITICAL_SACRALIZATION_MODEL: BOUNDED_TREATY_SOVEREIGNTY_RELATION
+  CROSS_TRADITION_COMPARISON: HOLD
+
+guards:
+  - TREATY_TRADITION_AND_EUROPEAN_DOCUMENT_AUTHENTICITY_SEPARATE
+  - CONTACT_MECHANISMS_MUST_REMAIN_DISTINCT
