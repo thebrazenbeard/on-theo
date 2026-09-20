@@ -1,0 +1,106 @@
+schema_version: on-theo.mexica-nahua-neutral-axis-evidence.v1
+status: DIACHRONIC_FOUNDATION_NOT_COMPARISON_READY
+
+records:
+  - id: MN-TEMPLO-MAYOR-001
+    evidence:
+      - INAH_TEMPLO_MAYOR
+      - PROYECTO_TEMPLO_MAYOR
+    evidence_class:
+      - MATERIAL_EVIDENCE
+      - ARCHAEOLOGICAL_CONTEXT
+      - HISTORICAL_RECONSTRUCTION
+    community_scope: MEXICA_TENOCHTITLAN
+    period: LATE_POSTCLASSIC
+    propositions:
+      - Templo_Mayor_is_religious_and_political_center
+      - principal_dual_sanctuary_is_associated_with_Tlaloc_and_Huitzilopochtli
+      - sacred_precinct_contains_multiple_ritual_political_educational_structures
+      - structured_offerings_are_materially_attested
+    supports:
+      - RITUAL_ORDER_MODEL_CANDIDATE
+      - POLITICAL_SACRALIZATION_MODEL_CANDIDATE
+      - INSTITUTIONALIZATION_MODEL_CANDIDATE
+      - SACRAL_PRESENCE_MODEL_CANDIDATE
+      - OFFERING_EXCHANGE_MODEL_CANDIDATE
+    guards:
+      - MEXICA_TENOCHTITLAN_NE_ALL_NAHUA
+      - MATERIAL_CONTEXT_NE_COMPLETE_THEOLOGY
+
+  - id: MN-FLORENTINE-001
+    evidence:
+      - DIGITAL_FLORENTINE_CODEX
+    evidence_class:
+      - MANUSCRIPT_WITNESS
+      - COLONIAL_NAHUATL_TEXT
+      - COLONIAL_SPANISH_TEXT
+      - INDIGENOUS_IMAGE_PROGRAM
+      - COMMENTARY
+    period: SIXTEENTH_CENTURY_COLONIAL
+    propositions:
+      - manuscript_is_collaborative_Nahua_Franciscan_knowledge_project
+      - Nahuatl_Spanish_and_image_layers_are_distinct
+      - books_cover_gods_festivals_divination_omens_rhetoric_rulers_people_nature_and_conquest
+    supports:
+      - SOURCE_TRANSMISSION_CONTROL
+      - RITUAL_ORDER_MODEL_CANDIDATE
+      - SACRED_TIME_CALENDAR_MODEL_CANDIDATE
+      - KNOWLEDGE_OR_DISCLOSURE_MODEL_CANDIDATE
+      - CONTACT_AND_REINTERPRETATION_MODEL_CANDIDATE
+    guards:
+      - FLORENTINE_CODEX_NE_UNMEDIATED_PRECONTACT_TRANSCRIPT
+      - SAHAGUN_NE_SOLE_INDIGENOUS_CONTENT_AUTHOR
+
+  - id: MN-BORBONICUS-001
+    evidence:
+      - CODEX_BORBONICUS
+    evidence_class:
+      - PICTORIAL_MANUSCRIPT
+      - RITUAL_CALENDAR_SOURCE
+    period: CONQUEST_BOUNDARY_DATING_DEBATED
+    propositions:
+      - manuscript_contains_divinatory_calendar
+      - manuscript_contains_festival_ritual_material
+      - Spanish_annotations_are_present
+    supports:
+      - SACRED_TIME_CALENDAR_MODEL_CANDIDATE
+      - RITUAL_ORDER_MODEL_CANDIDATE
+    guards:
+      - DATING_DEBATE_MUST_REMAIN_VISIBLE
+      - BORBONICUS_NE_PAN_NAHUA_CANON
+
+  - id: MN-LIVING-NAHUA-001
+    evidence:
+      - INPI_NAHUA_CATALOGUE
+      - INPI_REGIONAL_ETHNOGRAPHIES
+    evidence_class:
+      - MODERN_TRADITION
+      - PUBLIC_INDIGENOUS_INSTITUTIONAL_SYNTHESIS
+    community_scope: MULTIPLE_LIVING_NAHUA_REGIONS
+    propositions:
+      - living_Nahua_communities_are_geographically_and_culturally_diverse
+      - current_regional_religion_includes_agricultural_ritual_sacred_land_funerary_and_Catholic_contact_forms
+    supports:
+      - CONTACT_AND_REINTERPRETATION_MODEL_CANDIDATE
+      - RELATIONAL_ORDER_MODEL_CANDIDATE
+      - SACRED_LAND_PLACE_MODEL_CANDIDATE
+      - MORTUARY_RELATIONSHIP_MODEL_CANDIDATE
+    guards:
+      - LIVING_NAHUA_NE_MEXICA_IMPERIAL_SURVIVAL
+      - INPI_SYNTHESIS_NE_ONE_LOCAL_PRIMARY_SOURCE
+
+candidate_axes:
+  SACRED_TIME_CALENDAR_MODEL:
+    status: STRONG_CANDIDATE
+  SACRIFICE_AND_BODILY_OFFERING_MODEL:
+    status: DECOMPOSITION_CANDIDATE
+
+comparison_status:
+  CROSS_TRADITION_COMPARISON: HOLD
+
+global_guards:
+  - MEXICA_NE_ALL_NAHUA
+  - AZTEC_LABEL_REQUIRES_SCOPE
+  - PRECONTACT_MATERIAL_NE_COLONIAL_TEXT_NE_LIVING_TRADITION
+  - COLONIAL_NAHUATL_TEXT_NE_UNMEDIATED_PRECONTACT_VOICE
+  - LIVING_NAHUA_NE_UNCHANGED_MEXICA_RELIGION
