@@ -1,0 +1,78 @@
+schema_version: on_theo.heracleon_johannine_exegesis.v1
+status: BOUNDED_RESEARCH_PACKET_REVIEW_REQUIRED
+canonical: false
+
+parent:
+  branch: research/valentinian-primary-text-control-v1-20260920
+  exact_head: 997c593f916079f3e33496b8f07a63198317fe1f
+
+sources:
+  - id: HER-SRC-ORIGEN-JOHN-II
+    evidence_class: PRIMARY_TEXT
+    role: preserving_and_refuting_heracleon
+    url: https://www.newadvent.org/fathers/101502.htm
+  - id: HER-SRC-ORIGEN-JOHN-VI
+    evidence_class: PRIMARY_TEXT
+    role: preserving_and_refuting_heracleon
+    url: https://www.newadvent.org/fathers/101506.htm
+  - id: HER-SRC-ORIGEN-JOHN-X
+    evidence_class: PRIMARY_TEXT
+    role: preserving_and_refuting_heracleon
+    url: https://www.newadvent.org/fathers/101510.htm
+  - id: HER-SCH-PETTIPIECE-2002
+    evidence_class: SCHOLARLY_INTERPRETATION
+    role: fragment_reconstruction
+    url: https://scholars.wlu.ca/etd/130/
+  - id: HER-SCH-DUNDERBERG-2022
+    evidence_class: SCHOLARLY_INTERPRETATION
+    role: origen_heracleon_dialogue_and_valentinian_school
+    url: https://academic.oup.com/edited-volume/40575/chapter-abstract/348058188
+  - id: HER-SCH-KALER-BUSSIERES-2006
+    evidence_class: SCHOLARLY_INTERPRETATION
+    role: affiliation_reassessment
+    url: https://www.cambridge.org/core/journals/harvard-theological-review/article/abs/was-heracleon-a-valentinian-a-new-look-at-old-sources/F06FAC9E116662868597CA35699787FC
+
+claims:
+  - id: HER-V1-001
+    proposition: Heracleon produced sustained second-century exegesis of the Gospel of John.
+    class: HISTORICAL_RECONSTRUCTION
+    status: BOUNDED
+    confidence: strong
+  - id: HER-V1-002
+    proposition: Heracleon's commentary survives fragmentarily, primarily through Origen.
+    class: HISTORICAL_RECONSTRUCTION
+    status: BOUNDED
+    confidence: strong
+  - id: HER-V1-003
+    proposition: Heracleon performed close allegorical and theological reading of Johannine wording and narrative.
+    class: HISTORICAL_RECONSTRUCTION
+    status: BOUNDED
+    confidence: strong
+  - id: HER-V1-004
+    proposition: Johannine exegesis in the second century was not confined to the later proto-orthodox trajectory.
+    class: HISTORICAL_RECONSTRUCTION
+    status: BOUNDED
+    confidence: strong
+  - id: HER-V1-005
+    proposition: Heracleon's exact institutional Valentinian affiliation is fully settled.
+    class: HISTORICAL_RECONSTRUCTION
+    status: PARTIAL
+    confidence: contested
+  - id: HER-V1-006
+    proposition: Heracleon was the first Christian ever to write commentary on John.
+    class: HISTORICAL_RECONSTRUCTION
+    status: NOT_ADMITTED
+    confidence: evidence_only_supports_earliest_known
+
+guards:
+  - HERACLEON_FRAGMENT_NE_COMPLETE_COMMENTARY
+  - ORIGEN_FRAME_NE_HERACLEON_SELF_DESCRIPTION
+  - EARLIEST_KNOWN_NE_FIRST_EVER
+  - VALENTINIAN_ASSOCIATION_NE_UNIVERSAL_VALENTINIAN_REPRESENTATION
+  - JOHANNINE_RECEPTION_NE_ONE_COMMUNITY
+
+next_scope:
+  - HERACLEON_FRAGMENT_PROPOSITION_MATRIX
+  - ORIGEN_QUOTATION_BOUNDARY_AUDIT
+  - HERACLEON_PTOLEMY_NONHARMONIZING_COMPARISON
+  - SECOND_CENTURY_JOHANNINE_RECEPTION_MATRIX
