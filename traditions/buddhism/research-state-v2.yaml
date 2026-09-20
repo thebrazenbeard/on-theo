@@ -1,0 +1,67 @@
+schema_version: on-theo.buddhism-research-state.v2
+status: PRIMARY_TEXT_ONTOLOGY_PACKET_ACTIVE
+parent_state: traditions/buddhism/research-state-v1.yaml
+parent_head: b9f2e2a635cd98129b0a0122aeb8a2e7a65cfaa5
+
+method:
+  early_parallel_first: true
+  composition_witness_separation: true
+  later_school_backprojection_forbidden: true
+  source_to_comparison_before_systems_analogy: true
+
+new_artifacts:
+  - traditions/buddhism/early-ontology-source-packet-v1.md
+  - traditions/buddhism/neutral-axis-evidence-v1.yaml
+
+primary_text_loci_bound:
+  - SN_22_59
+  - SN_44_10
+  - SN_12_2
+  - SN_12_15
+  - SN_12_38
+  - AN_6_63
+  - MN_72
+  - UD_8_3
+
+comparison_axes_strengthened:
+  PERSON_OR_SELF_MODEL:
+    status: BOUNDED_PRIMARY_TEXT_SUPPORT
+  CAUSAL_ORDER_TYPE:
+    status: BOUNDED_PRIMARY_TEXT_SUPPORT
+  CONTINUITY_MODEL:
+    status: BOUNDED_PRIMARY_TEXT_SUPPORT
+  MORAL_CAUSALITY_MODEL:
+    status: BOUNDED_PRIMARY_TEXT_SUPPORT
+  LIBERATION_OR_FINAL_TRANSFORMATION_MODEL:
+    status: BOUNDED_PRIMARY_TEXT_SUPPORT
+  WORLD_STATUS_MODEL:
+    status: PARTIAL_PRIMARY_TEXT_SUPPORT
+
+still_unresolved_for_comparison:
+  - AGENCY_AND_AUTHORITY_MODEL
+  - KNOWLEDGE_OR_DISCLOSURE_MODEL
+  - INTERVENTION_MODEL
+  - full_Buddhist_cosmology
+  - full_karma_mechanism
+  - later_school_metaphysics
+
+guards:
+  - ANATTA_NE_SIMPLE_ANNIHILATIONISM
+  - ANATTA_NE_HIDDEN_SOUL
+  - REBIRTH_NE_PERMANENT_SOUL_TRANSMIGRATION
+  - DEPENDENT_ORIGINATION_NE_ONE_COMPLETE_METAPHYSICAL_THEORY
+  - KAMMA_NE_PERSONAL_DIVINE_SENTENCING
+  - UNCONDITIONED_NE_CREATOR
+  - UNCONDITIONED_NE_SIMULATION_SUBSTRATE
+  - PALI_WITNESS_NE_COMPLETE_EARLY_BUDDHIST_CORPUS
+  - ACCESS_SURFACE_NE_COMPOSITION_DATE
+
+next_frontiers:
+  - Chinese_Agama_parallel_alignment
+  - five_aggregate_terminology_control
+  - early_karma_parallel_packet
+  - nirvana_semantic_packet
+  - Asokan_material_packet
+  - Gandharan_physical_witness_chronology
+  - early_Mahayana_proposition_map
+  - Abhidharma_divergence_matrix

@@ -1,0 +1,118 @@
+schema_version: on-theo.buddhism-neutral-axis-evidence.v1
+status: PRIMARY_TEXT_BOUND_PALI_LAYER
+source_branch_parent: buddhism
+parent_head: b9f2e2a635cd98129b0a0122aeb8a2e7a65cfaa5
+
+records:
+  - id: BUD-SELF-001
+    locus: SN_22_59
+    evidence_class: PRIMARY_TEXT
+    proposition: five_aggregates_are_not_self_and_not_fit_for_mine_I_self_identification
+    supports_axes:
+      - PERSON_OR_SELF_MODEL
+    does_not_entail:
+      - no_person_exists
+      - hidden_permanent_self_exists
+      - annihilationism
+    confidence: high
+
+  - id: BUD-SELF-002
+    locus: SN_44_10
+    evidence_class: PRIMARY_TEXT
+    proposition: binary_affirmation_or_denial_of_self_is_refused_in_context
+    supports_axes:
+      - PERSON_OR_SELF_MODEL
+    controls:
+      - eternalism
+      - annihilationism
+    confidence: high
+
+  - id: BUD-CAUSE-001
+    locus: SN_12_2
+    evidence_class: PRIMARY_TEXT
+    proposition: suffering_process_is_explained_through_conditioned_sequence
+    supports_axes:
+      - CAUSAL_ORDER_TYPE
+    confidence: high
+
+  - id: BUD-CAUSE-002
+    locus: SN_12_15
+    evidence_class: PRIMARY_TEXT
+    proposition: existence_and_nonexistence_are_rejected_as_exhaustive_extremes
+    supports_axes:
+      - CAUSAL_ORDER_TYPE
+      - PERSON_OR_SELF_MODEL
+    confidence: high
+
+  - id: BUD-CONT-001
+    locus: SN_12_38
+    evidence_class: PRIMARY_TEXT
+    proposition: >
+      intention_planning_and_tendency_support_consciousness_and_future_renewed_existence
+    supports_axes:
+      - CONTINUITY_MODEL
+      - CAUSAL_ORDER_TYPE
+    permitted_summary: causal_continuity_without_asserted_permanent_entity
+    prohibited_translation:
+      - permanent_soul_migration
+      - software_object_copying
+      - total_discontinuity
+    confidence: high
+
+  - id: BUD-KAMMA-001
+    locus: AN_6_63
+    evidence_class: PRIMARY_TEXT
+    proposition: intention_is_kamma_with_results_across_present_and_future_lives
+    supports_axes:
+      - MORAL_CAUSALITY_MODEL
+      - CONTINUITY_MODEL
+    does_not_entail:
+      - personal_divine_judge
+      - one_complete_Buddhist_karmic_metaphysics
+    confidence: high
+
+  - id: BUD-LIB-001
+    locus: MN_72
+    evidence_class: PRIMARY_TEXT
+    proposition: >
+      ordinary_exists_does_not_exist_both_neither_predicates_are_not_adopted_for_liberated_Tathagata_after_death
+    supports_axes:
+      - LIBERATION_OR_FINAL_TRANSFORMATION_MODEL
+      - CONTINUITY_MODEL
+    confidence: high
+
+  - id: BUD-LIB-002
+    locus: UD_8_3
+    evidence_class: PRIMARY_TEXT
+    proposition: conditioned_is_contrasted_with_unborn_unmade_unconditioned_escape
+    supports_axes:
+      - LIBERATION_OR_FINAL_TRANSFORMATION_MODEL
+      - WORLD_STATUS_MODEL
+    does_not_entail:
+      - creator
+      - external_physical_realm
+      - simulation_substrate
+      - permanent_soul
+    confidence: high
+
+source_urls:
+  SN_22_59: https://suttacentral.net/sn22.59/en/sujato
+  SN_44_10: https://suttacentral.net/sn44.10/en/bodhi
+  SN_12_2: https://suttacentral.net/sn12.2/en/sujato
+  SN_12_15: https://suttacentral.net/sn12.15/en/bodhi
+  SN_12_38: https://suttacentral.net/sn12.38/en/bodhi
+  AN_6_63: https://suttacentral.net/an6.63/en/sujato
+  MN_72: https://suttacentral.net/mn72/en/sujato
+  UD_8_3: https://dhammatalks.net/suttacentral/sc2016/sc/pi/ud8.3.html
+
+limitations:
+  - this_packet_is_Pali_witness_layer_not_complete_early_Buddhist_reconstruction
+  - cross_canonical_parallel_alignment_pending
+  - text_composition_date_not_inferred_from_current_access_surface
+  - translation_choices_require_term_level_control
+  - later_school_systems_not_backprojected
+
+comparison_effect:
+  bounded_comparison_readiness_strengthened: true
+  broad_Buddhism_comparison_ready: false
+  GOD_model_mapping_authorized_as_source_meaning: false
