@@ -1,0 +1,243 @@
+schema_version: on-theo.mexica-nahua-comparison-readiness-audit.v1
+status: DIACHRONIC_FOUNDATION_MATURE_FOR_BOUNDED_FUTURE_COMPARISON
+source_branch: research/mexica-nahua-diachronic-v1-20260920
+source_head_before_audit: 39b0981646157b3b245183c35f376c46e3bfc8c0
+pr: 106
+
+method:
+  principle: >
+    No comparison cell may use "Aztec" or "Nahua" without specifying whether
+    the evidence is late Postclassic Mexica Tenochtitlan material, conquest-
+    boundary pictorial manuscript, colonial Nahuatl/Spanish manuscript, or a
+    named living regional Nahua layer.
+  required_fields:
+    - community_or_polity
+    - region
+    - period
+    - evidence_mode
+    - exact_source_binding
+    - claim_ceiling
+
+comparison_eligible_existing_axes:
+  RITUAL_ORDER_MODEL:
+    status: BOUNDED_COMPARISON_ELIGIBLE
+    source_layers:
+      - LATE_POSTCLASSIC_MEXICA_TEMPLO_MAYOR
+      - BORBONICUS_PICTORIAL_FESTIVAL_CALENDAR
+      - LIVING_REGIONAL_NAHUA_DOMESTIC_AGRICULTURAL
+    strongest_result: >
+      Ritual order is directly attested through Mexica sacred-precinct
+      architecture and offerings, pictorial festival/calendar structure, and
+      regionally distinct living Nahua agricultural/domestic practice.
+    guards:
+      - DO_NOT_COLLAPSE_IMPERIAL_AND_LIVING_REGIONAL_RITUAL
+      - FESTIVAL_IMAGE_NE_COMPLETE_RITE_DESCRIPTION
+
+  POLITICAL_SACRALIZATION_MODEL:
+    status: BOUNDED_COMPARISON_ELIGIBLE
+    source_layer: LATE_POSTCLASSIC_MEXICA_TEMPLO_MAYOR
+    strongest_result: >
+      Tenochtitlan's central sacred precinct materially joins state investment,
+      public ritual, ruler-sponsored monumental renewal, war/tribute-linked
+      object mobilization, and religious-political institutions.
+    guards:
+      - MEXICA_IMPERIAL_LAYER_NE_ALL_NAHUA
+      - SACRED_CENTER_NE_ONE_DIVINE_RIGHT_DOCTRINE
+
+  INSTITUTIONALIZATION_MODEL:
+    status: BOUNDED_COMPARISON_ELIGIBLE
+    source_layers:
+      - TEMPLO_MAYOR_PRECINCT
+      - FLORENTINE_CODEX_WORKSHOP
+      - LIVING_MAYORDOMIA_COFRA DIA_COMMUNITY_OFFICES
+    strongest_result: >
+      Mexica/Nahua religious knowledge and practice are stabilized through
+      materially and historically distinct institutions: imperial precinct,
+      colonial manuscript workshop, and living community offices.
+    guards:
+      - INSTITUTIONALIZATION_NE_CENTRALIZATION
+      - ONE_INSTITUTION_NE_ALL_NAHUA
+
+  CONTACT_AND_REINTERPRETATION_MODEL:
+    status: BOUNDED_COMPARISON_ELIGIBLE
+    source_layers:
+      - FLORENTINE_CODEX_COLLABORATIVE_COLONIAL_MANUSCRIPT
+      - BORBONICUS_SPANISH_ANNOTATION_LAYER
+      - LIVING_REGIONAL_CATHOLIC_CONTACT_FORMS
+    strongest_result: >
+      Contact operates through manuscript collaboration, translation,
+      annotation, Catholic institutional participation, local sacred geography,
+      and regional reinterpretation rather than one generic syncretism.
+    guards:
+      - CONTACT_NE_REPLACEMENT
+      - CONTACT_NE_UNCHANGED_SURVIVAL
+      - CONTACT_NE_ONE_SYNCRETISM_LABEL
+
+  SACRAL_PRESENCE_MODEL:
+    status: PARTIAL_COMPARISON_ELIGIBLE
+    source_layer: TEMPLO_MAYOR_MEXICA_ARCHITECTURAL
+    strongest_result: >
+      Tlaloc and Huitzilopochtli are materially localized through distinct
+      sanctuaries within the central Mexica sacred precinct.
+    limitation: >
+      This does not define one Nahua ontology of divine presence or exhaust
+      presence outside monumental architecture.
+    guards:
+      - ARCHITECTURAL_LOCALIZATION_NE_TOTAL_DEITY_ONTOLOGY
+
+  KNOWLEDGE_OR_DISCLOSURE_MODEL:
+    status: PARTIAL_COMPARISON_ELIGIBLE
+    source_layers:
+      - BORBONICUS_TONALPOHUALLI_DIVINATION
+      - FLORENTINE_COLONIAL_KNOWLEDGE_ARCHIVE
+    strongest_result: >
+      Divinatory day-count interpretation and colonial Nahua knowledge
+      collection are source-attested, but divination, omens, astronomy,
+      rhetoric, and revelation remain under-decomposed.
+    guards:
+      - DIVINATION_NE_PROPHECY_ONLY
+      - CALENDAR_DAY_QUALITY_NE_TOTAL_DETERMINISM
+
+  OFFERING_EXCHANGE_MODEL:
+    status: PARTIAL_COMPARISON_ELIGIBLE
+    source_layer: TEMPLO_MAYOR_MATERIAL
+    strongest_result: >
+      Large structured offerings and selected deity-linked deposits are
+      materially attested, while exact recipient, requested effect, reciprocity,
+      and verbal theology are often not recoverable from deposition alone.
+    guards:
+      - DEPOSIT_NE_RECIPROCITY_PROVED
+      - MATERIAL_CONTEXT_NE_KNOWN_PRAYER
+
+  CONTINUITY_MODEL:
+    status: BOUNDED_COMPARISON_ELIGIBLE
+    source_layer: LIVING_REGIONAL_NAHUA
+    strongest_result: >
+      Regional Nahua practices show continuity signals in agricultural ritual,
+      sacred places, community offices, ancestors, and Catholic-contact forms,
+      but continuity is explicitly modeled as continuity with change.
+    guards:
+      - CONTINUITY_NE_UNCHANGED_FORM
+      - RESEMBLANCE_NE_DIRECT_TRANSMISSION_BY_ITSELF
+
+  MORTUARY_RELATIONSHIP_MODEL:
+    status: PARTIAL_COMPARISON_ELIGIBLE
+    source_layer: LIVING_NAHUA_JALISCO
+    strongest_result: >
+      Selected Jalisco Nahua public evidence describes ancestors as living
+      presences related to caves, hills, springs, waterways, and the more-than-
+      human environment.
+    limitation: >
+      This is a regional living ancestor-place relation, not Mexica imperial
+      afterlife doctrine or one Nahua-wide mortuary model.
+    guards:
+      - JALISCO_LAYER_NE_MEXICA_AFTERLIFE
+      - ANCESTOR_RELATION_NE_POSTMORTEM_PATH
+
+held_existing_axes:
+  WORLD_ORIGIN_MODEL:
+    status: HOLD
+    reason: >
+      Mexica/Nahua creation and world-age narratives have not yet been bound
+      through exact Florentine, pictorial, or other Nahuatl source packets.
+
+  WORLD_TERMINUS_RENEWAL_MODEL:
+    status: HOLD
+    reason: >
+      World-age/Five-Suns evidence remains outside the current exact source
+      packets.
+
+  PERSON_OR_SELF_MODEL:
+    status: HOLD
+    reason: >
+      Tonalli, teyolia, ihiyotl and related personhood categories require a
+      dedicated lexical/source packet before comparison.
+
+  POSTMORTEM_PATH_MODEL:
+    status: HOLD
+    reason: >
+      Mictlan, Tlalocan, solar/warrior and other postmortem destinations remain
+      under-bound and must not be inferred from Templo Mayor death imagery or
+      living regional ancestor relations.
+
+  TRANSFORMATION_MODEL:
+    status: HOLD
+    reason: >
+      Deity, ritual impersonation, personhood and world-age transformation
+      evidence is not yet decomposed.
+
+  AGENCY_AND_AUTHORITY_MODEL:
+    status: HOLD_PARTIAL
+    reason: >
+      Imperial, divine, priestly, calendrical and living community authority
+      domains are all present but not yet decomposed into one controlled schema.
+
+new_axis_candidates:
+  SACRED_TIME_CALENDAR_MODEL:
+    status: STRONG_NEW_AXIS_CANDIDATE
+    evidence:
+      - traditions/mexica-nahua/borbonicus-evidence-v1.yaml
+      - traditions/mexica-nahua/living-nahua-regional-evidence-v1.yaml
+    result: >
+      Mexica/Nahua evidence independently strengthens the axis through
+      tonalpohualli, festival calendars, agricultural cycles, lunar timing and
+      community ritual cycles, while requiring subtype separation.
+
+  SACRED_LAND_PLACE_MODEL:
+    status: STRONG_NEW_AXIS_CANDIDATE
+    evidence:
+      - traditions/mexica-nahua/templo-mayor-evidence-v1.yaml
+      - traditions/mexica-nahua/living-nahua-regional-evidence-v1.yaml
+    result: >
+      Sacred urban center, caves, hills, springs and regionally specific place
+      relations cannot be reduced to ritual order alone.
+
+  RELATIONAL_ORDER_MODEL:
+    status: STRONG_NEW_AXIS_CANDIDATE
+    evidence:
+      - traditions/mexica-nahua/living-nahua-regional-evidence-v1.yaml
+    result: >
+      Agricultural, ancestor, land and community obligations form relational
+      structures that do not reduce cleanly to person/self or social hierarchy.
+
+  SACRIFICE_AND_BODILY_OFFERING_MODEL:
+    status: STRONG_DECOMPOSITION_CANDIDATE
+    evidence:
+      - traditions/mexica-nahua/templo-mayor-evidence-v1.yaml
+    neutral_question: >
+      How are bodily acts or bodily lives offered, transformed, displayed, or
+      transferred in ritual, and how do auto-sacrifice, captive/human sacrifice,
+      animal sacrifice and non-bodily offerings differ in recipient, social
+      function and asserted efficacy?
+    reason: >
+      OFFERING_EXCHANGE_MODEL is too broad to safely collapse bodily sacrifice,
+      auto-sacrifice and object/plant deposits into one mechanism.
+
+readiness_result:
+  internal_foundation_complete: true
+  bounded_future_comparison_allowed: true
+  immediate_matrix_insertion_required: false
+  exact_head_binding_required: true
+  Mexica_Nahua_equivalence_allowed: false
+  generic_Aztec_label_without_scope_allowed: false
+
+strongest_method_result: >
+  Mexica/Nahua evidence is comparison-ready only when imperial Mexica material,
+  colonial collaborative Nahua sources, conquest-boundary pictorial manuscripts
+  and living regional Nahua traditions remain distinct; "Aztec religion" is too
+  coarse to function as an evidence-bearing unit without explicit scope.
+
+next_portfolio_frontier:
+  primary: OLMEC_MATERIAL_ICONOGRAPHIC_PACKET_V1
+  reason: >
+    Mexica/Nahua now has a defensible multi-source foundation and comparison
+    ceilings. Olmec is the next known portfolio gap and deliberately requires a
+    lower claim ceiling because material and iconographic evidence dominate in
+    the absence of a surviving readable theological text corpus.
+
+guards:
+  - COMPARISON_READY_NE_TRADITION_COMPLETE
+  - MEXICA_NE_ALL_NAHUA
+  - AZTEC_LABEL_REQUIRES_SCOPE
+  - COMMUNITY_REGION_PERIOD_AND_EVIDENCE_MODE_REQUIRED
+  - LIVING_NAHUA_NE_IMPERIAL_SURVIVAL
