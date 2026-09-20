@@ -1,0 +1,40 @@
+schema_version: on-theo.lakota-research-state.v8
+status: BOUNDED_COMPARISON_READINESS_AUDITED
+supersedes_for_current_research:
+  - traditions/lakota/research-state-v7.yaml
+
+branch:
+  name: research/lakota-public-source-v1-20260920
+  pr: 104
+
+readiness_audit: traditions/lakota/comparison-readiness-audit-v1.yaml
+
+comparison_eligible:
+  bounded:
+    - CONTACT_AND_REINTERPRETATION_MODEL
+    - INSTITUTIONALIZATION_MODEL
+    - KNOWLEDGE_OR_DISCLOSURE_MODEL
+    - MORTUARY_RELATIONSHIP_MODEL
+  partial:
+    - RITUAL_ORDER_MODEL
+    - SACRAL_PRESENCE_MODEL
+    - CONTINUITY_MODEL
+
+held:
+  - WORLD_ORIGIN_MODEL
+  - POSTMORTEM_PATH_MODEL
+  - PERSON_OR_SELF_MODEL
+  - AGENCY_AND_AUTHORITY_MODEL
+
+new_axis_candidates:
+  - RELATIONAL_ORDER_MODEL
+  - SACRED_LAND_PLACE_MODEL
+  - HUMAN_ORIGIN_OR_EMERGENCE_MODEL
+
+next_portfolio_frontier: MAYA_DIACHRONIC_RESEARCH_PACKET_V1
+
+guards:
+  - COMPARISON_READY_NE_TRADITION_COMPLETE
+  - EXACT_HEAD_BINDING_REQUIRED
+  - RESTRICTED_KNOWLEDGE_NOT_REQUIRED_FOR_COMPARISON
+  - COMMUNITY_AND_PERIOD_MUST_REMAIN_VISIBLE
