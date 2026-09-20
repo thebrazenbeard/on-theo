@@ -1,0 +1,74 @@
+schema_version: on-theo.yoruba-contact-diaspora-evidence.v1
+status: BOUNDED_MULTI_MECHANISM_CONTACT_AND_DIASPORA
+
+records:
+  - id: YOR-CONTACT-PEEL-001
+    evidence:
+      - PEEL_RELIGIOUS_ENCOUNTER
+      - PEEL_CHRISTIANITY_ISLAM_ORISA
+    evidence_class:
+      - HISTORICAL_RECONSTRUCTION
+      - SCHOLARLY_INTERPRETATION
+    propositions:
+      - Yoruba_history_contains_long_term_interaction_among_orisa_religion_Islam_and_Christianity
+      - nineteenth_century_religious_encounter_participated_in_modern_Yoruba_identity_formation
+      - conversion_and_religious_change_are_historically_variable_not_simple_replacement
+    supports:
+      - CONTACT_AND_REINTERPRETATION_MODEL
+      - CONTINUITY_MODEL
+      - ATTRIBUTION_STATUS_SCOPE_CONTROL
+    confidence: HIGH
+
+  - id: YOR-REVIVAL-001
+    source: JANSON_REVIVING_YORUBA_RELIGION
+    evidence_class:
+      - MODERN_TRADITION
+      - SCHOLARLY_ETHNOGRAPHY
+    propositions:
+      - current_Lagos_context_includes_indigenous_religious_revival_organization_amid_Christian_and_Muslim_dominance
+    supports:
+      - REVIVAL_RECONSTRUCTION_MODEL_PARTIAL
+      - INSTITUTIONALIZATION_MODEL_PARTIAL
+    confidence: BOUNDED_CURRENT
+
+  - id: YOR-DIASPORA-001
+    evidence:
+      - MURPHY_YORUBA_RELIGIONS_IN_DIASPORA_2010
+      - CHILDS_NIGERIAN_DIASPORIC_CULTURES_2022
+    evidence_class:
+      - HISTORICAL_RECONSTRUCTION
+      - SCHOLARLY_INTERPRETATION
+    propositions:
+      - Yoruba_civilization_is_a_major_source_for_multiple_American_religious_traditions
+      - forced_migration_provides_real_human_transmission_pathways
+      - diaspora_traditions_were_recreated_and_modified_under_New_World_conditions
+    supports:
+      - CONTINUITY_MODEL
+      - CONTACT_AND_REINTERPRETATION_MODEL
+      - TRANSMISSION_PATHWAY_CONTROL
+    confidence: HIGH
+
+  - id: YOR-DIASPORA-DIVERSITY-001
+    evidence:
+      - MURPHY_YORUBA_RELIGIONS_IN_DIASPORA_2010
+      - CANDOMBLE_TRANSFORMATION_SCHOLARSHIP
+      - LUCUMI_CURRENT_ETHNOGRAPHY
+    evidence_class: SCHOLARLY_INTERPRETATION
+    propositions:
+      - diaspora_Yoruba_derived_religions_are_multiple_distinct_historical_formations
+      - contemporary_diaspora_identity_and_religious_authority_continue_to_change
+    supports:
+      - CONTINUITY_MODEL
+      - REVIVAL_RECONSTRUCTION_MODEL_PARTIAL
+    confidence: HIGH
+
+axis_status:
+  CONTACT_AND_REINTERPRETATION_MODEL: BOUNDED_MULTI_MECHANISM
+  CONTINUITY_MODEL: BOUNDED_CONTACT_DIASPORA_TRANSFORMATION
+  REVIVAL_RECONSTRUCTION_MODEL: PARTIAL_MODERN_YORUBA_AND_DIASPORA
+  INSTITUTIONALIZATION_MODEL: PARTIAL_MODERN_REVIVAL_DIASPORA
+  ATLANTIC_TRANSMISSION_PATHWAY: BOUNDED
+  CROSS_TRADITION_COMPARISON: HOLD_PENDING_READINESS_AUDIT
+
+guards:
+  - EACH_DIASPORA_TRADITION_REQUIRES_OWN_INTERNAL_PACKET
