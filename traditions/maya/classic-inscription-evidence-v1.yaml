@@ -1,0 +1,73 @@
+schema_version: on-theo.maya-classic-inscription-evidence.v1
+status: BOUNDED_YAXCHILAN_ELITE_RITUAL
+
+records:
+  - id: MAYA-YAX-L24-001
+    monument: YAXCHILAN_LINTEL_24
+    date: 709_CE_10_24_CMHI_CORRELATION
+    evidence_class:
+      - EPIGRAPHIC_EVIDENCE
+      - MATERIAL_EVIDENCE
+    persons:
+      - ITZAMNAAJ_BAHLAM_SHIELD_JAGUAR
+      - LADY_KABAL_XOOK
+    propositions:
+      - inscription_and_image_bind_named_royal_bloodletting_or_penitential_rite
+      - rite_is_precisely_dated
+      - ruler_bears_k'uhul_ajaw_sacral_title
+      - Lady_Kabal_Xook_is_named_royal_ritual_agent
+    supports:
+      - RITUAL_ORDER_MODEL
+      - POLITICAL_SACRALIZATION_MODEL
+      - AGENCY_AND_AUTHORITY_MODEL_PARTIAL
+    confidence: HIGH
+    guards:
+      - K'UHUL_AJAW_NE_ONTOLOGICAL_DEITY_PROVED
+      - ROYAL_RITE_NE_POPULAR_RELIGION
+
+  - id: MAYA-YAX-L25-001
+    monument: YAXCHILAN_LINTEL_25
+    evidence_class:
+      - MATERIAL_EVIDENCE
+      - EPIGRAPHIC_EVIDENCE
+      - SCHOLARLY_INTERPRETATION
+    propositions:
+      - ritual_complex_is_linked_to_ruler_accession_commemoration
+      - Lady_Kabal_Xook_is_primary_ritual_figure
+      - serpent_apparition_iconography_is_present
+      - ancestral_spirit_identification_is_interpretive
+    supports:
+      - POLITICAL_SACRALIZATION_MODEL
+      - RITUAL_ORDER_MODEL
+      - KNOWLEDGE_OR_DISCLOSURE_MODEL_CANDIDATE
+    confidence: BOUNDED
+    guards:
+      - VISION_SERPENT_NE_ANCESTOR_IDENTITY_PROVED
+      - MUSEUM_HALLUCINATORY_LANGUAGE_NE_SOURCE_SELF_DESCRIPTION
+
+  - id: MAYA-YAX-L17-001
+    monument: YAXCHILAN_LINTEL_17
+    approximate_date: 770_CE
+    evidence_class:
+      - MATERIAL_EVIDENCE
+      - EPIGRAPHIC_EVIDENCE
+    propositions:
+      - another_named_royal_couple_is_depicted_in_bloodletting_rite
+      - inscription_records_the_ritual
+    supports:
+      - RITUAL_ORDER_MODEL
+    confidence: BOUNDED_HIGH
+    guards:
+      - MULTIPLE_YAXCHILAN_CASES_NE_PAN_MAYA_UNIFORMITY
+
+axis_status:
+  RITUAL_ORDER_MODEL: BOUNDED_CLASSIC_ROYAL_YAXCHILAN_LAYER
+  POLITICAL_SACRALIZATION_MODEL: BOUNDED_CLASSIC_DYNASTIC_RITUAL_AUTHORITY
+  AGENCY_AND_AUTHORITY_MODEL: PARTIAL_CLASSIC_ROYAL
+  KNOWLEDGE_OR_DISCLOSURE_MODEL: PARTIAL_ICONOGRAPHIC_CANDIDATE
+  CROSS_TRADITION_COMPARISON: HOLD
+
+guards:
+  - YAXCHILAN_NE_PAN_MAYA
+  - CLASSIC_ELITE_EPIGRAPHY_NE_ALL_MAYA_RELIGION
+  - SACRAL_RULER_TITLE_NE_ONE_DIVINE_KINGSHIP_ONTOLOGY

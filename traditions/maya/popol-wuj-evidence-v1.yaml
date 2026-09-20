@@ -1,0 +1,89 @@
+schema_version: on-theo.maya-popol-wuj-evidence.v1
+status: KICHE_COLONIAL_WITNESS_BOUND
+
+witness:
+  manuscript: AYER_MS_1515
+  repository: NEWBERRY_LIBRARY
+  digital_access:
+    - LIBRARY_OF_CONGRESS_WDL
+    - OHIO_STATE_NEWBERRY_FACSIMILE
+  transcriber_translator: FRANCISCO_XIMENEZ
+  approximate_date: EARLY_18TH_CENTURY
+  languages:
+    - KICHE
+    - SPANISH
+  evidence_class:
+    - MANUSCRIPT_WITNESS
+    - COLONIAL_DOCUMENTARY_PRACTICE
+
+source_history:
+  earlier_16c_Kiche_text:
+    status: HISTORICAL_RECONSTRUCTION_STRONG_HYPOTHESIS
+    physically_extant_in_current_chain: false
+  precolonial_glyphic_source:
+    status: NOT_ESTABLISHED_AS_SURVIVING_WITNESS
+
+records:
+  - id: MAYA-PW-WITNESS-001
+    propositions:
+      - surviving_witness_is_Ximenez_Kiche_Spanish_manuscript
+      - Kiche_and_Spanish_columns_are_distinct_textual_forms
+      - transcription_and_translation_require_source_critical_control
+    confidence: HIGH
+    guards:
+      - KICHE_COLUMN_NE_SPANISH_TRANSLATION
+      - MANUSCRIPT_NE_RECONSTRUCTED_EARLIER_SOURCE
+
+  - id: MAYA-PW-ORIGIN-001
+    community_scope: KICHE
+    propositions:
+      - text_contains_cosmogonic_world_ordering_material
+      - text_contains_multiple_human_creation_attempts
+      - successful_human_creation_is_maize_centered
+    supports:
+      - WORLD_ORIGIN_MODEL_PARTIAL
+      - HUMAN_ORIGIN_OR_EMERGENCE_MODEL
+    confidence: BOUNDED_HIGH_LEVEL_PENDING_CLAUSE_ALIGNMENT
+    guards:
+      - KICHE_ACCOUNT_NE_PAN_MAYA_ACCOUNT
+      - WORLD_ORDERING_NE_CREATION_EX_NIHILO_BY_DEFAULT
+
+  - id: MAYA-PW-LIVING-RECEPTION-001
+    evidence:
+      - NMAI_LIVING_MAYA_TIME_CREATION
+      - KICHE_MAYA_DAY_KEEPER_JUANA_BATZ_PUAC
+    evidence_class:
+      - LIVING_TRADITION
+      - COMMUNITY_COLLABORATIVE_PUBLIC_SOURCE
+    propositions:
+      - maize_human_origin_teaching_has_current_Kiche_public_relevance
+      - maize_is_linked_to_ancestry_and_living_identity
+    supports:
+      - HUMAN_ORIGIN_OR_EMERGENCE_MODEL
+      - RELATIONAL_ORDER_MODEL_CANDIDATE
+    confidence: BOUNDED_CURRENT_RECEPTION
+    guards:
+      - LIVING_RECEPTION_NE_UNCHANGED_ANCIENT_SEMANTICS
+
+  - id: MAYA-PW-HERO-001
+    propositions:
+      - text_contains_Hero_Twin_underworld_death_lord_narrative
+    supports:
+      - TRANSFORMATION_MODEL_CANDIDATE
+    confidence: BOUNDED_HIGH_LEVEL
+    guards:
+      - HEROIC_UNDERWORLD_NARRATIVE_NE_ORDINARY_HUMAN_AFTERLIFE
+
+axis_status:
+  WORLD_ORIGIN_MODEL: PARTIAL_BOUNDED_KICHE_COLONIAL_TEXTUAL_LAYER
+  HUMAN_ORIGIN_OR_EMERGENCE_MODEL: BOUNDED_KICHE_TEXT_PLUS_LIVING_RECEPTION
+  RELATIONAL_ORDER_MODEL: PARTIAL_CANDIDATE
+  TRANSFORMATION_MODEL: CANDIDATE_MYTHIC_ONLY
+  POSTMORTEM_PATH_MODEL: NOT_ADMITTED
+  CROSS_TRADITION_COMPARISON: HOLD
+
+guards:
+  - POPOL_WUJ_NE_UNIVERSAL_MAYA_SCRIPTURE
+  - COLONIAL_WITNESS_NE_PRECONTACT_AUTOGRAPH
+  - KICHE_TEXT_NE_XIMENEZ_SPANISH_NE_MODERN_TRANSLATION
+  - CHRISTIAN_CONTACT_EFFECT_REMAINS_OPEN
