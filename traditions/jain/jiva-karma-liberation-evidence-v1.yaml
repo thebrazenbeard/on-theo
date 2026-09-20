@@ -1,0 +1,87 @@
+schema_version: on-theo.jain-jiva-karma-liberation-evidence.v1
+status: BOUNDED_CLASSICAL_SYSTEMATIC_LAYER
+
+records:
+  - id: JAIN-JKL-TS-001
+    source:
+      - TATTVARTHASUTRA_1_1
+      - TATTVARTHASUTRA_1_4
+      - SEP_JAINA_PHILOSOPHY
+    evidence_class:
+      - PRIMARY_TEXT
+      - SCHOLARLY_INTERPRETATION
+    propositions:
+      - path_to_liberation_is_structured_by_right_view_knowledge_conduct
+      - self_nonself_influx_bondage_stoppage_shedding_and_liberation_are_core_systematic_categories
+    supports:
+      - PERSON_OR_SELF_MODEL
+      - CAUSAL_ORDER_TYPE
+      - TRANSFORMATION_MODEL
+    confidence: HIGH_CLASSICAL
+
+  - id: JAIN-JKL-JIVA-001
+    evidence:
+      - SEP_JAINA_PHILOSOPHY
+      - SEP_PERSONHOOD_JAIN
+      - BALCEROWICZ_2021
+    evidence_class: SCHOLARLY_INTERPRETATION
+    propositions:
+      - jiva_ajiva_distinction_is_fundamental_and_early_in_Jain_ontology
+      - classical_jiva_is_active_cognitive_experiential_subject
+      - embodied_and_purified_descriptions_of_self_must_be_distinguished
+    supports:
+      - PERSON_OR_SELF_MODEL
+    confidence: HIGH
+
+  - id: JAIN-JKL-KARMA-001
+    evidence:
+      - TATTVARTHASUTRA_6_TO_9
+      - SEP_JAINA_PHILOSOPHY
+      - FLUGEL_SACRED_MATTER_2012
+    evidence_class:
+      - PRIMARY_TEXT
+      - SCHOLARLY_INTERPRETATION
+    propositions:
+      - classical_Jain_karma_includes_material_bondage_model
+      - activity_and_passions_participate_in_influx_and_bondage
+      - stoppage_and_shedding_are_distinct causal_soteriological_processes
+    supports:
+      - CAUSAL_ORDER_TYPE
+      - TRANSFORMATION_MODEL
+    confidence: HIGH_CLASSICAL
+
+  - id: JAIN-JKL-REBIRTH-001
+    evidence:
+      - TATTVARTHASUTRA_CLASSICAL_SYSTEM
+      - SEP_JAINA_PHILOSOPHY
+    propositions:
+      - karma_conditions_rebirth_lifespan_body_status_and_experience
+      - repeated_embodiment_continues_until_liberation
+    supports:
+      - POSTMORTEM_PATH_MODEL
+      - CAUSAL_ORDER_TYPE
+    confidence: HIGH_CLASSICAL
+
+  - id: JAIN-JKL-LIB-001
+    source:
+      - BAJZELJ_JAINA_LIBERATION_2019
+    evidence_class: SCHOLARLY_INTERPRETATION
+    propositions:
+      - classical_Jain_liberation_ends_karmic_bondage_and_rebirth
+      - Tattvarthasutra_commentarial_traditions_describe_final_upward_transition_of_liberated_jiva
+    supports:
+      - POSTMORTEM_PATH_MODEL
+      - TRANSFORMATION_MODEL
+    confidence: HIGH_FOR_CLASSICAL_COMMENTARIAL_LAYER
+
+axis_status:
+  PERSON_OR_SELF_MODEL: BOUNDED_CLASSICAL_JIVA
+  CAUSAL_ORDER_TYPE: BOUNDED_KARMIC_MATERIAL_CAUSATION
+  POSTMORTEM_PATH_MODEL: BOUNDED_CYCLIC_REBIRTH_TERMINAL_LIBERATION
+  TRANSFORMATION_MODEL: BOUNDED_KARMIC_PURIFICATION_LIBERATION
+  FATE_CONSTRAINT_MODEL: PARTIAL_CONSTRAINT_WITH_AGENCY
+  CONTINUITY_MODEL: BOUNDED_EARLY_CATEGORY_TO_CLASSICAL_SYSTEMATIZATION
+  CROSS_TRADITION_COMPARISON: HOLD
+
+guards:
+  - CLASSICAL_LAYER_SCOPE_REQUIRED
