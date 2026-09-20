@@ -1,0 +1,85 @@
+schema_version: on-theo.comparison-coverage-audit.v10
+status: NON_CANONICAL_METHOD_AUDIT
+supersedes_for_current_research:
+  - synthesis/COMPARISON_COVERAGE_AUDIT_V9.yaml
+matrix: synthesis/BOUNDED_NEUTRAL_COMPARISON_MATRIX_V10.yaml
+frontier_reaudit: synthesis/CROSS_LANE_FRONTIER_REAUDIT_V1.yaml
+lane_count: 6
+
+coverage:
+  CAUSAL_ORDER_TYPE:
+    admitted_total: 6
+    cross_tradition_test_complete: true
+  CONTINUITY_MODEL:
+    admitted_total: 6
+    cross_tradition_test_complete: true
+  RITUAL_ORDER_MODEL:
+    admitted_total: 6
+    cross_tradition_test_complete: true
+  PERSON_OR_SELF_MODEL:
+    admitted_total: 6
+    cross_tradition_test_complete: true
+  INSTITUTIONALIZATION_MODEL:
+    admitted_total: 5
+    bounded: 4
+    partial: 1
+    not_admitted: 1
+    cross_tradition_test_complete: true
+    comparison_schema_decomposed: true
+  CONTACT_AND_REINTERPRETATION_MODEL:
+    admitted_total: 4
+    cross_tradition_test_complete: true
+  POLITICAL_SACRALIZATION_MODEL:
+    admitted_total: 4
+    bounded: 2
+    partial: 2
+    cross_tradition_test_complete: true
+  WORLD_ORIGIN_MODEL:
+    admitted_total: 4
+    bounded: 4
+    cross_tradition_test_complete: true
+    comparison_schema_decomposed: true
+  MORTUARY_RELATIONSHIP_MODEL:
+    admitted_test_lanes: 3
+    bounded: 1
+    partial: 2
+    cross_tradition_test_complete: true
+    comparison_schema_decomposed: true
+
+institutionalization_method_conclusions:
+  - formalization_does_not_require_centralization
+  - state_relation_has_multiple_structural_forms
+  - material_organization_does_not_prove_formal_membership
+  - community_legal_procedure_register_hierarchy_state_shrine_network_elite_ritual_landscape_and_city_temple_complex_are_distinct_mechanisms
+  - political_administration_does_not_prove_doctrinal_uniformity
+  - modern_revival_organization_must_remain_separate_from_preChristian_Norse_institutionalization
+
+next_frontier_candidates:
+  OFFERING_EXCHANGE_MODEL:
+    runnable_lanes: 3
+    disposition: STRONG_NEXT_CANDIDATE
+  TRANSFORMATION_MODEL:
+    runnable_lanes: 4
+    disposition: REQUIRES_AXIS_DECOMPOSITION_BEFORE_TEST
+  KNOWLEDGE_OR_DISCLOSURE_MODEL:
+    runnable_lanes: 2
+    disposition: DEFER
+  FATE_CONSTRAINT_MODEL:
+    runnable_lanes: 2
+    disposition: DEFER
+  WORLD_TERMINUS_RENEWAL_MODEL:
+    runnable_lanes: 1
+    disposition: NOT_CROSS_LANE_READY
+
+next_frontier:
+  primary: OFFERING_EXCHANGE_CROSS_TRADITION_TEST
+  condition: >
+    Fresh-check the Hindu, Norse, and Sumerian exact source heads before
+    execution and preserve the distinction between textual offering efficacy,
+    material deposition, and reciprocal interpretation.
+
+guards:
+  - COVERAGE_IS_NOT_IMPORTANCE
+  - DO_NOT_RESEARCH_MERELY_TO_FILL_CELLS
+  - SHARED_AXIS_NE_SHARED_MECHANISM
+  - EVIDENCE_MODE_DIFFERENCE_MUST_REMAIN_VISIBLE
