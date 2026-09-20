@@ -1,0 +1,58 @@
+schema_version: on-theo.hindu-tantric-mantra-research-state.v1
+status: LATER_TANTRIC_MANTRA_PARAMETER_PACKET_COMPLETE_NON_CANONICAL
+
+base:
+  branch: research/hindu-rigvedic-upanishadic-proposition-v1-20260920
+  exact_head: 614fa715fcacee0d7ec1ba573061d3e776e708d3
+
+new_artifacts:
+  - traditions/hindu/tantric-mantra-parameter-packet-v1.md
+  - traditions/hindu/tantric-mantra-parameter-evidence-v1.yaml
+
+strongest_results:
+  - >
+    Selected later Hindu Tantric sources preserve mantra systems in which
+    initiation, transmission, formal selection, repetition/perfection, error
+    control, body placement and phonemic form are source-claimed parameters.
+  - >
+    Bija and related compact mantra forms provide the strongest current
+    LOW_PROPOSITIONAL_SEMANTIC_FORM candidate in ON_THEO.
+  - >
+    Netra/Svacchanda material treats mantra form and deity identity as tightly
+    coupled within the theology, while preserving recitational/error controls.
+  - >
+    Sri Vidya sources preserve structured enunciation-duration models.
+  - >
+    Tantric phonematic cosmologies are diverse; one universal sound cosmology is
+    rejected.
+  - >
+    No empirical external effect or hidden interface is established.
+
+comparison_contribution:
+  ritual_interface_parameter_sensitivity:
+    status: HIGHEST_INFORMATION_LOW_PROPOSITIONAL_FORM_CASE_TO_DATE
+    claim_ceiling: >
+      Historical source-secure form sensitivity and theological efficacy claims
+      only; no verified external causal effect.
+
+next_frontiers:
+  - Kularnava_15_16_clause_level_parameter_matrix
+  - Netra_21_mantra_error_sequence_source_binding
+  - bija_semantic_form_typology
+  - nyasa_body_mapping_source_matrix
+  - Srividya_enunciation_duration_matrix
+  - Hindu_Buddhist_Tantric_contact_transmission_control
+  - safe_semantic_vs_form_discriminator_design
+
+review_implications_for_pr128:
+  - sound_only_model_further_rejected
+  - form_identity_model_strengthened
+  - medium_and_body_mapping_require_first_class_matrix_fields
+  - cross_tradition_independence_requires_contact_control
+
+guards:
+  - FORM_SENSITIVITY_NE_EXTERNAL_INTERFACE
+  - LOCAL_TANTRIC_SYSTEM_NE_UNIVERSAL_LANGUAGE
+  - INITIATION_NE_HIDDEN_AUTHENTICATION
+  - SOURCE_CLAIMED_POWER_NE_EMPIRICAL_EFFECT
+  - HARMFUL_OR_INTENSE_HISTORICAL_PRACTICES_NE_MODERN_REPLICATION

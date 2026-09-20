@@ -1,0 +1,120 @@
+schema_version: on-theo.hindu-tantric-mantra-parameter-evidence.v1
+status: NON_CANONICAL_LATER_TANTRIC_MANTRASASTRA_CONTROL
+parent_exact_head: 614fa715fcacee0d7ec1ba573061d3e776e708d3
+packet: traditions/hindu/tantric-mantra-parameter-packet-v1.md
+
+records:
+  - id: HIN-TAN-MANTRA-SELECTION-001
+    evidence_class:
+      - PRIMARY_TEXT_MEDIATED_BY_SCHOLARLY_ANALYSIS
+      - SCHOLARLY_INTERPRETATION
+    source_families:
+      - KULARNAVATANTRA_15_16
+      - SARADATILAKATANTRA
+      - PADARTHADARSA
+      - MANTRAMAHODADHI
+      - TANTRARAJA
+    propositions:
+      - mantra_selection_transmission_initiation_repetition_and_perfection_are_formalized
+      - preceptor_authorization_is_structural_in_selected_sources
+      - mantra_form_is_treated_as_more_than_ordinary_sentence_content
+    supports:
+      - RITUAL_PARAMETER_SENSITIVITY
+      - OPERATOR_QUALIFICATION_PARAMETER
+      - REPETITION_AND_PERFECTION_PARAMETER
+      - LOW_PROPOSITIONAL_SEMANTIC_FORM
+    confidence: BOUNDED_STRONG
+    empirical_external_effect: NONE_ESTABLISHED
+
+  - id: HIN-TAN-MANTRA-NETRA-001
+    evidence_class:
+      - PRIMARY_TEXT_MEDIATED_BY_SCHOLARLY_ANALYSIS
+      - SCHOLARLY_INTERPRETATION
+    source_families:
+      - NETRA_TANTRA
+      - SVACCHANDA_TANTRA
+    scholarly_control:
+      - SAUTHOFF_LANGUAGE_PHYSICALITY_MANTRA
+    propositions:
+      - selected_texts_theorize_mantra_and_deity_as_inseparable
+      - mantra_can_be_described_in_embodied_disembodied_or_unmanifest_terms
+      - recitational_sequences_can_protect_against_error_or_impurity
+    supports:
+      - MANTRA_DEITY_IDENTITY_CLAIM
+      - ERROR_SENSITIVITY
+      - RITUAL_PARAMETER_SENSITIVITY
+    confidence: BOUNDED
+    not_established:
+      - empirical_mantra_deity_identity
+      - external_effect_of_error_correction
+
+  - id: HIN-TAN-NYASA-001
+    evidence_class:
+      - RITUAL_TEXT_TRADITION
+      - SCHOLARLY_INTERPRETATION
+    scholarly_control:
+      - PADOUX_TANTRIC_MANTRAS
+    propositions:
+      - selected_mantric_practice_places_mantra_or_phonemic_forms_on_the_body
+      - oral_and_written_form_are_both_historically_relevant
+    supports:
+      - FORM_BODY_COUPLING_MODEL
+      - FORM_BEARING_MEDIUM_MODEL
+    confidence: BOUNDED_STRONG_AS_RITUAL_DESCRIPTION
+    empirical_external_effect: NONE_ESTABLISHED
+
+  - id: HIN-TAN-SRIVIDYA-TIME-001
+    evidence_class:
+      - PRIMARY_TEXT_MEDIATED_BY_SCHOLARLY_ANALYSIS
+      - COMMENTARY
+    source_families:
+      - YOGINIHrDAYA
+      - DIPIKA_AMRTANANDA
+      - VARIVASYARAHASYA
+      - PRAKASA_COMMENTARY
+    scholarly_control:
+      - ANRO_MATHEMATICS_OF_A_MANTRA
+    propositions:
+      - selected_Srividya_sources_assign_rigorous_enunciation_duration_relations
+      - timing_is_given_metaphysical_and_ritual_significance
+    supports:
+      - TEMPORAL_ACOUSTIC_PARAMETER
+      - RITUAL_PARAMETER_SENSITIVITY
+    confidence: BOUNDED
+    empirical_external_effect: NONE_ESTABLISHED
+
+  - id: HIN-TAN-PHONEMATIC-DIVERSITY-001
+    evidence_class:
+      - SCHOLARLY_SYNTHESIS
+    propositions:
+      - tantric_sources_preserve_multiple_models_of_sound_phonemes_speech_and_cosmogenesis
+      - commentators_systematize_diverse_models
+    supports:
+      - PHONEMATIC_COSMOLOGY_DIVERSITY_MODEL
+    confidence: BOUNDED_STRONG
+    negative_result:
+      - ONE_TANTRIC_SOUND_COSMOLOGY_REJECTED
+
+axes:
+  RITUAL_PARAMETER_SENSITIVITY: BOUNDED_STRONG_SELECTED_TANTRIC_MANTRA
+  LOW_PROPOSITIONAL_SEMANTIC_FORM: BOUNDED_STRONG
+  OPERATOR_QUALIFICATION_PARAMETER: BOUNDED_STRONG
+  REPETITION_AND_PERFECTION_PARAMETER: BOUNDED_STRONG
+  FORM_BODY_COUPLING_MODEL: BOUNDED_STRONG_AS_RITUAL_CLAIM
+  FORM_BEARING_MEDIUM_MODEL: BOUNDED
+  ERROR_SENSITIVITY: BOUNDED
+  TEMPORAL_ACOUSTIC_PARAMETER: BOUNDED_SELECTED_SRIVIDYA
+  MANTRA_DEITY_IDENTITY_CLAIM: BOUNDED_SELECTED_TEXTS
+  ONE_TANTRIC_SOUND_COSMOLOGY: REJECTED
+  EMPIRICALLY_VERIFIED_EXTERNAL_EFFECT: NONE_ESTABLISHED
+  HIDDEN_INTERFACE: NONE_ESTABLISHED
+
+guards:
+  - VEDIC_MANTRA_NE_TANTRIC_MANTRA
+  - TANTRA_NE_ONE_TRADITION
+  - BIJA_NE_MEANINGLESS_NOISE
+  - LOW_PROPOSITIONAL_MEANING_NE_NO_MEANING
+  - INITIATION_NE_HIDDEN_PERMISSION_SYSTEM
+  - MANTRA_DEITY_IDENTITY_CLAIM_NE_EMPIRICAL_IDENTITY
+  - NYASA_NE_EXTERNAL_BODY_API
+  - HINDU_BUDDHIST_TANTRIC_SIMILARITY_NE_INDEPENDENT_DISCOVERY
