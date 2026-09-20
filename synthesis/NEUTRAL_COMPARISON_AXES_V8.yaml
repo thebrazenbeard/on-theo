@@ -1,0 +1,163 @@
+schema_version: on-theo.neutral-comparison-axes.v8
+status: PROJECT_METHOD_CANDIDATE_NON_CANONICAL
+supersedes_for_current_research:
+  - synthesis/NEUTRAL_COMPARISON_AXES_V7.yaml
+
+layers:
+  - SOURCE_PROPOSITION
+  - TEXTUAL_OR_HISTORICAL_LAYER
+  - EVIDENCE_MODE
+  - NEUTRAL_COMPARISON_AXIS
+  - OPTIONAL_SYSTEMS_ANALOGY
+
+axes:
+  - id: WORLD_ORIGIN_MODEL
+    question: What does the source claim or refuse to claim about cosmic origin/order?
+
+  - id: WORLD_TERMINUS_RENEWAL_MODEL
+    question: >
+      Does a source describe world-scale crisis, destruction, renewal,
+      recurrence, finality, or survival, and what continues through it?
+    reason_added: >
+      Völuspá's Ragnarök/renewal horizon cannot be represented adequately as
+      individual postmortem destiny or personal judgment.
+
+  - id: CAUSAL_ORDER_TYPE
+    question: What kind of causal order does the source describe or presuppose?
+
+  - id: GENERATION_AND_CONTROL_MODEL
+    question: >
+      Does the source distinguish generating, sustaining, nurturing, possessing,
+      commanding, judging, and governing?
+
+  - id: AGENCY_AND_AUTHORITY_MODEL
+    question: What possesses privileged agency or authority, if anything?
+
+  - id: FATE_CONSTRAINT_MODEL
+    question: >
+      What destinies, decrees, prophecies, inherited conditions, or structural
+      constraints bind agents, and how does agency operate under them?
+    reason_added: >
+      Völuspá directly depicts Norns laying down laws, choosing lives, and
+      assigning destinies while other agents continue to deliberate and act.
+    guard: fate_language_ne_total_determinism_by_default
+
+  - id: PERSON_OR_SELF_MODEL
+    question: What constitutes a person/self and how stable is that category?
+
+  - id: TRANSFORMATION_MODEL
+    question: >
+      How does a source conceptualize changes of form, identity, state,
+      life/death, or perspective, and what remains invariant if anything?
+
+  - id: CONTINUITY_MODEL
+    question: What, if anything, continues across death or major transformation?
+
+  - id: POSTMORTEM_PATH_MODEL
+    question: Does the source distinguish postmortem routes, returns, or non-returns?
+
+  - id: MORAL_CAUSALITY_MODEL
+    question: How do actions or moral states acquire consequences?
+
+  - id: PURITY_POLLUTION_MODEL
+    question: >
+      What states make persons, places, objects, communities, or rites fit or
+      unfit for sacred activity, and how are those states changed?
+
+  - id: LIBERATION_OR_FINAL_TRANSFORMATION_MODEL
+    question: What counts as desired or final transformation, if defined?
+
+  - id: KNOWLEDGE_OR_DISCLOSURE_MODEL
+    question: >
+      How is authoritative or otherwise unavailable knowledge obtained, and how
+      does that mechanism change across textual or institutional periods?
+
+  - id: KNOWLEDGE_OR_PRACTICE_DIFFERENTIATION_MODEL
+    question: Do different knowledge/practice profiles lead to different outcomes?
+
+  - id: INTERVENTION_MODEL
+    question: Does the source describe privileged intervention in ordinary causality?
+
+  - id: RITUAL_ORDER_MODEL
+    question: >
+      What combinations of office, calendar, purity, offering, place, speech,
+      object, and action constitute valid ritual order?
+
+  - id: OFFERING_EXCHANGE_MODEL
+    question: >
+      What is offered, to whom or what, through what mediator, for what outcome,
+      and how reciprocal is the relationship represented?
+    reason_added: >
+      Norse material and textual ritual evidence requires comparison of offering
+      relationships without reducing every sacrifice to payment, appeasement, or
+      one generic worship mechanism.
+
+  - id: SACRAL_PRESENCE_MODEL
+    question: >
+      Where or how is sacred presence localized, represented, hosted, invoked,
+      transmitted, or approached?
+
+  - id: WORLD_STATUS_MODEL
+    question: How does the source characterize experienced reality?
+
+  - id: SOCIAL_COSMOLOGY_MODEL
+    question: Does social hierarchy become part of cosmic/postmortem order?
+
+  - id: INSTITUTIONALIZATION_MODEL
+    question: >
+      How are teachings, specialists, communities, authorities, sites, texts,
+      rituals, and material resources organized and stabilized?
+
+  - id: CONTACT_AND_REINTERPRETATION_MODEL
+    question: >
+      How does contact with another tradition transform categories,
+      institutions, ritual, iconography, or metaphysical explanation?
+
+  - id: REVIVAL_RECONSTRUCTION_MODEL
+    question: >
+      How does a modern community reconstruct, select, innovate, reject, or
+      reinterpret an older religious corpus under modern conditions?
+    reason_added: >
+      Ásatrúarfélagið explicitly documents modern institutional and ritual
+      innovation while relating itself to older Nordic religious heritage.
+
+comparison_rules:
+  - source_answer_may_change_diachronically_within_one_tradition
+  - preserver_worldview_must_be_separated_from_preserved_tradition_claim
+  - medieval_witness_date_must_not_become_composition_date
+  - normalized_editorial_text_must_not_become_one_manuscript
+  - modern_revival_must_not_be_reverse_projected_into_ancient_religion
+  - modern_innovation_must_not_be_dismissed_as_inauthentic_by_definition
+  - variant_accounts_must_remain_variants
+  - ritual_evidence_ne_doctrinal_treatise
+  - mythic_attestation_ne_cult_attestation
+  - institutional_history_ne_metaphysical_truth
+  - generating_ne_owning_by_default
+  - transformation_ne_persistence_by_default
+  - pollution_ne_moral_guilt_by_default
+  - fate_ne_total_determinism_by_default
+  - systems_mapping_is_optional_and_downstream
+  - missing_source_support_yields_UNKNOWN_not_inference
+  - similar_axis_value_does_not_imply_transmission
+
+bounded_source_bindings:
+  buddhism:
+    head: 1c6c7a9a35901a529d377e1bd6fb86a88c1cdbe9
+    binding: synthesis/BUDDHIST_PRIMARY_SOURCE_BINDING_V2.yaml
+  hindu:
+    head: 0c3123f4f1cf03e6f6a29ca0d0eb7edfddff5e75
+    binding: synthesis/HINDU_PRIMARY_SOURCE_BINDING_V2.yaml
+  daoism:
+    head: 483d1bcaebb57a00cda5eb30c15bc3908fdac438
+    binding: synthesis/DAOISM_PRIMARY_SOURCE_BINDING_V2.yaml
+  shinto:
+    head: 31b67b5a0aec7015878e5fcf9de2936db80cf83b
+    binding: synthesis/SHINTO_PRIMARY_SOURCE_BINDING_V1.yaml
+  norse:
+    head: bc8adf8ee6e0135e2b22fbeb9f5daa4bce4b99e7
+    binding: synthesis/NORSE_PRIMARY_SOURCE_BINDING_V1.yaml
+
+effect_boundary:
+  changes_existing_commonality_matrix: false
+  canonical_effect: false
+  promotes_GOD_model: false

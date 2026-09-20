@@ -1,0 +1,60 @@
+schema_version: on-theo.norse-synthesis-source-binding.v1
+status: NON_CANONICAL_EXACT_SOURCE_EXTENSION
+
+source_extension:
+  branch: research/norse-witness-material-v1-20260920
+  head: bc8adf8ee6e0135e2b22fbeb9f5daa4bce4b99e7
+  base_branch: asatru
+  base_head: 4af66d0bb3aa3f9bbfcd45fb52b400045b9d5339
+  draft_pr: 101
+
+source_artifacts:
+  textual:
+    - traditions/norse/voluspa-witness-proposition-packet-v1.md
+  material:
+    - traditions/norse/material-ritual-evidence-v1.md
+  contact:
+    - traditions/norse/christianization-source-boundary-v1.md
+  modern:
+    - traditions/norse/modern-asatru-separation-v1.md
+  evidence:
+    - traditions/norse/neutral-axis-evidence-v1.yaml
+  state:
+    - traditions/norse/research-state-v2.yaml
+
+controlled_layers:
+  - CODEX_REGIUS_VOLUSPA
+  - HAUKSBOK_VOLUSPA
+  - PROSE_EDDA_CROSSCHECK
+  - TISSO_MATERIAL_RITUAL
+  - CONVERSION_PERIOD_MIXED_SYMBOLS
+  - MODERN_ASATRUARFELAGID
+
+strengthened_axes:
+  - WORLD_ORIGIN_MODEL
+  - PERSON_OR_SELF_MODEL
+  - AGENCY_AND_AUTHORITY_MODEL
+  - FATE_CONSTRAINT_MODEL
+  - WORLD_TERMINUS_RENEWAL_MODEL
+  - TRANSFORMATION_MODEL
+  - RITUAL_ORDER_MODEL
+  - SACRAL_PRESENCE_MODEL
+  - OFFERING_EXCHANGE_MODEL
+  - CONTACT_AND_REINTERPRETATION_MODEL
+  - REVIVAL_RECONSTRUCTION_MODEL
+  - INSTITUTIONALIZATION_MODEL
+
+readiness:
+  bounded_Norse_comparison: true
+  broad_preChristian_Norse_synthesis: false
+  modern_Asatru: SEPARATE_LIVING_TRADITION_LAYER
+
+guards:
+  - MEDIEVAL_WITNESS_NE_VIKING_AGE_MANUSCRIPT
+  - MODERN_NORMALIZED_VOLUSPA_NE_ONE_MANUSCRIPT
+  - SNORRI_NE_TRANSPARENT_PAGAN_TRANSCRIPT
+  - FATE_NE_TOTAL_DETERMINISM_BY_DEFAULT
+  - RAGNAROK_NE_CHRISTIAN_APOCALYPSE_BY_DEFAULT
+  - MATERIAL_RITUAL_NE_LITERARY_MYTH
+  - MODERN_ASATRU_NE_UNBROKEN_DIRECT_SURVIVAL
+  - SOURCE_EXTENSION_NE_CANONICAL_MERGE
