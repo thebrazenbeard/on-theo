@@ -1,0 +1,15 @@
+schema_version: on-theo.modern-satanism-research-state.v2
+status: CHURCH_OF_SATAN_LAYER_ADDED
+supersedes_for_current_research:
+  - traditions/modern-satanism/research-state-v1.yaml
+
+branch:
+  name: research/modern-satanism-diachronic-v1-20260920
+  pr: 114
+
+new_artifacts:
+  cos_packet: traditions/modern-satanism/church-of-satan-proposition-packet-v1.md
+  cos_evidence: traditions/modern-satanism/church-of-satan-evidence-v1.yaml
+
+next_frontier:
+  primary: SATANIC_TEMPLE_PROPOSITION_PACKET_V1
