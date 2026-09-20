@@ -1,0 +1,41 @@
+schema_version: on_theo.early_christianity_marcion_research_state.v1
+status: ACTIVE
+canonical: false
+
+branch: research/marcion-primary-witness-control-v1-20260920
+parent:
+  branch: corpus/early-christian-rabbinic-v1-20260917
+  exact_head: 5a45ef5cdadc1f1f3a21e769e2d613c4ed945d8d
+
+completed:
+  - IRENAEUS_AH_1_27_SOURCE_BOUNDARY
+  - TERTULLIAN_ADV_MARC_IV_GOSPEL_WITNESS_BOUNDARY
+  - TERTULLIAN_ADV_MARC_V_APOSTOLIKON_WITNESS_BOUNDARY
+  - MODERN_RECONSTRUCTION_METHOD_CONTROL
+  - LUKE_MARCION_EDITORIAL_DIRECTION_HOLD
+  - TESTAMENT_BOOK_V_DOWNSTREAM_CLAIM_CEILING
+
+key_artifacts:
+  - traditions/early-christianity/marcion-primary-witness-control-v1.md
+  - traditions/early-christianity/marcion-primary-witness-matrix-v1.yaml
+
+current_results:
+  marcionite_gospel_lukan_overlap: BOUNDED_STRONG
+  marcionite_pauline_collection: BOUNDED_STRONG
+  creator_higher_god_distinction: BOUNDED_MODERATE_TO_STRONG
+  canonical_luke_to_marcion_direction: UNKNOWN
+  marcion_to_canonical_luke_direction: UNKNOWN
+  monocausal_new_testament_creation: NOT_ADMITTED
+
+next_frontier:
+  - EPIPHANIUS_PANARION_42_EXACT_WITNESS_PACKET
+  - ADAMANTIUS_DIALOGUE_EXACT_WITNESS_PACKET
+  - SELECTED_EVANGELION_LOCUS_MATRIX
+  - APOSTOLIKON_CORPUS_MATRIX
+
+invariants:
+  - "PRIMARY_TEXT witness to an opponent != opponent's own extant text."
+  - "Reconstruction != manuscript witness."
+  - "Ancient accusation of mutilation != settled modern editorial direction."
+  - "Similarity != transmission direction."
+  - "Testament literary use cannot become ON_THEO evidence."
