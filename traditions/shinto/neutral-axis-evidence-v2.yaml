@@ -1,0 +1,155 @@
+schema_version: on-theo.shinto-neutral-axis-evidence.v2
+status: BOUNDED_CLASSICAL_RITUAL_MATERIAL_PLUS_HUMAN_SPIRIT_EVIDENCE
+supersedes_for_current_research:
+  - traditions/shinto/neutral-axis-evidence-v1.yaml
+parent_branch: research/shinto-variant-ritual-material-v1-20260920
+parent_head: 31b67b5a0aec7015878e5fcf9de2936db80cf83b
+
+preserved_records:
+  - SHI-KIKI-VARIANT-001
+  - SHI-YOMI-PURITY-001
+  - SHI-NORITO-001
+  - SHI-SHRINE-001
+  - SHI-BUDDHIST-CONTACT-001
+
+new_records:
+  - id: SHI-TAMA-001
+    evidence_class: SCHOLARLY_INTERPRETATION
+    evidence:
+      - KOKUGAKUIN_TAMA
+    propositions:
+      - tama_can_refer_to_human_spirit
+      - tama_can_also_refer_to_nonhuman_spiritual_force
+      - mitama_can_be_honorific_tama
+    supports:
+      - PERSON_OR_SELF_MODEL
+    confidence: partial
+    guards:
+      - TAMA_NE_WESTERN_IMMORTAL_SOUL
+      - LEXICAL_SYNTHESIS_NE_PRIMARY_TEXT
+
+  - id: SHI-CHINKON-001
+    evidence_class:
+      - DOCUMENTARY_PRACTICE
+      - COMMENTARY
+    evidence:
+      - RYO_NO_GIGE_833
+      - CHINKON_SAI
+    propositions:
+      - imperial_spirit_can_be_conceived_as_trying_to_depart_body
+      - ritual_can_call_back_pacify_or_strengthen_spirit
+    supports:
+      - PERSON_OR_SELF_MODEL
+      - RITUAL_ORDER_MODEL
+    confidence: bounded_for_court_ritual_layer
+    guards:
+      - COURT_RITE_NE_UNIVERSAL_ANTHROPOLOGY
+
+  - id: SHI-HUMAN-CONTINUITY-LOCATOR-001
+    evidence_class:
+      - PRIMARY_TEXT_LOCATOR
+      - SCHOLARLY_INTERPRETATION
+    evidence:
+      - NIHON_SHOKI_UJI_NO_WAKI_IRATSUKO
+      - SHOKU_NIHONGI_IMPERIAL_ANCESTOR_SPIRIT_LOCATORS
+    propositions:
+      - classical_or_early_court_sources_include_human_postmortem_or_revival_continuity_motifs
+    supports:
+      - CONTINUITY_MODEL
+      - PERSON_OR_SELF_MODEL
+    confidence: partial
+    guards:
+      - EXACT_PRIMARY_PASSAGES_PENDING
+
+  - id: SHI-GORYO-001
+    evidence_class:
+      - DOCUMENTARY_PRACTICE
+      - HISTORICAL_RECONSTRUCTION
+    evidence:
+      - GORYO_E_SHINSENEN_863
+    propositions:
+      - dead_human_spirits_can_be_treated_as_continuing_social_causal_agents
+      - appeasement_ritual_can_target_postmortem_human_spirits
+      - Buddhist_kami_contact_is_integral_to_record
+    supports:
+      - CONTINUITY_MODEL
+      - MORTUARY_RELATIONSHIP_MODEL
+      - CONTACT_AND_REINTERPRETATION_MODEL
+    confidence: bounded_for_Heian_layer
+    guards:
+      - GORYO_NE_PRIMORDIAL_SHINTO
+
+  - id: SHI-HUMAN-KAMI-001
+    evidence_class:
+      - HISTORICAL_RECONSTRUCTION
+      - LATER_TRADITION
+    evidence:
+      - SUGAWARA_MICHIZANE_TENJIN
+      - HUMAN_KAMI_HISTORICAL_CASES
+    propositions:
+      - named_human_identity_can_continue_in_posthumous_cult
+      - some_human_spirits_can_be_enshrined_as_kami
+      - posthumous_status_can_change_historically
+    supports:
+      - CONTINUITY_MODEL
+      - TRANSFORMATION_MODEL
+      - SACRAL_PRESENCE_MODEL
+    confidence: bounded_for_later_historical_cases
+    guards:
+      - HUMAN_KAMI_CASE_NE_ALL_HUMANS_BECOME_KAMI
+
+  - id: SHI-MODERN-ANCESTOR-001
+    evidence_class:
+      - MODERN_TRADITION
+      - DOCUMENTARY_PRACTICE
+    evidence:
+      - SHINTO_FUNERAL_MANUALS
+      - 1872_OFFICIAL_FUNERAL_PROCEDURE
+      - SOREI_AND_MITAMAYA_PRACTICE
+    propositions:
+      - deceased_spirit_can_be_ritually_memorialized_in_household_ancestor_system
+      - modern_Shinto_funeral_practice_has_formal_postmortem_spirit_model
+    supports:
+      - CONTINUITY_MODEL
+      - MORTUARY_RELATIONSHIP_MODEL
+      - RITUAL_ORDER_MODEL
+    confidence: bounded_for_modern_layer
+    guards:
+      - MODERN_SHINTO_FUNERAL_NE_ANCIENT_FUNERAL
+      - BUDDHIST_CONFUCIAN_INTERACTION_MUST_REMAIN_VISIBLE
+
+comparison_status:
+  WORLD_ORIGIN_MODEL: BOUNDED_VARIANT_SUPPORT
+  AGENCY_AND_AUTHORITY_MODEL: BOUNDED_VARIANT_SUPPORT
+  PERSON_OR_SELF_MODEL: PARTIAL_BOUNDED
+  CONTINUITY_MODEL: PARTIAL_STRENGTHENED
+  POSTMORTEM_PATH_MODEL: PARTIAL
+  MORTUARY_RELATIONSHIP_MODEL: PARTIAL_LATER_LAYER
+  TRANSFORMATION_MODEL: BOUNDED_DIAchRONIC_CASES
+  INSTITUTIONALIZATION_MODEL: BOUNDED
+  PURITY_POLLUTION_MODEL: BOUNDED
+  SACRAL_PRESENCE_MODEL: BOUNDED
+  RITUAL_ORDER_MODEL: BOUNDED
+  CONTACT_AND_REINTERPRETATION_MODEL: BOUNDED
+
+readiness:
+  bounded_Shinto_comparison: strengthened
+  PERSON_OR_SELF_comparison: true_with_diachronic_guards
+  CONTINUITY_comparison: true_with_diachronic_guards
+  broad_Shinto_synthesis: false
+  exact_Nihon_shoki_human_spirit_binding: pending
+  exact_Shoku_nihongi_ancestor_binding: pending
+  modern_to_ancient_reverse_projection: prohibited
+
+guards:
+  - KAMI_NE_MONOTHEISTIC_GOD
+  - KAMI_NE_ONE_FIXED_ONTOLOGICAL_SPECIES
+  - TAMA_NE_WESTERN_IMMORTAL_SOUL
+  - COURT_CHINKON_NE_UNIVERSAL_ANTHROPOLOGY
+  - MYTHIC_DEATH_NE_HUMAN_FUNERAL_DEFAULT
+  - GORYO_NE_PRIMORDIAL_SHINTO
+  - HUMAN_KAMI_CASE_NE_ALL_HUMANS_BECOME_KAMI
+  - LATER_ANCESTOR_DOCTRINE_NE_ANCIENT_PRIMARY_TEXT
+  - MODERN_SHINTO_FUNERAL_NE_ANCIENT_FUNERAL
+  - VARIANT_ACCOUNT_NE_ERROR_TO_HARMONIZE
+  - SYSTEMS_ANALOGY_REMAINS_DOWNSTREAM

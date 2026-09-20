@@ -1,0 +1,59 @@
+schema_version: on-theo.shinto-research-state.v3
+status: PERSONHOOD_HUMAN_CONTINUITY_LAYER_ACTIVE
+parent_head: 31b67b5a0aec7015878e5fcf9de2936db80cf83b
+parent_state: traditions/shinto/research-state-v2.yaml
+
+new_artifacts:
+  - traditions/shinto/personhood-human-continuity-packet-v1.md
+  - traditions/shinto/human-spirit-diachrony-v1.yaml
+  - traditions/shinto/neutral-axis-evidence-v2.yaml
+
+new_evidence_layers:
+  - TAMA_MITAMA_LEXICAL_SYNTHESIS
+  - RYO_NO_GIGE_833_CHINKON_COURT_RITUAL
+  - NIHON_SHOKI_HUMAN_REVIVAL_LOCATOR
+  - SHOKU_NIHONGI_IMPERIAL_ANCESTOR_LOCATORS
+  - GORYO_E_863
+  - SUGAWARA_MICHIZANE_TENJIN_TRANSFORMATION
+  - MEDIEVAL_EARLY_MODERN_HUMAN_KAMI
+  - MODERN_SHINTO_ANCESTOR_AND_FUNERAL_SYSTEM
+
+axes_strengthened:
+  PERSON_OR_SELF_MODEL: PARTIAL_BOUNDED
+  CONTINUITY_MODEL: PARTIAL_STRENGTHENED
+  MORTUARY_RELATIONSHIP_MODEL: PARTIAL_LATER_LAYER
+  TRANSFORMATION_MODEL: BOUNDED_DIAchRONIC_CASES
+  CONTACT_AND_REINTERPRETATION_MODEL: STRENGTHENED
+
+existing_axes_preserved:
+  WORLD_ORIGIN_MODEL: BOUNDED_VARIANT_SUPPORT
+  AGENCY_AND_AUTHORITY_MODEL: BOUNDED_VARIANT_SUPPORT
+  POSTMORTEM_PATH_MODEL: PARTIAL
+  PURITY_POLLUTION_MODEL: BOUNDED
+  SACRAL_PRESENCE_MODEL: BOUNDED
+  RITUAL_ORDER_MODEL: BOUNDED
+  INSTITUTIONALIZATION_MODEL: BOUNDED
+
+readiness:
+  bounded_Shinto_comparison: strengthened
+  person_self_six_lane_matrix_ready: true
+  broad_Shinto_comparison: false
+  classical_human_spirit_primary_binding: partial
+  modern_ancestor_system_reverse_projection: prohibited
+
+next_frontiers:
+  - exact_Nihon_shoki_Uji_no_Waki_iratsuko_passage
+  - exact_Shoku_nihongi_ancestral_spirit_senmyo
+  - Heian_goryo_primary_document_chronology
+  - court_vs_household_ancestor_rite_separation
+  - Fudoki_regional_kami_packet
+  - Nara_to_medieval_shinbutsu_interaction_chronology
+
+guards:
+  - TAMA_NE_WESTERN_IMMORTAL_SOUL
+  - COURT_RITUAL_NE_UNIVERSAL_POPULATION_DOCTRINE
+  - GORYO_NE_PRIMORDIAL_SHINTO
+  - HUMAN_DEIFICATION_NE_AUTOMATIC_POSTMORTEM_KAMI_STATUS
+  - MODERN_FUNERAL_SYSTEM_NE_ANCIENT_FUNERAL
+  - BUDDHIST_CONFUCIAN_CONTACT_REMAINS_PART_OF_HISTORY
+  - SYSTEMS_ANALOGY_REMAINS_DOWNSTREAM
