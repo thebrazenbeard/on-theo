@@ -1,0 +1,57 @@
+schema_version: on-theo.norse-research-state.v2
+status: WITNESS_MATERIAL_AND_MODERN_SEPARATION_ACTIVE
+parent_head: 4af66d0bb3aa3f9bbfcd45fb52b400045b9d5339
+parent_state: traditions/norse/research-state-v1.yaml
+
+new_artifacts:
+  - traditions/norse/voluspa-witness-proposition-packet-v1.md
+  - traditions/norse/material-ritual-evidence-v1.md
+  - traditions/norse/christianization-source-boundary-v1.md
+  - traditions/norse/modern-asatru-separation-v1.md
+  - traditions/norse/neutral-axis-evidence-v1.yaml
+
+evidence_layers_active:
+  - CODEX_REGIUS_POETIC_EDDA
+  - HAUKSBOK_VOLUSPA
+  - PROSE_EDDA_CROSSCHECK
+  - ARCHAEOLOGY_TISSO
+  - CONVERSION_PERIOD_MATERIAL
+  - MODERN_ASATRU_SELF_DESCRIPTION
+
+comparison_axes:
+  WORLD_ORIGIN_MODEL: BOUNDED
+  PERSON_OR_SELF_MODEL: PARTIAL
+  AGENCY_AND_AUTHORITY_MODEL: PARTIAL
+  FATE_CONSTRAINT_MODEL: CANDIDATE_AXIS_STRONG_SUPPORT
+  WORLD_TERMINUS_RENEWAL_MODEL: CANDIDATE_AXIS_BOUNDED_SUPPORT
+  TRANSFORMATION_MODEL: PARTIAL
+  RITUAL_ORDER_MODEL: MATERIAL_SUPPORT
+  SACRAL_PRESENCE_MODEL: MATERIAL_SUPPORT
+  OFFERING_EXCHANGE_MODEL: CANDIDATE_AXIS_MATERIAL_SUPPORT
+  CONTACT_AND_REINTERPRETATION_MODEL: BOUNDED_SUPPORT
+  REVIVAL_RECONSTRUCTION_MODEL: CANDIDATE_AXIS_STRONG_MODERN_SUPPORT
+  INSTITUTIONALIZATION_MODEL: PARTIAL
+
+readiness:
+  bounded_Norse_comparison: true
+  broad_Norse_comparison: false
+  modern_Asatru_comparison: LIVING_TRADITION_ONLY
+  modern_to_ancient_reverse_projection: prohibited
+
+blockers:
+  - poem_by_poem_Poetic_Edda_witness_map
+  - Snorri_crosscheck_matrix
+  - skaldic_source_lane
+  - rune_divine_name_registry
+  - regional_archaeology_matrix
+  - fate_vocabulary_deepening
+  - afterlife_source_matrix
+  - Ragnarok_multi_source_matrix
+
+guards:
+  - MANUSCRIPT_DATE_NE_COMPOSITION_DATE
+  - MEDIEVAL_CHRISTIAN_PRESERVATION_NE_FABRICATION
+  - MEDIEVAL_CHRISTIAN_PRESERVATION_NE_TRANSPARENT_PAGAN_REPORT
+  - MATERIAL_EVIDENCE_NE_MYTHIC_NARRATIVE
+  - MODERN_ASATRU_NE_VIKING_AGE_RELIGION
+  - SYSTEMS_ANALOGY_REMAINS_DOWNSTREAM

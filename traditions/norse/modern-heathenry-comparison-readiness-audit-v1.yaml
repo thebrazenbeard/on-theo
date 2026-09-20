@@ -1,0 +1,88 @@
+schema_version: on-theo.modern-heathenry-comparison-readiness-audit.v1
+status: MODERN_SUCCESSOR_LAYER_MATURE_FOR_BOUNDED_COMPARISON
+source_branch: research/norse-witness-material-v1-20260920
+source_head_before_successor_files: 22e9fe10d1647a66458c54478c86e7ba6abd83ce
+pr: 101
+
+scope:
+  organizations:
+    - ASATRUARFELAGID_ICELAND
+    - FORN_SIDR_DENMARK
+    - THE_TROTH
+  evidence_rule: >
+    Current modern organizations are primary evidence for modern Heathenry and
+    modern reconstruction claims, not for Viking-age religious facts.
+
+comparison_eligible:
+  REVIVAL_RECONSTRUCTION_MODEL:
+    status: BOUNDED
+    strongest_result: >
+      Modern Heathen communities reconstruct, revive and renew older Germanic
+      religious source traditions while selecting, adapting and inventing
+      practices under current conditions.
+
+  CONTINUITY_MODEL:
+    status: BOUNDED
+    subtype: INTERRUPTED_REVIVAL_WITH_RECONSTRUCTION
+    guards:
+      - REVIVAL_NE_UNBROKEN_SURVIVAL
+
+  RITUAL_ORDER_MODEL:
+    status: BOUNDED_CURRENT
+    strongest_result: >
+      Current ritual order includes organizationally recognized blót and
+      life-cycle practices alongside substantial local and personal variation.
+
+  INSTITUTIONALIZATION_MODEL:
+    status: BOUNDED_CURRENT
+    strongest_result: >
+      Modern Heathen organizations institutionalize religious service,
+      governance, ritual leadership, education and community without one shared
+      transnational church architecture.
+
+  AGENCY_AND_AUTHORITY_MODEL:
+    status: BOUNDED_CURRENT
+    strongest_result: >
+      Modern authority ranges from goðar and formal organizational offices to
+      strong personal-practice autonomy.
+
+  SACRAL_PRESENCE_MODEL:
+    status: BOUNDED_CURRENT
+    strongest_result: >
+      Current organizations explicitly relate to gods, ancestors, land/house
+      spirits and other beings, with significant theological variation.
+
+  SACRED_TIME_CALENDAR_MODEL:
+    status: PARTIAL
+    source: ASATRUARFELAGID
+    strongest_result: >
+      A current Icelandic organization institutionally schedules principal
+      blóts through seasonal/calendar structure.
+    guard:
+      - CURRENT_CALENDAR_NE_ANCIENT_CALENDAR_IDENTITY
+
+held_or_not_admitted:
+  WORLD_ORIGIN_MODEL: NOT_ADMITTED_CURRENT_SUCCESSOR_PACKET
+  POSTMORTEM_PATH_MODEL: HOLD
+  POLITICAL_SACRALIZATION_MODEL: NOT_ADMITTED
+  ONE_MODERN_HEATHEN_THEOLOGY: NOT_SUPPORTED
+
+method_result:
+  acknowledged_innovation_control:
+    source: ASATRUARFELAGID_SIDFESTA
+    result: >
+      A revival community can explicitly acknowledge a rite as modern and still
+      treat it as religiously authentic within the living tradition.
+
+readiness_result:
+  modern_successor_layer_complete_for_bounded_comparison: true
+  ancient_modern_reverse_projection_allowed: false
+  exact_current_organization_scope_required: true
+
+strongest_result: >
+  Modern Heathenry is a plural revival field whose current organizations provide
+  bounded evidence for reconstruction, institutionalization, ritual and
+  contemporary theology while supplying no direct shortcut around the
+  fragmentary ancient Norse record.
+
+next_portfolio_frontier: ORIGINAL_WORLD_EXPANSION_QUEUE_COMPLETION_AUDIT_V1

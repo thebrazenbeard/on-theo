@@ -1,0 +1,100 @@
+schema_version: on-theo.modern-heathenry-evidence.v1
+status: BOUNDED_MULTI_ORGANIZATION_REVIVAL
+
+records:
+  - id: HEA-IS-001
+    source:
+      - ASATRUARFELAGID_OFFICIAL_SITE
+      - ASATRUARFELAGID_CURRENT_RULES
+    evidence_class:
+      - CURRENT_ORGANIZATIONAL_SELF_DESCRIPTION
+      - DOCUMENTARY_PRACTICE
+    propositions:
+      - organization_founded_1972_and_recognized_1973
+      - goðar_are_current_religious_officials
+      - four_principal_blot_categories_are_currently_institutionalized
+      - current_practice_allows_individual_variation_within_rules
+    supports:
+      - INSTITUTIONALIZATION_MODEL
+      - RITUAL_ORDER_MODEL
+      - AGENCY_AND_AUTHORITY_MODEL
+      - SACRED_TIME_CALENDAR_MODEL_PARTIAL
+    confidence: HIGH_CURRENT
+
+  - id: HEA-SIDFESTA-001
+    source: ASATRUARFELAGID_SIDFESTA
+    evidence_class: CURRENT_ORGANIZATIONAL_SELF_DESCRIPTION
+    propositions:
+      - siðfesta_in_current_form_is_not_claimed_as_known_ancient_rite
+      - first_organizational_siðfesta_held_1973
+      - rite_developed_as_modern_alternative_to_Christian_confirmation
+    supports:
+      - REVIVAL_RECONSTRUCTION_MODEL
+      - CONTINUITY_MODEL
+    confidence: HIGH_CURRENT
+
+  - id: HEA-DK-001
+    source:
+      - FORN_SIDR_OFFICIAL_SITE
+      - FORN_SIDR_BYLAWS
+    evidence_class:
+      - CURRENT_ORGANIZATIONAL_SELF_DESCRIPTION
+      - DOCUMENTARY_PRACTICE
+    propositions:
+      - organization_founded_1997_and_recognized_2003
+      - old_sources_and_newer_forms_are_both_explicit_resources
+      - blót_sejd_galder_and_rune_magic_are_named_current_practice_categories
+      - member_personal_practice_has_significant_freedom_within_rules
+    supports:
+      - REVIVAL_RECONSTRUCTION_MODEL
+      - RITUAL_ORDER_MODEL
+      - INSTITUTIONALIZATION_MODEL
+    confidence: HIGH_CURRENT
+
+  - id: HEA-TROTH-001
+    source:
+      - TROTH_CURRENT_BYLAWS_2026
+      - TROTH_POSITION_STATEMENT
+      - TROTH_ORGANIZATION_PAGE
+    evidence_class:
+      - CURRENT_ORGANIZATIONAL_SELF_DESCRIPTION
+      - DOCUMENTARY_PRACTICE
+    propositions:
+      - The_Troth_is_currently_polytheistic
+      - modern_Heathenry_is_explicitly_described_as_reconstruction_revival_renewal
+      - multiple_theologies_and_practices_are_permitted
+      - organization_has_formal_service_education_and_governance_structure
+    supports:
+      - REVIVAL_RECONSTRUCTION_MODEL
+      - SACRAL_PRESENCE_MODEL
+      - INSTITUTIONALIZATION_MODEL
+      - AGENCY_AND_AUTHORITY_MODEL
+    confidence: HIGH_CURRENT
+
+  - id: HEA-SCHOLAR-001
+    evidence:
+      - ROOD_CRITICAL_HISTORIOGRAPHY
+      - NORWEGIAN_ASATRU_HISTORY_STUDY_2022
+      - OXFORD_MODERN_PAGANISM_2026
+    evidence_class: SCHOLARLY_INTERPRETATION
+    propositions:
+      - modern_Asatru_Heathenry_is_heterogeneous_and_modern
+      - no_recognizable_uninterrupted_practice_continuity_is_required_or_established
+      - history_source_use_and_reconstruction_are_active_dimensions_of_modern_practice
+    supports:
+      - REVIVAL_RECONSTRUCTION_MODEL
+      - CONTINUITY_MODEL
+    confidence: HIGH_CURRENT_SCHOLARLY
+
+axis_status:
+  REVIVAL_RECONSTRUCTION_MODEL: BOUNDED_MULTI_ORGANIZATION
+  RITUAL_ORDER_MODEL: BOUNDED_CURRENT
+  INSTITUTIONALIZATION_MODEL: BOUNDED_CURRENT
+  AGENCY_AND_AUTHORITY_MODEL: BOUNDED_CURRENT_VARIATION
+  SACRED_TIME_CALENDAR_MODEL: PARTIAL_ICELANDIC
+  SACRAL_PRESENCE_MODEL: BOUNDED_CURRENT
+  CONTINUITY_MODEL: BOUNDED_INTERRUPTED_REVIVAL
+  CROSS_TRADITION_COMPARISON: HOLD_PENDING_AUDIT
+
+guards:
+  - CURRENT_SOURCE_NE_ANCIENT_EVIDENCE

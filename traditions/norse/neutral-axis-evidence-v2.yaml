@@ -1,0 +1,91 @@
+schema_version: on-theo.norse-neutral-axis-evidence.v2
+status: HUMAN_AFTERLIFE_AND_MORTUARY_LAYER_ADDED
+supersedes_for_current_research:
+  - traditions/norse/neutral-axis-evidence-v1.yaml
+
+existing_records_preserved:
+  - NOR-VOL-WITNESS-001
+  - NOR-VOL-ORIGIN-001
+  - NOR-VOL-HUMAN-001
+  - NOR-VOL-ESCH-001
+  - NOR-TISSO-001
+  - NOR-CONVERSION-001
+  - NOR-MODERN-001
+
+new_records:
+  - id: NOR-AFTERLIFE-001
+    evidence:
+      - GRIMNISMAL_8
+      - GRIMNISMAL_14
+      - HELGAKVIDA_HUNDINGSBANA_II_AFTERLIFE_SEQUENCE
+      - GYLFAGINNING_HEL_LAYER
+    propositions:
+      - Odin_receives_selected_battle_slain_at_Valholl
+      - Freyja_receives_half_the_slain_in_Folkvangr_at_selected_locus
+      - dead_Helgi_is_associated_with_Valholl_and_temporarily_returns_to_burial_mound
+      - Snorri_assigns_sickness_and_old_age_dead_to_Hel
+      - literary_postmortem_destinations_are_plural
+    supports:
+      - POSTMORTEM_PATH_MODEL
+      - CONTINUITY_MODEL
+      - PERSON_OR_SELF_MODEL
+    confidence: bounded_with_genre_and_witness_controls
+    guards:
+      - ALL_BATTLE_DEAD_NE_VALHOLL
+      - SNORRI_SYSTEM_NE_PAN_SCANDINAVIAN_PAGAN_RULE
+      - HEROIC_POEM_NE_UNIVERSAL_AFTERLIFE_DOCTRINE
+      - MOUND_RETURN_NE_UNIVERSAL_GHOST_MODEL
+
+  - id: NOR-MORTUARY-001
+    evidence:
+      - SHIP_AND_BOAT_BURIAL_ARCHAEOLOGY
+      - GRAVE_GOODS
+      - BURIAL_REOPENING
+      - OSEBERG_APOTROPAIC_INTERPRETATION
+    propositions:
+      - mortuary_practice_is_regionally_and_socially_diverse
+      - graves_and_possessions_can_remain_socially_active_in_memory_practice
+      - grave_good_function_is_not_self_interpreting
+      - some_burial_actions_may_have_protective_or_apotropaic_functions
+    supports:
+      - MORTUARY_RELATIONSHIP_MODEL
+      - RITUAL_ORDER_MODEL
+      - INSTITUTIONALIZATION_MODEL_PARTIAL
+    confidence: material_high_interpretation_bounded
+    guards:
+      - GRAVE_GOOD_NE_AFTERLIFE_EQUIPMENT_BY_DEFAULT
+      - SHIP_BURIAL_NE_LITERAL_AFTERLIFE_VOYAGE
+      - APOTROPAIC_INTERPRETATION_NE_DRAUGR_PROOF
+
+comparison_status:
+  WORLD_ORIGIN_MODEL: BOUNDED
+  PERSON_OR_SELF_MODEL: PARTIAL_STRENGTHENED
+  AGENCY_AND_AUTHORITY_MODEL: PARTIAL
+  FATE_CONSTRAINT_MODEL: BOUNDED
+  WORLD_TERMINUS_RENEWAL_MODEL: BOUNDED
+  TRANSFORMATION_MODEL: PARTIAL
+  CONTINUITY_MODEL: BOUNDED_HUMAN_LITERARY_PLUS_WORLD_DIVINE
+  POSTMORTEM_PATH_MODEL: BOUNDED_PLURALITY
+  MORTUARY_RELATIONSHIP_MODEL: PARTIAL_MATERIAL_AND_LITERARY
+  RITUAL_ORDER_MODEL: STRENGTHENED_MATERIAL
+  SACRAL_PRESENCE_MODEL: MATERIAL_SUPPORT
+  OFFERING_EXCHANGE_MODEL: MATERIAL_SUPPORT
+  CONTACT_AND_REINTERPRETATION_MODEL: BOUNDED_SUPPORT
+  REVIVAL_RECONSTRUCTION_MODEL: BOUNDED_MODERN
+  INSTITUTIONALIZATION_MODEL: PARTIAL
+
+readiness:
+  bounded_Norse_comparison: strengthened
+  broad_preChristian_Norse_synthesis: false
+  human_afterlife_comparison: true_with_layer_controls
+  modern_Asatru_separate: true
+
+guards:
+  - MEDIEVAL_WITNESS_NE_VIKING_AGE_MANUSCRIPT
+  - MODERN_NORMALIZED_TEXT_NE_ONE_MANUSCRIPT
+  - SNORRI_NE_TRANSPARENT_PAGAN_TRANSCRIPT
+  - ICELANDIC_EVIDENCE_NE_PAN_SCANDINAVIAN_BY_DEFAULT
+  - VALHOLL_NE_ALL_AFTERLIFE
+  - GRAVE_GOOD_NE_AFTERLIFE_EQUIPMENT
+  - MATERIAL_MORTUARY_PRACTICE_NE_LITERARY_DESTINATION
+  - MODERN_ASATRU_NE_UNBROKEN_DIRECT_SURVIVAL
