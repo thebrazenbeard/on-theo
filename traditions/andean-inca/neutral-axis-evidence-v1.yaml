@@ -1,0 +1,117 @@
+schema_version: on-theo.andean-inca-neutral-axis-evidence.v1
+status: DIACHRONIC_FOUNDATION_NOT_COMPARISON_READY
+
+records:
+  - id: INC-CEQUE-001
+    evidence:
+      - COLONIAL_CUSCO_CEQUE_DESCRIPTIONS
+      - BAUER_ARCHAEOLOGICAL_TESTING
+    evidence_class:
+      - HISTORICAL_RECONSTRUCTION
+      - MATERIAL_EVIDENCE
+      - SCHOLARLY_INTERPRETATION
+    propositions:
+      - over_328_huacas_are_described_in_Cusco_system
+      - roughly_42_ceques_are_described
+      - shrines_include_natural_and_constructed_features
+      - kin_social_groups_had_maintenance_responsibilities
+      - archaeology_independently_supports_selected_shrine_path_locations
+    supports:
+      - SACRED_LAND_PLACE_MODEL
+      - INSTITUTIONALIZATION_MODEL
+      - RITUAL_ORDER_MODEL
+    confidence: BOUNDED_HIGH
+
+  - id: INC-CAPACOCHA-001
+    evidence:
+      - COLONIAL_CAPACOCHA_DESCRIPTIONS
+      - CHOQUEPUKIO_ARCHAEOLOGY
+      - MOUNTAIN_SHRINE_ARCHAEOLOGY
+    evidence_class:
+      - MATERIAL_EVIDENCE
+      - HISTORICAL_RECONSTRUCTION
+      - BIOARCHAEOLOGY
+    propositions:
+      - selected_Inca_state_sacrifices_involved_children_and_high_value_goods
+      - nonlocal_child_origins_are_archaeologically_attested_in_selected_case
+      - imperial_and_mountain_shrine_relation_is_materially_attested
+    supports:
+      - SACRIFICE_AND_BODILY_OFFERING_MODEL
+      - OFFERING_EXCHANGE_MODEL
+      - POLITICAL_SACRALIZATION_MODEL
+      - SACRED_LAND_PLACE_MODEL
+    confidence: BOUNDED_HIGH
+
+  - id: INC-KHIPU-001
+    evidence_class:
+      - MATERIAL_DOCUMENTARY_PRACTICE
+      - SCHOLARLY_INTERPRETATION
+    propositions:
+      - khipu_numeric_administrative_recording_is_secure
+      - specialized_record_keepers_are_historically_attested
+      - broader_semantic_capacities_remain_under_active_research
+    supports:
+      - KNOWLEDGE_OR_DISCLOSURE_MODEL_PARTIAL
+      - DOCUMENTARY_MEMORY_MODEL_CANDIDATE
+      - INSTITUTIONALIZATION_MODEL
+    confidence: HIGH_FOR_NUMERIC_ADMINISTRATION_PARTIAL_FOR_BROADER_SEMANTICS
+    guards:
+      - KHIPU_NE_FULLY_DECIPHERED_TEXT
+
+  - id: INC-GP-001
+    source: GUAMAN_POMA_NUEVA_CORONICA
+    evidence_class:
+      - COLONIAL_INDIGENOUS_TEXT
+      - MANUSCRIPT_WITNESS
+      - IMAGE_PROGRAM
+      - COMMENTARY
+    propositions:
+      - Indigenous_colonial_author_documents_and_reinterprets_Inca_Andean_history
+      - Christian_colonial_framework_is_integral_to_witness
+    supports:
+      - CONTACT_AND_REINTERPRETATION_MODEL
+      - SOURCE_CRITICISM_CONTROL
+    confidence: HIGH_FOR_WITNESS_IDENTITY
+
+  - id: AND-LIVING-001
+    evidence:
+      - NMAI_INKA_EMPIRE
+      - UNESCO_QHAPAQ_NAN
+    evidence_class:
+      - MODERN_TRADITION
+      - COMMUNITY_COLLABORATIVE_MUSEUM_SYNTHESIS
+      - LIVING_HERITAGE
+    propositions:
+      - ayni_reciprocity_remains_publicly_attested_in_selected_Andean_communities
+      - communal_road_maintenance_and_land_relations_continue_in_selected_Qhapaq_Nan_contexts
+      - Pachamama_and_apu_offerings_are_publicly_attested_in_selected_current_contexts
+    supports:
+      - RELATIONAL_ORDER_MODEL
+      - SACRED_LAND_PLACE_MODEL
+      - CONTINUITY_MODEL_PARTIAL
+      - OFFERING_EXCHANGE_MODEL_PARTIAL
+    confidence: BOUNDED_CURRENT
+
+axis_status:
+  SACRED_LAND_PLACE_MODEL: STRONG_CANDIDATE
+  INSTITUTIONALIZATION_MODEL: STRONG_CANDIDATE
+  RITUAL_ORDER_MODEL: CANDIDATE
+  POLITICAL_SACRALIZATION_MODEL: STRONG_CANDIDATE
+  SACRIFICE_AND_BODILY_OFFERING_MODEL: STRONG_CANDIDATE
+  OFFERING_EXCHANGE_MODEL: CANDIDATE
+  KNOWLEDGE_OR_DISCLOSURE_MODEL: PARTIAL_KHIPU_DOCUMENTARY
+  DOCUMENTARY_MEMORY_MODEL: STRONG_CANDIDATE
+  CONTACT_AND_REINTERPRETATION_MODEL: STRONG_CANDIDATE
+  RELATIONAL_ORDER_MODEL: STRONG_LIVING_CANDIDATE
+  CONTINUITY_MODEL: PARTIAL_LIVING
+  WORLD_ORIGIN_MODEL: HOLD
+  PERSON_OR_SELF_MODEL: HOLD
+  POSTMORTEM_PATH_MODEL: HOLD
+  CROSS_TRADITION_COMPARISON: HOLD
+
+global_guards:
+  - INCA_NE_ALL_ANDEAN
+  - CHRONICLE_NE_PRIMARY_PRECONTACT_TEXT
+  - ARCHAEOLOGY_TEXT_CONVERGENCE_REMAINS_MULTI_EVIDENCE
+  - KHIPU_NE_FULLY_DECIPHERED_TEXT
+  - LIVING_ANDES_NE_IMPERIAL_SURVIVAL
