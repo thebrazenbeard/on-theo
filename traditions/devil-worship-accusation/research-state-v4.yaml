@@ -1,0 +1,26 @@
+schema_version: on-theo.devil-worship-accusation-research-state.v4
+status: SATANIC_PANIC_EVIDENCE_LADDER_ADDED_READY_FOR_METHOD_TEST
+supersedes_for_current_research:
+  - traditions/devil-worship-accusation/research-state-v3.yaml
+
+branch:
+  name: research/devil-worship-accusation-history-v1-20260920
+  pr: 116
+
+new_artifacts:
+  panic_packet: traditions/devil-worship-accusation/satanic-panic-evidence-ladder-v1.md
+  panic_evidence: traditions/devil-worship-accusation/satanic-panic-evidence-v1.yaml
+
+current_internal_status:
+  ATTRIBUTION_STATUS_DIMENSION: ACTIVE
+  WITCH_DEMONOLOGY_MODEL: BOUNDED
+  COLONIAL_DEMONIZATION_MODEL: BOUNDED
+  SATANIC_PANIC_MODEL: BOUNDED_MORAL_PANIC_NETWORK_CLAIM
+  CONTACT_AND_REINTERPRETATION_MODEL: BOUNDED_HOSTILE_RECODING
+  KNOWLEDGE_OR_DISCLOSURE_MODEL: PARTIAL_TESTIMONY_PROVENANCE
+  CROSS_TRADITION_COMPARISON: HOLD_PENDING_METHOD_TEST_AND_AUDIT
+
+next_frontier:
+  primary: ATTRIBUTION_IDENTIFICATION_METHOD_TEST_V1
+  subsequent:
+    - DEVIL_WORSHIP_ACCUSATION_READINESS_AUDIT_V1
