@@ -1,0 +1,44 @@
+schema_version: on-theo.hindu-research-state.v3
+status: EARLY_UPANISHAD_CONTEXT_EXPANDED
+parent_head: 0ee28684c0d0f92b90e5c0092cfd87fe5ee6ffd3
+parent_state: traditions/hindu/research-state-v2.yaml
+
+new_artifacts:
+  - traditions/hindu/upanishadic-continuity-context-v1.md
+  - traditions/hindu/continuity-model-v1.yaml
+
+context_units:
+  - BU_4_4_2_TO_6
+  - CHU_5_3_TO_10_PARTIAL_WITH_5_10_CONTROL
+
+new_axis_candidates:
+  - POSTMORTEM_PATH_MODEL
+  - KNOWLEDGE_OR_PRACTICE_DIFFERENTIATION_MODEL
+
+axes_strengthened:
+  CONTINUITY_MODEL: CONTEXT_BOUND
+  MORAL_CAUSALITY_MODEL: CONTEXT_BOUND
+  PERSON_OR_SELF_MODEL: CONTEXT_BOUND_WITH_INTERPRETATION_CONTROL
+  SOCIAL_COSMOLOGY_MODEL: BOUNDED_SOURCE_SUPPORT
+  LIBERATION_OR_FINAL_TRANSFORMATION_MODEL: PARTIAL
+
+readiness:
+  broad_Hindu_comparison: false
+  bounded_axis_comparison: strengthened
+  Hindu_Buddhist_direct_comparison: still_blocked
+
+blockers:
+  - BU_4_4_recension_collation
+  - CHU_5_3_9_exact_chain_extraction
+  - BU_6_2_CHU_5_parallel_control
+  - Sanskrit_lexical_controls
+  - material_evidence_layer
+  - ritual_practice_layer
+  - later_school_divergence
+
+guards:
+  - ISOLATED_APHORISM_NE_FULL_CONTEXT
+  - COMMENTARY_NE_PRIMARY_TEXT
+  - REBIRTH_NE_ONE_UNIVERSAL_MECHANISM
+  - CROSS_TEXT_PARALLEL_NE_TRANSMISSION
+  - EARLY_UPANISHAD_NE_LATER_VEDANTA

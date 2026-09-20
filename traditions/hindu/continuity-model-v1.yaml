@@ -1,0 +1,60 @@
+schema_version: on-theo.hindu-continuity-model.v1
+status: EARLY_UPANISHAD_CONTEXT_BOUND
+parent_packet: traditions/hindu/rigvedic-upanishadic-proposition-packet-v1.md
+
+brihadaranyaka_4_4:
+  loci:
+    - BU_4_4_2
+    - BU_4_4_3
+    - BU_4_4_4
+    - BU_4_4_5
+    - BU_4_4_6
+  propositions:
+    - departure_process_described
+    - knowledge_action_and_prior_experience_accompany_transition
+    - caterpillar_analogy_for_new_foothold
+    - goldsmith_analogy_for_new_form
+    - desire_resolve_action_outcome_chain
+    - attachment_and_action_linked_to_destination_or_result
+    - return_for_further_action_described
+    - desirelessness_contrasted_with_desiring_transmigration
+  supports:
+    - CONTINUITY_MODEL
+    - PERSON_OR_SELF_MODEL
+    - MORAL_CAUSALITY_MODEL
+    - LIBERATION_OR_FINAL_TRANSFORMATION_MODEL
+  controls:
+    - recension_collation_pending
+    - primary_text_and_Shankara_commentary_must_be_separated
+    - modern_identity_theory_not_source_meaning
+
+chandogya_5_3_10:
+  unit_label: FIVE_FIRE_AND_PATH_CONTEXT
+  controlled_loci:
+    - CHU_5_10_1
+    - CHU_5_10_2
+    - CHU_5_10_3
+    - CHU_5_10_7
+    - CHU_5_10_8
+  propositions:
+    - multiple_postmortem_routes_described
+    - routes_correlated_with_different_knowledge_or_practice_profiles
+    - conduct_linked_to_differentiated_rebirth
+    - repeated_birth_and_death_third_place_described
+  supports:
+    - CONTINUITY_MODEL
+    - POSTMORTEM_PATH_MODEL
+    - MORAL_CAUSALITY_MODEL
+    - SOCIAL_COSMOLOGY_MODEL
+    - KNOWLEDGE_OR_PRACTICE_DIFFERENTIATION_MODEL
+  controls:
+    - exact_5_3_9_fire_chain_extraction_pending
+    - possible_textual_layering_of_5_10_7_requires_scholarship_control
+    - parallel_with_BU_6_2_not_yet_transmission_claim
+
+project_guards:
+  - REBIRTH_NE_ONE_MECHANISM
+  - CONTINUITY_NE_UNCHANGED_BODY
+  - CONTINUITY_NE_WESTERN_SOUL_EQUIVALENCE
+  - COMMENTARY_NE_PRIMARY_TEXT
+  - PARALLEL_NE_DIRECT_DEPENDENCE

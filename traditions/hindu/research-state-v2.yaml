@@ -1,0 +1,67 @@
+schema_version: on-theo.hindu-research-state.v2
+status: TEXT_SPECIFIC_PROPOSITION_RECONSTRUCTION_ACTIVE
+parent_head: ccd5b82cf99fa9dfda238366a93447047f74b1fa
+parent_state: traditions/hindu/research-state-v1.yaml
+
+new_artifacts:
+  - traditions/hindu/rigvedic-upanishadic-proposition-packet-v1.md
+  - traditions/hindu/neutral-axis-evidence-v1.yaml
+
+source_loci:
+  - RV_10_129
+  - BU_4_4_5
+  - CHU_5_10_7
+  - CHU_6_8_7
+
+textual_layers_active:
+  - VEDIC_SAMHITA
+  - EARLY_UPANISHAD
+
+comparison_axes:
+  KNOWLEDGE_OR_DISCLOSURE_MODEL:
+    status: BOUNDED_SOURCE_SUPPORT
+  WORLD_ORIGIN_MODEL:
+    status: CANDIDATE_AXIS_BOUNDED_SOURCE_SUPPORT
+  MORAL_CAUSALITY_MODEL:
+    status: BOUNDED_SOURCE_SUPPORT
+  CONTINUITY_MODEL:
+    status: BOUNDED_SOURCE_SUPPORT
+  PERSON_OR_SELF_MODEL:
+    status: PARTIAL_TRANSLATION_INTERPRETATION_CONTROLLED
+  CAUSAL_ORDER_TYPE:
+    status: PARTIAL
+  WORLD_STATUS_MODEL:
+    status: PARTIAL
+
+translation_interpretation_controls:
+  CHU_6_8_7:
+    formula: tat_tvam_asi
+    traditional: identity_rendering
+    Brereton_Olivelle: adverbial_rendering
+    resolution: UNRESOLVED_AT_PROJECT_LEVEL
+
+guards:
+  - RV10_129_NE_ALL_VEDIC_COSMOGONY
+  - EPISTEMIC_UNCERTAINTY_NE_ATHEISM
+  - BU4_4_5_NE_ALL_HINDU_KARMA
+  - CHU5_10_7_NE_ALL_HINDU_REBIRTH
+  - CHU6_8_7_NE_MATURE_ADVAITA
+  - ATMAN_NE_WESTERN_SOUL_BY_DEFAULT
+  - SAT_NE_COMPUTATIONAL_SUBSTRATE
+  - TEXTUAL_LAYER_REQUIRED_BEFORE_COMPARISON
+  - LATER_RECEPTION_MUST_NOT_REWRITE_PRIMARY_TEXT
+
+readiness:
+  broad_Hindu_comparison: false
+  bounded_axis_comparison: true
+  material_evidence_layer: pending
+  ritual_practice_layer: pending
+  later_school_divergence: pending
+
+next_frontiers:
+  - BU_4_4_3_TO_6_recension_control
+  - CHU_5_3_TO_10_rebirth_unit
+  - CHU_6_2_TO_16_self_essence_unit
+  - atman_sat_brahman_kama_kratu_karma_lexical_control
+  - material_ritual_evidence_packet
+  - Hindu_Buddhist_shared_substrate_only_after_internal_controls
