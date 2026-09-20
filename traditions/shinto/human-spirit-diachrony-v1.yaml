@@ -1,0 +1,129 @@
+schema_version: on-theo.shinto-human-spirit-diachrony.v1
+status: NON_CANONICAL_DIACHRONIC_CONTROL
+
+layers:
+  - id: ANCIENT_LEXICAL_RECONSTRUCTION
+    evidence_class: SCHOLARLY_INTERPRETATION
+    evidence:
+      - KOKUGAKUIN_TAMA
+    propositions:
+      - tama_can_refer_to_human_spirit_or_soul
+      - tama_is_not_limited_to_human_persons
+      - mitama_can_function_as_honorific_form
+    ceiling: lexical_and_conceptual_orientation_only
+
+  - id: RITSURYO_COURT_SPIRIT_RITUAL
+    approximate_period: eighth_to_ninth_century_institutional_layer
+    evidence_class:
+      - DOCUMENTARY_PRACTICE
+      - COMMENTARY
+    evidence:
+      - YORO_RITSURYO_RITUAL_SYSTEM
+      - RYO_NO_GIGE_833
+      - CHINKON_SAI
+    propositions:
+      - imperial_spirit_can_be_ritually_conceived_as_trying_to_depart_body
+      - ritual_can_recall_pacify_or_strengthen_spirit
+    supports:
+      - PERSON_OR_SELF_MODEL
+      - RITUAL_ORDER_MODEL
+    guards:
+      - EMPEROR_COURT_RITE_NE_POPULATION_WIDE_ANTHROPOLOGY
+
+  - id: KIKI_HUMAN_REVIVAL_LOCATOR
+    evidence_class:
+      - PRIMARY_TEXT_LOCATOR
+      - SCHOLARLY_INTERPRETATION
+    evidence:
+      - NIHON_SHOKI_UJI_NO_WAKI_IRATSUKO_LOCATOR
+    propositions:
+      - temporary_return_to_life_is_present_in_classical_human_narrative
+    status: EXACT_PRIMARY_EDITION_BINDING_PENDING
+    supports:
+      - CONTINUITY_MODEL_PARTIAL
+
+  - id: IMPERIAL_ANCESTOR_SPIRIT_LOCATOR
+    evidence_class:
+      - DOCUMENTARY_PRACTICE_LOCATOR
+      - SCHOLARLY_INTERPRETATION
+    evidence:
+      - SHOKU_NIHONGI_SENMYO_ANCESTRAL_SPIRIT_LOCATORS
+    status: EXACT_PRIMARY_PASSAGES_PENDING
+    supports:
+      - CONTINUITY_MODEL_PARTIAL
+      - MORTUARY_RELATIONSHIP_MODEL_PARTIAL
+
+  - id: HEIAN_GORYO
+    start_anchor: 863_CE_GORYO_E_SHINSENEN
+    evidence_class:
+      - DOCUMENTARY_PRACTICE
+      - HISTORICAL_RECONSTRUCTION
+    propositions:
+      - dangerous_human_dead_can_remain_socially_causally_active
+      - ritual_appeasement_is_directed_at_postmortem_spirits
+      - Buddhist_kami_combination_is_already_part_of_the_record
+    supports:
+      - CONTINUITY_MODEL
+      - MORTUARY_RELATIONSHIP_MODEL
+      - CONTACT_AND_REINTERPRETATION_MODEL
+    guards:
+      - GORYO_NE_PRIMORDIAL_SHINTO
+
+  - id: MICHIZANE_TENJIN_TRANSFORMATION
+    anchors:
+      - 905_CE_DAZAIFU_MAUSOLEUM
+      - HEIAN_TENJIN_DEIFICATION
+    evidence_class:
+      - HISTORICAL_RECONSTRUCTION
+      - LATER_TRADITION
+    propositions:
+      - named_human_identity_continues_after_death_in_cult
+      - posthumous_status_can_change_from_dangerous_spirit_to_enshrined_kami
+      - Buddhist_and_other_interpretive_layers_are_integral_to_cult_history
+    supports:
+      - CONTINUITY_MODEL
+      - TRANSFORMATION_MODEL
+      - CONTACT_AND_REINTERPRETATION_MODEL
+
+  - id: MEDIEVAL_EARLY_MODERN_HUMAN_KAMI
+    evidence_class:
+      - HISTORICAL_RECONSTRUCTION
+      - LATER_TRADITION
+    propositions:
+      - human_spirits_can_be_enshrined_as_kami
+      - Yoshida_Shinto_institutionalizes_posthumous_human_kami_categories
+    supports:
+      - CONTINUITY_MODEL
+      - SACRAL_PRESENCE_MODEL
+      - INSTITUTIONALIZATION_MODEL
+
+  - id: MODERN_ANCESTOR_AND_FUNERAL_SYSTEM
+    anchors:
+      - LATE_EDO_FUNERAL_MANUALS
+      - 1872_OFFICIAL_SHINTO_FUNERAL_PROCEDURE
+    evidence_class:
+      - DOCUMENTARY_PRACTICE
+      - MODERN_TRADITION
+    propositions:
+      - deceased_spirit_can_be_ritually_transferred_and_memorialized
+      - household_ancestor_spirit_practice_is_formalized
+      - modern_Shinto_funeral_system_is_historically_late
+    supports:
+      - CONTINUITY_MODEL
+      - MORTUARY_RELATIONSHIP_MODEL
+      - RITUAL_ORDER_MODEL
+    guards:
+      - MODERN_SHINTO_FUNERAL_NE_ANCIENT_FUNERAL
+      - BUDDHIST_CONFUCIAN_INTERACTION_MUST_REMAIN_VISIBLE
+
+summary:
+  PERSON_OR_SELF_MODEL: PARTIAL_BOUNDED
+  CONTINUITY_MODEL: PARTIAL_STRENGTHENED
+  MORTUARY_RELATIONSHIP_MODEL: PARTIAL_LATER_LAYER
+  POSTHUMOUS_STATUS_TRANSFORMATION: BOUNDED_HISTORICAL_CASES
+
+global_guards:
+  - TAMA_NE_ONE_FIXED_IMMORTAL_SOUL_CATEGORY
+  - LATER_HUMAN_DEIFICATION_NE_CLASSICAL_KIKI_ANTHROPOLOGY
+  - ANCESTOR_VENERATION_NE_ONE_UNCHANGED_SHINTO_SYSTEM
+  - HUMAN_SPIRIT_CONTINUITY_NE_ONE_POSTMORTEM_DESTINATION

@@ -1,0 +1,78 @@
+schema_version: on-theo.shinto-neutral-axis-evidence.v3
+status: BOUNDED_CLASSICAL_RITUAL_MATERIAL_HUMAN_SPIRIT_PLUS_POLITICAL_CONTROL
+supersedes_for_current_research:
+  - traditions/shinto/neutral-axis-evidence-v2.yaml
+
+preserved_from_v2:
+  - Kiki_variant_records
+  - ritual_purity_records
+  - shrine_material_institutional_records
+  - Buddhist_contact_records
+  - human_spirit_and_continuity_records
+
+new_records:
+  - id: SHI-POL-IMPERIAL-001
+    evidence_class:
+      - PRIMARY_TEXT
+      - HISTORICAL_RECONSTRUCTION
+      - SCHOLARLY_INTERPRETATION
+    evidence:
+      - NIHON_SHOKI_BOOK_II_NINIGI_DESCENT_COMMAND
+      - KOKUGAKUIN_TENSON_KORIN
+      - KOKUGAKUIN_ANCIENT_SHINTO_STATE_RITUAL
+      - KOKUGAKUIN_SHRINE_INSTITUTIONAL_HISTORY
+    propositions:
+      - selected_Nihon_shoki_court_myth_links_Amaterasu_descent_lineage_to_authority_to_govern
+      - dynastic_continuity_is_part_of_the_selected_mythic_command
+      - ancient_state_institutions_administered_kami_rites_and_shrine_relations
+      - imperial_and_national_ritual_systems_became_institutionally_structured
+    supports:
+      - POLITICAL_SACRALIZATION_MODEL
+      - AGENCY_AND_AUTHORITY_MODEL
+      - INSTITUTIONALIZATION_MODEL
+      - RITUAL_ORDER_MODEL
+    mechanism:
+      - GENEALOGICAL_CELESTIAL_LEGITIMATION
+      - COURT_ADMINISTERED_CULTIC_ORDER
+    confidence: BOUNDED_COURT_MYTH_AND_STATE_RITUAL_LAYER
+    not_admitted:
+      - one_timeless_Shinto_political_theology
+      - transparent_prehistoric_transcript
+      - biological_proof_of_divine_descent
+      - all_local_cult_as_imperial_derivative
+      - modern_political_continuity_claim
+    guards:
+      - COURT_COMPILATION_NE_PREHISTORIC_TRANSCRIPT
+      - MYTHIC_GENEALOGY_NE_BIOLOGICAL_DEMONSTRATION
+      - GENEALOGICAL_LEGITIMATION_NE_CULT_ADMINISTRATION
+      - STATE_RITUAL_NE_ALL_LOCAL_RELIGION
+
+comparison_status:
+  WORLD_ORIGIN_MODEL: BOUNDED_VARIANT_SUPPORT
+  AGENCY_AND_AUTHORITY_MODEL: BOUNDED_VARIANT_SUPPORT
+  POLITICAL_SACRALIZATION_MODEL: BOUNDED_COURT_MYTH_AND_STATE_RITUAL_LAYER
+  PERSON_OR_SELF_MODEL: PARTIAL_BOUNDED
+  CONTINUITY_MODEL: PARTIAL_STRENGTHENED
+  POSTMORTEM_PATH_MODEL: PARTIAL
+  MORTUARY_RELATIONSHIP_MODEL: PARTIAL_LATER_LAYER
+  TRANSFORMATION_MODEL: BOUNDED_DIAchRONIC_CASES
+  INSTITUTIONALIZATION_MODEL: BOUNDED
+  PURITY_POLLUTION_MODEL: BOUNDED
+  SACRAL_PRESENCE_MODEL: BOUNDED
+  RITUAL_ORDER_MODEL: BOUNDED
+  CONTACT_AND_REINTERPRETATION_MODEL: BOUNDED
+
+readiness:
+  bounded_Shinto_comparison: strengthened
+  political_sacralization_comparison: BOUNDED_WITH_COURT_LAYER_GUARDS
+  broad_Shinto_synthesis: false
+  modern_to_ancient_or_ancient_to_modern_projection: prohibited
+
+guards:
+  - KAMI_NE_MONOTHEISTIC_GOD
+  - KAMI_NE_ONE_FIXED_ONTOLOGICAL_SPECIES
+  - COURT_COMPILATION_NE_PREHISTORIC_TRANSCRIPT
+  - MYTHIC_GENEALOGY_NE_BIOLOGICAL_DEMONSTRATION
+  - STATE_RITUAL_NE_ALL_LOCAL_RELIGION
+  - ANCIENT_COURT_MODEL_NE_MODERN_POLITICAL_CLAIM
+  - SYSTEMS_ANALOGY_REMAINS_DOWNSTREAM
