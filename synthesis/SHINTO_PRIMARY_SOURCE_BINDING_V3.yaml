@@ -1,0 +1,38 @@
+schema_version: on-theo.shinto-synthesis-source-binding.v3
+status: NON_CANONICAL_EXACT_SOURCE_EXTENSION
+supersedes_for_current_research:
+  - synthesis/SHINTO_PRIMARY_SOURCE_BINDING_V2.yaml
+
+source_extension:
+  branch: research/shinto-variant-ritual-material-v1-20260920
+  head: 4939c22c6b13afc1226d8860fa8dbf394e34b5c4
+  draft_pr: 100
+
+new_political_artifacts:
+  - traditions/shinto/imperial-genealogy-state-ritual-political-control-v1.md
+  - traditions/shinto/neutral-axis-evidence-v3.yaml
+  - traditions/shinto/research-state-v4.yaml
+
+political_sacralization:
+  status: BOUNDED_COURT_MYTH_AND_STATE_RITUAL_LAYER
+  primary_text_locus: NIHON_SHOKI_BOOK_II_NINIGI_DESCENT_COMMAND
+  mechanisms:
+    - GENEALOGICAL_CELESTIAL_LEGITIMATION
+    - COURT_ADMINISTERED_CULTIC_ORDER
+  supported:
+    - selected_court_myth_links_Amaterasu_lineage_to_authority_to_govern
+    - dynastic_continuity_is_part_of_selected_mythic_command
+    - ancient_state_institutions_administer_kami_rites_and_shrine_relations
+  not_admitted:
+    - one_timeless_Shinto_political_theology
+    - transparent_prehistoric_transcript
+    - biological_divine_descent
+    - all_local_cult_as_imperial_derivative
+    - modern_political_continuity_claim
+
+guards:
+  - COURT_COMPILATION_NE_PREHISTORIC_TRANSCRIPT
+  - MYTHIC_GENEALOGY_NE_BIOLOGICAL_DEMONSTRATION
+  - GENEALOGICAL_LEGITIMATION_NE_CULT_ADMINISTRATION
+  - STATE_RITUAL_NE_ALL_LOCAL_RELIGION
+  - ANCIENT_COURT_MODEL_NE_MODERN_POLITICAL_CLAIM
