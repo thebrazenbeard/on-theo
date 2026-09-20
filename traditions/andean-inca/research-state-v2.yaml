@@ -1,0 +1,25 @@
+schema_version: on-theo.andean-inca-research-state.v2
+status: HUACA_CEQUE_LAYER_ADDED
+supersedes_for_current_research:
+  - traditions/andean-inca/research-state-v1.yaml
+
+branch:
+  name: research/andean-inca-diachronic-v1-20260920
+  pr: 113
+
+new_artifacts:
+  huaca_ceque_packet: traditions/andean-inca/huaca-ceque-sacred-land-packet-v1.md
+  huaca_ceque_evidence: traditions/andean-inca/huaca-ceque-evidence-v1.yaml
+
+current_internal_status:
+  SACRED_LAND_PLACE_MODEL: BOUNDED_CUSCO_IMPERIAL_NETWORKED_LANDSCAPE
+  INSTITUTIONALIZATION_MODEL: BOUNDED_CEQUE_SOCIAL_MAINTENANCE
+  POLITICAL_SACRALIZATION_MODEL: BOUNDED_CAPITAL_CENTERED_RITUAL_LANDSCAPE
+  RITUAL_ORDER_MODEL: BOUNDED_SHRINE_NETWORK
+  RELATIONAL_ORDER_MODEL: PARTIAL_CUSCO_KIN_PLACE_PLUS_LIVING_CANDIDATE
+  SACRIFICE_AND_BODILY_OFFERING_MODEL: STRONG_CANDIDATE
+  DOCUMENTARY_MEMORY_MODEL: STRONG_CANDIDATE
+  CROSS_TRADITION_COMPARISON: HOLD
+
+next_frontier:
+  primary: INCA_KHIPU_DOCUMENTARY_MEMORY_PACKET_V1
