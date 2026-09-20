@@ -1,0 +1,43 @@
+schema_version: on-theo.olmec-research-state.v7
+status: BOUNDED_COMPARISON_READINESS_AUDITED_LOW_TEXTUAL_CEILING
+supersedes_for_current_research:
+  - traditions/olmec/research-state-v6.yaml
+
+branch:
+  name: research/olmec-material-iconographic-v1-20260920
+  pr: 107
+
+readiness_audit: traditions/olmec/comparison-readiness-audit-v1.yaml
+
+comparison_eligible_bounded:
+  - RITUAL_ORDER_MODEL
+  - INSTITUTIONALIZATION_MODEL
+
+comparison_eligible_partial:
+  - OFFERING_EXCHANGE_MODEL
+  - POLITICAL_SACRALIZATION_MODEL
+  - MORTUARY_RELATIONSHIP_MODEL
+  - AGENCY_AND_AUTHORITY_MODEL
+  - SACRAL_PRESENCE_MODEL
+
+held:
+  - WORLD_ORIGIN_MODEL
+  - WORLD_TERMINUS_RENEWAL_MODEL
+  - PERSON_OR_SELF_MODEL
+  - TRANSFORMATION_MODEL
+  - CONTINUITY_MODEL
+  - POSTMORTEM_PATH_MODEL
+  - KNOWLEDGE_OR_DISCLOSURE_MODEL
+
+not_admitted:
+  - SYSTEMATIC_NAMED_PANTHEON
+  - READABLE_TEXTUAL_THEOLOGY
+  - ONE_WAY_MOTHER_CULTURE_RELIGIOUS_MODEL
+  - CONTACT_AND_REINTERPRETATION_MODEL_AS_INTERNAL_CELL
+
+next_portfolio_frontier: DINE_PUBLIC_SOURCE_RESEARCH_PACKET_V1
+
+guards:
+  - LOW_TEXTUAL_CEILING_REMAINS_VISIBLE
+  - EXACT_HEAD_BINDING_REQUIRED
+  - COMPARISON_READY_NE_TRADITION_COMPLETE
