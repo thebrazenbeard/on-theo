@@ -1,0 +1,82 @@
+schema_version: on-theo.lakota-public-vision-disclosure-evidence.v1
+status: BOUNDED_PUBLIC_HIGH_LEVEL
+
+records:
+  - id: LAK-DISCLOSURE-HANBLECEYA-001
+    source: STANDING_ROCK_TITLE_VI_CHILDRENS_CODE
+    evidence_class:
+      - DOCUMENTARY_PRACTICE
+      - MODERN_TRADITION
+    propositions:
+      - Hanbleceyapi_is_publicly_named_as_seeking_a_vision
+      - ceremonial_framework_is_publicly_linked_to_guidance_and_direction
+    supports:
+      - KNOWLEDGE_OR_DISCLOSURE_MODEL
+      - RITUAL_ORDER_MODEL
+    confidence: HIGH_FOR_CURRENT_PUBLIC_CATEGORY
+    guards:
+      - NAMED_CEREMONY_NE_PUBLIC_PROCEDURAL_AUTHORITY
+      - STANDING_ROCK_CONTEXT_NE_ALL_LAKOTA_IDENTICAL
+
+  - id: LAK-DISCLOSURE-BEAR-BUTTE-001
+    source: SOUTH_DAKOTA_GFP_BEAR_BUTTE
+    evidence_class:
+      - DOCUMENTARY_PRACTICE
+      - PUBLIC_SITE_MANAGEMENT
+    propositions:
+      - prayer_and_vision_are_publicly_associated_with_current_sacred_site_use
+      - prayer_offerings_are_currently_visible_and_protected
+    supports:
+      - KNOWLEDGE_OR_DISCLOSURE_MODEL
+      - SACRED_LAND_PLACE_MODEL
+    confidence: HIGH_FOR_MULTI_TRIBAL_PUBLIC_SITE_USE
+    guards:
+      - MULTI_TRIBAL_SITE_NE_LAKOTA_EXCLUSIVE_DISCLOSURE_MODEL
+
+  - id: LAK-DISCLOSURE-OLC-001
+    source: OGLALA_LAKOTA_COLLEGE_LAKOTA_PERSPECTIVE
+    evidence_class:
+      - COMMUNITY_EDUCATIONAL_SELF_DESCRIPTION
+      - MODERN_TRADITION
+    propositions:
+      - Lakota_worldview_is_described_as_living_dynamic_and_orally_transmitted
+      - listening_and_sharing_are_described_as_required_for_knowledge_and_wisdom_transmission
+    supports:
+      - KNOWLEDGE_OR_DISCLOSURE_MODEL
+      - INSTITUTIONALIZATION_MODEL_PARTIAL
+    confidence: HIGH_FOR_OLC_PUBLIC_SELF_DESCRIPTION
+
+  - id: LAK-DISCLOSURE-GOVERNANCE-001
+    source: LAKOTA_TRADITIONAL_SCIENCES_2023
+    evidence_class:
+      - COMMUNITY_AUTHORED_PUBLIC_SOURCE
+      - MODERN_TRADITION
+    propositions:
+      - knowledge_is_described_as_caretaken_on_behalf_of_Oyate
+      - public_disclosure_is_deliberately_governed
+      - safe_respectful_knowledge_sharing_is_an_explicit_concern
+    supports:
+      - KNOWLEDGE_OR_DISCLOSURE_MODEL
+      - INSTITUTIONALIZATION_MODEL_PARTIAL
+    confidence: HIGH_FOR_THIS_PUBLICATION
+
+disclosure_modes:
+  VISION_SEEKING: BOUNDED_PUBLIC_CATEGORY
+  PRAYER_AND_GUIDANCE: BOUNDED_PUBLIC_USAGE
+  ORAL_INTERGENERATIONAL_TRANSMISSION: BOUNDED_PUBLIC_USAGE
+  COMMUNITY_GOVERNED_DISCLOSURE: BOUNDED_PUBLIC_USAGE
+  SPECIALIST_INTERPRETATION: NOT_YET_BOUND
+  DREAM: NOT_YET_BOUND
+
+axis_status:
+  KNOWLEDGE_OR_DISCLOSURE_MODEL: BOUNDED_PUBLIC_HIGH_LEVEL
+  SACRED_LAND_PLACE_MODEL: BOUNDED_STRENGTHENED
+  INSTITUTIONALIZATION_MODEL: PARTIAL_INTERNAL_READY
+  CROSS_TRADITION_COMPARISON: HOLD
+
+guards:
+  - VISION_NE_PROPHECY_BY_DEFAULT
+  - VISION_NE_HALLUCINATION_AS_PROJECT_CONCLUSION
+  - PUBLIC_CATEGORY_NE_PUBLIC_PROCEDURE
+  - KNOWLEDGE_DISCLOSURE_NE_UNRESTRICTED_ACCESS
+  - TRADITION_INTERNAL_CLAIM_NE_EMPIRICALLY_VERIFIED_SUPERNATURAL_TRANSFER
