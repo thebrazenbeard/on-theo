@@ -1,0 +1,78 @@
+schema_version: on-theo.maya-household-material-evidence.v1
+status: BOUNDED_DOMESTIC_COUNTER_LANE
+
+records:
+  - id: MAYA-HOUSE-CHINIKIHA-001
+    site: CHINIKIHA_GROUP_G
+    period: CLASSIC
+    social_location: COMMONER_HOUSEHOLD
+    evidence_class:
+      - MATERIAL_EVIDENCE
+      - SCHOLARLY_INTERPRETATION
+    propositions:
+      - household_contains_patios_kitchen_dwelling_and_ritualized_space
+      - altar_and_associated_deposits_are_archaeologically_attested
+      - maintenance_renewal_and_memory_are_part_of_household_interpretation
+      - domestic_production_and_ritual_are_not_separate_archaeological_worlds
+    supports:
+      - RITUAL_ORDER_MODEL
+      - INSTITUTIONALIZATION_MODEL_PARTIAL
+      - OFFERING_EXCHANGE_MODEL_PARTIAL
+      - RELATIONAL_ORDER_MODEL_PARTIAL
+    confidence: BOUNDED_HIGH
+    guards:
+      - MATERIAL_DEPOSIT_NE_THEOLOGY_BY_ITSELF
+      - HOUSEHOLD_ALTAR_NE_NAMED_DEITY_RECIPIENT
+
+  - id: MAYA-HOUSE-CEIBAL-001
+    site: CEIBAL_KARINEL_GROUP
+    period:
+      - MIDDLE_PRECLASSIC
+      - LATE_PRECLASSIC
+      - TERMINAL_PRECLASSIC
+    approximate_range: 1000_BCE_300_CE
+    evidence_class:
+      - MATERIAL_EVIDENCE
+      - ARCHAEOLOGICAL_RECONSTRUCTION
+    propositions:
+      - domestic_structures_and_ritual_deposits_are_attested
+      - domestic_ritual_domain_predates_Classic_dynastic_monumental_corpus
+    supports:
+      - RITUAL_ORDER_MODEL
+      - DIACHRONIC_CONTROL
+    confidence: BOUNDED
+    guards:
+      - PRECLASSIC_DOMESTIC_RITUAL_NE_CLASSIC_IDENTITY
+
+  - id: MAYA-HOUSE-NOH-KUH-001
+    site: NOH_KUH
+    period: LATE_PRECLASSIC
+    evidence_class:
+      - MATERIAL_EVIDENCE
+      - SCHOLARLY_INTERPRETATION
+    propositions:
+      - residential_groups_are_interpreted_through_collective_identity_and_cosmological_renewal
+    supports:
+      - RITUAL_ORDER_MODEL_PARTIAL
+      - RELATIONAL_ORDER_MODEL_PARTIAL
+    confidence: PARTIAL_INTERPRETIVE
+    guards:
+      - COSMOLOGICAL_RENEWAL_NE_PRIMARY_TEXTUAL_DOCTRINE
+
+method_result:
+  court_only_reconstruction_allowed: false
+  social_location_required: true
+  domestic_ritual_domain_diachronic: true
+  unchanged_domestic_ritual_continuity_proved: false
+
+axis_status:
+  RITUAL_ORDER_MODEL: BOUNDED_MULTI_SOCIAL_LOCATION
+  INSTITUTIONALIZATION_MODEL: PARTIAL_HOUSEHOLD_PRACTICE_LAYER
+  OFFERING_EXCHANGE_MODEL: PARTIAL_MATERIAL_DOMESTIC_DEPOSITION
+  RELATIONAL_ORDER_MODEL: PARTIAL_HOUSEHOLD_MEMORY
+  CROSS_TRADITION_COMPARISON: HOLD
+
+guards:
+  - ELITE_EPIGRAPHY_NE_ALL_MAYA_RELIGION
+  - DOMESTIC_RITUAL_NE_ONE_HOUSEHOLD_THEOLOGY
+  - MATERIAL_CONTEXT_REQUIRED
