@@ -1,0 +1,40 @@
+schema_version: on_theo.syriac_reception_research_state.v1
+status: ACTIVE
+canonical: false
+
+branch: research/ephrem-syriac-gospel-transmission-v1-20260920
+base:
+  branch: corpus/late-antique-contact-zone-v1-20260917
+  exact_head: 22d4a193ada3b63591dcdc41c975739ceba20b54
+
+completed:
+  - EPHREM_COMMENTARY_SOURCE_BOUNDARY
+  - CHESTER_BEATTY_709_WITNESS_BOUNDARY
+  - ARMENIAN_COMPLETE_TRANSMISSION_BOUNDARY
+  - TATIAN_DIRECT_MANUSCRIPT_NONEXISTENCE_GUARD
+  - EPHREM_MULTIPLE_GOSPEL_FORMS_CONTROL
+  - SYRIAC_GOSPEL_TRANSITION_MODEL_V1
+
+key_artifacts:
+  - traditions/syriac-christianity/ephrem-syriac-gospel-transmission-v1.md
+  - traditions/syriac-christianity/ephrem-syriac-gospel-transmission-v1.yaml
+
+current_results:
+  ephrem_commentary_as_tatianic_witness: BOUNDED_STRONG
+  direct_extant_tatian_syriac_manuscript: NOT_ADMITTED
+  ephrem_separated_gospel_awareness: BOUNDED_MODERATE_TO_STRONG
+  one_linear_syriac_gospel_replacement_model: NOT_ADMITTED
+  layered_coexistence_transition_model: BOUNDED_MODERATE_TO_STRONG
+
+next_frontier:
+  - APHRAHAT_PRIMARY_RECEPTION_PACKET
+  - OLD_SYRIAC_PESHITTA_WITNESS_BOUNDARY
+  - SYRIAC_GOSPEL_TRANSITION_MATRIX
+  - TESTAMENT_BOOK_VI_SYRIAC_CARRYDOWN
+
+invariants:
+  - "Composition date != physical witness date."
+  - "Commentary != commented text."
+  - "Reconstruction != extant manuscript."
+  - "Translation witness != original-language autograph."
+  - "Multiple Gospel forms may coexist."
