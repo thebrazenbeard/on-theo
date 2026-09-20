@@ -1,0 +1,128 @@
+schema_version: on-theo.devil-worship-accusation-readiness-audit.v1
+status: HISTORICAL_ATTRIBUTION_FIELD_MATURE_FOR_BOUNDED_METHOD_AND_COMPARISON_USE
+source_branch: research/devil-worship-accusation-history-v1-20260920
+source_head_before_audit: 7fa4c233d93bfd1cc79b0c1614c569956b2e566a
+pr: 116
+
+method:
+  principle: >
+    "Devil worship" is not treated as a religion name by default. Every use must
+    identify who supplied the label, the institutional context, the target's own
+    voice, self-identification status, and any independent behavioral
+    corroboration.
+  cross_corpus_method_test:
+    path: synthesis/ATTRIBUTION_IDENTIFICATION_CROSS_TRADITION_TEST_V1.md
+    synthesis_commit: 82a3e31e032624c7ef7fbe68b9b8256ec2f6878d
+
+bounded_historical_models:
+  WITCH_DEMONOLOGY_ACCUSATION_MODEL:
+    status: BOUNDED
+    strongest_result: >
+      Late-medieval/early-modern diabolical witchcraft is a historically
+      constructed demonological and prosecutorial category whose application
+      to actual people requires case-level evidence.
+    guards:
+      - DEMONOLOGICAL_TEXT_NE_TARGET_ETHNOGRAPHY
+      - WITCH_LABEL_NE_SELF_IDENTIFICATION
+
+  COLONIAL_DEMONIZATION_MODEL:
+    status: BOUNDED
+    strongest_result: >
+      Missionary devil/demon language can preserve observations of Indigenous
+      practice while recoding its meaning through Christian demonology.
+    guards:
+      - OBSERVATION_NE_DEMONOLOGICAL_INTERPRETATION
+      - COLONIAL_TRANSLATION_NE_NATIVE_SEMANTICS
+
+  SATANIC_PANIC_MODEL:
+    status: BOUNDED
+    strongest_result: >
+      Abuse/crime, occult imagery, satanic motive, specific organization and
+      widespread network are separate propositions; the classic widespread
+      network claim was not established by the admitted 1992 investigative
+      evidence.
+    guards:
+      - REAL_CRIME_NE_SATANIC_NETWORK
+      - UNSUPPORTED_SATANIC_FRAME_NE_NO_UNDERLYING_CRIME
+
+comparison_eligible_existing_axes:
+  CONTACT_AND_REINTERPRETATION_MODEL:
+    status: BOUNDED_METHOD_COMPARISON_ELIGIBLE
+    subtype: HOSTILE_DEMONOLOGICAL_RECODING
+    strongest_result: >
+      Religious contact can include externally imposed demonological
+      reinterpretation rather than borrowing, conversion or mutual synthesis.
+
+  CONTINUITY_MODEL:
+    status: BOUNDED_METHOD_COMPARISON_ELIGIBLE
+    subtype: ACCUSATION_STEREOTYPE_RECURRENCE
+    strongest_result: >
+      Recurring accusation structures can persist or reappear across periods
+      without demonstrating continuity of the accused group or alleged hidden
+      religion.
+    guards:
+      - STEREOTYPE_CONTINUITY_NE_GROUP_CONTINUITY
+
+  KNOWLEDGE_OR_DISCLOSURE_MODEL:
+    status: PARTIAL_METHOD_COMPARISON_ELIGIBLE
+    subtype: TESTIMONY_INTERROGATION_MEDIATION
+    strongest_result: >
+      Courts, inquisitions, therapy, law enforcement and missionary settings can
+      shape what testimony is elicited and how it is interpreted.
+    limitation: >
+      V1 does not provide one universal theory of testimony reliability.
+
+new_cross_corpus_dimension:
+  ATTRIBUTION_STATUS:
+    status: PROMOTE_TO_GENERAL_SOURCE_CRITICISM_DIMENSION
+    companion_dimensions:
+      - TARGET_VOICE_STATUS
+      - SELF_IDENTIFICATION_STATUS
+      - INSTITUTIONAL_CONTEXT
+      - BEHAVIORAL_CORROBORATION_STATUS
+      - LABEL_SEMANTIC_DISTANCE
+    source:
+      - synthesis/ATTRIBUTION_IDENTIFICATION_METHOD_SCHEMA_V1.yaml
+
+not_a_tradition_cell:
+  ONE_DEVIL_WORSHIP_RELIGION:
+    status: NOT_SUPPORTED
+  MEDIEVAL_TO_MODERN_HIDDEN_SATANIC_CONTINUITY:
+    status: NOT_SUPPORTED
+  COLONIZED_INDIGENOUS_DEVIL_THEOLOGY_FROM_MISSIONARY_LABELS:
+    status: NOT_ADMITTED
+  SATANIC_PANIC_NETWORK_AS_MODERN_SATANISM:
+    status: NOT_ADMITTED
+
+positive_self_identification_control:
+  modern_satanism_head: bb2bdf915b9ac08f63b881f22b1d0023ae73debc
+  result: >
+    Modern self-identified Satanisms provide the positive control showing what
+    evidence looks like when the target actually accepts a Satanist identity.
+
+readiness_result:
+  accusation_history_foundation_complete: true
+  bounded_method_comparison_allowed: true
+  tradition_level_theology_inference_allowed: false
+  exact_head_binding_required: true
+  hostile_label_may_populate_target_identity_without_independent_support: false
+
+strongest_method_result: >
+  A religious accusation is a proposition about the source and its institutional
+  context until independent evidence establishes that the target accepted the
+  label or practiced the attributed behavior. Hostile sources should be split
+  into observable and interpretive propositions rather than accepted or
+  discarded wholesale.
+
+next_portfolio_frontier:
+  primary: ORIGINAL_WORLD_EXPANSION_QUEUE_COMPLETION_AUDIT_V1
+  reason: >
+    The repository's explicit Shinto, Daoism, post-Vedic Hindu, Sumerian,
+    Norse/Heathen, Lakota, modern Satanism and devil-worship accusation families
+    are now represented. The next tradition should be selected by a new global
+    gap audit outside the original queue.
+
+guards:
+  - METHOD_READY_NE_RELIGION_DEFINED
+  - ACCUSATION_NE_IDENTIFICATION
+  - EMIC_PRIORITY_FOR_IDENTITY_NE_EMIC_INFALLIBILITY
