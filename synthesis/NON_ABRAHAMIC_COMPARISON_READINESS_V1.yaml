@@ -1,0 +1,137 @@
+schema_version: on-theo.nonabrahamic-comparison-readiness.v1
+status: NON_CANONICAL_RESEARCH_AUDIT
+base_control:
+  branch: audit/synthesis-comparison-eligibility-v1-20260919
+  head: 809edc937be9a42f1fd76e00e5eadb0a8b9ebe9d
+  gate: synthesis/COMPARISON_ELIGIBILITY_GATE_V1.md
+
+purpose: >
+  Determine which newer world-tradition lanes are mature enough for bounded
+  comparison without flattening them into the existing Abrahamic commonality
+  matrix.
+
+eligibility_levels:
+  - NOT_READY
+  - BOUNDED_READY
+  - READY_FOR_BROAD_COMPARISON
+
+lanes:
+  - id: buddhism
+    source_branch: buddhism
+    source_head_locked_in_parent: b9f2e2a635cd98129b0a0122aeb8a2e7a65cfaa5
+    status: BOUNDED_READY
+    admitted_units:
+      - ontology_of_person_or_self
+      - dependent_causation
+      - postmortem_continuity_problem
+      - liberation_end_state
+      - source_and_witness_method
+    not_admitted:
+      - creator_or_ultimate_authority
+      - full_cosmology
+      - revelation
+      - miracle
+      - complete_karma_mechanism
+      - all_Mahayana_or_later_school_metaphysics
+    reasons:
+      - diachronic_overview_exists
+      - source_map_exists
+      - early_parallel_text_method_is_explicit
+      - physical_manuscript_layer_is_explicit
+      - material_evidence_layer_is_explicit
+      - internal_later_school_backprojection_guard_exists
+      - high_risk_semantic_comparison_guards_exist
+    evidence:
+      - traditions/buddhism/overview-v1.md
+      - traditions/buddhism/source-map-v1.md
+      - traditions/buddhism/research-state-v1.yaml
+    guard: >
+      BOUNDED_READY means only the listed propositions are comparison-eligible;
+      it does not admit a generic timeless Buddhism.
+
+  - id: sumerian
+    source_branch: sumerian
+    source_head_locked_in_parent: bd6b6572141dc2f48f2f104b8f25301662d4a06f
+    status: NOT_READY
+    reason: >
+      The master hub is intentionally navigational and points to a much deeper
+      successor research chain. Comparison requires exact-head evidence pointers
+      into those deep lanes rather than treating the hub summary as the evidence.
+    next_gate:
+      - create_exact_deep_source_lock
+      - select_atomic_propositions
+      - bind_material_and_textual_witnesses
+
+  - id: hindu
+    source_branch: hindu
+    source_head_locked_in_parent: ccd5b82cf99fa9dfda238366a93447047f74b1fa
+    status: NOT_READY
+    reason: >
+      Source strata and semantic hazards are mapped, but the lane lacks enough
+      proposition-level internal reconstruction to support broad ontology rows.
+    next_gate:
+      - Rigveda_proposition_packet
+      - early_Upanishad_text_by_text_packet
+      - karma_rebirth_moksha_semantic_packet
+      - material_history_packet
+
+  - id: daoism
+    source_branch: taoism
+    source_head_locked_in_parent: 30de6433ab2bdce86b88fcdad1a3134084ed39ab
+    status: NOT_READY
+    reason: >
+      The lane has strong source-critical warnings but not yet a sufficiently
+      developed proposition set across Laozi, Zhuangzi, and later religious
+      Daoism.
+    next_gate:
+      - Laozi_manuscript_proposition_map
+      - Zhuangzi_layer_map
+      - religious_Daoism_revelation_and_institution_packet
+
+  - id: shinto
+    source_branch: shinto
+    source_head_locked_in_parent: a578729a2e3cec02fe533c3c1d20946347da9aa4
+    status: NOT_READY
+    reason: >
+      The lane identifies classical texts, internal variants, ritual evidence,
+      Buddhist interaction, and modern layers, but it does not yet reconstruct
+      enough atomic ontology or ritual propositions for synthesis admission.
+    next_gate:
+      - Kojiki_Nihon_shoki_variant_matrix
+      - norito_ritual_packet
+      - shrine_material_evidence_packet
+
+  - id: norse_asatru
+    source_branch: asatru
+    source_head_locked_in_parent: 4af66d0bb3aa3f9bbfcd45fb52b400045b9d5339
+    status: NOT_READY
+    reason: >
+      The source map correctly separates medieval witnesses, archaeology, and
+      modern Asatru, but comparison would currently over-rely on high-level
+      summaries rather than atomic source-controlled propositions.
+    next_gate:
+      - Poetic_Edda_poem_witness_map
+      - Snorri_crosscheck_matrix
+      - inscription_and_archaeology_packet
+
+adjacent_lanes:
+  - id: astrology
+    source_branch: astrology
+    current_role: ADJACENT_METHOD_AND_MECHANISM_LANE
+    comparison_eligibility: NOT_A_TRADITION_ADMISSION
+    note: >
+      Astrology is useful for causal-model, transmission, and epistemic controls.
+      It should not be inserted into a religion-commonality matrix as though it
+      were a unitary religion.
+
+conclusion:
+  broad_nonabrahamic_expansion_allowed: false
+  bounded_buddhist_stress_test_allowed: true
+  perennialist_all_religions_matrix_allowed: false
+
+guards:
+  - SOURCE_MAP_NE_INTERNAL_RECONSTRUCTION
+  - MASTER_HUB_NE_ATOMIC_EVIDENCE
+  - BOUNDED_READY_NE_WHOLE_TRADITION_READY
+  - STRUCTURAL_PARALLEL_NE_SEMANTIC_EQUIVALENCE
+  - NON_ABRAHAMIC_DIFFERENCE_IS_DATA_NOT_NOISE
