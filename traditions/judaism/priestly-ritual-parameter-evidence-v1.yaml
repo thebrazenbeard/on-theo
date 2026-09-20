@@ -1,0 +1,126 @@
+schema_version: on-theo.judaism-priestly-ritual-parameter-evidence.v1
+status: NON_CANONICAL_HEBREW_BIBLE_PRIESTLY_RITUAL_CONTROL
+base_audit_head: 75598bab3d62c25e7d7b05384f0a67856cd3a713
+packet: traditions/judaism/ancient-israel-priestly-ritual-parameter-packet-v1.md
+
+records:
+  - id: JUD-PRI-INSTALL-001
+    evidence_class:
+      - PRIMARY_TEXT
+      - SCHOLARLY_INTERPRETATION
+    source_loci:
+      - LEVITICUS_8
+    propositions:
+      - priestly_installation_is_ordered_and_authorization_sensitive
+      - washing_vesting_anointing_offerings_and_blood_actions_are_structural
+    supports:
+      - RITUAL_PARAMETER_SENSITIVITY
+      - AUTHORIZATION_PARAMETER
+      - SEQUENCE_PARAMETER
+    confidence: BOUNDED_HIGH_FOR_TEXTUAL_PRESCRIPTION
+    empirical_external_effect: NOT_APPLICABLE_FOR_STATUS_EFFECT
+
+  - id: JUD-PRI-INAUG-001
+    evidence_class:
+      - PRIMARY_TEXT
+    source_loci:
+      - LEVITICUS_9
+    propositions:
+      - ordered_priestly_service_precedes_source_represented_divine_glory_and_fire
+      - source_represents_ritual_sequence_and_divine_response_in_same_narrative
+    supports:
+      - SEQUENCE_PARAMETER
+      - SOURCE_ASSERTED_EXTERNAL_OR_DIVINE_EFFECT
+    confidence: BOUNDED_FOR_TEXTUAL_REPRESENTATION
+    empirical_external_effect: NONE_ESTABLISHED
+
+  - id: JUD-PRI-ERROR-001
+    evidence_class:
+      - PRIMARY_TEXT
+      - SCHOLARLY_INTERPRETATION
+    source_loci:
+      - LEVITICUS_10_1_3
+    propositions:
+      - unauthorized_priestly_action_is_narrated_as_fatal
+      - exact_technical_error_is_not_securely_recoverable
+    supports:
+      - AUTHORIZATION_PARAMETER
+      - RITUAL_ERROR_MODEL
+    confidence: BOUNDED_STRONG
+    guards:
+      - STRANGE_FIRE_NE_ONE_RECOVERED_TECHNICAL_PARAMETER
+
+  - id: JUD-PRI-ERROR-002
+    evidence_class:
+      - PRIMARY_TEXT
+    source_loci:
+      - LEVITICUS_10_16_20
+    propositions:
+      - procedural_deviation_can_be_contextually_defended
+      - Moses_accepts_Aarons_explanation
+      - Priestly_error_logic_is_not_uniformly_deterministic
+    supports:
+      - RITUAL_ERROR_MODEL
+      - INTERPRETIVE_FLEXIBILITY_MODEL
+    confidence: BOUNDED_HIGH_FOR_TEXTUAL_NARRATIVE
+    negative_result:
+      - DETERMINISTIC_BRITTLENESS_MODEL_REJECTED
+
+  - id: JUD-PRI-YK-001
+    evidence_class:
+      - PRIMARY_TEXT
+      - SCHOLARLY_INTERPRETATION
+    source_loci:
+      - LEVITICUS_16
+    propositions:
+      - sanctuary_access_is_authorization_and_time_sensitive
+      - washing_garments_animals_lots_incense_blood_sequence_and_boundaries_are_structural
+      - source_represents_improper_approach_as_dangerous
+    supports:
+      - RITUAL_PARAMETER_SENSITIVITY
+      - AUTHORIZATION_PARAMETER
+      - TEMPORAL_PARAMETER
+      - SPATIAL_BOUNDARY_PARAMETER
+      - MATERIAL_PARAMETER
+      - SEQUENCE_PARAMETER
+      - RITUAL_ERROR_MODEL
+    confidence: BOUNDED_HIGH_FOR_TEXTUAL_PRESCRIPTION
+    empirical_external_effect: NONE_ESTABLISHED
+
+  - id: JUD-PRI-REPAIR-001
+    evidence_class:
+      - PRIMARY_TEXT
+    source_loci:
+      - LEVITICUS_4_5
+    propositions:
+      - priestly_system_includes_formal_response_to_unintentional_wrongdoing
+      - error_can_trigger_prescribed_ritual_repair
+    supports:
+      - REPAIR_OR_EXPIATION_MODEL
+      - RITUAL_ERROR_MODEL
+    confidence: BOUNDED
+
+axes:
+  RITUAL_PARAMETER_SENSITIVITY: BOUNDED_STRONG_FOR_PRIESTLY_TEXT
+  AUTHORIZATION_PARAMETER: BOUNDED_STRONG
+  SPATIAL_BOUNDARY_PARAMETER: BOUNDED_STRONG
+  SEQUENCE_PARAMETER: BOUNDED_STRONG
+  MATERIAL_PARAMETER: BOUNDED
+  TEMPORAL_PARAMETER: BOUNDED
+  RITUAL_ERROR_MODEL: BOUNDED_STRONG
+  REPAIR_OR_EXPIATION_MODEL: BOUNDED
+  INTERPRETIVE_FLEXIBILITY_MODEL: BOUNDED
+  DETERMINISTIC_BRITTLENESS_MODEL: REJECTED
+  EMPIRICAL_EXTERNAL_EFFECT: NONE_ESTABLISHED
+
+source_critical_controls:
+  - PRIESTLY_TEXT_IS_LITERARY_PRESCRIPTION
+  - TEXTUAL_FORM_NE_HISTORICAL_PERFORMANCE_BY_DEFAULT
+  - P_SOURCE_AND_COMPOSITION_DEBATES_REMAIN_VISIBLE
+  - LATER_JEWISH_RECEPTION_KEPT_SEPARATE
+
+guards:
+  - NADAB_ABIHU_NE_EXACT_ERROR_MECHANISM_RECOVERED
+  - SOURCE_ASSERTED_DIVINE_RESPONSE_NE_VERIFIED_EFFECT
+  - PROCEDURAL_DEVIATION_NE_AUTOMATIC_FAILURE
+  - PRIESTLY_STATUS_NE_EXTERNAL_PHYSICAL_EFFECT
