@@ -1,0 +1,85 @@
+schema_version: on_theo.old_syriac_peshitta_witness_boundary.v1
+status: BOUNDED_MANUSCRIPT_VERSION_CONTROL_REVIEW_REQUIRED
+canonical: false
+
+parent:
+  branch: research/aphrahat-syriac-reception-v1-20260920
+  exact_head: 199fa8b73bea18c71340da810429d868905b1cac
+
+witnesses:
+  - id: SYR-WIT-SINAITIC-OLD-SYRIAC
+    evidence_class: MANUSCRIPT_WITNESS
+    version_field: OLD_SYRIAC
+    approximate_physical_date: late_fourth_to_early_fifth_century
+    version_origin_date: UNKNOWN
+
+  - id: SYR-WIT-CURETONIAN
+    evidence_class: MANUSCRIPT_WITNESS
+    version_field: OLD_SYRIAC
+    approximate_physical_date: fifth_century
+    version_origin_date: UNKNOWN
+
+  - id: SYR-WIT-KESSEL-DOUBLE-PALIMPSEST
+    evidence_class: MANUSCRIPT_WITNESS
+    version_field: OLD_SYRIAC
+    approximate_physical_date: first_half_sixth_century
+    methodological_value: later_physical_witness_can_preserve_older_versional_form
+
+  - id: SYR-VERSION-PESHITTA-GOSPELS
+    evidence_class: TEXTUAL_VERSION
+    role: later_standardized_syriac_gospel_form
+    exact_single_origin_event: UNKNOWN
+
+claims:
+  - id: SYR-OS-V1-001
+    proposition: Old Syriac is a witness/version field rather than one perfectly uniform manuscript text.
+    status: BOUNDED
+    confidence: strong
+  - id: SYR-OS-V1-002
+    proposition: Sinaitic Syriac physically witnesses an early Syriac Gospel form.
+    status: BOUNDED
+    confidence: strong
+  - id: SYR-OS-V1-003
+    proposition: The Sinaitic physical manuscript date equals the translation's origin date.
+    status: NOT_ADMITTED
+  - id: SYR-OS-V1-004
+    proposition: Curetonian supplies another distinct early Syriac Gospel form.
+    status: BOUNDED
+    confidence: strong
+  - id: SYR-OS-V1-005
+    proposition: A later physical manuscript can preserve an older versional form.
+    status: BOUNDED
+    confidence: strong_as_method_control
+  - id: SYR-PESH-V1-001
+    proposition: Peshitta represents a later standardized Syriac Gospel form relative to Old Syriac witnesses.
+    status: BOUNDED
+    confidence: strong
+  - id: SYR-PESH-V1-002
+    proposition: Peshitta Gospel formation is known as one single editorial event.
+    status: NOT_ADMITTED
+  - id: SYR-PESH-V1-003
+    proposition: Peshitta appearance means immediate disappearance of earlier Syriac Gospel forms.
+    status: NOT_ADMITTED
+  - id: SYR-OS-PESH-V1-001
+    proposition: Syriac versional variation is evidence for transmission history before historical event claims.
+    status: BOUNDED
+    confidence: strong_as_method_control
+  - id: SYR-OS-PESH-V1-002
+    proposition: Overlapping transmission lanes better fit current evidence than simple three-step succession.
+    status: BOUNDED
+    confidence: moderate_to_strong
+
+guards:
+  - VERSION_FIELD_NE_ONE_MANUSCRIPT
+  - MANUSCRIPT_DATE_NE_VERSION_ORIGIN_DATE
+  - OLD_SYRIAC_NE_ONE_FIXED_TEXT
+  - PESHITTA_NE_ONE_DATABLE_EDITORIAL_EVENT
+  - VERSIONAL_READING_NE_GREEK_AUTOGRAPH
+  - STANDARDIZATION_NE_INSTANT_UNIVERSAL_ADOPTION
+  - EARLIER_WITNESS_NE_AUTOMATICALLY_ORIGINAL_READING
+
+next_scope:
+  - SYRIAC_GOSPEL_THEOLOGY_TRANSITION_SYNTHESIS
+  - TESTAMENT_BOOK_VI_SYRIAC_CARRYDOWN
+  - BOOK_VI_SYRIAC_HOSTILE_REREVIEW
+  - EARLY_ISLAMIC_JESUS_RECEPTION_FRONTIER
