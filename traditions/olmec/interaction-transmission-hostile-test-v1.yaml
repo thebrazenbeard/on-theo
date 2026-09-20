@@ -1,0 +1,61 @@
+schema_version: on-theo.olmec-interaction-transmission-hostile-test.v1
+status: HOSTILE_TEST_COMPLETE
+
+hypothesis:
+  strong_one_way_mother_culture_model:
+    supported_as_default: false
+
+secure_results:
+  interregional_exchange: STRONG
+  Olmec_style_dispersion: STRONG
+  selected_early_Gulf_export_direction: STRONG_FOR_SPECIFIC_MATERIAL_CLASSES
+  local_adoption_reworking: STRONG
+  multidirectional_interaction: SUPPORTED
+  specific_religious_transmission: CASE_BY_CASE_UNBOUND
+
+controls:
+  - id: OLM-INT-EXCHANGE-001
+    proposition: archaeometric_studies_demonstrate_long_distance_material_exchange
+    confidence: HIGH
+
+  - id: OLM-INT-DIRECTION-001
+    proposition: Early_Formative_San_Lorenzo_exported_substantial_pottery_in_current_synthesis
+    confidence: HIGH
+    guard: MATERIAL_EXPORT_NE_SEMANTIC_EXPORT
+
+  - id: OLM-INT-CENTRAL-MEX-001
+    proposition: interaction_direction_and_foreign_style_adoption_changed_over_time_in_central_Mexico
+    confidence: BOUNDED_HIGH
+    guard: OLMEC_PRIORITY_NE_PERMANENT_CAUSAL_CENTER
+
+  - id: OLM-INT-MAYA-001
+    proposition: early_Maya_Olmec_interaction_is_supported_but_Maya_ceremonial_development_was_not_blank_recipient_process
+    confidence: BOUNDED_HIGH
+    guard: INTERACTION_NE_OLMEC_CREATED_MAYA_RELIGION
+
+  - id: OLM-INT-REGIONAL-001
+    proposition: Olmec_style_material_can_be_locally_produced_and_reworked_outside_heartland
+    confidence: BOUNDED
+    guard: STYLE_NE_ETHNICITY_OR_MIGRATION_BY_DEFAULT
+
+transmission_gate:
+  requires:
+    - source_form
+    - secure_date
+    - recipient_form
+    - intermediate_bridges
+    - contact_route
+    - directional_evidence
+    - semantic_continuity_or_recoding
+    - alternative_models_tested
+
+axis_status:
+  CONTACT_AND_REINTERPRETATION_MODEL: NOT_DIRECTLY_APPLICABLE_AS_ONE_TRADITION_CONTACT_CELL
+  TRANSMISSION_MODEL: CASE_BY_CASE_HOLD
+  CROSS_TRADITION_COMPARISON: HOLD
+
+guards:
+  - EXCHANGE_NE_TRANSMISSION
+  - STYLE_NE_ETHNICITY
+  - LEGACY_NE_BORROWING
+  - MOTHER_CULTURE_NE_DEFAULT_CAUSAL_MODEL
