@@ -1,0 +1,75 @@
+schema_version: on-theo.global-corpus-breadth-expansion-state.v7
+status: ACTIVE_PORTFOLIO_EXPANSION
+supersedes_for_current_research:
+  - synthesis/GLOBAL_CORPUS_BREADTH_EXPANSION_STATE_V6.yaml
+
+completed_breadth_units:
+  lakota:
+    exact_head: 8a9cee8335cadc742c9de25c90f4306702a80e8a
+    pr: 104
+  maya:
+    exact_head: 2b5907438334537842710a81886083b9cbd0241a
+    pr: 105
+  mexica_nahua:
+    exact_head: 00e37e475f3669ef2ee040908b126617ffcd17da
+    pr: 106
+  olmec:
+    exact_head: cac89f2e0024c00f71d2d2a835253328c451e7ce
+    pr: 107
+  dine:
+    exact_head: ac988c4a31f354e7c4d902d286c0c950293ffb8a
+    pr: 108
+  haudenosaunee:
+    exact_head: 506d95eb449bc4d11fc61dbe9c18ffca7ab94f5a
+    pr: 112
+    status: BOUNDED_COMPARISON_READINESS_AUDITED_PUBLIC_SOURCE
+
+expanded_comparison:
+  schema: synthesis/EMERGING_NEUTRAL_AXIS_SCHEMA_V1.yaml
+  test: synthesis/INDIGENOUS_AMERICAS_BREADTH_EXPANDED_COMPARISON_TEST_V1.md
+  matrix: synthesis/INDIGENOUS_AMERICAS_BREADTH_MATRIX_V1.yaml
+  exact_synthesis_head_before_state_update: 19b67cada0e4d5b1969a1cb6027a3e53e997fdf6
+
+axis_promotions_for_expanded_tests:
+  - RELATIONAL_ORDER_MODEL
+  - SACRED_LAND_PLACE_MODEL
+  - SACRED_TIME_CALENDAR_MODEL
+
+schema_changes:
+  KNOWLEDGE_GOVERNANCE_DIMENSION:
+    parent: KNOWLEDGE_OR_DISCLOSURE_MODEL
+    status: ADDED_FOR_EXPANDED_TESTS
+  DOCUMENTARY_MEMORY_MODEL:
+    status: CANDIDATE
+  HUMAN_ORIGIN_OR_EMERGENCE_MODEL:
+    status: STRONG_CANDIDATE
+  SACRIFICE_AND_BODILY_OFFERING_MODEL:
+    status: STRONG_DECOMPOSITION_CANDIDATE
+
+expanded_test_result:
+  strongest: RECURRENT_COMPARATIVE_PROBLEM_SPACES_WITH_DIVERGENT_MECHANISMS
+  one_indigenous_american_theology: NOT_SUPPORTED
+  common_origin_from_similarity: NOT_SUPPORTED
+  sacred_time_common_mechanism: NOT_SUPPORTED
+  one_sacred_political_architecture: NOT_SUPPORTED
+
+active_portfolio_frontier:
+  primary: ANDEAN_INCA_DIACHRONIC_PACKET_V1
+  requirements:
+    - imperial_Inca_ne_all_Andean
+    - Quechua_ne_Inca_by_default
+    - colonial_chronicle_ne_unmediated_precontact_transcript
+    - Guaman_Poma_Garcilaso_Betanzos_Cieza_and_others_kept_separate
+    - archaeology_and_chronicle_evidence_classes_distinct
+    - khipu_ne_numeric_only_by_default_but_semantics_source_controlled
+    - huaca_sacred_place_category_source_controlled
+    - ceque_Cusco_system_ne_all_Andean_sacred_geography
+    - living_Andean_communities_ne_unchanged_Inca_religion
+    - Catholic_contact_and_extirpation_histories_explicit
+    - capacocha_material_textual_convergence_handled_separately
+
+guards:
+  - COMPARISON_READY_NE_TRADITION_COMPLETE
+  - EXPANDED_AXIS_NE_SHARED_HISTORICAL_SOURCE
+  - INDIGENOUS_AMERICAS_NE_ONE_RELIGIOUS_FAMILY
+  - SIMILARITY_NE_TRANSMISSION
