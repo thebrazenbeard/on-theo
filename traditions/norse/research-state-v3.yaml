@@ -1,0 +1,51 @@
+schema_version: on-theo.norse-research-state.v3
+status: HUMAN_AFTERLIFE_AND_MORTUARY_LAYER_ACTIVE
+parent_head: bc8adf8ee6e0135e2b22fbeb9f5daa4bce4b99e7
+parent_state: traditions/norse/research-state-v2.yaml
+
+new_artifacts:
+  - traditions/norse/human-afterlife-source-matrix-v1.md
+  - traditions/norse/mortuary-archaeology-boundary-v1.md
+  - traditions/norse/neutral-axis-evidence-v2.yaml
+
+new_evidence_layers:
+  - GRIMNISMAL_AFTERLIFE_LOCI
+  - HELGAKVIDA_HUNDINGSBANA_II_HUMAN_CONTINUITY
+  - SNORRI_HEL_SYSTEMATIZATION_WITH_LATE_LAYER_GUARD
+  - VIKING_AGE_MORTUARY_ARCHAEOLOGY
+
+axes_strengthened:
+  CONTINUITY_MODEL: BOUNDED_HUMAN_LITERARY
+  POSTMORTEM_PATH_MODEL: BOUNDED_PLURALITY
+  PERSON_OR_SELF_MODEL: PARTIAL_STRENGTHENED
+  MORTUARY_RELATIONSHIP_MODEL: PARTIAL
+  RITUAL_ORDER_MODEL: STRENGTHENED_MATERIAL
+
+existing_axes_preserved:
+  FATE_CONSTRAINT_MODEL: BOUNDED
+  WORLD_TERMINUS_RENEWAL_MODEL: BOUNDED
+  CONTACT_AND_REINTERPRETATION_MODEL: BOUNDED
+  REVIVAL_RECONSTRUCTION_MODEL: BOUNDED_MODERN
+
+readiness:
+  bounded_Norse_comparison: strengthened
+  broad_Norse_comparison: false
+  human_afterlife_comparison: true_with_genre_controls
+  material_to_literary_equation: prohibited
+
+remaining_blockers:
+  - skaldic_afterlife_lane
+  - Hel_source_history
+  - saga_mound_dweller_genre_control
+  - regional_burial_matrix
+  - rune_divine_name_registry
+  - fate_vocabulary_deepening
+  - Ragnarok_multi_source_matrix
+
+guards:
+  - ALL_BATTLE_DEAD_NE_VALHOLL
+  - SNORRI_SYSTEM_NE_UNIVERSAL_PAGAN_RULE
+  - GRAVE_GOOD_NE_AFTERLIFE_EQUIPMENT
+  - SHIP_BURIAL_NE_LITERAL_AFTERLIFE_VOYAGE
+  - HUMAN_AFTERLIFE_TEXT_NE_ARCHAEOLOGICAL_BELIEF_PROOF
+  - SYSTEMS_ANALOGY_REMAINS_DOWNSTREAM
