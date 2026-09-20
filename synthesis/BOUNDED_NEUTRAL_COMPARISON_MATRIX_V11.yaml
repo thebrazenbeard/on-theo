@@ -1,0 +1,103 @@
+schema_version: on-theo.bounded-neutral-comparison-matrix.v11
+status: NON_CANONICAL_PILOT_MATRIX
+supersedes_for_current_research:
+  - synthesis/BOUNDED_NEUTRAL_COMPARISON_MATRIX_V10.yaml
+relation_schema: synthesis/CROSS_TRADITION_RELATION_SCHEMA_V1.yaml
+world_origin_schema: synthesis/WORLD_ORIGIN_COMPARISON_SCHEMA_V1.yaml
+mortuary_relationship_schema: synthesis/MORTUARY_RELATIONSHIP_COMPARISON_SCHEMA_V1.yaml
+institutionalization_schema: synthesis/INSTITUTIONALIZATION_COMPARISON_SCHEMA_V1.yaml
+offering_exchange_schema: synthesis/OFFERING_EXCHANGE_COMPARISON_SCHEMA_V1.yaml
+
+source_heads:
+  buddhism: eb0f948788f5171d13c067daea2df54845d22f70
+  hindu: 614fa715fcacee0d7ec1ba573061d3e776e708d3
+  daoism: 708ba10413d9511648c2540ad84be74b6b5f6b5c
+  shinto: 4939c22c6b13afc1226d8860fa8dbf394e34b5c4
+  norse: 22e9fe10d1647a66458c54478c86e7ba6abd83ce
+  sumerian: 3fd5db6f05c008aeba4febe310de99e4ff484770
+
+offering_exchange_snapshot:
+  buddhism:
+    status: NOT_IN_CURRENT_TEST
+  daoism:
+    status: NOT_IN_CURRENT_TEST
+  shinto:
+    status: NOT_IN_CURRENT_TEST
+
+  hindu:
+    status: PARTIAL
+    evidence:
+      - RIGVEDA_RITUAL_CONTEXT
+      - SATAPATHA_BRAHMANA_AGNIHOTRA
+      - SRAUTA_SYNTHESIS
+    offering_act: TEXTUALLY_PRESCRIBED_RITUAL_TRANSFER
+    mediator: FIRE_SACRIFICER_SPECIALIST_RITUAL_ORDER
+    claimed_effect: RITE_SPECIFIC_SOURCE_ASSERTED_OR_IMPLIED_EFFECT
+    recipient_status: RITE_SPECIFIC_NOT_ONE_GLOBAL_MODEL
+    reciprocity_status: NOT_ESTABLISHED_AS_ONE_GENERAL_VEDIC_EXCHANGE_THEORY
+    guard: TEXTUAL_RITUAL_EFFICACY_NE_ONE_CAUSAL_MECHANISM
+
+  norse:
+    status: PARTIAL_MATERIAL
+    evidence:
+      - TISSO_ARCHAEOLOGICAL_COMPLEX
+      - MATERIAL_RITUAL_EVIDENCE
+    offering_act: MATERIAL_DEPOSITION_PLUS_FEASTING_IN_RITUAL_CONTEXT
+    mediator: LANDSCAPE_RITUAL_LOCI_PLUS_ELITE_CENTERED_ACTIVITY
+    recipient_status: OFTEN_UNKNOWN
+    claimed_effect: NOT_DIRECTLY_RECOVERABLE_FROM_MATERIAL_DEPOSITION_ALONE
+    reciprocity_status: UNKNOWN
+    guards:
+      - MATERIAL_DEPOSITION_NE_KNOWN_RECIPIENT
+      - FEASTING_NE_SACRIFICE_BY_DEFAULT
+
+  sumerian:
+    status: BOUNDED
+    evidence:
+      - HUMAN_AFTERLIFE_FUNERARY_DEEP_PACKET
+      - GILGAMESH_ENKIDU_AND_NETHERWORLD
+      - DEATH_OF_UR_NAMMA
+      - DUMUZID_LAMENT_PROVISIONING
+    offering_act:
+      - FOOD_DRINK_FUNERARY_PROVISIONING
+      - GIFTS_LIBATION_AND_TEXT_SPECIFIC_OFFERINGS
+    recipient_status:
+      - DECEASED_PERSON_OR_GHOST
+      - UNDERWORLD_OR_DIVINE_RECIPIENT_IN_SELECTED_TEXTS
+    claimed_effect:
+      - REPRESENTED_POSTMORTEM_WELFARE_OR_MAINTENANCE
+      - TEXT_SPECIFIC_STATUS_RELATION
+    reciprocity_status: MAINTENANCE_OR_KINSHIP_OBLIGATION_STRONGER_THAN_QUID_PRO_QUO
+    guards:
+      - FUNERARY_PROVISIONING_NE_DIVINE_SACRIFICE
+      - GRAVE_PROVISIONING_NE_LITERAL_POSTMORTEM_USE_BY_DEFAULT
+
+offering_exchange_method_result:
+  admitted_test_lanes: 3
+  bounded: 1
+  partial: 2
+  strongest_shared_result: OFFERING_AND_DEPOSITION_PRACTICES_CAN_MEDIATE_RELIGIOUS_OR_POSTMORTEM_RELATIONSHIPS_THROUGH_DISTINCT_SOURCE_SPECIFIC_MECHANISMS
+  one_shared_reciprocity_model_supported: false
+  one_shared_divine_recipient_model_supported: false
+  material_deposition_reveals_requested_outcome: false
+
+offering_exchange_test:
+  artifact: synthesis/OFFERING_EXCHANGE_CROSS_TRADITION_TEST_V1.md
+  result: COMPARABLE_ONLY_WITH_OFFERING_ACT_RECIPIENT_EFFECT_AND_RECIPROCITY_SEPARATED
+
+preserved_results:
+  institutionalization_test: synthesis/INSTITUTIONALIZATION_CROSS_TRADITION_TEST_V1.md
+  mortuary_test: synthesis/MORTUARY_RELATIONSHIP_CROSS_TRADITION_TEST_V1.md
+  world_origin_test: synthesis/WORLD_ORIGIN_CROSS_TRADITION_TEST_V1.md
+  political_test: synthesis/POLITICAL_SACRALIZATION_CROSS_TRADITION_TEST_V1.md
+  contact_test: synthesis/CONTACT_REINTERPRETATION_CROSS_TRADITION_TEST_V1.md
+
+matrix_guards:
+  - THIS_IS_NOT_A_COMMONALITY_SCORE
+  - OFFERING_NE_RECIPROCITY_BY_DEFAULT
+  - MATERIAL_DEPOSITION_NE_KNOWN_RECIPIENT
+  - SOURCE_ASSERTED_EFFECT_NE_EMPIRICALLY_VERIFIED_EFFECT
+  - FUNERARY_PROVISIONING_NE_DIVINE_SACRIFICE
+  - SHARED_OFFERING_AXIS_NE_SHARED_RECIPROCITY_MODEL
+  - EVIDENCE_CLASS_DIFFERENCE_MUST_REMAIN_VISIBLE
+  - SYSTEMS_MAPPING_IS_OPTIONAL_AND_DOWNSTREAM
