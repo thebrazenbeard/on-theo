@@ -1,0 +1,79 @@
+schema_version: on-theo.nonabrahamic-comparison-readiness.v6
+status: NON_CANONICAL_RESEARCH_AUDIT
+supersedes_for_current_research:
+  - synthesis/NON_ABRAHAMIC_COMPARISON_READINESS_V5.yaml
+
+comparison_control:
+  branch: audit/synthesis-comparison-eligibility-v1-20260919
+  head: 809edc937be9a42f1fd76e00e5eadb0a8b9ebe9d
+
+lanes:
+  - id: buddhism
+    source_head: 1c6c7a9a35901a529d377e1bd6fb86a88c1cdbe9
+    draft_pr: 97
+    status: BOUNDED_READY_STRENGTHENED
+    broad_ready: false
+
+  - id: hindu
+    source_head: 0c3123f4f1cf03e6f6a29ca0d0eb7edfddff5e75
+    draft_pr: 98
+    status: BOUNDED_PARTIAL_STRENGTHENED
+    broad_ready: false
+
+  - id: daoism
+    source_head: 483d1bcaebb57a00cda5eb30c15bc3908fdac438
+    draft_pr: 99
+    status: BOUNDED_PARTIAL_STRENGTHENED
+    admitted_layers:
+      - CLASSICAL_LAOZI_SELECTED
+      - ZHUANGZI_INNER_SELECTED
+      - CELESTIAL_MASTERS_EARLY_BOUNDED
+      - XIANGER_BOUNDED
+      - LORD_LAO_LATE_SECOND_CENTURY_TRANSFORMATION_STARTED
+    broad_ready: false
+    blockers:
+      - Zhang_Pu_stele_direct_text_binding
+      - Xianger_line_by_line_map
+      - Zhuangzi_outer_misc_layer_map
+      - Shangqing
+      - Lingbao_and_Buddhist_contact
+      - medieval_and_modern_lanes
+
+  - id: sumerian
+    source_head: bd6b6572141dc2f48f2f104b8f25301662d4a06f
+    status: NOT_READY_AT_MASTER_HUB_LEVEL
+
+  - id: shinto
+    source_head: a578729a2e3cec02fe533c3c1d20946347da9aa4
+    status: NOT_READY
+
+  - id: norse_asatru
+    source_head: 4af66d0bb3aa3f9bbfcd45fb52b400045b9d5339
+    status: NOT_READY
+
+holds:
+  direct_cross_tradition_convergence_or_transmission:
+    status: HOLD
+    applies_to:
+      - BUDDHISM
+      - HINDU
+      - DAOISM
+    reason: >
+      Bounded internal readiness does not establish shared substrate, borrowing,
+      or independent convergence. Exact comparison units, chronology, contact,
+      semantics, and alternatives remain required.
+  perennialist_all_religions_matrix:
+    status: PROHIBITED_AT_CURRENT_EVIDENCE
+
+adjacent:
+  astrology:
+    role: METHOD_MECHANISM_EPISTEMIC_LANE
+    not_unitary_religion: true
+
+guards:
+  - INTERNAL_RECONSTRUCTION_PRECEDES_CROSS_TRADITION_COMPARISON
+  - DIACHRONIC_CHANGE_WITHIN_TRADITION_IS_DATA
+  - LATER_DEIFICATION_NE_EARLIER_PRIMARY_MEANING
+  - TRADITIONAL_FOUNDING_NE_DIRECT_EVIDENCE
+  - BOUNDED_PARTIAL_NE_BROAD_READY
+  - SYSTEMS_ANALOGY_IS_DOWNSTREAM

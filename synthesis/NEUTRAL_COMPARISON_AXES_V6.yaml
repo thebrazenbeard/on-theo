@@ -1,0 +1,99 @@
+schema_version: on-theo.neutral-comparison-axes.v6
+status: PROJECT_METHOD_CANDIDATE_NON_CANONICAL
+supersedes_for_current_research:
+  - synthesis/NEUTRAL_COMPARISON_AXES_V5.yaml
+
+layers:
+  - SOURCE_PROPOSITION
+  - TEXTUAL_OR_HISTORICAL_LAYER
+  - EVIDENCE_MODE
+  - NEUTRAL_COMPARISON_AXIS
+  - OPTIONAL_SYSTEMS_ANALOGY
+
+axes:
+  - id: WORLD_ORIGIN_MODEL
+    question: What does the source claim or refuse to claim about cosmic origin/order?
+
+  - id: CAUSAL_ORDER_TYPE
+    question: What kind of causal order does the source describe or presuppose?
+
+  - id: GENERATION_AND_CONTROL_MODEL
+    question: >
+      Does the source distinguish generating, sustaining, nurturing, possessing,
+      commanding, judging, and governing?
+
+  - id: AGENCY_AND_AUTHORITY_MODEL
+    question: What possesses privileged agency or authority, if anything?
+
+  - id: PERSON_OR_SELF_MODEL
+    question: What constitutes a person/self and how stable is that category?
+
+  - id: TRANSFORMATION_MODEL
+    question: >
+      How does a source conceptualize changes of form, identity, state,
+      life/death, or perspective, and what remains invariant if anything?
+
+  - id: CONTINUITY_MODEL
+    question: What, if anything, continues across death or major transformation?
+
+  - id: POSTMORTEM_PATH_MODEL
+    question: Does the source distinguish postmortem routes, returns, or non-returns?
+
+  - id: MORAL_CAUSALITY_MODEL
+    question: How do actions or moral states acquire consequences?
+
+  - id: LIBERATION_OR_FINAL_TRANSFORMATION_MODEL
+    question: What counts as desired or final transformation, if defined?
+
+  - id: KNOWLEDGE_OR_DISCLOSURE_MODEL
+    question: >
+      How is authoritative or otherwise unavailable knowledge obtained, and how
+      does that mechanism change across textual or institutional periods?
+
+  - id: KNOWLEDGE_OR_PRACTICE_DIFFERENTIATION_MODEL
+    question: Do different knowledge/practice profiles lead to different outcomes?
+
+  - id: INTERVENTION_MODEL
+    question: Does the source describe privileged intervention in ordinary causality?
+
+  - id: WORLD_STATUS_MODEL
+    question: How does the source characterize experienced reality?
+
+  - id: SOCIAL_COSMOLOGY_MODEL
+    question: Does social hierarchy become part of cosmic/postmortem order?
+
+  - id: INSTITUTIONALIZATION_MODEL
+    question: >
+      How are teachings, specialists, communities, authorities, sites, texts,
+      rituals, and material resources organized and stabilized?
+
+comparison_rules:
+  - source_answer_may_change_diachronically_within_one_tradition
+  - later_personification_must_not_rewrite_earlier_impersonal_or_nonsovereign_language
+  - traditional_foundation_date_must_be_distinguished_from_direct_surviving_evidence
+  - commentary_must_not_be_promoted_to_primary_text
+  - institutional_history_must_not_be_promoted_to_metaphysical_truth
+  - generating_ne_owning_by_default
+  - generating_ne_commanding_by_default
+  - transformation_ne_persistence_by_default
+  - textual_layer_must_be_explicit
+  - evidence_mode_must_be_explicit
+  - systems_mapping_is_optional_and_downstream
+  - missing_source_support_yields_UNKNOWN_not_inference
+  - similar_axis_value_does_not_imply_transmission
+
+bounded_source_bindings:
+  buddhism:
+    head: 1c6c7a9a35901a529d377e1bd6fb86a88c1cdbe9
+    binding: synthesis/BUDDHIST_PRIMARY_SOURCE_BINDING_V2.yaml
+  hindu:
+    head: 0c3123f4f1cf03e6f6a29ca0d0eb7edfddff5e75
+    binding: synthesis/HINDU_PRIMARY_SOURCE_BINDING_V2.yaml
+  daoism:
+    head: 483d1bcaebb57a00cda5eb30c15bc3908fdac438
+    binding: synthesis/DAOISM_PRIMARY_SOURCE_BINDING_V2.yaml
+
+effect_boundary:
+  changes_existing_commonality_matrix: false
+  canonical_effect: false
+  promotes_GOD_model: false
