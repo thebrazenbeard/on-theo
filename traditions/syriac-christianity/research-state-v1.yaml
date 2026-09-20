@@ -14,10 +14,15 @@ completed:
   - TATIAN_DIRECT_MANUSCRIPT_NONEXISTENCE_GUARD
   - EPHREM_MULTIPLE_GOSPEL_FORMS_CONTROL
   - SYRIAC_GOSPEL_TRANSITION_MODEL_V1
+  - APHRAHAT_PRIMARY_RECEPTION_BOUNDARY
+  - APHRAHAT_ANTI_JUDAISM_POLEMIC_GUARD
+  - APHRAHAT_CHRISTOLOGY_RECEPTION_CONTROL
 
 key_artifacts:
   - traditions/syriac-christianity/ephrem-syriac-gospel-transmission-v1.md
   - traditions/syriac-christianity/ephrem-syriac-gospel-transmission-v1.yaml
+  - traditions/syriac-christianity/aphrahat-syriac-reception-v1.md
+  - traditions/syriac-christianity/aphrahat-syriac-reception-v1.yaml
 
 current_results:
   ephrem_commentary_as_tatianic_witness: BOUNDED_STRONG
@@ -25,9 +30,15 @@ current_results:
   ephrem_separated_gospel_awareness: BOUNDED_MODERATE_TO_STRONG
   one_linear_syriac_gospel_replacement_model: NOT_ADMITTED
   layered_coexistence_transition_model: BOUNDED_MODERATE_TO_STRONG
+  aphrahat_scriptural_christology: BOUNDED_STRONG_FOR_APHRAHAT
+  aphrahat_jewish_christian_boundary_argument: BOUNDED_MODERATE_TO_STRONG
+  aphrahat_collective_jewish_guilt_as_history: NOT_ADMITTED
+  aphrahat_bodily_resurrection_reception: BOUNDED_STRONG_FOR_APHRAHAT
 
 next_frontier:
-  - APHRAHAT_PRIMARY_RECEPTION_PACKET
+  - OLD_SYRIAC_PESHITTA_WITNESS_BOUNDARY
+  - APHRAHAT_EPHREM_TRANSITION_MATRIX
+  - TESTAMENT_BOOK_VI_APHRAHAT_CARRYDOWN
   - OLD_SYRIAC_PESHITTA_WITNESS_BOUNDARY
   - SYRIAC_GOSPEL_TRANSITION_MATRIX
   - TESTAMENT_BOOK_VI_SYRIAC_CARRYDOWN
