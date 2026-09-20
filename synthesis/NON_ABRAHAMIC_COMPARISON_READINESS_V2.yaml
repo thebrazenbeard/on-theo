@@ -1,0 +1,91 @@
+schema_version: on-theo.nonabrahamic-comparison-readiness.v2
+status: NON_CANONICAL_RESEARCH_AUDIT
+parent_control:
+  branch: audit/synthesis-comparison-eligibility-v1-20260919
+  head: 809edc937be9a42f1fd76e00e5eadb0a8b9ebe9d
+  gate: synthesis/COMPARISON_ELIGIBILITY_GATE_V1.md
+
+supersedes_for_current_research:
+  - synthesis/NON_ABRAHAMIC_COMPARISON_READINESS_V1.yaml
+
+lanes:
+  - id: buddhism
+    source_branch: research/buddhist-neutral-axis-primary-sources-v1-20260920
+    source_head: 1c6c7a9a35901a529d377e1bd6fb86a88c1cdbe9
+    status: BOUNDED_READY_STRENGTHENED
+    evidence_modes:
+      - PALI_PRIMARY_TEXT
+      - CHINESE_AGAMA_PARALLEL
+      - SANSKRIT_PARALLEL
+      - GANDHARI_PHYSICAL_MANUSCRIPT
+      - ASOKAN_INSCRIPTION
+      - ARCHAEOLOGICAL_SITE_CONTEXT
+    admitted_axes:
+      - PERSON_OR_SELF_MODEL
+      - CAUSAL_ORDER_TYPE
+      - CONTINUITY_MODEL
+      - MORAL_CAUSALITY_MODEL
+      - LIBERATION_OR_FINAL_TRANSFORMATION_MODEL
+      - INSTITUTIONALIZATION_MODEL
+    partial_axes:
+      - WORLD_STATUS_MODEL
+    not_admitted:
+      - universal_creator_position
+      - complete_cosmology
+      - revelation_equivalence
+      - miracle_equivalence
+      - complete_karma_mechanism
+      - all_Mahayana_or_later_school_metaphysics
+    guard: >
+      Stronger evidence diversity does not turn bounded proposition-level
+      readiness into permission to synthesize one timeless Buddhism.
+
+  - id: sumerian
+    source_branch: sumerian
+    source_head: bd6b6572141dc2f48f2f104b8f25301662d4a06f
+    status: NOT_READY_AT_MASTER_HUB_LEVEL
+    reason: deep_successor_chain_requires_exact_atomic_source_lock
+
+  - id: hindu
+    source_branch: hindu
+    source_head: ccd5b82cf99fa9dfda238366a93447047f74b1fa
+    status: NOT_READY
+    next_gate:
+      - Rigveda_proposition_packet
+      - early_Upanishad_text_by_text_packet
+      - karma_rebirth_moksha_semantic_packet
+      - material_history_packet
+
+  - id: daoism
+    source_branch: taoism
+    source_head: 30de6433ab2bdce86b88fcdad1a3134084ed39ab
+    status: NOT_READY
+
+  - id: shinto
+    source_branch: shinto
+    source_head: a578729a2e3cec02fe533c3c1d20946347da9aa4
+    status: NOT_READY
+
+  - id: norse_asatru
+    source_branch: asatru
+    source_head: 4af66d0bb3aa3f9bbfcd45fb52b400045b9d5339
+    status: NOT_READY
+
+adjacent_lanes:
+  - id: astrology
+    branch: astrology
+    role: METHOD_MECHANISM_EPISTEMIC_LANE
+    status: NOT_A_UNITARY_RELIGION_ADMISSION
+
+conclusion:
+  broad_nonabrahamic_expansion_allowed: false
+  bounded_Buddhist_comparison_allowed: true
+  Buddhism_is_broadly_complete: false
+  perennialist_all_religions_matrix_allowed: false
+
+guards:
+  - SOURCE_MAP_NE_INTERNAL_RECONSTRUCTION
+  - EVIDENCE_DIVERSITY_NE_WHOLE_TRADITION_COMPLETENESS
+  - STRUCTURAL_PARALLEL_NE_SEMANTIC_EQUIVALENCE
+  - NON_ABRAHAMIC_DIFFERENCE_IS_DATA_NOT_NOISE
+  - SYSTEMS_ANALOGY_IS_DOWNSTREAM
