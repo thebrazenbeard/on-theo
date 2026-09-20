@@ -1,0 +1,76 @@
+schema_version: on-theo.modern-satanism-neutral-axis-evidence.v1
+status: INTERNAL_FOUNDATION_NOT_COMPARISON_READY
+
+records:
+  - id: SAT-COS-001
+    source:
+      - CHURCH_OF_SATAN_OFFICIAL_HISTORY
+      - CHURCH_OF_SATAN_FUNDAMENTAL_BELIEFS_FAQ
+      - CHURCH_OF_SATAN_LITERATURE_FAQ
+    evidence_class:
+      - CURRENT_ORGANIZATIONAL_SELF_DESCRIPTION
+      - MODERN_RELIGIOUS_TEXT
+    propositions:
+      - Church_of_Satan_was_founded_in_1966
+      - official_current_CoS_is_atheistic_and_materialist
+      - Satan_is_symbol_not_supernatural_being_in_current_CoS
+      - personal_self_deification_or_self_centrality_is_explicit
+      - literal_sacrifice_to_supernatural_beings_is_rejected
+    supports:
+      - PERSON_OR_SELF_MODEL
+      - RITUAL_ORDER_MODEL_PARTIAL
+      - CONTACT_AND_REINTERPRETATION_MODEL
+    confidence: HIGH_FOR_CURRENT_SELF_DESCRIPTION
+
+  - id: SAT-TST-001
+    source:
+      - TST_OFFICIAL_FAQ
+      - TST_OFFICIAL_ABOUT
+      - TST_SEVEN_TENETS
+    evidence_class:
+      - CURRENT_ORGANIZATIONAL_SELF_DESCRIPTION
+      - MODERN_RELIGION
+    propositions:
+      - TST_rejects_literal_Satan_and_supernaturalism
+      - Satan_is_literary_rebel_symbol
+      - Seven_Tenets_structure_current_public_ethics
+      - rituals_are_optional_not_uniform_and_consent_bounded
+      - public_activism_is_organizationally_integrated
+    supports:
+      - PERSON_OR_SELF_MODEL
+      - RITUAL_ORDER_MODEL_PARTIAL
+      - INSTITUTIONALIZATION_MODEL_CANDIDATE
+      - CONTACT_AND_REINTERPRETATION_MODEL
+    confidence: HIGH_FOR_CURRENT_SELF_DESCRIPTION
+
+  - id: SAT-FIELD-001
+    evidence:
+      - PETERSEN_MODERN_RELIGIOUS_SATANISM
+      - LAYCOCK_SATANISM_2023
+      - INVENTION_OF_SATANISM
+      - CHILDREN_OF_LUCIFER
+    evidence_class: SCHOLARLY_INTERPRETATION
+    propositions:
+      - modern_self_identified_Satanism_is_diverse
+      - accusation_and_self_identification_are_historically_distinct
+      - theistic_and_esoteric_self_identified_Satanists_are_scholarly_attested
+      - Church_of_Satan_is_not_neutral_taxonomic_authority_over_all_Satanism
+    supports:
+      - SOURCE_CRITICISM_CONTROL
+      - CONTACT_AND_REINTERPRETATION_MODEL
+      - CONTINUITY_MODEL
+    confidence: HIGH_CURRENT_SCHOLARLY
+
+axis_status:
+  CONTACT_AND_REINTERPRETATION_MODEL: STRONG_CANDIDATE
+  CONTINUITY_MODEL: STRONG_CANDIDATE_MODERN_APPROPRIATION
+  PERSON_OR_SELF_MODEL: BOUNDED_COS_TST_DISTINCT
+  RITUAL_ORDER_MODEL: PARTIAL
+  INSTITUTIONALIZATION_MODEL: CANDIDATE
+  AGENCY_AND_AUTHORITY_MODEL: CANDIDATE
+  SATAN_REFERENT_MODEL: REQUIRED_INTERNAL_DIMENSION
+  CROSS_TRADITION_COMPARISON: HOLD
+
+guards:
+  - SELF_DESCRIPTION_AND_SCHOLARLY_TAXONOMY_DISTINCT
+  - DEVIL_WORSHIP_ACCUSATION_SEPARATE
