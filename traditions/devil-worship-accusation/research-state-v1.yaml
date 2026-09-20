@@ -1,0 +1,41 @@
+schema_version: on-theo.devil-worship-accusation-research-state.v1
+status: ATTRIBUTION_HISTORY_FOUNDATION_ACTIVE
+
+branch:
+  name: research/devil-worship-accusation-history-v1-20260920
+  base_branch: corpus/global-expansion-queue-v1-20260917
+  base_head: cd588c7cabc210f8ae8eb43c148170872aa4b9ac
+
+artifacts:
+  boundary: traditions/devil-worship-accusation/attribution-self-identification-boundary-v1.md
+  source_map: traditions/devil-worship-accusation/source-map-v1.md
+  genealogy: traditions/devil-worship-accusation/accusation-genealogy-packet-v1.md
+  evidence: traditions/devil-worship-accusation/neutral-axis-evidence-v1.yaml
+
+current_secure_results:
+  - accusation_ne_self_identification
+  - demonological_theory_ne_observed_practice
+  - legal_allegation_ne_religious_fact
+  - late_medieval_diabolical_witch_is_a_constructed_prosecutorial_category
+  - colonial_demonization_is_contact_reinterpretation_not_Indigenous_Devil_theology
+  - widespread_Satanic_Ritual_Abuse_network_not_documented_in_admitted_1992_investigative_evidence
+  - modern_self_identified_Satanism_requires_independent_positive_source
+
+current_holds:
+  - CROSS_TRADITION_COMPARISON
+  - ONE_DEVIL_WORSHIP_RELIGION
+  - BLACK_MASS_AS_DOCUMENTED_UNIFORM_RITE
+  - MEDIEVAL_HIDDEN_SATANIC_CHURCH
+  - SATANIC_PANIC_NETWORK_EXISTENCE
+
+next_frontier:
+  primary: WITCH_DEMONOLOGY_ACCUSATION_PACKET_V1
+  subsequent:
+    - COLONIAL_DEMONIZATION_COMPARISON_PACKET_V1
+    - SATANIC_PANIC_EVIDENCE_LADDER_V1
+    - ATTRIBUTION_IDENTIFICATION_METHOD_TEST_V1
+    - DEVIL_WORSHIP_ACCUSATION_READINESS_AUDIT_V1
+
+guards:
+  - ACCUSER_TARGET_SOURCE_SPLIT_REQUIRED
+  - SELF_IDENTIFICATION_REQUIRES_POSITIVE_SOURCE
