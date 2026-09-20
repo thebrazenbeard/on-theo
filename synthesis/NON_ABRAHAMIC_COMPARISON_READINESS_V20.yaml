@@ -1,0 +1,81 @@
+schema_version: on-theo.nonabrahamic-comparison-readiness.v20
+status: NON_CANONICAL_RESEARCH_AUDIT
+supersedes_for_current_research:
+  - synthesis/NON_ABRAHAMIC_COMPARISON_READINESS_V19.yaml
+
+source_heads:
+  buddhism: eb0f948788f5171d13c067daea2df54845d22f70
+  hindu: 614fa715fcacee0d7ec1ba573061d3e776e708d3
+  daoism: 708ba10413d9511648c2540ad84be74b6b5f6b5c
+  shinto: 4939c22c6b13afc1226d8860fa8dbf394e34b5c4
+  norse: 22e9fe10d1647a66458c54478c86e7ba6abd83ce
+  sumerian: 3fd5db6f05c008aeba4febe310de99e4ff484770
+
+method_artifacts:
+  frontier_reaudit: synthesis/CROSS_LANE_FRONTIER_REAUDIT_V1.yaml
+  offering_exchange_schema: synthesis/OFFERING_EXCHANGE_COMPARISON_SCHEMA_V1.yaml
+  offering_exchange_test: synthesis/OFFERING_EXCHANGE_CROSS_TRADITION_TEST_V1.md
+  matrix: synthesis/BOUNDED_NEUTRAL_COMPARISON_MATRIX_V11.yaml
+  coverage_audit: synthesis/COMPARISON_COVERAGE_AUDIT_V11.yaml
+
+comparison_ready_and_tested_axes:
+  - CAUSAL_ORDER_TYPE
+  - CONTINUITY_MODEL
+  - RITUAL_ORDER_MODEL
+  - PERSON_OR_SELF_MODEL
+  - INSTITUTIONALIZATION_MODEL
+  - CONTACT_AND_REINTERPRETATION_MODEL
+  - POLITICAL_SACRALIZATION_MODEL
+  - WORLD_ORIGIN_MODEL
+  - MORTUARY_RELATIONSHIP_MODEL
+  - OFFERING_EXCHANGE_MODEL
+
+offering_exchange_result:
+  admitted_test_lanes: 3
+  hindu:
+    status: PARTIAL_VEDIC_LAYER
+    strongest_result: ORDERED_OFFERING_CAN_BE_CONSTITUTIVE_OF_RITUAL_EFFICACY_WITHOUT_ONE_GENERAL_RECIPROCITY_MECHANISM
+  norse:
+    status: PARTIAL_MATERIAL
+    strongest_result: RITUAL_DEPOSITION_AND_FEASTING_CAN_BE_MATERIALLY_SECURE_WHILE_RECIPIENT_AND_RECIPROCITY_REMAIN_UNRESOLVED
+  sumerian:
+    status: BOUNDED_TEXTUAL_WITH_MATERIAL_CONTROL
+    strongest_result: SOME_SUMERIAN_TEXTS_EXPLICITLY_REPRESENT_PROVISIONING_AS_RELEVANT_TO_POSTMORTEM_WELFARE_WHILE_ARCHAEOLOGY_REQUIRES_SEPARATE_INTERPRETATION
+  strongest_cross_lane_result: OFFERING_AND_DEPOSITION_PRACTICES_CAN_MEDIATE_RELIGIOUS_OR_POSTMORTEM_RELATIONSHIPS_THROUGH_DISTINCT_SOURCE_SPECIFIC_MECHANISMS
+  one_shared_reciprocity_model: NOT_SUPPORTED
+  one_shared_sacrificial_economy: NOT_SUPPORTED
+  offering_equals_exchange: false
+
+method_state:
+  direct_textual_adaptation_positive_control: DAOIST_YANG_XI_FORTY_TWO_SECTIONS
+  source_specific_borrowing_negative_control: DUMUZID_BAAL_NONE_ESTABLISHED
+  generic_influence_edges_allowed: false
+  offering_three_lane_test_complete: true
+  offering_act_separated_from_reciprocity: true
+  material_deposition_separated_from_claimed_effect: true
+
+next_frontier:
+  primary: TRANSFORMATION_MODEL_DECOMPOSITION_AND_CROSS_TRADITION_TEST
+  reason: >
+    Daoist, Shinto, Norse, and Sumerian lanes already admit transformation
+    evidence, but current cells span person/identity, posthumous status, divine
+    myth, and world-scale transformation. Decomposition is required before a
+    defensible cross-lane test.
+  source_deepening:
+    - BUDDHIST_STUPA_RELIC_AND_LAY_RITUAL
+    - DAOIST_DUREN_JING_LOAN_VOCABULARY
+    - DAOIST_HUAHU_PRIMARY_FRAGMENT_MAP
+    - SHINTO_PRIMARY_HUMAN_SPIRIT_LINE_BINDING
+
+holds:
+  direct_cross_tradition_convergence_or_transmission: HOLD
+  perennialist_all_religions_matrix: PROHIBITED_AT_CURRENT_EVIDENCE
+  one_hidden_doctrine: NOT_SUPPORTED
+  one_shared_sacrificial_economy: NOT_SUPPORTED
+
+guards:
+  - SHARED_AXIS_NE_SHARED_MECHANISM
+  - OFFERING_NE_RECIPROCITY_BY_DEFAULT
+  - EVIDENCE_CLASS_DIFFERENCE_MUST_REMAIN_VISIBLE
+  - CONTACT_NE_TRANSMISSION
+  - SYSTEMS_ANALOGY_IS_DOWNSTREAM
