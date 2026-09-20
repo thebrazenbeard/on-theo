@@ -1,0 +1,168 @@
+schema_version: on-theo.lakota-neutral-axis-evidence.v1
+status: PUBLIC_SOURCE_FOUNDATION_NOT_CROSS_COMPARISON_READY
+
+source_policy:
+  primary_control: traditions/lakota/public-source-boundary-v1.md
+  source_map: traditions/lakota/source-map-v1.md
+  internal_packet: traditions/lakota/worldview-kinship-sacred-land-packet-v1.md
+
+records:
+  - id: LAK-WORLDVIEW-001
+    evidence_class:
+      - DOCUMENTARY_PRACTICE
+      - MODERN_TRADITION
+    evidence:
+      - OGLALA_LAKOTA_COLLEGE_LAKOTA_LEADERSHIP
+      - OGLALA_LAKOTA_COLLEGE_LAKOTA_THOUGHT
+      - SITTING_BULL_COLLEGE_NATIVE_AMERICAN_STUDIES
+      - ROSEBUD_WOLAKOTA
+    propositions:
+      - spirituality_worldview_ethics_and_social_relations_are_publicly_presented_as_integrated
+      - Lakota_tradition_is_living_not_only_historical
+    supports:
+      - RELATIONAL_ORDER_MODEL_CANDIDATE
+      - INSTITUTIONALIZATION_MODEL_FUTURE
+    confidence: BOUNDED_CONTEMPORARY
+
+  - id: LAK-KINSHIP-001
+    evidence_class:
+      - DOCUMENTARY_PRACTICE
+      - MODERN_TRADITION
+      - SCHOLARLY_INTERPRETATION
+    evidence:
+      - STANDING_ROCK_CHILDRENS_CODE
+      - ROSEBUD_WOLAKOTA
+      - SITTING_BULL_COLLEGE_WORLDVIEW_CURRICULUM
+      - POSTHUMUS_RELATIONAL_WORLDVIEW
+    propositions:
+      - tiospaye_is_foundational_social_structure_in_current_public_tribal_law
+      - kinship_structures_ethics_and_relational_order
+      - all_relations_language_has_religious_and_social_force_in_public_usage
+    supports:
+      - PERSON_OR_SELF_MODEL_CANDIDATE
+      - RELATIONAL_ORDER_MODEL_CANDIDATE
+    confidence: BOUNDED_CONTEMPORARY_PLUS_INTERPRETIVE
+    guards:
+      - MITAKUYE_OYASIN_NE_GENERIC_NEW_AGE_UNIVERSALISM
+
+  - id: LAK-WAKAN-001
+    evidence_class:
+      - DOCUMENTARY_PRACTICE
+      - MODERN_TRADITION
+      - SCHOLARLY_INTERPRETATION
+    evidence:
+      - STANDING_ROCK_CHILDRENS_CODE
+      - STANDING_ROCK_CONSTITUTION
+      - OGLALA_LAKOTA_COLLEGE_FRAMEWORK
+      - POSTHUMUS_WAKAN_SEMANTIC_CONTROL
+    propositions:
+      - public_sources_use_multiple_English_renderings_for_Wakan_and_Wakan_Tanka
+      - sacred_mysterious_power_language_is_semantically_broader_than_one_English_theological_gloss
+    supports:
+      - SACRAL_PRESENCE_MODEL_CANDIDATE
+      - AGENCY_AND_AUTHORITY_MODEL_CANDIDATE
+    confidence: PARTIAL_SEMANTICALLY_CONTROLLED
+    guards:
+      - ONE_ENGLISH_GLOSS_NE_ONE_EXHAUSTIVE_THEOLOGY
+      - CREATOR_GLOSS_NE_HISTORICAL_MONOTHEISM_PROVED
+      - IMPERSONAL_FORCE_GLOSS_NE_COMPLETE_MODEL
+
+  - id: LAK-LAND-001
+    evidence_class:
+      - DOCUMENTARY_PRACTICE
+      - HISTORICAL_RECONSTRUCTION
+      - MODERN_TRADITION
+    evidence:
+      - STANDING_ROCK_CULTURAL_RESOURCE_CODE
+      - NPS_BLACK_HILLS_SACRED_SITES
+      - NPS_BEAR_LODGE
+      - SOUTH_DAKOTA_BEAR_BUTTE
+    propositions:
+      - sacred_land_relationship_is_currently_publicly_attested
+      - Black_Hills_region_contains_multiple_living_sacred_place_relationships
+      - cultural_resource_protection_is_linked_to_spiritual_and_community_wellbeing
+    supports:
+      - SACRED_LAND_PLACE_MODEL
+      - RITUAL_ORDER_MODEL_CANDIDATE
+    confidence: BOUNDED
+    guards:
+      - PUBLIC_SITE_INTERPRETATION_NE_COMPLETE_CEREMONIAL_KNOWLEDGE
+      - ONE_SITE_NE_ALL_LAKOTA_SACRED_GEOGRAPHY
+
+  - id: LAK-PIPE-001
+    evidence_class:
+      - LATER_TRADITION
+      - COMMENTARY
+      - DOCUMENTARY_PRACTICE
+    evidence:
+      - BLACK_ELK_BROWN_SACRED_PIPE
+      - OGLALA_LAKOTA_COLLEGE_PIPE_FRAMEWORK
+      - NPS_GIFT_OF_PIPE
+    propositions:
+      - pipe_is_central_in_selected_public_Oglala_and_contemporary_sources
+      - pipe_mediates_prayer_relation_in_public_descriptions
+    supports:
+      - RITUAL_ORDER_MODEL_CANDIDATE
+      - KNOWLEDGE_OR_DISCLOSURE_MODEL_CANDIDATE
+    confidence: PARTIAL_MEDIATION_CONTROLLED
+    guards:
+      - BLACK_ELK_BROWN_NE_UNIVERSAL_LAKOTA_CATECHISM
+      - PUBLIC_PIPE_ACCOUNT_NE_PERMISSION_FOR_RESTRICTED_DETAIL
+
+  - id: LAK-CEREMONY-001
+    evidence_class:
+      - DOCUMENTARY_PRACTICE
+      - LATER_TRADITION
+    evidence:
+      - STANDING_ROCK_CHILDRENS_CODE_PUBLIC_SEVEN_CEREMONIES
+      - BLACK_ELK_BROWN_PUBLIC_SEVEN_RITES_ACCOUNT
+    propositions:
+      - named_ceremonial_categories_have_public_historical_and_contemporary_attestation
+    supports:
+      - RITUAL_ORDER_MODEL
+    confidence: PARTIAL_PUBLIC_CATEGORY_SUPPORT
+    guards:
+      - NAMED_CEREMONY_NE_STEP_BY_STEP_PUBLICATION_AUTHORITY
+      - SEVEN_RITES_NE_ALL_COMMUNITIES_ALL_PERIODS_IDENTICAL
+
+  - id: LAK-SUPPRESSION-001
+    evidence_class:
+      - DOCUMENTARY_PRACTICE
+      - HISTORICAL_RECONSTRUCTION
+    evidence:
+      - FEDERAL_SUPPRESSION_HISTORY
+      - LIBRARY_OF_CONGRESS_SUN_DANCE_CONTEXT
+      - AMERICAN_INDIAN_RELIGIOUS_FREEDOM_ACT_1978
+    propositions:
+      - colonial_federal_policy_restricted_Indigenous_ceremonial_practice
+      - later_legal_policy_explicitly_protected_traditional_religious_practice_and_site_access
+      - living_tradition_must_be_reconstructed_through_suppression_and_continuity_not_simple_survival_or_extinction_binary
+    supports:
+      - CONTACT_AND_REINTERPRETATION_MODEL_FUTURE
+      - INSTITUTIONALIZATION_MODEL_FUTURE
+    confidence: BOUNDED_HISTORICAL
+    guards:
+      - SUPPRESSION_NE_TOTAL_EXTINCTION
+      - MODERN_PRACTICE_NE_UNCHANGED_PRECONTACT_FORM
+
+comparison_status:
+  SACRED_LAND_PLACE_MODEL: BOUNDED_INTERNAL
+  RELATIONAL_ORDER_MODEL: BOUNDED_INTERNAL
+  RITUAL_ORDER_MODEL: PARTIAL_PUBLIC_CATEGORY_SUPPORT
+  KNOWLEDGE_OR_DISCLOSURE_MODEL: PARTIAL_HIGH_LEVEL
+  PERSON_OR_SELF_MODEL: NOT_YET_ADMITTED
+  WORLD_ORIGIN_MODEL: NOT_YET_ADMITTED
+  CONTINUITY_MODEL: NOT_YET_ADMITTED
+  POSTMORTEM_PATH_MODEL: NOT_YET_ADMITTED
+  MORTUARY_RELATIONSHIP_MODEL: NOT_YET_ADMITTED
+  CONTACT_AND_REINTERPRETATION_MODEL: NOT_YET_ADMITTED
+  CROSS_TRADITION_COMPARISON: HOLD
+
+global_guards:
+  - LAKOTA_NE_GENERIC_NATIVE_AMERICAN_RELIGION
+  - COMMUNITY_AND_PERIOD_MUST_REMAIN_VISIBLE
+  - PUBLICLY_ACCESSIBLE_NE_ETHICALLY_UNRESTRICTED
+  - ONE_ENGLISH_GLOSS_NE_ONE_EXHAUSTIVE_THEOLOGY
+  - HISTORICAL_ETHNOGRAPHY_NE_TRANSPARENT_COMMUNITY_SELF_DESCRIPTION
+  - LIVING_TRADITION_NE_UNCHANGED_PRECONTACT_FORM
+  - COMPARISON_HELD_UNTIL_INTERNAL_RECONSTRUCTION_DEEPENS
