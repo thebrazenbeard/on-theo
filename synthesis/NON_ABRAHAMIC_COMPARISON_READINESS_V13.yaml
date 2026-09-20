@@ -1,0 +1,48 @@
+schema_version: on-theo.nonabrahamic-comparison-readiness.v13
+status: NON_CANONICAL_RESEARCH_AUDIT
+supersedes_for_current_research:
+  - synthesis/NON_ABRAHAMIC_COMPARISON_READINESS_V12.yaml
+
+source_heads:
+  buddhism: eb0f948788f5171d13c067daea2df54845d22f70
+  hindu: 614fa715fcacee0d7ec1ba573061d3e776e708d3
+  daoism: 248aa76ee4b6a9d53cc5548e0f2b73b79baffb7b
+  shinto: 144ee868e4976428dbfe9c5ddc0022d03a2c194a
+  norse: 22e9fe10d1647a66458c54478c86e7ba6abd83ce
+  sumerian: 3fd5db6f05c008aeba4febe310de99e4ff484770
+
+current_cross_tradition_tests:
+  - synthesis/CAUSAL_CONTINUITY_CROSS_TRADITION_TEST_V1.md
+  - synthesis/RITUAL_ORDER_CROSS_TRADITION_TEST_V2.md
+  - synthesis/PERSON_SELF_CROSS_TRADITION_TEST_V1.md
+  - synthesis/CONTACT_REINTERPRETATION_CROSS_TRADITION_TEST_V1.md
+
+portfolio_state:
+  six_lanes_exactly_bound: true
+  four_major_axes_comparison_ready: true
+  contact_axis_ready_with_four_lanes: true
+  broad_all_tradition_synthesis_allowed: false
+  direct_convergence_or_transmission_claims_allowed: false
+
+current_method_result:
+  strongest_synthesis_target: COMPARATIVE_PROBLEM_SPACE
+  one_hidden_doctrine_supported: false
+  universal_soul_doctrine_supported: false
+  contact_implies_transmission: false
+  systems_model_role: OPTIONAL_DOWNSTREAM_SPECULATIVE_MAPPING
+
+next_frontier:
+  primary: DAOIST_CONTACT_PRIMARY_WITNESS_BINDING
+  alternate: POLITICAL_SACRALIZATION_COMPARISON
+
+holds:
+  direct_cross_tradition_convergence_or_transmission: HOLD
+  perennialist_all_religions_matrix: PROHIBITED_AT_CURRENT_EVIDENCE
+
+guards:
+  - CONTACT_NE_TRANSMISSION
+  - TRANSMISSION_NE_SEMANTIC_IDENTITY
+  - EXPOSURE_NE_BORROWING
+  - NEGATIVE_RESULT_NE_RESEARCH_FAILURE
+  - SOURCE_LAYER_NE_LATER_DOCTRINE
+  - SYSTEMS_ANALOGY_IS_DOWNSTREAM

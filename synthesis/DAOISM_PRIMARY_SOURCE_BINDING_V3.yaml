@@ -1,0 +1,48 @@
+schema_version: on-theo.daoism-synthesis-source-binding.v3
+status: NON_CANONICAL_EXACT_SOURCE_EXTENSION
+supersedes_for_current_research:
+  - synthesis/DAOISM_PRIMARY_SOURCE_BINDING_V2.yaml
+
+source_extension:
+  branch: research/daoism-manuscript-proposition-v1-20260920
+  head: 248aa76ee4b6a9d53cc5548e0f2b73b79baffb7b
+  base_branch: taoism
+  draft_pr: 99
+
+source_artifacts:
+  classical:
+    - traditions/daoism/laozi-manuscript-proposition-packet-v1.md
+    - traditions/daoism/zhuangzi-inner-proposition-packet-v1.md
+  early_religious:
+    - traditions/daoism/celestial-masters-xianger-packet-v1.md
+    - traditions/daoism/religious-daoism-transition-v1.yaml
+  buddhist_contact:
+    - traditions/daoism/buddhist-contact-reinterpretation-v1.md
+    - traditions/daoism/buddhist-contact-mechanism-matrix-v1.yaml
+  evidence:
+    - traditions/daoism/neutral-axis-evidence-v2.yaml
+  state:
+    - traditions/daoism/research-state-v4.yaml
+
+contact_mechanisms:
+  - DIRECT_TEXTUAL_ADAPTATION
+  - TEXTUAL_FORM_ADAPTATION
+  - DOCTRINAL_RECODING
+  - RITUAL_INSTITUTIONAL_ADAPTATION
+  - POLEMICAL_COUNTER_GENEALOGY
+  - MUTUAL_POLEMICAL_RECLASSIFICATION
+  - MATERIAL_HYBRIDIZATION
+  - MUTUAL_TRANSFORMATION
+
+strengthened_axes:
+  - CONTACT_AND_REINTERPRETATION_MODEL
+  - RITUAL_ORDER_MODEL
+  - INSTITUTIONALIZATION_MODEL
+  - LIBERATION_OR_FINAL_TRANSFORMATION_MODEL
+
+guards:
+  - CONTACT_NE_SIMPLE_BORROWING
+  - BORROWED_FORM_NE_SAME_MEANING
+  - POLEMICAL_ORIGIN_CLAIM_NE_TRANSMISSION_HISTORY
+  - CLASSICAL_DAOISM_NE_MEDIEVAL_CONTACT_LAYER
+  - SOURCE_EXTENSION_NE_CANONICAL_MERGE
