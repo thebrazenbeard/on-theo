@@ -1,0 +1,60 @@
+schema_version: on-theo.buddhism-research-state.v3
+status: CROSS_TRANSMISSION_ONTOLOGY_CONTROL_ACTIVE
+parent_head: 424141833be13e3db085d821c4ec6f30455a84c9
+parent_state: traditions/buddhism/research-state-v2.yaml
+
+new_artifacts:
+  - traditions/buddhism/early-parallel-witness-map-v1.md
+  - traditions/buddhism/early-parallel-witness-map-v1.yaml
+
+cross_line_families_bound:
+  NOT_SELF:
+    pali: SN_22_59
+    chinese: [SA_34, T_102]
+    gandhari: RS22_02
+    physical_witness: true
+  EXISTENCE_NONEXISTENCE_MIDDLE:
+    pali: SN_12_15
+    chinese: [SA_301]
+    sanskrit: [SF_168]
+  CONDITIONED_CONTINUITY:
+    pali: SN_12_38
+    chinese: [SA_359]
+  KAMMA_INTENTION:
+    pali: AN_6_63
+    chinese: [MA_111, T_57]
+    divergence_preserved: true
+  DEPENDENT_ORIGINATION_FORMULA:
+    pali: [SN_12_1_2, SN_12_2]
+    chinese: [SA_298, T_124, EA_49_5]
+    exact_clause_alignment: pending
+
+physical_witnesses:
+  - id: RS22_02_ANATVALAKSANA
+    date: APPROX_140_CE
+    evidence_class: MATERIAL_EVIDENCE_PLUS_PRIMARY_TEXT_WITNESS
+    composition_date_claim: NOT_INFERRED
+
+comparison_axes:
+  PERSON_OR_SELF_MODEL: CROSS_TRANSMISSION_SUPPORT
+  CAUSAL_ORDER_TYPE: CROSS_TRANSMISSION_SUPPORT
+  CONTINUITY_MODEL: CROSS_TRANSMISSION_SUPPORT
+  MORAL_CAUSALITY_MODEL: CROSS_TRANSMISSION_SUPPORT_WITH_VARIANTS
+  LIBERATION_OR_FINAL_TRANSFORMATION_MODEL: PRIMARY_PALI_SUPPORT_PARALLEL_DEEPENING_PENDING
+  WORLD_STATUS_MODEL: PARTIAL
+
+guards:
+  - PARALLEL_NE_VERBATIM_IDENTITY
+  - PARALLEL_NE_COMPLETE_DOCTRINAL_IDENTITY
+  - MANUSCRIPT_DATE_NE_COMPOSITION_DATE
+  - CHINESE_PARALLEL_NE_PALI_DEPENDENCE_PROVEN
+  - GANDHARI_PARALLEL_NE_ORIGINAL_ARCHETYPE
+  - DIVERGENCE_MUST_REMAIN_VISIBLE
+  - SYSTEMS_ANALOGY_REMAINS_DOWNSTREAM
+
+next_frontiers:
+  - SN22_59_SA34_GANDHARI_TERM_ALIGNMENT
+  - SN12_38_SA359_CLAUSE_ALIGNMENT
+  - AN6_63_MA111_VARIANT_MATRIX
+  - ASOKAN_INSCRIPTION_MATERIAL_PACKET
+  - BUDDHIST_PHYSICAL_WITNESS_CHRONOLOGY

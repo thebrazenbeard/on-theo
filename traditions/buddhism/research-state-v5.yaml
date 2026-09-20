@@ -1,0 +1,45 @@
+schema_version: on-theo.buddhism-research-state.v5
+status: TEXT_CROSS_TRANSMISSION_ASOKAN_PLUS_VINAYA_RITUAL
+parent_head: 1c6c7a9a35901a529d377e1bd6fb86a88c1cdbe9
+parent_state: traditions/buddhism/research-state-v4.yaml
+
+new_artifacts:
+  - traditions/buddhism/vinaya-ritual-order-packet-v1.md
+  - traditions/buddhism/neutral-axis-evidence-v2.yaml
+
+new_evidence_layers:
+  - VINAYA_KD1_ORDINATION
+  - VINAYA_KD2_UPOSATHA
+  - AN_8_20_PATIMOKKHA_ASSEMBLY
+  - ASOKAN_SANGHA_INSTITUTIONAL_CROSSCHECK
+
+axes_strengthened:
+  RITUAL_ORDER_MODEL: BOUNDED_MONASTIC_LAYER
+  INSTITUTIONALIZATION_MODEL: BOUNDED_STRENGTHENED
+
+existing_axes_preserved:
+  PERSON_OR_SELF_MODEL: BOUNDED
+  CAUSAL_ORDER_TYPE: BOUNDED
+  CONTINUITY_MODEL: BOUNDED
+  MORAL_CAUSALITY_MODEL: BOUNDED
+  LIBERATION_OR_FINAL_TRANSFORMATION_MODEL: BOUNDED
+  WORLD_STATUS_MODEL: PARTIAL
+
+readiness:
+  bounded_Buddhist_comparison: strengthened
+  ritual_order_comparison: true_for_selected_monastic_layer
+  broad_Buddhism_synthesis: false
+
+blockers:
+  - cross_Vinaya_procedure_comparison
+  - early_stupa_relic_ritual
+  - lay_ritual_and_merit
+  - Asokan_schism_witness_detail
+  - material_monastery_assembly_space
+
+guards:
+  - VINAYA_CANONICAL_FORM_NE_BUDDHA_LIFETIME_TRANSCRIPT
+  - ONE_VINAYA_NE_ALL_BUDDHIST_RITUAL
+  - DISCIPLINARY_PURITY_NE_GENERIC_PURITY_POLLUTION
+  - INSTITUTIONAL_ACT_NE_DOCTRINAL_IDENTITY
+  - SYSTEMS_ANALOGY_REMAINS_DOWNSTREAM
