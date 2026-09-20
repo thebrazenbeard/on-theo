@@ -1,0 +1,77 @@
+schema_version: on-theo.global-corpus-breadth-expansion-state.v4
+status: ACTIVE_PORTFOLIO_EXPANSION
+supersedes_for_current_research:
+  - synthesis/GLOBAL_CORPUS_BREADTH_EXPANSION_STATE_V3.yaml
+
+completed_breadth_units:
+  lakota:
+    branch: research/lakota-public-source-v1-20260920
+    exact_head: 8a9cee8335cadc742c9de25c90f4306702a80e8a
+    pr: 104
+    status: BOUNDED_COMPARISON_READINESS_AUDITED
+  maya:
+    branch: research/maya-diachronic-v1-20260920
+    exact_head: 2b5907438334537842710a81886083b9cbd0241a
+    pr: 105
+    status: BOUNDED_COMPARISON_READINESS_AUDITED
+  mexica_nahua:
+    branch: research/mexica-nahua-diachronic-v1-20260920
+    exact_head: 00e37e475f3669ef2ee040908b126617ffcd17da
+    pr: 106
+    status: BOUNDED_COMPARISON_READINESS_AUDITED
+
+mexica_nahua_comparison_eligible:
+  bounded:
+    - RITUAL_ORDER_MODEL
+    - POLITICAL_SACRALIZATION_MODEL
+    - INSTITUTIONALIZATION_MODEL
+    - CONTACT_AND_REINTERPRETATION_MODEL
+    - CONTINUITY_MODEL
+  partial:
+    - SACRAL_PRESENCE_MODEL
+    - KNOWLEDGE_OR_DISCLOSURE_MODEL
+    - OFFERING_EXCHANGE_MODEL
+    - MORTUARY_RELATIONSHIP_MODEL
+  held:
+    - WORLD_ORIGIN_MODEL
+    - WORLD_TERMINUS_RENEWAL_MODEL
+    - PERSON_OR_SELF_MODEL
+    - POSTMORTEM_PATH_MODEL
+    - TRANSFORMATION_MODEL
+    - AGENCY_AND_AUTHORITY_MODEL
+
+axis_development:
+  SACRED_TIME_CALENDAR_MODEL:
+    status: STRONGLY_SUPPORTED_BY_MAYA_AND_MEXICA_NAHUA
+  HUMAN_ORIGIN_OR_EMERGENCE_MODEL:
+    status: STRENGTHENED_BY_LAKOTA_AND_MAYA
+  RELATIONAL_ORDER_MODEL:
+    status: STRENGTHENED_BY_LAKOTA_MAYA_AND_LIVING_NAHUA
+  SACRED_LAND_PLACE_MODEL:
+    status: STRENGTHENED_BY_LAKOTA_MAYA_AND_MEXICA_NAHUA
+  SACRIFICE_AND_BODILY_OFFERING_MODEL:
+    status: STRONG_DECOMPOSITION_CANDIDATE_FROM_MEXICA_EVIDENCE
+
+active_portfolio_frontier:
+  primary: OLMEC_MATERIAL_ICONOGRAPHIC_PACKET_V1
+  requirements:
+    - material_and_iconographic_evidence_first
+    - no_surviving_readable_theological_text_corpus_assumed
+    - undeciphered_or_contested_writing_ne_theological_text
+    - San_Lorenzo_La_Venta_and_other_sites_kept_distinct
+    - iconographic_identification_remains_scholarly_interpretation_unless_textually_anchored
+    - mother_culture_model_ne_default
+    - Mesoamerican_similarity_ne_direct_Olmec_transmission_by_default
+    - low_claim_ceiling_for_systematic_theology
+
+planned_followups:
+  - DINE_PUBLIC_SOURCE_RESEARCH_PACKET_V1
+  - HAUDENOSAUNEE_PUBLIC_SOURCE_RESEARCH_PACKET_V1
+  - ANDEAN_INCA_DIACHRONIC_PACKET_V1
+
+guards:
+  - COMPARISON_READY_NE_TRADITION_COMPLETE
+  - RECONSTRUCT_INTERNALLY_BEFORE_COMPARISON
+  - INDIGENOUS_RELIGION_NE_ONE_GENERIC_CATEGORY
+  - MESOAMERICAN_SIMILARITY_NE_SHARED_ORIGIN_BY_DEFAULT
+  - MATERIAL_SIMILARITY_NE_TRANSMISSION
