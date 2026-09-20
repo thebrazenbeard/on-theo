@@ -1,0 +1,51 @@
+schema_version: on-theo.olmec-iconographic-taxonomy-hostile-test.v1
+status: HOSTILE_TEST_COMPLETE
+
+tested_models:
+  MAIZE_GOD:
+    visual_complex_supported: BOUNDED
+    native_name_supported: false
+    later_Maya_identity_supported: false
+
+  WERE_JAGUAR:
+    human_feline_infant_cluster_supported: BOUNDED
+    literal_transformation_ontology_supported: false
+    single_named_being_supported: false
+
+  OLMEC_DRAGON_EARTH_MONSTER:
+    saurian_earth_mountain_complex_supported: PARTIAL
+    one_native_deity_supported: false
+    later_Maya_identity_supported: false
+
+  RAIN_GOD:
+    rain_water_supernatural_complex_supported: PARTIAL
+    Tlaloc_or_Chaac_identity_supported: false
+
+  SUPERNATURAL_INFANT:
+    recurrent_nonordinary_infant_type_supported: BOUNDED
+    one_function_or_identity_supported: false
+
+  SYSTEMATIC_PANTHEON:
+    supported: false
+
+method:
+  direct_historical_approach:
+    allowed: true
+    requires:
+      - TEMPORAL_BRIDGE
+      - INTERMEDIATE_EVIDENCE
+      - EXPLICIT_SEMANTIC_UNCERTAINTY
+    does_not_allow:
+      - LATER_GOD_NAME_RETROJECTION
+      - UNCHANGED_MEANING_ASSUMPTION
+
+axis_status:
+  SACRAL_PRESENCE_MODEL: PARTIAL_ICONOGRAPHIC_MATERIAL
+  TRANSFORMATION_MODEL: NOT_ADMITTED_FROM_HYBRID_MORPHOLOGY
+  WORLD_ORIGIN_MODEL: NOT_ADMITTED
+  CROSS_TRADITION_COMPARISON: HOLD
+
+guards:
+  - SCHOLARLY_ICONOGRAPHIC_LABEL_NE_PRIMARY_NAME
+  - VISUAL_RECURRENCE_NE_SYSTEMATIC_THEOLOGY
+  - LATER_PARALLEL_NE_OLMEC_SEMANTIC_IDENTITY
