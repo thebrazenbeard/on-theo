@@ -1,0 +1,78 @@
+schema_version: on-theo.comparison-coverage-audit.v6
+status: NON_CANONICAL_METHOD_AUDIT
+supersedes_for_current_research:
+  - synthesis/COMPARISON_COVERAGE_AUDIT_V5.yaml
+matrix: synthesis/BOUNDED_NEUTRAL_COMPARISON_MATRIX_V6.yaml
+political_frontier_audit: synthesis/POLITICAL_SACRALIZATION_FRONTIER_AUDIT_V1.md
+lane_count: 6
+
+coverage:
+  CAUSAL_ORDER_TYPE:
+    admitted_total: 6
+  CONTINUITY_MODEL:
+    admitted_total: 6
+  RITUAL_ORDER_MODEL:
+    admitted_total: 6
+  PERSON_OR_SELF_MODEL:
+    admitted_total: 6
+  CONTACT_AND_REINTERPRETATION_MODEL:
+    admitted_total: 4
+    bounded_or_stronger: 4
+    includes_negative_borrowing_control: true
+  POLITICAL_SACRALIZATION_MODEL:
+    latest_tradition_layer_explicit_admitted: 2
+    bounded: 1
+    partial: 1
+    legacy_partial_candidates_requiring_rebind: 2
+    not_admitted: 2
+    previous_coarse_admitted_total: 4
+    integrity_status: REBIND_REQUIRED_BEFORE_FOUR_LANE_TEST
+  WORLD_ORIGIN_MODEL:
+    admitted_total: 4
+  MORTUARY_RELATIONSHIP_MODEL:
+    admitted_total: 3
+
+political_lane_state:
+  sumerian:
+    status: BOUNDED
+    mechanism: DIVINE_OR_COSMIC_AUTHORIZATION_OF_KINGSHIP
+  hindu:
+    status: PARTIAL
+    mechanism: RITUAL_LEGITIMATION_OR_CONSOLIDATION_OF_SOVEREIGNTY
+  daoism:
+    status: LEGACY_PARTIAL_CANDIDATE_REQUIRES_EXPLICIT_REBINDING
+    provisional_mechanism: RELIGIOUS_POLITICAL_COMMUNITY_ENTANGLEMENT
+  shinto:
+    status: LEGACY_PARTIAL_CANDIDATE_REQUIRES_EXPLICIT_REBINDING
+    provisional_mechanisms:
+      - GENEALOGICAL_CELESTIAL_LEGITIMATION
+      - COURT_ADMINISTERED_CULTIC_ORDER
+  buddhism:
+    status: NOT_ADMITTED
+  norse:
+    status: NOT_ADMITTED
+
+cross_lane_ready_now:
+  - CAUSAL_ORDER_TYPE
+  - CONTINUITY_MODEL
+  - RITUAL_ORDER_MODEL
+  - PERSON_OR_SELF_MODEL
+  - CONTACT_AND_REINTERPRETATION_MODEL
+
+cross_lane_on_hold_pending_rebind:
+  - POLITICAL_SACRALIZATION_MODEL
+
+next_discriminating_frontiers:
+  - DAOIST_POLITICAL_SACRALIZATION_EXACT_REBIND
+  - SHINTO_POLITICAL_SACRALIZATION_EXACT_REBIND
+  - POLITICAL_SACRALIZATION_CROSS_TRADITION_TEST_AFTER_REBIND
+  - DAOIST_DUREN_JING_LOAN_VOCABULARY
+  - SHINTO_PRIMARY_HUMAN_SPIRIT_LINE_BINDING
+
+method_conclusions:
+  - coverage_counts_must_follow_latest_tradition_level_admission
+  - legacy_matrix_cells_do_not_override_newer_source_status
+  - religion_state_overlap_ne_sacralized_rulership
+  - royal_rite_ne_divine_grant
+  - do_not_fill_Buddhist_or_Norse_political_cells_for_symmetry
+  - shared_axis_ne_shared_mechanism
