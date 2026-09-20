@@ -42,6 +42,53 @@ later Islamic recitation and devotional procedure, Buddhist dharani/mantra
 ritual, later Hindu mantra traditions, later Daoist ritual manuals, dedicated
 ancient Israelite priestly ritual analysis and Jain ritual parameter analysis.
 
+The current negative exotic result must remain corpus-bounded.
+
+Independent review identified major source families not yet admitted at
+proposition-level control, especially:
+
+- Greek and Demotic Magical Papyri / ritual formularies;
+- Mesopotamian Maqlû / Šurpu and related exorcistic series;
+- late-antique Jewish magical recipe traditions;
+- later Islamic operative/esoteric material under strict period control.
+
+Therefore:
+
+`ADMITTED_CORPUS_EXOTIC_RESIDUE = NONE_REQUIRING_H14_H18`
+
+does **not** imply:
+
+`GLOBAL_SOURCE_FRONTIER_EXHAUSTED`.
+
+PGM and Maqlû are particularly important because they contain recipe-like
+speech/material/time/sequence combinations closer to the exploit hypothesis
+than several currently admitted comparison cases. They still receive zero
+exotic evidentiary credit until exact source packets and prospective tests
+exist.
+
+A second hostile correction applies to "arbitrary" parameters.
+
+Use at least the following distinction:
+
+- `OUTSIDER_ARBITRARY` — modern researcher does not know the reason;
+- `SOURCE_INTERPRETED` — source supplies symbolic, legal, causal,
+  cosmological or identity logic;
+- `SOURCE_UNEXPLAINED_BUT_PRESCRIBED` — prescription survives without a
+  recoverable explanation;
+- `SOURCE_RECEIVED_NOT_REASONED` — source/practitioner explicitly presents
+  the parameter as inherited/revealed rather than derived;
+- `EMPIRICALLY_PARAMETER_SENSITIVE` — prospective outcome changes when the
+  parameter is altered.
+
+Only the last category directly discriminates external causal models.
+
+A third correction closes the restricted-knowledge escape hatch:
+
+`RESTRICTED_KNOWLEDGE != RESEARCH_GAP`.
+
+A null result may not be rescued by claiming that an unavailable sacred,
+initiatory or community-restricted version contains the missing parameter.
+
 Cross-cultural recurrence also does not prove independent discovery. Contact,
 transmission, older shared histories and convergent human cognition remain live
 alternatives.
