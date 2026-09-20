@@ -1,0 +1,38 @@
+schema_version: on-theo.shinto-research-state.v4
+status: POLITICAL_SACRALIZATION_REBOUND_BOUNDED
+parent_head: 144ee868e4976428dbfe9c5ddc0022d03a2c194a
+parent_state: traditions/shinto/research-state-v3.yaml
+
+new_artifacts:
+  - traditions/shinto/imperial-genealogy-state-ritual-political-control-v1.md
+  - traditions/shinto/neutral-axis-evidence-v3.yaml
+
+political_sacralization_update:
+  primary_text: NIHON_SHOKI_BOOK_II_NINIGI_DESCENT_COMMAND
+  mechanisms:
+    - GENEALOGICAL_CELESTIAL_LEGITIMATION
+    - COURT_ADMINISTERED_CULTIC_ORDER
+  status: BOUNDED_COURT_MYTH_AND_STATE_RITUAL_LAYER
+  supported:
+    - court_compiled_myth_links_Amaterasu_lineage_to_governance
+    - selected_mythic_command_contains_dynastic_continuity
+    - ritsuryo_state_institutionalizes_kami_ritual_administration
+  not_admitted:
+    - one_timeless_Shinto_political_theology
+    - transparent_prehistoric_transcript
+    - biological_divine_descent
+    - all_local_cult_as_imperial_derivative
+    - modern_political_continuity_claim
+
+remaining_exact_binding:
+  - clause_level_Japanese_Nihon_shoki_descent_alignment
+  - Kojiki_parallel_political_proposition_control
+  - Engishiki_exact_ritual_administrative_clause_binding
+  - Shoku_nihongi_ancestor_primary_binding
+  - primary_human_spirit_line_binding
+
+guards:
+  - COURT_COMPILATION_NE_PREHISTORIC_TRANSCRIPT
+  - GENEALOGICAL_LEGITIMATION_NE_CULT_ADMINISTRATION
+  - STATE_RITUAL_NE_ALL_LOCAL_RELIGION
+  - ANCIENT_COURT_MODEL_NE_MODERN_POLITICAL_CLAIM
