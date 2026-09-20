@@ -1,0 +1,63 @@
+schema_version: on-theo.dine-knowledge-institutionalization-evidence.v1
+status: BOUNDED_PUBLIC_KNOWLEDGE_GOVERNANCE
+
+records:
+  - id: DINE-KNOW-HHPD-001
+    source:
+      - NAVAJO_HHPD_MISSION
+      - NAVAJO_HHPD_CULTURAL_RESOURCES_COMPLIANCE
+      - NAVAJO_NATION_CULTURAL_RESOURCE_COLLECTIONS_POLICY
+    evidence_class:
+      - INDIGENOUS_RESEARCH_GOVERNANCE_POLICY
+      - DOCUMENTARY_PRACTICE
+    propositions:
+      - cultural_research_and_sensitive_information_are_tribally_governed
+      - ethnographic_collection_can_require_permits_consultation_consent_and_confidentiality
+      - some_information_should_not_be_collected_or_disseminated
+    supports:
+      - KNOWLEDGE_OR_DISCLOSURE_MODEL
+      - INSTITUTIONALIZATION_MODEL
+    confidence: HIGH
+
+  - id: DINE-KNOW-APPRENTICE-001
+    source: NAVAJO_NATION_TRADITIONAL_APPRENTICESHIP_PROJECT
+    evidence_class:
+      - DOCUMENTARY_PRACTICE
+      - MODERN_TRADITION
+    propositions:
+      - traditional_practitioner_training_is_publicly_institutionalized
+      - family_clan_stewardship_and_intergenerational_apprenticeship_are_publicly_described
+      - Nation_supports_continuity_of_selected_traditional_healing_practices
+    supports:
+      - INSTITUTIONALIZATION_MODEL
+      - KNOWLEDGE_OR_DISCLOSURE_MODEL
+      - CONTINUITY_MODEL_PARTIAL
+    confidence: HIGH_FOR_PROGRAM_EXISTENCE
+    guards:
+      - PROGRAM_DESCRIPTION_NE_CEREMONIAL_CONTENT
+
+  - id: DINE-KNOW-COLLEGE-001
+    source:
+      - DINE_COLLEGE_EDUCATIONAL_PHILOSOPHY
+      - DINE_COLLEGE_BOARD_OF_REGENTS
+    evidence_class:
+      - COMMUNITY_EDUCATIONAL_SELF_DESCRIPTION
+      - MODERN_TRADITION
+    propositions:
+      - Dine_philosophy_language_and_culture_are_embedded_in_current_higher_education
+      - ceremonial_spiritual_knowledge_is_a_recognized_governance_competency_in_current_college_structure
+    supports:
+      - INSTITUTIONALIZATION_MODEL
+      - KNOWLEDGE_OR_DISCLOSURE_MODEL
+    confidence: HIGH_FOR_CURRENT_INSTITUTION
+
+axis_status:
+  INSTITUTIONALIZATION_MODEL: BOUNDED_MULTI_INSTITUTIONAL_CURRENT_DINE
+  KNOWLEDGE_OR_DISCLOSURE_MODEL: BOUNDED_PUBLIC_GOVERNANCE_AND_TRANSMISSION
+  CONTINUITY_MODEL: PARTIAL_INSTITUTIONAL_CONTINUITY_WITH_CHANGE
+  AGENCY_AND_AUTHORITY_MODEL: PARTIAL_MULTI_DOMAIN_CURRENT_DINE
+  CROSS_TRADITION_COMPARISON: HOLD
+
+guards:
+  - RESTRICTED_CONTENT_NOT_REQUIRED_FOR_GOVERNANCE_COMPARISON
+  - CURRENT_INSTITUTIONS_NE_TIMELESS_IDENTICAL_FORM
