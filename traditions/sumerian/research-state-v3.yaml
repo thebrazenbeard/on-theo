@@ -1,0 +1,33 @@
+schema_version: on-theo.sumerian-research-state.v3
+status: DEEP_CHAIN_PLUS_LATER_MESOPOTAMIAN_OUTCOME_CONTROL
+supersedes_for_current_research:
+  - traditions/sumerian/research-state-v2.yaml
+
+parent:
+  branch: research/sumerian-comparison-binding-v1-20260920
+  exact_head: 3fd5db6f05c008aeba4febe310de99e4ff484770
+
+new_artifacts:
+  - traditions/sumerian/mesopotamian-extispicy-outcome-discriminator-packet-v1.md
+  - traditions/sumerian/mesopotamian-extispicy-outcome-evidence-v1.yaml
+
+new_admissions:
+  MESOPOTAMIAN_EXTISPICY_OUTCOME_PRECISION: HIGH
+  PRE_FORMULATED_ORACLE_QUERY: BOUNDED_HIGH
+  STRUCTURAL_MODERN_ABSTRACTION: POSSIBLE_ONLY
+  EMPIRICAL_ANOMALOUS_INFORMATION: NONE_ESTABLISHED
+
+strongest_new_result: >
+  Neo-Assyrian extispicy queries preserve concrete pre-formulated questions and
+  directional/favorable-or-unfavorable response logic, demonstrating that
+  narrowly scoreable divinatory outputs are not unique to Ifa or one religious
+  family.
+
+methodological_consequence: >
+  Outcome precision should be treated as an experimental-design virtue, not as
+  evidence of one shared hidden interface.
+
+guards:
+  - LATER_MESOPOTAMIAN_LAYER_NE_SUMERIAN_LAYER
+  - OUTCOME_PRECISION_NE_ACCURACY
+  - ANIMAL_RITUAL_NE_MODERN_REPLICATION
