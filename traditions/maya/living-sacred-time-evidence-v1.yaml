@@ -1,0 +1,94 @@
+schema_version: on-theo.maya-living-sacred-time-evidence.v1
+status: BOUNDED_LIVING_MULTI_COMMUNITY
+
+source:
+  project: NMAI_LIVING_MAYA_TIME
+  evidence_class:
+    - LIVING_TRADITION
+    - COMMUNITY_COLLABORATIVE_PUBLIC_SOURCE
+  provenance:
+    named_Maya_curators: true
+    named_Maya_contributors: true
+    communities:
+      - TZELTAL
+      - YUCATEC
+      - KICHE
+      - KAQCHIKEL
+      - QEQCHI
+      - PETEN_ITZA
+      - LACANDON
+      - OTHER_NAMED_MAYA_COMMUNITIES
+
+records:
+  - id: MAYA-LIVING-CALENDAR-001
+    propositions:
+      - 260_day_sacred_calendar_remains_in_current_public_use
+      - Kiche_Chol_Qij_and_Yucatec_Tzolkin_terms_are_currently_used
+      - Ajqijab_calendar_keepers_guide_communities_in_highland_Guatemala
+    supports:
+      - SACRED_TIME_CALENDAR_MODEL
+      - KNOWLEDGE_OR_DISCLOSURE_MODEL
+      - INSTITUTIONALIZATION_MODEL_PARTIAL
+    confidence: BOUNDED_HIGH
+    guards:
+      - AJQIJ_NE_PAN_MAYA_PRIESTHOOD
+
+  - id: MAYA-LIVING-CORN-001
+    propositions:
+      - calendar_cycles_are_related_in_public_sources_to_corn_agriculture_sun_moon_and_human_cycles
+      - selected_Maya_contributors_describe_land_as_source_of_teaching
+    supports:
+      - RELATIONAL_ORDER_MODEL
+      - SACRED_LAND_PLACE_MODEL
+      - SACRED_TIME_CALENDAR_MODEL
+    confidence: BOUNDED_CURRENT
+
+  - id: MAYA-LIVING-OFFERING-001
+    propositions:
+      - selected_highland_and_Yucatec_communities_perform_calendar_or_agricultural_offerings
+      - public_NMAI_synthesis_describes_offerings_as_rooted_in_reciprocal_land_relation
+    supports:
+      - OFFERING_EXCHANGE_MODEL_PARTIAL
+      - RITUAL_ORDER_MODEL_PARTIAL
+      - RELATIONAL_ORDER_MODEL
+    confidence: BOUNDED_CURRENT
+    guards:
+      - OFFERING_NE_ONE_RECIPROCITY_MODEL
+      - ONE_COMMUNITY_RITE_NE_ALL_MAYA
+
+  - id: MAYA-LIVING-PERSON-001
+    propositions:
+      - sacred_calendar_day_meanings_can_be_used_in_current_Kiche_public_material_for_personal_and_community_balance
+    supports:
+      - PERSON_OR_SELF_MODEL_PARTIAL
+      - KNOWLEDGE_OR_DISCLOSURE_MODEL
+    confidence: PARTIAL
+    guards:
+      - CALENDAR_DAY_MEANING_NE_TOTAL_DETERMINISM
+
+  - id: MAYA-LIVING-CONTINUITY-001
+    propositions:
+      - contemporary_Maya_sources_present_calendar_and_agricultural_practice_as_living_tradition_with_ancient_roots
+      - current_practice_is_regionally_and_socially_dynamic
+    supports:
+      - CONTINUITY_MODEL
+    confidence: BOUNDED
+    guards:
+      - CONTINUITY_NE_UNCHANGED_FORM
+
+axis_status:
+  SACRED_TIME_CALENDAR_MODEL: BOUNDED_LIVING_MULTI_COMMUNITY_WITH_ATTRIBUTION
+  KNOWLEDGE_OR_DISCLOSURE_MODEL: BOUNDED_LIVING_DAY_KEEPER_COUNSEL
+  INSTITUTIONALIZATION_MODEL: PARTIAL_LIVING_DAY_KEEPER_OFFICE
+  RITUAL_ORDER_MODEL: PARTIAL_LIVING_CALENDAR_AGRICULTURAL_LAYER
+  OFFERING_EXCHANGE_MODEL: PARTIAL_LIVING_COMMUNITY_SPECIFIC
+  RELATIONAL_ORDER_MODEL: BOUNDED_LIVING
+  SACRED_LAND_PLACE_MODEL: PARTIAL_LIVING_AGRICULTURAL_RELATION
+  PERSON_OR_SELF_MODEL: PARTIAL_LIVING_CALENDAR_RELATIONAL_LAYER
+  CONTINUITY_MODEL: BOUNDED_PRACTICE_CONTINUITY_WITH_CHANGE
+  CROSS_TRADITION_COMPARISON: HOLD
+
+guards:
+  - LIVING_MAYA_NE_UNCHANGED_ANCIENT_MAYA
+  - COMMUNITY_ATTRIBUTION_REQUIRED
+  - STRUCTURAL_CONTINUITY_NE_DIRECT_UNCHANGED_TRANSMISSION
