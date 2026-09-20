@@ -1,0 +1,64 @@
+schema_version: on-theo.comparison-coverage-audit.v8
+status: NON_CANONICAL_METHOD_AUDIT
+supersedes_for_current_research:
+  - synthesis/COMPARISON_COVERAGE_AUDIT_V7.yaml
+matrix: synthesis/BOUNDED_NEUTRAL_COMPARISON_MATRIX_V8.yaml
+lane_count: 6
+
+coverage:
+  CAUSAL_ORDER_TYPE:
+    admitted_total: 6
+  CONTINUITY_MODEL:
+    admitted_total: 6
+  RITUAL_ORDER_MODEL:
+    admitted_total: 6
+  PERSON_OR_SELF_MODEL:
+    admitted_total: 6
+  CONTACT_AND_REINTERPRETATION_MODEL:
+    admitted_total: 4
+    cross_tradition_test_complete: true
+  POLITICAL_SACRALIZATION_MODEL:
+    admitted_total: 4
+    bounded: 2
+    partial: 2
+    cross_tradition_test_complete: true
+  WORLD_ORIGIN_MODEL:
+    admitted_total: 4
+    bounded: 4
+    cross_tradition_test_complete: true
+    comparison_schema_decomposed: true
+  MORTUARY_RELATIONSHIP_MODEL:
+    admitted_total: 3
+
+cross_lane_ready_now:
+  - CAUSAL_ORDER_TYPE
+  - CONTINUITY_MODEL
+  - RITUAL_ORDER_MODEL
+  - PERSON_OR_SELF_MODEL
+  - CONTACT_AND_REINTERPRETATION_MODEL
+  - POLITICAL_SACRALIZATION_MODEL
+  - WORLD_ORIGIN_MODEL
+
+world_origin_method_conclusions:
+  - origin_assertion_mode_must_be_separate_from_origin_mechanism
+  - shared_origin_question_does_not_imply_shared_origin_answer
+  - selected_loci_do_not_establish_one_sovereign_creator_ex_nihilo_common_denominator
+  - three_lanes_have_prior_condition_language_but_not_one_shared_substrate
+  - Shinto_primordial_state_subcomparison_remains_unbound
+  - Buddhism_and_Sumerian_remain_unfilled_without_source_specific_admission
+
+next_cross_lane_candidate:
+  - MORTUARY_RELATIONSHIP_MODEL
+
+next_discriminating_frontiers:
+  - MORTUARY_RELATIONSHIP_CROSS_TRADITION_TEST
+  - DAOIST_DUREN_JING_LOAN_VOCABULARY
+  - DAOIST_HUAHU_PRIMARY_FRAGMENT_MAP
+  - SHINTO_PRIMARY_HUMAN_SPIRIT_LINE_BINDING
+  - BUDDHIST_STUPA_RELIC_AND_LAY_RITUAL
+
+guards:
+  - COVERAGE_IS_NOT_IMPORTANCE
+  - DO_NOT_RESEARCH_MERELY_TO_FILL_CELLS
+  - SHARED_AXIS_NE_SHARED_MECHANISM
+  - SHARED_MECHANISM_NE_SHARED_ORIGIN
