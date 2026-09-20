@@ -1,0 +1,88 @@
+schema_version: on-theo.lakota-death-spirit-mourning-evidence.v1
+status: BOUNDED_PUBLIC_MORTUARY_RELATIONSHIP
+
+records:
+  - id: LAK-DEATH-STANDING-ROCK-001
+    source: STANDING_ROCK_TITLE_VI_CHILDRENS_CODE
+    evidence_class:
+      - DOCUMENTARY_PRACTICE
+      - MODERN_TRADITION
+    community_scope: STANDING_ROCK_LAKOTA_DAKOTA
+    propositions:
+      - Nagi_Gluhapi_is_publicly_named_as_keeping_of_the_spirit
+      - current_traditional_law_uses_spirit_language_in_ethics
+      - English_translations_are_approximate_and_Lakota_terms_govern
+    supports:
+      - MORTUARY_RELATIONSHIP_MODEL
+      - CONTINUITY_MODEL_PARTIAL
+      - PERSON_OR_SELF_MODEL_PARTIAL
+    confidence: HIGH_FOR_CURRENT_PUBLIC_CATEGORY
+    guards:
+      - ENGLISH_SPIRIT_NE_EXHAUSTIVE_NAGI_SEMANTICS
+      - CURRENT_CODE_NE_PRECONTACT_TRANSCRIPT
+
+  - id: LAK-DEATH-OLC-NAGI-001
+    source: OGLALA_LAKOTA_COLLEGE_HEAD_START
+    evidence_class:
+      - COMMUNITY_EDUCATIONAL_SELF_DESCRIPTION
+      - MODERN_TRADITION
+    community_scope: OGLALA_LAKOTA_PINE_RIDGE
+    propositions:
+      - current_program_vision_uses_strong_nagi_language
+      - nagi_is_a_living_current_term_not_only_historical_ethnographic_vocabulary
+    supports:
+      - PERSON_OR_SELF_MODEL_PARTIAL
+      - CONTINUITY_OF_TERMINOLOGY
+    confidence: HIGH_FOR_CURRENT_USAGE
+    guards:
+      - STRONG_NAGI_NE_COMPLETE_SOUL_ONTOLOGY
+
+  - id: LAK-DEATH-TIOSPAYE-001
+    source: AFRAID_OF_BEAR_AMERICAN_HORSE_TIOSPAYE_FOUNDATION
+    evidence_class:
+      - COMMUNITY_GROUNDED_MODERN_TRADITION
+    propositions:
+      - Nagi_Gluhapi_is_presented_as_living_sacred_ceremony
+      - public_high_level_description_relates_deceased_spirit_mourning_and_release
+      - ceremony_recovery_is_described_in_context_of_historical_suppression
+    supports:
+      - MORTUARY_RELATIONSHIP_MODEL
+      - CONTINUITY_MODEL
+      - CONTACT_AND_REINTERPRETATION_MODEL
+    confidence: BOUNDED_CURRENT_COMMUNITY_GROUNDED
+    guards:
+      - PUBLIC_DESCRIPTION_NE_PROCEDURAL_PERMISSION
+      - ONE_TIOSPAYE_NE_ALL_LAKOTA_IDENTICAL
+
+  - id: LAK-DEATH-BLACK-ELK-001
+    source: BLACK_ELK_BROWN_SACRED_PIPE
+    evidence_class:
+      - MEDIATED_ORAL_TESTIMONY
+      - LATER_TRADITION
+    propositions:
+      - keeping_of_spirit_has_historical_Oglala_public_attestation
+    supports:
+      - MORTUARY_RELATIONSHIP_MODEL
+      - HISTORICAL_CONTINUITY_CONTROL
+    confidence: BOUNDED_MEDIATED
+    guards:
+      - BLACK_ELK_BROWN_NE_UNIVERSAL_LAKOTA_CATECHISM
+      - PUBLICATION_NE_RESTRICTED_DETAIL_PERMISSION
+
+method_result:
+  MORTUARY_RELATIONSHIP_MODEL: BOUNDED_PUBLIC_CATEGORY
+  CONTINUITY_MODEL: PARTIAL_INTERNAL_STRENGTHENED
+  PERSON_OR_SELF_MODEL: PARTIAL_INTERNAL_CANDIDATE
+  POSTMORTEM_PATH_MODEL: HOLD
+
+strongest_result: >
+  Current public Lakota sources support a bounded mortuary relationship in
+  which a deceased person's spirit remains a recognized ritual referent after
+  death, without establishing one universal soul anatomy or afterlife path.
+
+guards:
+  - MORTUARY_RELATIONSHIP_NE_POSTMORTEM_PATH
+  - NAGI_NE_ONE_COMPLETE_SOUL_ONTOLOGY_BY_DEFAULT
+  - MULTIPLE_SPIRIT_TERMS_NE_INTERCHANGEABLE_SYNONYMS_BY_DEFAULT
+  - CURRENT_ENGLISH_SPIRIT_NE_UNCHANGED_PRECONTACT_SEMANTICS
+  - PUBLIC_CATEGORY_NE_PUBLIC_PROCEDURE
