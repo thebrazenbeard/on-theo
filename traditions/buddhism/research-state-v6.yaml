@@ -1,0 +1,71 @@
+schema_version: on-theo.buddhism-research-state.v6
+status: EARLY_TEXT_VINAYA_PLUS_MEDIEVAL_DHARANI_PARAMETER_LAYER
+parent_head: eb0f948788f5171d13c067daea2df54845d22f70
+parent_state: traditions/buddhism/research-state-v5.yaml
+
+new_artifacts:
+  - traditions/buddhism/dharani-ritual-parameter-packet-v1.md
+  - traditions/buddhism/neutral-axis-evidence-v3.yaml
+
+new_evidence_layers:
+  - ATIKUTA_T901_DHARANI_COLLECTION
+  - USNISAVIJAYA_TEXT_AND_RITUAL_MANUAL_FAMILY
+  - MAHAPRATISARA_AMULET_MATERIAL
+  - USNISAVIJAYA_PILLAR_EPIGRAPHIC_MATERIAL
+  - MEDIEVAL_CHINESE_DHARANI_SEMANTIC_HISTORY
+
+new_axes:
+  RITUAL_PARAMETER_SENSITIVITY: BOUNDED_STRONG_SELECTED_MEDIEVAL_DHARANI
+  RITUAL_COMPLEXITY_DIACHRONIC_MODEL: BOUNDED
+  FORM_BEARING_MEDIUM_MODEL: BOUNDED_STRONG
+  WRITTEN_FORM_PARAMETER: BOUNDED_STRONG
+  REPETITION_COUNT_PARAMETER: BOUNDED
+  ACOUSTIC_PARAMETER_SENSITIVITY: PARTIAL
+  SEMANTIC_OPACITY_DIMENSION: PARTIAL_HIGH_INFORMATION
+
+strongest_new_results:
+  - >
+    Selected medieval Buddhist dharani traditions are genuinely parameterized
+    across recitation, repetition, writing, bodily carriage, monumental
+    inscription, offerings, spatial construction, timing and sequence.
+  - >
+    Material evidence independently establishes that written dharani could be
+    worn, carried or monumentally installed.
+  - >
+    The same ritual identity can cross media, so a sound-only hypothesis is too
+    narrow.
+  - >
+    Shinohara's diachronic reconstruction shows ritual complexity can develop
+    historically from simpler incantation toward mandala/initiation/visualization
+    systems.
+  - >
+    Dharani is polysemic; spell, memory, code, mantra and tantra must not be
+    silently collapsed.
+  - >
+    No anomalous information transfer or empirically verified external effect
+    is established.
+
+comparison_contribution:
+  ritual_interface_parameter_sensitivity:
+    status: HIGH_INFORMATION_FORM_MEDIUM_CASE
+    claim_ceiling: >
+      Source-secure and materially attested ritual form sensitivity only; no
+      external-interface inference.
+
+next_frontiers:
+  - exact_T901_ritual_case_matrix
+  - Usnisavijaya_cross_witness_parameter_matrix
+  - Mahapratisara_amulet_variant_matrix
+  - recited_vs_written_form_historical_comparison
+  - transliteration_vs_translation_case_control
+  - later_Vajrayana_mantra_mudra_visualization_kept_separate
+
+guards:
+  - DHARANI_NE_ALL_BUDDHISM
+  - DHARANI_NE_ONE_RITUAL_TECHNOLOGY
+  - SPELL_NE_MATURE_TANTRA
+  - LATER_COMPLEXITY_NE_EARLY_IDENTITY
+  - WRITTEN_FORM_NE_SOUND_ONLY
+  - MATERIAL_USE_NE_METAPHYSICAL_EFFECT
+  - TRANSLITERATION_NE_EMPIRICAL_CAUSALITY
+  - SYSTEMS_ANALOGY_REMAINS_DOWNSTREAM
