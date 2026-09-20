@@ -1,0 +1,141 @@
+schema_version: on-theo.bounded-neutral-comparison-matrix.v10
+status: NON_CANONICAL_PILOT_MATRIX
+supersedes_for_current_research:
+  - synthesis/BOUNDED_NEUTRAL_COMPARISON_MATRIX_V9.yaml
+relation_schema: synthesis/CROSS_TRADITION_RELATION_SCHEMA_V1.yaml
+world_origin_schema: synthesis/WORLD_ORIGIN_COMPARISON_SCHEMA_V1.yaml
+mortuary_relationship_schema: synthesis/MORTUARY_RELATIONSHIP_COMPARISON_SCHEMA_V1.yaml
+institutionalization_schema: synthesis/INSTITUTIONALIZATION_COMPARISON_SCHEMA_V1.yaml
+
+source_heads:
+  buddhism: eb0f948788f5171d13c067daea2df54845d22f70
+  hindu: 614fa715fcacee0d7ec1ba573061d3e776e708d3
+  daoism: 708ba10413d9511648c2540ad84be74b6b5f6b5c
+  shinto: 4939c22c6b13afc1226d8860fa8dbf394e34b5c4
+  norse: 22e9fe10d1647a66458c54478c86e7ba6abd83ce
+  sumerian: 3fd5db6f05c008aeba4febe310de99e4ff484770
+
+institutionalization_snapshot:
+  buddhism:
+    status: BOUNDED
+    evidence:
+      - VINAYA_UPOSATHA_AND_ORDINATION_PROCEDURE
+      - SANGHAKAMMA
+      - ASOKAN_EXPLICIT_BUDDHIST_EPIGRAPHY
+    institutional_carrier: MONASTIC_COMMUNITY_PLUS_LOCAL_SANGHA_GOVERNANCE
+    membership_and_boundary: FORMAL_ORDINATION_AND_COMMUNAL_STATUS
+    procedural_stabilization: COMMUNAL_LEGAL_RITUAL_PROCEDURE
+    political_relation: EXTERNAL_ROYAL_PATRONAGE_AND_SELECTED_REGULATORY_INTERVENTION
+    guards:
+      - LOCAL_SANGHA_NE_ONE_IMPERIAL_BUDDHIST_CHURCH
+      - ASOKAN_INSCRIPTION_NE_ALL_LATER_VINAYA_DETAIL
+
+  hindu:
+    status: NOT_ADMITTED
+    note: current exact Hindu lane does not explicitly admit INSTITUTIONALIZATION_MODEL
+
+  daoism:
+    status: BOUNDED
+    evidence:
+      - CELESTIAL_MASTERS_EARLY
+      - ZHANG_PU_STELE_173_CE
+      - Hanzhong_reconstruction
+      - XIANGER_RELIGIOUS_COMMUNITY_LAYER
+    institutional_carrier: REGISTERED_RELIGIOUS_COMMUNITY_AND_OFFICE_HIERARCHY
+    membership_and_boundary:
+      - household_registers
+      - individual_registers
+    authority_and_office:
+      - libationers
+      - ritual_specialists
+      - revealed_textual_authorization
+    guards:
+      - ZHI_NE_CHRISTIAN_PARISH_BY_IDENTITY
+      - CELESTIAL_MASTERS_NE_CLASSICAL_LAOZI
+
+  shinto:
+    status: BOUNDED
+    evidence:
+      - RITSURYO_ENGISHIKI_ADMINISTRATION
+      - SHRINE_HISTORY
+      - COURT_TRIBUTE_AND_RITUAL_OBLIGATION
+    institutional_carrier: COURT_ADMINISTERED_SHRINE_AND_RITUAL_NETWORK_IN_SELECTED_LAYER
+    procedural_stabilization:
+      - register
+      - tribute
+      - ritual_calendar
+      - ritual_obligation
+    political_relation: DIRECT_COURT_ADMINISTRATIVE_PARTICIPATION
+    guards:
+      - COURT_REGISTERED_SHRINE_SYSTEM_NE_ALL_LOCAL_RELIGION
+      - STATE_COORDINATION_NE_DOCTRINAL_UNIFORMITY
+
+  norse:
+    status: PARTIAL
+    evidence:
+      - TISSO_ARCHAEOLOGICAL_COMPLEX
+      - MATERIAL_RITUAL_EVIDENCE
+    institutional_carrier: ELITE_CENTERED_RITUAL_LANDSCAPE_AT_SELECTED_SITE
+    membership_and_boundary: NOT_DEMONSTRATED_AS_FORMAL_MEMBERSHIP_SYSTEM
+    authority_and_office: ELITE_ASSOCIATION_PLAUSIBLE_FORMAL_PRIESTLY_BUREAUCRACY_NOT_ESTABLISHED
+    material_and_spatial_infrastructure:
+      - magnate_hall
+      - deposition_loci
+      - offering_area
+      - possible_cult_structures
+    guards:
+      - TISSO_NE_PAN_SCANDINAVIAN_INSTITUTION
+      - MATERIAL_ORGANIZATION_NE_FORMAL_MEMBERSHIP_OR_PRIESTHOOD
+      - MODERN_ASATRU_NE_ANCIENT_INSTITUTION
+
+  sumerian:
+    status: BOUNDED
+    evidence:
+      - SOURCE_VERIFICATION
+      - MATERIAL_EVIDENCE_CITY_PERIOD_MATRIX
+      - TEMPLE_CITY_DEITY_INSTITUTIONAL_BINDING
+    institutional_carrier: CITY_TEMPLE_ADMINISTRATIVE_COMPLEX_PLUS_LOCAL_AND_DOMESTIC_VARIATION
+    material_and_spatial_infrastructure:
+      - monumental_temples
+      - sacred_precincts
+      - administrative_contexts
+      - domestic_chapels
+    political_relation: KINGSHIP_AND_RELIGIOUS_ADMINISTRATION_INTERSECT_IN_CONTROLLED_CONTEXTS
+    centralization_and_scale: CITY_AND_PERIOD_SPECIFIC
+    guards:
+      - TEXTUAL_DIVINE_ASSOCIATION_NE_EXCAVATED_CULT_INSTALLATION_NE_BUILDING_FUNCTION_PROVED
+      - MONUMENTAL_TEMPLE_NE_ALL_RELIGIOUS_PRACTICE
+
+institutionalization_method_result:
+  admitted_total: 5
+  bounded: 4
+  partial: 1
+  not_admitted: 1
+  formalization_equals_centralization: false
+  institutionalization_equals_doctrinal_uniformity: false
+  shared_organizational_template_supported: false
+  strongest_shared_result: RELIGIOUS_PRACTICE_CAN_BE_STABILIZED_THROUGH_MULTIPLE_DISTINCT_INSTITUTIONAL_MECHANISMS
+
+institutionalization_test:
+  artifact: synthesis/INSTITUTIONALIZATION_CROSS_TRADITION_TEST_V1.md
+  result: COMPARABLE_WITH_CARRIER_MEMBERSHIP_AUTHORITY_PROCEDURE_SCALE_AND_POLITICAL_RELATION_SEPARATED
+
+preserved_results:
+  causal_order_test: synthesis/CAUSAL_CONTINUITY_CROSS_TRADITION_TEST_V1.md
+  ritual_order_test: synthesis/RITUAL_ORDER_CROSS_TRADITION_TEST_V2.md
+  person_self_test: synthesis/PERSON_SELF_CROSS_TRADITION_TEST_V1.md
+  contact_test: synthesis/CONTACT_REINTERPRETATION_CROSS_TRADITION_TEST_V1.md
+  political_test: synthesis/POLITICAL_SACRALIZATION_CROSS_TRADITION_TEST_V1.md
+  world_origin_test: synthesis/WORLD_ORIGIN_CROSS_TRADITION_TEST_V1.md
+  mortuary_test: synthesis/MORTUARY_RELATIONSHIP_CROSS_TRADITION_TEST_V1.md
+
+matrix_guards:
+  - THIS_IS_NOT_A_COMMONALITY_SCORE
+  - INSTITUTIONALIZATION_NE_DOCTRINAL_UNIFORMITY
+  - FORMALIZATION_NE_CENTRALIZATION
+  - ORGANIZED_ACTIVITY_NE_FORMAL_MEMBERSHIP
+  - STATE_ADMINISTRATION_NE_CENTRALIZED_CHURCH
+  - MATERIAL_COMPLEX_NE_FORMAL_MEMBERSHIP_SYSTEM
+  - EVIDENCE_CLASS_DIFFERENCE_MUST_REMAIN_VISIBLE
+  - NOT_ADMITTED_NE_FALSE
+  - SYSTEMS_MAPPING_IS_OPTIONAL_AND_DOWNSTREAM
