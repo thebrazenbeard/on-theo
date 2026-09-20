@@ -1,0 +1,75 @@
+schema_version: on-theo.mortuary-relationship-comparison-schema.v1
+status: NON_CANONICAL_METHOD_SCHEMA
+
+purpose: >
+  Decompose MORTUARY_RELATIONSHIP_MODEL so material treatment of corpses,
+  graves, and possessions is not silently promoted into a claim about
+  conscious postmortem survival, and so later spirit-cult evidence is not
+  projected backward into earlier burial practice.
+
+dimensions:
+  EVIDENCE_MODE:
+    question: >
+      What kind of evidence carries the proposition: literary text, material
+      archaeology, documentary practice, historical reconstruction, later
+      tradition, or a controlled combination?
+    rule: EVIDENCE_MODES_MUST_REMAIN_DISTINCT
+
+  RELATIONAL_REFERENT:
+    question: >
+      What is the living community relating to: a deceased person or spirit,
+      corpse, grave, possessions, ancestor identity, dangerous dead, enshrined
+      posthumous identity, or another mortuary referent?
+    rule: BODY_GRAVE_AND_SPIRIT_REFERENTS_MUST_NOT_BE_COLLAPSED
+
+  RELATIONAL_MODE:
+    question: >
+      What form does the relationship take: kinship, provisioning, offering,
+      memory, lament, appeasement, protection, grave maintenance, reopening,
+      object retrieval, memorialization, enshrinement, or other action?
+
+  CLAIMED_OR_INFERRED_EFFECT:
+    question: >
+      What effect is represented or inferred: welfare of the dead, maintenance
+      of social identity, protection of the living, ritual pacification,
+      posthumous status transformation, inheritance or memory work, or no
+      metaphysical effect claim?
+    rule: MATERIAL_ACTION_NE_METAPHYSICAL_EFFECT_BY_DEFAULT
+
+  POSTMORTEM_AGENCY_STATUS:
+    question: >
+      Does the evidence explicitly represent the dead as agents, imply continued
+      social relevance without proving agency, or remain silent?
+    rule: SOCIAL_RELEVANCE_NE_CONSCIOUS_POSTMORTEM_AGENCY
+
+  BODY_GRAVE_MEDIATION:
+    question: >
+      Is the relationship mediated through corpse treatment, burial place,
+      grave goods, monuments, reopening, spirit vessels, shrines, household
+      memorials, or another material locus?
+    rule: MATERIAL_MEDIATOR_NE_LITERAL_AFTERLIFE_MAP
+
+  SOCIAL_DIFFERENTIATION:
+    question: >
+      Does status, kinship, class, office, gender, manner of death, or other
+      social differentiation alter mortuary treatment or represented
+      postmortem outcome?
+
+  TEMPORAL_AND_CONTACT_LAYER:
+    question: >
+      What historical layer carries the practice or claim, and what contact or
+      institutional transformations must remain visible?
+    rule: LATER_LAYER_NE_ANCIENT_DEFAULT
+
+comparison_guards:
+  - MORTUARY_RELATIONSHIP_NE_POSTMORTEM_PATH
+  - MATERIAL_SOCIAL_CONTINUITY_NE_METAPHYSICAL_SURVIVAL
+  - GRAVE_GOOD_NE_AFTERLIFE_EQUIPMENT_BY_DEFAULT
+  - SHIP_BURIAL_NE_LITERAL_AFTERLIFE_VOYAGE
+  - LITERARY_AFTERLIFE_NE_ARCHAEOLOGICAL_GRAVE_FORM
+  - ROYAL_OR_ELITE_MORTUARY_NE_ORDINARY_DEFAULT
+  - DANGEROUS_DEAD_RITUAL_NE_UNIVERSAL_SOUL_DOCTRINE
+  - LATER_ANCESTOR_SYSTEM_NE_ANCIENT_PRIMARY_FACT
+  - OFFERING_EFFECT_IN_ONE_SOURCE_NE_UNIVERSAL_MORTUARY_MECHANISM
+  - SHARED_RELATIONSHIP_AXIS_NE_SHARED_POSTMORTEM_ONTOLOGY
+  - SIMILARITY_NE_TRANSMISSION
