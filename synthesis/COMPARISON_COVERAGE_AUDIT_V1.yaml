@@ -1,0 +1,107 @@
+schema_version: on-theo.comparison-coverage-audit.v1
+status: NON_CANONICAL_METHOD_AUDIT
+matrix: synthesis/BOUNDED_NEUTRAL_COMPARISON_MATRIX_V1.yaml
+lane_count: 6
+
+coverage:
+  WORLD_ORIGIN_MODEL:
+    bounded: 4
+    partial: 0
+    not_admitted: 2
+    admitted_total: 4
+
+  CAUSAL_ORDER_TYPE:
+    bounded: 2
+    partial: 4
+    not_admitted: 0
+    admitted_total: 6
+
+  PERSON_OR_SELF_MODEL:
+    bounded: 1
+    partial: 4
+    not_admitted: 1
+    admitted_total: 5
+
+  CONTINUITY_MODEL:
+    bounded: 3
+    partial: 3
+    not_admitted: 0
+    admitted_total: 6
+
+  MORAL_CAUSALITY_MODEL:
+    bounded: 2
+    partial: 1
+    not_admitted: 3
+    admitted_total: 3
+
+  PURITY_POLLUTION_MODEL:
+    bounded: 1
+    partial: 0
+    not_admitted: 5
+    admitted_total: 1
+
+  RITUAL_ORDER_MODEL:
+    bounded: 3
+    partial: 1
+    not_admitted: 2
+    admitted_total: 4
+
+  MORTUARY_RELATIONSHIP_MODEL:
+    bounded: 1
+    partial: 0
+    not_admitted: 5
+    admitted_total: 1
+
+  POLITICAL_SACRALIZATION_MODEL:
+    bounded: 1
+    partial: 2
+    not_admitted: 3
+    admitted_total: 3
+
+  FATE_CONSTRAINT_MODEL:
+    bounded: 1
+    partial: 0
+    not_admitted: 5
+    admitted_total: 1
+
+  WORLD_TERMINUS_RENEWAL_MODEL:
+    bounded: 1
+    partial: 0
+    not_admitted: 5
+    admitted_total: 1
+
+  CONTACT_AND_REINTERPRETATION_MODEL:
+    bounded: 3
+    partial: 1
+    not_admitted: 2
+    admitted_total: 4
+
+cross_lane_ready_now:
+  - CAUSAL_ORDER_TYPE
+  - CONTINUITY_MODEL
+
+cross_lane_near_ready:
+  - PERSON_OR_SELF_MODEL
+  - WORLD_ORIGIN_MODEL
+  - RITUAL_ORDER_MODEL
+  - CONTACT_AND_REINTERPRETATION_MODEL
+
+sparse_but_source_important:
+  - PURITY_POLLUTION_MODEL
+  - MORTUARY_RELATIONSHIP_MODEL
+  - FATE_CONSTRAINT_MODEL
+  - WORLD_TERMINUS_RENEWAL_MODEL
+
+method_conclusions:
+  - coverage_is_not_importance
+  - sparse_axis_is_not_defect
+  - do_not_research_merely_to_fill_cells
+  - choose_cross_tradition_tests_where_source_coverage_is_already_real
+  - preserve_singleton_axes_when_they_capture_real_difference
+  - commonality_counts_are_not_the_project_goal
+
+next:
+  - run_Causal_Order_cross_tradition_stress_test
+  - run_Continuity_cross_tradition_stress_test
+  - use_results_to_test_GOD_model_mapping_downstream
+  - do_not_open_transmission_claims_without_separate_contact_gate
