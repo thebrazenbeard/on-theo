@@ -1,0 +1,80 @@
+schema_version: on_theo.aphrahat_syriac_reception.v1
+status: BOUNDED_PRIMARY_TEXT_RECEPTION_REVIEW_REQUIRED
+canonical: false
+
+parent:
+  branch: research/ephrem-syriac-gospel-transmission-v1-20260920
+  exact_head: 96516078a82f27bd843cae348aec4ab5c95881ff
+
+sources:
+  - id: SYR-SRC-APHRAHAT-DEM-1
+    evidence_class: PRIMARY_TEXT
+    topic: faith_ascetic_practice
+  - id: SYR-SRC-APHRAHAT-DEM-8
+    evidence_class: PRIMARY_TEXT
+    topic: resurrection
+  - id: SYR-SRC-APHRAHAT-DEM-17
+    evidence_class: PRIMARY_TEXT
+    topic: christ_son_of_god_polemic
+  - id: SYR-SRC-APHRAHAT-DEM-21
+    evidence_class: PRIMARY_TEXT
+    topic: persecution_and_represented_jewish_dialogue
+  - id: SYR-SRC-APHRAHAT-DEM-22
+    evidence_class: PRIMARY_TEXT
+    topic: internal_chronology
+
+claims:
+  - id: APH-V1-001
+    proposition: Aphrahat joins doctrine, scripture, ascetic practice, and indwelling imagery.
+    status: BOUNDED
+    confidence: strong_for_aphrahat
+  - id: APH-V1-002
+    proposition: Aphrahat provides direct fourth-century Syriac scriptural Christology honoring Jesus with divine/Son language while affirming humanity.
+    status: BOUNDED
+    confidence: strong_for_aphrahat
+  - id: APH-V1-003
+    proposition: Aphrahat's anti-Jewish demonstrations evidence fourth-century Syriac Christian-Jewish boundary argument.
+    class: HISTORICAL_RECONSTRUCTION
+    status: BOUNDED
+    confidence: moderate_to_strong
+  - id: APH-V1-004
+    proposition: Aphrahat neutrally describes Jewish belief and practice as a whole.
+    status: NOT_ADMITTED
+  - id: APH-V1-005
+    proposition: Aphrahat represents live Jewish-Christian contestation as meaningful in his environment.
+    class: HISTORICAL_RECONSTRUCTION
+    status: PARTIAL
+    confidence: moderate
+  - id: APH-V1-006
+    proposition: Aphrahat's represented Jewish interlocutor is a verified verbatim transcript.
+    status: NOT_ADMITTED
+  - id: APH-V1-007
+    proposition: Aphrahat's collective blame language evidences fourth-century Christian polemic.
+    status: BOUNDED
+    confidence: strong_for_text
+  - id: APH-V1-008
+    proposition: Aphrahat establishes collective Jewish responsibility for Jesus's execution.
+    status: NOT_ADMITTED
+  - id: APH-V1-009
+    proposition: Aphrahat witnesses a strong fourth-century Syriac bodily-resurrection theology.
+    status: BOUNDED
+    confidence: strong_for_aphrahat
+  - id: APH-V1-010
+    proposition: Fourth-century Christian theological development extended beyond Roman/Greek/Latin imperial centers.
+    class: HISTORICAL_RECONSTRUCTION
+    status: BOUNDED
+    confidence: strong
+
+guards:
+  - POLEMICAL_OPPONENT_NE_NEUTRAL_JEWISH_SELF_DESCRIPTION
+  - REPORTED_DIALOGUE_NE_VERBATIM_TRANSCRIPT
+  - APHRAHAT_COLLECTIVE_BLAME_NE_HISTORICAL_CRUCIFIXION_CAUSATION
+  - FOURTH_CENTURY_RECEPTION_NE_FIRST_CENTURY_BIOGRAPHY
+  - OUTSIDE_ROMAN_EMPIRE_NE_OUTSIDE_TRANSREGIONAL_CONTACT
+  - COMPOSITION_DATE_NE_LATER_WITNESS_DATE
+
+next_scope:
+  - OLD_SYRIAC_PESHITTA_WITNESS_BOUNDARY
+  - APHRAHAT_EPHREM_TRANSITION_MATRIX
+  - TESTAMENT_BOOK_VI_APHRAHAT_CARRYDOWN
+  - BOOK_VI_SYRIAC_POLEMIC_HOSTILE_REVIEW
