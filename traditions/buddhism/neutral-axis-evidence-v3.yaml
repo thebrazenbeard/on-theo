@@ -1,0 +1,133 @@
+schema_version: on-theo.buddhism-neutral-axis-evidence.v3
+status: EARLY_TEXT_VINAYA_PLUS_MEDIEVAL_DHARANI_BOUNDED_EVIDENCE
+supersedes_for_current_research:
+  - traditions/buddhism/neutral-axis-evidence-v2.yaml
+
+parent_exact_head: eb0f948788f5171d13c067daea2df54845d22f70
+new_packet: traditions/buddhism/dharani-ritual-parameter-packet-v1.md
+
+existing_records_preserved:
+  - BUD-SELF-001
+  - BUD-SELF-002
+  - BUD-CAUSE-001
+  - BUD-CAUSE-002
+  - BUD-CONT-001
+  - BUD-KAMMA-001
+  - BUD-LIB-001
+  - BUD-LIB-002
+  - BUD-RITUAL-UPOSATHA-001
+  - BUD-RITUAL-ORDINATION-001
+  - BUD-ASOKA-SANGHA-RITUAL-001
+
+new_records:
+  - id: BUD-DHARANI-DIACHRONIC-001
+    evidence_class:
+      - SCHOLARLY_HISTORICAL_RECONSTRUCTION
+    evidence:
+      - ATIKUTA_T901
+      - SHINOHARA_ESOTERIC_RITUAL_DEVELOPMENT
+    propositions:
+      - earlier_incantation_practice_can_develop_into_more_elaborate_ritual_systems
+      - later_mandala_initiation_and_visualization_must_not_be_retrojected_backward
+    supports_axes:
+      - RITUAL_PARAMETER_SENSITIVITY
+      - RITUAL_COMPLEXITY_DIACHRONIC_MODEL
+    confidence: BOUNDED
+    negative_result:
+      - COMPLEX_RITUAL_NE_PRIMORDIAL_TECHNICAL_PROTOCOL
+
+  - id: BUD-DHARANI-USNISA-001
+    evidence_class:
+      - PRIMARY_TEXT_FAMILY
+      - MANUSCRIPT_WITNESS
+      - SCHOLARLY_EDITION_TRANSLATION
+    evidence:
+      - USNISAVIJAYA_TAISHO_967_974_978_979_FAMILY
+      - TIBETAN_TOH_594_598_FAMILY
+      - DUNHUANG_WITNESSES
+    propositions:
+      - selected_ritual_manuals_prescribe_recitation_repetition_offerings_and_spatial_configuration
+      - selected_rituals_add_timing_mandala_and_written_or_installed_form
+      - source_claimed_effects_include_purification_protection_longevity_and_postmortem_benefit
+    supports_axes:
+      - RITUAL_PARAMETER_SENSITIVITY
+      - REPETITION_COUNT_PARAMETER
+      - SPATIAL_GEOMETRIC_PARAMETER
+      - FORM_BEARING_MEDIUM_MODEL
+    confidence: BOUNDED_STRONG_FOR_SELECTED_TEXTS
+    empirical_external_effect: NONE_ESTABLISHED
+
+  - id: BUD-DHARANI-MATERIAL-001
+    evidence_class:
+      - MATERIAL_EVIDENCE
+      - EPIGRAPHIC_EVIDENCE
+      - SCHOLARLY_INTERPRETATION
+    evidence:
+      - MAHAPRATISARA_AMULET_CORPUS
+      - USNISAVIJAYA_DHARANI_PILLARS
+      - COPP_BODY_INCANTATORY
+    propositions:
+      - written_dharani_were_materially_carried_or_worn
+      - written_dharani_were_installed_on_monumental_objects
+      - written_form_functioned_as_ritual_object_not_only_reading_text
+    supports_axes:
+      - FORM_BEARING_MEDIUM_MODEL
+      - WRITTEN_FORM_PARAMETER
+      - MATERIAL_RITUAL_MODEL
+    confidence: BOUNDED_STRONG_FOR_MATERIAL_USE
+    not_established:
+      - claimed_protective_effect
+      - claimed_postmortem_effect
+
+  - id: BUD-DHARANI-SEMANTIC-001
+    evidence_class:
+      - SCHOLARLY_LINGUISTIC_INTERPRETATION
+      - TRANSLATION_HISTORY
+    evidence:
+      - COPP_DHARANI_TERM_STUDY
+      - DAVIDSON_DHARANI_TERM_STUDY
+      - CHINESE_AND_TIBETAN_TRANSLATION_PRACTICE
+    propositions:
+      - dharani_is_polysemic_and_context_dependent
+      - selected_formulae_are_transliterated_or_preserved_without_ordinary_semantic_translation
+      - formal_identity_can_be_ritually_salient_across_language_transmission
+    supports_axes:
+      - SEMANTIC_OPACITY_DIMENSION
+      - FORM_BEARING_MEDIUM_MODEL
+      - ACOUSTIC_PARAMETER_SENSITIVITY
+    confidence: BOUNDED
+    not_established:
+      - formula_is_semantically_meaningless
+      - sound_is_independent_causal_mechanism
+      - exact_ancient_pronunciation_is_recoverable
+
+new_axes:
+  RITUAL_COMPLEXITY_DIACHRONIC_MODEL:
+    status: BOUNDED
+  FORM_BEARING_MEDIUM_MODEL:
+    status: BOUNDED_STRONG
+  WRITTEN_FORM_PARAMETER:
+    status: BOUNDED_STRONG
+  REPETITION_COUNT_PARAMETER:
+    status: BOUNDED
+  ACOUSTIC_PARAMETER_SENSITIVITY:
+    status: PARTIAL
+  SEMANTIC_OPACITY_DIMENSION:
+    status: PARTIAL_HIGH_INFORMATION
+
+comparison_status:
+  RITUAL_ORDER_MODEL: BOUNDED_MONASTIC_LAYER
+  INSTITUTIONALIZATION_MODEL: BOUNDED_STRENGTHENED
+  RITUAL_PARAMETER_SENSITIVITY: BOUNDED_STRONG_SELECTED_MEDIEVAL_DHARANI
+  FORM_BEARING_MEDIUM_MODEL: BOUNDED_STRONG
+  EMPIRICAL_EXTERNAL_EFFECT: NONE_ESTABLISHED
+  ANOMALOUS_INFORMATION_CHANNEL: NONE_ESTABLISHED
+
+guards:
+  - EARLY_BUDDHISM_NE_MEDIEVAL_DHARANI_IDENTITY
+  - DHARANI_NE_ONE_MEANING
+  - SPELL_NE_TANTRA_BY_DEFAULT
+  - MATERIAL_USE_NE_CLAIMED_EFFECT_VERIFIED
+  - TRANSLITERATION_NE_SOUND_CAUSALITY
+  - SEMANTIC_OPACITY_NE_MEANINGLESSNESS
+  - FORM_PRESERVATION_NE_HIDDEN_INTERFACE
