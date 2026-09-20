@@ -1,0 +1,141 @@
+schema_version: on-theo.neutral-comparison-axes.v7
+status: PROJECT_METHOD_CANDIDATE_NON_CANONICAL
+supersedes_for_current_research:
+  - synthesis/NEUTRAL_COMPARISON_AXES_V6.yaml
+
+layers:
+  - SOURCE_PROPOSITION
+  - TEXTUAL_OR_HISTORICAL_LAYER
+  - EVIDENCE_MODE
+  - NEUTRAL_COMPARISON_AXIS
+  - OPTIONAL_SYSTEMS_ANALOGY
+
+axes:
+  - id: WORLD_ORIGIN_MODEL
+    question: What does the source claim or refuse to claim about cosmic origin/order?
+
+  - id: CAUSAL_ORDER_TYPE
+    question: What kind of causal order does the source describe or presuppose?
+
+  - id: GENERATION_AND_CONTROL_MODEL
+    question: >
+      Does the source distinguish generating, sustaining, nurturing, possessing,
+      commanding, judging, and governing?
+
+  - id: AGENCY_AND_AUTHORITY_MODEL
+    question: What possesses privileged agency or authority, if anything?
+
+  - id: PERSON_OR_SELF_MODEL
+    question: What constitutes a person/self and how stable is that category?
+
+  - id: TRANSFORMATION_MODEL
+    question: >
+      How does a source conceptualize changes of form, identity, state,
+      life/death, or perspective, and what remains invariant if anything?
+
+  - id: CONTINUITY_MODEL
+    question: What, if anything, continues across death or major transformation?
+
+  - id: POSTMORTEM_PATH_MODEL
+    question: Does the source distinguish postmortem routes, returns, or non-returns?
+
+  - id: MORAL_CAUSALITY_MODEL
+    question: How do actions or moral states acquire consequences?
+
+  - id: PURITY_POLLUTION_MODEL
+    question: >
+      What states make persons, places, objects, communities, or rites fit or
+      unfit for sacred activity, and how are those states changed?
+    reason_added: >
+      Shinto ritual evidence distinguishes pollution, transgression, ablution,
+      purification, taboo, and ritual eligibility without reducing them to moral
+      guilt or divine sentencing.
+
+  - id: LIBERATION_OR_FINAL_TRANSFORMATION_MODEL
+    question: What counts as desired or final transformation, if defined?
+
+  - id: KNOWLEDGE_OR_DISCLOSURE_MODEL
+    question: >
+      How is authoritative or otherwise unavailable knowledge obtained, and how
+      does that mechanism change across textual or institutional periods?
+
+  - id: KNOWLEDGE_OR_PRACTICE_DIFFERENTIATION_MODEL
+    question: Do different knowledge/practice profiles lead to different outcomes?
+
+  - id: INTERVENTION_MODEL
+    question: Does the source describe privileged intervention in ordinary causality?
+
+  - id: RITUAL_ORDER_MODEL
+    question: >
+      What combinations of office, calendar, purity, offering, place, speech,
+      object, and action constitute valid ritual order?
+    reason_added: >
+      Norito and shrine evidence show that religious efficacy may be represented
+      through ordered practice rather than only propositional belief or personal
+      divine intervention.
+
+  - id: SACRAL_PRESENCE_MODEL
+    question: >
+      Where or how is sacred presence localized, represented, hosted, invoked,
+      transmitted, or approached?
+    reason_added: >
+      Shinto material history includes sacred natural features, objects,
+      temporary ritual space, shrine buildings, and later anthropomorphic images.
+
+  - id: WORLD_STATUS_MODEL
+    question: How does the source characterize experienced reality?
+
+  - id: SOCIAL_COSMOLOGY_MODEL
+    question: Does social hierarchy become part of cosmic/postmortem order?
+
+  - id: INSTITUTIONALIZATION_MODEL
+    question: >
+      How are teachings, specialists, communities, authorities, sites, texts,
+      rituals, and material resources organized and stabilized?
+
+  - id: CONTACT_AND_REINTERPRETATION_MODEL
+    question: >
+      How does contact with another tradition transform categories,
+      institutions, ritual, iconography, or metaphysical explanation, and how
+      are later separation/reclassification projects distinguished from earlier
+      interaction?
+    reason_added: >
+      Buddhist-kami combination, honji suijaku, and Meiji shinbutsu bunri show
+      that contact and later separation are historical processes rather than
+      static doctrinal rows.
+
+comparison_rules:
+  - source_answer_may_change_diachronically_within_one_tradition
+  - variant_accounts_must_remain_variants
+  - ritual_evidence_ne_doctrinal_treatise
+  - mythic_attestation_ne_cult_attestation
+  - institutional_history_ne_metaphysical_truth
+  - later_contact_model_must_not_rewrite_earlier_source_meaning
+  - later_separation_must_not_be_assumed_to_restore_primordial_purity
+  - generating_ne_owning_by_default
+  - transformation_ne_persistence_by_default
+  - pollution_ne_moral_guilt_by_default
+  - textual_layer_must_be_explicit
+  - evidence_mode_must_be_explicit
+  - systems_mapping_is_optional_and_downstream
+  - missing_source_support_yields_UNKNOWN_not_inference
+  - similar_axis_value_does_not_imply_transmission
+
+bounded_source_bindings:
+  buddhism:
+    head: 1c6c7a9a35901a529d377e1bd6fb86a88c1cdbe9
+    binding: synthesis/BUDDHIST_PRIMARY_SOURCE_BINDING_V2.yaml
+  hindu:
+    head: 0c3123f4f1cf03e6f6a29ca0d0eb7edfddff5e75
+    binding: synthesis/HINDU_PRIMARY_SOURCE_BINDING_V2.yaml
+  daoism:
+    head: 483d1bcaebb57a00cda5eb30c15bc3908fdac438
+    binding: synthesis/DAOISM_PRIMARY_SOURCE_BINDING_V2.yaml
+  shinto:
+    head: 31b67b5a0aec7015878e5fcf9de2936db80cf83b
+    binding: synthesis/SHINTO_PRIMARY_SOURCE_BINDING_V1.yaml
+
+effect_boundary:
+  changes_existing_commonality_matrix: false
+  canonical_effect: false
+  promotes_GOD_model: false

@@ -1,0 +1,88 @@
+schema_version: on-theo.nonabrahamic-comparison-readiness.v7
+status: NON_CANONICAL_RESEARCH_AUDIT
+supersedes_for_current_research:
+  - synthesis/NON_ABRAHAMIC_COMPARISON_READINESS_V6.yaml
+
+comparison_control:
+  branch: audit/synthesis-comparison-eligibility-v1-20260919
+  head: 809edc937be9a42f1fd76e00e5eadb0a8b9ebe9d
+
+lanes:
+  - id: buddhism
+    source_head: 1c6c7a9a35901a529d377e1bd6fb86a88c1cdbe9
+    draft_pr: 97
+    status: BOUNDED_READY_STRENGTHENED
+    broad_ready: false
+
+  - id: hindu
+    source_head: 0c3123f4f1cf03e6f6a29ca0d0eb7edfddff5e75
+    draft_pr: 98
+    status: BOUNDED_PARTIAL_STRENGTHENED
+    broad_ready: false
+
+  - id: daoism
+    source_head: 483d1bcaebb57a00cda5eb30c15bc3908fdac438
+    draft_pr: 99
+    status: BOUNDED_PARTIAL_STRENGTHENED
+    broad_ready: false
+
+  - id: shinto
+    source_head: 31b67b5a0aec7015878e5fcf9de2936db80cf83b
+    draft_pr: 100
+    status: BOUNDED_PARTIAL
+    admitted_layers:
+      - KOJIKI_712
+      - NIHON_SHOKI_720_AND_ALTERNATIVE_WRITINGS
+      - ENGISHIKI_NORITO
+      - SHRINE_MATERIAL_AND_INSTITUTIONAL_HISTORY
+      - MEDIEVAL_KAMI_BUDDHA_COMBINATION
+      - MEIJI_SEPARATION_AS_LATER_RECLASSIFICATION
+    broad_ready: false
+    blockers:
+      - Kiki_clause_level_variant_matrices
+      - Great_Purification_clause_table
+      - Fudoki_regional_variants
+      - shrine_archaeology_chronology
+      - medieval_school_specificity
+      - Kokugaku
+      - State_Shinto
+      - contemporary_practice
+
+  - id: sumerian
+    source_head: bd6b6572141dc2f48f2f104b8f25301662d4a06f
+    status: NOT_READY_AT_MASTER_HUB_LEVEL
+
+  - id: norse_asatru
+    source_head: 4af66d0bb3aa3f9bbfcd45fb52b400045b9d5339
+    status: NOT_READY
+
+holds:
+  direct_cross_tradition_convergence_or_transmission:
+    status: HOLD
+    applies_to:
+      - BUDDHISM
+      - HINDU
+      - DAOISM
+      - SHINTO
+    reason: >
+      Bounded internal readiness does not establish shared substrate, borrowing,
+      or independent convergence. Exact comparison units, chronology, contact,
+      semantics, evidence modes, and alternatives remain required.
+  perennialist_all_religions_matrix:
+    status: PROHIBITED_AT_CURRENT_EVIDENCE
+
+adjacent:
+  astrology:
+    role: METHOD_MECHANISM_EPISTEMIC_LANE
+    not_unitary_religion: true
+
+guards:
+  - INTERNAL_RECONSTRUCTION_PRECEDES_CROSS_TRADITION_COMPARISON
+  - VARIANT_ACCOUNT_NE_ERROR
+  - RITUAL_NE_DOCTRINE
+  - CULT_PRACTICE_NE_MYTH_TEXT
+  - PURITY_NE_MORAL_GUILT
+  - LATER_SYNTHESIS_NE_PRIMORDIAL_IDENTITY
+  - LATER_SEPARATION_NE_PRIMORDIAL_BASELINE
+  - BOUNDED_PARTIAL_NE_BROAD_READY
+  - SYSTEMS_ANALOGY_IS_DOWNSTREAM
