@@ -1,0 +1,98 @@
+schema_version: on-theo.hindu-neutral-axis-evidence.v2
+status: TEXT_AND_RITUAL_BOUNDED_EVIDENCE
+supersedes_for_current_research:
+  - traditions/hindu/neutral-axis-evidence-v1.yaml
+
+existing_textual_records_preserved:
+  - HIN-RV-ORIGIN-001
+  - HIN-BU-KARMA-001
+  - HIN-CHU-REBIRTH-001
+  - HIN-CHU-SELF-001
+
+new_records:
+  - id: HIN-VEDIC-RITUAL-001
+    evidence:
+      - RIGVEDA_RITUAL_CONTEXT
+      - SATAPATHA_BRAHMANA_2_1_1
+      - SATAPATHA_BRAHMANA_2_3_1
+      - SATAPATHA_BRAHMANA_12_4_1
+      - SRAUTA_SYNTHESIS
+    textual_layer:
+      - VEDIC_SAMHITA_CONTEXT
+      - BRAHMANA
+      - SRAUTA_SYSTEM
+    propositions:
+      - ritual_space_can_be_structured_by_multiple_sacred_fires
+      - Agnihotra_is_ordered_by_morning_evening_timing
+      - ritual_sequence_and_authorized_roles_matter
+      - ritual_disruption_can_have_prescribed_expiatory_response
+      - Soma_and_other_offerings_belong_to_differentiated_ritual_systems
+    supports_axes:
+      - RITUAL_ORDER_MODEL
+      - OFFERING_EXCHANGE_MODEL
+    confidence: bounded_high_for_textual_ritual_order
+    guards:
+      - RIGVEDIC_RITUAL_NE_LATER_SRAUTA_IDENTITY
+      - TEXTUAL_RITUAL_NE_ACTUAL_PERFORMANCE_BY_DEFAULT
+      - RITUAL_EFFECT_NE_ONE_CAUSAL_MECHANISM
+
+  - id: HIN-VEDIC-POLITICAL-001
+    evidence:
+      - SRAUTA_ROYAL_RITES
+      - KURU_SOVEREIGNTY_RITUAL_SCHOLARSHIP
+    propositions:
+      - ritual_can_legitimate_or_structure_sovereignty_in_specific_Vedic_contexts
+      - royal_rites_are_part_of_srauta_repertoire
+    supports_axes:
+      - POLITICAL_SACRALIZATION_MODEL
+    confidence: partial
+    guards:
+      - VEDIC_ROYAL_RITE_NE_TIMELESS_HINDU_KINGSHIP
+
+  - id: HIN-MATERIAL-BOUNDARY-001
+    evidence:
+      - CORNELL_1972_DOCUMENTARY_VEDIC_RITUAL
+    propositions:
+      - documented_modern_performance_uses_named_fire_altars_and_priestly_actions
+      - modern_documentation_does_not_prove_unbroken_ancient_performance
+    supports_axes:
+      - RITUAL_ORDER_MODEL
+    confidence: high_for_modern_documentation
+    guards:
+      - MODERN_PERFORMANCE_NE_ANCIENT_WITNESS
+      - FIRE_FEATURE_NE_VEDIC_ALTAR
+
+comparison_status:
+  KNOWLEDGE_OR_DISCLOSURE_MODEL: BOUNDED_READY
+  WORLD_ORIGIN_MODEL: BOUNDED_READY
+  MORAL_CAUSALITY_MODEL: BOUNDED_READY
+  CONTINUITY_MODEL: BOUNDED_READY
+  PERSON_OR_SELF_MODEL: PARTIAL_INTERPRETATION_CONTROLLED
+  CAUSAL_ORDER_TYPE: PARTIAL
+  WORLD_STATUS_MODEL: PARTIAL
+  POSTMORTEM_PATH_MODEL: BOUNDED_CONTEXT
+  KNOWLEDGE_OR_PRACTICE_DIFFERENTIATION_MODEL: BOUNDED_CONTEXT
+  RITUAL_ORDER_MODEL: BOUNDED_VEDIC_LAYER
+  OFFERING_EXCHANGE_MODEL: PARTIAL_VEDIC_LAYER
+  POLITICAL_SACRALIZATION_MODEL: PARTIAL_VEDIC_LAYER
+
+not_admitted:
+  - universal_creator_model
+  - universal_atman_equals_brahman
+  - maya_equals_simulation
+  - one_fixed_moksha_model
+  - avatar_equals_incarnation
+  - ancient_Vedic_archaeological_confirmation
+  - modern_practice_equals_unbroken_ancient_practice
+  - broad_Hindu_comparison_ready
+
+guards:
+  - VEDIC_SAMHITA_NE_EARLY_UPANISHAD
+  - EARLY_UPANISHAD_NE_LATER_VEDANTA
+  - SRAUTA_NE_ALL_HINDU_RITUAL
+  - ONE_PASSAGE_NE_ONE_TRADITION
+  - TRANSLATION_NE_UNDISPUTED_SEMANTICS
+  - TEXT_NE_PERFORMANCE
+  - MODERN_PERFORMANCE_NE_ANCIENT_WITNESS
+  - FIRE_FEATURE_NE_VEDIC_ALTAR
+  - SIMILARITY_NE_TRANSMISSION

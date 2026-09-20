@@ -1,0 +1,53 @@
+schema_version: on-theo.hindu-research-state.v4
+status: EARLY_TEXT_PLUS_VEDIC_RITUAL_LAYER
+parent_head: 0c3123f4f1cf03e6f6a29ca0d0eb7edfddff5e75
+parent_state: traditions/hindu/research-state-v3.yaml
+
+new_artifacts:
+  - traditions/hindu/vedic-ritual-order-packet-v1.md
+  - traditions/hindu/vedic-material-boundary-v1.md
+  - traditions/hindu/neutral-axis-evidence-v2.yaml
+
+new_evidence_layers:
+  - RIGVEDIC_RITUAL_CONTEXT
+  - SATAPATHA_BRAHMANA_RITUAL
+  - SRAUTA_SYSTEM
+  - DOCUMENTED_MODERN_VEDIC_RITUAL_WITH_ANTI_RETROJECTION_BOUNDARY
+
+axes_strengthened:
+  RITUAL_ORDER_MODEL: BOUNDED_VEDIC_LAYER
+  OFFERING_EXCHANGE_MODEL: PARTIAL
+  POLITICAL_SACRALIZATION_MODEL: PARTIAL
+
+existing_axes_preserved:
+  CONTINUITY_MODEL: CONTEXT_BOUND
+  MORAL_CAUSALITY_MODEL: CONTEXT_BOUND
+  PERSON_OR_SELF_MODEL: CONTEXT_BOUND_WITH_INTERPRETATION_CONTROL
+  SOCIAL_COSMOLOGY_MODEL: BOUNDED_SOURCE_SUPPORT
+  LIBERATION_OR_FINAL_TRANSFORMATION_MODEL: PARTIAL
+
+readiness:
+  broad_Hindu_comparison: false
+  bounded_axis_comparison: strengthened
+  ritual_order_comparison: true_for_Vedic_layer
+  archaeological_ritual_confirmation: false
+  Hindu_Buddhist_direct_comparison: still_blocked
+
+blockers:
+  - BU_4_4_recension_collation
+  - CHU_5_3_9_exact_chain_extraction
+  - BU_6_2_CHU_5_parallel_control
+  - Sanskrit_lexical_controls
+  - ancient_material_evidence_layer
+  - grihya_domestic_ritual_packet
+  - later_school_divergence
+
+guards:
+  - ISOLATED_APHORISM_NE_FULL_CONTEXT
+  - COMMENTARY_NE_PRIMARY_TEXT
+  - RIGVEDIC_RITUAL_NE_LATER_SRAUTA_IDENTITY
+  - TEXTUAL_RITUAL_NE_HISTORICAL_PERFORMANCE
+  - MODERN_PERFORMANCE_NE_ANCIENT_WITNESS
+  - REBIRTH_NE_ONE_UNIVERSAL_MECHANISM
+  - CROSS_TEXT_PARALLEL_NE_TRANSMISSION
+  - EARLY_UPANISHAD_NE_LATER_VEDANTA
