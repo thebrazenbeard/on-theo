@@ -1,0 +1,71 @@
+schema_version: on-theo.ifa-geomantic-contact-evidence.v1
+status: CONTACT_HYPOTHESIS_BOUNDED_NOT_TRANSMISSION_PROVED
+
+records:
+  - id: IFA-GEO-FORM-001
+    evidence:
+      - BARBER_ROUTLEDGE_IFA
+      - BASCOM_IFA_DIVINATION
+      - DANFULANI_SIXTEEN_FIGURE_DIVINATION
+    evidence_class: SCHOLARLY_INTERPRETATION
+    propositions:
+      - sixteen_four_position_binary_figure_architecture_is_shared_across_multiple_geomantic_systems
+      - Arabic_Islamic_geomancy_is_a_serious_historical_comparison_and_diffusion_hypothesis
+    supports:
+      - CONTACT_AND_REINTERPRETATION_MODEL_PARTIAL
+      - TRANSMISSION_HYPOTHESIS
+    confidence: HIGH_FOR_RESEMBLANCE_MODERATE_FOR_DIRECTION
+
+  - id: IFA-GEO-BASCOM-001
+    source: BASCOM_IFA_DIVINATION
+    evidence_class: SCHOLARLY_ETHNOGRAPHIC_INTERPRETATION
+    propositions:
+      - Bascom_does_not_treat_shared_structure_as_sufficient_to_settle_ultimate_origin
+      - Ifa_and_Islamic_geomancy_differ_in_names_order_procedure_verse_and_ritual_context
+      - local_Yoruba_Muslim_sand_divination_is_distinguished_from_Ifa
+    supports:
+      - NEGATIVE_TRANSMISSION_CONTROL
+    confidence: HIGH
+
+  - id: IFA-GEO-ATIMI-001
+    source: BASCOM_IFA_DIVINATION
+    evidence_class:
+      - HISTORICAL_RECONSTRUCTION
+      - SCHOLARLY_ETHNOGRAPHY
+    propositions:
+      - Islamic_sand_divination_with_Arabic_figure_names_is_documented_among_Yoruba_Muslim_diviners
+      - observed_system_is_distinct_from_Ifa
+    supports:
+      - CONTACT_POSSIBILITY
+      - CONTACT_AND_REINTERPRETATION_MODEL
+    confidence: BOUNDED_HIGH
+
+  - id: IFA-GEO-CORPUS-001
+    source: BARBER_ROUTLEDGE_IFA
+    evidence_class: SCHOLARLY_INTERPRETATION
+    propositions:
+      - poetic_corpus_attached_to_Ifa_is_distinctively_Yoruba
+      - corpus_is_not_established_as_borrowed_from_Arabic_geomancy
+    supports:
+      - DOCUMENTARY_MEMORY_MODEL
+      - NEGATIVE_TRANSMISSION_CONTROL
+    confidence: HIGH_FOR_DISTINCTIVE_CORPUS
+
+transmission_state:
+  shared_form: STRONG
+  contact_possible: YES
+  historical_relation_possible: YES
+  exact_carrier: UNKNOWN
+  exact_date: UNKNOWN
+  direction: NOT_ESTABLISHED
+  direct_Arabic_origin_of_Ifa: NOT_ESTABLISHED
+  Arabic_origin_of_Ifa_poetic_corpus: NOT_ESTABLISHED
+  local_Islamic_geomancy_contact: BOUNDED_ESTABLISHED
+
+axis_status:
+  CONTACT_AND_REINTERPRETATION_MODEL: PARTIAL_FORM_CONTACT_HYPOTHESIS
+  DOCUMENTARY_MEMORY_MODEL: BOUNDED_YORUBA_CORPUS_INDEPENDENT_OF_FORM_ORIGIN_CLAIM
+  CROSS_TRADITION_COMPARISON: HOLD
+
+guards:
+  - TRANSMISSION_CLAIM_DECOMPOSED_BY_FEATURE
