@@ -1,0 +1,32 @@
+schema_version: on-theo.norse-research-state.v4
+status: ANCIENT_NORSE_PLUS_MODERN_HEATHEN_SUCCESSOR_LAYER_ACTIVE
+supersedes_for_current_research:
+  - traditions/norse/research-state-v3.yaml
+
+branch:
+  name: research/norse-witness-material-v1-20260920
+  pr: 101
+
+new_artifacts:
+  - traditions/norse/modern-heathenry-successor-packet-v1.md
+  - traditions/norse/modern-heathenry-evidence-v1.yaml
+  - traditions/norse/modern-heathenry-comparison-readiness-audit-v1.yaml
+
+ancient_norse_state:
+  exact_prior_head: 22e9fe10d1647a66458c54478c86e7ba6abd83ce
+  comparison_status: PRESERVED
+
+modern_heathenry_state:
+  REVIVAL_RECONSTRUCTION_MODEL: BOUNDED_MULTI_ORGANIZATION
+  CONTINUITY_MODEL: BOUNDED_INTERRUPTED_REVIVAL
+  RITUAL_ORDER_MODEL: BOUNDED_CURRENT
+  INSTITUTIONALIZATION_MODEL: BOUNDED_CURRENT
+  AGENCY_AND_AUTHORITY_MODEL: BOUNDED_CURRENT
+  SACRAL_PRESENCE_MODEL: BOUNDED_CURRENT
+  SACRED_TIME_CALENDAR_MODEL: PARTIAL_ICELANDIC
+
+next_portfolio_frontier: ORIGINAL_WORLD_EXPANSION_QUEUE_COMPLETION_AUDIT_V1
+
+guards:
+  - ANCIENT_AND_MODERN_LAYERS_REMAIN_SEPARATE
+  - MODERN_INNOVATION_NE_ANCIENT_EVIDENCE
