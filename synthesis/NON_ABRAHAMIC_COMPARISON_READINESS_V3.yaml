@@ -1,0 +1,81 @@
+schema_version: on-theo.nonabrahamic-comparison-readiness.v3
+status: NON_CANONICAL_RESEARCH_AUDIT
+supersedes_for_current_research:
+  - synthesis/NON_ABRAHAMIC_COMPARISON_READINESS_V2.yaml
+
+comparison_control:
+  branch: audit/synthesis-comparison-eligibility-v1-20260919
+  head: 809edc937be9a42f1fd76e00e5eadb0a8b9ebe9d
+
+lanes:
+  - id: buddhism
+    source_branch: research/buddhist-neutral-axis-primary-sources-v1-20260920
+    source_head: 1c6c7a9a35901a529d377e1bd6fb86a88c1cdbe9
+    draft_pr: 97
+    status: BOUNDED_READY_STRENGTHENED
+    broad_ready: false
+
+  - id: hindu
+    source_branch: research/hindu-rigvedic-upanishadic-proposition-v1-20260920
+    source_head: 0ee28684c0d0f92b90e5c0092cfd87fe5ee6ffd3
+    draft_pr: 98
+    status: BOUNDED_PARTIAL
+    admitted:
+      - RV_10_129_WORLD_ORIGIN_AND_EPISTEMIC_LIMIT
+      - BU_4_4_5_ACTION_DESIRE_RESOLVE_BECOMING
+      - CHU_5_10_7_CONDUCT_AND_REBIRTH
+      - CHU_6_8_7_SELF_ESSENCE_WITH_TRANSLATION_DISPUTE
+    broad_ready: false
+    blockers:
+      - material_evidence_layer
+      - ritual_practice_layer
+      - recension_bound_BU_4_4_context
+      - broader_CHU_5_rebirth_unit
+      - broader_CHU_6_self_essence_unit
+      - lexical_controls
+      - later_school_divergence
+
+  - id: sumerian
+    source_branch: sumerian
+    source_head: bd6b6572141dc2f48f2f104b8f25301662d4a06f
+    status: NOT_READY_AT_MASTER_HUB_LEVEL
+
+  - id: daoism
+    source_branch: taoism
+    source_head: 30de6433ab2bdce86b88fcdad1a3134084ed39ab
+    status: NOT_READY
+
+  - id: shinto
+    source_branch: shinto
+    source_head: a578729a2e3cec02fe533c3c1d20946347da9aa4
+    status: NOT_READY
+
+  - id: norse_asatru
+    source_branch: asatru
+    source_head: 4af66d0bb3aa3f9bbfcd45fb52b400045b9d5339
+    status: NOT_READY
+
+adjacent_lanes:
+  - id: astrology
+    branch: astrology
+    role: METHOD_MECHANISM_EPISTEMIC_LANE
+    status: NOT_A_UNITARY_RELIGION_ADMISSION
+
+project_state:
+  broad_nonabrahamic_expansion_allowed: false
+  bounded_Buddhist_comparison_allowed: true
+  bounded_Hindu_comparison_allowed: true
+  Hindu_Buddhist_direct_comparison_allowed: false
+  reason_Hindu_Buddhist_hold: >
+    Internal bounded readiness does not establish a shared-substrate or
+    transmission comparison. Exact propositions, chronology, contact, semantic
+    units, and alternative models must be defined first.
+  perennialist_all_religions_matrix_allowed: false
+
+guards:
+  - BOUNDED_PARTIAL_NE_BROAD_READY
+  - ONE_HYMN_NE_ONE_TRADITION
+  - ONE_UPANISHAD_NE_ONE_HINDU_METAPHYSICS
+  - TRANSLATION_DISPUTE_MUST_REMAIN_VISIBLE
+  - INTERNAL_RECONSTRUCTION_PRECEDES_CROSS_TRADITION_COMPARISON
+  - SYSTEMS_ANALOGY_IS_DOWNSTREAM
