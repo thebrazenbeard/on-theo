@@ -1,0 +1,29 @@
+schema_version: on-theo.maya-research-state.v7
+status: FOUNDATION_READY_FOR_COMPARISON_READINESS_AUDIT
+supersedes_for_current_research:
+  - traditions/maya/research-state-v6.yaml
+
+branch:
+  name: research/maya-diachronic-v1-20260920
+  pr: 105
+
+new_artifacts:
+  household_packet: traditions/maya/household-material-counter-lane-v1.md
+  household_evidence: traditions/maya/household-material-evidence-v1.yaml
+
+foundation_layers_completed:
+  - KICHE_POPOL_WUJ_COLONIAL_WITNESS
+  - CLASSIC_YAXCHILAN_EPIGRAPHIC_RITUAL
+  - LATE_POSTCLASSIC_DRESDEN_RITUAL_CALENDAR
+  - LIVING_MAYA_SACRED_TIME_MULTI_COMMUNITY
+  - KICHE_CHICHICASTENANGO_CONTACT_COFRA DIA
+  - PRECLASSIC_CLASSIC_HOUSEHOLD_MATERIAL_COUNTER_LANE
+
+next_frontier:
+  primary: MAYA_COMPARISON_READINESS_AUDIT_V1
+
+guards:
+  - SOCIAL_LOCATION_REQUIRED
+  - COMMUNITY_LANGUAGE_REGION_AND_PERIOD_REQUIRED
+  - CLASSIC_NE_POSTCLASSIC_NE_COLONIAL_NE_LIVING
+  - COMPARISON_READY_NE_TRADITION_COMPLETE
