@@ -1,0 +1,44 @@
+schema_version: on-theo.yoruba-ifa-research-state.v1
+status: DIACHRONIC_FOUNDATION_ACTIVE
+
+branch:
+  name: research/yoruba-ifa-diachronic-v1-20260920
+  base_branch: corpus/global-expansion-queue-v1-20260917
+  base_head: cd588c7cabc210f8ae8eb43c148170872aa4b9ac
+
+artifacts:
+  boundary: traditions/yoruba-ifa/diachronic-source-boundary-v1.md
+  source_map: traditions/yoruba-ifa/source-map-v1.md
+  foundation: traditions/yoruba-ifa/diachronic-foundation-packet-v1.md
+  neutral_axis: traditions/yoruba-ifa/neutral-axis-evidence-v1.yaml
+
+current_secure_results:
+  - Yoruba_religion_is_diachronic_not_timeless
+  - Ifa_is_not_all_Yoruba_religion
+  - Ifa_has_256_figure_formal_structure_plus_large_adaptive_oral_corpus
+  - babalawo_specialist_interpretation_is_publicly_attested
+  - oral_corpus_and_material_divination_technology_are_distinct_evidence_modes
+  - Yoruba_pantheon_is_historically_emergent
+  - diaspora_traditions_require_independent_reconstruction
+
+current_holds:
+  - CROSS_TRADITION_COMPARISON
+  - WORLD_ORIGIN_MODEL
+  - PERSON_OR_SELF_MODEL
+  - FATE_CONSTRAINT_MODEL
+  - OFFERING_EXCHANGE_MODEL
+  - MORTUARY_RELATIONSHIP_MODEL
+  - ONE_FIXED_ORISA_PANTHEON
+
+next_frontier:
+  primary: IFA_ORAL_CORPUS_DOCUMENTARY_MEMORY_PACKET_V1
+  subsequent:
+    - YORUBA_RELATIONAL_ORISA_ANCESTOR_PACKET_V1
+    - IFA_KNOWLEDGE_AUTHORITY_PACKET_V1
+    - IFA_GEOMANTIC_CONTACT_HYPOTHESIS_PACKET_V1
+    - YORUBA_CONTACT_DIASPORA_BOUNDARY_V1
+    - YORUBA_IFA_COMPARISON_READINESS_AUDIT_V1
+
+guards:
+  - INTERNAL_RECONSTRUCTION_BEFORE_COMPARISON
+  - PUBLIC_STRUCTURE_NE_TOTAL_SACRED_CORPUS
