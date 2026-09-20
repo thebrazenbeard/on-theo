@@ -1,0 +1,139 @@
+schema_version: on_theo.marcion_primary_witness_control.v1
+status: BOUNDED_RESEARCH_PACKET_REVIEW_REQUIRED
+canonical: false
+
+base:
+  branch: corpus/early-christian-rabbinic-v1-20260917
+  exact_head: 5a45ef5cdadc1f1f3a21e769e2d613c4ed945d8d
+
+subject:
+  tradition: early_christianity
+  focus: marcionite_scripture_and_source_criticism
+
+sources:
+  - id: MRC-SRC-IRENAEUS-AH-1-27
+    evidence_class: PRIMARY_TEXT
+    role: hostile_heresiological_witness
+    approximate_period: late_second_century
+    direct_marcionite_manuscript: false
+    url: https://www.newadvent.org/fathers/0103127.htm
+    admitted_for:
+      - marcionite_luke_related_gospel_report
+      - marcionite_pauline_text_report
+      - creator_higher_god_report
+    ceiling: STRONG_FOR_IRENAEAN_REPORT
+
+  - id: MRC-SRC-TERTULLIAN-AM-IV
+    evidence_class: PRIMARY_TEXT
+    role: hostile_polemical_textual_witness
+    approximate_period: early_third_century
+    direct_marcionite_manuscript: false
+    url: https://www.newadvent.org/fathers/03124.htm
+    admitted_for:
+      - extensive_lukan_overlap
+      - passage_level_marcionite_gospel_testimony
+      - tertullians_editorial_direction_claim
+    ceiling: STRONG_BUT_MEDIATED
+
+  - id: MRC-SRC-TERTULLIAN-AM-V
+    evidence_class: PRIMARY_TEXT
+    role: hostile_polemical_textual_witness
+    approximate_period: early_third_century
+    direct_marcionite_manuscript: false
+    url: https://www.newadvent.org/fathers/03125.htm
+    admitted_for:
+      - pauline_collection_use
+      - pastoral_epistles_exclusion_in_tertullians_witness
+      - passage_level_apostolikon_testimony
+    ceiling: STRONG_BUT_MEDIATED
+
+  - id: MRC-SCH-ROTH-2009-2015
+    evidence_class: SCHOLARLY_INTERPRETATION
+    role: reconstruction_methodology
+    url: https://era.ed.ac.uk/items/e135efd3-267d-4610-9f96-fc7e9015d169
+    admitted_for:
+      - no_complete_extant_marcion_gospel_copy
+      - witness_specific_reconstruction_method
+      - local_confidence_requirement
+    ceiling: SCHOLARLY_METHOD_CONTROL
+
+  - id: MRC-SCH-KLINGHARDT-2006
+    evidence_class: SCHOLARLY_INTERPRETATION
+    role: reverse_priority_hypothesis
+    url: https://www.cambridge.org/core/journals/new-testament-studies/article/abs/markion-vs-lukas-pladoyer-fur-die-wiederaufnahme-eines-alten-falles/5AEB03E63A09382F9A3DB99192D3F58F
+    admitted_for:
+      - existence_of_serious_reverse_direction_hypothesis
+    ceiling: CONTESTED_HYPOTHESIS
+
+claims:
+  - id: MRC-V1-001
+    proposition: Marcionite Christians used a Gospel and Pauline collection as authoritative Christian texts.
+    class: HISTORICAL_RECONSTRUCTION
+    confidence: strong
+    status: BOUNDED
+    support:
+      - MRC-SRC-IRENAEUS-AH-1-27
+      - MRC-SRC-TERTULLIAN-AM-IV
+      - MRC-SRC-TERTULLIAN-AM-V
+
+  - id: MRC-V1-002
+    proposition: The Marcionite Gospel had extensive overlap with Luke.
+    class: HISTORICAL_RECONSTRUCTION
+    confidence: strong
+    status: BOUNDED
+    support:
+      - MRC-SRC-IRENAEUS-AH-1-27
+      - MRC-SRC-TERTULLIAN-AM-IV
+
+  - id: MRC-V1-003
+    proposition: Canonical Luke directly preceded and was cut down to create the Marcionite Gospel.
+    class: HISTORICAL_RECONSTRUCTION
+    confidence: unresolved
+    status: UNKNOWN
+    support:
+      - MRC-SRC-IRENAEUS-AH-1-27
+      - MRC-SRC-TERTULLIAN-AM-IV
+      - MRC-SCH-ROTH-2009-2015
+      - MRC-SCH-KLINGHARDT-2006
+    note: Ancient witnesses assert this direction; modern text-critical direction remains disputed.
+
+  - id: MRC-V1-004
+    proposition: The Marcionite Gospel directly preceded canonical Luke.
+    class: HISTORICAL_RECONSTRUCTION
+    confidence: unresolved
+    status: UNKNOWN
+    support:
+      - MRC-SCH-KLINGHARDT-2006
+      - MRC-SCH-ROTH-2009-2015
+    note: Admitted as a scholarly hypothesis, not project fact.
+
+  - id: MRC-V1-005
+    proposition: Marcionite teaching distinguished the creator associated with law and prophets from a higher God revealed by Christ.
+    class: HISTORICAL_RECONSTRUCTION
+    confidence: moderate_to_strong
+    status: BOUNDED
+    support:
+      - MRC-SRC-IRENAEUS-AH-1-27
+      - MRC-SRC-TERTULLIAN-AM-IV
+
+  - id: MRC-V1-006
+    proposition: Marcion single-handedly created the New Testament canon.
+    class: HISTORICAL_RECONSTRUCTION
+    confidence: unsupported_at_this_strength
+    status: NOT_ADMITTED
+    support: []
+    note: Historical relevance to canon formation may be studied without monocausal promotion.
+
+guards:
+  - MARCION_LOST_TEXT_NE_PATRISTIC_REPORT
+  - PATRISTIC_MUTILATION_CHARGE_NE_ESTABLISHED_EDITORIAL_DIRECTION
+  - RECONSTRUCTION_NE_MANUSCRIPT_WITNESS
+  - ABSENCE_FROM_POLEMICAL_CITATION_NE_CERTAIN_ABSENCE_FROM_SOURCE
+  - SCRIPTURAL_RESTRICTION_NE_NO_SCRIPTURE
+  - CANON_RELEVANCE_NE_MONOCAUSAL_CANON_CREATION
+
+next_scope:
+  - EPIPHANIUS_PANARION_42_EXACT_WITNESS_PACKET
+  - ADAMANTIUS_DIALOGUE_EXACT_WITNESS_PACKET
+  - EVANGELION_SELECTED_LOCUS_WITNESS_MATRIX
+  - APOSTOLIKON_LETTER_ORDER_WITNESS_MATRIX
