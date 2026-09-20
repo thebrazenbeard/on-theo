@@ -1,0 +1,56 @@
+schema_version: on-theo.hindu-research-state.v5
+status: EARLY_TEXT_PLUS_VEDIC_RITUAL_AND_ACOUSTIC_ERROR_LAYER
+parent_head: 614fa715fcacee0d7ec1ba573061d3e776e708d3
+parent_state: traditions/hindu/research-state-v4.yaml
+
+new_artifacts:
+  - traditions/hindu/vedic-accent-error-packet-v1.md
+  - traditions/hindu/neutral-axis-evidence-v3.yaml
+
+new_source_loci:
+  - TAITTIRIYA_SAMHITA_2_4_12_1
+  - SATAPATHA_BRAHMANA_1_6_3_8_10
+  - PANINIYA_SIKSA_TRADITIONAL_VERSE_52
+  - PATANJALI_MAHABHASYA_FIRST_AHNIKA
+
+new_axes:
+  ACOUSTIC_PARAMETER_SENSITIVITY_MODEL: BOUNDED_VEDIC_TEXTUAL
+  RITUAL_ERROR_MODEL: BOUNDED_VEDIC
+  SEMANTIC_ACOUSTIC_COUPLING_MODEL: BOUNDED
+
+strongest_new_results:
+  - >
+    Selected Vedic sources preserve an accent-error tradition in which
+    acoustic/phonological form is represented as consequential.
+  - >
+    Accent can alter linguistic interpretation, so acoustic form is not
+    semantically neutral in the strongest source case.
+  - >
+    Vedic ritual speech uses context-sensitive recitational modes; one universal
+    pitch/acoustic protocol is rejected.
+  - >
+    No empirical external effect of accentual precision is established.
+
+comparison_contribution:
+  ritual_interface_parameter_sensitivity:
+    status: HIGH_INFORMATION_SOURCE_PACKET
+    claim_ceiling: >
+      Historical acoustic parameter sensitivity and error representation only;
+      no hidden-interface or anomalous-effect promotion.
+
+next_frontiers:
+  - exact_critical_text_and_translation_collation_for_TS_2_4_12_1
+  - exact_critical_text_and_translation_collation_for_SB_1_6_3_8_10
+  - Panini_1_2_34_ekasruti_context_control
+  - Vedic_recitation_role_mode_matrix
+  - mantra_semantic_acoustic_independence_test
+  - later_Tantric_mantra_packet_kept_separate
+
+guards:
+  - MISACCENT_NARRATIVE_NE_EMPIRICAL_CAUSATION
+  - ACCENT_CHANGES_MEANING_NE_SOUND_ALONE_CAUSES_EFFECT
+  - ONE_RECITATION_MODE_NE_ALL_VEDIC_RITUAL
+  - VEDIC_NE_ALL_HINDU
+  - LATER_RECEPTION_NE_EARLY_SOURCE
+  - MODERN_RECITATION_NE_ANCIENT_WITNESS
+  - ACOUSTIC_EXACTNESS_NE_HIDDEN_INTERFACE
