@@ -1,0 +1,122 @@
+schema_version: on-theo.norse-neutral-axis-evidence.v1
+status: BOUNDED_MEDIEVAL_MATERIAL_MODERN_SEPARATED
+parent_branch: asatru
+parent_head: 4af66d0bb3aa3f9bbfcd45fb52b400045b9d5339
+
+records:
+  - id: NOR-VOL-WITNESS-001
+    evidence:
+      - CODEX_REGIUS_GKS2365
+      - HAUKSBOK_AM544
+      - SNORRI_QUOTATIONS
+    propositions:
+      - Voluspa_exists_in_multiple_medieval_witness_forms
+      - modern_editions_are_reconstructions
+      - manuscript_date_ne_composition_date
+    supports:
+      - TEXTUAL_TRANSMISSION_CONTROL
+
+  - id: NOR-VOL-ORIGIN-001
+    source: VOLUSPA_STANZAS_3_4
+    propositions:
+      - primordial_absence_of_earth_sea_heaven_in_poetic_frame
+      - Ginnungagap
+      - world_shaping_by_sons_of_Burr
+    supports:
+      - WORLD_ORIGIN_MODEL
+      - CAUSAL_ORDER_TYPE
+
+  - id: NOR-VOL-HUMAN-001
+    source: VOLUSPA_STANZAS_17_20
+    propositions:
+      - Ask_Embla_initially_lack_key_capacities
+      - divine_gifts_supply_capacities
+      - Ask_Embla_described_as_fateless_before_assignment
+      - Norns_lay_laws_choose_lives_assign_destinies
+    supports:
+      - PERSON_OR_SELF_MODEL
+      - AGENCY_AND_AUTHORITY_MODEL
+      - FATE_CONSTRAINT_MODEL
+
+  - id: NOR-VOL-ESCH-001
+    source: VOLUSPA_LATER_SEQUENCE
+    propositions:
+      - world_scale_crisis_and_divine_deaths
+      - renewed_world_after_destruction
+      - Baldr_return_in_renewal_horizon
+    supports:
+      - WORLD_TERMINUS_RENEWAL_MODEL
+      - TRANSFORMATION_MODEL
+      - CONTINUITY_MODEL
+    guard: Ragnarok_ne_Christian_Apocalypse_by_default
+
+  - id: NOR-TISSO-001
+    evidence: TISSO_ARCHAEOLOGICAL_COMPLEX
+    propositions:
+      - multiple_ritual_loci
+      - object_deposition
+      - feasting_and_animal_bone_evidence
+      - possible_cult_structures
+      - Thor_hammer_and_valkyrie_amulets
+    supports:
+      - RITUAL_ORDER_MODEL
+      - SACRAL_PRESENCE_MODEL
+      - INSTITUTIONALIZATION_MODEL
+      - OFFERING_EXCHANGE_MODEL
+
+  - id: NOR-CONVERSION-001
+    evidence:
+      - TREND_CROSS_HAMMER_MOULD
+      - JELLING_TRANSITION_CONTEXT
+      - MIXED_SYMBOL_MATERIAL
+    propositions:
+      - Christian_and_old_religious_symbols_coexisted
+      - conversion_was_not_instantaneous
+    supports:
+      - CONTACT_AND_REINTERPRETATION_MODEL
+
+  - id: NOR-MODERN-001
+    evidence:
+      - ASATRUARFELAGID_OFFICIAL
+    propositions:
+      - organization_founded_1972
+      - legally_recognized_1973
+      - sidfesta_current_form_acknowledged_as_modern_not_known_ancient_rite
+    supports:
+      - REVIVAL_RECONSTRUCTION_MODEL
+      - INSTITUTIONALIZATION_MODEL
+
+candidate_axes:
+  FATE_CONSTRAINT_MODEL:
+    question: >
+      What destinies, decrees, prophecies, inherited conditions, or structural
+      constraints bind agents, and how does agency operate under them?
+  WORLD_TERMINUS_RENEWAL_MODEL:
+    question: >
+      Does a source describe world-scale crisis, destruction, renewal,
+      recurrence, finality, or survival, and what continues through it?
+  OFFERING_EXCHANGE_MODEL:
+    question: >
+      What is offered, to whom or what, through what mediator, for what outcome,
+      and how reciprocal is the relationship represented?
+  REVIVAL_RECONSTRUCTION_MODEL:
+    question: >
+      How does a modern community reconstruct, innovate, and reinterpret an
+      older religious corpus under modern conditions?
+
+readiness:
+  bounded_Norse_comparison: true
+  broad_preChristian_Norse_synthesis: false
+  modern_Asatru_separate: true
+
+guards:
+  - MEDIEVAL_WITNESS_NE_VIKING_AGE_MANUSCRIPT
+  - MODERN_NORMALIZED_VOLUSPA_NE_ONE_MANUSCRIPT
+  - SNORRI_NE_TRANSPARENT_PAGAN_TRANSCRIPT
+  - ICELANDIC_EVIDENCE_NE_PAN_SCANDINAVIAN_BY_DEFAULT
+  - FATE_NE_TOTAL_DETERMINISM_BY_DEFAULT
+  - RAGNAROK_NE_CHRISTIAN_APOCALYPSE_BY_DEFAULT
+  - OBJECT_ICONOGRAPHY_NE_ONE_SECURE_MYTHIC_SCENE
+  - MATERIAL_COEXISTENCE_NE_INNER_BELIEF_CERTAINTY
+  - MODERN_ASATRU_NE_UNBROKEN_DIRECT_SURVIVAL
+  - MODERN_INNOVATION_NE_HISTORIC_RITUAL
