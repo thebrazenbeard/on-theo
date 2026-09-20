@@ -1,0 +1,61 @@
+schema_version: on-theo.comparison-coverage-audit.v7
+status: NON_CANONICAL_METHOD_AUDIT
+supersedes_for_current_research:
+  - synthesis/COMPARISON_COVERAGE_AUDIT_V6.yaml
+matrix: synthesis/BOUNDED_NEUTRAL_COMPARISON_MATRIX_V7.yaml
+lane_count: 6
+
+coverage:
+  CAUSAL_ORDER_TYPE:
+    admitted_total: 6
+  CONTINUITY_MODEL:
+    admitted_total: 6
+  RITUAL_ORDER_MODEL:
+    admitted_total: 6
+  PERSON_OR_SELF_MODEL:
+    admitted_total: 6
+  CONTACT_AND_REINTERPRETATION_MODEL:
+    admitted_total: 4
+    includes_positive_transmission_control: true
+    includes_negative_borrowing_control: true
+  POLITICAL_SACRALIZATION_MODEL:
+    admitted_total: 4
+    bounded: 2
+    partial: 2
+    not_admitted: 2
+    exact_rebinding_complete: true
+    cross_tradition_test_complete: true
+  WORLD_ORIGIN_MODEL:
+    admitted_total: 4
+  MORTUARY_RELATIONSHIP_MODEL:
+    admitted_total: 3
+
+cross_lane_ready_now:
+  - CAUSAL_ORDER_TYPE
+  - CONTINUITY_MODEL
+  - RITUAL_ORDER_MODEL
+  - PERSON_OR_SELF_MODEL
+  - CONTACT_AND_REINTERPRETATION_MODEL
+  - POLITICAL_SACRALIZATION_MODEL
+
+next_cross_lane_candidate:
+  - WORLD_ORIGIN_MODEL
+
+political_method_conclusions:
+  - political_sacralization_is_an_axis_not_one_mechanism
+  - divine_authorization_ritual_legitimation_religious_governance_and_genealogical_legitimation_must_remain_distinct
+  - evidence_modes_are_heterogeneous
+  - Buddhism_and_Norse_remain_unfilled_without_source_specific_admission
+
+next_discriminating_frontiers:
+  - WORLD_ORIGIN_CROSS_TRADITION_TEST
+  - DAOIST_DUREN_JING_LOAN_VOCABULARY
+  - DAOIST_HUAHU_PRIMARY_FRAGMENT_MAP
+  - SHINTO_PRIMARY_HUMAN_SPIRIT_LINE_BINDING
+  - BUDDHIST_STUPA_RELIC_AND_LAY_RITUAL
+
+guards:
+  - COVERAGE_IS_NOT_IMPORTANCE
+  - DO_NOT_RESEARCH_MERELY_TO_FILL_CELLS
+  - SHARED_AXIS_NE_SHARED_MECHANISM
+  - SHARED_MECHANISM_NE_SHARED_ORIGIN
