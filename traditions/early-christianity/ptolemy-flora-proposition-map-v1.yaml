@@ -1,0 +1,92 @@
+schema_version: on_theo.ptolemy_flora_proposition_map.v1
+status: BOUNDED_PRIMARY_TEXT_MAP_REVIEW_REQUIRED
+canonical: false
+
+parent:
+  branch: research/heracleon-johannine-exegesis-v1-20260920
+  exact_head: 73321fe702a91af87b0ca293923bbfccdbeb41ca
+
+source:
+  id: VAL-SRC-PTOLEMY-FLORA
+  work: Letter to Flora
+  surviving_frame: Epiphanius_Panarion_33_3_1_to_33_7_10
+  evidence_class: PRIMARY_TEXT
+  transmission_frame: LATER_HERESIOLOGICAL_PRESERVATION
+  full_v1_readback_language: English_translation
+  fresh_greek_collation: false
+  greek_text_control:
+    basis: K_Holl_Epiphanius_edition
+    checked_via: UC_Press_publication_introduction
+
+claims:
+  - id: FLORA-V1-001
+    proposition: Ptolemy rejects both total attribution of Mosaic law to the perfect Father and total attribution to the Devil.
+    status: BOUNDED
+    confidence: strong_for_ptolemy
+
+  - id: FLORA-V1-002
+    proposition: Ptolemy distinguishes legislation of God, Moses, and the elders.
+    status: BOUNDED
+    confidence: strong_for_ptolemy
+    guard: PTOLEMAEAN_HERMENEUTIC_NE_MODERN_SOURCE_CRITICISM
+
+  - id: FLORA-V1-003
+    proposition: Ptolemy values the Decalogue as pure but incomplete legislation completed by the Savior.
+    status: BOUNDED
+    confidence: strong_for_ptolemy
+
+  - id: FLORA-V1-004
+    proposition: Ptolemy treats retaliation law as limited justice inferior to the highest Father's goodness.
+    status: BOUNDED
+    confidence: strong_for_ptolemy
+
+  - id: FLORA-V1-005
+    proposition: Ptolemy spiritualizes offerings, circumcision, Sabbath, fasting, Passover, and related ritual legislation.
+    status: BOUNDED
+    confidence: strong_for_ptolemy
+
+  - id: FLORA-V1-006
+    proposition: Ptolemy's letter claims that external fasting is also practiced among the group denoted by "us."
+    status: PARTIAL
+    confidence: moderate
+    class: HISTORICAL_RECONSTRUCTION
+    guard: TEXTUAL_CLAIM_OF_PRACTICE_NE_MATERIAL_CONFIRMATION
+
+  - id: FLORA-V1-007
+    proposition: Ptolemy uses distinct fulfillment, abolition, and spiritual transformation mechanisms for different classes of law.
+    status: BOUNDED
+    confidence: strong_for_ptolemy
+
+  - id: FLORA-V1-008
+    proposition: Ptolemy presents his law theology through combined Savior sayings and Pauline exegesis.
+    status: BOUNDED
+    confidence: strong_for_ptolemy
+
+  - id: FLORA-V1-009
+    proposition: Ptolemy explicitly rejects identifying the creator-demiurge with the Devil.
+    status: BOUNDED
+    confidence: strong_for_ptolemy
+
+  - id: FLORA-V1-010
+    proposition: Ptolemy places the just demiurge hierarchically between the perfect Father and destructive adversary.
+    status: BOUNDED
+    confidence: strong_for_ptolemy
+
+  - id: FLORA-V1-011
+    proposition: Ptolemy claims an advanced apostolic tradition received by succession for deeper cosmological teaching.
+    status: BOUNDED
+    confidence: strong_as_self_claim
+    guard: CLAIMED_APOSTOLIC_SUCCESSION_NE_VERIFIED_APOSTOLIC_TRANSMISSION
+
+guards:
+  - PUBLIC_TRANSLATION_READBACK_NE_FRESH_CRITICAL_GREEK_COLLATION
+  - PTOLEMAEAN_HERMENEUTIC_NE_MODERN_PENTATEUCHAL_SOURCE_CRITICISM
+  - SPIRITUALIZATION_NE_TOTAL_RITUAL_ABOLITION
+  - TEXTUAL_CLAIM_OF_PRACTICE_NE_MATERIAL_OR_DOCUMENTARY_CONFIRMATION
+  - PTOLEMY_NE_ALL_VALENTINIANS
+  - CLAIMED_APOSTOLIC_SUCCESSION_NE_VERIFIED_APOSTOLIC_TRANSMISSION
+
+next_scope:
+  - GOSPEL_OF_PHILIP_RITUAL_SACRAMENT_PACKET
+  - EXCERPTA_EX_THEODOTO_PACKET
+  - PTOLEMY_HERACLEON_NONHARMONIZING_COMPARISON
