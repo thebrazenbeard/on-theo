@@ -1,0 +1,84 @@
+schema_version: on-theo.emerging-neutral-axis-schema.v2
+status: NON_CANONICAL_METHOD_DEVELOPMENT
+supersedes:
+  - synthesis/EMERGING_NEUTRAL_AXIS_SCHEMA_V1.yaml
+
+source_heads:
+  lakota: 8a9cee8335cadc742c9de25c90f4306702a80e8a
+  maya: 2b5907438334537842710a81886083b9cbd0241a
+  mexica_nahua: 00e37e475f3669ef2ee040908b126617ffcd17da
+  olmec: cac89f2e0024c00f71d2d2a835253328c451e7ce
+  dine: ac988c4a31f354e7c4d902d286c0c950293ffb8a
+  haudenosaunee: 506d95eb449bc4d11fc61dbe9c18ffca7ab94f5a
+  andean_inca: 355d808e5d55185d50f1dcabb53003635b88a23f
+
+axes:
+  RELATIONAL_ORDER_MODEL:
+    status: PROMOTED_FOR_EXPANDED_TESTS
+    neutral_question: >
+      How are persons, kin, more-than-human beings, land/place, community,
+      ecological processes, sacred powers and future generations constituted
+      through relations and obligations?
+
+  SACRED_LAND_PLACE_MODEL:
+    status: PROMOTED_FOR_EXPANDED_TESTS
+    neutral_question: >
+      How do places, territories, mountains, caves, waters, urban centers,
+      shrine networks and cultural landscapes participate in identity,
+      ceremony, law, sacred presence and obligation?
+    new_subtype:
+      - NETWORKED_RITUAL_LANDSCAPE
+
+  SACRED_TIME_CALENDAR_MODEL:
+    status: PROMOTED_FOR_EXPANDED_TESTS
+    neutral_question: >
+      How are astronomical, ecological, agricultural, ritual, divinatory,
+      historical and social cycles organized through sacred timekeeping?
+
+  KNOWLEDGE_GOVERNANCE_DIMENSION:
+    status: ADDED_TO_KNOWLEDGE_OR_DISCLOSURE_MODEL
+    neutral_question: >
+      Who may hold, transmit, record, access or disclose religious knowledge,
+      under what conditions?
+
+  DOCUMENTARY_MEMORY_MODEL:
+    status: PROMOTED_FOR_EXPANDED_TESTS
+    neutral_question: >
+      How are law, history, title, treaty, administration and collective memory
+      stabilized through oral, material, performative, mnemonic, pictorial,
+      cord-based and alphabetic documentary forms?
+    admitted_controls:
+      - HAUDENOSAUNEE_WAMPUM_ORAL_TREATY_MEMORY
+      - INCA_KHIPU_SPECIALIST_RECORD_PRACTICE
+    comparison_pressure_not_yet_full_cells:
+      - MAYA_MANUSCRIPT_AND_LIVING_ORAL_CONTEXT
+      - MEXICA_NAHUA_PICTORIAL_NAHUATL_SPANISH_IMAGE_ARCHIVES
+    guards:
+      - DOCUMENTARY_NE_ALPHABETIC_ONLY
+      - MATERIAL_RECORD_NE_FULLY_DECIPHERED_TEXT
+      - MEMORY_STABILIZATION_NE_SEMANTIC_IDENTITY
+
+  SACRIFICE_AND_BODILY_OFFERING_MODEL:
+    status: PROMOTED_FOR_EXPANDED_TESTS
+    neutral_question: >
+      How are bodies, bodily substances, living beings or human lives offered,
+      transformed, displayed, transferred or killed in ritual, and how does
+      bodily sacrifice differ from non-bodily deposition?
+    admitted_controls:
+      - MEXICA_TEMPLO_MAYOR_BODILY_SACRIFICE_DOMAIN
+      - INCA_CAPACOCHA_CHILD_SACRIFICE
+    hold:
+      - OLMEC_INSUFFICIENTLY_BOUND
+    guards:
+      - BODILY_SACRIFICE_NE_ALL_OFFERING
+      - SHARED_SACRIFICE_AXIS_NE_SHARED_THEOLOGY
+      - HUMAN_SACRIFICE_NE_ONE_POLITICAL_MECHANISM
+
+  HUMAN_ORIGIN_OR_EMERGENCE_MODEL:
+    status: STRONG_CANDIDATE_NOT_YET_PROMOTED
+
+global_guards:
+  - SHARED_AXIS_QUESTION_NE_SHARED_ANSWER
+  - SHARED_AXIS_NE_SHARED_HISTORICAL_SOURCE
+  - SIMILARITY_NE_TRANSMISSION
+  - EVIDENCE_CEILING_REMAINS_TRADITION_SPECIFIC
