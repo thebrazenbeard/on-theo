@@ -1,0 +1,42 @@
+schema_version: on-theo.maya-research-state.v1
+status: DIACHRONIC_FOUNDATION_ACTIVE
+
+branch:
+  name: research/maya-diachronic-v1-20260920
+  base_branch: corpus/global-expansion-queue-v1-20260917
+  base_head: cd588c7cabc210f8ae8eb43c148170872aa4b9ac
+
+artifacts:
+  boundary: traditions/maya/diachronic-source-boundary-v1.md
+  source_map: traditions/maya/source-map-v1.md
+  foundation: traditions/maya/diachronic-foundation-packet-v1.md
+  neutral_axis: traditions/maya/neutral-axis-evidence-v1.yaml
+
+current_secure_results:
+  - Maya_research_requires_diachronic_regional_and_language_controls
+  - Classic_monumental_epigraphy_is_high_value_but_socially_selective
+  - surviving_Maya_codices_are_distinct_Postclassic_manuscripts_not_one_canon
+  - Popol_Wuj_is_Kiche_specific_and_survives_in_a_colonial_Ximenez_witness
+  - living_Maya_public_sources_must_be_treated_as_present_tense_evidence
+  - sacred_calendar_time_is_a_strong_new_axis_candidate
+
+current_holds:
+  - CROSS_TRADITION_COMPARISON
+  - PAN_MAYA_WORLD_ORIGIN_MODEL
+  - ONE_TIMELESS_MAYA_PANTHEON
+  - POPOL_WUJ_AS_UNIVERSAL_MAYA_SCRIPTURE
+  - LIVING_PRACTICE_AS_UNCHANGED_ANCIENT_SURVIVAL
+
+next_frontier:
+  primary: POPOL_WUJ_WITNESS_AND_PROPOSITION_PACKET_V1
+  subsequent:
+    - CLASSIC_INSCRIPTION_RELIGIOUS_PROPOSITION_PACKET_V1
+    - DRESDEN_CODEX_RITUAL_CALENDAR_PACKET_V1
+    - LIVING_MAYA_SACRED_TIME_PACKET_V1
+    - COLONIAL_CONTACT_AND_COFRADIA_PACKET_V1
+
+guards:
+  - MAYA_NE_ONE_TIMELESS_RELIGION
+  - COMMUNITY_LANGUAGE_REGION_AND_PERIOD_MUST_REMAIN_VISIBLE
+  - WITNESS_NE_COMPOSITION_NE_LATER_RECEPTION
+  - PUBLIC_SOURCE_NE_RESTRICTED_KNOWLEDGE_PERMISSION
