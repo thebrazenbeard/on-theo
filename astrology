@@ -1,0 +1,249 @@
+# Astrology — Master Research Lane V1
+
+Status: FOUNDATION / CROSS-CULTURAL ASTRAL TRADITIONS
+
+## Scope
+
+This lane treats astrology as a historically changing family of astral-divinatory, horoscopic, cosmological, calendrical, medical, political, and personality systems.
+
+It does not assume that one timeless thing called “astrology” existed unchanged from Babylonia to the present.
+
+Core guards:
+
+ASTRAL DIVINATION != HOROSCOPIC ASTROLOGY.
+
+BABYLONIAN != HELLENISTIC != INDIAN != CHINESE != ISLAMIC/PERSIAN != MEDIEVAL EUROPEAN != MODERN WESTERN.
+
+HISTORICAL IMPORTANCE != EMPIRICAL VALIDITY.
+
+CULTURAL CONTINUITY != TECHNICAL IDENTITY.
+
+ASTRONOMY_AND_ASTROLOGY_IN_PREMODERN_SOURCES != MODERN_ASTRONOMY_AND_ASTROLOGY_CATEGORIES.
+
+A compelling correlation, if one were found, would not by itself establish a gravitational, electromagnetic, spiritual, or simulation-level mechanism.
+
+## Why this branch exists
+
+Astrology intersects nearly every major concern of on-theo:
+
+- ancient cosmology and divine order;
+- fate, providence, free will, and prediction;
+- the relation between visible heavens and hidden causality;
+- cross-cultural transmission;
+- the history of astronomy and mathematical prediction;
+- symbolic systems that survive after their original cosmologies change;
+- the possibility that a culture can preserve a useful correlation while misidentifying its mechanism;
+- the GOD/runtime simulation model.
+
+Because of that reach, astrology must have its own provenance-controlled lane rather than being smuggled into Hindu, Greco-Roman, Christian, Islamic, Chinese, or simulation research.
+
+## Diachronic research lanes
+
+### 1. Mesopotamian celestial divination
+
+Priority:
+- Old Babylonian and later celestial omen texts;
+- Enūma Anu Enlil and its textual history;
+- royal/state omen interpretation;
+- eclipse, planetary, lunar, weather, and stellar signs;
+- the relationship between omen scholarship and observational astronomy.
+
+Guard:
+
+MESOPOTAMIAN_CELESTIAL_OMEN != NATAL_HOROSCOPE.
+
+The earlier system largely reads celestial events as signs concerning king/state and collective outcomes. Personal horoscopy is a later development.
+
+### 2. Late Babylonian horoscopy
+
+Priority:
+- dated birth horoscopes;
+- zodiacal positions;
+- planetary/lunar data;
+- astronomical diaries, almanacs, and predictive techniques used to construct charts;
+- transition from state omenology to individual nativity.
+
+Current research anchor: personal horoscopes are attested by the late fifth century BCE.
+
+### 3. Hellenistic / Greco-Roman astrology
+
+Priority:
+- Egypt and the eastern Mediterranean as synthesis zones;
+- twelve-place/house systems;
+- signs, planets, aspects, lots, sect, rulers, exaltations, decans;
+- natal/genethlialogical, mundane, electional, horary, medical, magical, and theurgical uses;
+- Dorotheus, Vettius Valens, Ptolemy, Firmicus Maternus, Manilius, Hephaestion.
+
+Ptolemy must not be treated as “the inventor of astrology.” His Tetrabiblos is a major systematizing witness within an already developed tradition.
+
+### 4. Iranian / Sasanian transmission
+
+Priority:
+- Babylonian, Greek, Indian, and Iranian interactions;
+- Middle Persian horoscopic material;
+- world horoscopes;
+- planetary names and cosmological integration;
+- transmission into Arabic-language astral sciences.
+
+### 5. Indian jyotiṣa
+
+Priority:
+- Vedāṅga Jyotiṣa and early calendrical/astral knowledge;
+- nakṣatra systems;
+- distinction among gaṇita, saṃhitā, and horā traditions;
+- jātaka/natal astrology;
+- muhūrta/electional astrology;
+- praśna/interrogational or horary astrology;
+- daśā timing systems;
+- rāśis, grahas, houses/bhāvas, yogas, vargas;
+- Yavanajātaka and other evidence for Greco-Indian transmission;
+- later Tājika/Perso-Arabic transmission.
+
+Guard:
+
+JYOTIṢA != SIMPLY “VEDIC WESTERN ASTROLOGY.”
+
+The date and nature of the Yavanajātaka are themselves a live scholarly problem; Pingree’s influential reconstruction must be read alongside later manuscript-based reassessment.
+
+Cross-link: broader Hindu religious and philosophical context remains owned by the Hindu lane.
+
+### 6. Chinese astral cosmology and omenology
+
+Priority:
+- early Chinese astronomy-astrology before substantial imported horoscopy;
+- court astrologers;
+- planetary and stellar portents;
+- the twenty-eight lunar lodges;
+- Dipper symbolism;
+- yin-yang and Five Phases correlations;
+- hemerology and calendrical divination;
+- political/cosmic legitimacy;
+- later Indian/Buddhist and other imported astral systems.
+
+Guard:
+
+CHINESE_TWELVE_ANIMAL_CYCLE != WESTERN_TWELVE_SIGN_ZODIAC.
+
+Early Chinese astral omenology cannot be reconstructed by projecting later Western horoscope vocabulary backward onto it.
+
+### 7. Islamic / Arabic / Persian astral sciences
+
+Priority:
+- translation and synthesis of Greek, Indian, Sasanian, and Arabic materials;
+- Māshāʾallāh;
+- Abū Maʿshar;
+- al-Bīrūnī;
+- court astrology;
+- city-foundation horoscopes;
+- conjunctional history;
+- astrology/astronomy overlap;
+- philosophical and theological objections;
+- transmission into Latin Europe.
+
+Guard:
+
+MEDIEVAL_ISLAMIC_ASTROLOGY != ISLAMIC_THEOLOGY_AS_A_WHOLE.
+
+Astrology was practiced and intellectually important while also being vigorously disputed by Muslim theologians, jurists, and philosophers.
+
+### 8. Medieval and early-modern European astrology
+
+Priority:
+- Latin translation movement;
+- university curricula;
+- natural philosophy;
+- medicine and astrological casebooks;
+- mundane, natal, electional, and interrogational practice;
+- free-will/determinism disputes;
+- Ficino, Kepler, Lilly, and other major practitioners;
+- the gradual seventeenth/eighteenth-century marginalization of astrology from legitimate natural knowledge.
+
+Guard:
+
+SCIENTIFIC_REVOLUTION != SINGLE_EVENT_THAT_INSTANTLY_KILLED_ASTROLOGY.
+
+Recent historiography treats astrology’s marginalization as protracted and institutionally complex.
+
+### 9. Modern astrology
+
+Separate at minimum:
+- nineteenth/twentieth-century occult revival;
+- newspaper Sun-sign astrology;
+- modern psychological astrology;
+- traditional/Hellenistic revival;
+- modern Western tropical practice;
+- modern sidereal practice;
+- contemporary Indian astrology;
+- commercial app/social-media astrology.
+
+Do not use modern Sun-sign newspaper astrology as representative of historical technical astrology.
+
+### 10. Empirical and psychological evaluation
+
+Maintain a source-controlled record of:
+- blinded chart-matching experiments;
+- birth-date/personality studies;
+- twin studies and replications;
+- statistical reanalyses and methodological disputes;
+- Barnum/Forer effects;
+- expectancy, stereotype, confirmation, selection, and recall effects;
+- preregistered future tests designed around exact astrological claims rather than generic “astrology works” questions.
+
+Current evidence reviewed in this foundation does not establish reliable natal-chart or Sun-sign prediction of personality. That statement is bounded to the tested claims and should not be inflated into a proof about every possible celestial-correlation hypothesis.
+
+## Technical comparison axes
+
+Every astrological system should be indexed by:
+
+1. astronomical frame — tropical, sidereal, constellation-based, lunar mansion/lodge, other;
+2. bodies/points — Sun, Moon, visible planets, nodes, lots, modern outer planets, fixed stars, other;
+3. chart object — birth, question, event, election, ingress, polity, illness, year, other;
+4. spatial division — signs, houses/places, mansions/lodges, directions, decans, vargas, other;
+5. relation rules — aspects, conjunctions, dignity, rulership, phase, visibility, timing cycles, omens;
+6. mechanism claimed — sign/omen, sympathy, celestial causation, divine communication, natural influence, symbolic correlation, unknown;
+7. agency model — deterministic, inclining, probabilistic, negotiable, ritual/magical, observational only;
+8. prediction target — individual, health, weather, politics, war, economy, collective history, spiritual state;
+9. source date and transmission history;
+10. empirical status of the exact tested proposition.
+
+## Simulation / GOD-model boundary
+
+A dedicated cross-lane file develops the speculative hypothesis that celestial configuration could act as:
+
+- an initialization seed;
+- a dynamic conditioning vector;
+- a system clock or visible proxy for hidden controller state;
+- a long-term parameter-update signal.
+
+This is SPECULATIVE_MODEL only.
+
+It must remain separate from:
+- historical claims that ancient astrologers understood simulation theory;
+- claims that gravity has been shown to alter personality;
+- claims that astrology has already demonstrated a hidden controller.
+
+## Immediate research backlog
+
+1. Build a primary-text index for Enūma Anu Enlil and Babylonian horoscopes.
+2. Build a dated Babylonian horoscope corpus table.
+3. Build a Hellenistic technique/provenance matrix.
+4. Separate tropical signs from astronomical constellations and sidereal zodiacs.
+5. Track twelve-house/place systems across Greek, Persian/Arabic, Indian, and European sources.
+6. Build Yavanajātaka dating/transmission dispute table.
+7. Build jyotiṣa proposition map with direct cross-links to the Hindu branch.
+8. Build early Chinese omenology and later imported-horoscope separation.
+9. Build Abū Maʿshar transmission graph into Latin Europe.
+10. Build Christian, Jewish, and Islamic free-will/astrology objection matrix.
+11. Build medical-astrology chronology and institutional history.
+12. Build modern astrology genealogy from nineteenth-century occult revival to psychological and popular Sun-sign forms.
+13. Build empirical-study registry with methods, sample sizes, effect claims, criticisms, and replication status.
+14. Formalize direct-gravity versus hidden-common-cause predictions.
+15. Implement celestial-state-conditioned agents in the future world-model environment.
+
+## Current disposition
+
+Astrology branch is active.
+
+The branch treats astrology simultaneously as a historically important knowledge system, a family of technical traditions, an empirical claim domain, and a source of explicitly marked speculative models.
+
+No one of those categories silently substitutes for another.

@@ -1,0 +1,138 @@
+schema: ON_THEO_ASTROLOGY_CLAIMS_V1
+
+claims:
+  - id: mesopotamian-celestial-divination-long-duration
+    claim: Mesopotamian celestial divination predates personal horoscopy and was embedded in a long-lived scribal omen tradition.
+    classification:
+      - SCHOLARLY_INTERPRETATION
+      - HISTORICAL_RECONSTRUCTION
+    confidence: high
+    source:
+      work: Francesca Rochberg, The Heavenly Writing
+      url: https://doi.org/10.1017/CBO9780511617409
+    notes: Do not equate early royal/state omenology with later natal astrology.
+
+  - id: late-fifth-century-bce-personal-horoscopes
+    claim: Cuneiform horoscopes tied to individual births are attested by the late fifth century BCE.
+    classification:
+      - HISTORICAL_RECONSTRUCTION
+    confidence: high
+    source:
+      work: The Heavenly Writing, chapters on Babylonian horoscopes
+      url: https://www.cambridge.org/core/books/abs/heavenly-writing/sources-for-horoscopes-in-astronomical-texts/22B1BE8899693B56239893CF3CBCB1FA
+    notes: Earliest-attested does not mean invented exactly at that date.
+
+  - id: late-babylonian-zodiac-material-witness
+    claim: A Late Babylonian tablet dated about 500 BCE lists months with associated zodiacal signs.
+    classification:
+      - MATERIAL_EVIDENCE
+    confidence: high
+    source:
+      work: British Museum tablet 77824
+      url: https://www.britishmuseum.org/collection/object/W_1885-0430-15
+
+  - id: ptolemy-tetrabiblos-systematizing-witness
+    claim: Ptolemy's Tetrabiblos is a major second-century CE systematic witness to Greco-Roman astrology but is not the origin of astrology.
+    classification:
+      - PRIMARY_TEXT
+      - HISTORICAL_RECONSTRUCTION
+    confidence: high
+    source:
+      work: Ptolemy, Tetrabiblos
+      url: https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Ptolemy/Tetrabiblos/Introduction*.html
+
+  - id: greek-roman-multiple-functions
+    claim: Ancient Greek and Roman astrology included political, natal, electional, interrogational, magical, and religious/theurgical applications.
+    classification:
+      - SCHOLARLY_INTERPRETATION
+    confidence: high
+    source:
+      work: Oxford Research Encyclopedia, Astrology in Ancient Greek and Roman Culture
+      url: https://academic.oup.com/edited-volume/62111/chapter/549096059
+
+  - id: indian-jyotisa-not-single-import
+    claim: Indian jyotisa contains indigenous astral traditions as well as historically imported horoscopic techniques; it should not be reduced either to pure Vedic continuity or to a simple copy of Western astrology.
+    classification:
+      - SCHOLARLY_INTERPRETATION
+    confidence: high
+    source:
+      work: Oxford Bibliographies, Astrology in Hinduism
+      url: https://academic.oup.com/reference/62357/reference-article-abstract/554513393
+
+  - id: yavanajataka-dating-disputed
+    claim: The dating and textual reconstruction of the Yavanajataka remain disputed, and later manuscript evidence challenges important elements of Pingree's 1978 chronology.
+    classification:
+      - SCHOLARLY_INTERPRETATION
+    confidence: high
+    contested: true
+    source:
+      work: Bill M. Mak 2013
+      url: https://doi.org/10.18732/H2RP4T
+    alternatives:
+      - Pingree's earlier reconstruction placed a Greek prose source and Sanskrit versification substantially earlier.
+
+  - id: early-chinese-independent-development
+    claim: Early Chinese astral omenology developed a major indigenous system before later imported Indian/Hellenistic astrological synthesis.
+    classification:
+      - SCHOLARLY_INTERPRETATION
+    confidence: high
+    source:
+      work: David W. Pankenier, Astrology and Cosmology in Early China
+      url: https://doi.org/10.1017/CBO9781139017466
+
+  - id: abu-mashar-cross-cultural-synthesis
+    claim: Abu Mashar drew on multiple Greek, Indian, Sasanian, Syrian, and Arabic intellectual traditions and became highly influential in later Byzantine and Latin astrology.
+    classification:
+      - HISTORICAL_RECONSTRUCTION
+      - SCHOLARLY_INTERPRETATION
+    confidence: high
+    source:
+      work: Encyclopaedia Iranica, Abu Mashar
+      url: https://www.iranicaonline.org/articles/abu-masar-jafar-b/
+
+  - id: medieval-european-institutional-astrology
+    claim: Astrology was taught and practiced within medieval and Renaissance European mathematics, natural philosophy, medicine, universities, and courts.
+    classification:
+      - HISTORICAL_RECONSTRUCTION
+    confidence: high
+    source:
+      work: Cambridge History of Science, Astrology
+      url: https://www.cambridge.org/core/books/abs/cambridge-history-of-science/astrology/17E3D5BB41AE55616C6B9AB7949FE0F1
+
+  - id: astrology-marginalization-protracted
+    claim: Astrology's exclusion from legitimate European natural knowledge was a protracted institutional and intellectual process rather than a single abrupt consequence of the Scientific Revolution.
+    classification:
+      - SCHOLARLY_INTERPRETATION
+    confidence: high
+    source:
+      work: Michelle Aroney, Reassessing the Marginalization of Astrology in the Early Modern World
+      url: https://www.cambridge.org/core/journals/historical-journal/article/reassessing-the-marginalization-of-astrology-in-the-early-modern-world/873EA8DCA2DFA2D3FF5F86E7F4CBEB52
+
+  - id: large-sample-sun-sign-null
+    claim: A 2006 study using two samples totaling more than 15000 participants found no support for tested associations between date of birth or popular Sun-sign categories and personality or general intelligence.
+    classification:
+      - SCHOLARLY_INTERPRETATION
+    confidence: high
+    source:
+      work: Hartmann, Reuter, Nyborg 2006
+      url: https://doi.org/10.1016/j.paid.2005.11.017
+    notes: Bounded to the variables and astrological propositions tested.
+
+  - id: barnum-effect-relevant
+    claim: Barnum/Forer-type acceptance of broad personality feedback is a documented psychological phenomenon relevant to perceived horoscope accuracy.
+    classification:
+      - SCHOLARLY_INTERPRETATION
+    confidence: high
+    source:
+      work: Dickson and Kelly 1985
+      url: https://doi.org/10.2466/pr0.1985.57.2.367
+    notes: This does not establish that all specific astrological claims reduce to the Barnum effect.
+
+  - id: celestial-conditioning-simulation
+    claim: A hidden controller could in principle condition both celestial state and agent state, making celestial configuration a proxy or system clock rather than a physical cause.
+    classification:
+      - SPECULATIVE_MODEL
+    confidence: unresolved
+    transmission_relation:
+      - PROJECT_ANALOGY
+    notes: No empirical evidence in this branch currently establishes this mechanism.

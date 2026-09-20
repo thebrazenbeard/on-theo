@@ -4,9 +4,9 @@ A comparative theology, history, symbolism, and systems-modeling research reposi
 
 ## Purpose
 
-`on-theo` studies how Jewish, Christian, Islamic, and adjacent traditions describe reality, creation, human nature, revelation, death, judgment, transcendence, and divine authority. It also maintains a deliberately separate speculative layer that asks whether recurring religious symbols can be fruitfully translated into modern systems/computation language without pretending that ancient authors literally meant computers or simulation theory.
+on-theo studies how Jewish, Christian, Islamic, Hindu, astrological, and adjacent traditions describe reality, creation, human nature, revelation, death, judgment, transcendence, divine authority, cosmic order, fate, and hidden causality. It also maintains a deliberately separate speculative layer that asks whether recurring religious or cosmological structures can be fruitfully translated into modern systems/computation language without pretending that ancient authors literally meant computers or simulation theory.
 
-The project is interested in resemblance, divergence, chronology, transmission, reinterpretation, and information loss.
+The project is interested in resemblance, divergence, chronology, transmission, reinterpretation, information loss, and the survival of technical or symbolic structures across changing world-models.
 
 ## Core rule
 
@@ -24,12 +24,14 @@ A compelling analogy is not historical evidence. A late source can preserve earl
 
 ## Branch architecture
 
-- `main` — project charter, research method, schemas, indexes, and branch map.
-- `tradition/judaism` — Hebrew Bible / Second Temple / rabbinic Jewish context and Jewish readings relevant to Yeshua/Jesus and adjacent themes.
-- `tradition/christianity` — earliest Jesus traditions, canonical and selected noncanonical Christian texts, development of Christology, canon, and later interpretation.
-- `tradition/islam` — Qur'anic and early Islamic reinterpretations of creation, humanity, Mary, Jesus, revelation, judgment, and related themes.
-- `synthesis/commonality` — overlap, structural rhyme, divergence matrices, and systems-language mappings. This branch must preserve provenance back to the tradition branches.
-- `history/chronology` — event/source chronology with tradition tags, date ranges, provenance, and confidence.
+- main — project charter, research method, schemas, indexes, and branch map.
+- tradition/judaism — Hebrew Bible / Second Temple / rabbinic Jewish context and Jewish readings relevant to Yeshua/Jesus and adjacent themes.
+- tradition/christianity — earliest Jesus traditions, canonical and selected noncanonical Christian texts, development of Christology, canon, and later interpretation.
+- tradition/islam — Qur'anic and early Islamic reinterpretations of creation, humanity, Mary, Jesus, revelation, judgment, and related themes.
+- hindu — Vedic, Upanishadic, epic, Purāṇic, philosophical, devotional, and related Hindu traditions with internal period/school controls.
+- astrology — cross-cultural astral-divinatory and horoscopic traditions, their technical systems, transmission history, modern empirical evaluation, and a separately marked simulation-interface hypothesis.
+- synthesis/commonality — overlap, structural rhyme, divergence matrices, and systems-language mappings. This branch must preserve provenance back to the tradition branches.
+- history/chronology — event/source chronology with tradition tags, date ranges, provenance, and confidence.
 
 Branches are research lanes, not declarations that one tradition is correct. Material may later be promoted or reconciled by explicit commits/PRs; no branch silently overwrites another tradition's account.
 
@@ -37,12 +39,14 @@ Branches are research lanes, not declarations that one tradition is correct. Mat
 
 The initial corpus grows out of several linked questions:
 
-- What did first-century Jewish language such as *Kingdom of God*, Messiah, Son of Man, resurrection, Sheol, Gehenna, Satan, Torah, and Temple mean before later Christian doctrinal compression?
+- What did first-century Jewish language such as Kingdom of God, Messiah, Son of Man, resurrection, Sheol, Gehenna, Satan, Torah, and Temple mean before later Christian doctrinal compression?
 - What can and cannot responsibly be inferred about Yeshua's birth, paternity traditions, social stigma, Nazareth, the undocumented years, and hometown rejection?
 - What is the historical status of Panthera/Pandera traditions?
 - How does the Qur'an, six centuries later, preserve, reject, reinterpret, or symbolically rhyme with Jewish and Christian structures?
-- Across traditions, what recurring architecture appears around creator/creation, delegated authority, revelation, temporary worldly existence, judgment, resurrection, and higher-order reality?
-- Can those structures be translated into a modern computational metaphor — environment/runtime/controller/administrator, instantiated agents, privileged operations, re-instantiation, information channels — while keeping that translation explicitly speculative?
+- How do Hindu traditions describe cyclical cosmology, self, rebirth, liberation, divine embodiment, and ultimate reality across distinct textual and philosophical strata?
+- How did astral omenology become horoscopic astrology, how did astrological systems diverge and transmit across Mesopotamian, Hellenistic, Indian, Chinese, Iranian, Islamic, and European cultures, and what exact propositions have or have not survived modern empirical testing?
+- Across traditions, what recurring architecture appears around creator/creation, delegated authority, revelation, temporary worldly existence, judgment, resurrection, fate, cosmic order, and higher-order reality?
+- Can those structures be translated into a modern computational metaphor — environment/runtime/controller/administrator, instantiated agents, privileged operations, re-instantiation, information channels, global conditioning signals — while keeping that translation explicitly speculative?
 
 ## Tone
 

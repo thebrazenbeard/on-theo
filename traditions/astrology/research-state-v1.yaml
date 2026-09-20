@@ -1,0 +1,50 @@
+schema: ON_THEO_ASTROLOGY_RESEARCH_STATE_V1
+branch: astrology
+base_main_commit: eedbcf660c2cfe6cff5636e798806b0cd3d56efc
+status: FOUNDATION_POPULATED
+merge_status: UNMERGED
+
+scope:
+  type: cross-cultural-astral-traditions
+  evidence_lanes:
+    - primary_text
+    - material_evidence
+    - historical_reconstruction
+    - scholarly_interpretation
+    - empirical_test
+    - project_inference
+    - speculative_model
+
+foundation_coverage:
+  mesopotamian_celestial_divination: researched_foundation
+  late_babylonian_horoscopy: researched_foundation
+  hellenistic_greco_roman: researched_foundation
+  iranian_sasanian: partial_foundation
+  indian_jyotisa: researched_foundation
+  early_chinese_astral_cosmology: researched_foundation
+  medieval_islamic: researched_foundation
+  medieval_early_modern_europe: researched_foundation
+  modern_astrology_genealogy: partial_foundation
+  empirical_testing: researched_foundation
+  simulation_interface: speculative_model_initialized
+
+guards:
+  - ASTROLOGY_IS_NOT_ONE_TIMELESS_SYSTEM
+  - ASTRAL_DIVINATION_NE_HOROSCOPIC_ASTROLOGY
+  - HISTORICAL_IMPORTANCE_NE_EMPIRICAL_VALIDITY
+  - SIGN_NE_CONSTELLATION
+  - CULTURAL_CONTINUITY_NE_TECHNICAL_IDENTITY
+  - CORRELATION_NE_MECHANISM
+  - SIMULATION_ANALOGY_NE_ANCIENT_TECHNICAL_KNOWLEDGE
+
+next_frontiers:
+  - Babylonian primary-text and horoscope corpus
+  - Hellenistic technique provenance matrix
+  - Yavanajataka dating and transmission dispute table
+  - Jyotisa source strata and Hindu cross-links
+  - Chinese indigenous versus imported astral systems
+  - Abu Mashar transmission graph
+  - medieval theological free-will dispute matrix
+  - modern astrology genealogy
+  - empirical study registry
+  - celestial-conditioning preregistered model specification
