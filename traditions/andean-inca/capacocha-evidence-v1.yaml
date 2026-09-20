@@ -1,0 +1,60 @@
+schema_version: on-theo.andean-inca-capacocha-evidence.v1
+status: BOUNDED_MULTI_EVIDENCE_IMPERIAL_SACRIFICE
+
+records:
+  - id: INC-CAPA-ARCH-001
+    evidence:
+      - CHOQUEPUKIO
+      - MISTI
+      - AMPATO
+      - LLULLAILLACO
+      - OTHER_SELECTED_SHRINES
+    evidence_class:
+      - MATERIAL_EVIDENCE
+      - BIOARCHAEOLOGY
+    propositions:
+      - child_sacrifice_is_archaeologically_attested_in_selected_Inca_contexts
+      - precious_imperial_style_goods_are_recurrently_associated
+      - mountain_huaca_contexts_are_strongly_attested
+    supports:
+      - SACRIFICE_AND_BODILY_OFFERING_MODEL
+      - OFFERING_EXCHANGE_MODEL
+      - SACRED_LAND_PLACE_MODEL
+    confidence: HIGH
+
+  - id: INC-CAPA-MOBILITY-001
+    source: CHOQUEPUKIO_STRONTIUM
+    propositions:
+      - two_of_seven_children_have_nonlocal_isotopic_signatures
+    supports:
+      - POLITICAL_SACRALIZATION_MODEL
+      - RITUAL_ORDER_MODEL_PARTIAL
+    confidence: HIGH_FOR_SELECTED_CASE
+
+  - id: INC-CAPA-TEXT-001
+    evidence_class:
+      - COLONIAL_HISTORICAL_RECONSTRUCTION
+    propositions:
+      - colonial_sources_describe_state_selection_movement_offerings_and_huaca_relation
+      - multiple_chroniclers_supply_nonidentical_rite_descriptions
+    supports:
+      - SOURCE_CONVERGENCE_CONTROL
+    confidence: BOUNDED
+    guards:
+      - NO_SINGLE_CHRONICLER_IS_CANONICAL
+
+  - id: INC-CAPA-CONV-001
+    propositions:
+      - archaeology_and_colonial_sources_converge_on_selected_capacocha_features
+    supports:
+      - MULTI_EVIDENCE_CONVERGENCE_CONTROL
+    confidence: STRONG
+
+axis_status:
+  SACRIFICE_AND_BODILY_OFFERING_MODEL: BOUNDED_INCA_CAPACOCHA
+  OFFERING_EXCHANGE_MODEL: BOUNDED_CAPACOCHA_MULTI_MATERIAL
+  POLITICAL_SACRALIZATION_MODEL: BOUNDED_IMPERIAL_CAPACOCHA_INTEGRATION
+  SACRED_LAND_PLACE_MODEL: BOUNDED_MOUNTAIN_HUACA
+  RITUAL_ORDER_MODEL: PARTIAL_PROCESSIONAL_PILGRIMAGE
+  MORTUARY_RELATIONSHIP_MODEL: PARTIAL_SACRIFICIAL_BURIAL
+  CROSS_TRADITION_COMPARISON: HOLD
