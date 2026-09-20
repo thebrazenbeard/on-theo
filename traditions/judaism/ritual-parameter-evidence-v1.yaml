@@ -1,0 +1,113 @@
+schema_version: on-theo.judaism-ritual-parameter-evidence.v1
+status: NON_CANONICAL_LATE_ANTIQUE_RITUAL_SOURCE_CONTROL
+base_audit_head: 75598bab3d62c25e7d7b05384f0a67856cd3a713
+packet: traditions/judaism/jewish-revelatory-adjuration-parameter-packet-v1.md
+
+source_families:
+  sefer_ha_razim:
+    source_class:
+      - PRIMARY_TEXT
+      - MANUSCRIPT_RECONSTRUCTION
+      - LATER_SCHOLARLY_EDITION
+    notes:
+      - reconstructed_from_fragmentary_manuscript_tradition
+      - Morgan_1983_translation_is_modern_access_not_original_witness
+      - later_Rebiger_Schaefer_editional_control_relevant
+  hekhalot:
+    source_class:
+      - PRIMARY_TEXT_FAMILY
+      - MANUSCRIPT_WITNESS_COMPLEX
+      - SCHOLARLY_RECONSTRUCTION
+    notes:
+      - not_one_book
+      - recensional_variation_material
+      - ritual_passages_require_synoptic_witness_control
+  lesses_revelatory_adjuration_comparison:
+    source_class:
+      - SCHOLARLY_INTERPRETATION
+    publication:
+      title: Speaking_with_Angels_Jewish_and_Greco_Egyptian_Revelatory_Adjurations
+      doi: 10.1017/S0017816000031801
+
+records:
+  - id: JUD-SHR-ADDRESS-001
+    traditions:
+      - SEFER_HA_RAZIM
+      - HEKHALOT_SELECTED_RITUAL
+    propositions:
+      - selected_texts_name_heavenly_recipients_or_gatekeepers
+      - divine_or_angelic_names_function_as_claimed_ritual_parameters
+      - selected_adjurations_are_goal_directed_toward_heavenly_agents
+    supports:
+      - ADDRESSING_OR_RECIPIENT_MODEL
+      - NAME_OR_INVOCATION_PARAMETER
+      - RITUAL_PARAMETER_SENSITIVITY
+    confidence: BOUNDED_STRONG_FOR_SELECTED_TEXTS
+
+  - id: JUD-SHR-REVEL-001
+    propositions:
+      - selected_adjurations_seek_answers_hidden_knowledge_or_revelation
+      - correct_invocation_and_name_knowledge_are_represented_as_relevant
+    supports:
+      - REVELATORY_INFORMATION_CLAIM
+      - KNOWLEDGE_OR_DISCLOSURE_MODEL
+    confidence: BOUNDED_STRONG_FOR_TEXTUAL_CLAIM
+    empirical_external_effect: NONE_ESTABLISHED
+
+  - id: JUD-SHR-PARAM-001
+    propositions:
+      - selected_rituals_combine_verbal_and_nonverbal_constraints
+      - purity_preparation_repetition_space_material_or_timing_can_be_prescribed
+      - Hekhalot_selected_passages_can_prescribe_ordered_named_gatekeeper_interactions
+    supports:
+      - RITUAL_PARAMETER_SENSITIVITY
+      - SOMATIC_OR_CONTEXTUAL_PARAMETER_MODEL
+      - SEQUENCE_PARAMETER_MODEL
+    confidence: BOUNDED
+    guards:
+      - ONE_PASSAGE_NE_ONE_UNIVERSAL_HEKHALOT_RITUAL
+
+  - id: JUD-SHR-OPAQUE-001
+    propositions:
+      - selected_texts_preserve_unusual_name_strings_or_nomina_barbara
+      - modern_semantic_interpretation_can_be_limited
+    supports:
+      - SEMANTIC_OPACITY_DIMENSION
+    confidence: PARTIAL
+    not_established:
+      - original_meaninglessness
+      - exact_ancient_pronunciation
+      - independent_acoustic_efficacy
+
+  - id: JUD-SHR-CONTACT-001
+    propositions:
+      - Jewish_and_Greco_Egyptian_revelatory_adjurations_share_structural_features
+      - Sefer_ha_Razim_shows_Greco_Egyptian_affinities
+    supports:
+      - CONTACT_AND_REINTERPRETATION_MODEL
+    confidence: BOUNDED_STRONG
+    negative_result:
+      - INDEPENDENT_CONVERGENCE_NOT_ESTABLISHED
+    guards:
+      - CONTACT_NE_SOURCE_SPECIFIC_BORROWING_BY_DEFAULT
+
+axes:
+  RITUAL_PARAMETER_SENSITIVITY: BOUNDED_STRONG_FOR_SELECTED_TEXTS
+  ADDRESSING_OR_RECIPIENT_MODEL: BOUNDED
+  NAME_OR_INVOCATION_PARAMETER: BOUNDED_AS_SOURCE_CLAIM
+  REVELATORY_INFORMATION_CLAIM: BOUNDED_STRONG_FOR_SELECTED_TEXTS
+  SEMANTIC_OPACITY_DIMENSION: PARTIAL
+  CONTACT_AND_REINTERPRETATION_MODEL: BOUNDED
+  ANOMALOUS_INFORMATION_TRANSFER: NONE_ESTABLISHED
+  EXTERNAL_AGENT_CONTACT: NONE_ESTABLISHED
+
+guards:
+  - HEKHALOT_NE_ONE_TEXT
+  - SEFER_HA_RAZIM_NE_ALL_JEWISH_MAGIC
+  - LATE_ANTIQUE_JEWISH_MAGIC_NE_MEDIEVAL_KABBALAH
+  - CORRECT_INVOCATION_CLAIM_NE_EMPIRICAL_EFFECT
+  - ORTHOGRAPHIC_NAME_NE_RECOVERED_PRONUNCIATION
+  - SEMANTIC_OPACITY_NE_CAUSAL_POWER
+  - MANUSCRIPT_RECONSTRUCTION_NE_UNBROKEN_WITNESS
+  - TEXTUAL_REVELATION_CLAIM_NE_VERIFIED_INFORMATION_TRANSFER
+  - JEWISH_GRECO_EGYPTIAN_SIMILARITY_NE_INDEPENDENT_DISCOVERY
