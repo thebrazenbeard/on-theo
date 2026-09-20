@@ -1,0 +1,241 @@
+schema_version: on-theo.maya-comparison-readiness-audit.v1
+status: DIACHRONIC_FOUNDATION_MATURE_FOR_BOUNDED_FUTURE_COMPARISON
+source_branch: research/maya-diachronic-v1-20260920
+source_head_before_audit: 9f81d9990cb98eaa898a80300af1fcae6e35ee78
+pr: 105
+
+method:
+  principle: >
+    A Maya comparison cell must name its historical layer, region/community,
+    evidence mode, and exact source packet. No cell may use "Maya" as a timeless
+    synthetic subject when the proposition belongs specifically to Classic
+    Yaxchilan, the Dresden Codex, the K'iche' Popol Wuj, a living K'iche' or
+    Yucatec community, or a domestic archaeological site.
+  required_fields:
+    - period
+    - region_or_community
+    - evidence_mode
+    - exact_source_binding
+    - claim_ceiling
+
+comparison_eligible_existing_axes:
+  WORLD_ORIGIN_MODEL:
+    status: PARTIAL_COMPARISON_ELIGIBLE
+    source_layer: KICHE_POPOL_WUJ_COLONIAL_WITNESS
+    strongest_result: >
+      The K'iche' Popol Wuj preserves bounded cosmogonic/world-ordering
+      propositions in a colonial Ximenez witness whose earlier Indigenous source
+      is reconstructed rather than physically extant.
+    required_label: KICHE_COLONIAL_TEXTUAL_LAYER
+    guards:
+      - KICHE_ACCOUNT_NE_PAN_MAYA_ACCOUNT
+      - COLONIAL_WITNESS_NE_PRECONTACT_AUTOGRAPH
+
+  RITUAL_ORDER_MODEL:
+    status: BOUNDED_COMPARISON_ELIGIBLE
+    source_layers:
+      - CLASSIC_YAXCHILAN_ROYAL_RITUAL
+      - LATE_POSTCLASSIC_DRESDEN_MANUSCRIPT
+      - LIVING_CALENDAR_AGRICULTURAL_PRACTICE
+      - PRECLASSIC_CLASSIC_HOUSEHOLD_MATERIAL
+    strongest_result: >
+      Maya ritual order is source-attested at multiple social scales and periods,
+      including royal monumental bloodletting, manuscript calendrical ritual,
+      living agricultural/calendar ceremonies, and domestic material practice.
+    required_control: DO_NOT_COLLAPSE_SOCIAL_LOCATION_OR_PERIOD
+
+  POLITICAL_SACRALIZATION_MODEL:
+    status: BOUNDED_COMPARISON_ELIGIBLE
+    source_layer: CLASSIC_YAXCHILAN
+    strongest_result: >
+      Sacral ruler titles, royal ritual action, accession-linked ritual, and
+      monumental dynastic representation directly connect sacred and political
+      authority in the selected Classic court layer.
+    guards:
+      - K'UHUL_AJAW_NE_RULER_IS_GOD_BY_DEFAULT
+      - YAXCHILAN_NE_PAN_MAYA
+
+  KNOWLEDGE_OR_DISCLOSURE_MODEL:
+    status: BOUNDED_COMPARISON_ELIGIBLE
+    source_layers:
+      - LATE_POSTCLASSIC_DRESDEN_DIVINATORY_CALENDAR
+      - LIVING_KICHE_DAY_KEEPER_COUNSEL
+    strongest_result: >
+      Calendrical computation, divinatory interpretation, and living calendar
+      counsel are bounded knowledge/disclosure mechanisms, but they are not one
+      unchanged epistemic institution across periods.
+    guards:
+      - DIVINATION_NE_PROPHECY_ONLY
+      - ASTRONOMICAL_CALCULATION_NE_SUPERNATURAL_PREDICTION_VERIFIED
+
+  INSTITUTIONALIZATION_MODEL:
+    status: BOUNDED_COMPARISON_ELIGIBLE
+    source_layers:
+      - LIVING_KICHE_AJQIJ_COUNSEL
+      - CHICHICASTENANGO_COFRA DIA
+      - HOUSEHOLD_PRACTICE_PARTIAL
+    strongest_result: >
+      Religious practice is stabilized through distinct structures including
+      calendar-keeper expertise, cofradia organization, household material
+      practice, and historically court/manuscript systems.
+    guards:
+      - INSTITUTIONALIZATION_NE_CENTRALIZATION
+      - AJQIJ_NE_PAN_MAYA_PRIESTHOOD
+
+  CONTACT_AND_REINTERPRETATION_MODEL:
+    status: BOUNDED_COMPARISON_ELIGIBLE
+    source_layers:
+      - KICHE_CHICHICASTENANGO
+      - POPOL_WUJ_COLONIAL_TEXTUAL_MEDIATION
+    strongest_result: >
+      Maya-Christian contact includes distinct mechanisms of colonial textual
+      mediation, Catholic cofradia structure, Maya ritual continuity,
+      parallel authority, and local reinterpretation.
+    guards:
+      - CONTACT_NE_REPLACEMENT
+      - CONTACT_NE_PURE_SURVIVAL
+      - CONTACT_NE_ONE_GENERIC_SYNCRETISM
+
+  OFFERING_EXCHANGE_MODEL:
+    status: PARTIAL_COMPARISON_ELIGIBLE
+    source_layers:
+      - DRESDEN_MANUSCRIPT
+      - LIVING_AGRICULTURAL_CALENDAR_PRACTICE
+      - HOUSEHOLD_MATERIAL_DEPOSITION
+    strongest_result: >
+      Offerings are attested in manuscript, living community, and domestic
+      material contexts, but recipient, reciprocity, effect, and mechanism vary
+      and are not always recoverable.
+    guards:
+      - OFFERING_NE_ONE_RECIPROCITY_MODEL
+      - MATERIAL_DEPOSITION_NE_KNOWN_RECIPIENT
+
+  CONTINUITY_MODEL:
+    status: BOUNDED_COMPARISON_ELIGIBLE
+    strongest_result: >
+      Calendar, agricultural, ritual, and institutional structures show
+      continuity signals across Maya history while living sources and material
+      evidence also demonstrate change, regionality, and reorganization.
+    required_ceiling: PRACTICE_AND_STRUCTURE_CONTINUITY_WITH_CHANGE
+    guards:
+      - CONTINUITY_NE_UNCHANGED_FORM
+      - STRUCTURAL_SIMILARITY_NE_DIRECT_TRANSMISSION_BY_ITSELF
+
+  PERSON_OR_SELF_MODEL:
+    status: PARTIAL_COMPARISON_ELIGIBLE
+    source_layer: LIVING_KICHE_SACRED_CALENDAR
+    strongest_result: >
+      Current K'iche' public materials can relate sacred-calendar day meanings
+      to personal balance, strengths, weaknesses, and social-natural relation.
+    guards:
+      - DAY_MEANING_NE_TOTAL_DETERMINISM
+      - LIVING_KICHE_MODEL_NE_ALL_MAYA_PERSONHOOD
+
+held_existing_axes:
+  POSTMORTEM_PATH_MODEL:
+    status: HOLD
+    reason: >
+      Hero Twin underworld narrative is not ordinary-human afterlife evidence and
+      no independent Maya-wide human postmortem-path packet is yet bound.
+
+  MORTUARY_RELATIONSHIP_MODEL:
+    status: HOLD
+    reason: >
+      Household burial/ancestor literature is promising, but the current
+      foundation was not built deeply enough around human mortuary relationships
+      to admit a comparison cell.
+
+  TRANSFORMATION_MODEL:
+    status: HOLD_PARTIAL
+    reason: >
+      Popol Wuj mythic transformation and Classic/living transformation
+      propositions remain under-decomposed.
+
+  WORLD_TERMINUS_RENEWAL_MODEL:
+    status: HOLD
+    reason: >
+      Dresden flood iconography and Long Count rollover do not establish one
+      source-bound world-destruction/renewal model.
+
+  AGENCY_AND_AUTHORITY_MODEL:
+    status: HOLD_PARTIAL
+    reason: >
+      Classic sacral rulership and living Ajq'ij authority are source-attested,
+      but they are different authority domains and need decomposition before a
+      single comparison cell.
+
+  SACRAL_PRESENCE_MODEL:
+    status: HOLD_PARTIAL
+    reason: >
+      Deity imagery, sacred place, calendrical day powers, and living land
+      relation are present but not yet decomposed into one controlled presence
+      schema.
+
+new_axis_candidates:
+  SACRED_TIME_CALENDAR_MODEL:
+    status: STRONG_NEW_AXIS_CANDIDATE
+    neutral_question: >
+      How are astronomical, agricultural, divinatory, ritual, historical, human,
+      and social cycles organized through sacred calendars and timekeeping?
+    evidence:
+      - traditions/maya/dresden-codex-evidence-v1.yaml
+      - traditions/maya/living-sacred-time-evidence-v1.yaml
+    result: >
+      The axis is strongly supported in both Postclassic manuscript and living
+      community evidence but continuity must not be equated with unchanged form.
+
+  HUMAN_ORIGIN_OR_EMERGENCE_MODEL:
+    status: STRONG_NEW_AXIS_CANDIDATE
+    evidence:
+      - traditions/maya/popol-wuj-evidence-v1.yaml
+    result: >
+      K'iche' maize-human creation material strengthens the need to separate
+      human origin from cosmic world origin.
+
+  RELATIONAL_ORDER_MODEL:
+    status: STRONG_NEW_AXIS_CANDIDATE
+    evidence:
+      - traditions/maya/living-sacred-time-evidence-v1.yaml
+      - traditions/maya/household-material-evidence-v1.yaml
+    result: >
+      Land, corn, time, household memory, community, and human balance are
+      relationally structured in selected evidence.
+
+  SACRED_LAND_PLACE_MODEL:
+    status: NEW_AXIS_CANDIDATE
+    evidence:
+      - traditions/maya/living-sacred-time-evidence-v1.yaml
+    result: >
+      Living Maya evidence links land, agricultural cycles, ceremony, and
+      knowledge, but site-specific sacred geography needs deeper binding before
+      broad comparison.
+
+readiness_result:
+  internal_foundation_complete: true
+  bounded_future_comparison_allowed: true
+  immediate_matrix_insertion_required: false
+  exact_head_binding_required: true
+  pan_Maya_synthesis_allowed: false
+
+strongest_method_result: >
+  Maya evidence is comparison-ready only as a set of explicitly bounded
+  diachronic and community-specific layers; the research becomes less accurate,
+  not more, whenever Classic inscriptions, Postclassic codices, the K'iche'
+  Popol Wuj, colonial contact institutions, household archaeology, and living
+  Maya practice are harmonized into one timeless theology.
+
+next_portfolio_frontier:
+  primary: MEXICA_NAHUA_RESEARCH_PACKET_V1
+  reason: >
+    The Maya foundation now has independent textual, epigraphic, material,
+    manuscript, colonial-contact, and living-community lanes with explicit
+    readiness ceilings. Portfolio breadth should proceed to the next known
+    Mesoamerican gap while keeping Maya available for later axis-specific
+    deepening.
+
+guards:
+  - COMPARISON_READY_NE_TRADITION_COMPLETE
+  - MAYA_NE_ONE_TIMELESS_RELIGION
+  - COMMUNITY_LANGUAGE_REGION_AND_PERIOD_REQUIRED
+  - ELITE_SOURCE_NE_ALL_SOCIAL_RELIGION
+  - LIVING_SOURCE_NE_UNCHANGED_ANCIENT_FORM
