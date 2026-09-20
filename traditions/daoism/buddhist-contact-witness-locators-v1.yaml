@@ -1,0 +1,55 @@
+schema_version: on-theo.daoism-buddhist-contact-witness-locators.v1
+status: PARTIAL_EXACT_BINDING
+
+records:
+  - id: DAO-YANG42-001
+    target: YANG_XI_FORTY_TWO_SECTIONS_ADAPTATION
+    daoist_work: ZHENGAO
+    daoist_canon_id: DZ_1016
+    reconstructed_unit: TEACHINGS_AND_ADMONITIONS_OF_THE_ASSEMBLED_NUMINOUS_POWERS
+    Buddhist_comparison_text:
+      title: SISHIER_ZHANG_JING
+      taisho: T784
+    evidence:
+      - BOKENKAMP_2020_CRITICAL_TRANSLATION
+      - BUMBACHER_2006_TEXTUAL_COMPARISON
+    relation: SOURCE_SPECIFIC_TRANSMISSION_WITH_RECODING
+    confidence: STRONG_SCHOLARLY_TEXTUAL_DEPENDENCE
+    unresolved:
+      - full_line_by_line_alignment
+      - autograph_witness
+      - redaction_history
+
+  - id: DAO-ZHENGAO-BUDDHIST-WAY-001
+    target: RELATED_SHANGQING_BUDDHIST_WAY_LOCATOR
+    work: ZHENGAO
+    canon_id: DZ_1016
+    juan: 9
+    page_locator: 82b
+    evidence: MODERN_SCHOLARLY_CITATION_TO_PRIMARY_LOCUS
+    confidence: LOCATOR_BOUND_TEXT_NOT_YET_FULLY_EXTRACTED
+
+  - id: DAO-YAO496-001
+    target: YAO_BODUO_STELE
+    date: 496_CE
+    dynasty: NORTHERN_WEI
+    evidence_class:
+      - EPIGRAPHIC_EVIDENCE
+      - MATERIAL_EVIDENCE
+    contact_interpretation:
+      - BUDDHIST_ASSOCIATED_SALVATION_LANGUAGE
+      - BUDDHIST_ASSOCIATED_DEVOTIONAL_FORM
+      - HUAHU_POLEMICAL_POSITIONING
+    relation: MATERIAL_HYBRIDIZATION_WITH_RETAINED_DAOIST_IDENTITY
+    confidence: OBJECT_HIGH_INTERPRETATION_BOUNDED
+    unresolved:
+      - full_inscription_line_binding
+      - museum_catalogue_provenance
+      - iconographic_feature_matrix
+
+controls:
+  - RECEIVED_BUDDHIST_TEXT_NE_PRISTINE_ORIGINAL
+  - ZHENGAO_SURVIVING_TEXT_NE_YANG_XI_AUTOGRAPH
+  - DIRECT_TEXTUAL_ADAPTATION_NE_SEMANTIC_IDENTITY
+  - MATERIAL_HYBRIDIZATION_NE_UNDIFFERENTIATED_RELIGIOUS_IDENTITY
+  - HUAHU_POLEMIC_NE_TRANSMISSION_HISTORY
