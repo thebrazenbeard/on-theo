@@ -23,6 +23,7 @@ completed:
   - EXCERPTA_COMPOSITE_AUTHORSHIP_BOUNDARY
   - EXCERPTA_INITIATION_CLUSTER_CONTROL
   - IRENAEUS_REDEMPTION_DIVERSITY_CONTROL
+  - VALENTINIAN_RITUAL_NONHARMONIZING_COMPARISON
 
 key_artifacts:
   - traditions/early-christianity/valentinian-primary-text-control-v1.md
@@ -35,6 +36,8 @@ key_artifacts:
   - traditions/early-christianity/gospel-philip-ritual-control-v1.yaml
   - traditions/early-christianity/excerpta-theodoto-initiation-control-v1.md
   - traditions/early-christianity/excerpta-theodoto-initiation-control-v1.yaml
+  - traditions/early-christianity/valentinian-ritual-comparison-v1.md
+  - traditions/early-christianity/valentinian-ritual-comparison-v1.yaml
 
 current_results:
   internal_valentinian_diversity: BOUNDED_STRONG
@@ -55,12 +58,13 @@ current_results:
   excerpta_baptism_knowledge_coordination: BOUNDED_STRONG_FOR_COMPOSITE_TEXT
   excerpta_exact_theodotus_attribution: PARTIAL_LOCAL_REVIEW_REQUIRED
   valentinian_redemption_practice_diversity: BOUNDED_MODERATE_TO_STRONG
+  one_standard_valentinian_ritual_system: NOT_ADMITTED
+  ritual_and_gnosis_mutual_exclusion: NOT_ADMITTED
+  ritual_diversity_model: BOUNDED_MODERATE_TO_STRONG
 
 next_frontier:
   - PTOLEMY_FLORA_PROPOSITION_MAP
   - EXCERPTA_EX_THEODOTO_PACKET
-  - VALENTINIAN_RITUAL_NONHARMONIZING_COMPARISON
-  - BOOK_V_SCRIPTURE_RITUAL_PLURALITY_SYNTHESIS
   - BOOK_V_HOSTILE_REREVIEW
   - EXCERPTA_EX_THEODOTO_PACKET
   - PTOLEMY_HERACLEON_NONHARMONIZING_COMPARISON
