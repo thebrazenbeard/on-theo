@@ -553,4 +553,3 @@ def test_extension_status_must_match_manifest_entry(tmp_path: Path) -> None:
     )
 
     assert "MANIFEST_EXTENSION_STATUS_MISMATCH" in _codes(tmp_path)
-
