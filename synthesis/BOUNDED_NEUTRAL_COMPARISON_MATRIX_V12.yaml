@@ -1,0 +1,117 @@
+schema_version: on-theo.bounded-neutral-comparison-matrix.v12
+status: NON_CANONICAL_PILOT_MATRIX
+supersedes_for_current_research:
+  - synthesis/BOUNDED_NEUTRAL_COMPARISON_MATRIX_V11.yaml
+relation_schema: synthesis/CROSS_TRADITION_RELATION_SCHEMA_V1.yaml
+world_origin_schema: synthesis/WORLD_ORIGIN_COMPARISON_SCHEMA_V1.yaml
+mortuary_relationship_schema: synthesis/MORTUARY_RELATIONSHIP_COMPARISON_SCHEMA_V1.yaml
+institutionalization_schema: synthesis/INSTITUTIONALIZATION_COMPARISON_SCHEMA_V1.yaml
+offering_exchange_schema: synthesis/OFFERING_EXCHANGE_COMPARISON_SCHEMA_V1.yaml
+transformation_schema: synthesis/TRANSFORMATION_COMPARISON_SCHEMA_V1.yaml
+
+source_heads:
+  buddhism: eb0f948788f5171d13c067daea2df54845d22f70
+  hindu: 614fa715fcacee0d7ec1ba573061d3e776e708d3
+  daoism: 708ba10413d9511648c2540ad84be74b6b5f6b5c
+  shinto: 4939c22c6b13afc1226d8860fa8dbf394e34b5c4
+  norse: 22e9fe10d1647a66458c54478c86e7ba6abd83ce
+  sumerian: 3fd5db6f05c008aeba4febe310de99e4ff484770
+
+transformation_snapshot:
+  buddhism:
+    status: NOT_IN_CURRENT_TEST
+  hindu:
+    status: NOT_IN_CURRENT_TEST
+
+  daoism:
+    status: BOUNDED
+    evidence:
+      - ZHUANGZI_INNER_2
+      - ZHUANGZI_INNER_6
+    domain:
+      - FORM_OR_PERSPECTIVE
+      - LIFE_DEATH_PROCESS
+    subject_type:
+      - HUMAN_IDENTITY_OR_PERSPECTIVE
+      - EMBODIED_LIFE_DEATH_PROCESS
+    mechanism: PROCESSUAL_TRANSFORMATION
+    identity_continuity: NOT_REDUCED_TO_ONE_FIXED_ESSENCE_MODEL
+    guards:
+      - LIFE_DEATH_TRANSFORMATION_NE_REINCARNATION_BY_DEFAULT
+      - PERSPECTIVAL_INSTABILITY_NE_SIMULATION_EVIDENCE
+
+  shinto:
+    status: BOUNDED_DIAchRONIC_CASE
+    evidence:
+      - MICHIZANE_TENJIN_TRANSFORMATION
+    domain: POSTHUMOUS_STATUS
+    subject_type: NAMED_HUMAN_POSTHUMOUS_IDENTITY
+    mechanism: HISTORICAL_CULTIC_RECLASSIFICATION_AND_ENSHRINEMENT
+    identity_continuity: NAMED_IDENTITY_REMAINS_RECOGNIZABLE
+    guards:
+      - HUMAN_KAMI_CASE_NE_ALL_HUMANS_BECOME_KAMI
+      - POSTHUMOUS_STATUS_CHANGE_NE_ONTOLOGICAL_SPECIES_CHANGE_PROVED
+      - BUDDHIST_AND_OTHER_CONTACT_LAYERS_REMAIN_VISIBLE
+
+  norse:
+    status: BOUNDED
+    evidence:
+      - VOLUSPA_LATER_CRISIS_RENEWAL_SEQUENCE
+    domain: WORLD_ORDER
+    subject_type: WORLD_COSMOS_WITH_SURVIVING_OR_RETURNING_DIVINE_FIGURES
+    mechanism: DESTRUCTION_THEN_RENEWAL
+    identity_continuity: PARTIAL_WORLD_AND_DIVINE_CONTINUITY
+    guards:
+      - WORLD_RENEWAL_NE_INDIVIDUAL_AFTERLIFE
+      - RAGNAROK_NE_CHRISTIAN_APOCALYPSE_BY_DEFAULT
+
+  sumerian:
+    status: BOUNDED_DIVINE_NARRATIVE
+    evidence:
+      - DUMUZID_GESHTINANA_SUBSTITUTION
+      - INANA_DESCENT_HALF_YEAR_ALTERNATION
+    domain:
+      - DIVINE_NARRATIVE_STATE
+      - FORM_CHANGE
+      - ALTERNATING_STATUS
+    subject_type: DIVINE_FIGURE
+    mechanism:
+      - SUBSTITUTION
+      - FORM_CHANGE
+      - ESCAPE_ATTEMPT
+      - HALF_YEAR_ALTERNATION
+    identity_continuity: DUMUZID_REMAINS_NARRATIVELY_IDENTIFIABLE
+    guards:
+      - MYTHIC_DIVINE_TRANSFORMATION_NE_HUMAN_DEFAULT
+      - RELEASE_NE_RESURRECTION_BY_DEFAULT
+      - HALF_YEAR_ALTERNATION_NE_EXPLICIT_VEGETATION_ETIOLOGY
+
+transformation_method_result:
+  admitted_test_lanes: 4
+  strongest_shared_result: TRANSFORMATION_IS_A_CROSS_TRADITION_PROBLEM_SPACE_ONLY_AFTER_DOMAIN_SUBJECT_MECHANISM_AND_IDENTITY_CONTINUITY_ARE_SEPARATED
+  one_shared_transformation_metaphysic_supported: false
+  shared_transformation_implies_transmission: false
+
+transformation_test:
+  artifact: synthesis/TRANSFORMATION_CROSS_TRADITION_TEST_V1.md
+  result: COMPARABLE_ONLY_AFTER_DOMAIN_DECOMPOSITION
+
+global_coverage_control:
+  artifact: synthesis/GLOBAL_TRADITION_COVERAGE_GAP_AUDIT_V1.md
+  current_six_lane_synthesis_is_global: false
+  lakota_queue_exists_but_dedicated_branch_found: false
+  maya_dedicated_branch_found: false
+  mexica_aztec_nahua_dedicated_branch_found: false
+  olmec_dedicated_branch_found: false
+  dine_dedicated_branch_found: false
+  haudenosaunee_dedicated_branch_found: false
+  andean_inca_dedicated_branch_found: false
+
+matrix_guards:
+  - THIS_IS_NOT_A_COMMONALITY_SCORE
+  - TRANSFORMATION_NE_ONE_MECHANISM
+  - SHARED_TRANSFORMATION_AXIS_NE_SHARED_CAUSAL_MODEL
+  - SIX_LANE_RESULT_NE_GLOBAL_RELIGIOUS_UNIVERSAL
+  - INDIGENOUS_RELIGION_NE_ONE_GENERIC_CATEGORY
+  - EVIDENCE_CLASS_DIFFERENCE_MUST_REMAIN_VISIBLE
+  - SYSTEMS_MAPPING_IS_OPTIONAL_AND_DOWNSTREAM
