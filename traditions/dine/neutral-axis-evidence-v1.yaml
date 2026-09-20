@@ -1,0 +1,102 @@
+schema_version: on-theo.dine-neutral-axis-evidence.v1
+status: PUBLIC_FOUNDATION_NOT_CROSS_COMPARISON_READY
+
+records:
+  - id: DINE-LAW-001
+    source: NAVAJO_NATION_FUNDAMENTAL_LAWS
+    evidence_class:
+      - DOCUMENTARY_PRACTICE
+      - CURRENT_INDIGENOUS_LAW
+      - MODERN_TRADITION
+    propositions:
+      - traditional_customary_natural_and_common_law_are_publicly_codified
+      - laws_ground_Dine_life_balance_leadership_sovereignty_and_government
+      - k'e_language_and_holistic_education_are_publicly_protected
+    supports:
+      - RELATIONAL_ORDER_MODEL
+      - INSTITUTIONALIZATION_MODEL
+      - POLITICAL_SACRALIZATION_MODEL_PARTIAL
+    confidence: HIGH_FOR_CURRENT_PUBLIC_LAW
+
+  - id: DINE-NATURAL-LAW-001
+    source: NAVAJO_NATION_FUNDAMENTAL_LAWS_NATURAL_LAW
+    evidence_class:
+      - CURRENT_INDIGENOUS_LAW
+      - MODERN_TRADITION
+    propositions:
+      - sacred_elements_sustain_life
+      - six_sacred_mountains_are_to_be_respected_and_protected
+      - all_creation_has_laws_and_right_to_exist
+      - Dine_have_relational_stewardship_obligations
+      - sacred_site_resource_use_requires_respect_protocol_and_offering
+      - future_generations_are_explicit_obligation
+    supports:
+      - RELATIONAL_ORDER_MODEL
+      - SACRED_LAND_PLACE_MODEL
+      - OFFERING_EXCHANGE_MODEL_PARTIAL
+    confidence: HIGH_FOR_CURRENT_PUBLIC_LAW
+
+  - id: DINE-SNBH-001
+    source: DINE_COLLEGE_EDUCATIONAL_PHILOSOPHY
+    evidence_class:
+      - COMMUNITY_EDUCATIONAL_SELF_DESCRIPTION
+      - MODERN_TRADITION
+    propositions:
+      - SNBH_is_publicly_described_as_Dine_traditional_living_system
+      - human_life_is_described_in_harmony_relation_with_natural_world_and_universe
+      - thinking_planning_living_assurance_framework_guides_current_institution
+    supports:
+      - RELATIONAL_ORDER_MODEL
+      - INSTITUTIONALIZATION_MODEL
+    confidence: HIGH_FOR_CURRENT_DINE_COLLEGE_FORMULATION
+
+  - id: DINE-KNOWLEDGE-GOV-001
+    source: NAVAJO_NATION_CULTURAL_RESOURCE_COLLECTIONS_POLICY
+    evidence_class:
+      - INDIGENOUS_RESEARCH_GOVERNANCE_POLICY
+      - DOCUMENTARY_PRACTICE
+    propositions:
+      - sacred_ceremonial_information_has_access_and_recording_restrictions
+      - some_information_should_not_be_collected_or_disseminated
+      - informed_consent_confidentiality_and_tribal_approval_are_required_in_sensitive_contexts
+    supports:
+      - KNOWLEDGE_OR_DISCLOSURE_MODEL
+      - INSTITUTIONALIZATION_MODEL
+    confidence: HIGH
+    guards:
+      - RESTRICTED_KNOWLEDGE_NE_MISSING_DATA
+
+  - id: DINE-LAND-001
+    evidence:
+      - NAVAJO_HHPD_TRADITIONAL_CULTURAL_PROPERTIES_POLICY
+      - NAVAJO_NATION_HUMAN_RIGHTS_SACRED_SITES
+      - NAVAJO_NATION_DIVISION_OF_AGRICULTURE
+    evidence_class:
+      - DOCUMENTARY_PRACTICE
+      - MODERN_TRADITION
+    propositions:
+      - sacred_places_are_living_cultural_religious_properties
+      - land_relation_is_part_of_current_identity_and_sovereignty
+      - sacred_mountain_boundaries_are_publicly_relevant
+    supports:
+      - SACRED_LAND_PLACE_MODEL
+      - RELATIONAL_ORDER_MODEL
+    confidence: BOUNDED_HIGH
+
+axis_status:
+  RELATIONAL_ORDER_MODEL: BOUNDED_CURRENT_PUBLIC
+  SACRED_LAND_PLACE_MODEL: BOUNDED_CURRENT_PUBLIC
+  INSTITUTIONALIZATION_MODEL: BOUNDED_CURRENT_PUBLIC
+  KNOWLEDGE_OR_DISCLOSURE_MODEL: PARTIAL_COMMUNITY_GOVERNANCE
+  OFFERING_EXCHANGE_MODEL: PARTIAL_PUBLIC_PROTOCOL
+  POLITICAL_SACRALIZATION_MODEL: PARTIAL_CURRENT_SOVEREIGN_LAW
+  PERSON_OR_SELF_MODEL: HOLD
+  WORLD_ORIGIN_MODEL: HOLD
+  POSTMORTEM_PATH_MODEL: HOLD
+  CROSS_TRADITION_COMPARISON: HOLD
+
+global_guards:
+  - DINE_NE_GENERIC_NATIVE_AMERICAN_RELIGION
+  - PUBLIC_SOURCE_NE_RESTRICTED_CEREMONIAL_PERMISSION
+  - CURRENT_LAW_NE_PRECONTACT_TRANSCRIPT
+  - RESTRICTED_INFORMATION_NE_UNKNOWN_TO_BE_FILLED
