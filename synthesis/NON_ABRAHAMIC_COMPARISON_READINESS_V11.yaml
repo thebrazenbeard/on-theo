@@ -1,0 +1,41 @@
+schema_version: on-theo.nonabrahamic-comparison-readiness.v11
+status: NON_CANONICAL_RESEARCH_AUDIT
+supersedes_for_current_research:
+  - synthesis/NON_ABRAHAMIC_COMPARISON_READINESS_V10.yaml
+
+source_heads:
+  buddhism: eb0f948788f5171d13c067daea2df54845d22f70
+  hindu: 614fa715fcacee0d7ec1ba573061d3e776e708d3
+  daoism: 483d1bcaebb57a00cda5eb30c15bc3908fdac438
+  shinto: 31b67b5a0aec7015878e5fcf9de2936db80cf83b
+  norse: 22e9fe10d1647a66458c54478c86e7ba6abd83ce
+  sumerian: 3fd5db6f05c008aeba4febe310de99e4ff484770
+
+portfolio_state:
+  six_lanes_exactly_bound: true
+  causal_order_all_six_admitted: true
+  continuity_all_six_admitted: true
+  ritual_order_all_six_bounded: true
+  person_self_admitted_lanes: 5
+  direct_convergence_or_transmission_claims_allowed: false
+  broad_all_tradition_synthesis_allowed: false
+
+current_cross_tradition_tests:
+  - synthesis/CAUSAL_CONTINUITY_CROSS_TRADITION_TEST_V1.md
+  - synthesis/RITUAL_ORDER_CROSS_TRADITION_TEST_V2.md
+
+next_frontier:
+  primary: SHINTO_PERSON_OR_SELF_AND_HUMAN_CONTINUITY
+  secondary: DAOIST_BUDDHIST_CONTACT_REINTERPRETATION
+
+holds:
+  direct_cross_tradition_convergence_or_transmission: HOLD
+  perennialist_all_religions_matrix: PROHIBITED_AT_CURRENT_EVIDENCE
+
+guards:
+  - ALL_SIX_HAVE_RITUAL_NE_ONE_RITUAL_TECHNOLOGY
+  - UNKNOWN_NE_ABSENCE
+  - NOT_ADMITTED_NE_FALSE
+  - SOURCE_LAYER_NE_LATER_DOCTRINE
+  - CONTACT_NE_TRANSMISSION
+  - SYSTEMS_ANALOGY_IS_DOWNSTREAM
