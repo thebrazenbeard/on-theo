@@ -1,0 +1,38 @@
+schema_version: on-theo.devil-worship-witch-demonology-evidence.v1
+status: BOUNDED_DEMONOLOGICAL_CONSTRUCTION
+
+records:
+  - id: DWA-WITCH-CAT-001
+    evidence:
+      - BROEDEL_MALLEUS_CONSTRUCTION
+      - OXFORD_WITCHCRAFT_HISTORY
+    evidence_class: SCHOLARLY_INTERPRETATION
+    propositions:
+      - diabolical_witchcraft_was_a_historically_constructed_composite_category
+      - learned_authorities_did_not_have_one_fixed_definition
+    confidence: HIGH
+
+  - id: DWA-WITCH-MALLEUS-001
+    source: MALLEUS_MALEFICARUM
+    evidence_class:
+      - PRIMARY_TEXT
+      - DEMONOLOGICAL_PROSECUTORIAL_TEXT
+    propositions:
+      - authors_construct_witchcraft_through_Devil_witch_and_divine_permission
+      - text_is_normative_prosecutorial_theory_not_neutral_target_ethnography
+    confidence: HIGH_FOR_TEXT_THEORY
+
+  - id: DWA-WITCH-SABBATH-001
+    evidence_class: SCHOLARLY_INTERPRETATION
+    propositions:
+      - witches_sabbath_developed_as_collective_conspiracy_accusation_template
+    confidence: HIGH
+
+axis_status:
+  ATTRIBUTION_STATUS: DEMONOLOGICAL_THEORY_AND_LEGAL_ALLEGATION
+  CONTACT_AND_REINTERPRETATION_MODEL: NOT_PRIMARY_AXIS
+  CONTINUITY_MODEL: RECURRING_ACCUSATION_TEMPLATE_ONLY
+  CROSS_TRADITION_COMPARISON: HOLD
+
+guards:
+  - TARGET_GROUP_PRACTICE_REQUIRES_INDEPENDENT_EVIDENCE
