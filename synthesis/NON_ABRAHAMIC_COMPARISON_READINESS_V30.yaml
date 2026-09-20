@@ -1,0 +1,35 @@
+schema_version: on-theo.nonabrahamic-comparison-readiness.v30
+status: NON_CANONICAL_RESEARCH_AUDIT
+supersedes_for_current_research:
+  - synthesis/NON_ABRAHAMIC_COMPARISON_READINESS_V29.yaml
+
+latest_axis_state:
+  RELATIONAL_ORDER_MODEL: EXPANDED_TEST_READY
+  SACRED_LAND_PLACE_MODEL: EXPANDED_TEST_READY
+  SACRED_TIME_CALENDAR_MODEL: EXPANDED_TEST_READY
+  DOCUMENTARY_MEMORY_MODEL: EXPANDED_TEST_READY
+  SACRIFICE_AND_BODILY_OFFERING_MODEL: EXPANDED_TEST_READY
+  KNOWLEDGE_GOVERNANCE_DIMENSION: ACTIVE
+  HUMAN_ORIGIN_OR_EMERGENCE_MODEL: STRONG_CANDIDATE
+
+latest_cross_tests:
+  - synthesis/INDIGENOUS_AMERICAS_BREADTH_MATRIX_V2.yaml
+  - synthesis/SACRIFICE_AND_BODILY_OFFERING_CROSS_TRADITION_TEST_V1.md
+  - synthesis/DOCUMENTARY_MEMORY_CROSS_TRADITION_TEST_V1.md
+
+global_gap_audit: synthesis/GLOBAL_BREADTH_GAP_AUDIT_V1.yaml
+
+next_frontier:
+  primary: MODERN_SATANISM_DIACHRONIC_PACKET_V1
+  subsequent: DEVIL_WORSHIP_ACCUSATION_HISTORY_V1
+
+reason: >
+  The active world-traditions queue has been fresh-read. Modern Satanism is the
+  first still-unrepresented requested research family; the accusation-history
+  problem follows and must remain separate.
+
+guards:
+  - ACCUSATION_NE_SELF_IDENTIFIED_RELIGION
+  - SELF_IDENTIFIED_SATANISMS_NE_ONE_SYSTEM
+  - CURRENT_ORGANIZATION_SELF_DESCRIPTION_NE_NEUTRAL_FIELD_TAXONOMY
+  - EXTREMIST_FRINGE_NE_CATEGORY_WHOLE
