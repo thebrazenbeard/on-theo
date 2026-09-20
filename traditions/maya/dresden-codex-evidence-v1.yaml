@@ -1,0 +1,76 @@
+schema_version: on-theo.maya-dresden-codex-evidence.v1
+status: BOUNDED_LATE_POSTCLASSIC_RITUAL_CALENDAR
+
+witness:
+  manuscript: CODEX_DRESDENSIS
+  shelfmark: MSCR_DRESD_R_310
+  custodian: SLUB_DRESDEN
+  period: LATE_POSTCLASSIC
+  approximate_date: 1300_1521_CE
+  region: NORTH_OR_NORTHEAST_YUCATAN_PROBABLE
+  material: BARK_BAST_SCREENFOLD
+  leaves: 39
+  evidence_class:
+    - MANUSCRIPT_WITNESS
+    - MATERIAL_EVIDENCE
+
+records:
+  - id: MAYA-DRES-CALENDAR-001
+    propositions:
+      - manuscript_contains_260_day_Tzolkin_almanacs
+      - manuscript_contains_astronomical_tables_and_Long_Count_dates
+      - calendar_system_supports_multiple_functions_not_one_single_cycle
+    supports:
+      - SACRED_TIME_CALENDAR_MODEL
+      - KNOWLEDGE_OR_DISCLOSURE_MODEL
+    confidence: HIGH
+    guards:
+      - CALENDAR_NE_PROPHECY_ONLY
+
+  - id: MAYA-DRES-RITUAL-001
+    propositions:
+      - almanac_day_qualities_are_linked_in_modern_SLUB_synthesis_to_ritual_response
+      - deity_invocation_rites_and_offerings_are_described_as_part_of_manuscript_system
+    supports:
+      - RITUAL_ORDER_MODEL
+      - OFFERING_EXCHANGE_MODEL_PARTIAL
+    confidence: BOUNDED_INSTITUTIONAL_INTERPRETATION
+    guards:
+      - OFFERING_NE_ONE_RECIPROCITY_MODEL
+      - MODERN_SYNTHESIS_NE_PAGE_LEVEL_GLYPH_BINDING
+
+  - id: MAYA-DRES-ASTRONOMY-001
+    propositions:
+      - astronomical_computation_and_divinatory_use_coexist_in_manuscript_system
+      - eclipses_and_planetary_cycles_are_part_of_current_codex_interpretation
+    supports:
+      - SACRED_TIME_CALENDAR_MODEL
+      - KNOWLEDGE_OR_DISCLOSURE_MODEL
+    confidence: BOUNDED_HIGH
+    guards:
+      - ASTRONOMICAL_ACCURACY_NE_SUPERNATURAL_PREDICTION_VERIFIED
+      - SCIENCE_RELIGION_BINARY_NE_SOURCE_CATEGORY
+
+  - id: MAYA-DRES-2012-001
+    propositions:
+      - modern_2012_world_end_reading_is_rejected_by_SLUB_as_misinterpretation
+      - calendar_rollover_does_not_by_itself_establish_world_termination
+    supports:
+      - WORLD_TERMINUS_RENEWAL_MODEL_CONTROL
+    confidence: HIGH_FOR_MODERN_RECEPTION_CONTROL
+
+axis_status:
+  SACRED_TIME_CALENDAR_MODEL: BOUNDED_POSTCLASSIC_DRESDEN
+  RITUAL_ORDER_MODEL: BOUNDED_POSTCLASSIC_MANUSCRIPT
+  KNOWLEDGE_OR_DISCLOSURE_MODEL: BOUNDED_POSTCLASSIC_DIVINATORY_CALENDAR_LAYER
+  OFFERING_EXCHANGE_MODEL: PARTIAL_POSTCLASSIC_MANUSCRIPT
+  SACRAL_PRESENCE_MODEL: PARTIAL_DEITY_RITUAL_CONTEXT
+  WORLD_TERMINUS_RENEWAL_MODEL: HOLD
+  WORLD_ORIGIN_MODEL: NOT_EXPANDED_BY_THIS_PACKET
+  CROSS_TRADITION_COMPARISON: HOLD
+
+guards:
+  - DRESDEN_CODEX_NE_PAN_MAYA_CANON
+  - LATE_POSTCLASSIC_NE_CLASSIC_DEFAULT
+  - CALENDAR_ZERO_DATE_NE_COMPLETE_WORLD_ORIGIN
+  - FLOOD_IMAGE_NE_WORLD_END_PROPHECY
