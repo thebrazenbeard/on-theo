@@ -1,0 +1,59 @@
+schema_version: on-theo.daoism-talisman-ritual-research-state.v1
+status: DAOIST_TALISMAN_FORM_PACKET_COMPLETE_NON_CANONICAL
+
+base:
+  branch: research/daoism-manuscript-proposition-v1-20260920
+  exact_head: 708ba10413d9511648c2540ad84be74b6b5f6b5c
+
+new_artifacts:
+  - traditions/daoism/daoist-talisman-ritual-parameter-packet-v1.md
+  - traditions/daoism/talisman-ritual-parameter-evidence-v1.yaml
+
+strongest_results:
+  - >
+    Selected Daoist traditions preserve strong written/diagrammatic ritual form,
+    transmission authorization, sequence, and practitioner-state parameters.
+  - >
+    The Sanhuang tradition provides a strong low-ordinary-legibility written-form
+    case with source-claimed divinatory/deity-contact outcomes.
+  - >
+    Lu Xiujing's early Lingbao transmission manual provides detailed ritual order
+    and rank/authorization structure.
+  - >
+    Daoist talisman manuals preserve internally plural theories of efficacy,
+    including objective and practitioner-centered models.
+  - >
+    Later Lingbao ritual complexity is historically composite rather than one
+    timeless system.
+  - >
+    No empirical external effect or anomalous information channel is established.
+
+comparison_contribution:
+  ritual_interface_parameter_sensitivity:
+    status: HIGH_INFORMATION_WRITTEN_FORM_CASE
+    claim_ceiling: >
+      Strong historical form/authorization/efficacy discourse only; no verified
+      hidden symbolic interface.
+
+cross_tradition_update:
+  stronger_shared_abstraction: >
+    FORM_IDENTITY + AUTHORIZATION_OR_CONTEXT + PERFORMANCE
+  weaker_model:
+    ONE_SACRED_LANGUAGE
+  newly_strengthened_dimension:
+    WRITTEN_OR_DIAGRAMMATIC_FORM
+
+next_frontiers:
+  - Sanhuang_fragment_exact_source_matrix
+  - Lu_Xiujing_DZ528_sequence_matrix
+  - talisman_form_variant_and_legibility_control
+  - objective_vs_subjective_efficacy_source_taxonomy
+  - Daoist_Buddhist_contact_transmission_matrix
+  - safe_visual_form_discriminator_design
+
+guards:
+  - WRITTEN_FORM_NE_EXTERNAL_COMMAND
+  - LOW_LEGIBILITY_NE_NONHUMAN_SCRIPT
+  - AUTHORIZATION_NE_HIDDEN_PERMISSION
+  - INTERNAL_EFFICACY_THEORY_NE_EMPIRICAL_EFFECT
+  - HARMFUL_HISTORICAL_PRACTICES_NE_MODERN_REPLICATION

@@ -1,0 +1,97 @@
+schema_version: on-theo.daoism-talisman-ritual-parameter-evidence.v1
+status: NON_CANONICAL_DAOIST_RITUAL_FORM_CONTROL
+parent_exact_head: 708ba10413d9511648c2540ad84be74b6b5f6b5c
+packet: traditions/daoism/daoist-talisman-ritual-parameter-packet-v1.md
+
+records:
+  - id: DAO-LINGBAO-TRANSMISSION-001
+    evidence_class:
+      - PRIMARY_RITUAL_TEXT_MEDIATED_BY_CRITICAL_STUDY
+      - SCHOLARLY_INTERPRETATION
+    source_loci:
+      - DZ_528_TAISHANG_DONGXUAN_LINGBAO_SHOUDU_YI
+    propositions:
+      - early_Lingbao_transmission_has_rank_symbols_order_and_structured_procedure
+      - transmission_status_and_authorization_are_ritually_structural
+    supports:
+      - TRANSMISSION_AUTHORIZATION_PARAMETER
+      - SEQUENCE_PARAMETER
+      - RITUAL_PARAMETER_SENSITIVITY
+    confidence: BOUNDED_STRONG
+    empirical_external_effect: NOT_APPLICABLE_FOR_STATUS_DIMENSION
+
+  - id: DAO-SANHUANG-TALISMAN-001
+    evidence_class:
+      - RECONSTRUCTED_PRIMARY_TEXT_TRADITION
+      - MATERIAL_AND_PARATEXTUAL_EVIDENCE
+      - SCHOLARLY_HISTORICAL_RECONSTRUCTION
+    scholarly_control:
+      - STEAVU_WRIT_OF_THREE_SOVEREIGNS
+      - STEAVU_TALISMAN_PARATEXT_STUDY
+    propositions:
+      - talismanic_and_diagrammatic_forms_are_central_to_selected_Sanhuang_practice
+      - low_legibility_can_support_claims_of_celestial_provenance_and_authority
+      - selected_rituals_claim_divinatory_or_deity_contact_outcomes
+    supports:
+      - WRITTEN_FORM_PARAMETER
+      - LOW_ORDINARY_SEMANTIC_ACCESS_WRITTEN_FORM
+      - CLAIMED_INFORMATION_CHANNEL
+    confidence: BOUNDED_STRONG_FOR_HISTORICAL_CLAIM
+    empirical_external_effect: NONE_ESTABLISHED
+    guards:
+      - RECONSTRUCTED_TEXT_NE_UNBROKEN_WITNESS
+      - ILLEGIBILITY_NE_NONHUMAN_ORIGIN
+
+  - id: DAO-TALISMAN-EFFICACY-001
+    evidence_class:
+      - RITUAL_MANUAL_TRADITION
+      - SCHOLARLY_INTERPRETATION
+    scholarly_control:
+      - CAPITANIO_2023_JAAR
+    propositions:
+      - Daoist_talisman_manuals_define_conditions_of_efficacy
+      - efficacy_discourse_can_be_objective_or_practitioner_centered
+      - one_single_Daoist_causal_model_is_not_supported
+    supports:
+      - TALISMAN_EFFICACY_DISCOURSE
+      - OBJECTIVE_VS_SUBJECTIVE_EFFICACY_MODEL
+      - RITUAL_PARAMETER_SENSITIVITY
+    confidence: BOUNDED_STRONG
+    negative_result:
+      - ONE_UNIFIED_TALISMAN_CAUSAL_MODEL_REJECTED
+
+  - id: DAO-LINGBAO-DAFA-COMPOSITE-001
+    evidence_class:
+      - LATER_RITUAL_TEXT_TRADITION
+      - HISTORICAL_RECONSTRUCTION
+    propositions:
+      - Song_Yuan_Lingbao_dafa_combines_multiple_ritual_technologies
+      - later_complexity_includes_talismans_incantations_petitions_visualization_and_retreat_liturgy
+      - ritual_complexity_is_historically_composite
+    supports:
+      - RITUAL_COMPLEXITY_DIACHRONIC_MODEL
+      - FORM_BEARING_MEDIUM_MODEL
+      - SOMATIC_OR_CONTEXTUAL_PARAMETER_MODEL
+    confidence: BOUNDED
+    negative_result:
+      - LATER_COMPLEXITY_NE_ORIGINAL_UNIFIED_PROTOCOL
+
+axes:
+  RITUAL_PARAMETER_SENSITIVITY: BOUNDED_STRONG_SELECTED_DAOIST_RITUAL
+  WRITTEN_FORM_PARAMETER: BOUNDED_STRONG
+  LOW_ORDINARY_SEMANTIC_ACCESS_WRITTEN_FORM: BOUNDED_STRONG
+  TRANSMISSION_AUTHORIZATION_PARAMETER: BOUNDED_STRONG
+  SEQUENCE_PARAMETER: BOUNDED_STRONG
+  TALISMAN_EFFICACY_DISCOURSE: BOUNDED_STRONG
+  OBJECTIVE_VS_SUBJECTIVE_EFFICACY_MODEL: BOUNDED_STRONG
+  CLAIMED_INFORMATION_CHANNEL: BOUNDED_SELECTED_SANHUANG
+  EMPIRICAL_EXTERNAL_EFFECT: NONE_ESTABLISHED
+  ANOMALOUS_INFORMATION_CHANNEL: NONE_ESTABLISHED
+
+guards:
+  - DAOISM_NE_ONE_RITUAL_SYSTEM
+  - SANHUANG_RECONSTRUCTION_NE_UNBROKEN_WITNESS
+  - WRITTEN_FORM_NE_VERIFIED_CAUSAL_KEY
+  - TALISMAN_USE_NE_TALISMAN_EFFECT
+  - OBJECTIVE_EFFICACY_DISCOURSE_NE_OBJECTIVE_EFFECT
+  - FORM_SENSITIVITY_NE_HIDDEN_INTERFACE
