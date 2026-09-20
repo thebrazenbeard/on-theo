@@ -1,0 +1,71 @@
+schema_version: on-theo.transformation-comparison-schema.v1
+status: NON_CANONICAL_METHOD_SCHEMA
+
+purpose: >
+  Decompose TRANSFORMATION_MODEL so changes of form, perspective, life/death,
+  posthumous cult status, divine narrative state, and world-order are not
+  treated as one mechanism merely because English can call all of them
+  transformation.
+
+dimensions:
+  TRANSFORMATION_DOMAIN:
+    allowed_examples:
+      - FORM_OR_PERSPECTIVE
+      - LIFE_DEATH_PROCESS
+      - POSTHUMOUS_STATUS
+      - DIVINE_NARRATIVE_STATE
+      - WORLD_ORDER
+    rule: DIFFERENT_DOMAINS_MUST_NOT_BE_COLLAPSED
+
+  SUBJECT_TYPE:
+    question: >
+      What changes: human person, divine figure, posthumous named identity,
+      social/cult status, body/form, perspective, or world/cosmos?
+
+  INITIAL_AND_RESULTANT_STATE:
+    question: >
+      What states are actually source-attested before and after the change?
+
+  MECHANISM:
+    question: >
+      Is the change represented as ongoing process, divine intervention,
+      ritual/cult reclassification, capture/substitution, form-change, death,
+      release, destruction/renewal, or another mechanism?
+
+  IDENTITY_CONTINUITY:
+    question: >
+      What, if anything, remains identifiable across the transformation: name,
+      relation, agency, role, narrative identity, world inhabitants, or nothing
+      explicitly specified?
+    rule: TRANSFORMATION_NE_PERSISTENCE_BY_DEFAULT
+
+  REVERSIBILITY_OR_RECURRENCE:
+    allowed_examples:
+      - TEMPORARY
+      - REVERSIBLE
+      - ALTERNATING
+      - IRREVERSIBLE
+      - CYCLIC_OR_RECURRENT
+      - UNKNOWN
+    rule: RELEASE_NE_RESURRECTION_BY_DEFAULT
+
+  AGENCY:
+    question: >
+      Who or what effects the transformation: subject, deity, ritual community,
+      impersonal process, catastrophic event, or unknown?
+
+  EVIDENCE_LAYER:
+    question: >
+      What textual, manuscript, documentary, historical, or later-tradition
+      layer carries the proposition?
+
+comparison_guards:
+  - TRANSFORMATION_NE_ONE_MECHANISM
+  - LIFE_DEATH_TRANSFORMATION_NE_REINCARNATION_BY_DEFAULT
+  - POSTHUMOUS_STATUS_CHANGE_NE_ONTOLOGICAL_SPECIES_CHANGE_PROVED
+  - WORLD_RENEWAL_NE_INDIVIDUAL_AFTERLIFE
+  - RELEASE_NE_RESURRECTION_BY_DEFAULT
+  - MYTHIC_DIVINE_TRANSFORMATION_NE_HUMAN_DEFAULT
+  - PERSPECTIVAL_INSTABILITY_NE_SIMULATION_EVIDENCE
+  - SHARED_TRANSFORMATION_AXIS_NE_SHARED_CAUSAL_MODEL
+  - SIMILARITY_NE_TRANSMISSION
