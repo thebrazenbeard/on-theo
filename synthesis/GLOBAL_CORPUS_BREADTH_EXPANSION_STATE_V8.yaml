@@ -1,0 +1,66 @@
+schema_version: on-theo.global-corpus-breadth-expansion-state.v8
+status: ACTIVE_PORTFOLIO_EXPANSION
+supersedes_for_current_research:
+  - synthesis/GLOBAL_CORPUS_BREADTH_EXPANSION_STATE_V7.yaml
+
+completed_breadth_units:
+  lakota: {exact_head: 8a9cee8335cadc742c9de25c90f4306702a80e8a, pr: 104}
+  maya: {exact_head: 2b5907438334537842710a81886083b9cbd0241a, pr: 105}
+  mexica_nahua: {exact_head: 00e37e475f3669ef2ee040908b126617ffcd17da, pr: 106}
+  olmec: {exact_head: cac89f2e0024c00f71d2d2a835253328c451e7ce, pr: 107}
+  dine: {exact_head: ac988c4a31f354e7c4d902d286c0c950293ffb8a, pr: 108}
+  haudenosaunee: {exact_head: 506d95eb449bc4d11fc61dbe9c18ffca7ab94f5a, pr: 112}
+  andean_inca:
+    exact_head: 355d808e5d55185d50f1dcabb53003635b88a23f
+    pr: 113
+    status: BOUNDED_COMPARISON_READINESS_AUDITED
+
+expanded_comparison:
+  schema: synthesis/EMERGING_NEUTRAL_AXIS_SCHEMA_V2.yaml
+  matrix: synthesis/INDIGENOUS_AMERICAS_BREADTH_MATRIX_V2.yaml
+  new_tests:
+    - synthesis/SACRIFICE_AND_BODILY_OFFERING_CROSS_TRADITION_TEST_V1.md
+    - synthesis/DOCUMENTARY_MEMORY_CROSS_TRADITION_TEST_V1.md
+
+axis_state:
+  RELATIONAL_ORDER_MODEL: EXPANDED_TEST_READY
+  SACRED_LAND_PLACE_MODEL: EXPANDED_TEST_READY
+  SACRED_TIME_CALENDAR_MODEL: EXPANDED_TEST_READY
+  DOCUMENTARY_MEMORY_MODEL: EXPANDED_TEST_READY
+  SACRIFICE_AND_BODILY_OFFERING_MODEL: EXPANDED_TEST_READY
+  KNOWLEDGE_GOVERNANCE_DIMENSION: ACTIVE_SCHEMA_DIMENSION
+  HUMAN_ORIGIN_OR_EMERGENCE_MODEL: STRONG_CANDIDATE
+
+andean_inca_comparison_eligible:
+  bounded:
+    - RITUAL_ORDER_MODEL
+    - POLITICAL_SACRALIZATION_MODEL
+    - INSTITUTIONALIZATION_MODEL
+    - KNOWLEDGE_OR_DISCLOSURE_MODEL
+    - OFFERING_EXCHANGE_MODEL
+    - CONTACT_AND_REINTERPRETATION_MODEL
+    - CONTINUITY_MODEL
+  partial:
+    - MORTUARY_RELATIONSHIP_MODEL
+    - AGENCY_AND_AUTHORITY_MODEL
+  held:
+    - WORLD_ORIGIN_MODEL
+    - PERSON_OR_SELF_MODEL
+    - POSTMORTEM_PATH_MODEL
+    - TRANSFORMATION_MODEL
+    - SACRAL_PRESENCE_MODEL
+    - WORLD_TERMINUS_RENEWAL_MODEL
+
+active_portfolio_frontier:
+  primary: GLOBAL_BREADTH_GAP_AUDIT_V1
+  method:
+    - inspect_existing_tradition_directories
+    - inspect_global_expansion_queue
+    - inspect_current_open_research_lanes
+    - score_gap_by_geographic_historical_source_architecture_diversity
+    - choose_nonduplicate_next_lane
+
+guards:
+  - DO_NOT_PICK_NEXT_TRADITION_FROM_MEMORY_ONLY
+  - EXPANSION_SHOULD_INCREASE_EVIDENCE_ARCHITECTURE_DIVERSITY
+  - RARE_NE_LOW_QUALITY_SOURCE
