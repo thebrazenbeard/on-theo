@@ -1,0 +1,97 @@
+schema_version: on-theo.nonabrahamic-comparison-readiness.v19
+status: NON_CANONICAL_RESEARCH_AUDIT
+supersedes_for_current_research:
+  - synthesis/NON_ABRAHAMIC_COMPARISON_READINESS_V18.yaml
+
+source_heads:
+  buddhism: eb0f948788f5171d13c067daea2df54845d22f70
+  hindu: 614fa715fcacee0d7ec1ba573061d3e776e708d3
+  daoism: 708ba10413d9511648c2540ad84be74b6b5f6b5c
+  shinto: 4939c22c6b13afc1226d8860fa8dbf394e34b5c4
+  norse: 22e9fe10d1647a66458c54478c86e7ba6abd83ce
+  sumerian: 3fd5db6f05c008aeba4febe310de99e4ff484770
+
+method_artifacts:
+  frontier_reaudit: synthesis/CROSS_LANE_FRONTIER_REAUDIT_V1.yaml
+  relation_schema: synthesis/CROSS_TRADITION_RELATION_SCHEMA_V1.yaml
+  world_origin_schema: synthesis/WORLD_ORIGIN_COMPARISON_SCHEMA_V1.yaml
+  mortuary_relationship_schema: synthesis/MORTUARY_RELATIONSHIP_COMPARISON_SCHEMA_V1.yaml
+  institutionalization_schema: synthesis/INSTITUTIONALIZATION_COMPARISON_SCHEMA_V1.yaml
+  matrix: synthesis/BOUNDED_NEUTRAL_COMPARISON_MATRIX_V10.yaml
+  coverage_audit: synthesis/COMPARISON_COVERAGE_AUDIT_V10.yaml
+  contact_test: synthesis/CONTACT_REINTERPRETATION_CROSS_TRADITION_TEST_V1.md
+  political_test: synthesis/POLITICAL_SACRALIZATION_CROSS_TRADITION_TEST_V1.md
+  world_origin_test: synthesis/WORLD_ORIGIN_CROSS_TRADITION_TEST_V1.md
+  mortuary_test: synthesis/MORTUARY_RELATIONSHIP_CROSS_TRADITION_TEST_V1.md
+  institutionalization_test: synthesis/INSTITUTIONALIZATION_CROSS_TRADITION_TEST_V1.md
+
+comparison_ready_and_tested_axes:
+  - CAUSAL_ORDER_TYPE
+  - CONTINUITY_MODEL
+  - RITUAL_ORDER_MODEL
+  - PERSON_OR_SELF_MODEL
+  - INSTITUTIONALIZATION_MODEL
+  - CONTACT_AND_REINTERPRETATION_MODEL
+  - POLITICAL_SACRALIZATION_MODEL
+  - WORLD_ORIGIN_MODEL
+  - MORTUARY_RELATIONSHIP_MODEL
+
+institutionalization_result:
+  admitted_lanes: 5
+  buddhism:
+    status: BOUNDED
+    strongest_result: VALID_PROCEDURE_CAN_CONSTITUTE_AND_REGULATE_RELIGIOUS_COMMUNITY_STATUS
+  daoism:
+    status: BOUNDED
+    strongest_result: RELIGIOUS_MEMBERSHIP_RANK_AND_RITUAL_CAPABILITY_CAN_BE_STABILIZED_THROUGH_REGISTERS_AND_OFFICE
+  shinto:
+    status: BOUNDED
+    strongest_result: STATE_ADMINISTRATION_CAN_COORDINATE_RITUAL_SITES_AND_OBLIGATIONS_WITHOUT_PROVING_DOCTRINAL_UNIFORMITY
+  norse:
+    status: PARTIAL_MATERIAL
+    strongest_result: RITUAL_ACTIVITY_CAN_BE_SPATIALLY_AND_ELITELY_ORGANIZED_WITHOUT_EVIDENCE_FOR_A_CENTRALIZED_RELIGIOUS_BUREAUCRACY
+  sumerian:
+    status: BOUNDED_DEEP_CHAIN
+    strongest_result: RELIGIOUS_INSTITUTION_CAN_BE_EMBEDDED_IN_CITY_ADMINISTRATION_AND_MATERIAL_INFRASTRUCTURE_WHILE_COEXISTING_WITH_NONMONUMENTAL_CULT
+  hindu:
+    status: NOT_ADMITTED
+  strongest_cross_lane_result: RELIGIOUS_PRACTICE_CAN_BE_STABILIZED_THROUGH_MULTIPLE_DISTINCT_INSTITUTIONAL_MECHANISMS
+  one_shared_organizational_template: NOT_SUPPORTED
+  formalization_equals_centralization: false
+  institutionalization_equals_doctrinal_uniformity: false
+
+method_state:
+  direct_textual_adaptation_positive_control: DAOIST_YANG_XI_FORTY_TWO_SECTIONS
+  source_specific_borrowing_negative_control: DUMUZID_BAAL_NONE_ESTABLISHED
+  generic_influence_edges_allowed: false
+  institutionalization_five_lane_test_complete: true
+  formalization_separated_from_centralization: true
+  material_organization_separated_from_formal_membership: true
+
+next_frontier:
+  primary: OFFERING_EXCHANGE_CROSS_TRADITION_TEST
+  reason: >
+    Hindu, Norse, and Sumerian source lanes already admit offering-exchange
+    evidence with sharply different textual/material mechanisms. This can be
+    tested without filling other traditions for symmetry.
+  source_deepening:
+    - BUDDHIST_STUPA_RELIC_AND_LAY_RITUAL
+    - DAOIST_DUREN_JING_LOAN_VOCABULARY
+    - DAOIST_HUAHU_PRIMARY_FRAGMENT_MAP
+    - SHINTO_PRIMARY_HUMAN_SPIRIT_LINE_BINDING
+
+holds:
+  direct_cross_tradition_convergence_or_transmission: HOLD
+  perennialist_all_religions_matrix: PROHIBITED_AT_CURRENT_EVIDENCE
+  one_hidden_doctrine: NOT_SUPPORTED
+  one_shared_creation_model: NOT_SUPPORTED
+  one_shared_afterlife_or_soul_system: NOT_SUPPORTED
+  one_shared_institutional_template: NOT_SUPPORTED
+
+guards:
+  - SHARED_AXIS_NE_SHARED_MECHANISM
+  - FORMALIZATION_NE_CENTRALIZATION
+  - INSTITUTIONALIZATION_NE_DOCTRINAL_UNIFORMITY
+  - EVIDENCE_CLASS_DIFFERENCE_MUST_REMAIN_VISIBLE
+  - CONTACT_NE_TRANSMISSION
+  - SYSTEMS_ANALOGY_IS_DOWNSTREAM
