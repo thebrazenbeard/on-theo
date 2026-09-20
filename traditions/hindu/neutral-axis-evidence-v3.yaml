@@ -1,0 +1,101 @@
+schema_version: on-theo.hindu-neutral-axis-evidence.v3
+status: TEXT_RITUAL_AND_ACOUSTIC_BOUNDED_EVIDENCE
+supersedes_for_current_research:
+  - traditions/hindu/neutral-axis-evidence-v2.yaml
+
+parent_exact_head: 614fa715fcacee0d7ec1ba573061d3e776e708d3
+new_packet: traditions/hindu/vedic-accent-error-packet-v1.md
+
+new_records:
+  - id: HIN-VEDIC-ACCENT-001
+    evidence_class:
+      - PRIMARY_TEXT
+      - SCHOLARLY_LINGUISTIC_INTERPRETATION
+    source_loci:
+      - TAITTIRIYA_SAMHITA_2_4_12_1
+      - SATAPATHA_BRAHMANA_1_6_3_8_10
+    propositions:
+      - Vedic_source_tradition_represents_accentual_form_as_consequential
+      - accent_can_change_linguistic_interpretation
+      - parallel_Vedic_witnesses_preserve_Tvastr_Indra_accent_error_tradition
+    supports_axes:
+      - ACOUSTIC_PARAMETER_SENSITIVITY_MODEL
+      - RITUAL_ERROR_MODEL
+      - SEMANTIC_ACOUSTIC_COUPLING_MODEL
+    confidence: BOUNDED_HIGH_FOR_TEXTUAL_REPRESENTATION
+    not_established:
+      - acoustic_pitch_independently_caused_external_effect
+      - one_identical_form_across_recensions
+      - one_universal_Vedic_acoustic_rule
+    guards:
+      - MISACCENT_NARRATIVE_NE_EMPIRICAL_CAUSATION
+      - ACCENT_CHANGES_MEANING_NE_SOUND_ALONE_CAUSES_EFFECT
+      - SOURCE_ASSERTED_EFFECT_NE_VERIFIED_EFFECT
+
+  - id: HIN-VEDIC-RECITATION-VARIATION-001
+    evidence_class:
+      - SCHOLARLY_INTERPRETATION
+      - DOCUMENTED_RECITATIONAL_PRACTICE
+    propositions:
+      - Vedic_ritual_speech_uses_multiple_context_sensitive_delivery_modes
+      - some_roles_or_rites_use_lower_volume_murmured_or_more_level_recitation
+      - school_and_role_context_must_be_preserved
+    supports_axes:
+      - ACOUSTIC_PARAMETER_SENSITIVITY_MODEL
+    confidence: BOUNDED
+    negative_result:
+      - ONE_UNIVERSAL_VEDIC_PITCH_PROTOCOL_REJECTED
+    guards:
+      - ONE_RECITATION_MODE_NE_ALL_VEDIC_RITUAL
+      - MODERN_RECITATION_NE_ANCIENT_WITNESS
+      - SCHOOL_VARIATION_REMAINS_VISIBLE
+
+  - id: HIN-VEDIC-ACCENT-RECEPTION-001
+    evidence_class:
+      - LATER_TRADITION
+      - COMMENTARY
+    source_loci:
+      - PANINIYA_SIKSA_TRADITIONAL_VERSE_52
+      - PATANJALI_MAHABHASYA_FIRST_AHNIKA
+    propositions:
+      - later_Sanskrit_phonetic_and_grammatical_traditions_preserve_misaccent_warning
+      - phonological_precision_remains_a_didactic_and_normative concern
+    supports_axes:
+      - KNOWLEDGE_GOVERNANCE_DIMENSION
+      - ACOUSTIC_PARAMETER_SENSITIVITY_MODEL
+    confidence: BOUNDED
+    guards:
+      - LATER_RECEPTION_NE_EARLY_SOURCE
+      - DIDACTIC_WARNING_NE_EMPIRICAL_EFFECT
+
+new_axes:
+  ACOUSTIC_PARAMETER_SENSITIVITY_MODEL:
+    status: BOUNDED_VEDIC_TEXTUAL
+    strongest_result: >
+      Selected Vedic sources and later reception preserve acoustic-form
+      precision as consequential while recitational requirements remain
+      role-, rite-, school- and context-sensitive.
+  RITUAL_ERROR_MODEL:
+    status: BOUNDED_VEDIC
+    strongest_result: >
+      Speech-form error and broader ritual disruption/expiation are explicit
+      enough to support a dedicated error dimension without implying one causal
+      mechanism.
+  SEMANTIC_ACOUSTIC_COUPLING_MODEL:
+    status: BOUNDED
+    strongest_result: >
+      Accent can alter linguistic interpretation, so acoustic form and semantic
+      content cannot be assumed independent.
+
+rejected:
+  - UNIVERSAL_LOW_GUTTURAL_SACRED_LANGUAGE
+  - ONE_UNIVERSAL_VEDIC_ACOUSTIC_PROTOCOL
+  - MISACCENT_AS_EMPIRICAL_PROOF_OF_SUPERNATURAL_CAUSATION
+  - ACOUSTIC_FORM_AS_HIDDEN_INTERFACE_EVIDENCE
+
+guards:
+  - VEDIC_NE_ALL_HINDU
+  - TEXT_NE_PERFORMANCE
+  - SOURCE_ASSERTED_EFFECT_NE_EMPIRICAL_EFFECT
+  - ACOUSTIC_PARAMETER_NE_UNIVERSAL_FREQUENCY
+  - CONTEXT_AND_ROLE_REQUIRED
