@@ -1,0 +1,46 @@
+schema_version: on-theo.daoism-synthesis-source-binding.v5
+status: NON_CANONICAL_EXACT_SOURCE_EXTENSION
+supersedes_for_current_research:
+  - synthesis/DAOISM_PRIMARY_SOURCE_BINDING_V4.yaml
+
+source_extension:
+  branch: research/daoism-manuscript-proposition-v1-20260920
+  head: 708ba10413d9511648c2540ad84be74b6b5f6b5c
+  draft_pr: 99
+
+new_political_artifacts:
+  - traditions/daoism/zhang-lu-hanzhong-political-control-v1.md
+  - traditions/daoism/neutral-axis-evidence-v3.yaml
+  - traditions/daoism/research-state-v6.yaml
+
+political_sacralization:
+  status: PARTIAL_INSTITUTIONAL_GOVERNANCE
+  source_locus: SANGUOZHI_WEISHU_8_ZHANG_LU
+  mechanisms:
+    - RELIGIOUS_OFFICE_AS_TERRITORIAL_GOVERNANCE
+    - RELIGIOUS_POLITICAL_INSTITUTIONAL_ENTANGLEMENT
+  supported:
+    - religious_libationers_govern_in_place_of_ordinary_officials
+    - Zhang_Lu_holds_territorial_power
+    - late_Han_pragmatic_recognition
+    - contemplated_King_of_Hanning_title
+  not_admitted:
+    - divine_mandate
+    - sacral_monarchy
+    - jade_seal_as_explicit_heavenly_omen
+    - universal_Daoist_political_theology
+
+preserved_contact_control:
+  YANG_XI_FORTY_TWO_SECTIONS:
+    relation: SOURCE_SPECIFIC_TRANSMISSION_WITH_RECODING
+    ceiling: STRONG_SCHOLARLY_TEXTUAL_DEPENDENCE
+  YAO_BODUO_STELE:
+    relation: MATERIAL_HYBRIDIZATION_WITH_RETAINED_DAOIST_IDENTITY
+    ceiling: OBJECT_HIGH_INTERPRETATION_BOUNDED
+
+guards:
+  - RELIGIOUS_GOVERNANCE_NE_DIVINE_MANDATE
+  - DE_FACTO_RULE_NE_THEOLOGICAL_LEGITIMATION
+  - HAN_RECOGNITION_NE_RELIGIOUS_ENDORSEMENT
+  - JADE_SEAL_NE_DIVINE_OMEN_WITHOUT_EXPLICIT_SOURCE_SUPPORT
+  - CONTACT_NE_SEMANTIC_IDENTITY
