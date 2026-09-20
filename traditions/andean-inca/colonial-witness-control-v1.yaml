@@ -1,0 +1,89 @@
+schema_version: on-theo.andean-inca-colonial-witness-control.v1
+status: MULTI_WITNESS_COLONIAL_ARCHIVE_BOUND
+
+witnesses:
+  GUAMAN_POMA:
+    date: CA_1615_1616
+    role: INDIGENOUS_COLONIAL_AUTHOR_REFORMER
+    evidence_class:
+      - COLONIAL_INDIGENOUS_MANUSCRIPT
+      - IMAGE_PROGRAM
+      - COMMENTARY
+    strengths:
+      - Indigenous_colonial_perspective
+      - Quechua_terms_and_passages
+      - autograph_visual_textual_witness
+    guards:
+      - CHRISTIAN_COLONIAL_FRAME_VISIBLE
+
+  GARCILASO:
+    publication: 1609
+    role: MESTIZO_QUECHUA_INFORMED_HISTORIOGRAPHER
+    evidence_class:
+      - COLONIAL_HISTORIOGRAPHY
+      - FAMILY_ORAL_MEMORY
+      - COMMENTARY
+    strengths:
+      - Quechua_philological_interpretation
+      - family_and_correspondence_memory
+    guards:
+      - HUMANIST_CLASSICAL_FRAME_VISIBLE
+      - COHERENT_MODEL_NE_AUTOMATIC_EARLY_FACT
+
+  CIEZA:
+    publication_first_part: 1553
+    role: EARLY_SPANISH_TRAVELER_CHRONICLER
+    evidence_class: EARLY_COLONIAL_HISTORICAL_RECONSTRUCTION
+    strengths:
+      - early_postconquest_observation
+      - broad_regional_reporting
+    guards:
+      - COLONIAL_OBSERVER_NE_INDIGENOUS_TRANSCRIPT
+
+  BETANZOS:
+    role: EARLY_SPANISH_QUECHUA_MEDIATED_CHRONICLER
+    evidence_class: EARLY_COLONIAL_HISTORICAL_RECONSTRUCTION
+    strengths:
+      - Quechua_competence
+      - Cusco_elite_source_access
+    guards:
+      - CUSCO_ELITE_SOURCE_NE_ALL_ANDEAN
+
+  MOLINA:
+    role: COLONIAL_CLERIC_RITUAL_DOCUMENTARIAN
+    evidence_class:
+      - COLONIAL_CLERICAL_DOCUMENTATION
+      - HISTORICAL_RECONSTRUCTION
+    strengths:
+      - ritual_calendar_origin_and_prayer_material
+    guards:
+      - MISSIONARY_CONTEXT_VISIBLE
+
+  COBO:
+    completion: 1653
+    role: LATER_JESUIT_SYNTHESIZER
+    evidence_class:
+      - LATER_COLONIAL_COMMENTARY
+      - HISTORICAL_RECONSTRUCTION
+    strengths:
+      - ceque_huaca_catalogue
+      - synthesis_of_earlier_material
+    guards:
+      - LATER_SYNTHESIS_NE_EARLY_EYEWITNESS
+
+method:
+  agreement_requires_independence_test: true
+  variants_preserved: true
+  archaeology_independent_constraint: true
+  extirpation_documents_classified_as_suppression_context: true
+
+axis_status:
+  CONTACT_AND_REINTERPRETATION_MODEL: BOUNDED_COLONIAL_MULTI_WITNESS
+  KNOWLEDGE_OR_DISCLOSURE_MODEL: BOUNDED_DOCUMENTARY_MEDIATION
+  DOCUMENTARY_MEMORY_MODEL: BOUNDED_ORAL_MATERIAL_ALPHABETIC_CHAIN
+  CONTINUITY_MODEL: PARTIAL_MEMORY_TRANSMISSION_WITH_REFRAMING
+  CROSS_TRADITION_COMPARISON: HOLD
+
+guards:
+  - NO_BLENDED_SPANISH_CHRONICLES_SOURCE
+  - EXACT_WITNESS_REQUIRED
