@@ -1,0 +1,71 @@
+schema_version: on-theo.haudenosaunee-authority-evidence.v1
+status: BOUNDED_CURRENT_PUBLIC_AUTHORITY_ORDER
+
+records:
+  - id: HAU-AUTH-CLAN-MOTHER-001
+    source: HCCC_GOVERNMENT
+    propositions:
+      - Clan_Mothers_select_Chiefs
+      - Clan_Mothers_can_remove_Chiefs_for_failure_of_duties
+      - title_authority_is_embedded_in_clan_structure
+    supports:
+      - AGENCY_AND_AUTHORITY_MODEL
+      - INSTITUTIONALIZATION_MODEL
+    confidence: HIGH_CURRENT_PUBLIC
+
+  - id: HAU-AUTH-CHIEF-001
+    source: HCCC_GOVERNMENT
+    propositions:
+      - Chiefs_represent_clans_and_nations
+      - Chiefs_are_accountable_to_collective_welfare_and_Great_Law
+    supports:
+      - AGENCY_AND_AUTHORITY_MODEL
+      - POLITICAL_SACRALIZATION_MODEL
+    confidence: HIGH_CURRENT_PUBLIC
+
+  - id: HAU-AUTH-FAITH-001
+    evidence:
+      - HCCC_GOVERNMENT
+      - ONEIDA_CLAN_SYSTEM
+    propositions:
+      - Faithkeepers_have_spiritual_cultural_ceremonial_advisory_roles
+      - Faithkeepers_help_maintain_public_ceremonial_cycles
+    supports:
+      - AGENCY_AND_AUTHORITY_MODEL
+      - INSTITUTIONALIZATION_MODEL
+    confidence: BOUNDED_HIGH
+
+  - id: HAU-AUTH-SOV-001
+    evidence:
+      - ONONDAGA_SOVEREIGNTY
+      - HCCC_WHO_WE_ARE
+    propositions:
+      - member_nations_retain_internal_sovereignty
+      - Grand_Council_handles_shared_Confederacy_matters
+      - Great_Law_is_currently_described_as_spiritual_moral_social_order
+    supports:
+      - POLITICAL_SACRALIZATION_MODEL
+      - INSTITUTIONALIZATION_MODEL
+    confidence: HIGH_CURRENT_PUBLIC
+
+  - id: HAU-AUTH-FUTURE-001
+    source: ONONDAGA_GOVERNMENT
+    propositions:
+      - Good_Mind_decision_language_includes_responsibility_for_seven_generations
+    supports:
+      - RELATIONAL_ORDER_MODEL
+      - POLITICAL_SACRALIZATION_MODEL
+    confidence: HIGH_FOR_CURRENT_ONONDAGA_PUBLIC
+    guards:
+      - ONONDAGA_FORMULATION_NE_ALL_HAUDENOSAUNEE_TEXTS
+
+axis_status:
+  POLITICAL_SACRALIZATION_MODEL: BOUNDED_CURRENT_GREAT_LAW
+  AGENCY_AND_AUTHORITY_MODEL: BOUNDED_DISTRIBUTED_MULTI_OFFICE
+  INSTITUTIONALIZATION_MODEL: BOUNDED_MULTI_LEVEL
+  RELATIONAL_ORDER_MODEL: BOUNDED_INTERGENERATIONAL
+  CROSS_TRADITION_COMPARISON: HOLD
+
+guards:
+  - DISTRIBUTED_AUTHORITY_NE_ONE_HIERARCHICAL_MODEL
+  - CURRENT_PUBLIC_ORDER_NE_EXACT_PRECONTACT_RECONSTRUCTION
