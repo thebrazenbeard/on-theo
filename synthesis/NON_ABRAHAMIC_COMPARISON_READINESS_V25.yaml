@@ -1,0 +1,87 @@
+schema_version: on-theo.nonabrahamic-comparison-readiness.v25
+status: NON_CANONICAL_RESEARCH_AUDIT
+supersedes_for_current_research:
+  - synthesis/NON_ABRAHAMIC_COMPARISON_READINESS_V24.yaml
+
+existing_six_lane_source_heads:
+  buddhism: eb0f948788f5171d13c067daea2df54845d22f70
+  hindu: 614fa715fcacee0d7ec1ba573061d3e776e708d3
+  daoism: 708ba10413d9511648c2540ad84be74b6b5f6b5c
+  shinto: 4939c22c6b13afc1226d8860fa8dbf394e34b5c4
+  norse: 22e9fe10d1647a66458c54478c86e7ba6abd83ce
+  sumerian: 3fd5db6f05c008aeba4febe310de99e4ff484770
+
+breadth_units:
+  lakota:
+    exact_head: 8a9cee8335cadc742c9de25c90f4306702a80e8a
+    pr: 104
+    status: BOUNDED_COMPARISON_READINESS_AUDITED
+  maya:
+    exact_head: 2b5907438334537842710a81886083b9cbd0241a
+    pr: 105
+    status: BOUNDED_COMPARISON_READINESS_AUDITED
+  mexica_nahua:
+    exact_head: 00e37e475f3669ef2ee040908b126617ffcd17da
+    pr: 106
+    status: BOUNDED_COMPARISON_READINESS_AUDITED
+
+mexica_nahua_method_result: >
+  Mexica/Nahua evidence is comparison-ready only through explicit polity,
+  community, region, period and evidence-mode labels. Imperial Mexica material,
+  colonial Nahua manuscript layers, conquest-boundary pictorial evidence and
+  living regional Nahua traditions are not interchangeable.
+
+new_axis_pressure:
+  SACRED_TIME_CALENDAR_MODEL:
+    status: STRONG_CANDIDATE
+    independent_support:
+      - MAYA_POSTCLASSIC_AND_LIVING
+      - MEXICA_NAHUA_PICTORIAL_AND_LIVING
+  SACRED_LAND_PLACE_MODEL:
+    status: STRONG_CANDIDATE
+    independent_support:
+      - LAKOTA
+      - MAYA
+      - MEXICA_NAHUA
+  RELATIONAL_ORDER_MODEL:
+    status: STRONG_CANDIDATE
+    independent_support:
+      - LAKOTA
+      - MAYA
+      - LIVING_NAHUA
+  HUMAN_ORIGIN_OR_EMERGENCE_MODEL:
+    status: STRONG_CANDIDATE
+    independent_support:
+      - LAKOTA
+      - MAYA
+  SACRIFICE_AND_BODILY_OFFERING_MODEL:
+    status: STRONG_DECOMPOSITION_CANDIDATE
+    source_pressure:
+      - MEXICA_TEMPLO_MAYOR
+
+matrix_policy:
+  retroactive_breadth_cell_filling: false
+  future_expanded_tests_require_fresh_all_lane_binding: true
+  original_completed_tests_remain_bound_to_original_exact_heads: true
+
+next_frontier:
+  primary: OLMEC_MATERIAL_ICONOGRAPHIC_PACKET_V1
+  reason: >
+    Three new Indigenous-Americas breadth lanes now have defensible independent
+    foundations. Olmec is the next intended Mesoamerican frontier and requires a
+    deliberately lower claim ceiling because recoverable religion is primarily
+    material/iconographic rather than based on a readable surviving theological
+    corpus.
+
+holds:
+  global_generalization_from_current_sample: PROHIBITED
+  perennialist_all_religions_matrix: PROHIBITED_AT_CURRENT_EVIDENCE
+  restricted_sacred_knowledge_reproduction: PROHIBITED
+
+guards:
+  - EXACT_HEAD_BINDING_REQUIRED
+  - COMPARISON_READY_NE_TRADITION_COMPLETE
+  - COMMUNITY_REGION_PERIOD_AND_EVIDENCE_MODE_REQUIRED
+  - MATERIAL_EVIDENCE_NE_TEXTUAL_THEOLOGY
+  - SIMILARITY_NE_TRANSMISSION
+  - SYSTEMS_ANALOGY_IS_DOWNSTREAM
