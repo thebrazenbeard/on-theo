@@ -1,0 +1,87 @@
+schema_version: on-theo.lakota-sacred-land-evidence.v1
+status: BOUNDED_PLACE_AND_PROVENANCE_CONTROL
+
+records:
+  - id: LAK-LAND-WIND-CAVE-001
+    source: NPS_LAKOTA_EMERGENCE_STORY
+    source_provenance:
+      community: CHEYENNE_CREEK_PINE_RIDGE
+      nation: OGLALA_LAKOTA
+      transmitter: WILMER_MESTETH
+      public_reteller: SINA_BEAR_EAGLE
+    evidence_class:
+      - COMMUNITY_TRANSMITTED_PUBLIC_NARRATIVE
+      - PUBLIC_INSTITUTIONAL_PRESENTATION
+    propositions:
+      - emergence_versions_vary_by_band_and_family
+      - people_emerge_from_spirit_lodge_through_breathing_earth_passage
+      - bison_and_human_emergence_are_linked_in_this_version
+      - Wind_Cave_is_a_continuing_origin_marker
+    supports:
+      - SACRED_LAND_PLACE_MODEL
+      - HUMAN_ORIGIN_OR_EMERGENCE_MODEL
+    confidence: BOUNDED_HIGH_FOR_THIS_VERSION
+    guards:
+      - ONE_OGLALA_VERSION_NE_ALL_LAKOTA
+      - HUMAN_EMERGENCE_NE_WORLD_CREATION
+
+  - id: LAK-LAND-BEAR-BUTTE-001
+    source: SOUTH_DAKOTA_GFP_BEAR_BUTTE
+    evidence_class:
+      - DOCUMENTARY_PRACTICE
+      - PUBLIC_SITE_MANAGEMENT
+    propositions:
+      - Mato_Paha_is_publicly_identified_as_Lakota_name
+      - site_is_sacred_to_multiple_Indigenous_nations
+      - contemporary_religious_ceremony_occurs
+      - prayer_offerings_are_present_and_protected
+    supports:
+      - SACRED_LAND_PLACE_MODEL
+      - RITUAL_ORDER_MODEL_PARTIAL
+    confidence: HIGH_FOR_PUBLIC_SITE_PRACTICE
+    guards:
+      - MULTI_TRIBAL_SITE_NE_LAKOTA_EXCLUSIVE
+      - SITE_MANAGEMENT_DESCRIPTION_NE_COMPLETE_THEOLOGY
+
+  - id: LAK-LAND-BEAR-LODGE-001
+    source:
+      - NPS_BEAR_LODGE_NAME
+      - NPS_AMERICAN_INDIAN_CONNECTIONS
+    evidence_class:
+      - PUBLIC_SITE_INTERPRETATION
+      - HISTORICAL_RECONSTRUCTION
+    propositions:
+      - Bear_Lodge_and_related_names_are_attested_as_Lakota_place_names
+      - current_Lakota_and_other_Indigenous_relation_to_site_is_publicly_documented
+      - sacred_site_name_conflict_is_part_of_current_place_relation
+    supports:
+      - SACRED_LAND_PLACE_MODEL
+    confidence: BOUNDED
+    guards:
+      - HISTORICAL_STORY_COMPILATION_NE_COMMUNITY_PRIMARY_SOURCE
+      - MULTI_TRIBAL_SITE_NE_ONE_TRADITION
+
+  - id: LAK-LAND-BLACK-HILLS-NETWORK-001
+    evidence_class:
+      - HISTORICAL_RECONSTRUCTION
+      - PUBLIC_SITE_INTERPRETATION
+    propositions:
+      - Black_Hills_sacred_geography_contains_multiple_named_places_with_distinct_relations
+      - Wind_Cave_Bear_Butte_and_Bear_Lodge_should_not_be_collapsed
+    supports:
+      - SACRED_LAND_PLACE_MODEL
+    confidence: BOUNDED_SYNTHESIS
+
+axis_status:
+  SACRED_LAND_PLACE_MODEL: BOUNDED_STRENGTHENED
+  HUMAN_ORIGIN_OR_EMERGENCE_MODEL: BOUNDED_ONE_OGLALA_VERSION
+  WORLD_ORIGIN_MODEL: NOT_ADMITTED
+  RITUAL_ORDER_MODEL: PARTIAL_STRENGTHENED
+  CROSS_TRADITION_COMPARISON: HOLD
+
+guards:
+  - SACRED_PLACE_NE_UNIVERSAL_CREATION_SITE
+  - ONE_PLACE_NARRATIVE_NE_ONE_LAKOTA_COSMOGONY
+  - OGLALA_WIND_CAVE_VERSION_NE_ALL_LAKOTA_VERSIONS
+  - PUBLIC_SITE_INTERPRETATION_NE_RESTRICTED_KNOWLEDGE
+  - SACRED_LAND_RELATION_NE_PROPERTY_ONLY
