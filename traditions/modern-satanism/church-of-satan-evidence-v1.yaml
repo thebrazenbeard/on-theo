@@ -1,0 +1,54 @@
+schema_version: on-theo.modern-satanism-cos-evidence.v1
+status: BOUNDED_CURRENT_CHURCH_OF_SATAN
+
+records:
+  - id: SAT-COS-REFERENT-001
+    propositions:
+      - current_CoS_denies_literal_supernatural_Satan
+      - Satan_is_symbol_of_pride_liberty_individualism_and_potential
+    supports:
+      - SATAN_REFERENT_MODEL
+      - CONTACT_AND_REINTERPRETATION_MODEL
+    confidence: HIGH_CURRENT_SELF_DESCRIPTION
+
+  - id: SAT-COS-SELF-001
+    propositions:
+      - current_CoS_centers_carnal_material_self
+      - self_deification_or_self_centrality_is_explicit
+    supports:
+      - PERSON_OR_SELF_MODEL
+    confidence: HIGH_CURRENT_SELF_DESCRIPTION
+
+  - id: SAT-COS-RITUAL-001
+    propositions:
+      - Greater_Magic_is_optional
+      - official_minimum_definition_is_self_transformational_psychodrama
+      - worship_of_higher_power_is_not_required
+    supports:
+      - RITUAL_ORDER_MODEL
+    confidence: HIGH_CURRENT_SELF_DESCRIPTION
+
+  - id: SAT-COS-INST-001
+    propositions:
+      - formal_degrees_Priesthood_Council_of_Nine_and_administration_exist
+      - degrees_are_not_required_initiatory_steps
+      - degrees_do_not_command_member_obedience
+    supports:
+      - INSTITUTIONALIZATION_MODEL
+      - AGENCY_AND_AUTHORITY_MODEL
+    confidence: HIGH_CURRENT_SELF_DESCRIPTION
+
+  - id: SAT-COS-SAC-001
+    propositions:
+      - literal_supernatural_sacrifice_is_rejected
+    supports:
+      - SACRIFICE_AND_BODILY_OFFERING_NEGATIVE_CONTROL
+    confidence: HIGH_CURRENT_SELF_DESCRIPTION
+
+axis_status:
+  PERSON_OR_SELF_MODEL: BOUNDED_COS
+  RITUAL_ORDER_MODEL: BOUNDED_COS
+  INSTITUTIONALIZATION_MODEL: BOUNDED_COS
+  AGENCY_AND_AUTHORITY_MODEL: BOUNDED_COS
+  CONTACT_AND_REINTERPRETATION_MODEL: BOUNDED_COS
+  CROSS_TRADITION_COMPARISON: HOLD
