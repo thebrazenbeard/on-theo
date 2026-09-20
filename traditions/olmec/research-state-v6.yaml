@@ -1,0 +1,28 @@
+schema_version: on-theo.olmec-research-state.v6
+status: INTERACTION_TRANSMISSION_HOSTILE_TEST_COMPLETE_READY_FOR_READINESS_AUDIT
+supersedes_for_current_research:
+  - traditions/olmec/research-state-v5.yaml
+
+branch:
+  name: research/olmec-material-iconographic-v1-20260920
+  pr: 107
+
+new_artifacts:
+  interaction_test: traditions/olmec/interaction-transmission-hostile-test-v1.md
+  interaction_evidence: traditions/olmec/interaction-transmission-hostile-test-v1.yaml
+
+current_method_results:
+  interregional_exchange: STRONG
+  Olmec_style_dispersion: STRONG
+  one_way_mother_culture_model: NOT_SUPPORTED_AS_DEFAULT
+  specific_religious_transmission: CASE_BY_CASE_HOLD
+  iconographic_systematic_pantheon: NOT_ADMITTED
+  readable_textual_theology: NOT_AVAILABLE
+
+next_frontier:
+  primary: OLMEC_COMPARISON_READINESS_AUDIT_V1
+
+guards:
+  - SIMILARITY_NE_TRANSMISSION
+  - EXCHANGE_NE_RELIGIOUS_BORROWING
+  - LOW_TEXTUAL_CEILING_MUST_REMAIN_VISIBLE

@@ -1,0 +1,121 @@
+schema_version: on-theo.olmec-neutral-axis-evidence.v1
+status: MATERIAL_FOUNDATION_NOT_COMPARISON_READY
+
+records:
+  - id: OLM-SL-001
+    site: SAN_LORENZO_TENOCHTITLAN
+    period: EARLY_FORMATIVE_TO_EARLY_MIDDLE_FORMATIVE
+    evidence_class:
+      - MATERIAL_EVIDENCE
+      - ARCHAEOLOGICAL_RECONSTRUCTION
+    propositions:
+      - large_scale_landscape_modification_is_attested
+      - colossal_heads_and_thrones_are_attested
+      - long_distance_volcanic_stone_transport_is_attested
+      - elite_social_political_organization_is_strongly_supported
+    supports:
+      - POLITICAL_SACRALIZATION_MODEL_PARTIAL
+      - INSTITUTIONALIZATION_MODEL_PARTIAL
+    guards:
+      - MONUMENTAL_ELITE_AUTHORITY_NE_DIVINE_KINGSHIP_PROVED
+
+  - id: OLM-LV-A-001
+    site: LA_VENTA_COMPLEX_A
+    evidence_class:
+      - MATERIAL_EVIDENCE
+      - ARCHAEOLOGICAL_CONTEXT
+    propositions:
+      - ceremonial_precinct_is_archaeologically_identified
+      - approximately_fifty_offerings_are_reported
+      - five_massive_serpentine_offerings_are_reported
+      - imported_jade_and_other_ritual_materials_are_attested
+    supports:
+      - RITUAL_ORDER_MODEL
+      - OFFERING_EXCHANGE_MODEL_PARTIAL
+      - INSTITUTIONALIZATION_MODEL
+    confidence: HIGH_FOR_MATERIAL_DEPOSITION
+    guards:
+      - DEPOSITION_NE_NAMED_RECIPIENT_OR_EFFECT
+
+  - id: OLM-LV-SCULPTURE-001
+    site: LA_VENTA
+    evidence_class:
+      - MATERIAL_EVIDENCE
+      - SCHOLARLY_INSTITUTIONAL_INTERPRETATION
+    propositions:
+      - monumental_sculpture_functions_as_structured_official_visual_communication
+      - colossal_heads_are_interpreted_as_male_elite_portraits
+      - composite_human_animal_figures_are_recurrent
+    supports:
+      - POLITICAL_SACRALIZATION_MODEL_PARTIAL
+      - AGENCY_AND_AUTHORITY_MODEL_CANDIDATE
+    guards:
+      - OFFICIAL_VISUAL_COMMUNICATION_NE_READABLE_TEXT
+      - ELITE_PORTRAIT_NE_DIVINITY
+
+  - id: OLM-CASC-001
+    source: CASCAJAL_BLOCK
+    evidence_class:
+      - MATERIAL_EVIDENCE
+      - POSSIBLE_WRITING
+      - SCHOLARLY_INTERPRETATION
+    propositions:
+      - block_contains_62_incised_signs
+      - writing_status_has_been_debated
+      - current_scholarship_increasingly_accepts_authenticity_and_possible_writing
+      - signs_remain_undeciphered
+    supports:
+      - WRITING_HISTORY_CONTROL
+    guards:
+      - UNDECIPHERED_SIGNS_NE_READABLE_THEOLOGY
+
+  - id: OLM-OXT-001
+    site: OXTOTITLAN_GUERRERO
+    approximate_date: 900_600_BCE
+    evidence_class:
+      - MATERIAL_EVIDENCE
+      - ROCK_ART
+      - SCHOLARLY_INTERPRETATION
+    propositions:
+      - cave_contains_Olmec_affiliated_paintings
+      - INAH_associates_selected_motifs_with_water_rain_and_fertility
+    supports:
+      - SACRED_LAND_PLACE_MODEL_PARTIAL
+      - RELATIONAL_ORDER_MODEL_PARTIAL
+    guards:
+      - OUTSIDE_HEARTLAND_NE_HEARTLAND_DOCTRINE
+
+  - id: OLM-GREENSTONE-001
+    evidence:
+      - LA_VENTA_JADE_CACHES
+      - PROVENANCED_AND_MUSEUM_GREENSTONE_CELTS
+    evidence_class:
+      - MATERIAL_EVIDENCE
+      - SCHOLARLY_ICONOGRAPHIC_INTERPRETATION
+    propositions:
+      - greenstone_objects_are_ritually_deposited
+      - maize_growth_fertility_readings_exist_in_current_scholarship
+    supports:
+      - OFFERING_EXCHANGE_MODEL_PARTIAL
+      - RELATIONAL_ORDER_MODEL_CANDIDATE
+    guards:
+      - MAIZE_ICONOGRAPHY_INTERPRETATION_NE_TEXTUAL_DOCTRINE
+
+axis_status:
+  RITUAL_ORDER_MODEL: BOUNDED_MATERIAL_LA_VENTA
+  OFFERING_EXCHANGE_MODEL: PARTIAL_MATERIAL_DEPOSITION
+  POLITICAL_SACRALIZATION_MODEL: PARTIAL_MONUMENTAL_AUTHORITY
+  INSTITUTIONALIZATION_MODEL: PARTIAL_CIVIC_CEREMONIAL_ARCHITECTURE
+  SACRED_LAND_PLACE_MODEL: PARTIAL_OLMEC_STYLE
+  RELATIONAL_ORDER_MODEL: PARTIAL_INTERPRETIVE
+  WORLD_ORIGIN_MODEL: NOT_ADMITTED
+  PERSON_OR_SELF_MODEL: NOT_ADMITTED
+  POSTMORTEM_PATH_MODEL: NOT_ADMITTED
+  CROSS_TRADITION_COMPARISON: HOLD
+
+global_guards:
+  - OLMEC_ICONOGRAPHY_NE_SYSTEMATIC_THEOLOGY
+  - UNDECIPHERED_WRITING_NE_PRIMARY_TEXT_PROPOSITIONS
+  - MOTHER_CULTURE_NE_DEFAULT_CAUSAL_MODEL
+  - OLMEC_STYLE_NE_DIRECT_CONTROL_OR_TRANSMISSION
+  - SCHOLARLY_ICONOGRAPHIC_NAME_NE_NATIVE_SELF_NAME

@@ -1,0 +1,39 @@
+schema_version: on-theo.olmec-research-state.v3
+status: CASCAJAL_WRITING_CONTROL_ADDED
+supersedes_for_current_research:
+  - traditions/olmec/research-state-v2.yaml
+
+branch:
+  name: research/olmec-material-iconographic-v1-20260920
+  pr: 107
+
+new_artifacts:
+  cascajal_packet: traditions/olmec/cascajal-writing-control-v1.md
+  cascajal_evidence: traditions/olmec/cascajal-writing-control-v1.yaml
+
+current_internal_status:
+  RITUAL_ORDER_MODEL: BOUNDED_LA_VENTA_COMPLEX_A
+  OFFERING_EXCHANGE_MODEL: PARTIAL_MULTITYPE_MATERIAL_DEPOSITION
+  INSTITUTIONALIZATION_MODEL: BOUNDED_CEREMONIAL_LABOR_PLUS_PARTIAL_WRITING_PRACTICE
+  MORTUARY_RELATIONSHIP_MODEL: PARTIAL_ELITE_FUNERARY_DEPOSITION
+  POLITICAL_SACRALIZATION_MODEL: PARTIAL_ELITE_RITUAL_ENTANGLEMENT
+  KNOWLEDGE_OR_DISCLOSURE_MODEL: NOT_ADMITTED_FROM_UNDECIPHERED_WRITING
+  SACRED_LAND_PLACE_MODEL: PARTIAL
+  CROSS_TRADITION_COMPARISON: HOLD
+
+textual_ceiling:
+  readable_primary_text_corpus: false
+  Cascajal_writing_authenticity: STRONG_SCHOLARLY_SUPPORT
+  Cascajal_decipherment: UNAVAILABLE
+
+next_frontier:
+  primary: MONUMENTAL_AUTHORITY_PACKET_V1
+  subsequent:
+    - ICONOGRAPHIC_TAXONOMY_HOSTILE_TEST_V1
+    - OLMEC_INTERACTION_TRANSMISSION_HOSTILE_TEST_V1
+    - OLMEC_COMPARISON_READINESS_AUDIT_V1
+
+guards:
+  - UNDECIPHERED_WRITING_NE_READABLE_THEOLOGY
+  - MATERIAL_EVIDENCE_NE_TEXTUAL_PROPOSITION
+  - SITE_AND_PERIOD_REQUIRED

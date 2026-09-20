@@ -1,0 +1,38 @@
+schema_version: on-theo.olmec-research-state.v5
+status: ICONOGRAPHIC_TAXONOMY_HOSTILE_TEST_COMPLETE
+supersedes_for_current_research:
+  - traditions/olmec/research-state-v4.yaml
+
+branch:
+  name: research/olmec-material-iconographic-v1-20260920
+  pr: 107
+
+new_artifacts:
+  iconographic_test: traditions/olmec/iconographic-taxonomy-hostile-test-v1.md
+  iconographic_evidence: traditions/olmec/iconographic-taxonomy-hostile-test-v1.yaml
+
+current_internal_status:
+  RITUAL_ORDER_MODEL: BOUNDED_LA_VENTA_COMPLEX_A
+  OFFERING_EXCHANGE_MODEL: PARTIAL_MULTITYPE_MATERIAL_DEPOSITION
+  INSTITUTIONALIZATION_MODEL: BOUNDED_CEREMONIAL_AND_ELITE_LABOR_MOBILIZATION
+  MORTUARY_RELATIONSHIP_MODEL: PARTIAL_ELITE_FUNERARY_DEPOSITION
+  POLITICAL_SACRALIZATION_MODEL: PARTIAL_MONUMENTAL_AUTHORITY
+  AGENCY_AND_AUTHORITY_MODEL: PARTIAL_ELITE_POLITICAL_AUTHORITY
+  SACRAL_PRESENCE_MODEL: PARTIAL_ICONOGRAPHIC_MATERIAL
+  TRANSFORMATION_MODEL: NOT_ADMITTED_FROM_COMPOSITE_IMAGERY
+  WORLD_ORIGIN_MODEL: NOT_ADMITTED
+  CROSS_TRADITION_COMPARISON: HOLD
+
+pantheon_status:
+  systematic_named_pantheon: NOT_ADMITTED
+  recurrent_supernatural_iconographic_complexes: SUPPORTED_AT_BOUNDED_OR_PARTIAL_SCHOLARLY_LEVEL
+
+next_frontier:
+  primary: OLMEC_INTERACTION_TRANSMISSION_HOSTILE_TEST_V1
+  subsequent:
+    - OLMEC_COMPARISON_READINESS_AUDIT_V1
+
+guards:
+  - ICONOGRAPHIC_LABEL_NE_NATIVE_NAME
+  - LATER_MESOAMERICAN_PARALLEL_NE_OLMEC_IDENTITY
+  - TEMPORAL_BRIDGES_REQUIRED

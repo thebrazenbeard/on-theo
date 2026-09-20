@@ -1,0 +1,76 @@
+schema_version: on-theo.olmec-la-venta-offering-evidence.v1
+status: BOUNDED_MATERIAL_RITUAL_DEPOSITION
+
+site: LA_VENTA_COMPLEX_A
+evidence_class:
+  - MATERIAL_EVIDENCE
+  - ARCHAEOLOGICAL_CONTEXT
+
+records:
+  - id: OLM-LV-OFFERINGS-001
+    propositions:
+      - approximately_fifty_offerings_are_reported_in_Complex_A
+      - jade_ceramics_figurines_mirrors_and_other_objects_are_repeatedly_deposited
+    supports:
+      - RITUAL_ORDER_MODEL
+      - OFFERING_EXCHANGE_MODEL_PARTIAL
+    confidence: HIGH
+
+  - id: OLM-LV-MASSIVE-001
+    propositions:
+      - five_massive_subterranean_serpentine_offerings_are_reported
+      - deposits_required_large_scale_material_mobilization_and_construction
+      - selected_examples_include_abstract_mosaic_arrangements
+    supports:
+      - RITUAL_ORDER_MODEL
+      - INSTITUTIONALIZATION_MODEL
+      - OFFERING_EXCHANGE_MODEL_PARTIAL
+    confidence: HIGH
+    guards:
+      - MOTHER_EARTH_RECIPIENT_IS_INTERPRETIVE
+
+  - id: OLM-LV-OFFERING4-001
+    approximate_date: 800_600_BCE
+    propositions:
+      - sixteen_anthropomorphic_figures_and_six_celt_like_elements_form_deliberate_scene
+      - assemblage_is_associated_with_Massive_Offering_3
+      - procession_political_religious_and_underworld_readings_are_interpretive
+    supports:
+      - RITUAL_ORDER_MODEL
+      - POLITICAL_SACRALIZATION_MODEL_PARTIAL
+    confidence: HIGH_FOR_ASSEMBLAGE_PARTIAL_FOR_MEANING
+
+  - id: OLM-LV-TOMB-001
+    propositions:
+      - Building_A2_includes_double_tomb_with_two_high_status_individuals
+      - rich_jade_funeral_offerings_are_reported
+    supports:
+      - MORTUARY_RELATIONSHIP_MODEL_PARTIAL
+      - POLITICAL_SACRALIZATION_MODEL_PARTIAL
+    confidence: BOUNDED_HIGH
+    guards:
+      - ELITE_BURIAL_NE_ANCESTOR_CULT
+      - BURIAL_GOODS_NE_AFTERLIFE_MAP
+
+  - id: OLM-LV-MATERIAL-NETWORK-001
+    propositions:
+      - jade_serpentine_and_monumental_stone_derive_from_long_distance_sources
+      - ritual_contexts_mobilize_nonlocal_materials
+    supports:
+      - INSTITUTIONALIZATION_MODEL
+      - POLITICAL_SACRALIZATION_MODEL_PARTIAL
+    confidence: HIGH_FOR_MATERIAL_PROVENANCE
+    guards:
+      - EXCHANGE_NE_POLITICAL_CONTROL
+
+axis_status:
+  RITUAL_ORDER_MODEL: BOUNDED_LA_VENTA_COMPLEX_A
+  OFFERING_EXCHANGE_MODEL: PARTIAL_MULTITYPE_MATERIAL_DEPOSITION
+  INSTITUTIONALIZATION_MODEL: BOUNDED_CEREMONIAL_LABOR_MOBILIZATION
+  MORTUARY_RELATIONSHIP_MODEL: PARTIAL_ELITE_FUNERARY_DEPOSITION
+  POLITICAL_SACRALIZATION_MODEL: PARTIAL_ELITE_RITUAL_ENTANGLEMENT
+  CROSS_TRADITION_COMPARISON: HOLD
+
+guards:
+  - EXACT_RECIPIENT_NOT_RECOVERABLE_FROM_MATERIAL_ALONE
+  - ICONOGRAPHIC_AND_THEOLOGICAL_INTERPRETATIONS_REMAIN_SEPARATE
