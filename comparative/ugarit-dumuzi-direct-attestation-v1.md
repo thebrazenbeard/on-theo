@@ -50,7 +50,7 @@ broken / not preserved.
 
 ePSD2 independently indexes the same line:
 
-d dumu-[zid] = du-mu-zi [...] 
+d dumu-[zid] = du-mu-zi [...]
 (Ugaritica 5, 137 r ii 7).
 
 Disposition:
