@@ -1,0 +1,72 @@
+schema_version: on-theo.nonabrahamic-comparison-readiness.v4
+status: NON_CANONICAL_RESEARCH_AUDIT
+supersedes_for_current_research:
+  - synthesis/NON_ABRAHAMIC_COMPARISON_READINESS_V3.yaml
+
+comparison_control:
+  branch: audit/synthesis-comparison-eligibility-v1-20260919
+  head: 809edc937be9a42f1fd76e00e5eadb0a8b9ebe9d
+
+lanes:
+  - id: buddhism
+    source_head: 1c6c7a9a35901a529d377e1bd6fb86a88c1cdbe9
+    draft_pr: 97
+    status: BOUNDED_READY_STRENGTHENED
+    broad_ready: false
+
+  - id: hindu
+    source_head: 0c3123f4f1cf03e6f6a29ca0d0eb7edfddff5e75
+    draft_pr: 98
+    status: BOUNDED_PARTIAL_STRENGTHENED
+    admitted_units:
+      - RV_10_129
+      - BU_4_4_2_TO_6
+      - CHU_5_3_TO_10_PARTIAL
+      - CHU_6_8_7
+    broad_ready: false
+    blockers:
+      - BU_recension_collation
+      - CHU_5_3_TO_9_exact_fire_chain
+      - CHU_BU_parallel_control
+      - lexical_controls
+      - material_and_ritual_evidence
+      - later_school_divergence
+
+  - id: sumerian
+    source_head: bd6b6572141dc2f48f2f104b8f25301662d4a06f
+    status: NOT_READY_AT_MASTER_HUB_LEVEL
+
+  - id: daoism
+    source_head: 30de6433ab2bdce86b88fcdad1a3134084ed39ab
+    status: NOT_READY
+
+  - id: shinto
+    source_head: a578729a2e3cec02fe533c3c1d20946347da9aa4
+    status: NOT_READY
+
+  - id: norse_asatru
+    source_head: 4af66d0bb3aa3f9bbfcd45fb52b400045b9d5339
+    status: NOT_READY
+
+holds:
+  Hindu_Buddhist_direct_comparison:
+    status: HOLD
+    reason: >
+      Both lanes now support bounded axes, but a cross-tradition claim requires
+      exact comparison units, chronology, contact possibilities, semantic
+      controls, ordinary convergence alternatives, and transmission evidence.
+  perennialist_all_religions_matrix:
+    status: PROHIBITED_AT_CURRENT_EVIDENCE
+
+adjacent:
+  astrology:
+    role: METHOD_MECHANISM_EPISTEMIC_LANE
+    not_unitary_religion: true
+
+guards:
+  - INTERNAL_RECONSTRUCTION_PRECEDES_CROSS_TRADITION_COMPARISON
+  - BOUNDED_PARTIAL_NE_BROAD_READY
+  - REBIRTH_NE_ONE_COMPARISON_CELL
+  - TRANSLATION_DISPUTE_MUST_REMAIN_VISIBLE
+  - COMMENTARY_NE_PRIMARY_TEXT
+  - SYSTEMS_ANALOGY_IS_DOWNSTREAM

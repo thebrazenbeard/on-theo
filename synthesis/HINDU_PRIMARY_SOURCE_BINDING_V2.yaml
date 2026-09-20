@@ -1,0 +1,57 @@
+schema_version: on-theo.hindu-synthesis-source-binding.v2
+status: NON_CANONICAL_EXACT_SOURCE_EXTENSION
+supersedes_for_current_research:
+  - synthesis/HINDU_PRIMARY_SOURCE_BINDING_V1.yaml
+
+source_extension:
+  branch: research/hindu-rigvedic-upanishadic-proposition-v1-20260920
+  head: 0c3123f4f1cf03e6f6a29ca0d0eb7edfddff5e75
+  base_branch: hindu
+  base_head: ccd5b82cf99fa9dfda238366a93447047f74b1fa
+  draft_pr: 98
+
+source_artifacts:
+  proposition_packet:
+    - traditions/hindu/rigvedic-upanishadic-proposition-packet-v1.md
+    - traditions/hindu/neutral-axis-evidence-v1.yaml
+  continuity_context:
+    - traditions/hindu/upanishadic-continuity-context-v1.md
+    - traditions/hindu/continuity-model-v1.yaml
+  state:
+    - traditions/hindu/research-state-v3.yaml
+
+loci_and_units:
+  - RV_10_129
+  - BU_4_4_2_TO_6
+  - CHU_5_3_TO_10_PARTIAL
+  - CHU_6_8_7
+
+strengthened_axes:
+  - KNOWLEDGE_OR_DISCLOSURE_MODEL
+  - WORLD_ORIGIN_MODEL
+  - MORAL_CAUSALITY_MODEL
+  - CONTINUITY_MODEL
+  - SOCIAL_COSMOLOGY_MODEL
+  - POSTMORTEM_PATH_MODEL
+  - KNOWLEDGE_OR_PRACTICE_DIFFERENTIATION_MODEL
+
+partial_axes:
+  - PERSON_OR_SELF_MODEL
+  - CAUSAL_ORDER_TYPE
+  - WORLD_STATUS_MODEL
+  - LIBERATION_OR_FINAL_TRANSFORMATION_MODEL
+
+readiness:
+  bounded_axis_comparison: STRENGTHENED
+  broad_Hindu_synthesis: false
+  Hindu_Buddhist_direct_comparison: false
+
+guards:
+  - ISOLATED_APHORISM_NE_FULL_CONTEXT
+  - VEDIC_SAMHITA_NE_EARLY_UPANISHAD
+  - EARLY_UPANISHAD_NE_LATER_VEDANTA
+  - COMMENTARY_NE_PRIMARY_TEXT
+  - REBIRTH_NE_ONE_UNIVERSAL_MECHANISM
+  - TAT_TVAM_ASI_NE_ONE_UNDISPUTED_ENGLISH_PROPOSITION
+  - CROSS_TEXT_PARALLEL_NE_TRANSMISSION
+  - SOURCE_EXTENSION_NE_CANONICAL_MERGE
