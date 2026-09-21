@@ -1,6 +1,6 @@
 # Early-Source-Constrained Yeshua — Baseline A V1
 
-Status: SOURCE-BOUND / INTERNAL HOSTILE REVIEW PENDING
+Status: SOURCE-BOUND / FIRST HOSTILE REVIEW APPLIED / SECOND EXACT-HEAD PASS PENDING
 
 Program: **The Real Testament of Yeshua**
 
@@ -88,7 +88,7 @@ Annals 15.44 is useful as later Roman evidence linking Christus' execution to Pi
 
 Tacitus therefore corroborates the persistence of the Pilate-execution tradition; his informational independence remains contested.
 
-## Baseline reconstruction before hostile review
+## Revised Baseline A after first hostile review
 
 The strongest provisional floor is:
 
@@ -96,14 +96,14 @@ The strongest provisional floor is:
 2. He belongs inside first-century Jewish religious history.
 3. A Galilean/Nazareth origin is probable, though in this constrained set Mark carries most of the geographic burden.
 4. Association with John the Baptist, probably including baptism, is historically plausible and widely accepted, but Josephus independently proves John—not Jesus' baptism.
-5. A Kingdom-centered public message is probable; its precise present/future/inward/social content is deliberately deferred.
+5. A Kingdom-centered public message remains probable but explicitly provisional at moderate confidence pending R2; its precise present/future/inward/social content is deliberately deferred.
 6. An early healer/exorcist reputation is historically plausible; specific miracle mechanisms are not historically established.
-7. A real follower and family network is unusually well anchored by Paul: Cephas, James, other apostles, brothers, and the early "Twelve" tradition.
-8. A Temple-linked final crisis is plausible but not source-independently secure in this baseline.
+7. A real follower/family network is unusually well anchored by Paul: Cephas, James, other apostles, the Lord's brothers, and an early group-label/tradition of "the Twelve". R1 does not recover a roster or prove that Yeshua historically constituted exactly the later canonical Twelve.
+8. A Temple-linked final crisis remains UNRESOLVED in this baseline. Mark supplies the admitted narrative, but R1 does not independently secure the Temple-action-to-execution causal chain.
 9. Crucifixion is among the hardest historical facts.
 10. Crucifixion under Pontius Pilate is strong, while the Gospel trial script and exact charge remain reconstructive.
 11. Burial was already part of the early proclamation; tomb logistics are a different claim.
-12. Followers very early believed Yeshua had been raised/vindicated and appeared to named people/groups. The mechanism is not adjudicated here.
+12. Followers very early believed Yeshua had been raised/vindicated and reported appearances to named people/groups. R1 establishes the conviction/reporting layer, not that the appearances occurred in any particular ontological or perceptual mode.
 
 ## What Baseline A does NOT establish
 
@@ -124,6 +124,15 @@ It does not establish:
 
 UNKNOWN is not evidence for the preferred alternative.
 
+## Disposition semantics after hostile review
+
+The first hostile review requires an explicit distinction between:
+
+- a proposition being rejected as a conclusion supported by **Baseline A**; and
+- the logical negation of that proposition being historically established.
+
+Accordingly, exact self-conception, detailed Judas-betrayal mechanics, and an inward/mystical core are `REJECTED` **as Baseline-A-supported conclusions**. They are not thereby declared historically false. R2, R3/R4, R7 and R8 may alter their status only with additional source-specific evidence.
+
 ## Negative result with project significance
 
 Baseline A is strikingly conventional.
@@ -134,7 +143,7 @@ That does not falsify the project's distinctive hypotheses.
 
 It means they have not earned promotion from the early-source control.
 
-The burden now belongs to later or more deeply stratified evidence to **change** this baseline rather than to assume it.
+The burden now belongs to later or more deeply stratified evidence to **change** this baseline rather than to assume it. The same rule applies in both directions: R1's failure to promote a distinctive project hypothesis is not evidence for its negation.
 
 ## Immediate downstream consequences
 
