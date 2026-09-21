@@ -1,0 +1,204 @@
+schema_version: on-theo.yeshua-james-authority-family.v1
+status: SOURCE_BOUND_PENDING_HOSTILE_REVIEW
+canonical: false
+program: THE_REAL_TESTAMENT_OF_YESHUA
+lane: R3_JAMES_AUTHORITY_FAMILY
+recorded_at: "2026-09-21"
+
+parent:
+  branch: research/yeshua-people-source-clock-v1-20260921
+  head: facb8789bbbd0c77f0c3fa27ab71bb3d77b0557d
+  draft_pr: 157
+
+source_clock:
+  - source: SRC-PAUL-GALATIANS
+    horizon: FIRST_GENERATION
+    loci: ["Galatians 1:18-19", "Galatians 2:9", "Galatians 2:12"]
+    establishes:
+      - PAUL_PERSONALLY_KNOWS_JAMES
+      - BROTHER_OF_LORD_LANGUAGE
+      - PILLAR_STATUS
+      - JAMES_NAME_RELEVANT_TO_ANTIOCH_CONFLICT
+    limits:
+      - FROM_JAMES_NE_EXPLICIT_PERSONAL_ORDER
+      - PILLAR_ORDER_NE_SUPREMACY
+
+  - source: SRC-PAUL-1COR
+    horizon: FIRST_GENERATION
+    loci: ["1 Corinthians 9:5", "1 Corinthians 15:7"]
+    establishes:
+      - BROTHERS_OF_LORD_GROUP_MEMORY
+      - EARLY_JAMES_APPEARANCE_TRADITION
+
+  - source: SRC-GOSPEL-MARK
+    horizon: EARLIEST_SURVIVING_NARRATIVE_GOSPEL
+    loci: ["Mark 3:31-35", "Mark 6:3"]
+    establishes:
+      - FAMILY_NETWORK_MEMORY
+      - JAMES_NAMED_AS_BROTHER_IN_MARKAN_TEXT
+    limits:
+      - FAMILY_SCENE_NE_LATER_JAMES_BIOGRAPHY
+
+  - source: SRC-JOSEPHUS-ANTIQUITIES-20-200
+    horizon: "93-94 CE"
+    establishes_if_authentic:
+      - JAMES_HISTORICAL
+      - JAMES_BROTHER_OF_JESUS_CALLED_CHRIST
+      - EXECUTION_UNDER_ANANUS_CONTEXT
+    limits:
+      - DOES_NOT_ESTABLISH_BISHOP
+      - DOES_NOT_ESTABLISH_JAMES_THE_JUST_TITLE
+      - DOES_NOT_ESTABLISH_THEOLOGY
+
+  - source: SRC-ACTS
+    horizon: LATER_FIRST_CENTURY_OR_LATER_NARRATIVE
+    loci: ["Acts 12:17", "Acts 15", "Acts 21"]
+    establishes_at_text_level:
+      - CENTRAL_JERUSALEM_AUTHORITY_PORTRAYAL
+    limits:
+      - LATER_HISTORIOGRAPHY
+      - NOT_VERBATIM_COUNCIL_TRANSCRIPT
+
+  - source: SRC-GOSPEL-THOMAS
+    horizon: LATER_NONCANONICAL_WORK_COMPOSITION_CONTESTED
+    locator: "Saying 12"
+    establishes_at_text_level:
+      - EXTREME_JAMES_AUTHORITY_RECEPTION
+    limits:
+      - NOT_DIRECT_SUCCESSION_APPOINTMENT_EVIDENCE
+
+  - source: SRC-HEGESIPPUS_VIA_EUSEBIUS
+    horizon: SECOND_CENTURY_SOURCE_THROUGH_LATER_TRANSMISSION
+    establishes_at_text_level:
+      - JAMES_THE_JUST_RECEPTION
+      - MARTYR_TRADITION
+      - FAMILY_AUTHORITY_MEMORY
+    limits:
+      - INDIRECT_TRANSMISSION
+      - NOT_EYEWITNESS_BY_DEFAULT
+
+claims:
+  - id: CLM-YS-R3-JAM-001-HISTORICAL-JAMES
+    proposition: "James was a historical first-generation figure personally known to Paul."
+    disposition: VERY_STRONG_PENDING_HOSTILE_REVIEW
+    evidence_class: [PRIMARY_TEXT, HISTORICAL_RECONSTRUCTION]
+
+  - id: CLM-YS-R3-JAM-002-KINSHIP
+    proposition: "James was a close familial brother/kin of Yeshua; ordinary brotherhood is the strongest current reading."
+    disposition: HIGH_PENDING_HOSTILE_REVIEW
+    evidence_class: [PRIMARY_TEXT, HISTORICAL_RECONSTRUCTION]
+    support:
+      - GALATIANS_1_19
+      - MARK_6_3
+      - JOSEPHUS_20_200_IF_AUTHENTIC
+    ceiling: "Exact full/half/step-brother biological configuration unresolved."
+
+  - id: CLM-YS-R3-JAM-003-EARLY-AUTHORITY
+    proposition: "James was one of the most important early Jerusalem authorities."
+    disposition: HIGH_PENDING_HOSTILE_REVIEW
+    evidence_class: [PRIMARY_TEXT, HISTORICAL_RECONSTRUCTION]
+    support:
+      - GALATIANS_2_9
+      - GALATIANS_2_12_SOCIAL_WEIGHT
+      - LATER_ACTS_CORROBORATIVE_MEMORY
+
+  - id: CLM-YS-R3-JAM-004-APPEARANCE
+    proposition: "An early tradition reported a resurrection appearance to James."
+    disposition: VERY_STRONG_AS_EARLY_TRADITION
+    evidence_class: [PRIMARY_TEXT, HISTORICAL_RECONSTRUCTION]
+    support: ["1 Corinthians 15:7"]
+    ceiling: "Does not adjudicate event mechanism or prove leadership causation."
+
+  - id: CLM-YS-R3-JAM-005-JOSEPHUS
+    proposition: "Antiquities 20.200 substantially preserves Josephus's identification of James as brother of Jesus called Christ."
+    disposition: STRONGLY_SUPPORTED_NOT_UNANIMOUS
+    evidence_class: [PRIMARY_TEXT, SCHOLARLY_INTERPRETATION]
+
+  - id: CLM-YS-R3-JAM-006-ANTI-PAUL
+    proposition: "James was the categorical theological opponent of Paul."
+    disposition: REJECTED_AS_OVERBROAD_CURRENT_CONCLUSION
+    evidence_class: [UNKNOWN]
+    negation_status: "Issue-specific conflict/tension remains real."
+
+  - id: CLM-YS-R3-JAM-007-FROM-JAMES
+    proposition: "Galatians 2:12 proves James personally ordered the Antioch visitors to enforce withdrawal."
+    disposition: UNRESOLVED_NOT_ESTABLISHED
+    evidence_class: [PRIMARY_TEXT, HISTORICAL_RECONSTRUCTION]
+
+  - id: CLM-YS-R3-JAM-008-SUCCESSOR
+    proposition: "Yeshua formally appointed James as his successor."
+    disposition: NOT_ESTABLISHED
+    evidence_class: [UNKNOWN]
+    later_support: THOMAS_12_AUTHORITY_RECEPTION
+
+  - id: CLM-YS-R3-JAM-009-DYNASTIC
+    proposition: "The earliest movement operated as a formal hereditary Yeshua-family dynasty."
+    disposition: NOT_ESTABLISHED
+    evidence_class: [SPECULATIVE_MODEL]
+    weaker_model: "Kinship prestige materially contributed to James/family authority."
+
+  - id: CLM-YS-R3-JAM-010-KINSHIP-PRESTIGE
+    proposition: "Kinship with Yeshua likely contributed materially to James's early authority."
+    disposition: PLAUSIBLE_TO_PROBABLE_PENDING_HOSTILE_REVIEW
+    evidence_class: [HISTORICAL_RECONSTRUCTION, PROJECT_INFERENCE]
+
+  - id: CLM-YS-R3-JAM-011-LETTER-AUTHORSHIP
+    proposition: "The historical James brother of Yeshua authored the canonical Letter of James."
+    disposition: UNRESOLVED_CONTESTED
+    evidence_class: [SCHOLARLY_INTERPRETATION, UNKNOWN]
+
+  - id: CLM-YS-R3-JAM-012-SUPERIOR-UNDERSTANDING
+    proposition: "James historically understood Yeshua's true teaching better than Peter, Paul, Mary, or Thomas."
+    disposition: NOT_CURRENTLY_RANKABLE
+    evidence_class: [UNKNOWN]
+
+models:
+  D0_CHARISMATIC_INSTITUTIONAL:
+    proposition: "James authority arose through leadership, Jerusalem continuity, kinship, reputation and appearance tradition without formal dynasty."
+    status: PLAUSIBLE_LOW_ASSUMPTION
+  D1_KINSHIP_PRESTIGE:
+    proposition: "Family relationship was a material authority resource."
+    status: PLAUSIBLE_TO_PROBABLE
+  D2_INFORMAL_FAMILY_SUCCESSION:
+    proposition: "Family ties became an informal preference in Jerusalem leadership."
+    status: POSSIBLE_LATER_EVIDENCE_RELEVANT
+  D3_FORMAL_HEREDITARY_DYNASTY:
+    proposition: "Yeshua instituted hereditary family succession."
+    status: NOT_ESTABLISHED
+
+scholarly_controls:
+  - id: SCH-SCHMIDT-2025-JOSEPHUS-JAMES
+    evidence_class: [SCHOLARLY_INTERPRETATION]
+    title: "James the Brother of Jesus: Antiquities 20.200"
+    publication: Oxford University Press
+    date: "2025"
+    url: "https://academic.oup.com/book/60034/chapter/513641505"
+    bounded_use: "Strong authenticity case for Josephus James passage."
+
+  - id: SCH-NIR-2026-JOSEPHUS-NT
+    evidence_class: [SCHOLARLY_INTERPRETATION]
+    title: "John the Baptist, Jesus, and Other New Testament Figures in Josephus' Writings"
+    publication: Oxford Handbook of Josephus
+    date: "2026"
+    url: "https://academic.oup.com/edited-volume/62350/chapter-abstract/554396080"
+    bounded_use: "Current authenticity debate control; no decisive stand."
+
+  - id: SCH-NIEBUHR-2024-JAMES-HISTORICAL-JESUS
+    evidence_class: [SCHOLARLY_INTERPRETATION]
+    title: "James and the Historical Jesus"
+    publication: Oxford Handbook of Hebrews and the Catholic Epistles
+    date: "2024"
+    url: "https://academic.oup.com/edited-volume/57514/chapter-abstract/467936541"
+    bounded_use: "James, family background, earliest Jesus movement, and Letter of James historical questions."
+
+  - id: SCH-OXBIB-JAMES
+    evidence_class: [SCHOLARLY_INTERPRETATION]
+    title: "James, the Brother of Jesus"
+    publication: Oxford Bibliographies
+    url: "https://academic.oup.com/reference/62341/reference-article-abstract/554109984"
+    bounded_use: "Overview of Paul, Acts, and debates over James's authority."
+
+next:
+  - INTERNAL_HOSTILE_REVIEW
+  - GALATIANS_2_12_FROM_JAMES_CONTROL
+  - FAMILY_SUCCESSION_LATER_SOURCE_PACKET
