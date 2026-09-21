@@ -1,6 +1,6 @@
 # Judas Iscariot Source-Development Dossier V1
 
-Status: R3 DEDICATED PERSON DOSSIER / NON-CANONICAL / HOSTILE REVIEW REQUIRED
+Status: R3 DEDICATED PERSON DOSSIER / FIRST HOSTILE REVIEW APPLIED / SECOND REVIEW PENDING
 
 Program: **The Real Testament of Yeshua**
 
@@ -389,19 +389,23 @@ A member of the Twelve historically assisted Yeshua's arrest and the Markan
 narrative preserves that core with literary/theological development.
 
 Status:
-LIVE / PLAUSIBLE.
+LIVE / PLAUSIBLE, NOT YET SECURE.
+
+Mark is the earliest explicit named source and does most of the historical work.
+Later retention is not counted as multiple independent early witnesses.
 
 ### H1 — smaller insider-handover core
 
-A historical Judas did something that facilitated arrest, but:
-- payment;
-- kiss;
-- motive;
-- exact information function
-were developed or reshaped later.
+A historical Judas may have done something that facilitated arrest, while the
+exact function, motive, kiss/identification mechanics, exact payment details,
+and later psychological/cosmic profile were reshaped or diversified in extant
+traditions.
+
+Mark already contains a money promise and hostile betrayal context. The smaller-core
+model therefore cannot treat money or negative evaluation as purely late additions.
 
 Status:
-LIVE / PLAUSIBLE.
+LIVE / PLAUSIBLE MODEL, NOT CURRENTLY PREFERRED AS ESTABLISHED HISTORY.
 
 ### H2 — memory concentration
 
@@ -450,8 +454,16 @@ At the current ceiling:
 
 Current strongest bounded reconstruction:
 
-A_HISTORICAL_JUDAS_ASSOCIATED_WITH_THE_DISCIPLE_GROUP_AND_SOME_FORM_OF_HANDOVER_IS_PLAUSIBLE_TO_PROBABLE,
-WHILE_THE_EXACT_MOTIVE_PAYMENT_FUNCTION_KISS_LOGISTICS_AND_LATER_DEMONIC_PSYCHOLOGY_ARE_NOT_SECURELY_RECONSTRUCTED.
+A_NAMED_JUDAS_DISCIPLE_IS_PLAUSIBLE_TO_PROBABLE;
+
+A_HISTORICAL_JUDAS_HANDOVER_ROLE_IS_PLAUSIBLE_BUT_NOT_YET_SECURE;
+
+MARK_ALREADY_CONTAINS_MONEY_AND_NEGATIVE_BETRAYAL_CONTEXT;
+
+THE_EXACT_HISTORICAL_MOTIVE_PAYMENT_EVENT_FUNCTION_KISS_LOGISTICS_DEATH_AND_LATER_DEMONIC_PSYCHOLOGY_ARE_NOT_SECURELY_RECONSTRUCTED.
+
+This deliberately separates confidence in the remembered figure from confidence
+in the arrest role.
 
 This is intentionally narrower than the canonical composite.
 
@@ -478,13 +490,13 @@ must not import Matthew/Luke/John/Papias details backward into Mark.
 ## 16. Current claim dispositions
 
 JUDAS_EXISTED_AS_DISCIPLE:
-PROBABLE_AT_CURRENT_SOURCE_CEILING.
+PLAUSIBLE_TO_PROBABLE_WITH_SINGLE_EARLY_EXPLICIT_SOURCE_GUARD.
 
 JUDAS_MEMBER_OF_EARLY_TWELVE:
-PROBABLE_BUT_ROSTER_HISTORY_NOT_CERTAIN.
+PLAUSIBLE_TO_PROBABLE_WITH_ROSTER_AND_SOURCE_DEPENDENCE_GUARDS.
 
 JUDAS_PERFORMED_SOME_HANDOVER:
-PLAUSIBLE_TO_PROBABLE.
+PLAUSIBLE_NOT_YET_SECURE.
 
 JUDAS_WAS_PAID:
 SOURCE_BOUND_TO_MARKAN_AND_LATER_TRADITION;
@@ -500,7 +512,7 @@ JUDAS_IDENTIFIED_YESHUA_BECAUSE_AUTHORITIES_COULD_NOT_RECOGNIZE_HIM:
 NOT_ESTABLISHED.
 
 JUDAS_SUPPLIED_LOCATION/TIMING/ACCESS:
-LIVE_HYPOTHESIS.
+PLAUSIBLE_OPERATIONAL_MODEL_NOT_ESTABLISHED.
 
 JUDAS_WAS_INNOCENT:
 NOT_ESTABLISHED.
@@ -550,3 +562,21 @@ A second discriminator is:
 - GOSPEL_OF_JUDAS_NE_JUDAS_BIOGRAPHY
 - EXTANT_SOURCE_ORDER_NE_COMPLETE_TRADITION_HISTORY
 - PRO_JUDAS_PREFERENCE_REQUIRES_ASYMMETRIC_SKEPTICISM
+
+
+## 19. First hostile-review revision record
+
+Review subject:
+`eb190c525ca7ba6d2260d812c0c36ce6b4cb3e6d`
+
+Review artifact:
+`reviews/yeshua-judas-source-development-v1-hostile-review.md`
+
+Required corrections applied:
+- historical Judas existence separated from historical handover confidence;
+- handover reduced to PLAUSIBLE pending arrest/source-history testing;
+- location/timing/access reduced to plausible operational model;
+- money preserved as already Markan rather than narrated as late;
+- later variation no longer used as proof of a smaller original core;
+- Gospel of Judas reversal explicitly denied exonerating force;
+- dedicated `research/yeshua/judas/` lane designated as promotion authority.
