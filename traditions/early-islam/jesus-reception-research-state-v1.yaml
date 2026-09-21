@@ -1,0 +1,41 @@
+schema_version: on_theo.early_islam_jesus_reception_state.v1
+status: ACTIVE
+canonical: false
+
+branch: research/early-islam-jesus-reception-v1-20260920
+base:
+  branch: corpus/early-islamic-development-v1-20260917
+  exact_head: 9f8e67054b306364f2cf057c19e34c5c0be57ca4
+
+completed:
+  - QURANIC_JESUS_PRIMARY_LAYER
+  - Q4_157_158_NAMED_SUBSTITUTE_GUARD
+  - Q3_55_Q5_117_TAKING_RAISING_INTERPRETIVE_BOUNDARY
+  - CANONICAL_HADITH_DESCENT_LAYER
+  - HADITH_COLLECTION_EVENT_DATE_SEPARATION
+  - FIRST_CENTURY_BIOGRAPHY_GUARD
+
+key_artifacts:
+  - traditions/early-islam/jesus-reception-quran-hadith-v1.md
+  - traditions/early-islam/jesus-reception-quran-hadith-v1.yaml
+
+current_results:
+  quranic_positive_jesus_profile: BOUNDED_STRONG
+  q4_157_named_substitute: NOT_ADMITTED
+  quranic_death_removal_chronology: CONTESTED_UNKNOWN_AT_SYNTHESIS_LEVEL
+  canonical_hadith_future_descent: BOUNDED_STRONG_FOR_COLLECTION_LAYER
+  full_descent_story_as_quran_only: NOT_ADMITTED
+  islamic_reception_as_first_century_control: NOT_ADMITTED
+
+next_frontier:
+  - EARLY_TAFSIR_CRUCIFIXION_SUBSTITUTION_PACKET
+  - HADITH_DESCENT_REPORT_CLUSTER
+  - ISLAMIC_ASCETIC_JESUS_SAYINGS_PACKET
+  - TESTAMENT_BOOK_VI_CARRYDOWN
+
+invariants:
+  - "Qur'an != later hadith."
+  - "Qur'an != later tafsir."
+  - "Collection date != claimed event date."
+  - "Later reception may preserve earlier tradition but requires source criticism."
+  - "Reception evidence != first-century eyewitness biography."
