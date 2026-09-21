@@ -1,0 +1,48 @@
+schema_version: on-theo.yeshua-thomas-kingdom-independence.v1
+status: SAYING_LEVEL_INDEPENDENCE_UNRESOLVED
+
+witness_control:
+  source_branch: research/noncanonical-witness-control-v1-20260919
+  exact_head: eebd4a6fc30a3b8377c44e04e9892e10970b4e96
+  thomas_greek_fragments: [POXY_1, POXY_654, POXY_655]
+  complete_coptic: NHC_II
+  rule: WITNESS_DATE_NE_COMPOSITION_DATE
+
+sayings:
+  THOMAS_3:
+    textual_features:
+      - KINGDOM_NOT_SIMPLY_SKY_OR_SEA
+      - INSIDE_AND_OUTSIDE
+      - SELF_KNOWLEDGE
+      - LIVING_FATHER_RELATION
+    physical_witness: POXY_654_REGION
+    independence_from_Luke: UNRESOLVED
+    possible_earlier_kernel: POSSIBLE_NOT_ESTABLISHED
+    current_form_Thomasine_shaping: PROBABLE
+
+  THOMAS_113:
+    textual_features:
+      - NOT_HERE_NOT_THERE
+      - KINGDOM_SPREAD_ON_EARTH
+      - HUMAN_FAILURE_TO_PERCEIVE
+    physical_witness: NHC_II_COPTIC
+    independence_from_Luke: UNRESOLVED
+    common_earlier_tradition: LIVE_HYPOTHESIS
+    direct_Luke_dependence: LIVE_HYPOTHESIS
+
+scholarly_controls:
+  - PATTERSON_OXFORD_THOMAS_HISTORICAL_JESUS_2016
+  - GATHERCOLE_LUKE_IN_THOMAS_2011
+  - BAARDA_THOMAS_LOGION8_METHOD_WARNING_1991
+  - OXFORD_THOMAS_AND_SYNOPTICS_2023
+
+claim_state:
+  THOMAS_PRESENT_INWARD_TRAJECTORY: SURVIVES
+  THOMAS_HISTORICAL_YESHUA_INWARD_CORE: NOT_ESTABLISHED
+  THOMAS_INDEPENDENCE_GLOBAL: REJECTED_AS_METHOD
+  THOMAS_INDEPENDENCE_SAYING_SPECIFIC: REQUIRED
+
+next_frontier: SYNOPTIC_PRESENT_FUTURE_KINGDOM_MATRIX_V1
+
+guards:
+  - TRAJECTORY_NE_ORIGIN
