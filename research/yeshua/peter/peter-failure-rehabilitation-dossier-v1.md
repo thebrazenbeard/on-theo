@@ -1,6 +1,6 @@
 # Cephas / Peter — Failure / Rehabilitation Dossier V1
 
-Status: R3 PETER SOURCE-BOUND / INTERNAL HOSTILE REVIEW REQUIRED
+Status: R3 PETER SOURCE-BOUND / FIRST HOSTILE REVIEW APPLIED / SECOND EXACT-HEAD PASS PENDING
 
 Program: **The Real Testament of Yeshua**
 
@@ -161,7 +161,13 @@ The denial is not independently named by Paul.
 Current disposition:
 
 MARKAN_PETER_DENIAL_TRADITION =
-EARLY_GOSPEL_TRADITION / HISTORICALLY_PLAUSIBLE.
+EARLY_GOSPEL_TRADITION.
+
+HISTORICAL_PETER_DENIAL =
+PLAUSIBLE_WITH_SINGLE_EARLY_EXPLICIT_NARRATIVE_SOURCE_GUARD.
+
+Later canonical versions preserve the denial tradition but are not counted as
+independent witnesses without literary-dependence analysis.
 
 HISTORICAL_EXACT_THREEFOLD_DENIAL_SCENE =
 NOT_ESTABLISHED_AT_R3_V1.
@@ -175,10 +181,12 @@ Possible models include:
 
 ### P0 — historical failure remembered despite later authority
 
-A real Peter failure/denial tradition was too embedded or meaningful to erase.
+A real Peter failure/denial tradition may underlie the surviving narrative.
 
 Status:
-PLAUSIBLE_LOW_ASSUMPTION.
+PLAUSIBLE_NOT_YET_SECURE.
+
+R3 does not privilege this merely because it fits the later authority pattern.
 
 ### P1 — didactic disciple-failure narrative
 
@@ -189,7 +197,8 @@ Peter functions as a representative disciple whose failure teaches:
 - discipleship under pressure.
 
 Status:
-TEXTUALLY_PLAUSIBLE / HISTORICAL_CORE_UNRESOLVED.
+TEXTUALLY_STRONG_AS_LITERARY_FUNCTION /
+HISTORICAL_CORE_UNRESOLVED.
 
 ### P2 — intra-Christian anti-Peter polemic
 
@@ -239,7 +248,37 @@ MARK_16_7 =
 TEXTUAL_REINCLUSION_SIGNAL,
 not a recovered historical restoration ceremony.
 
-## 9. Matthew
+## 9. Rehabilitation must be decomposed
+
+The word "rehabilitation" can conceal several different propositions.
+
+MARKAN_NARRATIVE_REINCLUSION:
+TEXTUALLY_STRONG in Mark 16:7.
+
+LATER_SOURCE_SPECIFIC_LITERARY_RESTORATION:
+STRONG in selected later canonical portraits, especially Luke-Acts and John,
+with source-specific controls.
+
+HISTORICAL_OR_INSTITUTIONAL_PETRINE_AUTHORITY:
+ALREADY_FIRST_GENERATION in Paul and therefore not created by those later
+restoration scenes.
+
+CONSPIRATORIAL_REHABILITATION_OF_A_DISGRACED_TRAITOR:
+NOT_ESTABLISHED.
+
+Therefore:
+
+LATER_RESTORATION_LANGUAGE
+!=
+ORIGIN_OF_PETER_AUTHORITY.
+
+And:
+
+EXTANT_CANONICAL_SEQUENCE
+!=
+ONE_SMOOTH_REHABILITATION_HISTORY.
+
+## 10. Matthew
 
 Matthew develops Peter in both directions:
 - exceptional authority in Matthew 16;
@@ -260,7 +299,7 @@ This is reception/literary evidence.
 It cannot retroactively prove:
 Yeshua historically appointed Peter supreme institutional successor.
 
-## 10. Luke-Acts
+## 11. Luke-Acts
 
 Luke intensifies restorative framing:
 - special prayer for Peter;
@@ -277,7 +316,7 @@ This is strong literary/reception evidence.
 
 It is not independent proof of an exact pre-crucifixion succession plan.
 
-## 11. John
+## 12. John
 
 John gives:
 - Peter's denial;
@@ -297,7 +336,7 @@ requires textual/literary control.
 It does not prove:
 A_FORMAL_HISTORICAL_REHABILITATION_CEREMONY_OCCURRED_EXACTLY_AS_NARRATED.
 
-## 12. Paul and the rehabilitation hypothesis
+## 13. Paul and the rehabilitation hypothesis
 
 Paul is crucial because he personally knows Cephas before the Gospels are
 written.
@@ -324,7 +363,7 @@ A_REAL_EARLY_LEADER_WITH_A_FAILURE_TRADITION_WAS_LATER_NARRATIVELY_REHABILITATED
 
 That is much more compatible with the source clock.
 
-## 13. Antioch conflict
+## 14. Antioch conflict
 
 Galatians 2:11–14 shows that:
 - Paul considered Cephas blameworthy in that episode;
@@ -344,7 +383,7 @@ Current state:
 PAUL_PETER_CONFLICT =
 HISTORICALLY_STRONG_AND_ISSUE_SPECIFIC.
 
-## 14. Later Petrine literature
+## 15. Later Petrine literature
 
 Sources attributed to or centered on Peter include:
 - 1 Peter;
@@ -371,7 +410,7 @@ PETRINE_AUTHORITY_RECEPTION.
 
 It does not by itself establish historical Peter biography.
 
-## 15. Peter versus Mary
+## 16. Peter versus Mary
 
 Later texts can stage Peter as:
 - challenger of women;
@@ -389,7 +428,7 @@ HISTORICAL_PETER_MARY_CONFLICT.
 The Peter dossier cannot use later Mary texts to reconstruct Peter's
 first-generation behavior unless an older source layer is demonstrated.
 
-## 16. Peter versus Judas
+## 17. Peter versus Judas
 
 The current Judas dossier allows:
 - historical Judas plausible/probable;
@@ -408,7 +447,7 @@ PETER_FRAMED_JUDAS.
 
 Nor does Peter's later authority prove those hypotheses.
 
-## 17. Did Peter understand Yeshua?
+## 18. Did Peter understand Yeshua?
 
 The source tradition repeatedly portrays Peter as both:
 - perceptive;
@@ -432,7 +471,7 @@ Current state:
 PETER_HISTORICAL_UNDERSTANDING_RANK =
 NOT_CURRENTLY_RANKABLE.
 
-## 18. Current strongest reconstruction
+## 19. Current strongest reconstruction
 
 The strongest bounded Peter model is:
 
@@ -457,7 +496,7 @@ What is not established:
 - a coordinated rehabilitation conspiracy;
 - historical superiority or inferiority of understanding.
 
-## 19. Highest-value discriminators
+## 20. Highest-value discriminators
 
 1. Cephas/Peter identity scholarship.
 2. Galatians 2 authority/conflict without later harmonization.
@@ -470,7 +509,40 @@ What is not established:
 9. Later Petrine apocrypha and Roman succession reception.
 10. Peter/Mary conflict traditions without retrojection.
 
-## 20. Guards
+## 21. First hostile-review revision result
+
+The first hostile review requires three major calibrations.
+
+First:
+
+HISTORICAL_PETER_DENIAL =
+PLAUSIBLE_WITH_SINGLE_EARLY_EXPLICIT_NARRATIVE_SOURCE_GUARD.
+
+The later four-Gospel preservation of the denial does not become independent
+multiple attestation merely through repetition.
+
+Second:
+
+P0_HISTORICAL_FAILURE_WITH_AUTHORITY =
+PLAUSIBLE_NOT_YET_SECURE.
+
+R3 does not choose it over literary/tradition-shaping alternatives without an
+additional discriminator.
+
+Third:
+
+"rehabilitation" is decomposed into:
+- Markan narrative reinclusion;
+- later source-specific literary restoration;
+- first-generation/institutional authority;
+- conspiratorial rehabilitation.
+
+Only the first three are positively evidenced in their relevant source layers.
+
+CONSPIRATORIAL_REHABILITATION =
+NOT_ESTABLISHED.
+
+## 22. Guards
 
 - CEPHAS_EQUALS_PETER_HIGH_NE_INVISIBLE_ASSUMPTION
 - PAULINE_AUTHORITY_NE_GOSPEL_BIOGRAPHY
