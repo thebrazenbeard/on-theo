@@ -1,5 +1,5 @@
 schema_version: on-theo.yeshua-james-authority-family.v1
-status: SOURCE_BOUND_PENDING_HOSTILE_REVIEW
+status: FIRST_HOSTILE_REVIEW_APPLIED_SECOND_PASS_PENDING
 canonical: false
 program: THE_REAL_TESTAMENT_OF_YESHUA
 lane: R3_JAMES_AUTHORITY_FAMILY
@@ -138,8 +138,8 @@ claims:
     weaker_model: "Kinship prestige materially contributed to James/family authority."
 
   - id: CLM-YS-R3-JAM-010-KINSHIP-PRESTIGE
-    proposition: "Kinship with Yeshua likely contributed materially to James's early authority."
-    disposition: PLAUSIBLE_TO_PROBABLE_PENDING_HOSTILE_REVIEW
+    proposition: "Kinship with Yeshua may have contributed materially to James's early authority."
+    disposition: PLAUSIBLE_NOT_ESTABLISHED
     evidence_class: [HISTORICAL_RECONSTRUCTION, PROJECT_INFERENCE]
 
   - id: CLM-YS-R3-JAM-011-LETTER-AUTHORSHIP
@@ -157,11 +157,17 @@ models:
     proposition: "James authority arose through leadership, Jerusalem continuity, kinship, reputation and appearance tradition without formal dynasty."
     status: PLAUSIBLE_LOW_ASSUMPTION
   D1_KINSHIP_PRESTIGE:
-    proposition: "Family relationship was a material authority resource."
-    status: PLAUSIBLE_TO_PROBABLE
-  D2_INFORMAL_FAMILY_SUCCESSION:
+    proposition: "Family relationship may have been a material authority resource."
+    status: PLAUSIBLE_NOT_ESTABLISHED
+  D2_FAMILY_AUTHORITY_MEMORY:
+    proposition: "Later sources preserve strong memory of Yeshua-family authority."
+    status: SURVIVES_AS_LATER_SOURCE_RECEPTION
+  D2B_REPEATED_KIN_LEADERSHIP:
+    proposition: "Later traditions preserve repeated leadership by relatives of Yeshua."
+    status: SURVIVES_AS_LATER_TRADITION
+  D2C_INFORMAL_FAMILY_SUCCESSION:
     proposition: "Family ties became an informal preference in Jerusalem leadership."
-    status: POSSIBLE_LATER_EVIDENCE_RELEVANT
+    status: POSSIBLE_NOT_ESTABLISHED
   D3_FORMAL_HEREDITARY_DYNASTY:
     proposition: "Yeshua instituted hereditary family succession."
     status: NOT_ESTABLISHED
@@ -198,7 +204,17 @@ scholarly_controls:
     url: "https://academic.oup.com/reference/62341/reference-article-abstract/554109984"
     bounded_use: "Overview of Paul, Acts, and debates over James's authority."
 
+review_revision:
+  first_review_subject: 1353bf5e60ff36e785ed6879132675555de8c0a9
+  first_review_artifact: reviews/yeshua-james-authority-family-v1-hostile-review.md
+  principal_change: KINSHIP_PRESTIGE_CAUSATION_DEMOTED_TO_PLAUSIBLE_NOT_ESTABLISHED
+  family_ladder:
+    FAMILY_AUTHORITY_MEMORY: LATER_SOURCE_BOUND
+    REPEATED_KIN_LEADERSHIP_TRADITION: LATER_SOURCE_BOUND
+    INFORMAL_SUCCESSION_HYPOTHESIS: POSSIBLE_NOT_ESTABLISHED
+    FORMAL_HEREDITARY_DYNASTY: NOT_ESTABLISHED
+
 next:
-  - INTERNAL_HOSTILE_REVIEW
+  - SECOND_EXACT_HEAD_INTERNAL_HOSTILE_REVIEW
   - GALATIANS_2_12_FROM_JAMES_CONTROL
   - FAMILY_SUCCESSION_LATER_SOURCE_PACKET
