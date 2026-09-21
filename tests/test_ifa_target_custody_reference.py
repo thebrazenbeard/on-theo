@@ -1,14 +1,27 @@
+from importlib.util import module_from_spec, spec_from_file_location
+from pathlib import Path
+
 import pytest
 
-from research.ritual_interface_exploit.reference.ifa_target_custody_reference import (
-    PAYLOAD_BYTES,
-    RevealRecord,
-    answer_bit,
-    commitment_hex,
-    score_hit,
-    serialize_commitment_payload,
-    verify_commitment,
+MODULE_PATH = (
+    Path(__file__).resolve().parents[1]
+    / "research"
+    / "ritual-interface-exploit"
+    / "reference"
+    / "ifa_target_custody_reference.py"
 )
+SPEC = spec_from_file_location("ifa_target_custody_reference", MODULE_PATH)
+assert SPEC is not None and SPEC.loader is not None
+MODULE = module_from_spec(SPEC)
+SPEC.loader.exec_module(MODULE)
+
+PAYLOAD_BYTES = MODULE.PAYLOAD_BYTES
+RevealRecord = MODULE.RevealRecord
+answer_bit = MODULE.answer_bit
+commitment_hex = MODULE.commitment_hex
+score_hit = MODULE.score_hit
+serialize_commitment_payload = MODULE.serialize_commitment_payload
+verify_commitment = MODULE.verify_commitment
 
 NONCE = bytes.fromhex(
     "000102030405060708090a0b0c0d0e0f"
