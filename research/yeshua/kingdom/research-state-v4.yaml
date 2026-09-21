@@ -1,0 +1,36 @@
+schema_version: on-theo.yeshua-kingdom-research-state.v4
+status: SYNOPTIC_AND_JEWISH_CONTEXT_MATRICES_ADDED
+supersedes_for_current_research:
+  - research/yeshua/kingdom/research-state-v3.yaml
+
+branch:
+  name: research/yeshua-kingdom-teaching-v1-20260921
+
+new_artifacts:
+  synoptic_matrix: research/yeshua/kingdom/synoptic-present-future-kingdom-matrix-v1.md
+  jewish_context_matrix: research/yeshua/kingdom/jewish-kingdom-context-matrix-v1.md
+
+current_result:
+  kingdom_as_historical_core: PROBABLE
+  future_eschatological: STRONG_EARLY_TRADITIONAL
+  present_inbreaking: STRONG_EARLY_TRADITIONAL
+  social_ethics_reversal: PROBABLE
+  mixed_multi_register: STRONG
+  historical_inward_mystical_core: UNRESOLVED
+  thomas_inward_trajectory: SURVIVES
+  thomas_independence: UNRESOLVED
+
+strongest_result: >
+  The early source field is best explained by a mixed Kingdom complex with
+  future and present pressures inside a recognizably Jewish apocalyptic,
+  ethical and social environment. A primarily inward mystical core remains a
+  live hypothesis but is not yet the best-supported historical reconstruction.
+
+next_frontier:
+  primary: R2_INTERNAL_HOSTILE_REVIEW
+  subsequent:
+    - R3_PEOPLE_AROUND_YESHUA
+    - R8_INWARD_MYSTICAL_TRAJECTORY_AFTER_R7
+
+guards:
+  - DO_NOT_PROMOTE_MIXED_MODEL_TO_FINAL_YESHUA_SYSTEM_WITHOUT_REVIEW
