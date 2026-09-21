@@ -1,8 +1,9 @@
 schema_version: on-theo.yeshua-judas-source-development.v1
-status: SOURCE_BOUND_PENDING_HOSTILE_REVIEW
+status: SUPPLEMENTAL_NO_INDEPENDENT_PROMOTION_AUTHORITY
 canonical: false
 program: THE_REAL_TESTAMENT_OF_YESHUA
-lane: R3_JUDAS_SOURCE_DEVELOPMENT
+lane: R3_JUDAS_SOURCE_DEVELOPMENT_SUPPORT
+promotion_authority: research/yeshua/judas/judas-source-development-v1.yaml
 recorded_at: "2026-09-21"
 
 parent:
