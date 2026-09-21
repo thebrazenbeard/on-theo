@@ -1,0 +1,40 @@
+schema_version: on-theo.yeshua-john-baptist-relation-state.v2
+status: FIRST_HOSTILE_REVIEW_APPLIED_SECOND_PASS_PENDING
+recorded_at: "2026-09-21"
+
+branch:
+  name: research/yeshua-john-baptist-relation-v1-20260921
+
+parent:
+  branch: research/yeshua-people-source-clock-v1-20260921
+  head: facb8789bbbd0c77f0c3fa27ab71bb3d77b0557d
+  draft_pr: 157
+
+supersedes_for_current_head_use:
+  - research/yeshua/john-baptist/research-state-v1.yaml
+
+current_result:
+  historical_John: VERY_STRONG_WITH_JOSEPHUS_AUTHENTICITY_GUARD
+  John_independent_movement: VERY_STRONG
+  execution_by_Antipas: VERY_STRONG
+  Yeshua_baptized_by_John: HISTORICALLY_PROBABLE_WITH_SOURCE_THICKNESS_GUARD
+  formal_long_term_apprenticeship: PLAUSIBLE_NOT_ESTABLISHED
+  formative_influence: PLAUSIBLE_HISTORICALLY_IMPORTANT_HYPOTHESIS_NOT_QUANTIFIED
+  institutional_movement_descent: NOT_ESTABLISHED
+  Qumran_Essene_membership: NOT_ESTABLISHED
+  Josephus_Mark_baptism_presentation: SOURCE_DIVERGENT
+  exact_historical_baptism_theology: UNRESOLVED
+  exact_execution_motive: UNRESOLVED_SOURCE_DIVERGENT
+  John_death_specific_psychological_effect_on_Yeshua: NOT_ESTABLISHED
+  John_self_identified_as_Yeshua_forerunner: NOT_ESTABLISHED
+
+guards:
+  - JOSEPHUS_JOHN_NE_YESHUA_BAPTISM_ATTESTATION
+  - BAPTISM_NE_FORMATIVE_MAGNITUDE
+  - CONTACT_NE_LONG_APPRENTICESHIP
+  - INFLUENCE_NE_INSTITUTIONAL_DESCENT
+  - QUMRAN_PARALLEL_NE_MEMBERSHIP
+  - SOURCE_PRESENTATION_DIVERGENCE_NE_HISTORICAL_CONTRADICTION_PROVED
+
+next:
+  - SECOND_EXACT_HEAD_INTERNAL_HOSTILE_REVIEW
