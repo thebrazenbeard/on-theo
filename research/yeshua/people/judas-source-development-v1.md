@@ -1,8 +1,10 @@
 # Judas Iscariot — Source Development Dossier V1
 
-Status: R3 JUDAS SOURCE-BOUND / INTERNAL HOSTILE REVIEW REQUIRED
+Status: SUPPLEMENTAL SOURCE-CLOCK CONTROL / NO INDEPENDENT PROMOTION AUTHORITY
 
 Program: **The Real Testament of Yeshua**
+
+Authority note: the dedicated Judas dossier under `research/yeshua/judas/` is authoritative for current Judas claim disposition. This file remains supporting source decomposition and may not independently promote historical Judas conclusions.
 
 Parent control:
 - branch: `research/yeshua-people-source-clock-v1-20260921`
