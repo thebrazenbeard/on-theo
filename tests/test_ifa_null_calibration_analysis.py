@@ -16,6 +16,22 @@ assert SPEC is not None and SPEC.loader is not None
 MODULE = module_from_spec(SPEC)
 SPEC.loader.exec_module(MODULE)
 
+PLACEMENT_PATH = (
+    Path(__file__).resolve().parents[1]
+    / "research"
+    / "ritual-interface-exploit"
+    / "reference"
+    / "ifa_mode_s_placement_schedule.py"
+)
+PLACEMENT_SPEC = spec_from_file_location(
+    "ifa_mode_s_placement_schedule_for_test",
+    PLACEMENT_PATH,
+)
+assert PLACEMENT_SPEC is not None and PLACEMENT_SPEC.loader is not None
+PLACEMENT = module_from_spec(PLACEMENT_SPEC)
+PLACEMENT_SPEC.loader.exec_module(PLACEMENT)
+PLACEMENT_SCHEDULE = PLACEMENT.build_schedule()
+
 
 def make_records(rank_pairs):
     records = []
@@ -23,8 +39,9 @@ def make_records(rank_pairs):
     for index, (first_rank, second_rank) in enumerate(rank_pairs, start=1):
         relation = MODULE.expected_relation(first_rank, second_rank)
         side = MODULE.expected_side(relation)
-        token_left = "A" if index % 2 else "B"
-        token_right = "B" if index % 2 else "A"
+        placement = PLACEMENT_SCHEDULE[index - 1]
+        token_left = placement["token_left"]
+        token_right = placement["token_right"]
         if side == "LEFT":
             output = token_left
         elif side == "RIGHT":
@@ -40,6 +57,8 @@ def make_records(rank_pairs):
             "operator_id_pseudonymous": "OP1",
             "attempt_index_global": index,
             "attempt_index_session": index,
+            "placement_block_id": placement["placement_block_id"],
+            "attempt_index_block": placement["attempt_index_block"],
             "cast1_raw_state": f"ODU_{first_rank:03d}",
             "cast2_raw_state": f"ODU_{second_rank:03d}",
             "cast1_rank": first_rank,
@@ -118,4 +137,19 @@ def test_duplicate_trial_id_is_rejected():
     records[1]["trial_id"] = records[0]["trial_id"]
     records[1]["event_hash"] = MODULE.compute_event_hash(records[1])
     with pytest.raises(MODULE.CalibrationIntegrityError, match="duplicate"):
+        MODULE.summarize_mode_s(records, swap_replicates=100)
+
+
+def test_wrong_frozen_placement_is_rejected():
+    records = make_records([(1, 2)])
+    records[0]["token_left"], records[0]["token_right"] = (
+        records[0]["token_right"],
+        records[0]["token_left"],
+    )
+    records[0]["raw_output"] = records[0]["token_left"]
+    records[0]["event_hash"] = MODULE.compute_event_hash(records[0])
+    with pytest.raises(
+        MODULE.CalibrationIntegrityError,
+        match="frozen placement schedule",
+    ):
         MODULE.summarize_mode_s(records, swap_replicates=100)
