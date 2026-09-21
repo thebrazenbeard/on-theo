@@ -1,0 +1,33 @@
+schema_version: on-theo.yeshua-mary-magdalene-research-state.v1
+status: SOURCE_BOUND_PENDING_HOSTILE_REVIEW
+recorded_at: "2026-09-21"
+
+branch:
+  name: research/yeshua-mary-magdalene-historical-reception-v1-20260921
+
+parent:
+  branch: research/yeshua-people-source-clock-v1-20260921
+  head: facb8789bbbd0c77f0c3fa27ab71bb3d77b0557d
+  draft_pr: 157
+
+artifacts:
+  dossier: research/yeshua/mary/mary-magdalene-historical-reception-dossier-v1.md
+  matrix: research/yeshua/mary/mary-magdalene-historical-reception-v1.yaml
+
+current_result:
+  historical_Mary: PROBABLE_TO_STRONG
+  Galilean_follower_memory: PROBABLE
+  Markan_passion_burial_tomb_prominence: STRONG
+  formal_lifetime_leadership: UNRESOLVED_NOT_ESTABLISHED
+  historical_prostitute_identity: NOT_SUPPORTED_BY_EARLIEST_SOURCES
+  later_prostitute_conflation: STRONG_RECEPTION_HISTORY
+  coordinated_discrediting_campaign: NOT_ESTABLISHED
+  Johannine_individual_appearance: TEXTUALLY_STRONG_HISTORICAL_STATUS_UNRESOLVED
+  Gospel_of_Mary_authority_conflict: TEXTUALLY_STRONG_LATER_RECEPTION
+  historical_Peter_Mary_conflict: NOT_ESTABLISHED
+  historical_private_revelation: NOT_ESTABLISHED
+  spouse_or_sexual_partner: NOT_ESTABLISHED
+  superior_understanding: NOT_CURRENTLY_RANKABLE
+
+next:
+  - INTERNAL_HOSTILE_REVIEW
