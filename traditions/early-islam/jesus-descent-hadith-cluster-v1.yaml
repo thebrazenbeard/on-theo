@@ -1,0 +1,101 @@
+schema_version: on_theo.jesus_descent_hadith_cluster.v1
+status: BOUNDED_CANONICAL_HADITH_CLUSTER_REVIEW_REQUIRED
+canonical: false
+
+parent:
+  exact_head: 563c6efc289aa06f67434b0be133cded87ea4db0
+
+clusters:
+  - id: DESCENT_JUST_JUDGE
+    witnesses:
+      - BUKHARI_3448
+      - MUSLIM_155A
+      - MUSLIM_155C
+    companion_attribution: Abu_Hurayra
+    shared_lower_chain:
+      - Said_b_al_Musayyib
+      - Ibn_Shihab_al_Zuhri
+    motifs:
+      - descent
+      - just_judge
+      - break_cross
+      - kill_swine
+      - remove_jizya
+      - abundance
+
+  - id: DESCENT_IMAM_AMONG_YOU
+    witnesses:
+      - BUKHARI_3449
+      - MUSLIM_155D
+      - MUSLIM_155E
+      - MUSLIM_155F
+    companion_attribution: Abu_Hurayra
+    shared_lower_chain:
+      - Nafi_mawla_Abi_Qatada
+      - Ibn_Shihab_al_Zuhri
+    motifs:
+      - descent
+      - imam_or_leadership_relation
+
+  - id: DESCENT_JABIR_PRAYER
+    witnesses:
+      - MUSLIM_156
+    companion_attribution: Jabir_b_Abd_Allah
+    chain:
+      - Abu_al_Zubayr
+      - Ibn_Jurayj
+    motifs:
+      - descent
+      - community_leader
+      - jesus_declines_prayer_leadership
+
+claims:
+  - id: HAD-DESC-V1-001
+    proposition: Bukhari 3448 and Muslim 155a preserve closely related forms of a major descent report cluster.
+    status: BOUNDED
+    confidence: strong_for_collection_layer
+  - id: HAD-DESC-V1-002
+    proposition: Bukhari and Muslim automatically provide independent double attestation for that cluster.
+    status: NOT_ADMITTED
+  - id: HAD-DESC-V1-003
+    proposition: The imam-among-you saying exists as a variant cluster rather than one fixed wording.
+    status: BOUNDED
+    confidence: strong_for_collection_layer
+  - id: HAD-DESC-V1-004
+    proposition: The transmitter explanation in Muslim 155f is necessarily identical in historical layer to the core saying.
+    status: NOT_ADMITTED
+  - id: HAD-DESC-V1-005
+    proposition: Muslim 156 preserves a distinct Jabir-attributed route for a broader Jesus-descent tradition.
+    status: BOUNDED
+    confidence: strong_for_collection_layer
+  - id: HAD-DESC-V1-006
+    proposition: Muslim 156 independently verifies every detail of the Abu Hurayra break-cross report.
+    status: NOT_ADMITTED
+  - id: HAD-DESC-V1-007
+    proposition: The canonical sample preserves multiple chain topologies for the broader descent motif.
+    status: BOUNDED
+    confidence: strong_for_collection_layer
+  - id: HAD-DESC-V1-008
+    proposition: Displayed chains alone establish exact origin dates and authenticity.
+    status: NOT_ADMITTED
+  - id: HAD-DESC-V1-009
+    proposition: The broader Jesus-descent motif is multiply represented within the canonical Sunni collection layer.
+    status: BOUNDED
+    confidence: strong
+  - id: HAD-DESC-V1-010
+    proposition: The exact pre-canonical history of the report clusters is resolved.
+    status: UNKNOWN
+
+guards:
+  - COLLECTION_ATTESTATION_NE_EVENT_AUTHENTICATION
+  - TWO_COLLECTIONS_NE_TWO_INDEPENDENT_ORIGINS_BY_DEFAULT
+  - SHARED_ISNAD_NODE_NE_INDEPENDENT_CORROBORATION
+  - MATN_VARIANT_NE_CONTRADICTION_BY_DEFAULT
+  - COMPANION_ATTRIBUTION_NE_CONTEMPORARY_WRITTEN_DOCUMENT
+  - COMMON_LINK_NE_FABRICATION_VERDICT
+
+next_scope:
+  - PRE_CANONICAL_DESCENT_WITNESSES
+  - ISNAD_CUM_MATN_STUDY
+  - CROSS_CONFESSIONAL_HADITH_COMPARISON
+  - ISLAMIC_ASCETIC_JESUS_SAYINGS_PACKET
