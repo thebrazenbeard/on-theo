@@ -1,0 +1,116 @@
+schema_version: on-theo.hypothesis-matrix.v1
+status: SPECULATIVE_MODEL_REVIEW_REQUIRED
+canonical: false
+subject: jesus_inner_circle_memory_and_roman_cultivation
+base_commit: 5a45ef5cdadc1f1f3a21e769e2d613c4ed945d8d
+claims:
+  - id: JIC-001
+    proposition: "Mary Magdalene is called a prostitute in the canonical Gospels."
+    class: PRIMARY_TEXT
+    assessment: NOT_ADMITTED
+    confidence: strong
+    note: "The prostitute/penitent synthesis is later Western reception, not a canonical Gospel statement."
+  - id: JIC-002
+    proposition: "Mary Magdalene was a significant follower and resurrection witness."
+    class: HISTORICAL_RECONSTRUCTION
+    assessment: BOUNDED
+    confidence: strong
+  - id: JIC-003
+    proposition: "The Gospel of Mary preserves a Mary-versus-Peter/Andrew authority conflict."
+    class: PRIMARY_TEXT
+    assessment: BOUNDED
+    confidence: strong
+    note: "Evidence for later Christian authority discourse, not automatic first-century transcript."
+  - id: JIC-004
+    proposition: "The Gospel of Judas gives Judas privileged understanding relative to the Twelve."
+    class: PRIMARY_TEXT
+    assessment: PARTIAL
+    confidence: moderate
+    note: "Privileged recognition is textually important; whether Judas is ultimately positive or negative remains debated."
+  - id: JIC-005
+    proposition: "Judas was invented as a scapegoat for a collective apostolic betrayal."
+    class: SPECULATIVE_MODEL
+    assessment: UNKNOWN
+    confidence: low
+  - id: JIC-006
+    proposition: "The arrest crisis may have involved broader disciple failure later concentrated into a singular betrayal figure."
+    class: SPECULATIVE_MODEL
+    assessment: PARTIAL
+    confidence: low_moderate
+  - id: JIC-007
+    proposition: "Peter's denial and the disciples' flight are early traditions of inner-circle failure."
+    class: HISTORICAL_RECONSTRUCTION
+    assessment: BOUNDED
+    confidence: moderate_strong
+  - id: JIC-008
+    proposition: "Thomas was reluctant to participate in a betrayal or Roman operation."
+    class: SPECULATIVE_MODEL
+    assessment: UNKNOWN
+    confidence: low
+  - id: JIC-009
+    proposition: "Mark 6:3 preserves the unusual designation 'son of Mary' in a hostile hometown scene."
+    class: PRIMARY_TEXT
+    assessment: BOUNDED
+    confidence: strong
+  - id: JIC-010
+    proposition: "'Son of Mary' proves illegitimacy or childhood sexual-shame stigma."
+    class: SCHOLARLY_INTERPRETATION
+    assessment: UNKNOWN
+    confidence: contested
+  - id: JIC-011
+    proposition: "The later Panthera tradition proves a first-century Nazareth paternity rumor."
+    class: LATER_TRADITION
+    assessment: NOT_ADMITTED
+    confidence: strong
+  - id: JIC-012
+    proposition: "Tertullian claims Tiberius received a Palestine report concerning Christ and retained a favorable judgment after Senate rejection."
+    class: PRIMARY_TEXT
+    assessment: BOUNDED
+    confidence: strong
+    note: "Strong only for what Tertullian c.197 claims."
+  - id: JIC-013
+    proposition: "Tertullian's story proves Tiberius cultivated the Jesus movement."
+    class: LATER_TRADITION
+    assessment: NOT_ADMITTED
+    confidence: strong
+  - id: JIC-014
+    proposition: "Roman rulers understood cult and posthumous charisma as instruments of political legitimacy."
+    class: HISTORICAL_RECONSTRUCTION
+    assessment: BOUNDED
+    confidence: strong
+  - id: JIC-015
+    proposition: "Tiberian or other early Roman actors deliberately cultivated, infiltrated, or steered Christianity."
+    class: SPECULATIVE_MODEL
+    assessment: UNKNOWN
+    confidence: low
+  - id: JIC-016
+    proposition: "A genuine Jesus movement could later have been institutionally appropriated without having been invented by Rome."
+    class: PROJECT_INFERENCE
+    assessment: BOUNDED
+    confidence: strong
+  - id: JIC-017
+    proposition: "Jesus was metaphysically more connected to a soul or veil than ordinary people."
+    class: SPECULATIVE_MODEL
+    assessment: UNKNOWN
+    confidence: not_historically_testable_as_stated
+  - id: JIC-018
+    proposition: "Trauma, stigma, marginalization, or altered-state religious experience may be explored as naturalistic contributors to Jesus' insight."
+    class: SPECULATIVE_MODEL
+    assessment: UNKNOWN
+    confidence: low
+guards:
+  - LATER_TRADITION_NE_FIRST_CENTURY_EYEWITNESS
+  - ROMAN_CAPABILITY_NE_ROMAN_ACTION
+  - INSTITUTIONAL_BENEFIT_NE_ORIGINAL_DESIGN
+  - AUTHORITY_CONFLICT_NE_HISTORICAL_TRANSCRIPT
+  - LITERARY_VILLAINIZATION_NE_FRAMEUP_PROOF
+  - METAPHYSICAL_MODEL_NE_HISTORICAL_EVIDENCE
+next_tests:
+  - pre_markan_and_independent_judas_traditions
+  - pauline_the_twelve_and_judas_tension
+  - diachronic_judas_villainization_map
+  - mary_peter_authority_conflict_source_clock
+  - mark_6_3_matronymic_and_paternity_polemic
+  - passion_responsibility_shift_rome_priestly_elite_crowd_disciples
+  - first_and_second_century_roman_patronage_or_informant_links
+  - tertullian_tiberius_tradition_source_history
