@@ -1,0 +1,68 @@
+schema_version: on-theo.jain-ascetic-lay-vow-evidence.v1
+status: BOUNDED_ROLE_DIFFERENTIATED_DISCIPLINE
+
+records:
+  - id: JAIN-VOW-001
+    evidence:
+      - ROUTLEDGE_JAINA_ETHICS
+      - JAINA_FIVE_MAHAVRATAS_CURRENT
+    evidence_class:
+      - SCHOLARLY_INTERPRETATION
+      - CURRENT_ORGANIZATIONAL_SELF_DESCRIPTION
+    propositions:
+      - five_vow_family_includes_ahimsa_satya_asteya_brahmacarya_aparigraha
+      - mendicants_observe_great_vows_in_radicalized_form
+    supports:
+      - RITUAL_ORDER_MODEL
+      - TRANSFORMATION_MODEL
+    confidence: HIGH
+
+  - id: JAIN-LAY-001
+    source: LAIDLAW_RICHES_RENUNCIATION
+    evidence_class: SCHOLARLY_ETHNOGRAPHY
+    propositions:
+      - lay_anuvratas_are_homonymous_with_but_practically_distinct_from_mendicant_mahavratas
+      - lay_vow_adoption_and_lived_practice_require_ethnographic_not_textbook_control
+    supports:
+      - RITUAL_ORDER_MODEL
+      - INSTITUTIONALIZATION_MODEL
+    confidence: HIGH
+
+  - id: JAIN-ASC-001
+    source: CORT_JAINS_IN_WORLD_HOLY_ASCETICISM
+    evidence_class:
+      - SCHOLARLY_ETHNOGRAPHY
+      - SCHOLARLY_INTERPRETATION
+    propositions:
+      - mendicant_and_lay_asceticisms_differ_in_form
+      - lay_dietary_and_fasting_disciplines_are_major_nonharm_practices
+      - ascetic_practice_is_linked_to_liberation_and_karmic_transformation
+    supports:
+      - TRANSFORMATION_MODEL
+      - RITUAL_ORDER_MODEL
+    confidence: HIGH
+
+  - id: JAIN-REL-001
+    evidence:
+      - LAIDLAW_RICHES_RENUNCIATION
+      - CORT_JAINS_IN_WORLD
+      - JAIN_BIOETHICS_CAREFULNESS
+    evidence_class: SCHOLARLY_INTERPRETATION
+    propositions:
+      - lay_and_mendicant_orders_are_materially_and_religiously_interdependent
+      - lay_support_and_mendicant_teaching_exemplarity_form_recurrent_relational_structure
+    supports:
+      - RELATIONAL_ORDER_MODEL
+      - INSTITUTIONALIZATION_MODEL
+    confidence: HIGH
+
+axis_status:
+  RITUAL_ORDER_MODEL: BOUNDED_ROLE_DIFFERENTIATED_VOW_ASCETIC_DISCIPLINE
+  INSTITUTIONALIZATION_MODEL: BOUNDED_DUAL_LAY_RENOUNCER_ORDER
+  RELATIONAL_ORDER_MODEL: BOUNDED_LAY_RENOUNCER_INTERDEPENDENCE
+  TRANSFORMATION_MODEL: BOUNDED_EMBODIED_ASCETIC_KARMIC_PURIFICATION
+  CAUSAL_ORDER_TYPE: BOUNDED_ETHICAL_ACTION_KARMIC_LINK
+  CROSS_TRADITION_COMPARISON: HOLD_PENDING_READINESS_AUDIT
+
+guards:
+  - ROLE_SCOPE_REQUIRED
