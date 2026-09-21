@@ -1,0 +1,34 @@
+schema_version: on-theo.yeshua-john-baptist-relation-state.v3
+status: SECOND_HOSTILE_REVIEW_REVISION_APPLIED_THIRD_PASS_PENDING
+recorded_at: "2026-09-21"
+
+branch:
+  name: research/yeshua-john-baptist-relation-v1-20260921
+
+supersedes_for_current_head_use:
+  - research/yeshua/john-baptist/research-state-v2.yaml
+
+review_2:
+  subject: 4300563d4f599e2d580a9659ef06a58353bd47cb
+  artifact: reviews/yeshua-john-baptist-relation-v1-hostile-review-2.md
+  disposition: MINOR_REVISION_REQUIRED_BEFORE_INTERNAL_PASS
+  correction:
+    - BAPTISM_IMPLIES_RITE_LEVEL_PARTICIPATION_NOT_WIDER_PROGRAM_MEMBERSHIP
+    - FORMATIVE_MAGNITUDE_REMAINS_UNRESOLVED
+
+current_result:
+  historical_John: VERY_STRONG_WITH_JOSEPHUS_AUTHENTICITY_GUARD
+  John_independent_movement: VERY_STRONG
+  execution_by_Antipas: VERY_STRONG
+  Yeshua_baptized_by_John: HISTORICALLY_PROBABLE_WITH_SOURCE_THICKNESS_GUARD
+  contact_and_rite_participation: PROBABLE
+  broader_programmatic_alignment: PLAUSIBLE_UNRESOLVED
+  formal_long_term_apprenticeship: PLAUSIBLE_NOT_ESTABLISHED
+  formative_influence: PLAUSIBLE_HISTORICALLY_IMPORTANT_HYPOTHESIS_NOT_QUANTIFIED
+  institutional_movement_descent: NOT_ESTABLISHED
+  Qumran_Essene_membership: NOT_ESTABLISHED
+  exact_historical_baptism_theology: UNRESOLVED
+  exact_execution_motive: UNRESOLVED_SOURCE_DIVERGENT
+
+next:
+  - THIRD_EXACT_HEAD_INTERNAL_HOSTILE_REVIEW
