@@ -1,5 +1,6 @@
 from importlib.util import module_from_spec, spec_from_file_location
 from pathlib import Path
+import sys
 
 import pytest
 
@@ -13,6 +14,7 @@ MODULE_PATH = (
 SPEC = spec_from_file_location("ifa_target_custody_reference", MODULE_PATH)
 assert SPEC is not None and SPEC.loader is not None
 MODULE = module_from_spec(SPEC)
+sys.modules[SPEC.name] = MODULE
 SPEC.loader.exec_module(MODULE)
 
 PAYLOAD_BYTES = MODULE.PAYLOAD_BYTES
