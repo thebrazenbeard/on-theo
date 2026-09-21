@@ -1,0 +1,41 @@
+schema_version: on-theo.yeshua-mary-magdalene-research-state.v2
+status: FIRST_HOSTILE_REVIEW_APPLIED_SECOND_PASS_PENDING
+recorded_at: "2026-09-21"
+
+branch:
+  name: research/yeshua-mary-magdalene-historical-reception-v1-20260921
+
+parent:
+  branch: research/yeshua-people-source-clock-v1-20260921
+  head: facb8789bbbd0c77f0c3fa27ab71bb3d77b0557d
+  draft_pr: 157
+
+supersedes_for_current_head_use:
+  - research/yeshua/mary/research-state-v1.yaml
+
+current_result:
+  historical_Mary: PROBABLE
+  Galilean_follower_memory: PROBABLE
+  Markan_passion_burial_tomb_prominence: STRONG_AT_MARKAN_MEMORY_LEVEL
+  formal_lifetime_leadership: UNRESOLVED_NOT_ESTABLISHED
+  earliest_source_prostitute_identity: NOT_SUPPORTED
+  private_biography_sex_work: UNKNOWN
+  later_prostitute_conflation: STRONG_RECEPTION_HISTORY
+  coordinated_discrediting_campaign: NOT_ESTABLISHED
+  Johannine_individual_appearance: TEXTUALLY_STRONG_HISTORICAL_STATUS_UNRESOLVED
+  Gospel_of_Mary_authority_conflict_for_works_Mary: TEXTUALLY_STRONG_LATER_RECEPTION
+  Gospel_of_Mary_Magdalene_identification: PROBABLE_NOT_AUTOMATIC
+  historical_Peter_Mary_conflict: NOT_ESTABLISHED
+  historical_private_revelation: NOT_ESTABLISHED
+  spouse_or_sexual_partner: NOT_ESTABLISHED
+  superior_understanding: NOT_CURRENTLY_RANKABLE
+
+guards:
+  - EARLIEST_SOURCES_DO_NOT_CALL_HER_PROSTITUTE_NE_PROVED_PRIVATE_BIOGRAPHY
+  - MARKAN_MEMORY_NE_DIRECT_EYEWITNESS_CERTIFICATION
+  - GOSPEL_OF_MARY_MARY_NE_AUTOMATIC_MAGDALENE
+  - EXTANT_SOURCE_ORDER_NE_SMOOTH_TRADITION_HISTORY
+  - RECEPTION_TRANSFORMATION_NE_COORDINATED_SUPPRESSION
+
+next:
+  - SECOND_EXACT_HEAD_INTERNAL_HOSTILE_REVIEW
