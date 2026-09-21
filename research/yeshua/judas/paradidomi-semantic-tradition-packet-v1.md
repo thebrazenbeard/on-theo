@@ -194,8 +194,11 @@ Judas explicitly.
 Narrative evaluation:
 negative.
 
+Textual narrative:
+explicit Judas handover is source-bound in Mark.
+
 Historical event:
-some handover tradition source-bound/probable at current ceiling.
+a Judas handover core is PLAUSIBLE_NOT_YET_SECURE at the current ceiling.
 
 ### Later Gospels
 
@@ -266,3 +269,16 @@ REJECTED.
 - PAULINE_PASSIVE_NE_NAMED_AGENT
 - MARKAN_CONTEXT_NE_DICTIONARY_DEFINITION
 - LATER_TRANSLATION_TRADITION_NE_EARLIEST_PSYCHOLOGY
+
+
+## 15. Hostile-review alignment
+
+The lexical packet does not carry an independent historical confidence level.
+
+Current relationship:
+- MARKAN_HANDOVER_NARRATIVE = SOURCE_BOUND;
+- HISTORICAL_JUDAS_HANDOVER = PLAUSIBLE_NOT_YET_SECURE;
+- PARADIDOMI_LEXICAL_RANGE = BOUNDED_PHILOLOGICAL_CONTROL.
+
+Lexical neutrality prevents overtranslation but cannot raise or lower the
+historicity of Judas without source-critical evidence.
