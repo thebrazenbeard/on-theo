@@ -1,0 +1,71 @@
+schema_version: on-theo.jain-noncreator-cosmology-evidence.v1
+status: BOUNDED_CLASSICAL_NONCREATOR_COSMOLOGY
+
+records:
+  - id: JAIN-COSMO-001
+    evidence:
+      - OXFORD_HANDBOOK_ATHEISM_JAINISM_VALLELY
+      - BALBIR_JAIN_COSMOLOGY_BRITISH_LIBRARY
+      - ROUTLEDGE_JAINA_PHILOSOPHY_SONI
+    evidence_class: SCHOLARLY_INTERPRETATION
+    propositions:
+      - classical_Jain_cosmos_is_beginningless_and_uncreated
+      - creator_god_is_not_required
+      - deities_exist_without_creator_function
+    supports:
+      - WORLD_ORIGIN_MODEL
+      - ORIGIN_AGENT_MODEL
+    confidence: HIGH
+
+  - id: JAIN-COSMO-DRAVYA-001
+    evidence:
+      - TATTVARTHASUTRA_CLASSICAL_ONTOLOGY
+      - ROUTLEDGE_JAINA_PHILOSOPHY_SONI
+      - BALCEROWICZ_2021
+    evidence_class:
+      - PRIMARY_TEXT
+      - SCHOLARLY_INTERPRETATION
+    propositions:
+      - reality_is_classically_analyzed_through_eternal_substances_and_changing_modes
+      - jiva_and_ajiva_are_uncreated_ontological_categories
+    supports:
+      - WORLD_ORIGIN_MODEL
+      - CONTINUITY_MODEL
+    confidence: HIGH_CLASSICAL
+
+  - id: JAIN-COSMO-LOKA-001
+    evidence:
+      - TATTVARTHASUTRA_CHAPTER_5
+      - BALBIR_JAIN_COSMOLOGY_BRITISH_LIBRARY
+    evidence_class:
+      - PRIMARY_TEXT
+      - SCHOLARLY_INTERPRETATION
+    propositions:
+      - loka_and_aloka_are_distinguished
+      - structured_cosmos_is_bounded_within_infinite_space
+    supports:
+      - WORLD_ORIGIN_MODEL
+      - COSMIC_STRUCTURE_MODEL
+    confidence: HIGH_CLASSICAL
+
+  - id: JAIN-COSMO-TIME-001
+    evidence:
+      - BALBIR_JAIN_COSMOLOGY_BRITISH_LIBRARY
+      - JAIN_COSMOLOGY_SCHOLARLY_SUMMARY
+    evidence_class: SCHOLARLY_INTERPRETATION
+    propositions:
+      - Jain_cosmic_time_includes_cyclical_ascending_descending_ages
+      - cycles_do_not_function_as_first_creation_events
+    supports:
+      - COSMIC_TIME_MODEL
+      - WORLD_ORIGIN_MODEL
+    confidence: HIGH
+
+axis_status:
+  WORLD_ORIGIN_MODEL: BOUNDED_BEGINNINGLESS_UNCREATED_COSMOS
+  COSMIC_TIME_MODEL: BOUNDED_CYCLIC_WITHIN_BEGINNINGLESS_REALITY
+  CONTINUITY_MODEL: BOUNDED_ETERNAL_SUBSTANCE_CHANGING_MODE
+  CROSS_TRADITION_COMPARISON: HOLD_PENDING_READINESS_AUDIT
+
+guards:
+  - INTERNAL_METAPHYSICS_SCOPE_REQUIRED
