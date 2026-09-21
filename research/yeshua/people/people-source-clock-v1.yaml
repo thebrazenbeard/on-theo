@@ -1,5 +1,5 @@
 schema_version: on-theo.yeshua-people-source-clock.v1
-status: FIRST_HOSTILE_REVIEW_REVISIONS_APPLIED_SECOND_REVIEW_PENDING
+status: POST_REVIEW_INTEGRITY_CLEANUP_REVALIDATION_PENDING
 canonical: false
 program: THE_REAL_TESTAMENT_OF_YESHUA
 lane: R3_PEOPLE_AROUND_YESHUA
@@ -51,7 +51,6 @@ figures:
     priority: 2
 
   - id: CEPHAS_PETER
-    identity_control: "Cephas/Peter is the conventional and overwhelmingly standard identification, retained as an explicit source-critical identification rather than an unmarked identity."
     identity_control:
       mainstream_identification: CEPHAS_EQUALS_PETER_STRONG
       minority_distinction: HISTORICALLY_PROPOSED_NOT_CURRENTLY_PREFERRED
@@ -133,7 +132,7 @@ cross_person_claims:
     evidence_class: [PRIMARY_TEXT, HISTORICAL_RECONSTRUCTION]
 
   - id: CLM-YS-R3-CLK-002-MARY-PASSION-WITNESS
-    proposition: "Mary Magdalene is an important early Gospel witness figure at the crucifixion/burial/tomb boundary."
+    proposition: "Mary Magdalene is prominent in surviving Markan passion/burial/tomb memory."
     disposition: SOURCE_BOUND_STRONG_AT_MARKAN_MEMORY_LEVEL
     evidence_class: [PRIMARY_TEXT, HISTORICAL_RECONSTRUCTION]
     ceiling: "Does not establish chief-disciple status or historical secret revelation."
@@ -144,7 +143,7 @@ cross_person_claims:
     evidence_class: [PRIMARY_TEXT, HISTORICAL_RECONSTRUCTION]
 
   - id: CLM-YS-R3-CLK-004-THOMAS-DISTINCTIVE-LATER
-    proposition: "Thomas is named early in the Markan roster, but his distinctive doubt/revelation identity is primarily later Johannine/Thomasine development."
+    proposition: "Thomas is named early in the Markan roster, while his distinctive doubt/revelation identity belongs to later Johannine/Thomasine portrayals."
     disposition: SOURCE_BOUND_PROVISIONAL
     evidence_class: [PRIMARY_TEXT, HISTORICAL_RECONSTRUCTION]
 
@@ -200,8 +199,8 @@ scholarly_controls:
 
 next_frontier:
   priority_rationale: "Judas first is an asymmetric-skepticism/bias-control choice because the project has unusually strong prior interest in reframing him; it is not a ranking of historical importance."
+  priority_mode: ASYMMETRIC_BIAS_CONTROL_NOT_HISTORICAL_IMPORTANCE
   primary: JUDAS_SOURCE_DEVELOPMENT_DOSSIER
-  priority_rationale: ASYMMETRIC_BIAS_CONTROL_NOT_HISTORICAL_IMPORTANCE
   subsequent:
     - JAMES_AUTHORITY_FAMILY_DOSSIER
     - MARY_HISTORICAL_RECEPTION_DOSSIER
