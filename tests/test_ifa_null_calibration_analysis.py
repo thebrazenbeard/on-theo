@@ -411,3 +411,25 @@ def test_multiple_operators_block_half_null_admission_flag():
     )
     assert summary["operator_count"] == 2
     assert summary["half_null_admission_ready"] is False
+
+
+def test_token_hand_dependency_is_rejected_despite_global_balance():
+    pairs = []
+    for placement in PLACEMENT_SCHEDULE[:200]:
+        if placement["token_right"] == "A":
+            pairs.append((2, 1))
+        else:
+            pairs.append((1, 2))
+    records = make_records(pairs)
+    p_value, table = MODULE.token_hand_association(records)
+    assert table["a_right_selected_right"] > 0
+    assert table["a_left_selected_left"] > 0
+    assert p_value is not None and p_value < 0.01
+
+    summary = MODULE.summarize_mode_s(
+        records,
+        swap_replicates=200,
+    )
+    assert summary["p_right"] == 0.5
+    assert summary["token_hand_association_rejected_alpha_0_01"] is True
+    assert summary["half_null_admission_ready"] is False
