@@ -1,0 +1,52 @@
+schema_version: on-theo.yeshua-mary-magdalene-review-receipt.v1
+status: INTERNAL_HOSTILE_PASS_WITH_GUARDS
+independent_review_status: REQUIRED_NOT_COMPLETED
+recorded_at: "2026-09-21"
+
+subject:
+  branch: research/yeshua-mary-magdalene-historical-reception-v1-20260921
+  exact_commit: 5ac4c61c5de93f43e511e44440820266de7da71f
+  state: research/yeshua/mary/research-state-v2.yaml
+
+review:
+  execution_mode: SAME_RUNTIME_ADVERSARIAL_REVIEW
+  artifact: reviews/yeshua-mary-magdalene-historical-reception-v1-hostile-review-2.md
+  commit: 78a7b9fcb4e6096c5da8c5b3463a04ca55ed6677
+  disposition: INTERNAL_HOSTILE_PASS_WITH_GUARDS
+
+current_claim_ceiling:
+  historical_Mary: PROBABLE
+  Galilean_follower_memory: PROBABLE
+  Markan_passion_burial_tomb_prominence: STRONG_AT_MARKAN_MEMORY_LEVEL
+  formal_lifetime_leadership: UNRESOLVED_NOT_ESTABLISHED
+  earliest_source_prostitute_identity: NOT_SUPPORTED
+  private_biography_sex_work: UNKNOWN
+  later_prostitute_conflation: STRONG_RECEPTION_HISTORY
+  coordinated_discrediting_campaign: NOT_ESTABLISHED
+  Johannine_individual_appearance: TEXTUALLY_STRONG_HISTORICAL_STATUS_UNRESOLVED
+  Gospel_of_Mary_authority_conflict_for_works_Mary: TEXTUALLY_STRONG_LATER_RECEPTION
+  Gospel_of_Mary_Magdalene_identification: PROBABLE_NOT_AUTOMATIC
+  historical_Peter_Mary_conflict: NOT_ESTABLISHED
+  historical_private_revelation: NOT_ESTABLISHED
+  spouse_or_sexual_partner: NOT_ESTABLISHED
+  superior_understanding: NOT_CURRENTLY_RANKABLE
+
+allowed_downstream_use:
+  - R3_CROSS_PERSON_SYNTHESIS
+  - R5_RESURRECTION_STRATIFICATION
+  - R7_NONCANONICAL_MARY_TRAJECTORY
+  - R8_INWARD_MYSTICAL_TRAJECTORY
+  - TESTAMENT_CONSTRAINT_PACKET_AFTER_UPSTREAM_REVIEW
+
+prohibited:
+  - CLAIM_INDEPENDENT_REVIEW_COMPLETE
+  - PROMOTE_COORDINATED_MARY_SLANDER_CAMPAIGN
+  - PROMOTE_HISTORICAL_PRIVATE_REVELATION
+  - PROMOTE_MARY_AS_CHIEF_DISCIPLE
+  - PROMOTE_MARY_SUPERIOR_UNDERSTANDING
+  - PROMOTE_SPOUSAL_OR_SEXUAL_RELATIONSHIP
+
+next_frontier:
+  - PETER_FAILURE_REHABILITATION_DOSSIER
+  - GOSPEL_OF_MARY_AUTHORITY_CONFLICT_DEEP_PACKET
+  - PROSTITUTE_CONFLATION_RECEPTION_PACKET
