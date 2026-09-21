@@ -1,5 +1,5 @@
 schema_version: on-theo.yeshua-people-source-clock-state.v1
-status: SOURCE_BOUND_PENDING_HOSTILE_REVIEW
+status: FIRST_HOSTILE_REVIEW_REVISIONS_APPLIED_SECOND_REVIEW_PENDING
 recorded_at: "2026-09-21"
 branch:
   name: research/yeshua-people-source-clock-v1-20260921
@@ -16,8 +16,12 @@ current_result:
   earliest_judas_explicit_betrayal_layer: MARK
   earliest_twelve_label: PAUL_1COR15
   thomas_distinctive_character_layer: LATER_THAN_MARK_ROSTER
-  superior_understanding_claim: NOT_SUPPORTED_AT_R3_ENTRY
+  superior_understanding_claim: NOT_CURRENTLY_RANKABLE_AND_NOT_SUPPORTED_AT_R3_ENTRY
   collective_roman_collaboration_claim: NOT_SUPPORTED_AT_R3_ENTRY
+review:
+  first_hostile_subject: 0181dd902f0dc220eb5b085167f59799246a031c
+  first_hostile_artifact: reviews/yeshua-people-source-clock-v1-hostile-review.md
+  execution_mode: SAME_RUNTIME_ADVERSARIAL_REVIEW
 next:
-  - INTERNAL_HOSTILE_REVIEW
+  - SECOND_EXACT_HEAD_INTERNAL_HOSTILE_REVIEW
   - JUDAS_SOURCE_DEVELOPMENT_DOSSIER
