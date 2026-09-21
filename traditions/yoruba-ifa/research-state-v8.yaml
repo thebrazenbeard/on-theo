@@ -1,0 +1,52 @@
+schema_version: on-theo.yoruba-ifa-research-state.v8
+status: BOUNDED_COMPARISON_PLUS_BINARY_OUTCOME_DISCRIMINATOR
+supersedes_for_current_research:
+  - traditions/yoruba-ifa/research-state-v7.yaml
+
+branch:
+  name: research/yoruba-ifa-binary-outcome-v1-20260920
+
+parent:
+  branch: research/yoruba-ifa-diachronic-v1-20260920
+  exact_head: 2000081c974c25ce8f40a06e079033ac600d5ce8
+
+new_artifacts:
+  - traditions/yoruba-ifa/ifa-binary-outcome-discriminator-packet-v1.md
+  - traditions/yoruba-ifa/ifa-binary-outcome-evidence-v1.yaml
+
+new_admissions:
+  SOURCE_DEFINED_OUTCOME_PRECISION: HIGH
+  PROSPECTIVE_SCOREABILITY: HIGH
+  RANDOM_BASELINE_MODEL: BOUNDED_HIGH
+  SAFE_MODERN_EXPERIMENT_CANDIDATE: PROJECT_INFERENCE_ONLY
+
+strongest_new_result: >
+  Bascom's public scholarly description documents an Ifa consultation stage in
+  which questions can be posed as mutually exclusive alternatives or yes/no
+  propositions, providing the narrowest prospectively scoreable outcome format
+  currently identified in the ritual-interface research program.
+
+methodological_importance:
+  - >
+    Outcome precision is independent of input brittleness; Ifa currently scores
+    higher on outcome precision than on source-defined correct-vs-incorrect
+    ritual form.
+  - >
+    Bascom explicitly permits an etic probability model while documenting an
+    emic attribution to Ifa, enabling direct rival-model design.
+  - >
+    Procedure-specific output probabilities must be frozen before scoring.
+
+next_frontiers:
+  - exact_public_ibo_adimu_null_distribution
+  - lineage_and_procedure_variation_control
+  - source_compatible_objective_question_taxonomy
+  - preregistered_binary_target_protocol_design
+  - independent_ethnographic_confirmation_beyond_Bascom
+
+guards:
+  - PUBLIC_STRUCTURE_NE_PRIVATE_DISCLOSURE
+  - BINARY_FORMAT_NE_ANOMALOUS_INFORMATION
+  - ONE_ETHNOGRAPHER_NE_TOTAL_TRADITION
+  - MODERN_TEST_TARGET_NE_HISTORICAL_IDENTITY
+  - PRACTITIONER_PARTICIPATION_MUST_BE_VOLUNTARY_AND_RESPECTFUL

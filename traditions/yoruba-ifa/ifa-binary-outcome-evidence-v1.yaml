@@ -1,0 +1,74 @@
+schema_version: on-theo.yoruba-ifa-binary-outcome-evidence.v1
+status: NON_CANONICAL_PUBLIC_STRUCTURAL_DIVINATION_CONTROL
+parent_exact_head: 2000081c974c25ce8f40a06e079033ac600d5ce8
+packet: traditions/yoruba-ifa/ifa-binary-outcome-discriminator-packet-v1.md
+
+source_controls:
+  bascom_1969:
+    title: Ifa_Divination_Communication_between_Gods_and_Men_in_West_Africa
+    section: "Chapter V: Specific Alternatives: Ibo and Adimu"
+    pages: "51-59"
+    evidence_class:
+      - SCHOLARLY_INTERPRETATION
+      - ETHNOGRAPHIC_DOCUMENTARY_PRACTICE
+    propositions:
+      - specific_questions_can_be_phrased_as_mutually_exclusive_alternatives
+      - selected_questions_can_be_answered_yes_or_no
+      - alternatives_can_concern_specific_courses_of_action_or_candidates
+      - procedure_has_probabilistic_structure_under_an_etic_model
+      - practitioners_attribute_guidance_to_Ifa_under_an_emic_model
+
+records:
+  - id: IFA-BINARY-OUTCOME-001
+    proposition: selected_Ifa_consultation_stage_has_finite_mutually_exclusive_output
+    output_type:
+      - BINARY
+      - FINITE_ALTERNATIVE
+    supports:
+      - SOURCE_DEFINED_OUTCOME_NARROWING
+      - PROSPECTIVE_SCOREABILITY
+      - RIVAL_MODEL_DISCRIMINABILITY
+    confidence: BOUNDED_HIGH
+    evidence_class:
+      - ETHNOGRAPHIC_DOCUMENTARY_PRACTICE
+      - SCHOLARLY_INTERPRETATION
+
+  - id: IFA-BINARY-NULL-001
+    proposition: procedure_can_be_analyzed_under_explicit_probability_model
+    supports:
+      - RANDOM_BASELINE_MODEL
+      - EMPIRICAL_DISCRIMINATOR_DESIGN
+    confidence: BOUNDED_HIGH
+    limitation: >
+      Specific A/B output probability must be derived for the exact procedure
+      used; do not assume 0.5 by default.
+
+  - id: IFA-BINARY-EXPERIMENT-001
+    evidence_class:
+      - PROJECT_INFERENCE
+      - SPECULATIVE_MODEL
+    proposition: >
+      A public, ethically appropriate binary-alternative procedure could be
+      prospectively compared with independently held targets under frozen
+      scoring.
+    historical_fit: PARTIAL_MODERN_ABSTRACTION
+    empirical_status: NOT_RUN
+    supports:
+      - SAFE_MODERN_EXPERIMENT_CANDIDATE
+
+axes:
+  SOURCE_DEFINED_OUTCOME_PRECISION: HIGH
+  PROSPECTIVE_SCOREABILITY: HIGH
+  PUBLIC_SOURCE_CONTROL: HIGH
+  LITERAL_MODERN_SAFETY: HIGH_WITH_COMMUNITY_BOUNDARY
+  SOURCE_DEFINED_INPUT_BRITTLENESS: LOW_TO_MEDIUM
+  INTERPRETIVE_FLEXIBILITY: MEDIUM_REDUCED_AT_BINARY_STAGE
+  EMPIRICAL_ANOMALOUS_INFORMATION: NONE_ESTABLISHED
+
+guards:
+  - BASCOM_NE_ALL_IFA_LINEAGES
+  - BINARY_OUTPUT_NE_BINARY_ACCURACY
+  - ETIC_PROBABILITY_NE_EMIC_MEANING
+  - MODERN_HIDDEN_TARGET_NE_TRADITIONAL_QUESTION_BY_DEFAULT
+  - PROCEDURE_SPECIFIC_NULL_REQUIRED
+  - LIVING_TRADITION_BOUNDARY_REQUIRED

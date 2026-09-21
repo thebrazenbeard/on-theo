@@ -1,0 +1,56 @@
+schema_version: on-theo.yoruba-ifa-research-state.v9
+status: BINARY_OUTCOME_PLUS_CONDITIONAL_NULL_MODEL
+supersedes_for_current_research:
+  - traditions/yoruba-ifa/research-state-v8.yaml
+
+branch:
+  name: research/yoruba-ifa-binary-outcome-v1-20260920
+
+parent:
+  branch: research/yoruba-ifa-diachronic-v1-20260920
+  exact_head: 2000081c974c25ce8f40a06e079033ac600d5ce8
+
+artifacts:
+  - traditions/yoruba-ifa/ifa-binary-outcome-discriminator-packet-v1.md
+  - traditions/yoruba-ifa/ifa-binary-outcome-evidence-v1.yaml
+  - traditions/yoruba-ifa/ifa-public-binary-null-model-v1.md
+
+new_method_result:
+  type: CONDITIONAL_MATHEMATICAL_NULL
+  assumptions:
+    - two_independent_uniform_256_rank_draws
+    - consistent_seniority_order
+    - binary_side_selected_by_relative_rank
+    - ties_discarded_or_recast
+  results:
+    P_tie: 1/256
+    P_first_senior: 255/512
+    P_second_senior: 255/512
+    P_each_side_given_no_tie: 1/2
+  tool_check: WOLFRAM_LANGUAGE
+  evidence_class:
+    - PROJECT_INFERENCE
+    - MATHEMATICAL_DERIVATION
+
+required_before_target_testing:
+  - exact_public_procedure_freeze
+  - empirical_null_only_pretest
+  - output_bias_check
+  - tie_rate_check
+  - serial_dependence_check
+  - operator_dependence_check
+  - target_base_rate_freeze
+  - null_model_freeze
+
+current_claims:
+  SOURCE_DEFINED_OUTCOME_PRECISION: HIGH
+  PROSPECTIVE_SCOREABILITY: HIGH
+  CONDITIONAL_FAIR_BINARY_NULL: DERIVED_UNDER_EXPLICIT_ASSUMPTIONS
+  EMPIRICAL_PROCEDURE_NULL: NOT_YET_ESTABLISHED
+  EMPIRICAL_ANOMALOUS_INFORMATION: NONE_ESTABLISHED
+
+guards:
+  - THEORETICAL_NULL_NE_EMPIRICAL_NULL
+  - ONE_PUBLIC_DESCRIPTION_NE_ALL_LINEAGES
+  - WRONG_NULL_CAN_MANUFACTURE_ANOMALY
+  - MODERN_BINARY_TARGET_NE_HISTORICAL_IDENTITY
