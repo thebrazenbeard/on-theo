@@ -1,0 +1,263 @@
+schema_version: on-theo.yeshua-claim-record.v2
+status: PROPOSED_RESEARCH_ARCHITECTURE
+canonical: false
+program: THE_REAL_TESTAMENT_OF_YESHUA
+purpose: "Minimal durable schema for claim-centered historical reconstruction."
+
+state_model:
+  lifecycle_state:
+    allowed:
+      - PROPOSED
+      - SOURCE_BOUND
+      - INTERNAL_HOSTILE_REVIEWED
+      - REVIEW_STALE
+      - INDEPENDENTLY_REVIEWED
+  disposition:
+    allowed:
+      - SURVIVES
+      - SURVIVES_NARROWED
+      - UNRESOLVED
+      - REJECTED
+    nullable_before_review: true
+    semantics:
+      SURVIVES: "Survives current bounded review at the stated claim ceiling."
+      SURVIVES_NARROWED: "Only a narrower formulation survives; the superseded stronger formulation does not."
+      UNRESOLVED: "Current admitted evidence does not decide the proposition."
+      REJECTED: "Rejected as a currently supported/admissible conclusion; does not prove the logical negation historically true."
+
+required_claim_fields:
+  - id
+  - proposition
+  - claim_type
+  - evidence_class
+  - lifecycle_state
+  - disposition
+  - earliest_supporting_source
+  - physical_witness_control
+  - composition_date_status
+  - textual_control
+  - independent_supporting_witnesses
+  - literary_dependence
+  - contradictions
+  - scholarship
+  - rival_explanations
+  - confidence
+  - claim_ceiling
+  - dependencies
+  - downstream_consumers
+  - hostile_review
+  - exact_head_review_provenance
+  - invalidation
+
+field_contracts:
+  id:
+    type: stable_string
+    rule: "Once published in a research branch, the semantic identity of an ID must not be silently reassigned to a materially different proposition."
+  proposition:
+    type: exact_string
+    rule: "Must be narrow enough to be contradicted, narrowed, or rejected."
+  claim_type:
+    type: string
+    examples:
+      - TEXTUAL_OCCURRENCE
+      - WITNESS_CONTROL
+      - TEXTUAL_HISTORY
+      - HISTORICAL_RECONSTRUCTION
+      - TRADITION_FORMATION_HYPOTHESIS
+      - SOCIAL_MEMORY_HYPOTHESIS
+      - PSYCHOLOGICAL_HYPOTHESIS
+      - METAPHYSICAL_CLAIM
+  evidence_class:
+    type: list
+    allowed:
+      - PRIMARY_TEXT
+      - MANUSCRIPT_WITNESS
+      - EPIGRAPHIC_EVIDENCE
+      - MATERIAL_EVIDENCE
+      - DOCUMENTARY_PRACTICE
+      - RITUAL_TEXT
+      - HISTORICAL_RECONSTRUCTION
+      - LATER_TRADITION
+      - COMMENTARY
+      - SCHOLARLY_INTERPRETATION
+      - PROJECT_INFERENCE
+      - SPECULATIVE_MODEL
+      - FICTIONAL_LITERARY_CONSTRUCTION
+      - UNKNOWN
+  baseline_eligibility:
+    type: list
+    allowed:
+      - EARLY_SOURCE_CONSTRAINED_BASELINE
+      - FULL_SOURCE_CRITICAL_RECONSTRUCTION
+      - NEITHER
+    rule: "Eligibility does not itself imply acceptance."
+  earliest_supporting_source:
+    required_subfields:
+      - source_id
+      - locator
+      - relation
+      - earliest_status
+    earliest_status_allowed:
+      - EARLIEST_CURRENTLY_ADMITTED
+      - EARLIEST_SURVIVING_NOT_NECESSARILY_EARLIEST_TRADITION
+      - EMBEDDED_EARLIER_LAYER_CONTESTED
+      - UNKNOWN
+  physical_witness_control:
+    required_subfields:
+      - required
+      - witness_ids
+      - distinction_note
+    rule: "Work composition and physical witness must remain separate when manuscript evidence is relevant."
+  composition_date_status:
+    required_subfields:
+      - range_or_status
+      - basis
+      - contested
+  textual_control:
+    required_subfields:
+      - original_language_status
+      - recension_status
+      - reconstruction_status
+    reconstruction_status_allowed:
+      - DIRECT_EXTANT_TEXT
+      - TRANSLATION_RECONSTRUCTION
+      - FRAGMENTARY
+      - QUOTED_BY_LATER_AUTHOR
+      - LOST_WORK_RECONSTRUCTION
+      - MIXED
+      - NOT_APPLICABLE
+      - UNKNOWN
+  independent_supporting_witnesses:
+    type: list
+    rule: "Independence must be argued. Source count is not independence count."
+  literary_dependence:
+    required_subfields:
+      - status
+      - dependencies
+      - note
+    status_allowed:
+      - INDEPENDENT
+      - PARTIALLY_INDEPENDENT
+      - DEPENDENT
+      - COMMON_SOURCE_POSSIBLE
+      - ORAL_TRADITION_POSSIBLE
+      - CONTESTED
+      - UNKNOWN
+      - NOT_APPLICABLE
+  contradictions:
+    type: list
+    item_fields:
+      - source_or_claim_id
+      - locator
+      - contradiction_type
+      - note
+  scholarship:
+    required_subfields:
+      - supporting
+      - opposing
+      - opposition_acquisition
+    opposition_acquisition_allowed:
+      - NOT_REQUIRED
+      - REQUIRED_NOT_STARTED
+      - IN_PROGRESS
+      - COMPLETE_BOUNDED
+  rival_explanations:
+    type: list
+    item_fields:
+      - id
+      - proposition
+      - current_status
+      - discriminator
+  confidence:
+    type: qualitative_object
+    required_subfields:
+      - level
+      - reason
+    rule: "No composite numerical truth score."
+  claim_ceiling:
+    type: string
+    rule: "Must state the strongest conclusion currently licensed and what remains unestablished."
+  dependencies:
+    required_subfields:
+      - claims
+      - sources
+      - witness_assignments
+      - translations
+  downstream_consumers:
+    type: list
+    item_fields:
+      - repository_or_work
+      - use
+      - allowed_if_state
+  hostile_review:
+    required_subfields:
+      - required
+      - asymmetry_triggers
+      - internal_review_status
+      - independent_review_required
+      - strongest_objection
+    internal_review_status_allowed:
+      - NOT_STARTED
+      - IN_PROGRESS
+      - COMPLETE
+      - STALE
+  exact_head_review_provenance:
+    required_subfields:
+      - subject_repository
+      - subject_ref
+      - subject_commit
+      - review_artifact
+      - review_commit
+      - execution_mode
+    execution_mode_allowed:
+      - NONE
+      - SAME_RUNTIME_ADVERSARIAL_REVIEW
+      - INDEPENDENT_EXACT_HEAD_REVIEW
+      - EXTERNAL_SCHOLARLY_REVIEW_NOT_PROJECT_REVIEW
+  invalidation:
+    required_subfields:
+      - invalidates_on
+      - stale_reason
+      - stale_since_commit
+
+asymmetric_skepticism_triggers:
+  - DISTINCTIVE_PROJECT_THESIS
+  - CONSPIRATORIAL
+  - PSYCHOLOGICALLY_SATISFYING
+  - SPIRITUALLY_ATTRACTIVE
+  - INSTITUTIONALLY_ACCUSATORY
+  - LATE_SOURCE_PROMOTED_TO_EARLY_HISTORY
+  - DISPUTED_TRANSLATION_LOAD_BEARING
+  - OVERTURNS_EARLY_SOURCE_BASELINE
+  - LOAD_BEARING_FOR_LITERARY_PLOT
+
+independent_review_gate:
+  required_for:
+    - HISTORICAL_IDENTITY_OR_TEACHING_SHIFT
+    - LATE_SOURCE_PROMOTED_TO_YESHUA_LIFETIME
+    - COORDINATED_SUPPRESSION_OR_FABRICATION
+    - ROMAN_CULTIVATION_INFILTRATION_OR_INVENTION
+    - HISTORICAL_SUPERIORITY_OF_RIVAL_APOSTOLIC_AUTHORITY
+    - YESHUA_TRAUMA_SHAME_OR_ALTERED_STATE_ATTRIBUTION
+    - HISTORICAL_INWARD_MYSTICAL_CORE_AGAINST_BASELINE
+    - PATERNITY_CLAIM_BEYOND_CURRENT_CEILING
+    - LOAD_BEARING_FINAL_LITERARY_PREMISE
+  not_automatically_required_for:
+    - ROUTINE_SOURCE_METADATA
+    - UNCONTESTED_WITNESS_FACT
+    - LOW_CONSEQUENCE_PHILOLOGICAL_BOOKKEEPING
+
+invalidation_triggers:
+  - SOURCE_IDENTITY_CHANGE
+  - COMPOSITION_DATE_MATERIAL_CHANGE
+  - WITNESS_ATTRIBUTION_CHANGE
+  - RECENSION_ASSIGNMENT_CHANGE
+  - LOAD_BEARING_TRANSLATION_CHANGE
+  - DEPENDENCE_OR_INDEPENDENCE_CHANGE
+  - AUTHENTICITY_OR_INTERPOLATION_CHANGE
+  - EVIDENCE_CLASS_CHANGE
+  - SUPPORTING_CLAIM_DISPOSITION_CHANGE
+  - NEW_MATERIAL_CONTRADICTION
+
+project_level_allowed_result:
+  - DISTINCTIVE_YESHUA_HYPOTHESES_NOT_SUPPORTED

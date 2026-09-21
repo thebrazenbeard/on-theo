@@ -1,0 +1,252 @@
+schema_version: on-theo.yeshua-research-frontier-map.v2
+status: PROPOSED_RESEARCH_ARCHITECTURE
+canonical: false
+program: THE_REAL_TESTAMENT_OF_YESHUA
+recorded_at: "2026-09-21"
+
+live_anchors_at_design:
+  on_theo_main: eedbcf660c2cfe6cff5636e798806b0cd3d56efc
+  architecture_branch:
+    ref: architecture/chatgpt-project-interface-v1-20260920
+    head: 05b41dced0d34d8608986106027d5431d7230496
+  early_christian_corpus: 5a45ef5cdadc1f1f3a21e769e2d613c4ed945d8d
+  second_temple_corpus: 7493cdd8f9fb56f388641f3006fb6c62ac81ad00
+  enoch_daniel_philo_corpus: f4c4b4e940a8e6c76e9603d298bab819fbcc448d
+  yeshua_hypothesis_map: 112fb80a187aac29a1d5e14c41386dc5889393c7
+  yeshua_hostile_review: 0e2d6a64eb4e6ad15fbfa460db924e57cf7e1868
+  mary_magdalene_packet: e3a1f08b1e4ffb081f583501140efaf81c650d29
+  noncanonical_witness_control: eebd4a6fc30a3b8377c44e04e9892e10970b4e96
+  valentinian_primary_text_control: 997c593f916079f3e33496b8f07a63198317fe1f
+  gospel_philip_control: fe0be9d324cd8e537f0bfb43c13310bf69304fbb
+  valentinian_ritual_comparison: 54b0d565b53746846362ab5310e157721a5c69c8
+  jesus_inner_circle_hypothesis: e136fab52d503a0171871abbf78148d3fd635c8a
+
+baselines:
+  A:
+    id: EARLY_SOURCE_CONSTRAINED_BASELINE
+    purpose: "Control reconstruction from earliest defensible evidence."
+    is_final_historical_verdict: false
+  B:
+    id: FULL_SOURCE_CRITICAL_RECONSTRUCTION
+    purpose: "Whole surviving evidence field with later material admitted only proposition-by-proposition."
+    must_show_delta_from_A: true
+
+lanes:
+  - id: R0_SOURCE_WITNESS_NORMALIZATION
+    priority: 0
+    state: PARTIAL_EXISTING
+    objective: "Reuse and extend source/work/witness/recension controls before historical promotion."
+    prerequisites: []
+    existing_inputs:
+      - research/packets/noncanonical-witness-control-v1.yaml
+      - registry/extensions/yeshua-hypothesis-map-v1.yaml
+    outputs:
+      - "Normalized source/witness references needed by later claims."
+    independent_review_gate: CONDITIONAL
+
+  - id: R1_EARLY_SOURCE_CONSTRAINED_YESHUA
+    priority: 1
+    state: NEXT
+    objective: "Construct Baseline A without allowing later sources to fill gaps by default."
+    prerequisites:
+      - R0_SOURCE_WITNESS_NORMALIZATION
+    core_inputs:
+      - undisputed_Paul
+      - embedded_pre_Pauline_material
+      - Mark
+      - explicitly_modeled_Synoptic_source_relations
+      - first_century_Jewish_context
+      - Roman_context
+      - Josephus_with_authenticity_controls
+    outputs:
+      - EARLY_SOURCE_CONSTRAINED_BASELINE
+      - claim_matrix
+      - internal_hostile_review
+    independent_review_gate: REQUIRED_BEFORE_FINAL_BASELINE_USE
+
+  - id: R2_KINGDOM_TEACHING
+    priority: 2
+    state: BLOCKED_BY_R1_PARTIAL
+    objective: "Test future, present, social, and inward Kingdom models before Thomas is used as an interpretive key."
+    prerequisites:
+      - R1_EARLY_SOURCE_CONSTRAINED_YESHUA
+    focal_questions:
+      - Luke_17_20_21
+      - entos_hymon
+      - present_future_tension
+      - parables
+      - exorcism_and_kingdom
+      - wealth_status_reversal
+      - purity_inward_motive
+    later_challenge_sources:
+      - Gospel_of_Thomas
+    independent_review_gate: REQUIRED_FOR_HISTORICAL_INWARD_KINGDOM_PROMOTION
+
+  - id: R3_PEOPLE_AROUND_YESHUA
+    priority: 3
+    state: READY_AFTER_R1_CORE
+    objective: "Separate source clocks for John the Baptist, James, Mary Magdalene, Peter, Judas, Thomas, and the Twelve."
+    prerequisites:
+      - R1_EARLY_SOURCE_CONSTRAINED_YESHUA
+    sublanes:
+      - JOHN_BAPTIST
+      - JAMES
+      - MARY_MAGDALENE
+      - PETER
+      - JUDAS
+      - THOMAS
+      - TWELVE_COLLECTIVE
+    existing_strengths:
+      - MARY_MAGDALENE
+    existing_gaps:
+      - JUDAS_DEDICATED_DOSSIER
+      - PETER_DEDICATED_DOSSIER
+      - THOMAS_HISTORICAL_DOSSIER
+      - JAMES_DEDICATED_DOSSIER
+      - JOHN_BAPTIST_DEDICATED_DOSSIER
+    independent_review_gate: REQUIRED_FOR_AUTHORITY_SUPERIORITY_OR_FRAMEUP_CLAIMS
+
+  - id: R4_JERUSALEM_CRISIS_EXECUTION
+    priority: 4
+    state: READY_AFTER_R1_CORE
+    objective: "Reconstruct Temple action through execution with Roman/local/disciple roles separated."
+    prerequisites:
+      - R1_EARLY_SOURCE_CONSTRAINED_YESHUA
+      - R3_PEOPLE_AROUND_YESHUA
+    focal_questions:
+      - Temple_action
+      - Passover_context
+      - arrest_logistics
+      - paradidomi_semantics
+      - insider_information_need
+      - disciple_flight
+      - Peter_denial
+      - local_elite_role
+      - Pilate
+      - crucifixion_rationale
+      - burial
+    hypothesis_tests:
+      - BETRAYAL_MEMORY_CONCENTRATION
+      - COLLECTIVE_BRIBERY_AGENT_INSERTION
+    independent_review_gate: REQUIRED_FOR_CONSPIRATORIAL_PROMOTION
+
+  - id: R5_RESURRECTION_STRATIFICATION
+    priority: 5
+    state: READY_AFTER_R1_CORE
+    objective: "Separate death, burial, empty tomb, appearance reports, experiences, resurrection interpretation, and exaltation."
+    prerequisites:
+      - R1_EARLY_SOURCE_CONSTRAINED_YESHUA
+      - R3_PEOPLE_AROUND_YESHUA
+    source_order:
+      - pre_Pauline_or_embedded_tradition_where_defensible
+      - Paul
+      - Mark
+      - Matthew
+      - Luke_Acts
+      - John
+      - noncanonical_later_sources
+    independent_review_gate: REQUIRED_FOR_LOAD_BEARING_RECONSTRUCTION
+
+  - id: R6_FAMILY_INFANCY_PATERNITY
+    priority: 6
+    state: PARTIAL_EXISTING
+    objective: "Integrate existing paternity and family work without promoting childhood psychology."
+    prerequisites:
+      - R1_EARLY_SOURCE_CONSTRAINED_YESHUA
+      - R3_PEOPLE_AROUND_YESHUA
+    existing_inputs:
+      - mark6_matronymic
+      - john8_41_porneia
+      - panthera_celsus_origen
+      - panthera_rabbinic_parallels
+      - porneia_semantic_control
+    independent_review_gate: REQUIRED_FOR_BIOLOGICAL_PATERNITY_OR_TRAUMA_PROMOTION
+
+  - id: R7_NONCANONICAL_INDEPENDENCE
+    priority: 7
+    state: BLOCKED_BY_R1_R2
+    objective: "Admit later Jesus traditions to historical reconstruction only proposition-by-proposition."
+    prerequisites:
+      - R1_EARLY_SOURCE_CONSTRAINED_YESHUA
+      - R2_KINGDOM_TEACHING
+      - R3_PEOPLE_AROUND_YESHUA
+      - R5_RESURRECTION_STRATIFICATION
+    priority_sources:
+      - Gospel_of_Thomas
+      - Gospel_of_Mary
+      - Gospel_of_Judas
+      - Gospel_of_Peter
+      - Gospel_of_Hebrews
+      - Gospel_of_Nazarenes
+      - Gospel_of_Ebionites
+      - Apocryphon_of_James
+      - Dialogue_of_the_Savior
+    independent_review_gate: REQUIRED_WHEN_LATE_SOURCE_ALTERS_BASELINE_A
+
+  - id: R8_INWARD_MYSTICAL_TRAJECTORY
+    priority: 8
+    state: BLOCKED
+    objective: "Test continuity, development, convergence, or reinvention of inward/mystical themes."
+    prerequisites:
+      - R2_KINGDOM_TEACHING
+      - R7_NONCANONICAL_INDEPENDENCE
+    comparison_order:
+      - Jewish_apocalyptic_wisdom_antecedents
+      - Yeshua_baseline
+      - Paul
+      - John
+      - Thomas
+      - Mary
+      - Philip_and_Valentinian_material
+      - later_Christian_mysticism
+      - Hekhalot_Merkabah
+      - medieval_Kabbalah
+    independent_review_gate: REQUIRED_FOR_HISTORICAL_YESHUA_MYSTICAL_CORE
+
+  - id: R9_CANON_COPYING_MEMORY_SELECTION
+    priority: 9
+    state: BLOCKED
+    objective: "Explain survival and exclusion without assuming coordinated suppression."
+    prerequisites:
+      - R7_NONCANONICAL_INDEPENDENCE
+    rival_mechanisms:
+      - DELIBERATE_SUPPRESSION
+      - DOCTRINAL_EXCLUSION
+      - COPYING_SELECTION
+      - REGIONAL_EXTINCTION
+      - LANGUAGE_SHIFT
+      - MANUSCRIPT_ATTRITION
+      - ACCIDENTAL_LOSS
+    independent_review_gate: REQUIRED_FOR_COORDINATED_SUPPRESSION_CLAIMS
+
+  - id: R10_ROMAN_ENGAGEMENT
+    priority: 10
+    state: PARTIAL_EXISTING_HIGH_SKEPTICISM
+    objective: "Test ordinary response and later appropriation before cultivation, infiltration, or invention."
+    prerequisites:
+      - R4_JERUSALEM_CRISIS_EXECUTION
+      - R9_CANON_COPYING_MEMORY_SELECTION
+    hypothesis_order:
+      - H0_ORGANIC_MOVEMENT_ORDINARY_ROMAN_RESPONSE
+      - H1_LATER_ACCOMMODATION
+      - H2_SELECTIVE_CULTIVATION
+      - H3_INSTITUTIONAL_CAPTURE
+      - H4_EARLY_ENGINEERING
+      - H5_ROMAN_INVENTION
+    rule: "Movement toward stronger hypotheses requires positive evidence, not explanatory possibility."
+    independent_review_gate: REQUIRED_FOR_H2_OR_STRONGER
+
+invalidation_rules:
+  propagate_review_stale_on:
+    - source_date_change
+    - witness_assignment_change
+    - recension_change
+    - load_bearing_translation_change
+    - literary_dependence_change
+    - authenticity_change
+    - upstream_claim_rejection
+    - new_material_contradiction
+
+next_execution:
+  lane: R1_EARLY_SOURCE_CONSTRAINED_YESHUA
+  reason: "Highest-value empirical test of the architecture and prerequisite for later distinctive hypotheses."

@@ -1,0 +1,215 @@
+schema_version: on-theo.yeshua-provisional-claim-states.v2
+status: PROVISIONAL_CROSSWALK_NOT_HISTORICAL_PROMOTION
+canonical: false
+program: THE_REAL_TESTAMENT_OF_YESHUA
+recorded_at: "2026-09-21"
+
+purpose: >
+  Crosswalk selected existing Yeshua-related claims into the new lifecycle model.
+  This file does not rewrite the source packets and does not upgrade claims merely
+  because they predate the V2 program.
+
+anchors:
+  yeshua_map:
+    ref: research/yeshua-hypothesis-map-v1-20260917
+    head: 112fb80a187aac29a1d5e14c41386dc5889393c7
+  yeshua_hostile_review:
+    ref: review/yeshua-hypothesis-map-v1-20260917
+    head: 0e2d6a64eb4e6ad15fbfa460db924e57cf7e1868
+    execution_mode: SAME_RUNTIME_ADVERSARIAL_REVIEW
+  jesus_inner_circle:
+    ref: research/jesus-inner-circle-roman-cultivation-v1-20260921
+    head: e136fab52d503a0171871abbf78148d3fd635c8a
+  mary_magdalene:
+    ref: research/mary-magdalene-authority-reception-v1-20260919
+    head: e3a1f08b1e4ffb081f583501140efaf81c650d29
+  noncanonical_witness:
+    ref: research/noncanonical-witness-control-v1-20260919
+    head: eebd4a6fc30a3b8377c44e04e9892e10970b4e96
+
+claims:
+  - id: CLM-YESHUA-ROMAN-EXECUTION-PIVOT
+    proposition_ref: registry/extensions/yeshua-hypothesis-map-v1.yaml
+    lifecycle_state: INTERNAL_HOSTILE_REVIEWED
+    disposition: SURVIVES_NARROWED
+    review_mode: SAME_RUNTIME_ADVERSARIAL_REVIEW
+    current_ceiling: "Roman execution under Pilate is strong; exact legal motive and responsibility allocation remain reconstruction."
+    independent_review_required_before_final_use: true
+    baseline_eligibility:
+      - EARLY_SOURCE_CONSTRAINED_BASELINE
+      - FULL_SOURCE_CRITICAL_RECONSTRUCTION
+
+  - id: CLM-YESHUA-FAMILY-EARLY-PROMINENCE
+    proposition_ref: registry/extensions/yeshua-hypothesis-map-v1.yaml
+    lifecycle_state: INTERNAL_HOSTILE_REVIEWED
+    disposition: SURVIVES_NARROWED
+    review_mode: SAME_RUNTIME_ADVERSARIAL_REVIEW
+    current_ceiling: "Early family prominence, especially James, survives; dynastic succession and exact sibling biology do not."
+    independent_review_required_before_final_use: true
+    baseline_eligibility:
+      - EARLY_SOURCE_CONSTRAINED_BASELINE
+      - FULL_SOURCE_CRITICAL_RECONSTRUCTION
+
+  - id: CLM-YESHUA-PATERNITY-POLEMIC-CRYSTALLIZATION
+    proposition_ref: registry/extensions/yeshua-hypothesis-map-v1.yaml
+    lifecycle_state: INTERNAL_HOSTILE_REVIEWED
+    disposition: SURVIVES_NARROWED
+    review_mode: SAME_RUNTIME_ADVERSARIAL_REVIEW
+    current_ceiling: "Later polemical crystallization remains plausible; no biological Panthera conclusion is established."
+    opposition_acquisition: REQUIRED_NOT_STARTED_UNDER_V2
+    independent_review_required_before_final_use: true
+    baseline_eligibility:
+      - FULL_SOURCE_CRITICAL_RECONSTRUCTION
+
+  - id: CLM-YESHUA-CONTINGENT-VINDICATION-MODEL
+    proposition_ref: registry/extensions/yeshua-hypothesis-map-v1.yaml
+    lifecycle_state: INTERNAL_HOSTILE_REVIEWED
+    disposition: SURVIVES_NARROWED
+    review_mode: SAME_RUNTIME_ADVERSARIAL_REVIEW
+    current_ceiling: "Historically plausible self-vindication/future-role model; direct attribution to Yeshua remains contested."
+    opposition_acquisition: REQUIRED_NOT_STARTED_UNDER_V2
+    independent_review_required_before_final_use: true
+    baseline_eligibility:
+      - EARLY_SOURCE_CONSTRAINED_BASELINE
+      - FULL_SOURCE_CRITICAL_RECONSTRUCTION
+
+  - id: CLM-YESHUA-REJECTION-MEMORY-REDISTRIBUTES-BLAME
+    proposition_ref: registry/extensions/yeshua-hypothesis-map-v1.yaml
+    lifecycle_state: INTERNAL_HOSTILE_REVIEWED
+    disposition: SURVIVES_NARROWED
+    review_mode: SAME_RUNTIME_ADVERSARIAL_REVIEW
+    current_ceiling: "Memory redistribution is plausible at a high level; exact source-by-source responsibility shifts require dedicated testing."
+    opposition_acquisition: REQUIRED_NOT_STARTED_UNDER_V2
+    independent_review_required_before_final_use: true
+    baseline_eligibility:
+      - FULL_SOURCE_CRITICAL_RECONSTRUCTION
+
+  - id: JIC-002
+    proposition: "Mary Magdalene was a significant follower and resurrection witness."
+    lifecycle_state: SOURCE_BOUND
+    disposition: null
+    reason_not_promoted: "Existing packet is strong, but V2 hostile review has not yet run against the exact historical proposition."
+    independent_review_required_before_final_use: true
+    baseline_eligibility:
+      - EARLY_SOURCE_CONSTRAINED_BASELINE
+      - FULL_SOURCE_CRITICAL_RECONSTRUCTION
+
+  - id: JIC-003
+    proposition: "The Gospel of Mary preserves a Mary-versus-Peter/Andrew authority conflict."
+    lifecycle_state: SOURCE_BOUND
+    disposition: null
+    reason_not_promoted: "Strong textual proposition; historical succession implications remain separate."
+    independent_review_required_before_final_use: false
+    baseline_eligibility:
+      - FULL_SOURCE_CRITICAL_RECONSTRUCTION
+
+  - id: JIC-005
+    proposition: "Judas was invented as a scapegoat for a collective apostolic betrayal."
+    lifecycle_state: PROPOSED
+    disposition: UNRESOLVED
+    current_ceiling: "No current positive evidence establishes invention or collective betrayal."
+    opposition_acquisition: REQUIRED_NOT_STARTED_UNDER_V2
+    independent_review_required_before_any_promotion: true
+    baseline_eligibility:
+      - NEITHER
+
+  - id: JIC-006
+    proposition: "The arrest crisis may have involved broader disciple failure later concentrated into a singular betrayal figure."
+    lifecycle_state: PROPOSED
+    disposition: UNRESOLVED
+    current_ceiling: "Worth testing because collective flight and Peter denial are early; intentional broader collaboration is not established."
+    opposition_acquisition: REQUIRED_NOT_STARTED_UNDER_V2
+    independent_review_required_before_final_use: true
+    baseline_eligibility:
+      - FULL_SOURCE_CRITICAL_RECONSTRUCTION
+
+  - id: JIC-007
+    proposition: "Peter's denial and the disciples' flight are early traditions of inner-circle failure."
+    lifecycle_state: SOURCE_BOUND
+    disposition: null
+    reason_not_promoted: "Requires source-dependence and tradition-history analysis before historical promotion."
+    independent_review_required_before_final_use: false
+    baseline_eligibility:
+      - EARLY_SOURCE_CONSTRAINED_BASELINE
+      - FULL_SOURCE_CRITICAL_RECONSTRUCTION
+
+  - id: JIC-008
+    proposition: "Thomas was reluctant to participate in a betrayal or Roman operation."
+    lifecycle_state: PROPOSED
+    disposition: UNRESOLVED
+    legacy_assessment: UNKNOWN
+    current_ceiling: "No admitted source currently supports this historical proposition; absence of support is not proof of the opposite."
+    independent_review_required_before_any_promotion: true
+    baseline_eligibility:
+      - NEITHER
+
+  - id: JIC-010
+    proposition: "'Son of Mary' proves illegitimacy or childhood sexual-shame stigma."
+    lifecycle_state: PROPOSED
+    disposition: UNRESOLVED
+    current_ceiling: "Mark 6:3 is textually real; illegitimacy and childhood stigma remain contested/inferential."
+    opposition_acquisition: REQUIRED_NOT_STARTED_UNDER_V2
+    independent_review_required_before_any_promotion: true
+    baseline_eligibility:
+      - NEITHER
+
+  - id: JIC-012
+    proposition: "Tertullian claims Tiberius received a Palestine report concerning Christ and retained a favorable judgment after Senate rejection."
+    lifecycle_state: SOURCE_BOUND
+    disposition: null
+    current_ceiling: "Direct evidence for Tertullian's late-second-century claim only."
+    independent_review_required_before_final_use: false
+    baseline_eligibility:
+      - FULL_SOURCE_CRITICAL_RECONSTRUCTION
+
+  - id: JIC-013
+    proposition: "Tertullian's story proves Tiberius cultivated the Jesus movement."
+    lifecycle_state: SOURCE_BOUND
+    disposition: REJECTED
+    current_ceiling: "The Tertullian report does not establish the underlying Tiberian event or cultivation."
+    independent_review_required_before_reopening: true
+    baseline_eligibility:
+      - NEITHER
+
+  - id: JIC-015
+    proposition: "Tiberian or other early Roman actors deliberately cultivated, infiltrated, or steered Christianity."
+    lifecycle_state: PROPOSED
+    disposition: UNRESOLVED
+    current_ceiling: "Current evidence supports capability/background, not the asserted action."
+    opposition_acquisition: REQUIRED_NOT_STARTED_UNDER_V2
+    independent_review_required_before_any_promotion: true
+    baseline_eligibility:
+      - NEITHER
+
+  - id: JIC-017
+    proposition: "Jesus was metaphysically more connected to a soul or veil than ordinary people."
+    lifecycle_state: PROPOSED
+    disposition: UNRESOLVED
+    current_ceiling: "Historical method cannot adjudicate the metaphysical proposition as stated."
+    independent_review_required_before_historical_use: true
+    baseline_eligibility:
+      - NEITHER
+
+  - id: JIC-018
+    proposition: "Trauma, stigma, marginalization, or altered-state religious experience may be explored as naturalistic contributors to Jesus' insight."
+    lifecycle_state: PROPOSED
+    disposition: UNRESOLVED
+    current_ceiling: "Permissible explanatory hypotheses; no retrospective diagnosis or trauma conclusion is established."
+    opposition_acquisition: REQUIRED_NOT_STARTED_UNDER_V2
+    independent_review_required_before_any_historical_promotion: true
+    baseline_eligibility:
+      - NEITHER
+
+  - id: CLM-THOMAS-WITNESSES-SEPARATE-FROM-COMPOSITION
+    proposition_ref: research/packets/noncanonical-witness-control-v1.yaml
+    lifecycle_state: SOURCE_BOUND
+    disposition: null
+    current_ceiling: "Witness chronology is controlled; saying-level historical independence is not."
+    independent_review_required_before_final_use: false
+    baseline_eligibility:
+      - FULL_SOURCE_CRITICAL_RECONSTRUCTION
+
+program_state:
+  distinctive_yeshua_hypotheses_supported: UNRESOLVED
+  allowed_terminal_result: DISTINCTIVE_YESHUA_HYPOTHESES_NOT_SUPPORTED
+  next_required_empirical_lane: R1_EARLY_SOURCE_CONSTRAINED_YESHUA
