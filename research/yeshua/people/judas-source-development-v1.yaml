@@ -1,0 +1,252 @@
+schema_version: on-theo.yeshua-judas-source-development.v1
+status: SOURCE_BOUND_PENDING_HOSTILE_REVIEW
+canonical: false
+program: THE_REAL_TESTAMENT_OF_YESHUA
+lane: R3_JUDAS_SOURCE_DEVELOPMENT
+recorded_at: "2026-09-21"
+
+parent:
+  branch: research/yeshua-people-source-clock-v1-20260921
+  head: facb8789bbbd0c77f0c3fa27ab71bb3d77b0557d
+  review_receipt: research/yeshua/people/research-state-v3-review-receipt.yaml
+
+decomposition:
+  - EXISTENCE_MEMBERSHIP
+  - HANDOVER_EVENT
+  - OPERATIONAL_FUNCTION
+  - MOTIVE
+  - MONEY
+  - IDENTIFICATION
+  - LOCATION_TIMING_ACCESS
+  - DEMONIC_THEOLOGY
+  - SCRIPTURAL_FULFILLMENT
+  - REMORSE
+  - DEATH
+  - LATER_RECEPTION
+
+source_clock:
+  - source: SRC-PAUL-1COR
+    horizon: "c. 50s CE"
+    loci: ["1 Corinthians 11:23", "1 Corinthians 15:5"]
+    establishes:
+      - EARLY_HANDOVER_LANGUAGE_WITHOUT_NAMED_AGENT
+      - EARLY_TWELVE_GROUP_LABEL
+    does_not_establish:
+      - NAMED_JUDAS_HANDOVER
+      - JUDAS_INNOCENCE
+      - JUDAS_NONEXISTENCE
+
+  - source: SRC-GOSPEL-MARK
+    horizon: "commonly c. 65-75 CE"
+    loci: ["Mark 3:19", "Mark 14:10-11", "Mark 14:18-21", "Mark 14:43-46"]
+    establishes_at_text_level:
+      - JUDAS_ONE_OF_TWELVE
+      - JUDAS_APPROACHES_CHIEF_PRIESTS
+      - PRIESTS_PROMISE_MONEY
+      - JUDAS_SEEKS_OPPORTUNITY
+      - JUDAS_ACCOMPANIES_ARREST_PARTY
+      - IDENTIFYING_SIGN_KISS
+    historical_limits:
+      - MOTIVE_NOT_EXPLICITLY_GREED
+      - NARRATIVE_COHERENCE_NE_EVENT_PROOF
+
+  - source: SRC-GOSPEL-MATTHEW
+    horizon: "late first century conventional"
+    loci: ["Matthew 26:14-16", "Matthew 26:47-50", "Matthew 27:3-10"]
+    distinctive_extant_features:
+      - JUDAS_ASKS_PAYMENT
+      - THIRTY_SILVER
+      - REMORSE
+      - HANGING
+      - RETURNED_MONEY
+      - FIELD_PURCHASE_BY_PRIESTS
+      - FULFILLMENT_FRAME
+
+  - source: SRC-GOSPEL-LUKE_ACTS
+    horizon: "late first century conventional"
+    loci: ["Luke 22:3-6", "Luke 22:47-48", "Acts 1:15-20"]
+    distinctive_extant_features:
+      - SATAN_ENTERS_JUDAS
+      - MONEY_AND_OPPORTUNITY
+      - SCRIPTURAL_NECESSITY
+      - DISTINCT_FIELD_DEATH_TRADITION
+
+  - source: SRC-GOSPEL-JOHN
+    horizon: "late first century conventional"
+    loci: ["John 6:70-71", "John 12:4-6", "John 13:2,27", "John 18:2-8"]
+    distinctive_extant_features:
+      - DEVIL_CHARACTERIZATION
+      - THIEF_CHARACTERIZATION
+      - SATAN_ENTRY
+      - JUDAS_KNOWS_MEETING_PLACE
+      - ARREST_FORCE
+      - YESHUA_SELF_IDENTIFIES
+    historical_limit: "Johannine relation to Synoptic tradition and historical independence require separate control."
+
+  - source: SRC-PAPIAS-JUDAS-DEATH-LATER
+    horizon: "second-century author known through later transmission"
+    distinctive_extant_features:
+      - GROTESQUE_BODY_DEATH_PUNISHMENT
+    evidence_class: [LATER_TRADITION, SCHOLARLY_INTERPRETATION]
+
+  - source: SRC-GOSPEL-JUDAS
+    horizon: "second-century work; later Coptic physical witness"
+    distinctive_extant_features:
+      - JUDAS_PRIVILEGED_REVELATORY_ROLE_RELATIVE_TO_TWELVE
+      - RADICAL_THEOLOGICAL_REFRAMING
+    evidence_class: [PRIMARY_TEXT, LATER_TRADITION]
+    historical_limit: "No automatic first-century eyewitness or authorization claim."
+
+claims:
+  - id: CLM-YS-R3-JUD-001-HISTORICAL-JUDAS
+    proposition: "A historical follower/insider named Judas Iscariot stands behind the Markan handover tradition."
+    disposition: PROBABLE_PENDING_HOSTILE_REVIEW
+    evidence_class: [PRIMARY_TEXT, HISTORICAL_RECONSTRUCTION]
+    support:
+      - MARKAN_NAMED_INSIDER_TRADITION
+      - LATER_BROAD_RETENTION_WITH_VARIATION
+    opposing_pressure:
+      - PAULINE_SILENCE
+      - MARKAN_LITERARY_THEOLOGICAL_MEDIATION
+    ceiling: "Does not establish motive, money amount, death, psychology, or all later narrative details."
+
+  - id: CLM-YS-R3-JUD-002-HANDOVER-CORE
+    proposition: "Judas probably performed some insider action that facilitated Yeshua's arrest."
+    disposition: PROBABLE_PENDING_HOSTILE_REVIEW
+    evidence_class: [PRIMARY_TEXT, HISTORICAL_RECONSTRUCTION]
+    ceiling: "Exact function and necessity remain unresolved."
+
+  - id: CLM-YS-R3-JUD-003-LOCATION-TIMING
+    proposition: "The most economical historical function for a Judas-like insider is knowledge of timing, secluded location, or access rather than indispensable facial identification."
+    disposition: PLAUSIBLE_PENDING_HOSTILE_REVIEW
+    evidence_class: [HISTORICAL_RECONSTRUCTION, PROJECT_INFERENCE]
+    support:
+      - MARK_SECRET_ARREST_OPPORTUNITY_LOGIC
+      - JOHN_KNOWS_MEETING_PLACE
+      - JOHN_YESHUA_SELF_IDENTIFIES
+    ceiling: "John does not independently prove this function historically."
+
+  - id: CLM-YS-R3-JUD-004-MONEY
+    proposition: "Money was already part of the earliest surviving explicit Judas narrative."
+    disposition: SURVIVES_AS_TEXTUAL_CLAIM
+    evidence_class: [PRIMARY_TEXT]
+    support: ["Mark 14:11"]
+    ceiling: "Does not prove greed was the historical motive."
+
+  - id: CLM-YS-R3-JUD-005-THIRTY-SILVER
+    proposition: "The exact thirty-silver payment is historically established."
+    disposition: UNRESOLVED
+    evidence_class: [PRIMARY_TEXT, UNKNOWN]
+    reason:
+      - MATTHEW_SPECIFIC_IN_CURRENT_CLOCK
+      - SCRIPTURAL_FULFILLMENT_PRESSURE
+      - SYNOPTIC_DEPENDENCE
+
+  - id: CLM-YS-R3-JUD-006-GREED-MOTIVE
+    proposition: "Judas historically acted primarily from greed."
+    disposition: UNRESOLVED
+    evidence_class: [UNKNOWN]
+    reason:
+      - MARK_MONEY_NE_EXPLICIT_MOTIVE
+      - JOHN_THIEF_CHARACTERIZATION_LATER
+      - PAPIAS_MORAL_PEDAGOGY_LATER
+
+  - id: CLM-YS-R3-JUD-007-DEMONIC
+    proposition: "Satan literally entered Judas and caused the historical handover."
+    disposition: NOT_HISTORICALLY_ADJUDICATED
+    evidence_class: [PRIMARY_TEXT, THEOLOGICAL_INTERPRETATION, UNKNOWN]
+    source_clock: [LUKE, JOHN]
+    ceiling: "Direct evidence for later theological characterization, not historical psychology/mechanism."
+
+  - id: CLM-YS-R3-JUD-008-DEATH
+    proposition: "The surviving sources establish a single recoverable manner of Judas's death."
+    disposition: REJECTED_AS_CURRENTLY_SUPPORTED_CONCLUSION
+    evidence_class: [PRIMARY_TEXT, LATER_TRADITION]
+    reason:
+      - MATTHEW_ACTS_DIVERGENCE
+      - PAPIAS_FURTHER_VARIATION
+    negation_status: "Judas's historical death remains unknown; contradiction does not prove nonexistence."
+
+  - id: CLM-YS-R3-JUD-009-VILLAIN-EXPANSION
+    proposition: "Later extant Judas portrayals add or intensify motive, demonic, theft, death, punishment and fulfillment features beyond Mark."
+    disposition: SURVIVES_AS_TEXTUAL_DIACHRONY
+    evidence_class: [PRIMARY_TEXT, LATER_TRADITION, HISTORICAL_RECONSTRUCTION]
+    ceiling: "Extant sequence does not prove a smooth historical development or original innocence."
+
+  - id: CLM-YS-R3-JUD-010-FULL-INVENTION
+    proposition: "Judas as betrayer was wholly invented to scapegoat broader apostolic failure."
+    disposition: UNRESOLVED_CURRENTLY_WEAK_TO_MODERATE
+    evidence_class: [SPECULATIVE_MODEL]
+    missing_positive_evidence:
+      - EARLY_ALTERNATIVE_INTENTIONAL_HANDOVER_AGENT
+      - EARLY_RIVAL_ACCUSATION_OF_COLLECTIVE_COLLABORATION
+      - DIRECT_MEMORY_OF_JUDAS_INVENTION
+
+  - id: CLM-YS-R3-JUD-011-MEMORY-CONCENTRATION
+    proposition: "A real Judas role may have been narratively intensified while broader disciple failure remained only as flight/denial."
+    disposition: POSSIBLE_LOW_MODERATE
+    evidence_class: [PROJECT_INFERENCE, SPECULATIVE_MODEL]
+    ceiling: "No current evidence establishes intentional collaboration by non-Judas disciples."
+
+  - id: CLM-YS-R3-JUD-012-AUTHORIZED
+    proposition: "Judas acted under Yeshua's secret authorization."
+    disposition: REJECTED_AS_CURRENTLY_SUPPORTED_HISTORICAL_CONCLUSION
+    evidence_class: [UNKNOWN]
+    negation_status: NOT_PROVED
+    note: "Gospel of Judas cannot establish this first-century event by reversal alone."
+
+  - id: CLM-YS-R3-JUD-013-COLLECTIVE-AGENTS
+    proposition: "Multiple disciples were bribed/recruited as Roman or local-authority agents and Judas became their scapegoat."
+    disposition: UNRESOLVED_CURRENTLY_WEAK
+    evidence_class: [SPECULATIVE_MODEL]
+    missing_positive_evidence:
+      - ADMINISTRATIVE_PAYMENT_RECORD
+      - EARLY_NAMED_COLLABORATOR_ACCUSATION
+      - ANOMALOUS_PROTECTION_PATTERN
+      - INDEPENDENT_EARLY_ALTERNATIVE_ARREST_TRADITION
+
+scholarly_controls:
+  - id: SCH-CAHANA-2016-JUDAS
+    evidence_class: [SCHOLARLY_INTERPRETATION]
+    author: Jonathan Cahana
+    title: "Salvific Dissolution: The Mystery of the Betrayal between the New Testament and the Gospel of Judas"
+    publication: New Testament Studies
+    date: "2016"
+    url: "https://www.cambridge.org/core/journals/new-testament-studies/article/salvific-dissolution-the-mystery-of-the-betrayal-between-the-new-testament-and-the-gospel-of-judas/12548771ABEFB74333335EC12859B7A1"
+    bounded_use: "Pauline handing-over language, later Judas moralization, and debated Gospel of Judas valuation."
+
+  - id: SCH-MOSS-2019-PAPIAS-JUDAS
+    evidence_class: [SCHOLARLY_INTERPRETATION]
+    author: Candida R. Moss
+    title: "A Note on the Death of Judas in Papias"
+    publication: New Testament Studies
+    date: "2019"
+    url: "https://www.cambridge.org/core/journals/new-testament-studies/article/abs/note-on-the-death-of-judas-in-papias/C0C6A5424D11034D8D4210BF3DDDE9AB"
+    bounded_use: "Papias Judas-death imagery as greed/divine-punishment pedagogy; later tradition, not independent death report."
+
+  - id: SCH-EHRMAN-2006-JUDAS
+    evidence_class: [SCHOLARLY_INTERPRETATION]
+    author: Bart D. Ehrman
+    title: "The Lost Gospel of Judas Iscariot"
+    publication: Oxford University Press
+    date: "2006"
+    url: "https://academic.oup.com/book/50324"
+    bounded_use: "Source-by-source Judas comparison and Gospel of Judas historical/reception context."
+
+guards:
+  - PAULINE_SILENCE_NE_JUDAS_NONEXISTENCE
+  - PARADIDOMI_NE_INTRINSIC_BETRAYAL
+  - PARADIDOMI_NE_EXONERATION
+  - MONEY_IN_MARK_NE_GREED_MOTIVE
+  - THIRTY_SILVER_NE_EARLY_INDEPENDENT_ATTESTATION
+  - SATAN_CHARACTERIZATION_NE_HISTORICAL_PSYCHOLOGY
+  - DEATH_CONTRADICTION_NE_JUDAS_INVENTION
+  - LATER_VILLAINIZATION_NE_CORE_INVENTION
+  - GOSPEL_JUDAS_REVERSAL_NE_EARLY_INNOCENCE
+  - LOCATION_FUNCTION_NE_INDEPENDENTLY_PROVEN_EVENT
+  - COLLECTIVE_FAILURE_NE_COLLECTIVE_INTENTIONAL_BETRAYAL
+
+next:
+  - INTERNAL_HOSTILE_REVIEW
+  - ARREST_LOGISTICS_INSIDER_NECESSITY_TEST
+  - R4_INTEGRATION
