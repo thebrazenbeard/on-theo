@@ -1,0 +1,41 @@
+schema_version: on-theo.nonabrahamic-comparison-readiness.v14
+status: NON_CANONICAL_RESEARCH_AUDIT
+supersedes_for_current_research:
+  - synthesis/NON_ABRAHAMIC_COMPARISON_READINESS_V13.yaml
+
+source_heads:
+  buddhism: eb0f948788f5171d13c067daea2df54845d22f70
+  hindu: 614fa715fcacee0d7ec1ba573061d3e776e708d3
+  daoism: 767fa5210c6048324799ca2b67fe4e78be066511
+  shinto: 144ee868e4976428dbfe9c5ddc0022d03a2c194a
+  norse: 22e9fe10d1647a66458c54478c86e7ba6abd83ce
+  sumerian: 3fd5db6f05c008aeba4febe310de99e4ff484770
+
+method_artifacts:
+  relation_schema: synthesis/CROSS_TRADITION_RELATION_SCHEMA_V1.yaml
+  matrix: synthesis/BOUNDED_NEUTRAL_COMPARISON_MATRIX_V6.yaml
+  contact_test: synthesis/CONTACT_REINTERPRETATION_CROSS_TRADITION_TEST_V1.md
+
+method_state:
+  contact_taxonomy_machine_readable: true
+  direct_textual_adaptation_positive_control: DAOIST_YANG_XI_FORTY_TWO_SECTIONS
+  source_specific_borrowing_negative_control: DUMUZID_BAAL_NONE_ESTABLISHED
+  generic_influence_edges_allowed: false
+
+next_frontier:
+  primary: POLITICAL_SACRALIZATION_COMPARISON
+  source_deepening:
+    - DAOIST_DUREN_JING_LOAN_VOCABULARY
+    - DAOIST_HUAHU_PRIMARY_FRAGMENT_MAP
+    - DAOIST_HONGMING_JI_RESPONSE_PACKET
+    - SHINTO_PRIMARY_HUMAN_SPIRIT_LINE_BINDING
+
+holds:
+  direct_cross_tradition_convergence_or_transmission: HOLD
+  perennialist_all_religions_matrix: PROHIBITED_AT_CURRENT_EVIDENCE
+
+guards:
+  - CONTACT_NE_TRANSMISSION
+  - TRANSMISSION_NE_SEMANTIC_IDENTITY
+  - GENERIC_INFLUENCE_LABEL_NE_ACCEPTABLE_RELATION_TYPE
+  - SYSTEMS_ANALOGY_IS_DOWNSTREAM

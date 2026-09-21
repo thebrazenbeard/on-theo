@@ -1,0 +1,69 @@
+schema_version: on-theo.daoism-synthesis-source-binding.v1
+status: NON_CANONICAL_EXACT_SOURCE_EXTENSION
+
+source_extension:
+  branch: research/daoism-manuscript-proposition-v1-20260920
+  head: 9abbfb31db70b8102af41bd483e1c38075e23fb9
+  base_branch: taoism
+  base_head: 30de6433ab2bdce86b88fcdad1a3134084ed39ab
+  draft_pr: 99
+
+source_artifacts:
+  - traditions/daoism/laozi-manuscript-proposition-packet-v1.md
+  - traditions/daoism/laozi-witness-matrix-v1.yaml
+  - traditions/daoism/zhuangzi-inner-proposition-packet-v1.md
+  - traditions/daoism/neutral-axis-evidence-v1.yaml
+  - traditions/daoism/research-state-v2.yaml
+
+evidence_controls:
+  laozi:
+    witnesses:
+      - GUODIAN
+      - MAWANGDUI_A
+      - MAWANGDUI_B
+      - RECEIVED
+    controlled_loci:
+      - DDJ_25
+      - DDJ_37
+      - DDJ_40
+      - DDJ_42_RECEIVED_ONLY_IN_CURRENT_PACKET
+      - DDJ_51
+  zhuangzi:
+    layer: INNER_CHAPTERS_SELECTED_LOCI
+    controlled_loci:
+      - INNER_2_BUTTERFLY_DREAM
+      - INNER_6_LIFE_DEATH_TRANSFORMATION
+      - INNER_6_DAO
+    authorship_certainty: NOT_ESTABLISHED
+
+strengthened_axes:
+  - WORLD_ORIGIN_MODEL
+  - CAUSAL_ORDER_TYPE
+  - AGENCY_AND_AUTHORITY_MODEL
+  - INTERVENTION_MODEL
+  - GENERATION_AND_CONTROL_MODEL
+  - TRANSFORMATION_MODEL
+
+partial_axes:
+  - PERSON_OR_SELF_MODEL
+  - CONTINUITY_MODEL
+  - KNOWLEDGE_OR_DISCLOSURE_MODEL
+  - WORLD_STATUS_MODEL
+  - LIBERATION_OR_FINAL_TRANSFORMATION_MODEL
+
+readiness:
+  bounded_classical_Daoist_comparison: true
+  broad_Daoism_synthesis: false
+  later_religious_Daoism: false
+  material_institutional_layer: pending
+
+guards:
+  - RECEIVED_LAOZI_NE_ORIGINAL_ARCHETYPE
+  - INNER_CHAPTER_NE_PROVEN_AUTOGRAPH
+  - LAOZI_NE_ZHUANGZI
+  - CLASSICAL_DAOISM_NE_LATER_RELIGIOUS_DAOISM
+  - WUWEI_NE_TOTAL_INACTIVITY
+  - DAO_NE_PERSONAL_CREATOR_BY_DEFAULT
+  - DAO_NE_SIMULATION_CONTROLLER
+  - BUTTERFLY_DREAM_NE_SIMULATION_EVIDENCE
+  - SOURCE_EXTENSION_NE_CANONICAL_MERGE

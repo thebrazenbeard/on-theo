@@ -1,0 +1,86 @@
+schema_version: on-theo.nonabrahamic-comparison-readiness.v18
+status: NON_CANONICAL_RESEARCH_AUDIT
+supersedes_for_current_research:
+  - synthesis/NON_ABRAHAMIC_COMPARISON_READINESS_V17.yaml
+
+source_heads:
+  buddhism: eb0f948788f5171d13c067daea2df54845d22f70
+  hindu: 614fa715fcacee0d7ec1ba573061d3e776e708d3
+  daoism: 708ba10413d9511648c2540ad84be74b6b5f6b5c
+  shinto: 4939c22c6b13afc1226d8860fa8dbf394e34b5c4
+  norse: 22e9fe10d1647a66458c54478c86e7ba6abd83ce
+  sumerian: 3fd5db6f05c008aeba4febe310de99e4ff484770
+
+method_artifacts:
+  relation_schema: synthesis/CROSS_TRADITION_RELATION_SCHEMA_V1.yaml
+  world_origin_schema: synthesis/WORLD_ORIGIN_COMPARISON_SCHEMA_V1.yaml
+  mortuary_relationship_schema: synthesis/MORTUARY_RELATIONSHIP_COMPARISON_SCHEMA_V1.yaml
+  matrix: synthesis/BOUNDED_NEUTRAL_COMPARISON_MATRIX_V9.yaml
+  coverage_audit: synthesis/COMPARISON_COVERAGE_AUDIT_V9.yaml
+  contact_test: synthesis/CONTACT_REINTERPRETATION_CROSS_TRADITION_TEST_V1.md
+  political_test: synthesis/POLITICAL_SACRALIZATION_CROSS_TRADITION_TEST_V1.md
+  world_origin_test: synthesis/WORLD_ORIGIN_CROSS_TRADITION_TEST_V1.md
+  mortuary_test: synthesis/MORTUARY_RELATIONSHIP_CROSS_TRADITION_TEST_V1.md
+
+comparison_ready_and_tested_axes:
+  - CAUSAL_ORDER_TYPE
+  - CONTINUITY_MODEL
+  - RITUAL_ORDER_MODEL
+  - PERSON_OR_SELF_MODEL
+  - CONTACT_AND_REINTERPRETATION_MODEL
+  - POLITICAL_SACRALIZATION_MODEL
+  - WORLD_ORIGIN_MODEL
+  - MORTUARY_RELATIONSHIP_MODEL
+
+mortuary_result:
+  admitted_test_lanes: 3
+  sumerian:
+    status: BOUNDED_TEXTUAL_PLUS_MATERIAL
+    strongest_result: KINSHIP_AND_PROVISIONING_CAN_BE_REPRESENTED_AS_POSTMORTEM_SOCIAL_OBLIGATION
+  norse:
+    status: PARTIAL_MATERIAL_AND_LITERARY
+    strongest_result: DEAD_BODIES_GRAVES_AND_POSSESSIONS_CAN_REMAIN_ACTIVE_SOCIAL_REFERENTS_WITHOUT_MATERIAL_EVIDENCE_FIXING_ONE_AFTERLIFE_ONTOLOGY
+  shinto:
+    status: PARTIAL_LATER_LAYER
+    strongest_result: POSTMORTEM_HUMAN_IDENTITY_CAN_REMAIN_RITUALLY_NEGOTIATED_AND_CAN_CHANGE_STATUS_IN_LATER_HISTORICAL_LAYERS
+  strongest_cross_lane_result: THE_DEAD_CAN_REMAIN_SOCIAL_RITUAL_REFERENTS_AFTER_DEATH_IN_MULTIPLE_DISTINCT_WAYS
+  one_shared_soul_doctrine: NOT_SUPPORTED
+  one_shared_postmortem_ontology: NOT_SUPPORTED
+  burial_practice_alone_proves_afterlife_belief: false
+
+method_state:
+  direct_textual_adaptation_positive_control: DAOIST_YANG_XI_FORTY_TWO_SECTIONS
+  source_specific_borrowing_negative_control: DUMUZID_BAAL_NONE_ESTABLISHED
+  generic_influence_edges_allowed: false
+  political_four_lane_test_complete: true
+  world_origin_four_lane_test_complete: true
+  mortuary_three_lane_test_complete: true
+  material_relation_separated_from_metaphysical_survival_claim: true
+
+next_frontier:
+  primary: CROSS_LANE_FRONTIER_REAUDIT
+  reason: >
+    Re-rank only source-admitted untested axes against current exact heads after
+    completion of the previously scheduled mortuary frontier. Do not fill cells
+    merely to manufacture another comparison.
+  source_deepening:
+    - DAOIST_DUREN_JING_LOAN_VOCABULARY
+    - DAOIST_HUAHU_PRIMARY_FRAGMENT_MAP
+    - DAOIST_HONGMING_JI_RESPONSE_PACKET
+    - SHINTO_PRIMARY_HUMAN_SPIRIT_LINE_BINDING
+    - BUDDHIST_STUPA_RELIC_AND_LAY_RITUAL
+
+holds:
+  direct_cross_tradition_convergence_or_transmission: HOLD
+  perennialist_all_religions_matrix: PROHIBITED_AT_CURRENT_EVIDENCE
+  one_hidden_doctrine: NOT_SUPPORTED
+  one_shared_creation_model: NOT_SUPPORTED
+  one_shared_afterlife_or_soul_system: NOT_SUPPORTED
+
+guards:
+  - SHARED_AXIS_NE_SHARED_MECHANISM
+  - SHARED_RELATIONSHIP_AXIS_NE_SHARED_POSTMORTEM_ONTOLOGY
+  - MATERIAL_SOCIAL_CONTINUITY_NE_METAPHYSICAL_SURVIVAL
+  - EVIDENCE_CLASS_DIFFERENCE_MUST_REMAIN_VISIBLE
+  - CONTACT_NE_TRANSMISSION
+  - SYSTEMS_ANALOGY_IS_DOWNSTREAM

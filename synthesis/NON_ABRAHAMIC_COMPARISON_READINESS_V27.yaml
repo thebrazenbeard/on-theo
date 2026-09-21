@@ -1,0 +1,76 @@
+schema_version: on-theo.nonabrahamic-comparison-readiness.v27
+status: NON_CANONICAL_RESEARCH_AUDIT
+supersedes_for_current_research:
+  - synthesis/NON_ABRAHAMIC_COMPARISON_READINESS_V26.yaml
+
+breadth_units:
+  lakota:
+    exact_head: 8a9cee8335cadc742c9de25c90f4306702a80e8a
+    pr: 104
+  maya:
+    exact_head: 2b5907438334537842710a81886083b9cbd0241a
+    pr: 105
+  mexica_nahua:
+    exact_head: 00e37e475f3669ef2ee040908b126617ffcd17da
+    pr: 106
+  olmec:
+    exact_head: cac89f2e0024c00f71d2d2a835253328c451e7ce
+    pr: 107
+  dine:
+    exact_head: ac988c4a31f354e7c4d902d286c0c950293ffb8a
+    pr: 108
+
+dine_method_result: >
+  Diné public law and community-controlled institutional sources support bounded
+  comparison of knowledge governance, institutionalization, current sovereignty,
+  offering protocol and continuity without requiring access to restricted
+  ceremonial knowledge. The Navajo Nation's own cultural-resource policy makes
+  restricted knowledge a legitimate stopping condition rather than missing data.
+
+portfolio_method_gains:
+  - low_textual_certainty_can_still_support_material_comparison
+  - restricted_knowledge_can_still_support_governance_comparison
+  - current_Indigenous_law_must_remain_current_law_not_ancient_transcript
+  - sacred_geography_can_be_compared_without_sensitive_site_disclosure
+  - public_source_sufficiency_does_not_require_private_ceremonial_content
+
+axis_development:
+  KNOWLEDGE_GOVERNANCE_DIMENSION:
+    status: STRONG_CANDIDATE
+    neutral_question: >
+      Who may hold, transmit, record, access or disclose religious knowledge,
+      under what conditions, and what information is intentionally excluded from
+      public circulation?
+  RELATIONAL_ORDER_MODEL:
+    status: STRONG_CANDIDATE
+  SACRED_LAND_PLACE_MODEL:
+    status: STRONG_CANDIDATE
+  SACRED_TIME_CALENDAR_MODEL:
+    status: STRONG_CANDIDATE
+  HUMAN_ORIGIN_OR_EMERGENCE_MODEL:
+    status: STRONG_CANDIDATE
+
+matrix_policy:
+  retroactive_breadth_cell_filling: false
+  future_expanded_tests_require_fresh_all_lane_binding: true
+  restricted_content_not_required_for_comparison: true
+
+next_frontier:
+  primary: HAUDENOSAUNEE_PUBLIC_SOURCE_RESEARCH_PACKET_V1
+  reason: >
+    Five Indigenous-Americas breadth units now have independent evidence
+    contracts. Haudenosaunee adds a distinct living confederacy-level problem:
+    public Great Law political-sacred order, nation-level variation, living
+    thanksgiving/relational language, and later Longhouse history must remain
+    historically differentiated.
+
+holds:
+  global_generalization_from_current_sample: PROHIBITED
+  perennialist_all_religions_matrix: PROHIBITED
+  restricted_sacred_knowledge_reproduction: PROHIBITED
+
+guards:
+  - COMPARISON_READY_NE_TRADITION_COMPLETE
+  - EXACT_HEAD_BINDING_REQUIRED
+  - COMMUNITY_AND_NATION_SCOPE_REQUIRED
+  - SYSTEMS_ANALOGY_IS_DOWNSTREAM

@@ -1,0 +1,30 @@
+schema_version: on-theo.global-corpus-breadth-expansion-state.v10
+status: ORIGINAL_QUEUE_COMPLETE_NEW_GLOBAL_EXPANSION_ACTIVE
+supersedes_for_current_research:
+  - synthesis/GLOBAL_CORPUS_BREADTH_EXPANSION_STATE_V9.yaml
+
+queue_completion_audit:
+  path: synthesis/ORIGINAL_WORLD_EXPANSION_QUEUE_COMPLETION_AUDIT_V1.yaml
+  status: COMPLETE_AS_REPRESENTATION_QUEUE
+
+latest_method_additions:
+  attribution_identification_schema: synthesis/ATTRIBUTION_IDENTIFICATION_METHOD_SCHEMA_V1.yaml
+  attribution_identification_test: synthesis/ATTRIBUTION_IDENTIFICATION_CROSS_TRADITION_TEST_V1.md
+  modern_heathen_successor_head: f46c1349fa89c0dff9ca9400ed563b3061fec186
+  devil_worship_accusation_head: e4c91fe027719c3bc0c8099d52237233d77e8ced
+
+post_queue_gap_audit:
+  path: synthesis/GLOBAL_BREADTH_GAP_AUDIT_V2.yaml
+  selected_next: YORUBA_IFA_DIACHRONIC_PACKET_V1
+
+selection_basis:
+  - new_geographic_region
+  - new_source_architecture
+  - strong_public_and_scholarly_sources
+  - living_tradition
+  - future_diaspora_transmission_test_value
+
+guards:
+  - EXPANSION_NE_COMPLETENESS
+  - GEOGRAPHIC_DIVERSITY_NE_COMPARATIVE_EQUIVALENCE
+  - ORAL_TRADITION_NE_LOW_EVIDENCE_CLASS

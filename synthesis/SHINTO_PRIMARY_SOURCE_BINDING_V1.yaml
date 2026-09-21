@@ -1,0 +1,63 @@
+schema_version: on-theo.shinto-synthesis-source-binding.v1
+status: NON_CANONICAL_EXACT_SOURCE_EXTENSION
+
+source_extension:
+  branch: research/shinto-variant-ritual-material-v1-20260920
+  head: 31b67b5a0aec7015878e5fcf9de2936db80cf83b
+  base_branch: shinto
+  base_head: a578729a2e3cec02fe533c3c1d20946347da9aa4
+  draft_pr: 100
+
+source_artifacts:
+  classical_variant:
+    - traditions/shinto/kiki-variant-proposition-matrix-v1.md
+  ritual:
+    - traditions/shinto/ritual-purity-packet-v1.md
+  material_institutional:
+    - traditions/shinto/shrine-material-institutional-packet-v1.md
+  contact_history:
+    - traditions/shinto/buddhist-shinto-interaction-boundary-v1.md
+  evidence:
+    - traditions/shinto/neutral-axis-evidence-v1.yaml
+  state:
+    - traditions/shinto/research-state-v2.yaml
+
+controlled_layers:
+  - KOJIKI_712
+  - NIHON_SHOKI_720
+  - NIHON_SHOKI_ALTERNATIVE_WRITINGS
+  - ENGISHIKI_NORITO
+  - SHRINE_MATERIAL_AND_INSTITUTIONAL_HISTORY
+  - MEDIEVAL_SHINBUTSU_COMBINATION
+  - MEIJI_SHINBUTSU_SEPARATION
+
+strengthened_axes:
+  - WORLD_ORIGIN_MODEL
+  - AGENCY_AND_AUTHORITY_MODEL
+  - POSTMORTEM_PATH_MODEL
+  - TRANSFORMATION_MODEL
+  - INSTITUTIONALIZATION_MODEL
+  - PURITY_POLLUTION_MODEL
+  - SACRAL_PRESENCE_MODEL
+  - RITUAL_ORDER_MODEL
+  - CONTACT_AND_REINTERPRETATION_MODEL
+
+readiness:
+  bounded_Shinto_comparison: true
+  broad_Shinto_synthesis: false
+  regional_Fudoki_layer: pending
+  detailed_norito_clause_binding: pending
+  shrine_archaeology: partial
+  medieval_school_specificity: pending
+  modern_layers: pending
+
+guards:
+  - KOJIKI_NE_NIHON_SHOKI_DUPLICATE
+  - VARIANT_ACCOUNT_NE_ERROR_TO_HARMONIZE
+  - KAMI_NE_GENERIC_MONOTHEISTIC_GOD
+  - KEGARE_NE_MORAL_SIN
+  - RITUAL_CORPUS_NE_MYTHIC_CORPUS
+  - MYTHIC_ATTESTATION_NE_SHRINE_CULT_ATTESTATION
+  - HONJI_SUIJAKU_NE_EARLY_KIKI_PRIMARY_MEANING
+  - SHINBUTSU_BUNRI_NE_PRIMORDIAL_BASELINE
+  - SOURCE_EXTENSION_NE_CANONICAL_MERGE

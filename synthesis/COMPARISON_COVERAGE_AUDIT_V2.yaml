@@ -1,0 +1,63 @@
+schema_version: on-theo.comparison-coverage-audit.v2
+status: NON_CANONICAL_METHOD_AUDIT
+supersedes_for_current_research:
+  - synthesis/COMPARISON_COVERAGE_AUDIT_V1.yaml
+matrix: synthesis/BOUNDED_NEUTRAL_COMPARISON_MATRIX_V2.yaml
+lane_count: 6
+
+coverage:
+  CAUSAL_ORDER_TYPE:
+    admitted_total: 6
+  CONTINUITY_MODEL:
+    admitted_total: 6
+    bounded: 4
+    partial: 2
+  PERSON_OR_SELF_MODEL:
+    admitted_total: 5
+    bounded_or_partial: 5
+  RITUAL_ORDER_MODEL:
+    admitted_total: 5
+    bounded: 4
+    partial: 1
+    note: v2 Hindu and Norse upgrades raise the axis from four admitted lanes to five
+  CONTACT_AND_REINTERPRETATION_MODEL:
+    admitted_total: 4
+  WORLD_ORIGIN_MODEL:
+    admitted_total: 4
+  POLITICAL_SACRALIZATION_MODEL:
+    admitted_total: 4
+  MORAL_CAUSALITY_MODEL:
+    admitted_total: 3
+  MORTUARY_RELATIONSHIP_MODEL:
+    admitted_total: 2
+    bounded: 1
+    partial: 1
+  PURITY_POLLUTION_MODEL:
+    admitted_total: 1
+  FATE_CONSTRAINT_MODEL:
+    admitted_total: 1
+  WORLD_TERMINUS_RENEWAL_MODEL:
+    admitted_total: 1
+
+cross_lane_ready_now:
+  - CAUSAL_ORDER_TYPE
+  - CONTINUITY_MODEL
+  - RITUAL_ORDER_MODEL
+
+cross_lane_near_ready:
+  - PERSON_OR_SELF_MODEL
+  - CONTACT_AND_REINTERPRETATION_MODEL
+  - POLITICAL_SACRALIZATION_MODEL
+  - WORLD_ORIGIN_MODEL
+
+method_conclusions:
+  - ritual_order_is_now_comparable_across_five_lanes
+  - ritual_comparability_does_not_imply_same_ritual_mechanism
+  - sparse_axes_remain_valid_when_source_specific
+  - research_should_target_discriminating_gaps_not_cell_completion
+
+next:
+  - run_RITUAL_ORDER_cross_tradition_test
+  - deepen_Buddhist_ritual_order_only_if_exact_sources_support_it
+  - deepen_Shinto_person_continuity
+  - deepen_Daoist_contact_layer

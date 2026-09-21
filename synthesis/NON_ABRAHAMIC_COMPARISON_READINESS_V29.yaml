@@ -1,0 +1,58 @@
+schema_version: on-theo.nonabrahamic-comparison-readiness.v29
+status: NON_CANONICAL_RESEARCH_AUDIT
+supersedes_for_current_research:
+  - synthesis/NON_ABRAHAMIC_COMPARISON_READINESS_V28.yaml
+
+breadth_units:
+  lakota: 8a9cee8335cadc742c9de25c90f4306702a80e8a
+  maya: 2b5907438334537842710a81886083b9cbd0241a
+  mexica_nahua: 00e37e475f3669ef2ee040908b126617ffcd17da
+  olmec: cac89f2e0024c00f71d2d2a835253328c451e7ce
+  dine: ac988c4a31f354e7c4d902d286c0c950293ffb8a
+  haudenosaunee: 506d95eb449bc4d11fc61dbe9c18ffca7ab94f5a
+  andean_inca: 355d808e5d55185d50f1dcabb53003635b88a23f
+
+andean_inca_method_result: >
+  Andean/Inca evidence is comparison-ready only with imperial, regional,
+  colonial-witness, khipu-documentary, archaeological and living-community
+  layers separated. Capacocha supplies strong material-text convergence;
+  khipu supplies documentary memory without general narrative decipherment;
+  ceques supply a networked sacred-landscape subtype.
+
+new_axis_promotions:
+  DOCUMENTARY_MEMORY_MODEL:
+    status: PROMOTED_FOR_EXPANDED_TESTS
+    independent_controls:
+      - HAUDENOSAUNEE_WAMPUM
+      - INCA_KHIPU
+  SACRIFICE_AND_BODILY_OFFERING_MODEL:
+    status: PROMOTED_FOR_EXPANDED_TESTS
+    independent_controls:
+      - MEXICA_TEMPLO_MAYOR
+      - INCA_CAPACOCHA
+
+strongest_new_results:
+  - BODILY_SACRIFICE_NE_GENERIC_OFFERING
+  - HUMAN_SACRIFICE_NE_ONE_RITUAL_MECHANISM
+  - DOCUMENTARY_MEMORY_NE_ALPHABETIC_TEXT_ONLY
+  - MATERIAL_RECORD_SURVIVAL_NE_EQUAL_SEMANTIC_ACCESS
+  - NETWORKED_RITUAL_LANDSCAPE_IS_DISTINCT_SACRED_PLACE_SUBTYPE
+
+comparison_policy:
+  shared_axis_ne_shared_mechanism: true
+  shared_axis_ne_shared_origin: true
+  retroactive_global_filling: false
+  evidence_class_preserved: true
+  exact_head_binding_required: true
+
+next_frontier:
+  primary: GLOBAL_BREADTH_GAP_AUDIT_V1
+  reason: >
+    Seven new breadth lanes are now ingested and comparison-populated. The next
+    expansion target should be selected from live repository gaps rather than
+    assumed from memory.
+
+guards:
+  - ONE_GLOBAL_RELIGION_MODEL_PROHIBITED
+  - PERENNIALIST_MATRIX_PROHIBITED
+  - SYSTEMS_ANALOGY_IS_DOWNSTREAM

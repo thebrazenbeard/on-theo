@@ -1,0 +1,57 @@
+schema_version: on-theo.global-corpus-breadth-expansion-state.v2
+status: ACTIVE_PORTFOLIO_EXPANSION
+supersedes_for_current_research:
+  - synthesis/GLOBAL_CORPUS_BREADTH_EXPANSION_STATE_V1.yaml
+
+completed_breadth_unit:
+  tradition: LAKOTA
+  branch: research/lakota-public-source-v1-20260920
+  exact_head: 8a9cee8335cadc742c9de25c90f4306702a80e8a
+  pr: 104
+  pr_state: OPEN_DRAFT_CLEAN
+  foundation_status: BOUNDED_COMPARISON_READINESS_AUDITED
+  readiness_artifact: traditions/lakota/comparison-readiness-audit-v1.yaml
+
+lakota_comparison_eligible:
+  bounded:
+    - CONTACT_AND_REINTERPRETATION_MODEL
+    - INSTITUTIONALIZATION_MODEL
+    - KNOWLEDGE_OR_DISCLOSURE_MODEL
+    - MORTUARY_RELATIONSHIP_MODEL
+  partial:
+    - RITUAL_ORDER_MODEL
+    - SACRAL_PRESENCE_MODEL
+    - CONTINUITY_MODEL
+  held:
+    - WORLD_ORIGIN_MODEL
+    - POSTMORTEM_PATH_MODEL
+    - PERSON_OR_SELF_MODEL
+    - AGENCY_AND_AUTHORITY_MODEL
+
+lakota_new_axis_candidates:
+  - RELATIONAL_ORDER_MODEL
+  - SACRED_LAND_PLACE_MODEL
+  - HUMAN_ORIGIN_OR_EMERGENCE_MODEL
+
+active_portfolio_frontier:
+  primary: MAYA_DIACHRONIC_RESEARCH_PACKET_V1
+  requirements:
+    - Preclassic_Classic_Postclassic_colonial_living_layers_separated
+    - inscriptions_archaeology_codices_colonial_texts_living_sources_separated
+    - Popol_Wuj_kept_Kiche_specific_and_colonial_witness_controlled
+    - Classic_elite_inscriptions_ne_all_Maya_religion
+    - living_Maya_ne_unchanged_Classic_form
+    - colonial_Christian_mediation_visible
+
+planned_followups:
+  - MEXICA_NAHUA_RESEARCH_PACKET_V1
+  - OLMEC_MATERIAL_ICONOGRAPHIC_PACKET_V1
+  - DINE_PUBLIC_SOURCE_RESEARCH_PACKET_V1
+  - HAUDENOSAUNEE_PUBLIC_SOURCE_RESEARCH_PACKET_V1
+  - ANDEAN_INCA_DIACHRONIC_PACKET_V1
+
+guards:
+  - LAKOTA_COMPARISON_READY_NE_TRADITION_COMPLETE
+  - INDIGENOUS_RELIGION_NE_ONE_GENERIC_CATEGORY
+  - RECONSTRUCT_INTERNALLY_BEFORE_COMPARISON
+  - SIX_LANE_RESULT_NE_GLOBAL_RELIGIOUS_UNIVERSAL

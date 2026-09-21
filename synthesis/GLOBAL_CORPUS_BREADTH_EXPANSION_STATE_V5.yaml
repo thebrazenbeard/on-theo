@@ -1,0 +1,75 @@
+schema_version: on-theo.global-corpus-breadth-expansion-state.v5
+status: ACTIVE_PORTFOLIO_EXPANSION
+supersedes_for_current_research:
+  - synthesis/GLOBAL_CORPUS_BREADTH_EXPANSION_STATE_V4.yaml
+
+completed_breadth_units:
+  lakota:
+    branch: research/lakota-public-source-v1-20260920
+    exact_head: 8a9cee8335cadc742c9de25c90f4306702a80e8a
+    pr: 104
+    status: BOUNDED_COMPARISON_READINESS_AUDITED
+  maya:
+    branch: research/maya-diachronic-v1-20260920
+    exact_head: 2b5907438334537842710a81886083b9cbd0241a
+    pr: 105
+    status: BOUNDED_COMPARISON_READINESS_AUDITED
+  mexica_nahua:
+    branch: research/mexica-nahua-diachronic-v1-20260920
+    exact_head: 00e37e475f3669ef2ee040908b126617ffcd17da
+    pr: 106
+    status: BOUNDED_COMPARISON_READINESS_AUDITED
+  olmec:
+    branch: research/olmec-material-iconographic-v1-20260920
+    exact_head: cac89f2e0024c00f71d2d2a835253328c451e7ce
+    pr: 107
+    status: BOUNDED_COMPARISON_READINESS_AUDITED_LOW_TEXTUAL_CEILING
+
+olmec_comparison_eligible:
+  bounded:
+    - RITUAL_ORDER_MODEL
+    - INSTITUTIONALIZATION_MODEL
+  partial:
+    - OFFERING_EXCHANGE_MODEL
+    - POLITICAL_SACRALIZATION_MODEL
+    - MORTUARY_RELATIONSHIP_MODEL
+    - AGENCY_AND_AUTHORITY_MODEL
+    - SACRAL_PRESENCE_MODEL
+  held:
+    - WORLD_ORIGIN_MODEL
+    - WORLD_TERMINUS_RENEWAL_MODEL
+    - PERSON_OR_SELF_MODEL
+    - TRANSFORMATION_MODEL
+    - CONTINUITY_MODEL
+    - POSTMORTEM_PATH_MODEL
+    - KNOWLEDGE_OR_DISCLOSURE_MODEL
+
+olmec_method_controls:
+  readable_theological_corpus: false
+  Cascajal_writing: STRONG_SCHOLARLY_SUPPORT_UNDECIPHERED
+  systematic_named_pantheon: NOT_ADMITTED
+  one_way_mother_culture_religious_transmission: NOT_SUPPORTED_AS_DEFAULT
+  religious_transmission: CASE_BY_CASE_HOLD
+
+active_portfolio_frontier:
+  primary: DINE_PUBLIC_SOURCE_RESEARCH_PACKET_V1
+  requirements:
+    - Navajo_Nation_and_Dine_controlled_public_sources_first
+    - Dine_self_name_and_Navajo_exonym_usage_kept_visible
+    - Hozho_and_fundamental_law_public_formulations_source_bound
+    - sacred_land_and_Four_Sacred_Mountains_public_claims_bounded
+    - public_ceremonial_category_ne_procedural_reconstruction
+    - restricted_knowledge_not_treated_as_missing_data
+    - Christian_NAC_and_other_contact_histories_separated
+    - living_Dine_ne_timeless_unchanged_precontact_form
+
+planned_followups:
+  - HAUDENOSAUNEE_PUBLIC_SOURCE_RESEARCH_PACKET_V1
+  - ANDEAN_INCA_DIACHRONIC_PACKET_V1
+
+guards:
+  - COMPARISON_READY_NE_TRADITION_COMPLETE
+  - PUBLIC_SOURCE_NE_PERMISSION_FOR_RESTRICTED_CEREMONY
+  - INDIGENOUS_RELIGION_NE_ONE_GENERIC_CATEGORY
+  - MATERIAL_EVIDENCE_NE_TEXTUAL_THEOLOGY
+  - SIMILARITY_NE_TRANSMISSION

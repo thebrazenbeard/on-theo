@@ -1,0 +1,113 @@
+schema_version: on-theo.neutral-comparison-axes.v1
+status: PROJECT_METHOD_CANDIDATE_NON_CANONICAL
+purpose: >
+  Provide comparison questions that do not require a tradition to occupy an
+  Abrahamic creator/revelation/judgment architecture before the sources justify
+  those categories.
+
+layers:
+  - SOURCE_PROPOSITION
+  - NEUTRAL_COMPARISON_AXIS
+  - OPTIONAL_SYSTEMS_ANALOGY
+
+axes:
+  - id: CAUSAL_ORDER_TYPE
+    question: What kind of causal order does the source describe or presuppose?
+    allowed_examples:
+      - sovereign_agent
+      - conditioned_relational
+      - fate_or_order
+      - mixed
+      - unresolved
+    systems_analogy_optional: true
+
+  - id: AGENCY_AND_AUTHORITY_MODEL
+    question: >
+      What beings, principles, institutions, or processes possess privileged
+      agency or authority, if any?
+    systems_analogy_optional: true
+
+  - id: PERSON_OR_SELF_MODEL
+    question: >
+      What constitutes a person/self, and what candidate components are denied,
+      affirmed, conditioned, divisible, or enduring?
+    systems_analogy_optional: true
+
+  - id: CONTINUITY_MODEL
+    question: >
+      What, if anything, continues across death, transformation, rebirth, or
+      resurrection, and in what sense is it numerically or causally continuous?
+    systems_analogy_optional: true
+
+  - id: MORAL_CAUSALITY_MODEL
+    question: >
+      How do actions acquire consequences: personal judgment, impersonal causal
+      order, ritual order, social sanction, fate, or another mechanism?
+    systems_analogy_optional: true
+
+  - id: LIBERATION_OR_FINAL_TRANSFORMATION_MODEL
+    question: >
+      What counts as the desired or final transformation: restoration,
+      resurrection, liberation, escape, union, continued flourishing, or
+      something else?
+    systems_analogy_optional: true
+
+  - id: KNOWLEDGE_OR_DISCLOSURE_MODEL
+    question: >
+      How is otherwise unavailable or authoritative knowledge obtained:
+      revelation, prophecy, awakening, divination, tradition, reason,
+      observation, initiation, or another route?
+    systems_analogy_optional: true
+
+  - id: INTERVENTION_MODEL
+    question: >
+      Does the tradition describe privileged intervention in ordinary causal
+      processes, and if so by whom or what?
+    systems_analogy_optional: true
+
+  - id: WORLD_STATUS_MODEL
+    question: >
+      Is experienced reality ultimate, provisional, conditioned, illusory,
+      fallen, sacred, cyclic, or otherwise qualified?
+    systems_analogy_optional: true
+
+comparison_rules:
+  - source_answer_may_be_plural_by_period_or_school
+  - no_axis_requires_a_creator
+  - no_axis_requires_a_persistent_soul
+  - no_axis_requires_personal_judgment
+  - no_axis_requires_revelation
+  - systems_mapping_is_optional_and_downstream
+  - missing_source_support_yields_UNKNOWN_not_inference
+  - similar_axis_value_does_not_imply_transmission
+  - different_axis_value_is_positive_comparative_data
+
+initial_buddhist_admission:
+  source_head: b9f2e2a635cd98129b0a0122aeb8a2e7a65cfaa5
+  admitted:
+    PERSON_OR_SELF_MODEL:
+      evidence: traditions/buddhism/overview-v1.md
+      bounded_summary: non_self_requires_process_level_reconstruction
+    CAUSAL_ORDER_TYPE:
+      evidence: traditions/buddhism/overview-v1.md
+      bounded_summary: dependent_arising_is_central_but_not_one_fixed_metaphysical_theory
+    CONTINUITY_MODEL:
+      evidence: traditions/buddhism/overview-v1.md
+      bounded_summary: rebirth_must_not_be_flattened_into_permanent_soul_transmigration
+    LIBERATION_OR_FINAL_TRANSFORMATION_MODEL:
+      evidence: traditions/buddhism/overview-v1.md
+      bounded_summary: nirvana_must_not_be_normalized_as_heaven_nonexistence_union_or_calm
+    MORAL_CAUSALITY_MODEL:
+      evidence: traditions/buddhism/overview-v1.md
+      bounded_summary: karma_is_priority_topic_but_not_yet_mechanistically_reconstructed
+  unresolved:
+    - AGENCY_AND_AUTHORITY_MODEL
+    - KNOWLEDGE_OR_DISCLOSURE_MODEL
+    - INTERVENTION_MODEL
+    - WORLD_STATUS_MODEL
+
+effect_boundary:
+  changes_source_lane_claims: false
+  changes_existing_commonality_matrix: false
+  promotes_GOD_model: false
+  canonical_effect: false

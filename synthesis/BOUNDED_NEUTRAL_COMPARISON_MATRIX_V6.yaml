@@ -1,0 +1,44 @@
+schema_version: on-theo.bounded-neutral-comparison-matrix.v6
+status: NON_CANONICAL_PILOT_MATRIX
+supersedes_for_current_research:
+  - synthesis/BOUNDED_NEUTRAL_COMPARISON_MATRIX_V5.yaml
+relation_schema: synthesis/CROSS_TRADITION_RELATION_SCHEMA_V1.yaml
+
+source_heads:
+  buddhism: eb0f948788f5171d13c067daea2df54845d22f70
+  hindu: 614fa715fcacee0d7ec1ba573061d3e776e708d3
+  daoism: 767fa5210c6048324799ca2b67fe4e78be066511
+  shinto: 144ee868e4976428dbfe9c5ddc0022d03a2c194a
+  norse: 22e9fe10d1647a66458c54478c86e7ba6abd83ce
+  sumerian: 3fd5db6f05c008aeba4febe310de99e4ff484770
+
+contact_update:
+  daoism:
+    status: BOUNDED_STRENGTHENED
+    positive_control:
+      source: BUDDHIST_SISHIER_ZHANG_JING_T784
+      target: YANG_XI_ZHENGAO_MATERIAL
+      relation_type: DIRECT_TEXTUAL_ADAPTATION
+      stronger_interpretation: SOURCE_SPECIFIC_TRANSMISSION_WITH_RECODING
+      ceiling: STRONG_SCHOLARLY_TEXTUAL_DEPENDENCE
+      guard: AUTOGRAPH_TO_AUTOGRAPH_TRANSMISSION_NOT_PROVED
+    material_control:
+      source_target_relation: DAOIST_BUDDHIST_CONTACT
+      object: YAO_BODUO_STELE_496
+      relation_type: MATERIAL_HYBRIDIZATION
+      guard: HYBRID_FORM_NE_UNDIFFERENTIATED_IDENTITY
+
+  sumerian:
+    negative_control:
+      source: DUMUZID_TRADITIONS
+      target: BAAL_CYCLE
+      lower_relations:
+        - EXPOSURE
+        - CONTACT_CAPACITY
+      tested_relation: SOURCE_SPECIFIC_TRANSMISSION
+      result: NONE_ESTABLISHED
+
+method_result:
+  positive_and_negative_controls_present: true
+  contact_ne_transmission: demonstrated
+  transmission_ne_semantic_identity: demonstrated

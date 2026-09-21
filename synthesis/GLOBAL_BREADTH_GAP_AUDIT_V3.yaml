@@ -1,0 +1,98 @@
+schema_version: on-theo.global-breadth-gap-audit.v3
+status: POST_YORUBA_GLOBAL_GAP_AUDIT
+supersedes_for_current_research:
+  - synthesis/GLOBAL_BREADTH_GAP_AUDIT_V2.yaml
+
+latest_completed_breadth_unit:
+  yoruba_ifa:
+    exact_head: 2000081c974c25ce8f40a06e079033ac600d5ce8
+    pr: 120
+    status: BOUNDED_COMPARISON_READINESS_AUDITED
+    major_method_contributions:
+      - INDEXED_OPEN_ORAL_CORPUS
+      - SPECIALIST_INTERPRETIVE_ORAL_CORPUS_AUTHORITY
+      - FORM_TRANSMISSION_NE_CORPUS_TRANSMISSION
+      - ATLANTIC_DIASPORA_TRANSFORMATION
+
+remaining_major_geographic_gaps:
+  south_asia:
+    current_coverage:
+      - VEDIC_BRAHMANICAL
+      - HINDU_DIACHRONIC
+      - EARLY_BUDDHIST
+    missing_high_value_independent:
+      - JAIN
+      - SIKH
+  west_asia:
+    current_coverage: STRONG
+    missing_high_value_minorities:
+      - MANDAEAN
+      - YAZIDI
+  oceania:
+    current_coverage: MAJOR_GAP
+    requirement: SPECIFIC_TRADITION_NOT_GENERIC_OCEANIC_RELIGION
+  sub_saharan_africa:
+    current_coverage:
+      - YORUBA_IFA
+    status: INITIAL_GAP_PARTIALLY_FILLED
+
+candidate_frontiers:
+  JAIN:
+    status: SELECTED_NEXT
+    reasons:
+      - ancient_independent_South_Asian_tradition_not_derivative_of_Hindu_or_Buddhist_lane
+      - strong_primary_and_scholarly_textual_source_architecture
+      - major_Svetambara_Digambara_canonical_divergence
+      - non_creator_cosmology_expands_world_origin_question
+      - jiva_karma_rebirth_liberation_expands_person_self_and_postmortem_axes
+      - ahimsa_aparigraha_ascetic_lay_vow_structure_expands_ethics_ritual_institution_comparison
+      - living_global_community_sources_available
+    source_architecture:
+      - EARLY_CANONICAL_LAYERED_TEXT
+      - SECTARIAN_CANON_DISPUTE
+      - MANUSCRIPT_WITNESS
+      - MONASTIC_INSTITUTION
+      - LAY_PRACTICE
+      - PHILOSOPHICAL_SYSTEMATIZATION
+      - LIVING_COMMUNITY
+
+  SIKH:
+    status: NEXT_HIGH_VALUE
+    reasons:
+      - primary_scriptural_canon_and_living_institutions
+      - revelation_authority_and_community_architecture
+    deferral_reason: >
+      Jainism adds a more historically independent ancient South Asian control
+      and a sharper canon-loss/canon-divergence problem.
+
+  MANDAEAN:
+    status: HIGH_VALUE_LATER
+    reason: rare_living_baptismal_manuscript_tradition
+
+  YAZIDI:
+    status: HIGH_VALUE_LATER
+    reason: oral_living_minoritized_tradition_with_strong_misattribution_controls
+
+  SPECIFIC_OCEANIC_TRADITION:
+    status: HIGH_VALUE_LATER
+    reason: major_region_gap_but_target_selection_needs_community_specific_source_audit
+
+selected_frontier:
+  primary: JAIN_DIACHRONIC_PACKET_V1
+
+required_controls:
+  - JAIN_NE_HINDU
+  - JAIN_NE_BUDDHIST
+  - SVETAMBARA_NE_DIGAMBARA
+  - SVETAMBARA_AGAMA_NE_PAN_JAIN_CANON
+  - DIGAMBARA_CANON_LOSS_CLAIM_REMAINS_SECTARIAN_SOURCE_POSITION
+  - MAHAVIRA_TEACHING_NE_EXTANT_TEXT_WORDING_BY_DEFAULT
+  - CANONICAL_REDaction_DATE_NE_TEACHING_EVENT_DATE
+  - TIRTHANKARA_TRADITION_NE_AUTOMATIC_HISTORICAL_BIOGRAPHY
+  - JIVA_NE_GENERIC_SOUL_WITHOUT_LEXICAL_CONTROL
+  - KARMA_NE_GENERIC_MORAL_CAUSATION
+  - AHIMSA_NE_ONE_SIMPLE_PROHIBITION
+  - LAY_AND_MONASTIC_VOWS_REMAIN_DISTINCT
+
+guards:
+  - NEXT_FRONTIER_SELECTED_FROM_LIVE_GAP_AND_SOURCE_QUALITY

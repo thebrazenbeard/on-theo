@@ -1,0 +1,157 @@
+schema_version: on-theo.bounded-neutral-comparison-matrix.v9
+status: NON_CANONICAL_PILOT_MATRIX
+supersedes_for_current_research:
+  - synthesis/BOUNDED_NEUTRAL_COMPARISON_MATRIX_V8.yaml
+relation_schema: synthesis/CROSS_TRADITION_RELATION_SCHEMA_V1.yaml
+world_origin_schema: synthesis/WORLD_ORIGIN_COMPARISON_SCHEMA_V1.yaml
+mortuary_relationship_schema: synthesis/MORTUARY_RELATIONSHIP_COMPARISON_SCHEMA_V1.yaml
+
+source_heads:
+  buddhism: eb0f948788f5171d13c067daea2df54845d22f70
+  hindu: 614fa715fcacee0d7ec1ba573061d3e776e708d3
+  daoism: 708ba10413d9511648c2540ad84be74b6b5f6b5c
+  shinto: 4939c22c6b13afc1226d8860fa8dbf394e34b5c4
+  norse: 22e9fe10d1647a66458c54478c86e7ba6abd83ce
+  sumerian: 3fd5db6f05c008aeba4febe310de99e4ff484770
+
+mortuary_relationship_snapshot:
+  buddhism:
+    status: NOT_IN_CURRENT_TEST
+    note: not filled merely for symmetry; current synthesis audit admitted three lanes
+
+  hindu:
+    status: NOT_IN_CURRENT_TEST
+    note: not filled merely for symmetry; current synthesis audit admitted three lanes
+
+  daoism:
+    status: NOT_IN_CURRENT_TEST
+    note: not filled merely for symmetry; current synthesis audit admitted three lanes
+
+  shinto:
+    status: PARTIAL
+    evidence:
+      - GORYO_E_SHINSENEN_863
+      - SUGAWARA_MICHIZANE_TENJIN
+      - HUMAN_KAMI_HISTORICAL_CASES
+      - SHINTO_FUNERAL_MANUALS
+      - 1872_OFFICIAL_FUNERAL_PROCEDURE
+      - SOREI_AND_MITAMAYA_PRACTICE
+    evidence_mode:
+      - DOCUMENTARY_PRACTICE
+      - HISTORICAL_RECONSTRUCTION
+      - LATER_TRADITION
+      - MODERN_TRADITION
+    relational_referents:
+      - dangerous_dead
+      - named_posthumous_human_identity
+      - enshrined_human_kami
+      - later_household_ancestor_spirit
+    relational_modes:
+      - appeasement
+      - memorialization
+      - enshrinement
+      - household_ritual
+      - offering
+    postmortem_agency_status: BOUNDED_IN_LATER_HISTORICAL_LAYERS
+    ceiling: PARTIAL_LATER_LAYER
+    guards:
+      - GORYO_NE_PRIMORDIAL_SHINTO
+      - LATER_ANCESTOR_SYSTEM_NE_ANCIENT_PRIMARY_FACT
+      - MODERN_SHINTO_FUNERAL_NE_ANCIENT_FUNERAL
+      - BUDDHIST_CONFUCIAN_INTERACTION_MUST_REMAIN_VISIBLE
+
+  norse:
+    status: PARTIAL
+    evidence:
+      - SHIP_AND_BOAT_BURIAL_ARCHAEOLOGY
+      - GRAVE_GOODS
+      - BURIAL_REOPENING
+      - OSEBERG_APOTROPAIC_INTERPRETATION
+      - HELGAKVIDA_HUNDINGSBANA_II_AFTERLIFE_SEQUENCE
+    evidence_mode:
+      - MATERIAL_EVIDENCE
+      - SCHOLARLY_INTERPRETATION
+      - LITERARY_TEXT
+    relational_referents:
+      - corpse
+      - grave
+      - possessions
+      - grave_associated_identity
+      - selected_named_dead_in_literary_evidence
+    relational_modes:
+      - burial
+      - deposition
+      - memory
+      - reopening
+      - object_retrieval
+      - protection
+    postmortem_agency_status: BOUNDED_LITERARY_NOT_PROVED_BY_ARCHAEOLOGY
+    ceiling: PARTIAL_MATERIAL_AND_LITERARY
+    guards:
+      - GRAVE_GOOD_NE_AFTERLIFE_EQUIPMENT_BY_DEFAULT
+      - SHIP_BURIAL_NE_LITERAL_AFTERLIFE_VOYAGE
+      - APOTROPAIC_INTERPRETATION_NE_DRAUGR_PROOF
+      - MATERIAL_MORTUARY_PRACTICE_NE_LITERARY_DESTINATION
+
+  sumerian:
+    status: BOUNDED
+    evidence:
+      - HUMAN_AFTERLIFE_FUNERARY_DEEP_PACKET
+      - GILGAMESH_ENKIDU_AND_NETHERWORLD
+      - DEATH_OF_GILGAMESH
+      - DEATH_OF_UR_NAMMA
+      - UR_MORTUARY_ARCHAEOLOGY
+    evidence_mode:
+      - LITERARY_TEXT
+      - MATERIAL_EVIDENCE
+      - HISTORICAL_RECONSTRUCTION
+    relational_referents:
+      - deceased_person_or_ghost_in_text
+      - corpse_and_grave_in_material_record
+    relational_modes:
+      - kinship
+      - provisioning
+      - offering
+      - lament_and_memory
+      - burial_and_mortuary_display
+    postmortem_agency_status: EXPLICIT_IN_CONTROLLED_LITERARY_MODELS
+    claimed_effect:
+      - descendants_can_affect_represented_postmortem_welfare
+      - offerings_can_affect_represented_postmortem_welfare
+    ceiling: BOUNDED_TEXTUAL_PLUS_MATERIAL
+    guards:
+      - LITERARY_WELFARE_OF_DEAD_NE_ARCHAEOLOGY_PROVES_CONSCIOUS_AFTERLIFE
+      - ROYAL_AFTERLIFE_NE_ORDINARY_DEAD_DEFAULT
+      - ELITE_MORTUARY_DISPLAY_NE_ORDINARY_FUNERARY_DEFAULT
+
+mortuary_method_result:
+  admitted_test_lanes: 3
+  bounded: 1
+  partial: 2
+  strongest_shared_result: THE_DEAD_CAN_REMAIN_SOCIAL_RITUAL_REFERENTS_AFTER_DEATH_IN_MULTIPLE_DISTINCT_WAYS
+  one_shared_soul_doctrine_supported: false
+  burial_practice_alone_proves_afterlife_belief: false
+  shared_postmortem_ontology_supported: false
+
+mortuary_test:
+  artifact: synthesis/MORTUARY_RELATIONSHIP_CROSS_TRADITION_TEST_V1.md
+  result: COMPARABLE_ONLY_WITH_EVIDENCE_MODE_RELATIONAL_REFERENT_AND_TEMPORAL_LAYER_SEPARATED
+
+preserved_results:
+  causal_order_test: synthesis/CAUSAL_CONTINUITY_CROSS_TRADITION_TEST_V1.md
+  ritual_order_test: synthesis/RITUAL_ORDER_CROSS_TRADITION_TEST_V2.md
+  person_self_test: synthesis/PERSON_SELF_CROSS_TRADITION_TEST_V1.md
+  contact_test: synthesis/CONTACT_REINTERPRETATION_CROSS_TRADITION_TEST_V1.md
+  political_test: synthesis/POLITICAL_SACRALIZATION_CROSS_TRADITION_TEST_V1.md
+  world_origin_test: synthesis/WORLD_ORIGIN_CROSS_TRADITION_TEST_V1.md
+
+matrix_guards:
+  - THIS_IS_NOT_A_COMMONALITY_SCORE
+  - MORTUARY_RELATIONSHIP_NE_POSTMORTEM_PATH
+  - MATERIAL_SOCIAL_CONTINUITY_NE_METAPHYSICAL_SURVIVAL
+  - EVIDENCE_CLASS_DIFFERENCE_MUST_REMAIN_VISIBLE
+  - ROYAL_OR_ELITE_MORTUARY_NE_ORDINARY_DEFAULT
+  - LATER_LAYER_NE_ANCIENT_DEFAULT
+  - SHARED_RELATIONSHIP_AXIS_NE_SHARED_POSTMORTEM_ONTOLOGY
+  - SIMILARITY_NE_TRANSMISSION
+  - SYSTEMS_MAPPING_IS_OPTIONAL_AND_DOWNSTREAM

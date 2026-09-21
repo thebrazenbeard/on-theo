@@ -1,0 +1,291 @@
+schema_version: on-theo.bounded-neutral-comparison-matrix.v1
+status: NON_CANONICAL_PILOT_MATRIX
+comparison_gate: audit/synthesis-comparison-eligibility-v1-20260919@809edc937be9a42f1fd76e00e5eadb0a8b9ebe9d
+axis_schema: synthesis/NEUTRAL_COMPARISON_AXES_V9.yaml
+
+purpose: >
+  Compare only propositions already admitted by exact source-bound lanes. This
+  matrix records difference, uncertainty, and non-admission as first-class
+  results. It is not a commonality score and does not test whether all
+  traditions reduce to one underlying religion.
+
+source_heads:
+  buddhism: 1c6c7a9a35901a529d377e1bd6fb86a88c1cdbe9
+  hindu: 0c3123f4f1cf03e6f6a29ca0d0eb7edfddff5e75
+  daoism: 483d1bcaebb57a00cda5eb30c15bc3908fdac438
+  shinto: 31b67b5a0aec7015878e5fcf9de2936db80cf83b
+  norse: bc8adf8ee6e0135e2b22fbeb9f5daa4bce4b99e7
+  sumerian: 3fd5db6f05c008aeba4febe310de99e4ff484770
+
+cell_status:
+  - BOUNDED
+  - PARTIAL
+  - NOT_ADMITTED
+  - UNKNOWN
+
+axes:
+  WORLD_ORIGIN_MODEL:
+    buddhism:
+      status: NOT_ADMITTED
+      note: current bounded Buddhist packet does not admit a creator/origin proposition
+    hindu:
+      status: BOUNDED
+      evidence: RV_10_129
+      summary: origin inquiry culminates in explicit uncertainty about who knows
+    daoism:
+      status: BOUNDED
+      evidence: DDJ_25_plus_selected_Zhuangzi_6
+      summary: Dao is described as prior to heaven_and_earth without being bound as a sovereign creator
+    shinto:
+      status: BOUNDED
+      evidence: KOJIKI_NIHON_SHOKI_VARIANT_MATRIX
+      summary: multiple classical cosmogonic/genealogical accounts must remain variant
+    norse:
+      status: BOUNDED
+      evidence: VOLUSPA_STANZAS_3_4
+      summary: primordial absence/Ginnungagap and later world-shaping by divine agents
+    sumerian:
+      status: NOT_ADMITTED
+      note: current bridge does not bind a specific cosmogony strongly enough for this cell
+
+  CAUSAL_ORDER_TYPE:
+    buddhism:
+      status: BOUNDED
+      evidence: SN_12_2_SN_12_15_plus_parallels
+      summary: conditioned relational explanation is source-supported without requiring a root sovereign agent
+    hindu:
+      status: PARTIAL
+      evidence: BU_4_4_2_6_CHU_6_8_7
+      summary: desire_action_becoming and self/essence material exist but do not form one settled causal architecture
+    daoism:
+      status: BOUNDED
+      evidence: DDJ_25_37_40_51
+      summary: generative noncoercive and self-transforming order is source-supported in selected loci
+    shinto:
+      status: PARTIAL
+      evidence: KIKI_VARIANTS_PLUS_RITUAL
+      summary: multiple agent/genealogical and ritual structures are preserved; no single causal system is admitted
+    norse:
+      status: PARTIAL
+      evidence: VOLUSPA
+      summary: divine action and fate structure are present but no single complete causal ontology is admitted
+    sumerian:
+      status: PARTIAL
+      evidence: SOURCE_VERIFICATION_AND_INSTITUTIONAL_MATERIAL
+      summary: divine authority city cult and kingship are bound; one universal causal order is not
+
+  PERSON_OR_SELF_MODEL:
+    buddhism:
+      status: BOUNDED
+      evidence: SN_22_59_SN_44_10_plus_cross_transmission
+      summary: five aggregates are not-self; simple existence/no-self binary is methodologically inadequate
+    hindu:
+      status: PARTIAL
+      evidence: BU_4_4_2_6_CHU_6_8_7
+      summary: self/continuity language is present but tat_tvam_asi and later Vedanta mappings remain controlled
+    daoism:
+      status: PARTIAL
+      evidence: ZHUANGZI_INNER_2_6
+      summary: identity and form are treated through perspective and transformation
+    shinto:
+      status: NOT_ADMITTED
+      note: current lane does not yet bind a general person/self ontology
+    norse:
+      status: PARTIAL
+      evidence: VOLUSPA_ASK_EMBLA
+      summary: human capacities are divinely supplied but a complete self ontology is not established
+    sumerian:
+      status: PARTIAL
+      evidence: GIDIM_PLUS_HUMAN_FUNERARY_LANE
+      summary: deceased-person identity can persist as gidim in literary models without establishing one complete anthropology
+
+  CONTINUITY_MODEL:
+    buddhism:
+      status: BOUNDED
+      evidence: SN_12_38_SA_359
+      summary: conditioned future renewed existence without an asserted permanent self-substance
+    hindu:
+      status: BOUNDED
+      evidence: BU_4_4_2_6_CHU_5_10
+      summary: death-transition and rebirth/path structures with self/action/desire context
+    daoism:
+      status: PARTIAL
+      evidence: ZHUANGZI_INNER_6
+      summary: life/death is framed within transformation more clearly than entity persistence
+    shinto:
+      status: PARTIAL
+      evidence: YOMI_CYCLE
+      summary: death realm and separation are present but no complete continuity doctrine is admitted
+    norse:
+      status: PARTIAL
+      evidence: VOLUSPA_RENEWAL_PLUS_SELECTED_MATERIAL
+      summary: world/divine survival and renewal are clearer than one universal human continuity model
+    sumerian:
+      status: BOUNDED
+      evidence: HUMAN_AFTERLIFE_FUNERARY_PLUS_GIDIM
+      summary: dead persons can remain socially identified and relationally relevant with differentiated status
+
+  MORAL_CAUSALITY_MODEL:
+    buddhism:
+      status: BOUNDED
+      evidence: AN_6_63_plus_MA_111_variant_control
+      summary: intention is central to kamma; not reduced to personal divine sentencing
+    hindu:
+      status: BOUNDED
+      evidence: BU_4_4_5_CHU_5_10_7
+      summary: desire_action_conduct are linked to becoming and differentiated rebirth
+    daoism:
+      status: PARTIAL
+      evidence: CELESTIAL_MASTERS_EARLY
+      summary: moral fault confession repentance and healing/petition appear in later religious layer
+    shinto:
+      status: NOT_ADMITTED
+      note: purity/pollution is explicitly not promoted to moral guilt or universal moral causality
+    norse:
+      status: NOT_ADMITTED
+      note: current lane has fate and ritual evidence but no bounded general moral-causality model
+    sumerian:
+      status: NOT_ADMITTED
+      note: current mortuary and kingship packets do not establish a general moral-causality system
+
+  PURITY_POLLUTION_MODEL:
+    buddhism:
+      status: NOT_ADMITTED
+    hindu:
+      status: NOT_ADMITTED
+    daoism:
+      status: NOT_ADMITTED
+    shinto:
+      status: BOUNDED
+      evidence: ENGISHIKI_NORITO_HARAE_KEGARE_MISOGI
+      summary: ritual fitness/pollution and purification are source-supported without equating impurity to moral sin
+    norse:
+      status: NOT_ADMITTED
+    sumerian:
+      status: NOT_ADMITTED
+
+  RITUAL_ORDER_MODEL:
+    buddhism:
+      status: NOT_ADMITTED
+      note: institutional evidence exists but current packet does not bind a comparative ritual-order model
+    hindu:
+      status: NOT_ADMITTED
+      note: material_and_ritual_lane_pending
+    daoism:
+      status: BOUNDED
+      evidence: CELESTIAL_MASTERS_REGISTERS_PETITIONS_OFFICES
+      summary: authorized office registers ritual mediation and communal structure are present in early religious layer
+    shinto:
+      status: BOUNDED
+      evidence: ENGISHIKI_NORITO_SHRINE_SYSTEM
+      summary: ritual speech purity calendar offering place and office form an independent evidence layer
+    norse:
+      status: PARTIAL
+      evidence: TISSO_MATERIAL
+      summary: offering feasting deposition and possible cult structures support ritual organization without one universal liturgy
+    sumerian:
+      status: BOUNDED
+      evidence: TEMPLE_CITY_PERIOD_MATERIAL_PLUS_FUNERARY
+      summary: monumental domestic funerary and administrative ritual contexts are materially differentiated
+
+  MORTUARY_RELATIONSHIP_MODEL:
+    buddhism:
+      status: NOT_ADMITTED
+    hindu:
+      status: NOT_ADMITTED
+    daoism:
+      status: NOT_ADMITTED
+    shinto:
+      status: NOT_ADMITTED
+    norse:
+      status: NOT_ADMITTED
+      note: current offering evidence is not sufficiently bound to living-dead maintenance
+    sumerian:
+      status: BOUNDED
+      evidence: HUMAN_AFTERLIFE_FUNERARY
+      summary: descendants offerings memory and ghost welfare can remain socially consequential after death
+
+  POLITICAL_SACRALIZATION_MODEL:
+    buddhism:
+      status: NOT_ADMITTED
+    hindu:
+      status: NOT_ADMITTED
+    daoism:
+      status: PARTIAL
+      evidence: CELESTIAL_MASTERS_HANZHONG
+      summary: religious office and political community intersect but broader political sacralization is not yet bound
+    shinto:
+      status: PARTIAL
+      evidence: KIKI_IMPERIAL_GENEALOGY_AND_ENGISHIKI_COURT_SYSTEM
+      summary: court compilation and state shrine administration are present but need a dedicated political packet
+    norse:
+      status: NOT_ADMITTED
+    sumerian:
+      status: BOUNDED
+      evidence: SUMERIAN_KING_LIST_PLUS_ENLIL_KINGSHIP
+      summary: kingship is explicitly situated within divine/cosmic authorization in controlled source traditions
+
+  FATE_CONSTRAINT_MODEL:
+    buddhism:
+      status: NOT_ADMITTED
+    hindu:
+      status: NOT_ADMITTED
+    daoism:
+      status: NOT_ADMITTED
+    shinto:
+      status: NOT_ADMITTED
+    norse:
+      status: BOUNDED
+      evidence: VOLUSPA_NORNS
+      summary: Norns lay laws choose lives and assign destinies while agents continue to act
+    sumerian:
+      status: NOT_ADMITTED
+      note: divine decree vocabulary requires a dedicated source packet before comparison
+
+  WORLD_TERMINUS_RENEWAL_MODEL:
+    buddhism:
+      status: NOT_ADMITTED
+    hindu:
+      status: NOT_ADMITTED
+    daoism:
+      status: NOT_ADMITTED
+    shinto:
+      status: NOT_ADMITTED
+    norse:
+      status: BOUNDED
+      evidence: VOLUSPA_RAGNAROK_RENEWAL
+      summary: world-scale destruction and renewal are source-supported and distinct from individual afterlife
+    sumerian:
+      status: NOT_ADMITTED
+
+  CONTACT_AND_REINTERPRETATION_MODEL:
+    buddhism:
+      status: NOT_ADMITTED
+    hindu:
+      status: NOT_ADMITTED
+    daoism:
+      status: PARTIAL
+      note: Buddhist-contact lane remains pending despite diachronic internal religious transformation
+    shinto:
+      status: BOUNDED
+      evidence: SHINBUTSU_SHUGO_HONJI_SUIJAKU_SHINBUTSU_BUNRI
+      summary: combination and later separation are historical reinterpretive processes
+    norse:
+      status: BOUNDED
+      evidence: CONVERSION_PERIOD_MIXED_MATERIAL_PLUS_MEDIEVAL_PRESERVATION
+      summary: coexistence conversion and later Christian preservation are kept distinct
+    sumerian:
+      status: BOUNDED
+      evidence: DUMUZID_BAAL_TRANSMISSION_HOSTILE_CONTROL
+      summary: contact and scholastic exposure are established while direct narrative borrowing remains none_established
+
+matrix_guards:
+  - THIS_IS_NOT_A_COMMONALITY_SCORE
+  - BOUNDED_NE_SEMANTIC_EQUIVALENCE
+  - SHARED_AXIS_NE_SHARED_ANSWER
+  - SHARED_ANSWER_NE_SHARED_ORIGIN
+  - UNKNOWN_NE_ABSENCE
+  - NOT_ADMITTED_NE_FALSE
+  - PARTIAL_NE_PERMISSION_TO_FILL_WITH_GENERAL_KNOWLEDGE
+  - CROSS_TRADITION_TRANSMISSION_REMAINS_ON_HOLD
+  - GOD_MODEL_MAPPING_NOT_INCLUDED_IN_THIS_MATRIX

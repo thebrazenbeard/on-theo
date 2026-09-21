@@ -1,0 +1,90 @@
+schema_version: on-theo.bounded-neutral-comparison-matrix.v7
+status: NON_CANONICAL_PILOT_MATRIX
+supersedes_for_current_research:
+  - synthesis/BOUNDED_NEUTRAL_COMPARISON_MATRIX_V6.yaml
+relation_schema: synthesis/CROSS_TRADITION_RELATION_SCHEMA_V1.yaml
+
+source_heads:
+  buddhism: eb0f948788f5171d13c067daea2df54845d22f70
+  hindu: 614fa715fcacee0d7ec1ba573061d3e776e708d3
+  daoism: 708ba10413d9511648c2540ad84be74b6b5f6b5c
+  shinto: 4939c22c6b13afc1226d8860fa8dbf394e34b5c4
+  norse: 22e9fe10d1647a66458c54478c86e7ba6abd83ce
+  sumerian: 3fd5db6f05c008aeba4febe310de99e4ff484770
+
+political_sacralization_snapshot:
+  buddhism:
+    status: NOT_ADMITTED
+    note: current exact Buddhist lane does not bind a political-sacralization model
+
+  hindu:
+    status: PARTIAL
+    evidence:
+      - SRAUTA_ROYAL_RITES
+      - KURU_SOVEREIGNTY_RITUAL_SCHOLARSHIP
+    mechanism: RITUAL_LEGITIMATION_OR_CONSOLIDATION_OF_SOVEREIGNTY
+    guard: VEDIC_ROYAL_RITE_NE_TIMELESS_HINDU_KINGSHIP
+
+  daoism:
+    status: PARTIAL
+    evidence:
+      - SANGUOZHI_WEISHU_8_ZHANG_LU
+      - ZHANG_LU_HANZHONG_POLITICAL_CONTROL_V1
+    mechanisms:
+      - RELIGIOUS_OFFICE_AS_TERRITORIAL_GOVERNANCE
+      - RELIGIOUS_POLITICAL_INSTITUTIONAL_ENTANGLEMENT
+    guard: RELIGIOUS_GOVERNANCE_NE_DIVINE_MANDATE
+
+  shinto:
+    status: BOUNDED
+    evidence:
+      - NIHON_SHOKI_BOOK_II_NINIGI_DESCENT_COMMAND
+      - RITSURYO_STATE_RITUAL_INSTITUTIONAL_HISTORY
+    mechanisms:
+      - GENEALOGICAL_CELESTIAL_LEGITIMATION
+      - COURT_ADMINISTERED_CULTIC_ORDER
+    guards:
+      - COURT_COMPILATION_NE_PREHISTORIC_TRANSCRIPT
+      - GENEALOGICAL_LEGITIMATION_NE_CULT_ADMINISTRATION
+
+  norse:
+    status: NOT_ADMITTED
+    note: political_conversion_evidence_is_not_promoted_to_sacred_kingship
+
+  sumerian:
+    status: BOUNDED
+    evidence:
+      - SUMERIAN_KING_LIST_SOURCE_VERIFICATION
+      - ENLIL_AUTHORITY_SOURCE_VERIFICATION
+    mechanism: DIVINE_OR_COSMIC_AUTHORIZATION_OF_KINGSHIP
+    guards:
+      - LITERARY_POLITICAL_LEGITIMATION_NE_LITERAL_CHRONOLOGY
+      - ONE_COMPOSITION_NE_UNIVERSAL_POLITICAL_THEOLOGY
+
+political_method_result:
+  admitted_total: 4
+  bounded: 2
+  partial: 2
+  not_admitted: 2
+  shared_axis: true
+  shared_mechanism: false
+  one_sacred_kingship_model_supported: false
+
+political_test:
+  artifact: synthesis/POLITICAL_SACRALIZATION_CROSS_TRADITION_TEST_V1.md
+  result: COMPARABLE_WITH_HETEROGENEOUS_MECHANISMS_AND_EVIDENCE_MODES
+
+preserved_results:
+  causal_order_test: synthesis/CAUSAL_CONTINUITY_CROSS_TRADITION_TEST_V1.md
+  ritual_order_test: synthesis/RITUAL_ORDER_CROSS_TRADITION_TEST_V2.md
+  person_self_test: synthesis/PERSON_SELF_CROSS_TRADITION_TEST_V1.md
+  contact_test: synthesis/CONTACT_REINTERPRETATION_CROSS_TRADITION_TEST_V1.md
+
+matrix_guards:
+  - THIS_IS_NOT_A_COMMONALITY_SCORE
+  - SHARED_AXIS_NE_SHARED_MECHANISM
+  - SHARED_MECHANISM_NE_SHARED_ORIGIN
+  - EVIDENCE_CLASS_DIFFERENCE_MUST_REMAIN_VISIBLE
+  - NOT_ADMITTED_NE_FALSE
+  - POLITICAL_CONVERSION_NE_SACRED_KINGSHIP
+  - SYSTEMS_MAPPING_IS_OPTIONAL_AND_DOWNSTREAM

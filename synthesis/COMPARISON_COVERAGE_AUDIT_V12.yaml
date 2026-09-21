@@ -1,0 +1,80 @@
+schema_version: on-theo.comparison-coverage-audit.v12
+status: NON_CANONICAL_METHOD_AUDIT
+supersedes_for_current_research:
+  - synthesis/COMPARISON_COVERAGE_AUDIT_V11.yaml
+matrix: synthesis/BOUNDED_NEUTRAL_COMPARISON_MATRIX_V12.yaml
+lane_count_current_synthesis: 6
+
+coverage:
+  CAUSAL_ORDER_TYPE:
+    cross_tradition_test_complete: true
+  CONTINUITY_MODEL:
+    cross_tradition_test_complete: true
+  RITUAL_ORDER_MODEL:
+    cross_tradition_test_complete: true
+  PERSON_OR_SELF_MODEL:
+    cross_tradition_test_complete: true
+  INSTITUTIONALIZATION_MODEL:
+    cross_tradition_test_complete: true
+  CONTACT_AND_REINTERPRETATION_MODEL:
+    cross_tradition_test_complete: true
+  POLITICAL_SACRALIZATION_MODEL:
+    cross_tradition_test_complete: true
+  WORLD_ORIGIN_MODEL:
+    cross_tradition_test_complete: true
+  MORTUARY_RELATIONSHIP_MODEL:
+    cross_tradition_test_complete: true
+  OFFERING_EXCHANGE_MODEL:
+    cross_tradition_test_complete: true
+  TRANSFORMATION_MODEL:
+    admitted_test_lanes: 4
+    cross_tradition_test_complete: true
+    comparison_schema_decomposed: true
+
+transformation_method_conclusions:
+  - form_perspective_life_death_posthumous_status_divine_state_and_world_order_are_not_one_transformation_domain
+  - identity_continuity_must_be_separate_from_transformation
+  - return_or_renewal_does_not_equal_resurrection_by_default
+  - shared_transformation_vocabulary_does_not_establish_shared_metaphysics
+
+portfolio_coverage_audit:
+  artifact: synthesis/GLOBAL_TRADITION_COVERAGE_GAP_AUDIT_V1.md
+  global_representativeness: INSUFFICIENT
+  explicitly_queued_but_unexecuted:
+    - LAKOTA_RELIGIOUS_AND_CEREMONIAL_TRADITIONS
+  major_missing_families_identified:
+    - MAYA_DIACHRONIC
+    - MEXICA_NAHUA
+    - OLMEC_MATERIAL_ICONOGRAPHIC
+    - DINE_PUBLIC_SOURCE
+    - HAUDENOSAUNEE_PUBLIC_SOURCE
+    - ANDEAN_INCA_DIACHRONIC
+  methodological_requirement:
+    - NATION_COMMUNITY_SPECIFIC_RESEARCH
+    - INDIGENOUS_CENTERED_PUBLIC_SOURCES
+    - RESTRICTED_SACRED_KNOWLEDGE_BOUNDARY
+    - COLONIAL_ETHNOGRAPHY_AS_SITUATED_EVIDENCE
+
+next_frontier:
+  primary: GLOBAL_CORPUS_BREADTH_EXPANSION
+  first_unit: LAKOTA_PUBLIC_SOURCE_RESEARCH_PACKET_V1
+  reason: >
+    Lakota research is already explicitly queued with appropriate source and
+    sacred-knowledge safeguards, but no dedicated execution branch is present.
+    Continuing only the current six-lane synthesis would deepen an already
+    Eurasian/Near-Eastern-weighted sample without correcting known global
+    coverage bias.
+  subsequent_design_units:
+    - MAYA_DIACHRONIC_RESEARCH_PACKET_V1
+    - MEXICA_NAHUA_RESEARCH_PACKET_V1
+    - OLMEC_MATERIAL_ICONOGRAPHIC_PACKET_V1
+    - DINE_PUBLIC_SOURCE_RESEARCH_PACKET_V1
+    - HAUDENOSAUNEE_PUBLIC_SOURCE_RESEARCH_PACKET_V1
+    - ANDEAN_INCA_DIACHRONIC_PACKET_V1
+
+guards:
+  - DO_NOT_RESEARCH_MERELY_TO_FILL_COMPARISON_CELLS
+  - RECONSTRUCT_TRADITION_INTERNALLY_BEFORE_COMPARISON
+  - INDIGENOUS_RELIGION_NE_ONE_GENERIC_CATEGORY
+  - PUBLIC_SOURCE_NE_PERMISSION_TO_REPRODUCE_RESTRICTED_CEREMONY
+  - SIX_LANE_RESULT_NE_GLOBAL_RELIGIOUS_UNIVERSAL

@@ -1,0 +1,57 @@
+schema_version: on-theo.hindu-synthesis-source-binding.v1
+status: NON_CANONICAL_EXACT_SOURCE_EXTENSION
+
+source_extension:
+  branch: research/hindu-rigvedic-upanishadic-proposition-v1-20260920
+  head: 0ee28684c0d0f92b90e5c0092cfd87fe5ee6ffd3
+  base_branch: hindu
+  base_head: ccd5b82cf99fa9dfda238366a93447047f74b1fa
+  draft_pr: 98
+
+source_artifacts:
+  - traditions/hindu/rigvedic-upanishadic-proposition-packet-v1.md
+  - traditions/hindu/neutral-axis-evidence-v1.yaml
+  - traditions/hindu/research-state-v2.yaml
+
+textual_layers:
+  - VEDIC_SAMHITA
+  - EARLY_UPANISHAD
+
+loci:
+  RV_10_129:
+    supports:
+      - KNOWLEDGE_OR_DISCLOSURE_MODEL
+      - WORLD_ORIGIN_MODEL
+      - CAUSAL_ORDER_TYPE
+  BU_4_4_5:
+    supports:
+      - MORAL_CAUSALITY_MODEL
+      - CONTINUITY_MODEL
+      - PERSON_OR_SELF_MODEL
+  CHU_5_10_7:
+    supports:
+      - MORAL_CAUSALITY_MODEL
+      - CONTINUITY_MODEL
+      - SOCIAL_COSMOLOGY_MODEL
+  CHU_6_8_7:
+    supports:
+      - PERSON_OR_SELF_MODEL
+      - WORLD_STATUS_MODEL
+      - CAUSAL_ORDER_TYPE
+    translation_interpretation_dispute: true
+
+readiness:
+  bounded_axis_comparison: true
+  broad_Hindu_synthesis: false
+  material_evidence: pending
+  ritual_practice: pending
+  later_school_divergence: pending
+
+guards:
+  - VEDIC_SAMHITA_NE_EARLY_UPANISHAD
+  - EARLY_UPANISHAD_NE_LATER_VEDANTA
+  - RV10_129_NE_ONE_HINDU_CREATION_DOCTRINE
+  - TAT_TVAM_ASI_NE_ONE_UNDISPUTED_ENGLISH_PROPOSITION
+  - ATMAN_NE_WESTERN_SOUL_BY_DEFAULT
+  - SOCIAL_HIERARCHY_IN_SOURCE_NE_PROJECT_ENDORSEMENT
+  - SOURCE_EXTENSION_NE_CANONICAL_MERGE

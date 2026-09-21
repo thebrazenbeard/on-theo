@@ -1,0 +1,64 @@
+schema_version: on-theo.nonabrahamic-comparison-readiness.v23
+status: NON_CANONICAL_RESEARCH_AUDIT
+supersedes_for_current_research:
+  - synthesis/NON_ABRAHAMIC_COMPARISON_READINESS_V22.yaml
+
+existing_six_lane_source_heads:
+  buddhism: eb0f948788f5171d13c067daea2df54845d22f70
+  hindu: 614fa715fcacee0d7ec1ba573061d3e776e708d3
+  daoism: 708ba10413d9511648c2540ad84be74b6b5f6b5c
+  shinto: 4939c22c6b13afc1226d8860fa8dbf394e34b5c4
+  norse: 22e9fe10d1647a66458c54478c86e7ba6abd83ce
+  sumerian: 3fd5db6f05c008aeba4febe310de99e4ff484770
+
+global_breadth_expansion:
+  state: synthesis/GLOBAL_CORPUS_BREADTH_EXPANSION_STATE_V2.yaml
+  completed_unit:
+    tradition: LAKOTA
+    exact_head: 8a9cee8335cadc742c9de25c90f4306702a80e8a
+    pr: 104
+    status: BOUNDED_COMPARISON_READINESS_AUDITED
+  active_next_unit: MAYA_DIACHRONIC_RESEARCH_PACKET_V1
+
+lakota_readiness:
+  comparison_eligible_bounded:
+    - CONTACT_AND_REINTERPRETATION_MODEL
+    - INSTITUTIONALIZATION_MODEL
+    - KNOWLEDGE_OR_DISCLOSURE_MODEL
+    - MORTUARY_RELATIONSHIP_MODEL
+  comparison_eligible_partial:
+    - RITUAL_ORDER_MODEL
+    - SACRAL_PRESENCE_MODEL
+    - CONTINUITY_MODEL
+  held:
+    - WORLD_ORIGIN_MODEL
+    - POSTMORTEM_PATH_MODEL
+    - PERSON_OR_SELF_MODEL
+    - AGENCY_AND_AUTHORITY_MODEL
+  new_axis_candidates:
+    - RELATIONAL_ORDER_MODEL
+    - SACRED_LAND_PLACE_MODEL
+    - HUMAN_ORIGIN_OR_EMERGENCE_MODEL
+  matrix_policy: >
+    Do not retroactively fill completed comparison tests merely because Lakota is
+    now eligible. Any future seven-lane test must rebind all exact source heads
+    and preserve Lakota's modern/community/historical layer ceilings.
+
+next_frontier:
+  primary: MAYA_DIACHRONIC_RESEARCH_PACKET_V1
+  reason: >
+    Lakota has reached a defensible internal comparison-readiness gate. Global
+    breadth now benefits more from opening another underrepresented tradition
+    with proper diachronic controls than from deepening Lakota indefinitely.
+
+holds:
+  global_generalization_from_current_sample: PROHIBITED
+  restricted_sacred_knowledge_reproduction: PROHIBITED
+  perennialist_all_religions_matrix: PROHIBITED_AT_CURRENT_EVIDENCE
+
+guards:
+  - COMPARISON_READY_NE_TRADITION_COMPLETE
+  - EXACT_HEAD_BINDING_REQUIRED
+  - COMMUNITY_AND_PERIOD_MUST_REMAIN_VISIBLE
+  - CONTACT_NE_TRANSMISSION
+  - SYSTEMS_ANALOGY_IS_DOWNSTREAM

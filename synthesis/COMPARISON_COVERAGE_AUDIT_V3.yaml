@@ -1,0 +1,43 @@
+schema_version: on-theo.comparison-coverage-audit.v3
+status: NON_CANONICAL_METHOD_AUDIT
+supersedes_for_current_research:
+  - synthesis/COMPARISON_COVERAGE_AUDIT_V2.yaml
+matrix: synthesis/BOUNDED_NEUTRAL_COMPARISON_MATRIX_V3.yaml
+lane_count: 6
+
+coverage:
+  CAUSAL_ORDER_TYPE:
+    admitted_total: 6
+  CONTINUITY_MODEL:
+    admitted_total: 6
+  RITUAL_ORDER_MODEL:
+    admitted_total: 6
+    bounded: 6
+  PERSON_OR_SELF_MODEL:
+    admitted_total: 5
+  CONTACT_AND_REINTERPRETATION_MODEL:
+    admitted_total: 4
+  POLITICAL_SACRALIZATION_MODEL:
+    admitted_total: 4
+  WORLD_ORIGIN_MODEL:
+    admitted_total: 4
+  MORTUARY_RELATIONSHIP_MODEL:
+    admitted_total: 2
+
+cross_lane_ready_now:
+  - CAUSAL_ORDER_TYPE
+  - CONTINUITY_MODEL
+  - RITUAL_ORDER_MODEL
+
+next_discriminating_frontiers:
+  - SHINTO_PERSON_OR_SELF_AND_HUMAN_CONTINUITY
+  - DAOIST_BUDDHIST_CONTACT_REINTERPRETATION
+  - BUDDHIST_STUPA_RELIC_AND_LAY_RITUAL
+  - HINDU_GRIHYA_DOMESTIC_RITUAL
+  - NORSE_SKALDIC_AFTERLIFE
+
+method_conclusions:
+  - six_lane_ritual_coverage_is_now_complete_at_bounded_level
+  - coverage_does_not_establish_same_mechanism
+  - ritual_order_is_a_relational_structure_not_one_theology
+  - next_work_should_target_axes_that_discriminate_personhood_and_contact_models

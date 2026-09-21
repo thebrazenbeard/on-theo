@@ -1,0 +1,85 @@
+schema_version: on-theo.nonabrahamic-comparison-readiness.v10
+status: NON_CANONICAL_RESEARCH_AUDIT
+supersedes_for_current_research:
+  - synthesis/NON_ABRAHAMIC_COMPARISON_READINESS_V9.yaml
+
+comparison_control:
+  branch: audit/synthesis-comparison-eligibility-v1-20260919
+  head: 809edc937be9a42f1fd76e00e5eadb0a8b9ebe9d
+
+lanes:
+  buddhism:
+    source_head: 1c6c7a9a35901a529d377e1bd6fb86a88c1cdbe9
+    draft_pr: 97
+    status: BOUNDED_READY_STRENGTHENED
+    broad_ready: false
+
+  hindu:
+    source_head: 614fa715fcacee0d7ec1ba573061d3e776e708d3
+    draft_pr: 98
+    status: BOUNDED_PARTIAL_STRENGTHENED
+    new:
+      - VEDIC_RITUAL_ORDER
+      - OFFERING_EXCHANGE_PARTIAL
+      - POLITICAL_SACRALIZATION_PARTIAL
+      - MATERIAL_RETROJECTION_GUARD
+    broad_ready: false
+
+  daoism:
+    source_head: 483d1bcaebb57a00cda5eb30c15bc3908fdac438
+    draft_pr: 99
+    status: BOUNDED_PARTIAL_STRENGTHENED
+    broad_ready: false
+
+  shinto:
+    source_head: 31b67b5a0aec7015878e5fcf9de2936db80cf83b
+    draft_pr: 100
+    status: BOUNDED_PARTIAL
+    broad_ready: false
+
+  norse_asatru:
+    source_head: 22e9fe10d1647a66458c54478c86e7ba6abd83ce
+    draft_pr: 101
+    status: BOUNDED_PARTIAL_STRENGTHENED
+    new:
+      - HUMAN_AFTERLIFE_LITERARY_PLURALITY
+      - POSTMORTEM_PATH_BOUNDED
+      - MORTUARY_RELATIONSHIP_PARTIAL
+      - GRAVE_GOOD_INTERPRETATION_GUARD
+    broad_ready: false
+
+  sumerian:
+    source_head: 3fd5db6f05c008aeba4febe310de99e4ff484770
+    draft_pr: 102
+    status: BOUNDED_READY_DEEP_CHAIN
+    broad_ready: false
+
+portfolio_state:
+  six_lanes_exactly_bound: true
+  causal_order_all_six_admitted: true
+  continuity_all_six_admitted: true
+  ritual_order_admitted_lanes: 5
+  person_self_admitted_lanes: 5
+  direct_convergence_or_transmission_claims_allowed: false
+  broad_all_tradition_synthesis_allowed: false
+
+next_comparison_targets:
+  - RITUAL_ORDER_MODEL
+  - PERSON_OR_SELF_MODEL
+  - CONTACT_AND_REINTERPRETATION_MODEL
+  - MORTUARY_RELATIONSHIP_MODEL_after_more_lanes
+
+holds:
+  direct_cross_tradition_convergence_or_transmission:
+    status: HOLD
+  perennialist_all_religions_matrix:
+    status: PROHIBITED_AT_CURRENT_EVIDENCE
+
+guards:
+  - UNKNOWN_NE_ABSENCE
+  - NOT_ADMITTED_NE_FALSE
+  - BOUNDED_READY_NE_BROAD_READY
+  - RITUAL_SIMILARITY_NE_SHARED_MECHANISM
+  - MATERIAL_PRACTICE_NE_TEXTUAL_DOCTRINE
+  - CONTACT_NE_TRANSMISSION
+  - SYSTEMS_ANALOGY_IS_DOWNSTREAM

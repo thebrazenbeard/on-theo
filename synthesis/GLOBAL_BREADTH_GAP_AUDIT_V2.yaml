@@ -1,0 +1,110 @@
+schema_version: on-theo.global-breadth-gap-audit.v2
+status: POST_QUEUE_GLOBAL_GAP_AUDIT
+supersedes_for_current_research:
+  - synthesis/GLOBAL_BREADTH_GAP_AUDIT_V1.yaml
+
+live_repository_checks:
+  candidate_branch_prefixes:
+    yoruba: NONE
+    jain: NONE
+    sikh: NONE
+    mandaean: NONE
+    yazidi: NONE
+  default_code_search:
+    yoruba: NONE
+    ifa: NONE
+    jain: NONE
+    sikh: NONE
+    mandaean: NONE
+    yazidi: NONE
+
+coverage_observation:
+  ancient_near_east: STRONG
+  mediterranean_abrahamic_late_antique: STRONG
+  south_asia: MODERATE_TO_STRONG
+  east_asia: MODERATE
+  northern_europe: MODERATE
+  indigenous_north_america: EXPANDED
+  mesoamerica: EXPANDED
+  andes: EXPANDED
+  sub_saharan_africa: MAJOR_GAP
+  oceania: MAJOR_GAP
+
+candidate_frontiers:
+  YORUBA_IFA:
+    status: SELECTED_NEXT
+    reasons:
+      - fills_sub_saharan_African_geographic_gap
+      - living_Indigenous_religious_field
+      - strong_oral_divinatory_corpus
+      - specialist_knowledge_transmission
+      - substantial_modern_scholarship
+      - UNESCO_public_source_control
+      - Atlantic_diaspora_enables_later_transmission_comparison
+      - adds_orality_without_textual_deficit_assumption
+    source_architecture:
+      - ORAL_DIVINATORY_CORPUS
+      - SPECIALIST_PERFORMANCE
+      - MATERIAL_DIVINATION_TECHNOLOGY
+      - HISTORICAL_RECONSTRUCTION
+      - LIVING_TRADITION
+      - COLONIAL_MISSIONARY_DOCUMENTS
+      - DIASPORA_TRANSFORMATION
+
+  JAIN:
+    status: HIGH_VALUE_LATER
+    reasons:
+      - strong_textual_and_living_sources
+      - non_creator_cosmology_and_ascetic_ethics_add_comparison_value
+    deferral_reason: South_Asia_already_has_multiple_mature_lanes
+
+  SIKH:
+    status: HIGH_VALUE_LATER
+    reasons:
+      - strong_primary_text_and_living_institutional_sources
+      - distinct_revelation_authority_and_community_architecture
+    deferral_reason: South_Asia_already_has_multiple_mature_lanes
+
+  MANDAEAN:
+    status: HIGH_VALUE_LATER
+    reasons:
+      - rare_living_Gnostic_related_tradition
+      - manuscript_liturgical_baptismal_architecture
+    deferral_reason: West_Asia_already_heavily_represented
+
+  YAZIDI:
+    status: HIGH_VALUE_LATER
+    reasons:
+      - oral_and_living_minoritized_tradition
+      - strong_accusation_misrepresentation_controls
+    deferral_reason: West_Asia_already_heavily_represented
+
+  OCEANIC_SPECIFIC_TRADITION:
+    status: HIGH_VALUE_LATER_REQUIRES_SPECIFIC_TARGET
+    reason: >
+      "Oceanic religion" is too broad; next audit should choose a specific
+      community/tradition with strong source governance.
+
+selected_frontier:
+  primary: YORUBA_IFA_DIACHRONIC_PACKET_V1
+  scope_rule: >
+    Yoruba/Ifá is not used as a synonym for all West African religion, and Ifá
+    divination is not assumed to exhaust Yoruba Òrìṣà religion.
+
+required_controls:
+  - YORUBA_NE_ALL_WEST_AFRICA
+  - IFA_NE_ALL_YORUBA_RELIGION
+  - ORISA_NE_ONE_FIXED_PANTHEON_ACROSS_TIME_AND_REGION
+  - ORAL_CORPUS_NE_UNFIXED_OR_UNRELIABLE_BY_DEFINITION
+  - UNESCO_HERITAGE_DESCRIPTION_NE_COMPLETE_THEOLOGY
+  - BABALAWO_SPECIALIST_KNOWLEDGE_NE_PUBLIC_CORPUS_EXHAUSTION
+  - COLONIAL_ETHNOGRAPHY_NE_UNMEDIATED_TRADITION
+  - DIASPORA_LUKUMI_CANDOMBLE_NE_YORUBA_HOMELAND_IDENTITY
+  - SIMILARITY_NE_TRANSMISSION
+
+future_order_after_yoruba:
+  - JAIN_SOURCE_GAP_AUDIT
+  - SIKH_SOURCE_GAP_AUDIT
+  - MANDAEAN_SOURCE_GAP_AUDIT
+  - YAZIDI_SOURCE_GAP_AUDIT
+  - SPECIFIC_OCEANIC_TRADITION_AUDIT

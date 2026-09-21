@@ -1,0 +1,46 @@
+schema_version: on-theo.comparison-coverage-audit.v5
+status: NON_CANONICAL_METHOD_AUDIT
+supersedes_for_current_research:
+  - synthesis/COMPARISON_COVERAGE_AUDIT_V4.yaml
+matrix: synthesis/BOUNDED_NEUTRAL_COMPARISON_MATRIX_V5.yaml
+lane_count: 6
+
+coverage:
+  CAUSAL_ORDER_TYPE:
+    admitted_total: 6
+  CONTINUITY_MODEL:
+    admitted_total: 6
+  RITUAL_ORDER_MODEL:
+    admitted_total: 6
+  PERSON_OR_SELF_MODEL:
+    admitted_total: 6
+  CONTACT_AND_REINTERPRETATION_MODEL:
+    admitted_total: 4
+    bounded_or_stronger: 4
+    includes_negative_borrowing_control: true
+  POLITICAL_SACRALIZATION_MODEL:
+    admitted_total: 4
+  WORLD_ORIGIN_MODEL:
+    admitted_total: 4
+  MORTUARY_RELATIONSHIP_MODEL:
+    admitted_total: 3
+
+cross_lane_ready_now:
+  - CAUSAL_ORDER_TYPE
+  - CONTINUITY_MODEL
+  - RITUAL_ORDER_MODEL
+  - PERSON_OR_SELF_MODEL
+  - CONTACT_AND_REINTERPRETATION_MODEL
+
+method_conclusions:
+  - contact_axis_is_comparison_ready_without_six_lane_completion
+  - contact_ne_transmission_is_empirically_demonstrated_across_current_lanes
+  - transmission_ne_semantic_identity
+  - negative_controls_are_valid_comparison_results
+  - do_not_fill_Buddhist_or_Hindu_contact_cells_for_symmetry
+
+next_discriminating_frontiers:
+  - DAOIST_CONTACT_PRIMARY_WITNESS_BINDING
+  - POLITICAL_SACRALIZATION_COMPARISON
+  - CROSS_RELATION_MACHINE_READABLE_SCHEMA
+  - BUDDHIST_STUPA_RELIC_AND_LAY_RITUAL

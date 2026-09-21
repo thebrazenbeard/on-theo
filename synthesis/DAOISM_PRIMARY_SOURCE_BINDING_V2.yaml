@@ -1,0 +1,80 @@
+schema_version: on-theo.daoism-synthesis-source-binding.v2
+status: NON_CANONICAL_EXACT_SOURCE_EXTENSION
+supersedes_for_current_research:
+  - synthesis/DAOISM_PRIMARY_SOURCE_BINDING_V1.yaml
+
+source_extension:
+  branch: research/daoism-manuscript-proposition-v1-20260920
+  head: 483d1bcaebb57a00cda5eb30c15bc3908fdac438
+  base_branch: taoism
+  base_head: 30de6433ab2bdce86b88fcdad1a3134084ed39ab
+  draft_pr: 99
+
+source_artifacts:
+  classical:
+    - traditions/daoism/laozi-manuscript-proposition-packet-v1.md
+    - traditions/daoism/laozi-witness-matrix-v1.yaml
+    - traditions/daoism/zhuangzi-inner-proposition-packet-v1.md
+    - traditions/daoism/neutral-axis-evidence-v1.yaml
+  early_religious:
+    - traditions/daoism/celestial-masters-xianger-packet-v1.md
+    - traditions/daoism/religious-daoism-transition-v1.yaml
+  state:
+    - traditions/daoism/research-state-v3.yaml
+
+diachronic_layers:
+  CLASSICAL_LAOZI:
+    features:
+      - generative_Dao
+      - ziran
+      - wuwei
+      - self_transformation
+      - non_possession_non_domination
+  ZHUANGZI_INNER_SELECTED:
+    features:
+      - transformation
+      - life_death_reframing
+      - epistemic_perspective
+  CELESTIAL_MASTERS_EARLY:
+    traditional_foundation: 142_CE
+    earliest_direct_bound_evidence: ZHANG_PU_STELE_173_CE
+    features:
+      - revelation
+      - liturgical_organization
+      - registers
+      - confession
+      - petitions
+      - divine_offices
+  XIANGER:
+    manuscript: DUNHUANG_S6825
+    copy_date: APPROX_500_CE
+    underlying_commentary_date: APPROX_200_CE_DISPUTED
+    role: RELIGIOUS_COMMENTARY_NOT_EARLY_LAOZI_PRIMARY_MEANING
+  LORD_LAO:
+    status: LATE_SECOND_CENTURY_PERSONIFICATION_REVELATION_LAYER
+
+strengthened_axes:
+  - WORLD_ORIGIN_MODEL
+  - CAUSAL_ORDER_TYPE
+  - GENERATION_AND_CONTROL_MODEL
+  - AGENCY_AND_AUTHORITY_MODEL
+  - INTERVENTION_MODEL
+  - TRANSFORMATION_MODEL
+  - KNOWLEDGE_OR_DISCLOSURE_MODEL
+  - MORAL_CAUSALITY_MODEL
+  - INSTITUTIONALIZATION_MODEL
+
+readiness:
+  bounded_Daoist_comparison: STRENGTHENED
+  broad_Daoism_synthesis: false
+  Shangqing: pending
+  Lingbao: pending
+  Buddhist_contact: pending
+  medieval_Daoism: pending
+
+guards:
+  - EARLY_DAO_LANGUAGE_NE_LATER_LORD_LAO_PERSONIFICATION
+  - TRADITIONAL_FOUNDING_DATE_NE_EARLIEST_DIRECT_EVIDENCE
+  - COMMENTARY_NE_PRIMARY_TEXT
+  - INSTITUTIONAL_DEVELOPMENT_NE_ORIGINAL_CLASSICAL_MEANING
+  - SOURCE_EXTENSION_NE_CANONICAL_MERGE

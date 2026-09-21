@@ -1,0 +1,174 @@
+schema_version: on-theo.cross-tradition-relation-schema.v1
+status: PROJECT_METHOD_CANDIDATE_NON_CANONICAL
+
+purpose: >
+  Prevent the generic word "influence" from collapsing distinct historical
+  relations. Every asserted cross-tradition edge should identify the strongest
+  relation actually supported and retain lower-level evidence separately.
+
+relation_types:
+  EXPOSURE:
+    definition: >
+      Evidence that agents or institutions could encounter the other tradition,
+      text, language, community, or material.
+    minimum_evidence:
+      - chronology_compatible
+      - contact_route_or_presence
+    does_not_entail:
+      - borrowing
+      - textual_use
+      - semantic_change
+
+  CONTACT_CAPACITY:
+    definition: >
+      Network, institutional, geographic, or linguistic capacity through which
+      transmission could occur.
+    does_not_entail:
+      - actual_transmission
+
+  DIRECT_TEXTUAL_ADAPTATION:
+    definition: >
+      A target text demonstrably reuses, translates, rearranges, revises, or
+      closely transforms an identifiable source text.
+    minimum_evidence:
+      - source_specific_correspondence
+      - chronology
+      - plausible_direction
+      - correspondence_beyond_generic_motif
+    example:
+      - DAOIST_YANG_XI_FORTY_TWO_SECTIONS
+    does_not_entail:
+      - unchanged_meaning
+      - whole_tradition_derivation
+
+  SOURCE_SPECIFIC_TRANSMISSION:
+    definition: >
+      Evidence that a particular source, source-unit, or distinctive sequence
+      moved into the target environment.
+    minimum_evidence:
+      - exact_source_unit
+      - chronology
+      - contact
+      - distinctive_match
+      - direction
+      - plausible_carrier_or_route
+    confidence_levels:
+      - ESTABLISHED
+      - PROBABLE
+      - POSSIBLE
+      - NONE_ESTABLISHED
+
+  LEXICAL_BORROWING:
+    definition: >
+      A word, formula, technical term, or calque is borrowed across traditions.
+    does_not_entail:
+      - same_semantics
+      - doctrinal_identity
+
+  DOCTRINAL_RECODING:
+    definition: >
+      An imported or contact-sensitive concept is assigned a materially changed
+      place or meaning within the receiving system.
+    requires:
+      - source_or_contact_relation
+      - semantic_comparison
+
+  TEXTUAL_FORM_ADAPTATION:
+    definition: >
+      Genre, scriptural form, textual presentation, or revelatory style is
+      adapted without requiring direct proposition-level copying.
+
+  RITUAL_INSTITUTIONAL_ADAPTATION:
+    definition: >
+      Ritual, monastic, canonical, administrative, or organizational structures
+      change under contact.
+
+  MATERIAL_HYBRIDIZATION:
+    definition: >
+      Material or visual culture combines or refunctions forms associated with
+      interacting traditions.
+    guard: >
+      Hybrid form does not imply participants lacked distinct religious identities.
+
+  POLEMICAL_RECLASSIFICATION:
+    definition: >
+      One tradition reclassifies the origin, status, or truth of another in
+      competitive or apologetic discourse.
+    example:
+      - DAOIST_HUAHU
+    does_not_entail:
+      - claimed_history_is_true
+
+  PRESERVATION_BY_ANOTHER_TRADITION:
+    definition: >
+      A later or competing tradition preserves earlier material while potentially
+      reframing, editing, translating, or systematizing it.
+    example:
+      - CHRISTIAN_MEDIEVAL_NORSE_PRESERVATION
+    guards:
+      - PRESERVATION_NE_FABRICATION
+      - PRESERVATION_NE_TRANSPARENT_REPORT
+
+  INSTITUTIONAL_COMBINATION:
+    definition: >
+      Distinct traditions become durably intertwined in cult, temple/shrine,
+      personnel, ritual, or explanatory systems.
+    example:
+      - SHINTO_BUDDHIST_COMBINATION
+
+  POLITICAL_CONVERSION:
+    definition: >
+      Political authority formally adopts or promotes a tradition.
+    does_not_entail:
+      - immediate_population_level_replacement
+      - immediate_household_ritual_change
+
+  SEPARATION_OR_RECLASSIFICATION:
+    definition: >
+      A later authority or community actively separates categories or
+      institutions that had previously been combined.
+    example:
+      - MEIJI_SHINBUTSU_BUNRI
+    guard: SEPARATION_NE_RECOVERY_OF_PRIMORDIAL_PURITY
+
+  MUTUAL_TRANSFORMATION:
+    definition: >
+      Long-term contact changes both interacting traditions or their
+      self-definitions.
+    requires:
+      - evidence_on_both_sides
+
+  NONE_ESTABLISHED:
+    definition: >
+      A tested stronger relation is not established by the current controlled
+      evidence even though lower-level exposure/contact may be present.
+    example:
+      - DIRECT_DUMUZID_TO_BAAL_BORROWING
+    guard: NONE_ESTABLISHED_NE_IMPOSSIBLE
+
+edge_fields:
+  required:
+    - source_tradition_or_system
+    - target_tradition_or_system
+    - relation_type
+    - evidence_class
+    - chronology
+    - source_binding
+    - confidence
+  recommended:
+    - direction
+    - carrier_or_route
+    - semantic_change
+    - competing_models
+    - disconfirmers
+    - exact_head
+    - artifact_path
+
+inference_rules:
+  - SIMILARITY_NE_EXPOSURE
+  - EXPOSURE_NE_TRANSMISSION
+  - CONTACT_CAPACITY_NE_ACTUAL_TRANSMISSION
+  - TRANSMISSION_NE_SEMANTIC_IDENTITY
+  - BORROWING_NE_WHOLE_TRADITION_DERIVATION
+  - POLEMICAL_ORIGIN_CLAIM_NE_TRANSMISSION_HISTORY
+  - NONE_ESTABLISHED_NE_IMPOSSIBLE

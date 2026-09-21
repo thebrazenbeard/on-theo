@@ -1,0 +1,69 @@
+schema_version: on-theo.bounded-neutral-comparison-matrix.v3
+status: NON_CANONICAL_PILOT_MATRIX
+supersedes_for_current_research:
+  - synthesis/BOUNDED_NEUTRAL_COMPARISON_MATRIX_V2.yaml
+axis_schema: synthesis/NEUTRAL_COMPARISON_AXES_V9.yaml
+
+source_heads:
+  buddhism: eb0f948788f5171d13c067daea2df54845d22f70
+  hindu: 614fa715fcacee0d7ec1ba573061d3e776e708d3
+  daoism: 483d1bcaebb57a00cda5eb30c15bc3908fdac438
+  shinto: 31b67b5a0aec7015878e5fcf9de2936db80cf83b
+  norse: 22e9fe10d1647a66458c54478c86e7ba6abd83ce
+  sumerian: 3fd5db6f05c008aeba4febe310de99e4ff484770
+
+updates_from_v2:
+  buddhism:
+    RITUAL_ORDER_MODEL:
+      status: BOUNDED
+      evidence:
+        - VINAYA_KD1_ORDINATION
+        - VINAYA_KD2_UPOSATHA
+        - AN_8_20
+        - ASOKAN_LOCAL_SANGHA_CONTEXT
+      summary: >
+        selected monastic procedures require calendrical observance, qualified
+        assembly, competent roles, disclosure, formal motion, repeated
+        announcements, silence/objection, and procedural validity
+      mechanism_class:
+        - communal_legal_ritual
+        - calendar
+        - assembly
+        - recitation
+        - confession_or_disclosure
+        - status
+        - quorum
+        - motion_and_announcements
+        - consent_or_objection
+      guards:
+        - disciplinary_purity_ne_generic_pollution
+        - Vinaya_layering_must_remain_visible
+
+ritual_order_snapshot:
+  buddhism:
+    status: BOUNDED
+    mechanism_class: COMMUNAL_LEGAL_RITUAL_ORDER
+  hindu:
+    status: BOUNDED
+    mechanism_class: CONFIGURATIONAL_LITURGICAL_ORDER
+  daoism:
+    status: BOUNDED
+    mechanism_class: BUREAUCRATIC_MEDIATED_RITUAL_ORDER
+  shinto:
+    status: BOUNDED
+    mechanism_class: PURITY_AND_OFFICE_MEDIATED_RITUAL_ORDER
+  norse:
+    status: BOUNDED
+    mechanism_class: MATERIAL_PERFORMATIVE_RITUAL_ORDER
+  sumerian:
+    status: BOUNDED
+    mechanism_class: TEMPLE_ADMINISTRATIVE_AND_OFFERING_ORDER
+
+matrix_guards:
+  - ALL_SIX_HAVE_RITUAL_NE_ONE_RITUAL_MECHANISM
+  - SHARED_AXIS_NE_SEMANTIC_EQUIVALENCE
+  - SHARED_MECHANISM_NE_SHARED_ORIGIN
+  - RITUAL_VALIDITY_NE_METAPHYSICAL_PROOF
+  - TEXTUAL_PROCEDURE_NE_HISTORICAL_PERFORMANCE_BY_DEFAULT
+  - CROSS_TRADITION_TRANSMISSION_REMAINS_ON_HOLD
+  - GOD_MODEL_MAPPING_NOT_INCLUDED

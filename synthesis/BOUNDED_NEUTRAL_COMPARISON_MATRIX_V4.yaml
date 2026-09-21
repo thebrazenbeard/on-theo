@@ -1,0 +1,121 @@
+schema_version: on-theo.bounded-neutral-comparison-matrix.v4
+status: NON_CANONICAL_PILOT_MATRIX
+supersedes_for_current_research:
+  - synthesis/BOUNDED_NEUTRAL_COMPARISON_MATRIX_V3.yaml
+axis_schema: synthesis/NEUTRAL_COMPARISON_AXES_V9.yaml
+
+source_heads:
+  buddhism: eb0f948788f5171d13c067daea2df54845d22f70
+  hindu: 614fa715fcacee0d7ec1ba573061d3e776e708d3
+  daoism: 483d1bcaebb57a00cda5eb30c15bc3908fdac438
+  shinto: 144ee868e4976428dbfe9c5ddc0022d03a2c194a
+  norse: 22e9fe10d1647a66458c54478c86e7ba6abd83ce
+  sumerian: 3fd5db6f05c008aeba4febe310de99e4ff484770
+
+person_or_self_snapshot:
+  buddhism:
+    status: BOUNDED
+    evidence:
+      - SN_22_59
+      - SN_44_10
+      - CROSS_TRANSMISSION_PARALLELS
+    summary: >
+      five aggregates are subjected to not-self analysis; a simple
+      existence-versus-nonexistence binary is explicitly methodologically unsafe
+    neutral_class: AGGREGATE_ANALYSIS_WITH_NOT_SELF_CRITIQUE
+    guards:
+      - NOT_SELF_NE_SIMPLE_NIHILISM
+      - BUDDHIST_CONTINUITY_NE_PERMANENT_SELF_SUBSTANCE
+
+  hindu:
+    status: PARTIAL
+    evidence:
+      - BU_4_4_2_6
+      - CHU_6_8_7
+    summary: >
+      early Upanishadic sources contain self, continuity, desire/action, and
+      essence-language, while later Vedanta systematizations are not projected
+      backward into the selected passages
+    neutral_class: SELF_LANGUAGE_WITH_CONTINUITY_AND_INTERPRETIVE_OPENNESS
+    guards:
+      - EARLY_UPANISHAD_NE_ONE_LATER_VEDANTA
+      - TAT_TVAM_ASI_NE_ONE_UNDISPUTED_METAPHYSICS
+
+  daoism:
+    status: PARTIAL
+    evidence:
+      - ZHUANGZI_INNER_2
+      - ZHUANGZI_INNER_6
+    summary: >
+      selected Inner-Chapter material treats identity, perspective, form, life,
+      and death through transformation more clearly than through a fixed
+      philosophical essence
+    neutral_class: TRANSFORMATIONAL_PERSPECTIVAL_PERSONHOOD
+    guards:
+      - TRANSFORMATION_NE_ENTITY_PERSISTENCE_BY_DEFAULT
+      - INNER_CHAPTER_SELECTION_NE_ALL_DAOIST_ANTHROPOLOGY
+
+  shinto:
+    status: PARTIAL_BOUNDED
+    evidence:
+      - TAMA_MITAMA_LEXICAL_SYNTHESIS
+      - RYO_NO_GIGE_833_CHINKON
+      - HUMAN_SPIRIT_DIACHRONY
+    summary: >
+      a human person can be represented in ritual discourse as embodied while
+      possessing a tama/mitama distinguishable enough to depart, be recalled,
+      pacified, or strengthened; later postmortem status models vary historically
+    neutral_class: EMBODIED_PERSON_WITH_RITUALLY_DISTINGUISHABLE_SPIRIT_COMPONENT
+    guards:
+      - TAMA_NE_WESTERN_IMMORTAL_SOUL
+      - COURT_CHINKON_NE_UNIVERSAL_ANTHROPOLOGY
+      - LATER_HUMAN_KAMI_NE_CLASSICAL_PERSONHOOD_DEFAULT
+
+  norse:
+    status: PARTIAL
+    evidence:
+      - VOLUSPA_ASK_EMBLA
+      - HELGAKVIDA_HUNDINGSBANA_II
+    summary: >
+      human capacities are represented as divinely supplied in the Ask/Embla
+      sequence, while selected dead humans retain recognizable identity,
+      relationships, and agency in later literary material
+    neutral_class: CAPACITY_ENDOWED_AND_NARRATIVELY_PERSISTENT_PERSON
+    guards:
+      - NARRATIVE_IDENTITY_NE_COMPLETE_SOUL_ONTOLOGY
+      - HEROIC_POEM_NE_UNIVERSAL_HUMAN_MODEL
+
+  sumerian:
+    status: PARTIAL
+    evidence:
+      - GIDIM
+      - HUMAN_AFTERLIFE_FUNERARY_LANE
+    summary: >
+      deceased persons can persist as socially identifiable gidim in literary
+      and mortuary models without establishing one complete anthropology of the
+      living or one universal soul theory
+    neutral_class: SOCIALLY_IDENTIFIABLE_POSTMORTEM_PERSON
+    guards:
+      - GIDIM_NE_PLACE_CATEGORY
+      - GHOST_IDENTITY_NE_COMPLETE_PERSONHOOD_ONTOLOGY
+
+person_self_comparison_guards:
+  - SHARED_PERSONHOOD_QUESTION_NE_SHARED_SELF_ONTOLOGY
+  - SPIRIT_LANGUAGE_NE_SUBSTANCE_DUALISM
+  - CONTINUITY_NE_UNCHANGED_ENTITY
+  - NOT_SELF_NE_NO_PERSON_IN_ANY_SENSE
+  - SELF_LANGUAGE_NE_ONE_SUBSTANTIALIST_SYSTEM
+  - NARRATIVE_IDENTITY_NE_PHILOSOPHICAL_ESSENCE
+  - POSTMORTEM_IDENTITY_NE_ONE_AFTERLIFE_MECHANISM
+
+preserved_results:
+  causal_order_test: synthesis/CAUSAL_CONTINUITY_CROSS_TRADITION_TEST_V1.md
+  ritual_order_test: synthesis/RITUAL_ORDER_CROSS_TRADITION_TEST_V2.md
+
+matrix_guards:
+  - THIS_IS_NOT_A_COMMONALITY_SCORE
+  - BOUNDED_NE_SEMANTIC_EQUIVALENCE
+  - SHARED_AXIS_NE_SHARED_ANSWER
+  - SHARED_ANSWER_NE_SHARED_ORIGIN
+  - CROSS_TRADITION_TRANSMISSION_REMAINS_ON_HOLD
+  - GOD_MODEL_MAPPING_NOT_INCLUDED_IN_MATRIX

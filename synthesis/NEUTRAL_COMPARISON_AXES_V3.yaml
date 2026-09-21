@@ -1,0 +1,115 @@
+schema_version: on-theo.neutral-comparison-axes.v3
+status: PROJECT_METHOD_CANDIDATE_NON_CANONICAL
+supersedes_for_current_research:
+  - synthesis/NEUTRAL_COMPARISON_AXES_V2.yaml
+
+layers:
+  - SOURCE_PROPOSITION
+  - TEXTUAL_OR_HISTORICAL_LAYER
+  - EVIDENCE_MODE
+  - NEUTRAL_COMPARISON_AXIS
+  - OPTIONAL_SYSTEMS_ANALOGY
+
+evidence_modes:
+  - TEXTUAL_TRANSMISSION
+  - PHYSICAL_MANUSCRIPT
+  - INSCRIPTION
+  - ARCHAEOLOGY
+  - RITUAL_OR_PRACTICE
+  - LATER_TRADITION
+  - SCHOLARLY_RECONSTRUCTION
+
+axes:
+  - id: WORLD_ORIGIN_MODEL
+    question: >
+      What, if anything, does a source claim about the origin, emergence,
+      eternality, recurrence, ordering, or unknowability of the world?
+    guard: >
+      A source may explicitly leave origin unresolved; UNKNOWN is a substantive
+      source result when the source itself marks an epistemic limit.
+
+  - id: CAUSAL_ORDER_TYPE
+    question: What kind of causal order does the source describe or presuppose?
+
+  - id: AGENCY_AND_AUTHORITY_MODEL
+    question: >
+      What beings, principles, institutions, or processes possess privileged
+      agency or authority, if any?
+
+  - id: PERSON_OR_SELF_MODEL
+    question: >
+      What constitutes a person/self, and what candidate components are denied,
+      affirmed, conditioned, divisible, or enduring?
+
+  - id: CONTINUITY_MODEL
+    question: >
+      What, if anything, continues across death, transformation, rebirth, or
+      resurrection, and in what sense is continuity asserted?
+
+  - id: MORAL_CAUSALITY_MODEL
+    question: >
+      How do actions acquire consequences: personal judgment, impersonal causal
+      order, ritual order, social sanction, fate, or another mechanism?
+
+  - id: LIBERATION_OR_FINAL_TRANSFORMATION_MODEL
+    question: >
+      What counts as the desired or final transformation, if the source defines
+      one?
+
+  - id: KNOWLEDGE_OR_DISCLOSURE_MODEL
+    question: >
+      How is otherwise unavailable or authoritative knowledge obtained, and
+      where does the source place limits on knowledge?
+
+  - id: INTERVENTION_MODEL
+    question: >
+      Does the tradition describe privileged intervention in ordinary causal
+      processes, and if so by whom or what?
+
+  - id: WORLD_STATUS_MODEL
+    question: >
+      How does the source characterize experienced reality: ultimate,
+      provisional, conditioned, sacred, deceptive, cyclic, or otherwise?
+
+  - id: SOCIAL_COSMOLOGY_MODEL
+    question: >
+      Does the source encode social classes, roles, status, gender, ethnicity,
+      purity, lineage, or political hierarchy into cosmic, karmic, salvific, or
+      post-mortem structure?
+    guard: >
+      Recording hierarchy in a source is historical description, not project
+      endorsement.
+
+  - id: INSTITUTIONALIZATION_MODEL
+    question: >
+      How are teachings, specialists, communities, authorities, sites, texts,
+      rituals, and material resources organized and stabilized?
+
+comparison_rules:
+  - source_answer_may_be_plural_by_period_or_school
+  - textual_layer_must_be_explicit
+  - evidence_mode_must_be_explicit
+  - no_axis_requires_a_creator
+  - no_axis_requires_a_persistent_soul
+  - no_axis_requires_personal_judgment
+  - no_axis_requires_revelation
+  - uncertainty_in_source_must_not_be_converted_to_project_certainty
+  - social_hierarchy_in_source_must_not_be_sanitized_or_endorsed
+  - systems_mapping_is_optional_and_downstream
+  - missing_source_support_yields_UNKNOWN_not_inference
+  - similar_axis_value_does_not_imply_transmission
+  - different_axis_value_is_positive_comparative_data
+
+bounded_source_bindings:
+  buddhism:
+    head: 1c6c7a9a35901a529d377e1bd6fb86a88c1cdbe9
+    binding: synthesis/BUDDHIST_PRIMARY_SOURCE_BINDING_V2.yaml
+  hindu:
+    head: 0ee28684c0d0f92b90e5c0092cfd87fe5ee6ffd3
+    binding: synthesis/HINDU_PRIMARY_SOURCE_BINDING_V1.yaml
+
+effect_boundary:
+  changes_source_lane_claims: false
+  changes_existing_commonality_matrix: false
+  promotes_GOD_model: false
+  canonical_effect: false

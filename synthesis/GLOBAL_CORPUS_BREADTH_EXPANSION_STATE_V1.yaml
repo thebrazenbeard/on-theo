@@ -1,0 +1,60 @@
+schema_version: on-theo.global-corpus-breadth-expansion-state.v1
+status: ACTIVE_PORTFOLIO_EXPANSION
+
+trigger:
+  prior_readiness: synthesis/NON_ABRAHAMIC_COMPARISON_READINESS_V21.yaml
+  prior_frontier: GLOBAL_CORPUS_BREADTH_EXPANSION
+
+active_unit:
+  tradition: LAKOTA
+  branch: research/lakota-public-source-v1-20260920
+  head: c6818e28bb49644dc0a174dcffa625e8a12de732
+  pr: 104
+  pr_state: OPEN_DRAFT_CLEAN
+  base: corpus/global-expansion-queue-v1-20260917
+  comparison_status: HOLD
+
+artifacts:
+  - traditions/lakota/public-source-boundary-v1.md
+  - traditions/lakota/source-map-v1.md
+  - traditions/lakota/worldview-kinship-sacred-land-packet-v1.md
+  - traditions/lakota/neutral-axis-evidence-v1.yaml
+  - traditions/lakota/research-state-v1.yaml
+
+current_internal_admissions:
+  RELATIONAL_ORDER_MODEL: BOUNDED_INTERNAL
+  SACRED_LAND_PLACE_MODEL: BOUNDED_INTERNAL
+  RITUAL_ORDER_MODEL: PARTIAL_PUBLIC_CATEGORY_SUPPORT
+  KNOWLEDGE_OR_DISCLOSURE_MODEL: PARTIAL_HIGH_LEVEL
+
+current_holds:
+  - CROSS_TRADITION_COMPARISON
+  - WORLD_ORIGIN_MODEL
+  - POSTMORTEM_PATH_MODEL
+  - MORTUARY_RELATIONSHIP_MODEL
+  - ONE_FIXED_WAKAN_TANKA_THEOLOGY
+  - RESTRICTED_CEREMONIAL_RECONSTRUCTION
+
+source_policy:
+  - TRIBAL_AND_TRIBAL_COLLEGE_PUBLIC_SOURCES_FIRST
+  - COMMUNITY_AND_PERIOD_SPECIFIC
+  - HISTORICAL_ETHNOGRAPHY_MEDIATION_VISIBLE
+  - PUBLIC_ACCESS_NE_RESTRICTED_KNOWLEDGE_PERMISSION
+  - LIVING_TRADITION_NE_UNCHANGED_PRECONTACT_FORM
+
+next_active_frontier:
+  primary: WAKAN_WAKAN_TANKA_SEMANTIC_AND_COMMUNITY_SOURCE_PACKET_V1
+  branch: research/lakota-public-source-v1-20260920
+
+planned_portfolio_followups:
+  - MAYA_DIACHRONIC_RESEARCH_PACKET_V1
+  - MEXICA_NAHUA_RESEARCH_PACKET_V1
+  - OLMEC_MATERIAL_ICONOGRAPHIC_PACKET_V1
+  - DINE_PUBLIC_SOURCE_RESEARCH_PACKET_V1
+  - HAUDENOSAUNEE_PUBLIC_SOURCE_RESEARCH_PACKET_V1
+  - ANDEAN_INCA_DIACHRONIC_PACKET_V1
+
+guards:
+  - LAKOTA_NE_GENERIC_NATIVE_AMERICAN_RELIGION
+  - SIX_LANE_RESULT_NE_GLOBAL_RELIGIOUS_UNIVERSAL
+  - RECONSTRUCT_INTERNALLY_BEFORE_COMPARISON

@@ -1,0 +1,100 @@
+schema_version: on-theo.nonabrahamic-comparison-readiness.v26
+status: NON_CANONICAL_RESEARCH_AUDIT
+supersedes_for_current_research:
+  - synthesis/NON_ABRAHAMIC_COMPARISON_READINESS_V25.yaml
+
+existing_six_lane_source_heads:
+  buddhism: eb0f948788f5171d13c067daea2df54845d22f70
+  hindu: 614fa715fcacee0d7ec1ba573061d3e776e708d3
+  daoism: 708ba10413d9511648c2540ad84be74b6b5f6b5c
+  shinto: 4939c22c6b13afc1226d8860fa8dbf394e34b5c4
+  norse: 22e9fe10d1647a66458c54478c86e7ba6abd83ce
+  sumerian: 3fd5db6f05c008aeba4febe310de99e4ff484770
+
+breadth_units:
+  lakota:
+    exact_head: 8a9cee8335cadc742c9de25c90f4306702a80e8a
+    pr: 104
+    status: BOUNDED_COMPARISON_READINESS_AUDITED
+  maya:
+    exact_head: 2b5907438334537842710a81886083b9cbd0241a
+    pr: 105
+    status: BOUNDED_COMPARISON_READINESS_AUDITED
+  mexica_nahua:
+    exact_head: 00e37e475f3669ef2ee040908b126617ffcd17da
+    pr: 106
+    status: BOUNDED_COMPARISON_READINESS_AUDITED
+  olmec:
+    exact_head: cac89f2e0024c00f71d2d2a835253328c451e7ce
+    pr: 107
+    status: BOUNDED_COMPARISON_READINESS_AUDITED_LOW_TEXTUAL_CEILING
+
+olmec_method_result: >
+  Olmec evidence is comparison-ready only on questions answerable by material,
+  spatial and tightly controlled iconographic evidence. Cascajal strengthens
+  the case for Olmec writing but remains undeciphered, so it contributes no
+  readable theological propositions. Recurrent visual complexes do not license
+  native deity names or a systematic pantheon, and broad Olmec interaction does
+  not justify a one-way mother-culture religious-transmission model.
+
+axis_development:
+  SACRED_TIME_CALENDAR_MODEL:
+    status: STRONG_CANDIDATE
+    independent_support:
+      - MAYA
+      - MEXICA_NAHUA
+  SACRED_LAND_PLACE_MODEL:
+    status: STRONG_CANDIDATE
+    independent_support:
+      - LAKOTA
+      - MAYA
+      - MEXICA_NAHUA
+      - OLMEC_PARTIAL
+  RELATIONAL_ORDER_MODEL:
+    status: STRONG_CANDIDATE
+    independent_support:
+      - LAKOTA
+      - MAYA
+      - LIVING_NAHUA
+      - OLMEC_PARTIAL_INTERPRETIVE
+  HUMAN_ORIGIN_OR_EMERGENCE_MODEL:
+    status: STRONG_CANDIDATE
+    independent_support:
+      - LAKOTA
+      - MAYA
+  SACRIFICE_AND_BODILY_OFFERING_MODEL:
+    status: STRONG_DECOMPOSITION_CANDIDATE
+    source_pressure:
+      - MEXICA_NAHUA
+      - OLMEC_NOT_YET_DEEP_BOUND
+
+portfolio_method_gain:
+  - tradition_specific_evidence_ceiling_can_be_lower_without_excluding_tradition
+  - restricted_or_unavailable_knowledge_must_not_be_filled_by_analogy
+  - unreadable_writing_must_not_be_promoted_to_primary_text_semantics
+  - archaeological_comparison_can_be_valid_when_claims_remain_action_spatial_and_material
+
+matrix_policy:
+  retroactive_breadth_cell_filling: false
+  future_expanded_tests_require_fresh_all_lane_binding: true
+  original_completed_tests_remain_bound_to_original_exact_heads: true
+
+next_frontier:
+  primary: DINE_PUBLIC_SOURCE_RESEARCH_PACKET_V1
+  reason: >
+    Four Indigenous-Americas breadth lanes now have independent foundations,
+    including one deliberately low-textual-certainty archaeological lane.
+    Portfolio breadth should return to a living Indigenous nation, applying
+    community-source and restricted-knowledge controls before comparison.
+
+holds:
+  global_generalization_from_current_sample: PROHIBITED
+  perennialist_all_religions_matrix: PROHIBITED_AT_CURRENT_EVIDENCE
+  restricted_sacred_knowledge_reproduction: PROHIBITED
+
+guards:
+  - EXACT_HEAD_BINDING_REQUIRED
+  - COMPARISON_READY_NE_TRADITION_COMPLETE
+  - PUBLIC_SOURCE_NE_RESTRICTED_KNOWLEDGE_PERMISSION
+  - COMMUNITY_REGION_PERIOD_AND_EVIDENCE_MODE_REQUIRED
+  - SYSTEMS_ANALOGY_IS_DOWNSTREAM

@@ -1,0 +1,37 @@
+schema_version: on-theo.daoism-synthesis-source-binding.v4
+status: NON_CANONICAL_EXACT_SOURCE_EXTENSION
+supersedes_for_current_research:
+  - synthesis/DAOISM_PRIMARY_SOURCE_BINDING_V3.yaml
+
+source_extension:
+  branch: research/daoism-manuscript-proposition-v1-20260920
+  head: 767fa5210c6048324799ca2b67fe4e78be066511
+  draft_pr: 99
+
+new_contact_witness_artifacts:
+  - traditions/daoism/yang-xi-forty-two-sections-control-v1.md
+  - traditions/daoism/yao-boduo-stele-contact-control-v1.md
+  - traditions/daoism/buddhist-contact-witness-locators-v1.yaml
+  - traditions/daoism/research-state-v5.yaml
+
+upgraded_contact_claims:
+  YANG_XI_FORTY_TWO_SECTIONS:
+    relation: SOURCE_SPECIFIC_TRANSMISSION_WITH_RECODING
+    ceiling: STRONG_SCHOLARLY_TEXTUAL_DEPENDENCE
+    unresolved:
+      - full_line_by_line_Chinese_alignment
+      - autograph_witness
+      - Zhen_gao_redaction_history
+  YAO_BODUO_STELE:
+    date: 496_CE
+    relation: MATERIAL_HYBRIDIZATION_WITH_RETAINED_DAOIST_IDENTITY
+    ceiling: OBJECT_HIGH_INTERPRETATION_BOUNDED
+    unresolved:
+      - full_inscription_binding
+      - museum_catalogue_provenance
+
+guards:
+  - STRONG_TEXTUAL_DEPENDENCE_NE_AUTOGRAPH_TO_AUTOGRAPH_TRANSMISSION
+  - RECEIVED_T784_NE_PRISTINE_FIRST_TRANSLATION
+  - MATERIAL_OBJECT_NE_SINGLE_SOURCE_DERIVATION
+  - CONTACT_NE_SEMANTIC_IDENTITY

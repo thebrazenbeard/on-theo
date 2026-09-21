@@ -1,0 +1,58 @@
+schema_version: on-theo.buddhist-synthesis-source-binding.v1
+status: NON_CANONICAL_EXACT_SOURCE_EXTENSION
+synthesis_branch: research/nonabrahamic-synthesis-readiness-v1-20260920
+synthesis_parent_commit: 79506e5cba846aedc819664493f58d58ecb6697b
+
+source_extension:
+  branch: research/buddhist-neutral-axis-primary-sources-v1-20260920
+  head: 424141833be13e3db085d821c4ec6f30455a84c9
+  base_branch: buddhism
+  base_head: b9f2e2a635cd98129b0a0122aeb8a2e7a65cfaa5
+  draft_pr: 97
+
+source_artifacts:
+  - traditions/buddhism/early-ontology-source-packet-v1.md
+  - traditions/buddhism/neutral-axis-evidence-v1.yaml
+  - traditions/buddhism/research-state-v2.yaml
+
+strengthened_axes:
+  - PERSON_OR_SELF_MODEL
+  - CAUSAL_ORDER_TYPE
+  - CONTINUITY_MODEL
+  - MORAL_CAUSALITY_MODEL
+  - LIBERATION_OR_FINAL_TRANSFORMATION_MODEL
+
+partial_axis:
+  - WORLD_STATUS_MODEL
+
+still_unresolved:
+  - AGENCY_AND_AUTHORITY_MODEL
+  - KNOWLEDGE_OR_DISCLOSURE_MODEL
+  - INTERVENTION_MODEL
+  - full_Buddhist_cosmology
+  - full_karma_mechanism
+  - later_school_metaphysics
+
+primary_loci:
+  - SN_22_59
+  - SN_44_10
+  - SN_12_2
+  - SN_12_15
+  - SN_12_38
+  - AN_6_63
+  - MN_72
+  - UD_8_3
+
+method_effect:
+  source_proposition_precedes_neutral_axis: true
+  neutral_axis_precedes_systems_analogy: true
+  broad_Buddhist_synthesis_admitted: false
+  GOD_model_promoted_to_source_meaning: false
+
+guards:
+  - SOURCE_EXTENSION_NE_CANONICAL_MERGE
+  - PALI_WITNESS_NE_COMPLETE_EARLY_BUDDHIST_CORPUS
+  - PRIMARY_LOCUS_NE_SINGLE_SCHOOL_INTERPRETATION
+  - ANATTA_NE_ANNIHILATIONISM
+  - REBIRTH_NE_PERMANENT_SOUL_TRANSMIGRATION
+  - UNCONDITIONED_NE_SIMULATION_SUBSTRATE

@@ -1,0 +1,102 @@
+schema_version: on-theo.cross-lane-frontier-reaudit.v1
+status: NON_CANONICAL_METHOD_AUDIT
+source_synthesis_head: 3073095d6c6ac3ed00ee4ce46a31393af57810e0
+
+exact_source_heads:
+  buddhism: eb0f948788f5171d13c067daea2df54845d22f70
+  hindu: 614fa715fcacee0d7ec1ba573061d3e776e708d3
+  daoism: 708ba10413d9511648c2540ad84be74b6b5f6b5c
+  shinto: 4939c22c6b13afc1226d8860fa8dbf394e34b5c4
+  norse: 22e9fe10d1647a66458c54478c86e7ba6abd83ce
+  sumerian: 3fd5db6f05c008aeba4febe310de99e4ff484770
+
+already_tested:
+  - CAUSAL_ORDER_TYPE
+  - CONTINUITY_MODEL
+  - RITUAL_ORDER_MODEL
+  - PERSON_OR_SELF_MODEL
+  - CONTACT_AND_REINTERPRETATION_MODEL
+  - POLITICAL_SACRALIZATION_MODEL
+  - WORLD_ORIGIN_MODEL
+  - MORTUARY_RELATIONSHIP_MODEL
+
+untested_candidates:
+  INSTITUTIONALIZATION_MODEL:
+    admitted_lanes:
+      buddhism: BOUNDED_STRENGTHENED
+      daoism: BOUNDED_DIAchRONIC
+      shinto: BOUNDED
+      norse: PARTIAL
+      sumerian: BOUNDED_DEEP_CHAIN
+    source_strength: HIGH_HETEROGENEOUS
+    discriminating_value: HIGH
+    requires_cell_filling: false
+    key_problem: >
+      Community organization, ritual/legal procedure, register hierarchy,
+      state-administered shrine systems, elite ritual landscapes, and
+      temple/city institutions are all institutional phenomena but are not one
+      institution type.
+    disposition: SELECT_NEXT_FRONTIER
+
+  OFFERING_EXCHANGE_MODEL:
+    admitted_lanes:
+      hindu: PARTIAL_VEDIC_LAYER
+      norse: MATERIAL_SUPPORT
+      sumerian: BOUNDED_TEXTUAL_AND_RITUAL_SUPPORT
+    source_strength: MODERATE_TO_HIGH
+    discriminating_value: HIGH
+    requires_cell_filling: false
+    disposition: RUNNABLE_AFTER_INSTITUTIONALIZATION
+
+  TRANSFORMATION_MODEL:
+    admitted_lanes:
+      daoism: BOUNDED
+      shinto: BOUNDED_DIAchRONIC_CASES
+      norse: PARTIAL
+      sumerian: BOUNDED_DIVINE_CASES
+    source_strength: HETEROGENEOUS
+    discriminating_value: HIGH
+    concern: >
+      Current cells span personal identity, divine myth, posthumous status, and
+      world-scale change; further decomposition is likely required before a
+      clean test.
+    disposition: REQUIRES_AXIS_DECOMPOSITION_BEFORE_PRIORITY
+
+  KNOWLEDGE_OR_DISCLOSURE_MODEL:
+    admitted_lanes:
+      hindu: BOUNDED_READY
+      daoism: BOUNDED_DIAchRONIC
+    source_strength: HIGH_BUT_NARROW
+    discriminating_value: HIGH
+    disposition: DEFER_FOR_MORE_CROSS_LANE_COVERAGE
+
+  FATE_CONSTRAINT_MODEL:
+    admitted_lanes:
+      norse: BOUNDED
+      sumerian: PARTIAL_DUMUZID_CASE
+    source_strength: NARROW
+    disposition: DEFER
+
+  WORLD_TERMINUS_RENEWAL_MODEL:
+    admitted_lanes:
+      norse: BOUNDED
+    source_strength: SINGLE_LANE
+    disposition: NOT_CROSS_LANE_READY
+
+selection:
+  next_frontier: INSTITUTIONALIZATION_CROSS_TRADITION_TEST
+  rationale:
+    - five_source_admitted_lanes
+    - no_cell_filling_required
+    - multiple_independent_evidence_modes
+    - high_risk_of_false_equivalence_worth_testing
+    - strong_capacity_to_distinguish_organization_from_doctrine
+    - strong_capacity_to_separate_state_coordination_from_centralized_religious_authority
+
+guards:
+  - COVERAGE_NE_PRIORITY_BY_ITSELF
+  - ORGANIZATION_NE_DOCTRINAL_UNIFORMITY
+  - STATE_RELATION_NE_CENTRALIZED_CHURCH
+  - MATERIAL_COMPLEX_NE_FORMAL_MEMBERSHIP_SYSTEM
+  - MODERN_REVIVAL_NE_ANCIENT_INSTITUTION
+  - SHARED_INSTITUTIONALIZATION_AXIS_NE_SHARED_INSTITUTION_TYPE

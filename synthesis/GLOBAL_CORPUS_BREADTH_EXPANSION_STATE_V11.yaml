@@ -1,0 +1,69 @@
+schema_version: on-theo.global-corpus-breadth-expansion-state.v11
+status: POST_YORUBA_EXPANSION_ACTIVE
+supersedes_for_current_research:
+  - synthesis/GLOBAL_CORPUS_BREADTH_EXPANSION_STATE_V10.yaml
+
+latest_unit:
+  yoruba_ifa:
+    exact_head: 2000081c974c25ce8f40a06e079033ac600d5ce8
+    pr: 120
+    readiness: BOUNDED
+    comparison_eligible:
+      bounded:
+        - DOCUMENTARY_MEMORY_MODEL
+        - KNOWLEDGE_OR_DISCLOSURE_MODEL
+        - AGENCY_AND_AUTHORITY_MODEL
+        - INSTITUTIONALIZATION_MODEL
+        - RELATIONAL_ORDER_MODEL
+        - CONTINUITY_MODEL
+        - CONTACT_AND_REINTERPRETATION_MODEL
+      partial:
+        - MORTUARY_RELATIONSHIP_MODEL
+        - RITUAL_ORDER_MODEL
+        - REVIVAL_RECONSTRUCTION_MODEL
+
+new_expanded_tests:
+  documentary_memory_v2:
+    path: synthesis/DOCUMENTARY_MEMORY_CROSS_TRADITION_TEST_V2.md
+    result: EXPANDED_MATURE
+    controls:
+      - HAUDENOSAUNEE_WAMPUM
+      - INCA_KHIPU
+      - IFA_INDEXED_OPEN_ORAL_CORPUS
+  knowledge_governance_v1:
+    path: synthesis/KNOWLEDGE_GOVERNANCE_CROSS_TRADITION_TEST_V1.md
+    result: EXPANDED_MATURE
+    controls:
+      - DINE_ACCESS_DISCLOSURE_GOVERNANCE
+      - LAKOTA_COMMUNITY_DISCLOSURE_BOUNDARY
+      - HAUDENOSAUNEE_OFFICE_MATERIAL_STEWARDSHIP
+      - IFA_SPECIALIST_INTERPRETIVE_AUTHORITY
+
+method_schema:
+  current: synthesis/EMERGING_NEUTRAL_AXIS_SCHEMA_V3.yaml
+  new_dimensions:
+    documentary_memory:
+      - ENCODING_SURFACE
+      - CONTENT_REPERTOIRE
+      - INTERPRETIVE_INSTITUTION
+      - RETRIEVAL_EVENT
+      - FIXEDNESS_MODEL
+      - SEMANTIC_RECOVERABILITY_MODEL
+    knowledge_governance:
+      - ACCESS_CONTROL
+      - DISCLOSURE_AUTHORITY
+      - RECORDING_PERMISSION
+      - TRANSMISSION_MODE
+      - SPECIALIST_QUALIFICATION
+      - OFFICE_STEWARDSHIP
+      - COMMUNITY_AUTHORITY
+      - INSTITUTIONAL_SAFEGUARDING
+      - DELIBERATE_NONCOLLECTION
+
+next_frontier:
+  primary: JAIN_DIACHRONIC_PACKET_V1
+  gap_audit: synthesis/GLOBAL_BREADTH_GAP_AUDIT_V3.yaml
+
+guards:
+  - ORAL_MATERIAL_TEXTUAL_MEDIA_NOT_HIERARCHICALLY_RANKED_BY_MEDIUM
+  - INTERNAL_RECONSTRUCTION_BEFORE_JAIN_COMPARISON

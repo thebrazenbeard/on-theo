@@ -1,0 +1,50 @@
+schema_version: on-theo.nonabrahamic-comparison-readiness.v12
+status: NON_CANONICAL_RESEARCH_AUDIT
+supersedes_for_current_research:
+  - synthesis/NON_ABRAHAMIC_COMPARISON_READINESS_V11.yaml
+
+source_heads:
+  buddhism: eb0f948788f5171d13c067daea2df54845d22f70
+  hindu: 614fa715fcacee0d7ec1ba573061d3e776e708d3
+  daoism: 483d1bcaebb57a00cda5eb30c15bc3908fdac438
+  shinto: 144ee868e4976428dbfe9c5ddc0022d03a2c194a
+  norse: 22e9fe10d1647a66458c54478c86e7ba6abd83ce
+  sumerian: 3fd5db6f05c008aeba4febe310de99e4ff484770
+
+portfolio_state:
+  six_lanes_exactly_bound: true
+  causal_order_all_six_admitted: true
+  continuity_all_six_admitted: true
+  ritual_order_all_six_bounded: true
+  person_self_all_six_admitted: true
+  direct_convergence_or_transmission_claims_allowed: false
+  broad_all_tradition_synthesis_allowed: false
+
+current_cross_tradition_tests:
+  - synthesis/CAUSAL_CONTINUITY_CROSS_TRADITION_TEST_V1.md
+  - synthesis/RITUAL_ORDER_CROSS_TRADITION_TEST_V2.md
+  - synthesis/PERSON_SELF_CROSS_TRADITION_TEST_V1.md
+
+current_method_result:
+  strongest_synthesis_target: COMPARATIVE_PROBLEM_SPACE
+  one_hidden_doctrine_supported: false
+  universal_soul_doctrine_supported: false
+  systems_model_role: OPTIONAL_DOWNSTREAM_SPECULATIVE_MAPPING
+
+next_frontier:
+  primary: DAOIST_BUDDHIST_CONTACT_REINTERPRETATION
+  secondary: POLITICAL_SACRALIZATION_DEEPENING
+
+holds:
+  direct_cross_tradition_convergence_or_transmission: HOLD
+  perennialist_all_religions_matrix: PROHIBITED_AT_CURRENT_EVIDENCE
+
+guards:
+  - PERSONHOOD_NE_CONTINUITY
+  - SOUL_TERM_REQUIRES_SOURCE_SPECIFIC_DEFINITION
+  - TAMA_NE_WESTERN_IMMORTAL_SOUL
+  - NOT_SELF_NE_SIMPLE_NIHILISM
+  - SELF_LANGUAGE_NE_ONE_LATER_SCHOOL_SYSTEM
+  - POSTMORTEM_IDENTITY_NE_UNCHANGED_SUBSTANTIAL_SELF
+  - CONTACT_NE_TRANSMISSION
+  - SYSTEMS_ANALOGY_IS_DOWNSTREAM

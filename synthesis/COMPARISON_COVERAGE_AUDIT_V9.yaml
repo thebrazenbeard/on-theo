@@ -1,0 +1,73 @@
+schema_version: on-theo.comparison-coverage-audit.v9
+status: NON_CANONICAL_METHOD_AUDIT
+supersedes_for_current_research:
+  - synthesis/COMPARISON_COVERAGE_AUDIT_V8.yaml
+matrix: synthesis/BOUNDED_NEUTRAL_COMPARISON_MATRIX_V9.yaml
+lane_count: 6
+
+coverage:
+  CAUSAL_ORDER_TYPE:
+    admitted_total: 6
+  CONTINUITY_MODEL:
+    admitted_total: 6
+  RITUAL_ORDER_MODEL:
+    admitted_total: 6
+  PERSON_OR_SELF_MODEL:
+    admitted_total: 6
+  CONTACT_AND_REINTERPRETATION_MODEL:
+    admitted_total: 4
+    cross_tradition_test_complete: true
+  POLITICAL_SACRALIZATION_MODEL:
+    admitted_total: 4
+    bounded: 2
+    partial: 2
+    cross_tradition_test_complete: true
+  WORLD_ORIGIN_MODEL:
+    admitted_total: 4
+    bounded: 4
+    cross_tradition_test_complete: true
+    comparison_schema_decomposed: true
+  MORTUARY_RELATIONSHIP_MODEL:
+    admitted_test_lanes: 3
+    bounded: 1
+    partial: 2
+    cross_tradition_test_complete: true
+    comparison_schema_decomposed: true
+
+cross_lane_tests_complete:
+  - CAUSAL_ORDER_TYPE
+  - CONTINUITY_MODEL
+  - RITUAL_ORDER_MODEL
+  - PERSON_OR_SELF_MODEL
+  - CONTACT_AND_REINTERPRETATION_MODEL
+  - POLITICAL_SACRALIZATION_MODEL
+  - WORLD_ORIGIN_MODEL
+  - MORTUARY_RELATIONSHIP_MODEL
+
+mortuary_method_conclusions:
+  - corpse_grave_and_possession_relationship_must_be_separated_from_postmortem_person_or_spirit_claims
+  - material_social_continuity_does_not_prove_metaphysical_survival
+  - Sumerian_textual_sources_license_stronger_welfare_effect_claims_than_archaeology_alone
+  - Norse_material_evidence_strongly_supports_continuing_social_relation_without_fixing_one_afterlife_ontology
+  - Shinto_mortuary_cell_is_later_diachronic_and_contact_transformed
+  - social_status_and_historical_layer_are_required_comparison_fields
+
+next_frontier_policy:
+  status: REAUDIT_REQUIRED
+  reason: >
+    The previously named cross-lane frontier has now been completed. Select the
+    next frontier only after auditing currently admitted but untested axes
+    against exact source heads; do not promote a candidate merely because it has
+    a high apparent cell count.
+
+next_source_deepening:
+  - DAOIST_DUREN_JING_LOAN_VOCABULARY
+  - DAOIST_HUAHU_PRIMARY_FRAGMENT_MAP
+  - SHINTO_PRIMARY_HUMAN_SPIRIT_LINE_BINDING
+  - BUDDHIST_STUPA_RELIC_AND_LAY_RITUAL
+
+guards:
+  - COVERAGE_IS_NOT_IMPORTANCE
+  - DO_NOT_RESEARCH_MERELY_TO_FILL_CELLS
+  - SHARED_AXIS_NE_SHARED_MECHANISM
+  - EVIDENCE_MODE_DIFFERENCE_MUST_REMAIN_VISIBLE

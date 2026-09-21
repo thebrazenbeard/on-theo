@@ -1,0 +1,124 @@
+schema_version: on-theo.emerging-neutral-axis-schema.v1
+status: NON_CANONICAL_METHOD_DEVELOPMENT
+
+source_heads:
+  lakota: 8a9cee8335cadc742c9de25c90f4306702a80e8a
+  maya: 2b5907438334537842710a81886083b9cbd0241a
+  mexica_nahua: 00e37e475f3669ef2ee040908b126617ffcd17da
+  olmec: cac89f2e0024c00f71d2d2a835253328c451e7ce
+  dine: ac988c4a31f354e7c4d902d286c0c950293ffb8a
+  haudenosaunee: 506d95eb449bc4d11fc61dbe9c18ffca7ab94f5a
+
+axes:
+  RELATIONAL_ORDER_MODEL:
+    status: PROMOTE_TO_EXPANDED_TEST_AXIS
+    neutral_question: >
+      How are persons, kin, other-than-human beings, land/place, community,
+      sacred powers, ecological processes and future generations constituted
+      through relations, obligations and reciprocal responsibilities?
+    subdimensions:
+      - KIN_AND_SOCIAL_RELATION
+      - HUMAN_MORE_THAN_HUMAN_RELATION
+      - LAND_PLACE_RELATION
+      - ECOLOGICAL_AGRICULTURAL_RELATION
+      - INTERGENERATIONAL_RELATION
+      - LEGAL_POLITICAL_RELATIONALITY
+    guards:
+      - RELATIONAL_LANGUAGE_NE_ONE_ONTOLOGY
+      - RECIPROCITY_NE_QUID_PRO_QUO
+      - RELATIONALITY_NE_LACK_OF_INDIVIDUAL_AGENCY
+
+  SACRED_LAND_PLACE_MODEL:
+    status: PROMOTE_TO_EXPANDED_TEST_AXIS
+    neutral_question: >
+      How do named places, territories, mountains, caves, waters, urban centers,
+      ceremonial landscapes and protected cultural places participate in
+      identity, origin, law, ceremony, sacred presence and obligation?
+    subdimensions:
+      - CONSTITUTIVE_HOMELAND
+      - BOUNDARY_GEOGRAPHY
+      - SACRED_SITE_OR_PLACE
+      - URBAN_SACRED_CENTER
+      - CEREMONIAL_LANDSCAPE
+      - ANCESTOR_PLACE_RELATION
+      - RESOURCE_OR_GATHERING_PLACE
+      - PROTECTED_SENSITIVE_GEOGRAPHY
+    guards:
+      - SACRED_PLACE_NE_PROPERTY_ONLY
+      - PLACE_SIMILARITY_NE_SHARED_GEOGRAPHIC_THEOLOGY
+      - PUBLIC_PLACE_NE_PERMISSION_TO_DISCLOSE_SENSITIVE_LOCATION
+      - ARCHAEOLOGICAL_LANDSCAPE_INTERPRETATION_NE_PRIMARY_TEXT
+
+  SACRED_TIME_CALENDAR_MODEL:
+    status: PROMOTE_TO_EXPANDED_TEST_AXIS
+    neutral_question: >
+      How are astronomical, ecological, agricultural, ritual, divinatory,
+      historical and social cycles organized through sacred timekeeping?
+    subtypes:
+      - NUMERICAL_DIVINATORY_CALENDAR
+      - ASTRONOMICAL_RITUAL_CALENDAR
+      - SEASONAL_ECOLOGICAL_CEREMONIAL_TIME
+      - AGRICULTURAL_CYCLE
+      - LUNAR_TIMING
+      - OFFICE_GOVERNED_RITUAL_TIMING
+      - HISTORICAL_CYCLICAL_INTERSECTION
+    guards:
+      - SHARED_SACRED_TIME_AXIS_NE_SHARED_CALENDAR_MECHANISM
+      - CALENDAR_NE_PROPHECY_ONLY
+      - ASTRONOMY_NE_SECULAR_BY_DEFINITION
+      - SEASONAL_TIME_NE_NUMERICAL_CALENDAR_IDENTITY
+
+  KNOWLEDGE_GOVERNANCE_DIMENSION:
+    status: ADD_TO_KNOWLEDGE_OR_DISCLOSURE_SCHEMA
+    parent_axis: KNOWLEDGE_OR_DISCLOSURE_MODEL
+    neutral_question: >
+      Who may hold, transmit, record, access or disclose religious knowledge,
+      under what conditions, and what information is intentionally excluded from
+      public circulation?
+    subdimensions:
+      - PUBLIC_DISCLOSURE
+      - COMMUNITY_STEWARDSHIP
+      - SPECIALIST_AUTHORITY
+      - APPRENTICESHIP
+      - ORAL_TRANSMISSION
+      - DOCUMENTARY_MEMORY
+      - CONDITIONAL_ACCESS
+      - RESTRICTED_OR_NONCOLLECTABLE_KNOWLEDGE
+    guards:
+      - RESTRICTED_KNOWLEDGE_NE_MISSING_DATA
+      - ORALITY_NE_LACK_OF_KNOWLEDGE
+      - PUBLIC_EXISTENCE_NE_PUBLIC_CONTENT
+
+  DOCUMENTARY_MEMORY_MODEL:
+    status: CANDIDATE_NOT_YET_PROMOTED
+    neutral_question: >
+      How are law, treaty, title, history and collective memory stabilized
+      through oral, material, performative, mnemonic and written documentary
+      practices?
+    pressure:
+      - HAU_WAMPUM
+      - MAYA_MANUSCRIPT_AND_ORAL_COMMUNITY
+      - MEXICA_NAHUA_PICTORIAL_AND_ALPHABETIC_COLONIAL_ARCHIVES
+      - DINE_CURRENT_LAW_AND_ORAL_RESTRICTION
+    reason_for_hold: >
+      The distinction between knowledge transmission and documentary memory
+      needs broader cross-tradition testing before becoming a full neutral axis.
+
+  HUMAN_ORIGIN_OR_EMERGENCE_MODEL:
+    status: STRONG_CANDIDATE_NOT_TESTED_HERE
+    reason_for_hold: >
+      Lakota and Maya already show why human emergence must be separated from
+      cosmic world origin, but additional independent lanes should be ingested
+      before a broad test.
+
+  SACRIFICE_AND_BODILY_OFFERING_MODEL:
+    status: STRONG_DECOMPOSITION_CANDIDATE_NOT_TESTED_HERE
+    reason_for_hold: >
+      Mexica evidence strongly requires decomposition from generic offering,
+      but the breadth sample is not yet independently populated enough.
+
+global_guards:
+  - CANDIDATE_AXIS_NE_GLOBAL_UNIVERSAL
+  - SHARED_AXIS_QUESTION_NE_SHARED_ANSWER
+  - SIMILARITY_NE_TRANSMISSION
+  - EVIDENCE_CEILING_REMAINS_TRADITION_SPECIFIC

@@ -1,0 +1,71 @@
+schema_version: on-theo.comparison-coverage-audit.v11
+status: NON_CANONICAL_METHOD_AUDIT
+supersedes_for_current_research:
+  - synthesis/COMPARISON_COVERAGE_AUDIT_V10.yaml
+matrix: synthesis/BOUNDED_NEUTRAL_COMPARISON_MATRIX_V11.yaml
+lane_count: 6
+
+coverage:
+  CAUSAL_ORDER_TYPE:
+    cross_tradition_test_complete: true
+  CONTINUITY_MODEL:
+    cross_tradition_test_complete: true
+  RITUAL_ORDER_MODEL:
+    cross_tradition_test_complete: true
+  PERSON_OR_SELF_MODEL:
+    cross_tradition_test_complete: true
+  INSTITUTIONALIZATION_MODEL:
+    admitted_total: 5
+    cross_tradition_test_complete: true
+  CONTACT_AND_REINTERPRETATION_MODEL:
+    admitted_total: 4
+    cross_tradition_test_complete: true
+  POLITICAL_SACRALIZATION_MODEL:
+    admitted_total: 4
+    cross_tradition_test_complete: true
+  WORLD_ORIGIN_MODEL:
+    admitted_total: 4
+    cross_tradition_test_complete: true
+  MORTUARY_RELATIONSHIP_MODEL:
+    admitted_test_lanes: 3
+    cross_tradition_test_complete: true
+  OFFERING_EXCHANGE_MODEL:
+    admitted_test_lanes: 3
+    bounded: 1
+    partial: 2
+    cross_tradition_test_complete: true
+    comparison_schema_decomposed: true
+
+offering_method_conclusions:
+  - offering_act_must_be_separated_from_reciprocity_status
+  - textual_efficacy_claim_must_be_separated_from_material_deposition
+  - unknown_recipient_must_remain_unknown
+  - funerary_provisioning_is_not_the_same_mechanism_as_divine_sacrifice
+  - material_deposition_does_not_reveal_requested_outcome_by_itself
+
+next_frontier_candidates:
+  TRANSFORMATION_MODEL:
+    runnable_lanes: 4
+    disposition: AXIS_DECOMPOSITION_REQUIRED_THEN_TEST
+  KNOWLEDGE_OR_DISCLOSURE_MODEL:
+    runnable_lanes: 2
+    disposition: DEFER
+  FATE_CONSTRAINT_MODEL:
+    runnable_lanes: 2
+    disposition: DEFER
+  WORLD_TERMINUS_RENEWAL_MODEL:
+    runnable_lanes: 1
+    disposition: NOT_CROSS_LANE_READY
+
+next_frontier:
+  primary: TRANSFORMATION_MODEL_DECOMPOSITION_AND_CROSS_TRADITION_TEST
+  condition: >
+    Fresh-check Daoist, Shinto, Norse, and Sumerian exact heads and separate
+    transformation of person, posthumous status, divine state, and world-order
+    before comparison.
+
+guards:
+  - COVERAGE_IS_NOT_IMPORTANCE
+  - DO_NOT_FILL_CELLS_FOR_SYMMETRY
+  - SHARED_AXIS_NE_SHARED_MECHANISM
+  - EVIDENCE_MODE_DIFFERENCE_MUST_REMAIN_VISIBLE

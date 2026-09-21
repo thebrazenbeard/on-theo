@@ -1,0 +1,30 @@
+schema_version: on-theo.buddhism-synthesis-source-binding.v3
+status: NON_CANONICAL_EXACT_SOURCE_EXTENSION
+supersedes_for_current_research:
+  - synthesis/BUDDHIST_PRIMARY_SOURCE_BINDING_V2.yaml
+
+source_extension:
+  branch: research/buddhist-neutral-axis-primary-sources-v1-20260920
+  head: eb0f948788f5171d13c067daea2df54845d22f70
+  draft_pr: 97
+
+new_source_artifacts:
+  - traditions/buddhism/vinaya-ritual-order-packet-v1.md
+  - traditions/buddhism/neutral-axis-evidence-v2.yaml
+  - traditions/buddhism/research-state-v5.yaml
+
+strengthened_axes:
+  - RITUAL_ORDER_MODEL
+  - INSTITUTIONALIZATION_MODEL
+
+ritual_controls:
+  - VINAYA_PROCEDURE_NE_ALL_BUDDHIST_RITUAL
+  - CANONICAL_VINAYA_FORM_NE_VERBATIM_BUDDHA_LIFETIME_PROCEDURE
+  - ONE_VINAYA_RECENSION_NE_ALL_BUDDHIST_ORDINATION
+  - DISCIPLINARY_PURITY_NE_SHINTO_KEGARE
+  - ASOKAN_LOCAL_SANGHA_GOVERNANCE_NE_LATER_VINAYA_DETAIL_IDENTITY
+
+readiness:
+  bounded_Buddhist_comparison: STRENGTHENED
+  ritual_order_comparison: BOUNDED_MONASTIC_LAYER
+  broad_Buddhism_synthesis: false

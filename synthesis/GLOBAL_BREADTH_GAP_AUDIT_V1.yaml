@@ -1,0 +1,83 @@
+schema_version: on-theo.global-breadth-gap-audit.v1
+status: LIVE_REPOSITORY_GAP_AUDIT
+source_state:
+  expansion_queue_branch: corpus/global-expansion-queue-v1-20260917
+  expansion_queue_head: cd588c7cabc210f8ae8eb43c148170872aa4b9ac
+  world_traditions_branch: corpus/world-traditions-expansion-v1-20260917
+  world_traditions_head: 5e6db919ab3b40615c14257e2a56751579cb72fe
+
+existing_foundation_or_deep_lanes:
+  ancient_egyptian: PRESENT
+  ancient_israelite: PRESENT
+  canaanite_ugaritic: PRESENT
+  mesopotamian: PRESENT
+  sumerian: DEEPENED
+  zoroastrian: PRESENT
+  vedic_brahmanical: PRESENT
+  post_vedic_hindu: DEEPENED
+  early_buddhist: PRESENT_AND_DEEPENED
+  shinto: DEEPENED
+  daoism: DEEPENED
+  ancient_norse: DEEPENED
+  modern_asatru_heathenry: PARTIAL_EXISTING_QUEUE_FAMILY_NEEDS_LATER_AUDIT
+  lakota: DEEPENED_BOUNDED_READINESS
+  maya: ADDED_BOUNDED_READINESS
+  mexica_nahua: ADDED_BOUNDED_READINESS
+  olmec: ADDED_BOUNDED_READINESS
+  dine: ADDED_BOUNDED_READINESS
+  haudenosaunee: ADDED_BOUNDED_READINESS
+  andean_inca: ADDED_BOUNDED_READINESS
+
+queued_but_unrepresented:
+  MODERN_SATANISM:
+    status: HIGHEST_PRIORITY_LIVE_GAP
+    repository_branch_match: NONE
+    code_match: NONE
+    required_slices:
+      - HISTORICAL_PRECURSORS
+      - CHURCH_OF_SATAN
+      - TEMPLE_OF_SET_RELATED_DISTINCT
+      - THE_SATANIC_TEMPLE
+      - THEISTIC_SATANISMS
+      - INDEPENDENT_PRACTITIONERS
+      - EXTREMIST_FRINGE_SEPARATE
+  DEVIL_WORSHIP_ACCUSATION_AND_SELF_IDENTIFICATION:
+    status: SECOND_LIVE_GAP
+    repository_branch_match: NONE
+    code_match: NONE
+    required_control: ACCUSATION_NE_SELF_IDENTIFICATION
+
+next_frontier:
+  primary: MODERN_SATANISM_DIACHRONIC_PACKET_V1
+  subsequent: DEVIL_WORSHIP_ACCUSATION_HISTORY_V1
+
+selection_reason: >
+  This is not chosen from memory. It is the next still-unrepresented family in
+  the repository's own active world-traditions expansion plan after the earlier
+  requested Shinto, Daoism, Hindu, Sumerian, Norse and Lakota families were
+  populated.
+
+method_requirements:
+  - SELF_IDENTIFIED_SATANISM_NE_HISTORICAL_ACCUSATION
+  - CHURCH_OF_SATAN_NE_THE_SATANIC_TEMPLE
+  - NON_THEISTIC_SATANISM_NE_THEISTIC_SATANISM
+  - TEMPLE_OF_SET_NE_AUTOMATIC_SATANISM
+  - ROMANTIC_LITERARY_SATANISM_NE_MODERN_ORGANIZATIONAL_SATANISM
+  - SATANIC_PANIC_NE_EVIDENCE_OF_HIDDEN_SATANIC_RELIGION
+  - EXTREMIST_FRINGE_NE_REPRESENTATIVE_OF_MODERN_SATANISM
+
+future_unqueued_gap_audit:
+  status: DEFER_UNTIL_QUEUE_COMPLETION
+  examples_to_test_later:
+    - JAIN
+    - SIKH
+    - YORUBA_IFA
+    - MANDAEAN
+    - YAZIDI
+    - AFRICAN_TRADITIONAL_RELIGION_FAMILIES
+    - OCEANIC_INDIGENOUS_TRADITIONS
+
+guards:
+  - RARE_NE_UNSOURCED
+  - GAP_NE_IMPORTANCE_RANKING
+  - QUEUE_ORDER_NE_TRUTH_PRIORITY

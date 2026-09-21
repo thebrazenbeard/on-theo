@@ -1,0 +1,123 @@
+schema_version: on-theo.neutral-comparison-axes.v5
+status: PROJECT_METHOD_CANDIDATE_NON_CANONICAL
+supersedes_for_current_research:
+  - synthesis/NEUTRAL_COMPARISON_AXES_V4.yaml
+
+layers:
+  - SOURCE_PROPOSITION
+  - TEXTUAL_OR_HISTORICAL_LAYER
+  - EVIDENCE_MODE
+  - NEUTRAL_COMPARISON_AXIS
+  - OPTIONAL_SYSTEMS_ANALOGY
+
+axes:
+  - id: WORLD_ORIGIN_MODEL
+    question: >
+      What, if anything, does the source claim about origin, emergence,
+      eternality, recurrence, ordering, or unknowability of the world?
+
+  - id: CAUSAL_ORDER_TYPE
+    question: What kind of causal order does the source describe or presuppose?
+
+  - id: GENERATION_AND_CONTROL_MODEL
+    question: >
+      Does the source distinguish generating, sustaining, nurturing, possessing,
+      commanding, judging, and governing? Which roles are combined and which are
+      explicitly separated?
+    reason_added: >
+      Laozi 51 makes generation/nurture compatible with non-possession and
+      non-domination, showing that "creator", "owner", and "controller" cannot be
+      neutral synonyms.
+
+  - id: AGENCY_AND_AUTHORITY_MODEL
+    question: What possesses privileged agency or authority, if anything?
+
+  - id: PERSON_OR_SELF_MODEL
+    question: >
+      What constitutes a person/self, and what is denied, affirmed, conditioned,
+      divisible, transformed, or enduring?
+
+  - id: TRANSFORMATION_MODEL
+    question: >
+      How does a source conceptualize changes of form, identity, state,
+      life/death, or perspective, and what if anything remains invariant?
+    reason_added: >
+      Zhuangzi Inner Chapters treat transformation itself as a primary conceptual
+      object rather than merely a special case of postmortem continuity.
+
+  - id: CONTINUITY_MODEL
+    question: >
+      What, if anything, continues across death, transformation, rebirth, or
+      resurrection?
+
+  - id: POSTMORTEM_PATH_MODEL
+    question: >
+      Does the source distinguish routes, destinations, returns, non-returns,
+      intermediate states, or repeated birth/death patterns?
+
+  - id: MORAL_CAUSALITY_MODEL
+    question: How do actions or character acquire consequences?
+
+  - id: LIBERATION_OR_FINAL_TRANSFORMATION_MODEL
+    question: What counts as desired or final transformation, if defined?
+
+  - id: KNOWLEDGE_OR_DISCLOSURE_MODEL
+    question: >
+      How is authoritative or otherwise unavailable knowledge obtained, and
+      where are epistemic limits placed?
+
+  - id: KNOWLEDGE_OR_PRACTICE_DIFFERENTIATION_MODEL
+    question: >
+      Does a source assign different outcomes according to knowledge, ritual,
+      discipline, social role, renunciation, devotion, or other practice?
+
+  - id: INTERVENTION_MODEL
+    question: Does the source describe privileged intervention in ordinary causality?
+
+  - id: WORLD_STATUS_MODEL
+    question: How does the source characterize experienced reality?
+
+  - id: SOCIAL_COSMOLOGY_MODEL
+    question: >
+      Does the source encode social class, role, status, gender, ethnicity,
+      purity, lineage, or political hierarchy into cosmic or post-mortem order?
+
+  - id: INSTITUTIONALIZATION_MODEL
+    question: >
+      How are teachings, specialists, communities, authorities, sites, texts,
+      rituals, and material resources organized and stabilized?
+
+comparison_rules:
+  - source_answer_may_be_plural_by_period_or_school
+  - textual_layer_must_be_explicit
+  - evidence_mode_must_be_explicit
+  - generating_ne_owning_by_default
+  - generating_ne_commanding_by_default
+  - transformation_ne_persistence_by_default
+  - source_uncertainty_must_remain_uncertainty
+  - route_structure_must_not_be_compressed_into_afterlife
+  - commentary_must_not_be_promoted_to_primary_text
+  - social_hierarchy_in_source_must_not_be_sanitized_or_endorsed
+  - no_axis_requires_a_creator
+  - no_axis_requires_a_persistent_soul
+  - no_axis_requires_personal_judgment
+  - systems_mapping_is_optional_and_downstream
+  - missing_source_support_yields_UNKNOWN_not_inference
+  - similar_axis_value_does_not_imply_transmission
+  - different_axis_value_is_positive_comparative_data
+
+bounded_source_bindings:
+  buddhism:
+    head: 1c6c7a9a35901a529d377e1bd6fb86a88c1cdbe9
+    binding: synthesis/BUDDHIST_PRIMARY_SOURCE_BINDING_V2.yaml
+  hindu:
+    head: 0c3123f4f1cf03e6f6a29ca0d0eb7edfddff5e75
+    binding: synthesis/HINDU_PRIMARY_SOURCE_BINDING_V2.yaml
+  daoism:
+    head: 9abbfb31db70b8102af41bd483e1c38075e23fb9
+    binding: synthesis/DAOISM_PRIMARY_SOURCE_BINDING_V1.yaml
+
+effect_boundary:
+  changes_existing_commonality_matrix: false
+  canonical_effect: false
+  promotes_GOD_model: false

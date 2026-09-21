@@ -1,0 +1,75 @@
+schema_version: on-theo.offering-exchange-comparison-schema.v1
+status: NON_CANONICAL_METHOD_SCHEMA
+
+purpose: >
+  Compare offerings, deposits, provisioning, sacrifice, and ritual transfer
+  without presuming that every offering is reciprocal, transactional, directed
+  to the same kind of recipient, or believed to operate through one causal
+  mechanism.
+
+dimensions:
+  EVIDENCE_MODE:
+    question: >
+      Is the proposition carried by ritual text, literary text, material
+      archaeology, inscription, historical reconstruction, or scholarly
+      interpretation?
+    rule: TEXTUAL_EFFICACY_CLAIM_NE_MATERIAL_DEPOSITION
+
+  OFFERING_ACT:
+    question: >
+      What is actually done or transferred: food, drink, ghee, milk, Soma,
+      animal, object, libation, grave provisioning, feast, deposition, gift, or
+      another action?
+    rule: DEPOSITION_NE_OFFERING_BY_DEFAULT_WITHOUT_CONTEXT
+
+  RECIPIENT_STATUS:
+    question: >
+      Is a recipient explicitly named, inferable only from context, plural,
+      postmortem, divine, institutional, environmental/landscape, or unknown?
+    rule: UNKNOWN_RECIPIENT_MUST_REMAIN_UNKNOWN
+
+  MEDIATOR_AND_PROCEDURE:
+    question: >
+      What priest, sacrificer, descendant, household member, ritual specialist,
+      fire, grave, shrine, altar, feast, or other medium structures the act?
+
+  CLAIMED_EFFECT:
+    question: >
+      Does the source explicitly connect the act to welfare, ritual validity,
+      cosmological maintenance, divine favor, status, remembrance, protection,
+      feeding/provisioning, or another effect?
+    rule: SOURCE_ASSERTED_EFFECT_NE_EMPIRICALLY_VERIFIED_EFFECT
+
+  RECIPROCITY_STATUS:
+    question: >
+      Is reciprocity explicit, implied, debated, unknown, or absent from the
+      controlled evidence?
+    allowed_values:
+      - EXPLICIT
+      - IMPLIED_BOUNDED
+      - UNKNOWN
+      - NOT_ESTABLISHED
+    rule: OFFERING_NE_QUID_PRO_QUO_BY_DEFAULT
+
+  TEMPORAL_AND_SOCIAL_SCOPE:
+    question: >
+      Which textual, regional, social, elite/common, funerary, domestic,
+      sacrificial, or historical layer carries the offering proposition?
+
+  RITUAL_VALIDITY_RELATION:
+    question: >
+      Is correct offering part of what makes a rite valid, or is the evidence
+      only that deposition/feasting occurred?
+    rule: RITUAL_PRESENCE_NE_FULL_VALIDITY_MECHANISM
+
+comparison_guards:
+  - OFFERING_NE_RECIPROCITY_BY_DEFAULT
+  - MATERIAL_DEPOSITION_NE_KNOWN_RECIPIENT
+  - MATERIAL_DEPOSITION_NE_KNOWN_REQUESTED_OUTCOME
+  - TEXTUAL_RITUAL_EFFICACY_NE_ONE_CAUSAL_MECHANISM
+  - FUNERARY_PROVISIONING_NE_DIVINE_SACRIFICE
+  - FEASTING_NE_SACRIFICE_BY_DEFAULT
+  - GRAVE_GOOD_NE_AFTERLIFE_EQUIPMENT_BY_DEFAULT
+  - ONE_RITE_NE_TRADITION_WIDE_EXCHANGE_THEORY
+  - SHARED_OFFERING_AXIS_NE_SHARED_RECIPROCITY_MODEL
+  - SIMILARITY_NE_TRANSMISSION

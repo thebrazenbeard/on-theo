@@ -1,0 +1,50 @@
+schema_version: on-theo.hindu-synthesis-source-binding.v3
+status: NON_CANONICAL_EXACT_SOURCE_EXTENSION
+supersedes_for_current_research:
+  - synthesis/HINDU_PRIMARY_SOURCE_BINDING_V2.yaml
+
+source_extension:
+  branch: research/hindu-rigvedic-upanishadic-proposition-v1-20260920
+  head: 614fa715fcacee0d7ec1ba573061d3e776e708d3
+  base_branch: hindu
+  draft_pr: 98
+
+source_artifacts:
+  early_text:
+    - traditions/hindu/rigvedic-upanishadic-proposition-packet-v1.md
+    - traditions/hindu/upanishadic-continuity-context-v1.md
+  ritual:
+    - traditions/hindu/vedic-ritual-order-packet-v1.md
+    - traditions/hindu/vedic-material-boundary-v1.md
+  evidence:
+    - traditions/hindu/neutral-axis-evidence-v2.yaml
+  state:
+    - traditions/hindu/research-state-v4.yaml
+
+strengthened_axes:
+  - WORLD_ORIGIN_MODEL
+  - KNOWLEDGE_OR_DISCLOSURE_MODEL
+  - MORAL_CAUSALITY_MODEL
+  - CONTINUITY_MODEL
+  - POSTMORTEM_PATH_MODEL
+  - PERSON_OR_SELF_MODEL
+  - RITUAL_ORDER_MODEL
+  - OFFERING_EXCHANGE_MODEL
+  - POLITICAL_SACRALIZATION_MODEL
+
+ritual_controls:
+  - RIGVEDIC_RITUAL_NE_LATER_SRAUTA_IDENTITY
+  - SRAUTA_NE_ALL_HINDU_RITUAL
+  - TEXTUAL_RITUAL_NE_HISTORICAL_PERFORMANCE
+  - MODERN_PERFORMANCE_NE_ANCIENT_WITNESS
+  - FIRE_FEATURE_NE_VEDIC_ALTAR
+
+readiness:
+  bounded_Hindu_comparison: STRENGTHENED
+  ritual_order_comparison: BOUNDED_VEDIC_LAYER
+  ancient_material_confirmation: false
+  broad_Hindu_synthesis: false
+
+effect_boundary:
+  canonical_effect: false
+  merge_authority: false

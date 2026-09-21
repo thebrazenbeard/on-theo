@@ -1,0 +1,85 @@
+schema_version: on-theo.nonabrahamic-comparison-readiness.v21
+status: NON_CANONICAL_RESEARCH_AUDIT
+supersedes_for_current_research:
+  - synthesis/NON_ABRAHAMIC_COMPARISON_READINESS_V20.yaml
+
+source_heads:
+  buddhism: eb0f948788f5171d13c067daea2df54845d22f70
+  hindu: 614fa715fcacee0d7ec1ba573061d3e776e708d3
+  daoism: 708ba10413d9511648c2540ad84be74b6b5f6b5c
+  shinto: 4939c22c6b13afc1226d8860fa8dbf394e34b5c4
+  norse: 22e9fe10d1647a66458c54478c86e7ba6abd83ce
+  sumerian: 3fd5db6f05c008aeba4febe310de99e4ff484770
+
+method_artifacts:
+  transformation_schema: synthesis/TRANSFORMATION_COMPARISON_SCHEMA_V1.yaml
+  transformation_test: synthesis/TRANSFORMATION_CROSS_TRADITION_TEST_V1.md
+  global_coverage_gap_audit: synthesis/GLOBAL_TRADITION_COVERAGE_GAP_AUDIT_V1.md
+  matrix: synthesis/BOUNDED_NEUTRAL_COMPARISON_MATRIX_V12.yaml
+  coverage_audit: synthesis/COMPARISON_COVERAGE_AUDIT_V12.yaml
+
+comparison_ready_and_tested_axes:
+  - CAUSAL_ORDER_TYPE
+  - CONTINUITY_MODEL
+  - RITUAL_ORDER_MODEL
+  - PERSON_OR_SELF_MODEL
+  - INSTITUTIONALIZATION_MODEL
+  - CONTACT_AND_REINTERPRETATION_MODEL
+  - POLITICAL_SACRALIZATION_MODEL
+  - WORLD_ORIGIN_MODEL
+  - MORTUARY_RELATIONSHIP_MODEL
+  - OFFERING_EXCHANGE_MODEL
+  - TRANSFORMATION_MODEL
+
+transformation_result:
+  admitted_test_lanes: 4
+  daoism:
+    domain: PROCESSUAL_FORM_PERSPECTIVE_LIFE_DEATH
+  shinto:
+    domain: POSTHUMOUS_STATUS
+  norse:
+    domain: WORLD_ORDER_DESTRUCTION_RENEWAL
+  sumerian:
+    domain: DIVINE_FORM_CHANGE_SUBSTITUTION_ALTERNATION
+  strongest_cross_lane_result: TRANSFORMATION_IS_A_CROSS_TRADITION_PROBLEM_SPACE_ONLY_AFTER_DOMAIN_SUBJECT_MECHANISM_AND_IDENTITY_CONTINUITY_ARE_SEPARATED
+  one_shared_transformation_metaphysic: NOT_SUPPORTED
+
+global_coverage_state:
+  globally_representative: false
+  current_problem: EURASIAN_AND_NEAR_EASTERN_WEIGHTING
+  lakota_existing_queue: true
+  lakota_dedicated_execution_branch: false
+  maya_dedicated_execution_branch: false
+  mexica_nahua_dedicated_execution_branch: false
+  olmec_dedicated_execution_branch: false
+  broader_indigenous_americas_coverage: INSUFFICIENT
+
+next_frontier:
+  primary: GLOBAL_CORPUS_BREADTH_EXPANSION
+  first_unit: LAKOTA_PUBLIC_SOURCE_RESEARCH_PACKET_V1
+  reason: >
+    The existing queue already identifies Lakota traditions as the next
+    Indigenous lane and specifies Indigenous-centered/public-source safeguards.
+    That work is overdue relative to the completed Sumerian, Shinto, Daoist,
+    post-Vedic/Hindu, and Norse expansions.
+  planned_followups:
+    - MAYA_DIACHRONIC_RESEARCH_PACKET_V1
+    - MEXICA_NAHUA_RESEARCH_PACKET_V1
+    - OLMEC_MATERIAL_ICONOGRAPHIC_PACKET_V1
+    - DINE_PUBLIC_SOURCE_RESEARCH_PACKET_V1
+    - HAUDENOSAUNEE_PUBLIC_SOURCE_RESEARCH_PACKET_V1
+    - ANDEAN_INCA_DIACHRONIC_PACKET_V1
+
+holds:
+  direct_cross_tradition_convergence_or_transmission: HOLD
+  perennialist_all_religions_matrix: PROHIBITED_AT_CURRENT_EVIDENCE
+  one_hidden_doctrine: NOT_SUPPORTED
+  global_generalization_from_current_six_lanes: PROHIBITED
+
+guards:
+  - SIX_LANE_RESULT_NE_GLOBAL_RELIGIOUS_UNIVERSAL
+  - INDIGENOUS_RELIGION_NE_ONE_GENERIC_CATEGORY
+  - PUBLIC_SOURCE_NE_PERMISSION_TO_REPRODUCE_RESTRICTED_CEREMONY
+  - RECONSTRUCT_TRADITION_INTERNALLY_BEFORE_COMPARISON
+  - CONTACT_NE_TRANSMISSION
+  - SYSTEMS_ANALOGY_IS_DOWNSTREAM

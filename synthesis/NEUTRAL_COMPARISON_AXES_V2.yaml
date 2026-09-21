@@ -1,0 +1,153 @@
+schema_version: on-theo.neutral-comparison-axes.v2
+status: PROJECT_METHOD_CANDIDATE_NON_CANONICAL
+supersedes_for_current_research:
+  - synthesis/NEUTRAL_COMPARISON_AXES_V1.yaml
+
+purpose: >
+  Compare source traditions without requiring Abrahamic creator/revelation/
+  judgment categories and without letting systems analogy substitute for source
+  reconstruction.
+
+layers:
+  - SOURCE_PROPOSITION
+  - EVIDENCE_MODE
+  - NEUTRAL_COMPARISON_AXIS
+  - OPTIONAL_SYSTEMS_ANALOGY
+
+evidence_modes:
+  - TEXTUAL_TRANSMISSION
+  - PHYSICAL_MANUSCRIPT
+  - INSCRIPTION
+  - ARCHAEOLOGY
+  - RITUAL_OR_PRACTICE
+  - LATER_TRADITION
+  - SCHOLARLY_RECONSTRUCTION
+
+axes:
+  - id: CAUSAL_ORDER_TYPE
+    question: What kind of causal order does the source describe or presuppose?
+    examples: [sovereign_agent, conditioned_relational, fate_or_order, mixed, unresolved]
+
+  - id: AGENCY_AND_AUTHORITY_MODEL
+    question: >
+      What beings, principles, institutions, or processes possess privileged
+      agency or authority, if any?
+
+  - id: PERSON_OR_SELF_MODEL
+    question: >
+      What constitutes a person/self, and what candidate components are denied,
+      affirmed, conditioned, divisible, or enduring?
+
+  - id: CONTINUITY_MODEL
+    question: >
+      What, if anything, continues across death, transformation, rebirth, or
+      resurrection, and in what sense is it numerically or causally continuous?
+
+  - id: MORAL_CAUSALITY_MODEL
+    question: >
+      How do actions acquire consequences: personal judgment, impersonal causal
+      order, ritual order, social sanction, fate, or another mechanism?
+
+  - id: LIBERATION_OR_FINAL_TRANSFORMATION_MODEL
+    question: >
+      What counts as the desired or final transformation: restoration,
+      resurrection, liberation, escape, union, continued flourishing, or
+      something else?
+
+  - id: KNOWLEDGE_OR_DISCLOSURE_MODEL
+    question: >
+      How is otherwise unavailable or authoritative knowledge obtained:
+      revelation, prophecy, awakening, divination, tradition, reason,
+      observation, initiation, or another route?
+
+  - id: INTERVENTION_MODEL
+    question: >
+      Does the tradition describe privileged intervention in ordinary causal
+      processes, and if so by whom or what?
+
+  - id: WORLD_STATUS_MODEL
+    question: >
+      Is experienced reality ultimate, provisional, conditioned, illusory,
+      fallen, sacred, cyclic, or otherwise qualified?
+
+  - id: INSTITUTIONALIZATION_MODEL
+    question: >
+      How are teachings, specialists, communities, authorities, sites, texts,
+      rituals, and material resources organized and stabilized?
+    evidence_requirement: >
+      Distinguish normative texts from inscriptional, archaeological, ritual,
+      and administrative evidence.
+    systems_analogy_optional: true
+
+comparison_rules:
+  - source_answer_may_be_plural_by_period_or_school
+  - no_axis_requires_a_creator
+  - no_axis_requires_a_persistent_soul
+  - no_axis_requires_personal_judgment
+  - no_axis_requires_revelation
+  - institutional_presence_ne_metaphysical_truth
+  - textual_doctrine_ne_historical_practice
+  - systems_mapping_is_optional_and_downstream
+  - missing_source_support_yields_UNKNOWN_not_inference
+  - similar_axis_value_does_not_imply_transmission
+  - different_axis_value_is_positive_comparative_data
+  - evidence_modes_must_not_be_silently_collapsed
+
+buddhist_bounded_admission:
+  exact_source_extension_head: 1c6c7a9a35901a529d377e1bd6fb86a88c1cdbe9
+  draft_pr: 97
+  evidence_modes_active:
+    - TEXTUAL_TRANSMISSION
+    - PHYSICAL_MANUSCRIPT
+    - INSCRIPTION
+    - ARCHAEOLOGY
+  axes:
+    PERSON_OR_SELF_MODEL:
+      status: CROSS_TRANSMISSION_SUPPORT
+      evidence:
+        - SN_22_59
+        - SA_34
+        - RS22_02_GANDHARI
+    CAUSAL_ORDER_TYPE:
+      status: CROSS_TRANSMISSION_SUPPORT
+      evidence:
+        - SN_12_15
+        - SA_301
+        - SF_168
+    CONTINUITY_MODEL:
+      status: CROSS_TRANSMISSION_SUPPORT
+      evidence:
+        - SN_12_38
+        - SA_359
+    MORAL_CAUSALITY_MODEL:
+      status: CROSS_TRANSMISSION_SUPPORT_WITH_VARIANTS
+      evidence:
+        - AN_6_63
+        - MA_111
+        - T_57
+    LIBERATION_OR_FINAL_TRANSFORMATION_MODEL:
+      status: BOUNDED_PRIMARY_TEXT_SUPPORT
+      evidence:
+        - MN_72
+        - UD_8_3
+    WORLD_STATUS_MODEL:
+      status: PARTIAL_PRIMARY_TEXT_SUPPORT
+    INSTITUTIONALIZATION_MODEL:
+      status: MATERIAL_AND_EPIGRAPHIC_SUPPORT
+      evidence:
+        - ASOKA_BHABRA_BAIRAT
+        - ASOKA_LUMBINI_RUMMINDEI
+        - ASOKA_NIGALI_SAGAR
+        - ASOKA_SCHISM_EDICT_FAMILY
+  unresolved:
+    - AGENCY_AND_AUTHORITY_MODEL
+    - KNOWLEDGE_OR_DISCLOSURE_MODEL
+    - INTERVENTION_MODEL
+    - full_Buddhist_cosmology
+    - later_school_metaphysics
+
+effect_boundary:
+  changes_source_lane_claims: false
+  changes_existing_commonality_matrix: false
+  promotes_GOD_model: false
+  canonical_effect: false

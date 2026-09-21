@@ -1,0 +1,98 @@
+schema_version: on-theo.nonabrahamic-comparison-readiness.v9
+status: NON_CANONICAL_RESEARCH_AUDIT
+supersedes_for_current_research:
+  - synthesis/NON_ABRAHAMIC_COMPARISON_READINESS_V8.yaml
+
+comparison_control:
+  branch: audit/synthesis-comparison-eligibility-v1-20260919
+  head: 809edc937be9a42f1fd76e00e5eadb0a8b9ebe9d
+
+lanes:
+  - id: buddhism
+    source_head: 1c6c7a9a35901a529d377e1bd6fb86a88c1cdbe9
+    draft_pr: 97
+    status: BOUNDED_READY_STRENGTHENED
+    broad_ready: false
+
+  - id: hindu
+    source_head: 0c3123f4f1cf03e6f6a29ca0d0eb7edfddff5e75
+    draft_pr: 98
+    status: BOUNDED_PARTIAL_STRENGTHENED
+    broad_ready: false
+
+  - id: daoism
+    source_head: 483d1bcaebb57a00cda5eb30c15bc3908fdac438
+    draft_pr: 99
+    status: BOUNDED_PARTIAL_STRENGTHENED
+    broad_ready: false
+
+  - id: shinto
+    source_head: 31b67b5a0aec7015878e5fcf9de2936db80cf83b
+    draft_pr: 100
+    status: BOUNDED_PARTIAL
+    broad_ready: false
+
+  - id: norse_asatru
+    source_head: bc8adf8ee6e0135e2b22fbeb9f5daa4bce4b99e7
+    draft_pr: 101
+    status: BOUNDED_PARTIAL
+    broad_ready: false
+
+  - id: sumerian
+    source_head: 3fd5db6f05c008aeba4febe310de99e4ff484770
+    draft_pr: 102
+    status: BOUNDED_READY_DEEP_CHAIN
+    broad_ready: false
+    deep_chain_required: true
+    admitted_evidence:
+      - source_verification
+      - material_archaeology
+      - human_afterlife_funerary
+      - death_lexicon
+      - Dumuzid_death_lament
+      - Dumuzid_substitution
+      - Dumuzid_seasonal_hostile_test
+      - Dumuzid_Baal_transmission_hostile_control
+    blockers:
+      - city_period_matrix_expansion
+      - ordinary_burial_archaeology_beyond_Ur
+      - me_kur_nam_lugal_semantic_deepening
+      - Sumerian_to_Akkadian_reception
+      - flood_source_specific_comparison
+
+portfolio_state:
+  six_nonabrahamic_lanes_have_exact_bounded_source_bindings: true
+  broad_all_tradition_synthesis_allowed: false
+  first_neutral_matrix_allowed: true
+  direct_convergence_or_transmission_claims_allowed: false
+
+holds:
+  direct_cross_tradition_convergence_or_transmission:
+    status: HOLD
+    applies_to:
+      - BUDDHISM
+      - HINDU
+      - DAOISM
+      - SHINTO
+      - NORSE
+      - SUMERIAN
+    reason: >
+      Internal bounded readiness establishes comparison eligibility only. It
+      does not establish shared substrate, borrowing, or independent convergence.
+
+  perennialist_all_religions_matrix:
+    status: PROHIBITED_AT_CURRENT_EVIDENCE
+
+adjacent:
+  astrology:
+    role: METHOD_MECHANISM_EPISTEMIC_LANE
+    not_unitary_religion: true
+
+guards:
+  - INTERNAL_RECONSTRUCTION_PRECEDES_CROSS_TRADITION_COMPARISON
+  - MASTER_HUB_NE_ATOMIC_EVIDENCE
+  - EVIDENCE_MODE_MUST_REMAIN_VISIBLE
+  - UNKNOWN_NE_ABSENCE
+  - BOUNDED_READY_NE_BROAD_READY
+  - CONTACT_NE_TRANSMISSION
+  - SYSTEMS_ANALOGY_IS_DOWNSTREAM

@@ -1,0 +1,106 @@
+schema_version: on-theo.bounded-neutral-comparison-matrix.v8
+status: NON_CANONICAL_PILOT_MATRIX
+supersedes_for_current_research:
+  - synthesis/BOUNDED_NEUTRAL_COMPARISON_MATRIX_V7.yaml
+relation_schema: synthesis/CROSS_TRADITION_RELATION_SCHEMA_V1.yaml
+world_origin_schema: synthesis/WORLD_ORIGIN_COMPARISON_SCHEMA_V1.yaml
+
+source_heads:
+  buddhism: eb0f948788f5171d13c067daea2df54845d22f70
+  hindu: 614fa715fcacee0d7ec1ba573061d3e776e708d3
+  daoism: 708ba10413d9511648c2540ad84be74b6b5f6b5c
+  shinto: 4939c22c6b13afc1226d8860fa8dbf394e34b5c4
+  norse: 22e9fe10d1647a66458c54478c86e7ba6abd83ce
+  sumerian: 3fd5db6f05c008aeba4febe310de99e4ff484770
+
+world_origin_snapshot:
+  buddhism:
+    status: NOT_ADMITTED
+    note: current exact Buddhist lane does not bind a world-origin proposition
+
+  hindu:
+    status: BOUNDED
+    evidence:
+      - RV_10_129
+    assertion_mode: INTERROGATIVE_EPISTEMIC_SUSPENSION
+    origin_process: PARTIAL_EMERGENCE_LANGUAGE_WITHOUT_SETTLED_COMPLETE_MECHANISM
+    agent_model: NOT_SETTLED
+    knowledge_status: EXPLICITLY_UNCERTAIN
+    guards:
+      - RV_10_129_NE_ALL_VEDIC_COSMOGONY
+      - EPISTEMIC_UNCERTAINTY_NE_ATHEISM
+
+  daoism:
+    status: BOUNDED
+    evidence:
+      - LAOZI_25
+      - LAOZI_40
+      - ZHUANGZI_INNER_6
+    assertion_mode: GENERATIVE_PRIORITY_DESCRIPTION
+    prior_condition: DAO_PRIORITY_TO_HEAVEN_AND_EARTH
+    origin_process: GENERATIVE_WITH_YOU_WU_AND_TRANSFORMATION_LANGUAGE
+    agent_model: NON_SOVEREIGN_GENERATIVE_SOURCE_AT_CURRENT_CEILING
+    guards:
+      - PRIORITY_NE_PERSONAL_CREATION
+      - WU_NE_ABSOLUTE_NOTHINGNESS_BY_DEFAULT
+      - GENERATION_NE_OWNERSHIP_OR_COMMAND
+
+  shinto:
+    status: BOUNDED
+    evidence:
+      - KOJIKI_NIHON_SHOKI_VARIANT_MATRIX
+    assertion_mode: VARIANT_COSMOGONIC_AND_GENEALOGICAL_NARRATIVE
+    origin_process: DIVINE_GENEALOGY_AND_LAND_GENERATION_WITH_VARIANT_SEQUENCES
+    agent_model: MULTIPLE_DIVINE_AGENTS_WITH_ACCOUNT_VARIATION
+    knowledge_status: VARIANT_WITHIN_CLASSICAL_CORPUS
+    guards:
+      - VARIANT_ACCOUNT_NE_ERROR_TO_HARMONIZE
+      - COURT_COMPILATION_NE_PREHISTORIC_TRANSCRIPT
+
+  norse:
+    status: BOUNDED
+    evidence:
+      - VOLUSPA_STANZAS_3_4
+    assertion_mode: WORLD_FORMATION_NARRATIVE
+    prior_condition: YMIR_PLUS_GINNUNGAGAP_BEFORE_FAMILIAR_WORLD_ORDER
+    origin_process: DIVINE_WORLD_SHAPING_OR_FORMATION
+    agent_model: MULTIPLE_DIVINE_AGENTS_IN_SELECTED_SEQUENCE
+    guards:
+      - WORLD_SHAPING_NE_CREATION_EX_NIHILO
+      - MEDIEVAL_WITNESS_NE_VIKING_AGE_MANUSCRIPT
+
+  sumerian:
+    status: NOT_ADMITTED
+    note: current exact comparison bridge does not bind a specific cosmogony strongly enough
+
+world_origin_method_result:
+  admitted_total: 4
+  bounded: 4
+  not_admitted: 2
+  shared_origin_question: true
+  shared_origin_answer: false
+  shared_origin_mechanism: false
+  one_sovereign_creator_ex_nihilo_model_in_selected_loci: NOT_ESTABLISHED
+  recurring_problem_space_supported: true
+  one_hidden_doctrine_supported: false
+
+world_origin_test:
+  artifact: synthesis/WORLD_ORIGIN_CROSS_TRADITION_TEST_V1.md
+  result: COMPARABLE_WITH_DIFFERENT_ASSERTION_MODES_AGENT_STRUCTURES_AND_PROCESS_MODELS
+
+preserved_results:
+  causal_order_test: synthesis/CAUSAL_CONTINUITY_CROSS_TRADITION_TEST_V1.md
+  ritual_order_test: synthesis/RITUAL_ORDER_CROSS_TRADITION_TEST_V2.md
+  person_self_test: synthesis/PERSON_SELF_CROSS_TRADITION_TEST_V1.md
+  contact_test: synthesis/CONTACT_REINTERPRETATION_CROSS_TRADITION_TEST_V1.md
+  political_test: synthesis/POLITICAL_SACRALIZATION_CROSS_TRADITION_TEST_V1.md
+
+matrix_guards:
+  - THIS_IS_NOT_A_COMMONALITY_SCORE
+  - SHARED_AXIS_NE_SHARED_MECHANISM
+  - SHARED_ORIGIN_QUESTION_NE_SHARED_ORIGIN_ACCOUNT
+  - PREEXISTING_CONDITION_NE_ONE_SHARED_SUBSTRATE
+  - ABSENCE_OF_CREATOR_IN_SELECTED_LOCUS_NE_TRADITION_WIDE_DENIAL
+  - EVIDENCE_CLASS_DIFFERENCE_MUST_REMAIN_VISIBLE
+  - NOT_ADMITTED_NE_FALSE
+  - SYSTEMS_MAPPING_IS_OPTIONAL_AND_DOWNSTREAM

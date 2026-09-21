@@ -1,0 +1,77 @@
+schema_version: on-theo.nonabrahamic-comparison-readiness.v5
+status: NON_CANONICAL_RESEARCH_AUDIT
+supersedes_for_current_research:
+  - synthesis/NON_ABRAHAMIC_COMPARISON_READINESS_V4.yaml
+
+comparison_control:
+  branch: audit/synthesis-comparison-eligibility-v1-20260919
+  head: 809edc937be9a42f1fd76e00e5eadb0a8b9ebe9d
+
+lanes:
+  - id: buddhism
+    source_head: 1c6c7a9a35901a529d377e1bd6fb86a88c1cdbe9
+    draft_pr: 97
+    status: BOUNDED_READY_STRENGTHENED
+    broad_ready: false
+
+  - id: hindu
+    source_head: 0c3123f4f1cf03e6f6a29ca0d0eb7edfddff5e75
+    draft_pr: 98
+    status: BOUNDED_PARTIAL_STRENGTHENED
+    broad_ready: false
+
+  - id: daoism
+    source_head: 9abbfb31db70b8102af41bd483e1c38075e23fb9
+    draft_pr: 99
+    status: BOUNDED_PARTIAL
+    admitted_units:
+      - LAOZI_DDJ_25_MANUSCRIPT_CONTROLLED
+      - LAOZI_DDJ_37_MANUSCRIPT_CONTROLLED
+      - LAOZI_DDJ_40_MANUSCRIPT_CONTROLLED
+      - LAOZI_DDJ_42_RECEIVED_ONLY_CURRENT_PACKET
+      - LAOZI_DDJ_51
+      - ZHUANGZI_INNER_2_BUTTERFLY_DREAM
+      - ZHUANGZI_INNER_6_LIFE_DEATH_TRANSFORMATION
+      - ZHUANGZI_INNER_6_DAO
+    broad_ready: false
+    blockers:
+      - exact_Guodian_Mawangdui_received_alignment
+      - lexical_controls
+      - Zhuangzi_outer_misc_layer_map
+      - later_religious_Daoism
+      - material_institutional_history
+
+  - id: sumerian
+    source_head: bd6b6572141dc2f48f2f104b8f25301662d4a06f
+    status: NOT_READY_AT_MASTER_HUB_LEVEL
+
+  - id: shinto
+    source_head: a578729a2e3cec02fe533c3c1d20946347da9aa4
+    status: NOT_READY
+
+  - id: norse_asatru
+    source_head: 4af66d0bb3aa3f9bbfcd45fb52b400045b9d5339
+    status: NOT_READY
+
+holds:
+  direct_Buddhist_Hindu_Daoist_convergence_or_transmission:
+    status: HOLD
+    reason: >
+      Internal bounded readiness is not sufficient for shared-substrate,
+      borrowing, or independent-convergence claims. Exact comparison units,
+      chronology, contact, semantic controls, and alternatives are still needed.
+  perennialist_all_religions_matrix:
+    status: PROHIBITED_AT_CURRENT_EVIDENCE
+
+adjacent:
+  astrology:
+    role: METHOD_MECHANISM_EPISTEMIC_LANE
+    not_unitary_religion: true
+
+guards:
+  - INTERNAL_RECONSTRUCTION_PRECEDES_CROSS_TRADITION_COMPARISON
+  - BOUNDED_PARTIAL_NE_BROAD_READY
+  - GENERATION_NE_SOVEREIGN_CONTROL
+  - TRANSFORMATION_NE_REINCARNATION_BY_DEFAULT
+  - RECEIVED_TEXT_NE_ORIGINAL_ARCHETYPE
+  - SYSTEMS_ANALOGY_IS_DOWNSTREAM

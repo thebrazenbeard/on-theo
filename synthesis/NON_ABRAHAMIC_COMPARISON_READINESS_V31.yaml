@@ -1,0 +1,46 @@
+schema_version: on-theo.nonabrahamic-comparison-readiness.v31
+status: NON_CANONICAL_RESEARCH_AUDIT
+supersedes_for_current_research:
+  - synthesis/NON_ABRAHAMIC_COMPARISON_READINESS_V30.yaml
+
+breadth_units:
+  lakota: 8a9cee8335cadc742c9de25c90f4306702a80e8a
+  maya: 2b5907438334537842710a81886083b9cbd0241a
+  mexica_nahua: 00e37e475f3669ef2ee040908b126617ffcd17da
+  olmec: cac89f2e0024c00f71d2d2a835253328c451e7ce
+  dine: ac988c4a31f354e7c4d902d286c0c950293ffb8a
+  haudenosaunee: 506d95eb449bc4d11fc61dbe9c18ffca7ab94f5a
+  andean_inca: 355d808e5d55185d50f1dcabb53003635b88a23f
+  modern_satanism: bb2bdf915b9ac08f63b881f22b1d0023ae73debc
+
+modern_satanism_method_result: >
+  Modern Satanism is comparison-ready only as a family of source-specific
+  reappropriations. Church of Satan, The Satanic Temple and theistic/esoteric
+  currents differ in Satan referent, selfhood, ritual, authority and
+  institutional form. Historical accusations of devil worship remain a separate
+  evidence problem.
+
+contact_schema:
+  ADVERSARIAL_SYMBOL_REVALUATION:
+    status: ADDED_SUBTYPE
+    definition: >
+      A negatively inherited religious/adversarial figure or category is
+      intentionally reappropriated and positively recoded by a later
+      self-identified movement.
+    guard: >
+      Reappropriation does not imply continuity of the earlier hostile
+      attribution or agreement with the earlier source's ontology.
+
+next_frontier:
+  primary: DEVIL_WORSHIP_ACCUSATION_HISTORY_V1
+  reason: >
+    The original world-traditions expansion queue explicitly separates the
+    history of devil-worship accusation from modern self-identified Satanism.
+    Modern Satanism is now mature enough that the accusation category can be
+    reconstructed without contaminating it.
+
+guards:
+  - ACCUSATION_NE_IDENTIFICATION
+  - POLEMIC_NE_ETHNOGRAPHY
+  - LEGAL_ALLEGATION_NE_RELIGIOUS_FACT
+  - CONSPIRACY_CLAIM_NE_DOCUMENTED_NETWORK

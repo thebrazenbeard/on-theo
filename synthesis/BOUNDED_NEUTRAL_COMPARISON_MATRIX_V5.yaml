@@ -1,0 +1,86 @@
+schema_version: on-theo.bounded-neutral-comparison-matrix.v5
+status: NON_CANONICAL_PILOT_MATRIX
+supersedes_for_current_research:
+  - synthesis/BOUNDED_NEUTRAL_COMPARISON_MATRIX_V4.yaml
+
+source_heads:
+  buddhism: eb0f948788f5171d13c067daea2df54845d22f70
+  hindu: 614fa715fcacee0d7ec1ba573061d3e776e708d3
+  daoism: 248aa76ee4b6a9d53cc5548e0f2b73b79baffb7b
+  shinto: 144ee868e4976428dbfe9c5ddc0022d03a2c194a
+  norse: 22e9fe10d1647a66458c54478c86e7ba6abd83ce
+  sumerian: 3fd5db6f05c008aeba4febe310de99e4ff484770
+
+contact_and_reinterpretation_snapshot:
+  buddhism:
+    status: NOT_ADMITTED
+    note: current bounded Buddhist lane has not yet been built as a cross-tradition contact packet
+
+  hindu:
+    status: NOT_ADMITTED
+    note: current bounded Hindu lane has not yet been built as a cross-tradition contact packet
+
+  daoism:
+    status: BOUNDED_STRENGTHENED
+    counterpart: BUDDHISM
+    relation_types:
+      - DIRECT_TEXTUAL_ADAPTATION
+      - TEXTUAL_FORM_ADAPTATION
+      - DOCTRINAL_RECODING
+      - RITUAL_INSTITUTIONAL_ADAPTATION
+      - POLEMICAL_COUNTER_GENEALOGY
+      - MUTUAL_POLEMICAL_RECLASSIFICATION
+      - MATERIAL_HYBRIDIZATION
+    summary: >
+      Buddhist forms and concepts can be demonstrably adopted while being
+      semantically and institutionally recoded inside Daoist systems.
+
+  shinto:
+    status: BOUNDED
+    counterpart: BUDDHISM
+    relation_types:
+      - INSTITUTIONAL_COMBINATION
+      - DOCTRINAL_IDENTIFICATION
+      - MATERIAL_ICONOGRAPHIC_ADAPTATION
+      - LATER_SEPARATION_RECLASSIFICATION
+    summary: >
+      long-term kami-Buddha combination changes institutions, imagery, ritual,
+      and explanatory categories; Meiji separation is itself a later intervention.
+
+  norse:
+    status: BOUNDED
+    counterpart: CHRISTIANITY
+    relation_types:
+      - CONTACT_COEXISTENCE
+      - POLITICAL_CONVERSION
+      - MIXED_SYMBOL_MATERIAL
+      - PRESERVATION_BY_ANOTHER_TRADITION
+      - LATER_SYSTEMATIZATION
+    summary: >
+      conversion is gradual, and Christian preservation of Norse material must
+      be distinguished from both fabrication and transparent pagan reporting.
+
+  sumerian:
+    status: BOUNDED_NEGATIVE_CONTROL
+    counterpart: UGARITIC_BAAL_TRADITION
+    relation_types:
+      - CHRONOLOGICAL_OPPORTUNITY
+      - CONTACT_CAPACITY
+      - SCHOLASTIC_EXPOSURE
+      - SOURCE_SPECIFIC_BORROWING_NONE_ESTABLISHED
+    summary: >
+      strong contact and exposure evidence does not currently yield a
+      source-specific Dumuzid-to-Baal borrowing signal.
+
+contact_guards:
+  - CONTACT_NE_TRANSMISSION
+  - TRANSMISSION_NE_SEMANTIC_IDENTITY
+  - EXPOSURE_NE_SOURCE_SPECIFIC_BORROWING
+  - POLEMICAL_ORIGIN_CLAIM_NE_TRANSMISSION_HISTORY
+  - PRESERVATION_NE_TRANSPARENT_REPORT
+  - SEPARATION_NE_PRIMORDIAL_BASELINE
+
+preserved_cross_tradition_tests:
+  - synthesis/CAUSAL_CONTINUITY_CROSS_TRADITION_TEST_V1.md
+  - synthesis/RITUAL_ORDER_CROSS_TRADITION_TEST_V2.md
+  - synthesis/PERSON_SELF_CROSS_TRADITION_TEST_V1.md

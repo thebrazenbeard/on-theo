@@ -1,0 +1,55 @@
+schema_version: on-theo.sumerian-synthesis-source-binding.v1
+status: NON_CANONICAL_EXACT_DEEP_CHAIN_BINDING
+
+source_extension:
+  branch: research/sumerian-comparison-binding-v1-20260920
+  head: 3fd5db6f05c008aeba4febe310de99e4ff484770
+  base_branch: sumerian
+  base_head: bd6b6572141dc2f48f2f104b8f25301662d4a06f
+  draft_pr: 102
+
+bridge_artifacts:
+  - traditions/sumerian/comparison-deep-source-binding-v1.yaml
+  - traditions/sumerian/afterlife-comparison-packet-v1.md
+  - traditions/sumerian/neutral-axis-evidence-v1.yaml
+  - traditions/sumerian/research-state-v2.yaml
+
+deep_heads:
+  source_verification: efe4ab2e39f205ff5bbc6e176be0b4fe1348f480
+  material_evidence: 7dbc47484e453f2561df1ba04b730d49181e6a39
+  human_afterlife_funerary: de5f1f0c88b49fb4c654eb87e25c021396957b0a
+  afterlife_lexicon: fdbcb961ba1d32f5442db497f6f61199ccae9605
+  death_composition_lexicon: 6a049eb026a8959c860c17430e666f496adea369
+  dumuzid_death_lament: 1e8597bce25f5ce883833dfbd17a7ea71fca9a8a
+  dumuzid_substitution: b0873f7840e1d336bc63570e017a5de45b0e6fe4
+  dumuzid_seasonal_hostile: d4b1bb63a706911609fec6db9dd12711bb21a3d0
+  dumuzid_baal_borrowing_signal: 5f232ccc70f27a5830605da5c94896b32bc5797a
+
+strengthened_axes:
+  - INSTITUTIONALIZATION_MODEL
+  - SACRAL_PRESENCE_MODEL
+  - RITUAL_ORDER_MODEL
+  - AGENCY_AND_AUTHORITY_MODEL
+  - POLITICAL_SACRALIZATION_MODEL
+  - POSTMORTEM_PATH_MODEL
+  - CONTINUITY_MODEL
+  - MORTUARY_RELATIONSHIP_MODEL
+  - OFFERING_EXCHANGE_MODEL
+  - TRANSFORMATION_MODEL
+  - CONTACT_AND_REINTERPRETATION_MODEL
+
+readiness:
+  bounded_Sumerian_comparison: DEEP_CHAIN_READY
+  broad_timeless_Sumerian_synthesis: false
+  master_hub_alone_is_evidence: false
+
+guards:
+  - MASTER_HUB_NE_ATOMIC_EVIDENCE
+  - COMPOSITION_NE_PHYSICAL_WITNESS_NE_MODERN_EDITION
+  - DIVINE_NETHERWORLD_NARRATIVE_NE_HUMAN_FUNERARY_PRACTICE
+  - ROYAL_AFTERLIFE_NE_ORDINARY_DEAD_DEFAULT
+  - TEXTUAL_DIVINE_ASSOCIATION_NE_EXCAVATED_CULT_INSTALLATION
+  - ENGLISH_UNDERWORLD_NE_ONE_SUMERIAN_LEXEME
+  - HALF_YEAR_ALTERNATION_NE_EXPLICIT_VEGETATION_ETIOLOGY
+  - CONTACT_CAPACITY_NE_DIRECT_TRANSMISSION
+  - DIRECT_DUMUZID_TO_BAAL_BORROWING_NONE_ESTABLISHED

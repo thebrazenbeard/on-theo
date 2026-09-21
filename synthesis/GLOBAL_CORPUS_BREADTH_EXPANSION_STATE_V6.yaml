@@ -1,0 +1,104 @@
+schema_version: on-theo.global-corpus-breadth-expansion-state.v6
+status: ACTIVE_PORTFOLIO_EXPANSION
+supersedes_for_current_research:
+  - synthesis/GLOBAL_CORPUS_BREADTH_EXPANSION_STATE_V5.yaml
+
+completed_breadth_units:
+  lakota:
+    exact_head: 8a9cee8335cadc742c9de25c90f4306702a80e8a
+    pr: 104
+    status: BOUNDED_COMPARISON_READINESS_AUDITED
+  maya:
+    exact_head: 2b5907438334537842710a81886083b9cbd0241a
+    pr: 105
+    status: BOUNDED_COMPARISON_READINESS_AUDITED
+  mexica_nahua:
+    exact_head: 00e37e475f3669ef2ee040908b126617ffcd17da
+    pr: 106
+    status: BOUNDED_COMPARISON_READINESS_AUDITED
+  olmec:
+    exact_head: cac89f2e0024c00f71d2d2a835253328c451e7ce
+    pr: 107
+    status: BOUNDED_COMPARISON_READINESS_AUDITED_LOW_TEXTUAL_CEILING
+  dine:
+    exact_head: ac988c4a31f354e7c4d902d286c0c950293ffb8a
+    pr: 108
+    status: BOUNDED_COMPARISON_READINESS_AUDITED_PUBLIC_SOURCE_ONLY
+
+dine_comparison_eligible:
+  bounded:
+    - INSTITUTIONALIZATION_MODEL
+    - KNOWLEDGE_OR_DISCLOSURE_MODEL
+  partial:
+    - POLITICAL_SACRALIZATION_MODEL
+    - OFFERING_EXCHANGE_MODEL
+    - CONTINUITY_MODEL
+    - AGENCY_AND_AUTHORITY_MODEL
+  held:
+    - RITUAL_ORDER_MODEL
+    - WORLD_ORIGIN_MODEL
+    - PERSON_OR_SELF_MODEL
+    - POSTMORTEM_PATH_MODEL
+    - MORTUARY_RELATIONSHIP_MODEL
+    - TRANSFORMATION_MODEL
+    - SACRAL_PRESENCE_MODEL
+    - CONTACT_AND_REINTERPRETATION_MODEL
+
+schema_development:
+  RELATIONAL_ORDER_MODEL:
+    status: STRONG_CANDIDATE
+    support:
+      - LAKOTA
+      - MAYA
+      - LIVING_NAHUA
+      - DINE
+      - OLMEC_PARTIAL
+  SACRED_LAND_PLACE_MODEL:
+    status: STRONG_CANDIDATE
+    support:
+      - LAKOTA
+      - MAYA
+      - MEXICA_NAHUA
+      - DINE
+      - OLMEC_PARTIAL
+  HUMAN_ORIGIN_OR_EMERGENCE_MODEL:
+    status: STRONG_CANDIDATE
+    support:
+      - LAKOTA
+      - MAYA
+  SACRED_TIME_CALENDAR_MODEL:
+    status: STRONG_CANDIDATE
+    support:
+      - MAYA
+      - MEXICA_NAHUA
+  SACRIFICE_AND_BODILY_OFFERING_MODEL:
+    status: STRONG_DECOMPOSITION_CANDIDATE
+    support:
+      - MEXICA_NAHUA
+  KNOWLEDGE_GOVERNANCE_DIMENSION:
+    status: STRONG_SCHEMA_DIMENSION_CANDIDATE
+    parent_axis: KNOWLEDGE_OR_DISCLOSURE_MODEL
+    support:
+      - DINE
+      - LAKOTA_PARTIAL
+
+active_portfolio_frontier:
+  primary: HAUDENOSAUNEE_PUBLIC_SOURCE_RESEARCH_PACKET_V1
+  requirements:
+    - Confederacy_level_ne_nation_specific
+    - Mohawk_Oneida_Onondaga_Cayuga_Seneca_Tuscarora_distinctions_visible
+    - Great_Law_public_political_religious_layer_source_controlled
+    - Thanksgiving_Address_public_versions_source_controlled
+    - Handsome_Lake_Longhouse_history_separate_from_foundational_Confederacy_law
+    - ceremonial_public_category_ne_procedure
+    - Canadian_US_nation_and_governance_contexts_not_collapsed
+    - living_Haudenosaunee_ne_unchanged_precontact_form
+
+planned_followup:
+  - ANDEAN_INCA_DIACHRONIC_PACKET_V1
+
+guards:
+  - PUBLIC_SOURCE_NE_RESTRICTED_KNOWLEDGE_PERMISSION
+  - INDIGENOUS_RELIGION_NE_ONE_GENERIC_CATEGORY
+  - COMPARISON_READY_NE_TRADITION_COMPLETE
+  - EXACT_HEAD_BINDING_REQUIRED

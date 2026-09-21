@@ -1,0 +1,79 @@
+schema_version: on-theo.institutionalization-comparison-schema.v1
+status: NON_CANONICAL_METHOD_SCHEMA
+
+purpose: >
+  Compare institutional organization without treating every stable religious
+  arrangement as a centralized church, bureaucracy, priesthood, or membership
+  organization.
+
+dimensions:
+  EVIDENCE_MODE:
+    question: >
+      Is the institution known through normative/legal text, inscription,
+      material archaeology, documentary administration, historical
+      reconstruction, or later tradition?
+    rule: EVIDENCE_MODES_MUST_REMAIN_VISIBLE
+
+  INSTITUTIONAL_CARRIER:
+    question: >
+      What carries the institution: monastic community, registered religious
+      hierarchy, shrine network, court office, elite household/ritual complex,
+      temple-city complex, domestic cult, or another form?
+
+  MEMBERSHIP_AND_BOUNDARY:
+    question: >
+      Is membership formal, registered, ordained, inherited, local, household,
+      office-based, patronage-based, or not demonstrated?
+    rule: ORGANIZED_ACTIVITY_NE_FORMAL_MEMBERSHIP
+
+  AUTHORITY_AND_OFFICE:
+    question: >
+      What roles, offices, ranks, specialists, rulers, councils, or local
+      authorities can perform valid actions or exercise control?
+
+  PROCEDURAL_STABILIZATION:
+    question: >
+      What procedures, calendars, registers, formal acts, tribute systems,
+      textual recitations, or administrative routines stabilize the institution?
+
+  MATERIAL_AND_SPATIAL_INFRASTRUCTURE:
+    question: >
+      What sites, buildings, sacred landscapes, monasteries, shrines, temples,
+      administrative spaces, domestic chapels, objects, or inscriptions support
+      institutional continuity?
+    rule: MONUMENTAL_ARCHITECTURE_NE_INSTITUTIONAL_FUNCTION_BY_DEFAULT
+
+  TEXTUAL_OR_DOCUMENTARY_STABILIZATION:
+    question: >
+      How are teachings, rules, ranks, obligations, or claims stabilized through
+      texts, registers, inscriptions, catalogues, or administrative documents?
+
+  POLITICAL_RELATION:
+    question: >
+      Is political authority internal to the institution, an external patron,
+      regulator, legitimating partner, administrator, or merely adjacent?
+    rule: POLITICAL_RELATION_NE_RELIGIOUS_IDENTITY
+
+  CENTRALIZATION_AND_SCALE:
+    question: >
+      Is the arrangement local, regional, networked, court-administered,
+      city-based, translocal, or centralized? What evidence actually supports
+      that scale?
+    rule: COORDINATION_NE_ONE_CENTRALIZED_CHURCH
+
+  DIAchRONIC_CHANGE:
+    question: >
+      How does institutional form change across periods without treating later
+      organization as the unchanged form of earlier religion?
+
+comparison_guards:
+  - INSTITUTIONALIZATION_NE_DOCTRINAL_UNIFORMITY
+  - ORGANIZED_ACTIVITY_NE_FORMAL_MEMBERSHIP
+  - STATE_ADMINISTRATION_NE_CENTRALIZED_CHURCH
+  - MATERIAL_RITUAL_LANDSCAPE_NE_PRIESTLY_BUREAUCRACY
+  - CITY_TEMPLE_COMPLEX_NE_ONE_SUMERIAN_INSTITUTIONAL_TEMPLATE
+  - LOCAL_SANGHA_NE_ONE_IMPERIAL_BUDDHIST_CHURCH
+  - ZHI_NE_CHRISTIAN_PARISH_BY_IDENTITY
+  - COURT_REGISTERED_SHRINE_SYSTEM_NE_ALL_LOCAL_RELIGION
+  - TISSO_NE_PAN_SCANDINAVIAN_INSTITUTION
+  - MODERN_REVIVAL_NE_ANCIENT_INSTITUTION
