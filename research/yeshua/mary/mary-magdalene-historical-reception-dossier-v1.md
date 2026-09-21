@@ -1,6 +1,6 @@
 # Mary Magdalene — Historical / Reception Dossier V1
 
-Status: R3 MARY SOURCE-BOUND / INTERNAL HOSTILE REVIEW REQUIRED
+Status: R3 MARY SOURCE-BOUND / FIRST HOSTILE REVIEW APPLIED / SECOND EXACT-HEAD PASS PENDING
 
 Program: **The Real Testament of Yeshua**
 
@@ -82,7 +82,12 @@ announcement but no appearance of the risen Yeshua to Mary is narrated.
 Current dispositions:
 
 HISTORICAL_MARY_MAGDALENE =
-PROBABLE_TO_STRONG_AT_EARLY_GOSPEL_MEMORY_LEVEL.
+PROBABLE.
+
+Mark is the earliest surviving explicit named source and therefore carries most
+of the historical burden. The repeated name/identifier and stable placement
+make a historical referent the lower-assumption reconstruction, but R3 does not
+pretend Mary has Pauline or external attestation comparable to James/Cephas.
 
 MARY_AS_GALILEAN_FOLLOWER =
 PROBABLE.
@@ -205,14 +210,18 @@ an explicit Gospel statement.
 
 Current disposition:
 
-MARY_MAGDALENE_WAS_HISTORICALLY_A_PROSTITUTE =
-NOT_SUPPORTED_BY_EARLIEST_SOURCES.
-
-This is stronger than:
-UNKNOWN.
+EARLIEST_SOURCES_IDENTIFY_MARY_MAGDALENE_AS_PROSTITUTE =
+NOT_SUPPORTED.
 
 The positive prostitute identification lacks support in the earliest explicit
 Mary sources.
+
+This is a source-identification result, not a recovered private biography.
+
+Therefore:
+
+MARY_NEVER_ENGAGED_IN_SEX_WORK =
+UNKNOWN / NOT_HISTORICALLY_DEMONSTRABLE_FROM_CURRENT_EVIDENCE.
 
 But a second proposition must remain separate:
 
@@ -268,13 +277,16 @@ are explicit literary themes.
 
 Current disposition:
 
-MARY_PETER_AUTHORITY_CONFLICT_IN_GOSPEL_OF_MARY =
+GOSPEL_OF_MARY_AUTHORITY_CONFLICT_FOR_THE_WORKS_MARY =
 TEXTUALLY_SECURE.
 
-HISTORICAL_PETER_MARY_CONFLICT =
+MAGDALENE_SPECIFIC_AUTHORITY_CONFLICT_RECEPTION =
+PROBABLE_IF_THE_DOMINANT_MARY_MAGDALENE_IDENTIFICATION_IS_ACCEPTED.
+
+HISTORICAL_PETER_MARY_MAGDALENE_CONFLICT =
 UNRESOLVED / NOT_ESTABLISHED.
 
-HISTORICAL_PRIVATE_REVELATION_TO_MARY =
+HISTORICAL_PRIVATE_REVELATION_TO_MARY_MAGDALENE =
 UNRESOLVED / NOT_ESTABLISHED.
 
 ## 10. Other later Mary authority texts
@@ -403,8 +415,9 @@ The strongest bounded Mary model is:
 - Mary Magdalene was probably a real woman in the Yeshua movement;
 - Mark preserves strong memory of her as a Galilean follower and as a named
   crucifixion/burial/tomb figure;
-- later canonical Gospels increasingly develop resurrection-message/appearance
-  roles;
+- later surviving canonical sources preserve increasingly individualized
+  resurrection-message/appearance roles, but extant-source order alone does not
+  prove a smooth historical development sequence;
 - the earliest sources do not call her a prostitute;
 - the prostitute/sinner composite is later Western reception;
 - later noncanonical texts give Mary major revelatory authority and sometimes
@@ -420,7 +433,56 @@ What is not established:
 - deliberate coordinated prostitute-slander campaign;
 - a direct line from historical Mary to every later Mary authority text.
 
-## 16. Highest-value next discriminators
+## 16. First hostile-review revision result
+
+The first hostile review requires four explicit boundaries.
+
+First:
+
+HISTORICAL_MARY_MAGDALENE =
+PROBABLE,
+not `PROBABLE_TO_STRONG`, because Mark remains the earliest explicit named
+source.
+
+Second:
+
+EARLIEST_SOURCE_PROSTITUTE_IDENTITY =
+NOT_SUPPORTED
+
+does not mean:
+
+MARY_NEVER_ENGAGED_IN_SEX_WORK =
+PROVED.
+
+Third:
+
+GOSPEL_OF_MARY_MARY =
+PROBABLY_MAGDALENE_IN_DOMINANT_SCHOLARLY_IDENTIFICATION,
+not textually automatic.
+
+Therefore the work's authority conflict is secure for its "Mary"; a specifically
+Magdalene reception claim remains conditional on that identification.
+
+Fourth:
+
+MARK -> MATTHEW/LUKE -> JOHN
+is an extant literary/source clock.
+
+It is not, without further dependence/tradition-history analysis, proof of one
+smooth linear development of Mary memory.
+
+The suppression hypothesis therefore remains decomposed:
+
+LATER_IDENTITY_TRANSFORMATION =
+STRONG_RECEPTION_HISTORY.
+
+GENDERED_AUTHORITY_CONFLICT_IN_SELECTED_LATER_TEXTS =
+STRONG_SOURCE_SPECIFICALLY.
+
+COORDINATED_PROSTITUTE_SLANDER_CAMPAIGN_TO_ERASE_HISTORICAL_MARY =
+NOT_ESTABLISHED.
+
+## 17. Highest-value next discriminators
 
 1. Mark 15:40–16:8 source/redaction and women's historical role.
 2. Luke 8:1–3 relation to Markan follower memory.
@@ -434,7 +496,7 @@ What is not established:
 8. Distinguish Mary Magdalene from Mary of Bethany, Jesus's mother, and unnamed
    women in every comparison.
 
-## 17. Guards
+## 18. Guards
 
 - PAULINE_SILENCE_NE_MARY_NONEXISTENCE
 - MARKAN_PROMINENCE_NE_FORMAL_OFFICE
