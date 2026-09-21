@@ -17,12 +17,17 @@ completed:
   - AL_TABARI_Q4_157_TAFSIR_LAYER
   - MULTIPLE_SUBSTITUTION_VARIANT_CONTROL
   - JUDAS_QURAN_TAFSIR_SEPARATION
+  - CANONICAL_HADITH_DESCENT_CLUSTER_MAP
+  - SHARED_ISNAD_INDEPENDENCE_GUARD
+  - ABU_HURAYRA_JABIR_CLUSTER_SEPARATION
 
 key_artifacts:
   - traditions/early-islam/jesus-reception-quran-hadith-v1.md
   - traditions/early-islam/jesus-reception-quran-hadith-v1.yaml
   - traditions/early-islam/q4-157-tafsir-substitution-v1.md
   - traditions/early-islam/q4-157-tafsir-substitution-v1.yaml
+  - traditions/early-islam/jesus-descent-hadith-cluster-v1.md
+  - traditions/early-islam/jesus-descent-hadith-cluster-v1.yaml
 
 current_results:
   quranic_positive_jesus_profile: BOUNDED_STRONG
@@ -35,10 +40,14 @@ current_results:
   one_uniform_named_substitute_story: NOT_ADMITTED
   judas_named_by_quran: NOT_ADMITTED
   muqatil_direct_readback: PENDING
+  canonical_hadith_descent_cluster_plurality: BOUNDED_STRONG
+  pre_canonical_descent_cluster_history: UNKNOWN
+  bukhari_muslim_as_automatic_independent_double_attestation: NOT_ADMITTED
 
 next_frontier:
   - MUQATIL_Q4_157_DIRECT_READBACK
-  - HADITH_DESCENT_REPORT_CLUSTER
+  - PRE_CANONICAL_DESCENT_WITNESSES
+  - ISNAD_CUM_MATN_DESCENT_STUDY
   - ISLAMIC_ASCETIC_JESUS_SAYINGS_PACKET
   - TESTAMENT_BOOK_VI_CARRYDOWN
 
