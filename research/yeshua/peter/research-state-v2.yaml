@@ -1,0 +1,39 @@
+schema_version: on-theo.yeshua-peter-failure-rehabilitation-state.v2
+status: FIRST_HOSTILE_REVIEW_APPLIED_SECOND_PASS_PENDING
+recorded_at: "2026-09-21"
+
+branch:
+  name: research/yeshua-peter-failure-rehabilitation-v1-20260921
+
+parent:
+  branch: research/yeshua-people-source-clock-v1-20260921
+  head: facb8789bbbd0c77f0c3fa27ab71bb3d77b0557d
+  draft_pr: 157
+
+supersedes_for_current_head_use:
+  - research/yeshua/peter/research-state-v1.yaml
+
+current_result:
+  historical_Cephas: VERY_STRONG
+  Cephas_equals_Peter: HIGH_STRONGEST_CURRENT_IDENTIFICATION
+  first_generation_authority: VERY_STRONG
+  Antioch_conflict: VERY_STRONG_PARTICIPANT_REPORT_WITH_PARTISAN_GUARD
+  historical_denial: PLAUSIBLE_WITH_SINGLE_EARLY_EXPLICIT_NARRATIVE_SOURCE_GUARD
+  exact_threefold_denial_scene: NOT_ESTABLISHED
+  Markan_narrative_reinclusion: TEXTUALLY_STRONG
+  later_source_specific_literary_restoration: STRONG_SOURCE_SPECIFIC
+  first_generation_institutional_authority: VERY_STRONG
+  conspiratorial_rehabilitation: NOT_ESTABLISHED
+  hidden_greater_betrayal: NOT_ESTABLISHED
+  Judas_frameup_by_Peter: NOT_ESTABLISHED
+  superior_or_inferior_understanding: NOT_CURRENTLY_RANKABLE
+
+guards:
+  - LATER_CANONICAL_DENIAL_REPETITION_NE_INDEPENDENT_ATTESTATION
+  - FAILURE_NE_HIDDEN_TREACHERY
+  - LITERARY_RESTORATION_NE_ORIGIN_OF_AUTHORITY
+  - EXTANT_CANONICAL_SEQUENCE_NE_SMOOTH_REHABILITATION_HISTORY
+  - AUTHORITY_NE_SUPERIOR_UNDERSTANDING
+
+next:
+  - SECOND_EXACT_HEAD_INTERNAL_HOSTILE_REVIEW
