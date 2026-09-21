@@ -1,0 +1,99 @@
+schema_version: on-theo.yeshua-kingdom-proposition-matrix.v1
+status: R2_INITIAL_SOURCE_CRITICAL
+
+upstream:
+  r1_branch_head: 7b5aa8f3f93c31a69c1d324004feace9cb275d4f
+  r1_reviewed_subject: e5862259f16614d23783756d8a60fc59dddf0f33
+  expanded_source_envelope: 1b6f5c19e649cccd4020987990e17bf04c469da4
+
+context_heads:
+  daniel7: aca04ed902091149e9ebb0e8a900bc1709fb8589
+  jewish_messiah: 2cef8b57c51e0da11653a441e3987cd657614f3e
+  jewish_death_afterlife: 3acfe117989a78eac7ca17e8e70228d4d8a42deb
+  jewish_hostile_powers: 8a61302fb7c6565a11a4fe10ea9523e6e9672a59
+
+claims:
+  - id: CLM-YS-R2-001-FUTURE-ESCHATOLOGICAL
+    proposition: "Yeshua's Kingdom teaching included a materially future eschatological expectation."
+    disposition: PROBABLE_TO_STRONG
+    evidence_class: [PRIMARY_TEXT, HISTORICAL_RECONSTRUCTION]
+    strongest_support:
+      - MARK_KINGDOM_FUTURE_CLUSTER
+      - SYNOPTIC_PRAYER_KINGDOM_COME
+      - SECOND_TEMPLE_ESCHATOLOGICAL_CONTEXT
+    ceiling: "No exact timetable or one apocalyptic source-model is established."
+
+  - id: CLM-YS-R2-002-PRESENT-INBREAKING
+    proposition: "Some early Kingdom traditions present divine reign as already operative or breaking into the present."
+    disposition: MODERATE_TO_STRONG_CANDIDATE
+    evidence_class: [PRIMARY_TEXT, HISTORICAL_RECONSTRUCTION]
+    strongest_support:
+      - EXORCISM_KINGDOM_ARRIVAL_DOUBLE_TRADITION
+      - MARK_HIDDEN_GROWTH_PARABLES
+    ceiling: "Present operation does not equal purely inward metaphysics."
+
+  - id: CLM-YS-R2-003-LUKE17-INWARD
+    proposition: "Luke 17:20-21 securely proves Yeshua taught an inward mystical Kingdom located within each person."
+    disposition: REJECTED_AS_CURRENTLY_SUPPORTED_CONCLUSION
+    evidence_class: [PRIMARY_TEXT, SCHOLARLY_INTERPRETATION]
+    reason:
+      - ENTOS_HYMON_SEMANTIC_DISPUTE
+      - LUKAN_CONTEXT
+      - SINGLE_SOURCE_AND_REDACTION_PROBLEM
+    negation_status: NOT_PROVED
+
+  - id: CLM-YS-R2-004-THOMAS-TRAJECTORY
+    proposition: "Thomas preserves a strong present/inward Kingdom trajectory in early Christian reception."
+    disposition: SURVIVES
+    evidence_class: [PRIMARY_TEXT, HISTORICAL_RECONSTRUCTION]
+    ceiling: "Historical Yeshua value remains saying-specific and independence-dependent."
+
+  - id: CLM-YS-R2-005-THOMAS-HISTORICAL-CORE
+    proposition: "Thomas proves that Yeshua's central historical teaching was inward self-knowledge."
+    disposition: UNRESOLVED
+    evidence_class: [UNKNOWN]
+    reason:
+      - DATE_DISPUTE
+      - DEPENDENCE_DISPUTE
+      - SAYING_LEVEL_STRATIFICATION_REQUIRED
+
+  - id: CLM-YS-R2-006-JEWISH-KINGDOM-CONTEXT
+    proposition: "Jewish apocalyptic/messianic sources provide a strong context for divine-sovereignty, judgment and reversal meanings of Kingdom language."
+    disposition: SURVIVES
+    evidence_class: [PRIMARY_TEXT, SCHOLARLY_INTERPRETATION]
+    ceiling: "Context does not prove direct literary borrowing."
+
+  - id: CLM-YS-R2-007-SOCIAL-REVERSAL
+    proposition: "Yeshua's Kingdom tradition probably carried real social/status reversal implications."
+    disposition: PROBABLE
+    evidence_class: [PRIMARY_TEXT, HISTORICAL_RECONSTRUCTION]
+    ceiling: "Exact egalitarian or revolutionary political program remains unresolved."
+
+  - id: CLM-YS-R2-008-MIXED-MODEL
+    proposition: "The earliest recoverable Kingdom complex is better modeled as multi-register than purely future or purely inward."
+    disposition: STRONG_FOR_EARLY_TRADITION_PROBABLE_AT_MOST_FOR_COHERENT_HISTORICAL_YESHUA_SYSTEM
+    evidence_class: [HISTORICAL_RECONSTRUCTION]
+    components:
+      - FUTURE_ESCHATOLOGICAL
+      - PRESENT_INBREAKING
+      - SOCIAL_ETHICAL
+    inward_component: UNRESOLVED_NOT_PRIMARY
+    ceiling: "MIXED_EARLY_TRADITION != COHERENT_MIXED_HISTORICAL_YESHUA_SYSTEM; R2 V1 reconstructs the tradition more securely than Yeshua's own complete system."
+
+  - id: CLM-YS-R2-009-HISTORICAL-INWARD-CORE
+    proposition: "Yeshua's central historical teaching was an inward mystical or self-knowledge Kingdom."
+    disposition: UNRESOLVED
+    evidence_class: [UNKNOWN]
+    next_discriminators:
+      - LUKE17_LEXICAL_SOURCE_ANALYSIS
+      - PURITY_HEART_SAYINGS
+      - THOMAS_SAYING_INDEPENDENCE
+      - JEWISH_WISDOM_VISIONARY_ANTECEDENTS
+      - JOHANNINE_AND_NONCANONICAL_TRAJECTORY
+
+guards:
+  - R2_DOES_NOT_USE_KABBALAH_AS_FIRST_CENTURY_EVIDENCE
+  - R2_DOES_NOT_USE_HEKHALOT_AS_DIRECT_YESHUA_SOURCE
+  - THOMAS_IS_SAYING_LEVEL_NOT_WHOLE_WORK_INDEPENDENCE
+  - JEWISH_CONTEXT_IS_PLURAL
+  - INWARD_HYPOTHESIS_REMAINS_LIVE_BUT_UNPROMOTED

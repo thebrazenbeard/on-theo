@@ -1,0 +1,28 @@
+schema_version: on-theo.yeshua-kingdom-research-state.v2
+status: LUKE17_LEXICAL_CONTROL_ADDED
+supersedes_for_current_research:
+  - research/yeshua/kingdom/research-state-v1.yaml
+
+branch:
+  name: research/yeshua-kingdom-teaching-v1-20260921
+
+new_artifacts:
+  luke17_packet: research/yeshua/kingdom/luke17-entos-hymon-packet-v1.md
+  luke17_evidence: research/yeshua/kingdom/luke17-entos-hymon-evidence-v1.yaml
+
+current_result:
+  future_eschatological: PROBABLE_TO_STRONG
+  present_inbreaking: MODERATE_TO_STRONG_CANDIDATE
+  luke17_inside_reading: VIABLE_NOT_EXCLUSIVE
+  luke17_among_reading: VIABLE_NOT_EXCLUSIVE
+  luke17_historical_inward_core: NOT_ESTABLISHED
+  inward_mystical_centrality_overall: UNRESOLVED
+
+next_frontier:
+  primary: THOMAS_3_113_INDEPENDENCE_COMPARISON_V1
+  subsequent:
+    - SYNOPTIC_PRESENT_FUTURE_KINGDOM_MATRIX_V1
+    - R2_INTERNAL_HOSTILE_REVIEW
+
+guards:
+  - DO_NOT_CONVERT_LEXICAL_PREFERENCE_TO_METAPHYSICAL_PROOF

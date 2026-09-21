@@ -1,0 +1,34 @@
+schema_version: on-theo.yeshua-kingdom-research-state.v1
+status: R2_INITIAL_PACKET_ACTIVE
+
+branch:
+  name: research/yeshua-kingdom-teaching-v1-20260921
+  base_exact_head: 7b5aa8f3f93c31a69c1d324004feace9cb275d4f
+
+artifacts:
+  boundary: research/yeshua/kingdom/kingdom-teaching-source-boundary-v1.md
+  packet: research/yeshua/kingdom/kingdom-teaching-proposition-packet-v1.md
+  matrix: research/yeshua/kingdom/kingdom-proposition-matrix-v1.yaml
+
+current_result:
+  kingdom_historical_probability: SURVIVES_FROM_R1
+  future_eschatological: PROBABLE_TO_STRONG
+  present_inbreaking: MODERATE_TO_STRONG_CANDIDATE
+  social_reversal: PROBABLE
+  inward_mystical_centrality: UNRESOLVED
+  luke17_as_inward_proof: REJECTED_AS_CURRENTLY_SUPPORTED_CONCLUSION
+  thomas_as_inward_trajectory: SURVIVES
+  thomas_as_direct_historical_proof: UNRESOLVED
+  mixed_multi_register_model: STRONG_CANDIDATE
+
+next_frontier:
+  primary: LUKE17_ENTOS_HYMON_SOURCE_LEXICAL_PACKET_V1
+  subsequent:
+    - SYNOPTIC_PRESENT_FUTURE_KINGDOM_MATRIX_V1
+    - THOMAS_KINGDOM_SAYING_INDEPENDENCE_PACKET_V1
+    - R2_INTERNAL_HOSTILE_REVIEW
+
+guards:
+  - NO_LEADING_INWARD_CONCLUSION
+  - NO_APOCALYPTIC_ONLY_ASSUMPTION
+  - NO_LATE_MYSTICISM_BACK_PROJECTION
