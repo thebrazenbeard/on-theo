@@ -71,13 +71,14 @@ claims:
 
   - id: CLM-YS-R2-008-MIXED-MODEL
     proposition: "The earliest recoverable Kingdom complex is better modeled as multi-register than purely future or purely inward."
-    disposition: STRONG_CANDIDATE
+    disposition: STRONG_FOR_EARLY_TRADITION_PROBABLE_AT_MOST_FOR_COHERENT_HISTORICAL_YESHUA_SYSTEM
     evidence_class: [HISTORICAL_RECONSTRUCTION]
     components:
       - FUTURE_ESCHATOLOGICAL
       - PRESENT_INBREAKING
       - SOCIAL_ETHICAL
     inward_component: UNRESOLVED_NOT_PRIMARY
+    ceiling: "MIXED_EARLY_TRADITION != COHERENT_MIXED_HISTORICAL_YESHUA_SYSTEM; R2 V1 reconstructs the tradition more securely than Yeshua's own complete system."
 
   - id: CLM-YS-R2-009-HISTORICAL-INWARD-CORE
     proposition: "Yeshua's central historical teaching was an inward mystical or self-knowledge Kingdom."
