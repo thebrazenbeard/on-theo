@@ -1,6 +1,6 @@
 # Yeshua People / Inner-Circle Source Clock V1
 
-Status: R3 SOURCE-CLOCK CONTROL / INTERNAL REVIEW REQUIRED
+Status: R3 SOURCE-CLOCK CONTROL / FIRST HOSTILE REVIEW APPLIED / SECOND REVIEW PENDING
 
 Program: **The Real Testament of Yeshua**
 
@@ -20,6 +20,10 @@ PERSONAL_PROMINENCE_IN_A_LATER_TEXT != HISTORICAL_ACCESS_TO_YESHUA
 Likewise:
 
 EARLIER_SOURCE != AUTOMATICALLY_COMPLETE_SOURCE
+
+EARLIER_SOURCE != TRUTH_SCORE
+
+Later authority texts remain historically valuable as evidence for later Christian memory, identity, and authority discourse even when they are not admitted as first-century biographical transcripts.
 
 The task is to preserve what each layer can actually establish.
 
@@ -70,7 +74,7 @@ T. C. Schmidt's 2025 treatment argues strongly for authenticity and notes broad 
 
 ### Current ceiling
 
-James was an unusually early and important Jerusalem figure associated with Yeshua and identified as his brother in the strongest reading of the evidence.
+James was an unusually early and important Jerusalem figure associated with Yeshua. Ordinary familial kinship is the strongest current reading of Paul's "brother of the Lord" language, reinforced if Josephus Antiquities 20.200 is authentic; the exact biological configuration remains unresolved.
 
 This does not yet establish:
 - exact biological kinship model;
@@ -80,6 +84,10 @@ This does not yet establish:
 - that later Jewish-Christian traditions preserve James without development.
 
 ## 3. Cephas / Peter
+
+### Identity control
+
+R3 follows the overwhelmingly conventional identification of Pauline Cephas with the Peter of later Gospel tradition. That identification is strong but should remain explicit rather than invisible; minority proposals distinguishing Cephas and Peter have existed and would require positive evidence to displace the mainstream identification.
 
 ### Earliest source
 
@@ -152,7 +160,7 @@ Recent Oxford historical synthesis (2026) treats Magdalene as a key witness in G
 
 ### Current ceiling
 
-Mary Magdalene was an important remembered follower associated especially with the final Jerusalem events and tomb/resurrection tradition.
+Mark strongly remembers Mary Magdalene as a follower/serving woman from Galilee and as a named figure at the crucifixion, burial-location, and tomb boundary. That supports prominence in the surviving Markan passion/tomb memory, not a reconstructed rank within Yeshua's movement before Jerusalem.
 
 R3 does not yet establish:
 - that she was Yeshua's chief disciple;
@@ -176,7 +184,7 @@ Mark 14 supplies:
 
 ### Pauline control
 
-Paul does not name Judas in the surviving undisputed letters.
+Paul does not name Judas in the surviving undisputed letters. This silence is weak negative evidence because Paul's letters are occasional and non-biographical; it does not disprove a pre-Markan Judas tradition.
 
 1 Corinthians 11:23 uses `paradidomi` language in the meal tradition, but that verb cannot simply be converted into an independent named-Judas witness.
 
@@ -196,12 +204,14 @@ JUDAS_WAS_NOT_HISTORICAL.
 
 "The Twelve" can function as a group label.
 
-### Later development
+### Later extant portrayals
 
-Matthew develops payment/repentance/death traditions.
-Luke-Acts and John intensify moral/demonic characterization in distinct ways.
-Later Papias material and other traditions expand Judas grotesquely.
+Matthew preserves additional payment/repentance/death material.
+Luke-Acts and John preserve distinct stronger moral/demonic characterizations.
+Later Papias material and other traditions preserve grotesque expansions.
 The Gospel of Judas radically reconfigures Judas and the Twelve in a second-century Christian polemical/cosmological setting.
+
+This surviving chronological sequence is not, by itself, proof of a smooth historical development path; lost earlier traditions could complicate the order.
 
 ### Current ceiling
 
@@ -248,7 +258,7 @@ THOMAS_WITNESS_DATE != THOMAS_COMPOSITION_DATE != SAYING_INDEPENDENCE.
 
 ### Current ceiling
 
-A disciple called Thomas belongs to early Gospel group memory.
+A disciple called Thomas belongs to early Gospel group memory. Markan roster identity, Johannine literary characterization, and later Thomasine revelatory authority must remain separate layers rather than one continuous reconstructed personality.
 
 R3 does not establish:
 - that John preserves literal Thomas dialogue;
@@ -309,7 +319,9 @@ Uniquely among this set, he has substantial non-Christian external attestation i
 
 ## 9. Claims this source clock rejects as premature
 
-The current source clock does not support, at R3 entry:
+The current source clock cannot currently rank who historically understood Yeshua best because the evidence sets are structurally incommensurable across Pauline social evidence, Gospel narrative characterization, and later revelatory dialogues.
+
+It does not support, at R3 entry:
 
 - MARY_HISTORICALLY_UNDERSTOOD_YESHUA_BETTER_THAN_PETER;
 - THOMAS_HISTORICALLY_UNDERSTOOD_YESHUA_BETTER_THAN_PETER;
@@ -332,11 +344,13 @@ These remain possible research questions only where the evidence class permits.
 6. Thomas historical/Thomasine separation;
 7. Twelve collective failure/authority synthesis.
 
-Judas goes first because:
-- it is highly load-bearing for the project's arrest hypothesis;
-- it has unusually high confirmation-bias risk;
+Judas goes first as an asymmetric-skepticism choice, not because he is historically the most important follower:
+- the project has unusually strong prior interest in exonerating or reframing Judas;
+- the claim is highly load-bearing for the arrest hypothesis;
 - Paul/Mark tension gives a real discriminator;
-- later development is rich enough to test diachronically.
+- later extant portrayals are rich enough for diachronic source comparison.
+
+The purpose of prioritizing Judas is to make the project's preferred suspicion harder to sustain without evidence, not easier.
 
 ## Current global ceiling
 
