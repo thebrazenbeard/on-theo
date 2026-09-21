@@ -1,5 +1,5 @@
 schema_version: on-theo.yeshua-people-source-clock.v1
-status: SOURCE_BOUND_INTERNAL_REVIEW_REQUIRED
+status: FIRST_HOSTILE_REVIEW_REVISIONS_APPLIED_SECOND_REVIEW_PENDING
 canonical: false
 program: THE_REAL_TESTAMENT_OF_YESHUA
 lane: R3_PEOPLE_AROUND_YESHUA
@@ -17,6 +17,9 @@ controls:
   - LATER_AUTHORITY_CONFLICT_NE_FIRST_CENTURY_TRANSCRIPT
   - PAULINE_SILENCE_NE_NONEXISTENCE
   - LATE_REVERSAL_NE_SUPPRESSED_EARLY_TRUTH
+  - EARLIER_SOURCE_NE_TRUTH_SCORE
+  - LATER_AUTHORITY_TEXT_NE_FIRST_CENTURY_TRANSCRIPT
+  - LATER_AUTHORITY_TEXT_REMAINS_RECEPTION_EVIDENCE
 
 figures:
   - id: JOHN_BAPTIST
@@ -44,10 +47,14 @@ figures:
       source: SRC-JOSEPHUS-ANTIQUITIES-20-200
       locator: "Antiquities 20.200"
       authenticity: STRONGLY_SUPPORTED_NOT_UNANIMOUS
-    current_ceiling: "Very early major Jerusalem figure identified as Yeshua's brother in strongest reading; exact kinship and dynastic succession unresolved."
+    current_ceiling: "Very early major Jerusalem figure; ordinary familial kinship is the strongest current reading of brother language, while exact biological configuration and dynastic succession remain unresolved."
     priority: 2
 
   - id: CEPHAS_PETER
+    identity_control:
+      mainstream_identification: CEPHAS_EQUALS_PETER_STRONG
+      minority_distinction: HISTORICALLY_PROPOSED_NOT_CURRENTLY_PREFERRED
+      rule: "Identification must remain explicit and revisable."
     earliest_source:
       source: SRC-PAUL-GALATIANS
       locators: ["Galatians 1:18", "Galatians 2:7-14"]
@@ -74,7 +81,7 @@ figures:
         role: INDIVIDUAL_APPEARANCE_AND_MESSENGER
       - source: SRC-GOSPEL-MARY
         role: REVELATION_AND_AUTHORITY_CONFLICT
-    current_ceiling: "Important remembered follower/witness at passion-tomb boundary; chief-disciple/suppression claims unresolved."
+    current_ceiling: "Strong Markan passion/burial/tomb prominence plus remembered Galilean following/service; movement rank, chief-disciple status, and suppression claims unresolved."
     priority: 3
 
   - id: JUDAS_ISCARIOT
@@ -85,7 +92,7 @@ figures:
     pauline_controls:
       - source: SRC-PAUL-1COR
         locator: "1 Corinthians 11:23"
-        note: "paradidomi language does not independently name Judas"
+        note: "paradidomi language does not independently name Judas; Pauline silence elsewhere does not disprove a pre-Markan Judas tradition"
       - source: SRC-PAUL-1COR
         locator: "1 Corinthians 15:5"
         note: "Twelve is an early group label; numerical tension is not proof of Judas innocence/nonexistence"
@@ -104,7 +111,7 @@ figures:
     later_trajectory:
       - SRC-GOSPEL-THOMAS
       - ACTS_OF_THOMAS_LATER_TRADITION
-    current_ceiling: "Early named disciple tradition; distinctive Thomas personality and Thomasine revelatory authority are later and historically unpromoted."
+    current_ceiling: "Early named disciple tradition; Markan roster identity, Johannine characterization, and Thomasine revelatory authority are distinct layers and do not establish one continuous personality."
     priority: 6
 
   - id: TWELVE_COLLECTIVE
@@ -142,7 +149,7 @@ cross_person_claims:
 
   - id: CLM-YS-R3-CLK-005-SUPERIOR_UNDERSTANDING
     proposition: "The early source clock establishes that Mary, Judas, or Thomas understood historical Yeshua better than Peter/James."
-    disposition: REJECTED_AS_R3_ENTRY_SUPPORTED_CONCLUSION
+    disposition: NOT_CURRENTLY_RANKABLE_AND_NOT_SUPPORTED
     negation_status: NOT_PROVED
     evidence_class: [UNKNOWN]
 
@@ -186,6 +193,7 @@ scholarly_controls:
     bounded_use: "Diachronic Judas source comparison and distinction between historical Judas questions and later Gospel of Judas interpretation."
 
 next_frontier:
+  priority_rationale: "Judas first is an asymmetric-skepticism/bias-control choice because the project has unusually strong prior interest in reframing him; it is not a ranking of historical importance."
   primary: JUDAS_SOURCE_DEVELOPMENT_DOSSIER
   subsequent:
     - JAMES_AUTHORITY_FAMILY_DOSSIER
