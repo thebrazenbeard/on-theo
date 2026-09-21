@@ -1,5 +1,5 @@
 schema_version: on-theo.yeshua-peter-failure-rehabilitation.v1
-status: SOURCE_BOUND_PENDING_HOSTILE_REVIEW
+status: FIRST_HOSTILE_REVIEW_APPLIED_SECOND_PASS_PENDING
 canonical: false
 program: THE_REAL_TESTAMENT_OF_YESHUA
 lane: R3_PETER_FAILURE_REHABILITATION
@@ -89,9 +89,9 @@ claims:
 
   - id: CLM-YS-R3-PET-005-DENIAL
     proposition: "Historical Peter denied association with Yeshua during the passion."
-    disposition: PLAUSIBLE_PENDING_HOSTILE_REVIEW
+    disposition: PLAUSIBLE_WITH_SINGLE_EARLY_EXPLICIT_NARRATIVE_SOURCE_GUARD
     evidence_class: [PRIMARY_TEXT, HISTORICAL_RECONSTRUCTION]
-    ceiling: "Exact threefold choreography not established."
+    ceiling: "Mark is the earliest explicit narrative source; later canonical preservation is not counted as independent multiple attestation without dependence analysis; exact threefold choreography not established."
 
   - id: CLM-YS-R3-PET-006-MARKAN-REINCLUSION
     proposition: "Mark itself combines Peter's failure with a post-failure reinclusion signal."
@@ -126,9 +126,9 @@ claims:
 
 models:
   P0_HISTORICAL_FAILURE_WITH_AUTHORITY:
-    status: PLAUSIBLE_LOW_ASSUMPTION
+    status: PLAUSIBLE_NOT_YET_SECURE
   P1_DIDACTIC_REPRESENTATIVE_FAILURE:
-    status: TEXTUALLY_PLAUSIBLE_HISTORICAL_CORE_UNRESOLVED
+    status: TEXTUALLY_STRONG_AS_FUNCTION_HISTORICAL_CORE_UNRESOLVED
   P2_ANTI_PETER_POLEMIC_SHAPING:
     status: POSSIBLE_REQUIRES_POSITIVE_EVIDENCE
   P3_HIDDEN_GREATER_BETRAYAL_REHABILITATED:
@@ -175,8 +175,23 @@ scholarly_controls:
     bounded_use: "Current authorship/date dispute; Petrine attribution cannot be silently converted into historical Peter authorship."
     url: "https://academic.oup.com/edited-volume/57514/chapter-abstract/467936100"
 
+rehabilitation_decomposition:
+  MARKAN_NARRATIVE_REINCLUSION: TEXTUALLY_STRONG
+  LATER_SOURCE_SPECIFIC_LITERARY_RESTORATION: STRONG_SOURCE_SPECIFIC
+  FIRST_GENERATION_INSTITUTIONAL_AUTHORITY: VERY_STRONG_IN_PAUL
+  CONSPIRATORIAL_REHABILITATION: NOT_ESTABLISHED
+  guard: EXTANT_CANONICAL_SEQUENCE_NE_SMOOTH_REHABILITATION_HISTORY
+
+review_revision:
+  first_review_subject: 33f7997ec052907e70aa218684181d2911b64bf4
+  first_review_artifact: reviews/yeshua-peter-failure-rehabilitation-v1-hostile-review.md
+  principal_changes:
+    - HISTORICAL_DENIAL_SINGLE_EARLY_SOURCE_GUARD
+    - P0_DEMOTED_FROM_LOW_ASSUMPTION
+    - REHABILITATION_DECOMPOSED
+
 next:
-  - INTERNAL_HOSTILE_REVIEW
+  - SECOND_EXACT_HEAD_INTERNAL_HOSTILE_REVIEW
   - MARKAN_DENIAL_TRADITION_CONTROL
   - LATER_PETER_RESTORATION_PACKET
   - PETER_MARY_AUTHORITY_RECEPTION_PACKET
