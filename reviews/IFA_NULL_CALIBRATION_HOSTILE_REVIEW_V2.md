@@ -62,6 +62,20 @@ which is at least 1/256 and may be much larger.
 Therefore an elevated tie rate is not evidence of hidden structure until the
 ordinary state distribution is accounted for.
 
+## Attack: sparse data cannot certify full exchangeability
+
+The exact theorem concerns the entire ordered-pair distribution.
+
+With 256 possible states there are 65,536 ordered cells. A 2,500-attempt run is
+too sparse to establish cell-by-cell symmetry.
+
+Repair:
+test preregistered projections and use the narrower label
+DIRECTIONAL_SYMMETRY_COMPATIBLE_AT_CALIBRATION_RESOLUTION.
+
+If the project ever says "exchangeability proven" from non-significant
+diagnostics, the hostile review fails it.
+
 ## Attack: cancellation can hide drift
 
 Overall A/B = 50/50 can arise from:

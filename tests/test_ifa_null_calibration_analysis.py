@@ -1,0 +1,121 @@
+from importlib.util import module_from_spec, spec_from_file_location
+from pathlib import Path
+
+import pytest
+
+
+MODULE_PATH = (
+    Path(__file__).resolve().parents[1]
+    / "research"
+    / "ritual-interface-exploit"
+    / "reference"
+    / "ifa_null_calibration_analysis.py"
+)
+SPEC = spec_from_file_location("ifa_null_calibration_analysis", MODULE_PATH)
+assert SPEC is not None and SPEC.loader is not None
+MODULE = module_from_spec(SPEC)
+SPEC.loader.exec_module(MODULE)
+
+
+def make_records(rank_pairs):
+    records = []
+    prior = MODULE.GENESIS_HASH
+    for index, (first_rank, second_rank) in enumerate(rank_pairs, start=1):
+        relation = MODULE.expected_relation(first_rank, second_rank)
+        side = MODULE.expected_side(relation)
+        token_left = "A" if index % 2 else "B"
+        token_right = "B" if index % 2 else "A"
+        if side == "LEFT":
+            output = token_left
+        elif side == "RIGHT":
+            output = token_right
+        else:
+            output = "INVALID"
+        record = {
+            "trial_id": f"T{index:05d}",
+            "procedure_version": "MODE_S_TEST",
+            "procedure_hash": "a" * 64,
+            "timestamp_utc": f"2026-09-21T12:{index % 60:02d}:00Z",
+            "session_id": "S1" if index <= len(rank_pairs) // 2 else "S2",
+            "operator_id_pseudonymous": "OP1",
+            "attempt_index_global": index,
+            "attempt_index_session": index,
+            "cast1_raw_state": f"ODU_{first_rank:03d}",
+            "cast2_raw_state": f"ODU_{second_rank:03d}",
+            "cast1_rank": first_rank,
+            "cast2_rank": second_rank,
+            "pair_relation": relation,
+            "selected_side": side,
+            "token_left": token_left,
+            "token_right": token_right,
+            "raw_output": output,
+            "invalid_reason": (
+                "EQUAL_RANK" if relation == "EQUAL" else None
+            ),
+            "recast_count": 0,
+            "deviation_code": None,
+            "prior_event_hash": prior,
+        }
+        record["event_hash"] = MODULE.compute_event_hash(record)
+        records.append(record)
+        prior = record["event_hash"]
+    return records
+
+
+def test_balanced_orientation_is_not_rejected():
+    pairs = []
+    for _ in range(50):
+        pairs.extend([(1, 2), (2, 1), (17, 49), (49, 17)])
+    summary = MODULE.summarize_mode_s(
+        make_records(pairs),
+        swap_replicates=2000,
+    )
+    assert summary["p_right"] == 0.5
+    assert summary["directional_half_rejected_alpha_0_01"] is False
+    assert summary["symmetry_projection_rejected_alpha_0_01"] is False
+    assert summary["cast_position_state_total_variation"] == 0.0
+
+
+def test_strong_position_bias_is_rejected():
+    pairs = [(1, 33)] * 180 + [(33, 1)] * 20
+    summary = MODULE.summarize_mode_s(
+        make_records(pairs),
+        swap_replicates=5000,
+    )
+    assert summary["p_right"] == 0.1
+    assert summary["directional_half_rejected_alpha_0_01"] is True
+    assert summary["symmetry_projection_rejected_alpha_0_01"] is True
+
+
+def test_equal_rank_is_invalid_and_retained():
+    summary = MODULE.summarize_mode_s(
+        make_records([(1, 1), (2, 1), (1, 2)]),
+        swap_replicates=200,
+    )
+    assert summary["attempts"] == 3
+    assert summary["ties"] == 1
+    assert summary["valid"] == 2
+
+
+def test_target_bearing_record_is_rejected():
+    records = make_records([(1, 2)])
+    records[0]["target"] = "A"
+    records[0]["event_hash"] = MODULE.compute_event_hash(records[0])
+    with pytest.raises(MODULE.CalibrationIntegrityError, match="prohibited"):
+        MODULE.summarize_mode_s(records, swap_replicates=100)
+
+
+def test_broken_hash_chain_is_rejected():
+    records = make_records([(1, 2), (2, 1)])
+    records[1]["prior_event_hash"] = "f" * 64
+    records[1]["event_hash"] = MODULE.compute_event_hash(records[1])
+    with pytest.raises(MODULE.CalibrationIntegrityError, match="chain"):
+        MODULE.summarize_mode_s(records, swap_replicates=100)
+
+
+def test_duplicate_trial_id_is_rejected():
+    records = make_records([(1, 2), (2, 1)])
+    records[1]["trial_id"] = records[0]["trial_id"]
+    records[1]["event_hash"] = MODULE.compute_event_hash(records[1])
+    with pytest.raises(MODULE.CalibrationIntegrityError, match="duplicate"):
+        MODULE.summarize_mode_s(records, swap_replicates=100)
