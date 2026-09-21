@@ -1,0 +1,29 @@
+schema_version: on-theo.yeshua-kingdom-research-state.v3
+status: THOMAS_KINGDOM_INDEPENDENCE_CONTROL_ADDED
+supersedes_for_current_research:
+  - research/yeshua/kingdom/research-state-v2.yaml
+
+branch:
+  name: research/yeshua-kingdom-teaching-v1-20260921
+
+new_artifacts:
+  thomas_packet: research/yeshua/kingdom/thomas-3-113-independence-packet-v1.md
+  thomas_evidence: research/yeshua/kingdom/thomas-3-113-independence-evidence-v1.yaml
+
+current_result:
+  future_eschatological: PROBABLE_TO_STRONG
+  present_inbreaking: MODERATE_TO_STRONG_CANDIDATE
+  luke17_inside_reading: VIABLE_NOT_EXCLUSIVE
+  thomas_present_inward_trajectory: SURVIVES
+  thomas_independence: UNRESOLVED_SAYING_LEVEL
+  historical_inward_mystical_centrality: UNRESOLVED
+  mixed_multi_register_model: STRONG_CANDIDATE
+
+next_frontier:
+  primary: SYNOPTIC_PRESENT_FUTURE_KINGDOM_MATRIX_V1
+  subsequent:
+    - JEWISH_KINGDOM_CONTEXT_MATRIX_V1
+    - R2_INTERNAL_HOSTILE_REVIEW
+
+guards:
+  - TRAJECTORY_DOES_NOT_ESTABLISH_YESHUA_ORIGIN
