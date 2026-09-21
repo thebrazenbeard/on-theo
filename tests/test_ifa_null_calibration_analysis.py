@@ -232,3 +232,57 @@ def test_unknown_raw_state_is_rejected():
         match="not in frozen 256-state table",
     ):
         MODULE.summarize_mode_s(records, swap_replicates=100)
+
+
+def test_predeclared_partial_invalid_is_retained():
+    records = make_records([(1, 2)])
+    records[0]["cast2_raw_state"] = None
+    records[0]["cast2_rank"] = None
+    records[0]["pair_relation"] = "INVALID"
+    records[0]["selected_side"] = None
+    records[0]["raw_output"] = "INVALID"
+    records[0]["invalid_reason"] = "PAIR_DISTURBED_BEFORE_COMPLETION"
+    records[0]["event_hash"] = MODULE.compute_event_hash(records[0])
+    summary = MODULE.summarize_mode_s(records, swap_replicates=100)
+    assert summary["attempts"] == 1
+    assert summary["valid"] == 0
+    assert summary["ties"] == 0
+    assert summary["other_invalid"] == 1
+
+
+def test_unlisted_invalid_reason_is_rejected():
+    records = make_records([(1, 2)])
+    records[0]["cast2_raw_state"] = None
+    records[0]["cast2_rank"] = None
+    records[0]["pair_relation"] = "INVALID"
+    records[0]["selected_side"] = None
+    records[0]["raw_output"] = "INVALID"
+    records[0]["invalid_reason"] = "FELT_WRONG"
+    records[0]["event_hash"] = MODULE.compute_event_hash(records[0])
+    with pytest.raises(
+        MODULE.CalibrationIntegrityError,
+        match="invalid_reason is not predeclared",
+    ):
+        MODULE.summarize_mode_s(records, swap_replicates=100)
+
+
+def test_valid_pair_cannot_be_retroactively_invalidated():
+    records = make_records([(1, 2)])
+    records[0]["invalid_reason"] = "PAIR_DISTURBED_BEFORE_COMPLETION"
+    records[0]["event_hash"] = MODULE.compute_event_hash(records[0])
+    with pytest.raises(
+        MODULE.CalibrationIntegrityError,
+        match="valid pair cannot carry invalid_reason",
+    ):
+        MODULE.summarize_mode_s(records, swap_replicates=100)
+
+
+def test_unlisted_deviation_code_is_rejected():
+    records = make_records([(1, 2)])
+    records[0]["deviation_code"] = "POSTHOC_EXCEPTION"
+    records[0]["event_hash"] = MODULE.compute_event_hash(records[0])
+    with pytest.raises(
+        MODULE.CalibrationIntegrityError,
+        match="deviation_code is not predeclared",
+    ):
+        MODULE.summarize_mode_s(records, swap_replicates=100)
