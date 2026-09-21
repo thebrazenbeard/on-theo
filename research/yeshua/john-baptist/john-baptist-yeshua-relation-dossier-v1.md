@@ -377,8 +377,8 @@ The strongest bounded John/Yeshua model is:
   movement leader with substantial popular influence;
 - Herod Antipas executed him;
 - Yeshua's baptism by John is historically probable;
-- the baptism implies real contact and at least temporary participation in
-  John's religious program;
+- the baptism implies real contact and participation in John's baptismal rite;
+  broader programmatic alignment remains plausible but unresolved;
 - John's formative influence on Yeshua is a plausible and historically
   important hypothesis, but its magnitude is not recoverable from the current
   evidence;
