@@ -1,5 +1,5 @@
 schema_version: on-theo.yeshua-john-baptist-relation.v1
-status: SOURCE_BOUND_PENDING_HOSTILE_REVIEW
+status: FIRST_HOSTILE_REVIEW_APPLIED_SECOND_PASS_PENDING
 canonical: false
 program: THE_REAL_TESTAMENT_OF_YESHUA
 lane: R3_JOHN_BAPTIST_RELATION
@@ -67,9 +67,9 @@ claims:
 
   - id: CLM-YS-R3-JOH-003-YESHUA-BAPTISM
     proposition: "Yeshua was baptized by John."
-    disposition: HISTORICALLY_PROBABLE_PENDING_HOSTILE_REVIEW
+    disposition: HISTORICALLY_PROBABLE_WITH_GOSPEL_TRADITION_AND_SOURCE_PRESSURE_GUARD
     evidence_class: [PRIMARY_TEXT, HISTORICAL_RECONSTRUCTION]
-    ceiling: "Josephus independently establishes John, not this event."
+    ceiling: "Josephus independently establishes John, not this event; later canonical repetition is not independent attestation by default."
 
   - id: CLM-YS-R3-JOH-004-LONG-APPRENTICE
     proposition: "Yeshua was a long-term formal disciple/apprentice of John."
@@ -78,7 +78,7 @@ claims:
 
   - id: CLM-YS-R3-JOH-005-FORMATIVE-INFLUENCE
     proposition: "John materially influenced the emergence of Yeshua's movement."
-    disposition: PLAUSIBLE_TO_PROBABLE_BROAD_MODEL
+    disposition: PLAUSIBLE_HISTORICALLY_IMPORTANT_HYPOTHESIS_NOT_QUANTIFIED
     evidence_class: [HISTORICAL_RECONSTRUCTION, SCHOLARLY_INTERPRETATION]
 
   - id: CLM-YS-R3-JOH-006-QUMRAN
@@ -90,6 +90,8 @@ claims:
     proposition: "Josephus and Mark preserve an identical theology of John's baptism."
     disposition: REJECTED_AS_OVERHARMONIZED_CURRENT_CONCLUSION
     evidence_class: [PRIMARY_TEXT, HISTORICAL_RECONSTRUCTION]
+    current_positive_result: SOURCE_PRESENTATION_DIVERGENCE
+    exact_historical_baptism_theology: UNRESOLVED
 
   - id: CLM-YS-R3-JOH-008-EXECUTION-MOTIVE
     proposition: "John was executed for one securely recoverable single motive."
@@ -107,12 +109,14 @@ claims:
     evidence_class: [UNKNOWN]
 
 models:
-  J0_REAL_CONTACT_BAPTISM_INFLUENCE:
-    status: PLAUSIBLE_TO_PROBABLE
+  J0_REAL_CONTACT_BAPTISM:
+    status: HISTORICALLY_PROBABLE
+  J0B_FORMATIVE_INFLUENCE:
+    status: PLAUSIBLE_NOT_QUANTIFIED
   J1_FORMAL_LONG_APPRENTICESHIP:
     status: PLAUSIBLE_NOT_ESTABLISHED
-  J2_YESHUA_MOVEMENT_DIRECT_OFFSHOOT:
-    status: PLAUSIBLE_BROADLY_NOT_INSTITUTIONALLY_ESTABLISHED
+  J2_YESHUA_MOVEMENT_INSTITUTIONAL_DESCENT:
+    status: NOT_ESTABLISHED
   J3_QUMRAN_ESSENE_MEMBERSHIP:
     status: SPECULATIVE_NOT_ESTABLISHED
   J4_INDEPENDENT_PARALLEL_JEWISH_RENEWAL:
@@ -158,8 +162,17 @@ scholarly_controls:
     bounded_use: "DSS/Qumran continuities and differences provide Jewish context for John without establishing direct membership."
     url: "https://academic.oup.com/book/46056/chapter-abstract/404536130"
 
+review_revision:
+  first_review_subject: 1125f4b7c269362f4a3522d888a8de6543e6a66b
+  first_review_artifact: reviews/yeshua-john-baptist-relation-v1-hostile-review.md
+  principal_changes:
+    - FORMATIVE_INFLUENCE_DEMOTED_TO_PLAUSIBLE_NOT_QUANTIFIED
+    - MOVEMENT_INSTITUTIONAL_DESCENT_NOT_ESTABLISHED
+    - BAPTISM_EVENT_GUARDED_AS_NOT_JOSEPHANLY_ATTESTED
+    - BAPTISM_THEOLOGY_REFRAMED_AS_SOURCE_PRESENTATION_DIVERGENCE
+
 next:
-  - INTERNAL_HOSTILE_REVIEW
+  - SECOND_EXACT_HEAD_INTERNAL_HOSTILE_REVIEW
   - JOHN_YESHUA_BAPTISM_RELATION_PACKET
   - JOHN_QUMRAN_COMPARATIVE_CONTROL
   - JOHN_EXECUTION_MOTIVE_PACKET
