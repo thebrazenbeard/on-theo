@@ -1,0 +1,83 @@
+schema_version: on_theo.early_islam_jesus_reception.v1
+status: BOUNDED_PRIMARY_TEXT_LATER_RECEPTION_REVIEW_REQUIRED
+canonical: false
+
+base:
+  branch: corpus/early-islamic-development-v1-20260917
+  exact_head: 9f8e67054b306364f2cf057c19e34c5c0be57ca4
+
+layers:
+  quran:
+    evidence_class: PRIMARY_TEXT
+    historical_role: quranic_jesus
+  canonical_sunni_hadith:
+    evidence_class: PRIMARY_TEXT
+    historical_role: ninth_century_collection_layer_with_possible_earlier_transmission
+  tafsir:
+    status: HELD_PENDING_EXACT_PACKET
+  modern_scholarship:
+    evidence_class: SCHOLARLY_INTERPRETATION
+
+claims:
+  - id: QJ-V1-001
+    proposition: The Qur'an presents Jesus as Messiah, prophet/messenger, son of Mary, and divinely authorized sign while rejecting divine sonship.
+    status: BOUNDED
+    confidence: strong_for_quranic_text
+  - id: QJ-V1-002
+    proposition: The Qur'an gives Jesus an extensive miracle profile while repeatedly subordinating miraculous agency to divine permission.
+    status: BOUNDED
+    confidence: strong_for_quranic_text
+  - id: QJ-V1-003
+    proposition: Q 4:157-158 denies that the addressed opponents successfully killed/crucified Jesus and juxtaposes that denial with divine raising.
+    status: BOUNDED
+    confidence: strong_for_quranic_text
+  - id: QJ-V1-004
+    proposition: Q 4:157 explicitly names the substitute crucified in Jesus's place.
+    status: NOT_ADMITTED
+  - id: QJ-V1-005
+    proposition: Quranic taking/raising language leaves interpretive questions about death/removal chronology.
+    status: BOUNDED
+    confidence: strong_for_text_interpretation_disputed
+  - id: QJ-V1-006
+    proposition: The full later descent scenario should be attributed to the Qur'an alone.
+    status: NOT_ADMITTED
+  - id: QJ-V1-007
+    proposition: Qur'anic wording, classical substitution exegesis, and modern historical-critical readings must remain separate layers.
+    status: BOUNDED
+    confidence: strong_as_method_control
+  - id: ISAJ-V1-001
+    proposition: Canonical Sunni hadith collections preserve a developed future-descent scenario for Jesus.
+    status: BOUNDED
+    confidence: strong_for_collection_layer
+  - id: ISAJ-V1-002
+    proposition: Bukhari and Muslim descent reports are seventh-century written eyewitness documents.
+    status: NOT_ADMITTED
+  - id: ISAJ-V1-003
+    proposition: Related hadith variants require cluster-level transmission analysis.
+    status: BOUNDED
+    confidence: strong_as_method_control
+  - id: ISAJ-V1-004
+    proposition: The canonical hadith layer materially expands the narrative specificity of Jesus's eschatological role relative to the Qur'an alone.
+    class: HISTORICAL_RECONSTRUCTION
+    status: BOUNDED
+    confidence: strong_at_textual_comparison_level
+  - id: ISAJ-V1-005
+    proposition: Islamic Jesus traditions are reception evidence and do not automatically become first-century eyewitness biography.
+    status: BOUNDED
+    confidence: strong_as_method_control
+
+guards:
+  - QURANIC_JESUS_NE_LATER_HADITH_JESUS
+  - Q4_157_158_NE_NAMED_SUBSTITUTE_NARRATIVE
+  - COLLECTION_DATE_NE_CLAIMED_EVENT_DATE
+  - CANONICAL_HADITH_COLLECTION_NE_SEVENTH_CENTURY_DOCUMENT
+  - CLASSICAL_MAJORITY_INTERPRETATION_NE_EXPLICIT_QURANIC_WORDING
+  - LATER_TAFSIR_DETAIL_NE_PRIMARY_QURANIC_PROPOSITION
+  - ISLAMIC_RECEPTION_NE_FIRST_CENTURY_BIOGRAPHY
+
+next_scope:
+  - EARLY_TAFSIR_CRUCIFIXION_SUBSTITUTION_PACKET
+  - HADITH_DESCENT_REPORT_CLUSTER
+  - ISLAMIC_ASCETIC_JESUS_SAYINGS_PACKET
+  - TESTAMENT_BOOK_VI_CARRYDOWN
+  - BOOK_VI_ISLAMIC_RECEPTION_HOSTILE_REREVIEW
