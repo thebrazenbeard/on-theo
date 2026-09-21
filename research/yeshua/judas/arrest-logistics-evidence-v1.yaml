@@ -1,0 +1,63 @@
+schema_version: on-theo.yeshua-judas-arrest-logistics.v1
+status: BOUNDED_LOGISTICS_TEST
+
+source_divergence:
+  MARK_MATTHEW:
+    arrest_party: CHIEF_PRIESTLY_LOCAL_CLIENT_FRAME
+  LUKE:
+    arrest_party: RELATED_LOCAL_AUTHORITY_FRAME_WITH_LUKAN_SHAPING
+  JOHN:
+    arrest_party: ROMAN_MILITARY_PLUS_CHIEF_PRIESTLY_PERSONNEL_APPARENT
+  result: ARREST_PARTY_COMPOSITION_SOURCE_DIVERGENT
+
+models:
+  FACIAL_RECOGNITION_ONLY:
+    status: WEAK_NOT_REQUIRED
+  LOCATION_TIMING_AWAY_FROM_CROWD:
+    status: PLAUSIBLE_CURRENTLY_STRONGEST
+  ACCESS_CONFIRMATION:
+    status: PLAUSIBLE
+  LEGAL_TESTIMONY_DECISIVE_CHARGE:
+    status: NOT_ESTABLISHED
+  ROMAN_PRIESTLY_INFILTRATOR:
+    status: SPECULATIVE_NO_POSITIVE_EVIDENCE
+  PURE_LITERARY_IDENTIFICATION_DEVICE:
+    status: LIVE_SOURCE_CRITICAL_POSSIBILITY
+
+claims:
+  authorities_may_have_known_Yeshua_publicly:
+    disposition: PLAUSIBLE_TO_STRONG_FROM_GOSPEL_PUBLIC_ACTIVITY_FRAME
+  insider_could_still_be_useful:
+    disposition: STRONG_LOGISTICAL_PLAUSIBILITY
+  Judas_had_to_reveal_unknown_face:
+    disposition: NOT_ESTABLISHED
+  Judas_supplied_location_timing_access:
+    disposition: PLAUSIBLE_NOT_PROVED
+  Judas_supplied_execution_charge:
+    disposition: NOT_ESTABLISHED
+  Judas_was_Roman_agent:
+    disposition: NOT_ESTABLISHED
+  Roman_personnel_involved_in_arrest:
+    disposition: SOURCE_DIVERGENT_HISTORICAL_QUESTION
+
+scholarly_controls:
+  - id: SCH-ANDRADE-2025-ARREST
+    evidence_class: SCHOLARLY_INTERPRETATION
+    proposition: "Gospel arrest-party accounts materially differ and require historical policing reconstruction."
+    url: https://academic.oup.com/book/59249/chapter-abstract/499346248
+  - id: SCH-ANDRADE-2025-TEMPLE
+    evidence_class: SCHOLARLY_INTERPRETATION
+    proposition: "Temple/Passover activity can plausibly explain why authorities regarded Yeshua as a public-order or sedition problem."
+    url: https://academic.oup.com/book/59249/chapter-abstract/499346152
+  - id: SCH-BOND-2013-DEATH-DATING
+    evidence_class: SCHOLARLY_INTERPRETATION
+    proposition: "Mark 14:2 preserves a real crowd/feast arrest-timing tension; covert arrest is one scholarly resolution."
+    url: https://www.cambridge.org/core/journals/new-testament-studies/article/dating-the-death-of-jesus-memory-and-the-religious-imagination/0458FC0CA55BEF810BCC411AC2765860
+
+strongest_result: >
+  A historical insider's most plausible bounded function is controlled arrest
+  facilitation through location, timing, access or target confirmation rather
+  than revealing the identity of an otherwise unknown public figure.
+
+guards:
+  - LOGISTICAL_PLAUSIBILITY_NE_EVENT_PROOF
