@@ -1,0 +1,194 @@
+schema_version: on-theo.jain-comparison-readiness-audit.v1
+status: DIACHRONIC_FOUNDATION_MATURE_FOR_BOUNDED_FUTURE_COMPARISON
+source_branch: research/jain-diachronic-v1-20260920
+source_head_before_audit: de863fe70bda3e058792d724a9b998060441cb63
+pr: 125
+
+method:
+  principle: >
+    Jain comparison cells must preserve sectarian canon divergence, distinguish
+    teaching/oral/redaction/manuscript clocks, separate classical systematic
+    doctrine from earliest strata, and keep mendicant and lay practice distinct.
+  required_fields:
+    - sectarian_scope
+    - textual_or_practice_layer
+    - evidence_class
+    - exact_source_binding
+    - claim_ceiling
+
+comparison_eligible_existing_axes:
+  DOCUMENTARY_MEMORY_MODEL:
+    status: BOUNDED_COMPARISON_ELIGIBLE
+    subtype: SECTARIAN_CANON_MEMORY_DIVERGENCE
+    strongest_result: >
+      Jain documentary memory includes Śvetāmbara received āgama preservation,
+      Digambara canon-loss memory and alternative authoritative corpora,
+      cross-sect Tattvārthasūtra authority, and late physical manuscript
+      witnesses without one shared transmission chain.
+    guards:
+      - CANON_MEMORY_NE_MANUSCRIPT_WITNESS
+      - SECTARIAN_CANON_CLAIM_NE_NEUTRAL_FACT
+      - FOUR_CLOCK_MODEL_REQUIRED
+
+  PERSON_OR_SELF_MODEL:
+    status: BOUNDED_COMPARISON_ELIGIBLE
+    source_layer: CLASSICAL_JIVA
+    strongest_result: >
+      Classical Jainism models jīva as an active cognitive moral subject
+      ontologically distinct from nonliving categories and capable of karmic
+      bondage and liberation.
+    guards:
+      - JIVA_NE_GENERIC_SOUL
+      - CLASSICAL_SYSTEM_NE_EARLIEST_FORM
+
+  CAUSAL_ORDER_TYPE:
+    status: BOUNDED_COMPARISON_ELIGIBLE
+    source_layer: CLASSICAL_KARMIC_MATERIAL_CAUSATION
+    strongest_result: >
+      Karma is modeled as a material-causal bondage process connected to
+      activity/passions, rebirth, stoppage and shedding rather than divine
+      reward/punishment or abstract moral bookkeeping.
+    guards:
+      - KARMA_NE_DIVINE_REWARD
+      - KARMIC_MATTER_NE_MODERN_PHYSICS
+
+  POSTMORTEM_PATH_MODEL:
+    status: BOUNDED_COMPARISON_ELIGIBLE
+    source_layer: CLASSICAL_REBIRTH_LIBERATION
+    strongest_result: >
+      Postmortem continuity is cyclical rebirth conditioned by karma until
+      terminal liberation; it is not one linear afterlife route.
+    guards:
+      - REBIRTH_NE_ONE_LINEAR_DESTINATION
+      - LIBERATION_NE_RETURN_TO_CREATOR
+
+  TRANSFORMATION_MODEL:
+    status: BOUNDED_COMPARISON_ELIGIBLE
+    source_layers:
+      - KARMIC_STOPPAGE_AND_SHEDDING
+      - EMBODIED_ASCETIC_DISCIPLINE
+    strongest_result: >
+      Transformation is modeled through disciplined changes that prevent new
+      karmic influx, shed existing bondage and culminate in liberation.
+    guards:
+      - TRANSFORMATION_NE_DIVINE_FORGIVENESS
+
+  WORLD_ORIGIN_MODEL:
+    status: BOUNDED_COMPARISON_ELIGIBLE
+    subtype: BEGINNINGLESS_UNCREATED_COSMOS
+    strongest_result: >
+      Classical Jain cosmology positively denies a first creation event and
+      creator deity while modeling eternal substances, changing modes and a
+      structured cosmos within infinite space.
+    guards:
+      - NO_CREATOR_NE_NO_DEITIES
+      - BEGINNINGLESS_NE_CREATED_AT_INFINITE_PAST_DATE
+      - INTERNAL_METAPHYSICS_NE_EMPIRICAL_PROOF
+
+  RITUAL_ORDER_MODEL:
+    status: BOUNDED_COMPARISON_ELIGIBLE
+    source_layer: ROLE_DIFFERENTIATED_VOW_ASCETIC_DISCIPLINE
+    strongest_result: >
+      The same five-vow family is realized differently in mendicant and lay
+      life, with ascetic, dietary, fasting and restraint practices occupying
+      distinct institutional roles.
+    guards:
+      - MAHAVRATA_NE_ANUVRATA_SCOPE
+      - ASCETIC_IDEAL_NE_ALL_LIVED_PRACTICE
+
+  INSTITUTIONALIZATION_MODEL:
+    status: BOUNDED_COMPARISON_ELIGIBLE
+    source_layer: DUAL_LAY_RENOUNCER_ORDER
+    strongest_result: >
+      Jain institutions organize interdependent renouncer and lay religious
+      roles alongside sectarian scholastic and canonical structures.
+    guards:
+      - LAY_PATH_NE_FAILED_MONASTICISM
+      - DUAL_ORDER_NE_ONE_WAY_DEPENDENCE
+
+  RELATIONAL_ORDER_MODEL:
+    status: BOUNDED_COMPARISON_ELIGIBLE
+    source_layer: LAY_RENOUNCER_INTERDEPENDENCE
+    strongest_result: >
+      Lay and mendicant orders are religiously and materially interdependent
+      while embodying different levels/forms of restraint.
+
+comparison_eligible_partial:
+  FATE_CONSTRAINT_MODEL:
+    status: PARTIAL
+    strongest_result: >
+      Karma constrains embodiment and experience while the jīva retains
+      transformative agency through conduct, stoppage and shedding.
+    guards:
+      - KARMA_NE_FATALISM
+
+  KNOWLEDGE_OR_DISCLOSURE_MODEL:
+    status: PARTIAL
+    source_layer: TEXTUAL_SCHOLASTIC_AUTHORITY
+    limitation: >
+      V1 has not yet mapped scholastic office, initiation, commentary and
+      knowledge access deeply enough for a broad institutional cell.
+
+  COSMIC_TIME_MODEL:
+    status: BOUNDED_INTERNAL_NEW_AXIS_CANDIDATE
+    strongest_result: >
+      Jain cosmology includes cyclical ascending/descending temporal structures
+      within a beginningless cosmos rather than repeated total creation events.
+
+held_existing_axes:
+  OFFERING_EXCHANGE_MODEL:
+    status: HOLD
+  POLITICAL_SACRALIZATION_MODEL:
+    status: NOT_ADMITTED
+  SACRAL_PRESENCE_MODEL:
+    status: HOLD
+  MORTUARY_RELATIONSHIP_MODEL:
+    status: HOLD
+  KNOWLEDGE_GOVERNANCE_DIMENSION:
+    status: HOLD
+
+new_schema_contributions:
+  DOCUMENTARY_MEMORY_MODEL:
+    subtype: SECTARIAN_CANON_MEMORY_DIVERGENCE
+    dimensions:
+      - CANON_PRESERVATION_CLAIM
+      - CANON_LOSS_CLAIM
+      - LOST_TEXT_AUTHORITY_MEMORY
+      - CROSS_SECT_TEXTUAL_AUTHORITY
+      - PHYSICAL_WITNESS_HISTORY
+
+  WORLD_ORIGIN_MODEL:
+    subtype: BEGINNINGLESS_UNCREATED_COSMOS
+    discriminator: >
+      A tradition can answer the origin problem by denying that reality has an
+      origin event at all rather than by supplying a creator or primordial
+      material.
+
+  POSTMORTEM_PATH_MODEL:
+    subtype: CYCLIC_REBIRTH_WITH_TERMINAL_LIBERATION
+
+readiness_result:
+  internal_foundation_complete: true
+  bounded_future_comparison_allowed: true
+  exact_head_binding_required: true
+  one_pan_Jain_canon_allowed: false
+  classical_system_may_be_projected_to_earliest_layer: false
+  lay_and_mendicant_practice_may_be_collapsed: false
+
+strongest_method_result: >
+  Jainism becomes comparison-ready only when sectarian memory, textual
+  stratigraphy, classical systematization and lived lay/mendicant practice are
+  kept distinct; once separated, it supplies unusually sharp controls for
+  beginningless cosmology, active selfhood, material karmic causation, cyclical
+  rebirth and graded ascetic discipline.
+
+next_portfolio_frontier:
+  primary: WORLD_ORIGIN_CROSS_TRADITION_TEST_V2
+  subsequent:
+    - PERSON_SELF_CROSS_TRADITION_EXPANSION_WITH_JAIN
+    - POSTMORTEM_PATH_CROSS_TRADITION_EXPANSION_WITH_JAIN
+    - POST_JAIN_GLOBAL_GAP_AUDIT_V1
+
+guards:
+  - COMPARISON_READY_NE_TRADITION_COMPLETE
+  - SECTARIAN_SCOPE_REQUIRED

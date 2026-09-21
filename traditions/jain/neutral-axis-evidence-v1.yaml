@@ -1,0 +1,96 @@
+schema_version: on-theo.jain-neutral-axis-evidence.v1
+status: DIACHRONIC_FOUNDATION_NOT_COMPARISON_READY
+
+records:
+  - id: JAIN-CANON-001
+    source: BALCEROWICZ_EARLY_JAIN_ONTOLOGY_2021
+    evidence_class: SCHOLARLY_INTERPRETATION
+    propositions:
+      - Svetambara_and_Digambara_early_textual_authority_histories_are_distinct
+      - Svetambara_canonical_redaction_is_centuries_later_than_claimed_early_teaching_context
+      - early_textual_layers_require_stratigraphic_analysis
+    supports:
+      - DOCUMENTARY_MEMORY_MODEL_CANDIDATE
+      - KNOWLEDGE_OR_DISCLOSURE_MODEL_CANDIDATE
+      - CONTINUITY_MODEL_CANDIDATE
+    confidence: HIGH_CURRENT_SCHOLARLY
+
+  - id: JAIN-PHIL-001
+    source: SEP_JAINA_PHILOSOPHY_2023
+    evidence_class: SCHOLARLY_INTERPRETATION
+    propositions:
+      - Jain_liberation_path_involves_self_nonself_distinction_nonviolence_renunciation_knowledge_and_purification
+      - monastic_and_lay_communities_are_both_historical_parts_of_Jain_tradition
+      - canonical_postcanonical_systematic_and_narrative_sources_are_distinct
+    supports:
+      - PERSON_OR_SELF_MODEL_CANDIDATE
+      - TRANSFORMATION_MODEL_CANDIDATE
+      - INSTITUTIONALIZATION_MODEL_CANDIDATE
+    confidence: HIGH
+
+  - id: JAIN-PERSON-001
+    source: SEP_PERSONHOOD_INDIA_JAIN
+    evidence_class: SCHOLARLY_INTERPRETATION
+    propositions:
+      - Jain_personhood_distinguishes_jiva_and_ajiva
+      - self_has_pure_and_embodied_phenomenal_descriptions
+    supports:
+      - PERSON_OR_SELF_MODEL_CANDIDATE
+    confidence: HIGH
+
+  - id: JAIN-VOW-001
+    source:
+      - LAIDLAW_RICHES_RENUNCIATION
+      - CORT_JAINS_IN_WORLD
+    evidence_class:
+      - SCHOLARLY_ETHNOGRAPHY
+      - SCHOLARLY_INTERPRETATION
+    propositions:
+      - monastic_great_vows_and_lay_lesser_vows_are_related_but_distinct
+      - asceticism_and_nonviolence_structure_both_renouncer_and_lay_practice_differently
+    supports:
+      - INSTITUTIONALIZATION_MODEL_CANDIDATE
+      - RITUAL_ORDER_MODEL_CANDIDATE
+      - RELATIONAL_ORDER_MODEL_CANDIDATE
+    confidence: HIGH
+
+  - id: JAIN-MS-001
+    source: BRITISH_LIBRARY_JAIN_MANUSCRIPTS
+    evidence_class:
+      - MANUSCRIPT_WITNESS
+      - MATERIAL_EVIDENCE
+    propositions:
+      - dated_medieval_early_modern_Jain_manuscripts_preserve_specific_Svetambara_and_Digambara_textual_witnesses
+    supports:
+      - DOCUMENTARY_MEMORY_MODEL_CANDIDATE
+      - WITNESS_CONTROL
+    confidence: HIGH
+
+  - id: JAIN-LIVE-001
+    source: JAINA_CURRENT_SELF_DESCRIPTION
+    evidence_class:
+      - MODERN_TRADITION
+      - CURRENT_ORGANIZATIONAL_SELF_DESCRIPTION
+    propositions:
+      - current_Jain_pedagogy_emphasizes_ahimsa_anekantavada_aparigraha_soul_rebirth_and_liberation
+    supports:
+      - CURRENT_TRADITION_CONTROL
+    confidence: HIGH_CURRENT_SELF_DESCRIPTION
+    guards:
+      - CURRENT_PEDAGOGY_NE_EARLY_TEXTUAL_FACT
+
+axis_status:
+  DOCUMENTARY_MEMORY_MODEL: STRONG_CANDIDATE_SECTARIAN_CANON_DIVERGENCE
+  KNOWLEDGE_OR_DISCLOSURE_MODEL: STRONG_CANDIDATE
+  PERSON_OR_SELF_MODEL: HOLD_STRONG_CANDIDATE
+  CAUSAL_ORDER_TYPE: HOLD_STRONG_CANDIDATE
+  POSTMORTEM_PATH_MODEL: HOLD_STRONG_CANDIDATE
+  TRANSFORMATION_MODEL: HOLD_STRONG_CANDIDATE
+  WORLD_ORIGIN_MODEL: HOLD_STRONG_CANDIDATE
+  INSTITUTIONALIZATION_MODEL: HOLD_STRONG_CANDIDATE
+  RITUAL_ORDER_MODEL: HOLD_CANDIDATE
+  CONTINUITY_MODEL: CANDIDATE
+  CROSS_TRADITION_COMPARISON: HOLD
+
+guards:
+  - SECTARIAN_CANON_SCOPE_REQUIRED
