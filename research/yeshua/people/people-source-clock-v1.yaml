@@ -51,6 +51,7 @@ figures:
     priority: 2
 
   - id: CEPHAS_PETER
+    identity_control: "Cephas/Peter is the conventional and overwhelmingly standard identification, retained as an explicit source-critical identification rather than an unmarked identity."
     identity_control:
       mainstream_identification: CEPHAS_EQUALS_PETER_STRONG
       minority_distinction: HISTORICALLY_PROPOSED_NOT_CURRENTLY_PREFERRED
@@ -96,7 +97,7 @@ figures:
       - source: SRC-PAUL-1COR
         locator: "1 Corinthians 15:5"
         note: "Twelve is an early group label; numerical tension is not proof of Judas innocence/nonexistence"
-    current_ceiling: "Early Markan Judas-handover narrative; motive, payment priority, information need, historical core and later concentration remain unresolved."
+    current_ceiling: "Early Markan Judas-handover narrative; Paul is silent but that silence does not disprove a pre-Markan Judas tradition. Motive, payment priority, information need, historical core and later concentration remain unresolved."
     bias_risk: VERY_HIGH
     priority: 1
 
@@ -153,6 +154,11 @@ cross_person_claims:
     negation_status: NOT_PROVED
     evidence_class: [UNKNOWN]
 
+  - id: CLM-YS-R3-CLK-005B-LATER-AUTHORITY-TEXTS
+    proposition: "Later Mary/Thomas/Judas authority texts are historically useful as evidence for later Christian authority and reception discourse even when not treated as biographical transcripts."
+    disposition: SURVIVES
+    evidence_class: [PRIMARY_TEXT, HISTORICAL_RECONSTRUCTION]
+
   - id: CLM-YS-R3-CLK-006-COLLECTIVE_ROMAN_COLLABORATION
     proposition: "The early source clock establishes collective apostolic collaboration with Roman authorities."
     disposition: REJECTED_AS_R3_ENTRY_SUPPORTED_CONCLUSION
@@ -195,6 +201,7 @@ scholarly_controls:
 next_frontier:
   priority_rationale: "Judas first is an asymmetric-skepticism/bias-control choice because the project has unusually strong prior interest in reframing him; it is not a ranking of historical importance."
   primary: JUDAS_SOURCE_DEVELOPMENT_DOSSIER
+  priority_rationale: ASYMMETRIC_BIAS_CONTROL_NOT_HISTORICAL_IMPORTANCE
   subsequent:
     - JAMES_AUTHORITY_FAMILY_DOSSIER
     - MARY_HISTORICAL_RECEPTION_DOSSIER
