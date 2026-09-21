@@ -1,6 +1,6 @@
 # John the Baptist / Yeshua Relation Dossier V1
 
-Status: R3 JOHN SOURCE-BOUND / INTERNAL HOSTILE REVIEW REQUIRED
+Status: R3 JOHN SOURCE-BOUND / FIRST HOSTILE REVIEW APPLIED / SECOND EXACT-HEAD PASS PENDING
 
 Program: **The Real Testament of Yeshua**
 
@@ -52,6 +52,9 @@ Current disposition:
 HISTORICAL_JOHN_THE_BAPTIST =
 VERY_STRONG.
 
+The Josephus component is strong but not literally uncontested; current
+scholarship still tests possible Christian intervention in the passage.
+
 JOHN_LED_A_REAL_POPULAR_JEWISH_MOVEMENT =
 VERY_STRONG.
 
@@ -82,8 +85,14 @@ These descriptions overlap but are not identical.
 
 Current result:
 
-JOHNS_BAPTISM_THEOLOGY =
+JOHNS_BAPTISM_PRESENTATION =
 SOURCE_DIVERGENT / REQUIRES_RECONSTRUCTION.
+
+EXACT_HISTORICAL_JOHN_BAPTISM_THEOLOGY =
+UNRESOLVED.
+
+The source presentations differ; that does not by itself prove historical John
+held contradictory theologies.
 
 Do not harmonize Josephus and Mark into one exact formula.
 
@@ -98,7 +107,9 @@ Mark 1:4–11:
 Current distinction:
 
 YESHUA_BAPTIZED_BY_JOHN =
-HISTORICALLY_PROBABLE.
+HISTORICALLY_PROBABLE_WITH_GOSPEL_TRADITION_AND_SOURCE_PRESSURE_GUARD.
+
+Josephus independently establishes John and his movement, not this event.
 
 BAPTISMAL_HEAVENLY_VOICE_AND_VISION_AS_EXACT_EVENT =
 UNRESOLVED.
@@ -143,8 +154,15 @@ sees John's movement as formative for Yeshua.
 
 Current disposition:
 
-YESHUA_SUBSTANTIVELY_INFLUENCED_BY_JOHN =
-PLAUSIBLE_TO_PROBABLE_AS_BROAD_HISTORICAL_MODEL.
+JOHN_MATERIALLY_INFLUENCED_YESHUA =
+PLAUSIBLE_HISTORICALLY_IMPORTANT_HYPOTHESIS_NOT_QUANTIFIED.
+
+Probable baptism/contact makes influence a serious historical question, but the
+sources do not quantify:
+- duration;
+- apprenticeship;
+- doctrinal dependence;
+- institutional subordination.
 
 YESHUA_FORMAL_LONG_TERM_APPRENTICE_OF_JOHN =
 PLAUSIBLE_NOT_ESTABLISHED.
@@ -166,10 +184,16 @@ CONTINUITY
 and
 DIFFERENTIATION.
 
-Current model:
+Current decomposition:
 
-YESHUA_MOVEMENT_EMERGED_IN_A_RELIGIOUS_ENVIRONMENT_MATERIALLY_SHAPED_BY_JOHN =
-PLAUSIBLE.
+JOHN_PRECEDES_YESHUA_AND_PROBABLE_CONTACT =
+STRONG_TO_PROBABLE.
+
+JOHN_INFLUENCE_ON_YESHUA =
+PLAUSIBLE_NOT_QUANTIFIED.
+
+YESHUA_MOVEMENT_INSTITUTIONALLY_DESCENDS_FROM_JOHNS_MOVEMENT =
+NOT_ESTABLISHED.
 
 YESHUA_SIMPLY_INHERITED_JOHNS_MOVEMENT =
 NOT_ESTABLISHED.
@@ -355,8 +379,9 @@ The strongest bounded John/Yeshua model is:
 - Yeshua's baptism by John is historically probable;
 - the baptism implies real contact and at least temporary participation in
   John's religious program;
-- a broader formative influence of John on Yeshua is plausible and probably
-  historically important;
+- John's formative influence on Yeshua is a plausible and historically
+  important hypothesis, but its magnitude is not recoverable from the current
+  evidence;
 - exact apprenticeship duration, doctrinal dependence and institutional
   relationship remain unresolved;
 - John and Yeshua fit within a plural Second Temple Jewish eschatological world;
@@ -372,7 +397,33 @@ What is not established:
 - John's death caused a specific psychological transformation in Yeshua;
 - Christian forerunner theology reproduces John's own self-conception.
 
-## 17. Highest-value discriminators
+## 17. First hostile-review revision result
+
+The first hostile review requires a strict contact-to-causation ladder:
+
+HISTORICAL_JOHN =
+VERY_STRONG_WITH_JOSEPHUS_AUTHENTICITY_GUARD.
+
+YESHUA_BAPTIZED_BY_JOHN =
+HISTORICALLY_PROBABLE_WITH_NO_INDEPENDENT_JOSEPHAN_ATTESTATION_OF_THE_EVENT.
+
+JOHN_MATERIALLY_INFLUENCED_YESHUA =
+PLAUSIBLE_HISTORICALLY_IMPORTANT_HYPOTHESIS_NOT_QUANTIFIED.
+
+FORMAL_LONG_TERM_APPRENTICESHIP =
+PLAUSIBLE_NOT_ESTABLISHED.
+
+YESHUA_MOVEMENT_INSTITUTIONAL_DESCENT_FROM_JOHN =
+NOT_ESTABLISHED.
+
+JOHN_QUMRAN_OR_ESSENE_MEMBERSHIP =
+NOT_ESTABLISHED.
+
+The Josephus/Mark baptism difference is retained as:
+SOURCE_PRESENTATION_DIVERGENCE,
+while exact historical baptism theology remains unresolved.
+
+## 18. Highest-value discriminators
 
 1. Josephus John-passage authenticity and exact baptism semantics.
 2. Mark 1 baptism tradition/redaction.
@@ -384,7 +435,7 @@ What is not established:
 8. Antipas execution motive across Josephus/Mark.
 9. Later Mandaean John reception with strict source clocks.
 
-## 18. Guards
+## 19. Guards
 
 - JOSEPHUS_JOHN_NE_JESUS_BAPTISM_ATTESTATION
 - BAPTISM_NE_LONG_TERM_APPRENTICESHIP
