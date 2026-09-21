@@ -6,7 +6,7 @@ program: THE_REAL_TESTAMENT_OF_YESHUA
 dedicated_promotion_authority:
   dossier: research/yeshua/judas/judas-source-development-dossier-v1.md
   matrix: research/yeshua/judas/judas-source-development-v1.yaml
-  state: research/yeshua/judas/research-state-v1.yaml
+  state: research/yeshua/judas/research-state-v4.yaml
 
 supporting_artifacts:
   - research/yeshua/people/judas-source-development-v1.md
@@ -23,3 +23,12 @@ rule: >
 reason: >
   Parallel artifact creation produced overlapping dossiers. This manifest
   prevents silent drift while preserving all research provenance.
+
+
+state_history:
+  current: research/yeshua/judas/research-state-v4.yaml
+  superseded_for_current_use:
+    - research/yeshua/judas/research-state-v1.yaml
+    - research/yeshua/judas/research-state-v2.yaml
+    - research/yeshua/judas/research-state-v3.yaml
+  rule: "Superseded state files remain provenance only and may not override V4."
