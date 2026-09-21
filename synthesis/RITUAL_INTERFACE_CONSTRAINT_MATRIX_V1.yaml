@@ -1,0 +1,274 @@
+schema_version: on-theo.ritual-interface-constraint-matrix.v1
+status: NON_CANONICAL_BOUNDED_COMPARISON
+source_registry: research/ritual-interface-exploit/CANDIDATE_CASE_REGISTRY_V1.yaml
+
+dimension_definitions:
+  operator_qualification: WHO_MAY_VALIDLY_PERFORM_OR_INTERPRET
+  operator_state: REQUIRED_DISCIPLINARY_PURITY_ATTENTIONAL_OR_OTHER_STATE
+  acoustic_form: SOUND_PRONUNCIATION_PITCH_RHYTHM_OR_RECITATION_CONSTRAINT
+  somatic_form: POSTURE_GESTURE_MOVEMENT_BREATH_OR_BODY_ORIENTATION
+  symbolic_form: NAMES_SIGNS_TEXTS_IMAGES_NUMBERS_OR_OBJECT_CONFIGURATIONS
+  temporal_form: CALENDAR_TIME_WINDOW_DURATION_OR_REPETITION_COUNT
+  spatial_form: PLACE_DIRECTION_GEOMETRY_OR_SACRED_LAND_CONFIGURATION
+  material_form: REQUIRED_OBJECTS_SUBSTANCES_OFFERINGS_OR_MEDIA
+  sequence_form: ORDER_QUORUM_ANNOUNCEMENT_OR_ACTION_SEQUENCE
+  error_model: INVALIDITY_CORRECTION_EXPIATION_OR_MISHAP_HANDLING
+  semantic_dependency: WHETHER_MEANING_COMPREHENSION_IS_REQUIRED_OR_FORM_HAS_INDEPENDENT_STATUS
+  claimed_effect: WHAT_THE_SOURCE_OR_PRACTICE_REPRESENTS_AS_CHANGED
+  effect_evidence: WHETHER_EFFECT_IS_TEXTUAL_INSTITUTIONAL_MATERIAL_OR_EMPIRICALLY_VERIFIED
+
+cells:
+  RPS-BUD-VINAYA-01:
+    operator_qualification: BOUNDED
+    operator_state: BOUNDED_DISCIPLINARY_COMMUNAL
+    acoustic_form: PARTIAL_RECITATION_NOT_PHONETIC_EFFICACY
+    somatic_form: UNKNOWN
+    symbolic_form: BOUNDED_FORMAL_MOTION_AND_RECITATION
+    temporal_form: BOUNDED_LUNAR_OBSERVANCE
+    spatial_form: PARTIAL_COMMUNITY_JURISDICTION
+    material_form: NOT_CENTRAL_IN_SELECTED_CASE
+    sequence_form: BOUNDED
+    error_model: BOUNDED_VALID_INVALID_ACT
+    semantic_dependency: BOUNDED_LEGAL_RELIGIOUS_CONTENT
+    claimed_effect: INSTITUTIONAL_STATUS
+    effect_evidence: TEXTUAL_PROCEDURAL_VALIDITY
+    ordinary_explanation_pressure: VERY_HIGH
+    exotic_residue: NONE_ESTABLISHED
+
+  RPS-VEDIC-AGNIHOTRA-01:
+    operator_qualification: BOUNDED
+    operator_state: PARTIAL
+    acoustic_form: PARTIAL_REQUIRES_DEDICATED_ACCENT_RECITATION_PACKET
+    somatic_form: PARTIAL_PERFORMER_ACTION
+    symbolic_form: BOUNDED_MANTRA_AND_RITUAL_FORM
+    temporal_form: BOUNDED_SUNRISE_SUNSET
+    spatial_form: BOUNDED_FIRE_CONFIGURATION
+    material_form: BOUNDED_OFFERINGS_AND_FIRES
+    sequence_form: BOUNDED
+    error_model: BOUNDED_DISRUPTION_EXPIATION
+    semantic_dependency: UNKNOWN_AT_CURRENT_SOURCE_HEAD
+    claimed_effect: SOURCE_ASSERTED_OR_IMPLIED_RITUAL_EFFICACY
+    effect_evidence: RITUAL_TEXT_ONLY_FOR_EXTRA_INSTITUTIONAL_EFFECT
+    ordinary_explanation_pressure: HIGH
+    exotic_residue: UNRESOLVED_NOT_EVIDENCED
+
+  RPS-SHINTO-PURIFICATION-01:
+    operator_qualification: PARTIAL
+    operator_state: BOUNDED_PURITY_ELIGIBILITY
+    acoustic_form: PARTIAL_RITUAL_SPEECH_EXACT_PHONETIC_DEPENDENCE_UNKNOWN
+    somatic_form: PARTIAL_MISOGI_AND_PURIFICATION_ACTION
+    symbolic_form: BOUNDED_NORITO_AND_NAMED_KAMI
+    temporal_form: BOUNDED_CALENDRICAL_PURIFICATION
+    spatial_form: PARTIAL
+    material_form: PARTIAL
+    sequence_form: PARTIAL
+    error_model: PARTIAL
+    semantic_dependency: UNKNOWN
+    claimed_effect: RESTORED_RITUAL_ELIGIBILITY_ORDER
+    effect_evidence: RITUAL_TEXT_AND_INSTITUTIONAL_PRACTICE
+    ordinary_explanation_pressure: VERY_HIGH
+    exotic_residue: NONE_ESTABLISHED
+
+  RPS-DAOIST-CM-PETITION-01:
+    operator_qualification: BOUNDED_REGISTER_AND_OFFICE
+    operator_state: BOUNDED_CONFESSION_REPENTANCE
+    acoustic_form: UNKNOWN
+    somatic_form: UNKNOWN
+    symbolic_form: BOUNDED_REGISTERS_PETITIONS
+    temporal_form: UNKNOWN
+    spatial_form: PARTIAL_COMMUNITY_ORATORY
+    material_form: PARTIAL
+    sequence_form: UNKNOWN
+    error_model: UNKNOWN
+    semantic_dependency: BOUNDED_PETITION_MEANING
+    claimed_effect: DIVINE_ADMINISTRATIVE_AID_HEALING_REPRESENTATION
+    effect_evidence: HISTORICAL_TEXTUAL_RECONSTRUCTION
+    ordinary_explanation_pressure: HIGH
+    exotic_residue: NONE_ESTABLISHED
+
+  RPS-QURAN-QIBLA-FAST-01:
+    operator_qualification: PARTIAL_COMMUNITY_MEMBER
+    operator_state: BOUNDED_FASTING_STATE
+    acoustic_form: NOT_ADMITTED_FROM_CURRENT_PACKET
+    somatic_form: PARTIAL_PRAYER_REFERENCE_NOT_FULL_PROCEDURE
+    symbolic_form: BOUNDED_QURANIC_RECITATION_CONTEXT_NOT_TAJWID_PACKET
+    temporal_form: BOUNDED_FASTING_AND_PRAYER_TIME_REFERENCES
+    spatial_form: BOUNDED_QIBLA
+    material_form: PARTIAL
+    sequence_form: NOT_ADMITTED_FULL_LATER_LITURGY
+    error_model: PARTIAL_ALLOWANCES
+    semantic_dependency: BOUNDED_TEXTUAL_COMMAND
+    claimed_effect: RELIGIOUS_OBEDIENCE_AND_COMMUNAL_PRACTICE
+    effect_evidence: PRIMARY_TEXT
+    ordinary_explanation_pressure: VERY_HIGH
+    exotic_residue: NONE_ESTABLISHED
+
+  RPS-VAL-INIT-01:
+    operator_qualification: PARTIAL
+    operator_state: PARTIAL_PURITY_FASTING_PRAYER
+    acoustic_form: PARTIAL_NAME_AND_INVOCATION_NOT_PHONETICALLY_BOUND
+    somatic_form: PARTIAL_RAISED_HANDS_KNEELING
+    symbolic_form: BOUNDED_NAME_SEALING_LANGUAGE
+    temporal_form: UNKNOWN
+    spatial_form: UNKNOWN
+    material_form: BOUNDED_WATER_OIL_BREAD
+    sequence_form: NOT_ADMITTED_AS_ONE_LITURGY
+    error_model: UNKNOWN
+    semantic_dependency: BOUNDED_KNOWLEDGE_PLUS_RITE
+    claimed_effect: LIBERATION_REBIRTH_SANCTIFICATION_IN_TEXT
+    effect_evidence: PRIMARY_TEXT_AND_HOSTILE_REPORTED_PRACTICE
+    ordinary_explanation_pressure: HIGH
+    exotic_residue: NONE_ESTABLISHED
+
+  RPS-MAYA-DRESDEN-01:
+    operator_qualification: PARTIAL
+    operator_state: UNKNOWN
+    acoustic_form: UNKNOWN
+    somatic_form: UNKNOWN
+    symbolic_form: BOUNDED_DAY_NAMES_NUMBERS_DEITY_IMAGERY
+    temporal_form: BOUNDED_260_DAY_AND_OTHER_CALENDARS
+    spatial_form: UNKNOWN
+    material_form: PARTIAL_OFFERING_RESPONSE
+    sequence_form: BOUNDED_CALENDARIC_COMPUTATION
+    error_model: UNKNOWN
+    semantic_dependency: BOUNDED_ALMANAC_INTERPRETATION
+    claimed_effect: DIVINATORY_INFORMATION_AND_RITUAL_SCHEDULING
+    effect_evidence: MANUSCRIPT_WITNESS_NONE_EMPIRICAL
+    ordinary_explanation_pressure: HIGH
+    exotic_residue: NONE_ESTABLISHED
+
+  RPS-MEXICA-BORB-01:
+    operator_qualification: PARTIAL
+    operator_state: UNKNOWN
+    acoustic_form: UNKNOWN
+    somatic_form: UNKNOWN
+    symbolic_form: BOUNDED_PICTORIAL_DAY_SIGNS_AND_DEITY_IMAGERY
+    temporal_form: BOUNDED_TONALPOHUALLI_AND_FESTIVAL_CYCLES
+    spatial_form: UNKNOWN
+    material_form: PARTIAL
+    sequence_form: BOUNDED_CALENDAR_STRUCTURE
+    error_model: UNKNOWN
+    semantic_dependency: PARTIAL_PICTORIAL_INTERPRETATION
+    claimed_effect: DIVINATORY_INFORMATION_AND_RITUAL_SCHEDULING
+    effect_evidence: MANUSCRIPT_WITNESS_NONE_EMPIRICAL
+    ordinary_explanation_pressure: HIGH
+    exotic_residue: NONE_ESTABLISHED
+
+  RPS-IFA-SIGN-01:
+    operator_qualification: BOUNDED_SPECIALIST
+    operator_state: NOT_COLLECTED_IN_RESTRICTED_DETAIL
+    acoustic_form: PARTIAL_RECITATION_REPERTOIRE
+    somatic_form: NOT_COLLECTED_IN_RESTRICTED_DETAIL
+    symbolic_form: BOUNDED_256_ODU_INDEX_AND_GENERATED_SIGN
+    temporal_form: UNKNOWN
+    spatial_form: UNKNOWN
+    material_form: PARTIAL_SIGN_GENERATION_TECHNOLOGY
+    sequence_form: PARTIAL_GENERATE_READ_SELECT_INTERPRET
+    error_model: PARTIAL_COMPETENCE_MODEL
+    semantic_dependency: HIGH_INTERPRETIVE_DEPENDENCE
+    claimed_effect: DIVINATORY_INFORMATION
+    effect_evidence: DOCUMENTARY_PRACTICE_NONE_EMPIRICAL_EXTERNAL
+    ordinary_explanation_pressure: VERY_HIGH
+    exotic_residue: NONE_ESTABLISHED
+
+  RPS-NORSE-TISSO-01:
+    operator_qualification: UNKNOWN
+    operator_state: UNKNOWN
+    acoustic_form: UNKNOWN
+    somatic_form: UNKNOWN
+    symbolic_form: PARTIAL_AMULETS_AND_DEPOSITION
+    temporal_form: UNKNOWN
+    spatial_form: BOUNDED_RITUAL_LANDSCAPE
+    material_form: BOUNDED_DEPOSITION_FEASTING_OBJECTS_ANIMALS
+    sequence_form: UNKNOWN
+    error_model: UNKNOWN
+    semantic_dependency: UNKNOWN
+    claimed_effect: UNKNOWN
+    effect_evidence: MATERIAL_EVIDENCE
+    ordinary_explanation_pressure: HIGH
+    exotic_residue: NOT_TESTABLE_FROM_CURRENT_EVIDENCE
+
+  RPS-SUM-FUNERARY-01:
+    operator_qualification: PARTIAL_KIN_ROYAL_CONTEXT_DEPENDENT
+    operator_state: UNKNOWN
+    acoustic_form: UNKNOWN
+    somatic_form: UNKNOWN
+    symbolic_form: PARTIAL_LAMENT_AND_TEXTUAL_RITUAL
+    temporal_form: PARTIAL_REPEATED_MAINTENANCE
+    spatial_form: PARTIAL_BURIAL_NETHERWORLD_TEXTUAL
+    material_form: BOUNDED_PROVISIONING
+    sequence_form: UNKNOWN
+    error_model: NEGLECT_CONSEQUENCE_REPRESENTED_NOT_PROCEDURAL_ERROR
+    semantic_dependency: BOUNDED_TEXTUAL_REPRESENTATION
+    claimed_effect: POSTMORTEM_WELFARE
+    effect_evidence: PRIMARY_TEXT_PLUS_SEPARATE_MATERIAL_PROVISIONING
+    ordinary_explanation_pressure: HIGH
+    exotic_residue: NONE_ESTABLISHED
+
+  RPS-OLMEC-LAVENTA-01:
+    operator_qualification: UNKNOWN
+    operator_state: UNKNOWN
+    acoustic_form: UNKNOWN
+    somatic_form: UNKNOWN
+    symbolic_form: PARTIAL_ICONOGRAPHIC_INTERPRETATION
+    temporal_form: UNKNOWN
+    spatial_form: BOUNDED_STAGED_DEPOSITION
+    material_form: BOUNDED
+    sequence_form: PARTIAL_STAGING
+    error_model: UNKNOWN
+    semantic_dependency: UNKNOWN
+    claimed_effect: UNKNOWN
+    effect_evidence: MATERIAL_EVIDENCE
+    ordinary_explanation_pressure: HIGH
+    exotic_residue: NOT_RECOVERABLE_AT_CURRENT_TEXTUAL_CEILING
+
+  RPS-ANDEAN-CEQUE-01:
+    operator_qualification: BOUNDED_SOCIAL_INSTITUTIONAL_MAINTENANCE
+    operator_state: UNKNOWN
+    acoustic_form: UNKNOWN
+    somatic_form: UNKNOWN
+    symbolic_form: PARTIAL
+    temporal_form: PARTIAL
+    spatial_form: BOUNDED_NETWORKED_SACRED_LANDSCAPE
+    material_form: BOUNDED_HUACA_DIVERSITY
+    sequence_form: UNKNOWN
+    error_model: UNKNOWN
+    semantic_dependency: BOUNDED_RELATIONAL_PLACE_MEANING
+    claimed_effect: RITUAL_SOCIAL_IMPERIAL_ORDER
+    effect_evidence: HISTORICAL_RECONSTRUCTION_PLUS_ARCHAEOLOGY
+    ordinary_explanation_pressure: VERY_HIGH
+    exotic_residue: NONE_ESTABLISHED
+
+cross_case_results:
+  source_secure_parameter_sensitivity:
+    status: BOUNDED_STRONG
+    meaning: >
+      Multiple independent source lanes securely preserve procedures whose
+      validity or represented efficacy depends on structured combinations of
+      role, sequence, time, place, speech, material or status.
+  one_shared_mechanism:
+    status: NOT_SUPPORTED
+  one_shared_hidden_language:
+    status: NOT_SUPPORTED
+  low_semantic_arbitrary_parameter_residue:
+    status: PARTIAL_AND_UNDERDETERMINED
+    strongest_current_case: RPS-VEDIC-AGNIHOTRA-01
+    limitation: >
+      Ordinary ritualization, transmission, authority and psychophysiology remain
+      sufficient live rivals; external efficacy is not empirically established.
+  anomalous_information_channel:
+    status: NONE_ESTABLISHED
+  intentional_api:
+    status: NONE_ESTABLISHED
+  unintended_exploit:
+    status: NONE_ESTABLISHED
+
+guards:
+  - THIS_MATRIX_IS_NOT_A_MAGIC_SCORE
+  - UNKNOWN_NE_ABSENT
+  - PROCEDURAL_BRITTLENESS_NE_ANOMALY
+  - RITUAL_VALIDITY_NE_EXTERNAL_CAUSAL_EFFECT
+  - CLAIMED_EFFECT_NE_VERIFIED_EFFECT
+  - ACOUSTIC_FORM_NE_LOW_PITCH_BY_DEFAULT
+  - SOMATIC_FORM_NE_EXTERNAL_CONTACT
+  - SHARED_AXIS_NE_SHARED_MECHANISM
