@@ -1,0 +1,197 @@
+schema_version: on-theo.yeshua-peter-failure-rehabilitation.v1
+status: FIRST_HOSTILE_REVIEW_APPLIED_SECOND_PASS_PENDING
+canonical: false
+program: THE_REAL_TESTAMENT_OF_YESHUA
+lane: R3_PETER_FAILURE_REHABILITATION
+recorded_at: "2026-09-21"
+
+parent:
+  branch: research/yeshua-people-source-clock-v1-20260921
+  head: facb8789bbbd0c77f0c3fa27ab71bb3d77b0557d
+  draft_pr: 157
+
+source_clock:
+  - source: SRC-PAUL-GALATIANS
+    horizon: FIRST_GENERATION
+    loci: ["Galatians 1:18", "Galatians 2:7-14"]
+    establishes:
+      - PAUL_PERSONALLY_KNOWS_CEPHAS
+      - RECOGNIZED_AUTHORITY
+      - PILLAR_STATUS
+      - ANTIOCH_CONFLICT
+    limits:
+      - CONFLICT_NE_TOTAL_THEOLOGICAL_OPPOSITION
+
+  - source: SRC-PAUL-1COR
+    horizon: FIRST_GENERATION
+    loci: ["1 Corinthians 1:12", "1 Corinthians 3:22", "1 Corinthians 9:5", "1 Corinthians 15:5"]
+    establishes:
+      - CEPHAS_RECOGNIZABLE_MOVEMENT_AUTHORITY
+      - EARLY_APPEARANCE_TRADITION
+    limits:
+      - DOES_NOT_ATTEST_DENIAL
+
+  - source: SRC-GOSPEL-MARK
+    horizon: EARLIEST_SURVIVING_NARRATIVE_GOSPEL
+    loci: ["Mark 1:16-18", "Mark 8:27-33", "Mark 14:27-72", "Mark 16:7"]
+    establishes_at_text_level:
+      - PROMINENCE
+      - CONFESSION
+      - MISUNDERSTANDING_REBUKE
+      - FAILURE_DENIAL
+      - POST_FAILURE_REINCLUSION_SIGNAL
+
+  - source: SRC-GOSPEL-MATTHEW
+    horizon: POST_MARKAN_CANONICAL
+    establishes_at_text_level:
+      - ENHANCED_PETRINE_AUTHORITY
+      - CONTINUED_FAILURE
+    dependence_control: MARKAN_DEPENDENCE_MATERIAL
+
+  - source: SRC-LUKE_ACTS
+    horizon: LATER_CANONICAL
+    establishes_at_text_level:
+      - SPECIAL_PRAYER_RESTORATION
+      - POST_EASTER_LEADERSHIP
+    limits:
+      - LATER_HISTORIOGRAPHY
+
+  - source: SRC-GOSPEL-JOHN
+    horizon: LATER_CANONICAL
+    establishes_at_text_level:
+      - DENIAL
+      - BELOVED_DISCIPLE_COMPARISON
+      - JOHN_21_RESTORATION_COMMISSION
+    limits:
+      - LATER_LITERARY_THEOLOGICAL_PORTRAIT
+
+claims:
+  - id: CLM-YS-R3-PET-001-HISTORICAL-CEPHAS
+    proposition: "Cephas/Peter was a historical first-generation figure personally known to Paul."
+    disposition: VERY_STRONG_PENDING_HOSTILE_REVIEW
+    evidence_class: [PRIMARY_TEXT, HISTORICAL_RECONSTRUCTION]
+
+  - id: CLM-YS-R3-PET-002-IDENTITY
+    proposition: "Pauline Cephas and Gospel Peter refer to the same historical person."
+    disposition: HIGH_STRONGEST_CURRENT_IDENTIFICATION
+    evidence_class: [HISTORICAL_RECONSTRUCTION, SCHOLARLY_INTERPRETATION]
+
+  - id: CLM-YS-R3-PET-003-EARLY-AUTHORITY
+    proposition: "Cephas/Peter held major first-generation authority before the canonical Gospels were written."
+    disposition: VERY_STRONG
+    evidence_class: [PRIMARY_TEXT, HISTORICAL_RECONSTRUCTION]
+
+  - id: CLM-YS-R3-PET-004-ANTIOCH-CONFLICT
+    proposition: "Paul personally opposed Cephas over table-fellowship behavior at Antioch."
+    disposition: VERY_STRONG_EVENT_REPORT_FROM_PARTICIPANT_SOURCE
+    evidence_class: [PRIMARY_TEXT, HISTORICAL_RECONSTRUCTION]
+    ceiling: "Paul's partisan account does not independently establish every motive or opponent position."
+
+  - id: CLM-YS-R3-PET-005-DENIAL
+    proposition: "Historical Peter denied association with Yeshua during the passion."
+    disposition: PLAUSIBLE_WITH_SINGLE_EARLY_EXPLICIT_NARRATIVE_SOURCE_GUARD
+    evidence_class: [PRIMARY_TEXT, HISTORICAL_RECONSTRUCTION]
+    ceiling: "Mark is the earliest explicit narrative source; later canonical preservation is not counted as independent multiple attestation without dependence analysis; exact threefold choreography not established."
+
+  - id: CLM-YS-R3-PET-006-MARKAN-REINCLUSION
+    proposition: "Mark itself combines Peter's failure with a post-failure reinclusion signal."
+    disposition: TEXTUALLY_STRONG
+    evidence_class: [PRIMARY_TEXT]
+    locus: "Mark 16:7"
+
+  - id: CLM-YS-R3-PET-007-HIDDEN-BETRAYAL
+    proposition: "Peter committed a more serious betrayal later softened into denial."
+    disposition: NOT_ESTABLISHED
+    evidence_class: [SPECULATIVE_MODEL, UNKNOWN]
+
+  - id: CLM-YS-R3-PET-008-REHABILITATION-CONSPIRACY
+    proposition: "Later Christians coordinated a rehabilitation of Peter that concealed his true historical betrayal."
+    disposition: NOT_ESTABLISHED
+    evidence_class: [SPECULATIVE_MODEL, UNKNOWN]
+
+  - id: CLM-YS-R3-PET-009-JUDAS-FRAME
+    proposition: "Peter or Petrine authorities redirected Peter's historical betrayal onto Judas."
+    disposition: NOT_ESTABLISHED
+    evidence_class: [SPECULATIVE_MODEL, UNKNOWN]
+
+  - id: CLM-YS-R3-PET-010-SUPERIOR-UNDERSTANDING
+    proposition: "Peter historically understood Yeshua better or worse than Mary, James, Judas, or Thomas."
+    disposition: NOT_CURRENTLY_RANKABLE
+    evidence_class: [UNKNOWN]
+
+  - id: CLM-YS-R3-PET-011-PETRINE-WRITINGS
+    proposition: "Ancient works attributed to Peter were written by the historical Peter."
+    disposition: WORK_SPECIFIC_NOT_ASSUMED
+    evidence_class: [SCHOLARLY_INTERPRETATION, UNKNOWN]
+
+models:
+  P0_HISTORICAL_FAILURE_WITH_AUTHORITY:
+    status: PLAUSIBLE_NOT_YET_SECURE
+  P1_DIDACTIC_REPRESENTATIVE_FAILURE:
+    status: TEXTUALLY_STRONG_AS_FUNCTION_HISTORICAL_CORE_UNRESOLVED
+  P2_ANTI_PETER_POLEMIC_SHAPING:
+    status: POSSIBLE_REQUIRES_POSITIVE_EVIDENCE
+  P3_HIDDEN_GREATER_BETRAYAL_REHABILITATED:
+    status: SPECULATIVE_NOT_ESTABLISHED
+  P4_FULL_LITERARY_DENIAL:
+    status: LIVE_POSSIBILITY_NOT_ESTABLISHED
+
+scholarly_controls:
+  - id: SCH-OXBIB-PETER
+    evidence_class: [SCHOLARLY_INTERPRETATION]
+    title: "Peter"
+    publication: Oxford Bibliographies in Biblical Studies
+    bounded_use: "Historical Peter is difficult to recover beneath diverse literary images; canonical and noncanonical Peter portraits require source separation."
+    url: "https://academic.oup.com/reference/62341/reference-article-abstract/554101504"
+
+  - id: SCH-WIARDA-1999-MARK-PETER
+    evidence_class: [SCHOLARLY_INTERPRETATION]
+    title: "Peter as Peter in the Gospel of Mark"
+    publication: New Testament Studies
+    date: "1999"
+    bounded_use: "Mark's Peter is a distinctive literary character rather than only an undifferentiated disciple type."
+    url: "https://www.cambridge.org/core/journals/new-testament-studies/article/abs/peter-as-peter-in-the-gospel-of-mark/7747541468A76864F36B5A9C8C4F5D26"
+
+  - id: SCH-WILCOX-DENIAL
+    evidence_class: [SCHOLARLY_INTERPRETATION]
+    title: "The Denial-Sequence in Mark xiv. 26-31, 66-72"
+    publication: New Testament Studies
+    bounded_use: "Canonical denial traditions share a core sequence but exhibit differences requiring tradition/redaction analysis."
+    url: "https://www.cambridge.org/core/journals/new-testament-studies/article/abs/denialsequence-in-mark-xiv-2631-6672/FC5AC3E410261362EBB3DBB8CC05BD16"
+
+  - id: SCH-HENNING-2022-MATTHEW-PETER
+    evidence_class: [SCHOLARLY_INTERPRETATION]
+    title: "Stretching the Scope of Salvation in Matthew: The Significance of the Great Peter's Failings"
+    publication: New Testament Studies
+    date: "2022"
+    bounded_use: "Matthew materially combines exceptional Peter status with serious narrative failure."
+    url: "https://www.cambridge.org/core/journals/new-testament-studies/article/abs/stretching-the-scope-of-salvation-in-matthew-the-significance-of-the-great-peters-failings/0BFB0AE4F1A4B3EDCD472C91295B40E7"
+
+  - id: SCH-WATSON-2024-1PETER
+    evidence_class: [SCHOLARLY_INTERPRETATION]
+    title: "1 Peter: Contested Issues"
+    publication: Oxford Handbook of Hebrews and the Catholic Epistles
+    date: "2024"
+    bounded_use: "Current authorship/date dispute; Petrine attribution cannot be silently converted into historical Peter authorship."
+    url: "https://academic.oup.com/edited-volume/57514/chapter-abstract/467936100"
+
+rehabilitation_decomposition:
+  MARKAN_NARRATIVE_REINCLUSION: TEXTUALLY_STRONG
+  LATER_SOURCE_SPECIFIC_LITERARY_RESTORATION: STRONG_SOURCE_SPECIFIC
+  FIRST_GENERATION_INSTITUTIONAL_AUTHORITY: VERY_STRONG_IN_PAUL
+  CONSPIRATORIAL_REHABILITATION: NOT_ESTABLISHED
+  guard: EXTANT_CANONICAL_SEQUENCE_NE_SMOOTH_REHABILITATION_HISTORY
+
+review_revision:
+  first_review_subject: 33f7997ec052907e70aa218684181d2911b64bf4
+  first_review_artifact: reviews/yeshua-peter-failure-rehabilitation-v1-hostile-review.md
+  principal_changes:
+    - HISTORICAL_DENIAL_SINGLE_EARLY_SOURCE_GUARD
+    - P0_DEMOTED_FROM_LOW_ASSUMPTION
+    - REHABILITATION_DECOMPOSED
+
+next:
+  - SECOND_EXACT_HEAD_INTERNAL_HOSTILE_REVIEW
+  - MARKAN_DENIAL_TRADITION_CONTROL
+  - LATER_PETER_RESTORATION_PACKET
+  - PETER_MARY_AUTHORITY_RECEPTION_PACKET
