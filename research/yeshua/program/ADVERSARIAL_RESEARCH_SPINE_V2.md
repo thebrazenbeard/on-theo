@@ -78,6 +78,12 @@ Disposition:
 - UNRESOLVED
 - REJECTED
 
+Disposition semantics:
+- SURVIVES: the proposition survives the current bounded review at its stated claim ceiling.
+- SURVIVES_NARROWED: only a narrower proposition survives; the superseded stronger formulation does not.
+- UNRESOLVED: current admitted evidence does not decide the proposition.
+- REJECTED: the proposition is rejected as a currently supported/admissible conclusion. This does not prove that the logical negation is historically true.
+
 A claim may therefore be INTERNAL_HOSTILE_REVIEWED + SURVIVES_NARROWED, or INDEPENDENTLY_REVIEWED + REJECTED.
 
 SOURCE_BOUND does not imply historical truth.
