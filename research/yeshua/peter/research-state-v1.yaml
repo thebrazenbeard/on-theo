@@ -1,0 +1,32 @@
+schema_version: on-theo.yeshua-peter-failure-rehabilitation-state.v1
+status: SOURCE_BOUND_PENDING_HOSTILE_REVIEW
+recorded_at: "2026-09-21"
+
+branch:
+  name: research/yeshua-peter-failure-rehabilitation-v1-20260921
+
+parent:
+  branch: research/yeshua-people-source-clock-v1-20260921
+  head: facb8789bbbd0c77f0c3fa27ab71bb3d77b0557d
+  draft_pr: 157
+
+artifacts:
+  dossier: research/yeshua/peter/peter-failure-rehabilitation-dossier-v1.md
+  matrix: research/yeshua/peter/peter-failure-rehabilitation-v1.yaml
+
+current_result:
+  historical_Cephas: VERY_STRONG
+  Cephas_equals_Peter: HIGH_STRONGEST_CURRENT_IDENTIFICATION
+  first_generation_authority: VERY_STRONG
+  Antioch_conflict: VERY_STRONG_PARTICIPANT_REPORT_WITH_PARTISAN_GUARD
+  historical_denial: PLAUSIBLE
+  exact_threefold_denial_scene: NOT_ESTABLISHED
+  Markan_failure_plus_reinclusion: TEXTUALLY_STRONG
+  later_restoration_trajectory: STRONG_AS_LITERARY_RECEPTION
+  hidden_greater_betrayal: NOT_ESTABLISHED
+  rehabilitation_conspiracy: NOT_ESTABLISHED
+  Judas_frameup_by_Peter: NOT_ESTABLISHED
+  superior_or_inferior_understanding: NOT_CURRENTLY_RANKABLE
+
+next:
+  - INTERNAL_HOSTILE_REVIEW
