@@ -25,8 +25,6 @@ And:
 
 EARLIER_SOURCE != TRUTH_SCORE
 
-EARLIER_SOURCE != TRUTH_SCORE
-
 Later authority texts remain historically valuable as evidence for later Christian memory, identity, and authority discourse even when they are not admitted as first-century biographical transcripts.
 
 The task is to preserve what each layer can actually establish.
