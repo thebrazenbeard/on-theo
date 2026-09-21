@@ -1,6 +1,7 @@
 schema_version: on-theo.yeshua-judas-research-state.v1
-status: SOURCE_BOUND_PENDING_HOSTILE_REVIEW
+status: SUPERSEDED_FOR_CLAIM_PROMOTION_RETAINED_AS_SUPPORT
 recorded_at: "2026-09-21"
+promotion_authority: research/yeshua/judas/research-state-v1.yaml
 branch:
   name: research/yeshua-judas-source-development-v1-20260921
 parent:
