@@ -1,0 +1,22 @@
+schema_version: on-theo.yeshua-judas-research-state.v3
+status: CORE_SOURCE_LOGISTICS_LEXICAL_LAYERS_COMPLETE_PENDING_HOSTILE_REVIEW
+supersedes:
+  - research/yeshua/judas/research-state-v2.yaml
+
+current_result:
+  historical_Judas: PROBABLE
+  some_handover: PLAUSIBLE_TO_PROBABLE
+  safest_action_description: HANDOVER_OR_ARREST_FACILITATION
+  Markan_moral_interpretation: NEGATIVE_BETRAYAL_CONTEXT
+  strongest_logistical_function: LOCATION_TIMING_ACCESS_CONFIRMATION
+  motive: UNRESOLVED
+  greed: NOT_ESTABLISHED
+  innocence: NOT_ESTABLISHED
+  frameup: NOT_ESTABLISHED
+  cooperative_instruction: NOT_ESTABLISHED
+  Roman_agent: NOT_ESTABLISHED
+
+next:
+  - INTERNAL_HOSTILE_REVIEW
+  - IF_PASS_OPEN_DRAFT_PR
+  - THEN_JAMES_AUTHORITY_FAMILY_DOSSIER
