@@ -1,0 +1,19 @@
+schema_version: on-theo.yeshua-judas-research-state.v2
+status: ARREST_LOGISTICS_LAYER_ADDED
+supersedes:
+  - research/yeshua/judas/research-state-v1.yaml
+
+current_result:
+  historical_Judas: PROBABLE
+  some_handover: PLAUSIBLE_TO_PROBABLE
+  strongest_logistical_function: LOCATION_TIMING_ACCESS_CONFIRMATION
+  facial_recognition_only: WEAK_NOT_REQUIRED
+  legal_informant_function: NOT_ESTABLISHED
+  Roman_agent: NOT_ESTABLISHED
+  motive: UNRESOLVED
+  innocence: NOT_ESTABLISHED
+  frameup: NOT_ESTABLISHED
+
+next:
+  - PARADIDOMI_SEMANTIC_AND_TRADITION_HISTORY_V1
+  - INTERNAL_HOSTILE_REVIEW

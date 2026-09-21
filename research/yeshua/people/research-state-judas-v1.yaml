@@ -1,0 +1,31 @@
+schema_version: on-theo.yeshua-judas-research-state.v1
+status: SUPERSEDED_FOR_CLAIM_PROMOTION_RETAINED_AS_SUPPORT
+recorded_at: "2026-09-21"
+promotion_authority: research/yeshua/judas/research-state-v1.yaml
+branch:
+  name: research/yeshua-judas-source-development-v1-20260921
+parent:
+  branch: research/yeshua-people-source-clock-v1-20260921
+  head: facb8789bbbd0c77f0c3fa27ab71bb3d77b0557d
+  draft_pr: 157
+artifacts:
+  dossier: research/yeshua/people/judas-source-development-v1.md
+  matrix: research/yeshua/people/judas-source-development-v1.yaml
+  diachrony: research/yeshua/people/judas-diachrony-matrix-v1.md
+  paradidomi: research/yeshua/people/judas-paradidomi-control-v1.md
+current_result:
+  historical_judas: PROBABLE_PENDING_REVIEW
+  insider_handover_core: PROBABLE_PENDING_REVIEW
+  location_timing_access_function: PLAUSIBLE_PENDING_REVIEW
+  money_in_mark: TEXTUALLY_ESTABLISHED
+  greed_as_motive: UNRESOLVED
+  thirty_silver_exact_amount: UNRESOLVED
+  demonic_mechanism: NOT_HISTORICALLY_ADJUDICATED
+  death_mode: UNKNOWN
+  later_villain_expansion: TEXTUALLY_REAL
+  total_invention: UNRESOLVED_CURRENTLY_WEAK_TO_MODERATE
+  broader_failure_concentration: POSSIBLE_LOW_MODERATE
+  secret_authorization: NOT_SUPPORTED
+  collective_agent_conspiracy: UNRESOLVED_CURRENTLY_WEAK
+next:
+  - INTERNAL_HOSTILE_REVIEW

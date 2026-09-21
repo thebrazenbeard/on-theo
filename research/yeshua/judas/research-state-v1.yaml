@@ -1,0 +1,29 @@
+schema_version: on-theo.yeshua-judas-research-state.v1
+status: FIRST_HOSTILE_REVIEW_REVISIONS_APPLIED_SECOND_REVIEW_PENDING
+branch:
+  name: research/yeshua-judas-source-development-v1-20260921
+  base_head: facb8789bbbd0c77f0c3fa27ab71bb3d77b0557d
+parent:
+  r3_pr: 157
+artifacts:
+  dossier: research/yeshua/judas/judas-source-development-dossier-v1.md
+  matrix: research/yeshua/judas/judas-source-development-v1.yaml
+current_result:
+  historical_Judas: PLAUSIBLE_TO_PROBABLE_SINGLE_EARLY_EXPLICIT_SOURCE_GUARD
+  some_handover: PLAUSIBLE_NOT_YET_SECURE
+  exact_information_function: UNRESOLVED
+  location_timing_access: PLAUSIBLE_OPERATIONAL_MODEL_NOT_ESTABLISHED
+  motive: UNRESOLVED
+  innocence: NOT_ESTABLISHED
+  frameup: NOT_ESTABLISHED
+  cooperative_instruction: NOT_ESTABLISHED
+  Roman_agent: NOT_ESTABLISHED
+  later_portrayal_divergence: SURVIVES
+review:
+  first_hostile_subject: eb190c525ca7ba6d2260d812c0c36ce6b4cb3e6d
+  first_hostile_artifact: reviews/yeshua-judas-source-development-v1-hostile-review.md
+  execution_mode: SAME_RUNTIME_ADVERSARIAL_REVIEW
+next:
+  - SECOND_EXACT_HEAD_INTERNAL_HOSTILE_REVIEW
+  - ARREST_LOGISTICS_AND_INFORMATION_NEED_V1
+  - R4_INTEGRATION

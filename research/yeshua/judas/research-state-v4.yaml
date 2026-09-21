@@ -1,0 +1,70 @@
+schema_version: on-theo.yeshua-judas-research-state.v4
+status: FIRST_TWO_HOSTILE_REVIEWS_RECONCILED_THIRD_EXACT_HEAD_REVIEW_PENDING
+recorded_at: "2026-09-21"
+canonical: false
+
+branch:
+  name: research/yeshua-judas-source-development-v1-20260921
+
+parent:
+  branch: research/yeshua-people-source-clock-v1-20260921
+  head_at_branch_creation: facb8789bbbd0c77f0c3fa27ab71bb3d77b0557d
+  draft_pr: 157
+
+supersedes_for_current_use:
+  - research/yeshua/judas/research-state-v1.yaml
+  - research/yeshua/judas/research-state-v2.yaml
+  - research/yeshua/judas/research-state-v3.yaml
+
+historical_provenance_preserved: true
+
+review_history:
+  - subject: eb190c525ca7ba6d2260d812c0c36ce6b4cb3e6d
+    artifact: reviews/yeshua-judas-source-development-v1-hostile-review.md
+    disposition: REVISION_REQUIRED_BEFORE_INTERNAL_PASS
+  - subject: c8111654a7d539f8499e91d372b221cfc9a9820b
+    artifact: reviews/yeshua-judas-source-development-v1-hostile-review-2.md
+    disposition: REVISION_REQUIRED_BEFORE_INTERNAL_PASS
+  execution_mode: SAME_RUNTIME_ADVERSARIAL_REVIEW
+
+current_result:
+  historical_Judas: PLAUSIBLE_TO_PROBABLE_SINGLE_EARLY_EXPLICIT_SOURCE_GUARD
+  historical_member_of_twelve: PLAUSIBLE_TO_PROBABLE_WITH_ROSTER_DEPENDENCE_GUARDS
+  historical_handover: PLAUSIBLE_NOT_YET_SECURE
+  Markan_handover_narrative: SOURCE_BOUND
+  money_in_Mark: TEXTUALLY_SECURE
+  historical_payment_event: UNRESOLVED
+  greed_motive: UNRESOLVED
+  thirty_silver_exact_amount: UNRESOLVED
+  paradidomi_neutral_core: HAND_OVER_OR_DELIVER
+  paradidomi_exonerates_Judas: REJECTED
+  location_timing_access: PLAUSIBLE_BOUNDED_OPERATIONAL_MODEL
+  exact_information_function: UNRESOLVED
+  facial_identification_necessity: UNRESOLVED_WEAK_AS_SOLE_MODEL
+  legal_informant_function: NOT_ESTABLISHED
+  death_mode: UNKNOWN
+  demonic_mechanism: NOT_HISTORICALLY_ADJUDICATED
+  later_extant_portrayal_divergence: SURVIVES
+  full_invention_scapegoat: UNRESOLVED_CURRENTLY_WEAK_TO_MODERATE
+  broader_failure_concentration: POSSIBLE_LOW_MODERATE
+  secret_authorization: NOT_SUPPORTED
+  Roman_or_collective_agent_conspiracy: UNRESOLVED_CURRENTLY_WEAK
+
+claim_ceiling: >
+  A historical named Judas is plausible-to-probable, while a historical Judas
+  handover role is only plausible and not yet secure. Mark already contains
+  money and negative betrayal context. Motive, exact payment, operational
+  function, kiss necessity, death, demonic psychology, innocence/frame-up,
+  secret authorization and collective-agent theories remain unestablished or
+  unresolved.
+
+promotion_authority:
+  dossier: research/yeshua/judas/judas-source-development-dossier-v1.md
+  matrix: research/yeshua/judas/judas-source-development-v1.yaml
+  state: research/yeshua/judas/research-state-v4.yaml
+  artifact_manifest: research/yeshua/judas/JUDAS_ARTIFACT_AUTHORITY_V1.yaml
+
+next:
+  - THIRD_EXACT_HEAD_INTERNAL_HOSTILE_REVIEW
+  - IF_PASS_OPEN_DRAFT_PR
+  - THEN_R4_JERUSALEM_CRISIS_OR_NEXT_R3_PERSON_DOSSIER
