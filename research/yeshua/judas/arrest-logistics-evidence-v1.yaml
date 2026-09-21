@@ -14,7 +14,8 @@ models:
   FACIAL_RECOGNITION_ONLY:
     status: WEAK_NOT_REQUIRED
   LOCATION_TIMING_AWAY_FROM_CROWD:
-    status: PLAUSIBLE_CURRENTLY_STRONGEST
+    status: PLAUSIBLE_BOUNDED_OPERATIONAL_MODEL
+    evidence_class: PROJECT_INFERENCE
   ACCESS_CONFIRMATION:
     status: PLAUSIBLE
   LEGAL_TESTIMONY_DECISIVE_CHARGE:
@@ -55,9 +56,10 @@ scholarly_controls:
     url: https://www.cambridge.org/core/journals/new-testament-studies/article/dating-the-death-of-jesus-memory-and-the-religious-imagination/0458FC0CA55BEF810BCC411AC2765860
 
 strongest_result: >
-  A historical insider's most plausible bounded function is controlled arrest
-  facilitation through location, timing, access or target confirmation rather
-  than revealing the identity of an otherwise unknown public figure.
+  Location, timing, access or target confirmation is a plausible bounded
+  operational model for insider usefulness and is more economical than a
+  facial-recognition-only model, but the historical function is not recovered
+  or uniquely ranked by current evidence.
 
 guards:
   - LOGISTICAL_PLAUSIBILITY_NE_EVENT_PROOF
