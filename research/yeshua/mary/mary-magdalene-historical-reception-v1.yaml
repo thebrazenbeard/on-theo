@@ -1,0 +1,176 @@
+schema_version: on-theo.yeshua-mary-magdalene-historical-reception.v1
+status: SOURCE_BOUND_PENDING_HOSTILE_REVIEW
+canonical: false
+program: THE_REAL_TESTAMENT_OF_YESHUA
+lane: R3_MARY_MAGDALENE
+recorded_at: "2026-09-21"
+
+parent:
+  branch: research/yeshua-people-source-clock-v1-20260921
+  head: facb8789bbbd0c77f0c3fa27ab71bb3d77b0557d
+  draft_pr: 157
+
+source_clock:
+  - source: SRC-PAUL-UNDISPUTED
+    horizon: FIRST_GENERATION
+    mary_status: NOT_NAMED
+    control: PAULINE_SILENCE_WEAK_NEGATIVE_ONLY
+
+  - source: SRC-GOSPEL-MARK
+    horizon: EARLIEST_SURVIVING_NARRATIVE_GOSPEL
+    loci: ["Mark 15:40-41", "Mark 15:47", "Mark 16:1-8"]
+    establishes_at_text_level:
+      - GALILEAN_FOLLOWER_SERVICE_MEMORY
+      - CRUCIFIXION_WITNESS_MEMORY
+      - BURIAL_LOCATION_MEMORY
+      - TOMB_VISITOR_MEMORY
+    limits:
+      - NO_NARRATED_MARY_APPEARANCE_IN_EARLIEST_RECOVERABLE_ENDING
+      - PROMINENCE_NE_FORMAL_OFFICE
+
+  - source: SRC-GOSPEL-MATTHEW
+    horizon: POST_MARKAN_CANONICAL
+    establishes_at_text_level:
+      - WOMEN_RESURRECTION_ENCOUNTER
+      - COMMISSION_TO_TELL_DISCIPLES
+    dependence_control: MARKAN_DEPENDENCE_MATERIAL
+
+  - source: SRC-GOSPEL-LUKE
+    horizon: POST_MARKAN_CANONICAL
+    loci: ["Luke 8:1-3", "Luke 23-24"]
+    establishes_at_text_level:
+      - MARY_NAMED_IN_MINISTRY_WOMEN
+      - SEVEN_DEMONS_TRADITION
+      - TOMB_MESSAGE_ROLE
+    limits:
+      - SEVEN_DEMONS_NE_PROSTITUTION
+      - LUKE_7_UNNAMED_WOMAN_NE_MAGDALENE_BY_TEXT
+
+  - source: SRC-GOSPEL-JOHN
+    horizon: LATER_CANONICAL
+    locus: "John 20"
+    establishes_at_text_level:
+      - INDIVIDUAL_RESURRECTION_APPEARANCE
+      - MESSAGE_TO_DISCIPLES
+    limits:
+      - LATER_LITERARY_THEOLOGICAL_PORTRAIT
+      - HISTORICAL_PROTOPHANY_NOT_ESTABLISHED_BY_TEXT_ALONE
+
+  - source: SRC-GOSPEL-MARY
+    horizon: SECOND_CENTURY_COMPOSITION_FIELD_WITH_EARLY_THIRD_CENTURY_GREEK_WITNESSES
+    manuscripts:
+      - P_RYL_463
+      - P_OXY_3525
+      - BG_8502_COPTIC
+    establishes_at_text_level:
+      - MARY_REVELATORY_AUTHORITY
+      - PETER_ANDREW_CHALLENGE
+      - LEVI_DEFENSE
+    limits:
+      - MARY_IDENTITY_AS_MAGDALENE_PROBABLE_NOT_AUTOMATIC
+      - NOT_FIRST_CENTURY_TRANSCRIPT
+
+claims:
+  - id: CLM-YS-R3-MAR-001-HISTORICAL-MARY
+    proposition: "A historical Mary Magdalene probably belonged to the Yeshua movement."
+    disposition: PROBABLE_TO_STRONG_PENDING_HOSTILE_REVIEW
+    evidence_class: [PRIMARY_TEXT, HISTORICAL_RECONSTRUCTION]
+
+  - id: CLM-YS-R3-MAR-002-GALILEAN-FOLLOWER
+    proposition: "Mark remembers Mary Magdalene as one of the women who followed and served Yeshua in Galilee."
+    disposition: TEXTUALLY_STRONG_HISTORICALLY_PROBABLE
+    evidence_class: [PRIMARY_TEXT, HISTORICAL_RECONSTRUCTION]
+
+  - id: CLM-YS-R3-MAR-003-PASSION-TOMB
+    proposition: "Mary Magdalene is a prominent named figure in Markan crucifixion, burial-location, and tomb memory."
+    disposition: VERY_STRONG_AT_MARKAN_MEMORY_LEVEL
+    evidence_class: [PRIMARY_TEXT]
+
+  - id: CLM-YS-R3-MAR-004-LEADERSHIP
+    proposition: "Mary held a formal leadership office in Yeshua's lifetime."
+    disposition: UNRESOLVED_NOT_ESTABLISHED
+    evidence_class: [UNKNOWN]
+
+  - id: CLM-YS-R3-MAR-005-PROSTITUTE
+    proposition: "Mary Magdalene was historically a prostitute or is identified as such in the canonical Gospels."
+    disposition: NOT_SUPPORTED_BY_EARLIEST_SOURCES
+    evidence_class: [PRIMARY_TEXT, HISTORICAL_RECONSTRUCTION]
+
+  - id: CLM-YS-R3-MAR-006-JOHN20
+    proposition: "John preserves Mary Magdalene as an individual resurrection witness and messenger."
+    disposition: TEXTUALLY_STRONG_LATER_CANONICAL
+    evidence_class: [PRIMARY_TEXT]
+    historical_event_status: UNRESOLVED
+
+  - id: CLM-YS-R3-MAR-007-GOSPEL-MARY-AUTHORITY
+    proposition: "The Gospel of Mary portrays Mary as a revelatory authority challenged by male disciples."
+    disposition: TEXTUALLY_STRONG_SECOND_CENTURY_RECEPTION
+    evidence_class: [PRIMARY_TEXT, MANUSCRIPT_WITNESS]
+
+  - id: CLM-YS-R3-MAR-008-HISTORICAL-PETER-CONFLICT
+    proposition: "Historical Peter opposed Mary Magdalene's authority/private revelation."
+    disposition: NOT_ESTABLISHED
+    evidence_class: [UNKNOWN]
+
+  - id: CLM-YS-R3-MAR-009-SUPPRESSION
+    proposition: "The prostitute tradition was deliberately invented as a coordinated campaign to discredit historical Mary Magdalene."
+    disposition: NOT_ESTABLISHED
+    evidence_class: [PROJECT_INFERENCE, UNKNOWN]
+    weaker_result: "Later Western conflation substantially transformed Mary's remembered identity."
+
+  - id: CLM-YS-R3-MAR-010-SUPERIOR-UNDERSTANDING
+    proposition: "Mary Magdalene historically understood Yeshua better than Peter or the Twelve."
+    disposition: NOT_CURRENTLY_RANKABLE
+    evidence_class: [UNKNOWN]
+
+  - id: CLM-YS-R3-MAR-011-MARRIAGE
+    proposition: "Mary Magdalene was Yeshua's spouse or sexual partner."
+    disposition: NOT_ESTABLISHED
+    evidence_class: [UNKNOWN]
+
+scholarly_controls:
+  - id: SCH-PIETZ-2026-MARY
+    evidence_class: [SCHOLARLY_INTERPRETATION]
+    title: "Mary Magdalene and the Early Jesus Movement"
+    publication: Oxford Research Encyclopedia of Gender and Women's History
+    date: "2026-04-09"
+    bounded_use: "Current synthesis of Mary as first-century disciple/follower and key passion/resurrection witness; distinguishes later interpretations."
+    url: "https://academic.oup.com/edited-volume/62566/chapter-abstract/560113991"
+
+  - id: SCH-TAYLOR-2024-REAL-MARY
+    evidence_class: [SCHOLARLY_INTERPRETATION]
+    title: "Defining the Real Mary Magdalene"
+    publication: The Oxford Handbook of Mary Magdalene
+    date: "2024"
+    bounded_use: "Historical evidence is largely canonical and extracanonical Gospel material, with Mark especially important."
+    url: "https://academic.oup.com/edited-volume/56842/chapter-abstract/467866112"
+
+  - id: SCH-HOWARD-2024-SYNOPTIC-MARY
+    evidence_class: [SCHOLARLY_INTERPRETATION]
+    title: "Mary Magdalene in the Synoptic Gospel Narratives"
+    publication: The Oxford Handbook of Mary Magdalene
+    date: "2024"
+    bounded_use: "Synoptic crucifixion/burial/tomb/resurrection characterization and differences."
+    url: "https://academic.oup.com/edited-volume/56842/chapter-abstract/454516015"
+
+  - id: SCH-TUCKETT-2007-GOSPEL-MARY
+    evidence_class: [SCHOLARLY_INTERPRETATION]
+    title: "The Gospel of Mary"
+    publication: Oxford University Press
+    date: "2007"
+    bounded_use: "Manuscript witnesses, language, date, literary character, and source relation."
+    url: "https://academic.oup.com/book/34836"
+
+  - id: SCH-BROCK-2019-MARY
+    evidence_class: [SCHOLARLY_INTERPRETATION]
+    title: "Mary Magdalene"
+    publication: Oxford Handbook of New Testament, Gender, and Sexuality
+    date: "2019"
+    bounded_use: "Mary authority across canonical/extracanonical texts; Gospel of Mary protagonist identification remains probable rather than logically certain."
+    url: "https://academic.oup.com/edited-volume/34457/chapter-abstract/292368380"
+
+next:
+  - INTERNAL_HOSTILE_REVIEW
+  - MARKAN_WOMEN_DISCIPLESHIP_CONTROL
+  - GOSPEL_OF_MARY_AUTHORITY_CONFLICT_PACKET
+  - PROSTITUTE_CONFLATION_RECEPTION_PACKET
