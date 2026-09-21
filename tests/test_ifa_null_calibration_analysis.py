@@ -32,6 +32,22 @@ PLACEMENT = module_from_spec(PLACEMENT_SPEC)
 PLACEMENT_SPEC.loader.exec_module(PLACEMENT)
 PLACEMENT_SCHEDULE = PLACEMENT.build_schedule()
 
+RANK_TABLE_PATH = (
+    Path(__file__).resolve().parents[1]
+    / "research"
+    / "ritual-interface-exploit"
+    / "reference"
+    / "ifa_mode_s_rank_table.py"
+)
+RANK_TABLE_SPEC = spec_from_file_location(
+    "ifa_mode_s_rank_table_for_test",
+    RANK_TABLE_PATH,
+)
+assert RANK_TABLE_SPEC is not None and RANK_TABLE_SPEC.loader is not None
+RANK_TABLE = module_from_spec(RANK_TABLE_SPEC)
+RANK_TABLE_SPEC.loader.exec_module(RANK_TABLE)
+RANK_TO_STATE = RANK_TABLE.rank_to_state()
+
 
 def make_records(rank_pairs):
     records = []
@@ -62,8 +78,8 @@ def make_records(rank_pairs):
             "attempt_index_session": session_index,
             "placement_block_id": placement["placement_block_id"],
             "attempt_index_block": placement["attempt_index_block"],
-            "cast1_raw_state": f"ODU_{first_rank:03d}",
-            "cast2_raw_state": f"ODU_{second_rank:03d}",
+            "cast1_raw_state": RANK_TO_STATE[first_rank],
+            "cast2_raw_state": RANK_TO_STATE[second_rank],
             "cast1_rank": first_rank,
             "cast2_rank": second_rank,
             "pair_relation": relation,
@@ -192,5 +208,27 @@ def test_closed_session_id_cannot_reappear():
     with pytest.raises(
         MODULE.CalibrationIntegrityError,
         match="reappears after closure",
+    ):
+        MODULE.summarize_mode_s(records, swap_replicates=100)
+
+
+def test_raw_state_rank_mismatch_is_rejected():
+    records = make_records([(1, 2)])
+    records[0]["cast1_raw_state"] = RANK_TO_STATE[3]
+    records[0]["event_hash"] = MODULE.compute_event_hash(records[0])
+    with pytest.raises(
+        MODULE.CalibrationIntegrityError,
+        match="cast1_rank contradicts",
+    ):
+        MODULE.summarize_mode_s(records, swap_replicates=100)
+
+
+def test_unknown_raw_state_is_rejected():
+    records = make_records([(1, 2)])
+    records[0]["cast2_raw_state"] = "NOT_A_FROZEN_STATE"
+    records[0]["event_hash"] = MODULE.compute_event_hash(records[0])
+    with pytest.raises(
+        MODULE.CalibrationIntegrityError,
+        match="not in frozen 256-state table",
     ):
         MODULE.summarize_mode_s(records, swap_replicates=100)
