@@ -1,6 +1,6 @@
 # Yeshua People / Inner-Circle Source Clock V1
 
-Status: R3 SOURCE-CLOCK CONTROL / FIRST HOSTILE REVIEW APPLIED / SECOND REVIEW PENDING
+Status: R3 SOURCE-CLOCK CONTROL / POST-REVIEW INTEGRITY CLEANUP / REVALIDATION PENDING
 
 Program: **The Real Testament of Yeshua**
 
@@ -190,7 +190,7 @@ Mark 14 supplies:
 
 Paul does not name Judas in the surviving undisputed letters.
 
-That silence is weak negative evidence because Paul's letters are occasional and rarely narrate Yeshua's final week. It must not be used to infer that no pre-Markan Judas tradition existed. This silence is weak negative evidence because Paul's letters are occasional and non-biographical; it does not disprove a pre-Markan Judas tradition.
+That silence is weak negative evidence because Paul's letters are occasional and non-biographical and rarely narrate Yeshua's final week. It must not be used to infer that no pre-Markan Judas tradition existed.
 
 1 Corinthians 11:23 uses `paradidomi` language in the meal tradition, but that verb cannot simply be converted into an independent named-Judas witness.
 
@@ -264,7 +264,7 @@ They do not by themselves establish one continuous biographical personality.
 
 The Gospel of Thomas attributes a sayings collection to Didymos Judas Thomas and gives Thomasine tradition major revelatory prestige.
 
-The Acts of Thomas develops the figure much later.
+The Acts of Thomas preserves a much later Thomas portrayal.
 
 R2 already established:
 THOMAS_WITNESS_DATE != THOMAS_COMPOSITION_DATE != SAYING_INDEPENDENCE.
