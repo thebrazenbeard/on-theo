@@ -1,0 +1,24 @@
+schema_version: on-theo.yeshua-judas-research-state.v1
+status: SOURCE_DEVELOPMENT_DOSSIER_ACTIVE
+branch:
+  name: research/yeshua-judas-source-development-v1-20260921
+  base_head: facb8789bbbd0c77f0c3fa27ab71bb3d77b0557d
+parent:
+  r3_pr: 157
+artifacts:
+  dossier: research/yeshua/judas/judas-source-development-dossier-v1.md
+  matrix: research/yeshua/judas/judas-source-development-v1.yaml
+current_result:
+  historical_Judas: PROBABLE
+  some_handover: PLAUSIBLE_TO_PROBABLE
+  exact_information_function: UNRESOLVED
+  motive: UNRESOLVED
+  innocence: NOT_ESTABLISHED
+  frameup: NOT_ESTABLISHED
+  cooperative_instruction: NOT_ESTABLISHED
+  Roman_agent: NOT_ESTABLISHED
+  later_portrayal_divergence: SURVIVES
+next:
+  - ARREST_LOGISTICS_AND_INFORMATION_NEED_V1
+  - PARADIDOMI_SEMANTIC_AND_TRADITION_HISTORY_V1
+  - INTERNAL_HOSTILE_REVIEW
