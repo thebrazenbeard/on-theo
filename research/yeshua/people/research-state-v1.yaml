@@ -1,0 +1,27 @@
+schema_version: on-theo.yeshua-people-source-clock-state.v1
+status: FIRST_HOSTILE_REVIEW_REVISIONS_APPLIED_SECOND_REVIEW_PENDING
+recorded_at: "2026-09-21"
+branch:
+  name: research/yeshua-people-source-clock-v1-20260921
+parent:
+  branch: research/yeshua-kingdom-teaching-v1-20260921
+  head: 443e45a2132a18d92344115e306c2a58dfda4950
+  draft_pr: 156
+artifacts:
+  prose: research/yeshua/people/people-source-clock-v1.md
+  matrix: research/yeshua/people/people-source-clock-v1.yaml
+current_result:
+  first_generation_strongest_social_attestation: [JAMES, CEPHAS_PETER]
+  earliest_mary_explicit_layer: MARK
+  earliest_judas_explicit_betrayal_layer: MARK
+  earliest_twelve_label: PAUL_1COR15
+  thomas_distinctive_character_layer: LATER_THAN_MARK_ROSTER
+  superior_understanding_claim: NOT_CURRENTLY_RANKABLE_AND_NOT_SUPPORTED_AT_R3_ENTRY
+  collective_roman_collaboration_claim: NOT_SUPPORTED_AT_R3_ENTRY
+review:
+  first_hostile_subject: 0181dd902f0dc220eb5b085167f59799246a031c
+  first_hostile_artifact: reviews/yeshua-people-source-clock-v1-hostile-review.md
+  execution_mode: SAME_RUNTIME_ADVERSARIAL_REVIEW
+next:
+  - SECOND_EXACT_HEAD_INTERNAL_HOSTILE_REVIEW
+  - JUDAS_SOURCE_DEVELOPMENT_DOSSIER

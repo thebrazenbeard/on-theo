@@ -1,0 +1,44 @@
+schema_version: on-theo.yeshua-people-source-clock-review-receipt.v2
+status: INTERNAL_HOSTILE_PASS_WITH_GUARDS
+independent_review_status: REQUIRED_NOT_COMPLETED
+
+subject:
+  branch: research/yeshua-people-source-clock-v1-20260921
+  exact_commit: 8ce9a4d10a0b315446d7e5c5a813083745308751
+  artifacts:
+    - research/yeshua/people/people-source-clock-v1.md
+    - research/yeshua/people/people-source-clock-v1.yaml
+
+review:
+  execution_mode: SAME_RUNTIME_ADVERSARIAL_REVIEW
+  artifact: reviews/yeshua-people-source-clock-v1-hostile-review-3-integrity.md
+  commit: 6a1684392b14b5f258d77a14f8c6359781878dde
+  purpose: POST_REVIEW_INTEGRITY_REVALIDATION
+
+supersedes_for_current_head_use:
+  - research/yeshua/people/research-state-v2-review-receipt.yaml
+
+preserved_historical_review:
+  prior_subject: b9f30ca6b9a70c3593ef558cf45e736d39bef789
+  prior_review: reviews/yeshua-people-source-clock-v1-hostile-review-2.md
+  note: "Preserved as historical provenance; current-head use follows this V2 receipt."
+
+allowed_downstream_use:
+  - JUDAS_SOURCE_DEVELOPMENT_DOSSIER
+  - JAMES_AUTHORITY_FAMILY_DOSSIER
+  - MARY_HISTORICAL_RECEPTION_DOSSIER
+  - PETER_FAILURE_REHABILITATION_DOSSIER
+  - JOHN_BAPTIST_RELATION_DOSSIER
+  - THOMAS_HISTORICAL_THOMASINE_DOSSIER
+  - TWELVE_COLLECTIVE_SYNTHESIS
+
+prohibited:
+  - CLAIM_INDEPENDENT_REVIEW_COMPLETE
+  - RANK_WHO_UNDERSTOOD_YESHUA_BEST
+  - PROMOTE_JUDAS_INNOCENCE_OR_INVENTION
+  - PROMOTE_MARY_OR_THOMAS_HISTORICAL_SUPERIORITY
+  - PROMOTE_PETER_HIDDEN_BETRAYAL
+  - PROMOTE_JAMES_DYNASTIC_SUCCESSION
+  - PROMOTE_COLLECTIVE_ROMAN_COLLABORATION
+
+next_frontier: JUDAS_SOURCE_DEVELOPMENT_DOSSIER
