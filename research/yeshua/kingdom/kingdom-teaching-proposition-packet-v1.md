@@ -77,6 +77,8 @@ Current disposition:
 PRESENT_INBREAKING_KINGDOM =
 MODERATE_TO_STRONG_CANDIDATE.
 
+The strongest present-inbreaking datum in R2 is the Matthew/Luke exorcism-Kingdom tradition. Mark 4 supplies supporting present/future interpretive pressure, not independent proof of an inaugurated temporal system.
+
 ## Proposition 4 — Luke 17:20–21 does not establish an inward mystical core
 
 Luke 17:20–21 is genuinely important.
@@ -120,7 +122,7 @@ For R2 historical Yeshua, however:
 
 Current disposition:
 
-THOMAS_AS_EVIDENCE_FOR_EARLY_CHRISTIAN_INWARD_PRESENT_TRAJECTORY =
+THOMAS_AS_EVIDENCE_FOR_SECOND_CENTURY_OR_LATER_INWARD_PRESENT_CHRISTIAN_TRAJECTORY =
 SURVIVES.
 
 THOMAS_AS_DIRECT_PROOF_OF_HISTORICAL_YESHUA_INWARD_CORE =
@@ -182,14 +184,20 @@ POLITICAL_ONLY
 versus
 SPIRITUAL_ONLY.
 
-Current strongest provisional model:
+Current strongest provisional model for the **surviving early tradition**:
 
 KINGDOM =
 DIVINE_SOVEREIGNTY_EXPECTED_TO_TRANSFORM_REALITY,
 ALREADY_ANTICIPATED_OR_ENACTED_IN_YESHUA'S_MOVEMENT/ACTIVITY_IN_SOME_TRADITIONS,
 WITH_SOCIAL_ETHICAL_AND_ESCHATOLOGICAL_DIMENSIONS.
 
-This is a historical reconstruction, not a metaphysical verdict.
+This is a historical reconstruction of the early tradition, not a metaphysical verdict.
+
+Critical ceiling:
+
+MIXED_EARLY_TRADITION != COHERENT_MIXED_HISTORICAL_YESHUA_SYSTEM.
+
+R2 V1 supports multi-register early Kingdom tradition more strongly than it supports a complete reconstructed theology held coherently by Yeshua himself.
 
 ## Proposition 9 — Inwardness remains a live but unpromoted historical hypothesis
 
