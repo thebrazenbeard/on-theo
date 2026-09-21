@@ -135,6 +135,15 @@ def make_records(rank_pairs):
     return records
 
 
+def rehash_records(records):
+    prior = MODULE.GENESIS_HASH
+    for record in records:
+        record["prior_event_hash"] = prior
+        record["event_hash"] = MODULE.compute_event_hash(record)
+        prior = record["event_hash"]
+    return records
+
+
 def test_balanced_orientation_is_not_rejected():
     pairs = []
     for _ in range(50):
@@ -334,3 +343,71 @@ def test_unlisted_deviation_code_is_rejected():
         match="deviation_code is not predeclared",
     ):
         MODULE.summarize_mode_s(records, swap_replicates=100)
+
+
+def test_within_session_serial_clustering_is_rejected():
+    pairs = (
+        [(2, 1)] * 50
+        + [(1, 2)] * 50
+        + [(2, 1)] * 50
+        + [(1, 2)] * 50
+    )
+    records = make_records(pairs)
+    for index, record in enumerate(records, start=1):
+        record["session_id"] = "S1"
+        record["attempt_index_session"] = index
+    rehash_records(records)
+    p_value, observed, expected, edges = (
+        MODULE.serial_order_permutation_pvalue(
+            records,
+            replicates=3000,
+            seed=12345,
+        )
+    )
+    assert edges == 199
+    assert observed > expected
+    assert p_value < 0.01
+
+
+def test_session_heterogeneity_is_rejected():
+    pairs = [(2, 1)] * 100 + [(1, 2)] * 100
+    records = make_records(pairs)
+    p_value, statistic, session_count = (
+        MODULE.session_heterogeneity_permutation_pvalue(
+            records,
+            replicates=3000,
+            seed=54321,
+        )
+    )
+    assert session_count == 2
+    assert statistic > 0
+    assert p_value < 0.01
+
+
+def test_chronological_quintile_drift_is_rejected():
+    pairs = (
+        [(2, 1)] * 500
+        + [(1, 2)] * 500
+        + [(2, 1), (1, 2)] * 250
+        + [(2, 1)] * 500
+        + [(1, 2)] * 500
+    )
+    records = make_records(pairs)
+    p_value, statistic, table = MODULE.chronological_quintile_homogeneity(
+        records
+    )
+    assert len(table) == 5
+    assert statistic is not None and statistic > 0
+    assert p_value is not None and p_value < 0.01
+
+
+def test_multiple_operators_block_half_null_admission_flag():
+    records = make_records([(2, 1), (1, 2)] * 100)
+    records[100]["operator_id_pseudonymous"] = "OP2"
+    rehash_records(records)
+    summary = MODULE.summarize_mode_s(
+        records,
+        swap_replicates=200,
+    )
+    assert summary["operator_count"] == 2
+    assert summary["half_null_admission_ready"] is False
