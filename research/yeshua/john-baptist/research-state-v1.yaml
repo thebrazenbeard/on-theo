@@ -1,0 +1,32 @@
+schema_version: on-theo.yeshua-john-baptist-relation-state.v1
+status: SOURCE_BOUND_PENDING_HOSTILE_REVIEW
+recorded_at: "2026-09-21"
+
+branch:
+  name: research/yeshua-john-baptist-relation-v1-20260921
+
+parent:
+  branch: research/yeshua-people-source-clock-v1-20260921
+  head: facb8789bbbd0c77f0c3fa27ab71bb3d77b0557d
+  draft_pr: 157
+
+artifacts:
+  dossier: research/yeshua/john-baptist/john-baptist-yeshua-relation-dossier-v1.md
+  matrix: research/yeshua/john-baptist/john-baptist-yeshua-relation-v1.yaml
+
+current_result:
+  historical_John: VERY_STRONG
+  John_independent_movement: VERY_STRONG
+  execution_by_Antipas: VERY_STRONG
+  Yeshua_baptized_by_John: HISTORICALLY_PROBABLE
+  formal_long_term_apprenticeship: PLAUSIBLE_NOT_ESTABLISHED
+  formative_influence: PLAUSIBLE_TO_PROBABLE_BROAD_MODEL
+  direct_movement_inheritance: NOT_ESTABLISHED
+  Qumran_Essene_membership: NOT_ESTABLISHED
+  identical_baptism_theology_Josephus_Mark: REJECTED_AS_OVERHARMONIZED
+  exact_execution_motive: UNRESOLVED_SOURCE_DIVERGENT
+  John_death_specific_psychological_effect_on_Yeshua: NOT_ESTABLISHED
+  John_self_identified_as_Yeshua_forerunner: NOT_ESTABLISHED
+
+next:
+  - INTERNAL_HOSTILE_REVIEW
