@@ -268,7 +268,7 @@ claims:
     claim_type: HISTORICAL_RECONSTRUCTION
     evidence_class: [PRIMARY_TEXT, HISTORICAL_RECONSTRUCTION]
     lifecycle_state: SOURCE_BOUND
-    disposition: null
+    disposition: SURVIVES
     baseline_eligibility: [EARLY_SOURCE_CONSTRAINED_BASELINE, FULL_SOURCE_CRITICAL_RECONSTRUCTION]
     earliest_supporting_source: {source_id: SRC-PAUL-GALATIANS, locator: "Galatians 1:18-19", relation: "Paul reports meeting Cephas and James 'the brother of the Lord'", earliest_status: EARLIEST_CURRENTLY_ADMITTED}
     physical_witness_control: {required: true, witness_ids: [WIT-P46-PAUL], distinction_note: "P46 is centuries later than composition; composition and witness are not collapsed."}
@@ -295,7 +295,7 @@ claims:
     claim_type: HISTORICAL_RECONSTRUCTION
     evidence_class: [PRIMARY_TEXT, HISTORICAL_RECONSTRUCTION]
     lifecycle_state: SOURCE_BOUND
-    disposition: null
+    disposition: SURVIVES_NARROWED
     baseline_eligibility: [EARLY_SOURCE_CONSTRAINED_BASELINE, FULL_SOURCE_CRITICAL_RECONSTRUCTION]
     earliest_supporting_source: {source_id: SRC-PAUL-GALATIANS, locator: "Galatians 4:4", relation: "Paul places Christ under Torah/law within Israelite categories", earliest_status: EARLIEST_CURRENTLY_ADMITTED}
     physical_witness_control: {required: true, witness_ids: [WIT-P46-PAUL], distinction_note: "Composition/witness separation retained."}
@@ -321,7 +321,7 @@ claims:
     claim_type: HISTORICAL_RECONSTRUCTION
     evidence_class: [PRIMARY_TEXT, HISTORICAL_RECONSTRUCTION]
     lifecycle_state: SOURCE_BOUND
-    disposition: null
+    disposition: SURVIVES_NARROWED
     baseline_eligibility: [EARLY_SOURCE_CONSTRAINED_BASELINE, FULL_SOURCE_CRITICAL_RECONSTRUCTION]
     earliest_supporting_source: {source_id: SRC-GOSPEL-MARK, locator: "Mark 1:9; Galilean ministry throughout Mark 1-10", relation: "earliest surviving narrative geographic identification", earliest_status: EARLIEST_SURVIVING_NOT_NECESSARILY_EARLIEST_TRADITION}
     physical_witness_control: {required: true, witness_ids: [WIT-P45-MARK], distinction_note: "P45 is fragmentary and does not independently date the tradition."}
@@ -346,7 +346,7 @@ claims:
     claim_type: HISTORICAL_RECONSTRUCTION
     evidence_class: [PRIMARY_TEXT, HISTORICAL_RECONSTRUCTION, SCHOLARLY_INTERPRETATION]
     lifecycle_state: SOURCE_BOUND
-    disposition: null
+    disposition: SURVIVES_NARROWED
     baseline_eligibility: [EARLY_SOURCE_CONSTRAINED_BASELINE, FULL_SOURCE_CRITICAL_RECONSTRUCTION]
     earliest_supporting_source: {source_id: SRC-GOSPEL-MARK, locator: "Mark 1:4-11", relation: "earliest surviving narrative of John baptizing Jesus", earliest_status: EARLIEST_SURVIVING_NOT_NECESSARILY_EARLIEST_TRADITION}
     physical_witness_control: {required: true, witness_ids: [WIT-P45-MARK], distinction_note: "The Markan work and surviving witness are separated."}
@@ -359,7 +359,7 @@ claims:
     scholarship: {supporting: [SCH-OXBIB-JOHN-BAPTIST-2014], opposing: [SCH-NIR-2026-JOSEPHUS-NT], opposition_acquisition: COMPLETE_BOUNDED}
     rival_explanations:
       - {id: RIVAL-BAPTISM-LITERARY, proposition: "Jesus' baptism was created or reshaped for theological/narrative purposes.", current_status: "possible but not preferred in current bounded scholarship", discriminator: "earlier independent baptism relation or demonstrable Markan invention."}
-    confidence: {level: moderate_high, reason: "Association is historically plausible and widely accepted; Baseline A still lacks an independent source explicitly linking Jesus to John."}
+    confidence: {level: moderate, reason: "Association is historically plausible and widely accepted; Baseline A still lacks an independent source explicitly linking Jesus to John."}
     claim_ceiling: "John's movement is independently historical; Jesus' baptism/association is probable rather than multiply independent in Baseline A."
     dependencies: {claims: [CLM-YSB-A-003-GALILEE-NAZARETH], sources: [SRC-GOSPEL-MARK, SRC-JOSEPHUS-ANTIQUITIES-18], witness_assignments: [WIT-P45-MARK], translations: []}
     downstream_consumers: [{repository_or_work: THE_REAL_TESTAMENT_OF_YESHUA, use: "ministry origin hypothesis", allowed_if_state: INTERNAL_HOSTILE_REVIEWED}]
@@ -372,7 +372,7 @@ claims:
     claim_type: HISTORICAL_RECONSTRUCTION
     evidence_class: [PRIMARY_TEXT, HISTORICAL_RECONSTRUCTION, SCHOLARLY_INTERPRETATION]
     lifecycle_state: SOURCE_BOUND
-    disposition: null
+    disposition: SURVIVES_NARROWED
     baseline_eligibility: [EARLY_SOURCE_CONSTRAINED_BASELINE, FULL_SOURCE_CRITICAL_RECONSTRUCTION]
     earliest_supporting_source: {source_id: SRC-GOSPEL-MARK, locator: "Mark 1:14-15 and recurrent Kingdom material", relation: "earliest surviving narrative program statement", earliest_status: EARLIEST_SURVIVING_NOT_NECESSARILY_EARLIEST_TRADITION}
     physical_witness_control: {required: true, witness_ids: [WIT-P45-MARK], distinction_note: "P45 does not physically witness every Kingdom passage."}
@@ -384,7 +384,7 @@ claims:
     scholarship: {supporting: [SCH-CROSSLEY-2015-KINGDOM], opposing: [], opposition_acquisition: COMPLETE_BOUNDED}
     rival_explanations:
       - {id: RIVAL-MARKAN-KINGDOM-SYNTHESIS, proposition: "Mark made Kingdom proclamation more programmatic than the historical ministry warrants.", current_status: "live methodological possibility", discriminator: "independent early sayings/traditions to be tested in R2."}
-    confidence: {level: moderate_high, reason: "Kingdom is structurally central in Mark and fits first-century Jewish eschatological discourse, but R1 does not yet establish independent saying-level attestation."}
+    confidence: {level: moderate_provisional, reason: "Kingdom is structurally central in Mark and fits first-century Jewish eschatological discourse, but R1 does not yet establish independent saying-level attestation."}
     claim_ceiling: "A Kingdom-centered public message is probable; present/future/inward/social content and exact sayings remain unresolved for R2."
     dependencies: {claims: [CLM-YSB-A-002-JEWISH-FRAME], sources: [SRC-GOSPEL-MARK], witness_assignments: [WIT-P45-MARK], translations: []}
     downstream_consumers: [{repository_or_work: THE_REAL_TESTAMENT_OF_YESHUA, use: "teaching baseline", allowed_if_state: INTERNAL_HOSTILE_REVIEWED}]
@@ -397,7 +397,7 @@ claims:
     claim_type: HISTORICAL_RECONSTRUCTION
     evidence_class: [PRIMARY_TEXT, HISTORICAL_RECONSTRUCTION, SCHOLARLY_INTERPRETATION]
     lifecycle_state: SOURCE_BOUND
-    disposition: null
+    disposition: SURVIVES_NARROWED
     baseline_eligibility: [EARLY_SOURCE_CONSTRAINED_BASELINE, FULL_SOURCE_CRITICAL_RECONSTRUCTION]
     earliest_supporting_source: {source_id: SRC-GOSPEL-MARK, locator: "Mark 1:21-3:12 and recurrent healing/exorcism complexes", relation: "earliest surviving narrative pattern", earliest_status: EARLIEST_SURVIVING_NOT_NECESSARILY_EARLIEST_TRADITION}
     physical_witness_control: {required: true, witness_ids: [WIT-P45-MARK], distinction_note: "Work-level pattern exceeds what survives physically in P45."}
@@ -418,11 +418,11 @@ claims:
     invalidation: {invalidates_on: [DEPENDENCE_OR_INDEPENDENCE_CHANGE, NEW_MATERIAL_CONTRADICTION], stale_reason: null, stale_since_commit: null}
 
   - id: CLM-YSB-A-007-FOLLOWER-FAMILY-NETWORK
-    proposition: "Before the Gospels, Paul knew a Jesus movement with Cephas/Peter, James identified as the Lord's brother, other apostles, the Lord's brothers, and a tradition of 'the Twelve'."
+    proposition: "Before the Gospels, Paul knew a Jesus movement with Cephas/Peter, James identified as the Lord's brother, other apostles, the Lord's brothers, and an early group-label/tradition of 'the Twelve'."
     claim_type: HISTORICAL_RECONSTRUCTION
     evidence_class: [PRIMARY_TEXT, HISTORICAL_RECONSTRUCTION]
     lifecycle_state: SOURCE_BOUND
-    disposition: null
+    disposition: SURVIVES_NARROWED
     baseline_eligibility: [EARLY_SOURCE_CONSTRAINED_BASELINE, FULL_SOURCE_CRITICAL_RECONSTRUCTION]
     earliest_supporting_source: {source_id: SRC-PAUL-GALATIANS, locator: "Galatians 1:18-19; 2:9", relation: "Paul reports personal contact with Cephas and James and names leadership figures", earliest_status: EARLIEST_CURRENTLY_ADMITTED}
     physical_witness_control: {required: true, witness_ids: [WIT-P46-PAUL], distinction_note: "P46 witnesses the letter text centuries after composition."}
@@ -438,7 +438,7 @@ claims:
     rival_explanations:
       - {id: RIVAL-SPIRITUAL-BROTHER, proposition: "James 'brother of the Lord' is purely a cultic title rather than kinship.", current_status: "possible lexical challenge but strained by Paul's differentiation and Josephus linkage", discriminator: "usage of brother language across Pauline and external evidence."}
     confidence: {level: high, reason: "Paul's firsthand social-network claims are early; Josephus strengthens James linkage without proving all kinship details."}
-    claim_ceiling: "A real follower/family authority network is strong; exact Twelve composition, biological sibling model, and later succession claims remain unresolved."
+    claim_ceiling: "Paul securely attests an early follower/family network and a Twelve group-label/tradition; R1 does not reconstruct a historical roster or prove that Yeshua constituted exactly the later canonical Twelve."
     dependencies: {claims: [CLM-YSB-A-001-HISTORICAL-PERSON], sources: [SRC-PAUL-GALATIANS, SRC-PAUL-1COR, SRC-JOSEPHUS-ANTIQUITIES-20-200, SRC-GOSPEL-MARK], witness_assignments: [WIT-P46-PAUL], translations: []}
     downstream_consumers: [{repository_or_work: THE_REAL_TESTAMENT_OF_YESHUA, use: "social network baseline", allowed_if_state: INTERNAL_HOSTILE_REVIEWED}]
     hostile_review: {required: true, asymmetry_triggers: [HISTORICAL_SUPERIORITY_OF_RIVAL_APOSTOLIC_AUTHORITY], internal_review_status: NOT_STARTED, independent_review_required: true, strongest_objection: "Kinship and authority can be overread; 'the Twelve' formula origin and membership remain uncertain."}
@@ -450,7 +450,7 @@ claims:
     claim_type: HISTORICAL_RECONSTRUCTION
     evidence_class: [PRIMARY_TEXT, HISTORICAL_RECONSTRUCTION]
     lifecycle_state: SOURCE_BOUND
-    disposition: null
+    disposition: UNRESOLVED
     baseline_eligibility: [EARLY_SOURCE_CONSTRAINED_BASELINE, FULL_SOURCE_CRITICAL_RECONSTRUCTION]
     earliest_supporting_source: {source_id: SRC-GOSPEL-MARK, locator: "Mark 11:11-18; 14-15", relation: "earliest surviving narrative connecting Temple conflict to death sequence", earliest_status: EARLIEST_SURVIVING_NOT_NECESSARILY_EARLIEST_TRADITION}
     physical_witness_control: {required: true, witness_ids: [WIT-P45-MARK], distinction_note: "P45 does not supply a complete physical witness to the whole passion sequence."}
@@ -463,7 +463,7 @@ claims:
     rival_explanations:
       - {id: RIVAL-OTHER-TRIGGER, proposition: "The execution arose from regal/messianic or public-order concerns not recoverably tied to the Markan Temple episode.", current_status: "live", discriminator: "independent evidence connecting Temple action to arrest/execution."}
     confidence: {level: moderate, reason: "Historically plausible and explanatorily strong, but source-independent control is weak inside Baseline A."}
-    claim_ceiling: "Temple confrontation is plausible and may explain Roman concern; exact act, sequence, and causation are not secure in R1."
+    claim_ceiling: "Temple-action-to-execution causation remains UNRESOLVED in Baseline A; Markan narrative plausibility is not independent historical confirmation."
     dependencies: {claims: [CLM-YSB-A-005-KINGDOM-PREACHER], sources: [SRC-GOSPEL-MARK], witness_assignments: [WIT-P45-MARK], translations: []}
     downstream_consumers: [{repository_or_work: THE_REAL_TESTAMENT_OF_YESHUA, use: "final-week hypothesis", allowed_if_state: INTERNAL_HOSTILE_REVIEWED}]
     hostile_review: {required: true, asymmetry_triggers: [LOAD_BEARING_FOR_LITERARY_PLOT], internal_review_status: NOT_STARTED, independent_review_required: true, strongest_objection: "Explanatory fit can be mistaken for independent historical attestation."}
@@ -475,7 +475,7 @@ claims:
     claim_type: HISTORICAL_RECONSTRUCTION
     evidence_class: [PRIMARY_TEXT, HISTORICAL_RECONSTRUCTION]
     lifecycle_state: SOURCE_BOUND
-    disposition: null
+    disposition: SURVIVES
     baseline_eligibility: [EARLY_SOURCE_CONSTRAINED_BASELINE, FULL_SOURCE_CRITICAL_RECONSTRUCTION]
     earliest_supporting_source: {source_id: SRC-PAUL-1COR, locator: "1 Corinthians 1:23; 2:2; 15:3", relation: "Paul's proclamation presupposes death by crucifixion; 15:3 may preserve received tradition", earliest_status: EARLIEST_CURRENTLY_ADMITTED}
     physical_witness_control: {required: true, witness_ids: [WIT-P46-PAUL], distinction_note: "P46 witnesses the Pauline text, not the event."}
@@ -502,7 +502,7 @@ claims:
     claim_type: HISTORICAL_RECONSTRUCTION
     evidence_class: [PRIMARY_TEXT, HISTORICAL_RECONSTRUCTION]
     lifecycle_state: SOURCE_BOUND
-    disposition: null
+    disposition: SURVIVES_NARROWED
     baseline_eligibility: [EARLY_SOURCE_CONSTRAINED_BASELINE, FULL_SOURCE_CRITICAL_RECONSTRUCTION]
     earliest_supporting_source: {source_id: SRC-GOSPEL-MARK, locator: "Mark 15:1-15", relation: "earliest surviving source in Baseline A naming Pilate in the execution sequence", earliest_status: EARLIEST_SURVIVING_NOT_NECESSARILY_EARLIEST_TRADITION}
     physical_witness_control: {required: true, witness_ids: [WIT-P45-MARK], distinction_note: "Physical survival is later and fragmentary."}
@@ -529,7 +529,7 @@ claims:
     claim_type: TRADITION_HISTORY
     evidence_class: [PRIMARY_TEXT, HISTORICAL_RECONSTRUCTION]
     lifecycle_state: SOURCE_BOUND
-    disposition: null
+    disposition: SURVIVES_NARROWED
     baseline_eligibility: [EARLY_SOURCE_CONSTRAINED_BASELINE, FULL_SOURCE_CRITICAL_RECONSTRUCTION]
     earliest_supporting_source: {source_id: SRC-PAUL-1COR, locator: "1 Corinthians 15:3-4", relation: "received death-burial-raised sequence", earliest_status: EMBEDDED_EARLIER_LAYER_CONTESTED}
     physical_witness_control: {required: true, witness_ids: [WIT-P46-PAUL], distinction_note: "No physical manuscript labels formula boundaries or pre-Pauline date."}
@@ -551,11 +551,11 @@ claims:
     invalidation: {invalidates_on: [SOURCE_IDENTITY_CHANGE, DEPENDENCE_OR_INDEPENDENCE_CHANGE], stale_reason: null, stale_since_commit: null}
 
   - id: CLM-YSB-A-012-EARLY-RESURRECTION-CONVICTION
-    proposition: "Very early followers of Yeshua were convinced that God had raised/vindicated him and that he had appeared to named followers and groups."
+    proposition: "Very early followers of Yeshua were convinced that God had raised/vindicated him and that appearances to named followers and groups were reported."
     claim_type: HISTORICAL_RECONSTRUCTION
     evidence_class: [PRIMARY_TEXT, HISTORICAL_RECONSTRUCTION]
     lifecycle_state: SOURCE_BOUND
-    disposition: null
+    disposition: SURVIVES_NARROWED
     baseline_eligibility: [EARLY_SOURCE_CONSTRAINED_BASELINE, FULL_SOURCE_CRITICAL_RECONSTRUCTION]
     earliest_supporting_source: {source_id: SRC-PAUL-1COR, locator: "1 Corinthians 15:3-8", relation: "Paul transmits received resurrection/appearance tradition and includes his own later experience", earliest_status: EMBEDDED_EARLIER_LAYER_CONTESTED}
     physical_witness_control: {required: true, witness_ids: [WIT-P46-PAUL], distinction_note: "P46 witnesses Paul's text, not the prior formula or the reported experiences directly."}
@@ -582,7 +582,8 @@ claims:
     claim_type: HISTORICAL_SELF_CONCEPTION
     evidence_class: [UNKNOWN]
     lifecycle_state: SOURCE_BOUND
-    disposition: null
+    disposition: REJECTED
+    disposition_scope: "REJECTED_AS_BASELINE_A_SUPPORTED_CONCLUSION_NOT_HISTORICAL_NEGATION"
     baseline_eligibility: [EARLY_SOURCE_CONSTRAINED_BASELINE]
     earliest_supporting_source: {source_id: SRC-GOSPEL-MARK, locator: "Mark 8-14 title/self-reference complexes", relation: "post-Easter narrative material requiring source criticism", earliest_status: EARLIEST_SURVIVING_NOT_NECESSARILY_EARLIEST_TRADITION}
     physical_witness_control: {required: true, witness_ids: [WIT-P45-MARK], distinction_note: "Witness age does not resolve saying authenticity."}
@@ -608,7 +609,8 @@ claims:
     claim_type: HISTORICAL_RECONSTRUCTION
     evidence_class: [UNKNOWN]
     lifecycle_state: SOURCE_BOUND
-    disposition: null
+    disposition: REJECTED
+    disposition_scope: "REJECTED_AS_BASELINE_A_SUPPORTED_CONCLUSION_NOT_HISTORICAL_NEGATION"
     baseline_eligibility: [EARLY_SOURCE_CONSTRAINED_BASELINE]
     earliest_supporting_source: {source_id: SRC-GOSPEL-MARK, locator: "Mark 14:10-11, 43-46", relation: "earliest surviving explicit Judas betrayal narrative", earliest_status: EARLIEST_SURVIVING_NOT_NECESSARILY_EARLIEST_TRADITION}
     physical_witness_control: {required: true, witness_ids: [WIT-P45-MARK], distinction_note: "Fragmentary witness and later composition do not establish event mechanics."}
@@ -634,7 +636,8 @@ claims:
     claim_type: HISTORICAL_RECONSTRUCTION
     evidence_class: [UNKNOWN]
     lifecycle_state: SOURCE_BOUND
-    disposition: null
+    disposition: REJECTED
+    disposition_scope: "REJECTED_AS_BASELINE_A_SUPPORTED_CONCLUSION_NOT_HISTORICAL_NEGATION"
     baseline_eligibility: [EARLY_SOURCE_CONSTRAINED_BASELINE]
     earliest_supporting_source: {source_id: SRC-GOSPEL-MARK, locator: "Markan Kingdom/inner-purity traditions generally", relation: "earliest admitted narrative does not by itself establish a central inward-mystical system", earliest_status: EARLIEST_SURVIVING_NOT_NECESSARILY_EARLIEST_TRADITION}
     physical_witness_control: {required: true, witness_ids: [WIT-P45-MARK], distinction_note: "Later Luke 17 and Thomas are intentionally excluded from filling R1 gaps."}
@@ -655,22 +658,24 @@ claims:
     exact_head_review_provenance: {subject_repository: thebrazenbeard/on-theo, subject_ref: null, subject_commit: null, review_artifact: null, review_commit: null, execution_mode: NONE}
     invalidation: {invalidates_on: [DEPENDENCE_OR_INDEPENDENCE_CHANGE, LOAD_BEARING_TRANSLATION_CHANGE, NEW_MATERIAL_CONTRADICTION], stale_reason: null, stale_since_commit: null}
 
-baseline_summary_pending_review:
-  strong_floor:
+baseline_summary_after_first_hostile_review:
+  survives:
     - CLM-YSB-A-001-HISTORICAL-PERSON
-    - CLM-YSB-A-002-JEWISH-FRAME
-    - CLM-YSB-A-007-FOLLOWER-FAMILY-NETWORK
     - CLM-YSB-A-009-CRUCIFIXION
-    - CLM-YSB-A-010-PILATE
-    - CLM-YSB-A-012-EARLY-RESURRECTION-CONVICTION
-  probable_but_less_independent:
+  survives_narrowed:
+    - CLM-YSB-A-002-JEWISH-FRAME
     - CLM-YSB-A-003-GALILEE-NAZARETH
     - CLM-YSB-A-004-JOHN-BAPTIST-ASSOCIATION
     - CLM-YSB-A-005-KINGDOM-PREACHER
     - CLM-YSB-A-006-HEALER-EXORCIST-REPUTATION
-  needs_later_lane:
-    - CLM-YSB-A-008-TEMPLE-CRISIS
+    - CLM-YSB-A-007-FOLLOWER-FAMILY-NETWORK
+    - CLM-YSB-A-010-PILATE
     - CLM-YSB-A-011-EARLY-BURIAL-TRADITION
+    - CLM-YSB-A-012-EARLY-RESURRECTION-CONVICTION
+  unresolved:
+    - CLM-YSB-A-008-TEMPLE-CRISIS
+  rejected_as_baseline_A_supported_conclusion_not_historical_negation:
     - CLM-YSB-A-013-SELF-CONCEPTION
     - CLM-YSB-A-014-JUDAS-BETRAYAL-DETAIL
     - CLM-YSB-A-015-INWARD-MYSTICAL-CORE
+  next_gate: SECOND_EXACT_HEAD_INTERNAL_HOSTILE_REVIEW
