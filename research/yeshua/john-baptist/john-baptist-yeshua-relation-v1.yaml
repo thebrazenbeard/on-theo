@@ -1,0 +1,165 @@
+schema_version: on-theo.yeshua-john-baptist-relation.v1
+status: SOURCE_BOUND_PENDING_HOSTILE_REVIEW
+canonical: false
+program: THE_REAL_TESTAMENT_OF_YESHUA
+lane: R3_JOHN_BAPTIST_RELATION
+recorded_at: "2026-09-21"
+
+parent:
+  branch: research/yeshua-people-source-clock-v1-20260921
+  head: facb8789bbbd0c77f0c3fa27ab71bb3d77b0557d
+  draft_pr: 157
+
+source_clock:
+  - source: SRC-JOSEPHUS-ANTIQUITIES-18-116-119
+    horizon: "93-94 CE"
+    independent_of_gospel_tradition: NOT_AUTOMATICALLY_PROVED_BUT_NONCHRISTIAN_SOURCE
+    establishes_at_text_level:
+      - JOHN_CALLED_BAPTIST
+      - RIGHTEOUSNESS_PIETY_TEACHING
+      - BAPTISMAL_PRACTICE
+      - LARGE_POPULAR_FOLLOWING
+      - ANTIPAS_SECURITY_CONCERN
+      - EXECUTION_AT_MACHERUS
+    limits:
+      - DOES_NOT_NAME_YESHUA
+      - DOES_NOT_ATTEST_YESHUA_BAPTISM
+      - AUTHENTICITY_NOT_LITERALLY_UNCONTESTED
+
+  - source: SRC-GOSPEL-MARK
+    horizon: EARLIEST_SURVIVING_NARRATIVE_GOSPEL
+    loci: ["Mark 1:4-11", "Mark 1:14", "Mark 2:18", "Mark 6:14-29", "Mark 11:27-33"]
+    establishes_at_text_level:
+      - JOHN_BAPTISM_MOVEMENT
+      - YESHUA_BAPTIZED_BY_JOHN_NARRATIVE
+      - JOHN_PRECEDES_GALILEAN_PROCLAMATION
+      - DISTINCT_JOHN_DISCIPLE_PRACTICE
+      - ANTIPAS_EXECUTION_TRADITION
+    limits:
+      - NARRATIVE_THEOLOGICAL_SHAPING
+
+  - source: SYNOPTIC_Q_MODEL
+    horizon: SOURCE_CRITICAL_RECONSTRUCTION
+    establishes_if_model_accepted:
+      - NON_MARKAN_JOHN_SAYING_TRADITIONS
+      - JOHN_QUERY_AND_JESUS_EVALUATION_TRADITIONS
+    limits:
+      - NO_EXTANT_Q_MANUSCRIPT
+      - DEPENDENCE_MODEL_REQUIRED
+
+  - source: QUMRAN_DSS
+    horizon: SECOND_TEMPLE_CONTEXT
+    establishes:
+      - JEWISH_PURIFICATION_APOCALYPTIC_WILDERNESS_CONTEXT
+    limits:
+      - NO_DIRECT_JOHN_MEMBERSHIP_EVIDENCE
+
+claims:
+  - id: CLM-YS-R3-JOH-001-HISTORICAL-JOHN
+    proposition: "John the Baptist was a historical Jewish movement leader."
+    disposition: VERY_STRONG_PENDING_HOSTILE_REVIEW
+    evidence_class: [PRIMARY_TEXT, HISTORICAL_RECONSTRUCTION]
+
+  - id: CLM-YS-R3-JOH-002-ANTIPAS-EXECUTION
+    proposition: "Herod Antipas executed John."
+    disposition: VERY_STRONG
+    evidence_class: [PRIMARY_TEXT, HISTORICAL_RECONSTRUCTION]
+
+  - id: CLM-YS-R3-JOH-003-YESHUA-BAPTISM
+    proposition: "Yeshua was baptized by John."
+    disposition: HISTORICALLY_PROBABLE_PENDING_HOSTILE_REVIEW
+    evidence_class: [PRIMARY_TEXT, HISTORICAL_RECONSTRUCTION]
+    ceiling: "Josephus independently establishes John, not this event."
+
+  - id: CLM-YS-R3-JOH-004-LONG-APPRENTICE
+    proposition: "Yeshua was a long-term formal disciple/apprentice of John."
+    disposition: PLAUSIBLE_NOT_ESTABLISHED
+    evidence_class: [HISTORICAL_RECONSTRUCTION, PROJECT_INFERENCE]
+
+  - id: CLM-YS-R3-JOH-005-FORMATIVE-INFLUENCE
+    proposition: "John materially influenced the emergence of Yeshua's movement."
+    disposition: PLAUSIBLE_TO_PROBABLE_BROAD_MODEL
+    evidence_class: [HISTORICAL_RECONSTRUCTION, SCHOLARLY_INTERPRETATION]
+
+  - id: CLM-YS-R3-JOH-006-QUMRAN
+    proposition: "John was a member of the Qumran community or an Essene."
+    disposition: NOT_ESTABLISHED
+    evidence_class: [PROJECT_INFERENCE, UNKNOWN]
+
+  - id: CLM-YS-R3-JOH-007-BAPTISM-THEOLOGY
+    proposition: "Josephus and Mark preserve an identical theology of John's baptism."
+    disposition: REJECTED_AS_OVERHARMONIZED_CURRENT_CONCLUSION
+    evidence_class: [PRIMARY_TEXT, HISTORICAL_RECONSTRUCTION]
+
+  - id: CLM-YS-R3-JOH-008-EXECUTION-MOTIVE
+    proposition: "John was executed for one securely recoverable single motive."
+    disposition: UNRESOLVED_SOURCE_DIVERGENT
+    evidence_class: [PRIMARY_TEXT, HISTORICAL_RECONSTRUCTION]
+
+  - id: CLM-YS-R3-JOH-009-DEATH-INFLUENCE
+    proposition: "John's execution caused a specific strategic or psychological shift in Yeshua."
+    disposition: PLAUSIBLE_PROJECT_HYPOTHESIS_NOT_ESTABLISHED
+    evidence_class: [PROJECT_INFERENCE]
+
+  - id: CLM-YS-R3-JOH-010-FORERUNNER
+    proposition: "John historically understood himself primarily as Yeshua's divinely appointed forerunner."
+    disposition: NOT_ESTABLISHED
+    evidence_class: [UNKNOWN]
+
+models:
+  J0_REAL_CONTACT_BAPTISM_INFLUENCE:
+    status: PLAUSIBLE_TO_PROBABLE
+  J1_FORMAL_LONG_APPRENTICESHIP:
+    status: PLAUSIBLE_NOT_ESTABLISHED
+  J2_YESHUA_MOVEMENT_DIRECT_OFFSHOOT:
+    status: PLAUSIBLE_BROADLY_NOT_INSTITUTIONALLY_ESTABLISHED
+  J3_QUMRAN_ESSENE_MEMBERSHIP:
+    status: SPECULATIVE_NOT_ESTABLISHED
+  J4_INDEPENDENT_PARALLEL_JEWISH_RENEWAL:
+    status: INSUFFICIENT_BECAUSE_BAPTISM_CONTACT_PROBABLE
+
+scholarly_controls:
+  - id: SCH-NIR-2026-JOSEPHUS-JOHN
+    evidence_class: [SCHOLARLY_INTERPRETATION]
+    title: "John the Baptist, Jesus, and Other New Testament Figures in Josephus' Writings"
+    publication: Oxford Handbook of Josephus
+    date: "2026"
+    bounded_use: "Current authenticity debate control; John passage not treated as literally uncontested."
+    url: "https://academic.oup.com/edited-volume/62350/chapter-abstract/554396080"
+
+  - id: SCH-NOVENSON-2026-JOSEPHUS-NT
+    evidence_class: [SCHOLARLY_INTERPRETATION]
+    title: "Josephus and the New Testament"
+    publication: Oxford Handbook of Josephus
+    date: "2026"
+    bounded_use: "Current argument that Josephus John/Jesus/James references are authentic even if partly interpolated; warns against using Josephus as simple corroboration."
+    url: "https://academic.oup.com/edited-volume/62350/chapter-abstract/554397839"
+
+  - id: SCH-OXBIB-JOHN-BAPTIST
+    evidence_class: [SCHOLARLY_INTERPRETATION]
+    title: "John the Baptist"
+    publication: Oxford Bibliographies
+    bounded_use: "John as independent Jewish baptismal teacher/prophetic figure and major historical-Jesus comparator."
+    url: "https://academic.oup.com/reference/62341/reference-article-abstract/554100904"
+
+  - id: SCH-ROITTO-2016-JOHN-RITUAL
+    evidence_class: [SCHOLARLY_INTERPRETATION]
+    title: "'I Baptize You With Water': Ritual and the Rise of Religious Movements"
+    publication: Oxford University Press
+    date: "2016"
+    bounded_use: "John's baptism as distinctive ritual innovation/mobilization and significant influence on Jesus movement."
+    url: "https://academic.oup.com/book/3113/chapter-abstract/143929773"
+
+  - id: SCH-ELLEDGE-2023-WILDERNESS
+    evidence_class: [SCHOLARLY_INTERPRETATION]
+    title: "In the Wilderness"
+    publication: Early Jewish Writings and New Testament Interpretation
+    date: "2023"
+    bounded_use: "DSS/Qumran continuities and differences provide Jewish context for John without establishing direct membership."
+    url: "https://academic.oup.com/book/46056/chapter-abstract/404536130"
+
+next:
+  - INTERNAL_HOSTILE_REVIEW
+  - JOHN_YESHUA_BAPTISM_RELATION_PACKET
+  - JOHN_QUMRAN_COMPARATIVE_CONTROL
+  - JOHN_EXECUTION_MOTIVE_PACKET
