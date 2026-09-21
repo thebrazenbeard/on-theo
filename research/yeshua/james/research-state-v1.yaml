@@ -1,0 +1,28 @@
+schema_version: on-theo.yeshua-james-research-state.v1
+status: SOURCE_BOUND_PENDING_HOSTILE_REVIEW
+recorded_at: "2026-09-21"
+branch:
+  name: research/yeshua-james-authority-family-v1-20260921
+parent:
+  branch: research/yeshua-people-source-clock-v1-20260921
+  head: facb8789bbbd0c77f0c3fa27ab71bb3d77b0557d
+  draft_pr: 157
+artifacts:
+  dossier: research/yeshua/james/james-authority-family-dossier-v1.md
+  matrix: research/yeshua/james/james-authority-family-v1.yaml
+current_result:
+  historical_James: VERY_STRONG
+  ordinary_familial_kinship: HIGH
+  exact_biological_configuration: UNRESOLVED
+  early_Jerusalem_authority: HIGH
+  early_James_appearance_tradition: VERY_STRONG
+  Josephus_20_200: STRONGLY_SUPPORTED_NOT_UNANIMOUS
+  James_personally_ordered_Antioch_withdrawal: UNRESOLVED
+  total_James_vs_Paul_opposition: NOT_ESTABLISHED
+  formal_Yeshua_successor: NOT_ESTABLISHED
+  formal_dynasty: NOT_ESTABLISHED
+  kinship_prestige_contribution: PLAUSIBLE_TO_PROBABLE
+  Letter_of_James_authorship: UNRESOLVED_CONTESTED
+  superior_understanding: NOT_CURRENTLY_RANKABLE
+next:
+  - INTERNAL_HOSTILE_REVIEW

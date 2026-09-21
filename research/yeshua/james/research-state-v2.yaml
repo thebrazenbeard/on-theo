@@ -1,0 +1,42 @@
+schema_version: on-theo.yeshua-james-research-state.v2
+status: FIRST_HOSTILE_REVIEW_APPLIED_SECOND_PASS_PENDING
+recorded_at: "2026-09-21"
+
+branch:
+  name: research/yeshua-james-authority-family-v1-20260921
+
+parent:
+  branch: research/yeshua-people-source-clock-v1-20260921
+  head: facb8789bbbd0c77f0c3fa27ab71bb3d77b0557d
+  draft_pr: 157
+
+supersedes_for_current_head_use:
+  - research/yeshua/james/research-state-v1.yaml
+
+current_result:
+  historical_James: VERY_STRONG
+  ordinary_familial_kinship: HIGH_STRONGEST_CURRENT_READING
+  exact_biological_configuration: UNRESOLVED
+  early_Jerusalem_authority: HIGH
+  early_James_appearance_tradition: VERY_STRONG_AS_EARLY_TRADITION
+  Josephus_20_200: STRONGLY_SUPPORTED_NOT_UNANIMOUS
+  James_personally_ordered_Antioch_withdrawal: UNRESOLVED_NOT_ESTABLISHED
+  total_James_vs_Paul_opposition: NOT_ESTABLISHED
+  kinship_prestige_contribution: PLAUSIBLE_NOT_ESTABLISHED
+  family_authority_memory: LATER_SOURCE_BOUND
+  repeated_kin_leadership_tradition: LATER_SOURCE_BOUND
+  informal_family_succession: POSSIBLE_NOT_ESTABLISHED
+  formal_Yeshua_successor: NOT_ESTABLISHED
+  formal_hereditary_dynasty: NOT_ESTABLISHED
+  Letter_of_James_authorship: UNRESOLVED_CONTESTED
+  superior_understanding: NOT_CURRENTLY_RANKABLE
+
+guards:
+  - KINSHIP_PLUS_AUTHORITY_NE_KINSHIP_CAUSED_AUTHORITY
+  - LATER_FAMILY_MEMORY_NE_FIRST_GENERATION_SUCCESSION
+  - REPEATED_KIN_LEADERSHIP_NE_FORMAL_DYNASTY
+  - FROM_JAMES_NE_PERSONAL_ORDER_AUTOMATICALLY
+  - AUTHORITY_NE_SUPERIOR_UNDERSTANDING
+
+next:
+  - SECOND_EXACT_HEAD_INTERNAL_HOSTILE_REVIEW

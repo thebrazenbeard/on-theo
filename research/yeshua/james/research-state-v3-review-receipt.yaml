@@ -1,0 +1,49 @@
+schema_version: on-theo.yeshua-james-review-receipt.v1
+status: INTERNAL_HOSTILE_PASS_WITH_GUARDS
+independent_review_status: REQUIRED_NOT_COMPLETED
+recorded_at: "2026-09-21"
+
+subject:
+  branch: research/yeshua-james-authority-family-v1-20260921
+  exact_commit: b8035dac3a1d0ca1a9b25c5f9e6b8de10296d6f7
+  state: research/yeshua/james/research-state-v2.yaml
+
+review:
+  execution_mode: SAME_RUNTIME_ADVERSARIAL_REVIEW
+  artifact: reviews/yeshua-james-authority-family-v1-hostile-review-2.md
+  commit: b0337f51422d9942852bff7d654dc95d9ebd7e70
+  disposition: INTERNAL_HOSTILE_PASS_WITH_GUARDS
+
+current_claim_ceiling:
+  historical_James: VERY_STRONG
+  ordinary_familial_kinship: HIGH_STRONGEST_CURRENT_READING
+  exact_biological_configuration: UNRESOLVED
+  early_Jerusalem_authority: HIGH
+  early_James_appearance_tradition: VERY_STRONG_AS_EARLY_TRADITION
+  Josephus_20_200: STRONGLY_SUPPORTED_NOT_UNANIMOUS
+  James_personally_ordered_Antioch_withdrawal: UNRESOLVED_NOT_ESTABLISHED
+  total_James_vs_Paul_opposition: NOT_ESTABLISHED
+  kinship_prestige_contribution: PLAUSIBLE_NOT_ESTABLISHED
+  family_authority_memory: LATER_SOURCE_BOUND
+  repeated_kin_leadership_tradition: LATER_SOURCE_BOUND
+  informal_family_succession: POSSIBLE_NOT_ESTABLISHED
+  formal_Yeshua_successor: NOT_ESTABLISHED
+  formal_hereditary_dynasty: NOT_ESTABLISHED
+  Letter_of_James_authorship: UNRESOLVED_CONTESTED
+  superior_understanding: NOT_CURRENTLY_RANKABLE
+
+allowed_downstream_use:
+  - R3_CROSS_PERSON_SYNTHESIS
+  - R4_JERUSALEM_CRISIS
+  - FULL_SOURCE_CRITICAL_RECONSTRUCTION_AS_PROVISIONAL_INPUT
+
+prohibited:
+  - CLAIM_INDEPENDENT_REVIEW_COMPLETE
+  - PROMOTE_FORMAL_YESHUA_SUCCESSION
+  - PROMOTE_HEREDITARY_DYNASTY
+  - PROMOTE_KINSHIP_CAUSATION_AS_FACT
+  - RANK_JAMES_AS_SUPERIOR_INTERPRETER
+
+next_frontier:
+  - MARY_MAGDALENE_HISTORICAL_RECEPTION_DOSSIER
+  - R4_JERUSALEM_CRISIS_INTEGRATION
