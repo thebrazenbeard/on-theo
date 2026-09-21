@@ -1,0 +1,54 @@
+schema_version: on-theo.yeshua-judas-paradidomi.v1
+status: BOUNDED_LEXICAL_TRADITION_CONTROL
+
+core_semantics:
+  lexeme: παραδίδωμι
+  safest_neutral_gloss: HAND_OVER_OR_DELIVER
+  contextual_betrayal_gloss: POSSIBLE_AND_OFTEN_JUSTIFIED_IN_JUDAS_NARRATIVE
+  invariant_betrayal_meaning: false
+
+claims:
+  1COR11_23_names_Judas:
+    disposition: REJECTED
+  1COR11_23_requires_betrayed:
+    disposition: REJECTED_AS_OVERSTRONG
+  1COR11_23_agent:
+    disposition: UNNAMED
+  Mark_context_negatively_evaluates_Judas:
+    disposition: SURVIVES
+  lexeme_proves_historical_motive:
+    disposition: REJECTED
+  handover_language_exonerates_Judas:
+    disposition: REJECTED
+
+source_layers:
+  PAUL:
+    function: HANDOVER_THEOLOGY_WITH_UNNAMED_AGENT
+  MARK:
+    function: EXPLICIT_JUDAS_HANDOVER_WITH_NEGATIVE_NARRATIVE_CONTEXT
+  LATER_GOSPELS:
+    function: HANDOVER_PLUS_ADDITIONAL_MOTIVE_CHARACTER_DEATH_FRAMING
+
+scholarly_controls:
+  - id: SCH-KING-2019-PARADIDOMI
+    title: Betrayal or Blasphemy? Handing over God's Agent in the Portrayals of Judas in the Gospels
+    publication: Biblical Theology Bulletin
+    url: https://journals.sagepub.com/doi/10.1177/0146107919877641
+    bounded_use: translation_and_narrative_context_dispute
+  - id: SCH-LEE-2018-1COR11
+    title: Reconsidering the Translation of paredideto in 1 Corinthians 11:23
+    publication: Journal of Biblical Text Research
+    url: https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART002341198
+    bounded_use: Pauline_translation_ambiguity
+  - id: SCH-CAHANA-2017-JUDAS
+    title: Salvific Dissolution
+    publication: New Testament Studies
+    bounded_use: Pauline_handover_and_later_Judas_interpretation
+
+strongest_result: >
+  The safest early historical description is handover/facilitation of transfer
+  into hostile custody. Mark's context makes betrayal a reasonable moral
+  interpretation, but the lexeme does not recover motive.
+
+guards:
+  - LEXEME_NE_MOTIVE
