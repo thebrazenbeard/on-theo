@@ -1,0 +1,29 @@
+schema_version: on-theo.yeshua-baseline-a-internal-review-receipt.v1
+status: INTERNAL_HOSTILE_PASS_WITH_GUARDS
+independent_review_status: REQUIRED_NOT_COMPLETED
+
+subject:
+  branch: research/yeshua-early-source-constrained-baseline-v1-20260921
+  exact_commit: e5862259f16614d23783756d8a60fc59dddf0f33
+  artifacts:
+    - research/yeshua/baseline/early-source-constrained-baseline-v1.md
+    - research/yeshua/baseline/early-source-constrained-baseline-v1.yaml
+
+review:
+  execution_mode: SAME_RUNTIME_ADVERSARIAL_REVIEW
+  artifact: reviews/yeshua-early-source-constrained-baseline-v1-hostile-review-2.md
+  commit: a35207d606b40a865b76986848117102eb37536e
+
+allowed_downstream_use:
+  - R2_KINGDOM_TEACHING_CONTROL_FLOOR
+  - R3_PEOPLE_AROUND_YESHUA_CONTROL_FLOOR
+  - R4_JERUSALEM_CRISIS_CONTROL_FLOOR
+  - R5_RESURRECTION_CONTROL_FLOOR
+  - R6_FAMILY_CONTROL_FLOOR
+  - R7_NONCANONICAL_DELTA_BASELINE
+  - R8_MYSTICAL_TRAJECTORY_DELTA_BASELINE
+
+prohibited:
+  - CLAIM_INDEPENDENT_REVIEW_COMPLETE
+  - CLAIM_FINAL_HISTORICAL_YESHUA
+  - USE_REJECTED_BASELINE_PROPOSITIONS_AS_HISTORICALLY_FALSE

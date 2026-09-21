@@ -1,0 +1,681 @@
+schema_version: on-theo.yeshua-early-source-constrained-baseline.v1
+status: SOURCE_BOUND_PENDING_INTERNAL_HOSTILE_REVIEW
+canonical: false
+program: THE_REAL_TESTAMENT_OF_YESHUA
+baseline: EARLY_SOURCE_CONSTRAINED_BASELINE
+recorded_at: "2026-09-21"
+parent:
+  branch: research/yeshua-adversarial-research-spine-v2-20260921
+  head: 570bc27239e481da0d9be3afffeb22366975aeab
+  draft_pr: 154
+
+method:
+  purpose: "Control reconstruction from the earliest defensible evidence; not the final historical Yeshua."
+  exclusions_from_gap_filling:
+    - later_noncanonical_sources
+    - later_mystical_developments
+    - Panthera_countertraditions
+    - retrospective_psychological_reconstruction
+    - Roman_cultivation_hypotheses
+  source_count_guard: "Dependent witnesses do not count as independent lines merely because they are multiple texts."
+  later_source_guard: "Later witnesses may corroborate or challenge but do not silently fill early-source gaps."
+  metaphysical_guard: "Historical method records resurrection claims/experiences without adjudicating supernatural mechanism."
+
+source_controls:
+  - id: SRC-PAUL-GALATIANS
+    evidence_class: [PRIMARY_TEXT]
+    source_kind: undisputed_pauline_letter
+    author_or_tradition: Paul
+    composition_date: {start: "0048", end: "0055", precision: broad-critical-range}
+    original_language: Greek
+    physical_witness:
+      witness_id: WIT-P46-PAUL
+      date_status: "early Pauline codex commonly dated around the late-second/third-century horizon; exact palaeographic dating remains debated"
+      contains_relevant_text: true
+    relevant_locators:
+      - "Galatians 1:18-19"
+      - "Galatians 2:9"
+      - "Galatians 4:4"
+    limitations:
+      - "Paul writes for community disputes and theology, not as a biography of Jesus."
+      - "Letter dating within the 40s-50s remains debated."
+    access_mode: modern_critical_text_and_translation
+
+  - id: SRC-PAUL-1COR
+    evidence_class: [PRIMARY_TEXT]
+    source_kind: undisputed_pauline_letter
+    author_or_tradition: Paul
+    composition_date: {start: "0053", end: "0056", precision: broad-critical-range}
+    original_language: Greek
+    physical_witness:
+      witness_id: WIT-P46-PAUL
+      date_status: "early Pauline codex commonly dated around the late-second/third-century horizon; exact palaeographic dating remains debated"
+      contains_relevant_text: true
+    relevant_locators:
+      - "1 Corinthians 7:10-11"
+      - "1 Corinthians 9:5"
+      - "1 Corinthians 11:23-26"
+      - "1 Corinthians 15:3-8"
+    limitations:
+      - "The extent of pre-Pauline material inside received traditions is a source-critical reconstruction, not a manuscript layer physically labeled as pre-Pauline."
+      - "Paul's formulae and traditions may already contain post-death interpretation."
+    access_mode: modern_critical_text_and_translation
+
+  - id: SRC-GOSPEL-MARK
+    evidence_class: [PRIMARY_TEXT]
+    source_kind: canonical_gospel_text
+    author_or_tradition: Gospel according to Mark
+    composition_date: {start: "0065", end: "0075", precision: common-critical-range-not-unanimous}
+    original_language: Greek
+    physical_witness:
+      witness_id: WIT-P45-MARK
+      date_status: "third-century fragmentary Gospel witness"
+      contains_all_relevant_text: false
+    relevant_locators:
+      - "Mark 1:1-15"
+      - "Mark 1:16-3:35"
+      - "Mark 6:1-6"
+      - "Mark 8:27-10:52"
+      - "Mark 11:1-15:47"
+      - "Mark 16:1-8"
+    limitations:
+      - "Narrative theology and historical memory are not identical."
+      - "Mark is decades after the events and source history inside Mark is not transparent."
+      - "P45 does not physically witness every passage used in this baseline."
+    inherited_control: registry/extensions/mark6-matronymic-v1.yaml
+    access_mode: modern_critical_text_and_translation
+
+  - id: SRC-JOSEPHUS-ANTIQUITIES-18
+    evidence_class: [PRIMARY_TEXT]
+    source_kind: ancient_historiography
+    author_or_tradition: Flavius Josephus
+    composition_date: {start: "0093", end: "0094", precision: conventional-publication-range}
+    original_language: Greek
+    physical_witness:
+      witness_id: null
+      date_status: later_manuscript_tradition_not_normalized_here
+      contains_relevant_text: true
+    relevant_locators:
+      - "Antiquities 18.63-64"
+      - "Antiquities 18.116-119"
+    limitations:
+      - "The Testimonium Flavianum at 18.63-64 has substantial authenticity/interpolation controversy."
+      - "The John the Baptist notice has its own authenticity discussion and does not state that Jesus was baptized by John."
+    inherited_control: registry/extensions/second-temple-greco-roman-v1.yaml
+    access_mode: scholarly_edition_and_translation
+
+  - id: SRC-JOSEPHUS-ANTIQUITIES-20-200
+    evidence_class: [PRIMARY_TEXT]
+    source_kind: ancient_historiography
+    author_or_tradition: Flavius Josephus
+    composition_date: {start: "0093", end: "0094", precision: conventional-publication-range}
+    original_language: Greek
+    physical_witness:
+      witness_id: null
+      date_status: later_manuscript_tradition
+      contains_relevant_text: true
+    relevant_locators:
+      - "Antiquities 20.200"
+    limitations:
+      - "Authenticity is strongly supported in much scholarship but not literally unanimous."
+    upstream_provenance:
+      branch: research/yeshua-hypothesis-map-v1-20260917
+      path: registry/extensions/yeshua-hypothesis-map-v1.yaml
+      head: 112fb80a187aac29a1d5e14c41386dc5889393c7
+    access_mode: scholarly_edition_and_translation
+
+  - id: SRC-TACITUS-ANNALS-15-44
+    evidence_class: [PRIMARY_TEXT]
+    source_kind: roman_historiography
+    author_or_tradition: Tacitus
+    composition_date: {start: "0115", end: "0117", precision: conventional-range}
+    original_language: Latin
+    physical_witness:
+      witness_id: null
+      date_status: medieval_manuscript_tradition_not_normalized_in_v1
+      contains_relevant_text: true
+    relevant_locators:
+      - "Annals 15.44"
+    limitations:
+      - "Tacitus is much later than the execution."
+      - "Whether his information about Christus/Pilate is independent of Christian or Plinian information is debated."
+      - "Later corroboration does not become an early eyewitness source."
+    access_mode: critical_text_and_translation
+
+witness_controls:
+  - id: WIT-P46-PAUL
+    evidence_class: [MANUSCRIPT_WITNESS]
+    witness_of:
+      - SRC-PAUL-GALATIANS
+      - SRC-PAUL-1COR
+    common_name: P46 / Chester Beatty II / Michigan 6238
+    language: Greek
+    witness_kind: papyrus_codex
+    witness_date: {start: null, end: null, precision: early-third-century-horizon-palaeographic-range-debated}
+    limitation: "Physical witness date does not date composition; surviving folios are incomplete."
+
+  - id: WIT-P45-MARK
+    evidence_class: [MANUSCRIPT_WITNESS]
+    witness_of: [SRC-GOSPEL-MARK]
+    common_name: P45 / Chester Beatty I
+    language: Greek
+    witness_kind: papyrus_codex_fragment
+    witness_date: {start: "0200", end: "0299", precision: third-century}
+    limitation: "Fragmentary witness; not every Markan passage used here survives in P45."
+
+scholarly_controls:
+  - id: SCH-PAUL-SEVEN-UNDISPUTED-CAMBRIDGE
+    evidence_class: [SCHOLARLY_INTERPRETATION]
+    title: "Paul"
+    container: Early Christian Thought in its Jewish Context
+    bounded_use: "Seven letters are generally treated as undisputed: Romans, 1-2 Corinthians, Galatians, Philippians, 1 Thessalonians, Philemon."
+    url: "https://www.cambridge.org/core/books/abs/early-christian-thought-in-its-jewish-context/paul/655C6C6C4F2A3AFC235BE28F5F9FC8F5"
+
+  - id: SCH-NASRALLAH-2018-PAUL-EARLIEST
+    evidence_class: [SCHOLARLY_INTERPRETATION]
+    author: Laura Salah Nasrallah
+    title: Archaeology and the Letters of Paul
+    bounded_use: "Pauline letters are the earliest surviving evidence for followers of Christ."
+    url: "https://academic.oup.com/book/11593/chapter-abstract/160440165"
+
+  - id: SCH-WARE-2014-1COR15
+    evidence_class: [SCHOLARLY_INTERPRETATION]
+    author: James Ware
+    title: "The Resurrection of Jesus in the Pre-Pauline Formula of 1 Cor 15.3-5"
+    bounded_use: "Supports treating 1 Cor 15:3-5 as a serious pre-Pauline-formula hypothesis while preserving debate over its interpretation."
+    url: "https://www.cambridge.org/core/journals/new-testament-studies/article/resurrection-of-jesus-in-the-prepauline-formula-of-1-cor-1535/B98A7CB0EDE64897CAFEE83263BE6289"
+
+  - id: SCH-BRANDON-1961-MARK-DATE
+    evidence_class: [SCHOLARLY_INTERPRETATION]
+    author: S. G. F. Brandon
+    title: "The Date of the Markan Gospel"
+    bounded_use: "Records the long-standing critical dating range around 65-75 CE; exact relation to 70 remains debated."
+    url: "https://www.cambridge.org/core/journals/new-testament-studies/article/abs/date-of-the-markan-gospel/B34650230D991C2B56A96866131DC994"
+
+  - id: SCH-MEGGITT-2019-HISTORICITY
+    evidence_class: [SCHOLARLY_INTERPRETATION]
+    author: Justin J. Meggitt
+    title: "More Ingenious than Learned? Examining the Quest for the Non-Historical Jesus"
+    bounded_use: "Treats historicity/mythicism as a legitimate historiographical debate to scrutinize without implying equal scholarly support."
+    url: "https://www.cambridge.org/core/journals/new-testament-studies/article/abs/more-ingenious-than-learned-examining-the-quest-for-the-nonhistorical-jesus/B1A4799BE91AB5300671D4013194DD4C"
+
+  - id: SCH-LATASTER-2016-MYTHICIST-DISSENT
+    evidence_class: [SCHOLARLY_INTERPRETATION]
+    author: Raphael Lataster
+    title: "It's Official: We Can Now Doubt Jesus' Historical Existence"
+    bounded_use: "Low-weight opposition acquisition: explicit modern scholarly dissent from historicity; not treated as representative of field consensus."
+    url: "https://www.cambridge.org/core/journals/think/article/abs/its-official-we-can-now-doubt-jesus-historical-existence/065797C131D37B02B7E33E83D5CDA577"
+
+  - id: SCH-OXBIB-JOHN-BAPTIST-2014
+    evidence_class: [SCHOLARLY_INTERPRETATION]
+    title: "John the Baptist"
+    container: Oxford Bibliographies in Biblical Studies
+    bounded_use: "Summarizes John as historically significant and notes the traditional/historical importance of his baptism of Jesus; Josephus independently attests John, not the baptism of Jesus."
+    url: "https://academic.oup.com/reference/62341/reference-article-abstract/554100904"
+
+  - id: SCH-CROSSLEY-2015-KINGDOM
+    evidence_class: [SCHOLARLY_INTERPRETATION]
+    author: James G. Crossley
+    title: "The Dictatorship of God? Kingdom and Christology"
+    bounded_use: "Provides a historically contextualized reconstruction of Kingdom traditions while challenging idealized egalitarian readings."
+    url: "https://academic.oup.com/book/41755/chapter-abstract/354220471"
+
+  - id: SCH-PORTERFIELD-2005-HEALER
+    evidence_class: [SCHOLARLY_INTERPRETATION]
+    author: Amanda Porterfield
+    title: "Jesus: Exorcist and Healer"
+    bounded_use: "Healing/exorcism is central to Gospel representation; historical interpretation must distinguish reputation/acts from modern miracle adjudication."
+    url: "https://academic.oup.com/book/6310/chapter-abstract/149988911"
+
+  - id: SCH-ANDRADE-2025-PILATE
+    evidence_class: [SCHOLARLY_INTERPRETATION]
+    author: Nathanael J. Andrade
+    title: Killing the Messiah
+    bounded_use: "Roman crucifixion under Pilate is secure at high level; exact charge, legal route, and Gospel trial detail remain disputed."
+    url: "https://academic.oup.com/book/59249/chapter-abstract/499346768"
+
+  - id: SCH-BOND-1998-PILATE
+    evidence_class: [SCHOLARLY_INTERPRETATION]
+    author: Helen K. Bond
+    title: Pontius Pilate in History and Interpretation
+    bounded_use: "Treats crucifixion under Pilate as among the surest historical anchors while separating historical Pilate from literary portrayals."
+    url: "https://www.cambridge.org/core/books/abs/pontius-pilate-in-history-and-interpretation/preface/BFE4DF55CCA5A59E787E10FE48D42441"
+
+  - id: SCH-SCHMIDT-2025-JOSEPHUS-JAMES
+    evidence_class: [SCHOLARLY_INTERPRETATION]
+    author: T. C. Schmidt
+    title: "James the Brother of Jesus: Antiquities 20.200"
+    bounded_use: "Argues strongly for authenticity of Antiquities 20.200 and notes broad scholarly support."
+    url: "https://academic.oup.com/book/60034/chapter/513641505"
+
+  - id: SCH-NIR-2026-JOSEPHUS-NT
+    evidence_class: [SCHOLARLY_INTERPRETATION]
+    author: Rivka Nir
+    title: "John the Baptist, Jesus, and Other New Testament Figures in Josephus' Writings"
+    bounded_use: "Recent opposition/control: reviews authenticity debates over Josephus' Jesus, John, and James notices without taking a decisive position."
+    url: "https://academic.oup.com/edited-volume/62350/chapter-abstract/554396080"
+
+  - id: SCH-HANSEN-2023-TACITUS-DEPENDENCE
+    evidence_class: [SCHOLARLY_INTERPRETATION]
+    author: Christopher M. Hansen
+    title: "The Problem of Annals 15.44: On the Plinian Origin of Tacitus's Information on Christians"
+    bounded_use: "Opposition acquisition against treating Tacitus as automatically independent of Christian/Plinian information."
+    url: "https://www.tandfonline.com/doi/abs/10.1080/2222582X.2023.2173628"
+
+claims:
+  - id: CLM-YSB-A-001-HISTORICAL-PERSON
+    proposition: "A real first-century person, Yeshua/Jesus, stands behind the earliest Jesus movement."
+    claim_type: HISTORICAL_RECONSTRUCTION
+    evidence_class: [PRIMARY_TEXT, HISTORICAL_RECONSTRUCTION]
+    lifecycle_state: SOURCE_BOUND
+    disposition: SURVIVES
+    baseline_eligibility: [EARLY_SOURCE_CONSTRAINED_BASELINE, FULL_SOURCE_CRITICAL_RECONSTRUCTION]
+    earliest_supporting_source: {source_id: SRC-PAUL-GALATIANS, locator: "Galatians 1:18-19", relation: "Paul reports meeting Cephas and James 'the brother of the Lord'", earliest_status: EARLIEST_CURRENTLY_ADMITTED}
+    physical_witness_control: {required: true, witness_ids: [WIT-P46-PAUL], distinction_note: "P46 is centuries later than composition; composition and witness are not collapsed."}
+    composition_date_status: {range_or_status: "Pauline 40s-50s; Mark c.65-75; Josephus 93-94", basis: "critical dating controls above", contested: true}
+    textual_control: {original_language_status: "Greek for Paul/Mark/Josephus", recension_status: "critical-text traditions", reconstruction_status: DIRECT_EXTANT_TEXT}
+    independent_supporting_witnesses:
+      - {source_id: SRC-GOSPEL-MARK, locator: "whole narrative", independence_note: "Independent composition from Paul at work level; may preserve shared movement traditions."}
+      - {source_id: SRC-JOSEPHUS-ANTIQUITIES-20-200, locator: "Antiquities 20.200", independence_note: "Non-Christian historiography if passage authentic; authenticity strongly but not unanimously defended."}
+    literary_dependence: {status: PARTIALLY_INDEPENDENT, dependencies: [], note: "Paul, Mark, and Josephus are not counted as three eyewitnesses; each has separate transmission problems."}
+    contradictions: []
+    scholarship: {supporting: [SCH-NASRALLAH-2018-PAUL-EARLIEST, SCH-SCHMIDT-2025-JOSEPHUS-JAMES], opposing: [SCH-LATASTER-2016-MYTHICIST-DISSENT, SCH-MEGGITT-2019-HISTORICITY], opposition_acquisition: COMPLETE_BOUNDED}
+    rival_explanations:
+      - {id: RIVAL-MYTHICISM, proposition: "The movement's Jesus figure originated without a historical human referent.", current_status: "minority scholarly position; tested but not given artificial parity", discriminator: "Paul's personal contact claims involving James/Cephas plus early narrative and external linkage."}
+    confidence: {level: very_high, reason: "Earliest personal-network evidence plus later narrative and external corroboration outweighs mythicist alternative, while not proving Gospel biography."}
+    claim_ceiling: "Historical existence is strongly supported; this claim alone establishes almost no detailed biography."
+    dependencies: {claims: [], sources: [SRC-PAUL-GALATIANS, SRC-GOSPEL-MARK, SRC-JOSEPHUS-ANTIQUITIES-20-200], witness_assignments: [WIT-P46-PAUL], translations: []}
+    downstream_consumers: [{repository_or_work: THE_REAL_TESTAMENT_OF_YESHUA, use: "existence floor", allowed_if_state: INTERNAL_HOSTILE_REVIEWED}]
+    hostile_review: {required: true, asymmetry_triggers: [LOAD_BEARING_FOR_LITERARY_PLOT], internal_review_status: NOT_STARTED, independent_review_required: true, strongest_objection: "Earliest sources are theological and later external references may not be independent."}
+    exact_head_review_provenance: {subject_repository: thebrazenbeard/on-theo, subject_ref: null, subject_commit: null, review_artifact: null, review_commit: null, execution_mode: NONE}
+    invalidation: {invalidates_on: [AUTHENTICITY_OR_INTERPOLATION_CHANGE, DEPENDENCE_OR_INDEPENDENCE_CHANGE], stale_reason: null, stale_since_commit: null}
+
+  - id: CLM-YSB-A-002-JEWISH-FRAME
+    proposition: "Yeshua belongs inside first-century Jewish religious life rather than being historically reconstructible as an external anti-Jewish founder."
+    claim_type: HISTORICAL_RECONSTRUCTION
+    evidence_class: [PRIMARY_TEXT, HISTORICAL_RECONSTRUCTION]
+    lifecycle_state: SOURCE_BOUND
+    disposition: SURVIVES_NARROWED
+    baseline_eligibility: [EARLY_SOURCE_CONSTRAINED_BASELINE, FULL_SOURCE_CRITICAL_RECONSTRUCTION]
+    earliest_supporting_source: {source_id: SRC-PAUL-GALATIANS, locator: "Galatians 4:4", relation: "Paul places Christ under Torah/law within Israelite categories", earliest_status: EARLIEST_CURRENTLY_ADMITTED}
+    physical_witness_control: {required: true, witness_ids: [WIT-P46-PAUL], distinction_note: "Composition/witness separation retained."}
+    composition_date_status: {range_or_status: "Pauline 40s-50s and Mark c.65-75", basis: "critical dating controls", contested: true}
+    textual_control: {original_language_status: Greek, recension_status: critical_text, reconstruction_status: DIRECT_EXTANT_TEXT}
+    independent_supporting_witnesses:
+      - {source_id: SRC-GOSPEL-MARK, locator: "Mark 1-15", independence_note: "Narrative is saturated with Jewish scripture, synagogue, Torah, Temple, Passover and Kingdom disputes."}
+    literary_dependence: {status: PARTIALLY_INDEPENDENT, dependencies: [], note: "Paul and Mark differ in genre and purpose; agreement is contextual, not proof of every detail."}
+    contradictions: []
+    scholarship: {supporting: [SCH-CROSSLEY-2015-KINGDOM], opposing: [], opposition_acquisition: COMPLETE_BOUNDED}
+    rival_explanations:
+      - {id: RIVAL-DETACHED-FOUNDER, proposition: "Jesus' original program is best reconstructed as essentially outside Judaism.", current_status: "not supported by Baseline A", discriminator: "earliest Jewish scriptural, legal, communal and eschatological frames."}
+    confidence: {level: high, reason: "Multiple early sources locate Jesus/Christ discourse inside Jewish categories despite later Christian differentiation."}
+    claim_ceiling: "Jewish embeddedness is strong; Baseline A does not settle which Jewish subgroup or halakhic program best describes him."
+    dependencies: {claims: [CLM-YSB-A-001-HISTORICAL-PERSON], sources: [SRC-PAUL-GALATIANS, SRC-GOSPEL-MARK], witness_assignments: [WIT-P46-PAUL], translations: []}
+    downstream_consumers: [{repository_or_work: THE_REAL_TESTAMENT_OF_YESHUA, use: "historical setting", allowed_if_state: INTERNAL_HOSTILE_REVIEWED}]
+    hostile_review: {required: true, asymmetry_triggers: [HISTORICAL_IDENTITY_OR_TEACHING_SHIFT], internal_review_status: NOT_STARTED, independent_review_required: true, strongest_objection: "Post-Easter Jewish scriptural interpretation could overstate direct continuity with Jesus' own program."}
+    exact_head_review_provenance: {subject_repository: thebrazenbeard/on-theo, subject_ref: null, subject_commit: null, review_artifact: null, review_commit: null, execution_mode: NONE}
+    invalidation: {invalidates_on: [NEW_MATERIAL_CONTRADICTION], stale_reason: null, stale_since_commit: null}
+
+  - id: CLM-YSB-A-003-GALILEE-NAZARETH
+    proposition: "Yeshua was a Galilean associated with Nazareth."
+    claim_type: HISTORICAL_RECONSTRUCTION
+    evidence_class: [PRIMARY_TEXT, HISTORICAL_RECONSTRUCTION]
+    lifecycle_state: SOURCE_BOUND
+    disposition: SURVIVES_NARROWED
+    baseline_eligibility: [EARLY_SOURCE_CONSTRAINED_BASELINE, FULL_SOURCE_CRITICAL_RECONSTRUCTION]
+    earliest_supporting_source: {source_id: SRC-GOSPEL-MARK, locator: "Mark 1:9; Galilean ministry throughout Mark 1-10", relation: "earliest surviving narrative geographic identification", earliest_status: EARLIEST_SURVIVING_NOT_NECESSARILY_EARLIEST_TRADITION}
+    physical_witness_control: {required: true, witness_ids: [WIT-P45-MARK], distinction_note: "P45 is fragmentary and does not independently date the tradition."}
+    composition_date_status: {range_or_status: "c.65-75 common range", basis: SCH-BRANDON-1961-MARK-DATE, contested: true}
+    textual_control: {original_language_status: Greek, recension_status: critical_text, reconstruction_status: DIRECT_EXTANT_TEXT}
+    independent_supporting_witnesses: []
+    literary_dependence: {status: UNKNOWN, dependencies: [], note: "Baseline A does not count later Synoptic repetition as independent support."}
+    contradictions: []
+    scholarship: {supporting: [], opposing: [], opposition_acquisition: COMPLETE_BOUNDED}
+    rival_explanations:
+      - {id: RIVAL-MARK-GEOGRAPHIC-CONSTRUCTION, proposition: "Mark's Galilean/Nazareth geography may contain literary shaping not recoverable as biography.", current_status: "live limitation", discriminator: "independent early geographic attestation."}
+    confidence: {level: moderate_high, reason: "Very widely accepted but within this deliberately constrained baseline the decisive early narrative source is Mark and Paul is silent."}
+    claim_ceiling: "Galilean/Nazareth association is probable, not independently demonstrated by the Pauline layer."
+    dependencies: {claims: [CLM-YSB-A-001-HISTORICAL-PERSON], sources: [SRC-GOSPEL-MARK], witness_assignments: [WIT-P45-MARK], translations: []}
+    downstream_consumers: [{repository_or_work: THE_REAL_TESTAMENT_OF_YESHUA, use: "geographic frame", allowed_if_state: INTERNAL_HOSTILE_REVIEWED}]
+    hostile_review: {required: true, asymmetry_triggers: [], internal_review_status: NOT_STARTED, independent_review_required: false, strongest_objection: "Mark is the only admitted early narrative source for the geography in Baseline A."}
+    exact_head_review_provenance: {subject_repository: thebrazenbeard/on-theo, subject_ref: null, subject_commit: null, review_artifact: null, review_commit: null, execution_mode: NONE}
+    invalidation: {invalidates_on: [SOURCE_IDENTITY_CHANGE, NEW_MATERIAL_CONTRADICTION], stale_reason: null, stale_since_commit: null}
+
+  - id: CLM-YSB-A-004-JOHN-BAPTIST-ASSOCIATION
+    proposition: "Yeshua was probably associated with John the Baptist and probably underwent John's baptism."
+    claim_type: HISTORICAL_RECONSTRUCTION
+    evidence_class: [PRIMARY_TEXT, HISTORICAL_RECONSTRUCTION, SCHOLARLY_INTERPRETATION]
+    lifecycle_state: SOURCE_BOUND
+    disposition: SURVIVES_NARROWED
+    baseline_eligibility: [EARLY_SOURCE_CONSTRAINED_BASELINE, FULL_SOURCE_CRITICAL_RECONSTRUCTION]
+    earliest_supporting_source: {source_id: SRC-GOSPEL-MARK, locator: "Mark 1:4-11", relation: "earliest surviving narrative of John baptizing Jesus", earliest_status: EARLIEST_SURVIVING_NOT_NECESSARILY_EARLIEST_TRADITION}
+    physical_witness_control: {required: true, witness_ids: [WIT-P45-MARK], distinction_note: "The Markan work and surviving witness are separated."}
+    composition_date_status: {range_or_status: "Mark c.65-75; Josephus 93-94", basis: "critical source controls", contested: true}
+    textual_control: {original_language_status: Greek, recension_status: critical_text, reconstruction_status: DIRECT_EXTANT_TEXT}
+    independent_supporting_witnesses:
+      - {source_id: SRC-JOSEPHUS-ANTIQUITIES-18, locator: "Antiquities 18.116-119", independence_note: "Independently attests John and his baptismal movement, not Jesus' participation."}
+    literary_dependence: {status: PARTIALLY_INDEPENDENT, dependencies: [], note: "Josephus corroborates John's historical movement only; it cannot be counted as independent attestation of Jesus' baptism."}
+    contradictions: []
+    scholarship: {supporting: [SCH-OXBIB-JOHN-BAPTIST-2014], opposing: [SCH-NIR-2026-JOSEPHUS-NT], opposition_acquisition: COMPLETE_BOUNDED}
+    rival_explanations:
+      - {id: RIVAL-BAPTISM-LITERARY, proposition: "Jesus' baptism was created or reshaped for theological/narrative purposes.", current_status: "possible but not preferred in current bounded scholarship", discriminator: "earlier independent baptism relation or demonstrable Markan invention."}
+    confidence: {level: moderate, reason: "Association is historically plausible and widely accepted; Baseline A still lacks an independent source explicitly linking Jesus to John."}
+    claim_ceiling: "John's movement is independently historical; Jesus' baptism/association is probable rather than multiply independent in Baseline A."
+    dependencies: {claims: [CLM-YSB-A-003-GALILEE-NAZARETH], sources: [SRC-GOSPEL-MARK, SRC-JOSEPHUS-ANTIQUITIES-18], witness_assignments: [WIT-P45-MARK], translations: []}
+    downstream_consumers: [{repository_or_work: THE_REAL_TESTAMENT_OF_YESHUA, use: "ministry origin hypothesis", allowed_if_state: INTERNAL_HOSTILE_REVIEWED}]
+    hostile_review: {required: true, asymmetry_triggers: [HISTORICAL_IDENTITY_OR_TEACHING_SHIFT], internal_review_status: NOT_STARTED, independent_review_required: true, strongest_objection: "Independent evidence proves John, not John's baptism of Jesus."}
+    exact_head_review_provenance: {subject_repository: thebrazenbeard/on-theo, subject_ref: null, subject_commit: null, review_artifact: null, review_commit: null, execution_mode: NONE}
+    invalidation: {invalidates_on: [AUTHENTICITY_OR_INTERPOLATION_CHANGE, DEPENDENCE_OR_INDEPENDENCE_CHANGE], stale_reason: null, stale_since_commit: null}
+
+  - id: CLM-YSB-A-005-KINGDOM-PREACHER
+    proposition: "Yeshua's public proclamation probably centered materially on the Kingdom/reign of God."
+    claim_type: HISTORICAL_RECONSTRUCTION
+    evidence_class: [PRIMARY_TEXT, HISTORICAL_RECONSTRUCTION, SCHOLARLY_INTERPRETATION]
+    lifecycle_state: SOURCE_BOUND
+    disposition: SURVIVES_NARROWED
+    baseline_eligibility: [EARLY_SOURCE_CONSTRAINED_BASELINE, FULL_SOURCE_CRITICAL_RECONSTRUCTION]
+    earliest_supporting_source: {source_id: SRC-GOSPEL-MARK, locator: "Mark 1:14-15 and recurrent Kingdom material", relation: "earliest surviving narrative program statement", earliest_status: EARLIEST_SURVIVING_NOT_NECESSARILY_EARLIEST_TRADITION}
+    physical_witness_control: {required: true, witness_ids: [WIT-P45-MARK], distinction_note: "P45 does not physically witness every Kingdom passage."}
+    composition_date_status: {range_or_status: "Mark c.65-75 common range", basis: SCH-BRANDON-1961-MARK-DATE, contested: true}
+    textual_control: {original_language_status: Greek, recension_status: critical_text, reconstruction_status: DIRECT_EXTANT_TEXT}
+    independent_supporting_witnesses: []
+    literary_dependence: {status: UNKNOWN, dependencies: [], note: "Later Synoptic parallels are deliberately not counted as independent in R1."}
+    contradictions: []
+    scholarship: {supporting: [SCH-CROSSLEY-2015-KINGDOM], opposing: [], opposition_acquisition: COMPLETE_BOUNDED}
+    rival_explanations:
+      - {id: RIVAL-MARKAN-KINGDOM-SYNTHESIS, proposition: "Mark made Kingdom proclamation more programmatic than the historical ministry warrants.", current_status: "live methodological possibility", discriminator: "independent early sayings/traditions to be tested in R2."}
+    confidence: {level: moderate_provisional, reason: "Kingdom is structurally central in Mark and fits first-century Jewish eschatological discourse, but R1 does not yet establish independent saying-level attestation."}
+    claim_ceiling: "A Kingdom-centered public message is probable; present/future/inward/social content and exact sayings remain unresolved for R2."
+    dependencies: {claims: [CLM-YSB-A-002-JEWISH-FRAME], sources: [SRC-GOSPEL-MARK], witness_assignments: [WIT-P45-MARK], translations: []}
+    downstream_consumers: [{repository_or_work: THE_REAL_TESTAMENT_OF_YESHUA, use: "teaching baseline", allowed_if_state: INTERNAL_HOSTILE_REVIEWED}]
+    hostile_review: {required: true, asymmetry_triggers: [HISTORICAL_IDENTITY_OR_TEACHING_SHIFT], internal_review_status: NOT_STARTED, independent_review_required: true, strongest_objection: "Mark's programmatic summary may be theological compression; independent early teaching evidence has not yet been analyzed."}
+    exact_head_review_provenance: {subject_repository: thebrazenbeard/on-theo, subject_ref: null, subject_commit: null, review_artifact: null, review_commit: null, execution_mode: NONE}
+    invalidation: {invalidates_on: [DEPENDENCE_OR_INDEPENDENCE_CHANGE, LOAD_BEARING_TRANSLATION_CHANGE], stale_reason: null, stale_since_commit: null}
+
+  - id: CLM-YSB-A-006-HEALER-EXORCIST-REPUTATION
+    proposition: "The earliest narrative layer remembers Yeshua as a healer/exorcist, making a historical public reputation for healing/exorcistic activity plausible."
+    claim_type: HISTORICAL_RECONSTRUCTION
+    evidence_class: [PRIMARY_TEXT, HISTORICAL_RECONSTRUCTION, SCHOLARLY_INTERPRETATION]
+    lifecycle_state: SOURCE_BOUND
+    disposition: SURVIVES_NARROWED
+    baseline_eligibility: [EARLY_SOURCE_CONSTRAINED_BASELINE, FULL_SOURCE_CRITICAL_RECONSTRUCTION]
+    earliest_supporting_source: {source_id: SRC-GOSPEL-MARK, locator: "Mark 1:21-3:12 and recurrent healing/exorcism complexes", relation: "earliest surviving narrative pattern", earliest_status: EARLIEST_SURVIVING_NOT_NECESSARILY_EARLIEST_TRADITION}
+    physical_witness_control: {required: true, witness_ids: [WIT-P45-MARK], distinction_note: "Work-level pattern exceeds what survives physically in P45."}
+    composition_date_status: {range_or_status: "Mark c.65-75", basis: SCH-BRANDON-1961-MARK-DATE, contested: true}
+    textual_control: {original_language_status: Greek, recension_status: critical_text, reconstruction_status: DIRECT_EXTANT_TEXT}
+    independent_supporting_witnesses: []
+    literary_dependence: {status: UNKNOWN, dependencies: [], note: "Josephus TF 'deeds' language is too textually disputed to serve as clean independent support in R1."}
+    contradictions: []
+    scholarship: {supporting: [SCH-PORTERFIELD-2005-HEALER], opposing: [], opposition_acquisition: COMPLETE_BOUNDED}
+    rival_explanations:
+      - {id: RIVAL-CHARISMATIC-LEGEND, proposition: "Healing/exorcism complexes are primarily movement legend/theological narration.", current_status: "live for specific episodes; weaker as an explanation of the whole early reputation pattern", discriminator: "independent early attestations and form-history."}
+    confidence: {level: moderate, reason: "Early narrative prominence is undeniable; R1 does not independently verify particular cures, diagnoses, or supernatural mechanisms."}
+    claim_ceiling: "Historical healer/exorcist reputation is plausible; specific miracle events and mechanisms are not established."
+    dependencies: {claims: [CLM-YSB-A-001-HISTORICAL-PERSON], sources: [SRC-GOSPEL-MARK], witness_assignments: [WIT-P45-MARK], translations: []}
+    downstream_consumers: [{repository_or_work: THE_REAL_TESTAMENT_OF_YESHUA, use: "public-ministry characterization", allowed_if_state: INTERNAL_HOSTILE_REVIEWED}]
+    hostile_review: {required: true, asymmetry_triggers: [SPIRITUALLY_ATTRACTIVE], internal_review_status: NOT_STARTED, independent_review_required: false, strongest_objection: "Narrative frequency within one source is not independent attestation."}
+    exact_head_review_provenance: {subject_repository: thebrazenbeard/on-theo, subject_ref: null, subject_commit: null, review_artifact: null, review_commit: null, execution_mode: NONE}
+    invalidation: {invalidates_on: [DEPENDENCE_OR_INDEPENDENCE_CHANGE, NEW_MATERIAL_CONTRADICTION], stale_reason: null, stale_since_commit: null}
+
+  - id: CLM-YSB-A-007-FOLLOWER-FAMILY-NETWORK
+    proposition: "Before the Gospels, Paul knew a Jesus movement with Cephas/Peter, James identified as the Lord's brother, other apostles, the Lord's brothers, and an early group-label/tradition of 'the Twelve'."
+    claim_type: HISTORICAL_RECONSTRUCTION
+    evidence_class: [PRIMARY_TEXT, HISTORICAL_RECONSTRUCTION]
+    lifecycle_state: SOURCE_BOUND
+    disposition: SURVIVES_NARROWED
+    baseline_eligibility: [EARLY_SOURCE_CONSTRAINED_BASELINE, FULL_SOURCE_CRITICAL_RECONSTRUCTION]
+    earliest_supporting_source: {source_id: SRC-PAUL-GALATIANS, locator: "Galatians 1:18-19; 2:9", relation: "Paul reports personal contact with Cephas and James and names leadership figures", earliest_status: EARLIEST_CURRENTLY_ADMITTED}
+    physical_witness_control: {required: true, witness_ids: [WIT-P46-PAUL], distinction_note: "P46 witnesses the letter text centuries after composition."}
+    composition_date_status: {range_or_status: "Galatians 48-55; 1 Corinthians 53-56", basis: "broad critical ranges", contested: true}
+    textual_control: {original_language_status: Greek, recension_status: critical_text, reconstruction_status: DIRECT_EXTANT_TEXT}
+    independent_supporting_witnesses:
+      - {source_id: SRC-PAUL-1COR, locator: "1 Corinthians 9:5; 15:5", independence_note: "Same author but distinct letter/tradition contexts; not counted as independent author."}
+      - {source_id: SRC-JOSEPHUS-ANTIQUITIES-20-200, locator: "Antiquities 20.200", independence_note: "External corroboration of James/Jesus linkage if authentic."}
+      - {source_id: SRC-GOSPEL-MARK, locator: "Mark 3:13-19; 3:31-35; 6:3", independence_note: "Later narrative corroboration, not used to inflate independence count."}
+    literary_dependence: {status: PARTIALLY_INDEPENDENT, dependencies: [], note: "Paul's personal-network testimony is primary for the baseline; exact Twelve membership/history requires separate work."}
+    contradictions: []
+    scholarship: {supporting: [SCH-SCHMIDT-2025-JOSEPHUS-JAMES], opposing: [SCH-NIR-2026-JOSEPHUS-NT], opposition_acquisition: COMPLETE_BOUNDED}
+    rival_explanations:
+      - {id: RIVAL-SPIRITUAL-BROTHER, proposition: "James 'brother of the Lord' is purely a cultic title rather than kinship.", current_status: "possible lexical challenge but strained by Paul's differentiation and Josephus linkage", discriminator: "usage of brother language across Pauline and external evidence."}
+    confidence: {level: high, reason: "Paul's firsthand social-network claims are early; Josephus strengthens James linkage without proving all kinship details."}
+    claim_ceiling: "Paul securely attests an early follower/family network and a Twelve group-label/tradition; R1 does not reconstruct a historical roster or prove that Yeshua constituted exactly the later canonical Twelve."
+    dependencies: {claims: [CLM-YSB-A-001-HISTORICAL-PERSON], sources: [SRC-PAUL-GALATIANS, SRC-PAUL-1COR, SRC-JOSEPHUS-ANTIQUITIES-20-200, SRC-GOSPEL-MARK], witness_assignments: [WIT-P46-PAUL], translations: []}
+    downstream_consumers: [{repository_or_work: THE_REAL_TESTAMENT_OF_YESHUA, use: "social network baseline", allowed_if_state: INTERNAL_HOSTILE_REVIEWED}]
+    hostile_review: {required: true, asymmetry_triggers: [HISTORICAL_SUPERIORITY_OF_RIVAL_APOSTOLIC_AUTHORITY], internal_review_status: NOT_STARTED, independent_review_required: true, strongest_objection: "Kinship and authority can be overread; 'the Twelve' formula origin and membership remain uncertain."}
+    exact_head_review_provenance: {subject_repository: thebrazenbeard/on-theo, subject_ref: null, subject_commit: null, review_artifact: null, review_commit: null, execution_mode: NONE}
+    invalidation: {invalidates_on: [AUTHENTICITY_OR_INTERPOLATION_CHANGE, DEPENDENCE_OR_INDEPENDENCE_CHANGE], stale_reason: null, stale_since_commit: null}
+
+  - id: CLM-YSB-A-008-TEMPLE-CRISIS
+    proposition: "A Jerusalem Temple confrontation by Yeshua materially contributed to the chain of events ending in his execution."
+    claim_type: HISTORICAL_RECONSTRUCTION
+    evidence_class: [PRIMARY_TEXT, HISTORICAL_RECONSTRUCTION]
+    lifecycle_state: SOURCE_BOUND
+    disposition: UNRESOLVED
+    baseline_eligibility: [EARLY_SOURCE_CONSTRAINED_BASELINE, FULL_SOURCE_CRITICAL_RECONSTRUCTION]
+    earliest_supporting_source: {source_id: SRC-GOSPEL-MARK, locator: "Mark 11:11-18; 14-15", relation: "earliest surviving narrative connecting Temple conflict to death sequence", earliest_status: EARLIEST_SURVIVING_NOT_NECESSARILY_EARLIEST_TRADITION}
+    physical_witness_control: {required: true, witness_ids: [WIT-P45-MARK], distinction_note: "P45 does not supply a complete physical witness to the whole passion sequence."}
+    composition_date_status: {range_or_status: "Mark c.65-75", basis: SCH-BRANDON-1961-MARK-DATE, contested: true}
+    textual_control: {original_language_status: Greek, recension_status: critical_text, reconstruction_status: DIRECT_EXTANT_TEXT}
+    independent_supporting_witnesses: []
+    literary_dependence: {status: UNKNOWN, dependencies: [], note: "R1 does not use later Gospel repetition as independent proof of causation."}
+    contradictions: []
+    scholarship: {supporting: [SCH-ANDRADE-2025-PILATE], opposing: [], opposition_acquisition: COMPLETE_BOUNDED}
+    rival_explanations:
+      - {id: RIVAL-OTHER-TRIGGER, proposition: "The execution arose from regal/messianic or public-order concerns not recoverably tied to the Markan Temple episode.", current_status: "live", discriminator: "independent evidence connecting Temple action to arrest/execution."}
+    confidence: {level: moderate, reason: "Historically plausible and explanatorily strong, but source-independent control is weak inside Baseline A."}
+    claim_ceiling: "Temple-action-to-execution causation remains UNRESOLVED in Baseline A; Markan narrative plausibility is not independent historical confirmation."
+    dependencies: {claims: [CLM-YSB-A-005-KINGDOM-PREACHER], sources: [SRC-GOSPEL-MARK], witness_assignments: [WIT-P45-MARK], translations: []}
+    downstream_consumers: [{repository_or_work: THE_REAL_TESTAMENT_OF_YESHUA, use: "final-week hypothesis", allowed_if_state: INTERNAL_HOSTILE_REVIEWED}]
+    hostile_review: {required: true, asymmetry_triggers: [LOAD_BEARING_FOR_LITERARY_PLOT], internal_review_status: NOT_STARTED, independent_review_required: true, strongest_objection: "Explanatory fit can be mistaken for independent historical attestation."}
+    exact_head_review_provenance: {subject_repository: thebrazenbeard/on-theo, subject_ref: null, subject_commit: null, review_artifact: null, review_commit: null, execution_mode: NONE}
+    invalidation: {invalidates_on: [DEPENDENCE_OR_INDEPENDENCE_CHANGE, NEW_MATERIAL_CONTRADICTION], stale_reason: null, stale_since_commit: null}
+
+  - id: CLM-YSB-A-009-CRUCIFIXION
+    proposition: "Yeshua was executed by crucifixion."
+    claim_type: HISTORICAL_RECONSTRUCTION
+    evidence_class: [PRIMARY_TEXT, HISTORICAL_RECONSTRUCTION]
+    lifecycle_state: SOURCE_BOUND
+    disposition: SURVIVES
+    baseline_eligibility: [EARLY_SOURCE_CONSTRAINED_BASELINE, FULL_SOURCE_CRITICAL_RECONSTRUCTION]
+    earliest_supporting_source: {source_id: SRC-PAUL-1COR, locator: "1 Corinthians 1:23; 2:2; 15:3", relation: "Paul's proclamation presupposes death by crucifixion; 15:3 may preserve received tradition", earliest_status: EARLIEST_CURRENTLY_ADMITTED}
+    physical_witness_control: {required: true, witness_ids: [WIT-P46-PAUL], distinction_note: "P46 witnesses the Pauline text, not the event."}
+    composition_date_status: {range_or_status: "1 Corinthians 53-56; possible earlier received tradition", basis: SCH-WARE-2014-1COR15, contested: true}
+    textual_control: {original_language_status: Greek, recension_status: critical_text, reconstruction_status: DIRECT_EXTANT_TEXT}
+    independent_supporting_witnesses:
+      - {source_id: SRC-GOSPEL-MARK, locator: "Mark 15", independence_note: "Later narrative attestation."}
+      - {source_id: SRC-TACITUS-ANNALS-15-44, locator: "Annals 15.44", independence_note: "Later Roman attestation; information-source independence debated."}
+    literary_dependence: {status: PARTIALLY_INDEPENDENT, dependencies: [], note: "Paul's crucifixion proclamation is independent of Mark as a written Gospel; Tacitus is not assumed independent."}
+    contradictions: []
+    scholarship: {supporting: [SCH-ANDRADE-2025-PILATE, SCH-BOND-1998-PILATE], opposing: [], opposition_acquisition: COMPLETE_BOUNDED}
+    rival_explanations:
+      - {id: RIVAL-NONCRUCIFIXION, proposition: "Crucifixion was invented after Jesus or attached to a nonhistorical figure.", current_status: "not competitive with current admitted evidence", discriminator: "Pauline proximity and centrality of crucifixion before Mark."}
+    confidence: {level: very_high, reason: "Crucifixion is already central in the earliest surviving Christian letters and persists in independent literary trajectories."}
+    claim_ceiling: "Execution by crucifixion is among the strongest Baseline A facts; it does not by itself establish charge, trial transcript, or theological meaning."
+    dependencies: {claims: [CLM-YSB-A-001-HISTORICAL-PERSON], sources: [SRC-PAUL-1COR, SRC-GOSPEL-MARK, SRC-TACITUS-ANNALS-15-44], witness_assignments: [WIT-P46-PAUL], translations: []}
+    downstream_consumers: [{repository_or_work: THE_REAL_TESTAMENT_OF_YESHUA, use: "death anchor", allowed_if_state: INTERNAL_HOSTILE_REVIEWED}]
+    hostile_review: {required: true, asymmetry_triggers: [LOAD_BEARING_FOR_LITERARY_PLOT], internal_review_status: NOT_STARTED, independent_review_required: true, strongest_objection: "Theological centrality could preserve a tradition without independently explaining its origin, but the temporal proximity is difficult for total invention models."}
+    exact_head_review_provenance: {subject_repository: thebrazenbeard/on-theo, subject_ref: null, subject_commit: null, review_artifact: null, review_commit: null, execution_mode: NONE}
+    invalidation: {invalidates_on: [AUTHENTICITY_OR_INTERPOLATION_CHANGE], stale_reason: null, stale_since_commit: null}
+
+  - id: CLM-YSB-A-010-PILATE
+    proposition: "Yeshua's crucifixion occurred under the authority of Pontius Pilate."
+    claim_type: HISTORICAL_RECONSTRUCTION
+    evidence_class: [PRIMARY_TEXT, HISTORICAL_RECONSTRUCTION]
+    lifecycle_state: SOURCE_BOUND
+    disposition: SURVIVES_NARROWED
+    baseline_eligibility: [EARLY_SOURCE_CONSTRAINED_BASELINE, FULL_SOURCE_CRITICAL_RECONSTRUCTION]
+    earliest_supporting_source: {source_id: SRC-GOSPEL-MARK, locator: "Mark 15:1-15", relation: "earliest surviving source in Baseline A naming Pilate in the execution sequence", earliest_status: EARLIEST_SURVIVING_NOT_NECESSARILY_EARLIEST_TRADITION}
+    physical_witness_control: {required: true, witness_ids: [WIT-P45-MARK], distinction_note: "Physical survival is later and fragmentary."}
+    composition_date_status: {range_or_status: "Mark c.65-75; Josephus 93-94 disputed Jesus notice; Tacitus c.115-117", basis: "source controls", contested: true}
+    textual_control: {original_language_status: "Greek Mark/Josephus; Latin Tacitus", recension_status: critical_texts, reconstruction_status: MIXED}
+    independent_supporting_witnesses:
+      - {source_id: SRC-TACITUS-ANNALS-15-44, locator: "Annals 15.44", independence_note: "External Roman text; independence of information source disputed."}
+      - {source_id: SRC-JOSEPHUS-ANTIQUITIES-18, locator: "Antiquities 18.63-64", independence_note: "Potential corroboration only after textual reconstruction; not used as clean independent proof."}
+    literary_dependence: {status: CONTESTED, dependencies: [], note: "Tacitus may derive information through Pliny/Christian reports; Josephus TF textual state disputed."}
+    contradictions: []
+    scholarship: {supporting: [SCH-BOND-1998-PILATE, SCH-ANDRADE-2025-PILATE], opposing: [SCH-HANSEN-2023-TACITUS-DEPENDENCE, SCH-NIR-2026-JOSEPHUS-NT], opposition_acquisition: COMPLETE_BOUNDED}
+    rival_explanations:
+      - {id: RIVAL-PILATE-LATE-ATTACHMENT, proposition: "Pilate was attached later to a generic crucifixion tradition.", current_status: "weak against Mark plus later external convergence", discriminator: "source-dependence demonstration or earlier contradictory execution tradition."}
+    confidence: {level: high, reason: "Mark is early enough to anchor Pilate and later external sources converge, though their independence is not assumed."}
+    claim_ceiling: "Execution under Pilate is strong; exact Roman charge, hearing procedure, crowd dynamics and Pilate's motives remain unresolved."
+    dependencies: {claims: [CLM-YSB-A-009-CRUCIFIXION], sources: [SRC-GOSPEL-MARK, SRC-TACITUS-ANNALS-15-44, SRC-JOSEPHUS-ANTIQUITIES-18], witness_assignments: [WIT-P45-MARK], translations: []}
+    downstream_consumers: [{repository_or_work: THE_REAL_TESTAMENT_OF_YESHUA, use: "Roman execution anchor", allowed_if_state: INTERNAL_HOSTILE_REVIEWED}]
+    hostile_review: {required: true, asymmetry_triggers: [LOAD_BEARING_FOR_LITERARY_PLOT], internal_review_status: NOT_STARTED, independent_review_required: true, strongest_objection: "External convergence may not be informationally independent; detailed Gospel trial scenes are not validated by the high-level Pilate anchor."}
+    exact_head_review_provenance: {subject_repository: thebrazenbeard/on-theo, subject_ref: null, subject_commit: null, review_artifact: null, review_commit: null, execution_mode: NONE}
+    invalidation: {invalidates_on: [DEPENDENCE_OR_INDEPENDENCE_CHANGE, AUTHENTICITY_OR_INTERPOLATION_CHANGE], stale_reason: null, stale_since_commit: null}
+
+  - id: CLM-YSB-A-011-EARLY-BURIAL-TRADITION
+    proposition: "A burial of Yeshua was already part of the earliest surviving received proclamation."
+    claim_type: TRADITION_HISTORY
+    evidence_class: [PRIMARY_TEXT, HISTORICAL_RECONSTRUCTION]
+    lifecycle_state: SOURCE_BOUND
+    disposition: SURVIVES_NARROWED
+    baseline_eligibility: [EARLY_SOURCE_CONSTRAINED_BASELINE, FULL_SOURCE_CRITICAL_RECONSTRUCTION]
+    earliest_supporting_source: {source_id: SRC-PAUL-1COR, locator: "1 Corinthians 15:3-4", relation: "received death-burial-raised sequence", earliest_status: EMBEDDED_EARLIER_LAYER_CONTESTED}
+    physical_witness_control: {required: true, witness_ids: [WIT-P46-PAUL], distinction_note: "No physical manuscript labels formula boundaries or pre-Pauline date."}
+    composition_date_status: {range_or_status: "1 Corinthians 53-56; embedded earlier formula widely argued but boundaries/date disputed", basis: SCH-WARE-2014-1COR15, contested: true}
+    textual_control: {original_language_status: Greek, recension_status: critical_text, reconstruction_status: DIRECT_EXTANT_TEXT}
+    independent_supporting_witnesses:
+      - {source_id: SRC-GOSPEL-MARK, locator: "Mark 15:42-47", independence_note: "Later narrative elaboration including Joseph of Arimathea; relation to Pauline formula not directly demonstrable."}
+    literary_dependence: {status: COMMON_SOURCE_POSSIBLE, dependencies: [], note: "Early burial tradition and later tomb narrative must not be collapsed."}
+    contradictions: []
+    scholarship: {supporting: [SCH-WARE-2014-1COR15], opposing: [], opposition_acquisition: COMPLETE_BOUNDED}
+    rival_explanations:
+      - {id: RIVAL-BURIAL-FORMULA-THEOLOGICAL, proposition: "Burial language functions confessionally and does not identify a recoverable burial scenario.", current_status: "live for details", discriminator: "independent early burial logistics."}
+    confidence: {level: high_for_early_tradition_moderate_for_event_detail, reason: "Burial is early in proclamation, but location, agent, tomb type and later empty-tomb linkage require separate analysis."}
+    claim_ceiling: "Early burial tradition is strong; Joseph of Arimathea, rock tomb, location, and empty-tomb implications are not established by this claim."
+    dependencies: {claims: [CLM-YSB-A-009-CRUCIFIXION], sources: [SRC-PAUL-1COR, SRC-GOSPEL-MARK], witness_assignments: [WIT-P46-PAUL], translations: []}
+    downstream_consumers: [{repository_or_work: THE_REAL_TESTAMENT_OF_YESHUA, use: "death-to-resurrection tradition sequence", allowed_if_state: INTERNAL_HOSTILE_REVIEWED}]
+    hostile_review: {required: true, asymmetry_triggers: [SPIRITUALLY_ATTRACTIVE], internal_review_status: NOT_STARTED, independent_review_required: false, strongest_objection: "An early formula is evidence of an early claim, not automatically a detailed event report."}
+    exact_head_review_provenance: {subject_repository: thebrazenbeard/on-theo, subject_ref: null, subject_commit: null, review_artifact: null, review_commit: null, execution_mode: NONE}
+    invalidation: {invalidates_on: [SOURCE_IDENTITY_CHANGE, DEPENDENCE_OR_INDEPENDENCE_CHANGE], stale_reason: null, stale_since_commit: null}
+
+  - id: CLM-YSB-A-012-EARLY-RESURRECTION-CONVICTION
+    proposition: "Very early followers of Yeshua were convinced that God had raised/vindicated him and that appearances to named followers and groups were reported."
+    claim_type: HISTORICAL_RECONSTRUCTION
+    evidence_class: [PRIMARY_TEXT, HISTORICAL_RECONSTRUCTION]
+    lifecycle_state: SOURCE_BOUND
+    disposition: SURVIVES_NARROWED
+    baseline_eligibility: [EARLY_SOURCE_CONSTRAINED_BASELINE, FULL_SOURCE_CRITICAL_RECONSTRUCTION]
+    earliest_supporting_source: {source_id: SRC-PAUL-1COR, locator: "1 Corinthians 15:3-8", relation: "Paul transmits received resurrection/appearance tradition and includes his own later experience", earliest_status: EMBEDDED_EARLIER_LAYER_CONTESTED}
+    physical_witness_control: {required: true, witness_ids: [WIT-P46-PAUL], distinction_note: "P46 witnesses Paul's text, not the prior formula or the reported experiences directly."}
+    composition_date_status: {range_or_status: "1 Corinthians 53-56; formula plausibly earlier", basis: SCH-WARE-2014-1COR15, contested: true}
+    textual_control: {original_language_status: Greek, recension_status: critical_text, reconstruction_status: DIRECT_EXTANT_TEXT}
+    independent_supporting_witnesses:
+      - {source_id: SRC-GOSPEL-MARK, locator: "Mark 16:1-8 in the earliest recoverable ending", independence_note: "Mark supplies empty-tomb/announcement tradition but not narrated appearances in the earliest recoverable ending."}
+    literary_dependence: {status: PARTIALLY_INDEPENDENT, dependencies: [], note: "The earliest historical datum is conviction/report, not adjudication of supernatural mechanism."}
+    contradictions:
+      - {source_or_claim_id: SRC-GOSPEL-MARK, locator: "Mark 16:1-8", contradiction_type: "narrative_difference", note: "Earliest recoverable Mark ends without a narrated appearance scene, unlike Paul's appearance list."}
+    scholarship: {supporting: [SCH-WARE-2014-1COR15], opposing: [], opposition_acquisition: COMPLETE_BOUNDED}
+    rival_explanations:
+      - {id: RIVAL-EXPERIENCE-MECHANISMS, proposition: "Visionary, grief-related, revelatory, bodily-event, legendary, or mixed mechanisms could underlie the reports.", current_status: "mechanism unresolved by R1", discriminator: "R5 resurrection-stratification evidence."}
+    confidence: {level: very_high_for_early_conviction_unknown_for_metaphysical_mechanism, reason: "Paul provides early testimony to received claims and named appearance traditions."}
+    claim_ceiling: "Early resurrection/vindication conviction is strong; R1 does not establish empty-tomb historicity, bodily mechanism, hallucination, fraud, or supernatural resurrection."
+    dependencies: {claims: [CLM-YSB-A-009-CRUCIFIXION, CLM-YSB-A-011-EARLY-BURIAL-TRADITION], sources: [SRC-PAUL-1COR, SRC-GOSPEL-MARK], witness_assignments: [WIT-P46-PAUL], translations: []}
+    downstream_consumers: [{repository_or_work: THE_REAL_TESTAMENT_OF_YESHUA, use: "post-death belief floor", allowed_if_state: INTERNAL_HOSTILE_REVIEWED}]
+    hostile_review: {required: true, asymmetry_triggers: [SPIRITUALLY_ATTRACTIVE, LOAD_BEARING_FOR_LITERARY_PLOT], internal_review_status: NOT_STARTED, independent_review_required: true, strongest_objection: "Pre-Pauline formula reconstruction and interpretation are contested; belief must not be converted into event mechanism."}
+    exact_head_review_provenance: {subject_repository: thebrazenbeard/on-theo, subject_ref: null, subject_commit: null, review_artifact: null, review_commit: null, execution_mode: NONE}
+    invalidation: {invalidates_on: [SOURCE_IDENTITY_CHANGE, DEPENDENCE_OR_INDEPENDENCE_CHANGE, LOAD_BEARING_TRANSLATION_CHANGE], stale_reason: null, stale_since_commit: null}
+
+  - id: CLM-YSB-A-013-SELF-CONCEPTION
+    proposition: "Baseline A establishes Yeshua's exact self-conception as Messiah, divine Son, pre-existent being, Danielic figure, or future cosmic judge."
+    claim_type: HISTORICAL_SELF_CONCEPTION
+    evidence_class: [UNKNOWN]
+    lifecycle_state: SOURCE_BOUND
+    disposition: REJECTED
+    disposition_scope: "REJECTED_AS_BASELINE_A_SUPPORTED_CONCLUSION_NOT_HISTORICAL_NEGATION"
+    baseline_eligibility: [EARLY_SOURCE_CONSTRAINED_BASELINE]
+    earliest_supporting_source: {source_id: SRC-GOSPEL-MARK, locator: "Mark 8-14 title/self-reference complexes", relation: "post-Easter narrative material requiring source criticism", earliest_status: EARLIEST_SURVIVING_NOT_NECESSARILY_EARLIEST_TRADITION}
+    physical_witness_control: {required: true, witness_ids: [WIT-P45-MARK], distinction_note: "Witness age does not resolve saying authenticity."}
+    composition_date_status: {range_or_status: "post-Easter sources only for most explicit self-conception formulations", basis: "R1 source order", contested: true}
+    textual_control: {original_language_status: Greek, recension_status: critical_text, reconstruction_status: DIRECT_EXTANT_TEXT}
+    independent_supporting_witnesses: []
+    literary_dependence: {status: UNKNOWN, dependencies: [], note: "Pauline Christology proves early follower interpretation, not Jesus' private self-understanding."}
+    contradictions: []
+    scholarship: {supporting: [], opposing: [], opposition_acquisition: COMPLETE_BOUNDED}
+    rival_explanations:
+      - {id: RIVAL-POSTEASTER-CHRISTOLOGY, proposition: "Explicit high-role claims largely reflect post-Easter interpretation of Jesus.", current_status: "live and serious", discriminator: "pre-Easter saying/tradition analysis beyond R1."}
+      - {id: RIVAL-HISTORICAL-MESSIANIC-SELFROLE, proposition: "Some messianic/eschatological self-role goes back to Jesus.", current_status: "live and serious", discriminator: "R2/R4 source-critical tests."}
+    confidence: {level: unresolved, reason: "Earliest surviving evidence cannot cleanly separate Jesus' self-conception from post-death interpretation."}
+    claim_ceiling: "Exact self-conception remains UNKNOWN in Baseline A."
+    dependencies: {claims: [CLM-YSB-A-005-KINGDOM-PREACHER, CLM-YSB-A-012-EARLY-RESURRECTION-CONVICTION], sources: [SRC-GOSPEL-MARK, SRC-PAUL-1COR], witness_assignments: [WIT-P45-MARK, WIT-P46-PAUL], translations: []}
+    downstream_consumers: [{repository_or_work: THE_REAL_TESTAMENT_OF_YESHUA, use: "self-conception boundary", allowed_if_state: INTERNAL_HOSTILE_REVIEWED}]
+    hostile_review: {required: true, asymmetry_triggers: [HISTORICAL_IDENTITY_OR_TEACHING_SHIFT, SPIRITUALLY_ATTRACTIVE], internal_review_status: NOT_STARTED, independent_review_required: true, strongest_objection: "Agnosticism can become lazy if recurrent early traditions are not tested; R1 is a floor, not an excuse to stop."}
+    exact_head_review_provenance: {subject_repository: thebrazenbeard/on-theo, subject_ref: null, subject_commit: null, review_artifact: null, review_commit: null, execution_mode: NONE}
+    invalidation: {invalidates_on: [DEPENDENCE_OR_INDEPENDENCE_CHANGE, NEW_MATERIAL_CONTRADICTION], stale_reason: null, stale_since_commit: null}
+
+  - id: CLM-YSB-A-014-JUDAS-BETRAYAL-DETAIL
+    proposition: "Baseline A establishes that Judas Iscariot intentionally betrayed Yeshua for payment and supplied otherwise unavailable arrest information."
+    claim_type: HISTORICAL_RECONSTRUCTION
+    evidence_class: [UNKNOWN]
+    lifecycle_state: SOURCE_BOUND
+    disposition: REJECTED
+    disposition_scope: "REJECTED_AS_BASELINE_A_SUPPORTED_CONCLUSION_NOT_HISTORICAL_NEGATION"
+    baseline_eligibility: [EARLY_SOURCE_CONSTRAINED_BASELINE]
+    earliest_supporting_source: {source_id: SRC-GOSPEL-MARK, locator: "Mark 14:10-11, 43-46", relation: "earliest surviving explicit Judas betrayal narrative", earliest_status: EARLIEST_SURVIVING_NOT_NECESSARILY_EARLIEST_TRADITION}
+    physical_witness_control: {required: true, witness_ids: [WIT-P45-MARK], distinction_note: "Fragmentary witness and later composition do not establish event mechanics."}
+    composition_date_status: {range_or_status: "Mark c.65-75; 1 Cor 11:23 uses handing-over language without naming Judas", basis: "R1 source order", contested: true}
+    textual_control: {original_language_status: Greek, recension_status: critical_text, reconstruction_status: DIRECT_EXTANT_TEXT}
+    independent_supporting_witnesses: []
+    literary_dependence: {status: UNKNOWN, dependencies: [], note: "Pauline paradidomi/handing-over language is not treated as independent identification of Judas."}
+    contradictions: []
+    scholarship: {supporting: [], opposing: [], opposition_acquisition: REQUIRED_NOT_STARTED}
+    rival_explanations:
+      - {id: RIVAL-JUDAS-CORE, proposition: "A historical insider handover underlies Mark but motives/details developed later.", current_status: "live", discriminator: "R4 pre-Markan and diachronic Judas analysis."}
+      - {id: RIVAL-MEMORY-CONCENTRATION, proposition: "Broader disciple failure became narratively concentrated in Judas.", current_status: "speculative", discriminator: "R3/R4 evidence."}
+    confidence: {level: unresolved, reason: "Explicit narrative begins with Mark; Paul does not independently identify Judas in the handing-over formula."}
+    claim_ceiling: "Judas betrayal mechanics remain UNKNOWN in Baseline A; Mark is evidence for an early narrative, not yet a fully reconstructed event."
+    dependencies: {claims: [CLM-YSB-A-008-TEMPLE-CRISIS], sources: [SRC-GOSPEL-MARK, SRC-PAUL-1COR], witness_assignments: [WIT-P45-MARK, WIT-P46-PAUL], translations: []}
+    downstream_consumers: [{repository_or_work: THE_REAL_TESTAMENT_OF_YESHUA, use: "betrayal boundary", allowed_if_state: INTERNAL_HOSTILE_REVIEWED}]
+    hostile_review: {required: true, asymmetry_triggers: [DISTINCTIVE_PROJECT_THESIS, CONSPIRATORIAL, LOAD_BEARING_FOR_LITERARY_PLOT], internal_review_status: NOT_STARTED, independent_review_required: true, strongest_objection: "The project has unusually high bias risk around Judas; absence of earlier named betrayal is not evidence of innocence or frame-up."}
+    exact_head_review_provenance: {subject_repository: thebrazenbeard/on-theo, subject_ref: null, subject_commit: null, review_artifact: null, review_commit: null, execution_mode: NONE}
+    invalidation: {invalidates_on: [LOAD_BEARING_TRANSLATION_CHANGE, DEPENDENCE_OR_INDEPENDENCE_CHANGE], stale_reason: null, stale_since_commit: null}
+
+  - id: CLM-YSB-A-015-INWARD-MYSTICAL-CORE
+    proposition: "Baseline A establishes that Yeshua's central historical teaching was an inward mystical Kingdom or self-knowledge doctrine."
+    claim_type: HISTORICAL_RECONSTRUCTION
+    evidence_class: [UNKNOWN]
+    lifecycle_state: SOURCE_BOUND
+    disposition: REJECTED
+    disposition_scope: "REJECTED_AS_BASELINE_A_SUPPORTED_CONCLUSION_NOT_HISTORICAL_NEGATION"
+    baseline_eligibility: [EARLY_SOURCE_CONSTRAINED_BASELINE]
+    earliest_supporting_source: {source_id: SRC-GOSPEL-MARK, locator: "Markan Kingdom/inner-purity traditions generally", relation: "earliest admitted narrative does not by itself establish a central inward-mystical system", earliest_status: EARLIEST_SURVIVING_NOT_NECESSARILY_EARLIEST_TRADITION}
+    physical_witness_control: {required: true, witness_ids: [WIT-P45-MARK], distinction_note: "Later Luke 17 and Thomas are intentionally excluded from filling R1 gaps."}
+    composition_date_status: {range_or_status: "R1 restricted to Paul/Mark and early context; later inward-language tests deferred", basis: "program design", contested: false}
+    textual_control: {original_language_status: Greek, recension_status: critical_text, reconstruction_status: DIRECT_EXTANT_TEXT}
+    independent_supporting_witnesses: []
+    literary_dependence: {status: UNKNOWN, dependencies: [], note: "R1 cannot use Thomas, Mary, Valentinian material or later mysticism to back-project an inward system."}
+    contradictions: []
+    scholarship: {supporting: [], opposing: [SCH-CROSSLEY-2015-KINGDOM], opposition_acquisition: COMPLETE_BOUNDED}
+    rival_explanations:
+      - {id: RIVAL-APOCALYPTIC-KINGDOM, proposition: "Yeshua's Kingdom language is primarily Jewish eschatological/communal rather than interior mystical metaphysics.", current_status: "strong live alternative", discriminator: "R2 saying-by-saying Kingdom test."}
+      - {id: RIVAL-MIXED-KINGDOM, proposition: "Present, ethical, social and apocalyptic dimensions coexist without a later mystical system.", current_status: "live", discriminator: "R2."}
+    confidence: {level: unresolved, reason: "The distinctive inward model cannot be established from the constrained early evidence without importing later interpretive material."}
+    claim_ceiling: "Historical inward/mystical centrality is NOT ESTABLISHED by Baseline A; it remains a question for R2 and R8."
+    dependencies: {claims: [CLM-YSB-A-005-KINGDOM-PREACHER], sources: [SRC-GOSPEL-MARK], witness_assignments: [WIT-P45-MARK], translations: []}
+    downstream_consumers: [{repository_or_work: THE_REAL_TESTAMENT_OF_YESHUA, use: "mystical-model boundary", allowed_if_state: INTERNAL_HOSTILE_REVIEWED}]
+    hostile_review: {required: true, asymmetry_triggers: [DISTINCTIVE_PROJECT_THESIS, SPIRITUALLY_ATTRACTIVE, OVERTURNS_EARLY_SOURCE_BASELINE], internal_review_status: NOT_STARTED, independent_review_required: true, strongest_objection: "The project strongly prefers this portrait; Baseline A currently does not establish it."}
+    exact_head_review_provenance: {subject_repository: thebrazenbeard/on-theo, subject_ref: null, subject_commit: null, review_artifact: null, review_commit: null, execution_mode: NONE}
+    invalidation: {invalidates_on: [DEPENDENCE_OR_INDEPENDENCE_CHANGE, LOAD_BEARING_TRANSLATION_CHANGE, NEW_MATERIAL_CONTRADICTION], stale_reason: null, stale_since_commit: null}
+
+baseline_summary_after_first_hostile_review:
+  survives:
+    - CLM-YSB-A-001-HISTORICAL-PERSON
+    - CLM-YSB-A-009-CRUCIFIXION
+  survives_narrowed:
+    - CLM-YSB-A-002-JEWISH-FRAME
+    - CLM-YSB-A-003-GALILEE-NAZARETH
+    - CLM-YSB-A-004-JOHN-BAPTIST-ASSOCIATION
+    - CLM-YSB-A-005-KINGDOM-PREACHER
+    - CLM-YSB-A-006-HEALER-EXORCIST-REPUTATION
+    - CLM-YSB-A-007-FOLLOWER-FAMILY-NETWORK
+    - CLM-YSB-A-010-PILATE
+    - CLM-YSB-A-011-EARLY-BURIAL-TRADITION
+    - CLM-YSB-A-012-EARLY-RESURRECTION-CONVICTION
+  unresolved:
+    - CLM-YSB-A-008-TEMPLE-CRISIS
+  rejected_as_baseline_A_supported_conclusion_not_historical_negation:
+    - CLM-YSB-A-013-SELF-CONCEPTION
+    - CLM-YSB-A-014-JUDAS-BETRAYAL-DETAIL
+    - CLM-YSB-A-015-INWARD-MYSTICAL-CORE
+  next_gate: SECOND_EXACT_HEAD_INTERNAL_HOSTILE_REVIEW
