@@ -1,0 +1,24 @@
+schema_version: on-theo.yeshua-kingdom-internal-review-receipt.v1
+status: INTERNAL_HOSTILE_PASS_WITH_GUARDS
+independent_review_status: REQUIRED_NOT_COMPLETED
+subject:
+  branch: research/yeshua-kingdom-teaching-v1-20260921
+  exact_commit: 8988f81e5935cf015c9305707912562e61bb298b
+review:
+  execution_mode: SAME_RUNTIME_ADVERSARIAL_REVIEW
+  artifact: reviews/yeshua-kingdom-teaching-v1-hostile-review-2.md
+  commit: 2f3d18c285df916ca095689b57bf186f3a8f9fa5
+claim_ceiling: >
+  Multi-register early Kingdom tradition is more secure than a complete
+  coherent historical Yeshua Kingdom system. Inward/mystical centrality remains
+  unresolved.
+allowed_downstream_use:
+  - R3_PEOPLE_AROUND_YESHUA
+  - R4_JERUSALEM_CRISIS_EXECUTION
+  - R7_NONCANONICAL_INDEPENDENCE
+  - R8_INWARD_MYSTICAL_TRAJECTORY
+prohibited:
+  - CLAIM_INDEPENDENT_REVIEW_COMPLETE
+  - CLAIM_FINAL_YESHUA_THEOLOGY
+  - CLAIM_THOMAS_INDEPENDENCE_ESTABLISHED
+  - CLAIM_LUKE17_PROVES_SOURCE_ONTOLOGY
