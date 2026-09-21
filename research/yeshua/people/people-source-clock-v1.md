@@ -21,6 +21,10 @@ Likewise:
 
 EARLIER_SOURCE != AUTOMATICALLY_COMPLETE_SOURCE
 
+And:
+
+EARLIER_SOURCE != TRUTH_SCORE
+
 EARLIER_SOURCE != TRUTH_SCORE
 
 Later authority texts remain historically valuable as evidence for later Christian memory, identity, and authority discourse even when they are not admitted as first-century biographical transcripts.
@@ -113,6 +117,8 @@ Mark gives Peter a much fuller narrative identity:
 
 Cephas/Peter is one of the best-attested early movement leaders.
 
+R3 treats Cephas and Peter as the conventional identification of the Aramaic/Greek naming tradition. That identification is overwhelmingly standard and probably correct, but it is still an identification rather than an unmarked source identity.
+
 But the source clock matters:
 PAULINE_CEPHAS =
 EARLY SOCIAL/AUTHORITY EVIDENCE
@@ -184,7 +190,9 @@ Mark 14 supplies:
 
 ### Pauline control
 
-Paul does not name Judas in the surviving undisputed letters. This silence is weak negative evidence because Paul's letters are occasional and non-biographical; it does not disprove a pre-Markan Judas tradition.
+Paul does not name Judas in the surviving undisputed letters.
+
+That silence is weak negative evidence because Paul's letters are occasional and rarely narrate Yeshua's final week. It must not be used to infer that no pre-Markan Judas tradition existed. This silence is weak negative evidence because Paul's letters are occasional and non-biographical; it does not disprove a pre-Markan Judas tradition.
 
 1 Corinthians 11:23 uses `paradidomi` language in the meal tradition, but that verb cannot simply be converted into an independent named-Judas witness.
 
@@ -245,7 +253,14 @@ John develops Thomas into a distinctive literary character:
 - demand for embodied verification;
 - confession.
 
-The familiar "doubting Thomas" portrait is therefore principally Johannine, not Pauline or Markan biography.
+The familiar "doubting Thomas" portrait is therefore principally Johannine literary characterization, not Pauline or Markan biography.
+
+R3 keeps three layers separate:
+- Markan roster identity;
+- Johannine literary characterization;
+- Thomasine revelatory authority trajectory.
+
+They do not by themselves establish one continuous biographical personality.
 
 ### Thomasine trajectory
 
@@ -317,14 +332,14 @@ Named early as part of the Twelve narrative, but most of the distinctive persona
 
 Uniquely among this set, he has substantial non-Christian external attestation independent of the Jesus narratives, but that external source does not independently establish his relation to Yeshua.
 
-## 9. Claims this source clock rejects as premature
+## 9. Claims this source clock cannot currently rank or promote
 
 The current source clock cannot currently rank who historically understood Yeshua best because the evidence sets are structurally incommensurable across Pauline social evidence, Gospel narrative characterization, and later revelatory dialogues.
 
 It does not support, at R3 entry:
 
-- MARY_HISTORICALLY_UNDERSTOOD_YESHUA_BETTER_THAN_PETER;
-- THOMAS_HISTORICALLY_UNDERSTOOD_YESHUA_BETTER_THAN_PETER;
+- MARY_HISTORICALLY_UNDERSTOOD_YESHUA_BETTER_THAN_PETER = NOT_CURRENTLY_RANKABLE;
+- THOMAS_HISTORICALLY_UNDERSTOOD_YESHUA_BETTER_THAN_PETER = NOT_CURRENTLY_RANKABLE;
 - JUDAS_WAS_HISTORICALLY_INNOCENT;
 - JUDAS_WAS_INVENTED;
 - PETER_COMMITTED_A_WORSE_BETRAYAL_THAN_PRESERVED;
@@ -356,6 +371,8 @@ The purpose of prioritizing Judas is to make the project's preferred suspicion h
 
 The earliest evidence does show a real and internally differentiated follower network.
 
-It does **not** yet show that the later winners misunderstood Yeshua while Mary, Judas, or Thomas preserved the authentic inner teaching.
+It does **not** yet show that the later institutional winners misunderstood Yeshua while Mary, Judas, or Thomas preserved the authentic inner teaching.
+
+Nor does it show the opposite. The evidence is not currently capable of ranking historical understanding across these figures.
 
 That proposition remains a hypothesis to be earned person by person.
