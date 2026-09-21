@@ -36,6 +36,7 @@ PLACEMENT_SCHEDULE = PLACEMENT.build_schedule()
 def make_records(rank_pairs):
     records = []
     prior = MODULE.GENESIS_HASH
+    split_point = max(1, len(rank_pairs) // 2)
     for index, (first_rank, second_rank) in enumerate(rank_pairs, start=1):
         relation = MODULE.expected_relation(first_rank, second_rank)
         side = MODULE.expected_side(relation)
@@ -48,15 +49,17 @@ def make_records(rank_pairs):
             output = token_right
         else:
             output = "INVALID"
+        session_id = "S1" if index <= split_point else "S2"
+        session_index = index if index <= split_point else index - split_point
         record = {
             "trial_id": f"T{index:05d}",
             "procedure_version": "MODE_S_TEST",
             "procedure_hash": "a" * 64,
             "timestamp_utc": f"2026-09-21T12:{index % 60:02d}:00Z",
-            "session_id": "S1" if index <= len(rank_pairs) // 2 else "S2",
+            "session_id": session_id,
             "operator_id_pseudonymous": "OP1",
             "attempt_index_global": index,
-            "attempt_index_session": index,
+            "attempt_index_session": session_index,
             "placement_block_id": placement["placement_block_id"],
             "attempt_index_block": placement["attempt_index_block"],
             "cast1_raw_state": f"ODU_{first_rank:03d}",
@@ -151,5 +154,43 @@ def test_wrong_frozen_placement_is_rejected():
     with pytest.raises(
         MODULE.CalibrationIntegrityError,
         match="frozen placement schedule",
+    ):
+        MODULE.summarize_mode_s(records, swap_replicates=100)
+
+
+def test_midstream_procedure_change_is_rejected():
+    records = make_records([(1, 2), (2, 1)])
+    records[1]["procedure_hash"] = "b" * 64
+    records[1]["event_hash"] = MODULE.compute_event_hash(records[1])
+    with pytest.raises(
+        MODULE.CalibrationIntegrityError,
+        match="midstream procedure",
+    ):
+        MODULE.summarize_mode_s(records, swap_replicates=100)
+
+
+def test_noncontiguous_session_index_is_rejected():
+    records = make_records([(1, 2), (2, 1), (3, 2), (2, 3)])
+    records[1]["attempt_index_session"] = 3
+    records[1]["event_hash"] = MODULE.compute_event_hash(records[1])
+    records[2]["prior_event_hash"] = records[1]["event_hash"]
+    records[2]["event_hash"] = MODULE.compute_event_hash(records[2])
+    records[3]["prior_event_hash"] = records[2]["event_hash"]
+    records[3]["event_hash"] = MODULE.compute_event_hash(records[3])
+    with pytest.raises(
+        MODULE.CalibrationIntegrityError,
+        match="attempt_index_session",
+    ):
+        MODULE.summarize_mode_s(records, swap_replicates=100)
+
+
+def test_closed_session_id_cannot_reappear():
+    records = make_records([(1, 2), (2, 1), (3, 2), (2, 3)])
+    records[3]["session_id"] = "S1"
+    records[3]["attempt_index_session"] = 3
+    records[3]["event_hash"] = MODULE.compute_event_hash(records[3])
+    with pytest.raises(
+        MODULE.CalibrationIntegrityError,
+        match="reappears after closure",
     ):
         MODULE.summarize_mode_s(records, swap_replicates=100)
