@@ -1,0 +1,52 @@
+schema_version: nature-of-existence.chat-continuation.v3
+status: DURABLE_NON_CANONICAL_CHECKPOINT
+created_date: 2026-09-21
+repository: thebrazenbeard/on-theo
+branch: state/the-nature-of-existence-chat-continuation-20260921-v3
+base:
+  branch: research/source-defined-outcome-narrowing-v1-20260921
+  exact_head: b592c6f87a51d2cf5a4318179b6d4f909944755f
+
+primary_checkpoint:
+  path: state/continuation/THE_NATURE_OF_EXISTENCE_CHAT_CONTINUATION_20260921_V3.md
+backup_checkpoint:
+  path: state/continuation/backups/THE_NATURE_OF_EXISTENCE_CHAT_CONTINUATION_20260921_V3_BACKUP.md
+
+restore_token: THE_NATURE_OF_EXISTENCE::RESTORE_AND_RUN::THE_NATURE_OF_EXISTENCE_CHAT_CONTINUATION_20260921_V3
+
+latest_integrated_frontier:
+  pr: 147
+  branch: research/source-defined-outcome-narrowing-v1-20260921
+  exact_head: b592c6f87a51d2cf5a4318179b6d4f909944755f
+  next_task: PUBLIC_BINARY_PROCEDURE_CALIBRATION_DESIGN
+
+critical_prs:
+  - {pr: 128, head: 6b233af2a278bf30af2ff2bb7b49e21c8e36e763}
+  - {pr: 129, head: 8eb6f5a109e59d0fdc8150795602ec1e057c8fab}
+  - {pr: 130, head: 5c8f4b1472dfb54509ecc25861cb4a2e2ef8a404}
+  - {pr: 131, head: b230ce26ff9feb95e38281eba94a28d004db0d36}
+  - {pr: 132, head: 6fc0254eba185fc01fe68cf966ab64b2ae15de62}
+  - {pr: 134, head: 7a8205191df68c2c7b867704f1dac443ab5c1c93}
+  - {pr: 135, head: b4a260f4162a139a94a0371afe64bd788f3f3b82}
+  - {pr: 136, head: 4a40f4070fe1ecd5c6ba39a51321ebbbcd490406}
+  - {pr: 137, head: 11694ca20b10c6894ff1db259f10c55db4713bd6}
+  - {pr: 139, head: ec0e961c108a0fcb0cc116ff6aea0fd33172941e}
+  - {pr: 140, head: b82bba3a5aef97040b3c5277a690b726d026743c}
+  - {pr: 146, head: af0f5f457054a3967645eb417f5d775e7f92e001}
+  - {pr: 147, head: b592c6f87a51d2cf5a4318179b6d4f909944755f}
+
+parallel_review:
+  bus_pr: 193
+  status_at_checkpoint: NO_RETURN
+  must_fresh_check_on_restore: true
+
+authority:
+  research: thebrazenbeard/on-theo
+  downstream_literary: thebrazenbeard/testament
+  reverse_promotion_from_testament: PROHIBITED
+
+protected_effects:
+  merge: NOT_AUTHORIZED
+  canonical_promotion: NOT_AUTHORIZED
+  deployment: NOT_AUTHORIZED
+  paid_compute: NOT_AUTHORIZED
