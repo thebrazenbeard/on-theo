@@ -1,0 +1,62 @@
+schema_version: on-theo.yeshua-luke17-entos-hymon-evidence.v1
+status: LEXICAL_AND_SOURCE_HISTORY_UNRESOLVED
+
+records:
+  - id: L17-GREEK-001
+    source: LUKE_17_20_21_GREEK
+    evidence_class: PRIMARY_TEXT
+    propositions:
+      - text_denies_simple_here_there_localization
+      - text_contains_entos_hymon
+    confidence: HIGH_TEXTUAL
+
+  - id: L17-INSIDE-001
+    evidence:
+      - RAMELLI_ENTOS_HYMON_SYRIAC_AND_GREEK
+      - MATTHEW_23_26_ENTOS_INTERNAL_USE
+    evidence_class:
+      - SCHOLARLY_INTERPRETATION
+      - PRIMARY_TEXT_COMPARAND
+    propositions:
+      - inside_within_is_a_serious_lexical_reading
+    confidence: HIGH_FOR_VIABILITY_NOT_EXCLUSIVITY
+
+  - id: L17-AMONG-001
+    evidence:
+      - HOLMEN_1996_ENTOS_HYMON
+      - MAJORITY_MODERN_EXEGETICAL_TRADITION
+    evidence_class: SCHOLARLY_INTERPRETATION
+    propositions:
+      - among_in_midst_is_a_serious_contextual_reading
+    confidence: HIGH_FOR_VIABILITY_NOT_EXCLUSIVITY
+
+  - id: L17-HIST-001
+    evidence_class: HISTORICAL_RECONSTRUCTION
+    propositions:
+      - lexical_solution_does_not_establish_pre_Lukan_or_Yeshua_origin
+      - verse_requires_separate_tradition_history
+    confidence: HIGH_METHOD
+
+  - id: L17-THOMAS-001
+    evidence:
+      - GOSPEL_THOMAS_3
+      - GOSPEL_THOMAS_113
+    evidence_class: PRIMARY_TEXT
+    propositions:
+      - Thomas_preserves_hidden_present_and_inside_outside_Kingdom_language
+    confidence: HIGH_FOR_THOMAS_TEXT
+    historical_Yeshua_value: UNRESOLVED
+
+claim_state:
+  ONLY_AMONG_TRANSLATION: REJECTED_AS_OVERSTRONG
+  ONLY_INSIDE_TRANSLATION: REJECTED_AS_OVERSTRONG
+  INSIDE_READING_VIABLE: SURVIVES
+  AMONG_READING_VIABLE: SURVIVES
+  NONVISIBLE_PRESENT_DIMENSION_IN_LUKE: PROBABLE
+  HISTORICAL_INWARD_MYSTICAL_CORE_FROM_LUKE17: REJECTED_AS_CURRENTLY_SUPPORTED_CONCLUSION
+  HISTORICAL_NEGATION_OF_INWARD_CORE: NOT_PROVED
+
+next_frontier: THOMAS_3_113_INDEPENDENCE_COMPARISON_V1
+
+guards:
+  - TRANSLATION_NE_METAPHYSICS
