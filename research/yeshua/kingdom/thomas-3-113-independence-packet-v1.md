@@ -242,6 +242,9 @@ circulated in early Christianity.
 They do not yet establish that:
 this was Yeshua's central original teaching.
 
+Chronology guard:
+"early Christian trajectory" here must not be read as first-generation Jesus movement. Until composition is more tightly constrained, the safer description is a second-century-or-later composition field with third-century Greek witness to relevant Thomas material.
+
 The historical inference would strengthen substantially if R2 can demonstrate:
 - independence from Luke;
 - archaic wording;
@@ -281,7 +284,7 @@ UNRESOLVED.
 COMMON_PRE_LUKAN_TRADITION:
 LIVE_HYPOTHESIS.
 
-THOMAS_AS_EVIDENCE_FOR_EARLY_INWARD_PRESENT_TRAJECTORY:
+THOMAS_AS_EVIDENCE_FOR_SECOND_CENTURY_OR_LATER_INWARD_PRESENT_CHRISTIAN_TRAJECTORY_WITH_THIRD_CENTURY_GREEK_WITNESS:
 SURVIVES.
 
 THOMAS_PROVES_HISTORICAL_YESHUA_INWARD_CORE:
