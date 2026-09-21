@@ -48,6 +48,33 @@ RANK_TABLE = module_from_spec(RANK_TABLE_SPEC)
 RANK_TABLE_SPEC.loader.exec_module(RANK_TABLE)
 RANK_TO_STATE = RANK_TABLE.rank_to_state()
 
+ENCODER_PATH = (
+    Path(__file__).resolve().parents[1]
+    / "research"
+    / "ritual-interface-exploit"
+    / "reference"
+    / "ifa_mode_s_opele_encoder.py"
+)
+ENCODER_SPEC = spec_from_file_location(
+    "ifa_mode_s_opele_encoder_for_test",
+    ENCODER_PATH,
+)
+assert ENCODER_SPEC is not None and ENCODER_SPEC.loader is not None
+ENCODER = module_from_spec(ENCODER_SPEC)
+ENCODER_SPEC.loader.exec_module(ENCODER)
+
+
+def generic_to_faces(generic):
+    return [
+        ENCODER.INSIDE_ROUGH if digit == "1" else ENCODER.OUTSIDE_SMOOTH
+        for digit in ENCODER.GENERIC_TO_PATTERN[generic]
+    ]
+
+
+def state_to_faces(state_id):
+    right, left = state_id.split("__", 1)
+    return generic_to_faces(right), generic_to_faces(left)
+
 
 def make_records(rank_pairs):
     records = []
@@ -67,6 +94,10 @@ def make_records(rank_pairs):
             output = "INVALID"
         session_id = "S1" if index <= split_point else "S2"
         session_index = index if index <= split_point else index - split_point
+        cast1_state = RANK_TO_STATE[first_rank]
+        cast2_state = RANK_TO_STATE[second_rank]
+        cast1_right_faces, cast1_left_faces = state_to_faces(cast1_state)
+        cast2_right_faces, cast2_left_faces = state_to_faces(cast2_state)
         record = {
             "trial_id": f"T{index:05d}",
             "procedure_version": "MODE_S_TEST",
@@ -78,9 +109,13 @@ def make_records(rank_pairs):
             "attempt_index_session": session_index,
             "placement_block_id": placement["placement_block_id"],
             "attempt_index_block": placement["attempt_index_block"],
-            "cast1_raw_state": RANK_TO_STATE[first_rank],
-            "cast2_raw_state": RANK_TO_STATE[second_rank],
+            "cast1_right_faces": cast1_right_faces,
+            "cast1_left_faces": cast1_left_faces,
+            "cast1_raw_state": cast1_state,
             "cast1_rank": first_rank,
+            "cast2_right_faces": cast2_right_faces,
+            "cast2_left_faces": cast2_left_faces,
+            "cast2_raw_state": cast2_state,
             "cast2_rank": second_rank,
             "pair_relation": relation,
             "selected_side": side,
@@ -214,7 +249,7 @@ def test_closed_session_id_cannot_reappear():
 
 def test_raw_state_rank_mismatch_is_rejected():
     records = make_records([(1, 2)])
-    records[0]["cast1_raw_state"] = RANK_TO_STATE[3]
+    records[0]["cast1_rank"] = 3
     records[0]["event_hash"] = MODULE.compute_event_hash(records[0])
     with pytest.raises(
         MODULE.CalibrationIntegrityError,
@@ -223,19 +258,32 @@ def test_raw_state_rank_mismatch_is_rejected():
         MODULE.summarize_mode_s(records, swap_replicates=100)
 
 
-def test_unknown_raw_state_is_rejected():
+def test_raw_state_face_mismatch_is_rejected():
     records = make_records([(1, 2)])
-    records[0]["cast2_raw_state"] = "NOT_A_FROZEN_STATE"
+    records[0]["cast2_raw_state"] = "IWORI__IWORI"
     records[0]["event_hash"] = MODULE.compute_event_hash(records[0])
     with pytest.raises(
         MODULE.CalibrationIntegrityError,
-        match="not in frozen 256-state table",
+        match="cast2_raw_state contradicts recorded faces",
+    ):
+        MODULE.summarize_mode_s(records, swap_replicates=100)
+
+
+def test_bad_face_value_is_rejected():
+    records = make_records([(1, 2)])
+    records[0]["cast1_right_faces"][0] = "UNREADABLE"
+    records[0]["event_hash"] = MODULE.compute_event_hash(records[0])
+    with pytest.raises(
+        MODULE.CalibrationIntegrityError,
+        match="faces violate frozen Opele encoder",
     ):
         MODULE.summarize_mode_s(records, swap_replicates=100)
 
 
 def test_predeclared_partial_invalid_is_retained():
     records = make_records([(1, 2)])
+    records[0]["cast2_right_faces"] = None
+    records[0]["cast2_left_faces"] = None
     records[0]["cast2_raw_state"] = None
     records[0]["cast2_rank"] = None
     records[0]["pair_relation"] = "INVALID"
