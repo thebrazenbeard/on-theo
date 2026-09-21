@@ -19,6 +19,11 @@ state_model:
       - UNRESOLVED
       - REJECTED
     nullable_before_review: true
+    semantics:
+      SURVIVES: "Survives current bounded review at the stated claim ceiling."
+      SURVIVES_NARROWED: "Only a narrower formulation survives; the superseded stronger formulation does not."
+      UNRESOLVED: "Current admitted evidence does not decide the proposition."
+      REJECTED: "Rejected as a currently supported/admissible conclusion; does not prove the logical negation historically true."
 
 required_claim_fields:
   - id
