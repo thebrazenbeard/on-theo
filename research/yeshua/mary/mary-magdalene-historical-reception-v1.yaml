@@ -1,5 +1,5 @@
 schema_version: on-theo.yeshua-mary-magdalene-historical-reception.v1
-status: SOURCE_BOUND_PENDING_HOSTILE_REVIEW
+status: FIRST_HOSTILE_REVIEW_APPLIED_SECOND_PASS_PENDING
 canonical: false
 program: THE_REAL_TESTAMENT_OF_YESHUA
 lane: R3_MARY_MAGDALENE
@@ -73,7 +73,7 @@ source_clock:
 claims:
   - id: CLM-YS-R3-MAR-001-HISTORICAL-MARY
     proposition: "A historical Mary Magdalene probably belonged to the Yeshua movement."
-    disposition: PROBABLE_TO_STRONG_PENDING_HOSTILE_REVIEW
+    disposition: PROBABLE
     evidence_class: [PRIMARY_TEXT, HISTORICAL_RECONSTRUCTION]
 
   - id: CLM-YS-R3-MAR-002-GALILEAN-FOLLOWER
@@ -92,9 +92,10 @@ claims:
     evidence_class: [UNKNOWN]
 
   - id: CLM-YS-R3-MAR-005-PROSTITUTE
-    proposition: "Mary Magdalene was historically a prostitute or is identified as such in the canonical Gospels."
-    disposition: NOT_SUPPORTED_BY_EARLIEST_SOURCES
+    proposition: "The earliest explicit sources identify Mary Magdalene as a prostitute."
+    disposition: NOT_SUPPORTED
     evidence_class: [PRIMARY_TEXT, HISTORICAL_RECONSTRUCTION]
+    private_biography_ceiling: "Whether historical Mary ever engaged in sex work is unknown; absence of an early prostitute identification is not proof of the biographical negative."
 
   - id: CLM-YS-R3-MAR-006-JOHN20
     proposition: "John preserves Mary Magdalene as an individual resurrection witness and messenger."
@@ -103,9 +104,10 @@ claims:
     historical_event_status: UNRESOLVED
 
   - id: CLM-YS-R3-MAR-007-GOSPEL-MARY-AUTHORITY
-    proposition: "The Gospel of Mary portrays Mary as a revelatory authority challenged by male disciples."
+    proposition: "The Gospel of Mary portrays its Mary as a revelatory authority challenged by male disciples."
     disposition: TEXTUALLY_STRONG_SECOND_CENTURY_RECEPTION
     evidence_class: [PRIMARY_TEXT, MANUSCRIPT_WITNESS]
+    Magdalene_identification: PROBABLE_DOMINANT_SCHOLARLY_IDENTIFICATION_NOT_TEXTUALLY_AUTOMATIC
 
   - id: CLM-YS-R3-MAR-008-HISTORICAL-PETER-CONFLICT
     proposition: "Historical Peter opposed Mary Magdalene's authority/private revelation."
@@ -169,8 +171,17 @@ scholarly_controls:
     bounded_use: "Mary authority across canonical/extracanonical texts; Gospel of Mary protagonist identification remains probable rather than logically certain."
     url: "https://academic.oup.com/edited-volume/34457/chapter-abstract/292368380"
 
+review_revision:
+  first_review_subject: 65f9db57fd99545a3939b2aa932a284e70f15080
+  first_review_artifact: reviews/yeshua-mary-magdalene-historical-reception-v1-hostile-review.md
+  principal_changes:
+    - HISTORICAL_MARY_DEMOTED_TO_PROBABLE
+    - PROSTITUTE_RESULT_REFRAMED_AS_SOURCE_IDENTIFICATION_NOT_PRIVATE_BIOGRAPHY
+    - GOSPEL_OF_MARY_MAGDALENE_IDENTIFICATION_MADE_CONDITIONAL
+    - EXTANT_CANONICAL_SEQUENCE_NE_SMOOTH_TRADITION_DEVELOPMENT
+
 next:
-  - INTERNAL_HOSTILE_REVIEW
+  - SECOND_EXACT_HEAD_INTERNAL_HOSTILE_REVIEW
   - MARKAN_WOMEN_DISCIPLESHIP_CONTROL
   - GOSPEL_OF_MARY_AUTHORITY_CONFLICT_PACKET
   - PROSTITUTE_CONFLATION_RECEPTION_PACKET
