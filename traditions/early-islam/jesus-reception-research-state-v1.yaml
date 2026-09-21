@@ -14,10 +14,15 @@ completed:
   - CANONICAL_HADITH_DESCENT_LAYER
   - HADITH_COLLECTION_EVENT_DATE_SEPARATION
   - FIRST_CENTURY_BIOGRAPHY_GUARD
+  - AL_TABARI_Q4_157_TAFSIR_LAYER
+  - MULTIPLE_SUBSTITUTION_VARIANT_CONTROL
+  - JUDAS_QURAN_TAFSIR_SEPARATION
 
 key_artifacts:
   - traditions/early-islam/jesus-reception-quran-hadith-v1.md
   - traditions/early-islam/jesus-reception-quran-hadith-v1.yaml
+  - traditions/early-islam/q4-157-tafsir-substitution-v1.md
+  - traditions/early-islam/q4-157-tafsir-substitution-v1.yaml
 
 current_results:
   quranic_positive_jesus_profile: BOUNDED_STRONG
@@ -26,9 +31,13 @@ current_results:
   canonical_hadith_future_descent: BOUNDED_STRONG_FOR_COLLECTION_LAYER
   full_descent_story_as_quran_only: NOT_ADMITTED
   islamic_reception_as_first_century_control: NOT_ADMITTED
+  classical_tafsir_substitution: BOUNDED_STRONG_BY_AL_TABARI_LAYER
+  one_uniform_named_substitute_story: NOT_ADMITTED
+  judas_named_by_quran: NOT_ADMITTED
+  muqatil_direct_readback: PENDING
 
 next_frontier:
-  - EARLY_TAFSIR_CRUCIFIXION_SUBSTITUTION_PACKET
+  - MUQATIL_Q4_157_DIRECT_READBACK
   - HADITH_DESCENT_REPORT_CLUSTER
   - ISLAMIC_ASCETIC_JESUS_SAYINGS_PACKET
   - TESTAMENT_BOOK_VI_CARRYDOWN

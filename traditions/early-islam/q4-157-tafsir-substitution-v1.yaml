@@ -1,0 +1,72 @@
+schema_version: on_theo.q4_157_tafsir_substitution.v1
+status: BOUNDED_TAFSIR_RECEPTION_REVIEW_REQUIRED
+canonical: false
+
+parent:
+  exact_head: 24be62c5af87aef0ca483b1b8cc89d360cecbb70
+
+primary_source:
+  id: ISL-TAF-TABARI-Q4-157
+  author: al_Tabari
+  death_date_ce: 923
+  evidence_class: PRIMARY_TEXT
+  role: classical_quran_commentary
+  locus: Q4_157
+
+variants:
+  - id: MASS_RESEMBLANCE_WAHB
+    status: ATTESTED_IN_AL_TABARI
+    named_substitute: false
+  - id: VOLUNTEER_COMPANION
+    status: ATTESTED_IN_AL_TABARI
+    named_substitute: variable
+  - id: SERGIUS
+    status: ATTESTED_IN_AL_TABARI
+    named_substitute: Sergius
+  - id: MUJAHID_UNNAMED_OTHER
+    status: ATTESTED_IN_AL_TABARI
+    named_substitute: false
+  - id: JUDAS_REPORTED_CLAIM
+    status: ATTESTED_IN_AL_TABARI
+    named_substitute: Judas
+    source_role: one_reported_claim_among_competing_material
+
+claims:
+  - id: Q4-TAF-V1-001
+    proposition: By al-Tabari's commentary layer, substitutionary interpretation of Q 4:157 is well established.
+    status: BOUNDED
+    confidence: strong
+  - id: Q4-TAF-V1-002
+    proposition: Classical substitution interpretation was one uniform story with one agreed substitute.
+    status: NOT_ADMITTED
+  - id: Q4-TAF-V1-003
+    proposition: The Qur'an itself names Judas as the substitute.
+    status: NOT_ADMITTED
+  - id: Q4-TAF-V1-004
+    proposition: Named substitute narratives belong to tafsir/reception rather than explicit Qur'anic wording.
+    status: BOUNDED
+    confidence: strong
+  - id: Q4-TAF-V1-005
+    proposition: Al-Tabari's tafsir independently establishes first-century crucifixion history.
+    status: NOT_ADMITTED
+  - id: Q4-TAF-V1-006
+    proposition: Al-Tabari's attributed earlier chains establish exact earlier report dating without further source criticism.
+    status: NOT_ADMITTED
+
+muqatil:
+  status: SCHOLARLY_ATTESTED_DIRECT_READBACK_PENDING
+  scholarly_control: Reynolds_2009
+
+guards:
+  - QURAN_4_157_NE_AL_TABARI_TAFSIR
+  - AL_TABARI_COLLECTION_DATE_NE_ATTRIBUTED_REPORT_DATE
+  - ISNAD_ATTRIBUTION_NE_INDEPENDENTLY_VERIFIED_EARLY_TEXT
+  - MULTIPLE_TAFSIR_VARIANTS_NE_ONE_STANDARD_STORY
+  - JUDAS_IN_TAFSIR_NE_JUDAS_IN_QURAN
+  - CLASSICAL_TAFSIR_NE_FIRST_CENTURY_EYEWITNESS
+
+next_scope:
+  - MUQATIL_Q4_157_DIRECT_READBACK
+  - HADITH_DESCENT_REPORT_CLUSTER
+  - SUNNI_SHII_EARLY_TAFSIR_COMPARISON
+  - TESTAMENT_BOOK_VI_TAFSIR_CARRYDOWN
