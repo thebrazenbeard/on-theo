@@ -1,0 +1,82 @@
+schema_version: on-theo.world-origin-comparison-schema.v2
+status: NON_CANONICAL_METHOD_SCHEMA
+supersedes:
+  - synthesis/WORLD_ORIGIN_COMPARISON_SCHEMA_V1.yaml
+
+dimensions:
+  ORIGIN_ASSERTION_MODE:
+    question: >
+      Does the source assert an origin sequence, describe generative priority,
+      preserve multiple variants, interrogate whether origin can be known,
+      describe formation from prior conditions, or explicitly deny that reality
+      has an origin event?
+    allowed_examples:
+      - INTERROGATIVE_EPISTEMIC_SUSPENSION
+      - GENERATIVE_PRIORITY_DESCRIPTION
+      - VARIANT_COSMOGONIC_NARRATIVE
+      - WORLD_FORMATION_NARRATIVE
+      - EXPLICIT_NO_ORIGIN_EVENT
+      - NOT_ADMITTED
+
+  PREEXISTING_OR_PRIOR_CONDITION:
+    question: >
+      What, if anything, is represented as prior to the familiar world-order?
+    rule: >
+      DO_NOT_FORCE_BEGINNINGLESS_REALITY_INTO_A_TEMPORAL_PRIOR_STATE.
+      A tradition may deny that there is any first moment requiring a prior
+      condition.
+
+  ORIGIN_PROCESS_MODEL:
+    question: >
+      What process is actually represented: emergence, generation, genealogy,
+      shaping, transformation, continuous beginningless change, or something
+      else?
+    rule: PROCESS_LABEL_MUST_FOLLOW_SOURCE_PROPOSITION
+
+  ORIGIN_AGENT_MODEL:
+    question: >
+      Is origin attributed to one agent, multiple agents, a non-sovereign
+      generative source, uncertain agency, no creator, or no admitted agent?
+    rule: GENERATIVE_SOURCE_NE_SOVEREIGN_CREATOR_BY_DEFAULT
+
+  MATERIAL_OR_ONTOLOGICAL_PRECONDITION:
+    question: >
+      Does the source represent prior material, beings, eternal substances,
+      conditions, or ontological categories from which later order emerges or
+      through which reality persists?
+    rule: PREEXISTENCE_NE_ONE_SHARED_SUBSTRATE
+
+  ORIGIN_KNOWLEDGE_STATUS:
+    question: >
+      How certain does the source present its own origin account or inquiry?
+    allowed_examples:
+      - ASSERTIVE_WITH_LAYER_CONTROLS
+      - VARIANT_WITHIN_CORPUS
+      - EXPLICITLY_UNCERTAIN
+      - PARTIAL_OR_UNRESOLVED
+      - ASSERTIVE_NO_ORIGIN_EVENT
+      - NOT_ADMITTED
+
+  WITNESS_AND_LAYER_STATUS:
+    question: >
+      What textual/manuscript/historical layer carries the proposition?
+    rule: COMPOSITION_NE_WITNESS_NE_MODERN_EDITION
+
+new_method_rule:
+  NO_ORIGIN_EVENT_IS_POSITIVE_DATA: >
+    A cosmology that explicitly models reality as beginningless is not a missing
+    answer to the origin question. It is a distinct answer type: the demand for
+    a first creation event is rejected by the source model itself.
+
+comparison_guards:
+  - SHARED_ORIGIN_QUESTION_NE_SHARED_ORIGIN_ACCOUNT
+  - EPISTEMIC_UNCERTAINTY_NE_ATHEISM
+  - PRIORITY_NE_PERSONAL_CREATION
+  - GENERATION_NE_OWNERSHIP_OR_COMMAND
+  - VARIANT_NARRATIVE_NE_ERROR_TO_HARMONIZE
+  - WORLD_SHAPING_NE_CREATION_EX_NIHILO
+  - BEGINNINGLESS_NE_INFINITE_PAST_CREATION_DATE
+  - NO_CREATOR_NE_NO_DEITIES
+  - PREEXISTING_CONDITION_NE_ONE_SHARED_SUBSTRATE
+  - SIMILARITY_NE_TRANSMISSION
+  - SYSTEMS_ANALOGY_IS_DOWNSTREAM
