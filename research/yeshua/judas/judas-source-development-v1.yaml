@@ -1,0 +1,123 @@
+schema_version: on-theo.yeshua-judas-source-development.v1
+status: SOURCE_BOUND_DOSSIER_HOSTILE_REVIEW_REQUIRED
+canonical: false
+program: THE_REAL_TESTAMENT_OF_YESHUA
+lane: R3_JUDAS
+
+parent:
+  branch: research/yeshua-people-source-clock-v1-20260921
+  head_at_branch_creation: facb8789bbbd0c77f0c3fa27ab71bb3d77b0557d
+  pr: 157
+
+source_clock:
+  PAUL:
+    named_Judas: false
+    paradidomi: true
+    motive: NONE
+    historical_use: NEGATIVE_SILENCE_WEAK
+  MARK:
+    named_Judas: true
+    member_of_twelve: true
+    handover: true
+    promised_money: true
+    kiss_signal: true
+    motive: UNDERDETERMINED
+  MATTHEW:
+    adds:
+      - THIRTY_SILVER
+      - REMORSE
+      - RETURN_OF_MONEY
+      - HANGING
+      - SCRIPTURAL_FULFILLMENT
+  LUKE_ACTS:
+    adds_or_reframes:
+      - SATANIC_AGENCY
+      - REPLACEMENT_NARRATIVE
+      - DISTINCT_DEATH_PROPERTY_TRADITION
+  JOHN:
+    adds_or_intensifies:
+      - THIEF_CHARACTERIZATION
+      - DEVIL_SATAN_FRAMING
+      - FOREKNOWLEDGE
+  PAPIAS:
+    evidence_class: LATER_RECEPTION_FRAGMENT
+    adds:
+      - GROTESQUE_BODY_DEATH_TRADITION
+  GOSPEL_OF_JUDAS:
+    evidence_class: LATER_CHRISTIAN_RECEPTION_AND_AUTHORITY_DISCOURSE
+    role: RADICAL_RECONFIGURATION
+    historical_exoneration_value: NOT_DIRECT
+
+claims:
+  JUDAS_EXISTED_AS_DISCIPLE:
+    disposition: PROBABLE
+  JUDAS_MEMBER_OF_EARLY_TWELVE:
+    disposition: PROBABLE_WITH_ROSTER_GUARD
+  JUDAS_PERFORMED_SOME_HANDOVER:
+    disposition: PLAUSIBLE_TO_PROBABLE
+  JUDAS_PAID:
+    disposition: SOURCE_BOUND_HISTORICAL_MODERATE_OR_LOWER
+  JUDAS_GREED_MOTIVE:
+    disposition: NOT_ESTABLISHED
+  JUDAS_SATANIC_POSSESSION_HISTORICAL_MECHANISM:
+    disposition: NOT_ADMITTED
+  JUDAS_UNIQUE_INFORMATION_FUNCTION:
+    disposition: UNRESOLVED
+  JUDAS_KISS_LITERAL_REQUIRED_IDENTIFICATION:
+    disposition: UNRESOLVED
+  JUDAS_INNOCENT:
+    disposition: NOT_ESTABLISHED
+  JUDAS_FRAMED:
+    disposition: NOT_ESTABLISHED
+  JUDAS_ACTED_ON_YESHUA_INSTRUCTIONS:
+    disposition: NOT_ESTABLISHED
+  JUDAS_ROMAN_OR_PRIESTLY_AGENT:
+    disposition: NOT_ESTABLISHED
+  LATER_JUDAS_EXTANT_PORTRAYALS_DIVERGE:
+    disposition: SURVIVES
+
+hypotheses:
+  H0_SUBSTANTIAL_MARKAN_CORE:
+    status: LIVE_PLAUSIBLE
+  H1_SMALLER_INSIDER_HANDOVER_CORE:
+    status: LIVE_PLAUSIBLE
+  H2_MEMORY_CONCENTRATION:
+    status: SPECULATIVE
+  H3_NARRATIVE_INVENTION:
+    status: LIVE_NOT_CURRENTLY_PREFERRED
+  H4_COOPERATIVE_OBEDIENT_JUDAS:
+    status: NOT_ESTABLISHED
+  H5_ROMAN_ELITE_PLANTED_AGENT:
+    status: SPECULATIVE_NO_POSITIVE_EVIDENCE
+
+scholarly_controls:
+  - id: SCH-EHRMAN-JUDAS-2006
+    title: The Lost Gospel of Judas Iscariot
+    publisher: Oxford University Press
+    url: https://academic.oup.com/book/50324
+    bounded_use: canonical_and_Gospel_of_Judas_source_comparison
+  - id: SCH-CAHANA-2017-JUDAS
+    title: Salvific Dissolution
+    publication: New Testament Studies
+    url: https://www.cambridge.org/core/journals/new-testament-studies/article/salvific-dissolution-the-mystery-of-the-betrayal-between-the-new-testament-and-the-gospel-of-judas/12548771ABEFB74333335EC12859B7A1
+    bounded_use: Pauline_silence_and_Gospel_of_Judas_evaluation_debate
+  - id: SCH-ANDRADE-2025-ARREST
+    title: Jesus' Arrest
+    book: Killing the Messiah
+    publisher: Oxford University Press
+    url: https://academic.oup.com/book/59249/chapter-abstract/499346248
+    bounded_use: arrest_party_and_policing_reconstruction
+  - id: SCH-ZEICHMANN-2010-PAPIAS-JUDAS
+    title: Papias as Rhetorician
+    publication: New Testament Studies
+    url: https://www.cambridge.org/core/journals/new-testament-studies/article/abs/papias-as-rhetorician-ekphrasis-in-the-bishops-account-of-judas-death/557823D9CA66666693A7F70144834B92
+    bounded_use: Papias_fragment_rhetorical_and_transmission_control
+
+next_frontier:
+  primary: ARREST_LOGISTICS_AND_INFORMATION_NEED_V1
+  secondary: PARADIDOMI_SEMANTIC_AND_TRADITION_HISTORY_V1
+  then: INTERNAL_HOSTILE_REVIEW
+
+guards:
+  - ASYMMETRIC_SKEPTICISM_FOR_PRO_JUDAS_HYPOTHESES
+  - NO_EXONERATION_FROM_LATER_REVERSAL
