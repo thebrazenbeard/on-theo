@@ -1,6 +1,6 @@
 # James, Brother of Yeshua — Authority / Family Dossier V1
 
-Status: R3 JAMES SOURCE-BOUND / INTERNAL HOSTILE REVIEW REQUIRED
+Status: R3 JAMES SOURCE-BOUND / FIRST HOSTILE REVIEW APPLIED / SECOND EXACT-HEAD PASS PENDING
 
 Program: **The Real Testament of Yeshua**
 
@@ -291,7 +291,30 @@ Hegesippus/Eusebius traditions about:
 
 make a **family-authority trajectory** historically worth testing.
 
-But:
+But these are later source layers.
+
+ACTS
++
+THOMAS_12
++
+HEGESIPPUS
++
+EUSEBIUS
+
+cannot be pooled to manufacture a first-generation appointment absent a source
+bridge.
+
+The family evidence must remain decomposed:
+
+FAMILY_AUTHORITY_MEMORY
+!=
+REPEATED_KIN_LEADERSHIP_TRADITION
+!=
+INFORMAL_SUCCESSION_HYPOTHESIS
+!=
+FORMAL_HEREDITARY_OFFICE.
+
+And:
 
 FAMILY_REMAINS_IMPORTANT
 !=
@@ -314,17 +337,41 @@ PLAUSIBLE / LOW-ASSUMPTION.
 ### D1 — kinship prestige contributed materially to authority
 
 Status:
-PLAUSIBLE_TO_PROBABLE.
+PLAUSIBLE_NOT_ESTABLISHED.
 
-### D2 — family succession became an informal leadership preference
+The first-generation evidence establishes:
+- kinship;
+- authority.
+
+It does not establish the causal bridge:
+AUTHORITY_BECAUSE_OF_KINSHIP.
+
+### D2 — repeated family leadership / informal preference
+
+Later sources preserve family-authority memory and repeated kin leadership
+traditions, including Symeon/Simon and relatives of Yeshua.
 
 Status:
-POSSIBLE / LATER EVIDENCE RELEVANT.
+POSSIBLE_LATER_TRAJECTORY / NOT_FIRST_GENERATION_PROOF.
+
+Required decomposition:
+
+FAMILY_AUTHORITY_MEMORY =
+SURVIVES_AS_LATER_RECEPTION.
+
+REPEATED_KIN_LEADERSHIP_TRADITION =
+SURVIVES_AS_LATER_TRADITION.
+
+INFORMAL_SUCCESSION_HYPOTHESIS =
+POSSIBLE_NOT_ESTABLISHED.
 
 ### D3 — Yeshua established a formal hereditary dynasty
 
 Status:
 NOT ESTABLISHED.
+
+"Dynamic" or "dynastic" language must not be used unless the evidence establishes
+a formal hereditary succession mechanism rather than family prominence alone.
 
 ## 10. Letter of James
 
@@ -395,7 +442,8 @@ The strongest bounded James model is:
 - an early resurrection-appearance tradition was attached to him;
 - his authority was sufficiently real that Paul treated him as a pillar and his name mattered in the Antioch conflict;
 - Josephus probably independently anchors his kinship and execution;
-- later Christians amplified James as "the Just," successor, revelatory authority, and emblem of Jewish-Christian legitimacy.
+- later Christians amplified James as "the Just," successor, revelatory authority, and emblem of Jewish-Christian legitimacy;
+- later family-authority memory makes kinship prestige historically plausible as a factor, but does not establish that kinship caused James's first-generation authority.
 
 What does **not** yet survive as historical fact:
 
@@ -407,7 +455,40 @@ What does **not** yet survive as historical fact:
 - secret teaching;
 - superior understanding of Yeshua.
 
-## 14. Highest-value discriminators
+## 14. First hostile-review revision result
+
+The first hostile review requires one major causal demotion:
+
+KINSHIP_PRESTIGE_CONTRIBUTION =
+PLAUSIBLE_NOT_ESTABLISHED.
+
+The evidence establishes both:
+JAMES_WAS_KIN
+and
+JAMES_WAS_AUTHORITATIVE.
+
+It does not establish:
+JAMES_WAS_AUTHORITATIVE_BECAUSE_HE_WAS_KIN.
+
+Later family-authority traditions increase the plausibility of kinship prestige
+as a historical factor, but remain later evidence and cannot independently
+create a first-generation causal statement.
+
+The family/succession ladder is therefore:
+
+FAMILY_AUTHORITY_MEMORY =
+LATER_SOURCE_BOUND.
+
+REPEATED_KIN_LEADERSHIP_TRADITION =
+LATER_SOURCE_BOUND.
+
+INFORMAL_SUCCESSION_HYPOTHESIS =
+POSSIBLE_NOT_ESTABLISHED.
+
+FORMAL_HEREDITARY_DYNASTY =
+NOT_ESTABLISHED.
+
+## 15. Highest-value discriminators
 
 1. Exact force of Paul's "brother of the Lord."
 2. Galatians 2:12 — what does "from James" actually establish?
@@ -419,7 +500,7 @@ What does **not** yet survive as historical fact:
 8. Letter of James authorship and historical-Jesus parallels.
 9. Later Jewish-Christian James traditions without retrojection.
 
-## Guards
+## 16. Guards
 
 - BROTHER_OF_LORD_NE_EXACT_BIOLOGICAL_CONFIGURATION
 - KINSHIP_NE_DYNASTIC_SUCCESSION
