@@ -1,5 +1,5 @@
 schema_version: on-theo.yeshua-kingdom-research-state.v4
-status: SYNOPTIC_AND_JEWISH_CONTEXT_MATRICES_ADDED
+status: FIRST_HOSTILE_REVIEW_REVISIONS_APPLIED_SECOND_REVIEW_PENDING
 supersedes_for_current_research:
   - research/yeshua/kingdom/research-state-v3.yaml
 
@@ -13,21 +13,23 @@ new_artifacts:
 current_result:
   kingdom_as_historical_core: PROBABLE
   future_eschatological: STRONG_EARLY_TRADITIONAL
-  present_inbreaking: STRONG_EARLY_TRADITIONAL
+  present_inbreaking: MODERATE_TO_STRONG_EARLY_TRADITIONAL
   social_ethics_reversal: PROBABLE
-  mixed_multi_register: STRONG
+  mixed_multi_register_early_tradition: STRONG
+  mixed_coherent_historical_Yeshua_system: PROBABLE_AT_MOST_NOT_DEMONSTRATED
   historical_inward_mystical_core: UNRESOLVED
-  thomas_inward_trajectory: SURVIVES
+  thomas_inward_trajectory: SURVIVES_AS_SECOND_CENTURY_OR_LATER_TRAJECTORY_WITH_THIRD_CENTURY_GREEK_WITNESS
   thomas_independence: UNRESOLVED
 
 strongest_result: >
-  The early source field is best explained by a mixed Kingdom complex with
-  future and present pressures inside a recognizably Jewish apocalyptic,
-  ethical and social environment. A primarily inward mystical core remains a
-  live hypothesis but is not yet the best-supported historical reconstruction.
+  The surviving early Kingdom tradition is strongly multi-register, with future
+  and present pressures inside a recognizably Jewish divine-rule, judgment,
+  restoration, ethical and social environment. This does not yet prove Yeshua
+  himself held every register as one coherent system. A primarily inward
+  mystical core remains live but unpromoted.
 
 next_frontier:
-  primary: R2_INTERNAL_HOSTILE_REVIEW
+  primary: R2_SECOND_EXACT_HEAD_HOSTILE_REVIEW
   subsequent:
     - R3_PEOPLE_AROUND_YESHUA
     - R8_INWARD_MYSTICAL_TRAJECTORY_AFTER_R7
