@@ -31,24 +31,24 @@ def test_every_attempt_is_present_once():
     ] == list(range(1, MODULE.TOTAL_ATTEMPTS + 1))
 
 
-def test_every_session_is_exactly_balanced():
+def test_every_block_is_exactly_balanced():
     schedule = MODULE.build_schedule()
     assert (
-        MODULE.SESSION_COUNT * MODULE.SESSION_SIZE
+        MODULE.BLOCK_COUNT * MODULE.BLOCK_SIZE
         == MODULE.TOTAL_ATTEMPTS
     )
-    for session_index in range(MODULE.SESSION_COUNT):
+    for block_index in range(MODULE.BLOCK_COUNT):
         block = schedule[
-            session_index * MODULE.SESSION_SIZE
-            : (session_index + 1) * MODULE.SESSION_SIZE
+            block_index * MODULE.BLOCK_SIZE
+            : (block_index + 1) * MODULE.BLOCK_SIZE
         ]
         assert (
             sum(row["token_left"] == "A" for row in block)
-            == MODULE.A_LEFT_PER_SESSION
+            == MODULE.A_LEFT_PER_BLOCK
         )
         assert (
             sum(row["token_right"] == "A" for row in block)
-            == MODULE.A_LEFT_PER_SESSION
+            == MODULE.A_LEFT_PER_BLOCK
         )
 
 
