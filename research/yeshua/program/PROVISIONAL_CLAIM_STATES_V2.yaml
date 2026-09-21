@@ -136,9 +136,10 @@ claims:
   - id: JIC-008
     proposition: "Thomas was reluctant to participate in a betrayal or Roman operation."
     lifecycle_state: PROPOSED
-    disposition: REJECTED
-    current_ceiling: "No admitted source currently supports this historical proposition."
-    independent_review_required_before_reopening: true
+    disposition: UNRESOLVED
+    legacy_assessment: UNKNOWN
+    current_ceiling: "No admitted source currently supports this historical proposition; absence of support is not proof of the opposite."
+    independent_review_required_before_any_promotion: true
     baseline_eligibility:
       - NEITHER
 
