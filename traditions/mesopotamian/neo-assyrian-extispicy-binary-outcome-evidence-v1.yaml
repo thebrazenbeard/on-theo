@@ -1,0 +1,88 @@
+schema_version: on-theo.mesopotamian-neo-assyrian-binary-outcome-evidence.v1
+status: NON_CANONICAL_PRIMARY_TEXT_ORACLE_CONTROL
+base:
+  pr: 139
+  exact_head: ec0e961c108a0fcb0cc116ff6aea0fd33172941e
+packet: traditions/mesopotamian/neo-assyrian-extispicy-binary-outcome-packet-v1.md
+
+source_controls:
+  saa4:
+    editor: Ivan_Starr
+    title: Queries_to_the_Sungod_Divination_and_Politics_in_Sargonid_Assyria
+    series: State_Archives_of_Assyria_4
+    year: 1990
+    online_corpus: SAAo_ORACC
+
+records:
+  - id: MESO-SAA4-149-BINARY-001
+    evidence_class:
+      - PRIMARY_TEXT
+      - TABLET_WITNESS
+      - CRITICAL_EDITION
+    source_locus:
+      saa: SAA_04_149
+      oracc_cdli: P237797
+    proposition: >
+      The query asks whether Esarhaddon should install Sin-nadin-apli in the
+      Succession Palace and explicitly requests a firm positive answer and
+      favorable case from Shamash.
+    supports:
+      - SOURCE_DEFINED_OUTCOME_PRECISION
+      - FINITE_POLARITY_ORACLE_MODEL
+    confidence: HIGH_FOR_TEXTUAL_FORM
+
+  - id: MESO-SAA4-051-BINARY-001
+    evidence_class:
+      - PRIMARY_TEXT
+      - TABLET_WITNESS
+      - CRITICAL_EDITION
+    source_locus:
+      saa: SAA_04_051
+      oracc_cdli: P237461
+    proposition: >
+      The query asks whether named enemies will capture Kilman and requests
+      a firm positive answer and favorable/propitious omens if confirmed.
+    supports:
+      - SOURCE_DEFINED_OUTCOME_PRECISION
+      - FINITE_POLARITY_ORACLE_MODEL
+    confidence: HIGH_FOR_TEXTUAL_FORM
+
+  - id: MESO-SAA4-VALIDITY-001
+    evidence_class:
+      - PRIMARY_TEXT
+      - CRITICAL_EDITION
+    proposition: >
+      SAA 4 query formularies explicitly neutralize or disregard possible
+      contamination, defective animal, practitioner impurity, and formulation
+      errors.
+    supports:
+      - PROCEDURAL_VALIDITY_AND_CONTAMINATION_MODEL
+      - RITUAL_ERROR_MODEL
+    confidence: HIGH_FOR_TEXTUAL_FORM
+
+  - id: MESO-IFA-COMPARISON-001
+    evidence_class:
+      - PROJECT_INFERENCE
+    proposition: >
+      Binary or mutually exclusive divinatory output is not uniquely diagnostic
+      because both Ifa and Neo-Assyrian royal divination can formulate finite
+      alternative questions.
+    supports:
+      - CONVERGENT_DECISION_UTILITY
+      - NEGATIVE_CONTROL_FOR_BINARY_RARITY
+    confidence: BOUNDED
+
+axes:
+  SOURCE_DEFINED_OUTCOME_PRECISION: BOUNDED_STRONG
+  FINITE_POLARITY_ORACLE_MODEL: BOUNDED_STRONG
+  PROCEDURAL_VALIDITY_AND_CONTAMINATION_MODEL: BOUNDED_STRONG
+  PROSPECTIVE_SCOREABILITY: HIGH_AS_STRUCTURAL_ABSTRACTION
+  LITERAL_MODERN_TESTABILITY: NOT_ADMITTED
+  EMPIRICAL_ANOMALOUS_INFORMATION: NONE_ESTABLISHED
+
+guards:
+  - EXTISPICY_NE_SAFE_MODERN_REPLICATION
+  - FIRM_POSITIVE_ANSWER_NE_VERIFIED_ACCURACY
+  - BINARY_FORM_NE_HIDDEN_INTERFACE
+  - FAVORABLE_OMEN_AGGREGATION_NE_FAIR_COIN
+  - CONVERGENT_DECISION_UTILITY_REMAINS_LIVE

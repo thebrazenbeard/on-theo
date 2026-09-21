@@ -1,0 +1,52 @@
+schema_version: on-theo.mesopotamian-research-state.v1
+status: NEO_ASSYRIAN_EXTISPICY_BINARY_OUTCOME_PACKET_COMPLETE_NON_CANONICAL
+
+base:
+  pr: 139
+  branch: research/ritual-interface-clause-discriminators-v1-20260920
+  exact_head: ec0e961c108a0fcb0cc116ff6aea0fd33172941e
+
+new_artifacts:
+  - traditions/mesopotamian/neo-assyrian-extispicy-binary-outcome-packet-v1.md
+  - traditions/mesopotamian/neo-assyrian-extispicy-binary-outcome-evidence-v1.yaml
+
+source_loci:
+  - SAA_04_149_P237797
+  - SAA_04_051_P237461
+
+strongest_results:
+  - >
+    Neo-Assyrian royal extispicy uses pre-formulated concrete questions and
+    explicitly requests firm positive/favorable answers.
+  - >
+    The same source family contains detailed procedural-contamination and
+    formulation-error clauses.
+  - >
+    Binary/polarized religious divination is therefore not unique to Ifa and is
+    readily explained in part by convergent decision utility.
+  - >
+    The historical procedure is not eligible for literal modern reproduction.
+  - >
+    No anomalous information transfer is established.
+
+comparison_contribution:
+  outcome_narrowing:
+    status: HIGH_INFORMATION_ANCIENT_COMPARATOR
+  binary_output_rarity:
+    status: WEAKENED
+  procedural_brittleness_plus_narrow_output:
+    status: STRENGTHENED_HISTORICALLY
+  hidden_interface:
+    status: NONE_ESTABLISHED
+
+next_frontiers:
+  - SAA4_answer_aggregation_rule_matrix
+  - extispicy_query_outcome_resolution_cases
+  - compare_preformulated_binary_oracles_across_Ifa_and_Assyria
+  - identify_safe_source_family_with_both_narrow_output_and_safe_literal_parameter_contrast
+
+guards:
+  - MESOPOTAMIAN_NE_SUMERIAN
+  - NEO_ASSYRIAN_NE_ALL_MESOPOTAMIAN_DIVINATION
+  - BINARY_ORACLE_NE_EMPIRICAL_TRUTH
+  - HISTORICAL_ANIMAL_RITUAL_NE_MODERN_REPLICATION
