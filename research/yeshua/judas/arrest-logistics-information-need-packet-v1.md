@@ -75,9 +75,10 @@ JUDAS_FUNCTION =
 LOCATION_TIMING_AWAY_FROM_CROWD
 
 is:
-PLAUSIBLE.
+PLAUSIBLE_BOUNDED_OPERATIONAL_MODEL.
 
-It is not established independently of the passion narrative.
+It is not established independently of the passion narrative and should not be
+called the recovered historical function before R4 source/policing controls.
 
 ## 4. Location function
 
@@ -93,8 +94,9 @@ AUTHORITIES_COULD_NOT_RECOGNIZE_YESHUA.
 Current result:
 
 LOCATION_TIMING_INFORMATION
-is a stronger logistical hypothesis than
-FACIAL_IDENTIFICATION_NECESSITY.
+is an economical logistical hypothesis relative to
+FACIAL_IDENTIFICATION_NECESSITY,
+but the historical ranking remains provisional PROJECT_INFERENCE.
 
 ## 5. Identification function
 
@@ -251,7 +253,10 @@ WEAK / NOT REQUIRED BY CURRENT EVIDENCE.
 Judas supplied where/when Yeshua could be seized with minimal public disruption.
 
 Status:
-PLAUSIBLE / CURRENTLY STRONGEST LOGISTICAL MODEL.
+PLAUSIBLE_BOUNDED_OPERATIONAL_MODEL.
+
+It is currently one of the most economical models among those tested, but that
+ranking is PROJECT_INFERENCE rather than historically demonstrated fact.
 
 ### M2 — Access/confirmation
 
@@ -310,7 +315,10 @@ is also too strong.
 
 ## 14. Strongest current result
 
-IF_A_HISTORICAL_INSIDER_ASSISTED_YESHUA'S_ARREST_THE_MOST_PLAUSIBLE_FUNCTION_AT_CURRENT_EVIDENCE_IS_NOT_REVEALING_AN_UNKNOWN_PUBLIC_IDENTITY_BUT_FACILITATING_A_CONTROLLED_ARREST_BY_SUPPLYING_LOCATION_TIMING_ACCESS_OR_TARGET_CONFIRMATION_AWAY_FROM_CROWDS.
+IF_A_HISTORICAL_INSIDER_ASSISTED_YESHUA'S_ARREST,
+LOCATION_TIMING_ACCESS_OR_TARGET_CONFIRMATION_AWAY_FROM_CROWDS_IS_A_PLAUSIBLE_BOUNDED_OPERATIONAL_MODEL.
+
+THE_CURRENT_EVIDENCE_DOES_NOT_RECOVER_JUDAS'S_HISTORICAL_JOB_DESCRIPTION_OR_ESTABLISH_THIS_MODEL_AS_THE_UNIQUE_OR_STRONGEST_HISTORICAL_EXPLANATION.
 
 ## 15. Next discriminator
 
