@@ -1,0 +1,48 @@
+schema_version: on-theo.nonabrahamic-comparison-readiness.v34
+status: NON_CANONICAL_RESEARCH_AUDIT
+supersedes_for_current_research:
+  - synthesis/NON_ABRAHAMIC_COMPARISON_READINESS_V33.yaml
+
+latest_breadth_unit:
+  jain: 4768c46b406df4495ac7db73f5f18dec487f8c8c
+
+jain_comparison_eligible_bounded:
+  - DOCUMENTARY_MEMORY_MODEL
+  - PERSON_OR_SELF_MODEL
+  - CAUSAL_ORDER_TYPE
+  - POSTMORTEM_PATH_MODEL
+  - TRANSFORMATION_MODEL
+  - WORLD_ORIGIN_MODEL
+  - RITUAL_ORDER_MODEL
+  - INSTITUTIONALIZATION_MODEL
+  - RELATIONAL_ORDER_MODEL
+
+jain_partial:
+  - FATE_CONSTRAINT_MODEL
+  - KNOWLEDGE_OR_DISCLOSURE_MODEL
+
+world_origin:
+  test: synthesis/WORLD_ORIGIN_CROSS_TRADITION_TEST_V2.md
+  schema: synthesis/WORLD_ORIGIN_COMPARISON_SCHEMA_V2.yaml
+  status: FIVE_LANE_EXPANDED
+  new_subtype: BEGINNINGLESS_UNCREATED_COSMOS
+  strongest_result: >
+    A neutral origin schema must allow an explicit denial of any first origin
+    event rather than presupposing that every cosmology answers who or what
+    created the world.
+
+new_method_results:
+  - NO_ORIGIN_EVENT_IS_POSITIVE_DATA
+  - CREATOR_THEISM_IS_NOT_A_NEUTRAL_COMPARATIVE_DEFAULT
+  - PRIOR_CONDITION_CAN_BE_NOT_APPLICABLE_UNDER_BEGINNINGLESS_MODEL
+  - DEITY_PRESENCE_NE_CREATOR_FUNCTION
+
+next_frontier:
+  primary: PERSON_SELF_CROSS_TRADITION_EXPANSION_WITH_JAIN
+  subsequent:
+    - POSTMORTEM_PATH_CROSS_TRADITION_EXPANSION_WITH_JAIN
+    - POST_JAIN_GLOBAL_GAP_AUDIT_V1
+
+guards:
+  - INTERNAL_METAPHYSICS_NE_EMPIRICAL_PROOF
+  - HUMAN_PLACE_INFERENCE_REQUIRES_SEPARATE_SYNTHESIS
