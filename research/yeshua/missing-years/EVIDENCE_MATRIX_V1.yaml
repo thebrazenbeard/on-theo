@@ -38,7 +38,7 @@ claims:
     claim_ceiling: Exact craft specialty unresolved.
 
   - id: MY-004
-    proposition: Yeshua worked in Sepphoris.
+    proposition: Yeshua personally entered or worked in Sepphoris.
     evidence_class:
       - MATERIAL_EVIDENCE_CONTEXT
       - PROJECT_INFERENCE
@@ -47,13 +47,13 @@ claims:
     claim_ceiling: Proximity and plausibility only.
 
   - id: MY-005
-    proposition: Jewish men were normally required to be married by age eighteen.
+    proposition: A later age-eighteen marriage prescription can function as a universal first-century Palestinian Jewish male demographic rule.
     evidence_class:
       - LATER_TRADITION
       - SCHOLARLY_INTERPRETATION
     state: REJECTED
     confidence: HIGH
-    rationale: Later rabbinic aphorism cannot function as a universal first-century demographic rule.
+    rationale: Prescriptive ideal, legal/social expectation, and observed demographic age must be kept distinct.
 
   - id: MY-006
     proposition: Yeshua was married.
@@ -99,8 +99,8 @@ claims:
     dependencies:
       - MY-010
     state: SURVIVES_NARROWED
-    confidence: MODERATE
-    claim_ceiling: Cannot prove absence.
+    confidence: MODERATE_LOW
+    claim_ceiling: Applies only to a publicly prominent or movement-relevant spouse/offspring; cannot prove absence.
 
   - id: MY-012
     proposition: Adult male Jewish celibacy was possible in the period.
@@ -114,13 +114,13 @@ claims:
     claim_ceiling: Does not imply Yeshua was Essene.
 
   - id: MY-013
-    proposition: Yeshua received scriptural formation.
+    proposition: Yeshua plausibly acquired some Jewish scriptural/religious formation by the time of his public career.
     evidence_class:
       - PRIMARY_TEXT
       - HISTORICAL_RECONSTRUCTION
     state: SURVIVES_NARROWED
-    confidence: MODERATE_HIGH
-    claim_ceiling: Exact literacy, schooling, and reading/writing competence unresolved.
+    confidence: MODERATE
+    claim_ceiling: Timing within the missing years, literacy, schooling, and reading/writing competence are unresolved.
 
   - id: MY-014
     proposition: Yeshua had an extended apprenticeship or discipleship under John the Baptist.
@@ -138,7 +138,8 @@ claims:
       - SPECULATIVE_MODEL
     state: REJECTED
     confidence: HIGH
-    claim_ceiling: Rejected as early-source-supported conclusion, not logically impossible.
+    lifecycle_semantics: REJECTED_AS_EARLY_SOURCE_SUPPORTED_CONCLUSION
+    claim_ceiling: Not logically impossible; no early-source support identified.
 
 downstream:
   testament_rule: >
