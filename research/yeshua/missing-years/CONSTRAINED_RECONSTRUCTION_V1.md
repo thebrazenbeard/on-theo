@@ -82,11 +82,13 @@ YESHUA_WAS_A_MASTER_CARPENTER.
 
 Sepphoris was geographically close to Nazareth and underwent Herodian/Antipian development during Yeshua's lifetime.
 
-This makes travel or work contact plausible for a Galilean craftsperson.
+This makes personal contact possible for a regionally mobile Galilean craftsperson.
 
 But:
 
 SEPPHORIS_PROXIMITY = MATERIAL/HISTORICAL CONTEXT.
+
+YESHUA_PERSONALLY_ENTERED_SEPPHORIS = UNESTABLISHED.
 
 YESHUA_WORKED_IN_SEPPHORIS = PROJECT INFERENCE / PLAUSIBLE BUT UNESTABLISHED.
 
@@ -172,9 +174,10 @@ DIRECT_DESCENDANTS_OF_YESHUA_ARE_NOT_COMPARABLY_ATTESTED.
 
 Current ceiling:
 
-MODEST_LATE_NEGATIVE_PRESSURE_ONLY.
+VERY_WEAK_LATE_NEGATIVE_CONTROL_ONLY.
 
-It cannot establish that Yeshua had no children.
+The tradition establishes only that some collateral kin-memory survived.
+Its silence cannot establish that Yeshua had no children and should not carry substantial independent weight.
 
 ## 9. Celibacy control
 
@@ -203,8 +206,11 @@ Therefore Yeshua's later scriptural competence does not by itself prove:
 
 Current admission:
 
-SCRIPTURAL_FORMATION =
-PROBABLE.
+SOME_JEWISH_SCRIPTURAL_RELIGIOUS_FORMATION_BY_PUBLIC_CAREER =
+PLAUSIBLE / MODERATE.
+
+MISSING_YEARS_TIMING_OF_THAT_FORMATION =
+UNRESOLVED.
 
 EXACT_EDUCATIONAL_PATH =
 UNRESOLVED.
@@ -230,22 +236,25 @@ PROBABLE.
 EXTENDED_DISCIPLESHIP_UNDER_JOHN =
 SERIOUS_HYPOTHESIS / UNRESOLVED.
 
-## 12. Constrained developmental model
+## 12. Constrained developmental possibility map
 
-The strongest currently supportable sequence is:
+The evidence does not recover a continuous chronology.
 
-NAZARETH/FAMILY EMBEDDEDNESS
-→ MANUAL CRAFT / HOUSEHOLD ADULTHOOD
-→ JEWISH SCRIPTURAL AND RELIGIOUS FORMATION
-→ ORDINARY GALILEAN SOCIAL/ECONOMIC EXPOSURE
-→ CONTACT WITH JOHN THE BAPTIST
-→ EMERGENCE OF INDEPENDENT PUBLIC ACTIVITY.
+The following are independently bounded elements that could contribute to a developmental reconstruction:
 
-Every arrow after the first two remains a reconstruction with different confidence ceilings.
+- probable Nazareth/Galilean embeddedness;
+- probable manual-craft association;
+- ordinary household/social/economic participation as contextual expectation;
+- some degree of Jewish scriptural/religious formation by the public career;
+- probable eventual contact with John the Baptist;
+- later independent public activity.
+
+These items are NOT a recovered sequence.
+No arrow between them is admitted as a documented event unless independently supported.
 
 ## 13. Explicit non-admissions
 
-Not admitted as historical conclusions:
+Not admitted as early-source-supported historical conclusions:
 - India/Tibet travel;
 - Britain travel;
 - Egyptian mystery-school training;
