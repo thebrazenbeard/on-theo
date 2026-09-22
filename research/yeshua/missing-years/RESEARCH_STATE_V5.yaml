@@ -1,0 +1,62 @@
+schema_version: on-theo.yeshua-missing-years-state.v5
+status: INTERNAL_HOSTILE_REVIEWED_WITH_LATER_SOURCE_EXTENSION
+supersedes_for_current_research:
+  - research/yeshua/missing-years/RESEARCH_STATE_V4.yaml
+
+branch:
+  name: research/yeshua-missing-years-constrained-context-v1-20260922
+  pr: 163
+  stacked_on: research/yeshua-early-source-constrained-baseline-v1-20260921
+  base_exact_head: 7b5aa8f3f93c31a69c1d324004feace9cb275d4f
+
+review_chain:
+  missing_years_core:
+    hostile_1_subject: e3e4d9566aa8a34fd7e5f0b10a1fc9df49250b9a
+    hostile_1: CHANGES_REQUIRED
+    hostile_2_subject: d21d9b753418e099e4dca230b99f3931be1c8783
+    hostile_2: INTERNAL_HOSTILE_PASS_WITH_GUARDS
+  later_source_extension:
+    hostile_3_subject: adfab9fa81fcebf3ef963366640740ab67c17213
+    hostile_3: CHANGES_REQUIRED_NARROW
+    hostile_4_subject: 5c8a07484e1d61ab401b291db98f02c134ff2efa
+    hostile_4: INTERNAL_HOSTILE_PASS_WITH_GUARDS
+  independent_review: NOT_DONE
+
+current_surviving_floor:
+  narrative_gap: NARRATIVE_SILENCE_NOT_DEMONSTRATED_EXCISION
+  Nazareth: FIRST_CENTURY_JEWISH_GALILEAN_CONTEXT_MATERIALLY_COMPATIBLE
+  occupation: MANUAL_CRAFT_ASSOCIATION_PROBABLE_EXACT_TRADE_UNRESOLVED
+  Sepphoris: NEARBY_CONTEXT_PERSONAL_CONTACT_UNESTABLISHED
+  marital_status: UNRESOLVED
+  wife_trace: NO_CONTROLLED_EARLY_DIRECT_TRACE_IDENTIFIED
+  child_trace: NO_CONTROLLED_EARLY_DIRECT_TRACE_IDENTIFIED
+  suppression_trace: NO_POSITIVE_TRACE_IDENTIFIED
+  Mary: SIGNIFICANT_DISCIPLE_WITNESS_AND_LATER_AUTHORITY_MEMORY
+  Mary_marriage: NO_CONTROLLED_EARLY_ATTESTATION
+  Mary_prostitute: LATER_RECEPTION_NOT_EARLY_BIOGRAPHY
+  Mark_son_of_Mary: STIGMA_POSSIBLE_NOT_ESTABLISHED
+  Panthera: LATE_SECOND_CENTURY_COUNTERTRADITION_HISTORICAL_PATERNITY_UNRESOLVED
+  Joseph_death: PLAUSIBLE_INFERENCE_NOT_ESTABLISHED
+  John_association: PROBABLE
+  John_extended_discipleship: UNRESOLVED
+  India_Tibet: NO_CONTROLLED_ANCIENT_TRACE_IDENTIFIED
+
+downstream_testament_constraint:
+  historical_floor_may_inform_characterization: true
+  specific_missing_years_events_without_source_binding: FICTIONAL_LITERARY_CONSTRUCTION
+  uncertainty_must_be_preserved: true
+
+next_frontier:
+  primary: TESTAMENT_MISSING_YEARS_DEVELOPMENTAL_OPTION_MATRIX_V1
+  research_followups:
+    - JOHN_TO_YESHUA_TEACHING_DIFFERENTIATION_TEST
+    - NAZARETH_REJECTION_AND_FAMILY_CONFLICT_SOURCE_STRATIGRAPHY
+    - YOUNG_ADULT_MARRIAGE_CELIBACY_BAYESIAN_NEGATIVE_EVIDENCE_TEST
+    - INDEPENDENT_EXACT_HEAD_REVIEW
+
+guards:
+  - INTERNAL_REVIEW_NE_INDEPENDENT_REVIEW
+  - CONTEXT_NE_BIOGRAPHY
+  - POSSIBILITY_NE_EVENT
+  - LATER_TRADITION_NE_BASELINE_A
+  - FICTION_NE_RESEARCH_EVIDENCE

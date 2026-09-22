@@ -1,0 +1,32 @@
+schema_version: on-theo.yeshua-missing-years-state.v3
+status: HOSTILE_REVIEW_1_REVISED_PENDING_REVIEW_2
+supersedes_for_current_research:
+  - research/yeshua/missing-years/RESEARCH_STATE_V2.yaml
+
+branch:
+  name: research/yeshua-missing-years-constrained-context-v1-20260922
+  stacked_on: research/yeshua-early-source-constrained-baseline-v1-20260921
+  base_exact_head: 7b5aa8f3f93c31a69c1d324004feace9cb275d4f
+
+hostile_review_1:
+  artifact: reviews/yeshua-missing-years-constrained-context-v1-hostile-review-1.md
+  subject_head: e3e4d9566aa8a34fd7e5f0b10a1fc9df49250b9a
+  disposition: CHANGES_REQUIRED
+  revisions_applied:
+    - AGE_18_CLAIM_NARROWED_TO_DEMOGRAPHIC_MISUSE
+    - SCRIPTURAL_FORMATION_CLAIM_NARROWED
+    - DEVELOPMENTAL_SEQUENCE_RECAST_AS_NONCHRONOGRAPHIC_MAP
+    - HEGESIPPUS_NEGATIVE_WEIGHT_DOWNGRADED
+    - SEPPHORIS_PERSONAL_CONTACT_EXPLICITLY_UNESTABLISHED
+    - TRAVEL_REJECTED_LIFECYCLE_SEMANTICS_CLARIFIED
+
+next_gate:
+  primary: HOSTILE_EXACT_HEAD_REVIEW_2
+  subsequent:
+    - STACKED_DRAFT_PR
+    - TESTAMENT_DEVELOPMENTAL_OPTION_MATRIX
+
+guards:
+  - INTERNAL_REVIEW_NE_INDEPENDENT_REVIEW
+  - CONTEXT_NE_BIOGRAPHY
+  - POSSIBILITY_NE_EVENT

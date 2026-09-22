@@ -1,0 +1,29 @@
+schema_version: on-theo.yeshua-missing-years-state.v1
+status: SOURCE_BOUND_FIRST_PASS
+
+branch:
+  name: research/yeshua-missing-years-constrained-context-v1-20260922
+  stacked_on: research/yeshua-early-source-constrained-baseline-v1-20260921
+  base_exact_head: 7b5aa8f3f93c31a69c1d324004feace9cb275d4f
+
+artifacts:
+  reconstruction: research/yeshua/missing-years/CONSTRAINED_RECONSTRUCTION_V1.md
+  context: research/yeshua/missing-years/NAZARETH_SEPPHORIS_CONTEXT_V1.md
+  marriage: research/yeshua/missing-years/MARRIAGE_HOUSEHOLD_CONTROL_V1.md
+  john: research/yeshua/missing-years/JOHN_BRIDGE_HYPOTHESIS_V1.md
+  evidence_matrix: research/yeshua/missing-years/EVIDENCE_MATRIX_V1.yaml
+
+current_frontier:
+  - FAMILY_ECONOMY_AND_JOSEPH_ABSENCE_CONTROL
+  - GALILEAN_MOBILITY_AND_TRADE_CONTROL
+  - SEXUALITY_COURTSHIP_AND_HOUSEHOLD_NORMS
+  - JOHN_ASSOCIATION_SOURCE_STRATIGRAPHY
+  - HOSTILE_EXACT_HEAD_REVIEW
+
+current_guards:
+  - NARRATIVE_SILENCE_NE_DEMONSTRATED_SUPPRESSION
+  - SOCIAL_NORM_NE_PERSONAL_BIOGRAPHY
+  - ARCHAEOLOGICAL_CONTEXT_NE_PERSONAL_IDENTIFICATION
+  - PLAUSIBILITY_NE_ATTESTATION
+  - LATER_FAMILY_MEMORY_NE_FIRST_CENTURY_DIRECT_EVIDENCE
+  - TESTAMENT_FICTION_NE_ON_THEO_EVIDENCE

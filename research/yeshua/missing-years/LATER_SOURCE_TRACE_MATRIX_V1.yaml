@@ -1,0 +1,155 @@
+schema_version: on-theo.yeshua-missing-years-later-source-trace.v1
+status: SOURCE_BOUND_LATER_TRADITION_SURVEY
+
+scope:
+  purpose: >
+    Test whether major later Christian, Jewish, pagan, or modern traditions
+    preserve independent evidence for Yeshua's missing years, spouse, child,
+    travel, or deliberate suppression.
+  baseline_effect: NONE_WITHOUT_SEPARATE_PROMOTION_REVIEW
+
+records:
+  - id: LST-IGT-001
+    source: Infancy_Gospel_of_Thomas
+    evidence_class: LATER_TRADITION
+    approximate_layer: SECOND_CENTURY_AND_LATER_MANUSCRIPT_TRADITION
+    relevant_content: childhood_events_roughly_age_5_to_12
+    trace_of_age_12_30: NO
+    trace_of_wife: NO
+    trace_of_child: NO
+    use: memory_gap_filling_control
+
+  - id: LST-PJ-001
+    source: Protoevangelium_of_James
+    evidence_class: LATER_TRADITION
+    approximate_layer: SECOND_CENTURY
+    relevant_content:
+      - Mary_childhood
+      - Joseph_older_widower_model
+      - prior_sons_family_configuration
+    trace_of_age_12_30: NO
+    trace_of_wife: NO
+    trace_of_child: NO
+    use: family_memory_development_control
+
+  - id: LST-GMARY-001
+    source: Gospel_of_Mary
+    evidence_class: LATER_NONCANONICAL_CHRISTIAN_TEXT
+    relevant_content:
+      - Mary_privileged_revelation
+      - Mary_teacher
+      - Peter_Andrew_conflict
+    trace_of_wife: NO
+    trace_of_child: NO
+    use: Mary_authority_memory
+    guard: PRIVILEGED_REVELATION_NE_MARRIAGE
+
+  - id: LST-GPHIL-001
+    source: Gospel_of_Philip
+    evidence_class: LATER_NONCANONICAL_CHRISTIAN_TEXT
+    relevant_content:
+      - companion_language
+      - intimacy_or_kissing_tradition
+      - bridal_chamber_symbolism
+    historical_marriage_value: NOT_ESTABLISHED
+    scholarly_disagreement:
+      - some_read_literary_Jesus_as_married_to_Mary
+      - others_read_privileged_revelation_not_marriage
+    trace_of_first_century_wife: NO_CONTROLLED_TRACE
+    trace_of_child: NO
+    guard: LITERARY_THEOLOGICAL_RELATION_NE_FIRST_CENTURY_BIOGRAPHY
+
+  - id: LST-CELSUS-001
+    source: Celsus_via_Origen_Contra_Celsum
+    evidence_class:
+      - LATER_POLEMICAL_COUNTERTRADITION
+      - MEDIATED_WITNESS
+    approximate_date: LATE_SECOND_CENTURY_CELSUS
+    relevant_content:
+      - maternal_adultery_accusation
+      - Panthera_paternity
+    trace_of_missing_years: NO
+    trace_of_Yeshua_wife: NO
+    trace_of_Yeshua_child: NO
+    target: Yeshua_own_parentage
+    state: LATE_COUNTERTRADITION_ADMITTED_WITHOUT_HISTORICAL_PATERNITY_PROMOTION
+
+  - id: LST-TALMUD-001
+    source: Rabbinic_Yeshu_traditions
+    evidence_class: LATER_RABBINIC_POLEMICAL_MEMORY
+    relevant_content:
+      - magic_or_sorcery
+      - deviance
+      - execution
+      - disputed_parentage
+      - Egypt_in_some_traditions
+    chronological_control: REQUIRED
+    trace_of_age_12_30: NOT_SECURE
+    trace_of_wife: NO_CONTROLLED_EARLY_TRACE
+    trace_of_child: NO_CONTROLLED_EARLY_TRACE
+
+  - id: LST-TY-001
+    source: Toledot_Yeshu
+    evidence_class: LATER_JEWISH_POLEMICAL_NARRATIVE
+    textual_state: MULTIPLE_RECENSIONS_PROTEAN
+    ancient_motif_possibility: YES_FEATURE_BY_FEATURE_ONLY
+    trace_of_age_12_30: NO_CONTROLLED_BIOGRAPHICAL_RECOVERY
+    trace_of_wife: NO_CONTROLLED_EARLY_TRACE
+    trace_of_child: NO_CONTROLLED_EARLY_TRACE
+    trace_of_india_tibet: NO
+    guard: ANCIENT_MOTIF_NE_ANCIENT_WHOLE_TEXT
+
+  - id: LST-HEGESIPPUS-001
+    source: Hegesippus_via_Eusebius
+    evidence_class: LATER_CHRISTIAN_FAMILY_MEMORY
+    relevant_content: descendants_of_Jude_relatives_of_Lord
+    trace_of_Yeshua_child: NONE
+    evidentiary_value_of_silence: VERY_WEAK_NEGATIVE_CONTROL
+    guard: COLLATERAL_KIN_MEMORY_NE_EXHAUSTIVE_GENEALOGY
+
+  - id: LST-GJW-001
+    source: Gospel_of_Jesus_Wife_fragment
+    evidence_class: MODERN_FORGERY_EVIDENCE
+    ancient_evidence_status: EXCLUDED
+    reason: strong_textual_evidence_of_modern_derivation_from_Coptic_Thomas_edition
+
+  - id: LST-NOTOVITCH-001
+    source: Nicolas_Notovitch_Life_of_Saint_Issa
+    evidence_class: MODERN_LOST_YEARS_LEGEND
+    first_attestation: NINETEENTH_CENTURY
+    controlled_ancient_manuscript: NONE_PRODUCED
+    trace_of_ancient_india_travel: NO
+    state: REJECTED_AS_ANCIENT_SOURCE
+
+aggregate:
+  wife:
+    controlled_early_trace: NONE_IDENTIFIED
+    later_ambiguous_or_symbolic_material: YES_GOSPEL_OF_PHILIP
+    historical_status: UNRESOLVED
+  child:
+    controlled_early_trace: NONE_IDENTIFIED
+    historical_status: SPECULATIVE
+  deliberate_suppression:
+    positive_trace: NONE_IDENTIFIED
+    historical_status: SPECULATIVE
+  travel_india_tibet:
+    ancient_trace: NONE_IDENTIFIED
+    modern_trace: NOTOVITCH_AND_DERIVATIVES
+    historical_status: REJECTED_AS_EARLY_SOURCE_SUPPORTED_CONCLUSION
+  illegitimacy_countertradition:
+    trace: YES
+    earliest_bounded_layer: LATE_SECOND_CENTURY_CELSUS_MEDIATED_BY_ORIGEN
+    target: YESHUA_OWN_BIRTH
+    historical_paternity_status: UNRESOLVED_NOT_PROMOTED
+
+strongest_result: >
+  Later traditions intensely elaborate Yeshua's childhood, family, parentage,
+  opponents, and Mary Magdalene's authority, but the surveyed major source
+  clusters do not preserve a controlled early independent trace of an adult wife,
+  biological child, or ages-12-to-30 travel biography.
+
+guards:
+  - LATER_TRADITION_NE_EARLY_BIOGRAPHY
+  - PRIVILEGED_DISCIPLE_NE_WIFE
+  - COUNTERTRADITION_NE_NEUTRAL_HISTORY
+  - NO_TRACE_NE_IMPOSSIBLE
