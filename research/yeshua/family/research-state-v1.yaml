@@ -1,5 +1,5 @@
 schema_version: on-theo.yeshua-r6-family-paternity-state.v1
-status: INITIAL_R6_RECONSTRUCTION_ACTIVE
+status: R6_CORE_READY_FOR_HOSTILE_REVIEW
 
 branch:
   name: research/yeshua-family-paternity-v1-20260922
@@ -19,6 +19,7 @@ artifacts:
   panthera: research/yeshua/family/panthera-countertradition-integration-v1.md
   kinship: research/yeshua/family/family-joseph-kinship-control-v1.md
   evidence: research/yeshua/family/family-paternity-evidence-v1.yaml
+  joseph_historicity: research/yeshua/family/joseph-historicity-infancy-independence-test-v1.md
 
 current_strong_results:
   - EARLY_KINSHIP_MEMORY
@@ -30,7 +31,7 @@ current_strong_results:
 current_unresolved:
   - HISTORICAL_ILLEGITIMACY
   - BIOLOGICAL_FATHER_IDENTITY
-  - HISTORICAL_JOSEPH_SOCIAL_FATHER_AT_HIGH_CONFIDENCE
+  - HISTORICAL_JOSEPH_SOCIAL_FATHER_PLAUSIBLE_NOT_SECURE
   - ORIGIN_OF_VIRGIN_CONCEPTION_TRADITION
   - BIOLOGICAL_VIRGIN_CONCEPTION
   - MARK_TO_PANTHERA_TRANSMISSION
@@ -44,7 +45,7 @@ not_established:
   - DELIBERATE_WIFE_CHILD_SUPPRESSION
 
 next_frontier:
-  primary: R6_JOSEPH_HISTORICITY_AND_INFANCY_INDEPENDENCE_TEST_V1
+  primary: R6_PARENTAGE_INTERNAL_HOSTILE_REVIEW
   subsequent:
     - R6_PARENTAGE_INTERNAL_HOSTILE_REVIEW
     - R6_REVISION_IF_REQUIRED
