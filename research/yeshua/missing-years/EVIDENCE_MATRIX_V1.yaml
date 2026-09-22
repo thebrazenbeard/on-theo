@@ -1,0 +1,147 @@
+schema_version: on-theo.yeshua-missing-years-evidence.v1
+status: NON_CANONICAL_CONSTRAINED_RECONSTRUCTION
+
+upstream:
+  branch: research/yeshua-early-source-constrained-baseline-v1-20260921
+  exact_head: 7b5aa8f3f93c31a69c1d324004feace9cb275d4f
+
+claims:
+  - id: MY-001
+    proposition: The so-called missing years are narrative silence, not demonstrated textual deletion.
+    evidence_class:
+      - PRIMARY_TEXT
+      - HISTORICAL_RECONSTRUCTION
+    controls:
+      - Mark_begins_with_adult_Yeshua
+      - Paul_contains_no_continuous_biography
+      - Luke_2_to_3_contains_the_age_gap
+    state: SURVIVES
+    confidence: HIGH
+
+  - id: MY-002
+    proposition: Nazareth was an occupied Jewish settlement in the Early Roman period compatible with Yeshua's remembered Galilean setting.
+    evidence_class:
+      - MATERIAL_EVIDENCE
+      - SCHOLARLY_INTERPRETATION
+    state: SURVIVES
+    confidence: HIGH_CONTEXTUAL
+    claim_ceiling: Does not identify a specific Yeshua household.
+
+  - id: MY-003
+    proposition: Yeshua probably had a manual craft background associated with the term tekton.
+    evidence_class:
+      - PRIMARY_TEXT
+      - SCHOLARLY_INTERPRETATION
+    earliest_source: Mark_6_3
+    state: SURVIVES_NARROWED
+    confidence: MODERATE_HIGH
+    claim_ceiling: Exact craft specialty unresolved.
+
+  - id: MY-004
+    proposition: Yeshua worked in Sepphoris.
+    evidence_class:
+      - MATERIAL_EVIDENCE_CONTEXT
+      - PROJECT_INFERENCE
+    state: UNRESOLVED
+    confidence: LOW
+    claim_ceiling: Proximity and plausibility only.
+
+  - id: MY-005
+    proposition: Jewish men were normally required to be married by age eighteen.
+    evidence_class:
+      - LATER_TRADITION
+      - SCHOLARLY_INTERPRETATION
+    state: REJECTED
+    confidence: HIGH
+    rationale: Later rabbinic aphorism cannot function as a universal first-century demographic rule.
+
+  - id: MY-006
+    proposition: Yeshua was married.
+    evidence_class: UNKNOWN
+    state: UNRESOLVED
+    confidence: LOW
+    claim_ceiling: No direct early evidence.
+
+  - id: MY-007
+    proposition: Yeshua was celibate throughout adulthood.
+    evidence_class: UNKNOWN
+    state: UNRESOLVED
+    confidence: LOW
+    claim_ceiling: No direct early evidence.
+
+  - id: MY-008
+    proposition: Yeshua fathered a child.
+    evidence_class: SPECULATIVE_MODEL
+    state: UNRESOLVED
+    confidence: VERY_LOW
+    claim_ceiling: No direct early evidence identified.
+
+  - id: MY-009
+    proposition: Early Christians deliberately suppressed a wife or child of Yeshua.
+    evidence_class: SPECULATIVE_MODEL
+    state: UNRESOLVED
+    confidence: VERY_LOW
+    claim_ceiling: No positive excision, competing early source, or documentary evidence identified.
+
+  - id: MY-010
+    proposition: Earliest Christian sources were capable of preserving spouse and kin information.
+    evidence_class: PRIMARY_TEXT
+    controls:
+      - Mark_6_3
+      - 1_Corinthians_9_5
+      - Pauline_brothers_of_the_Lord
+    state: SURVIVES
+    confidence: HIGH
+
+  - id: MY-011
+    proposition: Silence about a Yeshua wife or child creates limited negative pressure against a publicly prominent spouse/offspring.
+    evidence_class: HISTORICAL_RECONSTRUCTION
+    dependencies:
+      - MY-010
+    state: SURVIVES_NARROWED
+    confidence: MODERATE
+    claim_ceiling: Cannot prove absence.
+
+  - id: MY-012
+    proposition: Adult male Jewish celibacy was possible in the period.
+    evidence_class:
+      - PRIMARY_TEXT
+      - SCHOLARLY_INTERPRETATION
+    controls:
+      - Josephus_Essene_descriptions
+    state: SURVIVES
+    confidence: HIGH_CONTEXTUAL
+    claim_ceiling: Does not imply Yeshua was Essene.
+
+  - id: MY-013
+    proposition: Yeshua received scriptural formation.
+    evidence_class:
+      - PRIMARY_TEXT
+      - HISTORICAL_RECONSTRUCTION
+    state: SURVIVES_NARROWED
+    confidence: MODERATE_HIGH
+    claim_ceiling: Exact literacy, schooling, and reading/writing competence unresolved.
+
+  - id: MY-014
+    proposition: Yeshua had an extended apprenticeship or discipleship under John the Baptist.
+    evidence_class:
+      - PRIMARY_TEXT
+      - SCHOLARLY_INTERPRETATION
+    state: UNRESOLVED
+    confidence: MODERATE
+    claim_ceiling: Association probable; duration and formal relation unresolved.
+
+  - id: MY-015
+    proposition: India, Tibet, Britain, or mystery-school travel explains Yeshua's missing years.
+    evidence_class:
+      - LATER_TRADITION
+      - SPECULATIVE_MODEL
+    state: REJECTED
+    confidence: HIGH
+    claim_ceiling: Rejected as early-source-supported conclusion, not logically impossible.
+
+downstream:
+  testament_rule: >
+    Any specific marriage, romance, pregnancy, child, widowhood, travel,
+    Sepphoris employment, Essene membership, or deliberate-suppression storyline
+    remains FICTIONAL / LITERARY CONSTRUCTION unless evidence state changes.
