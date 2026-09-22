@@ -1,0 +1,100 @@
+schema_version: on-theo.yeshua-r4-arrest-execution-evidence.v1
+status: INITIAL_R4_SOURCE_CRITICAL
+
+upstream:
+  r3_head: 10864afc3e56fa246b492200ad79594293782dcd
+
+claims:
+  - id: CLM-YS-R4-001-ROMAN-EXECUTION
+    proposition: Yeshua was executed by Roman crucifixion under Pontius Pilate.
+    disposition: SURVIVES_STRONGLY
+    evidence_class: [PRIMARY_TEXT, HISTORICAL_RECONSTRUCTION]
+    ceiling: >
+      Exact hearing sequence, sentence formula and charge wording remain
+      reconstructive.
+
+  - id: CLM-YS-R4-002-LOCAL-ELITE-ROLE
+    proposition: >
+      Jerusalem chief-priestly/local elite actors probably participated in the
+      process that led to Yeshua's arrest and referral/accusation.
+    disposition: PROBABLE
+    evidence_class: [PRIMARY_TEXT, HISTORICAL_RECONSTRUCTION]
+    ceiling: >
+      Exact council structure, arrest authority and interrogation sequence are
+      source-variable.
+
+  - id: CLM-YS-R4-003-ROMAN-ARREST-PARTY
+    proposition: Roman soldiers directly participated in Yeshua's initial arrest.
+    disposition: UNRESOLVED
+    evidence_class: [PRIMARY_TEXT]
+    reason:
+      - MARK_MATTHEW_JOHN_ARREST_PARTY_VARIANCE
+      - JOHANNINE_ROMAN_MILITARY_LANGUAGE
+
+  - id: CLM-YS-R4-004-JUDAS-LOCATION-TIMING
+    proposition: >
+      If a historical insider handover occurred, location/timing/crowd-avoidance
+      information is a more plausible operational contribution than basic visual
+      identification of a publicly active teacher.
+    disposition: PROJECT_INFERENCE_PLAUSIBLE
+    evidence_class: [HISTORICAL_RECONSTRUCTION, PROJECT_INFERENCE]
+    ceiling: Not independent proof that Judas performed the role.
+
+  - id: CLM-YS-R4-005-JUDAS-NECESSARY
+    proposition: Authorities could not have arrested Yeshua without Judas.
+    disposition: NOT_ESTABLISHED
+    evidence_class: [UNKNOWN]
+
+  - id: CLM-YS-R4-006-POLITICAL-FRAME
+    proposition: >
+      Yeshua's Roman execution is best reconstructed as involving a political,
+      regal, sedition or public-order frame.
+    disposition: PROBABLE_TO_STRONG
+    evidence_class: [PRIMARY_TEXT, HISTORICAL_RECONSTRUCTION]
+    ceiling: Does not establish armed insurrection or Yeshua's private intent.
+
+  - id: CLM-YS-R4-007-PILATE-INNOCENCE
+    proposition: >
+      Pilate historically concluded Yeshua was innocent but executed him solely
+      because local petitioners forced his hand.
+    disposition: NOT_SECURE
+    evidence_class: [PRIMARY_TEXT, SCHOLARLY_INTERPRETATION]
+
+  - id: CLM-YS-R4-008-COLLECTIVE-BRIBERY
+    proposition: >
+      Roman or local authorities bribed/recruited most of Yeshua's apostles.
+    disposition: NOT_ESTABLISHED
+    evidence_class: [UNKNOWN]
+
+  - id: CLM-YS-R4-009-JUDAS-INNOCENT
+    proposition: Judas did not participate in any historical handover/arrest role.
+    disposition: UNRESOLVED
+    evidence_class: [UNKNOWN]
+
+  - id: CLM-YS-R4-010-JUDAS-FRAMED
+    proposition: Judas was deliberately framed as betrayer by surviving apostles or Rome.
+    disposition: UNRESOLVED
+    evidence_class: [UNKNOWN]
+
+context_controls:
+  PASSOVER_SECURITY:
+    evidence:
+      - JOSEPHUS_FESTIVAL_TROOP_DEPLOYMENT
+    classification: HISTORICAL_CONTEXT
+  PILATE_COERCIVE_AGENCY:
+    evidence:
+      - JOSEPHUS_PILATE_INCIDENTS
+      - ROMAN_PREFECTURAL_JUDICIAL_POWER
+    classification: HISTORICAL_CONTEXT
+  ARREST_PARTY_VARIANCE:
+    evidence:
+      - MARK_14
+      - MATTHEW_26
+      - LUKE_22
+      - JOHN_18
+    classification: PRIMARY_TEXT_CONFLICT
+
+guards:
+  - ACTOR_DECOMPOSITION_REQUIRED
+  - ANTI_COLLECTIVE_BLAME_REQUIRED
+  - JUDAS_OPERATIONAL_MODEL_NE_EVENT_PROOF
