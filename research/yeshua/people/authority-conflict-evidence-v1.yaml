@@ -1,0 +1,62 @@
+schema_version: on-theo.yeshua-r3-authority-conflict-evidence.v1
+status: CROSS_SOURCE_AUTHORITY_MEMORY
+
+source_clocks:
+  PAUL:
+    date_layer: 40S_50S_CE
+    strongest_people: [PETER_CEPHAS, JAMES]
+  MARK:
+    date_layer: C65_75
+    strongest_people_roles: [PETER, MARY_MAGDALENE, JUDAS]
+  JOHN:
+    date_layer: LATE_FIRST_OR_EARLY_SECOND_CENTURY
+    roles: [PETER, MARY_MAGDALENE, THOMAS, JUDAS]
+  GOSPEL_OF_MARY:
+    composition_field: LATE_SECOND_OR_EARLY_THIRD_CENTURY
+    witnesses:
+      - BG_8502_FIFTH_CENTURY_COPTIC
+      - POXY_3525_GREEK_FRAGMENT
+      - PRYL_463_GREEK_FRAGMENT
+    primary_authority_claim: MARY_PRIVILEGED_REVELATORY_INTERPRETER
+  GOSPEL_OF_THOMAS:
+    composition_field: DISPUTED_LATER_EARLY_CHRISTIAN
+    witnesses:
+      - NAG_HAMMADI_CODEX_II_COPTIC
+      - OXYRHYNCHUS_GREEK_FRAGMENTS
+    primary_authority_claim: THOMAS_SECRET_SAYINGS_GUARANTOR
+  GOSPEL_OF_JUDAS:
+    composition_field: SECOND_CENTURY
+    external_attestation: IRENAEUS_C180
+    surviving_witness: CODEX_TCHACOS_COPTIC
+    primary_authority_claim: JUDAS_PRIVILEGED_KNOWLEDGE_ALTERNATIVE
+
+claims:
+  MARY_PROSTITUTE:
+    disposition: REJECTED_AS_EARLY_HISTORICAL_CLAIM
+  MARY_LATER_AUTHORITY:
+    disposition: SURVIVES
+  MARY_SUPERIOR_HISTORICAL_UNDERSTANDING:
+    disposition: UNRESOLVED
+  JUDAS_ALTERNATIVE_RECEPTION:
+    disposition: SURVIVES
+  JUDAS_HISTORICAL_INNOCENCE:
+    disposition: UNRESOLVED
+  THOMAS_LATER_AUTHORITY:
+    disposition: SURVIVES
+  THOMAS_SUPERIOR_HISTORICAL_UNDERSTANDING:
+    disposition: UNRESOLVED
+  PETER_JAMES_EARLY_SOCIAL_STANDING:
+    disposition: SURVIVES_STRONGLY
+  ONE_STABLE_DISCIPLE_HIERARCHY:
+    disposition: NOT_SUPPORTED
+  CENTRAL_SUPPRESSION_CONSPIRACY:
+    disposition: NOT_ESTABLISHED
+
+method_result:
+  privileged_disciple_portrait:
+    status: RECURRENT_AUTHORITY_DEVICE
+    implication: REDUCES_DIRECT_HISTORICAL_WEIGHT_OF_LATE_PRIVILEGE_CLAIMS
+
+guards:
+  - SOURCE_CLOCK_REQUIRED
+  - AUTHORITY_MEMORY_NE_PRIVATE_HISTORICAL_RANKING
