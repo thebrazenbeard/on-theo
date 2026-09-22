@@ -1,0 +1,39 @@
+schema_version: on-theo.yeshua-r3-people-authority-state.v1
+status: INITIAL_PEOPLE_AUTHORITY_RECONSTRUCTION
+
+branch:
+  name: research/yeshua-people-authority-v1-20260922
+  base_head: 443e45a2132a18d92344115e306c2a58dfda4950
+
+artifacts:
+  source_boundary: research/yeshua/people/people-authority-source-boundary-v1.md
+  matrix: research/yeshua/people/people-authority-matrix-v1.yaml
+  mary: research/yeshua/people/mary-magdalene-packet-v1.md
+  judas: research/yeshua/people/judas-iscariot-packet-v1.md
+  peter_james_thomas: research/yeshua/people/peter-james-thomas-authority-packet-v1.md
+
+current_strong_results:
+  - PETER_REAL_EARLY_LEADER
+  - JAMES_REAL_EARLY_LEADER
+  - MARY_MAGDALENE_EARLY_PASSION_TOMB_FOLLOWER_MEMORY
+  - MARY_MAGDALENE_PROSTITUTE_REJECTED_AS_EARLY_HISTORICAL_CLAIM
+  - LATER_MARY_AUTHORITY_TRAJECTORY
+  - LATER_JUDAS_ALTERNATIVE_TRAJECTORY
+  - LATER_THOMAS_AUTHORITY_TRAJECTORY
+  - COMPETING_APOSTOLIC_AUTHORITY_MEMORY
+
+current_unresolved:
+  - HISTORICAL_SUPERIOR_UNDERSTANDING_MARY
+  - HISTORICAL_SUPERIOR_UNDERSTANDING_JUDAS
+  - HISTORICAL_SUPERIOR_UNDERSTANDING_THOMAS
+  - JUDAS_INNOCENT
+  - JUDAS_FRAMED
+  - PETER_HISTORICAL_SUPPRESSION_OF_MARY
+  - DELIBERATE_PROSTITUTE_SLANDER_MOTIVE
+  - ROMAN_COOPTION_OF_APOSTLES
+
+next_frontier:
+  primary: R3_AUTHORITY_CONFLICT_CROSS_SOURCE_MATRIX_V1
+  subsequent:
+    - R3_INTERNAL_HOSTILE_REVIEW
+    - R4_JERUSALEM_ARREST_EXECUTION

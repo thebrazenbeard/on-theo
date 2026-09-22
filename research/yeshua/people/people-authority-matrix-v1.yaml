@@ -1,0 +1,129 @@
+schema_version: on-theo.yeshua-r3-people-authority-matrix.v1
+status: INITIAL_SOURCE_CRITICAL
+
+upstream:
+  r1: 7b5aa8f3f93c31a69c1d324004feace9cb275d4f
+  r2: 443e45a2132a18d92344115e306c2a58dfda4950
+
+people:
+  PETER_CEPHAS:
+    earliest_sources:
+      - GALATIANS
+      - FIRST_CORINTHIANS
+    disposition:
+      historical_person_and_early_leader: SURVIVES
+      exact_petrine_supremacy: UNRESOLVED
+      historical_conflict_with_Mary: UNRESOLVED
+    ceiling: >
+      Paul establishes Cephas as a real early leader and interaction partner;
+      later office/supremacy narratives require separate evidence.
+
+  JAMES:
+    earliest_sources:
+      - GALATIANS
+      - FIRST_CORINTHIANS
+    later_external:
+      - JOSEPHUS_ANTIQUITIES_20_200
+    disposition:
+      historical_person_and_early_leader: SURVIVES
+      brother_of_Lord_as_kinship: PROBABLE_TO_STRONG
+      exact_successor_office: UNRESOLVED
+    ceiling: >
+      James is unusually well anchored, but later ecclesial office descriptions
+      cannot be back-projected without source control.
+
+  MARY_MAGDALENE:
+    earliest_source: MARK
+    canonical_role:
+      - CRUCIFIXION_WITNESS
+      - BURIAL_OBSERVER
+      - TOMB_WITNESS
+      - GALILEE_FOLLOWER_MEMORY
+    later_canonical:
+      - JOHN_PROMINENT_RESURRECTION_COMMISSION
+    disposition:
+      historical_follower: PROBABLE
+      prostitute_identity: REJECTED_AS_EARLY_HISTORICAL_CLAIM
+      specially_privileged_later_authority_memory: SURVIVES
+      historically_understood_Yeshua_better_than_Peter: UNRESOLVED
+      deliberate_early_slander_campaign: UNRESOLVED
+    ceiling: >
+      Mary's importance in passion/resurrection memory is early; the prostitute
+      identity is later reception; superior historical understanding is not yet
+      demonstrated.
+
+  JUDAS_ISCARIOT:
+    earliest_explicit_source: MARK
+    Pauline_named_support: NONE
+    disposition:
+      insider_handover_core: UNRESOLVED_TO_PROBABLE_CANDIDATE
+      payment_motive: UNRESOLVED
+      exact_arrest_information: UNRESOLVED
+      historical_traitor_identity: UNRESOLVED_PENDING_R4
+      innocence_or_frameup: UNRESOLVED
+      distinctive_second_century_knowledge_reinterpretation: SURVIVES_WITH_VALUATION_DISPUTED
+    ceiling: >
+      Mark establishes an early betrayal narrative; Gospel of Judas establishes
+      later alternative interpretation, not historical exoneration.
+
+  THOMAS:
+    canonical_attestation:
+      - SYNOPTIC_DISCIPLE_LISTS
+      - JOHN_INDIVIDUALIZED_DISCIPLE
+    noncanonical:
+      - GOSPEL_OF_THOMAS
+    disposition:
+      historical_member_of_disciple_memory: PROBABLE
+      later_privileged_sayings_authority: SURVIVES
+      historical_reliability_of_individual_Thomas_sayings: SAYING_LEVEL_UNRESOLVED
+      historical_superior_understanding: UNRESOLVED
+    ceiling: >
+      Thomas becomes a major alternative authority figure in later tradition;
+      this cannot by itself recover his historical relationship with Yeshua.
+
+cross_claims:
+  - id: CLM-YS-R3-001-MARY-NOT-PROSTITUTE
+    proposition: >
+      The earliest Christian sources do not identify Mary Magdalene as a
+      prostitute; that identity is a later conflation/reception development.
+    disposition: SURVIVES_STRONGLY
+    evidence_class:
+      - PRIMARY_TEXT
+      - RECEPTION_HISTORY
+
+  - id: CLM-YS-R3-002-MARY-AUTHORITY-TRAJECTORY
+    proposition: >
+      Mary Magdalene becomes a major authority/revelation figure in multiple
+      later early-Christian texts, sometimes in conflict with Peter.
+    disposition: SURVIVES
+    evidence_class:
+      - PRIMARY_TEXT
+      - RECEPTION_HISTORY
+    historical_Yeshua_implication: UNRESOLVED
+
+  - id: CLM-YS-R3-003-JUDAS-ALTERNATIVE-TRAJECTORY
+    proposition: >
+      A second-century Christian tradition could reinterpret Judas as a
+      privileged knower relative to other disciples.
+    disposition: SURVIVES
+    historical_innocence_implication: NOT_ESTABLISHED
+
+  - id: CLM-YS-R3-004-PRIVILEGED-OUTSIDER-DISCIPLES
+    proposition: >
+      Later Christian literature repeatedly redistributes authority toward
+      figures marginalized or complicated in canonical trajectories, including
+      Mary, Thomas and Judas.
+    disposition: PROBABLE_AS_RECEPTION_PATTERN
+    historical_Yeshua_implication: UNRESOLVED
+
+  - id: CLM-YS-R3-005-ROMAN-COOPTION
+    proposition: >
+      Roman authorities bribed, recruited or activated most of Yeshua's
+      followers after his death.
+    disposition: NOT_ESTABLISHED
+    evidence_class: [UNKNOWN]
+    next_lane: R4_OR_SEPARATE_ROMAN_CULTIVATION_TEST
+
+guards:
+  - RECEPTION_PATTERN_NE_FIRST_CENTURY_EVENT
+  - ALTERNATIVE_MEMORY_NE_HISTORICAL_CORRECTION_BY_DEFAULT
