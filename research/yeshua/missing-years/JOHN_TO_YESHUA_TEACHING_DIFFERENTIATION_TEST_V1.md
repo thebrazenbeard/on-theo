@@ -206,7 +206,7 @@ It does not establish identical political programs.
 Current most conservative model:
 
 1. Yeshua enters John's baptismal orbit.
-2. Some degree of John's repentance/esological framework likely affects him.
+2. Some degree of John's repentance/eschatological framework may plausibly influence him.
 3. Duration and role inside John's movement remain unknown.
 4. Yeshua emerges with a recognizably different public style:
    - mobile;
