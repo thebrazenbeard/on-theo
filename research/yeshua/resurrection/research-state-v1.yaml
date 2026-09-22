@@ -1,5 +1,5 @@
 schema_version: on-theo.yeshua-r5-resurrection-state.v1
-status: INITIAL_R5_STRATIFICATION_ACTIVE
+status: R5_CORE_PACKETS_READY_FOR_HOSTILE_REVIEW
 
 branch:
   name: research/yeshua-resurrection-stratification-v1-20260922
@@ -13,6 +13,9 @@ artifacts:
   source_clock: research/yeshua/resurrection/tomb-appearance-source-clock-v1.md
   mechanism_firewall: research/yeshua/resurrection/resurrection-mechanism-firewall-v1.md
   evidence: research/yeshua/resurrection/resurrection-evidence-v1.yaml
+  empty_tomb: research/yeshua/resurrection/empty-tomb-historicity-test-v1.md
+  phenomenology: research/yeshua/resurrection/appearance-phenomenology-matrix-v1.md
+  mary: research/yeshua/resurrection/mary-magdalene-resurrection-memory-packet-v1.md
 
 current_strong_results:
   - VERY_EARLY_RESURRECTION_VINDICATION_CONVICTION
@@ -23,7 +26,7 @@ current_strong_results:
   - SECOND_TEMPLE_JEWISH_RESURRECTION_AFTERLIFE_PLURALITY
 
 current_unresolved:
-  - EMPTY_TOMB_HISTORICITY
+  - EMPTY_TOMB_HISTORICITY_PLAUSIBLE_TO_MODERATE_NOT_SECURE
   - APPEARANCE_PHENOMENOLOGY
   - PHYSICAL_CORPSE_TRANSFORMATION
   - VISIONARY_MECHANISM
@@ -34,11 +37,11 @@ current_unresolved:
   - MARY_MAGDALENE_RESURRECTION_MEMORY_HISTORICAL_DEPTH
 
 next_frontier:
-  primary: R5_EMPTY_TOMB_HISTORICITY_TEST_V1
+  primary: R5_RESURRECTION_INTERNAL_HOSTILE_REVIEW
   subsequent:
-    - R5_APPEARANCE_PHENOMENOLOGY_MATRIX_V1
-    - R5_MARY_MAGDALENE_RESURRECTION_MEMORY_PACKET_V1
-    - R5_RESURRECTION_INTERNAL_HOSTILE_REVIEW
+    - R5_REVISION_IF_REQUIRED
+    - R5_SECOND_EXACT_HEAD_HOSTILE_REVIEW
+    - R5_DRAFT_PR
 
 guards:
   - EARLY_BELIEF_NE_METAPHYSICAL_EVENT
