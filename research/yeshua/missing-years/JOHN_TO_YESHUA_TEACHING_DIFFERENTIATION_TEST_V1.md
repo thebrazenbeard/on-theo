@@ -131,7 +131,10 @@ NOT_ESTABLISHED.
 But:
 
 ESCHATOLOGICAL_CONTINUITY =
-PLAUSIBLE/STRONG.
+PLAUSIBLE / SOURCE-DEPENDENT.
+
+Josephus does not independently establish the eschatological content assigned to
+John by Christian texts.
 
 ## 7. Coming-one tradition
 
