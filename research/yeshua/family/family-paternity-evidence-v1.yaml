@@ -1,0 +1,100 @@
+schema_version: on-theo.yeshua-r6-family-paternity-evidence.v1
+status: INITIAL_R6_SOURCE_STRATIFICATION
+
+upstream:
+  r5_head_at_creation: 9d425f75e6333f984162e4ecc74a189ed68a3b6e
+  missing_years_head: 0d435fb8d354f100203927ebdb7b768c74884831
+  panthera_wordplay_head: 71ba8382c073e72332f3cb7199fb5824fe74a2b2
+  panthera_rabbinic_head: 389c1e6e2c8affafae165fd34ca091618043b11e
+
+claims:
+  - id: CLM-YS-R6-001-EARLY-KIN
+    proposition: >
+      Yeshua's mother, brothers and sisters belong to early family memory, with
+      James especially well anchored.
+    disposition: SURVIVES_STRONGLY
+    evidence_class: [PRIMARY_TEXT, HISTORICAL_RECONSTRUCTION]
+
+  - id: CLM-YS-R6-002-SON-OF-MARY
+    proposition: >
+      Mark 6:3 preserves an unusual maternal identification, "son of Mary."
+    disposition: SURVIVES_STRONGLY_AS_TEXTUAL_DATA
+    evidence_class: [PRIMARY_TEXT, MANUSCRIPT_WITNESS_CONTROL]
+
+  - id: CLM-YS-R6-003-ILLEGITIMACY
+    proposition: >
+      Mark 6:3 establishes that Yeshua was historically regarded as illegitimate.
+    disposition: UNRESOLVED_PLAUSIBLE_INTERPRETATION
+    evidence_class: [SCHOLARLY_INTERPRETATION, HISTORICAL_RECONSTRUCTION]
+
+  - id: CLM-YS-R6-004-JOSEPH-SOCIAL
+    proposition: >
+      A historical Joseph functioned as Yeshua's recognized social/legal father.
+    disposition: PLAUSIBLE_TO_PROBABLE_TRADITIONAL_RECONSTRUCTION
+    evidence_class: [PRIMARY_TEXT, HISTORICAL_RECONSTRUCTION]
+    ceiling: >
+      Positive Joseph tradition is later than Paul/Mark; biological paternity is
+      not established.
+
+  - id: CLM-YS-R6-005-JOSEPH-BIOLOGICAL
+    proposition: Joseph was Yeshua's biological father.
+    disposition: UNRESOLVED
+    evidence_class: [UNKNOWN]
+
+  - id: CLM-YS-R6-006-VIRGIN-CONCEPTION-TRADITION
+    proposition: >
+      By the late first century, distinct Matthew/Luke infancy traditions
+      presented Yeshua as conceived without ordinary human paternity.
+    disposition: SURVIVES_STRONGLY_AS_TRADITION_HISTORY
+    evidence_class: [PRIMARY_TEXT, TRADITION_HISTORY]
+    ceiling: Biological mechanism unverified.
+
+  - id: CLM-YS-R6-007-VIRGIN-CONCEPTION-BIOLOGY
+    proposition: >
+      Yeshua was biologically conceived without a human father.
+    disposition: METAPHYSICALLY_BIOLOGICALLY_UNVERIFIED_BY_TEXTS
+    evidence_class: [UNKNOWN]
+
+  - id: CLM-YS-R6-008-PANTHERA-TRADITION
+    proposition: >
+      A late-second-century countertradition alleged adultery and paternity by a
+      soldier named Panthera.
+    disposition: SURVIVES_STRONGLY_AS_LATER_COUNTERTRADITION
+    evidence_class: [LATER_TRADITION, POLEMICAL_SOURCE, COMMENTARY]
+
+  - id: CLM-YS-R6-009-PANTHERA-FATHER
+    proposition: Panthera was Yeshua's historical biological father.
+    disposition: NOT_ESTABLISHED
+    evidence_class: [UNKNOWN]
+
+  - id: CLM-YS-R6-010-MARK-PANTHERA-CONTINUITY
+    proposition: >
+      Mark's "son of Mary" wording and Panthera traditions preserve one
+      demonstrable continuous illegitimacy memory.
+    disposition: UNRESOLVED
+    evidence_class: [HISTORICAL_RECONSTRUCTION]
+
+  - id: CLM-YS-R6-011-MARY-MAGDALENE-WIFE
+    proposition: Mary Magdalene was Yeshua's wife.
+    disposition: NOT_ESTABLISHED
+    evidence_class: [UNKNOWN]
+
+  - id: CLM-YS-R6-012-YESHUA-CHILD
+    proposition: Yeshua had a biological child.
+    disposition: SPECULATIVE_NO_DIRECT_SUPPORT
+    evidence_class: [UNKNOWN]
+
+  - id: CLM-YS-R6-013-WIFE-CHILD-SUPPRESSION
+    proposition: >
+      Early Christian transmitters deliberately erased Yeshua's wife or child.
+    disposition: SPECULATIVE_NO_POSITIVE_SUPPORT
+    evidence_class: [PROJECT_INFERENCE]
+
+guards:
+  - SOCIAL_FATHER_NE_BIOLOGICAL_FATHER
+  - FAMILY_MEMORY_NE_COMPLETE_RECORD
+  - SON_OF_MARY_NE_ILLEGITIMACY_PROOF
+  - VIRGIN_TRADITION_NE_BIOLOGICAL_VERIFICATION
+  - PANTHERA_NE_CONFIRMED_PATERNITY
+  - LATER_COUNTERTRADITION_NE_EARLY_MEMORY_BY_DEFAULT
+  - SILENCE_NE_PROOF_OF_ABSENCE
