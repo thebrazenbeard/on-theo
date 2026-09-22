@@ -144,9 +144,10 @@ WEAK_FOR_BIOGRAPHICAL_THOMAS.
 Second-century work, known to Irenaeus by c. 180 CE.
 
 Judas:
-- receives exceptional knowledge;
+- receives distinctive/exceptional knowledge;
 - relationship to betrayal is cosmologically reinterpreted;
-- other disciples are criticized within the work's theological framework.
+- other disciples are criticized within the work's theological framework;
+- Judas's final valuation remains disputed in scholarship and is not flattened into a simple hero reading.
 
 Historical use:
 STRONG_FOR_ALTERNATIVE_JUDAS_RECEPTION.
@@ -174,6 +175,7 @@ as specially authorized, insightful, commissioned or revealed-to.
 Therefore:
 
 PRIVILEGED_DISCIPLE_TROPE =
+PROJECT_INFERENCE / RECEPTION_ANALYSIS:
 COMMUNITY_AUTHORITY_TECHNOLOGY_CANDIDATE.
 
 This reduces the evidentiary value of any **single later privileged-disciple
@@ -250,7 +252,8 @@ SURVIVES_AS_LATER_AUTHORITY_MEMORY.
 ### "Judas understood Yeshua better than the others"
 
 Later-source support:
-YES, Gospel of Judas.
+YES for distinctive Judas knowledge/authority contrast in the Gospel of Judas;
+NO for a universally agreed positive/exonerating valuation of Judas.
 
 First-century historical support:
 INSUFFICIENT.
