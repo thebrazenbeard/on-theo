@@ -24,12 +24,12 @@ claims:
   - id: CLM-YS-R6-003-ILLEGITIMACY
     proposition: >
       Mark 6:3 establishes that Yeshua was historically regarded as illegitimate.
-    disposition: UNRESOLVED_PLAUSIBLE_INTERPRETATION
+    disposition: UNRESOLVED_ONE_LIVE_INTERPRETATION
     evidence_class: [SCHOLARLY_INTERPRETATION, HISTORICAL_RECONSTRUCTION]
 
   - id: CLM-YS-R6-004-JOSEPH-SOCIAL
     proposition: >
-      A historical Joseph functioned as Yeshua's recognized social/legal father.
+      A historical Joseph functioned as Yeshua's recognized social father.
     disposition: PLAUSIBLE_NOT_SECURE
     evidence_class: [PRIMARY_TEXT, HISTORICAL_RECONSTRUCTION]
     ceiling: >
@@ -43,11 +43,14 @@ claims:
 
   - id: CLM-YS-R6-006-VIRGIN-CONCEPTION-TRADITION
     proposition: >
-      By the late first century, distinct Matthew/Luke infancy traditions
-      presented Yeshua as conceived without ordinary human paternity.
+      By the late first century, Matthew and Luke each preserve distinct infancy
+      narrative complexes presenting Yeshua as conceived without ordinary human
+      paternity.
     disposition: SURVIVES_STRONGLY_AS_TRADITION_HISTORY
     evidence_class: [PRIMARY_TEXT, TRADITION_HISTORY]
-    ceiling: Biological mechanism unverified.
+    ceiling: >
+      Biological mechanism unverified; independence of the shared extraordinary-
+      conception datum is not established.
 
   - id: CLM-YS-R6-007-VIRGIN-CONCEPTION-BIOLOGY
     proposition: >
@@ -126,3 +129,11 @@ guards:
   - LATER_COUNTERTRADITION_NE_EARLY_MEMORY_BY_DEFAULT
   - SILENCE_NE_PROOF_OF_ABSENCE
   - MULTIPLE_TRADITIONS_NE_EVENT_INDEPENDENCE
+
+
+review_narrowing:
+  illegitimacy_reading: UNRESOLVED_ONE_LIVE_INTERPRETATION
+  historical_joseph_social_father: PLAUSIBLE_NOT_SECURE
+  matthew_luke_infancy_complexes: DISTINCT_NARRATIVES
+  shared_joseph_or_conception_datum_independence: NOT_ESTABLISHED
+  panthera_polemical_inversion: PLAUSIBLE_RECEPTION_MODEL
