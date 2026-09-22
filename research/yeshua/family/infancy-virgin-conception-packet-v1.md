@@ -4,8 +4,8 @@ Status: SOURCE-CRITICAL PARENTAGE TRADITION / NON-CANONICAL
 
 ## 1. Shared high-level claim
 
-Matthew and Luke both present Yeshua's conception as occurring without ordinary
-human sexual paternity.
+Matthew and Luke each preserve distinct narrative complexes in which Yeshua's
+conception occurs without ordinary human sexual paternity.
 
 Both also preserve Joseph as:
 - Mary's husband/betrothed;
@@ -14,8 +14,11 @@ Both also preserve Joseph as:
 
 Current historical classification:
 
-VIRGIN_OR_EXTRAORDINARY_CONCEPTION_TRADITION =
+VIRGIN_OR_EXTRAORDINARY_CONCEPTION_NARRATIVES =
 ESTABLISHED_BY_LATE_FIRST_CENTURY_CHRISTIAN_SOURCES.
+
+INDEPENDENCE_OF_THE_SHARED_PARENTAGE_DATUM =
+NOT_ESTABLISHED.
 
 This is a tradition-history claim.
 
@@ -143,7 +146,7 @@ John independently/later preserves public "son of Joseph" language.
 Current historical possibility:
 
 HISTORICAL_SOCIAL_FATHER_NAMED_JOSEPH =
-PLAUSIBLE_TO_PROBABLE_TRADITIONAL_RECONSTRUCTION.
+PLAUSIBLE_NOT_SECURE.
 
 But R6 must hostile-test this because:
 - Mark/Paul silence;
