@@ -76,6 +76,15 @@ The work belongs to a later early-Christian literary environment, commonly
 placed in the late second or early third century, with textual history and exact
 dating debated.
 
+The protagonist is commonly identified with Mary Magdalene in scholarship, but
+the identification is not absolutely uncontested; a minority has proposed other
+Mary figures.
+
+Current identification control:
+
+MARY_IN_GOSPEL_OF_MARY_IDENTIFICATION =
+PROBABLE_NOT_ABSOLUTE.
+
 The surviving narrative portrays:
 - Mary receiving/understanding teaching;
 - Mary speaking when other disciples are distressed;
