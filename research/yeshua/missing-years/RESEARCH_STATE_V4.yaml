@@ -1,0 +1,52 @@
+schema_version: on-theo.yeshua-missing-years-state.v4
+status: INTERNAL_HOSTILE_PASS_WITH_LATER_SOURCE_TRACE_TEST
+supersedes_for_current_research:
+  - research/yeshua/missing-years/RESEARCH_STATE_V3.yaml
+
+branch:
+  name: research/yeshua-missing-years-constrained-context-v1-20260922
+  pr: 163
+  stacked_on: research/yeshua-early-source-constrained-baseline-v1-20260921
+  base_exact_head: 7b5aa8f3f93c31a69c1d324004feace9cb275d4f
+
+internal_review:
+  pass_1:
+    subject_head: e3e4d9566aa8a34fd7e5f0b10a1fc9df49250b9a
+    disposition: CHANGES_REQUIRED
+  pass_2:
+    subject_head: d21d9b753418e099e4dca230b99f3931be1c8783
+    disposition: INTERNAL_HOSTILE_PASS_WITH_GUARDS
+  independent_review: NOT_DONE
+
+new_later_source_artifacts:
+  packet: research/yeshua/missing-years/LATER_SOURCE_TRACE_TEST_V1.md
+  matrix: research/yeshua/missing-years/LATER_SOURCE_TRACE_MATRIX_V1.yaml
+
+later_source_results:
+  infancy_gap_filling: PRESENT_BUT_STOPS_AT_TWELVE_IN_IGT
+  Mary_privileged_authority_memory: PRESENT
+  Gospel_of_Philip_marriage_interpretation: LATER_AND_HISTORICALLY_NONDISPOSITIVE
+  illegitimacy_Panthera_countertradition: PRESENT_BY_LATE_SECOND_CENTURY
+  Toledot_Yeshu: LATER_PROTEAN_WITH_POSSIBLY_ANCIENT_MOTIFS_FEATURE_BY_FEATURE
+  direct_wife_trace: NONE_CONTROLLED_EARLY
+  direct_child_trace: NONE_CONTROLLED_EARLY
+  deliberate_suppression_trace: NONE_IDENTIFIED
+  India_Tibet_ancient_trace: NONE_IDENTIFIED
+  Notovitch: MODERN_SOURCE_NOT_ANCIENT_EVIDENCE
+
+new_high_value_observation: >
+  The surveyed hostile sexual/family scandal tradition targets Yeshua's own
+  parentage rather than preserving a countertradition about offspring fathered
+  by Yeshua.
+
+next_frontier:
+  primary: PANTHERA_AND_ILLEGITIMACY_COUNTERTRADITION_PACKET_V1
+  subsequent:
+    - MARY_MAGDALENE_AUTHORITY_VS_MARRIAGE_PACKET_V1
+    - FAMILY_MEMORY_AND_DYNASTIC_TRACE_TEST_V1
+    - UPDATE_PR_163_EXACT_HEAD
+    - HOSTILE_REVIEW_LATER_SOURCE_EXTENSION
+
+guards:
+  - LATER_SOURCE_EXTENSION_DOES_NOT_MODIFY_BASELINE_A_WITHOUT_PROMOTION_REVIEW
+  - INTERNAL_REVIEW_NE_INDEPENDENT_REVIEW
