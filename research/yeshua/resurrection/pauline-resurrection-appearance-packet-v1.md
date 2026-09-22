@@ -14,22 +14,30 @@ PAUL_KNOWS_EVERY_EARLIER_TRADITION
 or
 PAULINE_THEOLOGY = YESHUA'S_OWN_TEACHING.
 
-## 2. Received tradition — 1 Corinthians 15:3–7
+## 2. Received tradition — 1 Corinthians 15:3–5 core with disputed extension
 
 Paul explicitly says he delivered what he had received.
 
-The sequence includes:
+The strongest commonly reconstructed received/formulaic core lies in:
 - death;
 - burial;
 - being raised;
-- appearances/reports involving named persons/groups.
+- appearance to Cephas;
+- appearance to the Twelve.
+
+Verses 6–7, including the five-hundred and James reports, may preserve inherited
+tradition, Pauline supplementation, or a mixture.
 
 Current result:
 
-EARLY_RECEIVED_RESURRECTION_TRADITION =
+EARLY_RECEIVED_RESURRECTION_CORE =
 VERY_STRONG.
 
-Pre-Pauline dating is highly plausible as a source-critical conclusion, but:
+EXTENSION_OF_ONE_FIXED_PRE_PAULINE_FORMULA_THROUGH_VERSES_6_7 =
+UNRESOLVED.
+
+Pre-Pauline dating of at least a core is highly plausible as a source-critical
+conclusion, but:
 - exact formula boundaries;
 - exact wording;
 - exact date;
@@ -90,6 +98,9 @@ FIVE_HUNDRED_APPEARANCE_REPORT =
 EARLY_PAULINE_ATTESTATION,
 NOT_INDEPENDENTLY_CORROBORATED.
 
+Membership in one fixed pre-Pauline formula:
+UNRESOLVED.
+
 ## 6. James
 
 Paul reports an appearance to James.
@@ -102,7 +113,10 @@ This matters because:
 Current disposition:
 
 JAMES_APPEARANCE_CLAIM =
-VERY_EARLY_AND_SOCIAL_NETWORK_ANCHORED.
+EARLY_PAULINE_ATTESTATION_AND_SOCIAL_NETWORK_ANCHORED.
+
+Pre-Pauline formula membership:
+UNRESOLVED.
 
 Mechanism remains unknown.
 
