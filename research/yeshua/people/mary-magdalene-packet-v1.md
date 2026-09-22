@@ -19,6 +19,9 @@ It is:
 
 MARY_MAGDALENE_WAS_REMEMBERED_EARLY_AS_A_FOLLOWER_PRESENT_IN_PASSION_AND_TOMB_TRADITION.
 
+Historical reconstruction status:
+MARY_AS_ACTUAL_FOLLOWER = PROBABLE.
+
 ## The prostitute question
 
 No canonical Gospel identifies Mary Magdalene as:
