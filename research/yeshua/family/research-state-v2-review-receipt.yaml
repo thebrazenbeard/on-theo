@@ -1,0 +1,36 @@
+schema_version: on-theo.yeshua-r6-internal-review-receipt.v1
+status: INTERNAL_HOSTILE_PASS_WITH_GUARDS
+independent_review_status: REQUIRED_NOT_COMPLETED
+
+subject:
+  branch: research/yeshua-family-paternity-v1-20260922
+  exact_commit: 581c3168418c22525e00c3c5457362c0c975afa6
+
+review:
+  execution_mode: SAME_RUNTIME_ADVERSARIAL_REVIEW
+  artifact: reviews/yeshua-r6-family-paternity-v1-hostile-review-2.md
+  commit: 08b90d20e056302450f95413437f35a4bb7aae62
+
+claim_ceiling: >
+  Early kinship is strong and Mark's "son of Mary" is real unusual textual data,
+  but historical illegitimacy remains unresolved. Joseph is strongly attested as
+  a late-first-century social-father tradition; a historical Joseph is plausible
+  but not secure and biological paternity remains unknown. Matthew and Luke
+  preserve distinct extraordinary-conception narratives but the independence
+  and biological truth of the shared claim are not established. Panthera is a
+  secure later countertradition, not secure paternity.
+
+allowed_downstream_use:
+  - R7_NONCANONICAL_SOURCE_STRATIFICATION
+  - R8_INWARD_MYSTICAL_TRAJECTORY
+  - TESTAMENT_OF_YESHUA_HISTORICAL_CONSTRAINTS
+
+prohibited:
+  - CLAIM_INDEPENDENT_REVIEW_COMPLETE
+  - CLAIM_HISTORICAL_ILLEGITIMACY_ESTABLISHED
+  - CLAIM_JOSEPH_BIOLOGICAL_FATHER_ESTABLISHED
+  - CLAIM_VIRGIN_CONCEPTION_BIOLOGICALLY_PROVED
+  - CLAIM_PANTHERA_BIOLOGICAL_FATHER
+  - CLAIM_MARY_MAGDALENE_WIFE
+  - CLAIM_YESHUA_CHILD
+  - CLAIM_DELIBERATE_FAMILY_SUPPRESSION
