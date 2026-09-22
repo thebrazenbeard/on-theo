@@ -17,11 +17,12 @@ claims:
     proposition: >
       Jerusalem chief-priestly/local elite actors probably participated in the
       process that led to Yeshua's arrest and referral/accusation.
-    disposition: PROBABLE
+    disposition: PROBABLE_BUT_PASSION_TRADITION_DEPENDENT
     evidence_class: [PRIMARY_TEXT, HISTORICAL_RECONSTRUCTION]
     ceiling: >
-      Exact council structure, arrest authority and interrogation sequence are
-      source-variable.
+      Josephus supplies institutional context rather than direct event
+      corroboration; exact council structure, arrest authority and interrogation
+      sequence are source-variable.
 
   - id: CLM-YS-R4-003-ROMAN-ARREST-PARTY
     proposition: Roman soldiers directly participated in Yeshua's initial arrest.
@@ -76,30 +77,6 @@ claims:
     disposition: UNRESOLVED
     evidence_class: [UNKNOWN]
 
-context_controls:
-  PASSOVER_SECURITY:
-    evidence:
-      - JOSEPHUS_FESTIVAL_TROOP_DEPLOYMENT
-    classification: HISTORICAL_CONTEXT
-  PILATE_COERCIVE_AGENCY:
-    evidence:
-      - JOSEPHUS_PILATE_INCIDENTS
-      - ROMAN_PREFECTURAL_JUDICIAL_POWER
-    classification: HISTORICAL_CONTEXT
-  ARREST_PARTY_VARIANCE:
-    evidence:
-      - MARK_14
-      - MATTHEW_26
-      - LUKE_22
-      - JOHN_18
-    classification: PRIMARY_TEXT_CONFLICT
-
-guards:
-  - ACTOR_DECOMPOSITION_REQUIRED
-  - ANTI_COLLECTIVE_BLAME_REQUIRED
-  - JUDAS_OPERATIONAL_MODEL_NE_EVENT_PROOF
-
-
   - id: CLM-YS-R4-011-TEMPLE-CONFRONTATION
     proposition: >
       Yeshua probably performed some historically real Temple-centered
@@ -148,3 +125,28 @@ guards:
       - ACTOR_DECOMPOSITION
       - ROMAN_CRUCIFIXION_UNDER_PILATE
       - YESHUA_AND_EARLIEST_MOVEMENT_JEWISH
+
+context_controls:
+  PASSOVER_SECURITY:
+    evidence:
+      - JOSEPHUS_FESTIVAL_TROOP_DEPLOYMENT
+    classification: HISTORICAL_CONTEXT
+  PILATE_COERCIVE_AGENCY:
+    evidence:
+      - JOSEPHUS_PILATE_INCIDENTS
+      - ROMAN_PREFECTURAL_JUDICIAL_POWER
+    classification: HISTORICAL_CONTEXT
+  ARREST_PARTY_VARIANCE:
+    evidence:
+      - MARK_14
+      - MATTHEW_26
+      - LUKE_22
+      - JOHN_18
+    classification: PRIMARY_TEXT_CONFLICT
+
+guards:
+  - ACTOR_DECOMPOSITION_REQUIRED
+  - ANTI_COLLECTIVE_BLAME_REQUIRED
+  - JUDAS_OPERATIONAL_MODEL_NE_EVENT_PROOF
+  - TEMPLE_CAUSAL_COHERENCE_NE_INDEPENDENT_EVENT_PROOF
+  - REDACTION_TRAJECTORY_NE_ROMAN_CULTIVATION
