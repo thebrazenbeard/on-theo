@@ -1,0 +1,152 @@
+schema_version: on-theo.yeshua-r4-arrest-execution-evidence.v1
+status: R4_REVISED_AFTER_HOSTILE_REVIEW
+
+upstream:
+  r3_head: 10864afc3e56fa246b492200ad79594293782dcd
+
+claims:
+  - id: CLM-YS-R4-001-ROMAN-EXECUTION
+    proposition: Yeshua was executed by Roman crucifixion under Pontius Pilate.
+    disposition: SURVIVES_STRONGLY
+    evidence_class: [PRIMARY_TEXT, HISTORICAL_RECONSTRUCTION]
+    ceiling: >
+      Exact hearing sequence, sentence formula and charge wording remain
+      reconstructive.
+
+  - id: CLM-YS-R4-002-LOCAL-ELITE-ROLE
+    proposition: >
+      Jerusalem chief-priestly/local elite actors probably participated in the
+      process that led to Yeshua's arrest and referral/accusation.
+    disposition: PROBABLE_BUT_PASSION_TRADITION_DEPENDENT
+    evidence_class: [PRIMARY_TEXT, HISTORICAL_RECONSTRUCTION]
+    ceiling: >
+      Josephus supplies institutional context rather than direct event
+      corroboration; exact council structure, arrest authority and interrogation
+      sequence are source-variable.
+
+  - id: CLM-YS-R4-003-ROMAN-ARREST-PARTY
+    proposition: Roman soldiers directly participated in Yeshua's initial arrest.
+    disposition: UNRESOLVED
+    evidence_class: [PRIMARY_TEXT]
+    reason:
+      - MARK_MATTHEW_JOHN_ARREST_PARTY_VARIANCE
+      - JOHANNINE_ROMAN_MILITARY_LANGUAGE
+
+  - id: CLM-YS-R4-004-JUDAS-LOCATION-TIMING
+    proposition: >
+      If a historical insider handover occurred, location/timing/crowd-avoidance
+      information is a more plausible operational contribution than basic visual
+      identification of a publicly active teacher.
+    disposition: PROJECT_INFERENCE_PLAUSIBLE
+    evidence_class: [HISTORICAL_RECONSTRUCTION, PROJECT_INFERENCE]
+    ceiling: Not independent proof that Judas performed the role.
+
+  - id: CLM-YS-R4-005-JUDAS-NECESSARY
+    proposition: Authorities could not have arrested Yeshua without Judas.
+    disposition: NOT_ESTABLISHED
+    evidence_class: [UNKNOWN]
+
+  - id: CLM-YS-R4-006-POLITICAL-FRAME
+    proposition: >
+      Yeshua's Roman execution is best reconstructed as involving a political,
+      regal, sedition or public-order frame.
+    disposition: PROBABLE_TO_STRONG
+    evidence_class: [PRIMARY_TEXT, HISTORICAL_RECONSTRUCTION]
+    ceiling: Does not establish armed insurrection or Yeshua's private intent.
+
+  - id: CLM-YS-R4-007-PILATE-INNOCENCE
+    proposition: >
+      Pilate historically concluded Yeshua was innocent but executed him solely
+      because local petitioners forced his hand.
+    disposition: NOT_SECURE
+    evidence_class: [PRIMARY_TEXT, SCHOLARLY_INTERPRETATION]
+
+  - id: CLM-YS-R4-008-COLLECTIVE-BRIBERY
+    proposition: >
+      Roman or local authorities bribed/recruited most of Yeshua's apostles.
+    disposition: NOT_ESTABLISHED
+    evidence_class: [UNKNOWN]
+
+  - id: CLM-YS-R4-009-JUDAS-INNOCENT
+    proposition: Judas did not participate in any historical handover/arrest role.
+    disposition: UNRESOLVED
+    evidence_class: [UNKNOWN]
+
+  - id: CLM-YS-R4-010-JUDAS-FRAMED
+    proposition: Judas was deliberately framed as betrayer by surviving apostles or Rome.
+    disposition: UNRESOLVED
+    evidence_class: [UNKNOWN]
+
+  - id: CLM-YS-R4-011-TEMPLE-CONFRONTATION
+    proposition: >
+      Yeshua probably performed some historically real Temple-centered
+      confrontation or prophetic disruption in Jerusalem.
+    disposition: MODERATE_TO_PROBABLE_SOURCE_DEPENDENT
+    evidence_class: [PRIMARY_TEXT, HISTORICAL_RECONSTRUCTION]
+    ceiling: >
+      Mark is the earliest continuous narrative; Synoptic repetition is
+      dependent and John's differently located Temple tradition is not treated
+      as a clean independent second event witness.
+
+  - id: CLM-YS-R4-012-TEMPLE-CAUSALITY
+    proposition: >
+      A Temple confrontation materially contributed to the arrest/execution
+      chain.
+    disposition: PLAUSIBLE_SOURCE_DEPENDENT
+    evidence_class: [HISTORICAL_RECONSTRUCTION, PROJECT_INFERENCE]
+    ceiling: >
+      Explanatory coherence is stronger than independent event attestation.
+
+  - id: CLM-YS-R4-013-LOCAL-REFERRAL
+    proposition: >
+      Chief-priestly/local elite actors plausibly participated in referral or
+      accusation leading to Pilate.
+    disposition: PLAUSIBLE_TO_PROBABLE_SOURCE_DEPENDENT
+    evidence_class: [PRIMARY_TEXT, HISTORICAL_RECONSTRUCTION]
+    ceiling: >
+      Josephus supplies institutional context rather than direct event
+      corroboration.
+
+  - id: CLM-YS-R4-014-RESPONSIBILITY-REDACTION
+    proposition: >
+      Passion traditions diachronically reshape responsibility, including
+      expanding Judas characterization and selected Pilate-mitigation patterns.
+    disposition: SURVIVES_NARROWED
+    evidence_class: [PRIMARY_TEXT, SCHOLARLY_INTERPRETATION]
+    ceiling: >
+      The development is not perfectly linear and does not establish Roman
+      censorship, state authorship or cultivation.
+
+  - id: CLM-YS-R4-015-COLLECTIVE-JEWISH-GUILT
+    proposition: Jews as a people were collectively responsible for killing Yeshua.
+    disposition: REJECTED_AS_HISTORICALLY_IMPRECISE
+    evidence_class: [HISTORICAL_RECONSTRUCTION]
+    reason:
+      - ACTOR_DECOMPOSITION
+      - ROMAN_CRUCIFIXION_UNDER_PILATE
+      - YESHUA_AND_EARLIEST_MOVEMENT_JEWISH
+
+context_controls:
+  PASSOVER_SECURITY:
+    evidence:
+      - JOSEPHUS_FESTIVAL_TROOP_DEPLOYMENT
+    classification: HISTORICAL_CONTEXT
+  PILATE_COERCIVE_AGENCY:
+    evidence:
+      - JOSEPHUS_PILATE_INCIDENTS
+      - ROMAN_PREFECTURAL_JUDICIAL_POWER
+    classification: HISTORICAL_CONTEXT
+  ARREST_PARTY_VARIANCE:
+    evidence:
+      - MARK_14
+      - MATTHEW_26
+      - LUKE_22
+      - JOHN_18
+    classification: PRIMARY_TEXT_CONFLICT
+
+guards:
+  - ACTOR_DECOMPOSITION_REQUIRED
+  - ANTI_COLLECTIVE_BLAME_REQUIRED
+  - JUDAS_OPERATIONAL_MODEL_NE_EVENT_PROOF
+  - TEMPLE_CAUSAL_COHERENCE_NE_INDEPENDENT_EVENT_PROOF
+  - REDACTION_TRAJECTORY_NE_ROMAN_CULTIVATION

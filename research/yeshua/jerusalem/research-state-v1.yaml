@@ -1,0 +1,47 @@
+schema_version: on-theo.yeshua-r4-jerusalem-arrest-execution-state.v1
+status: INITIAL_R4_RECONSTRUCTION_ACTIVE
+
+branch:
+  name: research/yeshua-jerusalem-arrest-execution-v1-20260922
+  base_head: 10864afc3e56fa246b492200ad79594293782dcd
+
+artifacts:
+  source_boundary: research/yeshua/jerusalem/jerusalem-arrest-execution-source-boundary-v1.md
+  arrest_logistics: research/yeshua/jerusalem/arrest-party-logistics-packet-v1.md
+  judas_test: research/yeshua/jerusalem/judas-operational-necessity-test-v1.md
+  pilate: research/yeshua/jerusalem/pilate-sedition-crucifixion-packet-v1.md
+  evidence: research/yeshua/jerusalem/arrest-execution-evidence-v1.yaml
+
+current_strong_results:
+  - ROMAN_EXECUTION_UNDER_PILATE
+  - POLITICAL_REGAL_PUBLIC_ORDER_FRAME_PROBABLE
+  - LOCAL_HIGH_PRIESTLY_ROLE_PROBABLE
+  - FESTIVAL_SECURITY_CONTEXT_REAL
+
+current_unresolved:
+  - DIRECT_ROMAN_PARTICIPATION_AT_INITIAL_ARREST
+  - EXACT_TEMPLE_TO_ARREST_CAUSAL_CHAIN
+  - JUDAS_OPERATIONAL_FUNCTION
+  - JUDAS_HISTORICITY_OF_HANDOVER
+  - JUDAS_INNOCENCE
+  - JUDAS_FRAMEUP
+  - EXACT_TRIAL_SEQUENCE
+  - EXACT_ROMAN_CHARGE
+
+not_established:
+  - COLLECTIVE_APOSTOLIC_BRIBERY
+  - ROMAN_AGENT_INSERTION
+  - TIBERIAN_EXECUTION_ORDER
+  - TIBERIAN_CULTIVATION_FROM_R4
+
+next_frontier:
+  primary: R4_TEMPLE_CHIEF_PRIEST_CAUSAL_PACKET_V1
+  subsequent:
+    - R4_PASSION_RESPONSIBILITY_DIACHRONIC_MATRIX_V1
+    - R4_INTERNAL_HOSTILE_REVIEW
+    - R3_R4_JUDAS_JOINT_UPDATE
+
+guards:
+  - ROMAN_RESPONSIBILITY_ANCHOR
+  - ANTI_COLLECTIVE_BLAME
+  - OPERATIONAL_PLAUSIBILITY_NE_HISTORICAL_PROOF
