@@ -57,7 +57,7 @@ claims:
 
   - id: CLM-YS-R5-008-EMPTY-TOMB
     proposition: Yeshua's burial place was historically found empty.
-    disposition: UNRESOLVED_PENDING_EMPTY_TOMB_ANALYSIS
+    disposition: PLAUSIBLE_TO_MODERATE_NOT_SECURE
     evidence_class: [PRIMARY_TEXT, HISTORICAL_RECONSTRUCTION]
 
   - id: CLM-YS-R5-009-BODILY-MIRACLE
@@ -100,3 +100,35 @@ guards:
   - PAUL_NE_GOSPEL_HARMONIZATION
   - JEWISH_CONTEXT_NE_SPECIFIC_CLAIM_ORIGIN
   - NATURALISTIC_AND_SUPERNATURAL_MODELS_REMAIN_SEPARATE_FROM_HISTORICAL_FLOOR
+
+
+  - id: CLM-YS-R5-013-APPEARANCE-PHENOMENOLOGY
+    proposition: >
+      The earliest appearance traditions preserve one recoverable uniform
+      sensory/physical experience type.
+    disposition: NOT_ESTABLISHED
+    evidence_class: [PRIMARY_TEXT, HISTORICAL_RECONSTRUCTION]
+    reason:
+      - EARLY_PAULINE_PHENOMENOLOGY_SPARSE
+      - PAUL_REVELATORY_AND_SEEING_LANGUAGE
+      - LATER_GOSPEL_CONCRETIZATION
+
+  - id: CLM-YS-R5-014-MARY-PASSION-TOMB
+    proposition: >
+      Mary Magdalene belongs to early passion, burial and tomb memory.
+    disposition: SURVIVES_NARROWED
+    evidence_class: [PRIMARY_TEXT, HISTORICAL_RECONSTRUCTION]
+    ceiling: >
+      Mark is earliest narrative; historicity of each tomb detail remains
+      source-dependent.
+
+  - id: CLM-YS-R5-015-MARY-FIRST-APPEARANCE
+    proposition: >
+      Mary Magdalene was historically the first person to experience an
+      appearance of the risen Yeshua.
+    disposition: UNRESOLVED
+    evidence_class: [PRIMARY_TEXT, HISTORICAL_RECONSTRUCTION]
+    reason:
+      - PAUL_CEPHAS_FIRST
+      - JOHN_MARY_FIRST_IN_NARRATIVE
+      - SOURCE_CLOCK_DIFFERENCE
