@@ -1,0 +1,39 @@
+schema_version: on-theo.yeshua-missing-years-state.v7
+status: INTERNAL_HOSTILE_REVIEWED_THROUGH_JOHN_DIFFERENTIATION
+supersedes_for_current_research:
+  - research/yeshua/missing-years/RESEARCH_STATE_V6.yaml
+
+branch:
+  name: research/yeshua-missing-years-constrained-context-v1-20260922
+  pr: 163
+  stacked_on: research/yeshua-early-source-constrained-baseline-v1-20260921
+
+review_chain:
+  core_pass: d21d9b753418e099e4dca230b99f3931be1c8783
+  later_source_pass: 5c8a07484e1d61ab401b291db98f02c134ff2efa
+  John_extension_failed_subject: c783e854b2537c6f351f8477e80c207c1a76dca8
+  John_extension_final_subject: aa366609ec115a2bd05538c128796011a3112362
+  John_extension_final_disposition: INTERNAL_HOSTILE_PASS_WITH_GUARDS
+  independent_review: NOT_DONE
+
+current_surviving_floor:
+  missing_years: NARRATIVE_SILENCE_NOT_DEMONSTRATED_EXCISION
+  marital_status: UNRESOLVED
+  wife_child_suppression: NO_POSITIVE_TRACE_IDENTIFIED
+  disputed_parentage: TRACKED_POSSIBILITY_NOT_ESTABLISHED
+  Mary_authority: STRONGER_THAN_MARRIAGE_HYPOTHESIS
+  John_association: PROBABLE
+  John_formal_discipleship: UNRESOLVED
+  John_eschatological_continuity: PLAUSIBLE_SOURCE_DEPENDENT
+  John_to_Yeshua_public_differentiation: MODERATE_HISTORICAL_RECONSTRUCTION
+
+next_frontier:
+  primary: NAZARETH_REJECTION_AND_FAMILY_CONFLICT_SOURCE_STRATIGRAPHY_V1
+  subsequent:
+    - YOUNG_ADULT_MARRIAGE_CELIBACY_NEGATIVE_EVIDENCE_TEST_V1
+    - INDEPENDENT_EXACT_HEAD_REVIEW
+
+guards:
+  - INTERNAL_REVIEW_NE_INDEPENDENT_REVIEW
+  - DEVELOPMENTAL_MODEL_NE_RECOVERED_BIOGRAPHY
+  - LATER_TRADITION_NE_BASELINE_A
