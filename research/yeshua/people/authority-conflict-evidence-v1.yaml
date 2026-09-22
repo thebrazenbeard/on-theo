@@ -28,7 +28,8 @@ source_clocks:
     composition_field: SECOND_CENTURY
     external_attestation: IRENAEUS_C180
     surviving_witness: CODEX_TCHACOS_COPTIC
-    primary_authority_claim: JUDAS_PRIVILEGED_KNOWLEDGE_ALTERNATIVE
+    primary_authority_claim: JUDAS_DISTINCTIVE_KNOWLEDGE_ALTERNATIVE
+    valuation_status: SCHOLARLY_DISPUTED_POSITIVE_NEGATIVE_TRAGIC_AMBIVALENT
 
 claims:
   MARY_PROSTITUTE:
@@ -54,7 +55,7 @@ claims:
 
 method_result:
   privileged_disciple_portrait:
-    status: RECURRENT_AUTHORITY_DEVICE
+    status: PROJECT_INFERENCE_RECURRENT_AUTHORITY_DEVICE
     implication: REDUCES_DIRECT_HISTORICAL_WEIGHT_OF_LATE_PRIVILEGE_CLAIMS
 
 guards:
