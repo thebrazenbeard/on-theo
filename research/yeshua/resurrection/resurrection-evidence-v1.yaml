@@ -27,8 +27,8 @@ claims:
     ceiling: Experience type/location unknown.
 
   - id: CLM-YS-R5-004-JAMES
-    proposition: An early appearance tradition named James.
-    disposition: SURVIVES_STRONGLY
+    proposition: An early Pauline appearance tradition names James.
+    disposition: EARLY_PAULINE_ATTESTATION_SOCIAL_NETWORK_ANCHORED
     evidence_class: [PRIMARY_TEXT]
     ceiling: Experience type/location unknown.
 
@@ -37,7 +37,9 @@ claims:
       Paul reports an appearance to more than five hundred at once.
     disposition: EARLY_PAULINE_ATTESTATION_NOT_INDEPENDENTLY_CORROBORATED
     evidence_class: [PRIMARY_TEXT]
-    ceiling: No names/location/independent surviving witness.
+    ceiling: >
+      No names/location/independent surviving witness; membership in one fixed
+      pre-Pauline formula is unresolved.
 
   - id: CLM-YS-R5-006-PAUL-EXPERIENCE
     proposition: >
@@ -57,7 +59,7 @@ claims:
 
   - id: CLM-YS-R5-008-EMPTY-TOMB
     proposition: Yeshua's burial place was historically found empty.
-    disposition: PLAUSIBLE_TO_MODERATE_NOT_SECURE
+    disposition: UNRESOLVED_WITH_MEANINGFUL_HISTORICAL_SUPPORT
     evidence_class: [PRIMARY_TEXT, HISTORICAL_RECONSTRUCTION]
     ceiling: >
       Mark is the earliest surviving continuous empty-tomb narrative; Paul does
@@ -137,3 +139,10 @@ guards:
   - NATURALISTIC_AND_SUPERNATURAL_MODELS_REMAIN_SEPARATE_FROM_HISTORICAL_FLOOR
   - EMPTY_TOMB_NE_APPEARANCE_TRADITION
   - MARY_PRIORITY_REQUIRES_SOURCE_CLOCK
+
+
+formula_boundary_control:
+  received_core_1cor15_3_5: STRONG_SOURCE_CRITICAL_RECONSTRUCTION
+  one_fixed_formula_through_1cor15_6_7: UNRESOLVED
+  james_pre_pauline_membership: UNRESOLVED
+  five_hundred_pre_pauline_membership: UNRESOLVED
