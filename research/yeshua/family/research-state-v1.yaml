@@ -1,0 +1,55 @@
+schema_version: on-theo.yeshua-r6-family-paternity-state.v1
+status: FIRST_HOSTILE_REVIEW_APPLIED_SECOND_PASS_PENDING
+
+branch:
+  name: research/yeshua-family-paternity-v1-20260922
+  base_branch: research/yeshua-resurrection-stratification-v1-20260922
+  base_head: 9d425f75e6333f984162e4ecc74a189ed68a3b6e
+
+cross_branch_inputs:
+  missing_years: 0d435fb8d354f100203927ebdb7b768c74884831
+  panthera_wordplay: 71ba8382c073e72332f3cb7199fb5824fe74a2b2
+  panthera_rabbinic: 389c1e6e2c8affafae165fd34ca091618043b11e
+
+artifacts:
+  source_boundary: research/yeshua/family/family-paternity-source-boundary-v1.md
+  source_clock: research/yeshua/family/family-parentage-source-clock-v1.md
+  matronymic: research/yeshua/family/son-of-mary-test-v1.md
+  infancy: research/yeshua/family/infancy-virgin-conception-packet-v1.md
+  panthera: research/yeshua/family/panthera-countertradition-integration-v1.md
+  kinship: research/yeshua/family/family-joseph-kinship-control-v1.md
+  evidence: research/yeshua/family/family-paternity-evidence-v1.yaml
+  joseph_historicity: research/yeshua/family/joseph-historicity-infancy-independence-test-v1.md
+
+current_strong_results:
+  - EARLY_KINSHIP_MEMORY
+  - SON_OF_MARY_AS_UNUSUAL_EARLY_TEXTUAL_DATA
+  - LATE_FIRST_CENTURY_VIRGIN_CONCEPTION_TRADITION
+  - LATE_SECOND_CENTURY_PANTHERA_COUNTERTRADITION
+  - JOSEPH_AS_STRONG_LATE_FIRST_CENTURY_SOCIAL_FATHER_TRADITION
+
+current_unresolved:
+  - HISTORICAL_ILLEGITIMACY_UNRESOLVED_ONE_LIVE_INTERPRETATION
+  - BIOLOGICAL_FATHER_IDENTITY
+  - HISTORICAL_JOSEPH_SOCIAL_FATHER_PLAUSIBLE_NOT_SECURE
+  - ORIGIN_OF_VIRGIN_CONCEPTION_TRADITION
+  - BIOLOGICAL_VIRGIN_CONCEPTION
+  - MARK_TO_PANTHERA_TRANSMISSION
+  - OLDER_ILLEGITIMACY_MEMORY_BEHIND_PANTHERA
+
+not_established:
+  - PANTHERA_AS_BIOLOGICAL_FATHER
+  - ABDES_PANTERA_AS_YESHUA_FATHER
+  - MARY_MAGDALENE_AS_WIFE
+  - YESHUA_BIOLOGICAL_CHILD
+  - DELIBERATE_WIFE_CHILD_SUPPRESSION
+
+next_frontier:
+  primary: R6_SECOND_EXACT_HEAD_HOSTILE_REVIEW
+  subsequent:
+    - R6_DRAFT_PR
+    - R7_NONCANONICAL_SOURCE_STRATIFICATION
+
+guards:
+  - BIOGRAPHY_NE_POLEMIC
+  - TRADITION_HISTORY_NE_BIOLOGICAL_VERIFICATION
