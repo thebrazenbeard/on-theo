@@ -1,0 +1,148 @@
+schema_version: on-theo.yeshua-r5-resurrection-evidence.v1
+status: R5_CORE_PACKETS_READY_FOR_HOSTILE_REVIEW
+
+upstream:
+  r4_branch: research/yeshua-jerusalem-arrest-execution-v1-20260922
+  r4_head_at_creation: 0b2030a864e9660053e0d45b4c7d8d0da72267cf
+
+claims:
+  - id: CLM-YS-R5-001-EARLY-CONVICTION
+    proposition: >
+      Very early followers proclaimed that God had raised/vindicated Yeshua.
+    disposition: SURVIVES_STRONGLY
+    evidence_class: [PRIMARY_TEXT, TRADITION_HISTORY, HISTORICAL_RECONSTRUCTION]
+    ceiling: Metaphysical mechanism is not established.
+
+  - id: CLM-YS-R5-002-APPEARANCE-REPORTS
+    proposition: >
+      Named individual and group appearance reports existed very early.
+    disposition: SURVIVES_STRONGLY
+    evidence_class: [PRIMARY_TEXT, TRADITION_HISTORY]
+    ceiling: Phenomenology is largely unrecoverable at the earliest layer.
+
+  - id: CLM-YS-R5-003-CEPHAS
+    proposition: An early appearance tradition named Cephas.
+    disposition: SURVIVES_STRONGLY
+    evidence_class: [PRIMARY_TEXT]
+    ceiling: Experience type/location unknown.
+
+  - id: CLM-YS-R5-004-JAMES
+    proposition: An early Pauline appearance tradition names James.
+    disposition: EARLY_PAULINE_ATTESTATION_SOCIAL_NETWORK_ANCHORED
+    evidence_class: [PRIMARY_TEXT]
+    ceiling: Experience type/location unknown.
+
+  - id: CLM-YS-R5-005-FIVE-HUNDRED
+    proposition: >
+      Paul reports an appearance to more than five hundred at once.
+    disposition: EARLY_PAULINE_ATTESTATION_NOT_INDEPENDENTLY_CORROBORATED
+    evidence_class: [PRIMARY_TEXT]
+    ceiling: >
+      No names/location/independent surviving witness; membership in one fixed
+      pre-Pauline formula is unresolved.
+
+  - id: CLM-YS-R5-006-PAUL-EXPERIENCE
+    proposition: >
+      Paul reports his own later encounter/revelation as an appearance of the
+      risen Yeshua.
+    disposition: SURVIVES_STRONGLY_AS_PAUL_SELF_REPORT
+    evidence_class: [PRIMARY_TEXT]
+    ceiling: Does not determine other appearance phenomenology.
+
+  - id: CLM-YS-R5-007-PAULINE-EMBODIMENT
+    proposition: >
+      Paul's developed resurrection theology involves transformed embodied
+      existence rather than mere disembodied soul survival.
+    disposition: SURVIVES
+    evidence_class: [PRIMARY_TEXT, SCHOLARLY_INTERPRETATION]
+    ceiling: Pauline theology is not a forensic corpse description.
+
+  - id: CLM-YS-R5-008-EMPTY-TOMB
+    proposition: Yeshua's burial place was historically found empty.
+    disposition: UNRESOLVED_WITH_MEANINGFUL_HISTORICAL_SUPPORT
+    evidence_class: [PRIMARY_TEXT, HISTORICAL_RECONSTRUCTION]
+    ceiling: >
+      Mark is the earliest surviving continuous empty-tomb narrative; Paul does
+      not independently narrate tomb discovery and later Synoptic accounts are
+      substantially dependent on Mark.
+
+  - id: CLM-YS-R5-009-BODILY-MIRACLE
+    proposition: God physically raised/transformed Yeshua's corpse.
+    disposition: METAPHYSICALLY_UNRESOLVED
+    evidence_class: [UNKNOWN]
+
+  - id: CLM-YS-R5-010-HALLUCINATION
+    proposition: The appearance reports were hallucinations.
+    disposition: NOT_ESTABLISHED
+    evidence_class: [SPECULATIVE_MODEL]
+
+  - id: CLM-YS-R5-011-FRAUD
+    proposition: Followers knowingly fabricated the resurrection claims.
+    disposition: NOT_ESTABLISHED
+    evidence_class: [UNKNOWN]
+
+  - id: CLM-YS-R5-012-JEWISH-CONCEPTUAL-CONTEXT
+    proposition: >
+      Resurrection and postmortem vindication were available but contested
+      concepts within Second Temple Jewish discourse.
+    disposition: SURVIVES_STRONGLY
+    evidence_class: [PRIMARY_TEXT, HISTORICAL_RECONSTRUCTION]
+    ceiling: Context does not explain the specific Yeshua claim.
+
+  - id: CLM-YS-R5-013-APPEARANCE-PHENOMENOLOGY
+    proposition: >
+      The earliest appearance traditions preserve one recoverable uniform
+      sensory/physical experience type.
+    disposition: NOT_ESTABLISHED
+    evidence_class: [PRIMARY_TEXT, HISTORICAL_RECONSTRUCTION]
+    reason:
+      - EARLY_PAULINE_PHENOMENOLOGY_SPARSE
+      - PAUL_REVELATORY_AND_SEEING_LANGUAGE
+      - LATER_GOSPEL_CONCRETIZATION
+
+  - id: CLM-YS-R5-014-MARY-PASSION-TOMB
+    proposition: >
+      Mary Magdalene belongs to early passion, burial and tomb memory.
+    disposition: SURVIVES_NARROWED
+    evidence_class: [PRIMARY_TEXT, HISTORICAL_RECONSTRUCTION]
+    ceiling: >
+      Mark is earliest narrative; historicity of each tomb detail remains
+      source-dependent.
+
+  - id: CLM-YS-R5-015-MARY-FIRST-APPEARANCE
+    proposition: >
+      Mary Magdalene was historically the first person to experience an
+      appearance of the risen Yeshua.
+    disposition: UNRESOLVED
+    evidence_class: [PRIMARY_TEXT, HISTORICAL_RECONSTRUCTION]
+    reason:
+      - PAUL_CEPHAS_FIRST
+      - JOHN_MARY_FIRST_IN_NARRATIVE
+      - SOURCE_CLOCK_DIFFERENCE
+
+context_controls:
+  DANIEL_12:
+    classification: RESURRECTION_AND_JUDGMENT
+  SECOND_MACCABEES_7:
+    classification: MARTYR_RESURRECTION_VINDICATION
+  WISDOM_OF_SOLOMON:
+    classification: SOUL_SURVIVAL_IMMORTALITY_CONTROL
+  JOSEPHUS:
+    classification: PLURAL_AFTERLIFE_GROUP_DESCRIPTIONS_WITH_CULTURAL_TRANSLATION
+  QUMRAN_4Q521:
+    classification: TEXT_SPECIFIC_ESCHATOLOGICAL_RESURRECTION_CONTEXT
+
+guards:
+  - BELIEF_NE_EVENT_MECHANISM
+  - PAUL_NE_GOSPEL_HARMONIZATION
+  - JEWISH_CONTEXT_NE_SPECIFIC_CLAIM_ORIGIN
+  - NATURALISTIC_AND_SUPERNATURAL_MODELS_REMAIN_SEPARATE_FROM_HISTORICAL_FLOOR
+  - EMPTY_TOMB_NE_APPEARANCE_TRADITION
+  - MARY_PRIORITY_REQUIRES_SOURCE_CLOCK
+
+
+formula_boundary_control:
+  received_core_1cor15_3_5: STRONG_SOURCE_CRITICAL_RECONSTRUCTION
+  one_fixed_formula_through_1cor15_6_7: UNRESOLVED
+  james_pre_pauline_membership: UNRESOLVED
+  five_hundred_pre_pauline_membership: UNRESOLVED

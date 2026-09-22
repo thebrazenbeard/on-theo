@@ -1,0 +1,52 @@
+schema_version: on-theo.yeshua-r5-resurrection-state.v1
+status: FIRST_HOSTILE_REVIEW_APPLIED_SECOND_PASS_PENDING
+
+branch:
+  name: research/yeshua-resurrection-stratification-v1-20260922
+  base_branch: research/yeshua-jerusalem-arrest-execution-v1-20260922
+  base_head: 0b2030a864e9660053e0d45b4c7d8d0da72267cf
+
+artifacts:
+  source_boundary: research/yeshua/resurrection/resurrection-source-boundary-v1.md
+  jewish_context: research/yeshua/resurrection/jewish-resurrection-context-matrix-v1.md
+  paul_packet: research/yeshua/resurrection/pauline-resurrection-appearance-packet-v1.md
+  source_clock: research/yeshua/resurrection/tomb-appearance-source-clock-v1.md
+  mechanism_firewall: research/yeshua/resurrection/resurrection-mechanism-firewall-v1.md
+  evidence: research/yeshua/resurrection/resurrection-evidence-v1.yaml
+  empty_tomb: research/yeshua/resurrection/empty-tomb-historicity-test-v1.md
+  phenomenology: research/yeshua/resurrection/appearance-phenomenology-matrix-v1.md
+  mary: research/yeshua/resurrection/mary-magdalene-resurrection-memory-packet-v1.md
+
+current_strong_results:
+  - VERY_EARLY_RESURRECTION_VINDICATION_CONVICTION
+  - VERY_EARLY_NAMED_APPEARANCE_REPORTS
+  - CEPHAS_AND_JAMES_EARLY_SOCIAL_ANCHORS
+  - PAUL_SELF_REPORT_OF_LATER_APPEARANCE_REVELATION
+  - PAULINE_TRANSFORMED_EMBODIMENT_THEOLOGY
+  - SECOND_TEMPLE_JEWISH_RESURRECTION_AFTERLIFE_PLURALITY
+
+current_narrowed_results:
+  - EMPTY_TOMB_HISTORICITY_UNRESOLVED_WITH_MEANINGFUL_HISTORICAL_SUPPORT
+  - MARY_PASSION_TOMB_MEMORY_SURVIVES_NARROWED
+  - ONE_UNIFORM_APPEARANCE_PHENOMENOLOGY_NOT_ESTABLISHED
+
+current_unresolved:
+  - APPEARANCE_PHENOMENOLOGY
+  - PHYSICAL_CORPSE_TRANSFORMATION
+  - VISIONARY_MECHANISM
+  - GRIEF_EXPERIENCE_MECHANISM
+  - FRAUD
+  - BODY_REMOVAL_OR_RELOCATION
+  - RELATION_BETWEEN_PAULINE_APPEARANCE_TRADITION_AND_MARKAN_EMPTY_TOMB
+  - MARY_MAGDALENE_RESURRECTION_MEMORY_HISTORICAL_DEPTH
+
+next_frontier:
+  primary: R5_SECOND_EXACT_HEAD_HOSTILE_REVIEW
+  subsequent:
+    - R5_REVISION_IF_REQUIRED
+    - R5_SECOND_EXACT_HEAD_HOSTILE_REVIEW
+    - R5_DRAFT_PR
+
+guards:
+  - EARLY_BELIEF_NE_METAPHYSICAL_EVENT
+  - SOURCE_CLOCK_BEFORE_HARMONIZATION
