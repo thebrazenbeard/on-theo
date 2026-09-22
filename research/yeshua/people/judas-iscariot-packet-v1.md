@@ -53,12 +53,19 @@ Irenaeus witnesses knowledge of a Gospel of Judas around 180 CE.
 The surviving Codex Tchacos version is later and Coptic, preserving a work
 generally placed in the second century.
 
-It associates Judas with privileged knowledge and a sharply alternative
-cosmological interpretation of his role.
+It associates Judas with distinctive knowledge and a sharply alternative
+cosmological interpretation of his role. Scholarship disputes whether the text
+ultimately evaluates Judas positively, negatively, tragically, or ambivalently.
+The manuscript therefore cannot be reduced to a simple 'Judas was the hero'
+reading.
 
 That means:
 
 ALTERNATIVE_JUDAS_RECEPTION_EXISTED_BY_THE_LATE_SECOND_CENTURY.
+
+JUDAS_DISTINCTIVE_KNOWLEDGE_IN_GOSPEL_OF_JUDAS = SURVIVES.
+
+GOSPEL_OF_JUDAS_POSITIVE_EXONERATION = DISPUTED_NOT_ADMITTED.
 
 It does not mean:
 
