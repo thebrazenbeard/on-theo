@@ -26,12 +26,19 @@ Priority:
 - Galatians 1–2 for Paul's contact with Cephas/James;
 - other undisputed Pauline resurrection language only with work-specific context.
 
-1 Corinthians 15:3–8 contains material Paul says he "received" and "delivered."
+1 Corinthians 15:3–8 contains a mixture whose exact tradition/formula boundaries
+must be reconstructed.
 
 Current control:
 
 PAUL_REPORTS_RECEIVED_TRADITION =
 EARLY_HISTORICAL_DATUM.
+
+1_COR_15_3_5_RECEIVED_CORE =
+STRONG_SOURCE_CRITICAL_RECONSTRUCTION.
+
+EXTENSION_OF_ONE_FIXED_FORMULA_THROUGH_15_6_7 =
+UNRESOLVED.
 
 PRE_PAULINE_FORMULA_BOUNDARIES_AND_DATE =
 SOURCE_CRITICAL_RECONSTRUCTION.
