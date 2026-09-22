@@ -1,5 +1,5 @@
 schema_version: on-theo.yeshua-r5-resurrection-evidence.v1
-status: INITIAL_R5_SOURCE_STRATIFICATION
+status: R5_CORE_PACKETS_READY_FOR_HOSTILE_REVIEW
 
 upstream:
   r4_branch: research/yeshua-jerusalem-arrest-execution-v1-20260922
@@ -59,6 +59,10 @@ claims:
     proposition: Yeshua's burial place was historically found empty.
     disposition: PLAUSIBLE_TO_MODERATE_NOT_SECURE
     evidence_class: [PRIMARY_TEXT, HISTORICAL_RECONSTRUCTION]
+    ceiling: >
+      Mark is the earliest surviving continuous empty-tomb narrative; Paul does
+      not independently narrate tomb discovery and later Synoptic accounts are
+      substantially dependent on Mark.
 
   - id: CLM-YS-R5-009-BODILY-MIRACLE
     proposition: God physically raised/transformed Yeshua's corpse.
@@ -82,25 +86,6 @@ claims:
     disposition: SURVIVES_STRONGLY
     evidence_class: [PRIMARY_TEXT, HISTORICAL_RECONSTRUCTION]
     ceiling: Context does not explain the specific Yeshua claim.
-
-context_controls:
-  DANIEL_12:
-    classification: RESURRECTION_AND_JUDGMENT
-  SECOND_MACCABEES_7:
-    classification: MARTYR_RESURRECTION_VINDICATION
-  WISDOM_OF_SOLOMON:
-    classification: SOUL_SURVIVAL_IMMORTALITY_CONTROL
-  JOSEPHUS:
-    classification: PLURAL_AFTERLIFE_GROUP_DESCRIPTIONS_WITH_CULTURAL_TRANSLATION
-  QUMRAN_4Q521:
-    classification: TEXT_SPECIFIC_ESCHATOLOGICAL_RESURRECTION_CONTEXT
-
-guards:
-  - BELIEF_NE_EVENT_MECHANISM
-  - PAUL_NE_GOSPEL_HARMONIZATION
-  - JEWISH_CONTEXT_NE_SPECIFIC_CLAIM_ORIGIN
-  - NATURALISTIC_AND_SUPERNATURAL_MODELS_REMAIN_SEPARATE_FROM_HISTORICAL_FLOOR
-
 
   - id: CLM-YS-R5-013-APPEARANCE-PHENOMENOLOGY
     proposition: >
@@ -132,3 +117,23 @@ guards:
       - PAUL_CEPHAS_FIRST
       - JOHN_MARY_FIRST_IN_NARRATIVE
       - SOURCE_CLOCK_DIFFERENCE
+
+context_controls:
+  DANIEL_12:
+    classification: RESURRECTION_AND_JUDGMENT
+  SECOND_MACCABEES_7:
+    classification: MARTYR_RESURRECTION_VINDICATION
+  WISDOM_OF_SOLOMON:
+    classification: SOUL_SURVIVAL_IMMORTALITY_CONTROL
+  JOSEPHUS:
+    classification: PLURAL_AFTERLIFE_GROUP_DESCRIPTIONS_WITH_CULTURAL_TRANSLATION
+  QUMRAN_4Q521:
+    classification: TEXT_SPECIFIC_ESCHATOLOGICAL_RESURRECTION_CONTEXT
+
+guards:
+  - BELIEF_NE_EVENT_MECHANISM
+  - PAUL_NE_GOSPEL_HARMONIZATION
+  - JEWISH_CONTEXT_NE_SPECIFIC_CLAIM_ORIGIN
+  - NATURALISTIC_AND_SUPERNATURAL_MODELS_REMAIN_SEPARATE_FROM_HISTORICAL_FLOOR
+  - EMPTY_TOMB_NE_APPEARANCE_TRADITION
+  - MARY_PRIORITY_REQUIRES_SOURCE_CLOCK
