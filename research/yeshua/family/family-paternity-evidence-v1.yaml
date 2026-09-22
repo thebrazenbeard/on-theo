@@ -1,5 +1,5 @@
 schema_version: on-theo.yeshua-r6-family-paternity-evidence.v1
-status: R6_CORE_READY_FOR_HOSTILE_REVIEW
+status: FIRST_HOSTILE_REVIEW_APPLIED_SECOND_PASS_PENDING
 
 upstream:
   r5_head_at_creation: 9d425f75e6333f984162e4ecc74a189ed68a3b6e
