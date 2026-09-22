@@ -1,5 +1,5 @@
 schema_version: on-theo.yeshua-r4-arrest-execution-evidence.v1
-status: INITIAL_R4_SOURCE_CRITICAL
+status: R4_REVISED_AFTER_HOSTILE_REVIEW
 
 upstream:
   r3_head: 10864afc3e56fa246b492200ad79594293782dcd
@@ -98,3 +98,53 @@ guards:
   - ACTOR_DECOMPOSITION_REQUIRED
   - ANTI_COLLECTIVE_BLAME_REQUIRED
   - JUDAS_OPERATIONAL_MODEL_NE_EVENT_PROOF
+
+
+  - id: CLM-YS-R4-011-TEMPLE-CONFRONTATION
+    proposition: >
+      Yeshua probably performed some historically real Temple-centered
+      confrontation or prophetic disruption in Jerusalem.
+    disposition: MODERATE_TO_PROBABLE_SOURCE_DEPENDENT
+    evidence_class: [PRIMARY_TEXT, HISTORICAL_RECONSTRUCTION]
+    ceiling: >
+      Mark is the earliest continuous narrative; Synoptic repetition is
+      dependent and John's differently located Temple tradition is not treated
+      as a clean independent second event witness.
+
+  - id: CLM-YS-R4-012-TEMPLE-CAUSALITY
+    proposition: >
+      A Temple confrontation materially contributed to the arrest/execution
+      chain.
+    disposition: PLAUSIBLE_SOURCE_DEPENDENT
+    evidence_class: [HISTORICAL_RECONSTRUCTION, PROJECT_INFERENCE]
+    ceiling: >
+      Explanatory coherence is stronger than independent event attestation.
+
+  - id: CLM-YS-R4-013-LOCAL-REFERRAL
+    proposition: >
+      Chief-priestly/local elite actors plausibly participated in referral or
+      accusation leading to Pilate.
+    disposition: PLAUSIBLE_TO_PROBABLE_SOURCE_DEPENDENT
+    evidence_class: [PRIMARY_TEXT, HISTORICAL_RECONSTRUCTION]
+    ceiling: >
+      Josephus supplies institutional context rather than direct event
+      corroboration.
+
+  - id: CLM-YS-R4-014-RESPONSIBILITY-REDACTION
+    proposition: >
+      Passion traditions diachronically reshape responsibility, including
+      expanding Judas characterization and selected Pilate-mitigation patterns.
+    disposition: SURVIVES_NARROWED
+    evidence_class: [PRIMARY_TEXT, SCHOLARLY_INTERPRETATION]
+    ceiling: >
+      The development is not perfectly linear and does not establish Roman
+      censorship, state authorship or cultivation.
+
+  - id: CLM-YS-R4-015-COLLECTIVE-JEWISH-GUILT
+    proposition: Jews as a people were collectively responsible for killing Yeshua.
+    disposition: REJECTED_AS_HISTORICALLY_IMPRECISE
+    evidence_class: [HISTORICAL_RECONSTRUCTION]
+    reason:
+      - ACTOR_DECOMPOSITION
+      - ROMAN_CRUCIFIXION_UNDER_PILATE
+      - YESHUA_AND_EARLIEST_MOVEMENT_JEWISH
