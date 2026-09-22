@@ -1,0 +1,46 @@
+schema_version: on-theo.yeshua-missing-years-state.v6
+status: INTERNAL_HOSTILE_REVIEWED_WITH_JOHN_DIFFERENTIATION_EXTENSION
+supersedes_for_current_research:
+  - research/yeshua/missing-years/RESEARCH_STATE_V5.yaml
+
+branch:
+  name: research/yeshua-missing-years-constrained-context-v1-20260922
+  pr: 163
+  stacked_on: research/yeshua-early-source-constrained-baseline-v1-20260921
+
+new_artifact:
+  John_to_Yeshua: research/yeshua/missing-years/JOHN_TO_YESHUA_TEACHING_DIFFERENTIATION_TEST_V1.md
+
+John_transition:
+  baptism_or_orbit: PROBABLE
+  formal_discipleship: UNRESOLVED
+  extended_duration: UNRESOLVED
+  eschatological_continuity: PLAUSIBLE_STRONG
+  public_style_differentiation:
+    - wilderness_to_mobile_social_mission
+    - repentance_baptism_to_Kingdom_centered_public_profile
+    - ascetic_coded_to_meal_sociality
+    - distinct_fasting_posture
+  continued_baptism_by_Yeshua_circle: PLAUSIBLE_UNRESOLVED
+  exact_transition_timing: UNRESOLVED
+
+strongest_current_developmental_bridge: >
+  Yeshua's association with John remains the strongest source-grounded bridge
+  between undocumented adulthood and independent public activity.
+
+downstream:
+  testament_pr: 19
+  missing_years_option_matrix_head_at_creation: b692d8ade6fa97d5f59d3593a3860915cf51dfa4
+
+next_frontier:
+  primary: NAZARETH_REJECTION_AND_FAMILY_CONFLICT_SOURCE_STRATIGRAPHY_V1
+  subsequent:
+    - YOUNG_ADULT_MARRIAGE_CELIBACY_NEGATIVE_EVIDENCE_TEST_V1
+    - UPDATE_PR_163_EXACT_HEAD
+    - INTERNAL_HOSTILE_REVIEW_JOHN_EXTENSION
+    - INDEPENDENT_EXACT_HEAD_REVIEW
+
+guards:
+  - JOHN_ASSOCIATION_NE_EIGHTEEN_YEAR_DISCIPLESHIP
+  - DIFFERENTIATION_NE_REJECTION
+  - TESTAMENT_SCENE_NE_HISTORICAL_EVIDENCE
