@@ -1,0 +1,65 @@
+schema_version: on-theo.yeshua-r4-jerusalem-arrest-execution-state.v2
+status: INTERNAL_RECONSTRUCTION_READY_FOR_HOSTILE_REVIEW
+supersedes_for_current_research:
+  - research/yeshua/jerusalem/research-state-v1.yaml
+
+branch:
+  name: research/yeshua-jerusalem-arrest-execution-v1-20260922
+  base_head: 10864afc3e56fa246b492200ad79594293782dcd
+
+artifacts:
+  source_boundary: research/yeshua/jerusalem/jerusalem-arrest-execution-source-boundary-v1.md
+  arrest_logistics: research/yeshua/jerusalem/arrest-party-logistics-packet-v1.md
+  judas_test: research/yeshua/jerusalem/judas-operational-necessity-test-v1.md
+  pilate: research/yeshua/jerusalem/pilate-sedition-crucifixion-packet-v1.md
+  temple_causal: research/yeshua/jerusalem/temple-chief-priest-causal-packet-v1.md
+  responsibility_matrix: research/yeshua/jerusalem/passion-responsibility-diachronic-matrix-v1.md
+  evidence: research/yeshua/jerusalem/arrest-execution-evidence-v1.yaml
+
+current_strong_results:
+  - ROMAN_EXECUTION_UNDER_PILATE
+  - ROMAN_POLITICAL_REGAL_PUBLIC_ORDER_FRAME_PROBABLE_TO_STRONG
+  - LOCAL_HIGH_PRIESTLY_ROLE_PROBABLE
+  - HISTORICAL_TEMPLE_CONFRONTATION_PROBABLE
+  - PASSOVER_SECURITY_CONTEXT_REAL
+  - PASSION_RESPONSIBILITY_MEMORY_DEVELOPS_DIACHRONICALLY
+  - PILATE_MITIGATION_IS_RECEPTION_PATTERN
+
+current_narrowed_results:
+  - TEMPLE_TO_ARREST_CAUSALITY_PLAUSIBLE_TO_PROBABLE
+  - INSIDER_LOCATION_TIMING_HELP_OPERATIONALLY_PLAUSIBLE
+  - JUDAS_LATER_MOTIVE_CHARACTERIZATION_EXPANDS
+
+current_unresolved:
+  - DIRECT_ROMAN_PARTICIPATION_AT_INITIAL_ARREST
+  - EXACT_TEMPLE_TO_ARREST_CAUSAL_CHAIN
+  - JUDAS_HISTORICAL_HANDOVER_CORE
+  - JUDAS_OPERATIONAL_FUNCTION
+  - JUDAS_INNOCENCE
+  - JUDAS_FRAMEUP
+  - EXACT_TRIAL_SEQUENCE
+  - EXACT_ROMAN_CHARGE
+  - HISTORICAL_SCALE_OF_TEMPLE_ACTION
+
+not_established:
+  - COLLECTIVE_APOSTOLIC_BRIBERY
+  - ROMAN_AGENT_INSERTION
+  - TIBERIAN_EXECUTION_ORDER
+  - TIBERIAN_CULTIVATION_FROM_R4
+  - ROMAN_CENSORSHIP_AS_CAUSE_OF_PASSION_REDACTION
+  - COLLECTIVE_JEWISH_GUILT
+
+next_frontier:
+  primary: R4_INTERNAL_HOSTILE_REVIEW
+  subsequent:
+    - R4_REVISION_IF_REQUIRED
+    - R4_SECOND_EXACT_HEAD_HOSTILE_REVIEW
+    - R4_DRAFT_PR
+    - R3_R4_JUDAS_JOINT_UPDATE
+    - R5_RESURRECTION_STRATIFICATION
+
+guards:
+  - ROMAN_RESPONSIBILITY_ANCHOR
+  - ANTI_COLLECTIVE_BLAME
+  - REDACTION_NE_CONSPIRACY
+  - OPERATIONAL_PLAUSIBILITY_NE_HISTORICAL_PROOF
