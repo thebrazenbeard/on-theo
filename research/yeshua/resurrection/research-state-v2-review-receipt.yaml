@@ -1,0 +1,35 @@
+schema_version: on-theo.yeshua-r5-internal-review-receipt.v1
+status: INTERNAL_HOSTILE_PASS_WITH_GUARDS
+independent_review_status: REQUIRED_NOT_COMPLETED
+
+subject:
+  branch: research/yeshua-resurrection-stratification-v1-20260922
+  exact_commit: 201eceab73553fd2dd5559b86436eb289b075841
+
+review:
+  execution_mode: SAME_RUNTIME_ADVERSARIAL_REVIEW
+  artifact: reviews/yeshua-r5-resurrection-stratification-v1-hostile-review-2.md
+  commit: 3addc2e19120ad39af155240c4591a9afa999d48
+
+claim_ceiling: >
+  Extremely early resurrection/vindication conviction and named appearance
+  reports are strong. Pauline appearance phenomenology is sparse and not
+  uniform. The empty tomb remains unresolved with meaningful historical
+  support. Mary Magdalene belongs to early passion/tomb memory but historical
+  first-appearance priority is unresolved. Supernatural, visionary, grief,
+  fraud and body-relocation mechanisms are not established by current textual
+  evidence.
+
+allowed_downstream_use:
+  - R6_FAMILY_PATERNITY
+  - R7_NONCANONICAL_RESURRECTION_DELTA
+  - R8_INWARD_MYSTICAL_AND_POSTRESURRECTION_TRAJECTORY
+  - TESTAMENT_OF_YESHUA_HISTORICAL_CONSTRAINTS
+
+prohibited:
+  - CLAIM_INDEPENDENT_REVIEW_COMPLETE
+  - CLAIM_EMPTY_TOMB_SECURE
+  - CLAIM_BODILY_MIRACLE_HISTORICALLY_PROVED
+  - CLAIM_HALLUCINATION_PROVED
+  - CLAIM_FRAUD_PROVED
+  - CLAIM_MARY_FIRST_APPEARANCE_HISTORICALLY_PROVED
