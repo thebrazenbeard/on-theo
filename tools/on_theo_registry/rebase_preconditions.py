@@ -57,6 +57,31 @@ def _show_yaml(root: Path, ref: str, relative: str) -> dict[str, Any]:
     return data
 
 
+def _show_yaml_if_present(
+    root: Path,
+    ref: str,
+    relative: str,
+) -> dict[str, Any] | None:
+    probe = _git(
+        root,
+        "ls-tree",
+        "--name-only",
+        ref,
+        "--",
+        relative,
+        check=False,
+    )
+    if probe.returncode != 0:
+        raise RebaseAuditError(
+            f"git ls-tree {ref} -- {relative} failed ({probe.returncode}): "
+            f"{probe.stderr.strip()}"
+        )
+    paths = {line.strip() for line in probe.stdout.splitlines() if line.strip()}
+    if relative not in paths:
+        return None
+    return _show_yaml(root, ref, relative)
+
+
 def _records(value: Any) -> list[dict[str, Any]]:
     if value is None:
         return []
@@ -73,7 +98,9 @@ def _records(value: Any) -> list[dict[str, Any]]:
 def _base_index(root: Path, ref: str) -> dict[str, dict[str, Any]]:
     index: dict[str, dict[str, Any]] = {}
     for relative, section in BASE_REGISTRY_SECTIONS:
-        document = _show_yaml(root, ref, relative)
+        document = _show_yaml_if_present(root, ref, relative)
+        if document is None:
+            continue
         for record in _records(document.get(section)):
             entity_id = record.get("id")
             if not isinstance(entity_id, str) or not entity_id:
