@@ -24,17 +24,15 @@ Never collapse these categories:
 
 A compelling analogy is not historical evidence. A late source can preserve earlier material, but lateness must remain visible. Disagreement between traditions is data, not a defect to be silently harmonized.
 
-## Branch architecture
+## Repository architecture
 
-- `main` — project charter, research method, schemas, indexes, and branch map.
-- `tradition/judaism` — Hebrew Bible / Second Temple / rabbinic Jewish context and Jewish readings relevant to Yeshua/Jesus and adjacent themes.
-- `tradition/christianity` — earliest Jesus traditions, canonical and selected noncanonical Christian texts, development of Christology, canon, and later interpretation.
-- `tradition/islam` — Qur'anic and early Islamic reinterpretations of creation, humanity, Mary, Jesus, revelation, judgment, and related themes.
-- `synthesis/commonality` — overlap, structural rhyme, divergence matrices, and systems-language mappings. This branch must preserve provenance back to the tradition branches.
-- `history/chronology` — event/source chronology with tradition tags, date ranges, provenance, and confidence.
+On-Theo is transitioning from long-lived thematic research branches to a provenance-aware directory/registry model.
 
-Branches are research lanes, not declarations that one tradition is correct. Material may later be promoted or reconciled by explicit commits/PRs; no branch silently overwrites another tradition's account.
-
+- `main` remains the canonical project surface until an explicitly reviewed consolidation is authorized.
+- `traditions/`, `chronology/`, `comparative/`, `research/`, `registry/`, and `synthesis/` are the intended durable content namespaces.
+- branches and pull requests are work/review surfaces; their existence does not make their contents canonical.
+- historical thematic branches such as `tradition/judaism`, `tradition/christianity`, `tradition/islam`, `synthesis/commonality`, and `history/chronology` remain provenance sources until their unique material is explicitly reconciled.
+- the repository-consolidation candidate is a draft integration subject only and carries no merge authority.
 ## Current research spine
 
 The initial corpus grows out of several linked questions:
@@ -49,3 +47,23 @@ The initial corpus grows out of several linked questions:
 ## Tone
 
 Curious, irreverent when useful, but evidence-disciplined. No tradition receives automatic deference or automatic contempt. Claims earn confidence from evidence, not from familiarity, offensiveness, popularity, or how entertaining they are.
+
+## Registry validation
+
+The provenance registries and draft extension stack have an executable consistency check.
+
+Run the test suite:
+
+```bash
+python -m pip install -r requirements-dev.txt
+pytest -q
+```
+
+Run the validator directly:
+
+```bash
+python scripts/validate_registry.py --root .
+python scripts/validate_registry.py --root . --json
+```
+
+Validation checks stable-ID collisions, unresolved source/witness/concept references, manifest identity/base/dependency consistency, and review result/provenance vocabularies. A successful validation means the registry graph is internally consistent; it does **not** merge, materialize, promote, or establish the historical truth of draft claims.
