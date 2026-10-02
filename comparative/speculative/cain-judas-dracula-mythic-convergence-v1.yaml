@@ -1,0 +1,69 @@
+schema_version: on-theo.speculative-model.v1
+status: COMPARATIVE_MYTHOGRAPHY_LITERARY_ONLY
+canonical: false
+date: 2026-10-02
+subject: cain_judas_dracula_identity_convergence
+base_head: bdc337ad0afd625259d29a24029fbc5679227922
+claims:
+  - id: CJD-001
+    proposition: "Genesis makes Cain a blood-drinking immortal vampire."
+    evidence_class: PRIMARY_TEXT
+    state: REJECTED
+    confidence: strong
+  - id: CJD-002
+    proposition: "Genesis links Cain with blood, curse, ground, wandering, and a protective mark."
+    evidence_class: PRIMARY_TEXT
+    state: SURVIVES
+    confidence: strong
+  - id: CJD-003
+    proposition: "Irenaeus reports Cain and Judas within the same Cainite counter-scriptural theological system."
+    evidence_class: LATER_TRADITION
+    state: SURVIVES
+    confidence: strong_for_irenaeus_report
+  - id: CJD-004
+    proposition: "Irenaeus says Cain and Judas were the same individual."
+    evidence_class: LATER_TRADITION
+    state: REJECTED
+    confidence: strong
+  - id: CJD-005
+    proposition: "Stoker's Dracula explicitly identifies himself as Cain or Judas."
+    evidence_class: PRIMARY_TEXT
+    state: REJECTED
+    confidence: strong
+  - id: CJD-006
+    proposition: "Stoker's Dracula contains blood, unnatural persistence, earth dependence, Christian opposition, and explicit Judas imagery."
+    evidence_class: PRIMARY_TEXT
+    state: SURVIVES
+    confidence: strong
+  - id: CJD-007
+    proposition: "Vampire: The Masquerade develops Caine as primordial vampire."
+    evidence_class: FICTIONAL_LITERARY_CONSTRUCTION
+    state: SURVIVES
+    confidence: strong
+  - id: CJD-008
+    proposition: "Dracula 2000 identifies Dracula as Judas Iscariot."
+    evidence_class: FICTIONAL_LITERARY_CONSTRUCTION
+    state: SURVIVES
+    confidence: strong
+  - id: CJD-009
+    proposition: "Cain, Judas, and Dracula are one historical immortal individual."
+    evidence_class: SPECULATIVE_MODEL
+    state: REJECTED
+    confidence: strong_as_history
+  - id: CJD-010
+    proposition: "Cain-Judas-Dracula forms a coherent literary identity-chain by combining ancient and modern motifs."
+    evidence_class: SPECULATIVE_MODEL
+    state: SURVIVES
+    confidence: high_literary_utility
+guards:
+  - MYTHIC_PARALLEL_NE_IDENTITY
+  - CAINITE_ASSOCIATION_NE_SAME_PERSON
+  - MODERN_FICTION_NE_ANCIENT_TRADITION
+  - STOKER_DRACULA_NE_HISTORICAL_VLAD
+  - MOTIF_CONVERGENCE_NE_TRANSMISSION
+literary_mechanics:
+  - cain_mark_as_blocked_death
+  - ground_curse_as_blood_dependence
+  - wandering_as_identity_accumulation
+  - judas_hanging_as_failed_death
+  - dracula_as_late_adopted_mask
