@@ -1,0 +1,80 @@
+schema_version: on-theo.adversarial-test.v1
+status: INTERNAL_HOSTILE_TEST
+canonical: false
+date: 2026-10-02
+subject: enoch_simulation_external_information
+parent_head_before_test: 47d8e27162bf58fc72d0a88871eddb30aad0ea9f
+tests:
+  - id: ENO-SIM-T01
+    target: anomalous_astronomy
+    result: FAIL
+    reason: "Astronomical Book is sophisticated ancient astronomy but retains period-typical cosmography and a schematic 364-day calendar."
+  - id: ENO-SIM-T02
+    target: out_of_time_forbidden_technology
+    result: FAIL
+    reason: "Named arts and technologies were already available in ancient Near Eastern cultures."
+  - id: ENO-SIM-T03
+    target: watchers_as_external_administrators
+    result: FAILS_DISCRIMINATION
+    analogy: SURVIVES
+    reason: "Mesopotamian apkallu and ancient sage traditions provide a strong historical competitor."
+  - id: ENO-SIM-T04
+    target: heavenly_tablets_as_database
+    result: FAILS_DISCRIMINATION
+    analogy: SURVIVES
+    reason: "Heavenly books/tablets have direct scribal and apocalyptic cultural ancestry."
+  - id: ENO-SIM-T05
+    target: enoch_as_auditor
+    result: FAILS_DISCRIMINATION
+    analogy: SURVIVES
+    reason: "Priestly ascent, prophetic call, temple-heaven, and scribal-sage models explain the structure."
+  - id: ENO-SIM-T06
+    target: giants_as_emergent_cross_layer_entities
+    result: NOT_ADMITTED_AS_EVIDENCE
+    analogy: SURVIVES
+  - id: ENO-SIM-T07
+    target: flood_as_system_reset
+    result: FAILS_DISCRIMINATION
+    analogy: SURVIVES
+  - id: ENO-SIM-T08
+    target: cosmic_oath_as_code
+    result: NOT_ADMITTED
+    analogy: SURVIVES_NARROWED
+  - id: ENO-SIM-T09
+    target: stable_primordial_information_packet
+    result: FAIL
+    reason: "Extant corpus is composite and shows redactional development."
+  - id: ENO-SIM-T10
+    target: independent_multicultural_corroboration
+    result: FAIL_WITHOUT_DEPENDENCE_CONTROLS
+  - id: ENO-SIM-T11
+    target: unique_predictive_power
+    result: FAIL_CURRENTLY
+  - id: ENO-SIM-T12
+    target: explanatory_advantage_over_historical_model
+    result: FAIL_CURRENTLY
+surviving_claims:
+  - id: ENO-SIM-S01
+    proposition: "Enochic ontology is strongly information-sensitive: access, knowledge, capability, hierarchy, and boundary violation are central."
+    evidence_class: PROJECT_INFERENCE
+    state: SURVIVES
+  - id: ENO-SIM-S02
+    proposition: "Information-security language is a productive modern analogy for the Watchers narrative."
+    evidence_class: PROJECT_INFERENCE
+    state: SURVIVES_NARROWED
+  - id: ENO-SIM-S03
+    proposition: "The Enochic corpus provides positive evidence for computational simulation."
+    evidence_class: SPECULATIVE_MODEL
+    state: REJECTED_CURRENTLY
+  - id: ENO-SIM-S04
+    proposition: "A simulation or external-intelligence ontology remains logically compatible with the texts."
+    evidence_class: SPECULATIVE_MODEL
+    state: UNRESOLVED
+next_tests:
+  - astronomical_book_vs_babylonian_data
+  - forbidden_art_archaeological_floor
+  - heavenly_tablet_motif_history
+  - apkallu_watchers_dependence_map
+  - numerical_claim_anomaly_scan
+  - ascent_phenomenology_comparator
+  - repeatable_access_procedure_scan
