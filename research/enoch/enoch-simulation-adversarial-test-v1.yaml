@@ -53,6 +53,10 @@ tests:
   - id: ENO-SIM-T12
     target: explanatory_advantage_over_historical_model
     result: FAIL_CURRENTLY
+  - id: ENO-SIM-T13
+    target: repeatable_external_access_protocol
+    result: NOT_FOUND
+    note: "1 Enoch 13 explicitly locates a revelation in a sleep/dream sequence after reading the Watchers' petition."
 surviving_claims:
   - id: ENO-SIM-S01
     proposition: "Enochic ontology is strongly information-sensitive: access, knowledge, capability, hierarchy, and boundary violation are central."
@@ -77,4 +81,4 @@ next_tests:
   - apkallu_watchers_dependence_map
   - numerical_claim_anomaly_scan
   - ascent_phenomenology_comparator
-  - repeatable_access_procedure_scan
+  - dream_state_and_ascent_phenomenology_map
