@@ -1,0 +1,90 @@
+schema_version: on-theo.synthesis.v1
+status: SOURCE_CRITICAL_SYNTHESIS_REVIEW_REQUIRED
+canonical: false
+date: 2026-10-02
+subject: yeshua_authority_guilt_memory_redistribution
+base_head: bdc337ad0afd625259d29a24029fbc5679227922
+inputs:
+  judas_head: 65ac0ff29e8366f3e0fbd9d40aa24ad63f98b1f8
+  mary_head: 9c85c6592a191c333f4cde6db1c82c3f86e1a62a
+  peter_head: a9179a332e266603d10cb7c98e829d9d48bea02f
+  jerusalem_head: 0b2030a864e9660053e0d45b4c7d8d0da72267cf
+claims:
+  - id: AGM-001
+    proposition: "Mark distributes failure beyond Judas through disciple flight and Peter denial."
+    evidence_class: PRIMARY_TEXT
+    state: SURVIVES
+    confidence: strong_textual
+  - id: AGM-002
+    proposition: "The extant source sequence increasingly elaborates Judas's moral and cosmic characterization."
+    evidence_class: HISTORICAL_RECONSTRUCTION
+    state: SURVIVES
+    confidence: strong_source_comparison
+  - id: AGM-003
+    proposition: "Peter's failure remains visible while later sources increasingly narrate reintegration, restoration, and authority."
+    evidence_class: HISTORICAL_RECONSTRUCTION
+    state: SURVIVES
+    confidence: strong_source_comparison
+  - id: AGM-004
+    proposition: "Mary Magdalene is an early prominent passion/tomb figure and is not identified as a prostitute by the canonical Gospels."
+    evidence_class: HISTORICAL_RECONSTRUCTION
+    state: SURVIVES
+    confidence: strong
+  - id: AGM-005
+    proposition: "Later Gospel-of-Mary material preserves a Mary/Peter-Andrew authority conflict."
+    evidence_class: PRIMARY_TEXT
+    state: SURVIVES
+    confidence: strong_textual
+  - id: AGM-006
+    proposition: "The historical Mary and Peter had the exact dispute narrated in the Gospel of Mary."
+    evidence_class: HISTORICAL_RECONSTRUCTION
+    state: UNRESOLVED
+    confidence: low
+  - id: AGM-007
+    proposition: "Thomas functions as a doubter/resister in John and as a privileged recipient of secret words in Gospel of Thomas 13."
+    evidence_class: COMPARATIVE_TEXTUAL_PATTERN
+    state: SURVIVES
+    confidence: strong_textual
+  - id: AGM-008
+    proposition: "Late-second-century Cainite/Judas reception could oppose Judas's knowledge to that of the Twelve."
+    evidence_class: LATER_TRADITION
+    state: SURVIVES
+    confidence: strong_for_irenaeus_report
+  - id: AGM-009
+    proposition: "Surviving Christian texts display differential moral sorting of the disciple crisis."
+    evidence_class: PROJECT_INFERENCE
+    state: SURVIVES
+    confidence: moderate_strong
+  - id: AGM-010
+    proposition: "A broader historical betrayal was deliberately concentrated into Judas."
+    evidence_class: SPECULATIVE_MODEL
+    state: UNRESOLVED
+    confidence: low_moderate
+  - id: AGM-011
+    proposition: "Peter or other apostles deliberately framed Judas."
+    evidence_class: SPECULATIVE_MODEL
+    state: UNRESOLVED
+    confidence: low
+  - id: AGM-012
+    proposition: "Roman actors authored or directed the surviving guilt distribution."
+    evidence_class: SPECULATIVE_MODEL
+    state: UNRESOLVED
+    confidence: low
+  - id: AGM-013
+    proposition: "Catastrophe plus survivorship, theology, authority competition, and transmission is currently more economical than a coordinated conspiracy."
+    evidence_class: PROJECT_INFERENCE
+    state: SURVIVES_NARROWED
+    confidence: moderate
+guards:
+  - SOURCE_PORTRAYAL_NE_EVENT_TRANSCRIPT
+  - LATER_AUTHORITY_CONFLICT_NE_FIRST_GENERATION_EVENT
+  - MORAL_INTENSIFICATION_NE_PERSON_INVENTION
+  - REHABILITATION_NE_HIDDEN_GREATER_CRIME
+  - INSTITUTIONAL_BENEFIT_NE_ORIGINAL_DESIGN
+next_tests:
+  - pre_markan_judas_independence
+  - passion_source_stratification
+  - rival_named_collaboration_accusations
+  - authority_outcome_correlation
+  - women_witness_transmission
+  - roman_responsibility_trajectory
