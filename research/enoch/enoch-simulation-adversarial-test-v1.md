@@ -451,14 +451,13 @@ The text does not currently discriminate among those ontologies.
 
 After direct hostile testing:
 
-`ENOCH_AS_EVIDENCE_FOR_COMPUTATIONAL_SIMULATION = DOES_NOT_SURVIVE`.
+`ENOCH_AS_POSITIVE_EVIDENCE_FOR_COMPUTATIONAL_SIMULATION = NOT_ADMITTED_ON_CURRENT EVIDENCE`.
 
 `ENOCH_AS_EVIDENCE_THAT_ANCIENT_JEWS_CONCEIVED_REALITY_AS_LAYERED_INFORMATIONALLY_STRATIFIED_AND_POPULATED_BY_NONHUMAN_INTELLIGENCE = SURVIVES`.
 
 `ENOCH_AS_A_PRODUCTIVE_COMPARATOR_FOR_MODERN_INFORMATION/SIMULATION THEORY = SURVIVES_NARROWED`.
 
-The most damaging datum for literal privileged-science models is the Astronomical Book itself:
-the work claiming celestial disclosure remains recognizably ancient in both its achievements and its errors.
+The strongest negative discriminator against a literal privileged-science reading is the Astronomical Book itself: the work claiming celestial disclosure remains recognizably ancient in both its achievements and its cosmographic/calendrical models. The 364-day scheme may be intentionally ideal or liturgical rather than a failed attempt at a tropical-year measurement; it counts against an external-science claim only when that claim treats the Enochic scheme as unusually accurate physical astronomy.
 
 The most interesting surviving datum is not anomalous technology.
 
