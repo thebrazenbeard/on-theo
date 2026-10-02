@@ -1,0 +1,78 @@
+schema_version: on-theo.comparative-model.v1
+status: REVIEW_REQUIRED
+canonical: false
+date: 2026-10-02
+subject: enoch_multilens_ontology_simulation
+claims:
+  - id: ENO-ML-001
+    proposition: "1 Enoch is a composite library of originally distinct Enochic works rather than a single work authored by the Genesis Enoch."
+    evidence_class: HISTORICAL_RECONSTRUCTION
+    state: SURVIVES
+    confidence: strong
+  - id: ENO-ML-002
+    proposition: "Aramaic Enochic manuscripts are represented at Qumran by multiple copies."
+    evidence_class: MANUSCRIPT_WITNESS
+    state: SURVIVES
+    confidence: strong
+  - id: ENO-ML-003
+    proposition: "Early Enochic literature presents knowledge of cosmic structure as revealed knowledge."
+    evidence_class: PRIMARY_TEXT
+    state: SURVIVES
+    confidence: strong
+  - id: ENO-ML-004
+    proposition: "The Book of Watchers centers boundary violation, illicit knowledge transfer, and cosmic/social disorder."
+    evidence_class: HISTORICAL_RECONSTRUCTION
+    state: SURVIVES
+    confidence: strong
+  - id: ENO-ML-005
+    proposition: "Jude directly cites 1 Enoch and meaningfully participates in Enochic tradition."
+    evidence_class: PRIMARY_TEXT
+    state: SURVIVES
+    confidence: strong
+  - id: ENO-ML-006
+    proposition: "The Ethiopian Orthodox Tewahedo tradition preserves 1 Enoch as scripture."
+    evidence_class: LATER_TRADITION
+    state: SURVIVES
+    confidence: strong
+  - id: ENO-ML-007
+    proposition: "Later 3 Enoch tradition identifies/transforms Enoch as Metatron."
+    evidence_class: LATER_TRADITION
+    state: SURVIVES
+    confidence: strong
+  - id: ENO-ML-008
+    proposition: "Later traditions associate Enoch with Idris and Hermes."
+    evidence_class: LATER_TRADITION
+    state: SURVIVES
+    confidence: strong
+  - id: ENO-ML-009
+    proposition: "1 Enoch preserves an ancient computational or simulation ontology."
+    evidence_class: SPECULATIVE_MODEL
+    state: NOT_ADMITTED
+    confidence: strong
+  - id: ENO-ML-010
+    proposition: "Watcher traditions can be usefully compared to an information-security breach model."
+    evidence_class: PROJECT_INFERENCE
+    state: SURVIVES_NARROWED
+    confidence: moderate_as_analogy
+  - id: ENO-ML-011
+    proposition: "Enoch functions as a privileged observer of hidden cosmic structure."
+    evidence_class: COMPARATIVE_TEXTUAL_PATTERN
+    state: SURVIVES
+    confidence: strong
+guards:
+  - ENOCHIC_COSMOLOGY_NE_COMPUTATIONAL_ONTOLOGY
+  - LAYERED_HEAVENS_NE_SIMULATION_STACK
+  - ANGELS_NE_SOFTWARE_AGENTS
+  - HEAVENLY_TABLETS_NE_SOURCE_CODE
+  - SYSTEMS_RESEMBLANCE_NE_SIMULATION_EVIDENCE
+next_lanes:
+  - genesis5_enoch_source_history
+  - astronomical_book_revealed_science
+  - watchers_information_boundary
+  - enochic_cosmic_geography
+  - heavenly_tablets_records
+  - enoch_metatron_transformation
+  - enoch_idris_hermes_reception
+  - jude_early_christianity
+  - simulation_model_hostile_test
+  - ascent_phenomenology
