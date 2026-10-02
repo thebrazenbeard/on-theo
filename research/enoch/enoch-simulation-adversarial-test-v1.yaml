@@ -8,7 +8,7 @@ tests:
   - id: ENO-SIM-T01
     target: anomalous_astronomy
     result: FAIL
-    reason: "Astronomical Book is sophisticated ancient astronomy but retains period-typical cosmography and a schematic 364-day calendar."
+    reason: "Astronomical Book is sophisticated ancient astronomy but retains period-typical cosmography and a schematic 364-day calendar; this weighs against privileged modern-accuracy claims without assuming the 364-day scheme was intended as a tropical-year measurement."
   - id: ENO-SIM-T02
     target: out_of_time_forbidden_technology
     result: FAIL
@@ -65,7 +65,7 @@ surviving_claims:
   - id: ENO-SIM-S03
     proposition: "The Enochic corpus provides positive evidence for computational simulation."
     evidence_class: SPECULATIVE_MODEL
-    state: REJECTED_CURRENTLY
+    state: NOT_ADMITTED
   - id: ENO-SIM-S04
     proposition: "A simulation or external-intelligence ontology remains logically compatible with the texts."
     evidence_class: SPECULATIVE_MODEL
