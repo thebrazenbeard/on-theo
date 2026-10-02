@@ -378,6 +378,36 @@ But ancient temple/scribal/apocalyptic ontology predicts those too.
 
 `UNIQUE_PREDICTIVE_POWER = CURRENTLY FAIL`.
 
+
+## TEST 13 — Repeatable access procedure
+
+### Candidate claim
+
+If Enoch preserves a real interface to a hidden layer of reality, the text might preserve a repeatable method for obtaining access.
+
+### Observation
+
+In 1 Enoch 13, Enoch:
+- writes and reads the Watchers' petition;
+- sits near the waters of Dan by Hermon;
+- continues reading until he falls asleep;
+- then receives a dream/vision.
+
+This is important because the text itself gives us a proximate phenomenological mechanism:
+
+`READING / MOURNING / SLEEP -> DREAM VISION`.
+
+Later ascent traditions can contain more explicit ritual techniques, but scholarship cautions that ancient Jewish/Christian ascent is usually represented as initiated by the divine rather than as a reliable human-controlled procedure.
+
+### Disposition
+
+`REPEATABLE_EXTERNAL_INTERFACE_PROTOCOL = NOT_FOUND`.
+
+`DREAM_VISION_PHENOMENOLOGY = TEXTUALLY_PRESENT`.
+
+This does not prove the experience was "only a dream" in the modern reductive sense. It does mean the source itself locates at least one revelation in a sleep/dream state, giving an ordinary human phenomenological pathway that any external-access model must outperform.
+
+
 ## TEST 12 — Explanatory compression
 
 Compare two models.
@@ -473,7 +503,7 @@ It is the moral theory of knowledge:
 4. Build dependence-controlled map: apkallu -> Watchers versus independent-development alternatives.
 5. Search Enochic corpus for precise numerical claims potentially testable against nature.
 6. Compare ascent phenomenology with trance/dream/ritual visionary reports cross-culturally.
-7. Test whether any Enochic procedure claims repeatable access rather than literary revelation.
+7. Extend the 1 Enoch 13 dream-state test across all Enochic ascent/revelation scenes and later ascent traditions.
 
 ## Sources checked
 
