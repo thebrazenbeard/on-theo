@@ -193,3 +193,33 @@ Status after hostile challenge: HISTORICAL MERLIN = UNRESOLVED; GEOFFREY'S COMPO
 4. Reconstruct the independent sixth-century evidence for Gwenddolau, Rhydderch Hael, Peredur, and the political setting of Arfderydd.
 5. Compare the Myrddin/Lailoken complex with *Buile Suibhne* and the international wild-man/threefold-death motifs without assuming borrowing.
 6. Test whether any genealogical or place-name evidence independently supports a historical person named Myrddin or Lailoken.
+
+## Claim 8 — The oldest-looking forest poems do not name Myrddin
+
+Evidence class: MANUSCRIPT WITNESS / TEXTUAL CONTROL
+
+The National Library of Wales notes that *Yr Afallennau* and *Yr Oianau* contain the forest-dwelling prophetic figure but do not name him Myrddin. Only *Ymddiddan Myrddin a Thaliesin* explicitly names Myrddin among the three principal Black Book poems tied to the legend.
+
+Sources:
+- https://www.library.wales/discover-learn/digital-exhibitions/manuscripts/the-middle-ages/the-black-book-of-carmarthen
+- https://www.library.wales/fileadmin/docs_gwefan/new_structure/discover/digital_exhibitions/printed_material/welsh_classical_dictionary/08_M-N.pdf
+
+Implication:
+The equation OLD FOREST MADMAN = MYRDDIN is itself a transmission claim, not a primary-text fact in the earliest-looking poetic nucleus. This weakens attempts to reconstruct a named sixth-century Myrddin directly from *Afallennau*/*Oianau*.
+
+Current state: IMPORTANT TEXTUAL CONSTRAINT.
+
+## Claim 9 — Rhydderch is independently better anchored than Merlin
+
+Evidence class: NEAR-CONTEMPORARY HAGIOGRAPHIC WITNESS / HISTORICAL RECONSTRUCTION
+
+Adomnán's *Life of Columba*, written near the end of the seventh century, names a king Rederch/Rodercus son of Tothal ruling at the Rock of Clyde (Alt Clut/Dumbarton) and presents him as a contemporary/friend of Columba. This provides materially earlier evidence for Rhydderch than exists for Merlin/Myrddin.
+
+Sources:
+- Adomnán, *Vita Columbae* I.15 text/translation: https://legeverbum.com/en/r/latin-patristic/vita-columbae/1
+- Cambridge bibliography/control for Adomnán: https://www.cambridge.org/core/books/abs/new-cambridge-medieval-history/list-of-primary-sources/FA3E838D9A1D64F32A83ED4678A6752A
+
+Implication:
+The political world surrounding the later Merlin legend contains historically anchored actors. That increases the plausibility that the legend preserves a real sixth-century milieu, but it does not independently attest the wild man/prophet himself.
+
+Current state: CONTEXT SURVIVES / MERLIN REMAINS UNRESOLVED.
