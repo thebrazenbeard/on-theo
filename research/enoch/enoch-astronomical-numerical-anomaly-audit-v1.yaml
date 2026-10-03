@@ -1,0 +1,66 @@
+schema_version: on-theo.numerical-audit.v1
+status: INTERNAL_ADVERSARIAL_AUDIT
+canonical: false
+date: 2026-10-03
+subject: enoch_astronomical_numerical_anomaly
+parent_pr: 171
+parent_head_before_audit: 46d9654c6e44756b8044897653feb15fbca3e2ba
+modern_controls:
+  tropical_year_days: 365.2422
+  synodic_month_days: 29.53059
+  twelve_synodic_months_days: 354.36708
+  solar_lunar_delta_days: 10.87512
+tests:
+  - id: ENO-NUM-001
+    target: 364_day_year
+    result: FAIL_AS_ANOMALOUS_SOLAR_ACCURACY
+    note: "Strong liturgical/mathematical architecture; ~1.2422 days short of tropical year."
+  - id: ENO-NUM-002
+    target: 354_day_lunar_year
+    result: NON_ANOMALOUS_GOOD_ANCIENT_APPROXIMATION
+  - id: ENO-NUM-003
+    target: 10_day_solar_lunar_delta
+    result: FAIL_AS_ANOMALY
+    note: "Mesopotamian/MUL.APIN precedent; actual modern mean delta ~10.87512 days."
+  - id: ENO-NUM-004
+    target: three_five_eight_year_arithmetic
+    result: INTERNALLY_VALID_NOT_PHYSICALLY_SUPERIOR
+  - id: ENO-NUM-005
+    target: two_to_one_solstice_daylight_ratio
+    result: FAIL_AS_SECRET_NORTHERN_OBSERVATION
+    note: "Literal ratio maps near ~49N, but the same 2:1 ratio is Babylonian schematic astronomy."
+  - id: ENO-NUM-006
+    target: linear_daylight_zigzag
+    result: FAIL_AS_PRECISE_PHYSICAL_MODEL
+    note: "Strong Babylonian schematic comparator."
+  - id: ENO-NUM-007
+    target: lunar_illumination_fractions
+    result: NON_ANOMALOUS_ANCIENT_MATHEMATICAL_MODEL
+  - id: ENO-NUM-008
+    target: 29_30_day_lunar_months
+    result: NON_ANOMALOUS
+  - id: ENO-NUM-009
+    target: six_solar_gates
+    result: UNRESOLVED_EXACT_SOURCE_BUT_NON_ANOMALOUS_STRUCTURE
+  - id: ENO-NUM-010
+    target: solstice_equinox_structure
+    result: NON_ANOMALOUS_ANCIENT_ASTRONOMY
+overall:
+  proposition: "The Astronomical Book contains quantitative scientific information unavailable to its ancient intellectual environment."
+  evidence_class: SPECULATIVE_MODEL
+  state: NOT_ADMITTED
+  confidence: strong_current_negative
+survivors:
+  - proposition: "The Astronomical Book contains sophisticated ancient mathematical astronomy."
+    state: SURVIVES
+  - proposition: "Its numerical system strongly prioritizes symmetry, weekly order, and liturgical structure."
+    state: SURVIVES
+  - proposition: "Babylonian astronomical knowledge materially illuminates multiple Enochic numerical structures."
+    state: SURVIVES
+next_test: mesopotamian_apkallu_astral_to_enoch_dependency_map
+guards:
+  - SCHEMATIC_NE_STUPID
+  - MATHEMATICAL_ELEGANCE_NE_PHYSICAL_ACCURACY
+  - ANCIENT_PRECEDENT_NE_EXACT_DIRECT_DEPENDENCE_WITHOUT_SOURCE_TEST
+  - MODERN_LATITUDE_MAPPING_NE_ANCIENT_OBSERVATION_SITE
+  - NUMERICAL_RESEMBLANCE_NE_EXTERNAL_INFORMATION

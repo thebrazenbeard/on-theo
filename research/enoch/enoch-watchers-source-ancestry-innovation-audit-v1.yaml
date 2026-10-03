@@ -1,0 +1,55 @@
+schema_version: on-theo.source-ancestry-audit.v1
+status: INTERNAL_ADVERSARIAL_AUDIT
+canonical: false
+date: 2026-10-03
+subject: enoch_watchers_source_ancestry_and_innovation
+parent_pr: 171
+claims:
+  - id: ENO-ANC-001
+    proposition: "Genesis directly connects Enoch with the sons-of-God episode."
+    state: REJECTED
+    evidence_class: PRIMARY_TEXT
+  - id: ENO-ANC-002
+    proposition: "The Book of Watchers creatively connects Genesis 5 Enoch with Genesis 6 divine beings."
+    state: SURVIVES
+    evidence_class: HISTORICAL_RECONSTRUCTION
+  - id: ENO-ANC-003
+    proposition: "Mesopotamian apkallu traditions are a strong historical comparator/source model for the Watchers."
+    state: SURVIVES_NARROWED
+    evidence_class: SCHOLARLY_INTERPRETATION
+    guard: "Exact dependence path is not directly documented."
+  - id: ENO-ANC-004
+    proposition: "Asael's forbidden skills correspond to culturally available ancient artisan/scribal expertise."
+    state: SURVIVES
+    evidence_class: HISTORICAL_RECONSTRUCTION
+  - id: ENO-ANC-005
+    proposition: "The extant Watcher myth is a single stable event report."
+    state: REJECTED
+    evidence_class: HISTORICAL_RECONSTRUCTION
+  - id: ENO-ANC-006
+    proposition: "Dead giant spirits as ongoing demons are a major Enochic theological innovation."
+    state: SURVIVES
+    evidence_class: HISTORICAL_RECONSTRUCTION
+  - id: ENO-ANC-007
+    proposition: "Enochic ascent is a major Jewish visionary innovation relative to earlier prophetic visions."
+    state: SURVIVES
+    evidence_class: HISTORICAL_RECONSTRUCTION
+  - id: ENO-ANC-008
+    proposition: "The Watcher/Enoch contrast encodes unauthorized versus authorized knowledge transfer."
+    state: SURVIVES
+    evidence_class: PROJECT_INFERENCE
+  - id: ENO-ANC-009
+    proposition: "The narrative contains a parentless technical core requiring external intelligence."
+    state: NOT_ADMITTED
+    evidence_class: SPECULATIVE_MODEL
+  - id: ENO-ANC-010
+    proposition: "The strongest historical model is inherited material plus polemical inversion plus exegetical synthesis plus Enochic innovation."
+    state: SURVIVES
+    evidence_class: PROJECT_INFERENCE
+next_test: enoch_ascent_phenomenology_adversarial_map
+guards:
+  - INNOVATION_NE_EXTERNAL_ORIGIN
+  - PARALLEL_NE_DIRECT_DEPENDENCE
+  - APKALLU_COMPARATOR_NE_DOCUMENTED_TRANSMISSION_PATH
+  - THEOLOGICAL_SOLUTION_NE_EVENT_REPORT
+  - SYSTEMS_STRUCTURE_NE_SIMULATION_EVIDENCE
