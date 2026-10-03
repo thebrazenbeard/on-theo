@@ -223,3 +223,34 @@ Implication:
 The political world surrounding the later Merlin legend contains historically anchored actors. That increases the plausibility that the legend preserves a real sixth-century milieu, but it does not independently attest the wild man/prophet himself.
 
 Current state: CONTEXT SURVIVES / MERLIN REMAINS UNRESOLVED.
+
+
+## Claim 10 — Named prophetic authority "Myrddin" is pre-Geoffrey
+
+Evidence class: PRIMARY TEXT / SCHOLARLY DATING / TEXTUAL TRANSMISSION
+
+The tenth-century prophetic poem *Armes Prydein Vawr*, preserved later in the Book of Taliesin, contains the phrase `Dysgogan Myrddin`, conventionally translated "Myrddin foretells/prophesies." Ifor Williams dated the poem's composition to roughly c. 930; modern scholarship continues to treat *Armes Prydein* as a tenth-century work, although proposed exact dates vary within that century.
+
+Sources:
+- Peter C. Bartrum, *A Welsh Classical Dictionary*, s.v. "Myrddin", National Library of Wales, p. 562:
+  https://www.library.wales/fileadmin/docs_gwefan/new_structure/discover/digital_exhibitions/printed_material/welsh_classical_dictionary/08_M-N.pdf
+- Rebecca Thomas and David Callander, "Reading Asser in early medieval Wales: the evidence of Armes Prydein Vawr," *Anglo-Saxon England* 46:
+  https://www.cambridge.org/core/journals/anglo-saxon-england/article/abs/reading-asser-in-early-medieval-wales-the-evidence-of-armes-prydein-vawr/0D3FE48D21660042BCF8FCCA6FF1897C
+- Jane Bollard, "'Gwyn eu Byd': Some Comments on the Myrddin Poetry":
+  https://www.jstor.org/stable/20557217
+
+Interpretive consequence:
+The blanket model "Myrddin was created only in the twelfth century or by Geoffrey" is not admissible. A prophetic authority called Myrddin was already available in Welsh tradition by the tenth century if the transmitted line belongs to the poem's original tenth-century state.
+
+However, this does **not** establish:
+- a sixth-century historical person named Myrddin;
+- that the *Armes Prydein* Myrddin was already identified with the unnamed forest speaker of *Afallennau* / *Oianau*;
+- that Myrddin was already linked with Arfderydd;
+- that the name's proposed derivation from Caerfyrddin / *Moridūnon* is false.
+
+Revised state:
+- PRE-GEOFFREY PROPHET-NAME MYRDDIN: SURVIVES.
+- SIXTH-CENTURY MYRDDIN: UNRESOLVED.
+- MYRDDIN = NORTHERN WILD MAN BEFORE GEOFFREY: UNRESOLVED.
+
+This correction narrows Claim 3. The name may still be secondary relative to any sixth-century biography, but it is not merely a Geoffrey-era creation.
