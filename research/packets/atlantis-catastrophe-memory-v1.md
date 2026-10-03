@@ -268,3 +268,28 @@ Status after hostile challenge: SURVIVES_NARROWED.
 3. Compare Plato's concentric-ring topography against reconstructed pre-eruption Thera without treating visual similarity as transmission evidence.
 4. Test Plato's claimed Egyptian/Sais provenance independently.
 5. Build a chronology of Greek earthquake/inundation narratives before Timaeus/Critias.
+
+## Geography constraint: Pillars of Heracles
+
+Evidence class: PRIMARY TEXT / HISTORICAL GEOGRAPHY
+
+Plato's Timaeus places Atlantis outside the mouth marked by the Pillars of Heracles. By the fifth century BCE Greek geographical usage had conventionally fixed the Pillars at the Strait of Gibraltar; later Strabo is explicit about Gibraltar.
+
+Sources:
+- Plato, Timaeus 24e–25a: https://atlas.perseus.tufts.edu/library/passage/urn:cts:greekLit:tlg0059.tlg031.perseus-eng2:22-26/
+- How & Wells commentary on Herodotus: https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.04.0028:book=2
+- Strabo, Geography 17.3: https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0239:book=17:chapter=3
+
+Implication:
+A literal Italy/Aegean identification conflicts with Plato's stated geography. The Mediterranean catastrophe-memory model therefore requires one of the following, none yet demonstrated: (a) deliberate Platonic relocation, (b) transmission-driven relocation before Plato, or (c) a composite narrative in which the catastrophe source and stated location came from different inputs. Reinterpreting the Pillars as an eastern Mediterranean landmark is not currently supported.
+
+## Morphology constraint: Santorini's ring geometry
+
+Evidence class: MATERIAL EVIDENCE / PROJECT INFERENCE
+
+Late Bronze Age Santorini was itself ring-shaped around a pre-existing flooded caldera and contained a central volcanic island (Pre-Kameni). This is a real morphological resemblance to Plato's ringed Atlantis, but it is not an exact match: Plato describes multiple alternating concentric belts of land and sea around a central hill, some divinely formed and later engineered with bridges and canals. Santorini supplies one ring-island/caldera system, not Plato's full engineered concentric plan.
+
+Source:
+Karátson et al. 2020: https://www.sciencedirect.com/science/article/pii/S0377027319306316
+
+Current state: PARTIAL ANALOGY / TRANSMISSION UNKNOWN.
