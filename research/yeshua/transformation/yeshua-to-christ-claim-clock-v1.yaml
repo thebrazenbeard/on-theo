@@ -1,0 +1,114 @@
+schema_version: on-theo.claim-clock.v1
+status: INTERNAL_SYNTHESIS_REVIEW_REQUIRED
+canonical: false
+date: 2026-10-04
+subject: yeshua_to_christ_first_attestations
+critical_interval:
+  start: "~30 CE"
+  end: "~55 CE"
+  reason: "By Paul's earliest surviving letters major post-Yeshua Christological claims are already established."
+claims:
+  - id: YCC-001
+    property: christ_messiah
+    earliest_recoverable: "pre-Pauline 1 Corinthians 15 tradition"
+    horizon: "before c.55 CE"
+    confidence: A_B
+  - id: YCC-002
+    property: resurrection_vindication
+    earliest_recoverable: "pre-Pauline 1 Corinthians 15 tradition"
+    horizon: "before c.55 CE"
+    confidence: A
+  - id: YCC-003
+    property: salvific_death_for_sins
+    earliest_recoverable: "pre-Pauline 1 Corinthians 15 tradition"
+    horizon: "before c.55 CE"
+    confidence: A_B
+  - id: YCC-004
+    property: lord_direct_invocation
+    earliest_recoverable: "Aramaic Maranatha embedded in 1 Corinthians 16:22"
+    horizon: "likely early Aramaic-speaking movement"
+    confidence: B
+  - id: YCC-005
+    property: davidic_descent
+    earliest_recoverable: "Romans 1:3 traditional formula"
+    horizon: "50s or earlier"
+    confidence: B_C
+  - id: YCC-006
+    property: son_of_god_resurrection_power
+    earliest_recoverable: "Romans 1:3-4 traditional formula"
+    horizon: "50s or earlier"
+    confidence: B_C
+  - id: YCC-007
+    property: in_christ_participation
+    earliest_recoverable: "undisputed Paul"
+    horizon: "50s"
+    confidence: A
+  - id: YCC-008
+    property: adam_christ_typology
+    earliest_recoverable: "1 Corinthians 15 / Romans 5"
+    horizon: "50s"
+    confidence: A
+  - id: YCC-009
+    property: creation_mediation
+    earliest_recoverable: "1 Corinthians 8:6"
+    horizon: "50s"
+    confidence: A_text_C_ontology
+  - id: YCC-010
+    property: personal_preexistence
+    earliest_recoverable: "Philippians 2 / 1 Corinthians 8:6 disputed; John clear"
+    horizon: "50s possible / late first century clear"
+    confidence: C_to_A
+  - id: YCC-011
+    property: virgin_conception
+    earliest_recoverable: "Matthew and Luke"
+    horizon: "late first century"
+    confidence: A_textual
+  - id: YCC-012
+    property: preexistent_logos_incarnation
+    earliest_recoverable: "John 1"
+    horizon: "late first / early second century"
+    confidence: A
+  - id: YCC-013
+    property: explicit_jesus_as_god_paternal_language
+    earliest_recoverable: "Johannine texts; Ignatius unambiguous patristic usage"
+    horizon: "late first / early second century"
+    confidence: A_textual
+  - id: YCC-014
+    property: universal_logos
+    earliest_recoverable: "Justin Martyr"
+    horizon: "mid second century"
+    confidence: A
+  - id: YCC-015
+    property: recapitulation_new_adam_system
+    earliest_recoverable: "Irenaeus"
+    horizon: "late second century"
+    confidence: A
+  - id: YCC-016
+    property: eternal_generation
+    earliest_recoverable: "Origen"
+    horizon: "early third century"
+    confidence: A
+  - id: YCC-017
+    property: homoousios_conciliar_norm
+    earliest_recoverable: "Council of Nicaea"
+    horizon: "325 CE"
+    confidence: A
+  - id: YCC-018
+    property: imperial_christ
+    earliest_recoverable: "Constantinian church-state synthesis"
+    horizon: "fourth century"
+    confidence: A
+highest_priority_frontier:
+  - pre_pauline_formulae
+  - aramaic_residues
+  - cephas_james_jerusalem
+  - resurrection_experience_claims
+  - earliest_messiah_identification
+  - earliest_lord_invocation
+  - pauline_inheritance_vs_innovation
+guards:
+  - FIRST_ATTESTATION_NE_FIRST_INVENTION
+  - EARLY_BELIEF_NE_HISTORICAL_EVENT
+  - LATER_DOMINANCE_NE_YESHUA_SELF_UNDERSTANDING
+  - HIGH_CHRISTOLOGY_NE_NICENE_ONTOLOGY
+  - DEVELOPMENT_NE_FABRICATION

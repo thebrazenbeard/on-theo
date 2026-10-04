@@ -1,0 +1,79 @@
+schema_version: on-theo.transformation-map.v1
+status: SOURCE_CRITICAL_REVIEW_REQUIRED
+canonical: false
+date: 2026-10-04
+subject: yeshua_to_jesus_christ_transformation
+claims:
+  - id: YCT-001
+    proposition: "Christ is Jesus' hereditary surname."
+    state: REJECTED
+    evidence_class: HISTORICAL_RECONSTRUCTION
+  - id: YCT-002
+    proposition: "Greek Christos derives from messiah/anointed language and functions in Paul as a title/honorific/name-like epithet rather than a modern surname."
+    state: SURVIVES
+    evidence_class: SCHOLARLY_INTERPRETATION
+  - id: YCT-003
+    proposition: "By Paul's letters in the 50s CE, Christ-language is already deeply fused with Jesus' identity."
+    state: SURVIVES
+    evidence_class: PRIMARY_TEXT
+  - id: YCT-004
+    proposition: "Paul invented the identification of Jesus as Christ."
+    state: REJECTED
+    evidence_class: HISTORICAL_RECONSTRUCTION
+  - id: YCT-005
+    proposition: "Some resurrection/Christ proclamation predates Paul's surviving letters."
+    state: SURVIVES
+    evidence_class: HISTORICAL_RECONSTRUCTION
+  - id: YCT-006
+    proposition: "Mark is simply an uninterpreted biography of the historical Yeshua."
+    state: REJECTED
+    evidence_class: HISTORICAL_RECONSTRUCTION
+  - id: YCT-007
+    proposition: "Matthew and Luke move theological identity into conception/birth."
+    state: SURVIVES
+    evidence_class: COMPARATIVE_TEXTUAL_PATTERN
+  - id: YCT-008
+    proposition: "John moves Jesus' identity into preexistent Logos ontology."
+    state: SURVIVES
+    evidence_class: PRIMARY_TEXT
+  - id: YCT-009
+    proposition: "Strong divine Christology first appears under Constantine."
+    state: REJECTED
+    evidence_class: HISTORICAL_RECONSTRUCTION
+  - id: YCT-010
+    proposition: "Second-century Christianity already contains explicit divine/Logos Christologies."
+    state: SURVIVES
+    evidence_class: PRIMARY_TEXT
+  - id: YCT-011
+    proposition: "Nicaea invented belief in Jesus' divinity."
+    state: REJECTED
+    evidence_class: HISTORICAL_RECONSTRUCTION
+  - id: YCT-012
+    proposition: "Nicaea regulates fourth-century ontological language about Father/Son rather than originating Christ devotion."
+    state: SURVIVES
+    evidence_class: HISTORICAL_RECONSTRUCTION
+  - id: YCT-013
+    proposition: "Constantine creates the theological figure Jesus Christ."
+    state: REJECTED
+    evidence_class: HISTORICAL_RECONSTRUCTION
+  - id: YCT-014
+    proposition: "Constantine materially amplifies an already developed Christological institution."
+    state: SURVIVES
+    evidence_class: PROJECT_INFERENCE
+  - id: YCT-015
+    proposition: "The Yeshua-to-Christ transformation is multi-stage and begins within the earliest post-execution movement."
+    state: SURVIVES
+    evidence_class: HISTORICAL_RECONSTRUCTION
+  - id: YCT-016
+    proposition: "The exact point where historical biography becomes theological myth can be represented by one date."
+    state: REJECTED
+    evidence_class: PROJECT_INFERENCE
+next_lane: yeshua_to_christ_claim_clock_v1
+guards:
+  - THEOLOGICAL_DEVELOPMENT_NE_FABRICATION
+  - LATER_UNIVERSALITY_NE_EARLY_HISTORICAL_PRIORITY
+  - CHRIST_NE_SURNAME
+  - PAUL_NE_ORIGIN_OF_ALL_CHRISTOLOGY
+  - NICAEA_NE_ORIGIN_OF_DIVINE_JESUS
+  - CONSTANTINE_NE_ORIGIN_OF_JESUS_CHRIST
+  - MYTH_TERM_REQUIRES_DEFINITION

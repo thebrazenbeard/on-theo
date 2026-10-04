@@ -1,0 +1,73 @@
+schema_version: on-theo.first-generation-black-box.v1
+status: SOURCE_CRITICAL_SYNTHESIS
+canonical: false
+date: 2026-10-04
+subject: yeshua_to_christ_30_55_ce
+resurrection_control:
+  pr: 165
+  head: 9d425f75e6333f984162e4ecc74a189ed68a3b6e
+claims:
+  - id: FGB-001
+    proposition: "Paul had direct contact with Cephas and James and later negotiated with Jerusalem pillars."
+    state: SURVIVES
+    evidence_class: PRIMARY_TEXT
+    confidence: strong
+  - id: FGB-002
+    proposition: "Paul's theology is identical with Cephas/James/Jerusalem theology."
+    state: REJECTED
+    evidence_class: HISTORICAL_RECONSTRUCTION
+  - id: FGB-003
+    proposition: "A pre-Pauline resurrection/Christ formula is embedded in 1 Corinthians 15."
+    state: SURVIVES
+    evidence_class: HISTORICAL_RECONSTRUCTION
+    confidence: strong
+  - id: FGB-004
+    proposition: "The Aramaic Maranatha invocation indicates early Aramaic Jesus-as-Lord devotion."
+    state: SURVIVES
+    evidence_class: HISTORICAL_RECONSTRUCTION
+    confidence: strong
+  - id: FGB-005
+    proposition: "Early Aramaic Lord devotion already equals fourth-century Nicene ontology."
+    state: REJECTED
+    evidence_class: PROJECT_INFERENCE
+  - id: FGB-006
+    proposition: "Paul preserves received Lord's Supper tradition linking remembered Jesus to ritualized death/body/covenant."
+    state: SURVIVES_NARROWED
+    evidence_class: PRIMARY_TEXT
+  - id: FGB-007
+    proposition: "Paul knew no sayings or traditions about the earthly Yeshua."
+    state: REJECTED
+    evidence_class: HISTORICAL_RECONSTRUCTION
+  - id: FGB-008
+    proposition: "Paul's surviving emphasis centers more on crucified/risen Christ than on Galilean biography."
+    state: SURVIVES
+    evidence_class: HISTORICAL_RECONSTRUCTION
+  - id: FGB-009
+    proposition: "All major Christology began only in Greek-speaking Gentile settings."
+    state: REJECTED
+    evidence_class: HISTORICAL_RECONSTRUCTION
+  - id: FGB-010
+    proposition: "Paul invented the Christ identity from scratch."
+    state: REJECTED
+    evidence_class: HISTORICAL_RECONSTRUCTION
+  - id: FGB-011
+    proposition: "Paul materially accelerated and universalized a preexisting Christ trajectory."
+    state: SURVIVES_NARROWED
+    evidence_class: PROJECT_INFERENCE
+  - id: FGB-012
+    proposition: "The central unresolved origin problem is what happened between Yeshua's execution and the pre-Pauline/Pauline formulas."
+    state: SURVIVES
+    evidence_class: PROJECT_INFERENCE
+live_mechanisms:
+  - historical_yeshua_self_claims
+  - resurrection_appearance_experiences
+  - scriptural_reinterpretation
+  - ritual_devotional_identity_fusion
+  - pauline_acceleration
+  - multiple_early_community_parallel_development
+guards:
+  - CONTACT_NE_THEOLOGICAL_IDENTITY
+  - EARLY_DEVOTION_NE_NICENE_ONTOLOGY
+  - RECEIVED_TRADITION_NE_EVENT_MECHANISM
+  - PAULINE_INHERITANCE_NE_PAULINE_IDENTITY
+  - FIRST_GENERATION_NE_SINGLE_COMMUNITY
