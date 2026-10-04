@@ -1,0 +1,102 @@
+schema_version: on-theo.selection-pressure.v1
+status: SOURCE_CRITICAL_SYNTHESIS
+canonical: false
+date: 2026-10-04
+subject: christianity_imperial_selection_pressure_312_380
+claims:
+  - id: ISP-001
+    proposition: "Constantine created Christianity or divine Christology."
+    state: REJECTED
+    evidence_class: HISTORICAL_RECONSTRUCTION
+  - id: ISP-002
+    proposition: "Constantinian policy materially changed the competitive environment among Christian institutions."
+    state: SURVIVES
+    evidence_class: HISTORICAL_RECONSTRUCTION
+  - id: ISP-003
+    proposition: "Clerical exemptions and property/legal privileges created material incentives benefiting recognized churches."
+    state: SURVIVES
+    evidence_class: PRIMARY_TEXT
+  - id: ISP-004
+    proposition: "Imperial adjudication of Donatism made imperial recognition a material resource in intra-Christian competition."
+    state: SURVIVES
+    evidence_class: HISTORICAL_RECONSTRUCTION
+  - id: ISP-005
+    proposition: "Nicaea created belief in Jesus' divinity."
+    state: REJECTED
+    evidence_class: HISTORICAL_RECONSTRUCTION
+  - id: ISP-006
+    proposition: "Nicaea/Constantine increased the political consequences of doctrinal disagreement."
+    state: SURVIVES
+    evidence_class: HISTORICAL_RECONSTRUCTION
+  - id: ISP-007
+    proposition: "Constantinian Easter policy reinforced Christian separation from Jewish calendrical authority."
+    state: SURVIVES
+    evidence_class: PRIMARY_TEXT
+  - id: ISP-008
+    proposition: "Constantinian policy included targeted suppression of some rival Christian assemblies and writings."
+    state: SURVIVES_NARROWED
+    evidence_class: PRIMARY_TEXT
+    guard: "Scope, transmission, dating, and enforcement vary by source."
+  - id: ISP-009
+    proposition: "Constantine destroyed all noncanonical gospels."
+    state: REJECTED
+    evidence_class: HISTORICAL_RECONSTRUCTION
+  - id: ISP-010
+    proposition: "Imperial scripture production materially amplified favored Christian textual infrastructure."
+    state: SURVIVES
+    evidence_class: PRIMARY_TEXT
+  - id: ISP-011
+    proposition: "The exact contents of Constantine's fifty scripture copies equal the modern 27-book New Testament."
+    state: NOT_ADMITTED
+    evidence_class: UNKNOWN
+  - id: ISP-012
+    proposition: "Eusebian Canon Tables materially reinforced the fourfold Gospel as a unified corpus."
+    state: SURVIVES
+    evidence_class: SCHOLARLY_INTERPRETATION
+  - id: ISP-013
+    proposition: "Constantinian sacred-site construction materially shaped later Christian memory of Jesus' geography."
+    state: SURVIVES
+    evidence_class: HISTORICAL_RECONSTRUCTION
+  - id: ISP-014
+    proposition: "Imperial monumentalization proves the historical authenticity of the chosen holy sites."
+    state: REJECTED
+    evidence_class: HISTORICAL_RECONSTRUCTION
+  - id: ISP-015
+    proposition: "Constantine's reign integrated Christian symbols into imperial victory/public imagery."
+    state: SURVIVES
+    evidence_class: MATERIAL_EVIDENCE
+  - id: ISP-016
+    proposition: "The honorific 'Great' is moral certification of Constantine."
+    state: REJECTED
+    evidence_class: PROJECT_INFERENCE
+  - id: ISP-017
+    proposition: "Maximal honorific language such as Maximus was already used for Constantine during his lifetime."
+    state: SURVIVES
+    evidence_class: EPIGRAPHIC_EVIDENCE
+  - id: ISP-018
+    proposition: "Later imperial policy from Constantius through Theodosius demonstrates that the Constantinian church-state machinery could privilege different factions over time."
+    state: SURVIVES
+    evidence_class: HISTORICAL_RECONSTRUCTION
+  - id: ISP-019
+    proposition: "Constantine materially altered the ecology in which memories of Yeshua competed."
+    state: SURVIVES
+    evidence_class: PROJECT_INFERENCE
+  - id: ISP-020
+    proposition: "Constantine's fourth-century role proves first-century Tiberian cultivation."
+    state: REJECTED
+    evidence_class: PROJECT_INFERENCE
+guards:
+  - AMPLIFICATION_NE_TRUTH
+  - SUPPRESSION_NE_AUTHENTICITY
+  - STATE_SELECTION_NE_ORIGINAL_INVENTION
+  - CONSTANTINE_NE_TIBERIUS
+  - NICAEA_NE_CANON_SELECTION
+  - NICAEA_NE_ORIGIN_OF_DIVINE_CHRISTOLOGY
+  - MONUMENT_NE_HISTORICAL_SITE_PROOF
+  - HONORIFIC_GREAT_NE_MORAL_GOODNESS
+next_lanes:
+  - text_survival_312_400
+  - sacred_geography_constantinian_memory
+  - de_judaization_325_400
+  - christology_coercion_325_381
+  - imperial_jesus_public_imagery

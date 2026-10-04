@@ -1,0 +1,70 @@
+schema_version: on-theo.historical-control.v1
+status: SOURCE_CRITICAL_REVIEW_REQUIRED
+canonical: false
+date: 2026-10-04
+subject: constantine_imperial_christianization
+claims:
+  - id: CON-001
+    proposition: "Constantine created Christianity."
+    state: REJECTED
+    evidence_class: HISTORICAL_RECONSTRUCTION
+  - id: CON-002
+    proposition: "The 313 Milan settlement legalized/protected Christian worship and restored Christian property."
+    state: SURVIVES
+    evidence_class: PRIMARY_TEXT
+  - id: CON-003
+    proposition: "Constantine intervened in intra-Christian disputes by 313–314, including the Donatist controversy."
+    state: SURVIVES
+    evidence_class: HISTORICAL_RECONSTRUCTION
+  - id: CON-004
+    proposition: "Constantine summoned the Council of Nicaea in 325 and imperial unity concerns materially shaped its convening."
+    state: SURVIVES
+    evidence_class: HISTORICAL_RECONSTRUCTION
+  - id: CON-005
+    proposition: "The Council of Nicaea selected the 27-book New Testament canon."
+    state: REJECTED
+    evidence_class: HISTORICAL_RECONSTRUCTION
+  - id: CON-006
+    proposition: "Constantine commissioned fifty copies of sacred Scriptures for Constantinopolitan churches."
+    state: SURVIVES
+    evidence_class: PRIMARY_TEXT
+  - id: CON-007
+    proposition: "Those fifty copies are proven to contain exactly the modern 27-book New Testament."
+    state: NOT_ADMITTED
+    evidence_class: UNKNOWN
+  - id: CON-008
+    proposition: "Constantinian patronage transformed the public/institutional position of bishops and churches."
+    state: SURVIVES
+    evidence_class: HISTORICAL_RECONSTRUCTION
+  - id: CON-009
+    proposition: "Christianity became the exclusive official religion of the Roman Empire under Constantine."
+    state: REJECTED
+    evidence_class: HISTORICAL_RECONSTRUCTION
+  - id: CON-010
+    proposition: "Theodosius I's 380 law marks a later major threshold in imperial privileging of Nicene Christianity."
+    state: SURVIVES
+    evidence_class: PRIMARY_TEXT
+  - id: CON-011
+    proposition: "Constantine is strong historical evidence for later imperial adoption/capture without original Roman invention."
+    state: SURVIVES
+    evidence_class: PROJECT_INFERENCE
+  - id: CON-012
+    proposition: "Constantine's actions prove Tiberius had already cultivated Christianity."
+    state: REJECTED
+    evidence_class: PROJECT_INFERENCE
+guards:
+  - CONSTANTINIAN_PATRONAGE_NE_TIBERIAN_ORIGIN
+  - NICAEA_NE_NEW_TESTAMENT_CANON_SELECTION
+  - FIFTY_COPIES_NE_FIXED_27_BOOK_CONTENT
+  - IMPERIAL_SUPPORT_NE_SECRET_CREATION
+  - UNITY_INTEREST_NE_CYNICAL_MOTIVE_PROVED
+next_tests:
+  - constantine_306_337_chronology
+  - donatist_imperial_governance
+  - nicaea_primary_source_reconstruction
+  - constantine_anti_heresy_policy
+  - imperial_church_patronage_inventory
+  - fifty_scripture_copies_contents
+  - pre_post_constantine_canon_lists
+  - eusebian_imperial_theology
+  - constantine_to_theodosius_state_church_trajectory
