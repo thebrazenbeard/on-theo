@@ -317,3 +317,51 @@ That is now the project's primary Christ-origin frontier.
   https://www.cambridge.org/core/books/abs/jesus-according-to-paul/sayings-of-jesus-in-pauls-letters/46C47D3B57F3FC656D02FC1BF70AD2B8
 - Early Lord's Supper tradition:
   https://www.cambridge.org/core/journals/new-testament-studies/article/where-do-you-want-us-to-go-so-that-you-may-eat-performing-the-lords-supper-in-cemeteries-and-cities/DDDE20C35B385C250C678AFF9C0B11E6
+
+
+## 11. Chronology: how early can the received core plausibly be?
+
+Pauline chronology is not exact.
+
+A commonly used broad reconstruction places:
+- Yeshua's crucifixion around 30 CE;
+- Paul's conversion around 32/33;
+- Paul's first Jerusalem visit roughly three years later, around 35/36;
+- earliest surviving Pauline letters around 50.
+
+This makes a pre-Pauline resurrection/Christ tradition within the **first decade**
+after Yeshua's death historically plausible.
+
+The Cambridge Companion to Jesus explicitly notes that the 1 Cor 15 tradition
+may date from the first decade after the crucifixion.
+
+But one inference must be blocked:
+
+`PAUL_MET_CEPHAS_IN_JERUSALEM`
+does not prove
+`THAT_IS_EXACTLY_WHERE_AND_WHEN_PAUL_RECEIVED_1_COR_15_3_5`.
+
+Some scholars reconstruct that scenario.
+Paul does not tell us directly.
+
+Disposition:
+- `FIRST_DECADE_PRE_PAULINE_CORE = PLAUSIBLE / MODERATE-STRONG`.
+- `EXACT_RECEIPT_DATE_AND_PLACE = UNRESOLVED`.
+
+## 12. The black box may be shorter than "30–55"
+
+The phrase `30–55 CE` marks the interval between execution and 1 Corinthians.
+
+But the evidence suggests the central transformation occurred earlier than 55:
+- 1 Thessalonians already presupposes Jesus raised and returning from heaven;
+- Paul converted to the movement years earlier;
+- Paul initially persecuted an already-identifiable movement;
+- Jerusalem leadership already existed before Paul's first visit.
+
+So the most intense transformation window may be closer to:
+
+`EXECUTION -> FIRST FEW YEARS / FIRST DECADE`.
+
+The evidence is insufficient to shrink it to months or weeks with confidence.
+
+That narrower window is now the highest-value frontier.
