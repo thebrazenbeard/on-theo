@@ -63,6 +63,9 @@ expanded_program:
   qualification:
     initial_files_read_back: true
     yaml_semantic_validation: NOT_YET_PERFORMED
+    yaml_parse_validation: PASSED_5_FILES_ON_LAPPY_AT_0ce7ca19258f74674622373a703dc4d1a1350bcd
+    claim_uniqueness_count_validation: PASSED_16_UNIQUE_12_SOURCE_BOUND
+    canto_csv_count_validation: PASSED_100_UNIQUE_8_PARTIAL_92_UNSTARTED
     manuscripts_individually_collated: false
     independent_hostile_review: false
     full_comprehensive_dante_analysis_complete: false
