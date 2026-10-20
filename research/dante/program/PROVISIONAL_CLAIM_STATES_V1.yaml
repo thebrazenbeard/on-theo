@@ -183,6 +183,62 @@ claims:
     claim_ceiling: "Word occurrence in a character's speech; not proof one mechanical rule explains every punishment."
     rivals: [MULTIPLE_JUSTICE_MECHANISMS]
     opposing_loci_or_counterevidence: []
+  - id: DNT-AGENCY-001
+    exact_proposition: "Inferno V.37-39 describes the punished lustful as subordinating reason to appetite."
+    claim_type: POEM_TEXT
+    evidence_class: PRIMARY_TEXT
+    locus: Inferno:5:28-39
+    speaker_and_narrative_layer: PILGRIM_NARRATIVE_EXPLANATION
+    source_ids: [DNT-ED-PETROCCHI-1966-67]
+    lifecycle: SOURCE_BOUND
+    disposition: null
+    confidence: HIGH_TEXTUAL
+    physical_witness_control: PETROCCHI_DISPLAY_ONLY
+    claim_ceiling: "A statement about the lustful; not a universal theory of all damned characters."
+    rivals: [NARRATOR_INTERPRETATION_CONTESTED]
+    opposing_loci_or_counterevidence: [Inferno:5:70-142]
+  - id: DNT-AGENCY-002
+    exact_proposition: "Marco Lombardo in Purgatorio XVI says celestial causation does not abolish moral freedom or justice."
+    claim_type: POEM_TEXT
+    evidence_class: PRIMARY_TEXT
+    locus: Purgatorio:16:64-81
+    speaker_and_narrative_layer: MARCO_LOMBARDO_SPEECH
+    source_ids: [DNT-ED-PETROCCHI-1966-67]
+    lifecycle: SOURCE_BOUND
+    disposition: null
+    confidence: HIGH_TEXTUAL
+    physical_witness_control: PETROCCHI_DISPLAY_ONLY
+    claim_ceiling: "Medieval moral/celestial discourse, not empirical astrology or modern neuroscience."
+    rivals: [ASTROLOGICAL_HARD_DETERMINISM]
+    opposing_loci_or_counterevidence: [Purgatorio:18:49-75]
+  - id: DNT-AGENCY-003
+    exact_proposition: "Piccarda describes blessedness as resting in divine will without resentment over unequal grace."
+    claim_type: POEM_TEXT
+    evidence_class: PRIMARY_TEXT
+    locus: Paradiso:3:79-90
+    speaker_and_narrative_layer: PICCARDA_SPEECH_AND_PILGRIM_NARRATION
+    source_ids: [DNT-ED-PETROCCHI-1966-67]
+    lifecycle: SOURCE_BOUND
+    disposition: null
+    confidence: HIGH_TEXTUAL
+    physical_witness_control: PETROCCHI_DISPLAY_ONLY
+    claim_ceiling: "Textual theological representation, not observation of actual afterlife or identical status among souls."
+    rivals: [RANK_WITHOUT_RIVALRY, UNIFORM_BLISS_INTERPRETATION]
+    opposing_loci_or_counterevidence: []
+  - id: DNT-AGENCY-004
+    exact_proposition: "The final canto presents a grace-like flash followed by the alignment of desire and will in divine love."
+    claim_type: POEM_TEXT
+    evidence_class: PRIMARY_TEXT
+    locus: Paradiso:33:133-145
+    speaker_and_narrative_layer: PILGRIM_NARRATOR_POET
+    source_ids: [DNT-ED-PETROCCHI-1966-67]
+    lifecycle: SOURCE_BOUND
+    disposition: null
+    confidence: HIGH_TEXTUAL
+    physical_witness_control: PETROCCHI_DISPLAY_ONLY
+    claim_ceiling: "Poetic grace/illumination and harmony; no historical report of actual vision established."
+    rivals: [LITERARY_EPIPHANY, DOCTRINAL_GRACE, AUTOBIOGRAPHICAL_VISION_HYPOTHESIS]
+    opposing_loci_or_counterevidence: []
 metadata_gaps:
   - "This is a provisional state crosswalk: required claim fields left blank above are NOT_YET_ACQUIRED, not inferred complete."
   - "No individual claim has received independent review."
