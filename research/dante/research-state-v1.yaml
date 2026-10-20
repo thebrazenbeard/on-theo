@@ -52,7 +52,7 @@ expanded_program:
   canto_coverage_matrix: research/dante/program/CANTO_COVERAGE_MATRIX_V1.csv
   first_source_packet: research/dante/packets/PURGATORIO_XVII_XVIII_LOVE_WILL_PACKET_V1.md
   initial_hostile_review: research/dante/reviews/SAME_RUNTIME_HOSTILE_REVIEW_V1.md
-  source_bound_provisional_claims: 7
+  source_bound_provisional_claims: 8
   overall_provisional_claims: 12
   coverage:
     canto_rows: 100
