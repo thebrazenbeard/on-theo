@@ -3,7 +3,7 @@ INFERNO-01,Inferno,1,NOT_STARTED,,No line-level audit claimed
 INFERNO-02,Inferno,2,NOT_STARTED,,No line-level audit claimed
 INFERNO-03,Inferno,3,NOT_STARTED,,No line-level audit claimed
 INFERNO-04,Inferno,4,NOT_STARTED,,No line-level audit claimed
-INFERNO-05,Inferno,5,NOT_STARTED,,No line-level audit claimed
+INFERNO-05,Inferno,5,PASSAGE_SCOPED,5:28-39,Some lines verified in a modern critical edition; NOT a full canto audit
 INFERNO-06,Inferno,6,NOT_STARTED,,No line-level audit claimed
 INFERNO-07,Inferno,7,NOT_STARTED,,No line-level audit claimed
 INFERNO-08,Inferno,8,NOT_STARTED,,No line-level audit claimed
@@ -48,7 +48,7 @@ PURGATORIO-12,Purgatorio,12,NOT_STARTED,,No line-level audit claimed
 PURGATORIO-13,Purgatorio,13,NOT_STARTED,,No line-level audit claimed
 PURGATORIO-14,Purgatorio,14,NOT_STARTED,,No line-level audit claimed
 PURGATORIO-15,Purgatorio,15,NOT_STARTED,,No line-level audit claimed
-PURGATORIO-16,Purgatorio,16,NOT_STARTED,,No line-level audit claimed
+PURGATORIO-16,Purgatorio,16,PASSAGE_SCOPED,16:64-81,Some lines verified in a modern critical edition; NOT a full canto audit
 PURGATORIO-17,Purgatorio,17,PASSAGE_SCOPED,17:91-139,Some lines verified in a modern critical edition; NOT a full canto audit
 PURGATORIO-18,Purgatorio,18,PASSAGE_SCOPED,18:49-75,Some lines verified in a modern critical edition; NOT a full canto audit
 PURGATORIO-19,Purgatorio,19,NOT_STARTED,,No line-level audit claimed
@@ -68,7 +68,7 @@ PURGATORIO-32,Purgatorio,32,NOT_STARTED,,No line-level audit claimed
 PURGATORIO-33,Purgatorio,33,NOT_STARTED,,No line-level audit claimed
 PARADISO-01,Paradiso,1,NOT_STARTED,,No line-level audit claimed
 PARADISO-02,Paradiso,2,NOT_STARTED,,No line-level audit claimed
-PARADISO-03,Paradiso,3,NOT_STARTED,,No line-level audit claimed
+PARADISO-03,Paradiso,3,PASSAGE_SCOPED,3:79-90,Some lines verified in a modern critical edition; NOT a full canto audit
 PARADISO-04,Paradiso,4,NOT_STARTED,,No line-level audit claimed
 PARADISO-05,Paradiso,5,NOT_STARTED,,No line-level audit claimed
 PARADISO-06,Paradiso,6,NOT_STARTED,,No line-level audit claimed
@@ -98,4 +98,4 @@ PARADISO-29,Paradiso,29,NOT_STARTED,,No line-level audit claimed
 PARADISO-30,Paradiso,30,NOT_STARTED,,No line-level audit claimed
 PARADISO-31,Paradiso,31,NOT_STARTED,,No line-level audit claimed
 PARADISO-32,Paradiso,32,NOT_STARTED,,No line-level audit claimed
-PARADISO-33,Paradiso,33,NOT_STARTED,,No line-level audit claimed
+PARADISO-33,Paradiso,33,PASSAGE_SCOPED,33:133-145,Some lines verified in a modern critical edition; NOT a full canto audit
