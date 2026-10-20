@@ -1,0 +1,97 @@
+schema_version: on-theo.dante-frontier-map.v1
+status: RESEARCH_PROGRAM_EXECUTING_NOT_FULLY_ASSESSED
+recorded_at: "2026-10-20"
+repo: thebrazenbeard/on-theo
+pr: 180
+current_default_branch_is_not_modified: true
+program_contract: research/dante/program/ADVERSARIAL_RESEARCH_SPINE_V1.md
+anchors:
+  yeshua_adversarial_method_source: "baaedad112fa6fe5e936e526edc3864734ab722c"
+  petrocchi_edition_info: https://dante.princeton.edu/projinfo.html
+  searchable_commentaries: https://dante.dartmouth.edu/commentaries.php
+  florentine_archives: https://archiviodistatofirenze.cultura.gov.it/asfi/dante-tra-le-carte/default-8bab8ff0b0/la-condanna-e-lesilio
+  cangrande_epistle_authenticity: DISPUTED
+baselines:
+  A:
+    id: TEXT_IMMANENT_NEAR_CONTEXT
+    rules:
+      - source_edition_locus_speaker
+      - archive_document_dated_separately
+      - no_later_commentary_as_authorial_intent
+      - no_modern_metaphysics_filling_textual_gaps
+  B:
+    id: FULL_RECEPTION_COMPARATIVE
+    rules:
+      - source_witness_classification_required
+      - comparative_similarity_not_transmission
+      - independent_commentary_count_not_naive
+      - A_TO_B_DELTA_EXPLICIT
+lanes:
+  - id: D0_SOURCE_AND_WITNESS
+    state: PARTIAL_SOURCE_REGISTRY
+    upstream: []
+    must_deliver: [critical_editors_and_editions, codices_and_variants, commentary_date_and_dependencies, bibliography]
+    next: select_3_oldest_individually_located_witnesses_and_collate_variants
+  - id: D1_ALL_100_CANTOS
+    state: NOT_STARTED_AS_COMPLETE_READ
+    upstream: [D0_SOURCE_AND_WITNESS]
+    must_deliver: [100_canto_scoped_packets, canto_locus_index, named_speakers, competing_readings, claim_links]
+    current_partial_passages: [Purgatorio_17_91_139, Purgatorio_18_49_75, Purgatorio_27_127_142, Inferno_28_142]
+  - id: D2_LOVE_WILL_PSYCHOLOGY
+    state: SOURCE_BOUND_NARROW_PACKET
+    upstream: [D0_SOURCE_AND_WITNESS]
+    packet: research/dante/packets/PURGATORIO_XVII_XVIII_LOVE_WILL_PACKET_V1.md
+    next: [Purgatorio_16_free_will, Purgatorio_28_33_grace_and_rebuke, Paradiso_3_and_33]
+  - id: D3_COSMOLOGY_STRUCTURE
+    state: NOT_STARTED
+    upstream: [D1_ALL_100_CANTOS]
+    next: [mount_geography, heavens_versus_Empyrean, Dante_astronomy_sources, metrical_numerology_negative_controls]
+  - id: D4_INFERNAL_ETHICS
+    state: NOT_STARTED
+    upstream: [D1_ALL_100_CANTOS, D2_LOVE_WILL_PSYCHOLOGY]
+    next: [Inferno_3_5_11_26_28_34, counterexamples_to_one_contrapasso_model]
+  - id: D5_CHRISTIAN_THEOLOGY
+    state: NOT_STARTED
+    upstream: [D2_LOVE_WILL_PSYCHOLOGY, D1_ALL_100_CANTOS]
+    next: [Purgatory_doctrine, beatific_vision, Augustinian_Thomistic_PseudoDionysian_sources, non_Thomistic_counterexamples]
+  - id: D6_INTERTEXT
+    state: NOT_STARTED
+    upstream: [D0_SOURCE_AND_WITNESS]
+    next: [Aeneid_6, Ovid, Lucan, Statius, Aristotle, Boethius, Scripture, Augustine, Gregory, Bernard]
+  - id: D7_POLITICAL_DOCUMENTS
+    state: PARTIAL_ARCHIVAL_ANCHOR
+    upstream: [D0_SOURCE_AND_WITNESS]
+    next: [1302_trial_original_copy_control, persons_and_popes, exile_chronology, Henry_VII, legal_accusations_vs_verdicts]
+  - id: D8_GENDER_SEXUALITY
+    state: NOT_STARTED
+    upstream: [D1_ALL_100_CANTOS]
+    next: [Francesca, Beatrice, Piccarda, Cunizza, Brunetto, coerced_vows]
+  - id: D9_MYSTICAL_AND_APOPHATIC
+    state: NOT_STARTED
+    upstream: [D5_CHRISTIAN_THEOLOGY]
+    next: [Paradiso_1_30_33, negative_theology, ineffability_vs_report_of_experience]
+  - id: D10_ISLAMIC_ARABIC_TRANSMISSION
+    state: PROPOSED_CONTROVERSY_IDENTIFIED
+    upstream: [D0_SOURCE_AND_WITNESS, D6_INTERTEXT]
+    next: [Latin_Liber_scalae_chain, texts_and_dates, plausible_access, distinctiveness, independent_scholarly_rival]
+  - id: D11_RECEPTION_AND_MANUSCRIPTS
+    state: RESOURCE_INDEXED_NOT_COLLATED
+    upstream: [D0_SOURCE_AND_WITNESS]
+    next: [Jacopo_Alighieri, Jacopo_della_Lana, Ottimo, Buti, Boccaccio, early_print_editions]
+  - id: D12_MODERN_SPECULATIVE_APPLICATIONS
+    state: HYPOTHESES_SEPARATED_NOT_VALIDATED
+    upstream: [D2_LOVE_WILL_PSYCHOLOGY, D3_COSMOLOGY_STRUCTURE, D5_CHRISTIAN_THEOLOGY]
+    next: [Earth_as_Purgatory_allegory_versus_identity, M_theory_dimensions_negative_controls, non_suggestive_comparison]
+quality_gates:
+  - claim_id_falsifiability_and_scope
+  - explicit_edition_and_original_language
+  - physical_witness_and_composition_separation
+  - first_source_and_independence
+  - opposition_acquisition_and_counter_locus
+  - review_exact_head_and_same_runtime_disclosure
+  - no_canonical_merge_without_human_authority
+next_required_execution:
+  priority_one: "Broaden concrete primary text to Purgatorio XVI, XXVIII-XXXIII, Paradiso III/XXXIII and contradictory Inferno cases"
+  priority_two: "Acquire individually identifiable early manuscript witnesses and edition apparatus for load-bearing verses"
+  priority_three: "Early commentary comparison and dating/dependence controls"
+completion_rule: "Do not call a lane complete unless its explicit outputs and validation exist; a matrix scaffold is NOT_COMPLETE."
