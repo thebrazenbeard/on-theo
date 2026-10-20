@@ -36,12 +36,12 @@ lanes:
     state: NOT_STARTED_AS_COMPLETE_READ
     upstream: [D0_SOURCE_AND_WITNESS]
     must_deliver: [100_canto_scoped_packets, canto_locus_index, named_speakers, competing_readings, claim_links]
-    current_partial_passages: [Purgatorio_17_91_139, Purgatorio_18_49_75, Purgatorio_27_127_142, Inferno_28_142]
+    current_partial_passages: [Inferno_05_28_39, Inferno_28_142, Purgatorio_16_64_81, Purgatorio_17_91_139, Purgatorio_18_49_75, Purgatorio_27_127_142, Paradiso_03_79_90, Paradiso_33_133_145]
   - id: D2_LOVE_WILL_PSYCHOLOGY
-    state: SOURCE_BOUND_NARROW_PACKET
+    state: SOURCE_BOUND_TWO_NARROW_PACKETS
     upstream: [D0_SOURCE_AND_WITNESS]
-    packet: research/dante/packets/PURGATORIO_XVII_XVIII_LOVE_WILL_PACKET_V1.md
-    next: [Purgatorio_16_free_will, Purgatorio_28_33_grace_and_rebuke, Paradiso_3_and_33]
+    packets: [research/dante/packets/PURGATORIO_XVII_XVIII_LOVE_WILL_PACKET_V1.md, research/dante/packets/CROSS_CANTICLE_AGENCY_GRACE_FALSIFICATION_V1.md]
+    next: [Purgatorio_28_33_grace_and_rebuke, Inf_V_Francesca_counterexemplum, Paradiso_III_reception_context]
   - id: D3_COSMOLOGY_STRUCTURE
     state: NOT_STARTED
     upstream: [D1_ALL_100_CANTOS]
@@ -91,7 +91,7 @@ quality_gates:
   - review_exact_head_and_same_runtime_disclosure
   - no_canonical_merge_without_human_authority
 next_required_execution:
-  priority_one: "Broaden concrete primary text to Purgatorio XVI, XXVIII-XXXIII, Paradiso III/XXXIII and contradictory Inferno cases"
+  priority_one: "Now examine Purgatorio XXVIII-XXXIII, Inferno V Francesca and incompatible fixed-agency cases, after the scoped XVI/III/XXXIII checks"
   priority_two: "Acquire individually identifiable early manuscript witnesses and edition apparatus for load-bearing verses"
   priority_three: "Early commentary comparison and dating/dependence controls"
 completion_rule: "Do not call a lane complete unless its explicit outputs and validation exist; a matrix scaffold is NOT_COMPLETE."
