@@ -37,3 +37,37 @@ next_frontier:
 guards:
   - PUBLIC_DANTE_RESEARCH_NE_PRIVATE_BEHAVIORAL_EVIDENCE
   - MODERN_APPROPRIATION_NE_HISTORICAL_DANTE
+
+expanded_program:
+  status: DANTE_ADVERSARIAL_RESEARCH_SPINE_V1_ACTIVE_DRAFT
+  methodological_reference:
+    research_origin: YESHUA_ADVERSARIAL_SPINE_V2
+    historical_source_commit: baaedad112fa6fe5e936e526edc3864734ab722c
+    transfer: METHOD_NOT_CONTENT
+  architecture: research/dante/program/ADVERSARIAL_RESEARCH_SPINE_V1.md
+  claim_schema: research/dante/program/CLAIM_RECORD_SCHEMA_V1.yaml
+  provisional_claims: research/dante/program/PROVISIONAL_CLAIM_STATES_V1.yaml
+  source_witness_registry: research/dante/program/SOURCE_WITNESS_REGISTRY_V1.yaml
+  research_frontier: research/dante/program/RESEARCH_FRONTIER_MAP_V1.yaml
+  canto_coverage_matrix: research/dante/program/CANTO_COVERAGE_MATRIX_V1.csv
+  first_source_packet: research/dante/packets/PURGATORIO_XVII_XVIII_LOVE_WILL_PACKET_V1.md
+  initial_hostile_review: research/dante/reviews/SAME_RUNTIME_HOSTILE_REVIEW_V1.md
+  source_bound_provisional_claims: 7
+  overall_provisional_claims: 12
+  coverage:
+    canto_rows: 100
+    passage_scoped_cantos: 4
+    full_canto_source_critical_reviews: 0
+    unstarted_cantos: 96
+  qualification:
+    initial_files_read_back: true
+    yaml_semantic_validation: NOT_YET_PERFORMED
+    manuscripts_individually_collated: false
+    independent_hostile_review: false
+    full_comprehensive_dante_analysis_complete: false
+    merge_authorized: false
+  next_frontier_priority:
+    - D2_PURGATORIO_XVI_AND_XXVIII_XXXIII_LIVE_TEXTUAL_TEST
+    - D0_IDENTIFIED_EARLY_MANUSCRIPTS_AND_VARIANT_CONTROL
+    - D11_EARLY_COMMENTARY_LINE_COMPARISON
+    - D1_FULL_100_CANTO_PRIMARY_TEXT_SCOPING
