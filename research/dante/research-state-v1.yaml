@@ -1,0 +1,77 @@
+schema_version: on-theo.divine-comedy-multilens-state.v1
+status: INITIAL_MULTILENS_PROGRAM_ACTIVE
+
+branch:
+  name: research/divine-comedy-multilens-v1-20261020
+  base: main
+  base_head: 426e79befa4174cde8986571c00bb44a4aa2831a
+
+artifacts:
+  source_map: research/dante/divine-comedy-multilens-source-map-v1.md
+  initial_analysis: research/dante/divine-comedy-multilens-analysis-v1.md
+
+adjacent_research:
+  katabasis_pr: 179
+  katabasis_head: 4b3467961d25d45ee196261dd7106f75deb5f5be
+  private_application_repo: thebrazenbeard/suicidal-phoenix
+
+current_secure_results:
+  - DIVINE_COMEDY_NE_OFFICIAL_CATHOLIC_AFTERLIFE_MAP
+  - DANTEAN_MORAL_PSYCHOLOGY_CENTERS_ON_ORDERED_AND_MISORDERED_LOVE
+  - INFERNO_PURGATORIO_PARADISO_SUPPORT_DISTINCT_AGENCY_STATES_AS_LITERARY_THEOLOGICAL_MODEL
+  - DANTE_PILGRIM_NE_DANTE_POET
+  - PHOENIX_SIMILE_IN_INFERNO_IS_NOT_DANTES_PRIMARY_SALVIFIC_TRANSFORMATION_SYMBOL
+  - MODERN_PSYCHOLOGICAL_USE_REQUIRES_EXPLICIT_ADAPTATION_LABEL
+  - ISLAMIC_ESCHATOLOGY_INFLUENCE_REMAINS_DISPUTED_HYPOTHESIS
+
+next_frontier:
+  primary: PURGATORIO_LOVE_WILL_PACKET_V1
+  subsequent:
+    - INFERNO_FIXED_AGENCY_PACKET_V1
+    - PARADISO_MYSTICAL_VISION_PACKET_V1
+    - DANTE_JUSTICE_CONTRAPASSO_PACKET_V1
+    - DANTE_POLITICAL_THEOLOGY_PACKET_V1
+    - DANTE_ISLAM_CONTACT_HYPOTHESIS_V1
+    - DANTE_MULTILENS_COMPARISON_READINESS_AUDIT_V1
+
+guards:
+  - PUBLIC_DANTE_RESEARCH_NE_PRIVATE_BEHAVIORAL_EVIDENCE
+  - MODERN_APPROPRIATION_NE_HISTORICAL_DANTE
+
+expanded_program:
+  status: DANTE_ADVERSARIAL_RESEARCH_SPINE_V1_ACTIVE_DRAFT
+  methodological_reference:
+    research_origin: YESHUA_ADVERSARIAL_SPINE_V2
+    historical_source_commit: baaedad112fa6fe5e936e526edc3864734ab722c
+    transfer: METHOD_NOT_CONTENT
+  architecture: research/dante/program/ADVERSARIAL_RESEARCH_SPINE_V1.md
+  claim_schema: research/dante/program/CLAIM_RECORD_SCHEMA_V1.yaml
+  provisional_claims: research/dante/program/PROVISIONAL_CLAIM_STATES_V1.yaml
+  source_witness_registry: research/dante/program/SOURCE_WITNESS_REGISTRY_V1.yaml
+  research_frontier: research/dante/program/RESEARCH_FRONTIER_MAP_V1.yaml
+  canto_coverage_matrix: research/dante/program/CANTO_COVERAGE_MATRIX_V1.csv
+  first_source_packet: research/dante/packets/PURGATORIO_XVII_XVIII_LOVE_WILL_PACKET_V1.md
+  second_source_packet: research/dante/packets/CROSS_CANTICLE_AGENCY_GRACE_FALSIFICATION_V1.md
+  initial_hostile_review: research/dante/reviews/SAME_RUNTIME_HOSTILE_REVIEW_V1.md
+  source_bound_provisional_claims: 12
+  overall_provisional_claims: 16
+  coverage:
+    canto_rows: 100
+    passage_scoped_cantos: 8
+    full_canto_source_critical_reviews: 0
+    unstarted_cantos: 92
+  qualification:
+    initial_files_read_back: true
+    yaml_semantic_validation: NOT_YET_PERFORMED
+    yaml_parse_validation: PASSED_5_FILES_ON_LAPPY_AT_0ce7ca19258f74674622373a703dc4d1a1350bcd
+    claim_uniqueness_count_validation: PASSED_16_UNIQUE_12_SOURCE_BOUND
+    canto_csv_count_validation: PASSED_100_UNIQUE_8_PARTIAL_92_UNSTARTED
+    manuscripts_individually_collated: false
+    independent_hostile_review: false
+    full_comprehensive_dante_analysis_complete: false
+    merge_authorized: false
+  next_frontier_priority:
+    - D2_PURGATORIO_XXVIII_XXXIII_LIVE_TEXTUAL_TEST_AND_COUNTEREVIDENCE
+    - D0_IDENTIFIED_EARLY_MANUSCRIPTS_AND_VARIANT_CONTROL
+    - D11_EARLY_COMMENTARY_LINE_COMPARISON
+    - D1_FULL_100_CANTO_PRIMARY_TEXT_SCOPING
