@@ -1,5 +1,5 @@
 schema_version: on-theo.mesopotamian-biblical-flood-research-state.v1
-status: SOURCE_BOUND_PENDING_HOSTILE_REVIEW
+status: FIRST_HOSTILE_REVIEW_REVISIONS_APPLIED_SECOND_REVIEW_PENDING
 recorded_at: "2026-10-25"
 
 branch:
@@ -17,14 +17,17 @@ current_result:
   ziusudra_noah_same_person: NOT_ESTABLISHED
   related_mesopotamian_flood_complex: HIGH
   atrahasis_gilgamesh_relation: HIGH
-  genesis_mesopotamian_dependence: HIGH_PENDING_HOSTILE_REVIEW
+  genesis_mesopotamian_relationship: HIGH
+  direct_specific_source_dependence: UNRESOLVED
   direct_ziusudra_copy: NOT_ESTABLISHED
-  genesis_theological_reworking: HIGH_PENDING_HOSTILE_REVIEW
+  genesis_theological_transformation: HIGH
+  deliberate_text_specific_polemic: POSSIBLE_UNPROVED
   contact_capacity: HIGH
   specific_carrier: UNKNOWN
-  shuruppak_inundation: SUPPORTED
+  shuruppak_inundation: SUPPORTED_TRANSITIONAL_HORIZON
+  shuruppak_absolute_date: PROVISIONAL_REVALIDATION_REQUIRED
   one_synchronous_mesopotamian_flood: NOT_ESTABLISHED
-  global_flood_from_archaeology: NOT_SUPPORTED
+  global_flood_from_cited_strata: NOT_ESTABLISHED
   recurrent_flood_memory_seed: PLAUSIBLE
 
 next:
