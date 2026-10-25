@@ -1,0 +1,50 @@
+schema_version: on-theo.mesopotamian-biblical-flood-review-receipt.v1
+status: INTERNAL_HOSTILE_PASS_WITH_GUARDS
+independent_review_status: REQUIRED_NOT_COMPLETED
+recorded_at: "2026-10-25"
+
+branch:
+  name: research/mesopotamian-biblical-flood-tradition-v1-20261025
+
+reviewed_subjects:
+  - exact_commit: 7b446f57403c7f6d10d8afa7a526942ff63de4ca
+    artifact: reviews/mesopotamian-biblical-flood-tradition-v1-hostile-review-2.md
+    disposition: INTERNAL_HOSTILE_PASS_WITH_GUARDS
+  - exact_commit: a62a979ecb8f2400a05abeb97d850a0386d1da35
+    artifact: reviews/genesis-flood-source-stratification-v1-hostile-review.md
+    disposition: INTERNAL_HOSTILE_PASS_WITH_GUARDS
+
+execution_mode: SAME_RUNTIME_ADVERSARIAL_REVIEW
+
+current_claim_ceiling:
+  ziusudra_equals_noah: NOT_ESTABLISHED
+  mesopotamian_flood_tradition_network: HIGH
+  atrahasis_gilgamesh_xi_relation: HIGH
+  genesis_participates_in_older_mesopotamian_flood_tradition: HIGH
+  exact_immediate_source_into_genesis: UNKNOWN
+  direct_surviving_ziusudra_copy: NOT_ESTABLISHED
+  ordered_motif_density_supports_relationship: HIGH
+  genesis_theological_transformation: HIGH
+  deliberate_specific_polemic: POSSIBLE_UNPROVED
+  genesis_compositional_layering: MAJOR_SCHOLARLY_MODEL
+  both_major_biblical_flood_strata_show_mesopotamian_relationships: STRONG_MODEL
+  both_strata_independently_read_same_mesopotamian_text: NOT_ESTABLISHED
+  contact_capacity: HIGH
+  specific_carrier: UNKNOWN
+  shuruppak_transition_inundation: SUPPORTED
+  exact_shuruppak_absolute_date: PROVISIONAL_REVALIDATION_REQUIRED
+  recurrent_flood_memory_seed: PLAUSIBLE
+  specific_event_unique_origin: UNPROVED
+  cited_strata_establish_global_flood: REJECTED_AS_SUPPORTED_INFERENCE
+
+allowed_use:
+  - ON_THEO_PROVISIONAL_COMPARATIVE_RESEARCH
+  - FUTURE_GENESIS_RESEARCH
+  - FUTURE_LITERARY_USE_WITH_PROVENANCE
+
+prohibited:
+  - CLAIM_INDEPENDENT_REVIEW_COMPLETE
+  - IDENTIFY_ZIUSUDRA_AND_NOAH_AS_SAME_PERSON
+  - CLAIM_DIRECT_COPY_OF_CBS_10673
+  - CLAIM_SPECIFIC_CARRIER_WITHOUT_EVIDENCE
+  - CLAIM_GLOBAL_FLOOD_FROM_MESOPOTAMIAN_STRATA
