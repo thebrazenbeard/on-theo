@@ -1,6 +1,6 @@
 # Flood Tradition Transmission Model V1
 
-Status: HISTORICAL RECONSTRUCTION / CARRIER MODEL / REVIEW REQUIRED
+Status: FIRST HOSTILE REVIEW APPLIED / SPECIFIC CARRIER UNKNOWN
 
 ## Question
 
@@ -18,7 +18,7 @@ Therefore:
 
 `MESOPOTAMIAN_LITERARY_CIRCULATION_IN_LEVANT = SUPPORTED`.
 
-This prevents the false premise that Genesis and Mesopotamian literature existed in isolated cultural bubbles.
+This is regional contact-capacity evidence. It does not establish a continuous Ugarit-to-Judah chain or identify the Genesis carrier.
 
 ## Possible transmission windows
 
@@ -69,12 +69,14 @@ Genesis inherited a broad flood tradition through long oral/literary circulation
 Status:
 PLAUSIBLE.
 
-### C2 — Mesopotamian literary/tradition mediation
+### C2 — Mesopotamian / West-Semitic tradition-network mediation
 
-Biblical flood tradition was shaped by known Mesopotamian flood literature or closely related West-Semitic recensions through one or more scribal channels.
+Biblical flood tradition was shaped through one or more Mesopotamian or closely related West-Semitic oral/scribal channels.
 
 Status:
-CURRENTLY STRONGEST.
+CURRENTLY STRONGEST RELATIONSHIP MODEL.
+
+This does not decide whether the immediate input was Gilgamesh, Atrahasis-like material, an intermediary recension, oral-scribal tradition, or a combination.
 
 ### C3 — direct Gilgamesh manuscript copying
 
