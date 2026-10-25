@@ -1,0 +1,187 @@
+schema_version: on-theo.mesopotamian-biblical-flood-tradition.v1
+status: SOURCE_BOUND_PENDING_HOSTILE_REVIEW
+canonical: false
+recorded_at: "2026-10-25"
+
+branch:
+  name: research/mesopotamian-biblical-flood-tradition-v1-20261025
+  base: main
+  base_head: 5a86bc1949c01dfc4b20df55a026e26763287100
+
+source_layers:
+  ZIUSUDRA:
+    work: SUMERIAN_FLOOD_STORY_ERIDU_GENESIS
+    language: Sumerian
+    witness:
+      id: CBS_10673
+      repository: Penn_Museum
+      date: SEVENTEENTH_CENTURY_BCE_BY_SCRIPT
+    composition_or_tradition_date: EARLY_SECOND_MILLENNIUM_OR_EARLIER_POSSIBLE
+    text_state: HEAVILY_FRAGMENTARY
+    key_features:
+      - DIVINE_FLOOD_DECISION
+      - ENKI_WARNING
+      - BOAT_SECTION_LARGELY_LOST
+      - SEVEN_DAYS_SEVEN_NIGHTS
+      - SACRIFICE
+      - PRESERVES_ANIMALS_AND_SEED_OF_HUMANKIND
+      - IMMORTALITY
+      - DILMUN
+    guard: DO_NOT_FILL_LACUNAE_FROM_LATER_TEXTS
+
+  ATRAHASIS:
+    language: Akkadian
+    horizon: OLD_BABYLONIAN_WITH_LATER_TRANSMISSION
+    key_features:
+      - HUMAN_CREATION_FOR_DIVINE_LABOR
+      - POPULATION_NOISE_CRISIS
+      - ENKI_EA_PROTECTS_HUMANS
+      - FLOOD
+      - BOAT
+      - LIVING_BEINGS_PRESERVED
+      - POST_FLOOD_SACRIFICE
+      - POST_FLOOD_POPULATION_CONTROLS
+    relation:
+      mesopotamian_flood_complex: HIGH
+
+  GILGAMESH_XI:
+    language: Akkadian
+    witness_control:
+      example: BRITISH_MUSEUM_K_3375
+      physical_witness: FIRST_MILLENNIUM_BCE_NEO_ASSYRIAN_CONTEXT
+      tradition_origin: EARLIER_THAN_PHYSICAL_WITNESS
+    key_features:
+      - EA_WARNING
+      - DETAILED_BOAT
+      - BITUMEN
+      - HOUSEHOLD_LIVING_THINGS
+      - CATASTROPHIC_STORM
+      - MOUNTAIN_REST
+      - BIRD_TESTS
+      - SACRIFICE
+      - DIVINE_SMELL_RESPONSE
+      - IMMORTALITY
+    relation_to_atrahasis: STRONG
+
+  GENESIS_6_9:
+    language: Hebrew
+    composition: COMPOSITE_SOURCE_HISTORY_STRONGLY_MODELED_DETAILS_CONTESTED
+    key_features:
+      - MORAL_CORRUPTION_AND_VIOLENCE
+      - NOAH_FAVORED_RIGHTEOUS
+      - DETAILED_ARK
+      - FAMILY_AND_ANIMALS
+      - FLOOD
+      - ARARAT_MOUNTAINS
+      - BIRD_TESTS
+      - SACRIFICE
+      - PLEASING_ODOR
+      - NO_REPEAT_PROMISE
+      - COVENANT
+      - RAINBOW
+      - POST_FLOOD_ETHICAL_RULES
+
+claims:
+  - id: CLM-FLOOD-001-TRADITION-FAMILY
+    proposition: "Ziusudra, Atrahasis, and Utnapishtim belong to a related Mesopotamian flood-tradition complex."
+    disposition: HIGH_PENDING_HOSTILE_REVIEW
+    evidence_class: [PRIMARY_TEXT, HISTORICAL_RECONSTRUCTION, SCHOLARLY_INTERPRETATION]
+
+  - id: CLM-FLOOD-002-ATRAHASIS-GILGAMESH
+    proposition: "Gilgamesh XI is strongly dependent on or adapted from the older Akkadian flood tradition represented by Atrahasis."
+    disposition: HIGH_PENDING_HOSTILE_REVIEW
+    evidence_class: [PRIMARY_TEXT, HISTORICAL_RECONSTRUCTION, SCHOLARLY_INTERPRETATION]
+
+  - id: CLM-FLOOD-003-GENESIS-MESOPOTAMIA
+    proposition: "Genesis 6–9 ultimately reworks older Mesopotamian flood tradition rather than independently generating the entire narrative architecture."
+    disposition: HIGH_PENDING_HOSTILE_REVIEW
+    evidence_class: [PRIMARY_TEXT, HISTORICAL_RECONSTRUCTION, SCHOLARLY_INTERPRETATION]
+    strongest_parallels:
+      - BOAT
+      - PRESERVATION_OF_LIFE
+      - BIRDS
+      - MOUNTAIN_REST
+      - SACRIFICE
+      - DIVINE_SMELL_RESPONSE
+      - POST_FLOOD_ORDER_RESET
+
+  - id: CLM-FLOOD-004-ZIUSUDRA-DIRECT
+    proposition: "Genesis directly copied the surviving Ziusudra tablet CBS 10673."
+    disposition: NOT_ESTABLISHED
+    evidence_class: [UNKNOWN]
+
+  - id: CLM-FLOOD-005-NOAH-ZIUSUDRA-IDENTITY
+    proposition: "Noah and Ziusudra were the same historical individual."
+    disposition: NOT_ESTABLISHED
+    evidence_class: [UNKNOWN]
+
+  - id: CLM-FLOOD-006-GENESIS-THEOLOGICAL-REWORK
+    proposition: "Genesis materially transforms Mesopotamian flood theology by moralizing the flood cause and replacing pantheon conflict with monotheistic judgment/covenant."
+    disposition: HIGH_PENDING_HOSTILE_REVIEW
+    evidence_class: [PRIMARY_TEXT, HISTORICAL_RECONSTRUCTION]
+
+  - id: CLM-FLOOD-007-CONTACT-CAPACITY
+    proposition: "Mesopotamian literary traditions had historically plausible routes into Levantine/Judean scribal culture."
+    disposition: HIGH
+    evidence_class: [MATERIAL_EVIDENCE, DOCUMENTARY_PRACTICE, HISTORICAL_RECONSTRUCTION]
+    upstream:
+      - comparative/ugarit-mesopotamian-scribal-exposure-v1.md
+    ceiling: "Specific carrier to Genesis remains unknown."
+
+  - id: CLM-FLOOD-008-SHURUPPAK-INUNDATION
+    proposition: "Shuruppak preserves archaeological evidence of a major inundation around the Jemdet Nasr/Early Dynastic transition."
+    disposition: SUPPORTED
+    evidence_class: [MATERIAL_EVIDENCE]
+
+  - id: CLM-FLOOD-009-SINGLE-MEGA-FLOOD
+    proposition: "Ur, Kish, Shuruppak, and related flood deposits establish one synchronous Mesopotamia-wide flood."
+    disposition: NOT_ESTABLISHED
+    evidence_class: [MATERIAL_EVIDENCE, HISTORICAL_RECONSTRUCTION]
+
+  - id: CLM-FLOOD-010-GLOBAL-FLOOD
+    proposition: "The Mesopotamian archaeological flood deposits establish the literal global flood of Genesis."
+    disposition: REJECTED_AS_SUPPORTED_INFERENCE
+    negation_status: "This claim state concerns the cited archaeology; it does not claim archaeology can prove every conceivable metaphysical possibility."
+    evidence_class: [MATERIAL_EVIDENCE, HISTORICAL_RECONSTRUCTION]
+
+  - id: CLM-FLOOD-011-HISTORICAL-SEED
+    proposition: "Repeated severe southern Mesopotamian flooding plausibly contributed to a durable flood-memory complex."
+    disposition: PLAUSIBLE
+    evidence_class: [MATERIAL_EVIDENCE, PROJECT_INFERENCE]
+    ceiling: "No specific archaeological layer is identified as the unique literary event source."
+
+models:
+  T0_INDEPENDENT_CONVERGENCE:
+    proposition: "Genesis independently generated the full flood architecture with no Mesopotamian literary/tradition dependence."
+    status: WEAK_RELATIVE_TO_PARALLEL_DENSITY
+  T1_SHARED_ANE_TRADITION:
+    proposition: "Genesis inherits a broadly shared ancient Near Eastern flood tradition without identifiable direct literary dependence."
+    status: PLAUSIBLE
+  T2_MESOPOTAMIAN_TRADITION_REWORKED:
+    proposition: "Genesis derives through one or more Mesopotamian/West-Semitic transmission routes and transforms the tradition."
+    status: CURRENTLY_STRONGEST
+  T3_DIRECT_GILGAMESH_COPY:
+    proposition: "A Genesis author directly copied a known Gilgamesh manuscript."
+    status: POSSIBLE_BUT_NOT_REQUIRED_OR_ESTABLISHED
+  T4_DIRECT_ZIUSUDRA_COPY:
+    proposition: "A Genesis author directly copied CBS 10673 or a substantially identical Sumerian text."
+    status: NOT_ESTABLISHED
+
+historical_event_models:
+  E0_NO_RECOVERABLE_EVENT:
+    status: POSSIBLE
+  E1_RECURRENT_REGIONAL_FLOODS_SEED_MEMORY:
+    status: PLAUSIBLE_LOW_ASSUMPTION
+  E2_SHURUPPAK_C_3000_2900_BCE_PRIMARY_SEED:
+    status: POSSIBLE_ATTRACTIVE_UNPROVED
+  E3_SINGLE_MESOPOTAMIA_WIDE_EVENT:
+    status: NOT_ESTABLISHED
+  E4_GLOBAL_FLOOD:
+    status: NOT_SUPPORTED_BY_CURRENT_ARCHAEOLOGICAL_EVIDENCE
+
+next:
+  - INTERNAL_HOSTILE_REVIEW
+  - EXACT_MOTIF_ORDER_MATRIX
+  - GENESIS_SOURCE_STRATIFICATION
+  - TRANSMISSION_CARRIER_PACKET
+  - ARCHAEOLOGY_MODERN_CHRONOLOGY_REVIEW
