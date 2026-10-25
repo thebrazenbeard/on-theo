@@ -1,6 +1,6 @@
 # Mesopotamian Flood Archaeology Control V1
 
-Status: MATERIAL-EVIDENCE CONTROL / REVIEW REQUIRED
+Status: FIRST HOSTILE REVIEW APPLIED / MODERN CHRONOLOGY REVALIDATION PENDING
 
 ## Question
 
@@ -12,7 +12,7 @@ Southern Mesopotamia experienced repeated major river floods.
 
 Penn's historical review records flood deposits at Ur, Kish, and Shuruppak and notes that the Shuruppak inundation lies immediately above Jemdet Nasr occupation.
 
-A commonly cited archaeological range for the Shuruppak flood horizon is approximately 3000–2900 BCE, with some summaries placing it roughly 2950–2850 BCE.
+Older archaeological syntheses commonly place the Shuruppak flood horizon near the Jemdet Nasr/Early Dynastic transition, often approximately 3000–2900 BCE. That absolute range is retained only as a provisional historical chronology and requires modern site-specific revalidation.
 
 This is striking because later Mesopotamian tradition associates the flood hero with Shuruppak.
 
@@ -28,7 +28,9 @@ Therefore:
 
 `MESOPOTAMIA_WAS_FLOOD_PRONE = HIGH`
 
-`SHURUPPAK_MAJOR_INUNDATION_NEAR_3000_BCE = SUPPORTED`
+`SHURUPPAK_MAJOR_INUNDATION_AT_JEMDET_NASR_EARLY_DYNASTIC_TRANSITION = SUPPORTED`
+
+`ABSOLUTE_C_3000_2900_BCE_RANGE = PROVISIONAL_REVALIDATION_REQUIRED`
 
 `THIS_WAS_ZIUSUDRA'S_FLOOD = UNKNOWN`
 
@@ -36,7 +38,7 @@ Therefore:
 
 `ALL_SITES_SHOW_ONE_EVENT = NOT ESTABLISHED`
 
-`GLOBAL_FLOOD = NOT SUPPORTED BY THESE STRATA`
+`GLOBAL_FLOOD = NOT ESTABLISHED_BY_THESE_STRATA`
 
 ## Most economical historical model
 
@@ -75,3 +77,12 @@ These are used as archaeological-historiographic controls; modern site-specific 
 - SAME_REGION_NE_SAME_DATE
 - MYTHIC_CITY_ASSOCIATION_NE_EVENT_IDENTIFICATION
 - HISTORICAL_SEED_NE_LITERARY_DETAIL_CONFIRMATION
+
+
+## Hostile-review guard
+
+The city match SHURUPPAK + FLOOD is interesting but does not materially establish
+that Ziusudra was historical or that this stratum generated the later literary
+tradition.
+
+ARCHAEOLOGICAL_CITY_EVENT != LITERARY_HERO_EVENT.
