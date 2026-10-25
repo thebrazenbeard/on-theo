@@ -1,6 +1,6 @@
 # Mesopotamian–Biblical Flood Tradition V1
 
-Status: SOURCE-BOUND COMPARATIVE RESEARCH / HOSTILE REVIEW REQUIRED
+Status: FIRST HOSTILE REVIEW APPLIED / SECOND EXACT-HEAD REVIEW PENDING
 
 Program: THE NATURE OF EXISTENCE / ON_THEO
 
@@ -160,17 +160,13 @@ Major features:
 
 Genesis 6–9 itself is compositionally layered in much scholarship.
 
-A major current model treats the present narrative as integrating at least:
-- a non-Priestly / pre-Priestly flood tradition;
-- a Priestly flood tradition/redaction.
+Major source-critical models treat the present narrative as compositionally layered, often distinguishing non-Priestly/pre-Priestly and Priestly material, while the exact decomposition and redaction model remain debated.
 
-David Carr argues that both the pre-Priestly and Priestly flood accounts were modeled on earlier Mesopotamian flood traditions, especially Atrahasis and Gilgamesh XI, even while the Priestly account also responds to the pre-Priestly biblical version.
-
-The exact source model remains debated.
+David Carr argues that both pre-Priestly and Priestly flood strata were modeled on earlier Mesopotamian flood traditions, especially Atrahasis and Gilgamesh XI, while the Priestly account also responds to the pre-Priestly biblical version.
 
 Therefore:
 
-`GENESIS_FLOOD_IS_COMPOSITE = STRONGLY SUPPORTED IN SOURCE-CRITICAL SCHOLARSHIP, MODEL DETAILS CONTESTED`
+`GENESIS_FLOOD_COMPOSITIONAL_LAYERING = MAJOR_SCHOLARLY_MODEL; EXACT_SOURCE_MODEL_CONTESTED`
 
 `GENESIS_DEPENDS_ULTIMATELY_ON_MESOPOTAMIAN_FLOOD_TRADITION = STRONG SCHOLARLY MODEL`
 
@@ -376,27 +372,20 @@ The simple chain:
 
 `ZIUSUDRA -> ATRAHASIS -> UTNAPISHTIM -> NOAH`
 
-is too strong if it implies direct copying of each surviving text into the next.
+is too linear.
 
-A safer model is:
+The safer model is a **tradition network**:
 
-`OLDER MESOPOTAMIAN FLOOD TRADITION FAMILY`
+`OLDER MESOPOTAMIAN FLOOD COMPLEX`
 
-with extant branches/recensions including:
+with extant Sumerian and Akkadian branches/recensions, including:
+- the Ziusudra tradition;
+- Atrahasis;
+- a strong later literary/tradition relationship into Gilgamesh XI;
 
-`SUMERIAN ZIUSUDRA TRADITION`
+followed by one or more historically plausible transmission routes into biblical flood tradition(s) and Genesis 6–9.
 
-and
-
-`AKKADIAN ATRAHASIS TRADITION`
-
-with a strong later relationship into:
-
-`GILGAMESH XI FLOOD RECENSION`
-
-followed by historically plausible transmission/adaptation into:
-
-`BIBLICAL FLOOD TRADITION(S) -> GENESIS 6–9`.
+This network model does not require every surviving text to be the direct parent of the next.
 
 Current dispositions:
 
@@ -404,7 +393,9 @@ Current dispositions:
 
 `ATRAHASIS_AND_GILGAMESH_XI_HAVE_DIRECT_STRONG_TRADITION/LITERARY_RELATION = HIGH`
 
-`GENESIS_ULTIMATELY_REWORKS_MESOPOTAMIAN_FLOOD_TRADITION = HIGH`
+`GENESIS_PARTICIPATES_IN_AND_REWORKS_OLDER_MESOPOTAMIAN_FLOOD_TRADITION = HIGH`
+
+`DIRECT_DEPENDENCE_ON_A_SPECIFIC_SURVIVING_MESOPOTAMIAN_WORK = UNRESOLVED / NOT ESTABLISHED`
 
 `GENESIS_DIRECT_DEPENDENCE_ON_SURVIVING_ZIUSUDRA_TEXT = NOT ESTABLISHED`
 
@@ -446,7 +437,7 @@ Mesopotamia is highly flood-prone.
 
 Archaeological excavations identified major alluvial deposits at several southern Mesopotamian sites.
 
-A notable flood layer at Shuruppak occurs above Jemdet Nasr occupation, often placed around the transition c. 3000–2900 BCE.
+A notable flood layer at Shuruppak occurs above Jemdet Nasr occupation. Older archaeological syntheses often place it near the c. 3000–2900 BCE transition, but that range is treated here as a site-chronology estimate requiring modern revalidation rather than a precision anchor.
 
 This is important because Shuruppak is the city associated with the Mesopotamian flood survivor in later tradition.
 
@@ -461,7 +452,9 @@ Current dispositions:
 
 `SEVERE_LOCAL_MESOPOTAMIAN_FLOODS = MATERIAL_EVIDENCE_HIGH`
 
-`SHURUPPAK_C_3000_2900_BCE_INUNDATION = MATERIAL_EVIDENCE`
+`SHURUPPAK_INUNDATION_AT_JEMDET_NASR_EARLY_DYNASTIC_TRANSITION = MATERIAL_EVIDENCE`
+
+`C_3000_2900_BCE_ABSOLUTE_RANGE = PROVISIONAL_SITE_CHRONOLOGY / REVALIDATION_REQUIRED`
 
 `ONE_SYNCHRONOUS_MESOPOTAMIAN_MEGA_FLOOD = NOT ESTABLISHED`
 
@@ -491,10 +484,12 @@ POSSIBLE / ATTRACTIVE BUT UNPROVED.
 Status:
 NOT ESTABLISHED.
 
-### E4 — the narratives preserve a literal global flood
+### E4 — the cited Mesopotamian strata establish a literal global flood
 
 Status:
-NOT SUPPORTED BY CURRENT ARCHAEOLOGICAL/GEOLOGICAL EVIDENCE.
+REJECTED AS A SUPPORTED INFERENCE FROM THIS ARCHAEOLOGICAL PACKET.
+
+A broader global-geology claim is outside this bounded packet and would require its own evidence review.
 
 Important guard:
 
@@ -516,14 +511,14 @@ The transformation moves:
 - from unstable divine decision-making to a covenant sign promising future restraint.
 
 This makes Genesis simultaneously:
-- continuous with Mesopotamian flood tradition;
-- polemical/theologically revisionary toward it.
-
-Whether every contrast is intentional polemic is a separate claim.
+- continuous with older Mesopotamian flood-story grammar;
+- materially transformative in theology and anthropology.
 
 Current disposition:
 
-`GENESIS_THEOLOGICALLY_REWORKS_MESOPOTAMIAN_FLOOD_ARCHITECTURE = HIGH`
+`GENESIS_THEOLOGICALLY_TRANSFORMS_INHERITED_FLOOD_GRAMMAR = HIGH`
+
+`DELIBERATE_TEXT_SPECIFIC_POLEMIC_AGAINST_ATRAHASIS_OR_GILGAMESH = POSSIBLE / UNPROVED`
 
 `EVERY_DIFFERENCE_IS_DELIBERATE_POLEMIC = NOT ESTABLISHED`
 
@@ -551,7 +546,7 @@ The especially close Gilgamesh–Genesis motifs of:
 - sacrifice;
 - divine smelling/response
 
-make literary/tradition dependence much stronger than mere similarity.
+make a historical tradition relationship much stronger than generic similarity. Whether that relationship reflects direct literary use of one identifiable work or mediation through intermediary tradition remains unresolved.
 
 But the evidence does **not** justify:
 
@@ -606,3 +601,21 @@ or
 - ARCHAEOLOGICAL_FLOOD_NE_LITERARY_EVENT_IDENTITY
 - SHURUPPAK_FLOOD_NE_GLOBAL_FLOOD
 - SHARED_MOTIF_NE_SAME_THEOLOGY
+
+
+## 14. First hostile-review revision record
+
+Exact reviewed subject:
+`445b19620828cebc0ef4dd7a23756ab8cdaea06e`
+
+Review:
+`reviews/mesopotamian-biblical-flood-tradition-v1-hostile-review.md`
+
+Applied corrections:
+- linear chain replaced by tradition network;
+- relationship separated from direct dependence on one surviving text;
+- Genesis source layering narrowed to major source-critical models;
+- theological transformation separated from demonstrated polemic;
+- Ugarit retained as contact-capacity evidence only;
+- Shuruppak absolute date range marked provisional;
+- global-flood claim narrowed to what the cited Mesopotamian strata can establish.
