@@ -1,5 +1,5 @@
 schema_version: on-theo.mesopotamian-biblical-flood-tradition.v1
-status: SOURCE_BOUND_PENDING_HOSTILE_REVIEW
+status: FIRST_HOSTILE_REVIEW_REVISIONS_APPLIED_SECOND_REVIEW_PENDING
 canonical: false
 recorded_at: "2026-10-25"
 
@@ -65,7 +65,7 @@ source_layers:
 
   GENESIS_6_9:
     language: Hebrew
-    composition: COMPOSITE_SOURCE_HISTORY_STRONGLY_MODELED_DETAILS_CONTESTED
+    composition: MAJOR_LAYERED_SOURCE_MODELS_EXACT_DECOMPOSITION_CONTESTED
     key_features:
       - MORAL_CORRUPTION_AND_VIOLENCE
       - NOAH_FAVORED_RIGHTEOUS
@@ -93,8 +93,8 @@ claims:
     evidence_class: [PRIMARY_TEXT, HISTORICAL_RECONSTRUCTION, SCHOLARLY_INTERPRETATION]
 
   - id: CLM-FLOOD-003-GENESIS-MESOPOTAMIA
-    proposition: "Genesis 6–9 ultimately reworks older Mesopotamian flood tradition rather than independently generating the entire narrative architecture."
-    disposition: HIGH_PENDING_HOSTILE_REVIEW
+    proposition: "Genesis 6–9 participates in and materially reworks an older Mesopotamian flood-tradition complex rather than independently generating the full distinctive narrative architecture."
+    disposition: HIGH_RELATIONSHIP_DIRECT_SOURCE_UNRESOLVED
     evidence_class: [PRIMARY_TEXT, HISTORICAL_RECONSTRUCTION, SCHOLARLY_INTERPRETATION]
     strongest_parallels:
       - BOAT
@@ -116,8 +116,9 @@ claims:
     evidence_class: [UNKNOWN]
 
   - id: CLM-FLOOD-006-GENESIS-THEOLOGICAL-REWORK
-    proposition: "Genesis materially transforms Mesopotamian flood theology by moralizing the flood cause and replacing pantheon conflict with monotheistic judgment/covenant."
-    disposition: HIGH_PENDING_HOSTILE_REVIEW
+    proposition: "Genesis materially transforms inherited flood-story theology by moralizing the flood cause and replacing pantheon conflict with monotheistic judgment/covenant."
+    disposition: HIGH_TRANSFORMATIVE_CONTRAST
+    deliberate_text_specific_polemic: POSSIBLE_UNPROVED
     evidence_class: [PRIMARY_TEXT, HISTORICAL_RECONSTRUCTION]
 
   - id: CLM-FLOOD-007-CONTACT-CAPACITY
@@ -129,8 +130,9 @@ claims:
     ceiling: "Specific carrier to Genesis remains unknown."
 
   - id: CLM-FLOOD-008-SHURUPPAK-INUNDATION
-    proposition: "Shuruppak preserves archaeological evidence of a major inundation around the Jemdet Nasr/Early Dynastic transition."
+    proposition: "Shuruppak preserves archaeological evidence of a major inundation at the Jemdet Nasr/Early Dynastic transition."
     disposition: SUPPORTED
+    absolute_date_range: PROVISIONAL_REQUIRES_MODERN_REVALIDATION
     evidence_class: [MATERIAL_EVIDENCE]
 
   - id: CLM-FLOOD-009-SINGLE-MEGA-FLOOD
@@ -139,9 +141,9 @@ claims:
     evidence_class: [MATERIAL_EVIDENCE, HISTORICAL_RECONSTRUCTION]
 
   - id: CLM-FLOOD-010-GLOBAL-FLOOD
-    proposition: "The Mesopotamian archaeological flood deposits establish the literal global flood of Genesis."
-    disposition: REJECTED_AS_SUPPORTED_INFERENCE
-    negation_status: "This claim state concerns the cited archaeology; it does not claim archaeology can prove every conceivable metaphysical possibility."
+    proposition: "The cited Mesopotamian archaeological flood deposits establish the literal global flood of Genesis."
+    disposition: REJECTED_AS_SUPPORTED_INFERENCE_FROM_THIS_PACKET
+    negation_status: "A broader global-geology question is outside this bounded packet."
     evidence_class: [MATERIAL_EVIDENCE, HISTORICAL_RECONSTRUCTION]
 
   - id: CLM-FLOOD-011-HISTORICAL-SEED
@@ -158,8 +160,8 @@ models:
     proposition: "Genesis inherits a broadly shared ancient Near Eastern flood tradition without identifiable direct literary dependence."
     status: PLAUSIBLE
   T2_MESOPOTAMIAN_TRADITION_REWORKED:
-    proposition: "Genesis derives through one or more Mesopotamian/West-Semitic transmission routes and transforms the tradition."
-    status: CURRENTLY_STRONGEST
+    proposition: "Genesis participates in a Mesopotamian/West-Semitic flood-tradition network and transforms inherited material through one or more transmission routes."
+    status: CURRENTLY_STRONGEST_RELATIONSHIP_MODEL
   T3_DIRECT_GILGAMESH_COPY:
     proposition: "A Genesis author directly copied a known Gilgamesh manuscript."
     status: POSSIBLE_BUT_NOT_REQUIRED_OR_ESTABLISHED
@@ -172,12 +174,13 @@ historical_event_models:
     status: POSSIBLE
   E1_RECURRENT_REGIONAL_FLOODS_SEED_MEMORY:
     status: PLAUSIBLE_LOW_ASSUMPTION
-  E2_SHURUPPAK_C_3000_2900_BCE_PRIMARY_SEED:
+  E2_SHURUPPAK_TRANSITION_INUNDATION_PRIMARY_SEED:
     status: POSSIBLE_ATTRACTIVE_UNPROVED
+    absolute_date_guard: PROVISIONAL_SITE_CHRONOLOGY
   E3_SINGLE_MESOPOTAMIA_WIDE_EVENT:
     status: NOT_ESTABLISHED
-  E4_GLOBAL_FLOOD:
-    status: NOT_SUPPORTED_BY_CURRENT_ARCHAEOLOGICAL_EVIDENCE
+  E4_GLOBAL_FLOOD_FROM_CITED_STRATA:
+    status: REJECTED_AS_SUPPORTED_INFERENCE_FROM_THIS_PACKET
 
 next:
   - INTERNAL_HOSTILE_REVIEW
