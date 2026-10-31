@@ -1,69 +1,72 @@
 > **License:** Source-visible, not open source. Original material is proprietary. Commercial use, redistribution, hosted-service use, and commercial derivative products require written permission. See [LICENSE](LICENSE) and [COMMERCIAL_LICENSE.md](COMMERCIAL_LICENSE.md). Separately identified third-party components retain their own licenses.
 
-# on-theo
+# On-Theo — comparative theology and provenance research
 
-A comparative theology, history, symbolism, and systems-modeling research repository.
+On-Theo is a reusable, evidence-disciplined **research corpus, claim registry, and validation toolkit** for comparing religious traditions, their historical development, and later philosophical interpretations. It currently provides curated research documents, structured YAML provenance registries, and Python validation/rehearsal tools—not a hosted research service, automatic historical fact-checker, or model-authenticated authority.
 
-## Purpose
+Researchers can use the methodology and registry schemas as a starting point for their own source-critical projects, subject to the repository's licensing terms. A passing validator establishes **internal consistency of recorded relationships**, not the historical truth of the entries.
 
-`on-theo` studies how Jewish, Christian, Islamic, and adjacent traditions describe reality, creation, human nature, revelation, death, judgment, transcendence, and divine authority. It also maintains a deliberately separate speculative layer that asks whether recurring religious symbols can be fruitfully translated into modern systems/computation language without pretending that ancient authors literally meant computers or simulation theory.
+## What is available today
 
-The project is interested in resemblance, divergence, chronology, transmission, reinterpretation, and information loss.
+| Component | Reusable purpose | Evidence boundary |
+| --- | --- | --- |
+| [Research method](docs/METHOD.md) and [claim schema](docs/CLAIM_SCHEMA.md) | Keep source attestations, dates, witnesses, academic disputes, and project inferences separate | A project classification is not an independent scholarly ruling |
+| [Tradition and comparison corpus](traditions/) and [research packets](research/) | Source-oriented questions about Jewish, Christian, Islamic, and adjacent traditions | Corpus coverage is partial; branches and drafts are not automatically canonical |
+| [YAML registries](registry/) and [registry validator](tools/on_theo_registry/validator.py) | Detect stable-ID collisions, unresolved references, manifest/dependency inconsistencies, and invalid review terminology | Structural validation is not source authentication or truth certification |
+| [Rebase-precondition audit](scripts/audit_rebase_preconditions.py) and [materialization rehearsal](scripts/rehearse_materialization.py) | Inspect proposed registry extensions before any promotion | Audit/rehearsal outputs do not automatically merge or authorize research changes |
+| [Speculative synthesis](synthesis/) | Explore analogies between ancient symbols and modern systems concepts | Explicitly a hypothesis layer, never evidence that ancient writers described computers |
 
-## Core rule
+## Use it for a research project
 
-Never collapse these categories:
-
-1. **PRIMARY TEXT** — what a source actually says.
-2. **HISTORICAL RECONSTRUCTION** — what historians can reasonably infer about people, movements, dates, or contexts.
-3. **LATER TRADITION** — interpretations or stories that arise after the event/source being discussed.
-4. **SCHOLARLY INTERPRETATION** — a documented academic reading or dispute.
-5. **PROJECT INFERENCE** — an inference made within this repository from cited evidence.
-6. **SPECULATIVE MODEL** — a deliberately hypothetical analogy, including the GOD/runtime/simulation framework.
-7. **UNKNOWN** — evidence does not currently justify a stronger claim.
-
-A compelling analogy is not historical evidence. A late source can preserve earlier material, but lateness must remain visible. Disagreement between traditions is data, not a defect to be silently harmonized.
-
-## Repository architecture
-
-On-Theo uses a provenance-aware directory/registry model.
-
-- `main` is the canonical infrastructure and reconciled research baseline.
-- `traditions/`, `chronology/`, `comparative/`, `research/`, `registry/`, and `synthesis/` are the durable content namespaces.
-- branches and pull requests remain work/review surfaces; their existence does not make their contents canonical.
-- historical thematic branches such as `tradition/judaism`, `tradition/christianity`, `tradition/islam`, `synthesis/commonality`, and `history/chronology` remain provenance sources where unique material has not yet been reconciled.
-- later active research leaves are not silently promoted merely because the infrastructure baseline is canonicalized.
-## Current research spine
-
-The initial corpus grows out of several linked questions:
-
-- What did first-century Jewish language such as *Kingdom of God*, Messiah, Son of Man, resurrection, Sheol, Gehenna, Satan, Torah, and Temple mean before later Christian doctrinal compression?
-- What can and cannot responsibly be inferred about Yeshua's birth, paternity traditions, social stigma, Nazareth, the undocumented years, and hometown rejection?
-- What is the historical status of Panthera/Pandera traditions?
-- How does the Qur'an, six centuries later, preserve, reject, reinterpret, or symbolically rhyme with Jewish and Christian structures?
-- Across traditions, what recurring architecture appears around creator/creation, delegated authority, revelation, temporary worldly existence, judgment, resurrection, and higher-order reality?
-- Can those structures be translated into a modern computational metaphor — environment/runtime/controller/administrator, instantiated agents, privileged operations, re-instantiation, information channels — while keeping that translation explicitly speculative?
-
-## Tone
-
-Curious, irreverent when useful, but evidence-disciplined. No tradition receives automatic deference or automatic contempt. Claims earn confidence from evidence, not from familiarity, offensiveness, popularity, or how entertaining they are.
-
-## Registry validation
-
-The provenance registries and draft extension stack have an executable consistency check.
-
-Run the test suite:
+1. Start with the [method](docs/METHOD.md), [corpus scope](docs/CORPUS_SCOPE_V1.md), and [claim schema](docs/CLAIM_SCHEMA.md).
+2. Identify the primary text, surviving witness, composition date, competing interpretations, and gaps for each proposed claim. Do not treat a late tradition as a contemporary witness.
+3. Add or inspect registry entries as **research evidence**, keeping proposed extensions on review branches until reconciled.
+4. Run the read-only consistency validator from a source checkout:
 
 ```bash
 python -m pip install -r requirements-dev.txt
-pytest -q
-```
-
-Run the validator directly:
-
-```bash
 python scripts/validate_registry.py --root .
 python scripts/validate_registry.py --root . --json
 ```
 
-Validation checks stable-ID collisions, unresolved source/witness/concept references, manifest identity/base/dependency consistency, and review result/provenance vocabularies. A successful validation means the registry graph is internally consistent; it does **not** merge, materialize, promote, or establish the historical truth of draft claims.
+The validator checks references and graph conventions. It does **not** fetch ancient documents, independently authenticate a manuscript, decide competing historical claims, promote a branch, or authorize actions in a host system.
+
+### Running the tests
+
+```bash
+python -m pytest -q
+```
+
+Most tests exercise the registry schema, consistency rules, and review/materialization boundaries. The **historical rebase-precondition** test additionally invokes Git against historical commit IDs recorded in [extension-manifest.yaml](registry/extension-manifest.yaml). Some are outside current `main` ancestry; a shallow checkout or a clone without those historical objects can fail with a missing-commit error. A full test result therefore depends on obtaining the specific historical Git objects, not just installing the Python requirements. For a portable first check, use the registry-validator command above.
+
+## Evidence discipline
+
+Never collapse these categories:
+
+1. **PRIMARY TEXT** — what an identified text actually says.
+2. **HISTORICAL RECONSTRUCTION** — what historians reasonably infer from available evidence.
+3. **LATER TRADITION** — accounts or interpretations arising after the claimed event.
+4. **SCHOLARLY INTERPRETATION** — attributed academic readings and disputes.
+5. **PROJECT INFERENCE** — reasoning within this repository from cited material.
+6. **SPECULATIVE MODEL** — deliberate analogy, including the GOD/runtime/simulation framework.
+7. **UNKNOWN** — the evidence does not justify a stronger claim.
+
+The detailed [research method](docs/METHOD.md) also separates material evidence, event date, source-composition date, and surviving-manuscript date. Similarity alone does not establish borrowing, common authorship, supernatural origin, or historical accuracy. A compelling analogy is not a source citation.
+
+## Research questions and scope
+
+The initial corpus investigates:
+
+- First-century Jewish meanings of *Kingdom of God*, Messiah, Son of Man, resurrection, Sheol, Gehenna, Torah, and Temple before later doctrinal compression.
+- What source evidence permits—or does not permit—about Yeshua's birth, social setting, Nazareth, undocumented years, hometown rejection, and Panthera/Pandera traditions.
+- How later Jewish, Christian, and Qur'anic traditions preserve, contest, and reinterpret earlier themes, with chronological dependence kept explicit.
+- Recurring accounts of creation, delegated authority, revelation, judgment, resurrection, and transcendence.
+- Experimental mappings of source concepts into modern computational metaphors without projecting contemporary technology into ancient authorship.
+
+No tradition receives automatic deference or automatic contempt. Disagreement is research evidence, not a flaw to erase for a tidy synthesis.
+
+## Canonical state and limits
+
+`main` carries the reconciled infrastructure and baseline corpus. The `traditions/`, `chronology/`, `comparative/`, `research/`, `registry/`, and `synthesis/` namespaces contain durable materials. Thematic branches (for example `tradition/judaism`, `tradition/christianity`, `tradition/islam`, and `history/chronology`) may preserve unreconciled provenance, but their mere existence does not elevate their contents to canonical evidence.
+
+On-Theo is a research resource and validation toolkit, not an identity provider, consent registry, cryptographic provenance authority, historical truth oracle, or operational AI control plane. A downstream system must independently authenticate people and providers, enforce access and publication permissions, and distinguish source records from generated interpretations.
