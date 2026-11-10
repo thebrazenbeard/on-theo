@@ -1,0 +1,36 @@
+schema_version: on-theo.mesopotamian-biblical-flood-research-state.v1
+status: FIRST_HOSTILE_REVIEW_REVISIONS_APPLIED_SECOND_REVIEW_PENDING
+recorded_at: "2026-10-25"
+
+branch:
+  name: research/mesopotamian-biblical-flood-tradition-v1-20261025
+  base: main
+  base_head: 5a86bc1949c01dfc4b20df55a026e26763287100
+
+artifacts:
+  main_packet: research/flood/mesopotamian-biblical-flood-tradition-v1.md
+  claim_matrix: research/flood/mesopotamian-biblical-flood-tradition-v1.yaml
+  archaeology: research/flood/mesopotamian-flood-archaeology-control-v1.md
+  transmission: research/flood/flood-tradition-transmission-model-v1.md
+
+current_result:
+  ziusudra_noah_same_person: NOT_ESTABLISHED
+  related_mesopotamian_flood_complex: HIGH
+  atrahasis_gilgamesh_relation: HIGH
+  genesis_mesopotamian_relationship: HIGH
+  direct_specific_source_dependence: UNRESOLVED
+  direct_ziusudra_copy: NOT_ESTABLISHED
+  genesis_theological_transformation: HIGH
+  deliberate_text_specific_polemic: POSSIBLE_UNPROVED
+  contact_capacity: HIGH
+  specific_carrier: UNKNOWN
+  shuruppak_inundation: SUPPORTED_TRANSITIONAL_HORIZON
+  shuruppak_absolute_date: PROVISIONAL_REVALIDATION_REQUIRED
+  one_synchronous_mesopotamian_flood: NOT_ESTABLISHED
+  global_flood_from_cited_strata: NOT_ESTABLISHED
+  recurrent_flood_memory_seed: PLAUSIBLE
+
+next:
+  - INTERNAL_HOSTILE_REVIEW
+  - EXACT_MOTIF_ORDER_MATRIX
+  - GENESIS_SOURCE_STRATIFICATION
