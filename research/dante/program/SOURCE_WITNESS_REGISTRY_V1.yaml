@@ -1,0 +1,100 @@
+schema_version: on-theo.dante-source-witness-registry.v1
+status: PROVISIONAL_INDEX_NOT_EXHAUSTIVE
+recorded_at: "2026-10-20"
+rule: "WORK != PHYSICAL_WITNESS != CRITICAL_EDITION != TRANSLATION != COMMENTARY"
+sources:
+  - id: DNT-WRK-COMMEDIA
+    title: Commedia
+    class: PRIMARY_TEXT
+    composition_status: "Dante's lifetime, completed by his death in 1321; specific canto chronologies require separate study"
+    autograph_status: NO_KNOWN_SURVIVING_AUTOGRAPH
+    textual_lineage: EXTANT_MANUSCRIPT_TRADITION
+    canonical_text_not_identical_to_lost_autograph: true
+    note: "100 cantos: Inferno 34; Purgatorio 33; Paradiso 33."
+  - id: DNT-ED-PETROCCHI-1966-67
+    title: Giorgio Petrocchi critical edition, La Commedia secondo l'antica vulgata
+    class: MODERN_CRITICAL_EDITION_OF_PRIMARY_TEXT
+    publication: "Mondadori 1966-67; 2nd ed. Florence 1994"
+    url: https://dante.princeton.edu/projinfo.html
+    access: SCHOLARLY_DISPLAY
+    not_a_physical_medieval_witness: true
+    caveat: "Princeton/Dartmouth machine text punctuation adjusted, as indicated by project."
+  - id: DNT-DIG-PRINCETON
+    title: Princeton Dante Project main poem browser
+    class: DIGITAL_EDITION_DISPLAY
+    url: https://dante.princeton.edu/dante/pdp/commedia.html
+    derives_from: DNT-ED-PETROCCHI-1966-67
+    translation: MODERN_ENGLISH_SEPARATE_LAYER
+  - id: DNT-DIG-DANTELAB
+    title: Dante Lab / Dartmouth Dante Project
+    class: DIGITAL_EDITION_AND_COMMENTARY_COLLECTION
+    url: https://dantelab.dartmouth.edu/faq
+    derives_from: DNT-ED-PETROCCHI-1966-67
+    number_of_commentaries: "more than 75; not independent primary witnesses"
+    copyright_note: "scholarly consultation; do not bulk reproduce"
+  - id: DNT-WIT-CODICES-UNENUMERATED
+    title: Surviving Commedia manuscript copies
+    class: MANUSCRIPT_WITNESS
+    status: CENSUS_REQUIRED
+    autograph: false
+    count: "commonly approximately 800 reported, not verified as an exact current census"
+    url: https://centrodantesco.it/notizie/800-i-manoscritti-della-divina-commedia/
+    ceiling: "Do not cite aggregate manuscript count as verified collated variants or autograph attestation."
+  - id: DNT-COMM-JACOPO-1322
+    title: Jacopo Alighieri early commentary
+    class: EARLY_COMMENTARY
+    date: "catalogued 1322"
+    url: https://dante.dartmouth.edu/commentaries.php
+    independence_of_dante_authorial_intent: NOT_ASSUMED
+  - id: DNT-COMM-LANA-1324-28
+    title: Jacopo della Lana early commentary
+    class: EARLY_COMMENTARY
+    date: "catalogued ca. 1324–28"
+    url: https://dante.dartmouth.edu/commentaries.php
+    independence_of_other_commentators: TO_TEST
+  - id: DNT-COMM-OTTIMO-1333
+    title: L'Ottimo Commento
+    class: EARLY_COMMENTARY
+    date: "catalogued ca. 1333"
+    url: https://dante.dartmouth.edu/commentaries.php
+    witnesses_and_recensions: TO_IDENTIFY
+  - id: DNT-COMM-BUTI-14C
+    title: Francesco da Buti commentary
+    class: LATER_MEDIEVAL_COMMENTARY
+    date: "catalogued ca. 1385–95"
+    url: https://dante.dartmouth.edu/commentaries.php
+    note: "Do not use to prove original meaning without chronology/control."
+  - id: DNT-DOC-EXILE-1302
+    title: Florentine condemnation and exile
+    class: DOCUMENTARY_PRACTICE_WITH_ARCHIVAL_TRANSMISSION
+    date_of_event: "1302-01-27 and 1302-03-10"
+    extant_report: "Archivio di Stato Firenze, Libro del Chiodo; original verdict lost in 1343"
+    url: https://archiviodistatofirenze.cultura.gov.it/asfi/dante-tra-le-carte/default-8bab8ff0b0/la-condanna-e-lesilio
+    note: "A copied legal record is not identical to a surviving original; accusations not proved factual merely by conviction."
+  - id: DNT-WRK-LETTER-XIII
+    title: Epistle to Cangrande
+    class: ATTRIBUTED_TEXT
+    authenticity: DISPUTED
+    status: PROPOSITION_LEVEL_AUTHORSHIP_REQUIRED
+    rule: "Cannot assume allegorical interpretation expressed there was authored by Dante."
+  - id: DNT-SCHOLAR-ISLAM-ZIOLKOWSKI-2014
+    title: Dante and Islam, edited by Jan M. Ziolkowski
+    class: MODERN_SCHOLARSHIP
+    url: https://academic.oup.com/fordham-scholarship-online/book/20331
+    position: "Collection examines multiple interpretations and historical contexts; not source evidence of borrowing by itself."
+  - id: DNT-SCHOLAR-ISLAM-CORTI-2014
+    title: Maria Corti, Dante and Islamic Culture
+    class: MODERN_SCHOLARSHIP
+    url: https://academic.oup.com/fordham-scholarship-online/book/20331/chapter-abstract/179431901
+    hypothesis_class: CONTESTED_TRANSMISSION
+  - id: DNT-SCHOLAR-CAMBRIDGE-FORM
+    title: Cambridge Companion to Dante's Commedia - Narrative Structure
+    class: MODERN_SCHOLARSHIP
+    url: https://www.cambridge.org/core/books/cambridge-companion-to-dantes-commedia/narrative-structure/D25BF305191F32A7C951E42128984D07
+    note: "100 canto architecture and terza rima number pattern context."
+admission_policy:
+  historical_event: "separate primary documentary evidence from poem and commentary"
+  theological_influence: "chronology, distinctive correspondence, transmission mechanism and counterexamples"
+  textual_proposition: "canto+line, named edition, original-language reading, speaker, translation status"
+  manuscript_variant: "identified codex or critical apparatus; no unsourced variants"
+  opposing_scholarship: "actively sought for contested, distinctive, institutionally sensitive claims"

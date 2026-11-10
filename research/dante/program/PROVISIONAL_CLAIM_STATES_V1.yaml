@@ -1,0 +1,245 @@
+schema_version: on-theo.dante-provisional-claim-states.v1
+status: PROVISIONAL_CROSSWALK_NO_CANONICAL_PROMOTION
+recorded_at: "2026-10-20"
+conventions:
+  lifecycle: [PROPOSED, SOURCE_BOUND, INTERNAL_HOSTILE_REVIEWED, REVIEW_STALE, INDEPENDENTLY_REVIEWED]
+  disposition: [SURVIVES, SURVIVES_NARROWED, UNRESOLVED, REJECTED]
+  physical_witness_default: PETROCCHI_DIGITAL_DISPLAY_NOT_PHYSICAL_CODEX_COLLATION
+  review_provenance: "Any challenge authored in current conversation is same-runtime internal, never independent."
+  ceiling_rule: "Support for literal textual occurrence never automatically supports truth of depicted supernatural or historical event."
+claims:
+  - id: DNT-TXT-001
+    exact_proposition: "The Commedia is organized as Inferno (34 cantos), Purgatorio (33), Paradiso (33), totaling 100."
+    claim_type: POEM_TEXT
+    evidence_class: PRIMARY_TEXT
+    locus: ALL_CANTICLES_TITLES_AND_CANTO_STRUCTURE
+    source_ids: [DNT-WRK-COMMEDIA, DNT-ED-PETROCCHI-1966-67, DNT-SCHOLAR-CAMBRIDGE-FORM]
+    speaker_and_narrative_layer: POEM_STRUCTURE
+    lifecycle: SOURCE_BOUND
+    disposition: null
+    confidence: HIGH_TEXTUAL
+    claim_ceiling: "Text structure; no theological significance automatically proved by number."
+    rivals: [ALTERNATE_INTERPRETATIONS_OF_100]
+    opposing_loci_or_counterevidence: []
+    physical_witness_control: PETROCCHI_DISPLAY_ONLY
+  - id: DNT-MOR-001
+    exact_proposition: "Virgil divides natural from elective love and says elective love errs through wrong object or excess/deficiency."
+    claim_type: POEM_TEXT
+    evidence_class: PRIMARY_TEXT
+    locus: Purgatorio:17:91-105
+    speaker_and_narrative_layer: VIRGIL_SPEECH
+    source_ids: [DNT-ED-PETROCCHI-1966-67]
+    url: https://dante.princeton.edu/cgi-bin/dante/DispPoemByTitle.pl?LINE=91-105&SECT=xvii.&TITLE=Purg.
+    lifecycle: SOURCE_BOUND
+    disposition: null
+    confidence: HIGH_TEXTUAL
+    physical_witness_control: PETROCCHI_DISPLAY_ONLY
+    claim_ceiling: "This is Virgil's explanation within Dante's poem; independent manuscript variant controls remain pending."
+    rivals: [THOMISTIC_SOURCE_DEPENDENCE, AUGUSTINIAN_SOURCE_DEPENDENCE, SYNTHESIS_OR_REWORKING]
+    opposing_loci_or_counterevidence: [Purgatorio:18:46-48]
+  - id: DNT-MOR-002
+    exact_proposition: "Virgil locates moral accountability in a faculty that judges and guards assent, even if loves arise necessarily."
+    claim_type: POEM_TEXT
+    evidence_class: PRIMARY_TEXT
+    locus: Purgatorio:18:55-75
+    speaker_and_narrative_layer: VIRGIL_SPEECH
+    source_ids: [DNT-ED-PETROCCHI-1966-67]
+    url: https://dante.princeton.edu/cgi-bin/dante/DispPoemByTitle.pl?LINE=49-75&SECT=xviii.&TITLE=Purg.
+    lifecycle: SOURCE_BOUND
+    disposition: null
+    confidence: HIGH_TEXTUAL
+    physical_witness_control: PETROCCHI_DISPLAY_ONLY
+    claim_ceiling: "Text represents an innate evaluative power; not a modern cognitive-neuroscience mechanism."
+    rivals: [FREEDOM_AS_RESTRAINT_ONLY, FREEDOM_AS_COMPLETE_DESIRE_CREATION]
+    opposing_loci_or_counterevidence: [Purgatorio:18:46-48]
+  - id: DNT-MOR-003
+    exact_proposition: "Virgil says the pilgrim's free choice is 'libero, dritto e sano' at the summit of the mountain."
+    claim_type: POEM_TEXT
+    evidence_class: PRIMARY_TEXT
+    locus: Purgatorio:27:127-142
+    speaker_and_narrative_layer: VIRGIL_SPEECH
+    source_ids: [DNT-ED-PETROCCHI-1966-67]
+    url: https://dante.princeton.edu/cgi-bin/dante/DispPoemByTitle.pl?LINE=127-142&SECT=xxvii.&TITLE=Purg.
+    lifecycle: SOURCE_BOUND
+    disposition: null
+    confidence: HIGH_TEXTUAL
+    physical_witness_control: PETROCCHI_DISPLAY_ONLY
+    claim_ceiling: "Narrative restoration of will before Beatrice's instruction; not completion of entire spiritual journey."
+    rivals: [FREEDOM_AS_TOTAL_SPIRITUAL_COMPLETION]
+    opposing_loci_or_counterevidence: [Purgatorio:30:43-78]
+  - id: DNT-MOR-004
+    exact_proposition: "The seven terraces instantiate three wrong-object loves, one deficient love, and three excessive attachments."
+    claim_type: THEOLOGICAL_EXPOSITION
+    evidence_class: [PRIMARY_TEXT, PROJECT_INFERENCE]
+    locus: Purgatorio:17:91-139
+    speaker_and_narrative_layer: VIRGIL_SPEECH_AND_ARRANGEMENT
+    source_ids: [DNT-ED-PETROCCHI-1966-67]
+    lifecycle: SOURCE_BOUND
+    disposition: null
+    confidence: MODERATE_INTERPRETIVE
+    physical_witness_control: PETROCCHI_DISPLAY_ONLY
+    claim_ceiling: "Text-sustained moral division; no geometric independence or mapping to separate worlds."
+    rivals: [SEVEN_DEADLY_SINS_FIXED_LIST_ONLY, LOVE_AS_ONE_THEME_AMONG_MANY]
+    opposing_loci_or_counterevidence: [Purgatorio:16:67-114, Purgatorio:18:49-75]
+  - id: DNT-HIST-001
+    exact_proposition: "Dante was condemned by Florentine authorities in January and March 1302; archival witness is a later copy of the lost original."
+    claim_type: HISTORICAL_DOCUMENT
+    evidence_class: DOCUMENTARY_PRACTICE
+    locus: "Archivio di Stato di Firenze: Libro del Chiodo, reg. Capitani di Parte guelfa, Numeri rossi 20"
+    speaker_and_narrative_layer: EXTERNAL_DOCUMENT_NOT_POEM
+    source_ids: [DNT-DOC-EXILE-1302]
+    lifecycle: SOURCE_BOUND
+    disposition: null
+    confidence: HIGH_TEXTUAL
+    physical_witness_control: LATER_ARCHIVAL_COPY_ORIGINAL_DESTROYED_1343
+    claim_ceiling: "Records verdicts and accusations, not an independent verification of guilt."
+    rivals: [PARTISAN_JUDICIAL_PROCEEDING, REAL_OFFENSE_CONTESTED]
+    opposing_loci_or_counterevidence: []
+  - id: DNT-RECP-001
+    exact_proposition: "Early fourteenth-century commentary witnesses exist; they must not automatically count as independent access to Dante's intent."
+    claim_type: EARLY_COMMENTARY_RECEPTION
+    evidence_class: COMMENTARY
+    locus: "Dartmouth Dante Project commentary catalogue"
+    speaker_and_narrative_layer: COMMENTATORS
+    source_ids: [DNT-COMM-JACOPO-1322, DNT-COMM-LANA-1324-28, DNT-COMM-OTTIMO-1333]
+    lifecycle: SOURCE_BOUND
+    disposition: null
+    confidence: HIGH_TEXTUAL
+    physical_witness_control: COMMENTARY_EDITION_SPECIFIC_NOT_YET_CHECKED
+    claim_ceiling: "Dated catalogue entries establish resources, not their agreement on individual disputed verses."
+    rivals: [INDEPENDENT_COMMENTARIAL_LINES, RECYCLED_COMMENTARY_LINES]
+    opposing_loci_or_counterevidence: []
+  - id: DNT-GEO-001
+    exact_proposition: "Dante represents Purgatory as a distinct postmortem mountain on Earth, not as ordinary inhabited human life."
+    claim_type: POEM_TEXT
+    evidence_class: [PRIMARY_TEXT, PROJECT_INFERENCE]
+    locus: [Inferno:34, Purgatorio:1, Purgatorio:27-33]
+    speaker_and_narrative_layer: NARRATIVE_TOPOGRAPHY
+    source_ids: [DNT-ED-PETROCCHI-1966-67]
+    lifecycle: PROPOSED
+    disposition: null
+    confidence: MODERATE_INTERPRETIVE
+    physical_witness_control: PETROCCHI_DISPLAY_ONLY
+    claim_ceiling: "Narrative geography as described; full passage collation and contrary allegorical cases pending."
+    rivals: [MORAL_OR_MULTI_LEVEL_ALLEGORY]
+    opposing_loci_or_counterevidence: [Purgatorio:17:91-139]
+  - id: DNT-META-001
+    exact_proposition: "Our experienced Earth is literally the metaphysical postmortem condition Dante calls Purgatory."
+    claim_type: METAPHYSICAL_HYPOTHESIS
+    evidence_class: SPECULATIVE_MODEL
+    locus: NONE_DIRECT
+    speaker_and_narrative_layer: MODERN_HYPOTHESIS_NOT_DANTE_SPEECH
+    source_ids: []
+    lifecycle: PROPOSED
+    disposition: UNRESOLVED
+    confidence: UNKNOWN
+    physical_witness_control: NOT_APPLICABLE_TO_METAPHYSICAL_PROPOSITION
+    claim_ceiling: "The poem supports an interpretive analogy but cannot establish literal metaphysical identity."
+    rivals: [EARTHLY_LIFE_AS_ALLEGORY_ONLY, TRADITIONAL_POSTMORTEM_PURGATION]
+    opposing_loci_or_counterevidence: [Purgatorio:1, Purgatorio:27-33]
+    independent_review_required: true
+  - id: DNT-PHYS-001
+    exact_proposition: "Dante's seven terraces correspond physically to the seven extra spatial dimensions of M-theory compactifications."
+    claim_type: MATHEMATICAL_OR_PHYSICS_ANALOGY
+    evidence_class: SPECULATIVE_MODEL
+    locus: "seven moral terraces compared with 4+7=11 dimensions"
+    speaker_and_narrative_layer: MODERN_CROSS_DOMAIN_HYPOTHESIS
+    source_ids: []
+    lifecycle: PROPOSED
+    disposition: UNRESOLVED
+    confidence: UNKNOWN
+    physical_witness_control: NOT_APPLICABLE
+    claim_ceiling: "Numerical coincidence established; physical correspondence neither derived nor supported."
+    rivals: [POST_HOC_COUNT_SELECTION, NO_DIMENSIONAL_CORRESPONDENCE]
+    opposing_loci_or_counterevidence: [Inferno:1-34, Paradiso:1-33]
+    independent_review_required: true
+  - id: DNT-ISLAM-001
+    exact_proposition: "Dante's afterlife architecture specifically borrows from the Islamic Mi'raj / Liber scalae tradition."
+    claim_type: INTERTEXTUAL_INFLUENCE_HYPOTHESIS
+    evidence_class: [SCHOLARLY_INTERPRETATION, PROJECT_INFERENCE]
+    locus: SOURCE_TO_SOURCE_COMPARISON_REQUIRED
+    speaker_and_narrative_layer: HISTORICAL_TRANSMISSION_HYPOTHESIS
+    source_ids: [DNT-SCHOLAR-ISLAM-ZIOLKOWSKI-2014, DNT-SCHOLAR-ISLAM-CORTI-2014]
+    lifecycle: PROPOSED
+    disposition: UNRESOLVED
+    confidence: UNKNOWN
+    physical_witness_control: LATIN_TRANSLATION_AND_ACCESS_CHAIN_UNVERIFIED
+    claim_ceiling: "Scholarly debate is real; this record does not establish Dante's use of a source."
+    rivals: [CHRISTIAN_VISION_TRADITION, CLASSICAL_KATABASIS, COMMON_MOTIFS, DIRECT_CONTACT]
+    opposing_loci_or_counterevidence: []
+    independent_review_required: true
+  - id: DNT-ETH-001
+    exact_proposition: "The term 'contrapasso' occurs in the poem in Bertran de Born's speech in Inferno XXVIII.142."
+    claim_type: POEM_TEXT
+    evidence_class: PRIMARY_TEXT
+    locus: Inferno:28:142
+    speaker_and_narrative_layer: BERTRAN_DE_BORN_CHARACTER
+    source_ids: [DNT-ED-PETROCCHI-1966-67]
+    url: https://dante.princeton.edu/cgi-bin/dante/campuscgi/mpb/GetCantoSection.pl?INP_LEN=15&INP_POEM=Inf&INP_SECT=28&INP_START=142&LANG=2
+    lifecycle: SOURCE_BOUND
+    disposition: null
+    confidence: HIGH_TEXTUAL
+    physical_witness_control: PETROCCHI_DISPLAY_ONLY
+    claim_ceiling: "Word occurrence in a character's speech; not proof one mechanical rule explains every punishment."
+    rivals: [MULTIPLE_JUSTICE_MECHANISMS]
+    opposing_loci_or_counterevidence: []
+  - id: DNT-AGENCY-001
+    exact_proposition: "Inferno V.37-39 describes the punished lustful as subordinating reason to appetite."
+    claim_type: POEM_TEXT
+    evidence_class: PRIMARY_TEXT
+    locus: Inferno:5:28-39
+    speaker_and_narrative_layer: PILGRIM_NARRATIVE_EXPLANATION
+    source_ids: [DNT-ED-PETROCCHI-1966-67]
+    lifecycle: SOURCE_BOUND
+    disposition: null
+    confidence: HIGH_TEXTUAL
+    physical_witness_control: PETROCCHI_DISPLAY_ONLY
+    claim_ceiling: "A statement about the lustful; not a universal theory of all damned characters."
+    rivals: [NARRATOR_INTERPRETATION_CONTESTED]
+    opposing_loci_or_counterevidence: [Inferno:5:70-142]
+  - id: DNT-AGENCY-002
+    exact_proposition: "Marco Lombardo in Purgatorio XVI says celestial causation does not abolish moral freedom or justice."
+    claim_type: POEM_TEXT
+    evidence_class: PRIMARY_TEXT
+    locus: Purgatorio:16:64-81
+    speaker_and_narrative_layer: MARCO_LOMBARDO_SPEECH
+    source_ids: [DNT-ED-PETROCCHI-1966-67]
+    lifecycle: SOURCE_BOUND
+    disposition: null
+    confidence: HIGH_TEXTUAL
+    physical_witness_control: PETROCCHI_DISPLAY_ONLY
+    claim_ceiling: "Medieval moral/celestial discourse, not empirical astrology or modern neuroscience."
+    rivals: [ASTROLOGICAL_HARD_DETERMINISM]
+    opposing_loci_or_counterevidence: [Purgatorio:18:49-75]
+  - id: DNT-AGENCY-003
+    exact_proposition: "Piccarda describes blessedness as resting in divine will without resentment over unequal grace."
+    claim_type: POEM_TEXT
+    evidence_class: PRIMARY_TEXT
+    locus: Paradiso:3:79-90
+    speaker_and_narrative_layer: PICCARDA_SPEECH_AND_PILGRIM_NARRATION
+    source_ids: [DNT-ED-PETROCCHI-1966-67]
+    lifecycle: SOURCE_BOUND
+    disposition: null
+    confidence: HIGH_TEXTUAL
+    physical_witness_control: PETROCCHI_DISPLAY_ONLY
+    claim_ceiling: "Textual theological representation, not observation of actual afterlife or identical status among souls."
+    rivals: [RANK_WITHOUT_RIVALRY, UNIFORM_BLISS_INTERPRETATION]
+    opposing_loci_or_counterevidence: []
+  - id: DNT-AGENCY-004
+    exact_proposition: "The final canto presents a grace-like flash followed by the alignment of desire and will in divine love."
+    claim_type: POEM_TEXT
+    evidence_class: PRIMARY_TEXT
+    locus: Paradiso:33:133-145
+    speaker_and_narrative_layer: PILGRIM_NARRATOR_POET
+    source_ids: [DNT-ED-PETROCCHI-1966-67]
+    lifecycle: SOURCE_BOUND
+    disposition: null
+    confidence: HIGH_TEXTUAL
+    physical_witness_control: PETROCCHI_DISPLAY_ONLY
+    claim_ceiling: "Poetic grace/illumination and harmony; no historical report of actual vision established."
+    rivals: [LITERARY_EPIPHANY, DOCTRINAL_GRACE, AUTOBIOGRAPHICAL_VISION_HYPOTHESIS]
+    opposing_loci_or_counterevidence: []
+metadata_gaps:
+  - "This is a provisional state crosswalk: required claim fields left blank above are NOT_YET_ACQUIRED, not inferred complete."
+  - "No individual claim has received independent review."
+  - "Purgatorio XVII–XVIII manuscript variant collation remains outstanding."
