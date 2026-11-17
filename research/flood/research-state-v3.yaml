@@ -1,0 +1,32 @@
+schema_version: on-theo.mesopotamian-biblical-flood-research-state.v3
+status: INTERNAL_HOSTILE_PASS_WITH_GUARDS_SOURCE_STRATIFICATION_ADDED
+independent_review_status: REQUIRED_NOT_COMPLETED
+recorded_at: "2026-10-25"
+
+branch:
+  name: research/mesopotamian-biblical-flood-tradition-v1-20261025
+
+review:
+  exact_subject: 7b446f57403c7f6d10d8afa7a526942ff63de4ca
+  artifact: reviews/mesopotamian-biblical-flood-tradition-v1-hostile-review-2.md
+  commit: 75699b3e7efc1aa77d85e36d986a2e0d6c6cea64
+  execution_mode: SAME_RUNTIME_ADVERSARIAL_REVIEW
+  disposition: INTERNAL_HOSTILE_PASS_WITH_GUARDS
+  note: "Source-stratification artifacts were added after this exact-head review and require their own bounded review before promotion."
+
+current_core:
+  ziusudra_noah_identity: NOT_ESTABLISHED
+  mesopotamian_flood_tradition_network: HIGH
+  genesis_mesopotamian_relationship: HIGH
+  exact_immediate_source: UNKNOWN
+  genesis_theological_transformation: HIGH
+  archaeology_unique_origin_event: UNPROVED
+
+new_layer:
+  genesis_source_stratification: ADDED_PENDING_BOUNDED_REVIEW
+  both_non_p_and_p_mesopotamian_relation: STRONG_MODEL_PENDING_REVIEW
+
+next:
+  - BOUNDED_REVIEW_SOURCE_STRATIFICATION
+  - OPEN_DRAFT_PR
+  - MODERN_SHURUPPAK_CHRONOLOGY_REVALIDATION

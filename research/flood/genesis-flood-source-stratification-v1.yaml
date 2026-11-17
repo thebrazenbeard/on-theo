@@ -1,0 +1,75 @@
+schema_version: on-theo.genesis-flood-source-stratification.v1
+status: SOURCE_CRITICAL_MODEL
+canonical: false
+recorded_at: "2026-10-25"
+
+controls:
+  source_layers_are_reconstructions: true
+  physical_manuscript_layer_labels: false
+  exact_assignments_contested: true
+
+internal_fractures:
+  animal_numbers:
+    pair_instruction: "Genesis 6:19-20"
+    clean_seven_pair_instruction: "Genesis 7:2-3"
+  duration:
+    forty_days: "Genesis 7:12,17"
+    one_hundred_fifty_days: "Genesis 7:24"
+  mechanism:
+    rain_emphasis: NON_P_MODEL
+    fountains_and_windows: P_MODEL
+  post_flood:
+    sacrifice_smell_no_repeat: NON_P_MODEL
+    covenant_rainbow_law: P_MODEL
+
+layer_models:
+  NON_P:
+    representative_loci:
+      - "Genesis 6:5-8"
+      - "Genesis 7:1-5"
+      - "Genesis 7:12"
+      - "Genesis 8:6-12"
+      - "Genesis 8:20-22"
+    high_value_mesopotamian_parallels:
+      - FLOOD_DECISION
+      - BIRD_TEST
+      - SACRIFICE
+      - DIVINE_SMELL_RESPONSE
+      - NO_REPEAT_OR_RESET
+    relation: HIGH
+
+  P:
+    representative_loci:
+      - "Genesis 6:9-22"
+      - "Genesis 7:11"
+      - "Genesis 7:18-8:5"
+      - "Genesis 8:13-19"
+      - "Genesis 9:1-17"
+    high_value_mesopotamian_parallels:
+      - DETAILED_VESSEL
+      - PRESERVATION_CARGO
+      - COSMIC_FLOOD
+      - PRECISE_CHRONOLOGY
+      - RESTING_PLACE
+      - POST_FLOOD_ORDER
+    relation: HIGH
+
+claims:
+  layered_composition:
+    disposition: MAJOR_SCHOLARLY_MODEL
+  exact_two_source_decomposition:
+    disposition: CONTESTED
+  non_p_mesopotamian_relation:
+    disposition: HIGH
+  p_mesopotamian_relation:
+    disposition: HIGH
+  both_layers_modeled_on_older_mesopotamian_tradition:
+    disposition: STRONG_MODEL_ASSOCIATED_WITH_CARR
+  final_noah_composite_literary_form:
+    disposition: PLAUSIBLE_TO_STRONG_WITH_SOURCE_MODEL
+  direct_same_tablet_used_by_both_layers:
+    disposition: NOT_ESTABLISHED
+
+guards:
+  - LAYER_NE_PHYSICAL_WITNESS
+  - SOURCE_MODEL_NE_COPY_STEMMA
