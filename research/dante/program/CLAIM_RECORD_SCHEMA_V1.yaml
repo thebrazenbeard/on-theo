@@ -1,0 +1,83 @@
+schema_version: on-theo.dante-claim-record.v1
+status: DRAFT_ARCHITECTURE
+program: COMMEDIA_SOURCE_CRITICAL_RESEARCH
+inherits_methods_from: on-theo.yeshua-claim-record.v2
+asserts_dante_equal_to_historical_yeshua_problem: false
+lifecycle_states: [PROPOSED, SOURCE_BOUND, INTERNAL_HOSTILE_REVIEWED, REVIEW_STALE, INDEPENDENTLY_REVIEWED]
+dispositions: [SURVIVES, SURVIVES_NARROWED, UNRESOLVED, REJECTED]
+confidence_levels: [HIGH_TEXTUAL, MODERATE_INTERPRETIVE, LOW, UNKNOWN, NOT_APPLICABLE]
+no_numerical_truth_score: true
+claim_types:
+  - POEM_TEXT
+  - CRITICAL_EDITION_READING
+  - MANUSCRIPT_VARIANT
+  - EARLY_COMMENTARY_RECEPTION
+  - HISTORICAL_DOCUMENT
+  - HISTORICAL_RECONSTRUCTION
+  - THEOLOGICAL_EXPOSITION
+  - INTERTEXTUAL_INFLUENCE_HYPOTHESIS
+  - MODERN_INTERPRETIVE_APPLICATION
+  - METAPHYSICAL_HYPOTHESIS
+  - MATHEMATICAL_OR_PHYSICS_ANALOGY
+required:
+  - id
+  - exact_proposition
+  - claim_type
+  - evidence_class
+  - baseline_A_eligible
+  - baseline_B_eligible
+  - locus
+  - speaker_and_narrative_layer
+  - source_ids
+  - original_language_text_status
+  - edition_id
+  - translation_control
+  - physical_witness_control
+  - source_independence
+  - opposing_loci_or_counterevidence
+  - rivals
+  - disposition
+  - lifecycle
+  - confidence
+  - claim_ceiling
+  - upstream_dependencies
+  - downstream_consumers
+  - hostile_review_provenance
+  - independent_review_provenance
+  - invalidation_triggers
+textual_claim_requirements:
+  locus: "canticle:canto:startline-endline with stable source anchor"
+  speaker_and_narrative_layer: "Dante-pilgrim, Dante-narrator, Virgil, Beatrice, character, external text; not mechanically same as author belief"
+  physical_witness_control: "actual codex if variant issue; else PETROCCHI_CRITICAL_TEXT_ONLY and NOT_COLLATED"
+  translation_control: "record edition's Italian first; translator separately; avoid unverified invented translations"
+  earliest_commentary_independence: "family, date and access must be argued"
+promotion:
+  source_bound: "The edition reading and exact locus have been directly checked; more than a general summary."
+  hostile_reviewed: "proposal, objection, response, rejoinder and narrowed disposition bound to exact artifact/head"
+  independently_reviewed: "separate identified reviewer/execution with exact input SHA and findings"
+  independent_required_if:
+    - CLAIM_OF_DANTES_REAL_MYSTICAL_VISION
+    - MEDIEVAL_DOCTRINE_OR_PAPAL_INTENT_COUNTERCLAIM
+    - DISPUTED_AUTHORSHIP_OR_VARIANT_AFFECTS_CLAIM
+    - HISTORIC_ISLAMIC_BORROWING
+    - RECONSTRUCTION_OF_CONSPIRACY_OR_SUPPRESSION
+    - SCIENTIFIC_PRECOGNITION_OR_11D_EQUIVALENCE
+    - EARTH_LITERALLY_IS_PURGATORY
+  status_not_promoted_by: [DETAILED_PROSE, MULTIPLE_DEPENDENT_SECONDARY_SOURCES, SAME_RUNTIME_CONSENSUS]
+review_stale_when:
+  - edited_claim_meaning
+  - edition_variant_changed
+  - base_text_changed
+  - original_language_translation_changed
+  - speaker_assignment_changed
+  - documentary_authenticity_changed
+  - witness_date_changed
+  - dependence_or_independence_changed
+  - upstream_claim_rejected
+  - meaningful_new_opposing_evidence
+valid_project_terminal_results:
+  - LITERAL_EARTH_PURGATORY_NOT_SUPPORTED
+  - M_THEORY_NUMEROLOGY_ONLY
+  - ISLAMIC_BORROWING_NOT_ESTABLISHED
+  - TEXT_ALLOWS_MULTIPLE_INTERPRETATIONS
+  - SPECIFIC_DANTEAN_CLAIM_REJECTED
